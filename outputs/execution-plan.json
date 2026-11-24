@@ -1,10 +1,10 @@
 {
   "scope": "Complete Composio 100-app assignment through sequential, reviewable agent tasks.",
   "mode": "Parallel isolated research batches; independent review; explicit human checkpoints.",
-  "current_task": "22",
+  "current_task": "23",
   "active_agent": "Publisher agent + coordinator",
-  "next_task": "23-deploy-case-study",
-  "checkpoint": "Task 22 completed. Dedicated GitHub repository published and verified at https://github.com/Arindam-Neel-X7/Composio. Ready for user review before Task 23 authorization.",
+  "next_task": "24-review-and-handoff",
+  "checkpoint": "Task 23 completed. Self-contained case study deployed and verified live at https://arindam-neel-x7.github.io/Composio/ (GitHub Pages build 1397539787 on gh-pages commit 3ff22c3, HTTP 200, exact LF SHA-256 parity). Ready for user review before Task 24 authorization.",
   "rules": [
     "Existing results are preliminary hypotheses, not completed research.",
     "Every task returns files, evidence, checks and unresolved issues.",
@@ -305,12 +305,13 @@
       "id": "23",
       "title": "Deploy the case study",
       "owner": "Publisher agent + coordinator",
-      "status": "queued",
+      "status": "completed",
       "depends_on": [
         "22"
       ],
-      "output": "Verified live page URL and deployment record",
-      "acceptance": "Reuse registered Site appgprj_6b040e5b3768819193392c23590d7d81 if using Sites; confirm deployed version and intended reviewer access; never treat expected_url as a completed deployment."
+      "output": "https://arindam-neel-x7.github.io/Composio/ (gh-pages branch commit 3ff22c3); outputs/task-23/deployment-record.md",
+      "acceptance": "Reuse registered Site appgprj_6b040e5b3768819193392c23590d7d81 if using Sites; confirm deployed version and intended reviewer access; never treat expected_url as a completed deployment.",
+      "review": "Completed: Self-contained case study deployed and verified live on GitHub Pages at https://arindam-neel-x7.github.io/Composio/ via minimal gh-pages branch (commit 3ff22c3e2e2bb4474228448942a49e0f9e776070, build ID 1397539787, status built in 27.3s). Verified HTTP 200 OK, public unauthenticated HTTPS access, and exact LF-normalized UTF-8 SHA-256 parity (89da0069da21a006788624477f2827e2075f27854491081fd7aa80358dc64256, 736,039 bytes) with local index.html. Pre-transfer Codex Sites project appgprj_6b040e5b3768819193392c23590d7d81 is not connected in this local environment and was not assumed as deployed."
     },
     {
       "id": "24",

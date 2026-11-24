@@ -2,9 +2,10 @@
 
 Evidence-grounded, reproducible research evaluating **100 SaaS, developer, commerce, finance, and AI applications** for Composio integration readiness, authentication patterns, credential/sandbox gating, API breadth, and callable Model Context Protocol (MCP) server availability.
 
-- **Interactive Case Study**: Open [`index.html`](index.html) directly in any browser (zero external assets, 100% offline-capable; identical copy at [`outputs/task-20/index.html`](outputs/task-20/index.html)).
+- **Live Hosted Case Study**: [**https://arindam-neel-x7.github.io/Composio/**](https://arindam-neel-x7.github.io/Composio/) (deployed via GitHub Pages from `gh-pages` branch; zero external assets).
+- **Local Interactive Case Study**: Open [`index.html`](index.html) directly in any browser (100% offline-capable; identical copy at [`outputs/task-20/index.html`](outputs/task-20/index.html)).
 - **Master Synthesis & Prioritization**: [`outputs/task-19/patterns-and-priorities.md`](outputs/task-19/patterns-and-priorities.md), [`outputs/task-19/build-queues.md`](outputs/task-19/build-queues.md), and [`outputs/task-19/coverage-matrix.md`](outputs/task-19/coverage-matrix.md).
-- **QA & Reproduction Report**: [`outputs/task-21/qa-report.md`](outputs/task-21/qa-report.md).
+- **QA, Publication & Deployment Records**: [`outputs/task-21/qa-report.md`](outputs/task-21/qa-report.md), [`outputs/task-22/publication-record.md`](outputs/task-22/publication-record.md), and [`outputs/task-23/deployment-record.md`](outputs/task-23/deployment-record.md).
 
 ---
 
@@ -56,7 +57,8 @@ All percentages carry explicit denominators derived from `outputs/task-19/aggreg
 │   ├── task-19/                      # 100-app aggregates, build queues & synthesis
 │   ├── task-20/                      # Generated case study HTML
 │   ├── task-21/                      # Reproduction & presentation QA report
-│   └── task-22/                      # Repository publication record
+│   ├── task-22/                      # Repository publication record
+│   └── task-23/                      # Live deployment verification record
 └── work/
     ├── research-runs/                # Immutable, SHA-256 sealed runs (captures, snapshots, records, reviews)
     ├── task-04-runs/                 # Preserved original 5-app pilot & Task 05 review runs
