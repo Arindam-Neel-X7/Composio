@@ -1,0 +1,85 @@
+> For the complete documentation index, see [llms.txt](https://docs.usepylon.com/pylon-docs/llms.txt). Markdown versions of documentation pages are available by appending `.md` to page URLs; this page is available as [Markdown](https://docs.usepylon.com/pylon-docs/developer/api/api-reference.md).
+# API reference
+Documentation on available endpoints.
+{% content-ref url="/pages/p8ob9ltBUxVeCDOEzQwc" %}
+[Accounts](https://docs.usepylon.com/pylon-docs/developer/api/api-reference/accounts.md)
+{% endcontent-ref %}
+{% content-ref url="/pages/zkunuHMRUjK6mOYh47nn" %}
+[Activities](https://docs.usepylon.com/pylon-docs/developer/api/api-reference/accounts/activities.md)
+{% endcontent-ref %}
+{% content-ref url="/pages/mSs3V9GkSwG1G4pu3Uks" %}
+[Attachments](https://docs.usepylon.com/pylon-docs/developer/api/api-reference/attachments.md)
+{% endcontent-ref %}
+{% content-ref url="/pages/emYuJXyC3M5DChYk9mE5" %}
+[Audit Logs](https://docs.usepylon.com/pylon-docs/developer/api/api-reference/audit-logs.md)
+{% endcontent-ref %}
+{% content-ref url="/pages/yEIkq0SEB2e8Y6CJQG06" %}
+[Call Recordings](https://docs.usepylon.com/pylon-docs/developer/api/api-reference/call-recordings.md)
+{% endcontent-ref %}
+{% content-ref url="/pages/Fn8e14FVDqEuiHQsZihe" %}
+[Contacts](https://docs.usepylon.com/pylon-docs/developer/api/api-reference/contacts.md)
+{% endcontent-ref %}
+{% content-ref url="/pages/QrYnEWrHiaSgcIyWkE8y" %}
+[Custom Fields](https://docs.usepylon.com/pylon-docs/developer/api/api-reference/custom-fields.md)
+{% endcontent-ref %}
+{% content-ref url="/pages/mlX3wfzMN5gCq3Eso2bT" %}
+[Custom Objects](https://docs.usepylon.com/pylon-docs/developer/api/api-reference/custom-objects.md)
+{% endcontent-ref %}
+{% content-ref url="/pages/RvQZQmsRwWWap9UMNO60" %}
+[Email](https://docs.usepylon.com/pylon-docs/developer/api/api-reference/email.md)
+{% endcontent-ref %}
+{% content-ref url="/pages/NPfOcz5AucnSzTNb4yd7" %}
+[Feature Requests](https://docs.usepylon.com/pylon-docs/developer/api/api-reference/feature-requests.md)
+{% endcontent-ref %}
+{% content-ref url="/pages/8mk22XjvSufBoIhiVhze" %}
+[Issues](https://docs.usepylon.com/pylon-docs/developer/api/api-reference/issues.md)
+{% endcontent-ref %}
+{% content-ref url="/pages/cLw3xzUPs8vCI4qrTM8n" %}
+[Knowledge Base](https://docs.usepylon.com/pylon-docs/developer/api/api-reference/knowledge-base.md)
+{% endcontent-ref %}
+{% content-ref url="/pages/FcA8T03MTRzcZj7fOfgP" %}
+[Macros](https://docs.usepylon.com/pylon-docs/developer/api/api-reference/macros.md)
+{% endcontent-ref %}
+{% content-ref url="/pages/i6GlmlCUqzMM2GQBYC2u" %}
+[Me](https://docs.usepylon.com/pylon-docs/developer/api/api-reference/me.md)
+{% endcontent-ref %}
+{% content-ref url="/pages/WXJZeF2RWU9JlU8XaS15" %}
+[Messages](https://docs.usepylon.com/pylon-docs/developer/api/api-reference/messages.md)
+{% endcontent-ref %}
+{% content-ref url="/pages/J3u4xERQ19Ulgu8kinn9" %}
+[Surveys](https://docs.usepylon.com/pylon-docs/developer/api/api-reference/surveys.md)
+{% endcontent-ref %}
+{% content-ref url="/pages/cgZSbnp33YFUjq8njmdQ" %}
+[Tags](https://docs.usepylon.com/pylon-docs/developer/api/api-reference/tags.md)
+{% endcontent-ref %}
+{% content-ref url="/pages/TS4Q3CMpn0VG8WaAmIQ6" %}
+[Tasks & Projects](https://docs.usepylon.com/pylon-docs/developer/api/api-reference/tasks-and-projects.md)
+{% endcontent-ref %}
+{% content-ref url="/pages/YN3r0vUwL45G7PLJwcpn" %}
+[Teams](https://docs.usepylon.com/pylon-docs/developer/api/api-reference/teams.md)
+{% endcontent-ref %}
+{% content-ref url="/pages/t1llW5l7qYW5zoGQe606" %}
+[Ticket Forms](https://docs.usepylon.com/pylon-docs/developer/api/api-reference/ticket-forms.md)
+{% endcontent-ref %}
+{% content-ref url="/pages/sLfPSR9nrC9s0D6yjTT3" %}
+[Training Data](https://docs.usepylon.com/pylon-docs/developer/api/api-reference/training-data.md)
+{% endcontent-ref %}
+{% content-ref url="/pages/576jZrA7Sv3RzDNyi1za" %}
+[User roles](https://docs.usepylon.com/pylon-docs/developer/api/api-reference/user-roles.md)
+{% endcontent-ref %}
+{% content-ref url="/pages/xpfkv2w7B2bS4B4xQar4" %}
+[Users](https://docs.usepylon.com/pylon-docs/developer/api/api-reference/users.md)
+{% endcontent-ref %}
+---
+# Agent Instructions
+This documentation is published with GitBook. GitBook is the documentation platform designed so that both humans and AI agents can read, navigate, and reason over technical content effectively. Learn more at gitbook.com.
+## Querying This Documentation
+If you need additional information that is not directly available in this page, you can query the documentation by asking a question.
+Perform an HTTP GET request on the following URL with the `ask` and `goal` query parameters:
+```
+GET https://docs.usepylon.com/pylon-docs/developer/api/api-reference.md?ask=<question>&goal=<user_goal>
+```
+`ask` is the immediate question: it should be specific, self-contained, and written in natural language.
+`goal` is what the user is ultimately trying to achieve, the reason they need the answer. Sharing it helps GitBook give you a better, more relevant answer. A goal is most helpful when it describes the outcome the user wants rather than restating the question. For example, with `ask=how do I create an API token`, a goal like `automate deployments from our CI pipeline` lets GitBook tailor the answer to that use case.
+The response will contain a direct answer to the question and relevant excerpts and sources from the documentation.
+Use this mechanism when the answer is not explicitly present in the current page, you need clarification or additional context, or you want to retrieve related documentation sections.

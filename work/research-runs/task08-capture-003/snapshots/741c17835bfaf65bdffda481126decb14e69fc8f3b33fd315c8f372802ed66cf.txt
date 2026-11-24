@@ -1,0 +1,183 @@
+Ticketing | Zendesk Developer Docs
+zendev_horizontal
+zendev_horizontal
+DocumentationAPI Reference
+Search
+/
+Ticketing
+Home
+Ticketing
+Ticketing
+Tickets
+Tickets
+Attachments
+Ticket Comments
+Ticket Forms
+Ticket Fields
+Requests
+Ticket Import
+Ticket Audits
+Ticket Metrics
+Ticket Metric Events
+Ticket Activities
+Ticket Skips
+Suspended Tickets
+Email Notifications
+Custom Ticket Statuses
+Sharing Agreements
+Ticket Form Statuses
+Conversation Log
+Users
+Users
+User Identities
+User Profiles
+User Events
+User Fields
+User Passwords
+Zendesk events
+Organizations
+Organizations
+Organization Memberships
+Organization Fields
+Organization Subscriptions
+Lookup Relationships
+Lookup Relationships
+Groups
+Groups
+Group Memberships
+Ticket Management
+Search
+Incremental Exports
+Tags
+CSAT Survey Responses
+CSAT Surveys
+Satisfaction Ratings
+Satisfaction Reasons
+Job Statuses
+Dynamic Content Items
+Dynamic Content Item Variants
+Schedules
+Skill-based Routing
+Incremental Skill-based Routing
+Resource Collections
+Workspaces
+Bookmarks
+Business Rules
+Views
+Ticket Triggers
+Ticket Trigger Categories
+Macros
+Automations
+SLA Policies
+Group SLA Policies
+Deletion Schedules
+Account Configuration
+Custom Agent Roles
+Account Settings
+Support Addresses
+Sessions
+Brand Agents
+Brands
+Locales
+Audit Logs
+Access Logs
+Push Notification Devices
+Channel Framework
+X (formerly Twitter) Channel
+Zendesk Public IPs
+Remote Authentications
+Security Settings
+OAuth
+OAuth Tokens
+OAuth Tokens for Grant Types
+OAuth Clients
+Global OAuth Clients
+Apps
+Apps
+App Location Installations
+App Locations
+Targets
+Targets
+Target Failures
+Side Conversation
+Side Conversations
+Side Conversation Events
+Side Conversation Attachment
+JIRA
+Jira Links (V2)
+JIRA Links
+Jira Integration API
+Approvals
+Approval Requests
+Tasks
+Task List Templates
+Task Lists
+Task List Events
+On this page
+Download OpenAPI file
+Document conventions
+Examples
+Security and authentication
+Rate limits
+Request format
+Response format
+Idempotency
+Data types
+Pagination
+Ticketing
+On this page
+Download OpenAPI file
+Document conventions
+Examples
+Security and authentication
+Rate limits
+Request format
+Response format
+Idempotency
+Data types
+Pagination
+Copy page
+This is the reference documentation for the Zendesk Support API, which is also known as the Ticketing API. You can use the Support API with tickets, users, organizations, custom objects, and manage ticket workflows.
+Any general mechanisms and conventions, such as pagination and authentication, work as described in the Zendesk API introduction and are considered implied in this text.
+In addition to the reference docs, the following resources are available:
+Zendesk API quick start
+Zendesk Ticketing API articles and tutorials
+Zendesk APIs community
+Run in Postman
+If you use Postman, you can import the Support API endpoints as a collection into your Postman app, then try out different requests to learn how the API works. Click the following button to get started:
+If you don't use Postman, you can sign up for a free account on the Postman website and download the app. For more information about using Postman with Zendesk APIs, see Exploring Zendesk APIs with Postman.
+Download OpenAPI file
+Download OpenAPI file
+Document conventions
+For information on the syntax and style conventions used in the docs, see Documentation conventions in the general API introduction.
+Examples
+For information on the examples in the docs, see Examples in the general API introduction.
+Security and authentication
+For information on the authentication required to use the API, see Security and authentication in the general API introduction.
+Rate limits
+For information on the number of requests allowed per minute, see Rate limits in the general API introduction.
+Request format
+For information on requests, see Requests in the general API introduction.
+Response format
+For information on the HTTP status codes returned by the API, see Response format in the general API introduction.
+Idempotency
+The Ticketing API lets you specify an idempotency key that allows you to retry a ticket creation request without the risk of creating duplicate records.
+To specify an idempotency key, provide a Idempotency-Key: {unique_key} header with your request.
+Example:
+curl https://{subdomain}.zendesk.com/api/v2/tickets.json \ -d '{"ticket": {"subject": "Printer offline", \ "comment": { "body": "My printer is offline. Restarting doesn’t help." }}}' \ -H "Content-Type: application/json" -H "Idempotency-Key: 12345" \ -v -u user:password -X POST
+This creates the following response, which also includes a x-idempotency-lookup: miss header:
+Status 201 Created{ "ticket": { "url": "https://{subdomain}.zendesk.com/api/v2/tickets/3.json", "id": 3, "subject": "Printer offline", ... }}
+If you repeat the same request using the same body and idempotency key, another ticket is not created. Instead, you'll get the same response as before that is cached under the idempotency key. This time the response includes a x-idempotency-lookup: hit header:
+Status 201 Created{ "ticket": { "url": "https://{subdomain}.zendesk.com/api/v2/tickets/3.json", "id": 3, "subject": "Printer offline", ... }}
+If you create a request using the same idempotency key but with a different body, you'll receive the following error:
+400 Bad Request:{ "error": "IdempotentRequestError", "description": "Request parameters don't match the given idempotency key"}
+Keys expire after two hours. If a request with a duplicate key is sent two hours after the original request, the request will create a new ticket.
+The idempotency key is not stored as part of the ticket response. You will not be able to see the key when the ticket is opened.
+Data types
+For information on data types used in the API, see Data types in the general API introduction.
+Pagination
+For information on paginating through list endpoints, see Pagination in the general API introduction.
+Join our developer community
+ForumBlogSlack
+Zendesk181 Fremont Street, 17th Floor, San Francisco, California 94105
+Privacy NoticeZendesk Developer TermsSystem Status

@@ -1,0 +1,98 @@
+Billing | MrScraper Documentation
+Documentation
+Core Features
+Dashboard
+Getting Started
+OverviewQuickstartWeb Search
+Scraper API
+Token PlanCLIMCP ServerBilling
+Features
+Workflow
+Workflow API AccessBulk ScrapingProxyMarketplaceScheduleS3 StorageScraping TipsCookieTeam
+Guides
+Common Use Case
+Optimizing CostCreate and Run a Scraper ProgrammaticallyBulk Scraping With Custom Scraper
+Integrations
+EmailSQL/DatabaseWebhookZapierClawHub
+x402
+n8n
+DifyScalekit
+SDKs
+MrScraper
+Search
+⌘K
+Dashboard
+DocumentationAPI ReferenceResidential ProxyChangelog
+Billing
+Billing
+Compare MrScraper subscription plans, understand how token usage and billing cycles work, and choose the right plan for your scraping workload.
+MrScraper offers flexible subscription plans designed for different usage levels, from individual developers testing the platform to enterprise teams running large-scale scraping operations. All plans include access to our AI-powered scraping agents, browser rendering, and residential proxies (on applicable plans).
+Available Plans
+FeatureScraper FreeScraper ProScraper Enterprise
+API Tokens1,000 token200,000 tokenCustom
+Concurrent Requests10100Custom
+Residential Proxies❌✅✅
+Priority Email Support❌✅✅
+Dedicated Account Manager❌✅✅
+Free Plan Limitations
+The Free plan includes 100 tokens per month with no credit card required. Tokens reset at the beginning of each month. Once your allocation is exhausted, you'll need to upgrade to continue scraping.
+Transaction Page
+You can view your past transactions, by going to Account → Subscription. The transaction page displays a list of all your billing activities, including:
+Product
+Amount (Price)
+Status
+Date
+Invoice and Receipt links
+Invoices and Receipts
+To access the invoices or receipts of your account:
+Go to Account Profile → Subscription
+You'll be shown with a list of your billing history, including the date, amount, and status of each transaction
+Under Invoice, and Receipt columns, you can click on the respective links to view or download the invoice or receipt for each transaction.
+Manage Billing
+In the Subscription page, you can click on the Manage Billing button to open the Stripe customer portal. From there, you can:
+View your payment history
+Cancel your subscription plan
+Edit your billing information
+Billing Cycle
+How Token Allocation Works
+Monthly Plans:
+Tokens reset on your monthly renewal date
+Full token allotment available at the start of each cycle
+Unused tokens do not roll over to the next month
+Annual Plans:
+Billed once per year
+Tokens still reset monthly on your renewal date
+20% discount on total cost
+Unused tokens do not roll over
+Example Timeline
+If you subscribe to Scraper Pro on January 15th:
+DateEventToken Balance
+Jan 15Subscription starts200,000 tokens
+Jan 31Used 60,000 tokens140,000 tokens
+Feb 15Billing cycle renews200,000 tokens (reset)
+Important
+Unused tokens from the previous month are lost when your billing cycle renews. Plan your scraping operations accordingly to maximize your token allocation.
+Tracking Your Usage
+Monitor your token consumption and billing information through multiple channels:
+Dashboard: View real-time usage in your account API token dashboard
+API Endpoints: Track usage programmatically using our Analytics API
+FAQs
+Do unused tokens roll over to the next month?
+How do I know how many tokens each scrape will use?
+What happens to my scrapers if I downgrade?
+Can I change from monthly to annual billing?
+Is there a free trial for paid plans?
+MCP Server
+Official MrScraper MCP server for retrieving web pages, web search, and account usage. Connect AI clients or run the open-source server locally.
+Workflow
+Step-by-step guide to building custom scraping workflows with the MrScraper workflow builder, from step types to running your first scrape.
+On this page
+Available Plans
+Transaction Page
+Invoices and Receipts
+Manage Billing
+Billing Cycle
+How Token Allocation Works
+Example Timeline
+Tracking Your Usage
+FAQs

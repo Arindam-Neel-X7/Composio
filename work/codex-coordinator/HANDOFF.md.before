@@ -1,0 +1,65 @@
+# Resume the Composio assignment in Antigravity or Gemini CLI
+
+Read this file first. The full conversation is not needed.
+
+## Current state
+
+- User: completing Composio AI Product Ops Intern take-home research on 100 assigned apps.
+- Required final deliverables: evidence-backed 100-app results, patterns/priorities, runnable research agent/pipeline, measured verification and disclosed errors, one self-explanatory HTML case study, GitHub source repository, live page if possible.
+- Tasks 01–09 are complete and accepted (AI review only; no human review). Task 09 (Research batch 3: Communications and Messaging, IDs 21–30) passed independent read-only AI review after remediation in immutable run `work/research-runs/task09-first-pass-004` (`54` captured primary/community snapshots, `192` eligible research assertions, `417` verified evidence refs, `accuracy: null`, `synthetic: false`; see `outputs/task-09-review.md` and `outputs/task-09/`).
+- NEXT: Task 10 (Research batch 4: Marketing, Ads, Email and Social, IDs 31–40). Stop and show the result before starting Task 11. The user wants small sequential agent tasks with a review checkpoint after each.
+- The complete 24-task board is `outputs/execution-plan.json` and `.md`. Read later tasks only when needed.
+
+## Files that carry the context
+
+1. `outputs/task-06/completion-report.md`, `outputs/task-06/sampling-manifest.json`, and `outputs/task-06/evaluation-rubric.md`: Task 06 repairs, frozen 20-app sample, and scoring rubric for full-batch research starting with Task 07.
+2. `docs/evidence-rules.md` and `schemas/record.json`: approved record, source, review and accuracy contract.
+3. `docs/pipeline-usage.md`: actual implementation and documented limitations.
+4. `data/apps.json`: complete 100-app roster and original hints, separate from unverified legacy leads.
+5. `work/task-04-runs/pilot-first-pass-001/`: frozen five-app research target. Keep every sealed run unchanged.
+6. `work/task-04-agent/`: source selections, original structured intake, researcher-authored extraction builder and handoff notes.
+7. `outputs/task-04-review.md`: coordinator handoff review and known issues; these are not scored independent judgments.
+
+## Exact pilot baseline
+
+Apps: 2 HubSpot; 13 Freshdesk; 31 Google Ads; 58 Sherlock; 91 NotebookLM (Enterprise API scope).
+
+- 27 selected URLs, 26 captured: 25 vendor/project-controlled sources and one community implementation repository.
+- Five real, non-synthetic records. Original target run: `pilot-first-pass-001`.
+- Claim states: 71 observed (including 5 identity claims), 26 inferred, 48 unknown, 4 operational checks not researched, 1 disputed and 1 bounded MCP-not-found.
+- Exactly 92 eligible research assertions in `inventory.json`, excluding identity metadata. All independent adjudications are pending. Accuracy is null/unmeasured.
+- No authenticated app/API/MCP calls, paid accounts, signup, source publication, live deployment or human checks were performed.
+- Original records SHA-256: `10ff5bdb556920e5fd0c692e6a3694c219ee98011c6244d9cf796203505d8f90`.
+- Original seal SHA-256: `eaebd62d4f63c52465b15d5d94aa708db3a2140f25b120ca28b704ac38e03ca2`.
+
+`pilot-capture-001` preserves initial DNS failures; `pilot-capture-002` is approved-network recovery; `pilot-capture-003` adds precise references. `coordinator-replay-001` repeats the same extraction, not additional research or independent verification. The original intake was rebuilt byte-for-byte.
+
+## Run the existing pipeline
+
+Python 3.10+ and either installed Python `jsonschema` or PowerShell 7 Draft2020-12 `Test-Json` are required. The original Windows environment used PowerShell; packages were not installed. If neither validator is available, install the official Python jsonschema package in a project virtual environment, or use an available PowerShell 7. Do not replace validation with a partial checker.
+
+From the extracted project root:
+
+```powershell
+python -B research_pipeline.py --store work/task-04-runs validate --run-id pilot-first-pass-001
+python -B research_pipeline.py --store work/task-04-runs metrics --run-id pilot-first-pass-001 --target pilot-first-pass-001
+python -B -m unittest discover -s tests -p test_research_pipeline.py -v
+```
+
+The 23 regression tests use synthetic data only. Passing them does not measure app accuracy. Saved-evidence validation/replay needs no API key or network. Independent current-doc verification needs the agent's web/browser access, not an embedded Gemini API integration.
+
+The agent selected and read sources and authored the structured extraction builder; the pipeline automated HTTP content capture, snapshots, hashes, packets, intake validation, immutable runs and metrics. It is not a fully automatic source-discovery/model service. No Composio or Gemini SDK integration is currently embedded.
+
+## Continue with small agent tasks
+
+Start Task 07 (Research batch 1: CRM and Sales, IDs 1–10) in a fresh conversation using pipeline v0.2.0 and contract v1.1, then research each ten-app category batch sequentially. Later roles: verification (Task 17 on the frozen 20-app sample), correction/remeasurement (Task 18), analysis, case-study, QA and publisher. The task board defines outputs and prerequisites. Do not start all roles at once.
+
+Keep task prompts short and point to files. Do not load every packet/snapshot into the conversation at once; read one app's record and cited passages at a time. Save decisions, errors and progress to task files before starting a new conversation. Do not replay this entire original chat.
+
+## Transfer limits
+
+These files transfer; running Codex agents, their chat memory, approvals, GitHub authentication and hosting credentials do not transfer automatically. Use the new environment's own sign-in and permissions. GitHub connection is only needed for the later publication task.
+
+No GitHub source repository or live case-study page has been established. A Site was registered previously with project ID `appgprj_6b040e5b3768819193392c23590d7d81`; this is not proof of deployment or a usable credential. Reuse/reconcile that identity if the original Sites connection is later available; otherwise discuss a supported hosting path when the publishing task is reached.
+
+Tasks 01–09 are complete and accepted (AI review only; no human review, public repository, or live deployment has been performed). Task 10 has not started. Do not claim human review, accuracy improvement, public repository or deployment without actual evidence.

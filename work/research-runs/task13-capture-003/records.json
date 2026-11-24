@@ -1,0 +1,3254 @@
+[
+  {
+    "schema_version": "1.1",
+    "run": {
+      "run_id": "task13-capture-003",
+      "parent_run_id": "task13-capture-002",
+      "created_on": "2026-11-23",
+      "producer": {
+        "id": "pipeline-collector",
+        "type": "script"
+      },
+      "correction_refs": [],
+      "sampling_manifest_ref": null
+    },
+    "identity": {
+      "id": 61,
+      "app": "GitHub",
+      "category": "Developer, Infra and Data platforms",
+      "roster_ref": "data/apps.json",
+      "resolution": {
+        "claim_id": "61.identity",
+        "status": "not_researched",
+        "value": null,
+        "context": "Product edition/API version not yet researched",
+        "evidence": [],
+        "supporting_claim_refs": [],
+        "rationale": "No substantive research yet"
+      }
+    },
+    "purpose": {
+      "claim_id": "61.purpose",
+      "status": "not_researched",
+      "value": null,
+      "context": "Product edition/API version not yet researched",
+      "evidence": [],
+      "supporting_claim_refs": [],
+      "rationale": "No substantive research yet"
+    },
+    "auth": {
+      "coverage_status": "not_researched",
+      "items": [],
+      "notes": "Empty does not establish absence"
+    },
+    "credential_eligibility": {
+      "testing": {
+        "context": "testing credential eligibility",
+        "free_access": {
+          "claim_id": "61.testing.free_access",
+          "status": "not_researched",
+          "value": null,
+          "context": "testing credentials; edition/version not researched",
+          "evidence": [],
+          "supporting_claim_refs": [],
+          "rationale": "No substantive research yet"
+        },
+        "trial_access": {
+          "claim_id": "61.testing.trial_access",
+          "status": "not_researched",
+          "value": null,
+          "context": "testing credentials; edition/version not researched",
+          "evidence": [],
+          "supporting_claim_refs": [],
+          "rationale": "No substantive research yet"
+        },
+        "sandbox_access": {
+          "claim_id": "61.testing.sandbox_access",
+          "status": "not_researched",
+          "value": null,
+          "context": "testing credentials; edition/version not researched",
+          "evidence": [],
+          "supporting_claim_refs": [],
+          "rationale": "No substantive research yet"
+        },
+        "paid_required": {
+          "claim_id": "61.testing.paid_required",
+          "status": "not_researched",
+          "value": null,
+          "context": "testing credentials; edition/version not researched",
+          "evidence": [],
+          "supporting_claim_refs": [],
+          "rationale": "No substantive research yet"
+        },
+        "admin_approval_required": {
+          "claim_id": "61.testing.admin_approval_required",
+          "status": "not_researched",
+          "value": null,
+          "context": "testing credentials; edition/version not researched",
+          "evidence": [],
+          "supporting_claim_refs": [],
+          "rationale": "No substantive research yet"
+        },
+        "vendor_approval_required": {
+          "claim_id": "61.testing.vendor_approval_required",
+          "status": "not_researched",
+          "value": null,
+          "context": "testing credentials; edition/version not researched",
+          "evidence": [],
+          "supporting_claim_refs": [],
+          "rationale": "No substantive research yet"
+        },
+        "partner_approval_required": {
+          "claim_id": "61.testing.partner_approval_required",
+          "status": "not_researched",
+          "value": null,
+          "context": "testing credentials; edition/version not researched",
+          "evidence": [],
+          "supporting_claim_refs": [],
+          "rationale": "No substantive research yet"
+        },
+        "contact_sales_required": {
+          "claim_id": "61.testing.contact_sales_required",
+          "status": "not_researched",
+          "value": null,
+          "context": "testing credentials; edition/version not researched",
+          "evidence": [],
+          "supporting_claim_refs": [],
+          "rationale": "No substantive research yet"
+        },
+        "self_serve": {
+          "claim_id": "61.testing.self_serve",
+          "status": "not_researched",
+          "value": null,
+          "context": "testing credentials; edition/version not researched",
+          "evidence": [],
+          "supporting_claim_refs": [],
+          "rationale": "No substantive research yet"
+        }
+      },
+      "production": {
+        "context": "production credential eligibility",
+        "free_access": {
+          "claim_id": "61.production.free_access",
+          "status": "not_researched",
+          "value": null,
+          "context": "production credentials; edition/version not researched",
+          "evidence": [],
+          "supporting_claim_refs": [],
+          "rationale": "No substantive research yet"
+        },
+        "trial_access": {
+          "claim_id": "61.production.trial_access",
+          "status": "not_researched",
+          "value": null,
+          "context": "production credentials; edition/version not researched",
+          "evidence": [],
+          "supporting_claim_refs": [],
+          "rationale": "No substantive research yet"
+        },
+        "sandbox_access": {
+          "claim_id": "61.production.sandbox_access",
+          "status": "not_researched",
+          "value": null,
+          "context": "production credentials; edition/version not researched",
+          "evidence": [],
+          "supporting_claim_refs": [],
+          "rationale": "No substantive research yet"
+        },
+        "paid_required": {
+          "claim_id": "61.production.paid_required",
+          "status": "not_researched",
+          "value": null,
+          "context": "production credentials; edition/version not researched",
+          "evidence": [],
+          "supporting_claim_refs": [],
+          "rationale": "No substantive research yet"
+        },
+        "admin_approval_required": {
+          "claim_id": "61.production.admin_approval_required",
+          "status": "not_researched",
+          "value": null,
+          "context": "production credentials; edition/version not researched",
+          "evidence": [],
+          "supporting_claim_refs": [],
+          "rationale": "No substantive research yet"
+        },
+        "vendor_approval_required": {
+          "claim_id": "61.production.vendor_approval_required",
+          "status": "not_researched",
+          "value": null,
+          "context": "production credentials; edition/version not researched",
+          "evidence": [],
+          "supporting_claim_refs": [],
+          "rationale": "No substantive research yet"
+        },
+        "partner_approval_required": {
+          "claim_id": "61.production.partner_approval_required",
+          "status": "not_researched",
+          "value": null,
+          "context": "production credentials; edition/version not researched",
+          "evidence": [],
+          "supporting_claim_refs": [],
+          "rationale": "No substantive research yet"
+        },
+        "contact_sales_required": {
+          "claim_id": "61.production.contact_sales_required",
+          "status": "not_researched",
+          "value": null,
+          "context": "production credentials; edition/version not researched",
+          "evidence": [],
+          "supporting_claim_refs": [],
+          "rationale": "No substantive research yet"
+        },
+        "self_serve": {
+          "claim_id": "61.production.self_serve",
+          "status": "not_researched",
+          "value": null,
+          "context": "production credentials; edition/version not researched",
+          "evidence": [],
+          "supporting_claim_refs": [],
+          "rationale": "No substantive research yet"
+        }
+      }
+    },
+    "api_surface": {
+      "protocols": {
+        "coverage_status": "not_researched",
+        "items": [],
+        "notes": "Empty does not establish absence"
+      },
+      "public_documentation": {
+        "claim_id": "61.api.public_documentation",
+        "status": "not_researched",
+        "value": null,
+        "context": "Product edition/API version not yet researched",
+        "evidence": [],
+        "supporting_claim_refs": [],
+        "rationale": "No substantive research yet"
+      },
+      "resource_groups": {
+        "coverage_status": "not_researched",
+        "items": [],
+        "notes": "Empty does not establish absence"
+      },
+      "breadth": {
+        "claim_id": "61.api.breadth",
+        "status": "not_researched",
+        "value": null,
+        "context": "Product edition/API version not yet researched",
+        "evidence": [],
+        "supporting_claim_refs": [],
+        "rationale": "No substantive research yet"
+      }
+    },
+    "mcp": {
+      "discovery": {
+        "claim_id": "61.mcp",
+        "status": "not_researched",
+        "value": null,
+        "context": "Product edition/API version not yet researched",
+        "evidence": [],
+        "supporting_claim_refs": [],
+        "rationale": "No substantive research yet"
+      },
+      "entries": []
+    },
+    "buildability": {
+      "claim_id": "61.buildability",
+      "status": "not_researched",
+      "value": null,
+      "context": "Product edition/API version not yet researched",
+      "evidence": [],
+      "supporting_claim_refs": [],
+      "rationale": "No substantive research yet"
+    },
+    "conflicts": [],
+    "fetches": [
+      {
+        "source_url": "https://docs.github.com/en/rest/about-the-rest-api/about-the-rest-api",
+        "attempted_on": "2026-11-23",
+        "status": "fetched",
+        "http_status": 200,
+        "resolved_url": "https://docs.github.com/en/rest/about-the-rest-api/about-the-rest-api",
+        "error": null,
+        "content_sha256": "10f0d347dad4aca8e39a0d667d268d79a42cf9a98238a6d9a97fb758adedb7d9"
+      },
+      {
+        "source_url": "https://docs.github.com/en/rest/authentication/authenticating-to-the-rest-api",
+        "attempted_on": "2026-11-23",
+        "status": "fetched",
+        "http_status": 200,
+        "resolved_url": "https://docs.github.com/en/rest/authentication/authenticating-to-the-rest-api",
+        "error": null,
+        "content_sha256": "f84ec67e24cbc20ce4862f648b6b30aeaadff9d1ac7aa072b3da48b71b359eb5"
+      },
+      {
+        "source_url": "https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens",
+        "attempted_on": "2026-11-23",
+        "status": "fetched",
+        "http_status": 200,
+        "resolved_url": "https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens",
+        "error": null,
+        "content_sha256": "f821e2d97756742be205aad1339c4ec98dfc6fc610c97bb667d22ee361404bc9"
+      },
+      {
+        "source_url": "https://raw.githubusercontent.com/github/github-mcp-server/main/README.md",
+        "attempted_on": "2026-11-23",
+        "status": "fetched",
+        "http_status": 200,
+        "resolved_url": "https://raw.githubusercontent.com/github/github-mcp-server/main/README.md",
+        "error": null,
+        "content_sha256": "667665fe7aa8089f142c09ae2ea7e3a0a92ab7cc088c8fe71258bb3cfcc40849"
+      }
+    ],
+    "review": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewed_on": null,
+      "adjudications": []
+    }
+  },
+  {
+    "schema_version": "1.1",
+    "run": {
+      "run_id": "task13-capture-003",
+      "parent_run_id": "task13-capture-002",
+      "created_on": "2026-11-23",
+      "producer": {
+        "id": "pipeline-collector",
+        "type": "script"
+      },
+      "correction_refs": [],
+      "sampling_manifest_ref": null
+    },
+    "identity": {
+      "id": 62,
+      "app": "Vercel",
+      "category": "Developer, Infra and Data platforms",
+      "roster_ref": "data/apps.json",
+      "resolution": {
+        "claim_id": "62.identity",
+        "status": "not_researched",
+        "value": null,
+        "context": "Product edition/API version not yet researched",
+        "evidence": [],
+        "supporting_claim_refs": [],
+        "rationale": "No substantive research yet"
+      }
+    },
+    "purpose": {
+      "claim_id": "62.purpose",
+      "status": "not_researched",
+      "value": null,
+      "context": "Product edition/API version not yet researched",
+      "evidence": [],
+      "supporting_claim_refs": [],
+      "rationale": "No substantive research yet"
+    },
+    "auth": {
+      "coverage_status": "not_researched",
+      "items": [],
+      "notes": "Empty does not establish absence"
+    },
+    "credential_eligibility": {
+      "testing": {
+        "context": "testing credential eligibility",
+        "free_access": {
+          "claim_id": "62.testing.free_access",
+          "status": "not_researched",
+          "value": null,
+          "context": "testing credentials; edition/version not researched",
+          "evidence": [],
+          "supporting_claim_refs": [],
+          "rationale": "No substantive research yet"
+        },
+        "trial_access": {
+          "claim_id": "62.testing.trial_access",
+          "status": "not_researched",
+          "value": null,
+          "context": "testing credentials; edition/version not researched",
+          "evidence": [],
+          "supporting_claim_refs": [],
+          "rationale": "No substantive research yet"
+        },
+        "sandbox_access": {
+          "claim_id": "62.testing.sandbox_access",
+          "status": "not_researched",
+          "value": null,
+          "context": "testing credentials; edition/version not researched",
+          "evidence": [],
+          "supporting_claim_refs": [],
+          "rationale": "No substantive research yet"
+        },
+        "paid_required": {
+          "claim_id": "62.testing.paid_required",
+          "status": "not_researched",
+          "value": null,
+          "context": "testing credentials; edition/version not researched",
+          "evidence": [],
+          "supporting_claim_refs": [],
+          "rationale": "No substantive research yet"
+        },
+        "admin_approval_required": {
+          "claim_id": "62.testing.admin_approval_required",
+          "status": "not_researched",
+          "value": null,
+          "context": "testing credentials; edition/version not researched",
+          "evidence": [],
+          "supporting_claim_refs": [],
+          "rationale": "No substantive research yet"
+        },
+        "vendor_approval_required": {
+          "claim_id": "62.testing.vendor_approval_required",
+          "status": "not_researched",
+          "value": null,
+          "context": "testing credentials; edition/version not researched",
+          "evidence": [],
+          "supporting_claim_refs": [],
+          "rationale": "No substantive research yet"
+        },
+        "partner_approval_required": {
+          "claim_id": "62.testing.partner_approval_required",
+          "status": "not_researched",
+          "value": null,
+          "context": "testing credentials; edition/version not researched",
+          "evidence": [],
+          "supporting_claim_refs": [],
+          "rationale": "No substantive research yet"
+        },
+        "contact_sales_required": {
+          "claim_id": "62.testing.contact_sales_required",
+          "status": "not_researched",
+          "value": null,
+          "context": "testing credentials; edition/version not researched",
+          "evidence": [],
+          "supporting_claim_refs": [],
+          "rationale": "No substantive research yet"
+        },
+        "self_serve": {
+          "claim_id": "62.testing.self_serve",
+          "status": "not_researched",
+          "value": null,
+          "context": "testing credentials; edition/version not researched",
+          "evidence": [],
+          "supporting_claim_refs": [],
+          "rationale": "No substantive research yet"
+        }
+      },
+      "production": {
+        "context": "production credential eligibility",
+        "free_access": {
+          "claim_id": "62.production.free_access",
+          "status": "not_researched",
+          "value": null,
+          "context": "production credentials; edition/version not researched",
+          "evidence": [],
+          "supporting_claim_refs": [],
+          "rationale": "No substantive research yet"
+        },
+        "trial_access": {
+          "claim_id": "62.production.trial_access",
+          "status": "not_researched",
+          "value": null,
+          "context": "production credentials; edition/version not researched",
+          "evidence": [],
+          "supporting_claim_refs": [],
+          "rationale": "No substantive research yet"
+        },
+        "sandbox_access": {
+          "claim_id": "62.production.sandbox_access",
+          "status": "not_researched",
+          "value": null,
+          "context": "production credentials; edition/version not researched",
+          "evidence": [],
+          "supporting_claim_refs": [],
+          "rationale": "No substantive research yet"
+        },
+        "paid_required": {
+          "claim_id": "62.production.paid_required",
+          "status": "not_researched",
+          "value": null,
+          "context": "production credentials; edition/version not researched",
+          "evidence": [],
+          "supporting_claim_refs": [],
+          "rationale": "No substantive research yet"
+        },
+        "admin_approval_required": {
+          "claim_id": "62.production.admin_approval_required",
+          "status": "not_researched",
+          "value": null,
+          "context": "production credentials; edition/version not researched",
+          "evidence": [],
+          "supporting_claim_refs": [],
+          "rationale": "No substantive research yet"
+        },
+        "vendor_approval_required": {
+          "claim_id": "62.production.vendor_approval_required",
+          "status": "not_researched",
+          "value": null,
+          "context": "production credentials; edition/version not researched",
+          "evidence": [],
+          "supporting_claim_refs": [],
+          "rationale": "No substantive research yet"
+        },
+        "partner_approval_required": {
+          "claim_id": "62.production.partner_approval_required",
+          "status": "not_researched",
+          "value": null,
+          "context": "production credentials; edition/version not researched",
+          "evidence": [],
+          "supporting_claim_refs": [],
+          "rationale": "No substantive research yet"
+        },
+        "contact_sales_required": {
+          "claim_id": "62.production.contact_sales_required",
+          "status": "not_researched",
+          "value": null,
+          "context": "production credentials; edition/version not researched",
+          "evidence": [],
+          "supporting_claim_refs": [],
+          "rationale": "No substantive research yet"
+        },
+        "self_serve": {
+          "claim_id": "62.production.self_serve",
+          "status": "not_researched",
+          "value": null,
+          "context": "production credentials; edition/version not researched",
+          "evidence": [],
+          "supporting_claim_refs": [],
+          "rationale": "No substantive research yet"
+        }
+      }
+    },
+    "api_surface": {
+      "protocols": {
+        "coverage_status": "not_researched",
+        "items": [],
+        "notes": "Empty does not establish absence"
+      },
+      "public_documentation": {
+        "claim_id": "62.api.public_documentation",
+        "status": "not_researched",
+        "value": null,
+        "context": "Product edition/API version not yet researched",
+        "evidence": [],
+        "supporting_claim_refs": [],
+        "rationale": "No substantive research yet"
+      },
+      "resource_groups": {
+        "coverage_status": "not_researched",
+        "items": [],
+        "notes": "Empty does not establish absence"
+      },
+      "breadth": {
+        "claim_id": "62.api.breadth",
+        "status": "not_researched",
+        "value": null,
+        "context": "Product edition/API version not yet researched",
+        "evidence": [],
+        "supporting_claim_refs": [],
+        "rationale": "No substantive research yet"
+      }
+    },
+    "mcp": {
+      "discovery": {
+        "claim_id": "62.mcp",
+        "status": "not_researched",
+        "value": null,
+        "context": "Product edition/API version not yet researched",
+        "evidence": [],
+        "supporting_claim_refs": [],
+        "rationale": "No substantive research yet"
+      },
+      "entries": []
+    },
+    "buildability": {
+      "claim_id": "62.buildability",
+      "status": "not_researched",
+      "value": null,
+      "context": "Product edition/API version not yet researched",
+      "evidence": [],
+      "supporting_claim_refs": [],
+      "rationale": "No substantive research yet"
+    },
+    "conflicts": [],
+    "fetches": [
+      {
+        "source_url": "https://vercel.com/docs/rest-api",
+        "attempted_on": "2026-11-23",
+        "status": "fetched",
+        "http_status": 200,
+        "resolved_url": "https://vercel.com/docs/rest-api",
+        "error": null,
+        "content_sha256": "6199be4bc8d45fb426f314608c63f43e1e88bca9bb034419ac323ff1fd8b99e5"
+      },
+      {
+        "source_url": "https://vercel.com/docs/agent-resources/vercel-mcp",
+        "attempted_on": "2026-11-23",
+        "status": "fetched",
+        "http_status": 200,
+        "resolved_url": "https://vercel.com/docs/agent-resources/vercel-mcp",
+        "error": null,
+        "content_sha256": "db82c7ed719717608591ef014f927094a83d5d26b5bdb5ea18abcefe0014e533"
+      },
+      {
+        "source_url": "https://vercel.com/docs/plans/hobby",
+        "attempted_on": "2026-11-23",
+        "status": "fetched",
+        "http_status": 200,
+        "resolved_url": "https://vercel.com/docs/plans/hobby",
+        "error": null,
+        "content_sha256": "b2b1e59f9d7863f1555e4dd45159a52384d20d3ea8e22a6ba9cab0489f9e1cf3"
+      },
+      {
+        "source_url": "https://vercel.com/docs/rest-api/reference/welcome",
+        "attempted_on": "2026-11-23",
+        "status": "fetched",
+        "http_status": 200,
+        "resolved_url": "https://vercel.com/docs/rest-api",
+        "error": null,
+        "content_sha256": "6199be4bc8d45fb426f314608c63f43e1e88bca9bb034419ac323ff1fd8b99e5"
+      },
+      {
+        "source_url": "https://vercel.com/docs/rest-api/reference/authentication",
+        "attempted_on": "2026-11-23",
+        "status": "fetched",
+        "http_status": 200,
+        "resolved_url": "https://vercel.com/docs/rest-api/authentication",
+        "error": null,
+        "content_sha256": "4c3c1881e8e3c80f93f81aa4676bcd5cce6a5d05445105403c0151c658b42007"
+      },
+      {
+        "source_url": "https://vercel.com/docs/rest-api/deployments/get-a-deployment-by-id-or-url",
+        "attempted_on": "2026-11-23",
+        "status": "fetched",
+        "http_status": 200,
+        "resolved_url": "https://vercel.com/docs/rest-api/deployments/get-a-deployment-by-id-or-url",
+        "error": null,
+        "content_sha256": "7989d4ec638d2abaa0d4a7e96215615ff65f25413ab7fb9cba2ade36dfa09d5b"
+      },
+      {
+        "source_url": "https://vercel.com/docs/rest-api/reference",
+        "attempted_on": "2026-11-23",
+        "status": "fetched",
+        "http_status": 200,
+        "resolved_url": "https://vercel.com/docs/rest-api",
+        "error": null,
+        "content_sha256": "6199be4bc8d45fb426f314608c63f43e1e88bca9bb034419ac323ff1fd8b99e5"
+      },
+      {
+        "source_url": "https://vercel.com/docs/accounts/create-an-account",
+        "attempted_on": "2026-11-23",
+        "status": "fetched",
+        "http_status": 200,
+        "resolved_url": "https://vercel.com/docs/accounts",
+        "error": null,
+        "content_sha256": "21cc84b3f9a10b3c369b5d3f0a368dfed79961d7b2453ceab29a92af91084e2a"
+      }
+    ],
+    "review": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewed_on": null,
+      "adjudications": []
+    }
+  },
+  {
+    "schema_version": "1.1",
+    "run": {
+      "run_id": "task13-capture-003",
+      "parent_run_id": "task13-capture-002",
+      "created_on": "2026-11-23",
+      "producer": {
+        "id": "pipeline-collector",
+        "type": "script"
+      },
+      "correction_refs": [],
+      "sampling_manifest_ref": null
+    },
+    "identity": {
+      "id": 63,
+      "app": "Netlify",
+      "category": "Developer, Infra and Data platforms",
+      "roster_ref": "data/apps.json",
+      "resolution": {
+        "claim_id": "63.identity",
+        "status": "not_researched",
+        "value": null,
+        "context": "Product edition/API version not yet researched",
+        "evidence": [],
+        "supporting_claim_refs": [],
+        "rationale": "No substantive research yet"
+      }
+    },
+    "purpose": {
+      "claim_id": "63.purpose",
+      "status": "not_researched",
+      "value": null,
+      "context": "Product edition/API version not yet researched",
+      "evidence": [],
+      "supporting_claim_refs": [],
+      "rationale": "No substantive research yet"
+    },
+    "auth": {
+      "coverage_status": "not_researched",
+      "items": [],
+      "notes": "Empty does not establish absence"
+    },
+    "credential_eligibility": {
+      "testing": {
+        "context": "testing credential eligibility",
+        "free_access": {
+          "claim_id": "63.testing.free_access",
+          "status": "not_researched",
+          "value": null,
+          "context": "testing credentials; edition/version not researched",
+          "evidence": [],
+          "supporting_claim_refs": [],
+          "rationale": "No substantive research yet"
+        },
+        "trial_access": {
+          "claim_id": "63.testing.trial_access",
+          "status": "not_researched",
+          "value": null,
+          "context": "testing credentials; edition/version not researched",
+          "evidence": [],
+          "supporting_claim_refs": [],
+          "rationale": "No substantive research yet"
+        },
+        "sandbox_access": {
+          "claim_id": "63.testing.sandbox_access",
+          "status": "not_researched",
+          "value": null,
+          "context": "testing credentials; edition/version not researched",
+          "evidence": [],
+          "supporting_claim_refs": [],
+          "rationale": "No substantive research yet"
+        },
+        "paid_required": {
+          "claim_id": "63.testing.paid_required",
+          "status": "not_researched",
+          "value": null,
+          "context": "testing credentials; edition/version not researched",
+          "evidence": [],
+          "supporting_claim_refs": [],
+          "rationale": "No substantive research yet"
+        },
+        "admin_approval_required": {
+          "claim_id": "63.testing.admin_approval_required",
+          "status": "not_researched",
+          "value": null,
+          "context": "testing credentials; edition/version not researched",
+          "evidence": [],
+          "supporting_claim_refs": [],
+          "rationale": "No substantive research yet"
+        },
+        "vendor_approval_required": {
+          "claim_id": "63.testing.vendor_approval_required",
+          "status": "not_researched",
+          "value": null,
+          "context": "testing credentials; edition/version not researched",
+          "evidence": [],
+          "supporting_claim_refs": [],
+          "rationale": "No substantive research yet"
+        },
+        "partner_approval_required": {
+          "claim_id": "63.testing.partner_approval_required",
+          "status": "not_researched",
+          "value": null,
+          "context": "testing credentials; edition/version not researched",
+          "evidence": [],
+          "supporting_claim_refs": [],
+          "rationale": "No substantive research yet"
+        },
+        "contact_sales_required": {
+          "claim_id": "63.testing.contact_sales_required",
+          "status": "not_researched",
+          "value": null,
+          "context": "testing credentials; edition/version not researched",
+          "evidence": [],
+          "supporting_claim_refs": [],
+          "rationale": "No substantive research yet"
+        },
+        "self_serve": {
+          "claim_id": "63.testing.self_serve",
+          "status": "not_researched",
+          "value": null,
+          "context": "testing credentials; edition/version not researched",
+          "evidence": [],
+          "supporting_claim_refs": [],
+          "rationale": "No substantive research yet"
+        }
+      },
+      "production": {
+        "context": "production credential eligibility",
+        "free_access": {
+          "claim_id": "63.production.free_access",
+          "status": "not_researched",
+          "value": null,
+          "context": "production credentials; edition/version not researched",
+          "evidence": [],
+          "supporting_claim_refs": [],
+          "rationale": "No substantive research yet"
+        },
+        "trial_access": {
+          "claim_id": "63.production.trial_access",
+          "status": "not_researched",
+          "value": null,
+          "context": "production credentials; edition/version not researched",
+          "evidence": [],
+          "supporting_claim_refs": [],
+          "rationale": "No substantive research yet"
+        },
+        "sandbox_access": {
+          "claim_id": "63.production.sandbox_access",
+          "status": "not_researched",
+          "value": null,
+          "context": "production credentials; edition/version not researched",
+          "evidence": [],
+          "supporting_claim_refs": [],
+          "rationale": "No substantive research yet"
+        },
+        "paid_required": {
+          "claim_id": "63.production.paid_required",
+          "status": "not_researched",
+          "value": null,
+          "context": "production credentials; edition/version not researched",
+          "evidence": [],
+          "supporting_claim_refs": [],
+          "rationale": "No substantive research yet"
+        },
+        "admin_approval_required": {
+          "claim_id": "63.production.admin_approval_required",
+          "status": "not_researched",
+          "value": null,
+          "context": "production credentials; edition/version not researched",
+          "evidence": [],
+          "supporting_claim_refs": [],
+          "rationale": "No substantive research yet"
+        },
+        "vendor_approval_required": {
+          "claim_id": "63.production.vendor_approval_required",
+          "status": "not_researched",
+          "value": null,
+          "context": "production credentials; edition/version not researched",
+          "evidence": [],
+          "supporting_claim_refs": [],
+          "rationale": "No substantive research yet"
+        },
+        "partner_approval_required": {
+          "claim_id": "63.production.partner_approval_required",
+          "status": "not_researched",
+          "value": null,
+          "context": "production credentials; edition/version not researched",
+          "evidence": [],
+          "supporting_claim_refs": [],
+          "rationale": "No substantive research yet"
+        },
+        "contact_sales_required": {
+          "claim_id": "63.production.contact_sales_required",
+          "status": "not_researched",
+          "value": null,
+          "context": "production credentials; edition/version not researched",
+          "evidence": [],
+          "supporting_claim_refs": [],
+          "rationale": "No substantive research yet"
+        },
+        "self_serve": {
+          "claim_id": "63.production.self_serve",
+          "status": "not_researched",
+          "value": null,
+          "context": "production credentials; edition/version not researched",
+          "evidence": [],
+          "supporting_claim_refs": [],
+          "rationale": "No substantive research yet"
+        }
+      }
+    },
+    "api_surface": {
+      "protocols": {
+        "coverage_status": "not_researched",
+        "items": [],
+        "notes": "Empty does not establish absence"
+      },
+      "public_documentation": {
+        "claim_id": "63.api.public_documentation",
+        "status": "not_researched",
+        "value": null,
+        "context": "Product edition/API version not yet researched",
+        "evidence": [],
+        "supporting_claim_refs": [],
+        "rationale": "No substantive research yet"
+      },
+      "resource_groups": {
+        "coverage_status": "not_researched",
+        "items": [],
+        "notes": "Empty does not establish absence"
+      },
+      "breadth": {
+        "claim_id": "63.api.breadth",
+        "status": "not_researched",
+        "value": null,
+        "context": "Product edition/API version not yet researched",
+        "evidence": [],
+        "supporting_claim_refs": [],
+        "rationale": "No substantive research yet"
+      }
+    },
+    "mcp": {
+      "discovery": {
+        "claim_id": "63.mcp",
+        "status": "not_researched",
+        "value": null,
+        "context": "Product edition/API version not yet researched",
+        "evidence": [],
+        "supporting_claim_refs": [],
+        "rationale": "No substantive research yet"
+      },
+      "entries": []
+    },
+    "buildability": {
+      "claim_id": "63.buildability",
+      "status": "not_researched",
+      "value": null,
+      "context": "Product edition/API version not yet researched",
+      "evidence": [],
+      "supporting_claim_refs": [],
+      "rationale": "No substantive research yet"
+    },
+    "conflicts": [],
+    "fetches": [
+      {
+        "source_url": "https://docs.netlify.com/api-and-cli-guides/api-guides/get-started-with-api/",
+        "attempted_on": "2026-11-23",
+        "status": "fetched",
+        "http_status": 200,
+        "resolved_url": "https://docs.netlify.com/api-and-cli-guides/api-guides/get-started-with-api/",
+        "error": null,
+        "content_sha256": "c703074e7b5111530d4bc920f775600e28064c56049779e9344a7f49a2f5df92"
+      },
+      {
+        "source_url": "https://raw.githubusercontent.com/netlify/netlify-mcp/main/README.md",
+        "attempted_on": "2026-11-23",
+        "status": "fetched",
+        "http_status": 200,
+        "resolved_url": "https://raw.githubusercontent.com/netlify/netlify-mcp/main/README.md",
+        "error": null,
+        "content_sha256": "7bf3eadc1b69f65505f1c39ed889ffdd2369bd1fff3511054db2c40bd45758c2"
+      },
+      {
+        "source_url": "https://www.netlify.com/pricing/",
+        "attempted_on": "2026-11-23",
+        "status": "timeout",
+        "http_status": null,
+        "resolved_url": null,
+        "error": "Request timed out",
+        "content_sha256": null
+      },
+      {
+        "source_url": "https://www.netlify.com/pricing/",
+        "attempted_on": "2026-11-23",
+        "status": "fetched",
+        "http_status": 200,
+        "resolved_url": "https://www.netlify.com/pricing/",
+        "error": null,
+        "content_sha256": "ab74a61027409e02855e2da29457df9e1c886e1eb5a782faeca55f5647f3ffe6"
+      }
+    ],
+    "review": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewed_on": null,
+      "adjudications": []
+    }
+  },
+  {
+    "schema_version": "1.1",
+    "run": {
+      "run_id": "task13-capture-003",
+      "parent_run_id": "task13-capture-002",
+      "created_on": "2026-11-23",
+      "producer": {
+        "id": "pipeline-collector",
+        "type": "script"
+      },
+      "correction_refs": [],
+      "sampling_manifest_ref": null
+    },
+    "identity": {
+      "id": 64,
+      "app": "Cloudflare",
+      "category": "Developer, Infra and Data platforms",
+      "roster_ref": "data/apps.json",
+      "resolution": {
+        "claim_id": "64.identity",
+        "status": "not_researched",
+        "value": null,
+        "context": "Product edition/API version not yet researched",
+        "evidence": [],
+        "supporting_claim_refs": [],
+        "rationale": "No substantive research yet"
+      }
+    },
+    "purpose": {
+      "claim_id": "64.purpose",
+      "status": "not_researched",
+      "value": null,
+      "context": "Product edition/API version not yet researched",
+      "evidence": [],
+      "supporting_claim_refs": [],
+      "rationale": "No substantive research yet"
+    },
+    "auth": {
+      "coverage_status": "not_researched",
+      "items": [],
+      "notes": "Empty does not establish absence"
+    },
+    "credential_eligibility": {
+      "testing": {
+        "context": "testing credential eligibility",
+        "free_access": {
+          "claim_id": "64.testing.free_access",
+          "status": "not_researched",
+          "value": null,
+          "context": "testing credentials; edition/version not researched",
+          "evidence": [],
+          "supporting_claim_refs": [],
+          "rationale": "No substantive research yet"
+        },
+        "trial_access": {
+          "claim_id": "64.testing.trial_access",
+          "status": "not_researched",
+          "value": null,
+          "context": "testing credentials; edition/version not researched",
+          "evidence": [],
+          "supporting_claim_refs": [],
+          "rationale": "No substantive research yet"
+        },
+        "sandbox_access": {
+          "claim_id": "64.testing.sandbox_access",
+          "status": "not_researched",
+          "value": null,
+          "context": "testing credentials; edition/version not researched",
+          "evidence": [],
+          "supporting_claim_refs": [],
+          "rationale": "No substantive research yet"
+        },
+        "paid_required": {
+          "claim_id": "64.testing.paid_required",
+          "status": "not_researched",
+          "value": null,
+          "context": "testing credentials; edition/version not researched",
+          "evidence": [],
+          "supporting_claim_refs": [],
+          "rationale": "No substantive research yet"
+        },
+        "admin_approval_required": {
+          "claim_id": "64.testing.admin_approval_required",
+          "status": "not_researched",
+          "value": null,
+          "context": "testing credentials; edition/version not researched",
+          "evidence": [],
+          "supporting_claim_refs": [],
+          "rationale": "No substantive research yet"
+        },
+        "vendor_approval_required": {
+          "claim_id": "64.testing.vendor_approval_required",
+          "status": "not_researched",
+          "value": null,
+          "context": "testing credentials; edition/version not researched",
+          "evidence": [],
+          "supporting_claim_refs": [],
+          "rationale": "No substantive research yet"
+        },
+        "partner_approval_required": {
+          "claim_id": "64.testing.partner_approval_required",
+          "status": "not_researched",
+          "value": null,
+          "context": "testing credentials; edition/version not researched",
+          "evidence": [],
+          "supporting_claim_refs": [],
+          "rationale": "No substantive research yet"
+        },
+        "contact_sales_required": {
+          "claim_id": "64.testing.contact_sales_required",
+          "status": "not_researched",
+          "value": null,
+          "context": "testing credentials; edition/version not researched",
+          "evidence": [],
+          "supporting_claim_refs": [],
+          "rationale": "No substantive research yet"
+        },
+        "self_serve": {
+          "claim_id": "64.testing.self_serve",
+          "status": "not_researched",
+          "value": null,
+          "context": "testing credentials; edition/version not researched",
+          "evidence": [],
+          "supporting_claim_refs": [],
+          "rationale": "No substantive research yet"
+        }
+      },
+      "production": {
+        "context": "production credential eligibility",
+        "free_access": {
+          "claim_id": "64.production.free_access",
+          "status": "not_researched",
+          "value": null,
+          "context": "production credentials; edition/version not researched",
+          "evidence": [],
+          "supporting_claim_refs": [],
+          "rationale": "No substantive research yet"
+        },
+        "trial_access": {
+          "claim_id": "64.production.trial_access",
+          "status": "not_researched",
+          "value": null,
+          "context": "production credentials; edition/version not researched",
+          "evidence": [],
+          "supporting_claim_refs": [],
+          "rationale": "No substantive research yet"
+        },
+        "sandbox_access": {
+          "claim_id": "64.production.sandbox_access",
+          "status": "not_researched",
+          "value": null,
+          "context": "production credentials; edition/version not researched",
+          "evidence": [],
+          "supporting_claim_refs": [],
+          "rationale": "No substantive research yet"
+        },
+        "paid_required": {
+          "claim_id": "64.production.paid_required",
+          "status": "not_researched",
+          "value": null,
+          "context": "production credentials; edition/version not researched",
+          "evidence": [],
+          "supporting_claim_refs": [],
+          "rationale": "No substantive research yet"
+        },
+        "admin_approval_required": {
+          "claim_id": "64.production.admin_approval_required",
+          "status": "not_researched",
+          "value": null,
+          "context": "production credentials; edition/version not researched",
+          "evidence": [],
+          "supporting_claim_refs": [],
+          "rationale": "No substantive research yet"
+        },
+        "vendor_approval_required": {
+          "claim_id": "64.production.vendor_approval_required",
+          "status": "not_researched",
+          "value": null,
+          "context": "production credentials; edition/version not researched",
+          "evidence": [],
+          "supporting_claim_refs": [],
+          "rationale": "No substantive research yet"
+        },
+        "partner_approval_required": {
+          "claim_id": "64.production.partner_approval_required",
+          "status": "not_researched",
+          "value": null,
+          "context": "production credentials; edition/version not researched",
+          "evidence": [],
+          "supporting_claim_refs": [],
+          "rationale": "No substantive research yet"
+        },
+        "contact_sales_required": {
+          "claim_id": "64.production.contact_sales_required",
+          "status": "not_researched",
+          "value": null,
+          "context": "production credentials; edition/version not researched",
+          "evidence": [],
+          "supporting_claim_refs": [],
+          "rationale": "No substantive research yet"
+        },
+        "self_serve": {
+          "claim_id": "64.production.self_serve",
+          "status": "not_researched",
+          "value": null,
+          "context": "production credentials; edition/version not researched",
+          "evidence": [],
+          "supporting_claim_refs": [],
+          "rationale": "No substantive research yet"
+        }
+      }
+    },
+    "api_surface": {
+      "protocols": {
+        "coverage_status": "not_researched",
+        "items": [],
+        "notes": "Empty does not establish absence"
+      },
+      "public_documentation": {
+        "claim_id": "64.api.public_documentation",
+        "status": "not_researched",
+        "value": null,
+        "context": "Product edition/API version not yet researched",
+        "evidence": [],
+        "supporting_claim_refs": [],
+        "rationale": "No substantive research yet"
+      },
+      "resource_groups": {
+        "coverage_status": "not_researched",
+        "items": [],
+        "notes": "Empty does not establish absence"
+      },
+      "breadth": {
+        "claim_id": "64.api.breadth",
+        "status": "not_researched",
+        "value": null,
+        "context": "Product edition/API version not yet researched",
+        "evidence": [],
+        "supporting_claim_refs": [],
+        "rationale": "No substantive research yet"
+      }
+    },
+    "mcp": {
+      "discovery": {
+        "claim_id": "64.mcp",
+        "status": "not_researched",
+        "value": null,
+        "context": "Product edition/API version not yet researched",
+        "evidence": [],
+        "supporting_claim_refs": [],
+        "rationale": "No substantive research yet"
+      },
+      "entries": []
+    },
+    "buildability": {
+      "claim_id": "64.buildability",
+      "status": "not_researched",
+      "value": null,
+      "context": "Product edition/API version not yet researched",
+      "evidence": [],
+      "supporting_claim_refs": [],
+      "rationale": "No substantive research yet"
+    },
+    "conflicts": [],
+    "fetches": [
+      {
+        "source_url": "https://developers.cloudflare.com/api/",
+        "attempted_on": "2026-11-23",
+        "status": "fetched",
+        "http_status": 200,
+        "resolved_url": "https://developers.cloudflare.com/api/",
+        "error": null,
+        "content_sha256": "13f4a4e73aecbb15920f3c0413d5135cc3f1ceb0db32f543641a1838d55b91f9"
+      },
+      {
+        "source_url": "https://developers.cloudflare.com/fundamentals/api/get-started/create-token/",
+        "attempted_on": "2026-11-23",
+        "status": "fetched",
+        "http_status": 200,
+        "resolved_url": "https://developers.cloudflare.com/fundamentals/api/get-started/create-token/",
+        "error": null,
+        "content_sha256": "6f48483a7e8ccc6355f4c12672ae4f8bab89d0a9d40d10e055f5e7f43389e470"
+      },
+      {
+        "source_url": "https://raw.githubusercontent.com/cloudflare/mcp-server-cloudflare/main/README.md",
+        "attempted_on": "2026-11-23",
+        "status": "fetched",
+        "http_status": 200,
+        "resolved_url": "https://raw.githubusercontent.com/cloudflare/mcp-server-cloudflare/main/README.md",
+        "error": null,
+        "content_sha256": "32f2dbb414f68990372af2b44dd30044cd6701a8be7a216aa8bee50b5f321247"
+      }
+    ],
+    "review": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewed_on": null,
+      "adjudications": []
+    }
+  },
+  {
+    "schema_version": "1.1",
+    "run": {
+      "run_id": "task13-capture-003",
+      "parent_run_id": "task13-capture-002",
+      "created_on": "2026-11-23",
+      "producer": {
+        "id": "pipeline-collector",
+        "type": "script"
+      },
+      "correction_refs": [],
+      "sampling_manifest_ref": null
+    },
+    "identity": {
+      "id": 65,
+      "app": "Supabase",
+      "category": "Developer, Infra and Data platforms",
+      "roster_ref": "data/apps.json",
+      "resolution": {
+        "claim_id": "65.identity",
+        "status": "not_researched",
+        "value": null,
+        "context": "Product edition/API version not yet researched",
+        "evidence": [],
+        "supporting_claim_refs": [],
+        "rationale": "No substantive research yet"
+      }
+    },
+    "purpose": {
+      "claim_id": "65.purpose",
+      "status": "not_researched",
+      "value": null,
+      "context": "Product edition/API version not yet researched",
+      "evidence": [],
+      "supporting_claim_refs": [],
+      "rationale": "No substantive research yet"
+    },
+    "auth": {
+      "coverage_status": "not_researched",
+      "items": [],
+      "notes": "Empty does not establish absence"
+    },
+    "credential_eligibility": {
+      "testing": {
+        "context": "testing credential eligibility",
+        "free_access": {
+          "claim_id": "65.testing.free_access",
+          "status": "not_researched",
+          "value": null,
+          "context": "testing credentials; edition/version not researched",
+          "evidence": [],
+          "supporting_claim_refs": [],
+          "rationale": "No substantive research yet"
+        },
+        "trial_access": {
+          "claim_id": "65.testing.trial_access",
+          "status": "not_researched",
+          "value": null,
+          "context": "testing credentials; edition/version not researched",
+          "evidence": [],
+          "supporting_claim_refs": [],
+          "rationale": "No substantive research yet"
+        },
+        "sandbox_access": {
+          "claim_id": "65.testing.sandbox_access",
+          "status": "not_researched",
+          "value": null,
+          "context": "testing credentials; edition/version not researched",
+          "evidence": [],
+          "supporting_claim_refs": [],
+          "rationale": "No substantive research yet"
+        },
+        "paid_required": {
+          "claim_id": "65.testing.paid_required",
+          "status": "not_researched",
+          "value": null,
+          "context": "testing credentials; edition/version not researched",
+          "evidence": [],
+          "supporting_claim_refs": [],
+          "rationale": "No substantive research yet"
+        },
+        "admin_approval_required": {
+          "claim_id": "65.testing.admin_approval_required",
+          "status": "not_researched",
+          "value": null,
+          "context": "testing credentials; edition/version not researched",
+          "evidence": [],
+          "supporting_claim_refs": [],
+          "rationale": "No substantive research yet"
+        },
+        "vendor_approval_required": {
+          "claim_id": "65.testing.vendor_approval_required",
+          "status": "not_researched",
+          "value": null,
+          "context": "testing credentials; edition/version not researched",
+          "evidence": [],
+          "supporting_claim_refs": [],
+          "rationale": "No substantive research yet"
+        },
+        "partner_approval_required": {
+          "claim_id": "65.testing.partner_approval_required",
+          "status": "not_researched",
+          "value": null,
+          "context": "testing credentials; edition/version not researched",
+          "evidence": [],
+          "supporting_claim_refs": [],
+          "rationale": "No substantive research yet"
+        },
+        "contact_sales_required": {
+          "claim_id": "65.testing.contact_sales_required",
+          "status": "not_researched",
+          "value": null,
+          "context": "testing credentials; edition/version not researched",
+          "evidence": [],
+          "supporting_claim_refs": [],
+          "rationale": "No substantive research yet"
+        },
+        "self_serve": {
+          "claim_id": "65.testing.self_serve",
+          "status": "not_researched",
+          "value": null,
+          "context": "testing credentials; edition/version not researched",
+          "evidence": [],
+          "supporting_claim_refs": [],
+          "rationale": "No substantive research yet"
+        }
+      },
+      "production": {
+        "context": "production credential eligibility",
+        "free_access": {
+          "claim_id": "65.production.free_access",
+          "status": "not_researched",
+          "value": null,
+          "context": "production credentials; edition/version not researched",
+          "evidence": [],
+          "supporting_claim_refs": [],
+          "rationale": "No substantive research yet"
+        },
+        "trial_access": {
+          "claim_id": "65.production.trial_access",
+          "status": "not_researched",
+          "value": null,
+          "context": "production credentials; edition/version not researched",
+          "evidence": [],
+          "supporting_claim_refs": [],
+          "rationale": "No substantive research yet"
+        },
+        "sandbox_access": {
+          "claim_id": "65.production.sandbox_access",
+          "status": "not_researched",
+          "value": null,
+          "context": "production credentials; edition/version not researched",
+          "evidence": [],
+          "supporting_claim_refs": [],
+          "rationale": "No substantive research yet"
+        },
+        "paid_required": {
+          "claim_id": "65.production.paid_required",
+          "status": "not_researched",
+          "value": null,
+          "context": "production credentials; edition/version not researched",
+          "evidence": [],
+          "supporting_claim_refs": [],
+          "rationale": "No substantive research yet"
+        },
+        "admin_approval_required": {
+          "claim_id": "65.production.admin_approval_required",
+          "status": "not_researched",
+          "value": null,
+          "context": "production credentials; edition/version not researched",
+          "evidence": [],
+          "supporting_claim_refs": [],
+          "rationale": "No substantive research yet"
+        },
+        "vendor_approval_required": {
+          "claim_id": "65.production.vendor_approval_required",
+          "status": "not_researched",
+          "value": null,
+          "context": "production credentials; edition/version not researched",
+          "evidence": [],
+          "supporting_claim_refs": [],
+          "rationale": "No substantive research yet"
+        },
+        "partner_approval_required": {
+          "claim_id": "65.production.partner_approval_required",
+          "status": "not_researched",
+          "value": null,
+          "context": "production credentials; edition/version not researched",
+          "evidence": [],
+          "supporting_claim_refs": [],
+          "rationale": "No substantive research yet"
+        },
+        "contact_sales_required": {
+          "claim_id": "65.production.contact_sales_required",
+          "status": "not_researched",
+          "value": null,
+          "context": "production credentials; edition/version not researched",
+          "evidence": [],
+          "supporting_claim_refs": [],
+          "rationale": "No substantive research yet"
+        },
+        "self_serve": {
+          "claim_id": "65.production.self_serve",
+          "status": "not_researched",
+          "value": null,
+          "context": "production credentials; edition/version not researched",
+          "evidence": [],
+          "supporting_claim_refs": [],
+          "rationale": "No substantive research yet"
+        }
+      }
+    },
+    "api_surface": {
+      "protocols": {
+        "coverage_status": "not_researched",
+        "items": [],
+        "notes": "Empty does not establish absence"
+      },
+      "public_documentation": {
+        "claim_id": "65.api.public_documentation",
+        "status": "not_researched",
+        "value": null,
+        "context": "Product edition/API version not yet researched",
+        "evidence": [],
+        "supporting_claim_refs": [],
+        "rationale": "No substantive research yet"
+      },
+      "resource_groups": {
+        "coverage_status": "not_researched",
+        "items": [],
+        "notes": "Empty does not establish absence"
+      },
+      "breadth": {
+        "claim_id": "65.api.breadth",
+        "status": "not_researched",
+        "value": null,
+        "context": "Product edition/API version not yet researched",
+        "evidence": [],
+        "supporting_claim_refs": [],
+        "rationale": "No substantive research yet"
+      }
+    },
+    "mcp": {
+      "discovery": {
+        "claim_id": "65.mcp",
+        "status": "not_researched",
+        "value": null,
+        "context": "Product edition/API version not yet researched",
+        "evidence": [],
+        "supporting_claim_refs": [],
+        "rationale": "No substantive research yet"
+      },
+      "entries": []
+    },
+    "buildability": {
+      "claim_id": "65.buildability",
+      "status": "not_researched",
+      "value": null,
+      "context": "Product edition/API version not yet researched",
+      "evidence": [],
+      "supporting_claim_refs": [],
+      "rationale": "No substantive research yet"
+    },
+    "conflicts": [],
+    "fetches": [
+      {
+        "source_url": "https://supabase.com/docs/guides/api",
+        "attempted_on": "2026-11-23",
+        "status": "fetched",
+        "http_status": 200,
+        "resolved_url": "https://supabase.com/docs/guides/api",
+        "error": null,
+        "content_sha256": "dc871d04ef08c72aed799dc61c7ebd4b6d8e2a96ac354f078f0eec663923e7bc"
+      },
+      {
+        "source_url": "https://supabase.com/docs/guides/api/api-keys",
+        "attempted_on": "2026-11-23",
+        "status": "fetched",
+        "http_status": 200,
+        "resolved_url": "https://supabase.com/docs/guides/getting-started/api-keys",
+        "error": null,
+        "content_sha256": "6dff57862de9d1ad95094aee34bc858f7cd6e101dfdd6d33a2dad74d2fcb3e88"
+      },
+      {
+        "source_url": "https://supabase.com/docs/reference/api/introduction",
+        "attempted_on": "2026-11-23",
+        "status": "fetched",
+        "http_status": 200,
+        "resolved_url": "https://supabase.com/docs/reference/api/introduction",
+        "error": null,
+        "content_sha256": "b2653af603a08ba5aea14fb5a4db2935f990ddaf3d906fd6d2f1a25acb3b4729"
+      },
+      {
+        "source_url": "https://supabase.com/docs/guides/getting-started/mcp",
+        "attempted_on": "2026-11-23",
+        "status": "fetched",
+        "http_status": 200,
+        "resolved_url": "https://supabase.com/docs/guides/ai-tools/mcp",
+        "error": null,
+        "content_sha256": "7ab1e1009881ee90e2ff7446654f1c72888503b2fef06541f571eef90777d539"
+      },
+      {
+        "source_url": "https://supabase.com/pricing",
+        "attempted_on": "2026-11-23",
+        "status": "fetched",
+        "http_status": 200,
+        "resolved_url": "https://supabase.com/pricing",
+        "error": null,
+        "content_sha256": "2777cee29301e56223d96632f3d26f45a4c59391f79f14e8a50c1c998c40f517"
+      }
+    ],
+    "review": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewed_on": null,
+      "adjudications": []
+    }
+  },
+  {
+    "schema_version": "1.1",
+    "run": {
+      "run_id": "task13-capture-003",
+      "parent_run_id": "task13-capture-002",
+      "created_on": "2026-11-23",
+      "producer": {
+        "id": "pipeline-collector",
+        "type": "script"
+      },
+      "correction_refs": [],
+      "sampling_manifest_ref": null
+    },
+    "identity": {
+      "id": 66,
+      "app": "Neo4j",
+      "category": "Developer, Infra and Data platforms",
+      "roster_ref": "data/apps.json",
+      "resolution": {
+        "claim_id": "66.identity",
+        "status": "not_researched",
+        "value": null,
+        "context": "Product edition/API version not yet researched",
+        "evidence": [],
+        "supporting_claim_refs": [],
+        "rationale": "No substantive research yet"
+      }
+    },
+    "purpose": {
+      "claim_id": "66.purpose",
+      "status": "not_researched",
+      "value": null,
+      "context": "Product edition/API version not yet researched",
+      "evidence": [],
+      "supporting_claim_refs": [],
+      "rationale": "No substantive research yet"
+    },
+    "auth": {
+      "coverage_status": "not_researched",
+      "items": [],
+      "notes": "Empty does not establish absence"
+    },
+    "credential_eligibility": {
+      "testing": {
+        "context": "testing credential eligibility",
+        "free_access": {
+          "claim_id": "66.testing.free_access",
+          "status": "not_researched",
+          "value": null,
+          "context": "testing credentials; edition/version not researched",
+          "evidence": [],
+          "supporting_claim_refs": [],
+          "rationale": "No substantive research yet"
+        },
+        "trial_access": {
+          "claim_id": "66.testing.trial_access",
+          "status": "not_researched",
+          "value": null,
+          "context": "testing credentials; edition/version not researched",
+          "evidence": [],
+          "supporting_claim_refs": [],
+          "rationale": "No substantive research yet"
+        },
+        "sandbox_access": {
+          "claim_id": "66.testing.sandbox_access",
+          "status": "not_researched",
+          "value": null,
+          "context": "testing credentials; edition/version not researched",
+          "evidence": [],
+          "supporting_claim_refs": [],
+          "rationale": "No substantive research yet"
+        },
+        "paid_required": {
+          "claim_id": "66.testing.paid_required",
+          "status": "not_researched",
+          "value": null,
+          "context": "testing credentials; edition/version not researched",
+          "evidence": [],
+          "supporting_claim_refs": [],
+          "rationale": "No substantive research yet"
+        },
+        "admin_approval_required": {
+          "claim_id": "66.testing.admin_approval_required",
+          "status": "not_researched",
+          "value": null,
+          "context": "testing credentials; edition/version not researched",
+          "evidence": [],
+          "supporting_claim_refs": [],
+          "rationale": "No substantive research yet"
+        },
+        "vendor_approval_required": {
+          "claim_id": "66.testing.vendor_approval_required",
+          "status": "not_researched",
+          "value": null,
+          "context": "testing credentials; edition/version not researched",
+          "evidence": [],
+          "supporting_claim_refs": [],
+          "rationale": "No substantive research yet"
+        },
+        "partner_approval_required": {
+          "claim_id": "66.testing.partner_approval_required",
+          "status": "not_researched",
+          "value": null,
+          "context": "testing credentials; edition/version not researched",
+          "evidence": [],
+          "supporting_claim_refs": [],
+          "rationale": "No substantive research yet"
+        },
+        "contact_sales_required": {
+          "claim_id": "66.testing.contact_sales_required",
+          "status": "not_researched",
+          "value": null,
+          "context": "testing credentials; edition/version not researched",
+          "evidence": [],
+          "supporting_claim_refs": [],
+          "rationale": "No substantive research yet"
+        },
+        "self_serve": {
+          "claim_id": "66.testing.self_serve",
+          "status": "not_researched",
+          "value": null,
+          "context": "testing credentials; edition/version not researched",
+          "evidence": [],
+          "supporting_claim_refs": [],
+          "rationale": "No substantive research yet"
+        }
+      },
+      "production": {
+        "context": "production credential eligibility",
+        "free_access": {
+          "claim_id": "66.production.free_access",
+          "status": "not_researched",
+          "value": null,
+          "context": "production credentials; edition/version not researched",
+          "evidence": [],
+          "supporting_claim_refs": [],
+          "rationale": "No substantive research yet"
+        },
+        "trial_access": {
+          "claim_id": "66.production.trial_access",
+          "status": "not_researched",
+          "value": null,
+          "context": "production credentials; edition/version not researched",
+          "evidence": [],
+          "supporting_claim_refs": [],
+          "rationale": "No substantive research yet"
+        },
+        "sandbox_access": {
+          "claim_id": "66.production.sandbox_access",
+          "status": "not_researched",
+          "value": null,
+          "context": "production credentials; edition/version not researched",
+          "evidence": [],
+          "supporting_claim_refs": [],
+          "rationale": "No substantive research yet"
+        },
+        "paid_required": {
+          "claim_id": "66.production.paid_required",
+          "status": "not_researched",
+          "value": null,
+          "context": "production credentials; edition/version not researched",
+          "evidence": [],
+          "supporting_claim_refs": [],
+          "rationale": "No substantive research yet"
+        },
+        "admin_approval_required": {
+          "claim_id": "66.production.admin_approval_required",
+          "status": "not_researched",
+          "value": null,
+          "context": "production credentials; edition/version not researched",
+          "evidence": [],
+          "supporting_claim_refs": [],
+          "rationale": "No substantive research yet"
+        },
+        "vendor_approval_required": {
+          "claim_id": "66.production.vendor_approval_required",
+          "status": "not_researched",
+          "value": null,
+          "context": "production credentials; edition/version not researched",
+          "evidence": [],
+          "supporting_claim_refs": [],
+          "rationale": "No substantive research yet"
+        },
+        "partner_approval_required": {
+          "claim_id": "66.production.partner_approval_required",
+          "status": "not_researched",
+          "value": null,
+          "context": "production credentials; edition/version not researched",
+          "evidence": [],
+          "supporting_claim_refs": [],
+          "rationale": "No substantive research yet"
+        },
+        "contact_sales_required": {
+          "claim_id": "66.production.contact_sales_required",
+          "status": "not_researched",
+          "value": null,
+          "context": "production credentials; edition/version not researched",
+          "evidence": [],
+          "supporting_claim_refs": [],
+          "rationale": "No substantive research yet"
+        },
+        "self_serve": {
+          "claim_id": "66.production.self_serve",
+          "status": "not_researched",
+          "value": null,
+          "context": "production credentials; edition/version not researched",
+          "evidence": [],
+          "supporting_claim_refs": [],
+          "rationale": "No substantive research yet"
+        }
+      }
+    },
+    "api_surface": {
+      "protocols": {
+        "coverage_status": "not_researched",
+        "items": [],
+        "notes": "Empty does not establish absence"
+      },
+      "public_documentation": {
+        "claim_id": "66.api.public_documentation",
+        "status": "not_researched",
+        "value": null,
+        "context": "Product edition/API version not yet researched",
+        "evidence": [],
+        "supporting_claim_refs": [],
+        "rationale": "No substantive research yet"
+      },
+      "resource_groups": {
+        "coverage_status": "not_researched",
+        "items": [],
+        "notes": "Empty does not establish absence"
+      },
+      "breadth": {
+        "claim_id": "66.api.breadth",
+        "status": "not_researched",
+        "value": null,
+        "context": "Product edition/API version not yet researched",
+        "evidence": [],
+        "supporting_claim_refs": [],
+        "rationale": "No substantive research yet"
+      }
+    },
+    "mcp": {
+      "discovery": {
+        "claim_id": "66.mcp",
+        "status": "not_researched",
+        "value": null,
+        "context": "Product edition/API version not yet researched",
+        "evidence": [],
+        "supporting_claim_refs": [],
+        "rationale": "No substantive research yet"
+      },
+      "entries": []
+    },
+    "buildability": {
+      "claim_id": "66.buildability",
+      "status": "not_researched",
+      "value": null,
+      "context": "Product edition/API version not yet researched",
+      "evidence": [],
+      "supporting_claim_refs": [],
+      "rationale": "No substantive research yet"
+    },
+    "conflicts": [],
+    "fetches": [
+      {
+        "source_url": "https://neo4j.com/docs/query-api/current/",
+        "attempted_on": "2026-11-23",
+        "status": "fetched",
+        "http_status": 200,
+        "resolved_url": "https://neo4j.com/docs/query-api/current/",
+        "error": null,
+        "content_sha256": "751acc4909fd09f273d47302e72965bfae18992fd7dcad253571b1ae9bc730a4"
+      },
+      {
+        "source_url": "https://neo4j.com/docs/query-api/current/authentication-authorization/",
+        "attempted_on": "2026-11-23",
+        "status": "fetched",
+        "http_status": 200,
+        "resolved_url": "https://neo4j.com/docs/query-api/current/authentication-authorization/",
+        "error": null,
+        "content_sha256": "257c76861e57f79d36f085a2794c53c1e4ce38c6ae07c27a94078caf669b930c"
+      },
+      {
+        "source_url": "https://neo4j.com/docs/mcp/current/",
+        "attempted_on": "2026-11-23",
+        "status": "fetched",
+        "http_status": 200,
+        "resolved_url": "https://neo4j.com/docs/mcp/current/",
+        "error": null,
+        "content_sha256": "726d464205d4eab34f93a26d3b9046831d08c3cfb5b9ee93858c17d494c1a32c"
+      },
+      {
+        "source_url": "https://neo4j.com/docs/mcp/current/authentication/",
+        "attempted_on": "2026-11-23",
+        "status": "fetched",
+        "http_status": 200,
+        "resolved_url": "https://neo4j.com/docs/mcp/current/authentication/",
+        "error": null,
+        "content_sha256": "f8a58e1eb8a3999bdaef20b3271327538425574d119e838b51417b07cbeb728d"
+      },
+      {
+        "source_url": "https://neo4j.com/cloud/platform/aura-graph-database/",
+        "attempted_on": "2026-11-23",
+        "status": "fetched",
+        "http_status": 200,
+        "resolved_url": "https://neo4j.com/product/auradb/",
+        "error": null,
+        "content_sha256": "141f0a617ab9fa659b46710b118422c51aaaa94ec6c7ea1a5314a1dbc6c7d792"
+      }
+    ],
+    "review": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewed_on": null,
+      "adjudications": []
+    }
+  },
+  {
+    "schema_version": "1.1",
+    "run": {
+      "run_id": "task13-capture-003",
+      "parent_run_id": "task13-capture-002",
+      "created_on": "2026-11-23",
+      "producer": {
+        "id": "pipeline-collector",
+        "type": "script"
+      },
+      "correction_refs": [],
+      "sampling_manifest_ref": null
+    },
+    "identity": {
+      "id": 67,
+      "app": "Snowflake",
+      "category": "Developer, Infra and Data platforms",
+      "roster_ref": "data/apps.json",
+      "resolution": {
+        "claim_id": "67.identity",
+        "status": "not_researched",
+        "value": null,
+        "context": "Product edition/API version not yet researched",
+        "evidence": [],
+        "supporting_claim_refs": [],
+        "rationale": "No substantive research yet"
+      }
+    },
+    "purpose": {
+      "claim_id": "67.purpose",
+      "status": "not_researched",
+      "value": null,
+      "context": "Product edition/API version not yet researched",
+      "evidence": [],
+      "supporting_claim_refs": [],
+      "rationale": "No substantive research yet"
+    },
+    "auth": {
+      "coverage_status": "not_researched",
+      "items": [],
+      "notes": "Empty does not establish absence"
+    },
+    "credential_eligibility": {
+      "testing": {
+        "context": "testing credential eligibility",
+        "free_access": {
+          "claim_id": "67.testing.free_access",
+          "status": "not_researched",
+          "value": null,
+          "context": "testing credentials; edition/version not researched",
+          "evidence": [],
+          "supporting_claim_refs": [],
+          "rationale": "No substantive research yet"
+        },
+        "trial_access": {
+          "claim_id": "67.testing.trial_access",
+          "status": "not_researched",
+          "value": null,
+          "context": "testing credentials; edition/version not researched",
+          "evidence": [],
+          "supporting_claim_refs": [],
+          "rationale": "No substantive research yet"
+        },
+        "sandbox_access": {
+          "claim_id": "67.testing.sandbox_access",
+          "status": "not_researched",
+          "value": null,
+          "context": "testing credentials; edition/version not researched",
+          "evidence": [],
+          "supporting_claim_refs": [],
+          "rationale": "No substantive research yet"
+        },
+        "paid_required": {
+          "claim_id": "67.testing.paid_required",
+          "status": "not_researched",
+          "value": null,
+          "context": "testing credentials; edition/version not researched",
+          "evidence": [],
+          "supporting_claim_refs": [],
+          "rationale": "No substantive research yet"
+        },
+        "admin_approval_required": {
+          "claim_id": "67.testing.admin_approval_required",
+          "status": "not_researched",
+          "value": null,
+          "context": "testing credentials; edition/version not researched",
+          "evidence": [],
+          "supporting_claim_refs": [],
+          "rationale": "No substantive research yet"
+        },
+        "vendor_approval_required": {
+          "claim_id": "67.testing.vendor_approval_required",
+          "status": "not_researched",
+          "value": null,
+          "context": "testing credentials; edition/version not researched",
+          "evidence": [],
+          "supporting_claim_refs": [],
+          "rationale": "No substantive research yet"
+        },
+        "partner_approval_required": {
+          "claim_id": "67.testing.partner_approval_required",
+          "status": "not_researched",
+          "value": null,
+          "context": "testing credentials; edition/version not researched",
+          "evidence": [],
+          "supporting_claim_refs": [],
+          "rationale": "No substantive research yet"
+        },
+        "contact_sales_required": {
+          "claim_id": "67.testing.contact_sales_required",
+          "status": "not_researched",
+          "value": null,
+          "context": "testing credentials; edition/version not researched",
+          "evidence": [],
+          "supporting_claim_refs": [],
+          "rationale": "No substantive research yet"
+        },
+        "self_serve": {
+          "claim_id": "67.testing.self_serve",
+          "status": "not_researched",
+          "value": null,
+          "context": "testing credentials; edition/version not researched",
+          "evidence": [],
+          "supporting_claim_refs": [],
+          "rationale": "No substantive research yet"
+        }
+      },
+      "production": {
+        "context": "production credential eligibility",
+        "free_access": {
+          "claim_id": "67.production.free_access",
+          "status": "not_researched",
+          "value": null,
+          "context": "production credentials; edition/version not researched",
+          "evidence": [],
+          "supporting_claim_refs": [],
+          "rationale": "No substantive research yet"
+        },
+        "trial_access": {
+          "claim_id": "67.production.trial_access",
+          "status": "not_researched",
+          "value": null,
+          "context": "production credentials; edition/version not researched",
+          "evidence": [],
+          "supporting_claim_refs": [],
+          "rationale": "No substantive research yet"
+        },
+        "sandbox_access": {
+          "claim_id": "67.production.sandbox_access",
+          "status": "not_researched",
+          "value": null,
+          "context": "production credentials; edition/version not researched",
+          "evidence": [],
+          "supporting_claim_refs": [],
+          "rationale": "No substantive research yet"
+        },
+        "paid_required": {
+          "claim_id": "67.production.paid_required",
+          "status": "not_researched",
+          "value": null,
+          "context": "production credentials; edition/version not researched",
+          "evidence": [],
+          "supporting_claim_refs": [],
+          "rationale": "No substantive research yet"
+        },
+        "admin_approval_required": {
+          "claim_id": "67.production.admin_approval_required",
+          "status": "not_researched",
+          "value": null,
+          "context": "production credentials; edition/version not researched",
+          "evidence": [],
+          "supporting_claim_refs": [],
+          "rationale": "No substantive research yet"
+        },
+        "vendor_approval_required": {
+          "claim_id": "67.production.vendor_approval_required",
+          "status": "not_researched",
+          "value": null,
+          "context": "production credentials; edition/version not researched",
+          "evidence": [],
+          "supporting_claim_refs": [],
+          "rationale": "No substantive research yet"
+        },
+        "partner_approval_required": {
+          "claim_id": "67.production.partner_approval_required",
+          "status": "not_researched",
+          "value": null,
+          "context": "production credentials; edition/version not researched",
+          "evidence": [],
+          "supporting_claim_refs": [],
+          "rationale": "No substantive research yet"
+        },
+        "contact_sales_required": {
+          "claim_id": "67.production.contact_sales_required",
+          "status": "not_researched",
+          "value": null,
+          "context": "production credentials; edition/version not researched",
+          "evidence": [],
+          "supporting_claim_refs": [],
+          "rationale": "No substantive research yet"
+        },
+        "self_serve": {
+          "claim_id": "67.production.self_serve",
+          "status": "not_researched",
+          "value": null,
+          "context": "production credentials; edition/version not researched",
+          "evidence": [],
+          "supporting_claim_refs": [],
+          "rationale": "No substantive research yet"
+        }
+      }
+    },
+    "api_surface": {
+      "protocols": {
+        "coverage_status": "not_researched",
+        "items": [],
+        "notes": "Empty does not establish absence"
+      },
+      "public_documentation": {
+        "claim_id": "67.api.public_documentation",
+        "status": "not_researched",
+        "value": null,
+        "context": "Product edition/API version not yet researched",
+        "evidence": [],
+        "supporting_claim_refs": [],
+        "rationale": "No substantive research yet"
+      },
+      "resource_groups": {
+        "coverage_status": "not_researched",
+        "items": [],
+        "notes": "Empty does not establish absence"
+      },
+      "breadth": {
+        "claim_id": "67.api.breadth",
+        "status": "not_researched",
+        "value": null,
+        "context": "Product edition/API version not yet researched",
+        "evidence": [],
+        "supporting_claim_refs": [],
+        "rationale": "No substantive research yet"
+      }
+    },
+    "mcp": {
+      "discovery": {
+        "claim_id": "67.mcp",
+        "status": "not_researched",
+        "value": null,
+        "context": "Product edition/API version not yet researched",
+        "evidence": [],
+        "supporting_claim_refs": [],
+        "rationale": "No substantive research yet"
+      },
+      "entries": []
+    },
+    "buildability": {
+      "claim_id": "67.buildability",
+      "status": "not_researched",
+      "value": null,
+      "context": "Product edition/API version not yet researched",
+      "evidence": [],
+      "supporting_claim_refs": [],
+      "rationale": "No substantive research yet"
+    },
+    "conflicts": [],
+    "fetches": [
+      {
+        "source_url": "https://docs.snowflake.com/en/developer-guide/sql-api/index",
+        "attempted_on": "2026-11-23",
+        "status": "fetched",
+        "http_status": 200,
+        "resolved_url": "https://docs.snowflake.com/en/developer-guide/sql-api/index",
+        "error": null,
+        "content_sha256": "6d223e5fcfed93b2dfd6a0ff169a88c1307ba84a0d03db22bd1a331f030c83b5"
+      },
+      {
+        "source_url": "https://docs.snowflake.com/en/developer-guide/sql-api/authenticating",
+        "attempted_on": "2026-11-23",
+        "status": "fetched",
+        "http_status": 200,
+        "resolved_url": "https://docs.snowflake.com/en/developer-guide/sql-api/authenticating",
+        "error": null,
+        "content_sha256": "eb853d95c4be8088166af958f1cd727d3c4de33847166fe58b7e8d1ae5b1fbef"
+      },
+      {
+        "source_url": "https://docs.snowflake.com/en/user-guide/snowflake-cortex/cortex-agents-mcp",
+        "attempted_on": "2026-11-23",
+        "status": "fetched",
+        "http_status": 200,
+        "resolved_url": "https://docs.snowflake.com/en/user-guide/snowflake-cortex/cortex-agents-mcp",
+        "error": null,
+        "content_sha256": "585ad1c5bab378e5ffc3db082ceb45d55b8dbbf63b9b48226047bd0b54239866"
+      },
+      {
+        "source_url": "https://docs.snowflake.com/en/user-guide/admin-trial-account",
+        "attempted_on": "2026-11-23",
+        "status": "fetched",
+        "http_status": 200,
+        "resolved_url": "https://docs.snowflake.com/en/user-guide/admin-trial-account",
+        "error": null,
+        "content_sha256": "c164836df3db139e19b76db2cbeb33dc0526ce1cc5fe63633cb09d20505a73e0"
+      }
+    ],
+    "review": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewed_on": null,
+      "adjudications": []
+    }
+  },
+  {
+    "schema_version": "1.1",
+    "run": {
+      "run_id": "task13-capture-003",
+      "parent_run_id": "task13-capture-002",
+      "created_on": "2026-11-23",
+      "producer": {
+        "id": "pipeline-collector",
+        "type": "script"
+      },
+      "correction_refs": [],
+      "sampling_manifest_ref": null
+    },
+    "identity": {
+      "id": 68,
+      "app": "MongoDB Atlas",
+      "category": "Developer, Infra and Data platforms",
+      "roster_ref": "data/apps.json",
+      "resolution": {
+        "claim_id": "68.identity",
+        "status": "not_researched",
+        "value": null,
+        "context": "Product edition/API version not yet researched",
+        "evidence": [],
+        "supporting_claim_refs": [],
+        "rationale": "No substantive research yet"
+      }
+    },
+    "purpose": {
+      "claim_id": "68.purpose",
+      "status": "not_researched",
+      "value": null,
+      "context": "Product edition/API version not yet researched",
+      "evidence": [],
+      "supporting_claim_refs": [],
+      "rationale": "No substantive research yet"
+    },
+    "auth": {
+      "coverage_status": "not_researched",
+      "items": [],
+      "notes": "Empty does not establish absence"
+    },
+    "credential_eligibility": {
+      "testing": {
+        "context": "testing credential eligibility",
+        "free_access": {
+          "claim_id": "68.testing.free_access",
+          "status": "not_researched",
+          "value": null,
+          "context": "testing credentials; edition/version not researched",
+          "evidence": [],
+          "supporting_claim_refs": [],
+          "rationale": "No substantive research yet"
+        },
+        "trial_access": {
+          "claim_id": "68.testing.trial_access",
+          "status": "not_researched",
+          "value": null,
+          "context": "testing credentials; edition/version not researched",
+          "evidence": [],
+          "supporting_claim_refs": [],
+          "rationale": "No substantive research yet"
+        },
+        "sandbox_access": {
+          "claim_id": "68.testing.sandbox_access",
+          "status": "not_researched",
+          "value": null,
+          "context": "testing credentials; edition/version not researched",
+          "evidence": [],
+          "supporting_claim_refs": [],
+          "rationale": "No substantive research yet"
+        },
+        "paid_required": {
+          "claim_id": "68.testing.paid_required",
+          "status": "not_researched",
+          "value": null,
+          "context": "testing credentials; edition/version not researched",
+          "evidence": [],
+          "supporting_claim_refs": [],
+          "rationale": "No substantive research yet"
+        },
+        "admin_approval_required": {
+          "claim_id": "68.testing.admin_approval_required",
+          "status": "not_researched",
+          "value": null,
+          "context": "testing credentials; edition/version not researched",
+          "evidence": [],
+          "supporting_claim_refs": [],
+          "rationale": "No substantive research yet"
+        },
+        "vendor_approval_required": {
+          "claim_id": "68.testing.vendor_approval_required",
+          "status": "not_researched",
+          "value": null,
+          "context": "testing credentials; edition/version not researched",
+          "evidence": [],
+          "supporting_claim_refs": [],
+          "rationale": "No substantive research yet"
+        },
+        "partner_approval_required": {
+          "claim_id": "68.testing.partner_approval_required",
+          "status": "not_researched",
+          "value": null,
+          "context": "testing credentials; edition/version not researched",
+          "evidence": [],
+          "supporting_claim_refs": [],
+          "rationale": "No substantive research yet"
+        },
+        "contact_sales_required": {
+          "claim_id": "68.testing.contact_sales_required",
+          "status": "not_researched",
+          "value": null,
+          "context": "testing credentials; edition/version not researched",
+          "evidence": [],
+          "supporting_claim_refs": [],
+          "rationale": "No substantive research yet"
+        },
+        "self_serve": {
+          "claim_id": "68.testing.self_serve",
+          "status": "not_researched",
+          "value": null,
+          "context": "testing credentials; edition/version not researched",
+          "evidence": [],
+          "supporting_claim_refs": [],
+          "rationale": "No substantive research yet"
+        }
+      },
+      "production": {
+        "context": "production credential eligibility",
+        "free_access": {
+          "claim_id": "68.production.free_access",
+          "status": "not_researched",
+          "value": null,
+          "context": "production credentials; edition/version not researched",
+          "evidence": [],
+          "supporting_claim_refs": [],
+          "rationale": "No substantive research yet"
+        },
+        "trial_access": {
+          "claim_id": "68.production.trial_access",
+          "status": "not_researched",
+          "value": null,
+          "context": "production credentials; edition/version not researched",
+          "evidence": [],
+          "supporting_claim_refs": [],
+          "rationale": "No substantive research yet"
+        },
+        "sandbox_access": {
+          "claim_id": "68.production.sandbox_access",
+          "status": "not_researched",
+          "value": null,
+          "context": "production credentials; edition/version not researched",
+          "evidence": [],
+          "supporting_claim_refs": [],
+          "rationale": "No substantive research yet"
+        },
+        "paid_required": {
+          "claim_id": "68.production.paid_required",
+          "status": "not_researched",
+          "value": null,
+          "context": "production credentials; edition/version not researched",
+          "evidence": [],
+          "supporting_claim_refs": [],
+          "rationale": "No substantive research yet"
+        },
+        "admin_approval_required": {
+          "claim_id": "68.production.admin_approval_required",
+          "status": "not_researched",
+          "value": null,
+          "context": "production credentials; edition/version not researched",
+          "evidence": [],
+          "supporting_claim_refs": [],
+          "rationale": "No substantive research yet"
+        },
+        "vendor_approval_required": {
+          "claim_id": "68.production.vendor_approval_required",
+          "status": "not_researched",
+          "value": null,
+          "context": "production credentials; edition/version not researched",
+          "evidence": [],
+          "supporting_claim_refs": [],
+          "rationale": "No substantive research yet"
+        },
+        "partner_approval_required": {
+          "claim_id": "68.production.partner_approval_required",
+          "status": "not_researched",
+          "value": null,
+          "context": "production credentials; edition/version not researched",
+          "evidence": [],
+          "supporting_claim_refs": [],
+          "rationale": "No substantive research yet"
+        },
+        "contact_sales_required": {
+          "claim_id": "68.production.contact_sales_required",
+          "status": "not_researched",
+          "value": null,
+          "context": "production credentials; edition/version not researched",
+          "evidence": [],
+          "supporting_claim_refs": [],
+          "rationale": "No substantive research yet"
+        },
+        "self_serve": {
+          "claim_id": "68.production.self_serve",
+          "status": "not_researched",
+          "value": null,
+          "context": "production credentials; edition/version not researched",
+          "evidence": [],
+          "supporting_claim_refs": [],
+          "rationale": "No substantive research yet"
+        }
+      }
+    },
+    "api_surface": {
+      "protocols": {
+        "coverage_status": "not_researched",
+        "items": [],
+        "notes": "Empty does not establish absence"
+      },
+      "public_documentation": {
+        "claim_id": "68.api.public_documentation",
+        "status": "not_researched",
+        "value": null,
+        "context": "Product edition/API version not yet researched",
+        "evidence": [],
+        "supporting_claim_refs": [],
+        "rationale": "No substantive research yet"
+      },
+      "resource_groups": {
+        "coverage_status": "not_researched",
+        "items": [],
+        "notes": "Empty does not establish absence"
+      },
+      "breadth": {
+        "claim_id": "68.api.breadth",
+        "status": "not_researched",
+        "value": null,
+        "context": "Product edition/API version not yet researched",
+        "evidence": [],
+        "supporting_claim_refs": [],
+        "rationale": "No substantive research yet"
+      }
+    },
+    "mcp": {
+      "discovery": {
+        "claim_id": "68.mcp",
+        "status": "not_researched",
+        "value": null,
+        "context": "Product edition/API version not yet researched",
+        "evidence": [],
+        "supporting_claim_refs": [],
+        "rationale": "No substantive research yet"
+      },
+      "entries": []
+    },
+    "buildability": {
+      "claim_id": "68.buildability",
+      "status": "not_researched",
+      "value": null,
+      "context": "Product edition/API version not yet researched",
+      "evidence": [],
+      "supporting_claim_refs": [],
+      "rationale": "No substantive research yet"
+    },
+    "conflicts": [],
+    "fetches": [
+      {
+        "source_url": "https://www.mongodb.com/docs/atlas/api/",
+        "attempted_on": "2026-11-23",
+        "status": "fetched",
+        "http_status": 200,
+        "resolved_url": "https://www.mongodb.com/docs/atlas/api/",
+        "error": null,
+        "content_sha256": "f8f1d0408bc1bdd010672474630d1f60fe4c4100617cf06062f08fe5184b1461"
+      },
+      {
+        "source_url": "https://www.mongodb.com/docs/atlas/api/api-authentication/",
+        "attempted_on": "2026-11-23",
+        "status": "fetched",
+        "http_status": 200,
+        "resolved_url": "https://www.mongodb.com/docs/atlas/api/api-authentication/",
+        "error": null,
+        "content_sha256": "6a519948754500d279d6808b7ddacc1f3c661cbdc0ca00b706ddf9c648274365"
+      },
+      {
+        "source_url": "https://www.mongodb.com/docs/mcp-server/overview/",
+        "attempted_on": "2026-11-23",
+        "status": "fetched",
+        "http_status": 200,
+        "resolved_url": "https://www.mongodb.com/docs/mcp-server/overview/",
+        "error": null,
+        "content_sha256": "401c416cfb756157d76d120a3db574e7ee32e207d2fb9d86766334224ecee401"
+      },
+      {
+        "source_url": "https://www.mongodb.com/docs/mcp-server/prerequisites/",
+        "attempted_on": "2026-11-23",
+        "status": "fetched",
+        "http_status": 200,
+        "resolved_url": "https://www.mongodb.com/docs/mcp-server/prerequisites/",
+        "error": null,
+        "content_sha256": "a18108829a633f3c099f4c95b62bff8f14bdc13435f3853efacbbfd3e16bc749"
+      },
+      {
+        "source_url": "https://www.mongodb.com/docs/mcp-server/tools/",
+        "attempted_on": "2026-11-23",
+        "status": "fetched",
+        "http_status": 200,
+        "resolved_url": "https://www.mongodb.com/docs/mcp-server/tools/",
+        "error": null,
+        "content_sha256": "ad48b01b5c4ab0a2a0b641f4cccfea2869a4b7179bba9de1524bc08092079b74"
+      },
+      {
+        "source_url": "https://www.mongodb.com/docs/atlas/tutorial/deploy-free-tier-cluster/",
+        "attempted_on": "2026-11-23",
+        "status": "fetched",
+        "http_status": 200,
+        "resolved_url": "https://www.mongodb.com/docs/atlas/tutorial/deploy-free-tier-cluster/",
+        "error": null,
+        "content_sha256": "039d640a5a527a9c008eee7cc9d0a14def0d05f362dbb3b17901f7b80f10ff8f"
+      }
+    ],
+    "review": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewed_on": null,
+      "adjudications": []
+    }
+  },
+  {
+    "schema_version": "1.1",
+    "run": {
+      "run_id": "task13-capture-003",
+      "parent_run_id": "task13-capture-002",
+      "created_on": "2026-11-23",
+      "producer": {
+        "id": "pipeline-collector",
+        "type": "script"
+      },
+      "correction_refs": [],
+      "sampling_manifest_ref": null
+    },
+    "identity": {
+      "id": 69,
+      "app": "Datadog",
+      "category": "Developer, Infra and Data platforms",
+      "roster_ref": "data/apps.json",
+      "resolution": {
+        "claim_id": "69.identity",
+        "status": "not_researched",
+        "value": null,
+        "context": "Product edition/API version not yet researched",
+        "evidence": [],
+        "supporting_claim_refs": [],
+        "rationale": "No substantive research yet"
+      }
+    },
+    "purpose": {
+      "claim_id": "69.purpose",
+      "status": "not_researched",
+      "value": null,
+      "context": "Product edition/API version not yet researched",
+      "evidence": [],
+      "supporting_claim_refs": [],
+      "rationale": "No substantive research yet"
+    },
+    "auth": {
+      "coverage_status": "not_researched",
+      "items": [],
+      "notes": "Empty does not establish absence"
+    },
+    "credential_eligibility": {
+      "testing": {
+        "context": "testing credential eligibility",
+        "free_access": {
+          "claim_id": "69.testing.free_access",
+          "status": "not_researched",
+          "value": null,
+          "context": "testing credentials; edition/version not researched",
+          "evidence": [],
+          "supporting_claim_refs": [],
+          "rationale": "No substantive research yet"
+        },
+        "trial_access": {
+          "claim_id": "69.testing.trial_access",
+          "status": "not_researched",
+          "value": null,
+          "context": "testing credentials; edition/version not researched",
+          "evidence": [],
+          "supporting_claim_refs": [],
+          "rationale": "No substantive research yet"
+        },
+        "sandbox_access": {
+          "claim_id": "69.testing.sandbox_access",
+          "status": "not_researched",
+          "value": null,
+          "context": "testing credentials; edition/version not researched",
+          "evidence": [],
+          "supporting_claim_refs": [],
+          "rationale": "No substantive research yet"
+        },
+        "paid_required": {
+          "claim_id": "69.testing.paid_required",
+          "status": "not_researched",
+          "value": null,
+          "context": "testing credentials; edition/version not researched",
+          "evidence": [],
+          "supporting_claim_refs": [],
+          "rationale": "No substantive research yet"
+        },
+        "admin_approval_required": {
+          "claim_id": "69.testing.admin_approval_required",
+          "status": "not_researched",
+          "value": null,
+          "context": "testing credentials; edition/version not researched",
+          "evidence": [],
+          "supporting_claim_refs": [],
+          "rationale": "No substantive research yet"
+        },
+        "vendor_approval_required": {
+          "claim_id": "69.testing.vendor_approval_required",
+          "status": "not_researched",
+          "value": null,
+          "context": "testing credentials; edition/version not researched",
+          "evidence": [],
+          "supporting_claim_refs": [],
+          "rationale": "No substantive research yet"
+        },
+        "partner_approval_required": {
+          "claim_id": "69.testing.partner_approval_required",
+          "status": "not_researched",
+          "value": null,
+          "context": "testing credentials; edition/version not researched",
+          "evidence": [],
+          "supporting_claim_refs": [],
+          "rationale": "No substantive research yet"
+        },
+        "contact_sales_required": {
+          "claim_id": "69.testing.contact_sales_required",
+          "status": "not_researched",
+          "value": null,
+          "context": "testing credentials; edition/version not researched",
+          "evidence": [],
+          "supporting_claim_refs": [],
+          "rationale": "No substantive research yet"
+        },
+        "self_serve": {
+          "claim_id": "69.testing.self_serve",
+          "status": "not_researched",
+          "value": null,
+          "context": "testing credentials; edition/version not researched",
+          "evidence": [],
+          "supporting_claim_refs": [],
+          "rationale": "No substantive research yet"
+        }
+      },
+      "production": {
+        "context": "production credential eligibility",
+        "free_access": {
+          "claim_id": "69.production.free_access",
+          "status": "not_researched",
+          "value": null,
+          "context": "production credentials; edition/version not researched",
+          "evidence": [],
+          "supporting_claim_refs": [],
+          "rationale": "No substantive research yet"
+        },
+        "trial_access": {
+          "claim_id": "69.production.trial_access",
+          "status": "not_researched",
+          "value": null,
+          "context": "production credentials; edition/version not researched",
+          "evidence": [],
+          "supporting_claim_refs": [],
+          "rationale": "No substantive research yet"
+        },
+        "sandbox_access": {
+          "claim_id": "69.production.sandbox_access",
+          "status": "not_researched",
+          "value": null,
+          "context": "production credentials; edition/version not researched",
+          "evidence": [],
+          "supporting_claim_refs": [],
+          "rationale": "No substantive research yet"
+        },
+        "paid_required": {
+          "claim_id": "69.production.paid_required",
+          "status": "not_researched",
+          "value": null,
+          "context": "production credentials; edition/version not researched",
+          "evidence": [],
+          "supporting_claim_refs": [],
+          "rationale": "No substantive research yet"
+        },
+        "admin_approval_required": {
+          "claim_id": "69.production.admin_approval_required",
+          "status": "not_researched",
+          "value": null,
+          "context": "production credentials; edition/version not researched",
+          "evidence": [],
+          "supporting_claim_refs": [],
+          "rationale": "No substantive research yet"
+        },
+        "vendor_approval_required": {
+          "claim_id": "69.production.vendor_approval_required",
+          "status": "not_researched",
+          "value": null,
+          "context": "production credentials; edition/version not researched",
+          "evidence": [],
+          "supporting_claim_refs": [],
+          "rationale": "No substantive research yet"
+        },
+        "partner_approval_required": {
+          "claim_id": "69.production.partner_approval_required",
+          "status": "not_researched",
+          "value": null,
+          "context": "production credentials; edition/version not researched",
+          "evidence": [],
+          "supporting_claim_refs": [],
+          "rationale": "No substantive research yet"
+        },
+        "contact_sales_required": {
+          "claim_id": "69.production.contact_sales_required",
+          "status": "not_researched",
+          "value": null,
+          "context": "production credentials; edition/version not researched",
+          "evidence": [],
+          "supporting_claim_refs": [],
+          "rationale": "No substantive research yet"
+        },
+        "self_serve": {
+          "claim_id": "69.production.self_serve",
+          "status": "not_researched",
+          "value": null,
+          "context": "production credentials; edition/version not researched",
+          "evidence": [],
+          "supporting_claim_refs": [],
+          "rationale": "No substantive research yet"
+        }
+      }
+    },
+    "api_surface": {
+      "protocols": {
+        "coverage_status": "not_researched",
+        "items": [],
+        "notes": "Empty does not establish absence"
+      },
+      "public_documentation": {
+        "claim_id": "69.api.public_documentation",
+        "status": "not_researched",
+        "value": null,
+        "context": "Product edition/API version not yet researched",
+        "evidence": [],
+        "supporting_claim_refs": [],
+        "rationale": "No substantive research yet"
+      },
+      "resource_groups": {
+        "coverage_status": "not_researched",
+        "items": [],
+        "notes": "Empty does not establish absence"
+      },
+      "breadth": {
+        "claim_id": "69.api.breadth",
+        "status": "not_researched",
+        "value": null,
+        "context": "Product edition/API version not yet researched",
+        "evidence": [],
+        "supporting_claim_refs": [],
+        "rationale": "No substantive research yet"
+      }
+    },
+    "mcp": {
+      "discovery": {
+        "claim_id": "69.mcp",
+        "status": "not_researched",
+        "value": null,
+        "context": "Product edition/API version not yet researched",
+        "evidence": [],
+        "supporting_claim_refs": [],
+        "rationale": "No substantive research yet"
+      },
+      "entries": []
+    },
+    "buildability": {
+      "claim_id": "69.buildability",
+      "status": "not_researched",
+      "value": null,
+      "context": "Product edition/API version not yet researched",
+      "evidence": [],
+      "supporting_claim_refs": [],
+      "rationale": "No substantive research yet"
+    },
+    "conflicts": [],
+    "fetches": [
+      {
+        "source_url": "https://docs.datadoghq.com/api/latest/",
+        "attempted_on": "2026-11-23",
+        "status": "fetched",
+        "http_status": 200,
+        "resolved_url": "https://docs.datadoghq.com/api/latest/",
+        "error": null,
+        "content_sha256": "c07b8f0271c124e0e03fe7aecd6108f43591faef9b13bd7ae89b3ebd120ac03a"
+      },
+      {
+        "source_url": "https://docs.datadoghq.com/account_management/api-app-keys/",
+        "attempted_on": "2026-11-23",
+        "status": "fetched",
+        "http_status": 200,
+        "resolved_url": "https://docs.datadoghq.com/account_management/api-app-keys/",
+        "error": null,
+        "content_sha256": "a56f9932d76ddea6cee95db64300568504a381c8519be4cde025ebb4f5a61985"
+      },
+      {
+        "source_url": "https://docs.datadoghq.com/mcp_server/",
+        "attempted_on": "2026-11-23",
+        "status": "fetched",
+        "http_status": 200,
+        "resolved_url": "https://docs.datadoghq.com/mcp_server/",
+        "error": null,
+        "content_sha256": "6b996905ab9ee2785bd49a3af46898440c038a77d834e6d9aea4248891e536fe"
+      },
+      {
+        "source_url": "https://docs.datadoghq.com/mcp_server/setup/",
+        "attempted_on": "2026-11-23",
+        "status": "timeout",
+        "http_status": null,
+        "resolved_url": null,
+        "error": "Request timed out",
+        "content_sha256": null
+      },
+      {
+        "source_url": "https://www.datadoghq.com/free-datadog-trial/",
+        "attempted_on": "2026-11-23",
+        "status": "fetched",
+        "http_status": 200,
+        "resolved_url": "https://www.datadoghq.com/free-datadog-trial/",
+        "error": null,
+        "content_sha256": "fc33471de2decad7bcefb78e2fce1e185fce0de471ae2bea24cb212c5a2a2996"
+      },
+      {
+        "source_url": "https://docs.datadoghq.com/account_management/api-app-keys/?_task13=identity",
+        "attempted_on": "2026-11-23",
+        "status": "fetched",
+        "http_status": 200,
+        "resolved_url": "https://docs.datadoghq.com/account_management/api-app-keys/?_task13=identity",
+        "error": null,
+        "content_sha256": "a56f9932d76ddea6cee95db64300568504a381c8519be4cde025ebb4f5a61985"
+      },
+      {
+        "source_url": "https://docs.datadoghq.com/mcp_server/index.md",
+        "attempted_on": "2026-11-23",
+        "status": "http_error",
+        "http_status": 404,
+        "resolved_url": null,
+        "error": "HTTP 404",
+        "content_sha256": null
+      },
+      {
+        "source_url": "https://docs.datadoghq.com/mcp_server/setup/index.md",
+        "attempted_on": "2026-11-23",
+        "status": "http_error",
+        "http_status": 404,
+        "resolved_url": null,
+        "error": "HTTP 404",
+        "content_sha256": null
+      },
+      {
+        "source_url": "https://raw.githubusercontent.com/DataDog/documentation/master/content/en/account_management/api-app-keys.md",
+        "attempted_on": "2026-11-23",
+        "status": "http_error",
+        "http_status": 404,
+        "resolved_url": null,
+        "error": "HTTP 404",
+        "content_sha256": null
+      },
+      {
+        "source_url": "https://raw.githubusercontent.com/DataDog/documentation/master/content/en/mcp_server/_index.md",
+        "attempted_on": "2026-11-23",
+        "status": "http_error",
+        "http_status": 404,
+        "resolved_url": null,
+        "error": "HTTP 404",
+        "content_sha256": null
+      },
+      {
+        "source_url": "https://raw.githubusercontent.com/DataDog/documentation/master/content/en/mcp_server/setup.md",
+        "attempted_on": "2026-11-23",
+        "status": "http_error",
+        "http_status": 404,
+        "resolved_url": null,
+        "error": "HTTP 404",
+        "content_sha256": null
+      },
+      {
+        "source_url": "https://docs.datadoghq.com/account_management/api-app-keys.md",
+        "attempted_on": "2026-11-23",
+        "status": "fetched",
+        "http_status": 200,
+        "resolved_url": "https://docs.datadoghq.com/account_management/api-app-keys.md",
+        "error": null,
+        "content_sha256": "1f7638b0c3a43d75b6945281fa043f6f08018bbc7e8fcaed2da524b951011a8c"
+      },
+      {
+        "source_url": "https://docs.datadoghq.com/mcp_server.md",
+        "attempted_on": "2026-11-23",
+        "status": "fetched",
+        "http_status": 200,
+        "resolved_url": "https://docs.datadoghq.com/mcp_server.md",
+        "error": null,
+        "content_sha256": "921ecdeb82d1370857b4c6095c6d9ded2a694d93a134b21d9037d1833d9f57fb"
+      },
+      {
+        "source_url": "https://docs.datadoghq.com/mcp_server/setup.md",
+        "attempted_on": "2026-11-23",
+        "status": "fetched",
+        "http_status": 200,
+        "resolved_url": "https://docs.datadoghq.com/mcp_server/setup.md",
+        "error": null,
+        "content_sha256": "db2fee977e17a447fec76e8f349ee25ec8763bd67be76a2da70b5d0cb233e119"
+      }
+    ],
+    "review": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewed_on": null,
+      "adjudications": []
+    }
+  },
+  {
+    "schema_version": "1.1",
+    "run": {
+      "run_id": "task13-capture-003",
+      "parent_run_id": "task13-capture-002",
+      "created_on": "2026-11-23",
+      "producer": {
+        "id": "pipeline-collector",
+        "type": "script"
+      },
+      "correction_refs": [],
+      "sampling_manifest_ref": null
+    },
+    "identity": {
+      "id": 70,
+      "app": "Sentry",
+      "category": "Developer, Infra and Data platforms",
+      "roster_ref": "data/apps.json",
+      "resolution": {
+        "claim_id": "70.identity",
+        "status": "not_researched",
+        "value": null,
+        "context": "Product edition/API version not yet researched",
+        "evidence": [],
+        "supporting_claim_refs": [],
+        "rationale": "No substantive research yet"
+      }
+    },
+    "purpose": {
+      "claim_id": "70.purpose",
+      "status": "not_researched",
+      "value": null,
+      "context": "Product edition/API version not yet researched",
+      "evidence": [],
+      "supporting_claim_refs": [],
+      "rationale": "No substantive research yet"
+    },
+    "auth": {
+      "coverage_status": "not_researched",
+      "items": [],
+      "notes": "Empty does not establish absence"
+    },
+    "credential_eligibility": {
+      "testing": {
+        "context": "testing credential eligibility",
+        "free_access": {
+          "claim_id": "70.testing.free_access",
+          "status": "not_researched",
+          "value": null,
+          "context": "testing credentials; edition/version not researched",
+          "evidence": [],
+          "supporting_claim_refs": [],
+          "rationale": "No substantive research yet"
+        },
+        "trial_access": {
+          "claim_id": "70.testing.trial_access",
+          "status": "not_researched",
+          "value": null,
+          "context": "testing credentials; edition/version not researched",
+          "evidence": [],
+          "supporting_claim_refs": [],
+          "rationale": "No substantive research yet"
+        },
+        "sandbox_access": {
+          "claim_id": "70.testing.sandbox_access",
+          "status": "not_researched",
+          "value": null,
+          "context": "testing credentials; edition/version not researched",
+          "evidence": [],
+          "supporting_claim_refs": [],
+          "rationale": "No substantive research yet"
+        },
+        "paid_required": {
+          "claim_id": "70.testing.paid_required",
+          "status": "not_researched",
+          "value": null,
+          "context": "testing credentials; edition/version not researched",
+          "evidence": [],
+          "supporting_claim_refs": [],
+          "rationale": "No substantive research yet"
+        },
+        "admin_approval_required": {
+          "claim_id": "70.testing.admin_approval_required",
+          "status": "not_researched",
+          "value": null,
+          "context": "testing credentials; edition/version not researched",
+          "evidence": [],
+          "supporting_claim_refs": [],
+          "rationale": "No substantive research yet"
+        },
+        "vendor_approval_required": {
+          "claim_id": "70.testing.vendor_approval_required",
+          "status": "not_researched",
+          "value": null,
+          "context": "testing credentials; edition/version not researched",
+          "evidence": [],
+          "supporting_claim_refs": [],
+          "rationale": "No substantive research yet"
+        },
+        "partner_approval_required": {
+          "claim_id": "70.testing.partner_approval_required",
+          "status": "not_researched",
+          "value": null,
+          "context": "testing credentials; edition/version not researched",
+          "evidence": [],
+          "supporting_claim_refs": [],
+          "rationale": "No substantive research yet"
+        },
+        "contact_sales_required": {
+          "claim_id": "70.testing.contact_sales_required",
+          "status": "not_researched",
+          "value": null,
+          "context": "testing credentials; edition/version not researched",
+          "evidence": [],
+          "supporting_claim_refs": [],
+          "rationale": "No substantive research yet"
+        },
+        "self_serve": {
+          "claim_id": "70.testing.self_serve",
+          "status": "not_researched",
+          "value": null,
+          "context": "testing credentials; edition/version not researched",
+          "evidence": [],
+          "supporting_claim_refs": [],
+          "rationale": "No substantive research yet"
+        }
+      },
+      "production": {
+        "context": "production credential eligibility",
+        "free_access": {
+          "claim_id": "70.production.free_access",
+          "status": "not_researched",
+          "value": null,
+          "context": "production credentials; edition/version not researched",
+          "evidence": [],
+          "supporting_claim_refs": [],
+          "rationale": "No substantive research yet"
+        },
+        "trial_access": {
+          "claim_id": "70.production.trial_access",
+          "status": "not_researched",
+          "value": null,
+          "context": "production credentials; edition/version not researched",
+          "evidence": [],
+          "supporting_claim_refs": [],
+          "rationale": "No substantive research yet"
+        },
+        "sandbox_access": {
+          "claim_id": "70.production.sandbox_access",
+          "status": "not_researched",
+          "value": null,
+          "context": "production credentials; edition/version not researched",
+          "evidence": [],
+          "supporting_claim_refs": [],
+          "rationale": "No substantive research yet"
+        },
+        "paid_required": {
+          "claim_id": "70.production.paid_required",
+          "status": "not_researched",
+          "value": null,
+          "context": "production credentials; edition/version not researched",
+          "evidence": [],
+          "supporting_claim_refs": [],
+          "rationale": "No substantive research yet"
+        },
+        "admin_approval_required": {
+          "claim_id": "70.production.admin_approval_required",
+          "status": "not_researched",
+          "value": null,
+          "context": "production credentials; edition/version not researched",
+          "evidence": [],
+          "supporting_claim_refs": [],
+          "rationale": "No substantive research yet"
+        },
+        "vendor_approval_required": {
+          "claim_id": "70.production.vendor_approval_required",
+          "status": "not_researched",
+          "value": null,
+          "context": "production credentials; edition/version not researched",
+          "evidence": [],
+          "supporting_claim_refs": [],
+          "rationale": "No substantive research yet"
+        },
+        "partner_approval_required": {
+          "claim_id": "70.production.partner_approval_required",
+          "status": "not_researched",
+          "value": null,
+          "context": "production credentials; edition/version not researched",
+          "evidence": [],
+          "supporting_claim_refs": [],
+          "rationale": "No substantive research yet"
+        },
+        "contact_sales_required": {
+          "claim_id": "70.production.contact_sales_required",
+          "status": "not_researched",
+          "value": null,
+          "context": "production credentials; edition/version not researched",
+          "evidence": [],
+          "supporting_claim_refs": [],
+          "rationale": "No substantive research yet"
+        },
+        "self_serve": {
+          "claim_id": "70.production.self_serve",
+          "status": "not_researched",
+          "value": null,
+          "context": "production credentials; edition/version not researched",
+          "evidence": [],
+          "supporting_claim_refs": [],
+          "rationale": "No substantive research yet"
+        }
+      }
+    },
+    "api_surface": {
+      "protocols": {
+        "coverage_status": "not_researched",
+        "items": [],
+        "notes": "Empty does not establish absence"
+      },
+      "public_documentation": {
+        "claim_id": "70.api.public_documentation",
+        "status": "not_researched",
+        "value": null,
+        "context": "Product edition/API version not yet researched",
+        "evidence": [],
+        "supporting_claim_refs": [],
+        "rationale": "No substantive research yet"
+      },
+      "resource_groups": {
+        "coverage_status": "not_researched",
+        "items": [],
+        "notes": "Empty does not establish absence"
+      },
+      "breadth": {
+        "claim_id": "70.api.breadth",
+        "status": "not_researched",
+        "value": null,
+        "context": "Product edition/API version not yet researched",
+        "evidence": [],
+        "supporting_claim_refs": [],
+        "rationale": "No substantive research yet"
+      }
+    },
+    "mcp": {
+      "discovery": {
+        "claim_id": "70.mcp",
+        "status": "not_researched",
+        "value": null,
+        "context": "Product edition/API version not yet researched",
+        "evidence": [],
+        "supporting_claim_refs": [],
+        "rationale": "No substantive research yet"
+      },
+      "entries": []
+    },
+    "buildability": {
+      "claim_id": "70.buildability",
+      "status": "not_researched",
+      "value": null,
+      "context": "Product edition/API version not yet researched",
+      "evidence": [],
+      "supporting_claim_refs": [],
+      "rationale": "No substantive research yet"
+    },
+    "conflicts": [],
+    "fetches": [
+      {
+        "source_url": "https://docs.sentry.io/api/",
+        "attempted_on": "2026-11-23",
+        "status": "fetched",
+        "http_status": 200,
+        "resolved_url": "https://docs.sentry.io/api/",
+        "error": null,
+        "content_sha256": "bf807ef6d63971ef83125991a04b88b0dd7c927df184265abde24f29b89fe2ae"
+      },
+      {
+        "source_url": "https://docs.sentry.io/api/auth/",
+        "attempted_on": "2026-11-23",
+        "status": "fetched",
+        "http_status": 200,
+        "resolved_url": "https://docs.sentry.io/api/auth/",
+        "error": null,
+        "content_sha256": "efbbd32483860e5fffdc297eaba1fe41c5ad36dd26fb5b2259237c1e52d6a20d"
+      },
+      {
+        "source_url": "https://mcp.sentry.dev/",
+        "attempted_on": "2026-11-23",
+        "status": "fetched",
+        "http_status": 200,
+        "resolved_url": "https://mcp.sentry.dev/",
+        "error": null,
+        "content_sha256": "e7da19afd6a631d86550b6b56edec255fa08335cd054cc22eec467e5b8f36588"
+      },
+      {
+        "source_url": "https://raw.githubusercontent.com/getsentry/sentry-mcp/main/README.md",
+        "attempted_on": "2026-11-23",
+        "status": "fetched",
+        "http_status": 200,
+        "resolved_url": "https://raw.githubusercontent.com/getsentry/sentry-mcp/main/README.md",
+        "error": null,
+        "content_sha256": "446f21cd76982fbe44f707a3ee842b528ad7364d3685b563f7bdf1dbb3106a20"
+      },
+      {
+        "source_url": "https://sentry.io/pricing/",
+        "attempted_on": "2026-11-23",
+        "status": "fetched",
+        "http_status": 200,
+        "resolved_url": "https://sentry.io/pricing/",
+        "error": null,
+        "content_sha256": "c06c7bd057706db8b79b845474597b797e6a45e35912141f118d7d66042868da"
+      }
+    ],
+    "review": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewed_on": null,
+      "adjudications": []
+    }
+  }
+]

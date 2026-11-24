@@ -1,0 +1,94 @@
+Claude 60-Second Setup — Grain Developers
+/
+MCP Docs
+API Docs ↗
+grain.com ↗
+Official Grain MCP Server
+Claude 60-Second Setup
+ChatGPT Quick Setup
+Available MCP Tools and Basic Usage Examples
+Structured Reporting Examples
+FAQ
+Claude 60-Second Setup
+Getting Started Video:
+In this video I walk through the set-up steps that are also documented below.
+Please note that if you're using the Teams or Enterprise versions there is a slight modification of the "Add Integration" step detailed in the first section below.
+Claude Paid Users
+Grain MCP supports easy setup as a native Claude Integration.
+Step 1: Integration Setup
+Navigate to Settings → Integrations (Pro/Max Users) → Organization Settings (Team/Enterprise Users)
+Click "+ Add Integration"
+Enter details and click the "Add" button:
+Integration Name: Grain
+Integration URL: https://api.grain.com/_/mcp
+Step 2: Connection / Authentication
+From Settings → Integrations:
+Look for "Grain" in the list of integrations and click "Connect"
+Once automatically redirected to Grain, click "Approve"
+Step 3: Testing MCP Tools
+From a New Claude chat:
+Click "Search and Tools" and confirm you can see "Grain" in the list
+Click "Grain" to confirm the MCP tools are active, toggle tools on/off as desired
+Test Connection by typing "Tell me about my most recent Grain meeting" or any other test prompt and Submit the chat
+If everything is set up properly, you'll see Claude make requests to the available Grain tools that are needed to fulfill the data needs of the Chat request. For best results, turn off non-Grain tools that may distract or confuse the LLM or cite the name and filters of the Grain tool you want it to use from the Available MCP Tools section.
+Claude Free Users & Other Clients (Developers Only)
+🚧
+Please note that mcp-remote is soon to be deprecated in favor of native client integrations and as such is not an officially supported method of connection by the official Grain MCP Server. Please plan your use of this connection method accordingly.
+Cursor
+Click Here to Install
+Manual Configuration (All Other Clients)
+Prerequisites:
+Node.js installed (nodejs.org)
+Claude Desktop App
+Verify Node.js Installation:
+Open terminal/command prompt and run:
+Copy
+node --version
+If you get an error, install Node.js from nodejs.org.
+Setup Steps:
+Edit Config File
+Settings → Developer → Edit Config
+Opens claude_desktop_config.json
+Add Configuration
+Copy
+{
+"mcpServers": {
+"grain": {
+"command": "npx",
+"args": ["-y", "mcp-remote", "https://api.grain.com/_/mcp"]
+}
+}
+}
+Restart Application
+Close and reopen Claude Desktop
+Verify "Grain" appears in Settings → Integrations
+Enable Tools
+Select Tools and Settings for Grain
+Verify all tools are enabled
+Allow tools when prompted in conversations
+Test Connection:
+Copy
+List my recent Grain meetings
+Personal Access Token (Developers Only)
+Any MCP client that can send custom headers can connect with a Personal Access Token instead of OAuth.
+This is useful for headless agents, scripts and CI, where there is no browser to complete the OAuth sign-in.
+Generate a token from the integrations page.
+Point your client at https://api.grain.com/_/mcp and send the token in the Authorization header:
+Copy
+Authorization: Bearer grain_pat_...
+For example, with Claude Code:
+Copy
+claude mcp add --transport http grain https://api.grain.com/_/mcp --header "Authorization: Bearer grain_pat_..."
+The token acts as you, with the same access you have in Grain.
+Treat it like a password, and revoke it from the integrations page if it leaks.
+Workspace Access Tokens are not accepted by the MCP server.
+←
+Previous
+Official Grain MCP Server
+Next
+ChatGPT Quick Setup
+→
+On this page
+Claude Paid Users
+Claude Free Users & Other Clients (Developers Only)
+Personal Access Token (Developers Only)

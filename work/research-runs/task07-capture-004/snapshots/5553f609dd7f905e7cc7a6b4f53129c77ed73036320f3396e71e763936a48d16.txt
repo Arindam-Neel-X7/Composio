@@ -1,0 +1,193 @@
+Overview - Copper Developer API
+Skip to content
+Copper Developer API
+Overview
+Initializing search
+Copper Developer API
+Introduction
+Introduction
+Getting started
+Authentication
+Authentication
+Overview
+Overview
+Table of contents
+API Keys
+OAuth2.0
+OAuth2.0
+OAuth2.0
+Overview
+Quickstart Guide
+Documentation
+Requests
+Responses
+Search
+Paginating search results
+Best practices
+Embedded Apps
+Appendix
+Getting Support
+Change Policy
+Changelog
+Account and Users
+Account and Users
+Overview
+Fetch Account Details
+Fetch User by ID
+Fetch API User
+List Users
+Leads
+Leads
+Overview
+Fetch a Lead by ID
+Create a New Lead
+Bulk Create Leads
+Update a Lead
+Bulk Update Leads
+Delete a Lead
+UPSERT a Lead
+UPSERT a Lead (by custom field)
+Convert a Lead
+List Leads (Search)
+See a Lead's Activities
+List Customer Sources
+List Lead Statuses
+People
+People
+Overview
+Fetch a Person by ID
+Fetch a Person by Email
+Create a New Person
+Bulk Create People
+Update a Person
+Bulk Update People
+Delete a Person
+List People (Search)
+See a Person's Activities
+List Contact Types
+Companies
+Companies
+Overview
+Fetch a Company by ID
+Create a New Company
+Bulk Create Companies
+Update a Company
+Bulk Update Companies
+Delete a Company
+List Companies (Search)
+See a Company's Activities
+List Contact Types
+Opportunities
+Opportunities
+Overview
+Fetch an Opportunity by ID
+Create a New Opportunity
+Bulk Create Opportunities
+Update an Opportunity
+Delete an Opportunity
+List Opportunities (Search)
+List Customer Sources
+List Loss Reasons
+List Pipelines
+List Pipeline Stages
+List Stages in a Pipeline
+Projects
+Projects
+Overview
+Fetch a Project by ID
+Create a New Project
+Update a Project
+Delete a Project
+List Projects (Search)
+Tags
+Tags
+Overview
+List All Tags
+Tasks
+Tasks
+Overview
+Fetch a Task by ID
+Create a New Task
+Update a Task
+Delete a Task
+List Tasks (Search)
+Activities
+Activities
+Overview
+Fetch an Activity By ID
+Create a New Activity
+Bulk Create Activities
+Update an Activity
+Delete an Activity
+List Activities (Search)
+List Activity Types
+Custom Fields
+Custom Fields
+Overview
+Search Entity (Leads, People, etc) by Custom Field
+Receive Entity (Leads, People, etc) with Computed Custom Field Values
+Custom Activity Type
+Custom Activity Type
+Get Custom Activity Type
+List All Custom Activity Types
+Update an Existing Custom Activity Type
+Create a New Custom Activity Type
+Custom Field Definition
+Custom Field Definition
+Delete a Custom Field Definition
+List Custom Field Definitions
+Update an existing custom field definition
+Fetch a Custom Field Definition
+Create a new custom field definition
+Connect fields
+Connect fields
+Overview
+Updating records that have connect fields
+Delete a connection
+List the connections on specified entity
+List the connections on specified entity using custom field definition id
+Create a connection
+Field Layouts
+Field Layouts
+List Field Layout by Entity Type
+Related Items
+Related Items
+Overview
+View all records related to an Entity
+View all records of a given Entity Type related to an Entity
+Relate an existing record to an Entity
+Remove relationship between record and Entity
+File Upload
+File Upload
+Overview
+List attached files of an entity record
+Get metadata of a specific attached file
+Step 1: Get signed S3 URL
+Step 2: Upload your file to S3
+Step 3: Relate the uploaded file to a specific entity
+Delete a file
+Webhooks
+Webhooks
+Overview
+Create new subscription
+Update a subscription
+Delete subscription
+List all subscriptions
+View subscription by ID
+Webhook Notification Example
+Table of contents
+API Keys
+OAuth2.0
+Authentication¶
+There are two ways to access the Copper Developer API: API keys and OAuth2.0.
+API Keys are suitable for individual users, while OAuth2.0 is the preferred approach for partner integrations.
+API Keys¶
+The Dev API uses token based authentication. You have to include the token in the header of every request, along
+with the email address of the user who generated the token. Users can hold multiple valid tokens at the same time.
+Admins can see all user generated tokens and generate new ones.
+To generate an API token, in the Copper web app go to System settings > API Keys and click the 'GENERATE API KEY'
+button. Copper allows you to label each key for its unique purpose. You'll need to generate an API key to make
+an API Request.
+OAuth2.0¶
+Click here to get started.
+Copyright © Copper, Inc. All rights reserved.

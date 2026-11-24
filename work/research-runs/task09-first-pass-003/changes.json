@@ -1,0 +1,2120 @@
+[
+  {
+    "app_id": 21,
+    "claim_id": "21.api.breadth",
+    "change": "changed",
+    "reason": "Task 09 first-pass extraction for Communications and Messaging (IDs 21-30) by task09-research-agent-gemini; explicit unknown credential states; independent review pending"
+  },
+  {
+    "app_id": 21,
+    "claim_id": "21.api.group.files_canvases_lists",
+    "change": "added",
+    "reason": "Task 09 first-pass extraction for Communications and Messaging (IDs 21-30) by task09-research-agent-gemini; explicit unknown credential states; independent review pending"
+  },
+  {
+    "app_id": 21,
+    "claim_id": "21.api.group.messaging_conversations",
+    "change": "added",
+    "reason": "Task 09 first-pass extraction for Communications and Messaging (IDs 21-30) by task09-research-agent-gemini; explicit unknown credential states; independent review pending"
+  },
+  {
+    "app_id": 21,
+    "claim_id": "21.api.group.users_teams_admin",
+    "change": "added",
+    "reason": "Task 09 first-pass extraction for Communications and Messaging (IDs 21-30) by task09-research-agent-gemini; explicit unknown credential states; independent review pending"
+  },
+  {
+    "app_id": 21,
+    "claim_id": "21.api.group.workflows_apps_agents",
+    "change": "added",
+    "reason": "Task 09 first-pass extraction for Communications and Messaging (IDs 21-30) by task09-research-agent-gemini; explicit unknown credential states; independent review pending"
+  },
+  {
+    "app_id": 21,
+    "claim_id": "21.api.protocol.cli",
+    "change": "added",
+    "reason": "Task 09 first-pass extraction for Communications and Messaging (IDs 21-30) by task09-research-agent-gemini; explicit unknown credential states; independent review pending"
+  },
+  {
+    "app_id": 21,
+    "claim_id": "21.api.protocol.rpc",
+    "change": "added",
+    "reason": "Task 09 first-pass extraction for Communications and Messaging (IDs 21-30) by task09-research-agent-gemini; explicit unknown credential states; independent review pending"
+  },
+  {
+    "app_id": 21,
+    "claim_id": "21.api.protocol.sdk",
+    "change": "added",
+    "reason": "Task 09 first-pass extraction for Communications and Messaging (IDs 21-30) by task09-research-agent-gemini; explicit unknown credential states; independent review pending"
+  },
+  {
+    "app_id": 21,
+    "claim_id": "21.api.public_docs",
+    "change": "added",
+    "reason": "Task 09 first-pass extraction for Communications and Messaging (IDs 21-30) by task09-research-agent-gemini; explicit unknown credential states; independent review pending"
+  },
+  {
+    "app_id": 21,
+    "claim_id": "21.api.public_documentation",
+    "change": "removed",
+    "reason": "Task 09 first-pass extraction for Communications and Messaging (IDs 21-30) by task09-research-agent-gemini; explicit unknown credential states; independent review pending"
+  },
+  {
+    "app_id": 21,
+    "claim_id": "21.auth.bearer_token",
+    "change": "added",
+    "reason": "Task 09 first-pass extraction for Communications and Messaging (IDs 21-30) by task09-research-agent-gemini; explicit unknown credential states; independent review pending"
+  },
+  {
+    "app_id": 21,
+    "claim_id": "21.auth.oauth2_v2",
+    "change": "added",
+    "reason": "Task 09 first-pass extraction for Communications and Messaging (IDs 21-30) by task09-research-agent-gemini; explicit unknown credential states; independent review pending"
+  },
+  {
+    "app_id": 21,
+    "claim_id": "21.buildability",
+    "change": "changed",
+    "reason": "Task 09 first-pass extraction for Communications and Messaging (IDs 21-30) by task09-research-agent-gemini; explicit unknown credential states; independent review pending"
+  },
+  {
+    "app_id": 21,
+    "claim_id": "21.identity",
+    "change": "changed",
+    "reason": "Task 09 first-pass extraction for Communications and Messaging (IDs 21-30) by task09-research-agent-gemini; explicit unknown credential states; independent review pending"
+  },
+  {
+    "app_id": 21,
+    "claim_id": "21.mcp",
+    "change": "changed",
+    "reason": "Task 09 first-pass extraction for Communications and Messaging (IDs 21-30) by task09-research-agent-gemini; explicit unknown credential states; independent review pending"
+  },
+  {
+    "app_id": 21,
+    "claim_id": "21.mcp.official",
+    "change": "added",
+    "reason": "Task 09 first-pass extraction for Communications and Messaging (IDs 21-30) by task09-research-agent-gemini; explicit unknown credential states; independent review pending"
+  },
+  {
+    "app_id": 21,
+    "claim_id": "21.mcp.official.operational",
+    "change": "added",
+    "reason": "Task 09 first-pass extraction for Communications and Messaging (IDs 21-30) by task09-research-agent-gemini; explicit unknown credential states; independent review pending"
+  },
+  {
+    "app_id": 21,
+    "claim_id": "21.production.admin_approval_required",
+    "change": "changed",
+    "reason": "Task 09 first-pass extraction for Communications and Messaging (IDs 21-30) by task09-research-agent-gemini; explicit unknown credential states; independent review pending"
+  },
+  {
+    "app_id": 21,
+    "claim_id": "21.production.contact_sales_required",
+    "change": "changed",
+    "reason": "Task 09 first-pass extraction for Communications and Messaging (IDs 21-30) by task09-research-agent-gemini; explicit unknown credential states; independent review pending"
+  },
+  {
+    "app_id": 21,
+    "claim_id": "21.production.free_access",
+    "change": "changed",
+    "reason": "Task 09 first-pass extraction for Communications and Messaging (IDs 21-30) by task09-research-agent-gemini; explicit unknown credential states; independent review pending"
+  },
+  {
+    "app_id": 21,
+    "claim_id": "21.production.paid_required",
+    "change": "changed",
+    "reason": "Task 09 first-pass extraction for Communications and Messaging (IDs 21-30) by task09-research-agent-gemini; explicit unknown credential states; independent review pending"
+  },
+  {
+    "app_id": 21,
+    "claim_id": "21.production.partner_approval_required",
+    "change": "changed",
+    "reason": "Task 09 first-pass extraction for Communications and Messaging (IDs 21-30) by task09-research-agent-gemini; explicit unknown credential states; independent review pending"
+  },
+  {
+    "app_id": 21,
+    "claim_id": "21.production.sandbox_access",
+    "change": "changed",
+    "reason": "Task 09 first-pass extraction for Communications and Messaging (IDs 21-30) by task09-research-agent-gemini; explicit unknown credential states; independent review pending"
+  },
+  {
+    "app_id": 21,
+    "claim_id": "21.production.self_serve",
+    "change": "changed",
+    "reason": "Task 09 first-pass extraction for Communications and Messaging (IDs 21-30) by task09-research-agent-gemini; explicit unknown credential states; independent review pending"
+  },
+  {
+    "app_id": 21,
+    "claim_id": "21.production.trial_access",
+    "change": "changed",
+    "reason": "Task 09 first-pass extraction for Communications and Messaging (IDs 21-30) by task09-research-agent-gemini; explicit unknown credential states; independent review pending"
+  },
+  {
+    "app_id": 21,
+    "claim_id": "21.production.vendor_approval_required",
+    "change": "changed",
+    "reason": "Task 09 first-pass extraction for Communications and Messaging (IDs 21-30) by task09-research-agent-gemini; explicit unknown credential states; independent review pending"
+  },
+  {
+    "app_id": 21,
+    "claim_id": "21.purpose",
+    "change": "changed",
+    "reason": "Task 09 first-pass extraction for Communications and Messaging (IDs 21-30) by task09-research-agent-gemini; explicit unknown credential states; independent review pending"
+  },
+  {
+    "app_id": 21,
+    "claim_id": "21.testing.admin_approval_required",
+    "change": "changed",
+    "reason": "Task 09 first-pass extraction for Communications and Messaging (IDs 21-30) by task09-research-agent-gemini; explicit unknown credential states; independent review pending"
+  },
+  {
+    "app_id": 21,
+    "claim_id": "21.testing.contact_sales_required",
+    "change": "changed",
+    "reason": "Task 09 first-pass extraction for Communications and Messaging (IDs 21-30) by task09-research-agent-gemini; explicit unknown credential states; independent review pending"
+  },
+  {
+    "app_id": 21,
+    "claim_id": "21.testing.free_access",
+    "change": "changed",
+    "reason": "Task 09 first-pass extraction for Communications and Messaging (IDs 21-30) by task09-research-agent-gemini; explicit unknown credential states; independent review pending"
+  },
+  {
+    "app_id": 21,
+    "claim_id": "21.testing.paid_required",
+    "change": "changed",
+    "reason": "Task 09 first-pass extraction for Communications and Messaging (IDs 21-30) by task09-research-agent-gemini; explicit unknown credential states; independent review pending"
+  },
+  {
+    "app_id": 21,
+    "claim_id": "21.testing.partner_approval_required",
+    "change": "changed",
+    "reason": "Task 09 first-pass extraction for Communications and Messaging (IDs 21-30) by task09-research-agent-gemini; explicit unknown credential states; independent review pending"
+  },
+  {
+    "app_id": 21,
+    "claim_id": "21.testing.sandbox_access",
+    "change": "changed",
+    "reason": "Task 09 first-pass extraction for Communications and Messaging (IDs 21-30) by task09-research-agent-gemini; explicit unknown credential states; independent review pending"
+  },
+  {
+    "app_id": 21,
+    "claim_id": "21.testing.self_serve",
+    "change": "changed",
+    "reason": "Task 09 first-pass extraction for Communications and Messaging (IDs 21-30) by task09-research-agent-gemini; explicit unknown credential states; independent review pending"
+  },
+  {
+    "app_id": 21,
+    "claim_id": "21.testing.trial_access",
+    "change": "changed",
+    "reason": "Task 09 first-pass extraction for Communications and Messaging (IDs 21-30) by task09-research-agent-gemini; explicit unknown credential states; independent review pending"
+  },
+  {
+    "app_id": 21,
+    "claim_id": "21.testing.vendor_approval_required",
+    "change": "changed",
+    "reason": "Task 09 first-pass extraction for Communications and Messaging (IDs 21-30) by task09-research-agent-gemini; explicit unknown credential states; independent review pending"
+  },
+  {
+    "app_id": 22,
+    "claim_id": "22.api.breadth",
+    "change": "changed",
+    "reason": "Task 09 first-pass extraction for Communications and Messaging (IDs 21-30) by task09-research-agent-gemini; explicit unknown credential states; independent review pending"
+  },
+  {
+    "app_id": 22,
+    "claim_id": "22.api.group.accounts_iam_monitor",
+    "change": "added",
+    "reason": "Task 09 first-pass extraction for Communications and Messaging (IDs 21-30) by task09-research-agent-gemini; explicit unknown credential states; independent review pending"
+  },
+  {
+    "app_id": 22,
+    "claim_id": "22.api.group.messaging_conversations",
+    "change": "added",
+    "reason": "Task 09 first-pass extraction for Communications and Messaging (IDs 21-30) by task09-research-agent-gemini; explicit unknown credential states; independent review pending"
+  },
+  {
+    "app_id": 22,
+    "claim_id": "22.api.group.verify_lookup",
+    "change": "added",
+    "reason": "Task 09 first-pass extraction for Communications and Messaging (IDs 21-30) by task09-research-agent-gemini; explicit unknown credential states; independent review pending"
+  },
+  {
+    "app_id": 22,
+    "claim_id": "22.api.group.voice_video",
+    "change": "added",
+    "reason": "Task 09 first-pass extraction for Communications and Messaging (IDs 21-30) by task09-research-agent-gemini; explicit unknown credential states; independent review pending"
+  },
+  {
+    "app_id": 22,
+    "claim_id": "22.api.protocol.cli",
+    "change": "added",
+    "reason": "Task 09 first-pass extraction for Communications and Messaging (IDs 21-30) by task09-research-agent-gemini; explicit unknown credential states; independent review pending"
+  },
+  {
+    "app_id": 22,
+    "claim_id": "22.api.protocol.rest",
+    "change": "added",
+    "reason": "Task 09 first-pass extraction for Communications and Messaging (IDs 21-30) by task09-research-agent-gemini; explicit unknown credential states; independent review pending"
+  },
+  {
+    "app_id": 22,
+    "claim_id": "22.api.protocol.sdk",
+    "change": "added",
+    "reason": "Task 09 first-pass extraction for Communications and Messaging (IDs 21-30) by task09-research-agent-gemini; explicit unknown credential states; independent review pending"
+  },
+  {
+    "app_id": 22,
+    "claim_id": "22.api.public_docs",
+    "change": "added",
+    "reason": "Task 09 first-pass extraction for Communications and Messaging (IDs 21-30) by task09-research-agent-gemini; explicit unknown credential states; independent review pending"
+  },
+  {
+    "app_id": 22,
+    "claim_id": "22.api.public_documentation",
+    "change": "removed",
+    "reason": "Task 09 first-pass extraction for Communications and Messaging (IDs 21-30) by task09-research-agent-gemini; explicit unknown credential states; independent review pending"
+  },
+  {
+    "app_id": 22,
+    "claim_id": "22.auth.api_key",
+    "change": "added",
+    "reason": "Task 09 first-pass extraction for Communications and Messaging (IDs 21-30) by task09-research-agent-gemini; explicit unknown credential states; independent review pending"
+  },
+  {
+    "app_id": 22,
+    "claim_id": "22.auth.basic_account_sid",
+    "change": "added",
+    "reason": "Task 09 first-pass extraction for Communications and Messaging (IDs 21-30) by task09-research-agent-gemini; explicit unknown credential states; independent review pending"
+  },
+  {
+    "app_id": 22,
+    "claim_id": "22.auth.oauth2",
+    "change": "added",
+    "reason": "Task 09 first-pass extraction for Communications and Messaging (IDs 21-30) by task09-research-agent-gemini; explicit unknown credential states; independent review pending"
+  },
+  {
+    "app_id": 22,
+    "claim_id": "22.buildability",
+    "change": "changed",
+    "reason": "Task 09 first-pass extraction for Communications and Messaging (IDs 21-30) by task09-research-agent-gemini; explicit unknown credential states; independent review pending"
+  },
+  {
+    "app_id": 22,
+    "claim_id": "22.identity",
+    "change": "changed",
+    "reason": "Task 09 first-pass extraction for Communications and Messaging (IDs 21-30) by task09-research-agent-gemini; explicit unknown credential states; independent review pending"
+  },
+  {
+    "app_id": 22,
+    "claim_id": "22.mcp",
+    "change": "changed",
+    "reason": "Task 09 first-pass extraction for Communications and Messaging (IDs 21-30) by task09-research-agent-gemini; explicit unknown credential states; independent review pending"
+  },
+  {
+    "app_id": 22,
+    "claim_id": "22.mcp.official",
+    "change": "added",
+    "reason": "Task 09 first-pass extraction for Communications and Messaging (IDs 21-30) by task09-research-agent-gemini; explicit unknown credential states; independent review pending"
+  },
+  {
+    "app_id": 22,
+    "claim_id": "22.mcp.official.operational",
+    "change": "added",
+    "reason": "Task 09 first-pass extraction for Communications and Messaging (IDs 21-30) by task09-research-agent-gemini; explicit unknown credential states; independent review pending"
+  },
+  {
+    "app_id": 22,
+    "claim_id": "22.production.admin_approval_required",
+    "change": "changed",
+    "reason": "Task 09 first-pass extraction for Communications and Messaging (IDs 21-30) by task09-research-agent-gemini; explicit unknown credential states; independent review pending"
+  },
+  {
+    "app_id": 22,
+    "claim_id": "22.production.contact_sales_required",
+    "change": "changed",
+    "reason": "Task 09 first-pass extraction for Communications and Messaging (IDs 21-30) by task09-research-agent-gemini; explicit unknown credential states; independent review pending"
+  },
+  {
+    "app_id": 22,
+    "claim_id": "22.production.free_access",
+    "change": "changed",
+    "reason": "Task 09 first-pass extraction for Communications and Messaging (IDs 21-30) by task09-research-agent-gemini; explicit unknown credential states; independent review pending"
+  },
+  {
+    "app_id": 22,
+    "claim_id": "22.production.paid_required",
+    "change": "changed",
+    "reason": "Task 09 first-pass extraction for Communications and Messaging (IDs 21-30) by task09-research-agent-gemini; explicit unknown credential states; independent review pending"
+  },
+  {
+    "app_id": 22,
+    "claim_id": "22.production.partner_approval_required",
+    "change": "changed",
+    "reason": "Task 09 first-pass extraction for Communications and Messaging (IDs 21-30) by task09-research-agent-gemini; explicit unknown credential states; independent review pending"
+  },
+  {
+    "app_id": 22,
+    "claim_id": "22.production.sandbox_access",
+    "change": "changed",
+    "reason": "Task 09 first-pass extraction for Communications and Messaging (IDs 21-30) by task09-research-agent-gemini; explicit unknown credential states; independent review pending"
+  },
+  {
+    "app_id": 22,
+    "claim_id": "22.production.self_serve",
+    "change": "changed",
+    "reason": "Task 09 first-pass extraction for Communications and Messaging (IDs 21-30) by task09-research-agent-gemini; explicit unknown credential states; independent review pending"
+  },
+  {
+    "app_id": 22,
+    "claim_id": "22.production.trial_access",
+    "change": "changed",
+    "reason": "Task 09 first-pass extraction for Communications and Messaging (IDs 21-30) by task09-research-agent-gemini; explicit unknown credential states; independent review pending"
+  },
+  {
+    "app_id": 22,
+    "claim_id": "22.production.vendor_approval_required",
+    "change": "changed",
+    "reason": "Task 09 first-pass extraction for Communications and Messaging (IDs 21-30) by task09-research-agent-gemini; explicit unknown credential states; independent review pending"
+  },
+  {
+    "app_id": 22,
+    "claim_id": "22.purpose",
+    "change": "changed",
+    "reason": "Task 09 first-pass extraction for Communications and Messaging (IDs 21-30) by task09-research-agent-gemini; explicit unknown credential states; independent review pending"
+  },
+  {
+    "app_id": 22,
+    "claim_id": "22.testing.admin_approval_required",
+    "change": "changed",
+    "reason": "Task 09 first-pass extraction for Communications and Messaging (IDs 21-30) by task09-research-agent-gemini; explicit unknown credential states; independent review pending"
+  },
+  {
+    "app_id": 22,
+    "claim_id": "22.testing.contact_sales_required",
+    "change": "changed",
+    "reason": "Task 09 first-pass extraction for Communications and Messaging (IDs 21-30) by task09-research-agent-gemini; explicit unknown credential states; independent review pending"
+  },
+  {
+    "app_id": 22,
+    "claim_id": "22.testing.free_access",
+    "change": "changed",
+    "reason": "Task 09 first-pass extraction for Communications and Messaging (IDs 21-30) by task09-research-agent-gemini; explicit unknown credential states; independent review pending"
+  },
+  {
+    "app_id": 22,
+    "claim_id": "22.testing.paid_required",
+    "change": "changed",
+    "reason": "Task 09 first-pass extraction for Communications and Messaging (IDs 21-30) by task09-research-agent-gemini; explicit unknown credential states; independent review pending"
+  },
+  {
+    "app_id": 22,
+    "claim_id": "22.testing.partner_approval_required",
+    "change": "changed",
+    "reason": "Task 09 first-pass extraction for Communications and Messaging (IDs 21-30) by task09-research-agent-gemini; explicit unknown credential states; independent review pending"
+  },
+  {
+    "app_id": 22,
+    "claim_id": "22.testing.sandbox_access",
+    "change": "changed",
+    "reason": "Task 09 first-pass extraction for Communications and Messaging (IDs 21-30) by task09-research-agent-gemini; explicit unknown credential states; independent review pending"
+  },
+  {
+    "app_id": 22,
+    "claim_id": "22.testing.self_serve",
+    "change": "changed",
+    "reason": "Task 09 first-pass extraction for Communications and Messaging (IDs 21-30) by task09-research-agent-gemini; explicit unknown credential states; independent review pending"
+  },
+  {
+    "app_id": 22,
+    "claim_id": "22.testing.trial_access",
+    "change": "changed",
+    "reason": "Task 09 first-pass extraction for Communications and Messaging (IDs 21-30) by task09-research-agent-gemini; explicit unknown credential states; independent review pending"
+  },
+  {
+    "app_id": 22,
+    "claim_id": "22.testing.vendor_approval_required",
+    "change": "changed",
+    "reason": "Task 09 first-pass extraction for Communications and Messaging (IDs 21-30) by task09-research-agent-gemini; explicit unknown credential states; independent review pending"
+  },
+  {
+    "app_id": 23,
+    "claim_id": "23.api.breadth",
+    "change": "changed",
+    "reason": "Task 09 first-pass extraction for Communications and Messaging (IDs 21-30) by task09-research-agent-gemini; explicit unknown credential states; independent review pending"
+  },
+  {
+    "app_id": 23,
+    "claim_id": "23.api.group.calls_events_reminders",
+    "change": "added",
+    "reason": "Task 09 first-pass extraction for Communications and Messaging (IDs 21-30) by task09-research-agent-gemini; explicit unknown credential states; independent review pending"
+  },
+  {
+    "app_id": 23,
+    "claim_id": "23.api.group.chats_channels_messages",
+    "change": "added",
+    "reason": "Task 09 first-pass extraction for Communications and Messaging (IDs 21-30) by task09-research-agent-gemini; explicit unknown credential states; independent review pending"
+  },
+  {
+    "app_id": 23,
+    "claim_id": "23.api.group.users_org_structure",
+    "change": "added",
+    "reason": "Task 09 first-pass extraction for Communications and Messaging (IDs 21-30) by task09-research-agent-gemini; explicit unknown credential states; independent review pending"
+  },
+  {
+    "app_id": 23,
+    "claim_id": "23.api.protocol.rest",
+    "change": "added",
+    "reason": "Task 09 first-pass extraction for Communications and Messaging (IDs 21-30) by task09-research-agent-gemini; explicit unknown credential states; independent review pending"
+  },
+  {
+    "app_id": 23,
+    "claim_id": "23.api.public_docs",
+    "change": "added",
+    "reason": "Task 09 first-pass extraction for Communications and Messaging (IDs 21-30) by task09-research-agent-gemini; explicit unknown credential states; independent review pending"
+  },
+  {
+    "app_id": 23,
+    "claim_id": "23.api.public_documentation",
+    "change": "removed",
+    "reason": "Task 09 first-pass extraction for Communications and Messaging (IDs 21-30) by task09-research-agent-gemini; explicit unknown credential states; independent review pending"
+  },
+  {
+    "app_id": 23,
+    "claim_id": "23.auth.oauth2",
+    "change": "added",
+    "reason": "Task 09 first-pass extraction for Communications and Messaging (IDs 21-30) by task09-research-agent-gemini; explicit unknown credential states; independent review pending"
+  },
+  {
+    "app_id": 23,
+    "claim_id": "23.buildability",
+    "change": "changed",
+    "reason": "Task 09 first-pass extraction for Communications and Messaging (IDs 21-30) by task09-research-agent-gemini; explicit unknown credential states; independent review pending"
+  },
+  {
+    "app_id": 23,
+    "claim_id": "23.identity",
+    "change": "changed",
+    "reason": "Task 09 first-pass extraction for Communications and Messaging (IDs 21-30) by task09-research-agent-gemini; explicit unknown credential states; independent review pending"
+  },
+  {
+    "app_id": 23,
+    "claim_id": "23.mcp",
+    "change": "changed",
+    "reason": "Task 09 first-pass extraction for Communications and Messaging (IDs 21-30) by task09-research-agent-gemini; explicit unknown credential states; independent review pending"
+  },
+  {
+    "app_id": 23,
+    "claim_id": "23.mcp.community",
+    "change": "added",
+    "reason": "Task 09 first-pass extraction for Communications and Messaging (IDs 21-30) by task09-research-agent-gemini; explicit unknown credential states; independent review pending"
+  },
+  {
+    "app_id": 23,
+    "claim_id": "23.mcp.community.operational",
+    "change": "added",
+    "reason": "Task 09 first-pass extraction for Communications and Messaging (IDs 21-30) by task09-research-agent-gemini; explicit unknown credential states; independent review pending"
+  },
+  {
+    "app_id": 23,
+    "claim_id": "23.production.admin_approval_required",
+    "change": "changed",
+    "reason": "Task 09 first-pass extraction for Communications and Messaging (IDs 21-30) by task09-research-agent-gemini; explicit unknown credential states; independent review pending"
+  },
+  {
+    "app_id": 23,
+    "claim_id": "23.production.contact_sales_required",
+    "change": "changed",
+    "reason": "Task 09 first-pass extraction for Communications and Messaging (IDs 21-30) by task09-research-agent-gemini; explicit unknown credential states; independent review pending"
+  },
+  {
+    "app_id": 23,
+    "claim_id": "23.production.free_access",
+    "change": "changed",
+    "reason": "Task 09 first-pass extraction for Communications and Messaging (IDs 21-30) by task09-research-agent-gemini; explicit unknown credential states; independent review pending"
+  },
+  {
+    "app_id": 23,
+    "claim_id": "23.production.paid_required",
+    "change": "changed",
+    "reason": "Task 09 first-pass extraction for Communications and Messaging (IDs 21-30) by task09-research-agent-gemini; explicit unknown credential states; independent review pending"
+  },
+  {
+    "app_id": 23,
+    "claim_id": "23.production.partner_approval_required",
+    "change": "changed",
+    "reason": "Task 09 first-pass extraction for Communications and Messaging (IDs 21-30) by task09-research-agent-gemini; explicit unknown credential states; independent review pending"
+  },
+  {
+    "app_id": 23,
+    "claim_id": "23.production.sandbox_access",
+    "change": "changed",
+    "reason": "Task 09 first-pass extraction for Communications and Messaging (IDs 21-30) by task09-research-agent-gemini; explicit unknown credential states; independent review pending"
+  },
+  {
+    "app_id": 23,
+    "claim_id": "23.production.self_serve",
+    "change": "changed",
+    "reason": "Task 09 first-pass extraction for Communications and Messaging (IDs 21-30) by task09-research-agent-gemini; explicit unknown credential states; independent review pending"
+  },
+  {
+    "app_id": 23,
+    "claim_id": "23.production.trial_access",
+    "change": "changed",
+    "reason": "Task 09 first-pass extraction for Communications and Messaging (IDs 21-30) by task09-research-agent-gemini; explicit unknown credential states; independent review pending"
+  },
+  {
+    "app_id": 23,
+    "claim_id": "23.production.vendor_approval_required",
+    "change": "changed",
+    "reason": "Task 09 first-pass extraction for Communications and Messaging (IDs 21-30) by task09-research-agent-gemini; explicit unknown credential states; independent review pending"
+  },
+  {
+    "app_id": 23,
+    "claim_id": "23.purpose",
+    "change": "changed",
+    "reason": "Task 09 first-pass extraction for Communications and Messaging (IDs 21-30) by task09-research-agent-gemini; explicit unknown credential states; independent review pending"
+  },
+  {
+    "app_id": 23,
+    "claim_id": "23.testing.admin_approval_required",
+    "change": "changed",
+    "reason": "Task 09 first-pass extraction for Communications and Messaging (IDs 21-30) by task09-research-agent-gemini; explicit unknown credential states; independent review pending"
+  },
+  {
+    "app_id": 23,
+    "claim_id": "23.testing.contact_sales_required",
+    "change": "changed",
+    "reason": "Task 09 first-pass extraction for Communications and Messaging (IDs 21-30) by task09-research-agent-gemini; explicit unknown credential states; independent review pending"
+  },
+  {
+    "app_id": 23,
+    "claim_id": "23.testing.free_access",
+    "change": "changed",
+    "reason": "Task 09 first-pass extraction for Communications and Messaging (IDs 21-30) by task09-research-agent-gemini; explicit unknown credential states; independent review pending"
+  },
+  {
+    "app_id": 23,
+    "claim_id": "23.testing.paid_required",
+    "change": "changed",
+    "reason": "Task 09 first-pass extraction for Communications and Messaging (IDs 21-30) by task09-research-agent-gemini; explicit unknown credential states; independent review pending"
+  },
+  {
+    "app_id": 23,
+    "claim_id": "23.testing.partner_approval_required",
+    "change": "changed",
+    "reason": "Task 09 first-pass extraction for Communications and Messaging (IDs 21-30) by task09-research-agent-gemini; explicit unknown credential states; independent review pending"
+  },
+  {
+    "app_id": 23,
+    "claim_id": "23.testing.sandbox_access",
+    "change": "changed",
+    "reason": "Task 09 first-pass extraction for Communications and Messaging (IDs 21-30) by task09-research-agent-gemini; explicit unknown credential states; independent review pending"
+  },
+  {
+    "app_id": 23,
+    "claim_id": "23.testing.self_serve",
+    "change": "changed",
+    "reason": "Task 09 first-pass extraction for Communications and Messaging (IDs 21-30) by task09-research-agent-gemini; explicit unknown credential states; independent review pending"
+  },
+  {
+    "app_id": 23,
+    "claim_id": "23.testing.trial_access",
+    "change": "changed",
+    "reason": "Task 09 first-pass extraction for Communications and Messaging (IDs 21-30) by task09-research-agent-gemini; explicit unknown credential states; independent review pending"
+  },
+  {
+    "app_id": 23,
+    "claim_id": "23.testing.vendor_approval_required",
+    "change": "changed",
+    "reason": "Task 09 first-pass extraction for Communications and Messaging (IDs 21-30) by task09-research-agent-gemini; explicit unknown credential states; independent review pending"
+  },
+  {
+    "app_id": 24,
+    "claim_id": "24.api.breadth",
+    "change": "changed",
+    "reason": "Task 09 first-pass extraction for Communications and Messaging (IDs 21-30) by task09-research-agent-gemini; explicit unknown credential states; independent review pending"
+  },
+  {
+    "app_id": 24,
+    "claim_id": "24.api.group.calendar_contacts_approval",
+    "change": "added",
+    "reason": "Task 09 first-pass extraction for Communications and Messaging (IDs 21-30) by task09-research-agent-gemini; explicit unknown credential states; independent review pending"
+  },
+  {
+    "app_id": 24,
+    "claim_id": "24.api.group.docs_drive_sheets_base",
+    "change": "added",
+    "reason": "Task 09 first-pass extraction for Communications and Messaging (IDs 21-30) by task09-research-agent-gemini; explicit unknown credential states; independent review pending"
+  },
+  {
+    "app_id": 24,
+    "claim_id": "24.api.group.messaging_im",
+    "change": "added",
+    "reason": "Task 09 first-pass extraction for Communications and Messaging (IDs 21-30) by task09-research-agent-gemini; explicit unknown credential states; independent review pending"
+  },
+  {
+    "app_id": 24,
+    "claim_id": "24.api.protocol.rest",
+    "change": "added",
+    "reason": "Task 09 first-pass extraction for Communications and Messaging (IDs 21-30) by task09-research-agent-gemini; explicit unknown credential states; independent review pending"
+  },
+  {
+    "app_id": 24,
+    "claim_id": "24.api.protocol.sdk",
+    "change": "added",
+    "reason": "Task 09 first-pass extraction for Communications and Messaging (IDs 21-30) by task09-research-agent-gemini; explicit unknown credential states; independent review pending"
+  },
+  {
+    "app_id": 24,
+    "claim_id": "24.api.public_docs",
+    "change": "added",
+    "reason": "Task 09 first-pass extraction for Communications and Messaging (IDs 21-30) by task09-research-agent-gemini; explicit unknown credential states; independent review pending"
+  },
+  {
+    "app_id": 24,
+    "claim_id": "24.api.public_documentation",
+    "change": "removed",
+    "reason": "Task 09 first-pass extraction for Communications and Messaging (IDs 21-30) by task09-research-agent-gemini; explicit unknown credential states; independent review pending"
+  },
+  {
+    "app_id": 24,
+    "claim_id": "24.auth.app_tenant_token",
+    "change": "added",
+    "reason": "Task 09 first-pass extraction for Communications and Messaging (IDs 21-30) by task09-research-agent-gemini; explicit unknown credential states; independent review pending"
+  },
+  {
+    "app_id": 24,
+    "claim_id": "24.auth.oauth2_user_token",
+    "change": "added",
+    "reason": "Task 09 first-pass extraction for Communications and Messaging (IDs 21-30) by task09-research-agent-gemini; explicit unknown credential states; independent review pending"
+  },
+  {
+    "app_id": 24,
+    "claim_id": "24.buildability",
+    "change": "changed",
+    "reason": "Task 09 first-pass extraction for Communications and Messaging (IDs 21-30) by task09-research-agent-gemini; explicit unknown credential states; independent review pending"
+  },
+  {
+    "app_id": 24,
+    "claim_id": "24.identity",
+    "change": "changed",
+    "reason": "Task 09 first-pass extraction for Communications and Messaging (IDs 21-30) by task09-research-agent-gemini; explicit unknown credential states; independent review pending"
+  },
+  {
+    "app_id": 24,
+    "claim_id": "24.mcp",
+    "change": "changed",
+    "reason": "Task 09 first-pass extraction for Communications and Messaging (IDs 21-30) by task09-research-agent-gemini; explicit unknown credential states; independent review pending"
+  },
+  {
+    "app_id": 24,
+    "claim_id": "24.mcp.official",
+    "change": "added",
+    "reason": "Task 09 first-pass extraction for Communications and Messaging (IDs 21-30) by task09-research-agent-gemini; explicit unknown credential states; independent review pending"
+  },
+  {
+    "app_id": 24,
+    "claim_id": "24.mcp.official.operational",
+    "change": "added",
+    "reason": "Task 09 first-pass extraction for Communications and Messaging (IDs 21-30) by task09-research-agent-gemini; explicit unknown credential states; independent review pending"
+  },
+  {
+    "app_id": 24,
+    "claim_id": "24.production.admin_approval_required",
+    "change": "changed",
+    "reason": "Task 09 first-pass extraction for Communications and Messaging (IDs 21-30) by task09-research-agent-gemini; explicit unknown credential states; independent review pending"
+  },
+  {
+    "app_id": 24,
+    "claim_id": "24.production.contact_sales_required",
+    "change": "changed",
+    "reason": "Task 09 first-pass extraction for Communications and Messaging (IDs 21-30) by task09-research-agent-gemini; explicit unknown credential states; independent review pending"
+  },
+  {
+    "app_id": 24,
+    "claim_id": "24.production.free_access",
+    "change": "changed",
+    "reason": "Task 09 first-pass extraction for Communications and Messaging (IDs 21-30) by task09-research-agent-gemini; explicit unknown credential states; independent review pending"
+  },
+  {
+    "app_id": 24,
+    "claim_id": "24.production.paid_required",
+    "change": "changed",
+    "reason": "Task 09 first-pass extraction for Communications and Messaging (IDs 21-30) by task09-research-agent-gemini; explicit unknown credential states; independent review pending"
+  },
+  {
+    "app_id": 24,
+    "claim_id": "24.production.partner_approval_required",
+    "change": "changed",
+    "reason": "Task 09 first-pass extraction for Communications and Messaging (IDs 21-30) by task09-research-agent-gemini; explicit unknown credential states; independent review pending"
+  },
+  {
+    "app_id": 24,
+    "claim_id": "24.production.sandbox_access",
+    "change": "changed",
+    "reason": "Task 09 first-pass extraction for Communications and Messaging (IDs 21-30) by task09-research-agent-gemini; explicit unknown credential states; independent review pending"
+  },
+  {
+    "app_id": 24,
+    "claim_id": "24.production.self_serve",
+    "change": "changed",
+    "reason": "Task 09 first-pass extraction for Communications and Messaging (IDs 21-30) by task09-research-agent-gemini; explicit unknown credential states; independent review pending"
+  },
+  {
+    "app_id": 24,
+    "claim_id": "24.production.trial_access",
+    "change": "changed",
+    "reason": "Task 09 first-pass extraction for Communications and Messaging (IDs 21-30) by task09-research-agent-gemini; explicit unknown credential states; independent review pending"
+  },
+  {
+    "app_id": 24,
+    "claim_id": "24.production.vendor_approval_required",
+    "change": "changed",
+    "reason": "Task 09 first-pass extraction for Communications and Messaging (IDs 21-30) by task09-research-agent-gemini; explicit unknown credential states; independent review pending"
+  },
+  {
+    "app_id": 24,
+    "claim_id": "24.purpose",
+    "change": "changed",
+    "reason": "Task 09 first-pass extraction for Communications and Messaging (IDs 21-30) by task09-research-agent-gemini; explicit unknown credential states; independent review pending"
+  },
+  {
+    "app_id": 24,
+    "claim_id": "24.testing.admin_approval_required",
+    "change": "changed",
+    "reason": "Task 09 first-pass extraction for Communications and Messaging (IDs 21-30) by task09-research-agent-gemini; explicit unknown credential states; independent review pending"
+  },
+  {
+    "app_id": 24,
+    "claim_id": "24.testing.contact_sales_required",
+    "change": "changed",
+    "reason": "Task 09 first-pass extraction for Communications and Messaging (IDs 21-30) by task09-research-agent-gemini; explicit unknown credential states; independent review pending"
+  },
+  {
+    "app_id": 24,
+    "claim_id": "24.testing.free_access",
+    "change": "changed",
+    "reason": "Task 09 first-pass extraction for Communications and Messaging (IDs 21-30) by task09-research-agent-gemini; explicit unknown credential states; independent review pending"
+  },
+  {
+    "app_id": 24,
+    "claim_id": "24.testing.paid_required",
+    "change": "changed",
+    "reason": "Task 09 first-pass extraction for Communications and Messaging (IDs 21-30) by task09-research-agent-gemini; explicit unknown credential states; independent review pending"
+  },
+  {
+    "app_id": 24,
+    "claim_id": "24.testing.partner_approval_required",
+    "change": "changed",
+    "reason": "Task 09 first-pass extraction for Communications and Messaging (IDs 21-30) by task09-research-agent-gemini; explicit unknown credential states; independent review pending"
+  },
+  {
+    "app_id": 24,
+    "claim_id": "24.testing.sandbox_access",
+    "change": "changed",
+    "reason": "Task 09 first-pass extraction for Communications and Messaging (IDs 21-30) by task09-research-agent-gemini; explicit unknown credential states; independent review pending"
+  },
+  {
+    "app_id": 24,
+    "claim_id": "24.testing.self_serve",
+    "change": "changed",
+    "reason": "Task 09 first-pass extraction for Communications and Messaging (IDs 21-30) by task09-research-agent-gemini; explicit unknown credential states; independent review pending"
+  },
+  {
+    "app_id": 24,
+    "claim_id": "24.testing.trial_access",
+    "change": "changed",
+    "reason": "Task 09 first-pass extraction for Communications and Messaging (IDs 21-30) by task09-research-agent-gemini; explicit unknown credential states; independent review pending"
+  },
+  {
+    "app_id": 24,
+    "claim_id": "24.testing.vendor_approval_required",
+    "change": "changed",
+    "reason": "Task 09 first-pass extraction for Communications and Messaging (IDs 21-30) by task09-research-agent-gemini; explicit unknown credential states; independent review pending"
+  },
+  {
+    "app_id": 25,
+    "claim_id": "25.api.breadth",
+    "change": "changed",
+    "reason": "Task 09 first-pass extraction for Communications and Messaging (IDs 21-30) by task09-research-agent-gemini; explicit unknown credential states; independent review pending"
+  },
+  {
+    "app_id": 25,
+    "claim_id": "25.api.group.channels_dms",
+    "change": "added",
+    "reason": "Task 09 first-pass extraction for Communications and Messaging (IDs 21-30) by task09-research-agent-gemini; explicit unknown credential states; independent review pending"
+  },
+  {
+    "app_id": 25,
+    "claim_id": "25.api.group.messages_threads_reactions",
+    "change": "added",
+    "reason": "Task 09 first-pass extraction for Communications and Messaging (IDs 21-30) by task09-research-agent-gemini; explicit unknown credential states; independent review pending"
+  },
+  {
+    "app_id": 25,
+    "claim_id": "25.api.group.webhooks",
+    "change": "added",
+    "reason": "Task 09 first-pass extraction for Communications and Messaging (IDs 21-30) by task09-research-agent-gemini; explicit unknown credential states; independent review pending"
+  },
+  {
+    "app_id": 25,
+    "claim_id": "25.api.protocol.cli",
+    "change": "added",
+    "reason": "Task 09 first-pass extraction for Communications and Messaging (IDs 21-30) by task09-research-agent-gemini; explicit unknown credential states; independent review pending"
+  },
+  {
+    "app_id": 25,
+    "claim_id": "25.api.protocol.rest",
+    "change": "added",
+    "reason": "Task 09 first-pass extraction for Communications and Messaging (IDs 21-30) by task09-research-agent-gemini; explicit unknown credential states; independent review pending"
+  },
+  {
+    "app_id": 25,
+    "claim_id": "25.api.protocol.sdk",
+    "change": "added",
+    "reason": "Task 09 first-pass extraction for Communications and Messaging (IDs 21-30) by task09-research-agent-gemini; explicit unknown credential states; independent review pending"
+  },
+  {
+    "app_id": 25,
+    "claim_id": "25.api.public_docs",
+    "change": "added",
+    "reason": "Task 09 first-pass extraction for Communications and Messaging (IDs 21-30) by task09-research-agent-gemini; explicit unknown credential states; independent review pending"
+  },
+  {
+    "app_id": 25,
+    "claim_id": "25.api.public_documentation",
+    "change": "removed",
+    "reason": "Task 09 first-pass extraction for Communications and Messaging (IDs 21-30) by task09-research-agent-gemini; explicit unknown credential states; independent review pending"
+  },
+  {
+    "app_id": 25,
+    "claim_id": "25.auth.api_key_addon",
+    "change": "added",
+    "reason": "Task 09 first-pass extraction for Communications and Messaging (IDs 21-30) by task09-research-agent-gemini; explicit unknown credential states; independent review pending"
+  },
+  {
+    "app_id": 25,
+    "claim_id": "25.auth.incoming_webhook_url",
+    "change": "added",
+    "reason": "Task 09 first-pass extraction for Communications and Messaging (IDs 21-30) by task09-research-agent-gemini; explicit unknown credential states; independent review pending"
+  },
+  {
+    "app_id": 25,
+    "claim_id": "25.buildability",
+    "change": "changed",
+    "reason": "Task 09 first-pass extraction for Communications and Messaging (IDs 21-30) by task09-research-agent-gemini; explicit unknown credential states; independent review pending"
+  },
+  {
+    "app_id": 25,
+    "claim_id": "25.identity",
+    "change": "changed",
+    "reason": "Task 09 first-pass extraction for Communications and Messaging (IDs 21-30) by task09-research-agent-gemini; explicit unknown credential states; independent review pending"
+  },
+  {
+    "app_id": 25,
+    "claim_id": "25.mcp",
+    "change": "changed",
+    "reason": "Task 09 first-pass extraction for Communications and Messaging (IDs 21-30) by task09-research-agent-gemini; explicit unknown credential states; independent review pending"
+  },
+  {
+    "app_id": 25,
+    "claim_id": "25.mcp.community",
+    "change": "added",
+    "reason": "Task 09 first-pass extraction for Communications and Messaging (IDs 21-30) by task09-research-agent-gemini; explicit unknown credential states; independent review pending"
+  },
+  {
+    "app_id": 25,
+    "claim_id": "25.mcp.community.operational",
+    "change": "added",
+    "reason": "Task 09 first-pass extraction for Communications and Messaging (IDs 21-30) by task09-research-agent-gemini; explicit unknown credential states; independent review pending"
+  },
+  {
+    "app_id": 25,
+    "claim_id": "25.mcp.official",
+    "change": "added",
+    "reason": "Task 09 first-pass extraction for Communications and Messaging (IDs 21-30) by task09-research-agent-gemini; explicit unknown credential states; independent review pending"
+  },
+  {
+    "app_id": 25,
+    "claim_id": "25.mcp.official.operational",
+    "change": "added",
+    "reason": "Task 09 first-pass extraction for Communications and Messaging (IDs 21-30) by task09-research-agent-gemini; explicit unknown credential states; independent review pending"
+  },
+  {
+    "app_id": 25,
+    "claim_id": "25.production.admin_approval_required",
+    "change": "changed",
+    "reason": "Task 09 first-pass extraction for Communications and Messaging (IDs 21-30) by task09-research-agent-gemini; explicit unknown credential states; independent review pending"
+  },
+  {
+    "app_id": 25,
+    "claim_id": "25.production.contact_sales_required",
+    "change": "changed",
+    "reason": "Task 09 first-pass extraction for Communications and Messaging (IDs 21-30) by task09-research-agent-gemini; explicit unknown credential states; independent review pending"
+  },
+  {
+    "app_id": 25,
+    "claim_id": "25.production.free_access",
+    "change": "changed",
+    "reason": "Task 09 first-pass extraction for Communications and Messaging (IDs 21-30) by task09-research-agent-gemini; explicit unknown credential states; independent review pending"
+  },
+  {
+    "app_id": 25,
+    "claim_id": "25.production.paid_required",
+    "change": "changed",
+    "reason": "Task 09 first-pass extraction for Communications and Messaging (IDs 21-30) by task09-research-agent-gemini; explicit unknown credential states; independent review pending"
+  },
+  {
+    "app_id": 25,
+    "claim_id": "25.production.partner_approval_required",
+    "change": "changed",
+    "reason": "Task 09 first-pass extraction for Communications and Messaging (IDs 21-30) by task09-research-agent-gemini; explicit unknown credential states; independent review pending"
+  },
+  {
+    "app_id": 25,
+    "claim_id": "25.production.sandbox_access",
+    "change": "changed",
+    "reason": "Task 09 first-pass extraction for Communications and Messaging (IDs 21-30) by task09-research-agent-gemini; explicit unknown credential states; independent review pending"
+  },
+  {
+    "app_id": 25,
+    "claim_id": "25.production.self_serve",
+    "change": "changed",
+    "reason": "Task 09 first-pass extraction for Communications and Messaging (IDs 21-30) by task09-research-agent-gemini; explicit unknown credential states; independent review pending"
+  },
+  {
+    "app_id": 25,
+    "claim_id": "25.production.trial_access",
+    "change": "changed",
+    "reason": "Task 09 first-pass extraction for Communications and Messaging (IDs 21-30) by task09-research-agent-gemini; explicit unknown credential states; independent review pending"
+  },
+  {
+    "app_id": 25,
+    "claim_id": "25.production.vendor_approval_required",
+    "change": "changed",
+    "reason": "Task 09 first-pass extraction for Communications and Messaging (IDs 21-30) by task09-research-agent-gemini; explicit unknown credential states; independent review pending"
+  },
+  {
+    "app_id": 25,
+    "claim_id": "25.purpose",
+    "change": "changed",
+    "reason": "Task 09 first-pass extraction for Communications and Messaging (IDs 21-30) by task09-research-agent-gemini; explicit unknown credential states; independent review pending"
+  },
+  {
+    "app_id": 25,
+    "claim_id": "25.testing.admin_approval_required",
+    "change": "changed",
+    "reason": "Task 09 first-pass extraction for Communications and Messaging (IDs 21-30) by task09-research-agent-gemini; explicit unknown credential states; independent review pending"
+  },
+  {
+    "app_id": 25,
+    "claim_id": "25.testing.contact_sales_required",
+    "change": "changed",
+    "reason": "Task 09 first-pass extraction for Communications and Messaging (IDs 21-30) by task09-research-agent-gemini; explicit unknown credential states; independent review pending"
+  },
+  {
+    "app_id": 25,
+    "claim_id": "25.testing.free_access",
+    "change": "changed",
+    "reason": "Task 09 first-pass extraction for Communications and Messaging (IDs 21-30) by task09-research-agent-gemini; explicit unknown credential states; independent review pending"
+  },
+  {
+    "app_id": 25,
+    "claim_id": "25.testing.paid_required",
+    "change": "changed",
+    "reason": "Task 09 first-pass extraction for Communications and Messaging (IDs 21-30) by task09-research-agent-gemini; explicit unknown credential states; independent review pending"
+  },
+  {
+    "app_id": 25,
+    "claim_id": "25.testing.partner_approval_required",
+    "change": "changed",
+    "reason": "Task 09 first-pass extraction for Communications and Messaging (IDs 21-30) by task09-research-agent-gemini; explicit unknown credential states; independent review pending"
+  },
+  {
+    "app_id": 25,
+    "claim_id": "25.testing.sandbox_access",
+    "change": "changed",
+    "reason": "Task 09 first-pass extraction for Communications and Messaging (IDs 21-30) by task09-research-agent-gemini; explicit unknown credential states; independent review pending"
+  },
+  {
+    "app_id": 25,
+    "claim_id": "25.testing.self_serve",
+    "change": "changed",
+    "reason": "Task 09 first-pass extraction for Communications and Messaging (IDs 21-30) by task09-research-agent-gemini; explicit unknown credential states; independent review pending"
+  },
+  {
+    "app_id": 25,
+    "claim_id": "25.testing.trial_access",
+    "change": "changed",
+    "reason": "Task 09 first-pass extraction for Communications and Messaging (IDs 21-30) by task09-research-agent-gemini; explicit unknown credential states; independent review pending"
+  },
+  {
+    "app_id": 25,
+    "claim_id": "25.testing.vendor_approval_required",
+    "change": "changed",
+    "reason": "Task 09 first-pass extraction for Communications and Messaging (IDs 21-30) by task09-research-agent-gemini; explicit unknown credential states; independent review pending"
+  },
+  {
+    "app_id": 26,
+    "claim_id": "26.api.breadth",
+    "change": "changed",
+    "reason": "Task 09 first-pass extraction for Communications and Messaging (IDs 21-30) by task09-research-agent-gemini; explicit unknown credential states; independent review pending"
+  },
+  {
+    "app_id": 26,
+    "claim_id": "26.api.group.guilds_users_moderation",
+    "change": "added",
+    "reason": "Task 09 first-pass extraction for Communications and Messaging (IDs 21-30) by task09-research-agent-gemini; explicit unknown credential states; independent review pending"
+  },
+  {
+    "app_id": 26,
+    "claim_id": "26.api.group.messages_channels_threads",
+    "change": "added",
+    "reason": "Task 09 first-pass extraction for Communications and Messaging (IDs 21-30) by task09-research-agent-gemini; explicit unknown credential states; independent review pending"
+  },
+  {
+    "app_id": 26,
+    "claim_id": "26.api.group.voice_stage_apps_commerce",
+    "change": "added",
+    "reason": "Task 09 first-pass extraction for Communications and Messaging (IDs 21-30) by task09-research-agent-gemini; explicit unknown credential states; independent review pending"
+  },
+  {
+    "app_id": 26,
+    "claim_id": "26.api.protocol.other_gateway",
+    "change": "added",
+    "reason": "Task 09 first-pass extraction for Communications and Messaging (IDs 21-30) by task09-research-agent-gemini; explicit unknown credential states; independent review pending"
+  },
+  {
+    "app_id": 26,
+    "claim_id": "26.api.protocol.rest",
+    "change": "added",
+    "reason": "Task 09 first-pass extraction for Communications and Messaging (IDs 21-30) by task09-research-agent-gemini; explicit unknown credential states; independent review pending"
+  },
+  {
+    "app_id": 26,
+    "claim_id": "26.api.protocol.sdk",
+    "change": "added",
+    "reason": "Task 09 first-pass extraction for Communications and Messaging (IDs 21-30) by task09-research-agent-gemini; explicit unknown credential states; independent review pending"
+  },
+  {
+    "app_id": 26,
+    "claim_id": "26.api.public_docs",
+    "change": "added",
+    "reason": "Task 09 first-pass extraction for Communications and Messaging (IDs 21-30) by task09-research-agent-gemini; explicit unknown credential states; independent review pending"
+  },
+  {
+    "app_id": 26,
+    "claim_id": "26.api.public_documentation",
+    "change": "removed",
+    "reason": "Task 09 first-pass extraction for Communications and Messaging (IDs 21-30) by task09-research-agent-gemini; explicit unknown credential states; independent review pending"
+  },
+  {
+    "app_id": 26,
+    "claim_id": "26.auth.basic_oauth_client",
+    "change": "added",
+    "reason": "Task 09 first-pass extraction for Communications and Messaging (IDs 21-30) by task09-research-agent-gemini; explicit unknown credential states; independent review pending"
+  },
+  {
+    "app_id": 26,
+    "claim_id": "26.auth.bot_token",
+    "change": "added",
+    "reason": "Task 09 first-pass extraction for Communications and Messaging (IDs 21-30) by task09-research-agent-gemini; explicit unknown credential states; independent review pending"
+  },
+  {
+    "app_id": 26,
+    "claim_id": "26.auth.oauth2",
+    "change": "added",
+    "reason": "Task 09 first-pass extraction for Communications and Messaging (IDs 21-30) by task09-research-agent-gemini; explicit unknown credential states; independent review pending"
+  },
+  {
+    "app_id": 26,
+    "claim_id": "26.buildability",
+    "change": "changed",
+    "reason": "Task 09 first-pass extraction for Communications and Messaging (IDs 21-30) by task09-research-agent-gemini; explicit unknown credential states; independent review pending"
+  },
+  {
+    "app_id": 26,
+    "claim_id": "26.identity",
+    "change": "changed",
+    "reason": "Task 09 first-pass extraction for Communications and Messaging (IDs 21-30) by task09-research-agent-gemini; explicit unknown credential states; independent review pending"
+  },
+  {
+    "app_id": 26,
+    "claim_id": "26.mcp",
+    "change": "changed",
+    "reason": "Task 09 first-pass extraction for Communications and Messaging (IDs 21-30) by task09-research-agent-gemini; explicit unknown credential states; independent review pending"
+  },
+  {
+    "app_id": 26,
+    "claim_id": "26.mcp.community",
+    "change": "added",
+    "reason": "Task 09 first-pass extraction for Communications and Messaging (IDs 21-30) by task09-research-agent-gemini; explicit unknown credential states; independent review pending"
+  },
+  {
+    "app_id": 26,
+    "claim_id": "26.mcp.community.operational",
+    "change": "added",
+    "reason": "Task 09 first-pass extraction for Communications and Messaging (IDs 21-30) by task09-research-agent-gemini; explicit unknown credential states; independent review pending"
+  },
+  {
+    "app_id": 26,
+    "claim_id": "26.production.admin_approval_required",
+    "change": "changed",
+    "reason": "Task 09 first-pass extraction for Communications and Messaging (IDs 21-30) by task09-research-agent-gemini; explicit unknown credential states; independent review pending"
+  },
+  {
+    "app_id": 26,
+    "claim_id": "26.production.contact_sales_required",
+    "change": "changed",
+    "reason": "Task 09 first-pass extraction for Communications and Messaging (IDs 21-30) by task09-research-agent-gemini; explicit unknown credential states; independent review pending"
+  },
+  {
+    "app_id": 26,
+    "claim_id": "26.production.free_access",
+    "change": "changed",
+    "reason": "Task 09 first-pass extraction for Communications and Messaging (IDs 21-30) by task09-research-agent-gemini; explicit unknown credential states; independent review pending"
+  },
+  {
+    "app_id": 26,
+    "claim_id": "26.production.paid_required",
+    "change": "changed",
+    "reason": "Task 09 first-pass extraction for Communications and Messaging (IDs 21-30) by task09-research-agent-gemini; explicit unknown credential states; independent review pending"
+  },
+  {
+    "app_id": 26,
+    "claim_id": "26.production.partner_approval_required",
+    "change": "changed",
+    "reason": "Task 09 first-pass extraction for Communications and Messaging (IDs 21-30) by task09-research-agent-gemini; explicit unknown credential states; independent review pending"
+  },
+  {
+    "app_id": 26,
+    "claim_id": "26.production.sandbox_access",
+    "change": "changed",
+    "reason": "Task 09 first-pass extraction for Communications and Messaging (IDs 21-30) by task09-research-agent-gemini; explicit unknown credential states; independent review pending"
+  },
+  {
+    "app_id": 26,
+    "claim_id": "26.production.self_serve",
+    "change": "changed",
+    "reason": "Task 09 first-pass extraction for Communications and Messaging (IDs 21-30) by task09-research-agent-gemini; explicit unknown credential states; independent review pending"
+  },
+  {
+    "app_id": 26,
+    "claim_id": "26.production.trial_access",
+    "change": "changed",
+    "reason": "Task 09 first-pass extraction for Communications and Messaging (IDs 21-30) by task09-research-agent-gemini; explicit unknown credential states; independent review pending"
+  },
+  {
+    "app_id": 26,
+    "claim_id": "26.production.vendor_approval_required",
+    "change": "changed",
+    "reason": "Task 09 first-pass extraction for Communications and Messaging (IDs 21-30) by task09-research-agent-gemini; explicit unknown credential states; independent review pending"
+  },
+  {
+    "app_id": 26,
+    "claim_id": "26.purpose",
+    "change": "changed",
+    "reason": "Task 09 first-pass extraction for Communications and Messaging (IDs 21-30) by task09-research-agent-gemini; explicit unknown credential states; independent review pending"
+  },
+  {
+    "app_id": 26,
+    "claim_id": "26.testing.admin_approval_required",
+    "change": "changed",
+    "reason": "Task 09 first-pass extraction for Communications and Messaging (IDs 21-30) by task09-research-agent-gemini; explicit unknown credential states; independent review pending"
+  },
+  {
+    "app_id": 26,
+    "claim_id": "26.testing.contact_sales_required",
+    "change": "changed",
+    "reason": "Task 09 first-pass extraction for Communications and Messaging (IDs 21-30) by task09-research-agent-gemini; explicit unknown credential states; independent review pending"
+  },
+  {
+    "app_id": 26,
+    "claim_id": "26.testing.free_access",
+    "change": "changed",
+    "reason": "Task 09 first-pass extraction for Communications and Messaging (IDs 21-30) by task09-research-agent-gemini; explicit unknown credential states; independent review pending"
+  },
+  {
+    "app_id": 26,
+    "claim_id": "26.testing.paid_required",
+    "change": "changed",
+    "reason": "Task 09 first-pass extraction for Communications and Messaging (IDs 21-30) by task09-research-agent-gemini; explicit unknown credential states; independent review pending"
+  },
+  {
+    "app_id": 26,
+    "claim_id": "26.testing.partner_approval_required",
+    "change": "changed",
+    "reason": "Task 09 first-pass extraction for Communications and Messaging (IDs 21-30) by task09-research-agent-gemini; explicit unknown credential states; independent review pending"
+  },
+  {
+    "app_id": 26,
+    "claim_id": "26.testing.sandbox_access",
+    "change": "changed",
+    "reason": "Task 09 first-pass extraction for Communications and Messaging (IDs 21-30) by task09-research-agent-gemini; explicit unknown credential states; independent review pending"
+  },
+  {
+    "app_id": 26,
+    "claim_id": "26.testing.self_serve",
+    "change": "changed",
+    "reason": "Task 09 first-pass extraction for Communications and Messaging (IDs 21-30) by task09-research-agent-gemini; explicit unknown credential states; independent review pending"
+  },
+  {
+    "app_id": 26,
+    "claim_id": "26.testing.trial_access",
+    "change": "changed",
+    "reason": "Task 09 first-pass extraction for Communications and Messaging (IDs 21-30) by task09-research-agent-gemini; explicit unknown credential states; independent review pending"
+  },
+  {
+    "app_id": 26,
+    "claim_id": "26.testing.vendor_approval_required",
+    "change": "changed",
+    "reason": "Task 09 first-pass extraction for Communications and Messaging (IDs 21-30) by task09-research-agent-gemini; explicit unknown credential states; independent review pending"
+  },
+  {
+    "app_id": 27,
+    "claim_id": "27.api.breadth",
+    "change": "changed",
+    "reason": "Task 09 first-pass extraction for Communications and Messaging (IDs 21-30) by task09-research-agent-gemini; explicit unknown credential states; independent review pending"
+  },
+  {
+    "app_id": 27,
+    "claim_id": "27.api.group.bot_messaging_media",
+    "change": "added",
+    "reason": "Task 09 first-pass extraction for Communications and Messaging (IDs 21-30) by task09-research-agent-gemini; explicit unknown credential states; independent review pending"
+  },
+  {
+    "app_id": 27,
+    "claim_id": "27.api.group.chats_business_miniapps",
+    "change": "added",
+    "reason": "Task 09 first-pass extraction for Communications and Messaging (IDs 21-30) by task09-research-agent-gemini; explicit unknown credential states; independent review pending"
+  },
+  {
+    "app_id": 27,
+    "claim_id": "27.api.group.mtproto_client_surface",
+    "change": "added",
+    "reason": "Task 09 first-pass extraction for Communications and Messaging (IDs 21-30) by task09-research-agent-gemini; explicit unknown credential states; independent review pending"
+  },
+  {
+    "app_id": 27,
+    "claim_id": "27.api.protocol.other_mtproto",
+    "change": "added",
+    "reason": "Task 09 first-pass extraction for Communications and Messaging (IDs 21-30) by task09-research-agent-gemini; explicit unknown credential states; independent review pending"
+  },
+  {
+    "app_id": 27,
+    "claim_id": "27.api.protocol.rpc",
+    "change": "added",
+    "reason": "Task 09 first-pass extraction for Communications and Messaging (IDs 21-30) by task09-research-agent-gemini; explicit unknown credential states; independent review pending"
+  },
+  {
+    "app_id": 27,
+    "claim_id": "27.api.public_docs",
+    "change": "added",
+    "reason": "Task 09 first-pass extraction for Communications and Messaging (IDs 21-30) by task09-research-agent-gemini; explicit unknown credential states; independent review pending"
+  },
+  {
+    "app_id": 27,
+    "claim_id": "27.api.public_documentation",
+    "change": "removed",
+    "reason": "Task 09 first-pass extraction for Communications and Messaging (IDs 21-30) by task09-research-agent-gemini; explicit unknown credential states; independent review pending"
+  },
+  {
+    "app_id": 27,
+    "claim_id": "27.auth.bot_token",
+    "change": "added",
+    "reason": "Task 09 first-pass extraction for Communications and Messaging (IDs 21-30) by task09-research-agent-gemini; explicit unknown credential states; independent review pending"
+  },
+  {
+    "app_id": 27,
+    "claim_id": "27.auth.mtproto_api_id_hash",
+    "change": "added",
+    "reason": "Task 09 first-pass extraction for Communications and Messaging (IDs 21-30) by task09-research-agent-gemini; explicit unknown credential states; independent review pending"
+  },
+  {
+    "app_id": 27,
+    "claim_id": "27.buildability",
+    "change": "changed",
+    "reason": "Task 09 first-pass extraction for Communications and Messaging (IDs 21-30) by task09-research-agent-gemini; explicit unknown credential states; independent review pending"
+  },
+  {
+    "app_id": 27,
+    "claim_id": "27.identity",
+    "change": "changed",
+    "reason": "Task 09 first-pass extraction for Communications and Messaging (IDs 21-30) by task09-research-agent-gemini; explicit unknown credential states; independent review pending"
+  },
+  {
+    "app_id": 27,
+    "claim_id": "27.mcp",
+    "change": "changed",
+    "reason": "Task 09 first-pass extraction for Communications and Messaging (IDs 21-30) by task09-research-agent-gemini; explicit unknown credential states; independent review pending"
+  },
+  {
+    "app_id": 27,
+    "claim_id": "27.mcp.community_bot",
+    "change": "added",
+    "reason": "Task 09 first-pass extraction for Communications and Messaging (IDs 21-30) by task09-research-agent-gemini; explicit unknown credential states; independent review pending"
+  },
+  {
+    "app_id": 27,
+    "claim_id": "27.mcp.community_bot.operational",
+    "change": "added",
+    "reason": "Task 09 first-pass extraction for Communications and Messaging (IDs 21-30) by task09-research-agent-gemini; explicit unknown credential states; independent review pending"
+  },
+  {
+    "app_id": 27,
+    "claim_id": "27.mcp.community_mtproto",
+    "change": "added",
+    "reason": "Task 09 first-pass extraction for Communications and Messaging (IDs 21-30) by task09-research-agent-gemini; explicit unknown credential states; independent review pending"
+  },
+  {
+    "app_id": 27,
+    "claim_id": "27.mcp.community_mtproto.operational",
+    "change": "added",
+    "reason": "Task 09 first-pass extraction for Communications and Messaging (IDs 21-30) by task09-research-agent-gemini; explicit unknown credential states; independent review pending"
+  },
+  {
+    "app_id": 27,
+    "claim_id": "27.production.admin_approval_required",
+    "change": "changed",
+    "reason": "Task 09 first-pass extraction for Communications and Messaging (IDs 21-30) by task09-research-agent-gemini; explicit unknown credential states; independent review pending"
+  },
+  {
+    "app_id": 27,
+    "claim_id": "27.production.contact_sales_required",
+    "change": "changed",
+    "reason": "Task 09 first-pass extraction for Communications and Messaging (IDs 21-30) by task09-research-agent-gemini; explicit unknown credential states; independent review pending"
+  },
+  {
+    "app_id": 27,
+    "claim_id": "27.production.free_access",
+    "change": "changed",
+    "reason": "Task 09 first-pass extraction for Communications and Messaging (IDs 21-30) by task09-research-agent-gemini; explicit unknown credential states; independent review pending"
+  },
+  {
+    "app_id": 27,
+    "claim_id": "27.production.paid_required",
+    "change": "changed",
+    "reason": "Task 09 first-pass extraction for Communications and Messaging (IDs 21-30) by task09-research-agent-gemini; explicit unknown credential states; independent review pending"
+  },
+  {
+    "app_id": 27,
+    "claim_id": "27.production.partner_approval_required",
+    "change": "changed",
+    "reason": "Task 09 first-pass extraction for Communications and Messaging (IDs 21-30) by task09-research-agent-gemini; explicit unknown credential states; independent review pending"
+  },
+  {
+    "app_id": 27,
+    "claim_id": "27.production.sandbox_access",
+    "change": "changed",
+    "reason": "Task 09 first-pass extraction for Communications and Messaging (IDs 21-30) by task09-research-agent-gemini; explicit unknown credential states; independent review pending"
+  },
+  {
+    "app_id": 27,
+    "claim_id": "27.production.self_serve",
+    "change": "changed",
+    "reason": "Task 09 first-pass extraction for Communications and Messaging (IDs 21-30) by task09-research-agent-gemini; explicit unknown credential states; independent review pending"
+  },
+  {
+    "app_id": 27,
+    "claim_id": "27.production.trial_access",
+    "change": "changed",
+    "reason": "Task 09 first-pass extraction for Communications and Messaging (IDs 21-30) by task09-research-agent-gemini; explicit unknown credential states; independent review pending"
+  },
+  {
+    "app_id": 27,
+    "claim_id": "27.production.vendor_approval_required",
+    "change": "changed",
+    "reason": "Task 09 first-pass extraction for Communications and Messaging (IDs 21-30) by task09-research-agent-gemini; explicit unknown credential states; independent review pending"
+  },
+  {
+    "app_id": 27,
+    "claim_id": "27.purpose",
+    "change": "changed",
+    "reason": "Task 09 first-pass extraction for Communications and Messaging (IDs 21-30) by task09-research-agent-gemini; explicit unknown credential states; independent review pending"
+  },
+  {
+    "app_id": 27,
+    "claim_id": "27.testing.admin_approval_required",
+    "change": "changed",
+    "reason": "Task 09 first-pass extraction for Communications and Messaging (IDs 21-30) by task09-research-agent-gemini; explicit unknown credential states; independent review pending"
+  },
+  {
+    "app_id": 27,
+    "claim_id": "27.testing.contact_sales_required",
+    "change": "changed",
+    "reason": "Task 09 first-pass extraction for Communications and Messaging (IDs 21-30) by task09-research-agent-gemini; explicit unknown credential states; independent review pending"
+  },
+  {
+    "app_id": 27,
+    "claim_id": "27.testing.free_access",
+    "change": "changed",
+    "reason": "Task 09 first-pass extraction for Communications and Messaging (IDs 21-30) by task09-research-agent-gemini; explicit unknown credential states; independent review pending"
+  },
+  {
+    "app_id": 27,
+    "claim_id": "27.testing.paid_required",
+    "change": "changed",
+    "reason": "Task 09 first-pass extraction for Communications and Messaging (IDs 21-30) by task09-research-agent-gemini; explicit unknown credential states; independent review pending"
+  },
+  {
+    "app_id": 27,
+    "claim_id": "27.testing.partner_approval_required",
+    "change": "changed",
+    "reason": "Task 09 first-pass extraction for Communications and Messaging (IDs 21-30) by task09-research-agent-gemini; explicit unknown credential states; independent review pending"
+  },
+  {
+    "app_id": 27,
+    "claim_id": "27.testing.sandbox_access",
+    "change": "changed",
+    "reason": "Task 09 first-pass extraction for Communications and Messaging (IDs 21-30) by task09-research-agent-gemini; explicit unknown credential states; independent review pending"
+  },
+  {
+    "app_id": 27,
+    "claim_id": "27.testing.self_serve",
+    "change": "changed",
+    "reason": "Task 09 first-pass extraction for Communications and Messaging (IDs 21-30) by task09-research-agent-gemini; explicit unknown credential states; independent review pending"
+  },
+  {
+    "app_id": 27,
+    "claim_id": "27.testing.trial_access",
+    "change": "changed",
+    "reason": "Task 09 first-pass extraction for Communications and Messaging (IDs 21-30) by task09-research-agent-gemini; explicit unknown credential states; independent review pending"
+  },
+  {
+    "app_id": 27,
+    "claim_id": "27.testing.vendor_approval_required",
+    "change": "changed",
+    "reason": "Task 09 first-pass extraction for Communications and Messaging (IDs 21-30) by task09-research-agent-gemini; explicit unknown credential states; independent review pending"
+  },
+  {
+    "app_id": 28,
+    "claim_id": "28.api.breadth",
+    "change": "changed",
+    "reason": "Task 09 first-pass extraction for Communications and Messaging (IDs 21-30) by task09-research-agent-gemini; explicit unknown credential states; independent review pending"
+  },
+  {
+    "app_id": 28,
+    "claim_id": "28.api.group.business_management_templates",
+    "change": "added",
+    "reason": "Task 09 first-pass extraction for Communications and Messaging (IDs 21-30) by task09-research-agent-gemini; explicit unknown credential states; independent review pending"
+  },
+  {
+    "app_id": 28,
+    "claim_id": "28.api.group.commerce_payments_marketing",
+    "change": "added",
+    "reason": "Task 09 first-pass extraction for Communications and Messaging (IDs 21-30) by task09-research-agent-gemini; explicit unknown credential states; independent review pending"
+  },
+  {
+    "app_id": 28,
+    "claim_id": "28.api.group.messaging_calling_groups",
+    "change": "added",
+    "reason": "Task 09 first-pass extraction for Communications and Messaging (IDs 21-30) by task09-research-agent-gemini; explicit unknown credential states; independent review pending"
+  },
+  {
+    "app_id": 28,
+    "claim_id": "28.api.group.webhooks_partners",
+    "change": "added",
+    "reason": "Task 09 first-pass extraction for Communications and Messaging (IDs 21-30) by task09-research-agent-gemini; explicit unknown credential states; independent review pending"
+  },
+  {
+    "app_id": 28,
+    "claim_id": "28.api.protocol.rest",
+    "change": "added",
+    "reason": "Task 09 first-pass extraction for Communications and Messaging (IDs 21-30) by task09-research-agent-gemini; explicit unknown credential states; independent review pending"
+  },
+  {
+    "app_id": 28,
+    "claim_id": "28.api.public_docs",
+    "change": "added",
+    "reason": "Task 09 first-pass extraction for Communications and Messaging (IDs 21-30) by task09-research-agent-gemini; explicit unknown credential states; independent review pending"
+  },
+  {
+    "app_id": 28,
+    "claim_id": "28.api.public_documentation",
+    "change": "removed",
+    "reason": "Task 09 first-pass extraction for Communications and Messaging (IDs 21-30) by task09-research-agent-gemini; explicit unknown credential states; independent review pending"
+  },
+  {
+    "app_id": 28,
+    "claim_id": "28.auth.embedded_signup_oauth",
+    "change": "added",
+    "reason": "Task 09 first-pass extraction for Communications and Messaging (IDs 21-30) by task09-research-agent-gemini; explicit unknown credential states; independent review pending"
+  },
+  {
+    "app_id": 28,
+    "claim_id": "28.auth.system_user_token",
+    "change": "added",
+    "reason": "Task 09 first-pass extraction for Communications and Messaging (IDs 21-30) by task09-research-agent-gemini; explicit unknown credential states; independent review pending"
+  },
+  {
+    "app_id": 28,
+    "claim_id": "28.auth.user_access_token",
+    "change": "added",
+    "reason": "Task 09 first-pass extraction for Communications and Messaging (IDs 21-30) by task09-research-agent-gemini; explicit unknown credential states; independent review pending"
+  },
+  {
+    "app_id": 28,
+    "claim_id": "28.buildability",
+    "change": "changed",
+    "reason": "Task 09 first-pass extraction for Communications and Messaging (IDs 21-30) by task09-research-agent-gemini; explicit unknown credential states; independent review pending"
+  },
+  {
+    "app_id": 28,
+    "claim_id": "28.identity",
+    "change": "changed",
+    "reason": "Task 09 first-pass extraction for Communications and Messaging (IDs 21-30) by task09-research-agent-gemini; explicit unknown credential states; independent review pending"
+  },
+  {
+    "app_id": 28,
+    "claim_id": "28.mcp",
+    "change": "changed",
+    "reason": "Task 09 first-pass extraction for Communications and Messaging (IDs 21-30) by task09-research-agent-gemini; explicit unknown credential states; independent review pending"
+  },
+  {
+    "app_id": 28,
+    "claim_id": "28.mcp.community",
+    "change": "added",
+    "reason": "Task 09 first-pass extraction for Communications and Messaging (IDs 21-30) by task09-research-agent-gemini; explicit unknown credential states; independent review pending"
+  },
+  {
+    "app_id": 28,
+    "claim_id": "28.mcp.community.operational",
+    "change": "added",
+    "reason": "Task 09 first-pass extraction for Communications and Messaging (IDs 21-30) by task09-research-agent-gemini; explicit unknown credential states; independent review pending"
+  },
+  {
+    "app_id": 28,
+    "claim_id": "28.production.admin_approval_required",
+    "change": "changed",
+    "reason": "Task 09 first-pass extraction for Communications and Messaging (IDs 21-30) by task09-research-agent-gemini; explicit unknown credential states; independent review pending"
+  },
+  {
+    "app_id": 28,
+    "claim_id": "28.production.contact_sales_required",
+    "change": "changed",
+    "reason": "Task 09 first-pass extraction for Communications and Messaging (IDs 21-30) by task09-research-agent-gemini; explicit unknown credential states; independent review pending"
+  },
+  {
+    "app_id": 28,
+    "claim_id": "28.production.free_access",
+    "change": "changed",
+    "reason": "Task 09 first-pass extraction for Communications and Messaging (IDs 21-30) by task09-research-agent-gemini; explicit unknown credential states; independent review pending"
+  },
+  {
+    "app_id": 28,
+    "claim_id": "28.production.paid_required",
+    "change": "changed",
+    "reason": "Task 09 first-pass extraction for Communications and Messaging (IDs 21-30) by task09-research-agent-gemini; explicit unknown credential states; independent review pending"
+  },
+  {
+    "app_id": 28,
+    "claim_id": "28.production.partner_approval_required",
+    "change": "changed",
+    "reason": "Task 09 first-pass extraction for Communications and Messaging (IDs 21-30) by task09-research-agent-gemini; explicit unknown credential states; independent review pending"
+  },
+  {
+    "app_id": 28,
+    "claim_id": "28.production.sandbox_access",
+    "change": "changed",
+    "reason": "Task 09 first-pass extraction for Communications and Messaging (IDs 21-30) by task09-research-agent-gemini; explicit unknown credential states; independent review pending"
+  },
+  {
+    "app_id": 28,
+    "claim_id": "28.production.self_serve",
+    "change": "changed",
+    "reason": "Task 09 first-pass extraction for Communications and Messaging (IDs 21-30) by task09-research-agent-gemini; explicit unknown credential states; independent review pending"
+  },
+  {
+    "app_id": 28,
+    "claim_id": "28.production.trial_access",
+    "change": "changed",
+    "reason": "Task 09 first-pass extraction for Communications and Messaging (IDs 21-30) by task09-research-agent-gemini; explicit unknown credential states; independent review pending"
+  },
+  {
+    "app_id": 28,
+    "claim_id": "28.production.vendor_approval_required",
+    "change": "changed",
+    "reason": "Task 09 first-pass extraction for Communications and Messaging (IDs 21-30) by task09-research-agent-gemini; explicit unknown credential states; independent review pending"
+  },
+  {
+    "app_id": 28,
+    "claim_id": "28.purpose",
+    "change": "changed",
+    "reason": "Task 09 first-pass extraction for Communications and Messaging (IDs 21-30) by task09-research-agent-gemini; explicit unknown credential states; independent review pending"
+  },
+  {
+    "app_id": 28,
+    "claim_id": "28.testing.admin_approval_required",
+    "change": "changed",
+    "reason": "Task 09 first-pass extraction for Communications and Messaging (IDs 21-30) by task09-research-agent-gemini; explicit unknown credential states; independent review pending"
+  },
+  {
+    "app_id": 28,
+    "claim_id": "28.testing.contact_sales_required",
+    "change": "changed",
+    "reason": "Task 09 first-pass extraction for Communications and Messaging (IDs 21-30) by task09-research-agent-gemini; explicit unknown credential states; independent review pending"
+  },
+  {
+    "app_id": 28,
+    "claim_id": "28.testing.free_access",
+    "change": "changed",
+    "reason": "Task 09 first-pass extraction for Communications and Messaging (IDs 21-30) by task09-research-agent-gemini; explicit unknown credential states; independent review pending"
+  },
+  {
+    "app_id": 28,
+    "claim_id": "28.testing.paid_required",
+    "change": "changed",
+    "reason": "Task 09 first-pass extraction for Communications and Messaging (IDs 21-30) by task09-research-agent-gemini; explicit unknown credential states; independent review pending"
+  },
+  {
+    "app_id": 28,
+    "claim_id": "28.testing.partner_approval_required",
+    "change": "changed",
+    "reason": "Task 09 first-pass extraction for Communications and Messaging (IDs 21-30) by task09-research-agent-gemini; explicit unknown credential states; independent review pending"
+  },
+  {
+    "app_id": 28,
+    "claim_id": "28.testing.sandbox_access",
+    "change": "changed",
+    "reason": "Task 09 first-pass extraction for Communications and Messaging (IDs 21-30) by task09-research-agent-gemini; explicit unknown credential states; independent review pending"
+  },
+  {
+    "app_id": 28,
+    "claim_id": "28.testing.self_serve",
+    "change": "changed",
+    "reason": "Task 09 first-pass extraction for Communications and Messaging (IDs 21-30) by task09-research-agent-gemini; explicit unknown credential states; independent review pending"
+  },
+  {
+    "app_id": 28,
+    "claim_id": "28.testing.trial_access",
+    "change": "changed",
+    "reason": "Task 09 first-pass extraction for Communications and Messaging (IDs 21-30) by task09-research-agent-gemini; explicit unknown credential states; independent review pending"
+  },
+  {
+    "app_id": 28,
+    "claim_id": "28.testing.vendor_approval_required",
+    "change": "changed",
+    "reason": "Task 09 first-pass extraction for Communications and Messaging (IDs 21-30) by task09-research-agent-gemini; explicit unknown credential states; independent review pending"
+  },
+  {
+    "app_id": 29,
+    "claim_id": "29.api.breadth",
+    "change": "changed",
+    "reason": "Task 09 first-pass extraction for Communications and Messaging (IDs 21-30) by task09-research-agent-gemini; explicit unknown credential states; independent review pending"
+  },
+  {
+    "app_id": 29,
+    "claim_id": "29.api.group.calls_conversations_ai",
+    "change": "added",
+    "reason": "Task 09 first-pass extraction for Communications and Messaging (IDs 21-30) by task09-research-agent-gemini; explicit unknown credential states; independent review pending"
+  },
+  {
+    "app_id": 29,
+    "claim_id": "29.api.group.messaging_campaigns",
+    "change": "added",
+    "reason": "Task 09 first-pass extraction for Communications and Messaging (IDs 21-30) by task09-research-agent-gemini; explicit unknown credential states; independent review pending"
+  },
+  {
+    "app_id": 29,
+    "claim_id": "29.api.group.users_teams_contacts_numbers",
+    "change": "added",
+    "reason": "Task 09 first-pass extraction for Communications and Messaging (IDs 21-30) by task09-research-agent-gemini; explicit unknown credential states; independent review pending"
+  },
+  {
+    "app_id": 29,
+    "claim_id": "29.api.protocol.rest",
+    "change": "added",
+    "reason": "Task 09 first-pass extraction for Communications and Messaging (IDs 21-30) by task09-research-agent-gemini; explicit unknown credential states; independent review pending"
+  },
+  {
+    "app_id": 29,
+    "claim_id": "29.api.protocol.sdk",
+    "change": "added",
+    "reason": "Task 09 first-pass extraction for Communications and Messaging (IDs 21-30) by task09-research-agent-gemini; explicit unknown credential states; independent review pending"
+  },
+  {
+    "app_id": 29,
+    "claim_id": "29.api.public_docs",
+    "change": "added",
+    "reason": "Task 09 first-pass extraction for Communications and Messaging (IDs 21-30) by task09-research-agent-gemini; explicit unknown credential states; independent review pending"
+  },
+  {
+    "app_id": 29,
+    "claim_id": "29.api.public_documentation",
+    "change": "removed",
+    "reason": "Task 09 first-pass extraction for Communications and Messaging (IDs 21-30) by task09-research-agent-gemini; explicit unknown credential states; independent review pending"
+  },
+  {
+    "app_id": 29,
+    "claim_id": "29.auth.basic_customer",
+    "change": "added",
+    "reason": "Task 09 first-pass extraction for Communications and Messaging (IDs 21-30) by task09-research-agent-gemini; explicit unknown credential states; independent review pending"
+  },
+  {
+    "app_id": 29,
+    "claim_id": "29.auth.oauth2_partner",
+    "change": "added",
+    "reason": "Task 09 first-pass extraction for Communications and Messaging (IDs 21-30) by task09-research-agent-gemini; explicit unknown credential states; independent review pending"
+  },
+  {
+    "app_id": 29,
+    "claim_id": "29.buildability",
+    "change": "changed",
+    "reason": "Task 09 first-pass extraction for Communications and Messaging (IDs 21-30) by task09-research-agent-gemini; explicit unknown credential states; independent review pending"
+  },
+  {
+    "app_id": 29,
+    "claim_id": "29.identity",
+    "change": "changed",
+    "reason": "Task 09 first-pass extraction for Communications and Messaging (IDs 21-30) by task09-research-agent-gemini; explicit unknown credential states; independent review pending"
+  },
+  {
+    "app_id": 29,
+    "claim_id": "29.mcp",
+    "change": "changed",
+    "reason": "Task 09 first-pass extraction for Communications and Messaging (IDs 21-30) by task09-research-agent-gemini; explicit unknown credential states; independent review pending"
+  },
+  {
+    "app_id": 29,
+    "claim_id": "29.production.admin_approval_required",
+    "change": "changed",
+    "reason": "Task 09 first-pass extraction for Communications and Messaging (IDs 21-30) by task09-research-agent-gemini; explicit unknown credential states; independent review pending"
+  },
+  {
+    "app_id": 29,
+    "claim_id": "29.production.contact_sales_required",
+    "change": "changed",
+    "reason": "Task 09 first-pass extraction for Communications and Messaging (IDs 21-30) by task09-research-agent-gemini; explicit unknown credential states; independent review pending"
+  },
+  {
+    "app_id": 29,
+    "claim_id": "29.production.free_access",
+    "change": "changed",
+    "reason": "Task 09 first-pass extraction for Communications and Messaging (IDs 21-30) by task09-research-agent-gemini; explicit unknown credential states; independent review pending"
+  },
+  {
+    "app_id": 29,
+    "claim_id": "29.production.paid_required",
+    "change": "changed",
+    "reason": "Task 09 first-pass extraction for Communications and Messaging (IDs 21-30) by task09-research-agent-gemini; explicit unknown credential states; independent review pending"
+  },
+  {
+    "app_id": 29,
+    "claim_id": "29.production.partner_approval_required",
+    "change": "changed",
+    "reason": "Task 09 first-pass extraction for Communications and Messaging (IDs 21-30) by task09-research-agent-gemini; explicit unknown credential states; independent review pending"
+  },
+  {
+    "app_id": 29,
+    "claim_id": "29.production.sandbox_access",
+    "change": "changed",
+    "reason": "Task 09 first-pass extraction for Communications and Messaging (IDs 21-30) by task09-research-agent-gemini; explicit unknown credential states; independent review pending"
+  },
+  {
+    "app_id": 29,
+    "claim_id": "29.production.self_serve",
+    "change": "changed",
+    "reason": "Task 09 first-pass extraction for Communications and Messaging (IDs 21-30) by task09-research-agent-gemini; explicit unknown credential states; independent review pending"
+  },
+  {
+    "app_id": 29,
+    "claim_id": "29.production.trial_access",
+    "change": "changed",
+    "reason": "Task 09 first-pass extraction for Communications and Messaging (IDs 21-30) by task09-research-agent-gemini; explicit unknown credential states; independent review pending"
+  },
+  {
+    "app_id": 29,
+    "claim_id": "29.production.vendor_approval_required",
+    "change": "changed",
+    "reason": "Task 09 first-pass extraction for Communications and Messaging (IDs 21-30) by task09-research-agent-gemini; explicit unknown credential states; independent review pending"
+  },
+  {
+    "app_id": 29,
+    "claim_id": "29.purpose",
+    "change": "changed",
+    "reason": "Task 09 first-pass extraction for Communications and Messaging (IDs 21-30) by task09-research-agent-gemini; explicit unknown credential states; independent review pending"
+  },
+  {
+    "app_id": 29,
+    "claim_id": "29.testing.admin_approval_required",
+    "change": "changed",
+    "reason": "Task 09 first-pass extraction for Communications and Messaging (IDs 21-30) by task09-research-agent-gemini; explicit unknown credential states; independent review pending"
+  },
+  {
+    "app_id": 29,
+    "claim_id": "29.testing.contact_sales_required",
+    "change": "changed",
+    "reason": "Task 09 first-pass extraction for Communications and Messaging (IDs 21-30) by task09-research-agent-gemini; explicit unknown credential states; independent review pending"
+  },
+  {
+    "app_id": 29,
+    "claim_id": "29.testing.free_access",
+    "change": "changed",
+    "reason": "Task 09 first-pass extraction for Communications and Messaging (IDs 21-30) by task09-research-agent-gemini; explicit unknown credential states; independent review pending"
+  },
+  {
+    "app_id": 29,
+    "claim_id": "29.testing.paid_required",
+    "change": "changed",
+    "reason": "Task 09 first-pass extraction for Communications and Messaging (IDs 21-30) by task09-research-agent-gemini; explicit unknown credential states; independent review pending"
+  },
+  {
+    "app_id": 29,
+    "claim_id": "29.testing.partner_approval_required",
+    "change": "changed",
+    "reason": "Task 09 first-pass extraction for Communications and Messaging (IDs 21-30) by task09-research-agent-gemini; explicit unknown credential states; independent review pending"
+  },
+  {
+    "app_id": 29,
+    "claim_id": "29.testing.sandbox_access",
+    "change": "changed",
+    "reason": "Task 09 first-pass extraction for Communications and Messaging (IDs 21-30) by task09-research-agent-gemini; explicit unknown credential states; independent review pending"
+  },
+  {
+    "app_id": 29,
+    "claim_id": "29.testing.self_serve",
+    "change": "changed",
+    "reason": "Task 09 first-pass extraction for Communications and Messaging (IDs 21-30) by task09-research-agent-gemini; explicit unknown credential states; independent review pending"
+  },
+  {
+    "app_id": 29,
+    "claim_id": "29.testing.trial_access",
+    "change": "changed",
+    "reason": "Task 09 first-pass extraction for Communications and Messaging (IDs 21-30) by task09-research-agent-gemini; explicit unknown credential states; independent review pending"
+  },
+  {
+    "app_id": 29,
+    "claim_id": "29.testing.vendor_approval_required",
+    "change": "changed",
+    "reason": "Task 09 first-pass extraction for Communications and Messaging (IDs 21-30) by task09-research-agent-gemini; explicit unknown credential states; independent review pending"
+  },
+  {
+    "app_id": 30,
+    "claim_id": "30.api.breadth",
+    "change": "changed",
+    "reason": "Task 09 first-pass extraction for Communications and Messaging (IDs 21-30) by task09-research-agent-gemini; explicit unknown credential states; independent review pending"
+  },
+  {
+    "app_id": 30,
+    "claim_id": "30.api.group.accounts_numbers_reports",
+    "change": "added",
+    "reason": "Task 09 first-pass extraction for Communications and Messaging (IDs 21-30) by task09-research-agent-gemini; explicit unknown credential states; independent review pending"
+  },
+  {
+    "app_id": 30,
+    "claim_id": "30.api.group.messaging_conversations",
+    "change": "added",
+    "reason": "Task 09 first-pass extraction for Communications and Messaging (IDs 21-30) by task09-research-agent-gemini; explicit unknown credential states; independent review pending"
+  },
+  {
+    "app_id": 30,
+    "claim_id": "30.api.group.verify_network_compliance",
+    "change": "added",
+    "reason": "Task 09 first-pass extraction for Communications and Messaging (IDs 21-30) by task09-research-agent-gemini; explicit unknown credential states; independent review pending"
+  },
+  {
+    "app_id": 30,
+    "claim_id": "30.api.group.voice_video_media",
+    "change": "added",
+    "reason": "Task 09 first-pass extraction for Communications and Messaging (IDs 21-30) by task09-research-agent-gemini; explicit unknown credential states; independent review pending"
+  },
+  {
+    "app_id": 30,
+    "claim_id": "30.api.protocol.cli",
+    "change": "added",
+    "reason": "Task 09 first-pass extraction for Communications and Messaging (IDs 21-30) by task09-research-agent-gemini; explicit unknown credential states; independent review pending"
+  },
+  {
+    "app_id": 30,
+    "claim_id": "30.api.protocol.rest",
+    "change": "added",
+    "reason": "Task 09 first-pass extraction for Communications and Messaging (IDs 21-30) by task09-research-agent-gemini; explicit unknown credential states; independent review pending"
+  },
+  {
+    "app_id": 30,
+    "claim_id": "30.api.protocol.sdk",
+    "change": "added",
+    "reason": "Task 09 first-pass extraction for Communications and Messaging (IDs 21-30) by task09-research-agent-gemini; explicit unknown credential states; independent review pending"
+  },
+  {
+    "app_id": 30,
+    "claim_id": "30.api.public_docs",
+    "change": "added",
+    "reason": "Task 09 first-pass extraction for Communications and Messaging (IDs 21-30) by task09-research-agent-gemini; explicit unknown credential states; independent review pending"
+  },
+  {
+    "app_id": 30,
+    "claim_id": "30.api.public_documentation",
+    "change": "removed",
+    "reason": "Task 09 first-pass extraction for Communications and Messaging (IDs 21-30) by task09-research-agent-gemini; explicit unknown credential states; independent review pending"
+  },
+  {
+    "app_id": 30,
+    "claim_id": "30.auth.basic_api_key",
+    "change": "added",
+    "reason": "Task 09 first-pass extraction for Communications and Messaging (IDs 21-30) by task09-research-agent-gemini; explicit unknown credential states; independent review pending"
+  },
+  {
+    "app_id": 30,
+    "claim_id": "30.auth.jwt_application",
+    "change": "added",
+    "reason": "Task 09 first-pass extraction for Communications and Messaging (IDs 21-30) by task09-research-agent-gemini; explicit unknown credential states; independent review pending"
+  },
+  {
+    "app_id": 30,
+    "claim_id": "30.buildability",
+    "change": "changed",
+    "reason": "Task 09 first-pass extraction for Communications and Messaging (IDs 21-30) by task09-research-agent-gemini; explicit unknown credential states; independent review pending"
+  },
+  {
+    "app_id": 30,
+    "claim_id": "30.identity",
+    "change": "changed",
+    "reason": "Task 09 first-pass extraction for Communications and Messaging (IDs 21-30) by task09-research-agent-gemini; explicit unknown credential states; independent review pending"
+  },
+  {
+    "app_id": 30,
+    "claim_id": "30.mcp",
+    "change": "changed",
+    "reason": "Task 09 first-pass extraction for Communications and Messaging (IDs 21-30) by task09-research-agent-gemini; explicit unknown credential states; independent review pending"
+  },
+  {
+    "app_id": 30,
+    "claim_id": "30.mcp.official_api_bindings",
+    "change": "added",
+    "reason": "Task 09 first-pass extraction for Communications and Messaging (IDs 21-30) by task09-research-agent-gemini; explicit unknown credential states; independent review pending"
+  },
+  {
+    "app_id": 30,
+    "claim_id": "30.mcp.official_api_bindings.operational",
+    "change": "added",
+    "reason": "Task 09 first-pass extraction for Communications and Messaging (IDs 21-30) by task09-research-agent-gemini; explicit unknown credential states; independent review pending"
+  },
+  {
+    "app_id": 30,
+    "claim_id": "30.mcp.official_docs",
+    "change": "added",
+    "reason": "Task 09 first-pass extraction for Communications and Messaging (IDs 21-30) by task09-research-agent-gemini; explicit unknown credential states; independent review pending"
+  },
+  {
+    "app_id": 30,
+    "claim_id": "30.mcp.official_docs.operational",
+    "change": "added",
+    "reason": "Task 09 first-pass extraction for Communications and Messaging (IDs 21-30) by task09-research-agent-gemini; explicit unknown credential states; independent review pending"
+  },
+  {
+    "app_id": 30,
+    "claim_id": "30.production.admin_approval_required",
+    "change": "changed",
+    "reason": "Task 09 first-pass extraction for Communications and Messaging (IDs 21-30) by task09-research-agent-gemini; explicit unknown credential states; independent review pending"
+  },
+  {
+    "app_id": 30,
+    "claim_id": "30.production.contact_sales_required",
+    "change": "changed",
+    "reason": "Task 09 first-pass extraction for Communications and Messaging (IDs 21-30) by task09-research-agent-gemini; explicit unknown credential states; independent review pending"
+  },
+  {
+    "app_id": 30,
+    "claim_id": "30.production.free_access",
+    "change": "changed",
+    "reason": "Task 09 first-pass extraction for Communications and Messaging (IDs 21-30) by task09-research-agent-gemini; explicit unknown credential states; independent review pending"
+  },
+  {
+    "app_id": 30,
+    "claim_id": "30.production.paid_required",
+    "change": "changed",
+    "reason": "Task 09 first-pass extraction for Communications and Messaging (IDs 21-30) by task09-research-agent-gemini; explicit unknown credential states; independent review pending"
+  },
+  {
+    "app_id": 30,
+    "claim_id": "30.production.partner_approval_required",
+    "change": "changed",
+    "reason": "Task 09 first-pass extraction for Communications and Messaging (IDs 21-30) by task09-research-agent-gemini; explicit unknown credential states; independent review pending"
+  },
+  {
+    "app_id": 30,
+    "claim_id": "30.production.sandbox_access",
+    "change": "changed",
+    "reason": "Task 09 first-pass extraction for Communications and Messaging (IDs 21-30) by task09-research-agent-gemini; explicit unknown credential states; independent review pending"
+  },
+  {
+    "app_id": 30,
+    "claim_id": "30.production.self_serve",
+    "change": "changed",
+    "reason": "Task 09 first-pass extraction for Communications and Messaging (IDs 21-30) by task09-research-agent-gemini; explicit unknown credential states; independent review pending"
+  },
+  {
+    "app_id": 30,
+    "claim_id": "30.production.trial_access",
+    "change": "changed",
+    "reason": "Task 09 first-pass extraction for Communications and Messaging (IDs 21-30) by task09-research-agent-gemini; explicit unknown credential states; independent review pending"
+  },
+  {
+    "app_id": 30,
+    "claim_id": "30.production.vendor_approval_required",
+    "change": "changed",
+    "reason": "Task 09 first-pass extraction for Communications and Messaging (IDs 21-30) by task09-research-agent-gemini; explicit unknown credential states; independent review pending"
+  },
+  {
+    "app_id": 30,
+    "claim_id": "30.purpose",
+    "change": "changed",
+    "reason": "Task 09 first-pass extraction for Communications and Messaging (IDs 21-30) by task09-research-agent-gemini; explicit unknown credential states; independent review pending"
+  },
+  {
+    "app_id": 30,
+    "claim_id": "30.testing.admin_approval_required",
+    "change": "changed",
+    "reason": "Task 09 first-pass extraction for Communications and Messaging (IDs 21-30) by task09-research-agent-gemini; explicit unknown credential states; independent review pending"
+  },
+  {
+    "app_id": 30,
+    "claim_id": "30.testing.contact_sales_required",
+    "change": "changed",
+    "reason": "Task 09 first-pass extraction for Communications and Messaging (IDs 21-30) by task09-research-agent-gemini; explicit unknown credential states; independent review pending"
+  },
+  {
+    "app_id": 30,
+    "claim_id": "30.testing.free_access",
+    "change": "changed",
+    "reason": "Task 09 first-pass extraction for Communications and Messaging (IDs 21-30) by task09-research-agent-gemini; explicit unknown credential states; independent review pending"
+  },
+  {
+    "app_id": 30,
+    "claim_id": "30.testing.paid_required",
+    "change": "changed",
+    "reason": "Task 09 first-pass extraction for Communications and Messaging (IDs 21-30) by task09-research-agent-gemini; explicit unknown credential states; independent review pending"
+  },
+  {
+    "app_id": 30,
+    "claim_id": "30.testing.partner_approval_required",
+    "change": "changed",
+    "reason": "Task 09 first-pass extraction for Communications and Messaging (IDs 21-30) by task09-research-agent-gemini; explicit unknown credential states; independent review pending"
+  },
+  {
+    "app_id": 30,
+    "claim_id": "30.testing.sandbox_access",
+    "change": "changed",
+    "reason": "Task 09 first-pass extraction for Communications and Messaging (IDs 21-30) by task09-research-agent-gemini; explicit unknown credential states; independent review pending"
+  },
+  {
+    "app_id": 30,
+    "claim_id": "30.testing.self_serve",
+    "change": "changed",
+    "reason": "Task 09 first-pass extraction for Communications and Messaging (IDs 21-30) by task09-research-agent-gemini; explicit unknown credential states; independent review pending"
+  },
+  {
+    "app_id": 30,
+    "claim_id": "30.testing.trial_access",
+    "change": "changed",
+    "reason": "Task 09 first-pass extraction for Communications and Messaging (IDs 21-30) by task09-research-agent-gemini; explicit unknown credential states; independent review pending"
+  },
+  {
+    "app_id": 30,
+    "claim_id": "30.testing.vendor_approval_required",
+    "change": "changed",
+    "reason": "Task 09 first-pass extraction for Communications and Messaging (IDs 21-30) by task09-research-agent-gemini; explicit unknown credential states; independent review pending"
+  }
+]

@@ -1,0 +1,115 @@
+API
+Skip to Main Content
+Documentation
+Startups
+Learning Center
+API Dashboard
+Vonage.com
+Pricing
+Support
+Cookie settings
+My profile
+My dashboard
+Log out
+API Dashboard
+Vonage.com
+Pricing
+Support
+Legal & Privacy
+Cookie settings
+Documentation
+SDKs & Tools
+Content
+Community
+Startups
+Learning Center
+API Reference
+Messaging
+Messages API
+For SMS, MMS, Facebook, WhatsApp, Viber, Email and much more: Messages API allows easy integration with
+multiple messaging platforms through a single integration. This API is currently in Beta, so
+expect some changes before it is production-ready.
+Dispatch API
+Use the Dispatch API for a multichannel messaging solution with failover.
+SMS API
+For applications that only need to send and/or receive SMS, the SMS API is our stable, recommended
+solution. The SMS API has extensive support in all our client libraries and lots of code examples
+and tutorials to help you along your way.
+External Accounts API
+Use this to manage accounts for the Messages and Dispatch APIs across all the various channels
+that we support.
+WhatsApp Provisioning API
+Use this to manage allocate WhatsApp Numbers to your Vonage API account
+Conversation API
+Add text messaging (and voice, and video) features to your web and mobile applications.
+Conversation API allows you to create real-time communications channels to use in your apps.
+Alerts API - Subscription
+For subscribing users to event-based alerts with US Short Codes
+Alerts API - Sending
+For sending event-based alerts to users with US Short Codes
+2FA
+For verifying users with US Short Codes
+Voice
+Voice API
+Make and receive telephone calls to or from anywhere in the world. The Voice API lets you dial
+other phones, answer incoming calls, and control all aspects of the call including conferences,
+recordings, capturing user input and sending various audio content.
+NCCO: Nexmo Call Control Objects
+Control all aspects of incoming and outgoing calls with NCCO in JSON format
+Voice Webhooks
+Details of the incoming webhooks sent by the Voice API. Learn how to respond to an incoming call
+and react to events during a call.
+Media API
+Manage media items for use with Vonage APIs. This API allows you to handle media to send and to
+download recordings.
+Conversation API
+Add voice communication (and video, and text messaging) features to your web and mobile
+applications, connecting users anywhere in the world.
+Network Features
+Identity Insights API
+Request real-time access to a broad range of attributes related to the carrier, subscriber, or device associated with a phone number.
+Device Location Retrieval API
+Retrieve the last known location of a SIM enabled device using cellular network positioning.
+Core Services
+Application API
+Create and manage the applications you use across Vonage APIs. Create, manage and configure your
+applications and authentication.
+Conversation API
+Create real-time communications channels for text, voice and video.
+Reports API
+Retrieve and search message, call, and conversation records in JSON format, by ID, or by time
+period. Request a CSV report of activity for your account.
+Numbers
+Number Management API
+Manage all the numbers you need for your applications. Search for numbers, list and configure your
+purchased numbers, cancel any number you no longer need.
+Number Pools API
+Manage account-level number pools programmatically as a self-service.
+US Number Deactivation API
+Download number deactivations lists for US numbers.
+Account
+Account API
+Configure account-level settings, check and manage your account balance, and manage your API
+secrets using the Account API
+External Accounts API
+Use this to manage accounts for the Messages and Dispatch APIs across all the various channels
+that we support.
+Pricing API
+Query the prices of Vonage services, either by country or by dialling prefix.
+Verify
+Verify API
+Use both SMS and Voice calling to verify that a phone number belongs to a user that registers with
+it. Helps to protect your organisation against spam and fraudulent registrations.
+Verify API - Custom templates
+You may optionally custom templates to modify the format and wording of messages sent by the
+Verify API.
+Security and Compliance
+Redact API
+Ensure your organization is compliant with data regulations such as GDPR by redacting individual's
+data from the Vonage platform.
+Audit API
+Get an audit trail of changes to your account for security and compliance purposes.
+DocumentationDocumentationVonage Business CloudVonage Contact Center
+Technical ReferencesDocumentationSDK & Tools
+CommunityCommunity HubTeamCareersNewsletter
+SupportKnowledgebaseChangelogs

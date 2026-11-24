@@ -1,0 +1,186 @@
+Resources | Plaid Docs
+Docs
+ALL DOCS
+Resources
+Resources
+# Sample apps
+# Demos, video tutorials, and guides
+# Developer tools
+# AI developer tools
+# Ask Bill
+# Community
+# Integration support
+# Partner directory
+# Security portal, audits, and certifications
+# Bank Coverage Explorer
+# Third-party resources
+Plaid CLI
+MCP Server
+Vibe coding tips
+Docs
+Search or Ask a Question
+Markdown
+Plaid.com
+Log in
+Get API Keys
+Open nav
+Close search modal
+Search the docsAsk Bill!
+Ask a question...
+Hi! I'm Bill! You can ask me all about the Plaid API. Try asking questions like:Pssst -- I also moonlight as your IDE's research librarian! Plug me in via the Plaid MCP Server.
+Note: Bill isn't perfect. He's just a robot platypus that reads our docs for fun. You should treat his answers with the same healthy skepticism you might treat any other answer on the internet. This chat may be logged for quality and training purposes. Please don't send Bill any PII -- he's scared of intimacy. All chats with Bill are subject to Plaid's Privacy Policy.
+Plaid resources
+External resources to help build your Plaid integration
+In addition to the docs here, Plaid has a collection of tools, sample code,
+SDKs, and videos to help you build your Plaid integration.
+Sample apps
+Our GitHub contains a number of sample apps to help
+you get started using Plaid!
+Quickstart
+Official Plaid Quickstart, using React, available in NodeJS, Python, Ruby, Java, and Go
+Tiny Quickstart
+A Plaid implementation in 150 lines. Available in JavaScript, Next.js, React, and React Native frontends.
+Personal Finances
+Usages of Transactions, Assets, and Liabilities APIs, using NodeJS and React
+Account Funding
+Auth, Identity, and Balance APIs for money movement, in NodeJS and React
+Account Funding in Europe
+Account funding using the Payment Initiation API, using NodeJS and React
+Transfer Quickstart
+Use Transfer to receive funds from customers, using NodeJS and JavaScript
+Identity Verification Quickstart
+See Plaid Identity Verification in action! (NodeJS only)
+Layer Quickstart
+Use Layer to quickly onboard customers, using NodeJS and React
+Plaid Check (CRA) Quickstart
+A lending app using the Plaid Check (CRA) API, using NodeJS and React
+Income Quickstart
+A lending app using the Income API, using NodeJS and React
+Demos, video tutorials, and guides
+Demos
+demo.plaid.com features interactive demos showing API calls alongside the end user experience for many Plaid products and use cases, including account funding and verification, personal financial management with Transactions, credit and underwriting, pay-by-bank, and more.
+For the older demo page that just shows the Link UI rather than a full integration experience, see Link demo.
+Video tutorials
+Plaid Academy features detailed tutorial walkthroughs for common use cases and key concepts, several with accompanying repos.
+Plaid in 3 Minutes contains overviews of different Plaid APIs, as well as short tutorials for busy people.
+Plaid Quick Tips has snack-sized solutions to pressing Plaid problems.
+The playlist below contains all of Plaid's up-to-date educational videos.
+Launch center
+The Launch Center provides a list of steps to help
+make sure your app is Plaid-optimized and production ready.
+Developer tools
+Developer tools include our SDKs, Postman collection, and OpenAPI file.
+SDKs
+For information about official and community supported libraries for both the
+Plaid API and the Link frontend component, see libraries.
+Postman
+The Postman Collection provides an
+easy, no-code way to explore the API.
+Sandbox Studio
+Sandbox Studio is a no-code way to explore Plaid
+products from the Dashboard, using Sandbox test data.
+OpenAPI file
+The Plaid OpenAPI file is available on
+GitHub. This file describes the Plaid API in a standardized way suitable for
+usage with tools for testing, client library generation, and other purposes that
+ingest OpenAPI/Swagger definition files.
+Test data libraries
+Sandbox Studio includes ready-made templates for
+custom Sandbox users covering each product, which
+you can use as-is or edit to test apps in Sandbox.
+Enrich test transaction library
+For testing Enrich, Plaid provides a list of Sandbox-compatible Enrich transactions.
+Credit attributes library
+For the Assets and Income products, Plaid maintains a
+Credit attributes library of helper
+scripts that can be used to derive various useful attributes from an Asset
+Report or Bank Income.
+AI developer tools
+Plaid offers a number of tools to help you incorporate AI tooling into your development flow.
+Plaid CLI
+The Plaid CLI is a command-line interface for the Plaid API, designed for both developers and AI agents. Install via Homebrew, link a bank account, and start making API calls from the terminal. Pass --json for structured output that agents and scripts can parse directly.
+Dashboard MCP server
+Plaid's Dashboard MCP server allows you to access Plaid's diagnostics
+and analytics tools to retrieve information about Link analytics, Item health, and more,
+using your favorite LLM-powered application or client library.
+Local MCP server
+The Plaid AI coding toolkit ships with a local
+MCP server that runs as a subprocess of your MCP client (Claude Desktop, Cursor, VS Code, Zed, etc.) and provides
+helpful utilities for building and testing your Plaid-powered applications.
+You can use it to generate realistic looking custom user data,
+simulate webhooks, create public tokens in the Sandbox environment, or
+search Plaid's documentation directly from your AI coding assistant so it can pull in the right context without
+you pasting URLs. (Not to be confused with the Dashboard MCP server, a remote MCP server
+hosted by Plaid that provides production diagnostics and analytics tools.)
+LLM-friendly documentation
+In accordance with the llms-txt proposal, an index of all
+of Plaid's documentation can be found in LLM-friendly Markdown at
+https://plaid.com/docs/llms.txt. You can find a Markdown equivalent of
+Plaid documentation pages or API reference sections by clicking the document icon next to the header. You can also access Markdown pages by adding index.html.md to the end of the URL. For example, a Markdown version of https://plaid.com/docs/auth can be found at
+https://plaid.com/docs/auth/index.html.md.
+Consult the documentation for your favorite LLM-powered coding assistant
+for the best way to incorporate this documentation into your workflow, as best
+practices are changing frequently. Often, adding a prompt like the following
+in your helper file can be useful.
+Sample prompt
+## Instructions on using the Plaid API
+For instructions on how to use the Plaid API, please go to
+https://plaid.com/docs/llms.txt. There you can find a list of other
+documentation pages that you can retrieve to obtain the necessary
+information. If you need to search for additional documentation, you
+should first try to use a link that is listed in the llms.txt file.
+A single file containing all of Plaid's documentation can be found
+at https://plaid.com/docs/llms-full.txt, although it is generally too large
+to fit into most models' context windows.
+Vibe coding guides
+Trying to prompt your favorite LLM-powered coding tool to build a Plaid-powered
+application? Plaid provides several detailed guides you
+can reference within your LLM coding session that will provide your agent with
+additional context. You can use these guides to more quickly build proof of concept
+applications, or to kick-start your development process.
+Vibe coding tips
+Our vibe coding tips article contains recommendations on how to get your favorite AI coding assistant or IDE to work best with Plaid, including common mistakes AI tools will make and how to fix them.
+Ask Bill
+Bill is the helpful robot platypus that reads our docs for fun! You can ask Bill any time you need help with the Plaid API. Bill is also available as the search_documentation tool in the Plaid local MCP server, so he can search Plaid's docs from inside your AI coding assistant. Remember that Bill (like all of us) isn't perfect, even though he tries his best -- he can sometimes make mistakes, and he can only provide answers based on Plaid's published documentation and other publicly available information sources.
+Community
+You can join the
+Plaid Developer Community on Discord.
+Integration support
+For small businesses and startups, HumbleDevs is a popular Plaid integration partner offering affordable integration solutions. HumbleDevs offers several pre-specced Plaid solutions packages with known timelines and costs for popular Plaid-powered solutions, and can also build a custom Plaid integration.
+For larger businesses or those with other requirements, Plaid's partnerships team will work with you to understand your needs and recommend a partner that is a good fit for your business. For more information, contact your account manager or the sales team. Or, if you already have Production access, you can contact support and select "Building with Plaid" followed by "Plaid Partner Implementation Assistance".
+At the enterprise level, Plaid also offers integration packages. For more details, contact sales or your account manager.
+Partner directory
+For more information about Plaid partners, see the
+Partner directory.
+The Partner directory is not a comprehensive list of all Plaid partners; if you don't see the partnership you're looking for, contact your account manager or the sales team.
+Security portal, audits, and certifications
+For a high-level overview of information on Plaid's privacy and security practices for developers, see Plaid Safety.
+For details on Plaid's current certifications, audit results, and the security knowledge base, see the Security Portal.
+Plaid maintains a HackerOne bug bounty program for security researchers.
+Bank Coverage Explorer
+For a detailed chart showing Plaid's coverage by bank and product, see the US and Canada Bank Coverage Explorer and the European Bank Coverage Explorer.
+Third-party resources
+Several third party developers have built resources to help you integrate with
+Plaid. Note that these resources are not built or supported by Plaid, and
+inclusion of a resource on the list below does not constitute an endorsement by
+Plaid or indicate that Plaid has evaluated the resource for correctness,
+security, or anything else.
+If you have a third-party resource you'd like to be featured on this list, DM us
+@plaiddev on X, or reach out to an admin
+on the Plaid Developer Discord.
+How to Build a Fintech app on AWS using the Plaid API
+and the accompanying
+sample app demonstrates
+how to build a Plaid app on AWS, using the latest Transactions Sync API. The
+app and tutorial incorporate AWS Lambda for webhook handling and Amazon
+Cognito for authentication.
+The Plaid tag on GitHub contains multiple example apps using Plaid.
+WebhookDB has a tutorial showing how to
+use their service to manage Plaid webhooks.
+The CloudQuery Plaid plugin
+extracts data from Plaid and loads it into any supported CloudQuery
+destination, such as PostgreSQL, Snowflake, BigQuery, or S3.
+Developer community
+GitHub
+YouTube
+Discord

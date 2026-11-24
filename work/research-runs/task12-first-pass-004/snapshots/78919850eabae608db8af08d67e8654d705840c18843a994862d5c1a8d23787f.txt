@@ -1,0 +1,1179 @@
+> ## Documentation Index
+> Fetch the complete documentation index at: https://docs.waterfall.io/llms.txt
+> Use this file to discover all available pages before exploring further.
+# Company Reveal Launcher
+> Look up company information associated with an IPv4 address, with IP location and confidence fields.
+Use Waterfall Company Reveal when your starting input is an IPv4 address and you want company context. The response can include a company profile, an organization type, IP geolocation, and a confidence label.
+## How it works
+Company Reveal returns the result synchronously. Read `output` in the response; no separate polling step is required. Use the job identifier in `input.task.job_id` with [Company Reveal Finder](https://docs.waterfall.io/v1/company-reveal-finder.md) to retrieve the stored result.
+## Example request
+```json theme={null}
+{
+"ip": "8.8.8.8",
+"custom_fields": {
+"session_id": "abc123"
+}
+}
+```
+This illustrates the request format; it does not establish which company will be returned for that address.
+## Assess the result
+* `output.type` can be `company`, `education`, `government`, `isp`, or `null`. An ISP result is not proof of a visitor's employer.
+* `output.confidence_score` can be `very_high`, `high`, `medium`, `low`, or `null`. These are labels, not percentage probabilities.
+* `output.company` can be empty. Check that it contains the company data your workflow needs.
+* `output.ip_geo` describes the IP's location context. It does not identify an individual visitor or establish the company's headquarters.
+## Choose the next step
+See [website company identification](https://docs.waterfall.io/v1/use-cases/website-company-identification.md) for a workflow that uses this result. If you already have a company domain, use [Company Enrichment](https://docs.waterfall.io/v1/company-enrichment-launcher.md) directly.
+## OpenAPI
+````yaml api_specs.yaml POST /v1/company-reveal
+openapi: 3.1.0
+info:
+title: Waterfall
+version: 1.7.0
+description: >-
+Waterfall API provides a broad set of capabilities in V1. Most endpoints are
+asynchronous: you start a job (POST) and then retrieve results (GET). Some
+endpoints return immediate responses. Webhooks are also available to
+simplify asynchronous integrations. Below is an overview of the available
+endpoints:
+#### 1\. Prospector
+Find contacts at target accounts using filters like job titles and location.
+Get contact details such as titles, real-time verified emails, social
+profiles, and phone numbers.
+- **Prospector Launcher:** Start a contact search using a domain name,
+LinkedIn profile, or company name. Returns a `job_id`.
+- **Prospector Finder:** Retrieve results using the `job_id` from the
+Prospector Launcher.
+#### 2\. Contact Enrichment
+Enrich contact information by inputting professional/personal emails,
+LinkedIn URL/slug, or name + domain. Get enriched data like verified emails,
+job titles, and locations.
+- **Contact Enrichment Launcher**: Start a contact enrichment process.
+Returns a `job_id`.
+- **Contact Enrichment Finder**: Retrieve results using the `job_id` from
+the Contact Enrichment Launcher.
+#### 3\. Company Enrichment
+Enrich company data by inputting a domain, LinkedIn URL/slug, or company
+name. Receive details like headcount, industry, and headquarters.
+- **Company Enrichment Launcher**: Start a company search using a domain
+name, LinkedIn URL/slug, or company name. Returns a `job_id`.
+- **Company Enrichment Finder**: Retrieve results using the `job_id` from
+the Company Enrichment Launcher.
+#### 4\. Phone Number Enrichment
+Get mobile numbers by inputting an email, LinkedIn URL/slug, or name +
+domain.
+- **Phone Enrichment Launcher**: Start a phone number enrichment process.
+Returns a `job_id`.
+- **Phone Enrichment Finder**: Retrieve results using the `job_id` from the
+Phone Enrichment Launcher.
+#### 5\. Search Contact
+Search contacts using either a specific contact LinkedIn, a specific
+company, or company-set filters, with optional title, seniority, department,
+location, and hiring-date constraints.
+- **Search Contact Launcher**: Start a search contact job and get the result
+payload.
+- **Search Contact Finder**: Retrieve search contact job state and output by
+`job_id`.
+#### 6\. Search Company
+Search companies by industry, country, and company size filters with
+pagination support.
+- **Search Company Launcher**: Start a search company job and get the result
+payload.
+- **Search Company Finder**: Retrieve search company job state and output by
+`job_id`.
+#### 7\. Job Change
+Detect whether a contact has changed jobs using company and/or contact
+identifiers.
+- **Job Change Launcher**: Start a job change check and get the result
+payload.
+- **Job Change Finder**: Retrieve job change job state and output by
+`job_id`.
+#### 8\. Company Reveal
+Reveal company information from an IPv4 address and retrieve persisted
+reveal jobs by `job_id`.
+- **Company Reveal Launcher**: Submit an IPv4 and get the reveal job
+envelope immediately.
+- **Company Reveal Finder**: Retrieve a persisted company reveal job state
+and output by `job_id`.
+#### 9\. Email Verification
+Verify emails with high accuracy, reducing bounce rates. This endpoint works
+asynchronously, providing results in a single API call. You can start an
+email verification process and get the verification status of a given email.
+#### 10\. Account Reporter
+Provides information about your account's usage.
+#### 11\. API Keys Management
+Use a single master key to manage all your API keys: create new keys,
+activate/deactivate them, and view all your keys in one place. See [API Keys
+Management](https://docs.waterfall.io/v1/api-keys-overview).
+---
+# Versioning
+Waterfall API versioning follows Semantic Versioning (`MAJOR.MINOR.PATCH`):
+- **Patch** (`1.1.x`): Non-breaking revisions and fixes only. No existing
+contract changes.
+- **Minor** (`1.x.0`, for example `1.2.0`): Backward-compatible additions.
+Adding new services/endpoints uses a minor version increase when existing
+services are unchanged.
+- **Major** (`x.0.0`, for example `2.0.0`): Breaking changes to existing
+contracts/behavior and major platform overhauls.
+## Endpoint Lifecycle Stages
+Waterfall uses modern launch stages aligned with Google Cloud terminology:
+- **Preview**
+- Meaning: Early public version available for testing and feedback (equivalent to older Alpha/Beta phases).
+- Production use: Not recommended for critical production workloads.
+- SLA: No.
+- Stability: API behavior may change.
+- **GA (General Availability)**
+- Meaning: Fully released and production-ready service or API.
+- Production use: Yes.
+- SLA: Yes.
+- Stability: Backward compatibility is guaranteed within the version.
+- **Deprecated**
+- Meaning: Feature or API is scheduled for retirement and a newer alternative exists.
+- Production use: Should migrate away.
+- SLA: Limited.
+- Stability: No new features; removal date announced.
+- **Decommissioned / End of Life**
+- Meaning: Feature or API has been shut down and is no longer available.
+- Production use: No.
+- SLA: No.
+- Stability: Endpoint disabled or removed.
+Current mapping in this API spec: all endpoints are `GA` except
+`/v1/company-reveal`, `/v1/search/company`, `/v1/job/change`, and
+`/v1/company-titles`, which are `Preview`.
+---
+# Authentication
+To access the API, you need the API key provided in your contract. You can
+ask for multiple API keys for different teams' usage.
+All API request URLs start with
+[https://api.waterfall.io/v1/](https://api.waterfall.io/v1/). Provide your
+API key in the `x-api-key` header.
+---
+# Rate limit
+The Prospector, Search, Enrichment, Job Change and Verify Email APIs allow a
+maximum of 50 requests per minute (60 seconds). Should you encounter rate
+limit errors or anticipate a need for increased capacity, please reach out
+to your account manager for assistance. There are no rate limits for the
+Account Reporter API.
+##### X-RateLimit-Limit
+The maximum number of requests you can make per interval. Only sent when the
+rate limit is reached.
+##### X-RateLimit-Interval
+The length of the interval in seconds. Only sent when the rate limit is
+reached.
+##### Retry-After
+The number of seconds to wait until the rate limit window resets. Only sent
+when the rate limit is reached.
+---
+# Filters
+Waterfall offers three filtering options for prospect requests:
+## 1. Title Filter
+The `title_filter` parameter allows requesting specific titles with each
+request.
+- If `title_filter` is present, it must not be empty.
+- If `title_filter` is present and not empty (for example `"title_filter":
+"((accountant) OR (accounting)) AND NOT (intern)"`), Waterfall will use that
+filter.
+- If `title_filter` is not present, Waterfall will try
+[<code>title_filters</code>](https://docs.waterfall.io/v1/prospector-multiple-title-filters).
+- At least one of `title_filter` or `title_filters` must be provided.
+The filter can be any Boolean expression. Accepted operators are `AND`,
+`OR`, and `NOT`. Operators must be uppercase and separated by spaces.
+There is no need to enclose multi-word titles in parentheses.
+Matching for each title is inclusive. For example:
+- `manager` will match `program manager`, `senior manager` and `account
+manager sales`
+- `vp data` will match `vp innovation, data science, co-founder`, `vp
+information and data` and `vp data science`
+- `head product` will match `global head of product` and `head of product
+management office`
+- `data lead` will match `lead data scientist`, `data lead engineer`, `data
+lead` and `data engineering lead`
+A few valid filter examples:
+- manager
+- manager AND NOT project manager
+- manager AND NOT (project manager OR sales manager)
+- ( (manager OR director) AND (sales OR marketing) ) AND NOT ( project
+manager OR sales manager)
+- (accountant OR accounting) AND NOT intern
+- ( (ceo) OR (c.e.o) OR (co-ceo) OR (coceo) OR (chief executive officer) OR
+(founder) OR (co-founder) OR (cofounder) OR (owner) OR (co-owner) OR
+(coowner) OR (cmo) OR (c.m.o) OR (chief marketing officer) OR (cco) OR
+(c.c.o) OR (chief commercial officer) OR (chief e-commerce officer) OR
+(chief ecommerce officer) ) OR ( ( (chief) OR (cheffe) OR (director) OR (vp)
+OR (svp) OR (vice) OR (president) OR (vicepresident) OR (executive) OR
+(head) ) AND ( (marketing) OR (growth) OR (e-commerce) OR (ecommerce) ) AND
+NOT ( (assistant) OR (analyst) OR (intern) OR (apprenticeship) OR (sales) OR
+(finance) OR (recruitment) OR (project manager) OR (hr) OR (human resources)
+OR (talent) OR (design) OR (logistic) OR (warehouse) OR (engineer) OR
+(developer) OR (student) OR (merchandising) OR (digital) OR (brand) OR
+(trade) OR (influencer) OR (export) OR (wholesale) OR (whole sale) OR
+(information) OR (specialist) ) )
+A few invalid filter examples:
+- `mangerANDdirector`: spaces must be used around operators
+- `manager NOT (project manager)`: invalid boolean expression
+- `(accountant OR accounting AND NOT intern`: missing closing parenthesis
+before AND
+We recommend using parentheses to make sure operator precedence is what you
+intend.
+For example filter `(CFO) OR (Cofounder) AND NOT ((Vice) OR (Assistant) OR
+(Executive Assistant))` will match title `Assistant CFO.` The Boolean
+expression is `True OR False AND NOT True` and is evaluated as `True OR
+False AND NOT True = True OR False AND False = True OR False = True`
+In this case, the intended filter is `((CFO) OR (Cofounder)) AND NOT ((Vice)
+OR (Assistant) OR (Executive Assistant))`. Note the extra parenthesis around
+the first part.
+If you need help with writing title filters, contact your account manager to
+schedule a call with the support team.
+---
+## 2. Multiple Title Filters
+The `title_filters` parameter allows requesting multiple title filters in a
+specific order. It is used when
+[<code>title_filter</code>](https://docs.waterfall.io/v1/prospector-title-filter)
+is not present.
+Example:
+``` json
+"title_filters": [
+{
+"name": "ceo level",
+"filter": "ceo OR founder OR owner"
+},
+{
+"name": "sales",
+"filter": "revenue OR growth OR sales"
+},
+{
+"name": "marketing or operations",
+"filter": "marketing OR operations"
+}
+]
+```
+Waterfall will try each filter in the order provided up to the requested
+`limit`.
+You can provide up to 5 `title_filters` entries per request.
+---
+## 3. Location Filter
+The location-based search is performed with `location_name`,
+`location_country`, and `location_countries`.
+#### location_country
+The `location_country` parameter represents the country of the contact's
+current address. Use full country names such as `United States` or `France`.
+Partial values such as `United` or `Saudi` should be avoided. The country
+list is available
+[here](https://waterfall-io-public.s3.amazonaws.com/waterfall_location_country.txt).
+Empty values are ignored.
+#### location_countries
+The `location_countries` parameter is a list of countries where the
+contact's current address can be. If it is present and non-empty, it is used
+instead of `location_country`.
+- \["France"\]
+- \["France", "Germany"\]
+You can provide up to 50 countries. The full list is available
+[here](https://waterfall-io-public.s3.us-east-1.amazonaws.com/waterfall_location_country.txt).
+#### location_name
+The `location_name` parameter represents the location of the contact's
+current address. Typical locations are:
+- `San Francisco, California, United States`
+- `Paris, Ile-De-France, France`
+A location can include city, region/state, and country. Partial matches are
+possible. Common partial formats are:
+- city, region: `San Francisco, California`, `Paris, Ile-De-France`
+- region, country: `California, United States`, `Ile-De-France, France`
+- city: `San Francisco`, `Paris`
+- region: `California`, `Ile-De-France`
+- country:`United States`, `France`
+In many cases, the best results are obtained using only the region.
+Empty values are ignored.
+---
+# Errors
+The waterfall API uses conventional HTTP response codes to indicate the
+success or failure of a request, with detailed information in case of error.
+Error payload structure:
+- `category` is the high-level classification (`AUTH`, `VALIDATION`,
+`NOT_FOUND`, etc.).
+- `code` is the stable machine-readable identifier for a specific failure
+case.
+- Every `code` is namespaced by category using the format `CATEGORY_DETAIL`
+(for example `VALIDATION_BAD_REQUEST`).
+- The `category` field must always match the prefix of the `code` field.
+- Use `category` for broad handling (retry/auth/permissions) and `code` for
+precise logic and analytics.
+| Status Code | Description |
+| --- | --- |
+| 200 OK | The request was successful. |
+| 400 Bad Request | Your request was not valid. |
+| 401 Unauthorized | Missing API key. |
+| 403 Forbidden | Bad API key. |
+| 404 Not Found | The requested endpoint does not exist. |
+| 500 Internal Server Error | Something went wrong on our end. |
+---
+# Contact Support
+Contact Support: Email:
+[felix@waterfall.io](https://mailto:felix@waterfall.io)
+termsOfService: https://www.waterfall.io/#FAQs
+contact:
+email: felix@waterfall.io
+servers:
+- url: https://api.waterfall.io
+description: The production API server
+security: []
+tags:
+- name: prospector
+description: Prospector
+externalDocs:
+description: Prospector endpoint docs
+url: https://docs.waterfall.io/v1/prospector-launcher
+- name: enrichment-contact
+description: Enrichment Contact
+externalDocs:
+description: Contact enrichment endpoint docs
+url: https://docs.waterfall.io/v1/contact-enrichment-launcher
+- name: search-contact
+description: Search Contact
+externalDocs:
+description: Search Contact endpoint docs
+url: https://docs.waterfall.io/v1/search-contact-launcher
+- name: search-company
+description: Search Company
+externalDocs:
+description: Search Company endpoint docs
+url: https://docs.waterfall.io/v1/search-company-launcher
+- name: company-reveal
+description: Company Reveal
+- name: company-titles
+description: Company Titles
+- name: job-change
+description: Job Change
+externalDocs:
+description: Job Change endpoint docs
+url: https://docs.waterfall.io/v1/job-change-launcher
+- name: enrichment-phone
+description: Enrichment Phone
+externalDocs:
+description: Phone enrichment endpoint docs
+url: https://docs.waterfall.io/v1/phone-enrichment-launcher
+- name: enrichment-company
+description: Enrichment Company
+externalDocs:
+description: Company enrichment endpoint docs
+url: https://docs.waterfall.io/v1/company-enrichment-launcher
+- name: verify-email
+description: Verify Email
+externalDocs:
+description: Verify Email endpoint docs
+url: https://docs.waterfall.io/v1/email-verifier
+- name: account
+description: Account
+externalDocs:
+description: Account Reporter endpoint docs
+url: https://docs.waterfall.io/v1/account-reporter-v2
+- name: api-keys
+description: Api Keys Management **Enterprise Feature**
+externalDocs:
+description: API key management endpoint docs
+url: https://docs.waterfall.io/v1/api-keys-overview
+- name: webhook-authentication
+description: Webhook Authentication
+externalDocs:
+description: Find out more about Waterfall API
+url: https://docs.waterfall.io/v1/introduction
+paths:
+/v1/company-reveal:
+post:
+tags:
+- company-reveal
+summary: Company Reveal Launcher
+description: >
+Launch stage: Preview.
+Reveal company information for an IPv4 address, persist the job, and
+return the result using Waterfall's synchronous job envelope format.
+operationId: addCompanyRevealJob
+requestBody:
+description: Company Reveal request payload.
+content:
+application/json:
+schema:
+$ref: '#/components/schemas/CompanyRevealRequest'
+example:
+ip: 8.8.8.8
+required: true
+responses:
+'200':
+description: Company Reveal result returned successfully.
+content:
+application/json:
+schema:
+$ref: '#/components/schemas/CompanyRevealGetResponse'
+example:
+status: SUCCEEDED
+start_date: '2026-03-07T10:00:00.000000+00:00'
+stop_date: '2026-03-07T10:00:00.300000+00:00'
+input:
+task:
+ip: 8.8.8.8
+webhook_url: null
+custom_fields: {}
+job_id: b7e4648f-4f15-4f2f-9d09-7af635ce6c24
+context_id: b7e4648f-4f15-4f2f-9d09-7af635ce6c24
+output:
+ip: 8.8.8.8
+type: company
+confidence_score: high
+ip_geo:
+city: San Francisco
+state: California
+country: United States
+company:
+id: 54fa90d8-7ba7-4b6d-b5ec-82ee3e184166
+domain: stripe.com
+name: Stripe
+website: stripe.com
+linkedin_id: stripe
+description: >-
+Stripe is a financial infrastructure platform for
+businesses.
+logo_url: null
+size: 5001-10000
+employees_count: 8000
+industry: Financial Services
+type: Privately Held
+founded: 2010
+address: >-
+354 Oyster Point Blvd, South San Francisco, California
+94080, US
+country: United States
+linkedin_url: https://www.linkedin.com/company/stripe/
+linkedin_followers: 1500000
+crunchbase_url: https://www.crunchbase.com/organization/stripe
+funding_details:
+total_funding_rounds: 0
+total_funding_usd: 0
+funding_rounds: []
+recent_job_posting_count: 0
+technologies: []
+usage:
+total_usd: 0.07
+balance_remaining_usd: 99.93
+persons_count: 0
+persons_usd: 0
+phones_count: 0
+phones_usd: 0
+companies_count: 1
+companies_usd: 0.07
+'400':
+$ref: '#/components/responses/BadRequestBodyOrInputResponse'
+'401':
+$ref: '#/components/responses/UnauthorizedResponse'
+'402':
+$ref: '#/components/responses/PaymentRequiredResponse'
+'403':
+$ref: '#/components/responses/ForbiddenResponse'
+'429':
+$ref: '#/components/responses/TooManyRequestsResponse'
+security:
+- api_key: []
+components:
+schemas:
+CompanyRevealRequest:
+type: object
+description: Request payload for Company Reveal.
+required:
+- ip
+properties:
+ip:
+type: string
+format: ipv4
+examples:
+- 8.8.8.8
+webhook_url:
+anyOf:
+- $ref: '#/components/schemas/WebHookURLString'
+- type: 'null'
+example: https://example.com/webhook
+custom_fields:
+$ref: '#/components/schemas/CustomFieldsObject'
+CompanyRevealGetResponse:
+type: object
+required:
+- status
+- start_date
+- input
+description: Company Reveal response with synchronous job envelope and output.
+properties:
+status:
+$ref: '#/components/schemas/JobStatusEnum'
+start_date:
+$ref: '#/components/schemas/DataTimeString'
+stop_date:
+$ref: '#/components/schemas/DataTimeString'
+input:
+type: object
+properties:
+task:
+$ref: '#/components/schemas/CompanyRevealTaskInput'
+output:
+$ref: '#/components/schemas/CompanyRevealOutput'
+WebHookURLString:
+type: string
+format: uri
+maxLength: 2083
+description: >
+Optional webhook callback URL. If supplied, Waterfall POSTs the same
+payload returned by the Finder endpoint when processing completes. If
+your webhook responds with `429`, `500`, `502`, or `504`, Waterfall
+retries delivery up to 5 times with exponential backoff. Waterfall
+includes `X-Webhook-Signature` containing a compact JWT when webhook
+signing configuration is available. The JWT protected header contains
+`alg: "EdDSA"`, `kid`, and `typ: "JWT"`. Its claims contain `iat`,
+`exp`, `jti`, `job_id`, `body_hash`, and `body_hash_alg: "sha-256"`.
+`body_hash` is the unpadded base64url-encoded SHA-256 digest of the
+exact raw request body bytes. The JSON body is unchanged by signing.
+Signatures expire exactly 15 minutes after `iat`; receivers should
+reject expired signatures. If signing configuration is unavailable or
+invalid, Waterfall preserves backward compatibility by sending the
+callback unsigned without `X-Webhook-Signature`.
+examples:
+- https://webhook.site/70dd34e3-564d-4339-81e3-ed97416140a1
+CustomFieldsObject:
+type:
+- object
+- 'null'
+maxProperties: 100
+patternProperties:
+^[A-Za-z0-9_-]+$:
+oneOf:
+- type: string
+maxLength: 1000
+- type: number
+- type: boolean
+additionalProperties: false
+description: >
+Optional custom key-value metadata echoed on job input and output
+(useful for correlating internal source metadata). On create requests,
+omit the field or send JSON `null` when no custom fields are needed;
+both are stored as `{}`. When present, the value must be a JSON object
+with keys matching `^[A-Za-z0-9_-]+$` and values that are a string (max
+1000 characters), number, or boolean. Empty string, arrays, and other
+non-object types return HTTP 400. On job GET responses,
+`input.task.custom_fields` is always an object (`{}` or populated).
+examples:
+- tenantId: 0e9d26b7-cdb5-4d95-b248-59ac389d2e8a
+workflowId: >-
+ProspectFromWaterfall:23ed5bc8-a976-4ee0-b644-f0eb2db6e3ad:c268355e-a256-4593-a216-009a2463cee4
+waterfallRequestId: 1b49c542-f47a-406b-a95f-a1859d1461af
+JobStatusEnum:
+type: string
+enum:
+- RUNNING
+- SUCCEEDED
+- FAILED
+- TIMED_OUT
+- ABORTED
+description: The status of the job.
+examples:
+- RUNNING
+DataTimeString:
+type: string
+format: date-time
+description: A date time in ISO 8601 format.
+examples:
+- '2025-02-05T15:46:35.771751+00:00'
+CompanyRevealTaskInput:
+type: object
+description: Company Reveal request fields echoed back with tracking identifiers.
+properties:
+ip:
+type: string
+format: ipv4
+examples:
+- 8.8.8.8
+webhook_url:
+anyOf:
+- $ref: '#/components/schemas/WebHookURLString'
+- type: 'null'
+custom_fields:
+$ref: '#/components/schemas/CustomFieldsObject'
+job_id:
+$ref: '#/components/schemas/UUIDString'
+context_id:
+$ref: '#/components/schemas/UUIDString'
+CompanyRevealOutput:
+type: object
+description: Company Reveal output payload.
+properties:
+ip:
+type:
+- string
+- 'null'
+format: ipv4
+examples:
+- 8.8.8.8
+type:
+type:
+- string
+- 'null'
+enum:
+- company
+- education
+- government
+- isp
+- null
+confidence_score:
+type:
+- string
+- 'null'
+enum:
+- very_high
+- high
+- medium
+- low
+- null
+ip_geo:
+$ref: '#/components/schemas/CompanyRevealIPGeo'
+company:
+oneOf:
+- $ref: '#/components/schemas/CompanyEnriched'
+- type: object
+additionalProperties: false
+maxProperties: 0
+usage:
+$ref: '#/components/schemas/UsageBreakdown'
+ErrorResponse:
+required:
+- status
+- message
+- category
+- code
+type: object
+description: Standard error envelope returned by the API.
+properties:
+status:
+type:
+- string
+- 'null'
+examples:
+- error
+message:
+type: string
+examples:
+- Bad request
+category:
+$ref: '#/components/schemas/ErrorCategory'
+code:
+$ref: '#/components/schemas/ErrorCode'
+error:
+oneOf:
+- type: array
+maxItems: 10
+items:
+type: string
+maxLength: 1000
+- type: string
+maxLength: 1000
+examples:
+- Rate limit exceeded
+ErrorResponseUnauthorized:
+description: Error response used when the API key header is missing.
+required:
+- status
+- message
+- category
+- code
+type: object
+properties:
+status:
+type:
+- string
+- 'null'
+examples:
+- error
+message:
+type: string
+examples:
+- Missing api key
+category:
+$ref: '#/components/schemas/ErrorCategory'
+code:
+$ref: '#/components/schemas/ErrorCode'
+error:
+oneOf:
+- type: array
+maxItems: 10
+items:
+type: string
+maxLength: 1000
+- type: string
+maxLength: 1000
+examples:
+- Missing api key
+ErrorResponseForbidden:
+description: Error response used when the API key is invalid.
+required:
+- status
+- message
+- category
+- code
+type: object
+properties:
+status:
+type:
+- string
+- 'null'
+examples:
+- error
+message:
+type: string
+examples:
+- Bad api key
+category:
+$ref: '#/components/schemas/ErrorCategory'
+code:
+$ref: '#/components/schemas/ErrorCode'
+error:
+oneOf:
+- type: array
+maxItems: 10
+items:
+type: string
+maxLength: 1000
+- type: string
+maxLength: 1000
+examples:
+- Bad api key
+UUIDString:
+type: string
+format: uuid
+description: A UUID.
+examples:
+- 7d44db58-5de3-4e92-a2fb-8325d12c2e8b
+CompanyRevealIPGeo:
+type: object
+description: IP geolocation details returned by Company Reveal.
+properties:
+city:
+type:
+- string
+- 'null'
+state:
+type:
+- string
+- 'null'
+country:
+type:
+- string
+- 'null'
+CompanyEnriched:
+type: object
+description: Enriched company profile returned by company enrichment finder.
+properties:
+id:
+$ref: '#/components/schemas/UUIDString'
+domain:
+$ref: '#/components/schemas/DomainString'
+name:
+$ref: '#/components/schemas/CompanyNameString'
+website:
+$ref: '#/components/schemas/DomainString'
+linkedin_id:
+type:
+- string
+- 'null'
+examples:
+- rippling
+description:
+type:
+- string
+- 'null'
+examples:
+- >-
+Rippling is a workforce management system that eliminates the
+friction from running a business...
+logo_url:
+type:
+- string
+- 'null'
+format: uri
+examples:
+- >-
+https://media.licdn.com/dms/image/v2/C560BAQGTg3igNET25Q/company-logo_200_200/company-logo_200_200/0/1654722845874/rippling_logo?e=2147483647&v=beta&t=qq8RLQly9P0IXbPKjbcNiSdbT8g18dJhEZ1apYPIHd0
+size:
+type: string
+examples:
+- 1001-5000
+employees_count:
+type:
+- integer
+- 'null'
+format: int32
+examples:
+- 3854
+industry:
+type:
+- string
+- 'null'
+examples:
+- Software Development
+type:
+type:
+- string
+- 'null'
+examples:
+- Privately Held
+founded:
+type:
+- integer
+- 'null'
+format: int32
+examples:
+- 2016
+address:
+type: string
+examples:
+- 430 California St; San Francisco, California 94104, US
+country:
+$ref: '#/components/schemas/LocationCountryString'
+linkedin_url:
+type:
+- string
+- 'null'
+format: uri
+examples:
+- https://www.linkedin.com/company/rippling/
+linkedin_followers:
+type:
+- integer
+- 'null'
+format: int32
+examples:
+- 186401
+crunchbase_url:
+type:
+- string
+- 'null'
+format: uri
+examples:
+- https://www.crunchbase.com/organization/rippling
+funding_details:
+$ref: '#/components/schemas/FundingDetails'
+recent_job_posting_count:
+type:
+- integer
+- 'null'
+format: int32
+examples:
+- 12
+technologies:
+type: array
+items:
+type: string
+examples:
+- - AWS
+- Snowflake
+- Salesforce
+UsageBreakdown:
+type: object
+description: |
+Per-job cost breakdown and account balance snapshot for observability.
+required:
+- total_usd
+- balance_remaining_usd
+- persons_count
+- persons_usd
+- phones_count
+- phones_usd
+- companies_count
+- companies_usd
+properties:
+total_usd:
+type: number
+examples:
+- 0.12
+balance_remaining_usd:
+type: number
+examples:
+- 99.88
+persons_count:
+type: integer
+format: int64
+examples:
+- 0
+persons_usd:
+type: number
+examples:
+- 0
+phones_count:
+type: integer
+format: int64
+examples:
+- 1
+phones_usd:
+type: number
+examples:
+- 0.12
+companies_count:
+type: integer
+format: int64
+examples:
+- 0
+companies_usd:
+type: number
+examples:
+- 0
+ErrorCategory:
+type: string
+description: >
+Stable high-level error category. This value must match the prefix of
+`code` (for example, `VALIDATION` for `VALIDATION_BAD_REQUEST`).
+enum:
+- AUTH
+- PERMISSION
+- QUOTA
+- VALIDATION
+- NOT_FOUND
+- RATE_LIMIT
+- ROUTING
+- INTERNAL
+examples:
+- VALIDATION
+ErrorCode:
+type: string
+description: >
+Stable machine-readable error code. Codes are grouped by category via
+prefix and always follow `CATEGORY_DETAIL`. The prefix must match
+`category`.
+pattern: >-
+^(AUTH|PERMISSION|QUOTA|VALIDATION|NOT_FOUND|RATE_LIMIT|ROUTING|INTERNAL)_[A-Z0-9_]+$
+enum:
+- AUTH_BAD_API_KEY
+- AUTH_MISSING_API_KEY
+- AUTH_NEED_MASTER_API_KEY
+- PERMISSION_FEATURE_NOT_ENABLED
+- PERMISSION_INCLUDE_PHONES_REQUIRES_PHONE_ENRICHMENT
+- PERMISSION_NEED_ADMIN_API_KEY
+- QUOTA_ACCOUNT_OVER_QUOTA
+- VALIDATION_BAD_DOMAIN
+- VALIDATION_BAD_DOMAIN_DISPOSABLE
+- VALIDATION_BAD_DOMAIN_EMAIL_PROVIDER
+- VALIDATION_BAD_DOMAIN_INVALID_CHARACTERS
+- VALIDATION_BAD_DOMAIN_NO_MX
+- VALIDATION_BAD_DOMAIN_PROVIDER_DOMAIN
+- VALIDATION_BAD_DOMAIN_SERVICE_DOMAIN
+- VALIDATION_BAD_DOMAIN_SOCIAL_MEDIA
+- VALIDATION_BAD_DOMAIN_TOP_LEVEL
+- VALIDATION_BAD_DOMAIN_URL_SHORTENER
+- VALIDATION_BAD_EMAIL_CONSECUTIVE_DIGITS
+- VALIDATION_BAD_EMAIL_INVALID
+- VALIDATION_BAD_EMAIL_PERSONAL_NOT_ALLOWED
+- VALIDATION_BAD_EMAIL_PROFESSIONAL_NOT_ALLOWED
+- VALIDATION_BAD_EMAIL_ROLE
+- VALIDATION_BAD_EMAIL_TOO_LONG
+- VALIDATION_BAD_EMAIL_TOO_MANY_DIGITS
+- VALIDATION_BAD_JOB_ID
+- VALIDATION_BAD_NAME_INVALID
+- VALIDATION_BAD_REQUEST
+- VALIDATION_BAD_TITLE_FILTER
+- VALIDATION_BAD_TITLE_FILTER_EXTRA_LEFT_PARENTHESIS
+- VALIDATION_BAD_TITLE_FILTER_EXTRA_RIGHT_PARENTHESIS
+- VALIDATION_BAD_TITLE_FILTER_EXTRA_STRING
+- VALIDATION_BAD_TITLE_FILTER_MISSING_RIGHT_PARENTHESIS
+- VALIDATION_BAD_TITLE_FILTER_MISSING_STRING
+- VALIDATION_BAD_TITLE_FILTER_MISSING_STRING_OR_NOT_OR_LEFT_PARENTHESIS
+- VALIDATION_CANNOT_EDIT_MASTER_API_KEY
+- VALIDATION_MISSING_BODY
+- VALIDATION_MISSING_JOB_ID_PARAMETER
+- VALIDATION_MISSING_TITLE_FILTERS
+- VALIDATION_SUBKEY_RATE_EXCEEDS_MASTER
+- NOT_FOUND_ACCOUNT_OR_KEY_NOT_FOUND
+- NOT_FOUND_API_KEY_NOT_FOUND
+- NOT_FOUND_JOB_NOT_FOUND
+- NOT_FOUND_NO_MASTER_API_KEY_FOUND
+- NOT_FOUND_NOT_FOUND
+- RATE_LIMIT_RATE_LIMIT_EXCEEDED
+- ROUTING_INVALID_PATH_OR_METHOD
+- INTERNAL_FAILED_CREATE_API_KEY
+- INTERNAL_FAILED_EDIT_API_KEY
+- INTERNAL_UNCLASSIFIED_ERROR
+examples:
+- VALIDATION_BAD_REQUEST
+DomainString:
+type: string
+minLength: 4
+maxLength: 500
+description: >
+The domain where you want to find contacts. It can be a plain domain or
+a full URL; Waterfall automatically extracts the company domain.
+examples:
+- waterfall.io
+CompanyNameString:
+type: string
+minLength: 3
+maxLength: 500
+description: The name of the company where you want to find contacts.
+examples:
+- Waterfall
+LocationCountryString:
+type:
+- string
+- 'null'
+minLength: 1
+maxLength: 200
+description: >
+Country of the contact's current address. Use full country names (for
+example, `United States` or `France`).
+examples:
+- United States
+externalDocs:
+url: https://docs.waterfall.io/v1/prospector-location-filter
+FundingDetails:
+type: object
+description: Aggregated funding information and funding round history for a company.
+properties:
+total_funding_rounds:
+type: integer
+format: int32
+examples:
+- 9
+total_funding_usd:
+type: integer
+format: int64
+examples:
+- 1995000000
+funding_rounds:
+type: array
+items:
+$ref: '#/components/schemas/FundingRound'
+FundingRound:
+type: object
+description: A single funding round record for a company.
+properties:
+round_name:
+type: string
+examples:
+- Series F
+round_date:
+type: string
+format: date
+examples:
+- '2024-04-22'
+investor_count:
+type: integer
+format: int32
+examples:
+- 5
+amount_raised_usd:
+type: integer
+format: int64
+examples:
+- 200000000
+investor_names:
+type: array
+items:
+type: string
+examples:
+- - Bossa Invest
+- Coatue
+- Dragoneer Investment Group
+- Founders Fund
+- Greenoaks
+responses:
+BadRequestBodyOrInputResponse:
+description: Bad request body or invalid input.
+content:
+application/json:
+schema:
+$ref: '#/components/schemas/ErrorResponse'
+examples:
+missing_body:
+value:
+status: error
+message: Missing body
+category: VALIDATION
+code: VALIDATION_MISSING_BODY
+bad_request:
+value:
+status: error
+message: Bad request
+category: VALIDATION
+code: VALIDATION_BAD_REQUEST
+error:
+- >-
+request: Value error, contact_linkedin cannot be set
+together with other fields
+UnauthorizedResponse:
+description: API key not provided within the headers.
+content:
+application/json:
+schema:
+$ref: '#/components/schemas/ErrorResponseUnauthorized'
+example:
+status: error
+message: Missing api key
+category: AUTH
+code: AUTH_MISSING_API_KEY
+error: Missing api key
+PaymentRequiredResponse:
+description: Account is over quota.
+content:
+application/json:
+schema:
+$ref: '#/components/schemas/ErrorResponse'
+example:
+status: error
+message: >-
+Your account is over its quota. Please contact your account
+manager to discuss an upgrade.
+category: QUOTA
+code: QUOTA_ACCOUNT_OVER_QUOTA
+ForbiddenResponse:
+description: Wrong API key provided within the headers.
+content:
+application/json:
+schema:
+$ref: '#/components/schemas/ErrorResponseForbidden'
+example:
+status: error
+message: Bad api key
+category: AUTH
+code: AUTH_BAD_API_KEY
+error: Bad api key
+TooManyRequestsResponse:
+description: Too many requests. Rate limit exceeded.
+headers:
+X-RateLimit-Limit:
+description: Maximum number of requests allowed per interval.
+schema:
+type: integer
+format: int32
+minimum: 0
+X-RateLimit-Remaining:
+description: Remaining requests in the current interval.
+schema:
+type: integer
+format: int32
+minimum: 0
+X-RateLimit-Interval:
+description: Rate limit interval length in seconds.
+schema:
+type: number
+minimum: 0
+Retry-After:
+description: Seconds to wait before retrying.
+schema:
+type: number
+minimum: 0
+content:
+application/json:
+schema:
+$ref: '#/components/schemas/ErrorResponse'
+example:
+status: error
+message: Too many requests. Try again after 12.34 seconds
+error: Rate limit exceeded
+category: RATE_LIMIT
+code: RATE_LIMIT_RATE_LIMIT_EXCEEDED
+securitySchemes:
+api_key:
+description: To access the API, provide your API key in `x-api-key`.
+type: apiKey
+in: header
+name: x-api-key
+````
+This documentation is built and hosted on [Mintlify](https://mintlify.com), a developer documentation platform.

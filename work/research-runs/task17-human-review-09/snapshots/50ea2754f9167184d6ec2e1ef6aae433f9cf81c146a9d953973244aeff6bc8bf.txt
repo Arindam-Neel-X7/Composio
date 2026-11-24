@@ -1,0 +1,125 @@
+Introduction
+For AI agents: the docs index is at https://developer.aircall.io/llms.txt. Append .md to any documentation page URL to get its markdown version.
+Jump to Content
+HomeDocumentationAPI Reference
+v1.0
+Log In
+Documentation
+Search
+Ask AI
+Log In
+v1.0HomeDocumentationAPI Reference
+Introduction
+Quickstart
+Introduction
+Public vs Private app
+Your first API call
+Best practices
+Feedback & Feature requests
+Aircall AI
+Discover Aircall AI
+What can you build
+Connect with your MCP
+Register a Public MCP
+MCP FAQs
+AI Voice Agent (AIVA)
+AI-powered outbound calls
+Log Voice Agent calls
+AI Assist
+Call Transcripts and Insights
+Call summaries
+Retrieve playbook results
+QA & Call Evaluations
+FOUNDATIONS
+Authentication
+Overview
+Authenticate with API Keys
+OAuth implementation guide
+Webhooks
+Overview
+Webhook setup for integration builders
+Calls
+Overview
+How to work with call data
+Start an outbound call
+Implement click-to-dial
+Display caller context during calls
+Outbound Campaigns
+Overview
+Place your first call
+SMS
+Overview
+Send and receive SMS in proxy mode
+WhatsApp
+Overview
+Capture WhatsApp activity
+Send messages: Agent Inbox
+Send messages: Skipping-inbox
+Embed Aircall
+Overview
+Embed Aircall in a CRM sidebar
+Analytics
+Overview
+Build your own reports
+PUBLISH
+How to publish an App
+Partner program
+Plan your integration
+Build & Launch
+Assets
+Icons, logo, colors and fonts
+TOOLS
+Aircall Everywhere SDK
+Postman Collection
+EXAMPLES
+Build an agent activity dashboard
+Weather by Aircall
+Manage agent availability with Google Calendar
+Powered by
+Quickstart
+Introduction
+👋 Welcome
+Aircall's developer platform is the foundation for every integration, embedded experience, and AI-native app built on top of our AI-powered customer communications platform.
+Whether you're building for your own team or publishing to thousands of businesses, this page gives you a clear starting point: what you can build, where to begin, and which resources to use next.
+What can you build?
+Aircall's developer platform gives you three ways to build voice and messaging experiences with APIs, webhooks, and AI-native tools.
+Classic integrations
+Connect Aircall to any business tool using our REST API and webhooks.
+AI integrations
+Build MCP-compliant integrations for Aircall's AI Virtual Agent.
+🚧 Coming soon
+Embedded experiences
+Use the Everywhere SDK to embed the Aircall workspace directly inside your own product.
+Choose your path
+Not sure where to start? Here's a guide based on what you're trying to do.
+I want to…Start here
+🤖 Integrate with Aircall's AI featuresDiscover Aircall AI
+🔌 Send Aircall data (calls, messages, contacts...) to my business toolFoundations
+🧩 Embed the Agent workspace in my productEverywhere SDK
+🚀 Build and publish a public appHow to publish an App
+Developer resources
+Here's a quick map of everything available in this portal.
+Documentation
+These docs are built to help you learn the Aircall product, understand what you can build, and find inspiration for your integrations.
+REST API
+The foundation for every Aircall integration. Manage calls, messages, AI agents, users, numbers, and more — fully documented with detailed schemas, and request and response examples in the API reference.
+Webhooks
+Real-time event notifications for everything that happens on a call. Full event types and payloads are documented in the API reference: Webhooks section.
+Build for Aircall AI
+Guides and templates for building MCP-compliant integrations for the AI Virtual Agent. 🚧 Coming soon.
+Everywhere SDK
+Embed the Aircall workspace inside any web product with a few lines of JavaScript. Full setup and API docs in the SDK reference.
+Developer tools
+Postman collection, example projects, and client libraries to speed up your build.
+Updated 26 days ago
+What’s Next
+Ready to build, you are. Learn which type of app to build before moving forward, you must.
+Public vs Private app
+Did this page help you?
+Yes
+No
+Copy Page
+👋 Welcome
+What can you build?
+Choose your path
+Developer resources

@@ -1,0 +1,423 @@
+# Devin Docs: English API
+## API
+### Getting Started
+- [API Overview](https://docs.devin.ai/api-reference/overview.md): Learn how to programmatically interact with Devin using our REST APIs
+- [Quick start: Teams](https://docs.devin.ai/api-reference/getting-started/teams-quickstart.md): Set up Devin API access for a teams or standard organization: provision a service user, copy the API key, and create your first session.
+- [Quick start: Enterprise](https://docs.devin.ai/api-reference/getting-started/enterprise-quickstart.md): Get started with the Devin API as an enterprise user with RBAC and multi-org support
+- [Migrating from v1/v2](https://docs.devin.ai/api-reference/getting-started/migration-guide.md): Migrate integrations from Devin API v1 or v2 to the v3 API: service user tokens, new endpoint URLs, cursor pagination, and v2 enterprise equivalents.
+### Concepts
+- [Authentication](https://docs.devin.ai/api-reference/authentication.md): Understand principals, tokens, and how to authenticate with the Devin API
+- [Permissions & RBAC](https://docs.devin.ai/api-reference/v3/overview.md): Permission reference for the Devin API
+- [Common Flows](https://docs.devin.ai/api-reference/common-flows.md): End-to-end Devin API workflows: authenticate and create a session, download attachments, manage knowledge and playbooks, and schedule automations.
+- [Pagination](https://docs.devin.ai/api-reference/concepts/pagination.md): How cursor-based pagination works across the Devin API
+- [Terraform Provider](https://docs.devin.ai/api-reference/terraform-provider.md): Manage Devin resources as infrastructure-as-code with the official Terraform provider
+- [API Release Notes](https://docs.devin.ai/api-reference/release-notes.md): Track changes, new features, and improvements to Devin's APIs
+### Agent Lifecycle
+#### Sessions (Organization)
+- [List Sessions](https://docs.devin.ai/api-reference/v3/sessions/organizations-sessions.md): List sessions.
+- [Create Session](https://docs.devin.ai/api-reference/v3/sessions/post-organizations-sessions.md): Create a new session
+- [Get Session](https://docs.devin.ai/api-reference/v3/sessions/get-organizations-session.md): Get details of a specific session.
+- [List session messages](https://docs.devin.ai/api-reference/v3/sessions/get-organizations-session-messages.md): List all messages for a session with cursor-based pagination, ordered chronologically.
+- [Send a message to a session](https://docs.devin.ai/api-reference/v3/sessions/post-organizations-sessions-messages.md): Send a message to an active session. The session will be automatically resumed if suspended.
+- [List session attachments](https://docs.devin.ai/api-reference/v3/sessions/get-organizations-session-attachments.md): List all attachments for a session.
+- [Terminate Session](https://docs.devin.ai/api-reference/v3/sessions/delete-organizations-sessions.md): Terminate session
+- [Archive Session](https://docs.devin.ai/api-reference/v3/sessions/post-organizations-sessions-archive.md): Archive session and put it to sleep if currently running
+- [Get session tags](https://docs.devin.ai/api-reference/v3/sessions/get-organizations-session-tags.md): Get the tags for a specific session.
+- [Append session tags](https://docs.devin.ai/api-reference/v3/sessions/post-organizations-session-tags.md): Append tags to a session (deduplicating with existing tags).
+- [Replace session tags](https://docs.devin.ai/api-reference/v3/sessions/put-organizations-session-tags.md): Replace all tags on a session.
+- [List sessions with insights](https://docs.devin.ai/api-reference/v3/sessions/organizations-sessions-insights.md): List sessions with detailed insights including message counts, session size classification, and AI-generated analysis.
+- [Get session insights](https://docs.devin.ai/api-reference/v3/sessions/get-organizations-session-insights.md): Get detailed insights for a specific session, including message counts, session size classification, and AI-generated analysis.
+- [Generate session insights](https://docs.devin.ai/api-reference/v3/sessions/post-organizations-session-insights-generate.md): Trigger on-demand generation of session insights.
+#### Sessions (Enterprise)
+- [List sessions for account](https://docs.devin.ai/api-reference/v3/sessions/enterprise-sessions.md): List all sessions across the enterprise.
+- [Get session details](https://docs.devin.ai/api-reference/v3/sessions/get-enterprise-session.md): Get details of a specific session.
+- [List session messages](https://docs.devin.ai/api-reference/v3/sessions/get-enterprise-session-messages.md): List all messages for a session with cursor-based pagination, ordered chronologically.
+- [Send a message to a session](https://docs.devin.ai/api-reference/v3/sessions/post-enterprise-sessions-messages.md): Send a message to an active session. The session will be automatically resumed if suspended.
+- [List session attachments](https://docs.devin.ai/api-reference/v3/sessions/get-enterprise-session-attachments.md): List all attachments for a session.
+- [Get session tags](https://docs.devin.ai/api-reference/v3/sessions/get-enterprise-session-tags.md): Get the tags for a specific session.
+- [Append session tags](https://docs.devin.ai/api-reference/v3/sessions/post-enterprise-session-tags.md): Append tags to a session (deduplicating with existing tags).
+- [Replace session tags](https://docs.devin.ai/api-reference/v3/sessions/put-enterprise-session-tags.md): Replace all tags on a session.
+- [List sessions with insights](https://docs.devin.ai/api-reference/v3/sessions/enterprise-sessions-insights.md): List sessions with detailed insights including message counts, session size classification, and AI-generated analysis.
+- [Get session insights](https://docs.devin.ai/api-reference/v3/sessions/get-enterprise-session-insights.md): Get detailed insights for a specific session, including message counts, session size classification, and AI-generated analysis.
+- [Generate session insights](https://docs.devin.ai/api-reference/v3/sessions/post-enterprise-session-insights-generate.md): Trigger on-demand generation of session insights.
+#### Attachments (Organization)
+- [Upload an attachment](https://docs.devin.ai/api-reference/v3/attachments/post-organizations-attachments.md): Upload a file attachment that can be used in Devin sessions.
+- [Download an attachment](https://docs.devin.ai/api-reference/v3/attachments/get-organizations-attachments.md): Download a file attachment.
+#### Devin Review (Organization)
+- [Trigger Devin Review](https://docs.devin.ai/api-reference/v3/pr-reviews/post-organizations-pr-reviews.md): Trigger a Devin Review for a pull/merge request.
+- [Get latest Devin Review status](https://docs.devin.ai/api-reference/v3/pr-reviews/get-organizations-pr-reviews.md): Return the latest Devin Review for a PR scoped to the organization.
+#### Devin Review (Enterprise)
+- [Trigger Devin Review](https://docs.devin.ai/api-reference/v3/pr-reviews/post-enterprise-pr-reviews.md): Trigger a Devin Review for a pull/merge request.
+- [Get latest Devin Review status](https://docs.devin.ai/api-reference/v3/pr-reviews/get-enterprise-pr-reviews.md): Return the latest Devin Review for a PR scoped to the enterprise.
+### Context Management
+#### Knowledge Notes (Organization)
+- [List org-level notes](https://docs.devin.ai/api-reference/v3/notes/organizations-knowledge-notes.md): List notes for an organization.
+- [Get an org-level note](https://docs.devin.ai/api-reference/v3/notes/get-organizations-knowledge-note.md): Get a note by ID for an organization.
+- [Create an org-level note](https://docs.devin.ai/api-reference/v3/notes/post-organizations-knowledge-notes.md): Create a note for an organization.
+- [Update an org-level note](https://docs.devin.ai/api-reference/v3/notes/put-organizations-knowledge-notes-note-id.md): Update a note for an organization.
+- [Delete an org-level note](https://docs.devin.ai/api-reference/v3/notes/delete-organizations-knowledge-notes-note-id.md): Delete a note for an organization.
+- [Get knowledge folder structure with note counts.](https://docs.devin.ai/api-reference/v3/notes/organizations-knowledge-folders.md): Return the full folder tree with per-folder note counts.
+#### Knowledge Notes (Enterprise)
+- [List all notes.](https://docs.devin.ai/api-reference/v3/notes/enterprise-knowledge-notes.md)
+- [Get a note by ID](https://docs.devin.ai/api-reference/v3/notes/get-enterprise-knowledge-note.md): Get a note by ID.
+- [Create an enterprise-level note](https://docs.devin.ai/api-reference/v3/notes/post-enterprise-knowledge-notes.md)
+- [Update a note](https://docs.devin.ai/api-reference/v3/notes/put-enterprise-knowledge-notes-note-id.md)
+- [Delete a note](https://docs.devin.ai/api-reference/v3/notes/delete-enterprise-knowledge-notes-note-id.md)
+- [Get knowledge folder structure with note counts.](https://docs.devin.ai/api-reference/v3/notes/enterprise-knowledge-folders.md): Return the full folder tree with per-folder note counts.
+#### Playbooks (Organization)
+- [List org-level playbooks](https://docs.devin.ai/api-reference/v3/playbooks/organizations-playbooks.md): List playbooks for an organization.
+- [Create an org-level playbook](https://docs.devin.ai/api-reference/v3/playbooks/post-organizations-playbooks.md): Create a playbook for an organization.
+- [Get an organization- or enterprise-level playbook by ID](https://docs.devin.ai/api-reference/v3/playbooks/get-organizations-playbook.md): Get a specific organization- or enterprise-level playbook.
+- [Update an org-level playbook](https://docs.devin.ai/api-reference/v3/playbooks/put-organizations-playbooks-playbook-id.md): Update a playbook for an organization.
+- [Delete an org-level playbook](https://docs.devin.ai/api-reference/v3/playbooks/delete-organizations-playbooks-playbook-id.md): Delete a playbook for an organization.
+#### Playbooks (Enterprise)
+- [List all playbooks.](https://docs.devin.ai/api-reference/v3/playbooks/enterprise-playbooks.md)
+- [Create an enterprise-level playbook](https://docs.devin.ai/api-reference/v3/playbooks/post-enterprise-playbooks.md)
+- [Get a playbook by ID.](https://docs.devin.ai/api-reference/v3/playbooks/get-enterprise-playbook.md): Get a specific playbook by ID.
+- [Update a playbook](https://docs.devin.ai/api-reference/v3/playbooks/put-enterprise-playbooks-playbook-id.md)
+- [Delete a playbook](https://docs.devin.ai/api-reference/v3/playbooks/delete-enterprise-playbooks-playbook-id.md)
+### Environment Management
+#### Secrets (Organization)
+- [List org-level secrets](https://docs.devin.ai/api-reference/v3/secrets/organizations-secrets.md): List secrets for an organization.
+- [Create an org-level secret](https://docs.devin.ai/api-reference/v3/secrets/post-organizations-secrets.md): Create a secret for an organization.
+- [Delete an org-level secret](https://docs.devin.ai/api-reference/v3/secrets/delete-organizations-secrets.md): Delete a secret for an organization.
+#### Repositories (Organization)
+- [List repositories available to an organization](https://docs.devin.ai/api-reference/v3/repositories/list-organizations-repositories.md)
+- [List indexed repositories](https://docs.devin.ai/api-reference/v3/repositories/list-organizations-indexed-repositories.md)
+- [Bulk index repositories](https://docs.devin.ai/api-reference/v3/repositories/put-organizations-bulk-index-repositories.md): Idempotently enables indexing for a batch of repositories and triggers indexing jobs.
+- [Bulk remove repositories from indexing](https://docs.devin.ai/api-reference/v3/repositories/delete-organizations-bulk-remove-repositories.md): Disables indexing and clears configured branches for a batch of repositories.
+- [Get indexing status for a repository](https://docs.devin.ai/api-reference/v3/repositories/get-organizations-repository-indexing-status.md)
+- [Index a repository](https://docs.devin.ai/api-reference/v3/repositories/put-organizations-index-repository.md): Idempotently enables indexing for a single repository and triggers indexing jobs.
+- [Remove a repository from indexing](https://docs.devin.ai/api-reference/v3/repositories/delete-organizations-remove-repository.md): Disables indexing and clears configured branches for a single repository.
+- [Remove a branch from indexing](https://docs.devin.ai/api-reference/v3/repositories/delete-organizations-remove-branch.md)
+#### Snapshot Setup (Organization)
+- [List org- and repo-tier blueprints](https://docs.devin.ai/api-reference/v3/snapshot-setup/list-organizations-blueprints.md)
+- [Create an org- or repo-tier blueprint](https://docs.devin.ai/api-reference/v3/snapshot-setup/post-organizations-blueprints.md): Create a blueprint. ``type`` is inferred from ``repo_name``.
+- [Get a single blueprint](https://docs.devin.ai/api-reference/v3/snapshot-setup/get-organizations-blueprint.md)
+- [Update a blueprint's contents, position, source and/or commit-build settings](https://docs.devin.ai/api-reference/v3/snapshot-setup/patch-organizations-blueprint.md): Partial update for a single blueprint. Does NOT auto-trigger a build.
+- [Soft-delete a blueprint](https://docs.devin.ai/api-reference/v3/snapshot-setup/delete-organizations-blueprint.md)
+- [Presigned URL for the blueprint's YAML](https://docs.devin.ai/api-reference/v3/snapshot-setup/get-organizations-blueprint-contents.md)
+- [List blueprint files](https://docs.devin.ai/api-reference/v3/snapshot-setup/list-organizations-blueprint-files.md)
+- [Upload a blueprint file](https://docs.devin.ai/api-reference/v3/snapshot-setup/post-organizations-blueprint-file.md)
+- [Delete a blueprint file](https://docs.devin.ai/api-reference/v3/snapshot-setup/delete-organizations-blueprint-file.md)
+- [List builds for the org](https://docs.devin.ai/api-reference/v3/snapshot-setup/list-organizations-builds.md)
+- [Trigger a manual build](https://docs.devin.ai/api-reference/v3/snapshot-setup/post-organizations-builds.md): Manually trigger a snapshot build using the org's current blueprints.
+- [Get a single build](https://docs.devin.ai/api-reference/v3/snapshot-setup/get-organizations-build.md)
+- [Cancel an in-flight build](https://docs.devin.ai/api-reference/v3/snapshot-setup/post-organizations-build-cancel.md)
+- [Presigned URL for the build's log file](https://docs.devin.ai/api-reference/v3/snapshot-setup/get-organizations-build-logs.md)
+- [Pin the org to a specific successful build](https://docs.devin.ai/api-reference/v3/snapshot-setup/post-organizations-build-pin.md): Pin a successful build (less than 7 days old).
+- [Unpin a build (no-op if not pinned)](https://docs.devin.ai/api-reference/v3/snapshot-setup/delete-organizations-build-pin.md): Unpin the org if and only if it is currently pinned to ``build_id``.
+#### Snapshot Setup (Enterprise)
+- [List enterprise-tier blueprints](https://docs.devin.ai/api-reference/v3/snapshot-setup/list-enterprise-blueprints.md)
+- [Create the enterprise-tier blueprint](https://docs.devin.ai/api-reference/v3/snapshot-setup/post-enterprise-blueprints.md): Create the single enterprise-tier blueprint.
+- [Get the enterprise blueprint](https://docs.devin.ai/api-reference/v3/snapshot-setup/get-enterprise-blueprint.md)
+- [Replace the enterprise blueprint's YAML contents](https://docs.devin.ai/api-reference/v3/snapshot-setup/put-enterprise-blueprint.md)
+- [Delete the enterprise blueprint (soft-delete)](https://docs.devin.ai/api-reference/v3/snapshot-setup/delete-enterprise-blueprint.md)
+- [Presigned URL for the enterprise blueprint YAML](https://docs.devin.ai/api-reference/v3/snapshot-setup/get-enterprise-blueprint-contents.md)
+- [List enterprise blueprint files](https://docs.devin.ai/api-reference/v3/snapshot-setup/list-enterprise-blueprint-files.md)
+- [Upload an enterprise blueprint file](https://docs.devin.ai/api-reference/v3/snapshot-setup/post-enterprise-blueprint-file.md): Upload a file attachment (env-var substitution material) to the blueprint.
+- [Delete an enterprise blueprint file](https://docs.devin.ai/api-reference/v3/snapshot-setup/delete-enterprise-blueprint-file.md)
+### Automation
+#### Automations (Organization)
+- [List automations](https://docs.devin.ai/api-reference/v3/automations/organizations-automations.md): List all automations for the organization, newest first.
+- [Create automation](https://docs.devin.ai/api-reference/v3/automations/post-organizations-automations.md): Create a new automation with triggers and actions.
+- [Get automation](https://docs.devin.ai/api-reference/v3/automations/get-organizations-automation.md): Get a single automation by ID.
+- [Update automation](https://docs.devin.ai/api-reference/v3/automations/patch-organizations-automation.md): Update an automation.
+- [Delete automation](https://docs.devin.ai/api-reference/v3/automations/delete-organizations-automation.md): Soft delete an automation and return the deleted automation.
+- [Get automation event schemas](https://docs.devin.ai/api-reference/v3/automations/get-organizations-automations-schemas.md): Return all supported trigger event schemas, keyed by source then event name.
+- [List automation templates](https://docs.devin.ai/api-reference/v3/automations/get-organizations-automations-templates.md): List the built-in automation templates.
+#### Schedules (Organization)
+- [List schedules](https://docs.devin.ai/api-reference/v3/schedules/organizations-schedules.md): List all schedules for the organization.
+- [Create schedule](https://docs.devin.ai/api-reference/v3/schedules/post-organizations-schedules.md): Create a new scheduled session.
+- [Get schedule](https://docs.devin.ai/api-reference/v3/schedules/get-organizations-schedule.md): Get a specific schedule by ID.
+- [Update schedule](https://docs.devin.ai/api-reference/v3/schedules/patch-organizations-schedule.md): Update an existing schedule.
+- [Delete schedule](https://docs.devin.ai/api-reference/v3/schedules/delete-organizations-schedule.md): Soft delete a schedule.
+### Integrations
+#### Git Connections (Enterprise)
+- [List Git Connections](https://docs.devin.ai/api-reference/v3/git-connections/git-providers-connections.md)
+- [List repositories for a git connection](https://docs.devin.ai/api-reference/v3/git-connections/get-git-providers-connection-repositories.md)
+#### Git Permissions (Enterprise)
+- [List Git Permissions](https://docs.devin.ai/api-reference/v3/git-permissions/organizations-git-providers-permissions.md): List git permissions for the organization.
+- [Create Git Permissions](https://docs.devin.ai/api-reference/v3/git-permissions/post-organizations-git-providers-permissions.md)
+- [Replace Git Permissions](https://docs.devin.ai/api-reference/v3/git-permissions/put-organizations-git-providers-permissions.md)
+- [Update Git Permission](https://docs.devin.ai/api-reference/v3/git-permissions/patch-organizations-git-providers-permissions.md)
+- [Delete Git Permission](https://docs.devin.ai/api-reference/v3/git-permissions/delete-organizations-git-providers-permissions.md)
+- [Clear Git Permissions](https://docs.devin.ai/api-reference/v3/git-permissions/clear-organizations-git-providers-permissions.md)
+### Analytics
+#### Metrics (Enterprise)
+- [Get Usage Metrics](https://docs.devin.ai/api-reference/v3/metrics/metrics-usage.md): Get aggregated usage metrics for the enterprise account.
+- [Get Session Metrics](https://docs.devin.ai/api-reference/v3/metrics/metrics-sessions.md): Get aggregated session metrics for the enterprise account.
+- [Get PR Metrics](https://docs.devin.ai/api-reference/v3/metrics/metrics-prs.md): Get aggregated PR metrics for the enterprise account.
+- [Get Search Metrics](https://docs.devin.ai/api-reference/v3/metrics/metrics-searches.md): Get aggregated search metrics for the enterprise account.
+- [Get Daily Active Users](https://docs.devin.ai/api-reference/v3/metrics/metrics-dau.md): Get daily active users for each day in the specified time range.
+- [Get Weekly Active Users](https://docs.devin.ai/api-reference/v3/metrics/metrics-wau.md): Get weekly active users for each week in the specified time range.
+- [Get Monthly Active Users](https://docs.devin.ai/api-reference/v3/metrics/metrics-mau.md): Get monthly active users for each month in the specified time range.
+- [Get Active Users for Custom Date Range](https://docs.devin.ai/api-reference/v3/metrics/metrics-active-users.md): Get unique active users for a custom date range.
+- [Get Session Metrics by Category](https://docs.devin.ai/api-reference/v3/metrics/metrics-sessions-by-category.md): Get session counts and ACU consumption grouped by category and subcategory.
+- [Get Organization Usage Metrics](https://docs.devin.ai/api-reference/v3/metrics/organizations-metrics-usage.md): Get aggregated usage metrics for the enterprise account.
+#### Consumption (Enterprise)
+- [List Consumption Cycles](https://docs.devin.ai/api-reference/v3/consumption/consumption-cycles.md)
+- [Get Daily Consumption](https://docs.devin.ai/api-reference/v3/consumption/consumption-daily.md): Get daily ACU consumption for the entire enterprise.
+- [Get Organization Daily Consumption](https://docs.devin.ai/api-reference/v3/consumption/consumption-daily-organizations.md): Get daily ACU consumption for a specific organization.
+- [Get User Daily Consumption](https://docs.devin.ai/api-reference/v3/consumption/consumption-daily-users.md): Return daily ACU consumption for one enterprise user by date and product. For most enterprises, the results exclude Devin Review ACUs.
+- [Get Service User Daily Consumption](https://docs.devin.ai/api-reference/v3/consumption/consumption-daily-service-users.md): Get daily ACU consumption for a specific service user.
+- [Get Session Daily Consumption](https://docs.devin.ai/api-reference/v3/consumption/consumption-daily-sessions.md): Get daily ACU consumption for a specific session.
+#### Metrics (Organization)
+- [Get Usage Metrics](https://docs.devin.ai/api-reference/v3/metrics/organizations-metrics-usage-org.md): Get aggregated usage metrics for the organization.
+- [Get Session Metrics](https://docs.devin.ai/api-reference/v3/metrics/organizations-metrics-sessions.md): Get aggregated session metrics for the organization.
+- [Get PR Metrics](https://docs.devin.ai/api-reference/v3/metrics/organizations-metrics-prs.md): Get aggregated PR metrics for the organization.
+- [Get Search Metrics](https://docs.devin.ai/api-reference/v3/metrics/organizations-metrics-searches.md): Get aggregated search metrics for the organization.
+- [Get Daily Active Users](https://docs.devin.ai/api-reference/v3/metrics/organizations-metrics-dau.md): Get daily active users for each day in the specified time range.
+- [Get Weekly Active Users](https://docs.devin.ai/api-reference/v3/metrics/organizations-metrics-wau.md): Get weekly active users for each week in the specified time range.
+- [Get Monthly Active Users](https://docs.devin.ai/api-reference/v3/metrics/organizations-metrics-mau.md): Get monthly active users for each month in the specified time range.
+- [Get Active Users for Custom Date Range](https://docs.devin.ai/api-reference/v3/metrics/organizations-metrics-active-users.md): Get unique active users for a custom date range.
+#### Consumption (Organization)
+- [Get Daily Consumption](https://docs.devin.ai/api-reference/v3/consumption/organizations-consumption-daily.md): Get daily ACU consumption for the organization.
+- [Get User Daily Consumption](https://docs.devin.ai/api-reference/v3/consumption/organizations-consumption-daily-users.md): Get daily ACU consumption for a specific user within the organization.
+- [Get Service User Daily Consumption](https://docs.devin.ai/api-reference/v3/consumption/organizations-consumption-daily-service-users.md): Get daily ACU consumption for a specific service user within the organization.
+- [Get Session Daily Consumption](https://docs.devin.ai/api-reference/v3/consumption/organizations-consumption-daily-sessions.md): Get daily ACU consumption for a specific session within the organization.
+### Observability
+#### Audit Logs (Enterprise)
+- [List Audit Logs](https://docs.devin.ai/api-reference/v3/audit-logs/enterprise-audit-logs.md): List audit logs for the enterprise.
+- [List Organization Audit Logs](https://docs.devin.ai/api-reference/v3/audit-logs/organizations-audit-logs.md): List audit logs for the organization.
+#### Guardrail Violations (Enterprise) [Beta]
+- [List Guardrail Violations](https://docs.devin.ai/api-reference/v3/guardrail-violations/enterprise-guardrail-violations.md): List guardrail violations across the enterprise.
+- [List Organization Guardrail Violations](https://docs.devin.ai/api-reference/v3/guardrail-violations/organizations-guardrail-violations.md): List guardrail violations for a specific organization.
+### Devin for Security
+- [Triggering Code Scans via the Devin API](https://docs.devin.ai/api-reference/v3/code-scans/triggering-code-scans.md): Guide to starting Devin code scans programmatically, polling their status, and reading findings with the v3 organization and enterprise APIs
+#### Code Scans (Organization)
+- [Start Code Scan (Devin API)](https://docs.devin.ai/api-reference/v3/code-scans/organizations-code-scans-start.md): Start a new Devin code scan on one or more repositories via the v3 organization API, optionally with a scan profile, commit SHA, or effort
+- [Start Ingestion Scan (Devin API)](https://docs.devin.ai/api-reference/v3/code-scans/organizations-code-scans-start-ingestion.md): Start an ingestion-mode Devin code scan that triages findings from an external scanner using an ingest profile via the v3 organization API
+- [List Code Scans (Devin API)](https://docs.devin.ai/api-reference/v3/code-scans/organizations-code-scans-list.md): List Devin code scans in an organization and poll scan status, with time and repository filters, via the v3 organization API
+- [List Code Scan Profiles (Devin API)](https://docs.devin.ai/api-reference/v3/code-scans/organizations-code-scans-profiles.md): List the Devin code scan profiles available to an organization, including org-owned and account-shared discover and ingest profiles
+- [Get Code Scan Profile (Devin API)](https://docs.devin.ai/api-reference/v3/code-scans/organizations-code-scans-profile.md): Get a single Devin code scan profile, including its mode, scan type, include/exclude globs, and guidance, via the v3 organization API
+- [Get Code Scan Metrics (Devin API)](https://docs.devin.ai/api-reference/v3/code-scans/organizations-code-scans-metrics.md): Get aggregated Devin code scan, finding, and remediation PR metrics for a single organization over a time range via the v3 API
+- [List Code Scan Findings (Devin API)](https://docs.devin.ai/api-reference/v3/code-scans/organizations-code-scans-findings.md): List Devin code scan findings for an organization, filtered by scan, repository, severity, or status, via the v3 organization API
+- [Remediate Code Scan Finding (Devin API)](https://docs.devin.ai/api-reference/v3/code-scans/organizations-code-scans-remediate.md): Launch a Devin session that fixes a code scan finding and opens a pull request, via the v3 organization API
+#### Code Scans (Enterprise)
+- [Start Code Scan (Devin API)](https://docs.devin.ai/api-reference/v3/code-scans/enterprise-code-scans-start.md): Start a new Devin code scan on a repository in an organization via the v3 enterprise API, optionally with a scan profile or commit
+- [Start Ingestion Scan (Devin API)](https://docs.devin.ai/api-reference/v3/code-scans/enterprise-code-scans-start-ingestion.md): Start an ingestion-mode Devin code scan that triages findings from an external scanner using an ingest profile via the v3 enterprise API
+- [List Code Scans (Devin API)](https://docs.devin.ai/api-reference/v3/code-scans/enterprise-code-scans-list.md): List Devin code scans across an enterprise and poll scan status, with time, repository, and organization filters via the v3 API
+- [List Code Scan Profiles (Devin API)](https://docs.devin.ai/api-reference/v3/code-scans/enterprise-code-scans-profiles.md): List the Devin code scan profiles available to an enterprise, including org-owned and account-shared discover and ingest profiles
+- [Get Code Scan Profile (Devin API)](https://docs.devin.ai/api-reference/v3/code-scans/enterprise-code-scans-profile.md): Get a single Devin code scan profile, including its mode, scan type, include/exclude globs, and guidance, via the v3 enterprise API
+- [Get Code Scan Metrics (Devin API)](https://docs.devin.ai/api-reference/v3/code-scans/enterprise-code-scans-metrics.md): Get metrics for enterprise code scans
+- [List Code Scan Findings (Devin API)](https://docs.devin.ai/api-reference/v3/code-scans/enterprise-code-scans-findings.md): List enterprise code scan findings
+- [Remediate Code Scan Finding (Devin API)](https://docs.devin.ai/api-reference/v3/code-scans/enterprise-code-scans-remediate.md): Launch a Devin session to remediate a code scan finding
+### Infrastructure
+#### Queue (Enterprise)
+- [Get Queue](https://docs.devin.ai/api-reference/v3/queue/enterprise-queue.md): Get the queue status for an enterprise.
+#### Hypervisors (Enterprise)
+- [List Hypervisors](https://docs.devin.ai/api-reference/v3/hypervisors/hypervisors.md): List the hypervisors of the account's customer-managed VPC tenants.
+### Identity & Access
+- [Personal Access Tokens](https://docs.devin.ai/api-reference/personal-access-tokens.md): Authenticate as yourself for programmatic API access
+#### Self
+- [Get Self](https://docs.devin.ai/api-reference/v3/self/self.md)
+#### Users & Membership (Enterprise)
+- [List Users](https://docs.devin.ai/api-reference/v3/users/members-users.md)
+- [Get User](https://docs.devin.ai/api-reference/v3/users/get-members-user.md): Get a user by ID. Returns both direct and IDP-group-derived role assignments.
+- [Invite Users](https://docs.devin.ai/api-reference/v3/users/post-members-users.md)
+- [Update User](https://docs.devin.ai/api-reference/v3/users/patch-members-users.md)
+- [Delete User](https://docs.devin.ai/api-reference/v3/users/delete-members-users.md)
+- [Set Users' Billing Organizations](https://docs.devin.ai/api-reference/v3/users/put-members-users-billing-orgs.md): Set the billing organization of up to 100 users.
+- [List IDP Group Users](https://docs.devin.ai/api-reference/v3/users/members-idp-users.md): List users whose enterprise membership is derived from IDP group assignments.
+- [List Organization Users](https://docs.devin.ai/api-reference/v3/users/organizations-members-users.md)
+- [Assign Organization User](https://docs.devin.ai/api-reference/v3/users/post-organizations-members-users.md)
+- [Update Organization User](https://docs.devin.ai/api-reference/v3/users/patch-organizations-members-users.md)
+- [Delete Organization User](https://docs.devin.ai/api-reference/v3/users/delete-organizations-members-users.md)
+- [List Organization IDP Group Users](https://docs.devin.ai/api-reference/v3/users/organizations-members-idp-users.md): List users whose organization membership is derived from IDP group assignments.
+#### Users & Membership (Organization) [Beta]
+- [List Organization Users](https://docs.devin.ai/api-reference/v3/users/list-organization-users.md): List users with direct membership in the organization.
+- [Get Organization User](https://docs.devin.ai/api-reference/v3/users/get-organization-user.md): Get an organization member by ID. Returns both direct and IDP-group-derived role assignments.
+- [List Organization IDP Group Users](https://docs.devin.ai/api-reference/v3/users/list-organization-idp-users.md): List users whose organization membership is derived from IDP group assignments.
+#### Roles (Enterprise)
+- [List Roles](https://docs.devin.ai/api-reference/v3/roles/roles.md): Get roles for this enterprise
+#### Service Users (Enterprise)
+- [List Service Users](https://docs.devin.ai/api-reference/v3/service-users/members-service-users.md): List service users in the enterprise.
+- [Get Service User](https://docs.devin.ai/api-reference/v3/service-users/get-members-service-user.md): Get a service user by ID.
+- [Assign Service User](https://docs.devin.ai/api-reference/v3/service-users/post-members-service-users.md): Assign enterprise role to service user.
+- [Update Service User](https://docs.devin.ai/api-reference/v3/service-users/patch-members-service-users.md): Update enterprise role for service user.
+- [Delete Service User](https://docs.devin.ai/api-reference/v3/service-users/delete-members-service-users.md)
+- [List Organization Service Users](https://docs.devin.ai/api-reference/v3/service-users/organizations-members-service-users.md): List service users in the organization.
+- [Assign Organization Service User](https://docs.devin.ai/api-reference/v3/service-users/post-organizations-members-service-users.md): Assign organization role to service user.
+- [Update Organization Service User](https://docs.devin.ai/api-reference/v3/service-users/patch-organizations-members-service-users.md): Update organization role for service user.
+- [Delete Organization Service User](https://docs.devin.ai/api-reference/v3/service-users/delete-organizations-members-service-users.md): Remove service user from the organization.
+#### Service User API Keys (Enterprise) [Beta]
+- [List API keys for service user](https://docs.devin.ai/api-reference/v3/service-users/get-enterprise-service-user-api-keys.md): List API keys for a service user, optionally filtered by status.
+- [Create API key for service user](https://docs.devin.ai/api-reference/v3/service-users/post-enterprise-service-user-api-keys.md): Create a new API key for a service user.
+- [Revoke API key for service user](https://docs.devin.ai/api-reference/v3/service-users/delete-enterprise-service-user-api-key.md): Revoke an API key for a service user.
+- [Rotate API key for service user](https://docs.devin.ai/api-reference/v3/service-users/rotate-enterprise-service-user-api-key.md): Rotate an API key for a service user.
+#### IDP Groups (Enterprise)
+- [List IDP Groups](https://docs.devin.ai/api-reference/v3/idp-groups/members-idp-groups.md)
+- [Get IDP Group](https://docs.devin.ai/api-reference/v3/idp-groups/get-members-idp-group.md)
+- [Assign IDP Group](https://docs.devin.ai/api-reference/v3/idp-groups/post-members-idp-groups.md)
+- [Update IDP Group](https://docs.devin.ai/api-reference/v3/idp-groups/patch-members-idp-groups.md)
+- [Delete IDP Group](https://docs.devin.ai/api-reference/v3/idp-groups/delete-members-idp-groups.md)
+- [List Organization IDP Groups](https://docs.devin.ai/api-reference/v3/idp-groups/list-organizations-members-idp-groups.md)
+- [Get Organization IDP Group](https://docs.devin.ai/api-reference/v3/idp-groups/organizations-members-idp-groups.md)
+- [Assign Organization IDP Group](https://docs.devin.ai/api-reference/v3/idp-groups/post-organizations-members-idp-groups.md)
+- [Update Organization IDP Group](https://docs.devin.ai/api-reference/v3/idp-groups/patch-organizations-members-idp-groups.md)
+- [Delete Organization IDP Group](https://docs.devin.ai/api-reference/v3/idp-groups/delete-organizations-members-idp-groups.md): Remove idp_group from the organization.
+#### IDP Group Registration (Enterprise)
+- [List Account IDP Groups](https://docs.devin.ai/api-reference/v3/idp-groups/enterprise-idp-groups.md): List IDP groups registered with this enterprise.
+- [Register Account IDP Groups](https://docs.devin.ai/api-reference/v3/idp-groups/post-enterprise-idp-groups.md): Bulk create IDP groups for this enterprise. Existing groups are ignored.
+- [Delete Account IDP Group](https://docs.devin.ai/api-reference/v3/idp-groups/delete-enterprise-idp-group.md): Remove a registered IDP group from this enterprise.
+### Configuration
+#### Organizations (Enterprise)
+- [List Organizations](https://docs.devin.ai/api-reference/v3/organizations/organizations.md): List organizations in the enterprise.
+- [Create Organization](https://docs.devin.ai/api-reference/v3/organizations/post-organizations.md): Create a new organization in this enterprise
+- [Get Organization](https://docs.devin.ai/api-reference/v3/organizations/get-enterprise-organization.md): Get details for a specific organization in the enterprise.
+- [Update Organization](https://docs.devin.ai/api-reference/v3/organizations/patch-organizations.md): Update an organization's name and/or ACU limits
+- [Delete Organization](https://docs.devin.ai/api-reference/v3/organizations/delete-organizations.md): Delete an organization from this enterprise
+#### Tags (Enterprise)
+- [Get Organization Allowed Tags](https://docs.devin.ai/api-reference/v3/tags/organizations-tags.md): Get the allowed session tags for an organization.
+- [Append Organization Tags](https://docs.devin.ai/api-reference/v3/tags/post-organizations-tags.md): Append tags to the allowed session tags for an organization.
+- [Replace Organization Allowed Tags](https://docs.devin.ai/api-reference/v3/tags/put-organizations-tags.md): Replace the full set of allowed session tags for an organization.
+- [Clear Organization Tags](https://docs.devin.ai/api-reference/v3/tags/delete-organizations-tags.md): Clear all allowed session tags for an organization.
+- [Remove Organization Tag](https://docs.devin.ai/api-reference/v3/tags/delete-organizations-tags-tag.md): Remove a single tag from the allowed session tags for an organization.
+- [Get Organization Default Tag](https://docs.devin.ai/api-reference/v3/tags/get-enterprise-organizations-default-tag.md): Get the current default tag for an organization.
+- [Set Organization Default Tag](https://docs.devin.ai/api-reference/v3/tags/put-enterprise-organizations-default-tag.md): Set the default tag for an organization. The tag must exist in the allowed tags list.
+- [Clear Organization Default Tag](https://docs.devin.ai/api-reference/v3/tags/delete-enterprise-organizations-default-tag.md): Clear the default tag for an organization.
+#### IP Access List (Enterprise)
+- [Get IP Access List](https://docs.devin.ai/api-reference/v3/ip-access-list/get-ip-access-list.md)
+- [Add IPs to IP Access List](https://docs.devin.ai/api-reference/v3/ip-access-list/add-ip-access-list.md)
+- [Replace IP Access List](https://docs.devin.ai/api-reference/v3/ip-access-list/replace-ip-access-list.md)
+- [Clear IP Access List](https://docs.devin.ai/api-reference/v3/ip-access-list/clear-ip-access-list.md)
+#### Organization Settings (Organization) [Beta]
+- [Get Organization Default Platform (Devin API)](https://docs.devin.ai/api-reference/v3/organization-settings/get-organization-default-platform.md): Read the organization's default Devin session placement (a hosted platform label or an outpost pool) via the v3 organization API
+- [Set Organization Default Platform (Devin API)](https://docs.devin.ai/api-reference/v3/organization-settings/put-organization-default-platform.md): Set or clear the organization's default Devin session placement to a hosted platform or an outpost pool via the v3 organization API
+#### Security Profiles (Organization) [Beta]
+- [List org security profiles](https://docs.devin.ai/api-reference/v3/security-profiles/list-organizations-security-profiles.md): List the organization's own security profiles. Enterprise-shared profiles are listed on the enterprise security-profiles path.
+- [Get an org security profile](https://docs.devin.ai/api-reference/v3/security-profiles/get-organizations-security-profile.md): Get one of the organization's own security profiles by ID.
+- [Create an org security profile](https://docs.devin.ai/api-reference/v3/security-profiles/post-organizations-security-profile.md): Create an organization-owned security profile.
+- [Update an org security profile](https://docs.devin.ai/api-reference/v3/security-profiles/patch-organizations-security-profile.md): Update an organization-owned security profile. Omitted fields are left unchanged; explicit null clears net_policy / mcp_config.
+- [Delete an org security profile](https://docs.devin.ai/api-reference/v3/security-profiles/delete-organizations-security-profile.md): Delete an organization-owned security profile. Fails with 409 while bindings (defaults, playbooks, automations, sessions) still reference it; the 409 detail lists the referencing resource types.
+- [Get org security profile settings](https://docs.devin.ai/api-reference/v3/security-profiles/get-organizations-security-profile-settings.md): Get the organization's default security-profile selections.
+- [Update org security profile settings](https://docs.devin.ai/api-reference/v3/security-profiles/patch-organizations-security-profile-settings.md): Update the organization's default security-profile selections. Omitted fields are left unchanged. A pinned profile may be org-owned or one of the org's enterprise's shared profiles.
+#### Security Profiles (Enterprise) [Beta]
+- [List enterprise security profiles](https://docs.devin.ai/api-reference/v3/security-profiles/list-enterprise-security-profiles.md): List the enterprise's security profiles, shared with every org in the enterprise. Each org's own profiles are listed on the org paths.
+- [Get an enterprise security profile](https://docs.devin.ai/api-reference/v3/security-profiles/get-enterprise-security-profile.md): Get one of the enterprise's security profiles by ID.
+- [Create an enterprise security profile](https://docs.devin.ai/api-reference/v3/security-profiles/post-enterprise-security-profile.md): Create an enterprise-owned security profile.
+- [Update an enterprise security profile](https://docs.devin.ai/api-reference/v3/security-profiles/patch-enterprise-security-profile.md): Update an enterprise-owned security profile. Omitted fields are left unchanged; explicit null clears net_policy / mcp_config.
+- [Delete an enterprise security profile](https://docs.devin.ai/api-reference/v3/security-profiles/delete-enterprise-security-profile.md): Delete an enterprise-owned security profile. Fails with 409 while bindings (defaults, playbooks, automations, sessions — including orgs' own bindings) still reference it; the 409 detail lists the referencing resource types.
+- [Get enterprise security profile settings](https://docs.devin.ai/api-reference/v3/security-profiles/get-enterprise-security-profile-settings.md): Get the enterprise's default security-profile selection.
+- [Update enterprise security profile settings](https://docs.devin.ai/api-reference/v3/security-profiles/patch-enterprise-security-profile-settings.md): Update the enterprise's default security-profile selection. Omitted fields are left unchanged. Only enterprise-owned profiles may be pinned.
+### Legacy API v1
+- [v1 API Overview (Legacy)](https://docs.devin.ai/api-reference/v1/overview.md): Core session management and automation with org-scoped access
+#### Session Endpoints
+- [List sessions](https://docs.devin.ai/api-reference/v1/sessions/list-sessions.md): List all Devin sessions for your organization.
+- [Create a new session](https://docs.devin.ai/api-reference/v1/sessions/create-a-new-devin-session.md): Create a new Devin session with the v1 API. Covers the required permission, the 30,000-character prompt limit, tag limits, and schema rules.
+- [Retrieve details about an existing session](https://docs.devin.ai/api-reference/v1/sessions/retrieve-details-about-an-existing-session.md): Retrieve detailed information about an existing Devin session, including its status, output, and metadata.
+- [Send a message to a session](https://docs.devin.ai/api-reference/v1/sessions/send-a-message-to-an-existing-devin-session.md): Send a message to an existing Devin session to provide additional instructions or information.
+- [Terminate a session](https://docs.devin.ai/api-reference/v1/sessions/terminate-a-session.md): Terminate an active Devin session. Once terminated, the session cannot be resumed.
+- [Upload an attachment](https://docs.devin.ai/api-reference/v1/attachments/upload-files-for-devin-to-work-with.md): Upload files for Devin to work with during sessions. Supports various file types including code, data, and documentation files.
+- [Download an attachment](https://docs.devin.ai/api-reference/v1/attachments/download-attachment-files.md): Download attachment files that were previously uploaded. Returns a redirect to a presigned URL for secure file access.
+- [Update session tags](https://docs.devin.ai/api-reference/v1/sessions/update-session-tags.md): Update the tags associated with a Devin session.
+#### Knowledge Endpoints
+- [List all knowledge](https://docs.devin.ai/api-reference/v1/knowledge/list-knowledge.md): List all knowledge entries and folders for the organization.
+- [Create knowledge entry](https://docs.devin.ai/api-reference/v1/knowledge/create-knowledge.md): Create a new knowledge entry for the organization.
+- [Update knowledge entry](https://docs.devin.ai/api-reference/v1/knowledge/update-knowledge.md): Update an existing knowledge entry.
+- [Delete knowledge entry](https://docs.devin.ai/api-reference/v1/knowledge/delete-knowledge.md): Delete a knowledge entry from the organization.
+#### Playbooks Endpoints
+- [List Playbooks](https://docs.devin.ai/api-reference/v1/playbooks/list-playbooks.md): Retrieve all playbooks accessible to your organization
+- [Create Playbook](https://docs.devin.ai/api-reference/v1/playbooks/create-playbook.md): Create a new team playbook
+- [Get Playbook](https://docs.devin.ai/api-reference/v1/playbooks/get-playbook.md): Retrieve details of a specific playbook
+- [Update Playbook](https://docs.devin.ai/api-reference/v1/playbooks/update-playbook.md): Update an existing team playbook
+- [Delete Playbook](https://docs.devin.ai/api-reference/v1/playbooks/delete-playbook.md): Delete a team playbook
+#### Secrets Endpoints
+- [List secrets](https://docs.devin.ai/api-reference/v1/secrets/list-secrets.md): List metadata for all organization secrets with the Devin v1 API. Returns IDs, types, names, and creation times, never secret values.
+- [Create Secret](https://docs.devin.ai/api-reference/v1/secrets/create-secret.md): Create a new encrypted organization secret with the Devin v1 API. Supports cookie, key-value, and TOTP types.
+- [Delete a secret](https://docs.devin.ai/api-reference/v1/secrets/delete-secret.md): Permanently delete an organization secret by its ID with the Devin v1 API. This action cannot be undone.
+### Legacy API v2
+- [v2 API Overview (Legacy)](https://docs.devin.ai/api-reference/v2/overview.md): Enterprise-wide management, analytics, and compliance for administrators
+#### API Key Endpoints
+- [Create a Service API Key](https://docs.devin.ai/api-reference/v2/api-keys/provision-service-key.md): Provision a service API key for an Organization in the Enterprise
+- [List API Keys](https://docs.devin.ai/api-reference/v2/api-keys/list-enterprise-api-keys.md): List API keys across an Enterprise
+- [Revoke API Key](https://docs.devin.ai/api-reference/v2/api-keys/revoke-enterprise-api-key.md): Revoke a specific enterprise API key
+#### Audit Log Endpoints
+- [Get Audit Logs](https://docs.devin.ai/api-reference/v2/audit-logs.md): Retrieve audit logs for the entire enterprise.
+#### Consumption Endpoints
+- [Consumption Cycles](https://docs.devin.ai/api-reference/v2/consumption/consumption-cycles.md): Generate a list of all billing cycles for the enterprise
+- [Daily Consumption](https://docs.devin.ai/api-reference/v2/consumption/daily-consumption.md): Get daily ACU consumption for your enterprise by date and organization for a date range, defaulting to the current billing cycle.
+- [User Daily Consumption](https://docs.devin.ai/api-reference/v2/consumption/user-daily-consumption.md): Return daily ACU consumption for one enterprise user by date and organization. The default range is the current billing cycle.
+#### Groups Endpoints
+- [List Enterprise Groups](https://docs.devin.ai/api-reference/v2/groups/list-enterprise-groups.md): List IdP groups in this Enterprise
+- [Get Group Details](https://docs.devin.ai/api-reference/v2/groups/get-group-details.md): Get details for a specific IdP group in this Enterprise
+#### Infrastructure Endpoints
+- [List Hypervisors](https://docs.devin.ai/api-reference/v2/infrastructure/list-enterprise-hypervisors.md): Get hypervisor status information for VPC monitoring
+#### Members Endpoints
+- [List Enterprise Members](https://docs.devin.ai/api-reference/v2/members/list-enterprise-members.md): List paginated members in this enterprise
+- [Get Member Details](https://docs.devin.ai/api-reference/v2/members/get-member-details.md): Get detailed information about a specific enterprise member
+- [Delete Enterprise Member](https://docs.devin.ai/api-reference/v2/members/delete-enterprise-member.md): Remove a user from an organization
+- [User Organizations](https://docs.devin.ai/api-reference/v2/members/user-organizations.md): Get paginated list of organizations that this user has access to
+- [Invite Enterprise Members](https://docs.devin.ai/api-reference/v2/members/invite-enterprise-members.md): Invite multiple users to the enterprise by email (bulk invite, max 100 users)
+#### Metrics Endpoints
+- [PR Metrics](https://docs.devin.ai/api-reference/v2/consumption/pr-metrics.md): Get pull request metrics for your enterprise
+- [Sessions Metrics](https://docs.devin.ai/api-reference/v2/consumption/sessions-metrics.md): Get sessions metrics for your enterprise
+- [Searches Metrics](https://docs.devin.ai/api-reference/v2/consumption/searches-metrics.md): Get the count of Ask Devin searches across your enterprise for a time period, excluding searches that Devin Review creates while reviewing PRs.
+- [Usage Metrics](https://docs.devin.ai/api-reference/v2/consumption/usage-metrics.md): Get usage metrics (sessions, searches, and PRs) for your enterprise
+#### Organizations Endpoints
+##### Organizations
+- [List Organizations](https://docs.devin.ai/api-reference/v2/organizations/list-organizations.md): List paginated organizations in this enterprise
+- [Create Organization](https://docs.devin.ai/api-reference/v2/organizations/create-organization.md): Create a new organization in this enterprise
+- [Get Organization Details](https://docs.devin.ai/api-reference/v2/organizations/get-organization-details.md): Get details for a specific organization in this enterprise
+- [Update Organization](https://docs.devin.ai/api-reference/v2/organizations/update-organization.md): Update an organization's ACU limit and/or display name
+- [Delete Organization](https://docs.devin.ai/api-reference/v2/organizations/delete-organization.md): Delete an organization from this enterprise
+##### Organization Groups
+- [Organization Groups](https://docs.devin.ai/api-reference/v2/organizations/organization-groups.md): Get paginated list of enterprise groups that are in this organization
+- [Add Group to Organization](https://docs.devin.ai/api-reference/v2/organizations/add-group-to-organization.md): Add a new IdP group to an organization
+##### Organization Members
+- [Organization Members](https://docs.devin.ai/api-reference/v2/organizations/organization-members.md): Get paginated list of users that are in this organization
+- [Add Organization Members](https://docs.devin.ai/api-reference/v2/organizations/add-organization-members.md): Bulk add users to one or more organizations within your enterprise
+- [Remove User from Organization](https://docs.devin.ai/api-reference/v2/organizations/remove-user-from-organization.md): Remove a user from an organization
+- [Update organization member roles](https://docs.devin.ai/api-reference/v2/organizations/update-organization-member-roles.md): Update organization roles for specific members
+##### Organization Connections
+- [Organization Connections](https://docs.devin.ai/api-reference/v2/organizations/organization-connections.md): Get paginated list of git connections that this organization has access to
+##### Organization Permissions
+- [Organization Permissions](https://docs.devin.ai/api-reference/v2/organizations/organization-permissions.md): Get paginated list of git permissions that this organization has access to
+- [Add Organization Permissions](https://docs.devin.ai/api-reference/v2/organizations/add-organization-permissions.md): Add git permissions to an organization
+- [Delete Organization Permission](https://docs.devin.ai/api-reference/v2/organizations/delete-organization-permission.md): Remove a git permission from an organization
+#### Playbooks Endpoints
+- [List Enterprise Playbooks](https://docs.devin.ai/api-reference/v2/playbooks/list-playbooks.md): List all enterprise playbooks available to the authenticated user
+- [Create Enterprise Playbook](https://docs.devin.ai/api-reference/v2/playbooks/create-playbook.md): Create a new playbook in your enterprise
+#### Repository Endpoints (Beta)
+- [Get Repository Indexing Status](https://docs.devin.ai/api-reference/v2/repositories/get-repository-status.md): Retrieve the indexing status of repositories for a specific organization.
+- [Bulk Index Repositories](https://docs.devin.ai/api-reference/v2/repositories/bulk-index-repositories.md): Index multiple repositories (up to 100) for use in Devin sessions.
+#### Roles Endpoints
+- [List available roles](https://docs.devin.ai/api-reference/v2/members/list-roles.md): List all roles that are available to the user's enterprise
+#### Sessions Endpoints
+##### Enterprise Sessions
+- [List Enterprise Sessions](https://docs.devin.ai/api-reference/v2/sessions/list-enterprise-sessions.md): Get a paginated list of Devin sessions for your enterprise
+- [List Enterprise Sessions (Insights)](https://docs.devin.ai/api-reference/v2/sessions/list-enterprise-sessions-insights.md): Get a paginated list of Devin sessions with detailed analysis data for your enterprise
+- [Get Enterprise Session](https://docs.devin.ai/api-reference/v2/sessions/get-enterprise-session.md): Get detailed information about a specific Devin session including analysis data and pull requests
+##### Organization Sessions
+- [List Organization Sessions](https://docs.devin.ai/api-reference/v2/sessions/list-organization-sessions.md): Get a paginated list of Devin sessions for a specific organization
+- [List Organization Sessions (Insights)](https://docs.devin.ai/api-reference/v2/sessions/list-organization-sessions-insights.md): Get a paginated list of Devin sessions with detailed analysis data for a specific organization
+#### Self Endpoints
+- [Get Self](https://docs.devin.ai/api-reference/v2/self/get-self.md): Get information about the authenticated API key
+#### User Usage Endpoints (Beta)
+- [Get User Usage Analysis (Beta)](https://docs.devin.ai/api-reference/v2/user-usage/get-user-usage-analysis-beta.md): Get paginated user usage analysis with detailed ACU consumption metrics across different time periods
+## OpenAPI Specs
+- [v3-openapi](/de/v3-openapi.yaml)
+- [v3-openapi](/es/v3-openapi.yaml)
+- [v3-openapi](/fr/v3-openapi.yaml)
+- [v3-openapi](/it/v3-openapi.yaml)
+- [v3-openapi](/ja/v3-openapi.yaml)
+- [v3-openapi](/pt-BR/v3-openapi.yaml)
+- [v3-openapi](/v3-openapi.yaml)
+- [v3-openapi](/zh/v3-openapi.yaml)
+- [v1-openapi](/de/v1-openapi.yaml)
+- [v1-openapi](/es/v1-openapi.yaml)
+- [v1-openapi](/fr/v1-openapi.yaml)
+- [v1-openapi](/it/v1-openapi.yaml)
+- [v1-openapi](/ja/v1-openapi.yaml)
+- [v1-openapi](/pt-BR/v1-openapi.yaml)
+- [v1-openapi](/v1-openapi.yaml)
+- [v1-openapi](/zh/v1-openapi.yaml)
+- [v2-openapi](/de/v2-openapi.yaml)
+- [v2-openapi](/es/v2-openapi.yaml)
+- [v2-openapi](/fr/v2-openapi.yaml)
+- [v2-openapi](/it/v2-openapi.yaml)
+- [v2-openapi](/ja/v2-openapi.yaml)
+- [v2-openapi](/pt-BR/v2-openapi.yaml)
+- [v2-openapi](/v2-openapi.yaml)
+- [v2-openapi](/zh/v2-openapi.yaml)

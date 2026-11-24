@@ -1,0 +1,37 @@
+# Limits consumption
+Ahrefs API is available on [eligible paid plans](https://ahrefs.com/pricing). On all other plans, you'll still have access to a [limited set of free test queries](./free-test-queries.md).
+All requests besides [free test queries](./free-test-queries.md) and the *Rank Tracker*, *Management*, *Public* and *some other* endpoints consume **API units**. If an endpoint is free, you'll see a note about that on its documentation page; otherwise, it consumes units.
+The units consumption per request is calculated as follows:
+```
+max(base_cost, per_row_cost * num_rows)
+```
+The `base_cost` of each request is **50 units**. The `per_row_cost` is the sum of the costs of each unique field that appears in either the returned result, or in the `where` or `order_by` parameters. If a field appears in multiple parameters, it is counted once.
+The default cost of a field is **1 unit**. However, certain metrics are more expensive and may consume **5** or **10 units**. Such exceptions are noted in the each endpoint's field description. Requests served from cache do not consume units.
+Each API request indicates its units consumption behavior via the following response headers:
+- `x-api-rows` The number of rows returned.
+- `x-api-units-cost-row` The per-row units cost.
+- `x-api-units-cost-total` The overall units that the request should consume based on the number of rows and per-row cost.
+- `x-api-units-cost-total-actual` The overall units that the request actually consumed.
+- `x-api-cache` Whether the request was served from cache. One of: `hit` `miss` `no_cache`
+> **INFO**
+> A good way to estimate the cost of a request is to run it with a [free target](./free-test-queries.md) and check the `x-api-units-cost-total` field value. To display the response headers when using the `curl` command, you can use the `-v` or `--verbose` option.
+## Example 1
+Consider a request to the *Site Explorer - Domain rating* endpoint (`/site-explorer/domain-rating`).
+It does not accept a `select`, `where`, or `order_by` parameter, and it returns a single row containing two fields - `domain_rating` and `ahrefs_rank`, for a per-row cost of 2 units.
+The total row cost (per-row cost multiplied by the number of rows) is less than the base cost. Therefore, this request costs the base amount of **50 units**.
+## Example 2
+Consider a more complex request to the *Site Explorer - Backlinks* endpoint (`/site-explorer/all-backlinks`), which allows the configuration of the `select`, `where`, and `order_by` parameters.
+Suppose this request has two fields selected:
+```
+select=title,traffic
+```
+two fields in the filter expression:
+```
+where={"and":[{"field":"traffic","is":["gt",1000]},{"field":"refdomains_source","is":["gt",10]}]}
+```
+and an ordering field:
+```
+order_by=traffic:desc
+```
+Across these parameters, there are three unique fields, of which `title` and `refdomains_source` cost 1 unit each, while `traffic` costs 10 units. Thus, the per-row cost is 1 + 1 + 10 = 12 units.
+Suppose the request returns 500 rows. Then, the total row cost (12 * 500 = 6000 units) exceeds the base cost. Therefore, the cost of this request is **6000 units**.

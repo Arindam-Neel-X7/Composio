@@ -1,0 +1,3708 @@
+[
+  {
+    "app_id": 31,
+    "claim_id": "31.identity",
+    "path": [
+      "identity",
+      "resolution"
+    ],
+    "status": "observed",
+    "eligible": false
+  },
+  {
+    "app_id": 31,
+    "claim_id": "31.purpose",
+    "path": [
+      "purpose"
+    ],
+    "status": "observed",
+    "eligible": true
+  },
+  {
+    "app_id": 31,
+    "claim_id": "31.auth.oauth2_user_and_service",
+    "path": [
+      "auth",
+      "items",
+      0
+    ],
+    "status": "observed",
+    "eligible": true
+  },
+  {
+    "app_id": 31,
+    "claim_id": "31.testing.free_access",
+    "path": [
+      "credential_eligibility",
+      "testing",
+      "free_access"
+    ],
+    "status": "observed",
+    "eligible": true
+  },
+  {
+    "app_id": 31,
+    "claim_id": "31.testing.trial_access",
+    "path": [
+      "credential_eligibility",
+      "testing",
+      "trial_access"
+    ],
+    "status": "unknown",
+    "eligible": false
+  },
+  {
+    "app_id": 31,
+    "claim_id": "31.testing.sandbox_access",
+    "path": [
+      "credential_eligibility",
+      "testing",
+      "sandbox_access"
+    ],
+    "status": "observed",
+    "eligible": true
+  },
+  {
+    "app_id": 31,
+    "claim_id": "31.testing.paid_required",
+    "path": [
+      "credential_eligibility",
+      "testing",
+      "paid_required"
+    ],
+    "status": "unknown",
+    "eligible": false
+  },
+  {
+    "app_id": 31,
+    "claim_id": "31.testing.admin_approval_required",
+    "path": [
+      "credential_eligibility",
+      "testing",
+      "admin_approval_required"
+    ],
+    "status": "unknown",
+    "eligible": false
+  },
+  {
+    "app_id": 31,
+    "claim_id": "31.testing.vendor_approval_required",
+    "path": [
+      "credential_eligibility",
+      "testing",
+      "vendor_approval_required"
+    ],
+    "status": "unknown",
+    "eligible": false
+  },
+  {
+    "app_id": 31,
+    "claim_id": "31.testing.partner_approval_required",
+    "path": [
+      "credential_eligibility",
+      "testing",
+      "partner_approval_required"
+    ],
+    "status": "unknown",
+    "eligible": false
+  },
+  {
+    "app_id": 31,
+    "claim_id": "31.testing.contact_sales_required",
+    "path": [
+      "credential_eligibility",
+      "testing",
+      "contact_sales_required"
+    ],
+    "status": "unknown",
+    "eligible": false
+  },
+  {
+    "app_id": 31,
+    "claim_id": "31.testing.self_serve",
+    "path": [
+      "credential_eligibility",
+      "testing",
+      "self_serve"
+    ],
+    "status": "observed",
+    "eligible": true
+  },
+  {
+    "app_id": 31,
+    "claim_id": "31.production.free_access",
+    "path": [
+      "credential_eligibility",
+      "production",
+      "free_access"
+    ],
+    "status": "unknown",
+    "eligible": false
+  },
+  {
+    "app_id": 31,
+    "claim_id": "31.production.trial_access",
+    "path": [
+      "credential_eligibility",
+      "production",
+      "trial_access"
+    ],
+    "status": "unknown",
+    "eligible": false
+  },
+  {
+    "app_id": 31,
+    "claim_id": "31.production.sandbox_access",
+    "path": [
+      "credential_eligibility",
+      "production",
+      "sandbox_access"
+    ],
+    "status": "unknown",
+    "eligible": false
+  },
+  {
+    "app_id": 31,
+    "claim_id": "31.production.paid_required",
+    "path": [
+      "credential_eligibility",
+      "production",
+      "paid_required"
+    ],
+    "status": "unknown",
+    "eligible": false
+  },
+  {
+    "app_id": 31,
+    "claim_id": "31.production.admin_approval_required",
+    "path": [
+      "credential_eligibility",
+      "production",
+      "admin_approval_required"
+    ],
+    "status": "unknown",
+    "eligible": false
+  },
+  {
+    "app_id": 31,
+    "claim_id": "31.production.vendor_approval_required",
+    "path": [
+      "credential_eligibility",
+      "production",
+      "vendor_approval_required"
+    ],
+    "status": "observed",
+    "eligible": true
+  },
+  {
+    "app_id": 31,
+    "claim_id": "31.production.partner_approval_required",
+    "path": [
+      "credential_eligibility",
+      "production",
+      "partner_approval_required"
+    ],
+    "status": "unknown",
+    "eligible": false
+  },
+  {
+    "app_id": 31,
+    "claim_id": "31.production.contact_sales_required",
+    "path": [
+      "credential_eligibility",
+      "production",
+      "contact_sales_required"
+    ],
+    "status": "unknown",
+    "eligible": false
+  },
+  {
+    "app_id": 31,
+    "claim_id": "31.production.self_serve",
+    "path": [
+      "credential_eligibility",
+      "production",
+      "self_serve"
+    ],
+    "status": "observed",
+    "eligible": true
+  },
+  {
+    "app_id": 31,
+    "claim_id": "31.api.protocol.rest",
+    "path": [
+      "api_surface",
+      "protocols",
+      "items",
+      0
+    ],
+    "status": "observed",
+    "eligible": true
+  },
+  {
+    "app_id": 31,
+    "claim_id": "31.api.protocol.sdk",
+    "path": [
+      "api_surface",
+      "protocols",
+      "items",
+      1
+    ],
+    "status": "observed",
+    "eligible": true
+  },
+  {
+    "app_id": 31,
+    "claim_id": "31.api.public_docs",
+    "path": [
+      "api_surface",
+      "public_documentation"
+    ],
+    "status": "observed",
+    "eligible": true
+  },
+  {
+    "app_id": 31,
+    "claim_id": "31.api.group.accounts_hierarchy",
+    "path": [
+      "api_surface",
+      "resource_groups",
+      "items",
+      0
+    ],
+    "status": "observed",
+    "eligible": true
+  },
+  {
+    "app_id": 31,
+    "claim_id": "31.api.group.campaigns_ads",
+    "path": [
+      "api_surface",
+      "resource_groups",
+      "items",
+      1
+    ],
+    "status": "observed",
+    "eligible": true
+  },
+  {
+    "app_id": 31,
+    "claim_id": "31.api.group.reporting_gaql",
+    "path": [
+      "api_surface",
+      "resource_groups",
+      "items",
+      2
+    ],
+    "status": "observed",
+    "eligible": true
+  },
+  {
+    "app_id": 31,
+    "claim_id": "31.api.group.conversions_bidding",
+    "path": [
+      "api_surface",
+      "resource_groups",
+      "items",
+      3
+    ],
+    "status": "observed",
+    "eligible": true
+  },
+  {
+    "app_id": 31,
+    "claim_id": "31.api.group.planning_audiences",
+    "path": [
+      "api_surface",
+      "resource_groups",
+      "items",
+      4
+    ],
+    "status": "observed",
+    "eligible": true
+  },
+  {
+    "app_id": 31,
+    "claim_id": "31.api.breadth",
+    "path": [
+      "api_surface",
+      "breadth"
+    ],
+    "status": "inferred",
+    "eligible": true
+  },
+  {
+    "app_id": 31,
+    "claim_id": "31.mcp",
+    "path": [
+      "mcp",
+      "discovery"
+    ],
+    "status": "observed",
+    "eligible": true
+  },
+  {
+    "app_id": 31,
+    "claim_id": "31.mcp.official_google_ads",
+    "path": [
+      "mcp",
+      "entries",
+      0
+    ],
+    "status": "observed",
+    "eligible": true
+  },
+  {
+    "app_id": 31,
+    "claim_id": "31.mcp.official_google_ads.operational",
+    "path": [
+      "mcp",
+      "entries",
+      0,
+      "value",
+      "operational_check"
+    ],
+    "status": "not_researched",
+    "eligible": false
+  },
+  {
+    "app_id": 31,
+    "claim_id": "31.buildability",
+    "path": [
+      "buildability"
+    ],
+    "status": "inferred",
+    "eligible": true
+  },
+  {
+    "app_id": 32,
+    "claim_id": "32.identity",
+    "path": [
+      "identity",
+      "resolution"
+    ],
+    "status": "observed",
+    "eligible": false
+  },
+  {
+    "app_id": 32,
+    "claim_id": "32.purpose",
+    "path": [
+      "purpose"
+    ],
+    "status": "observed",
+    "eligible": true
+  },
+  {
+    "app_id": 32,
+    "claim_id": "32.auth.oauth2_user_token",
+    "path": [
+      "auth",
+      "items",
+      0
+    ],
+    "status": "observed",
+    "eligible": true
+  },
+  {
+    "app_id": 32,
+    "claim_id": "32.auth.system_user_token",
+    "path": [
+      "auth",
+      "items",
+      1
+    ],
+    "status": "observed",
+    "eligible": true
+  },
+  {
+    "app_id": 32,
+    "claim_id": "32.testing.free_access",
+    "path": [
+      "credential_eligibility",
+      "testing",
+      "free_access"
+    ],
+    "status": "unknown",
+    "eligible": false
+  },
+  {
+    "app_id": 32,
+    "claim_id": "32.testing.trial_access",
+    "path": [
+      "credential_eligibility",
+      "testing",
+      "trial_access"
+    ],
+    "status": "unknown",
+    "eligible": false
+  },
+  {
+    "app_id": 32,
+    "claim_id": "32.testing.sandbox_access",
+    "path": [
+      "credential_eligibility",
+      "testing",
+      "sandbox_access"
+    ],
+    "status": "observed",
+    "eligible": true
+  },
+  {
+    "app_id": 32,
+    "claim_id": "32.testing.paid_required",
+    "path": [
+      "credential_eligibility",
+      "testing",
+      "paid_required"
+    ],
+    "status": "unknown",
+    "eligible": false
+  },
+  {
+    "app_id": 32,
+    "claim_id": "32.testing.admin_approval_required",
+    "path": [
+      "credential_eligibility",
+      "testing",
+      "admin_approval_required"
+    ],
+    "status": "unknown",
+    "eligible": false
+  },
+  {
+    "app_id": 32,
+    "claim_id": "32.testing.vendor_approval_required",
+    "path": [
+      "credential_eligibility",
+      "testing",
+      "vendor_approval_required"
+    ],
+    "status": "observed",
+    "eligible": true
+  },
+  {
+    "app_id": 32,
+    "claim_id": "32.testing.partner_approval_required",
+    "path": [
+      "credential_eligibility",
+      "testing",
+      "partner_approval_required"
+    ],
+    "status": "unknown",
+    "eligible": false
+  },
+  {
+    "app_id": 32,
+    "claim_id": "32.testing.contact_sales_required",
+    "path": [
+      "credential_eligibility",
+      "testing",
+      "contact_sales_required"
+    ],
+    "status": "unknown",
+    "eligible": false
+  },
+  {
+    "app_id": 32,
+    "claim_id": "32.testing.self_serve",
+    "path": [
+      "credential_eligibility",
+      "testing",
+      "self_serve"
+    ],
+    "status": "observed",
+    "eligible": true
+  },
+  {
+    "app_id": 32,
+    "claim_id": "32.production.free_access",
+    "path": [
+      "credential_eligibility",
+      "production",
+      "free_access"
+    ],
+    "status": "unknown",
+    "eligible": false
+  },
+  {
+    "app_id": 32,
+    "claim_id": "32.production.trial_access",
+    "path": [
+      "credential_eligibility",
+      "production",
+      "trial_access"
+    ],
+    "status": "unknown",
+    "eligible": false
+  },
+  {
+    "app_id": 32,
+    "claim_id": "32.production.sandbox_access",
+    "path": [
+      "credential_eligibility",
+      "production",
+      "sandbox_access"
+    ],
+    "status": "unknown",
+    "eligible": false
+  },
+  {
+    "app_id": 32,
+    "claim_id": "32.production.paid_required",
+    "path": [
+      "credential_eligibility",
+      "production",
+      "paid_required"
+    ],
+    "status": "unknown",
+    "eligible": false
+  },
+  {
+    "app_id": 32,
+    "claim_id": "32.production.admin_approval_required",
+    "path": [
+      "credential_eligibility",
+      "production",
+      "admin_approval_required"
+    ],
+    "status": "unknown",
+    "eligible": false
+  },
+  {
+    "app_id": 32,
+    "claim_id": "32.production.vendor_approval_required",
+    "path": [
+      "credential_eligibility",
+      "production",
+      "vendor_approval_required"
+    ],
+    "status": "observed",
+    "eligible": true
+  },
+  {
+    "app_id": 32,
+    "claim_id": "32.production.partner_approval_required",
+    "path": [
+      "credential_eligibility",
+      "production",
+      "partner_approval_required"
+    ],
+    "status": "unknown",
+    "eligible": false
+  },
+  {
+    "app_id": 32,
+    "claim_id": "32.production.contact_sales_required",
+    "path": [
+      "credential_eligibility",
+      "production",
+      "contact_sales_required"
+    ],
+    "status": "unknown",
+    "eligible": false
+  },
+  {
+    "app_id": 32,
+    "claim_id": "32.production.self_serve",
+    "path": [
+      "credential_eligibility",
+      "production",
+      "self_serve"
+    ],
+    "status": "observed",
+    "eligible": true
+  },
+  {
+    "app_id": 32,
+    "claim_id": "32.api.protocol.rest",
+    "path": [
+      "api_surface",
+      "protocols",
+      "items",
+      0
+    ],
+    "status": "observed",
+    "eligible": true
+  },
+  {
+    "app_id": 32,
+    "claim_id": "32.api.protocol.sdk",
+    "path": [
+      "api_surface",
+      "protocols",
+      "items",
+      1
+    ],
+    "status": "observed",
+    "eligible": true
+  },
+  {
+    "app_id": 32,
+    "claim_id": "32.api.protocol.cli",
+    "path": [
+      "api_surface",
+      "protocols",
+      "items",
+      2
+    ],
+    "status": "observed",
+    "eligible": true
+  },
+  {
+    "app_id": 32,
+    "claim_id": "32.api.public_docs",
+    "path": [
+      "api_surface",
+      "public_documentation"
+    ],
+    "status": "observed",
+    "eligible": true
+  },
+  {
+    "app_id": 32,
+    "claim_id": "32.api.group.campaigns_adsets_ads",
+    "path": [
+      "api_surface",
+      "resource_groups",
+      "items",
+      0
+    ],
+    "status": "observed",
+    "eligible": true
+  },
+  {
+    "app_id": 32,
+    "claim_id": "32.api.group.audiences_targeting",
+    "path": [
+      "api_surface",
+      "resource_groups",
+      "items",
+      1
+    ],
+    "status": "observed",
+    "eligible": true
+  },
+  {
+    "app_id": 32,
+    "claim_id": "32.api.group.insights_reporting",
+    "path": [
+      "api_surface",
+      "resource_groups",
+      "items",
+      2
+    ],
+    "status": "observed",
+    "eligible": true
+  },
+  {
+    "app_id": 32,
+    "claim_id": "32.api.group.catalogs_conversions",
+    "path": [
+      "api_surface",
+      "resource_groups",
+      "items",
+      3
+    ],
+    "status": "observed",
+    "eligible": true
+  },
+  {
+    "app_id": 32,
+    "claim_id": "32.api.breadth",
+    "path": [
+      "api_surface",
+      "breadth"
+    ],
+    "status": "inferred",
+    "eligible": true
+  },
+  {
+    "app_id": 32,
+    "claim_id": "32.mcp",
+    "path": [
+      "mcp",
+      "discovery"
+    ],
+    "status": "observed",
+    "eligible": true
+  },
+  {
+    "app_id": 32,
+    "claim_id": "32.mcp.official_meta_ads",
+    "path": [
+      "mcp",
+      "entries",
+      0
+    ],
+    "status": "observed",
+    "eligible": true
+  },
+  {
+    "app_id": 32,
+    "claim_id": "32.mcp.official_meta_ads.operational",
+    "path": [
+      "mcp",
+      "entries",
+      0,
+      "value",
+      "operational_check"
+    ],
+    "status": "not_researched",
+    "eligible": false
+  },
+  {
+    "app_id": 32,
+    "claim_id": "32.mcp.community_pipeboard",
+    "path": [
+      "mcp",
+      "entries",
+      1
+    ],
+    "status": "observed",
+    "eligible": true
+  },
+  {
+    "app_id": 32,
+    "claim_id": "32.mcp.community_pipeboard.operational",
+    "path": [
+      "mcp",
+      "entries",
+      1,
+      "value",
+      "operational_check"
+    ],
+    "status": "not_researched",
+    "eligible": false
+  },
+  {
+    "app_id": 32,
+    "claim_id": "32.buildability",
+    "path": [
+      "buildability"
+    ],
+    "status": "inferred",
+    "eligible": true
+  },
+  {
+    "app_id": 33,
+    "claim_id": "33.identity",
+    "path": [
+      "identity",
+      "resolution"
+    ],
+    "status": "observed",
+    "eligible": false
+  },
+  {
+    "app_id": 33,
+    "claim_id": "33.purpose",
+    "path": [
+      "purpose"
+    ],
+    "status": "observed",
+    "eligible": true
+  },
+  {
+    "app_id": 33,
+    "claim_id": "33.auth.oauth2_3legged",
+    "path": [
+      "auth",
+      "items",
+      0
+    ],
+    "status": "observed",
+    "eligible": true
+  },
+  {
+    "app_id": 33,
+    "claim_id": "33.testing.free_access",
+    "path": [
+      "credential_eligibility",
+      "testing",
+      "free_access"
+    ],
+    "status": "unknown",
+    "eligible": false
+  },
+  {
+    "app_id": 33,
+    "claim_id": "33.testing.trial_access",
+    "path": [
+      "credential_eligibility",
+      "testing",
+      "trial_access"
+    ],
+    "status": "unknown",
+    "eligible": false
+  },
+  {
+    "app_id": 33,
+    "claim_id": "33.testing.sandbox_access",
+    "path": [
+      "credential_eligibility",
+      "testing",
+      "sandbox_access"
+    ],
+    "status": "unknown",
+    "eligible": false
+  },
+  {
+    "app_id": 33,
+    "claim_id": "33.testing.paid_required",
+    "path": [
+      "credential_eligibility",
+      "testing",
+      "paid_required"
+    ],
+    "status": "unknown",
+    "eligible": false
+  },
+  {
+    "app_id": 33,
+    "claim_id": "33.testing.admin_approval_required",
+    "path": [
+      "credential_eligibility",
+      "testing",
+      "admin_approval_required"
+    ],
+    "status": "unknown",
+    "eligible": false
+  },
+  {
+    "app_id": 33,
+    "claim_id": "33.testing.vendor_approval_required",
+    "path": [
+      "credential_eligibility",
+      "testing",
+      "vendor_approval_required"
+    ],
+    "status": "observed",
+    "eligible": true
+  },
+  {
+    "app_id": 33,
+    "claim_id": "33.testing.partner_approval_required",
+    "path": [
+      "credential_eligibility",
+      "testing",
+      "partner_approval_required"
+    ],
+    "status": "unknown",
+    "eligible": false
+  },
+  {
+    "app_id": 33,
+    "claim_id": "33.testing.contact_sales_required",
+    "path": [
+      "credential_eligibility",
+      "testing",
+      "contact_sales_required"
+    ],
+    "status": "unknown",
+    "eligible": false
+  },
+  {
+    "app_id": 33,
+    "claim_id": "33.testing.self_serve",
+    "path": [
+      "credential_eligibility",
+      "testing",
+      "self_serve"
+    ],
+    "status": "observed",
+    "eligible": true
+  },
+  {
+    "app_id": 33,
+    "claim_id": "33.production.free_access",
+    "path": [
+      "credential_eligibility",
+      "production",
+      "free_access"
+    ],
+    "status": "unknown",
+    "eligible": false
+  },
+  {
+    "app_id": 33,
+    "claim_id": "33.production.trial_access",
+    "path": [
+      "credential_eligibility",
+      "production",
+      "trial_access"
+    ],
+    "status": "unknown",
+    "eligible": false
+  },
+  {
+    "app_id": 33,
+    "claim_id": "33.production.sandbox_access",
+    "path": [
+      "credential_eligibility",
+      "production",
+      "sandbox_access"
+    ],
+    "status": "unknown",
+    "eligible": false
+  },
+  {
+    "app_id": 33,
+    "claim_id": "33.production.paid_required",
+    "path": [
+      "credential_eligibility",
+      "production",
+      "paid_required"
+    ],
+    "status": "unknown",
+    "eligible": false
+  },
+  {
+    "app_id": 33,
+    "claim_id": "33.production.admin_approval_required",
+    "path": [
+      "credential_eligibility",
+      "production",
+      "admin_approval_required"
+    ],
+    "status": "observed",
+    "eligible": true
+  },
+  {
+    "app_id": 33,
+    "claim_id": "33.production.vendor_approval_required",
+    "path": [
+      "credential_eligibility",
+      "production",
+      "vendor_approval_required"
+    ],
+    "status": "observed",
+    "eligible": true
+  },
+  {
+    "app_id": 33,
+    "claim_id": "33.production.partner_approval_required",
+    "path": [
+      "credential_eligibility",
+      "production",
+      "partner_approval_required"
+    ],
+    "status": "unknown",
+    "eligible": false
+  },
+  {
+    "app_id": 33,
+    "claim_id": "33.production.contact_sales_required",
+    "path": [
+      "credential_eligibility",
+      "production",
+      "contact_sales_required"
+    ],
+    "status": "unknown",
+    "eligible": false
+  },
+  {
+    "app_id": 33,
+    "claim_id": "33.production.self_serve",
+    "path": [
+      "credential_eligibility",
+      "production",
+      "self_serve"
+    ],
+    "status": "observed",
+    "eligible": true
+  },
+  {
+    "app_id": 33,
+    "claim_id": "33.api.protocol.rest",
+    "path": [
+      "api_surface",
+      "protocols",
+      "items",
+      0
+    ],
+    "status": "observed",
+    "eligible": true
+  },
+  {
+    "app_id": 33,
+    "claim_id": "33.api.public_docs",
+    "path": [
+      "api_surface",
+      "public_documentation"
+    ],
+    "status": "observed",
+    "eligible": true
+  },
+  {
+    "app_id": 33,
+    "claim_id": "33.api.group.campaigns_accounts",
+    "path": [
+      "api_surface",
+      "resource_groups",
+      "items",
+      0
+    ],
+    "status": "observed",
+    "eligible": true
+  },
+  {
+    "app_id": 33,
+    "claim_id": "33.api.group.reporting_analytics",
+    "path": [
+      "api_surface",
+      "resource_groups",
+      "items",
+      1
+    ],
+    "status": "observed",
+    "eligible": true
+  },
+  {
+    "app_id": 33,
+    "claim_id": "33.api.group.audiences_targeting",
+    "path": [
+      "api_surface",
+      "resource_groups",
+      "items",
+      2
+    ],
+    "status": "observed",
+    "eligible": true
+  },
+  {
+    "app_id": 33,
+    "claim_id": "33.api.group.media_planning_conversions",
+    "path": [
+      "api_surface",
+      "resource_groups",
+      "items",
+      3
+    ],
+    "status": "observed",
+    "eligible": true
+  },
+  {
+    "app_id": 33,
+    "claim_id": "33.api.breadth",
+    "path": [
+      "api_surface",
+      "breadth"
+    ],
+    "status": "inferred",
+    "eligible": true
+  },
+  {
+    "app_id": 33,
+    "claim_id": "33.mcp",
+    "path": [
+      "mcp",
+      "discovery"
+    ],
+    "status": "observed",
+    "eligible": true
+  },
+  {
+    "app_id": 33,
+    "claim_id": "33.mcp.community_adspirer",
+    "path": [
+      "mcp",
+      "entries",
+      0
+    ],
+    "status": "observed",
+    "eligible": true
+  },
+  {
+    "app_id": 33,
+    "claim_id": "33.mcp.community_adspirer.operational",
+    "path": [
+      "mcp",
+      "entries",
+      0,
+      "value",
+      "operational_check"
+    ],
+    "status": "not_researched",
+    "eligible": false
+  },
+  {
+    "app_id": 33,
+    "claim_id": "33.buildability",
+    "path": [
+      "buildability"
+    ],
+    "status": "inferred",
+    "eligible": true
+  },
+  {
+    "app_id": 34,
+    "claim_id": "34.identity",
+    "path": [
+      "identity",
+      "resolution"
+    ],
+    "status": "observed",
+    "eligible": false
+  },
+  {
+    "app_id": 34,
+    "claim_id": "34.purpose",
+    "path": [
+      "purpose"
+    ],
+    "status": "observed",
+    "eligible": true
+  },
+  {
+    "app_id": 34,
+    "claim_id": "34.auth.oauth2_marketplace",
+    "path": [
+      "auth",
+      "items",
+      0
+    ],
+    "status": "observed",
+    "eligible": true
+  },
+  {
+    "app_id": 34,
+    "claim_id": "34.auth.private_integration_token",
+    "path": [
+      "auth",
+      "items",
+      1
+    ],
+    "status": "observed",
+    "eligible": true
+  },
+  {
+    "app_id": 34,
+    "claim_id": "34.testing.free_access",
+    "path": [
+      "credential_eligibility",
+      "testing",
+      "free_access"
+    ],
+    "status": "unknown",
+    "eligible": false
+  },
+  {
+    "app_id": 34,
+    "claim_id": "34.testing.trial_access",
+    "path": [
+      "credential_eligibility",
+      "testing",
+      "trial_access"
+    ],
+    "status": "observed",
+    "eligible": true
+  },
+  {
+    "app_id": 34,
+    "claim_id": "34.testing.sandbox_access",
+    "path": [
+      "credential_eligibility",
+      "testing",
+      "sandbox_access"
+    ],
+    "status": "unknown",
+    "eligible": false
+  },
+  {
+    "app_id": 34,
+    "claim_id": "34.testing.paid_required",
+    "path": [
+      "credential_eligibility",
+      "testing",
+      "paid_required"
+    ],
+    "status": "unknown",
+    "eligible": false
+  },
+  {
+    "app_id": 34,
+    "claim_id": "34.testing.admin_approval_required",
+    "path": [
+      "credential_eligibility",
+      "testing",
+      "admin_approval_required"
+    ],
+    "status": "unknown",
+    "eligible": false
+  },
+  {
+    "app_id": 34,
+    "claim_id": "34.testing.vendor_approval_required",
+    "path": [
+      "credential_eligibility",
+      "testing",
+      "vendor_approval_required"
+    ],
+    "status": "unknown",
+    "eligible": false
+  },
+  {
+    "app_id": 34,
+    "claim_id": "34.testing.partner_approval_required",
+    "path": [
+      "credential_eligibility",
+      "testing",
+      "partner_approval_required"
+    ],
+    "status": "unknown",
+    "eligible": false
+  },
+  {
+    "app_id": 34,
+    "claim_id": "34.testing.contact_sales_required",
+    "path": [
+      "credential_eligibility",
+      "testing",
+      "contact_sales_required"
+    ],
+    "status": "unknown",
+    "eligible": false
+  },
+  {
+    "app_id": 34,
+    "claim_id": "34.testing.self_serve",
+    "path": [
+      "credential_eligibility",
+      "testing",
+      "self_serve"
+    ],
+    "status": "observed",
+    "eligible": true
+  },
+  {
+    "app_id": 34,
+    "claim_id": "34.production.free_access",
+    "path": [
+      "credential_eligibility",
+      "production",
+      "free_access"
+    ],
+    "status": "unknown",
+    "eligible": false
+  },
+  {
+    "app_id": 34,
+    "claim_id": "34.production.trial_access",
+    "path": [
+      "credential_eligibility",
+      "production",
+      "trial_access"
+    ],
+    "status": "unknown",
+    "eligible": false
+  },
+  {
+    "app_id": 34,
+    "claim_id": "34.production.sandbox_access",
+    "path": [
+      "credential_eligibility",
+      "production",
+      "sandbox_access"
+    ],
+    "status": "unknown",
+    "eligible": false
+  },
+  {
+    "app_id": 34,
+    "claim_id": "34.production.paid_required",
+    "path": [
+      "credential_eligibility",
+      "production",
+      "paid_required"
+    ],
+    "status": "observed",
+    "eligible": true
+  },
+  {
+    "app_id": 34,
+    "claim_id": "34.production.admin_approval_required",
+    "path": [
+      "credential_eligibility",
+      "production",
+      "admin_approval_required"
+    ],
+    "status": "observed",
+    "eligible": true
+  },
+  {
+    "app_id": 34,
+    "claim_id": "34.production.vendor_approval_required",
+    "path": [
+      "credential_eligibility",
+      "production",
+      "vendor_approval_required"
+    ],
+    "status": "unknown",
+    "eligible": false
+  },
+  {
+    "app_id": 34,
+    "claim_id": "34.production.partner_approval_required",
+    "path": [
+      "credential_eligibility",
+      "production",
+      "partner_approval_required"
+    ],
+    "status": "unknown",
+    "eligible": false
+  },
+  {
+    "app_id": 34,
+    "claim_id": "34.production.contact_sales_required",
+    "path": [
+      "credential_eligibility",
+      "production",
+      "contact_sales_required"
+    ],
+    "status": "unknown",
+    "eligible": false
+  },
+  {
+    "app_id": 34,
+    "claim_id": "34.production.self_serve",
+    "path": [
+      "credential_eligibility",
+      "production",
+      "self_serve"
+    ],
+    "status": "observed",
+    "eligible": true
+  },
+  {
+    "app_id": 34,
+    "claim_id": "34.api.protocol.rest",
+    "path": [
+      "api_surface",
+      "protocols",
+      "items",
+      0
+    ],
+    "status": "observed",
+    "eligible": true
+  },
+  {
+    "app_id": 34,
+    "claim_id": "34.api.protocol.sdk",
+    "path": [
+      "api_surface",
+      "protocols",
+      "items",
+      1
+    ],
+    "status": "observed",
+    "eligible": true
+  },
+  {
+    "app_id": 34,
+    "claim_id": "34.api.protocol.cli",
+    "path": [
+      "api_surface",
+      "protocols",
+      "items",
+      2
+    ],
+    "status": "observed",
+    "eligible": true
+  },
+  {
+    "app_id": 34,
+    "claim_id": "34.api.public_docs",
+    "path": [
+      "api_surface",
+      "public_documentation"
+    ],
+    "status": "observed",
+    "eligible": true
+  },
+  {
+    "app_id": 34,
+    "claim_id": "34.api.group.crm_contacts_opportunities",
+    "path": [
+      "api_surface",
+      "resource_groups",
+      "items",
+      0
+    ],
+    "status": "observed",
+    "eligible": true
+  },
+  {
+    "app_id": 34,
+    "claim_id": "34.api.group.conversations_messaging",
+    "path": [
+      "api_surface",
+      "resource_groups",
+      "items",
+      1
+    ],
+    "status": "observed",
+    "eligible": true
+  },
+  {
+    "app_id": 34,
+    "claim_id": "34.api.group.marketing_funnels_social",
+    "path": [
+      "api_surface",
+      "resource_groups",
+      "items",
+      2
+    ],
+    "status": "observed",
+    "eligible": true
+  },
+  {
+    "app_id": 34,
+    "claim_id": "34.api.group.payments_webhooks_courses",
+    "path": [
+      "api_surface",
+      "resource_groups",
+      "items",
+      3
+    ],
+    "status": "observed",
+    "eligible": true
+  },
+  {
+    "app_id": 34,
+    "claim_id": "34.api.breadth",
+    "path": [
+      "api_surface",
+      "breadth"
+    ],
+    "status": "inferred",
+    "eligible": true
+  },
+  {
+    "app_id": 34,
+    "claim_id": "34.mcp",
+    "path": [
+      "mcp",
+      "discovery"
+    ],
+    "status": "observed",
+    "eligible": true
+  },
+  {
+    "app_id": 34,
+    "claim_id": "34.mcp.official_highlevel_mcp",
+    "path": [
+      "mcp",
+      "entries",
+      0
+    ],
+    "status": "observed",
+    "eligible": true
+  },
+  {
+    "app_id": 34,
+    "claim_id": "34.mcp.official_highlevel_mcp.operational",
+    "path": [
+      "mcp",
+      "entries",
+      0,
+      "value",
+      "operational_check"
+    ],
+    "status": "not_researched",
+    "eligible": false
+  },
+  {
+    "app_id": 34,
+    "claim_id": "34.buildability",
+    "path": [
+      "buildability"
+    ],
+    "status": "inferred",
+    "eligible": true
+  },
+  {
+    "app_id": 35,
+    "claim_id": "35.identity",
+    "path": [
+      "identity",
+      "resolution"
+    ],
+    "status": "observed",
+    "eligible": false
+  },
+  {
+    "app_id": 35,
+    "claim_id": "35.purpose",
+    "path": [
+      "purpose"
+    ],
+    "status": "observed",
+    "eligible": true
+  },
+  {
+    "app_id": 35,
+    "claim_id": "35.auth.api_key",
+    "path": [
+      "auth",
+      "items",
+      0
+    ],
+    "status": "observed",
+    "eligible": true
+  },
+  {
+    "app_id": 35,
+    "claim_id": "35.auth.oauth2",
+    "path": [
+      "auth",
+      "items",
+      1
+    ],
+    "status": "observed",
+    "eligible": true
+  },
+  {
+    "app_id": 35,
+    "claim_id": "35.testing.free_access",
+    "path": [
+      "credential_eligibility",
+      "testing",
+      "free_access"
+    ],
+    "status": "observed",
+    "eligible": true
+  },
+  {
+    "app_id": 35,
+    "claim_id": "35.testing.trial_access",
+    "path": [
+      "credential_eligibility",
+      "testing",
+      "trial_access"
+    ],
+    "status": "unknown",
+    "eligible": false
+  },
+  {
+    "app_id": 35,
+    "claim_id": "35.testing.sandbox_access",
+    "path": [
+      "credential_eligibility",
+      "testing",
+      "sandbox_access"
+    ],
+    "status": "unknown",
+    "eligible": false
+  },
+  {
+    "app_id": 35,
+    "claim_id": "35.testing.paid_required",
+    "path": [
+      "credential_eligibility",
+      "testing",
+      "paid_required"
+    ],
+    "status": "observed",
+    "eligible": true
+  },
+  {
+    "app_id": 35,
+    "claim_id": "35.testing.admin_approval_required",
+    "path": [
+      "credential_eligibility",
+      "testing",
+      "admin_approval_required"
+    ],
+    "status": "unknown",
+    "eligible": false
+  },
+  {
+    "app_id": 35,
+    "claim_id": "35.testing.vendor_approval_required",
+    "path": [
+      "credential_eligibility",
+      "testing",
+      "vendor_approval_required"
+    ],
+    "status": "unknown",
+    "eligible": false
+  },
+  {
+    "app_id": 35,
+    "claim_id": "35.testing.partner_approval_required",
+    "path": [
+      "credential_eligibility",
+      "testing",
+      "partner_approval_required"
+    ],
+    "status": "unknown",
+    "eligible": false
+  },
+  {
+    "app_id": 35,
+    "claim_id": "35.testing.contact_sales_required",
+    "path": [
+      "credential_eligibility",
+      "testing",
+      "contact_sales_required"
+    ],
+    "status": "unknown",
+    "eligible": false
+  },
+  {
+    "app_id": 35,
+    "claim_id": "35.testing.self_serve",
+    "path": [
+      "credential_eligibility",
+      "testing",
+      "self_serve"
+    ],
+    "status": "observed",
+    "eligible": true
+  },
+  {
+    "app_id": 35,
+    "claim_id": "35.production.free_access",
+    "path": [
+      "credential_eligibility",
+      "production",
+      "free_access"
+    ],
+    "status": "observed",
+    "eligible": true
+  },
+  {
+    "app_id": 35,
+    "claim_id": "35.production.trial_access",
+    "path": [
+      "credential_eligibility",
+      "production",
+      "trial_access"
+    ],
+    "status": "unknown",
+    "eligible": false
+  },
+  {
+    "app_id": 35,
+    "claim_id": "35.production.sandbox_access",
+    "path": [
+      "credential_eligibility",
+      "production",
+      "sandbox_access"
+    ],
+    "status": "unknown",
+    "eligible": false
+  },
+  {
+    "app_id": 35,
+    "claim_id": "35.production.paid_required",
+    "path": [
+      "credential_eligibility",
+      "production",
+      "paid_required"
+    ],
+    "status": "observed",
+    "eligible": true
+  },
+  {
+    "app_id": 35,
+    "claim_id": "35.production.admin_approval_required",
+    "path": [
+      "credential_eligibility",
+      "production",
+      "admin_approval_required"
+    ],
+    "status": "unknown",
+    "eligible": false
+  },
+  {
+    "app_id": 35,
+    "claim_id": "35.production.vendor_approval_required",
+    "path": [
+      "credential_eligibility",
+      "production",
+      "vendor_approval_required"
+    ],
+    "status": "unknown",
+    "eligible": false
+  },
+  {
+    "app_id": 35,
+    "claim_id": "35.production.partner_approval_required",
+    "path": [
+      "credential_eligibility",
+      "production",
+      "partner_approval_required"
+    ],
+    "status": "unknown",
+    "eligible": false
+  },
+  {
+    "app_id": 35,
+    "claim_id": "35.production.contact_sales_required",
+    "path": [
+      "credential_eligibility",
+      "production",
+      "contact_sales_required"
+    ],
+    "status": "unknown",
+    "eligible": false
+  },
+  {
+    "app_id": 35,
+    "claim_id": "35.production.self_serve",
+    "path": [
+      "credential_eligibility",
+      "production",
+      "self_serve"
+    ],
+    "status": "observed",
+    "eligible": true
+  },
+  {
+    "app_id": 35,
+    "claim_id": "35.api.protocol.rest",
+    "path": [
+      "api_surface",
+      "protocols",
+      "items",
+      0
+    ],
+    "status": "observed",
+    "eligible": true
+  },
+  {
+    "app_id": 35,
+    "claim_id": "35.api.protocol.sdk",
+    "path": [
+      "api_surface",
+      "protocols",
+      "items",
+      1
+    ],
+    "status": "observed",
+    "eligible": true
+  },
+  {
+    "app_id": 35,
+    "claim_id": "35.api.public_docs",
+    "path": [
+      "api_surface",
+      "public_documentation"
+    ],
+    "status": "observed",
+    "eligible": true
+  },
+  {
+    "app_id": 35,
+    "claim_id": "35.api.group.audiences_contacts",
+    "path": [
+      "api_surface",
+      "resource_groups",
+      "items",
+      0
+    ],
+    "status": "observed",
+    "eligible": true
+  },
+  {
+    "app_id": 35,
+    "claim_id": "35.api.group.campaigns_sms",
+    "path": [
+      "api_surface",
+      "resource_groups",
+      "items",
+      1
+    ],
+    "status": "observed",
+    "eligible": true
+  },
+  {
+    "app_id": 35,
+    "claim_id": "35.api.group.automations_templates",
+    "path": [
+      "api_surface",
+      "resource_groups",
+      "items",
+      2
+    ],
+    "status": "observed",
+    "eligible": true
+  },
+  {
+    "app_id": 35,
+    "claim_id": "35.api.group.reporting_webhooks",
+    "path": [
+      "api_surface",
+      "resource_groups",
+      "items",
+      3
+    ],
+    "status": "observed",
+    "eligible": true
+  },
+  {
+    "app_id": 35,
+    "claim_id": "35.api.breadth",
+    "path": [
+      "api_surface",
+      "breadth"
+    ],
+    "status": "inferred",
+    "eligible": true
+  },
+  {
+    "app_id": 35,
+    "claim_id": "35.mcp",
+    "path": [
+      "mcp",
+      "discovery"
+    ],
+    "status": "observed",
+    "eligible": true
+  },
+  {
+    "app_id": 35,
+    "claim_id": "35.mcp.community_mcp_mailchimp",
+    "path": [
+      "mcp",
+      "entries",
+      0
+    ],
+    "status": "observed",
+    "eligible": true
+  },
+  {
+    "app_id": 35,
+    "claim_id": "35.mcp.community_mcp_mailchimp.operational",
+    "path": [
+      "mcp",
+      "entries",
+      0,
+      "value",
+      "operational_check"
+    ],
+    "status": "not_researched",
+    "eligible": false
+  },
+  {
+    "app_id": 35,
+    "claim_id": "35.buildability",
+    "path": [
+      "buildability"
+    ],
+    "status": "inferred",
+    "eligible": true
+  },
+  {
+    "app_id": 36,
+    "claim_id": "36.identity",
+    "path": [
+      "identity",
+      "resolution"
+    ],
+    "status": "observed",
+    "eligible": false
+  },
+  {
+    "app_id": 36,
+    "claim_id": "36.purpose",
+    "path": [
+      "purpose"
+    ],
+    "status": "observed",
+    "eligible": true
+  },
+  {
+    "app_id": 36,
+    "claim_id": "36.auth.private_api_key",
+    "path": [
+      "auth",
+      "items",
+      0
+    ],
+    "status": "observed",
+    "eligible": true
+  },
+  {
+    "app_id": 36,
+    "claim_id": "36.auth.oauth2_pkce",
+    "path": [
+      "auth",
+      "items",
+      1
+    ],
+    "status": "observed",
+    "eligible": true
+  },
+  {
+    "app_id": 36,
+    "claim_id": "36.auth.public_api_key",
+    "path": [
+      "auth",
+      "items",
+      2
+    ],
+    "status": "observed",
+    "eligible": true
+  },
+  {
+    "app_id": 36,
+    "claim_id": "36.testing.free_access",
+    "path": [
+      "credential_eligibility",
+      "testing",
+      "free_access"
+    ],
+    "status": "observed",
+    "eligible": true
+  },
+  {
+    "app_id": 36,
+    "claim_id": "36.testing.trial_access",
+    "path": [
+      "credential_eligibility",
+      "testing",
+      "trial_access"
+    ],
+    "status": "unknown",
+    "eligible": false
+  },
+  {
+    "app_id": 36,
+    "claim_id": "36.testing.sandbox_access",
+    "path": [
+      "credential_eligibility",
+      "testing",
+      "sandbox_access"
+    ],
+    "status": "unknown",
+    "eligible": false
+  },
+  {
+    "app_id": 36,
+    "claim_id": "36.testing.paid_required",
+    "path": [
+      "credential_eligibility",
+      "testing",
+      "paid_required"
+    ],
+    "status": "observed",
+    "eligible": true
+  },
+  {
+    "app_id": 36,
+    "claim_id": "36.testing.admin_approval_required",
+    "path": [
+      "credential_eligibility",
+      "testing",
+      "admin_approval_required"
+    ],
+    "status": "unknown",
+    "eligible": false
+  },
+  {
+    "app_id": 36,
+    "claim_id": "36.testing.vendor_approval_required",
+    "path": [
+      "credential_eligibility",
+      "testing",
+      "vendor_approval_required"
+    ],
+    "status": "unknown",
+    "eligible": false
+  },
+  {
+    "app_id": 36,
+    "claim_id": "36.testing.partner_approval_required",
+    "path": [
+      "credential_eligibility",
+      "testing",
+      "partner_approval_required"
+    ],
+    "status": "unknown",
+    "eligible": false
+  },
+  {
+    "app_id": 36,
+    "claim_id": "36.testing.contact_sales_required",
+    "path": [
+      "credential_eligibility",
+      "testing",
+      "contact_sales_required"
+    ],
+    "status": "unknown",
+    "eligible": false
+  },
+  {
+    "app_id": 36,
+    "claim_id": "36.testing.self_serve",
+    "path": [
+      "credential_eligibility",
+      "testing",
+      "self_serve"
+    ],
+    "status": "observed",
+    "eligible": true
+  },
+  {
+    "app_id": 36,
+    "claim_id": "36.production.free_access",
+    "path": [
+      "credential_eligibility",
+      "production",
+      "free_access"
+    ],
+    "status": "observed",
+    "eligible": true
+  },
+  {
+    "app_id": 36,
+    "claim_id": "36.production.trial_access",
+    "path": [
+      "credential_eligibility",
+      "production",
+      "trial_access"
+    ],
+    "status": "unknown",
+    "eligible": false
+  },
+  {
+    "app_id": 36,
+    "claim_id": "36.production.sandbox_access",
+    "path": [
+      "credential_eligibility",
+      "production",
+      "sandbox_access"
+    ],
+    "status": "unknown",
+    "eligible": false
+  },
+  {
+    "app_id": 36,
+    "claim_id": "36.production.paid_required",
+    "path": [
+      "credential_eligibility",
+      "production",
+      "paid_required"
+    ],
+    "status": "observed",
+    "eligible": true
+  },
+  {
+    "app_id": 36,
+    "claim_id": "36.production.admin_approval_required",
+    "path": [
+      "credential_eligibility",
+      "production",
+      "admin_approval_required"
+    ],
+    "status": "observed",
+    "eligible": true
+  },
+  {
+    "app_id": 36,
+    "claim_id": "36.production.vendor_approval_required",
+    "path": [
+      "credential_eligibility",
+      "production",
+      "vendor_approval_required"
+    ],
+    "status": "unknown",
+    "eligible": false
+  },
+  {
+    "app_id": 36,
+    "claim_id": "36.production.partner_approval_required",
+    "path": [
+      "credential_eligibility",
+      "production",
+      "partner_approval_required"
+    ],
+    "status": "unknown",
+    "eligible": false
+  },
+  {
+    "app_id": 36,
+    "claim_id": "36.production.contact_sales_required",
+    "path": [
+      "credential_eligibility",
+      "production",
+      "contact_sales_required"
+    ],
+    "status": "unknown",
+    "eligible": false
+  },
+  {
+    "app_id": 36,
+    "claim_id": "36.production.self_serve",
+    "path": [
+      "credential_eligibility",
+      "production",
+      "self_serve"
+    ],
+    "status": "observed",
+    "eligible": true
+  },
+  {
+    "app_id": 36,
+    "claim_id": "36.api.protocol.rest",
+    "path": [
+      "api_surface",
+      "protocols",
+      "items",
+      0
+    ],
+    "status": "observed",
+    "eligible": true
+  },
+  {
+    "app_id": 36,
+    "claim_id": "36.api.protocol.sdk",
+    "path": [
+      "api_surface",
+      "protocols",
+      "items",
+      1
+    ],
+    "status": "observed",
+    "eligible": true
+  },
+  {
+    "app_id": 36,
+    "claim_id": "36.api.public_docs",
+    "path": [
+      "api_surface",
+      "public_documentation"
+    ],
+    "status": "observed",
+    "eligible": true
+  },
+  {
+    "app_id": 36,
+    "claim_id": "36.api.group.profiles_lists_segments",
+    "path": [
+      "api_surface",
+      "resource_groups",
+      "items",
+      0
+    ],
+    "status": "observed",
+    "eligible": true
+  },
+  {
+    "app_id": 36,
+    "claim_id": "36.api.group.campaigns_flows_templates",
+    "path": [
+      "api_surface",
+      "resource_groups",
+      "items",
+      1
+    ],
+    "status": "observed",
+    "eligible": true
+  },
+  {
+    "app_id": 36,
+    "claim_id": "36.api.group.events_metrics_reporting",
+    "path": [
+      "api_surface",
+      "resource_groups",
+      "items",
+      2
+    ],
+    "status": "observed",
+    "eligible": true
+  },
+  {
+    "app_id": 36,
+    "claim_id": "36.api.group.catalogs_coupons_webhooks",
+    "path": [
+      "api_surface",
+      "resource_groups",
+      "items",
+      3
+    ],
+    "status": "observed",
+    "eligible": true
+  },
+  {
+    "app_id": 36,
+    "claim_id": "36.api.breadth",
+    "path": [
+      "api_surface",
+      "breadth"
+    ],
+    "status": "inferred",
+    "eligible": true
+  },
+  {
+    "app_id": 36,
+    "claim_id": "36.mcp",
+    "path": [
+      "mcp",
+      "discovery"
+    ],
+    "status": "observed",
+    "eligible": true
+  },
+  {
+    "app_id": 36,
+    "claim_id": "36.mcp.official_klaviyo_mcp",
+    "path": [
+      "mcp",
+      "entries",
+      0
+    ],
+    "status": "observed",
+    "eligible": true
+  },
+  {
+    "app_id": 36,
+    "claim_id": "36.mcp.official_klaviyo_mcp.operational",
+    "path": [
+      "mcp",
+      "entries",
+      0,
+      "value",
+      "operational_check"
+    ],
+    "status": "not_researched",
+    "eligible": false
+  },
+  {
+    "app_id": 36,
+    "claim_id": "36.buildability",
+    "path": [
+      "buildability"
+    ],
+    "status": "inferred",
+    "eligible": true
+  },
+  {
+    "app_id": 37,
+    "claim_id": "37.identity",
+    "path": [
+      "identity",
+      "resolution"
+    ],
+    "status": "observed",
+    "eligible": false
+  },
+  {
+    "app_id": 37,
+    "claim_id": "37.purpose",
+    "path": [
+      "purpose"
+    ],
+    "status": "observed",
+    "eligible": true
+  },
+  {
+    "app_id": 37,
+    "claim_id": "37.auth.api_key",
+    "path": [
+      "auth",
+      "items",
+      0
+    ],
+    "status": "observed",
+    "eligible": true
+  },
+  {
+    "app_id": 37,
+    "claim_id": "37.auth.mcp_key",
+    "path": [
+      "auth",
+      "items",
+      1
+    ],
+    "status": "observed",
+    "eligible": true
+  },
+  {
+    "app_id": 37,
+    "claim_id": "37.testing.free_access",
+    "path": [
+      "credential_eligibility",
+      "testing",
+      "free_access"
+    ],
+    "status": "observed",
+    "eligible": true
+  },
+  {
+    "app_id": 37,
+    "claim_id": "37.testing.trial_access",
+    "path": [
+      "credential_eligibility",
+      "testing",
+      "trial_access"
+    ],
+    "status": "unknown",
+    "eligible": false
+  },
+  {
+    "app_id": 37,
+    "claim_id": "37.testing.sandbox_access",
+    "path": [
+      "credential_eligibility",
+      "testing",
+      "sandbox_access"
+    ],
+    "status": "unknown",
+    "eligible": false
+  },
+  {
+    "app_id": 37,
+    "claim_id": "37.testing.paid_required",
+    "path": [
+      "credential_eligibility",
+      "testing",
+      "paid_required"
+    ],
+    "status": "observed",
+    "eligible": true
+  },
+  {
+    "app_id": 37,
+    "claim_id": "37.testing.admin_approval_required",
+    "path": [
+      "credential_eligibility",
+      "testing",
+      "admin_approval_required"
+    ],
+    "status": "unknown",
+    "eligible": false
+  },
+  {
+    "app_id": 37,
+    "claim_id": "37.testing.vendor_approval_required",
+    "path": [
+      "credential_eligibility",
+      "testing",
+      "vendor_approval_required"
+    ],
+    "status": "unknown",
+    "eligible": false
+  },
+  {
+    "app_id": 37,
+    "claim_id": "37.testing.partner_approval_required",
+    "path": [
+      "credential_eligibility",
+      "testing",
+      "partner_approval_required"
+    ],
+    "status": "unknown",
+    "eligible": false
+  },
+  {
+    "app_id": 37,
+    "claim_id": "37.testing.contact_sales_required",
+    "path": [
+      "credential_eligibility",
+      "testing",
+      "contact_sales_required"
+    ],
+    "status": "unknown",
+    "eligible": false
+  },
+  {
+    "app_id": 37,
+    "claim_id": "37.testing.self_serve",
+    "path": [
+      "credential_eligibility",
+      "testing",
+      "self_serve"
+    ],
+    "status": "observed",
+    "eligible": true
+  },
+  {
+    "app_id": 37,
+    "claim_id": "37.production.free_access",
+    "path": [
+      "credential_eligibility",
+      "production",
+      "free_access"
+    ],
+    "status": "observed",
+    "eligible": true
+  },
+  {
+    "app_id": 37,
+    "claim_id": "37.production.trial_access",
+    "path": [
+      "credential_eligibility",
+      "production",
+      "trial_access"
+    ],
+    "status": "unknown",
+    "eligible": false
+  },
+  {
+    "app_id": 37,
+    "claim_id": "37.production.sandbox_access",
+    "path": [
+      "credential_eligibility",
+      "production",
+      "sandbox_access"
+    ],
+    "status": "unknown",
+    "eligible": false
+  },
+  {
+    "app_id": 37,
+    "claim_id": "37.production.paid_required",
+    "path": [
+      "credential_eligibility",
+      "production",
+      "paid_required"
+    ],
+    "status": "observed",
+    "eligible": true
+  },
+  {
+    "app_id": 37,
+    "claim_id": "37.production.admin_approval_required",
+    "path": [
+      "credential_eligibility",
+      "production",
+      "admin_approval_required"
+    ],
+    "status": "unknown",
+    "eligible": false
+  },
+  {
+    "app_id": 37,
+    "claim_id": "37.production.vendor_approval_required",
+    "path": [
+      "credential_eligibility",
+      "production",
+      "vendor_approval_required"
+    ],
+    "status": "unknown",
+    "eligible": false
+  },
+  {
+    "app_id": 37,
+    "claim_id": "37.production.partner_approval_required",
+    "path": [
+      "credential_eligibility",
+      "production",
+      "partner_approval_required"
+    ],
+    "status": "unknown",
+    "eligible": false
+  },
+  {
+    "app_id": 37,
+    "claim_id": "37.production.contact_sales_required",
+    "path": [
+      "credential_eligibility",
+      "production",
+      "contact_sales_required"
+    ],
+    "status": "unknown",
+    "eligible": false
+  },
+  {
+    "app_id": 37,
+    "claim_id": "37.production.self_serve",
+    "path": [
+      "credential_eligibility",
+      "production",
+      "self_serve"
+    ],
+    "status": "observed",
+    "eligible": true
+  },
+  {
+    "app_id": 37,
+    "claim_id": "37.api.protocol.rest",
+    "path": [
+      "api_surface",
+      "protocols",
+      "items",
+      0
+    ],
+    "status": "observed",
+    "eligible": true
+  },
+  {
+    "app_id": 37,
+    "claim_id": "37.api.public_docs",
+    "path": [
+      "api_surface",
+      "public_documentation"
+    ],
+    "status": "observed",
+    "eligible": true
+  },
+  {
+    "app_id": 37,
+    "claim_id": "37.api.group.contacts_tags",
+    "path": [
+      "api_surface",
+      "resource_groups",
+      "items",
+      0
+    ],
+    "status": "observed",
+    "eligible": true
+  },
+  {
+    "app_id": 37,
+    "claim_id": "37.api.group.funnels_pages",
+    "path": [
+      "api_surface",
+      "resource_groups",
+      "items",
+      1
+    ],
+    "status": "observed",
+    "eligible": true
+  },
+  {
+    "app_id": 37,
+    "claim_id": "37.api.group.mailing_automation",
+    "path": [
+      "api_surface",
+      "resource_groups",
+      "items",
+      2
+    ],
+    "status": "observed",
+    "eligible": true
+  },
+  {
+    "app_id": 37,
+    "claim_id": "37.api.group.community_booking_commerce",
+    "path": [
+      "api_surface",
+      "resource_groups",
+      "items",
+      3
+    ],
+    "status": "observed",
+    "eligible": true
+  },
+  {
+    "app_id": 37,
+    "claim_id": "37.api.breadth",
+    "path": [
+      "api_surface",
+      "breadth"
+    ],
+    "status": "inferred",
+    "eligible": true
+  },
+  {
+    "app_id": 37,
+    "claim_id": "37.mcp",
+    "path": [
+      "mcp",
+      "discovery"
+    ],
+    "status": "observed",
+    "eligible": true
+  },
+  {
+    "app_id": 37,
+    "claim_id": "37.mcp.official_systeme_mcp",
+    "path": [
+      "mcp",
+      "entries",
+      0
+    ],
+    "status": "observed",
+    "eligible": true
+  },
+  {
+    "app_id": 37,
+    "claim_id": "37.mcp.official_systeme_mcp.operational",
+    "path": [
+      "mcp",
+      "entries",
+      0,
+      "value",
+      "operational_check"
+    ],
+    "status": "not_researched",
+    "eligible": false
+  },
+  {
+    "app_id": 37,
+    "claim_id": "37.buildability",
+    "path": [
+      "buildability"
+    ],
+    "status": "inferred",
+    "eligible": true
+  },
+  {
+    "app_id": 38,
+    "claim_id": "38.identity",
+    "path": [
+      "identity",
+      "resolution"
+    ],
+    "status": "observed",
+    "eligible": false
+  },
+  {
+    "app_id": 38,
+    "claim_id": "38.purpose",
+    "path": [
+      "purpose"
+    ],
+    "status": "observed",
+    "eligible": true
+  },
+  {
+    "app_id": 38,
+    "claim_id": "38.auth.oauth2_auth_code_and_cc",
+    "path": [
+      "auth",
+      "items",
+      0
+    ],
+    "status": "observed",
+    "eligible": true
+  },
+  {
+    "app_id": 38,
+    "claim_id": "38.auth.trial_limited_token",
+    "path": [
+      "auth",
+      "items",
+      1
+    ],
+    "status": "observed",
+    "eligible": true
+  },
+  {
+    "app_id": 38,
+    "claim_id": "38.testing.free_access",
+    "path": [
+      "credential_eligibility",
+      "testing",
+      "free_access"
+    ],
+    "status": "unknown",
+    "eligible": false
+  },
+  {
+    "app_id": 38,
+    "claim_id": "38.testing.trial_access",
+    "path": [
+      "credential_eligibility",
+      "testing",
+      "trial_access"
+    ],
+    "status": "observed",
+    "eligible": true
+  },
+  {
+    "app_id": 38,
+    "claim_id": "38.testing.sandbox_access",
+    "path": [
+      "credential_eligibility",
+      "testing",
+      "sandbox_access"
+    ],
+    "status": "observed",
+    "eligible": true
+  },
+  {
+    "app_id": 38,
+    "claim_id": "38.testing.paid_required",
+    "path": [
+      "credential_eligibility",
+      "testing",
+      "paid_required"
+    ],
+    "status": "unknown",
+    "eligible": false
+  },
+  {
+    "app_id": 38,
+    "claim_id": "38.testing.admin_approval_required",
+    "path": [
+      "credential_eligibility",
+      "testing",
+      "admin_approval_required"
+    ],
+    "status": "unknown",
+    "eligible": false
+  },
+  {
+    "app_id": 38,
+    "claim_id": "38.testing.vendor_approval_required",
+    "path": [
+      "credential_eligibility",
+      "testing",
+      "vendor_approval_required"
+    ],
+    "status": "observed",
+    "eligible": true
+  },
+  {
+    "app_id": 38,
+    "claim_id": "38.testing.partner_approval_required",
+    "path": [
+      "credential_eligibility",
+      "testing",
+      "partner_approval_required"
+    ],
+    "status": "unknown",
+    "eligible": false
+  },
+  {
+    "app_id": 38,
+    "claim_id": "38.testing.contact_sales_required",
+    "path": [
+      "credential_eligibility",
+      "testing",
+      "contact_sales_required"
+    ],
+    "status": "unknown",
+    "eligible": false
+  },
+  {
+    "app_id": 38,
+    "claim_id": "38.testing.self_serve",
+    "path": [
+      "credential_eligibility",
+      "testing",
+      "self_serve"
+    ],
+    "status": "observed",
+    "eligible": true
+  },
+  {
+    "app_id": 38,
+    "claim_id": "38.production.free_access",
+    "path": [
+      "credential_eligibility",
+      "production",
+      "free_access"
+    ],
+    "status": "unknown",
+    "eligible": false
+  },
+  {
+    "app_id": 38,
+    "claim_id": "38.production.trial_access",
+    "path": [
+      "credential_eligibility",
+      "production",
+      "trial_access"
+    ],
+    "status": "unknown",
+    "eligible": false
+  },
+  {
+    "app_id": 38,
+    "claim_id": "38.production.sandbox_access",
+    "path": [
+      "credential_eligibility",
+      "production",
+      "sandbox_access"
+    ],
+    "status": "unknown",
+    "eligible": false
+  },
+  {
+    "app_id": 38,
+    "claim_id": "38.production.paid_required",
+    "path": [
+      "credential_eligibility",
+      "production",
+      "paid_required"
+    ],
+    "status": "unknown",
+    "eligible": false
+  },
+  {
+    "app_id": 38,
+    "claim_id": "38.production.admin_approval_required",
+    "path": [
+      "credential_eligibility",
+      "production",
+      "admin_approval_required"
+    ],
+    "status": "unknown",
+    "eligible": false
+  },
+  {
+    "app_id": 38,
+    "claim_id": "38.production.vendor_approval_required",
+    "path": [
+      "credential_eligibility",
+      "production",
+      "vendor_approval_required"
+    ],
+    "status": "observed",
+    "eligible": true
+  },
+  {
+    "app_id": 38,
+    "claim_id": "38.production.partner_approval_required",
+    "path": [
+      "credential_eligibility",
+      "production",
+      "partner_approval_required"
+    ],
+    "status": "unknown",
+    "eligible": false
+  },
+  {
+    "app_id": 38,
+    "claim_id": "38.production.contact_sales_required",
+    "path": [
+      "credential_eligibility",
+      "production",
+      "contact_sales_required"
+    ],
+    "status": "unknown",
+    "eligible": false
+  },
+  {
+    "app_id": 38,
+    "claim_id": "38.production.self_serve",
+    "path": [
+      "credential_eligibility",
+      "production",
+      "self_serve"
+    ],
+    "status": "observed",
+    "eligible": true
+  },
+  {
+    "app_id": 38,
+    "claim_id": "38.api.protocol.rest",
+    "path": [
+      "api_surface",
+      "protocols",
+      "items",
+      0
+    ],
+    "status": "observed",
+    "eligible": true
+  },
+  {
+    "app_id": 38,
+    "claim_id": "38.api.protocol.sdk",
+    "path": [
+      "api_surface",
+      "protocols",
+      "items",
+      1
+    ],
+    "status": "observed",
+    "eligible": true
+  },
+  {
+    "app_id": 38,
+    "claim_id": "38.api.public_docs",
+    "path": [
+      "api_surface",
+      "public_documentation"
+    ],
+    "status": "observed",
+    "eligible": true
+  },
+  {
+    "app_id": 38,
+    "claim_id": "38.api.group.pins_boards",
+    "path": [
+      "api_surface",
+      "resource_groups",
+      "items",
+      0
+    ],
+    "status": "observed",
+    "eligible": true
+  },
+  {
+    "app_id": 38,
+    "claim_id": "38.api.group.audiences_ads",
+    "path": [
+      "api_surface",
+      "resource_groups",
+      "items",
+      1
+    ],
+    "status": "observed",
+    "eligible": true
+  },
+  {
+    "app_id": 38,
+    "claim_id": "38.api.group.analytics",
+    "path": [
+      "api_surface",
+      "resource_groups",
+      "items",
+      2
+    ],
+    "status": "observed",
+    "eligible": true
+  },
+  {
+    "app_id": 38,
+    "claim_id": "38.api.breadth",
+    "path": [
+      "api_surface",
+      "breadth"
+    ],
+    "status": "inferred",
+    "eligible": true
+  },
+  {
+    "app_id": 38,
+    "claim_id": "38.mcp",
+    "path": [
+      "mcp",
+      "discovery"
+    ],
+    "status": "not_found_in_checked_sources",
+    "eligible": false
+  },
+  {
+    "app_id": 38,
+    "claim_id": "38.buildability",
+    "path": [
+      "buildability"
+    ],
+    "status": "inferred",
+    "eligible": true
+  },
+  {
+    "app_id": 39,
+    "claim_id": "39.identity",
+    "path": [
+      "identity",
+      "resolution"
+    ],
+    "status": "observed",
+    "eligible": false
+  },
+  {
+    "app_id": 39,
+    "claim_id": "39.purpose",
+    "path": [
+      "purpose"
+    ],
+    "status": "observed",
+    "eligible": true
+  },
+  {
+    "app_id": 39,
+    "claim_id": "39.auth.oauth2_user_token",
+    "path": [
+      "auth",
+      "items",
+      0
+    ],
+    "status": "observed",
+    "eligible": true
+  },
+  {
+    "app_id": 39,
+    "claim_id": "39.testing.free_access",
+    "path": [
+      "credential_eligibility",
+      "testing",
+      "free_access"
+    ],
+    "status": "unknown",
+    "eligible": false
+  },
+  {
+    "app_id": 39,
+    "claim_id": "39.testing.trial_access",
+    "path": [
+      "credential_eligibility",
+      "testing",
+      "trial_access"
+    ],
+    "status": "unknown",
+    "eligible": false
+  },
+  {
+    "app_id": 39,
+    "claim_id": "39.testing.sandbox_access",
+    "path": [
+      "credential_eligibility",
+      "testing",
+      "sandbox_access"
+    ],
+    "status": "unknown",
+    "eligible": false
+  },
+  {
+    "app_id": 39,
+    "claim_id": "39.testing.paid_required",
+    "path": [
+      "credential_eligibility",
+      "testing",
+      "paid_required"
+    ],
+    "status": "unknown",
+    "eligible": false
+  },
+  {
+    "app_id": 39,
+    "claim_id": "39.testing.admin_approval_required",
+    "path": [
+      "credential_eligibility",
+      "testing",
+      "admin_approval_required"
+    ],
+    "status": "unknown",
+    "eligible": false
+  },
+  {
+    "app_id": 39,
+    "claim_id": "39.testing.vendor_approval_required",
+    "path": [
+      "credential_eligibility",
+      "testing",
+      "vendor_approval_required"
+    ],
+    "status": "observed",
+    "eligible": true
+  },
+  {
+    "app_id": 39,
+    "claim_id": "39.testing.partner_approval_required",
+    "path": [
+      "credential_eligibility",
+      "testing",
+      "partner_approval_required"
+    ],
+    "status": "unknown",
+    "eligible": false
+  },
+  {
+    "app_id": 39,
+    "claim_id": "39.testing.contact_sales_required",
+    "path": [
+      "credential_eligibility",
+      "testing",
+      "contact_sales_required"
+    ],
+    "status": "unknown",
+    "eligible": false
+  },
+  {
+    "app_id": 39,
+    "claim_id": "39.testing.self_serve",
+    "path": [
+      "credential_eligibility",
+      "testing",
+      "self_serve"
+    ],
+    "status": "observed",
+    "eligible": true
+  },
+  {
+    "app_id": 39,
+    "claim_id": "39.production.free_access",
+    "path": [
+      "credential_eligibility",
+      "production",
+      "free_access"
+    ],
+    "status": "unknown",
+    "eligible": false
+  },
+  {
+    "app_id": 39,
+    "claim_id": "39.production.trial_access",
+    "path": [
+      "credential_eligibility",
+      "production",
+      "trial_access"
+    ],
+    "status": "unknown",
+    "eligible": false
+  },
+  {
+    "app_id": 39,
+    "claim_id": "39.production.sandbox_access",
+    "path": [
+      "credential_eligibility",
+      "production",
+      "sandbox_access"
+    ],
+    "status": "unknown",
+    "eligible": false
+  },
+  {
+    "app_id": 39,
+    "claim_id": "39.production.paid_required",
+    "path": [
+      "credential_eligibility",
+      "production",
+      "paid_required"
+    ],
+    "status": "unknown",
+    "eligible": false
+  },
+  {
+    "app_id": 39,
+    "claim_id": "39.production.admin_approval_required",
+    "path": [
+      "credential_eligibility",
+      "production",
+      "admin_approval_required"
+    ],
+    "status": "unknown",
+    "eligible": false
+  },
+  {
+    "app_id": 39,
+    "claim_id": "39.production.vendor_approval_required",
+    "path": [
+      "credential_eligibility",
+      "production",
+      "vendor_approval_required"
+    ],
+    "status": "observed",
+    "eligible": true
+  },
+  {
+    "app_id": 39,
+    "claim_id": "39.production.partner_approval_required",
+    "path": [
+      "credential_eligibility",
+      "production",
+      "partner_approval_required"
+    ],
+    "status": "unknown",
+    "eligible": false
+  },
+  {
+    "app_id": 39,
+    "claim_id": "39.production.contact_sales_required",
+    "path": [
+      "credential_eligibility",
+      "production",
+      "contact_sales_required"
+    ],
+    "status": "unknown",
+    "eligible": false
+  },
+  {
+    "app_id": 39,
+    "claim_id": "39.production.self_serve",
+    "path": [
+      "credential_eligibility",
+      "production",
+      "self_serve"
+    ],
+    "status": "observed",
+    "eligible": true
+  },
+  {
+    "app_id": 39,
+    "claim_id": "39.api.protocol.rest",
+    "path": [
+      "api_surface",
+      "protocols",
+      "items",
+      0
+    ],
+    "status": "observed",
+    "eligible": true
+  },
+  {
+    "app_id": 39,
+    "claim_id": "39.api.public_docs",
+    "path": [
+      "api_surface",
+      "public_documentation"
+    ],
+    "status": "observed",
+    "eligible": true
+  },
+  {
+    "app_id": 39,
+    "claim_id": "39.api.group.posts_publishing",
+    "path": [
+      "api_surface",
+      "resource_groups",
+      "items",
+      0
+    ],
+    "status": "observed",
+    "eligible": true
+  },
+  {
+    "app_id": 39,
+    "claim_id": "39.api.group.profiles_media_search",
+    "path": [
+      "api_surface",
+      "resource_groups",
+      "items",
+      1
+    ],
+    "status": "observed",
+    "eligible": true
+  },
+  {
+    "app_id": 39,
+    "claim_id": "39.api.group.replies_mentions_webhooks",
+    "path": [
+      "api_surface",
+      "resource_groups",
+      "items",
+      2
+    ],
+    "status": "observed",
+    "eligible": true
+  },
+  {
+    "app_id": 39,
+    "claim_id": "39.api.group.insights",
+    "path": [
+      "api_surface",
+      "resource_groups",
+      "items",
+      3
+    ],
+    "status": "observed",
+    "eligible": true
+  },
+  {
+    "app_id": 39,
+    "claim_id": "39.api.breadth",
+    "path": [
+      "api_surface",
+      "breadth"
+    ],
+    "status": "inferred",
+    "eligible": true
+  },
+  {
+    "app_id": 39,
+    "claim_id": "39.mcp",
+    "path": [
+      "mcp",
+      "discovery"
+    ],
+    "status": "observed",
+    "eligible": true
+  },
+  {
+    "app_id": 39,
+    "claim_id": "39.mcp.community_threads_mcp",
+    "path": [
+      "mcp",
+      "entries",
+      0
+    ],
+    "status": "observed",
+    "eligible": true
+  },
+  {
+    "app_id": 39,
+    "claim_id": "39.mcp.community_threads_mcp.operational",
+    "path": [
+      "mcp",
+      "entries",
+      0,
+      "value",
+      "operational_check"
+    ],
+    "status": "not_researched",
+    "eligible": false
+  },
+  {
+    "app_id": 39,
+    "claim_id": "39.buildability",
+    "path": [
+      "buildability"
+    ],
+    "status": "inferred",
+    "eligible": true
+  },
+  {
+    "app_id": 40,
+    "claim_id": "40.identity",
+    "path": [
+      "identity",
+      "resolution"
+    ],
+    "status": "observed",
+    "eligible": false
+  },
+  {
+    "app_id": 40,
+    "claim_id": "40.purpose",
+    "path": [
+      "purpose"
+    ],
+    "status": "observed",
+    "eligible": true
+  },
+  {
+    "app_id": 40,
+    "claim_id": "40.auth.api_key_bearer",
+    "path": [
+      "auth",
+      "items",
+      0
+    ],
+    "status": "observed",
+    "eligible": true
+  },
+  {
+    "app_id": 40,
+    "claim_id": "40.auth.basic_apikey",
+    "path": [
+      "auth",
+      "items",
+      1
+    ],
+    "status": "observed",
+    "eligible": true
+  },
+  {
+    "app_id": 40,
+    "claim_id": "40.testing.free_access",
+    "path": [
+      "credential_eligibility",
+      "testing",
+      "free_access"
+    ],
+    "status": "unknown",
+    "eligible": false
+  },
+  {
+    "app_id": 40,
+    "claim_id": "40.testing.trial_access",
+    "path": [
+      "credential_eligibility",
+      "testing",
+      "trial_access"
+    ],
+    "status": "observed",
+    "eligible": true
+  },
+  {
+    "app_id": 40,
+    "claim_id": "40.testing.sandbox_access",
+    "path": [
+      "credential_eligibility",
+      "testing",
+      "sandbox_access"
+    ],
+    "status": "unknown",
+    "eligible": false
+  },
+  {
+    "app_id": 40,
+    "claim_id": "40.testing.paid_required",
+    "path": [
+      "credential_eligibility",
+      "testing",
+      "paid_required"
+    ],
+    "status": "observed",
+    "eligible": true
+  },
+  {
+    "app_id": 40,
+    "claim_id": "40.testing.admin_approval_required",
+    "path": [
+      "credential_eligibility",
+      "testing",
+      "admin_approval_required"
+    ],
+    "status": "unknown",
+    "eligible": false
+  },
+  {
+    "app_id": 40,
+    "claim_id": "40.testing.vendor_approval_required",
+    "path": [
+      "credential_eligibility",
+      "testing",
+      "vendor_approval_required"
+    ],
+    "status": "unknown",
+    "eligible": false
+  },
+  {
+    "app_id": 40,
+    "claim_id": "40.testing.partner_approval_required",
+    "path": [
+      "credential_eligibility",
+      "testing",
+      "partner_approval_required"
+    ],
+    "status": "unknown",
+    "eligible": false
+  },
+  {
+    "app_id": 40,
+    "claim_id": "40.testing.contact_sales_required",
+    "path": [
+      "credential_eligibility",
+      "testing",
+      "contact_sales_required"
+    ],
+    "status": "unknown",
+    "eligible": false
+  },
+  {
+    "app_id": 40,
+    "claim_id": "40.testing.self_serve",
+    "path": [
+      "credential_eligibility",
+      "testing",
+      "self_serve"
+    ],
+    "status": "observed",
+    "eligible": true
+  },
+  {
+    "app_id": 40,
+    "claim_id": "40.production.free_access",
+    "path": [
+      "credential_eligibility",
+      "production",
+      "free_access"
+    ],
+    "status": "unknown",
+    "eligible": false
+  },
+  {
+    "app_id": 40,
+    "claim_id": "40.production.trial_access",
+    "path": [
+      "credential_eligibility",
+      "production",
+      "trial_access"
+    ],
+    "status": "unknown",
+    "eligible": false
+  },
+  {
+    "app_id": 40,
+    "claim_id": "40.production.sandbox_access",
+    "path": [
+      "credential_eligibility",
+      "production",
+      "sandbox_access"
+    ],
+    "status": "unknown",
+    "eligible": false
+  },
+  {
+    "app_id": 40,
+    "claim_id": "40.production.paid_required",
+    "path": [
+      "credential_eligibility",
+      "production",
+      "paid_required"
+    ],
+    "status": "observed",
+    "eligible": true
+  },
+  {
+    "app_id": 40,
+    "claim_id": "40.production.admin_approval_required",
+    "path": [
+      "credential_eligibility",
+      "production",
+      "admin_approval_required"
+    ],
+    "status": "unknown",
+    "eligible": false
+  },
+  {
+    "app_id": 40,
+    "claim_id": "40.production.vendor_approval_required",
+    "path": [
+      "credential_eligibility",
+      "production",
+      "vendor_approval_required"
+    ],
+    "status": "unknown",
+    "eligible": false
+  },
+  {
+    "app_id": 40,
+    "claim_id": "40.production.partner_approval_required",
+    "path": [
+      "credential_eligibility",
+      "production",
+      "partner_approval_required"
+    ],
+    "status": "unknown",
+    "eligible": false
+  },
+  {
+    "app_id": 40,
+    "claim_id": "40.production.contact_sales_required",
+    "path": [
+      "credential_eligibility",
+      "production",
+      "contact_sales_required"
+    ],
+    "status": "unknown",
+    "eligible": false
+  },
+  {
+    "app_id": 40,
+    "claim_id": "40.production.self_serve",
+    "path": [
+      "credential_eligibility",
+      "production",
+      "self_serve"
+    ],
+    "status": "observed",
+    "eligible": true
+  },
+  {
+    "app_id": 40,
+    "claim_id": "40.api.protocol.rest",
+    "path": [
+      "api_surface",
+      "protocols",
+      "items",
+      0
+    ],
+    "status": "observed",
+    "eligible": true
+  },
+  {
+    "app_id": 40,
+    "claim_id": "40.api.protocol.sdk",
+    "path": [
+      "api_surface",
+      "protocols",
+      "items",
+      1
+    ],
+    "status": "observed",
+    "eligible": true
+  },
+  {
+    "app_id": 40,
+    "claim_id": "40.api.public_docs",
+    "path": [
+      "api_surface",
+      "public_documentation"
+    ],
+    "status": "observed",
+    "eligible": true
+  },
+  {
+    "app_id": 40,
+    "claim_id": "40.api.group.mail_send_templates",
+    "path": [
+      "api_surface",
+      "resource_groups",
+      "items",
+      0
+    ],
+    "status": "observed",
+    "eligible": true
+  },
+  {
+    "app_id": 40,
+    "claim_id": "40.api.group.marketing_contacts_campaigns",
+    "path": [
+      "api_surface",
+      "resource_groups",
+      "items",
+      1
+    ],
+    "status": "observed",
+    "eligible": true
+  },
+  {
+    "app_id": 40,
+    "claim_id": "40.api.group.deliverability_validation_suppressions",
+    "path": [
+      "api_surface",
+      "resource_groups",
+      "items",
+      2
+    ],
+    "status": "observed",
+    "eligible": true
+  },
+  {
+    "app_id": 40,
+    "claim_id": "40.api.group.stats_activity_webhooks_admin",
+    "path": [
+      "api_surface",
+      "resource_groups",
+      "items",
+      3
+    ],
+    "status": "observed",
+    "eligible": true
+  },
+  {
+    "app_id": 40,
+    "claim_id": "40.api.breadth",
+    "path": [
+      "api_surface",
+      "breadth"
+    ],
+    "status": "inferred",
+    "eligible": true
+  },
+  {
+    "app_id": 40,
+    "claim_id": "40.mcp",
+    "path": [
+      "mcp",
+      "discovery"
+    ],
+    "status": "observed",
+    "eligible": true
+  },
+  {
+    "app_id": 40,
+    "claim_id": "40.mcp.community_sendgrid_mcp",
+    "path": [
+      "mcp",
+      "entries",
+      0
+    ],
+    "status": "observed",
+    "eligible": true
+  },
+  {
+    "app_id": 40,
+    "claim_id": "40.mcp.community_sendgrid_mcp.operational",
+    "path": [
+      "mcp",
+      "entries",
+      0,
+      "value",
+      "operational_check"
+    ],
+    "status": "not_researched",
+    "eligible": false
+  },
+  {
+    "app_id": 40,
+    "claim_id": "40.buildability",
+    "path": [
+      "buildability"
+    ],
+    "status": "inferred",
+    "eligible": true
+  }
+]

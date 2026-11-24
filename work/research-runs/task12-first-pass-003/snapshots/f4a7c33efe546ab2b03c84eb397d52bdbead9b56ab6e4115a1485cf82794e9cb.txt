@@ -1,0 +1,1547 @@
+Domain Analysis - SE Ranking API Documentation
+BLACK FRIDAY | Extra 20% off SE Ranking annual plans and add-ons until Dec 4
+SE Ranking
+Grow your visibility with AI SEO
+SE Visible
+Analyze AI visibility strategically
+Planable
+Manage your socials as a team
+API
+Solutions
+By business type Migrate to SE Ranking
+See product tour
+Agencies
+Enterprises
+Growing business
+Tools
+Core SEO tools AI Search tools Other SEO tools Agency Pack Content Marketing Local Marketing Software Integrations
+See product tour
+Rank Tracker
+Keyword Research
+On-Page SEO Checker
+Website Audit
+Competitor Analysis Tool
+Backlink Checker
+AI Search Toolkit
+AI Overviews Tracker
+AI Mode Tracker
+ChatGPT Tracker
+Gemini Tracker
+ChatGPT ads tracker
+AI Mode ads tracker
+SERP Tracker
+Insights
+Keyword Grouper
+SEO Dashboard
+Agency Pack
+SEO Report Generator
+Lead Generator
+White Label
+Content Marketing Tool
+Content Editor
+AI Writer
+Resources
+Education Customer Hub Agency Catalog
+See product tour
+Blog
+Webinars
+Podcast
+Academy
+Help center
+What’s new
+Case studies
+Pricing
+Platform plans
+API Plans
+API & MCP
+API MCP Our data API Pricing
+See product tour
+API
+Keyword Research API
+Backlinks API
+Domain Analysis API
+Rank Tracker API
+Website Traffic API
+Website Audit API
+AI Visibility API
+MCP
+SEO Skills for Claude
+Marketing Skills for Claude
+Content Skills for Claude
+Products
+SE Ranking
+Grow your visibility with AI SEO
+SE Visible
+Analyze AI visibility strategically
+Planable
+Manage your socials as a team
+See product tour
+Start free trial
+en
+enEnglish
+deDeutsch
+frFrançais
+esEspañol
+nlNederlands
+itItaliano
+ptPortuguês
+uaУкраїнська
+ruРусский
+あ日本語
+Sign in
+See product tour
+Start free trial
+Back
+API
+Introduction
+Getting API access
+API credit system
+API rate limits
+Integrations
+Data Studio
+MCP
+n8n
+Make.com
+Usage guidelines for commercial purposes
+Data
+Overview
+Getting started
+Authentication
+Making requests
+Postman collection
+Unit costs
+Plans and pricing
+Quickstarts
+Find keyword opportunities
+Assess AI search visibility
+Retrieve URLs with SEO issues
+Use Website Audit API for SEO growth
+Generate reports with SEOIntel
+Build authority with link building
+Analyze domain traffic & competitors
+Backlinks
+Get backlink summary
+Get backlink metrics
+List all backlinks
+Fetch backlinks in batches
+Get total backlinks count
+Export backlinks data
+List new/lost backlinks
+Get daily new/lost backlinks
+Get cumulative backlinks
+Get backlink anchor texts
+List referring domains
+Get referring domains count
+List new/lost referring domains
+Get daily new/lost referring domains
+List referring IPs
+Get total referring IPs count
+Get total referring subnets count
+List pages with backlinks
+Get page/domain authority
+Get domain authority
+Get domain authority distribution
+Get domain authority history
+Get page authority
+Get page authority history
+Domain Analysis
+Get domain overview by region
+Get worldwide domain overview
+Get worldwide URL overview
+Get traffic/keyword history
+Get keyword rankings
+Get domain pages
+Get domain subdomains
+Get paid ads by keyword
+Get paid ads for domain
+Get domain competitors
+Analyze keyword overlap/gaps
+Keyword Research
+Get Keywords metrics
+Get similar keywords
+Get related keywords
+Get question keywords
+Get longtail keywords
+AI Search
+Get AI search overview
+Get AI search leaderboard
+Discover brand by URL
+Get prompts by brand
+Get prompts by target
+Filtering results
+Website Audit
+Create audit
+List audits
+Get audit status
+Get audit report
+Get all crawled pages
+Get audit pages by issue
+Get all issues by URL
+Get all found links
+Get audit by date
+Update audit title
+Delete audit
+Recheck audit
+Account System
+Get subscription details
+Reference
+Glossary
+Regional codes
+SERP features
+Site Audit issue codes
+Error handling
+Project
+Overview
+Getting started
+API access and keys
+Making requests
+Rate limits
+Error handling
+Project Management
+List projects
+List project search engines
+Add search engine to project
+Change search engine in project
+Delete search engine from project
+List website keywords
+Get project summary statistics
+Get keyword statistics
+Get total number of ads chart
+Get historical dates
+Add keywords to project
+Add project
+Change project settings
+Delete project
+Delete keywords
+Set manual keyword position
+Run position check
+Project Groups
+Add project group
+Rename project group
+Delete project group
+List project groups
+Move projects to project group
+Keyword Groups
+Add keyword group
+Move keywords to another group
+Rename keyword group
+Delete keyword group
+List keyword groups
+Competitors
+Add competitor
+List competitors
+Get competitor keyword positions
+Delete competitor
+Get TOP 10 results
+Get TOP 100 results
+Get all competitors
+URL Tags
+List tags
+Add tag
+Update tag assignment
+Delete tag
+Analytics Traffic
+Get Google Search Console data
+Calculate SEO potential
+Account Management
+Get user profile
+List sub-accounts
+Create sub-account
+Get sub-account details
+Delete sub-account
+Update sub-account
+List shared projects
+List owned projects
+Share project with sub-account
+General Data
+List search engines
+List languages for Google
+List regions to get search volume
+Get keyword search volume
+Marketing Plan
+List plan items
+Add task
+Update task
+Delete task
+Set task status
+Website Audit
+Create audit
+List audits
+Get audit status
+Get audit report
+Get all crawled pages
+Get audit pages by issue
+Get all issues for URL
+Get all links
+Get audit history
+Update audit title
+Delete audit
+Recheck audit
+Backlink Checker
+List backlinks
+Add backlink
+Import backlinks list
+Update backlink import settings
+Start backlink import from Google Search Console
+Get backlink import status from Google Search Console
+Delete backlinks
+Recheck backlinks
+Get backlink statistics
+List disavowed backlinks
+Add disavowed backlinks
+Delete disavowed backlink
+List backlink groups
+Create backlink group
+Delete backlink group
+Rename backlink group
+Move backlinks to group
+AI Results Tracker
+Get site brand
+Save site brand
+List LLM engines
+Get LLM engine
+Create LLM engine
+Update LLM engine
+Delete LLM engine
+Get LLM status
+Get LLM statistics
+List prompts
+Add prompts
+Delete prompts
+Get prompt answer
+Get prompt rankings
+AIRT Sources
+Get sources summary
+List source domains
+List source pages
+Get sources recommendations
+AIRT Competitors
+Get competitors breakdown
+Get competitors check dates
+Get source metrics
+AIRT Groups
+List prompt groups
+Create prompt group
+Rename prompt group
+Delete prompt group
+Change group order
+Delete all prompts in group
+Move prompts to group
+Move all prompts from one group to another
+Local Marketing
+Overview
+Getting started
+Usage and limits
+Pagination
+Errors
+Locations
+List locations
+Get location details
+Location overview
+Get location overview
+Local Rankings
+Get Local Rankings keyword list
+Get Local Rankings positions
+Get rankings indexed percent
+Local Marketing Audit
+Get latest audit report
+Get audit report history
+Google Business Profile
+Get Google Business Profile metrics
+Get Google Business Profile keyword report
+Get Google Business Profile searches trend
+Business Listings
+List business listings
+Get business listings overview
+Reviews
+List reviews
+Get reviews overview
+SE VisibleBeta
+Overview
+Getting started
+Base URL
+Authentication
+Resource model
+Making requests
+Pagination
+Filtering and array parameters
+Date ranges and compare mode
+Usage and limits
+Errors
+Support
+Projects
+List projects
+Create project
+Get project details
+Update tracking settings
+Delete a project
+Locations
+List project locations
+Add a location
+Update a location
+Delete a location
+Geo autocomplete
+List countries
+Search cities and regions
+Engines
+List project engines
+Add an engine
+Replace the engine set
+Remove an engine
+Brands
+List tracked brands
+Create competitor brand
+List mentioned brands
+Get aggregated brand metrics
+Update brand
+Delete brand
+Add aliases to brand
+Topics
+Create topics
+Update a topic title
+Delete a topic
+Prompts
+List prompts or topics
+Delete prompts
+Create prompts for a topic
+Move prompts to a topic
+Change prompt locations
+Get prompt details
+Get prompt result list
+Get prompt result details
+Sources
+Get project sources
+Get aggregated source metrics
+Reference
+AI models
+Sentiment
+Project status
+Country codes
+Language codes
+Source type
+URL category types
+Brand match mode
+Prompt list grouping
+Brand metrics dimensions and metrics
+Sort fields
+Date ranges and compare mode
+Array parameters
+Pagination
+Error codes
+Authentication
+Subscription
+Get subscription details
+API
+Data API / Domain Analysis
+Domain Analysis
+Domain Analysis API provides detailed insights into a domain’s search performance. Data is refreshed on a monthly basis.
+Using the API, you can:
+query regional or worldwide data
+retrieve keyword statistics, domain pages, and subdomains
+analyze competitors to identify common keywords and keyword gaps
+retrieve paid advertising data, including ad creatives, observed positions, and traffic
+access historical data to track changes in rankings, traffic, and ad performance
+filter and sort results by metrics such as search volume, CPC, competition, keyword difficulty, and ranking positions
+Get domain overview by region
+GET https://api.seranking.com/v1/domain/overview/db
+Cost: 100 credits per request
+Returns detailed keyword statistics for a specified domain within a single, selected regional database. It breaks down performance for both organic and paid traffic, offering insights into keyword rankings, traffic estimates, and position changes.
+Request parameters
+ParameterTypeRequiredDefaultDescription
+sourceStringYesN/ACountry code of the regional keyword database (e.g., us). For acceptable values, see Regional database codes.
+domainStringYesN/ADomain for which to retrieve the keyword statistics (e.g., seranking.com).
+with_subdomainsIntegerNo1Flag indicating whether subdomain data should be included in the analysis:
+1 – include subdomains
+0 – exclude subdomains
+urlStringNoN/ASpecific URL to analyze instead of the root domain
+(e.g., https://domain.com/path/page). If provided, the domain parameter is ignored.
+Request example
+Copy
+curl -X GET 'https://api.seranking.com/v1/domain/overview/db?source=xx&domain=yourdomain.com&with_subdomains=1' \
+-H 'Authorization: Token YOUR_API_KEY'
+Response parameters
+If the request is successful, the server returns a JSON object with two primary keys: organic and adv. Each of these keys details various keyword statistics for the selected database.
+organic object
+ParameterTypeDescription
+organic.base_domain / organic.targetStringBase domain or URL used for the analysis.
+organic.keywords_countIntegerNumber of organic keywords for which the domain ranks in the selected database.
+organic.traffic_sumIntegerEstimated monthly organic search traffic from ranking keywords.
+organic.price_sumFloatEstimated traffic value (PPC equivalent) for organic search data.
+organic.keywords_new_countIntegerNumber of keywords for which the domain has newly started ranking.
+organic.keywords_up_countIntegerNumber of keywords for which the domain’s ranking has improved.
+organic.keywords_down_countIntegerNumber of keywords for which the domain’s ranking has declined.
+organic.keywords_equal_countIntegerNumber of keywords for which the domain’s ranking has not changed.
+organic.keywords_lost_countIntegerNumber of keywords for which the domain has dropped out of the SERPs.
+organic.top1_5IntegerNumber of organic keywords ranked in positions 1–5.
+organic.top6_10IntegerNumber of organic keywords ranked in positions 6–10.
+organic.top11_20IntegerNumber of organic keywords ranked in positions 11–20.
+organic.top21_50IntegerNumber of organic keywords ranked in positions 21–50.
+organic.top51_100IntegerNumber of organic keywords ranked in positions 51–100.
+organic.yearIntegerYear of the data snapshot.
+organic.monthIntegerMonth of the data snapshot.
+adv object
+ParameterTypeDescription
+adv.base_domain / adv.targetStringBase domain or URL used for the analysis.
+adv.keywords_countIntegerNumber of keywords for which the domain has paid ads in the selected database.
+adv.traffic_sumIntegerEstimated monthly traffic from paid keywords.
+adv.price_sumFloatEstimated traffic value (PPC equivalent) from paid keywords.
+adv.keywords_new_countIntegerNumber of new keywords targeted by paid ads.
+adv.keywords_up_countIntegerNumber of paid keywords where ad positions improved.
+adv.keywords_down_countIntegerNumber of paid keywords where ad positions declined.
+adv.keywords_equal_countIntegerNumber of paid keywords where ad positions remained unchanged.
+adv.keywords_lost_countIntegerNumber of keywords for which paid ads are no longer running or appearing in the SERPs.
+adv.top1_2IntegerNumber of paid keywords with ads appearing in positions 1–2.
+adv.top3_5IntegerNumber of paid keywords with ads appearing in positions 3–5.
+adv.top6_8IntegerNumber of paid keywords with ads appearing in positions 6–8.
+adv.top9_11IntegerNumber of paid keywords with ads appearing in positions 9–11.
+adv.yearIntegerYear of the data snapshot.
+adv.monthIntegerMonth of the data snapshot.
+Response example
+Copy
+{
+"organic": {
+"base_domain": "example.com",
+"price_sum": 100000,
+"traffic_sum": 40000,
+"keywords_new_count": 250,
+"keywords_down_count": 70,
+"keywords_up_count": 65,
+"keywords_equal_count": 140000,
+"keywords_lost_count": 110,
+"keywords_count": 115000,
+"top1_5": 20000,
+"top6_10": 11000,
+"top11_20": 18000,
+"top21_50": 41000,
+"top51_100": 50000,
+"year": 2025,
+"month": 11
+},
+"adv": {
+"base_domain": "example.com",
+"price_sum": 85,
+"traffic_sum": 40,
+"keywords_new_count": 0,
+"keywords_down_count": 0,
+"keywords_up_count": 0,
+"keywords_equal_count": 16,
+"keywords_lost_count": 0,
+"keywords_count": 16,
+"top1_2": 15,
+"top3_5": 1,
+"top6_8": 0,
+"top9_11": 0,
+"year": 2025,
+"month": 11
+}
+}
+Get worldwide domain overview
+GET https://api.seranking.com/v1/domain/overview/worldwide
+Cost: 100 credits per request
+Aggregates and returns domain search performance statistics globally for the current month. The method provides a comprehensive view of worldwide organic and paid traffic metrics, with options to customize the returned data, including currency and specific fields.
+Request parameters
+ParameterTypeRequiredDefaultDescription
+domainStringYesN/ADomain name for which to retrieve worldwide statistics (e.g., seranking.com).
+currencyStringNoUSDISO 4217 currency code to be used for any monetary values (like traffic cost) returned in the response (e.g., USD, EUR, GBP).
+fieldsStringNoprice, traffic, keywordsComma-separated list specifying which data fields or categories to include in the response:
+• price – shows traffic price/cost value
+• traffic – shows traffic volume value
+• keywords – shows keyword count statistics
+• positions_diff – shows statistics on position changes
+• positions_tops – shows statistics on top-ranking positions
+show_zones_listStringNo0Identifies whether the response should include a detailed breakdown of statistics by regional zone (country) in addition to aggregated worldwide statistics:
+1 – include stats for each zone
+0 – return worldwide stats only
+with_subdomainsIntegerNo1Flag indicating whether subdomain data should be included in the analysis:
+1 – include subdomains
+0 – exclude subdomains
+urlStringNoN/ASpecific URL to analyze instead of the root domain
+(e.g., https://domain.com/path/page). If provided, the domain parameter is ignored.
+Request example
+Copy
+curl -X GET 'https://api.seranking.com/v1/domain/overview/worldwide?domain=seranking.com&currency=USD&fields=price,traffic,keywords,positions_diff,positions_tops&show_zones_list=0' \
+-H 'Authorization: Token YOUR_API_KEY'
+Response parameters
+If the request is successful, the server returns a JSON object with two primary keys: organic and adv. Each of these keys holds an array of objects.
+The first object in each array always represents the aggregated “worldwide” statistics.
+If show_zones_list is set to “1” (or true), subsequent objects in the arrays will represent statistics for individual regional zones (countries).
+Each object within the organic and adv arrays can contain the following parameters (depending on the fields requested):
+ParameterTypeDescription
+sourceStringIdentifier of the data scope:
+worldwide for the global summary, or a specific country code for zone-specific data when show_zones_list is enabled.
+countryStringDescriptive name for the source: worldwide for the global summary, or country name for zone-specific data (e.g., United States).
+keywords_countIntegerNumber of keywords for this scope (organic or paid, depending on the parent object).
+traffic_sumIntegerSum of estimated traffic for this scope (organic or paid).
+price_sumFloatEstimated traffic value (PPC equivalent) in the specified currency.
+positions_new_countIntegerNumber of keywords newly appearing in rankings for this scope (if positions_diff requested in fields).
+positions_up_countIntegerNumber of keywords with improved rankings for this scope (if positions_diff requested in fields).
+positions_down_countIntegerNumber of keywords with declined rankings for this scope (if positions_diff requested in fields).
+positions_lost_countIntegerNumber of keywords that dropped out of rankings for this scope (if positions_diff requested in fields).
+positions_equal_countIntegerNumber of keywords with unchanged rankings for this scope (if positions_diff requested in fields).
+positions_tops.top1_5IntegerOrganic: keywords in positions 1–5.
+positions_tops.top6_10IntegerOrganic: keywords in positions 6–10.
+positions_tops.top11_20IntegerOrganic: keywords in positions 11–20.
+positions_tops.top21_50IntegerOrganic: keywords in positions 21–50.
+positions_tops.top51_100IntegerOrganic: keywords in positions 51–100.
+positions_tops.top1_2IntegerPaid (adv): keywords with ads in positions 1–2.
+positions_tops.top3_5IntegerPaid (adv): keywords with ads in positions 3–5.
+positions_tops.top6_8IntegerPaid (adv): keywords with ads in positions 6–8.
+positions_tops.top9_11IntegerPaid (adv): keywords with ads in positions 9–11.
+Response example
+Copy
+{
+"organic": [
+{
+"source": "worldwide",
+"country": "Worldwide",
+"keywords_count": 823967,
+"traffic_sum": 273150,
+"price_sum": 241482.11,
+"positions_new_count": 56042,
+"positions_up_count": 56326,
+"positions_down_count": 49834,
+"positions_lost_count": 47169,
+"positions_equal_count": 876005,
+"positions_tops": {
+"top1_5": 91520,
+"top6_10": 95652,
+"top11_20": 165641,
+"top21_50": 332015,
+"top51_100": 353061
+}
+}
+],
+"adv": [
+{
+"source": "worldwide",
+"country": "Worldwide",
+"keywords_count": 4947,
+"traffic_sum": 4369,
+"price_sum": 6509.45,
+"positions_new_count": 333,
+"positions_up_count": 7,
+"positions_down_count": 4,
+"positions_lost_count": 1742,
+"positions_equal_count": 5645,
+"positions_tops": {
+"top1_2": 4905,
+"top3_5": 1046,
+"top6_8": 38,
+"top9_11": 0
+}
+}
+]
+}
+Get worldwide URL overview
+GET https://api.seranking.com/v1/domain/overview/worldwide/url
+Cost: 100 credits per request
+Aggregates and returns URL search performance statistics globally for the current month. The method provides a comprehensive view of worldwide organic and paid traffic metrics for a specific URL, with options to customize the returned data using selected fields.
+Request parameters
+ParameterTypeRequiredDefaultDescription
+urlStringYesN/AFull URL to analyze (including protocol).
+fieldsStringNoN/AComma-separated list of metrics to include in the response. Accepted values: keywords, traffic, price.
+Request example
+Copy
+curl -X GET 'https://api.seranking.com/v1/domain/overview/worldwide/url?fields=price,traffic,keywords&url=https://example.com/api.html' \
+-H 'Authorization: Token YOUR_API_KEY'
+Response parameters
+If the request is successful, the server returns a JSON object containing two arrays: organic and adv.
+ParameterTypeDescription
+sourceStringData source scope. Always worldwide.
+keywords_countIntegerNumber of ranking keywords worldwide.
+traffic_sumIntegerEstimated total monthly traffic worldwide.
+price_sumFloatEstimated traffic value (PPC equivalent).
+Response example
+Copy
+{
+"organic": [
+{
+"source": "worldwide",
+"keywords_count": 1791,
+"traffic_sum": 1018,
+"price_sum": 1826
+}
+],
+"adv": [
+{
+"source": "worldwide",
+"keywords_count": 5,
+"traffic_sum": 0,
+"price_sum": 0
+}
+]
+}
+Get domain traffic and keyword history
+GET https://api.seranking.com/v1/domain/overview/history
+Cost: 100 credits per request
+Retrieves historical data for a specified domain from a specific regional database. It tracks changes over time for key metrics, including the number of keywords, estimated traffic (clicks), and traffic cost estimates, for either organic or paid search.
+Request parameters
+ParameterTypeRequiredDefaultDescription
+sourceStringYesN/ACountry code of the regional keyword database (e.g., us). For acceptable values, see Regional database codes.
+domainStringYesN/ADomain name for which to retrieve historical performance data (e.g., seranking.com).
+typeStringNoorganicSearch traffic type for which data is retrieved:
+• organic – organic search traffic
+• adv – paid search traffic
+with_subdomainsIntegerNo1Flag indicating whether subdomain data should be included in the analysis:
+1 – include subdomains
+0 – exclude subdomains
+urlStringNoN/ASpecific URL to analyze instead of the root domain
+(e.g., https://domain.com/path/page). If provided, the domain parameter is ignored.
+Request examples
+To retrieve organic historical data:
+Copy
+curl -X GET 'https://api.seranking.com/v1/domain/overview/history?source=us&domain=seranking.com&type=organic' \
+-H 'Authorization: Token YOUR_API_KEY'
+To retrieve paid (advertising) historical data:
+Copy
+curl -X GET 'https://api.seranking.com/v1/domain/overview/history?source=us&domain=seranking.com&type=adv' \
+-H 'Authorization: Token YOUR_API_KEY'
+Response parameters
+If the request is successful, the server returns a JSON array. Each object in this array represents a historical data point (typically for a specific month and year) and contains the following parameters.
+Note:
+The topX_Y fields for ranking distribution correspond to the type of traffic requested—organic ranking ranges or paid ad position ranges.
+The topX_Y fields count position occurrences, not unique keywords. If a domain has multiple links for a single keyword, each link is counted separately in the relevant position range(s). As a result, the sum of top1_5 + top6_10 + … + top51_100 may exceed keywords_count.
+ParameterTypeDescription
+keywords_countIntegerNumber of unique keywords (organic or paid, depending on the request type) for which the domain had at least one result during the period.
+traffic_sumIntegerEstimation of the total search traffic (clicks) the domain received from these keywords during that period.
+price_sumFloatEstimated traffic value (PPC equivalent) in the default currency of the database.
+yearIntegerYear of the historical data point.
+monthIntegerMonth of the historical data point (1–12).
+top1_5IntegerIf type is organic: total number of occurrences of organic keywords ranked in positions 1–5 during that period.
+top6_10IntegerIf type is organic: total number of occurrences of organic keywords ranked in positions 6–10 during that period.
+top11_20IntegerIf type is organic: total number of occurrences of organic keywords ranked in positions 11–20 during that period.
+top21_50IntegerIf type is organic: total number of occurrences of organic keywords ranked in positions 21–50 during that period.
+top51_100IntegerIf type is organic: total number of occurrences of organic keywords ranked in positions 51–100 during that period.
+top1_2IntegerIf type is adv: total number of occurrences of paid keywords with ads appearing in positions 1–2 during that period.
+top3_5IntegerIf type is adv: total number of occurrences of paid keywords with ads appearing in positions 3–5 during that period.
+top6_8IntegerIf type is adv: total number of occurrences of paid keywords with ads appearing in positions 6–8 during that period.
+top9_11IntegerIf type is adv: total number of occurrences of paid keywords with ads appearing in positions 9–11 during that period.
+Response examples
+Note: topX_Y fields reflect total result occurrences, not unique keywords. This is why their sum can exceed keywords_count.
+Type=organic
+Copy
+[
+{
+"keywords_count": 104199,
+"traffic_sum": 35838,
+"top1_5": 12629,
+"top6_10": 11401,
+"top11_20": 19134,
+"top21_50": 39725,
+"top51_100": 46089,
+"year": 2025,
+"month": 4,
+"price_sum": 85424.78
+},
+{
+"keywords_count": 103538,
+"traffic_sum": 34402,
+"top1_5": 9107,
+"top6_10": 11517,
+"top11_20": 19029,
+"top21_50": 39617,
+"top51_100": 45963,
+"year": 2025,
+"month": 5,
+"price_sum": 85721.73
+}
+]
+Type=adv
+Copy
+[
+{
+"keywords_count": 7,
+"traffic_sum": 0,
+"top1_2": 7,
+"top3_5": 0,
+"top6_8": 0,
+"top9_11": 0,
+"year": 2025,
+"month": 4,
+"price_sum": 0
+},
+{
+"keywords_count": 8,
+"traffic_sum": 0,
+"top1_2": 8,
+"top3_5": 0,
+"top6_8": 0,
+"top9_11": 0,
+"year": 2025,
+"month": 5,
+"price_sum": 0
+}
+]
+Get domain keyword rankings
+GET https://api.seranking.com/v1/domain/keywords
+Cost: current snapshot (no year / month) — 100 credits per request; keyword history (past year + month) — 5 credits per returned keyword, no per-request charge. See Historical snapshots (year / month) below.
+Returns the keywords a domain (or a specific URL) ranks for in a regional database, organic or paid. Supports historical month-by-month snapshots, advanced filtering across keyword properties, SERP-feature presence, search intent, and traffic share.
+Request parameters
+Required fields
+Either domain or url must be supplied. If both are sent, url takes precedence and domain is silently dropped.
+ParameterTypeDescription
+sourceStringCountry code of the regional keyword database (e.g., us, uk, de). See Regional database codes.
+domainStringDomain to retrieve rankings for (e.g., booking.com). Mutually exclusive with url.
+urlStringExact URL to retrieve rankings for (e.g., https://seranking.com/api.html). When supplied, the with_subdomains flag has no effect — only this exact URL is considered.
+Search type, pagination, ordering
+ParameterTypeDefaultDescription
+typeorganic | advorganicSearch-traffic type. adv returns paid-search keywords with snippet fields populated.
+with_subdomainsBooleantrueWhen true, include keywords ranking for any subdomain of domain. When false, restrict to the exact domain. Ignored when url is used. Also accepts 1/0.
+pageInteger ≥ 11Page number for paginated results.
+limitInteger 1–1000100Page size. Values > 1000 are silently capped at 1000.
+order_fieldenumtrafficSort key. Valid values: traffic, volume, position, cpc, competition, kei, difficulty, traffic_percent, price.
+order_typeasc | descdescSort direction.
+colsString(default set)Comma-separated list of fields to return. See Default response columns. Invalid column names are silently dropped.
+Historical snapshots (year / month)
+ParameterTypeDefaultDescription
+yearIntegercurrentYear of the historical snapshot to retrieve. Must be supplied together with month.
+monthInteger 1–12currentMonth of the historical snapshot. Must be supplied together with year. Out-of-range values return HTTP 400 invalid month.
+Semantics:
+Both omitted → current snapshot.
+Both supplied with a month within the retention window → historical snapshot.
+Only one of the two supplied → current snapshot (the lone parameter is silently ignored — there is no error).
+Future date → current snapshot (silent fallback).
+Date older than the retention window → empty array [].
+⚠ Historical responses use a different schema than current responses. See Response shape — historical below. Clients that consume both must branch on whether year/month were sent.
+Cost of history requests: a history request (past year + month) is billed per returned keyword: 5 credits per keyword, with no per-request charge. The cost grows with limit and with the number of pages you fetch. With limit=1000, a single call costs up to 5,000 credits, compared with 100 credits for the current snapshot. To pay the flat 100-credit price, omit year and month.
+Filters
+All filter keys use bracket-path syntax (filter[name]=value or filter[name][from]=value). Filters within a single key combine with AND; multiple values within one filter combine with OR.
+Position-change filter
+ParameterTypeDescription
+pos_changeenumSelects keywords by how their position changed vs. the previous snapshot. Values: up (improved), down (worsened), new (prev_pos: null), lost (dropped from SERP), diff (any change — equivalent to up ∪ down), same (unchanged). Unknown values are silently ignored (filter does not apply).
+Range filters (from / to)
+All accept any combination of from and to; either bound can be omitted.
+ParameterTypeNotes
+filter[volume][from] / [to]Integer ≥ 0Monthly search volume.
+filter[traffic][from] / [to]Integer ≥ 0Estimated monthly traffic to the ranking URL.
+filter[traffic_percent][from] / [to]FloatShare (%) of the keyword’s total traffic captured by the domain.
+filter[position][from] / [to]Integer ≥ 1Ranking position.
+filter[keyword_count][from] / [to]Integer ≥ 1Number of words in the keyword phrase.
+filter[characters_count][from] / [to]Integer ≥ 1Character length of the keyword phrase.
+filter[cpc][from] / [to]Float ≥ 0Cost per click. USD.
+filter[price][from] / [to]Float ≥ 0Estimated traffic value (PPC-equivalent). USD.
+filter[competition][from] / [to]FloatCompetition score (0.00–1.00).
+filter[difficulty][from] / [to]Integer 0–100Keyword difficulty.
+Text filters
+JSON-encoded value; see Text search JSON structure.
+ParameterDescription
+filter[keyword]Keyword text to match.
+filter[multi_keyword_included]Must-include keyword tokens.
+filter[multi_keyword_excluded]Must-exclude keyword tokens.
+filter[url]Filter by ranking URL (substring/pattern). Single base array element only — no OR logic. Use the top-level url request param for an exact single-URL match.
+Intent filter
+ParameterDescription
+filter[intents]Comma-separated short codes — I (informational), N (navigational), T (transactional), C (commercial), L (local). Multi-value semantics: keyword passes if any listed intent matches. Unknown codes are silently ignored.
+SERP-feature filters — pick the right one
+These two filters answer different questions:
+FilterQuestion it answers
+filter[serp_features]Does the SERP for this keyword have feature X at all? (Domain may or may not appear inside it.)
+filter[serp_features_2]Is the analyzed domain actually mentioned inside feature X on the SERP?
+Response parameters
+Current
+If the request succeeds, the server returns an HTTP 200 with a JSON array of keyword objects. The default response includes 16 fields; request cols= to project a subset.
+Default response columns
+When cols is omitted (or empty), all 16 of the following are returned:
+Copy
+block_position, block_type, competition, cpc, difficulty, intents, keyword,
+position, prev_pos, price, serp_features, total_sites, traffic, traffic_percent,
+url, volume
+For type=adv (paid search), the block and snippet_* family are also returned when explicitly requested.
+Field reference
+FieldTypeDescription
+keywordStringThe keyword phrase.
+positionIntegerCurrent ranking position (organic) or ad position (paid).
+prev_posInteger | nullPrevious-period position. null for new keywords.
+volumeIntegerAverage monthly search volume.
+cpcFloatAverage cost per click, USD.
+competitionFloatCompetition score, 0.00 (low) – 1.00 (high).
+difficultyIntegerKeyword difficulty, 0–100.
+urlStringURL of the ranking page (or the URL used in the ad for paid).
+total_sitesInteger | nullEstimated number of sites ranking for this keyword. Often null.
+trafficIntegerEstimated monthly traffic this keyword drives to the URL.
+traffic_percentFloatShare of the keyword’s total traffic the domain captures (%).
+priceFloatEstimated traffic value (PPC equivalent), USD.
+intentsArray\<String>Detected intents — short codes I / N / T / C / L.
+serp_featuresArray\<String>SERP features present on this keyword’s SERP. See SERP features.
+block_typeString | nullType of SERP block where the result appears (e.g., featured_snippets, tads, local_pack, sitelinks). null indicates an organic 10-blue-links result.
+block_positionIntegerPosition of the block on the SERP.
+blockString(Paid only.) Ad placement on the SERP, e.g., top, bottom.
+snippet_numInteger(Paid only.) Identifier of the ad snippet.
+snippets_countInteger(Paid only.) Number of ad snippets the domain runs on this keyword.
+snippet_titleString(Paid only.) Ad title.
+snippet_descriptionString(Paid only.) Ad body copy.
+snippet_display_urlString(Paid only.) Display URL of the ad.
+📝 kei (Keyword Effectiveness Index) is accepted as an order_field value but is not a selectable response column. Requesting cols=kei silently drops it.
+Example – organic, current
+Copy
+[
+{
+"block_type": null,
+"block_position": 4,
+"keyword": "ranking",
+"position": 4,
+"prev_pos": 4,
+"volume": 22400,
+"cpc": 0,
+"competition": 0,
+"url": "https://seranking.com/",
+"difficulty": 59,
+"total_sites": null,
+"traffic": 836,
+"traffic_percent": 2.09,
+"price": 0,
+"serp_features": ["sitelinks", "video", "sge", "related_searches"],
+"intents": ["I", "N"]
+}
+]
+Historical (year + month)
+When a request includes valid year and month, the upstream returns data from a different store with a different schema. Five fields are renamed or retyped, and two are dropped:
+FieldCurrent snapshotHistorical snapshot
+prev_posInteger | nullAbsent (renamed below).
+previous_positionAbsent.Integer — replaces prev_pos.
+volumeInteger (e.g. 2240000)String (e.g. "2900").
+trafficInteger (e.g. 2307)String (e.g. "1246").
+intentsShort codes (["I", "N"])Long names (["INFORMATIONAL", "NAVIGATIONAL"]).
+total_sitesPresent (often null).Absent.
+block_typePresent.Absent.
+Other fields(numeric types as documented above)(same as current).
+Clients consuming both shapes should branch on whether year/month were sent.
+Example – historical
+Copy
+[
+{
+"competition": 0.13,
+"intents": ["INFORMATIONAL", "NAVIGATIONAL"],
+"serp_features": ["reviews", "sitelinks", "video", "people_also_ask"],
+"keyword": "se rank",
+"block_position": 0,
+"volume": "2900",
+"position": 1,
+"price": 797.75,
+"traffic": "1246",
+"difficulty": 62,
+"previous_position": 1,
+"traffic_percent": 3.58,
+"cpc": 0.64,
+"url": "https://seranking.com/"
+}
+]
+Examples
+1. Domain, paid search, sort by CPC
+Copy
+curl 'https://api.seranking.com/v1/domain/keywords?source=us&domain=booking.com&type=adv&limit=2&cols=keyword,cpc,volume,block_type,block_position,snippet_title&order_field=cpc&order_type=desc' \
+-H 'Authorization: Token YOUR_API_KEY'
+2. Specific URL, organic, with SERP feature present
+Copy
+curl 'https://api.seranking.com/v1/domain/keywords?source=us&url=https://seranking.com/api.html&type=organic&limit=2&filter[serp_features]=sitelinks' \
+-H 'Authorization: Token YOUR_API_KEY'
+3. AI Overview cites the analyzed domain
+Copy
+curl 'https://api.seranking.com/v1/domain/keywords?source=us&domain=booking.com&filter[serp_features_2][mode]=with_link&filter[serp_features_2][value][0]=sge' \
+-H 'Authorization: Token YOUR_API_KEY'
+4. AI Overview present but does NOT cite the domain (citation-gap opportunity)
+Copy
+curl 'https://api.seranking.com/v1/domain/keywords?source=us&domain=booking.com&filter[serp_features_2][mode]=without_link&filter[serp_features_2][value][0]=sge' \
+-H 'Authorization: Token YOUR_API_KEY'
+5. Either AI Overview OR Reviews cites the domain (multi-value)
+Copy
+curl 'https://api.seranking.com/v1/domain/keywords?source=us&domain=booking.com&filter[serp_features_2][mode]=with_link&filter[serp_features_2][value][0]=sge&filter[serp_features_2][value][1]=reviews' \
+-H 'Authorization: Token YOUR_API_KEY'
+6. Historical snapshot — same domain, 6 months ago
+Copy
+curl 'https://api.seranking.com/v1/domain/keywords?source=us&domain=seranking.com&year=2024&month=6&limit=5' \
+-H 'Authorization: Token YOUR_API_KEY'
+Compare with the current snapshot to see month-over-month movement. Remember the historical response shape is different.
+7. Position-change feed — winners and losers in one call
+Copy
+# Keywords that gained positions vs. the previous period
+curl 'https://api.seranking.com/v1/domain/keywords?source=us&domain=seranking.com&pos_change=up&order_field=position&order_type=asc&limit=20' \
+-H 'Authorization: Token YOUR_API_KEY'
+Copy
+# New SERP entries in the period (prev_pos is null)
+curl 'https://api.seranking.com/v1/domain/keywords?source=us&domain=seranking.com&pos_change=new&limit=20' \
+-H 'Authorization: Token YOUR_API_KEY'
+8. Long-tail informational keywords with low difficulty
+Copy
+curl 'https://api.seranking.com/v1/domain/keywords?source=us&domain=seranking.com\
+&filter[intents]=I\
+&filter[difficulty][to]=30\
+&filter[volume][from]=100\
+&filter[keyword_count][from]=4\
+&order_field=traffic_percent&order_type=desc&limit=50' \
+-H 'Authorization: Token YOUR_API_KEY'
+Get domain pages
+GET https://api.seranking.com/v1/domain/pages
+Cost: 100 credits per request
+Retrieves a list of individual pages ranking within a specified domain, along with their organic or paid search performance metrics. This endpoint helps identify which specific URLs contribute the most to visibility, traffic, and value in a regional database.
+Request parameters
+ParameterTypeRequiredDefaultDescription
+targetStringYesN/ARoot domain to analyze (e.g., example.com).
+scopeStringYesN/AScope of analysis:
+• base_domain – includes all subdomains under the registrable domain.
+• domain – analyzes pages under the specified host only.
+• url – analyzes a single, specific URL including its path and query parameters.
+sourceStringYesN/ACountry code of the regional keyword database (e.g., us). For acceptable values, see Regional database codes.
+typeStringNoorganicSearch traffic type for which data is retrieved:
+• organic – organic search traffic
+• adv – paid search traffic
+order_fieldStringNokeywords_countField by which results are sorted:
+• keywords_count
+• traffic_sum
+• traffic_percent
+• price_sum
+order_typeStringNodescSorting order:
+• asc – ascending
+• desc – descending
+offsetIntegerNoN/AStarting position for the paginated list.
+limitIntegerNo1000Maximum number of pages to return in a single response.
+filter[domain_url]StringNoN/AJSON string specifying the URL text that must be included. See Text search JSON structure for formatting details.
+filter[domain_traffic_percent][from]FloatNoN/AMinimum percentage of the total domain traffic contributed by the page to be included in the results.
+filter[domain_traffic_percent][to]FloatNoN/AMaximum percentage of the total domain traffic contributed by the page to be included in the results.
+filter[keywords_count][from]IntegerNoN/AMinimum number of ranking keywords for the page to be included in the results.
+filter[keywords_count][to]IntegerNoN/AMaximum number of ranking keywords for the page to be included in the results.
+filter[traffic_sum][from]IntegerNoN/AMinimum estimated monthly traffic for the page to be included in the results.
+filter[traffic_sum][to]IntegerNoN/AMaximum estimated monthly traffic for the page to be included in the results.
+filter[price_sum][from]FloatNoN/AMinimum estimated traffic value (PPC equivalent) for the page to be included in the results.
+filter[price_sum][to]FloatNoN/AMaximum estimated traffic value (PPC equivalent) for the page to be included in the results.
+Request example
+Copy
+curl -X GET 'https://api.example.com/v1/domain/pages?target=seranking.com&scope=base_domain&source=us&type=organic' \
+-H 'Authorization: Token YOUR_API_KEY'
+Response parameters
+If the request is successful, the server returns a JSON array. Each object represents a single ranking page with aggregated metrics.
+ParameterTypeDescription
+urlStringFull page URL.
+titleStringPage title as shown in search results.
+keywords_countIntegerNumber of keywords the page ranks for.
+traffic_sumIntegerEstimated monthly traffic from ranking keywords.
+traffic_percentFloatPercentage of total domain traffic attributed to the page.
+price_sumFloatEstimated traffic value (PPC equivalent).
+intentsObjectDistribution of keyword intent types for the page:
+• I – informational
+• N – navigational
+• L – local
+• C – commercial
+• T – transactional
+intents object
+Each intent key contains aggregated keyword data:
+FieldTypeDescription
+countIntegerNumber of keywords matching the intent.
+trafficIntegerEstimated traffic from keywords with this intent.
+percentsFloatShare of this intent within the page’s total keyword set.
+Response example
+Copy
+[
+{
+"traffic_sum": 451267,
+"traffic_percent": 5.95,
+"price_sum": 403266.21,
+"keywords_count": 133271,
+"url": "https://www.booking.com/",
+"title": "Booking.com | Official site | The best hotels, flights, car rentals ...",
+"intents": {
+"I": { "count": 85939, "traffic": 440725, "percents": 43.46 },
+"N": { "count": 27623, "traffic": 374646, "percents": 13.97 },
+"L": { "count": 46758, "traffic": 10482, "percents": 23.64 },
+"C": { "count": 35928, "traffic": 7688, "percents": 18.17 },
+"T": { "count": 1503, "traffic": 80, "percents": 0.76 }
+}
+}
+]
+Get domain subdomains
+GET https://api.seranking.com/v1/domain/subdomains
+Cost: 100 credits per request
+Retrieves a list of subdomains for a specified domain, along with key organic or paid search performance metrics. This endpoint helps identify which subdomains contribute the most to visibility, traffic, and value within a regional database.
+Request parameters
+ParameterTypeRequiredDefaultDescription
+targetStringYesN/ARoot domain to analyze (e.g., example.com).
+scopeStringYesN/AScope of analysis:
+• base_domain – aggregates subdomains under the registrable domain.
+• domain – aggregates subdomains under the specified host.
+sourceStringYesN/ACountry code of the regional keyword database (e.g., us). For acceptable values, see Regional database codes.
+typeStringNoorganicSearch traffic type for which data is retrieved:
+• organic – organic search traffic
+• adv – paid search traffic
+order_fieldStringNokeywords_countField by which results are sorted:
+• keywords_count
+• traffic_sum
+• traffic_percent
+• price_sum
+order_typeStringNodescSorting order:
+• asc – ascending
+• desc – descending
+offsetIntegerNoN/AStarting position for the paginated list.
+limitIntegerNo1000Maximum number of subdomains to return in a single response (per page).
+filter[domain_url]StringNoN/AJSON string specifying the subdomain or host text that must be included. See Text search JSON structure for formatting details.
+filter[domain_traffic_percent][from]FloatNoN/AMinimum percentage of the total domain traffic contributed by the subdomain or URL to be included in the results.
+filter[domain_traffic_percent][to]FloatNoN/AMaximum percentage of the total domain traffic contributed by the subdomain or URL to be included in the results.
+filter[keywords_count][from]IntegerNoN/AMinimum number of ranking keywords for the subdomain or URL to be included in the results.
+filter[keywords_count][to]IntegerNoN/AMaximum number of ranking keywords for the subdomain or URL to be included in the results.
+filter[traffic_sum][from]IntegerNoN/AMinimum estimated monthly traffic for the subdomain or URL to be included in the results.
+filter[traffic_sum][to]IntegerNoN/AMaximum estimated monthly traffic for the subdomain or URL to be included in the results.
+filter[price_sum][from]FloatNoN/AMinimum estimated traffic value (PPC equivalent) for the subdomain or URL to be included in the results.
+filter[price_sum][to]FloatNoN/AMaximum estimated traffic value (PPC equivalent) for the subdomain or URL to be included in the results.
+Request example
+Copy
+curl -X GET 'https://api.seranking.com/v1/domain/subdomains?target=example.com&scope=base_domain&source=us&type=organic&order_field=keywords_count&order_type=desc&limit=1000' \
+-H 'Authorization: Token YOUR_API_KEY'
+Response parameters
+If the request is successful, the server returns a JSON array. Each object in this array represents a subdomain with aggregated metrics.
+ParameterTypeDescription
+urlStringSubdomain or root domain host (e.g., blog.example.com, example.com).
+keywords_countIntegerNumber of keywords the subdomain ranks for.
+traffic_sumIntegerEstimated monthly traffic from ranking keywords.
+traffic_percentFloatPercentage of total domain traffic attributed to the subdomain.
+price_sumFloatEstimated traffic value (PPC equivalent).
+Response example
+Copy
+[
+{
+"traffic_sum": 73909,
+"traffic_percent": 99.52,
+"price_sum": 149497.18,
+"keywords_count": 116181,
+"url": "example.com"
+},
+{
+"traffic_sum": 209,
+"traffic_percent": 0.28,
+"price_sum": 56.34,
+"keywords_count": 33,
+"url": "online.example.com"
+},
+{
+"traffic_sum": 146,
+"traffic_percent": 0.2,
+"price_sum": 175.67,
+"keywords_count": 1590,
+"url": "help.example.com"
+},
+{
+"traffic_sum": 0,
+"traffic_percent": 0,
+"price_sum": 0,
+"keywords_count": 1,
+"url": "academy.example.com"
+},
+{
+"traffic_sum": 0,
+"traffic_percent": 0,
+"price_sum": 0,
+"keywords_count": 4,
+"url": "visible.example.com"
+}
+]
+Get paid ads by keyword
+GET https://api.seranking.com/v1/domain/ads
+Cost: 100 credits per request
+Retrieves an overview of paid advertisements (PPC ads) run by various domains for a specific target keyword. The method shows which domains are advertising on that keyword, the extent of their advertising efforts over a period, and details of their ad creatives.
+Request parameters
+ParameterTypeRequiredDefaultDescription
+sourceStringYesN/ACountry code of the regional keyword database (e.g., us). For acceptable values, see Regional database codes.
+keywordStringYesN/ASpecific keyword for which to retrieve paid ad data. Accepts any valid keyword string (e.g., new york hotels).
+fromStringNoN/A (implies current/all available data)Starting year and month for the data retrieval period, formatted as YYYY-MM (e.g., 2017-01).
+toStringNoN/A (implies current/all available data)Ending year and month for the data retrieval period, formatted as YYYY-MM (e.g., 2023-12).
+pageIntegerNo1Page number for paginated results when retrieving domains advertising on the specified keyword (e.g., 1). Positive integer.
+limitIntegerNo100Maximum number of domains advertising on the specified keyword to return per page. Accepts values from 1 to 100 (e.g., 20).
+Request example
+Copy
+curl -X GET 'https://api.seranking.com/v1/domain/ads?source=us&keyword=nyc+hotels&from=2023-01&to=2023-12&limit=10' \
+-H 'Authorization: Token YOUR_API_KEY'
+Response parameters
+If successful, the server returns a JSON array. Each object in the array represents a unique domain that has run paid ads for the specified keyword and contains an overview of that domain’s advertising activity for that keyword.
+ParameterTypeDescription
+domainStringDomain name that ran ads for the target keyword (e.g., hotels.com).
+ads_countIntegerNumber of unique ad creatives or instances observed from this domain for the target keyword within the specified period (e.g., 19).
+keywords_countIntegerNumber of other keywords the domain was also seen advertising on, providing context on the advertiser’s breadth (e.g., 78972).
+traffic_sumIntegerEstimation of the total traffic this domain received from its ads for all its keywords, not just the target one (e.g., 3565364).
+price_sumFloatEstimated traffic value (PPC equivalent) from paid keywords.
+snippets.positionIntegerObserved position of the ad snippet on the SERP (e.g., 2).
+snippets.snippet_titleStringTitle text of the specific advertisement (e.g., Booking).
+snippets.snippet_descriptionStringDescriptive text body of the specific advertisement (e.g., Stay 10 nights & get 1 free!...).
+snippets.snippet_display_urlStringURL displayed in the specific advertisement (e.g., www.hotels.com/).
+snippets.snippet_countIntegerCount or frequency of this specific snippet being observed (e.g., 1).
+snippets.urlStringActual destination URL (landing page) of the specific advertisement (e.g., https://www.hotels.com/).
+Response example
+Copy
+[
+{
+"domain": "examplehotelchain.com",
+"ads_count": 5,
+"keywords_count": 250,
+"traffic_sum": 150000,
+"price_sum": 75000.5,
+"snippets": {
+"2023-05": {
+"position": 1,
+"snippet_title": "Luxury London Stays | Example Hotels‎",
+"snippet_description": "Experience unparalleled luxury. Book your 5-star hotel in London today. Exclusive offers available for a limited time.",
+"snippet_display_url": "www.examplehotelchain.com/london",
+"snippet_count": "1",
+"url": "https://www.examplehotelchain.com/offers/london-luxury"
+}
+}
+}
+]
+Get paid ads for domain
+GET https://api.seranking.com/v1/domain/ads
+Cost: 100 credits per request
+Retrieves an overview of keywords a specific target domain is bidding on in paid search auctions. It details the ads run by this domain for those keywords, including ad copy, landing pages, and observed performance metrics over a specified period.
+Request parameters
+ParameterTypeRequiredDefaultDescription
+sourceStringYesN/ACountry code of the regional keyword database (e.g., us). For acceptable values, see Regional database codes.
+domainStringYesN/ASpecific domain for which to retrieve its paid ad data (e.g., booking.com).
+fromStringNoN/A (implies current/all available data)Starting year and month for the data retrieval period, formatted as YYYY-MM (e.g., 2017-01).
+toStringNoN/A (implies current/all available data)Ending year and month for the data retrieval period, formatted as YYYY-MM (e.g., 2018-12).
+pageIntegerNo1Page number for paginated results when retrieving keywords the domain is advertising on (e.g., 1). Positive integer.
+limitIntegerNo100Maximum number of keywords the domain is advertising on to return per page. Accepts values from 1 to 100 (e.g., 100).
+Request example
+Copy
+curl -X GET 'https://api.seranking.com/v1/domain/ads?source=us&domain=booking.com&from=2023-01&to=2023-12&limit=10' \
+-H 'Authorization: Token YOUR_API_KEY'
+Response parameters
+If successful, the server returns a JSON array. Each object in the array represents a unique keyword that the specified domain has targeted with paid ads. It includes performance metrics for that keyword and details of the ad snippets run by the domain for that keyword.
+ParameterTypeDescription
+keywordStringKeyword phrase that the specified domain was advertising on (e.g., locanda vivaldi venice).
+ads_countIntegerNumber of unique ad creatives or instances observed from the specified domain for this keyword within the given period (e.g., 24).
+competitionFloatScore representing keyword competition. Float from 0.00 (low) to 1.00 (high).
+cpcFloatAverage CPC (Cost Per Click) for the keyword (e.g., 5.64).
+volumeIntegerAverage monthly search volume for this keyword (e.g., 100).
+snippets.positionIntegerObserved position of the ad snippet on the SERP (e.g., 2).
+snippets.snippet_titleStringTitle text of the specific advertisement (e.g., Locanda Vivaldi, Venice - Booking.com).
+snippets.snippet_descriptionStringDescriptive text body of the specific advertisement (e.g., Book at Locanda Vivaldi, Venice. No reservation costs...).
+snippets.snippet_display_urlStringURL displayed in the specific advertisement (e.g., www.booking.com/hotel/it/locanda-vivaldi.en.html?a).
+snippets.snippet_countIntegerCount or frequency of the specific snippet being observed (e.g., 1).
+snippets.snippet_numIntegerNumerical identifier for the specific ad snippet (e.g., 125).
+snippets.urlStringActual destination URL (landing page) of the specific advertisement (e.g., http://www.booking.com/hotel/it/locanda-vivaldi.en.html?aid=311088).
+Response example
+Copy
+[
+{
+"keyword": "locanda vivaldi venice",
+"ads_count": 24,
+"competition": "0.39",
+"cpc": "5.64",
+"volume": "100",
+"snippets": {
+"2017-01": {
+"position": "2",
+"snippet_title": "Locanda Vivaldi, Venice – Booking.com‎",
+"snippet_description": "Book at Locanda Vivaldi, Venice. No reservation costs. Great rates Amenities: Free Wifi, Non Smoking Rooms, 24 Hour Front Desk, Air Conditioning",
+"snippet_display_url": "www.booking.com/hotel/it/locanda-vivaldi.en.html?a",
+"snippet_count": "1",
+"snippet_num": 125,
+"url": "http://www.booking.com/hotel/it/locanda-vivaldi.en.html?aid=311088"
+}
+}
+}
+]
+Get domain competitors
+GET https://api.seranking.com/v1/domain/competitors
+Cost: 100 credits per request
+Retrieves a list of competitor domains for a specified target domain. The list can be tailored to show organic or paid competitors, and can optionally include or exclude major industry players. Furthermore, the level of detail in the response can be adjusted to include basic information or more extensive statistics for each competitor. The maximum number of competitors returned is 500.
+Request parameters
+ParameterTypeRequiredDefaultDescription
+sourceStringYesN/ACountry code of the regional keyword database (e.g., us). For acceptable values, see Regional database codes.
+domainStringYesN/APrimary domain for which to find competitors (e.g., seranking.com).
+typeStringNoorganicSearch traffic type for which data is retrieved:
+• organic – organic search traffic
+• adv – paid search traffic
+Request example
+Copy
+curl -X GET 'https://api.seranking.com/v1/domain/competitors?source=us&domain=yourtargetdomain.com&type=organic' \
+-H 'Authorization: Token YOUR_API_KEY'
+Response parameters
+If the request is successful, the server returns a JSON array. Each object in this array represents a competitor domain.
+ParameterTypeDescription
+domainStringDomain name of the competitor (e.g., tripadvisor.com).
+common_keywordsIntegerNumber of keywords for which both the analyzed domain and the competitor rank (e.g., 1076).
+domain_relevanceFloatA score indicating how closely the competitor’s keyword profile overlaps with the analyzed domain (e.g., 10.98). Higher values indicate greater relevance.
+total_keywordsIntegerNumber of keywords for which the competitor domain ranks within Google’s top 100 results in the specified database (e.g., 2084).
+missing_keywordsIntegerNumber of keywords for which the competitor ranks but the analyzed domain does not (e.g., 19511). Calculated as total_keywords - common_keywords.
+traffic_sumIntegerEstimated monthly traffic volume the competitor receives from its ranking keywords (e.g., 291). This is typically calculated based on expected CTR, search volume, and positions.
+price_sumFloatEstimated traffic value (PPC equivalent) of the competitor’s traffic.
+Response examples
+Copy
+[
+{
+"domain": "seoreviewtools.com",
+"common_keywords": 29926,
+"domain_relevance": 10.98,
+"total_keywords": 49437,
+"missing_keywords": 19511,
+"traffic_sum": 40619,
+"price_sum": 68705.61
+},
+{
+"domain": "keyword-tools.org",
+"common_keywords": 10110,
+"domain_relevance": 2.7,
+"total_keywords": 11183,
+"missing_keywords": 1073,
+"traffic_sum": 19544,
+"price_sum": 26071.28
+}
+]
+Analyze keyword overlap and gaps
+GET https://api.seranking.com/v1/domain/keywords/comparison
+Cost: 100 credits per request
+Analyzes and compares the keyword rankings of two websites using either domains or full URLs. It can find keywords they have in common or identify a ‘keyword gap’— keywords for which one site ranks, but the other does not. This is useful for competitive analysis and identifying ranking opportunities.
+Request parameters
+Note: Either domain or url must be specified.
+When one option is provided, the other is ignored.
+ParameterTypeRequiredDefaultDescription
+sourceStringYesN/ACountry code of the regional keyword database (e.g., us). For acceptable values, see Regional database codes.
+domainStringNoN/APrimary domain for the comparison (e.g., booking.com).
+urlStringNoN/APrimary full URL for the comparison (e.g., https://www.booking.com).
+compareStringYesN/ACompetitor domain or full URL to compare against the primary domain or URL. Must match the type of the primary parameter (domain or url).
+typeStringNoorganicSearch traffic type for which data is retrieved:
+• organic – organic search traffic
+• adv – paid search traffic
+pageIntegerNo1Page number for paginated results when retrieving keywords (e.g., 1). Positive integer.
+limitIntegerNo100Maximum number of keywords to return per page (e.g., 50). Accepts values from 1 to 1000.
+diffStringNo0Controls the comparison mode. Accepts values: 0, 1. See the section below for a detailed explanation.
+order_fieldStringNokeywordField by which results are sorted:
+• keyword
+• volume
+• cpc
+• competition
+• difficulty
+• position
+order_typeStringNoascSorting order:
+• asc – ascending
+• desc – descending
+colsStringNoAll relevant by defaultComma-separated list of response fields to include. If omitted, a default set of relevant columns is returned.
+filter[keyword]StringNoN/ACase-insensitive substring match on the keyword text (e.g., vegas).
+filter[multi_keyword_included]StringNoN/AJSON string specifying keyword text that must be included. See Text search JSON structure for formatting details.
+filter[multi_keyword_excluded]StringNoN/AJSON string specifying keyword text that must be excluded. See Text search JSON structure for formatting details.
+filter[volume][from]IntegerNoN/AMinimum monthly search volume for keywords to be included. Non-negative integer.
+filter[volume][to]IntegerNoN/AMaximum monthly search volume for keywords to be included. Non-negative integer.
+filter[cpc][from]FloatNoN/AMinimum CPC (Cost Per Click) value (e.g., 0.1). Non-negative float.
+filter[cpc][to]FloatNoN/AMaximum CPC (Cost Per Click) value (e.g., 2.5). Non-negative float.
+filter[competition][from]FloatNoN/AMinimum competition score. Float from 0.00 (low) to 1.00 (high).
+filter[competition][to]FloatNoN/AMaximum competition score. Float from 0.00 (low) to 1.00 (high).
+filter[difficulty][from]IntegerNoN/AMinimum keyword difficulty score (0–100).
+filter[difficulty][to]IntegerNoN/AMaximum keyword difficulty score (0–100).
+filter[intents]StringNoN/AComma-separated list of search intent codes. Returns keywords matching any of the specified intents (OR logic):
+• I – informational
+• N – navigational
+• T – transactional
+• C – commercial
+• L – local
+filter[serp_features]StringNoN/AComma-separated list of SERP feature codes. Returns keywords where any of the specified features is present on the SERP (OR logic), e.g., sitelinks,hotel_pack,people_also_ask. For acceptable values, see SERP features.
+Understanding the diff parameter
+The diff parameter controls the comparison mode by defining which set of keywords to return. For these examples, let A be the primary domain and B be the compare domain.
+diff=0: common keywords (A ∩ B)
+Returns keywords for which both the primary domain (A) and the compare domain (B) rank.
+diff=1: keyword gap (A – B)
+Returns keywords for which the primary domain (A) ranks, but the compare domain (B) does not.
+💡 Pro tip: How to find your competitor’s unique keywords (B – A)
+To find the keywords for which the compare domain ranks but your primary domain does not, simply swap the domains in your request. Set the competitor’s domain as the primary domain and your domain as the compare domain, while keeping diff=1.
+For example, to see keywords hotels.com has that booking.com lacks, request: ...&domain=hotels.com&compare=booking.com&diff=1...
+Request examples
+Comparing domain names
+Copy
+curl -X GET 'https://api.seranking.com/v1/domain/keywords/comparison?source=us&domain=booking.com&compare=hotels.com&type=organic&diff=0&order_field=volume&order_type=desc' \
+-H 'Authorization: Token YOUR_API_KEY'
+Comparing URLs
+Copy
+curl -X GET 'https://api.seranking.com/v1/domain/keywords/comparison?source=us&url=https://www.booking.com&compare=https://www.hotels.com&type=organic&diff=1&order_type=desc&order_field=volume' \
+-H 'Authorization: Token YOUR_API_KEY'
+Comparing URLs
+Copy
+curl -X GET 'https://api.seranking.com/v1/domain/keywords/comparison?source=us&domain=booking.com&compare=hotels.com&type=organic&diff=0&filter[intents]=T&filter[volume][from]=1000&cols=keyword,volume,intents,position,compare_position' \
+-H 'Authorization: Token YOUR_API_KEY'
+Response parameters
+If the request is successful, the server returns a JSON array. Each object in this array represents a keyword and includes metrics for both the primary domain and the compare domain (where applicable, depending on the diff mode).
+ParameterTypeDescription
+keywordStringAnalyzed keyword phrase (e.g., haworth hotel holland mi).
+volumeIntegerAverage monthly number of Google searches for the specified keyword (e.g., 10).
+cpcFloatCPC (Cost Per Click) for the keyword (e.g., 3.01).
+competitionFloatScore representing keyword competition. Float from 0.00 (low) to 1.00 (high).
+difficultyIntegerKeyword difficulty for this keyword (from 0 to 100).
+total_sitesIntegerNumber of websites appearing in the search results for the query (e.g., 94).
+positionIntegerRanking position of the primary domain for the keyword (e.g., 4). Can be null if diff=1 and the primary domain doesn’t rank.
+urlStringURL of the primary domain’s page that ranks for this keyword (e.g., https://www.booking.com/hotel/us/haworth-inn-center.html). Can be null if diff=1.
+priceFloatEstimated cost/value of the traffic the primary domain receives from this keyword (e.g., 2.44). Can be null if diff=1.
+trafficFloatEstimated traffic the primary domain receives from this keyword (e.g., 0.81). Can be null if diff=1.
+compare_positionIntegerRanking position of the compare domain for this keyword (e.g., 5).
+compare_urlStringURL of the compare domain’s page that ranks for this keyword (e.g., https://www.hotels.com/ho576868/haworth/).
+compare_priceFloatEstimated cost/value of the traffic the compare domain receives from this keyword (e.g., 1.84).
+compare_trafficFloatEstimated traffic the compare domain receives from this keyword (e.g., 0.61).
+intentsArraySearch intent codes associated with the keyword. Possible values:
+• I – informational
+• N – navigational
+• T – transactional
+• C – commercial
+• L – local
+serp_featuresArraySERP features present for this keyword on the SERP (e.g., sitelinks, hotel_pack, people_also_ask). For acceptable values, see SERP features.
+Response examples
+The examples below show how the output differs depending on the diff parameter value.
+Common keywords (diff=0)
+This request finds keywords that booking.com and hotels.com have in common.
+Copy
+curl -X GET 'https://api.seranking.com/v1/domain/keywords/comparison?source=us&domain=booking.com&compare=hotels.com&type=organic&diff=0&limit=1' \
+-H 'Authorization: Token YOUR_API_KEY'
+Copy
+[
+{
+"keyword": "403",
+"volume": 33100,
+"cpc": 0.11,
+"competition": 0.05,
+"difficulty": 96,
+"total_sites": 0,
+"intents": [
+"I"
+],
+"serp_features": [
+"video",
+"images",
+"knowledge_graph",
+"sge"
+],
+"compare_position": 21,
+"compare_url": "https://seranking.com/blog/401-vs-403-error-codes/",
+"compare_price": 3.52,
+"compare_traffic": 32,
+"position": 25,
+"url": "https://www.wix.com/encyclopedia/definition/error-403",
+"price": 7.81,
+"traffic": 71
+}
+]
+Keyword gap (diff=1)
+This request finds keywords for which the primary domain (booking.com) ranks, but the compare domain (hotels.com) does not.
+Copy
+curl -X GET 'https://api.seranking.com/v1/domain/keywords/comparison?source=us&domain=booking.com&compare=hotels.com&type=organic&diff=1&limit=1' \
+-H 'Authorization: Token YOUR_API_KEY'
+Copy
+[
+{
+"keyword": "403",
+"volume": 33100,
+"cpc": 0.11,
+"competition": 0.05,
+"difficulty": 96,
+"total_sites": 0,
+"intents": [
+"I"
+],
+"serp_features": [
+"video",
+"images",
+"knowledge_graph",
+"sge"
+],
+"compare_position": 21,
+"compare_url": "https://seranking.com/blog/401-vs-403-error-codes/",
+"compare_price": 3.52,
+"compare_traffic": 32,
+"position": 25,
+"url": "https://www.wix.com/encyclopedia/definition/error-403",
+"price": 7.81,
+"traffic": 71
+}
+]
+Text search JSON structure
+The text search structure allows for the creation of complex text searches by providing a JSON string in the format array<array<object>>.
+The first (outer) layer of the array corresponds to elements separated by logical OR.
+The second (inner) layer of the array corresponds to elements with logical AND.
+Each object within the inner array has the following structure:
+Copy
+{"type": "begins","value": "google"}
+Object properties
+NameDescription
+object.valueContains the text value to be searched.
+object.typeSpecifies the type of search to be performed.
+List of possible object.type variants
+NameDescription
+beginsSearched text should start with the specified value.
+containsSearched text should contain the specified value anywhere within the text.
+endsSearched text should end with the specified value.
+exactSearched text should exactly match the specified value.
+Example of a complex JSON filter structure
+To find keywords that contain “seo tools” AND (begin with “free” OR begin with “best”), the JSON for filter[multi_keyword_included] would be:
+Copy
+[
+[
+{"type": "contains","value": "seo tools"},
+{"type": "begins","value": "free"}
+],
+[
+{"type": "contains","value": "seo tools"},
+{"type": "begins","value": "best"}
+]
+]
+This example illustrates the OR (outer array) and AND (inner array) logic. The filter[url] parameter is simpler as it doesn’t use the OR logic and only accepts a single inner array, e.g., [[{"type":"contains","value":"/blog"}]].
+Learn how SE Ranking’s API can boost your SEO!
+Hi! Meet our product experts!
+One of them will walk you through the API and show you how to get the most out of it.
+Enjoy a tailored demo on integrating rich, structured SEO data into your stack.
+Pin down every tech detail live—auth, endpoints, rate limits, data formats.
+Compare usage tiers and pricing so you can unlock maximum data value.
+Request a free demo to see our tools and integrations in action
+By clicking this button, you agree to SE Ranking’s
+Terms of Service and Privacy Statement.
+column
+Core SEO Tools
+Rank Tracker
+Website Audit
+On-Page SEO Checker
+SERP Tracker
+Backlink Checker
+Keyword Grouper
+Keyword Tool
+Website Competitor Analysis Tool
+AI Overviews Tracker
+All features
+Performance & Reporting Tools
+Webpage Monitor
+SEO Report Generator
+SEO Dashboard
+column
+Add-ons
+Local Marketing Software
+Content Marketing Tool
+Agency Pack
+White Label
+Additional Services
+SEO API
+Free SEO tools
+SEO Task Manager
+Support & Partnership
+Contact
+Help
+Affiliate
+Educational Partnership Program
+column
+Company & Resources
+SEO Blog
+About
+Stand with Ukraine
+Careers
+What’s New
+Testimonials
+Webinars
+Academy
+Competitors
+FAQ
+Legal & Technical
+Privacy Statement
+Cookie Policy
+Legal Information
+Open Source Attributions
+Download
+enEnglish
+enEnglish
+deDeutsch
+frFrançais
+esEspañol
+nlNederlands
+itItaliano
+ptPortuguês
+uaУкраїнська
+ruРусский
+あ日本語
+© 2013 - 2026 SER Acquisition Inc. All Rights Reserved

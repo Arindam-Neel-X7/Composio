@@ -1,0 +1,2 @@
+{"event": "fetch_attempt", "app_id": 2, "attempt": 1, "source_url": "https://synthetic.example/docs", "attempted_on": "2026-11-23", "status": "other_error", "http_status": null, "resolved_url": null, "error": "Capture failed: FileNotFoundError", "content_sha256": null}
+{"event": "validation", "structure_and_grounding": "passed", "backend": "Python jsonschema Draft202012Validator", "factual_truth": "requires independent review", "synthetic": true, "records": 1}

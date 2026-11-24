@@ -1,0 +1,12 @@
+{
+  "81": "Stripe payments API and callable MCP; test/sandbox versus live payments; account and country prerequisites apply",
+  "82": "Plaid developer API; Sandbox versus Production including Trial; product and institution entitlements vary",
+  "83": "Binance global Spot API; public market data versus signed account/trading; Spot Testnet distinct from production and regional eligibility unresolved",
+  "84": "Unresolved Paygent Connect; original hint paygent (NMI-powered); no vendor substitution",
+  "85": "iPayX Protocol on ipayx.ai original domain hint; FX audit API and MCP; public demo versus API credentials and production",
+  "86": "QuickBooks Online Accounting API; developer sandbox versus production app and company; not Desktop",
+  "87": "Xero Accounting API commercial apps and official MCP; demo organisation versus real organisations; Custom Connections separately scoped",
+  "88": "Brex developer APIs; own-account user token versus developer-partner OAuth/staging; production account required for customer path",
+  "89": "Ramp Developer API and callable MCP; sandbox versus production business; own-account versus partner integrations",
+  "90": "PitchBook research/data API and PitchBook Data MCP; commercial integration scope, distinct from Lens portfolio monitoring"
+}

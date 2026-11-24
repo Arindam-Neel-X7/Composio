@@ -1,0 +1,136 @@
+Podio API Documentation - Podio API Documentation
+Podio
+Home
+Pricing
+What people say
+Blog
+About
+App Market
+Log in
+Getting started
+Get an API key
+Authentication
+API Reference
+Actions
+Alerts
+App market
+Applications
+Batch
+Calendar
+Comments
+Contacts
+Conversations
+Devices
+Email
+Embeds
+Files
+Flows
+Forms
+Friends
+Grants
+Hooks
+Importer
+Integrations
+Items
+Layout
+Linked Accounts
+Notifications
+OAuth authorization
+Organizations
+Questions
+Ratings
+Recurrence
+Reference
+Reminders
+Search
+Space members
+Spaces
+Status
+Stream
+Subscriptions
+Tags
+Tasks
+Users
+Views
+Voting
+Widgets
+Tutorials
+Client Libraries
+Developer Forums
+Partner Extensions
+Terms of Use
+Podio API Documentation
+Areas
+Our API is split up into different areas, that each contains a subset of methods grouped by functionality. You could call each area its own API, but we like to call them areas, because it's just a simple grouping.
+Core Areas
+ApplicationsThis area is used to manage application definitions.
+CommentsComments are made by users on different objects.
+ContactsEach user has a profile attached, that holds all the personal details of the user.
+FilesThis area contains all the files that can be uploaded to Podio by end users.
+HooksHooks are webhooks that can call external sites when certain actions occur in Podio.
+ItemsItems are entries in an app.
+OAuth authorizationThis API uses OAuth 2.
+StatusStatus messages are small texts that the users wishes to share with the other users in a space.
+TasksTasks are used to track what work has to be done.
+Other Areas
+ActionsActions are activities performed by users that does not pertain to one of the core objects in Podio, items, tasks and statuses.
+AlertsAn alert is a ping from on user to one or more other users.
+App marketApps and packs can be shared to the app market so they can be installed and used by anyone.
+BatchThis area contains all the batch operations that the user have executed.
+CalendarThe calendar is used to get the calendar for a user.
+ConversationsConversations are private messages exchanged between &gt;=2 users.
+DevicesMethods needed for supporting external devices like mobile phones and desktop clients.
+EmailThis area manages emails sent to and received from a user.
+EmbedsEmbeds are links shared by users in statuses, conversations and comments.
+FlowsCauses:item.
+FormsForms can be used to enable direct submission into apps from websites.
+FriendsAPI for accessing and modifying one's friends in Podio: users that are (or have been in the past) in the same workspace or have interacted directly inside Podio (e.
+GrantsGrants are single access permissions for specific objects, f.
+ImporterUsed for importing files into applications, for example, xlsx and xls files.
+IntegrationsThis API controls the integration supported by Podio "out-of-the-box".
+LayoutManage application's layout (badge, relationship) definitions.
+Linked AccountsLinked Accounts represent connections to 3rd-party APIs like Google, Facebook, etc.
+NotificationsA notification is an information about an event that occured in Podio.
+OrganizationsThis area holds organizations.
+QuestionsThe question area makes it possible to attach questions to other objects in Podio.
+RatingsMany objects can be rated including items and status messages.
+RecurrenceHandles recurrence for different objects, currently tasks.
+ReferenceAPI for getting generic information about objects.
+RemindersReminders are used to remind you about tasks with a due date.
+SearchThis API makes it possible to search across Podio.
+Space membersManages membership of spaces.
+SpacesA space is a work area.
+StreamThe stream API will supply the different streams.
+SubscriptionsSubscriptions allows the user to be notified when an object is created, updated, delete, comments added to it or rated.
+TagsTags are words or short sentences that are used as metadata for objects.
+UsersThis area holds all the users which just includes basic operations.
+ViewsViews can be used to limit the items returned when viewing an app.
+VotingUser-defined voting on an item.
+WidgetsWidgets are small components that can be installed on an organization, space, app or user.
+Developers
+Getting started
+Documentation
+Tutorials
+Client Libraries
+About Podio
+About
+Join the Team
+Partners
+In the News
+Terms & Conditions
+Privacy Policy
+Legal Note
+Cookie Preferences
+Contact
+Contact
+Help & Support
+Join a demo
+Media Resources
+Follow
+Blog
+Follow @Podio
+Go Mobile
+Download the Podio iPhone App
+Access your activity streams, apps, tasks, inbox and contacts with the Podio mobile app. Get work done anywhere.
+iPhone
+Android

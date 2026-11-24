@@ -1,0 +1,112 @@
+{
+  "sources": [
+    {
+      "app_id": 62,
+      "url": "https://vercel.com/docs/rest-api/reference/welcome",
+      "kind": "primary_docs",
+      "scope": "Vercel REST API and official Vercel MCP server; hosted account/team resources, Hobby versus paid restrictions; testing and production assessed separately",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor-controlled documentation/product domain or vendor-owned GitHub repository; content inspected after capture",
+      "attribution_by": "task13-codex-research-worker"
+    },
+    {
+      "app_id": 62,
+      "url": "https://vercel.com/docs/rest-api/reference/authentication",
+      "kind": "primary_docs",
+      "scope": "Vercel REST API and official Vercel MCP server; hosted account/team resources, Hobby versus paid restrictions; testing and production assessed separately",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor-controlled documentation/product domain or vendor-owned GitHub repository; content inspected after capture",
+      "attribution_by": "task13-codex-research-worker"
+    },
+    {
+      "app_id": 63,
+      "url": "https://www.netlify.com/pricing/",
+      "kind": "official_product_page",
+      "scope": "Netlify hosted REST API v1 and official Netlify MCP server; personal/team sites and deployments; testing and production assessed separately",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor-controlled documentation/product domain or vendor-owned GitHub repository; content inspected after capture",
+      "attribution_by": "task13-codex-research-worker"
+    },
+    {
+      "app_id": 69,
+      "url": "https://docs.datadoghq.com/account_management/api-app-keys/?_task13=identity",
+      "kind": "primary_docs",
+      "scope": "Datadog hosted REST APIs v1/v2 and official Datadog MCP server; site-specific endpoints, API/application keys and OAuth; testing versus production assessed separately",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor-controlled documentation/product domain or vendor-owned GitHub repository; content inspected after capture",
+      "attribution_by": "task13-codex-research-worker"
+    },
+    {
+      "app_id": 69,
+      "url": "https://docs.datadoghq.com/mcp_server/index.md",
+      "kind": "primary_docs",
+      "scope": "Datadog hosted REST APIs v1/v2 and official Datadog MCP server; site-specific endpoints, API/application keys and OAuth; testing versus production assessed separately",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor-controlled documentation/product domain or vendor-owned GitHub repository; content inspected after capture",
+      "attribution_by": "task13-codex-research-worker"
+    },
+    {
+      "app_id": 69,
+      "url": "https://docs.datadoghq.com/mcp_server/setup/index.md",
+      "kind": "primary_docs",
+      "scope": "Datadog hosted REST APIs v1/v2 and official Datadog MCP server; site-specific endpoints, API/application keys and OAuth; testing versus production assessed separately",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor-controlled documentation/product domain or vendor-owned GitHub repository; content inspected after capture",
+      "attribution_by": "task13-codex-research-worker"
+    },
+    {
+      "app_id": 69,
+      "url": "https://raw.githubusercontent.com/DataDog/documentation/master/content/en/account_management/api-app-keys.md",
+      "kind": "official_repository",
+      "scope": "Datadog hosted REST APIs v1/v2 and official Datadog MCP server; site-specific endpoints, API/application keys and OAuth; testing versus production assessed separately",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor-controlled documentation/product domain or vendor-owned GitHub repository; content inspected after capture",
+      "attribution_by": "task13-codex-research-worker"
+    },
+    {
+      "app_id": 69,
+      "url": "https://raw.githubusercontent.com/DataDog/documentation/master/content/en/mcp_server/_index.md",
+      "kind": "official_repository",
+      "scope": "Datadog hosted REST APIs v1/v2 and official Datadog MCP server; site-specific endpoints, API/application keys and OAuth; testing versus production assessed separately",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor-controlled documentation/product domain or vendor-owned GitHub repository; content inspected after capture",
+      "attribution_by": "task13-codex-research-worker"
+    },
+    {
+      "app_id": 69,
+      "url": "https://raw.githubusercontent.com/DataDog/documentation/master/content/en/mcp_server/setup.md",
+      "kind": "official_repository",
+      "scope": "Datadog hosted REST APIs v1/v2 and official Datadog MCP server; site-specific endpoints, API/application keys and OAuth; testing versus production assessed separately",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor-controlled documentation/product domain or vendor-owned GitHub repository; content inspected after capture",
+      "attribution_by": "task13-codex-research-worker"
+    }
+  ]
+}

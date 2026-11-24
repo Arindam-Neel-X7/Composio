@@ -1,0 +1,290 @@
+Get started with monday MCP – Support
+Products
+monday work management
+Get Started
+Manage your projects
+Gantt & dependencies
+Manage your portfolio
+monday CRM
+Get Started
+Lead management
+Communication
+Integrations & AI
+monday dev
+Get Started
+Sprint management
+Integrations & apps
+monday service
+Get started
+Customer portal
+Managing tickets
+Connect channels
+WorkCanvas
+Get started
+Build your WorkCanvas
+Administration
+Integration
+WorkForms
+Get started
+Customization
+Settings
+Analytics
+Platform
+Getting started
+Create your first
+board
+Board elements
+Hierarchy & organization
+Communicate & collaborate
+Reporting
+Dashboards
+Board views
+Widgets
+Connect & automate
+Automations
+Integrations
+AI
+Apps marketplace
+Plans & billing
+Pricing
+Billing
+Profile & administration
+Profile customization
+Administration
+User authentication
+Roles & permissions
+Data, infra & security
+Privacy & security
+Data storage
+Performance
+Additional services
+Resources
+Academy
+Interactive courses and webinars that will make you an expert
+Community
+Learn with fellow monday.com enthusiasts
+Video Tutorial
+Short videos that show you how it’s done
+What’s new
+Latest feature releases, improvements and updates
+Developer documentation
+Technical documentation that gives you the control
+Expert
+Hire a monday.com expert to optimize your workflow
+Get started
+with ready-made templates
+Learn more
+Support
+Contact sales
+Get Started
+Get Started
+Products
+monday work management
+monday CRM
+monday dev
+monday service
+WorkCanvas
+WorkForms
+Platform
+Getting started
+Reporting
+Connect & automate
+Plans & billing
+Profile & administration
+Data, infra & security
+Resources
+Academy
+Community
+Video Tutorial
+What’s new
+Developer documentation
+Expert
+Support
+How can we help you?
+Support
+Connect & automate
+AI
+Get started with monday MCP
+Connect & automate
+2 min read
+monday MCP is the hosted server that gives AI tools secure access to your monday.com workspace. It connects your account directly to AI assistants like Claude, Cursor, and Copilot Studio through the Model Context Protocol (MCP), an open standard for AI integrations.
+Prerequisites
+An active monday.com account with appropriate permissions
+MCP is preinstalled on all monday.com accounts.
+If you can't connect, ask your admin to check Admin → Permissions → AI Connectors. See Managing AI Connectors & MCP Access for more information.
+Supported AI client
+OAuth consent for monday MCP when prompted by your client
+What can you do with monday MCP?
+Project reporting – generate sprint summaries, team performance reports, and deadline tracking from your boards (including monday dev sprints)
+Smart task management – convert meeting notes into structured items, assign tasks, and update statuses through natural language
+Cross-team visibility – ask for rollups like “What’s blocking the launch?” across Product, Marketing, and RevOps boards
+Operational workflows – create and triage incidents, support requests, and ops checklists (with clear owners, priority, and due dates)
+CRM workflows – create leads and deals, update pipeline stages, and log next steps from call notes
+Docs + knowledge workflows – create specs, SOPs, and retros as monday docs (in a workspace or attached to an item)
+Dashboards & insights – build dashboards and widgets, and answer questions using board insights (such as status distribution, workload, and throughput)
+Workspace discovery – quickly find the right board, doc, form, or folder, even in large workspaces
+Key use cases
+Quick data retrieval – ask for board status, find items, or summarize what changed this week
+Task creation and cleanup – turn a meeting transcript into tasks with owners, priority, and due dates
+Updating existing work – update status, people, or date fields when plans change, with human review before applying changes
+Cross-board analysis – ask questions like “What’s overdue across all launch boards?” or “Which team has the most blockers?”
+Executive reporting – create weekly rollups such as shipped vs. planned, scope changes, and risk summaries
+Support and Service operations – intake requests, link relevant context, and keep stakeholders updated through item updates
+Documentation workflows – generate a spec in monday docs and attach it to the relevant initiative item
+Automation-style chains – run multi-step flows like “Create a bug, assign it, set severity, and notify the team in an update”
+Note: Other tools that support the Model Context Protocol should also be compatible, though individual setup steps may vary
+Available tools
+Please check out the Available tools article for a full list.
+FAQs
+Pricing and availability
+Is MCP included in my monday.com plan?
+Yes. MCP is available on all monday.com plans at no additional cost.
+Are there usage limits?
+Standard API limits apply.
+Security and privacy
+What permissions does MCP have?
+Each user individually authorizes MCP via OAuth. MCP only has access to the data that you, as an individual user, can access in monday.com. The specific permissions depend on the OAuth scopes you grant during setup.
+Is my data secure?
+Yes. MCP uses industry-standard OAuth for authentication and TLS encryption for all data transfers. MCP respects your monday.com permissions, meaning you can only access or modify data you’re authorized to change. Because MCP can perform actions on your behalf, we recommend reviewing AI-suggested changes before confirming actions that modify your workspace.
+Who can see my data?
+Only you and your AI assistant can see the data exchanged through MCP. monday.com does not review or access the content of your conversations.
+If you have any questions, please reach out to our team right here. We’re available 24/7 and happy to help.
+Last modified on October 12, 2026 14:26
+Share this article
+Related content
+Related articles
+Managing AI Connectors and MCP Access
+Connect monday MCP with Microsoft Copilot Studio
+Ready to use monday MCP prompts
+Get started with monday AI
+Connect monday MCP with Microsoft Copilot Studio
+Still have questions?
+We can help.
+Chat support
+Get in touch with our support team through our chat for any questions, concerns, or inquiries.
+Community forum
+Learn, share ideas and connect with other monday.com customers.
+Expert help
+Hire a monday.com expert to optimize your workflows.
+Is this article helpful?
+Help us improve our articles.
+Yes
+No
+On this page
+Share this article
+Pricing
+Contact us
+Templates
+SMB
+Enterprise
+Nonprofits
+App marketplace
+24/7 support
+Features
+Docs
+Integrations
+Automations
+Files
+Dashboards
+Kanban
+Gantt
+monday products
+monday work management
+monday CRM
+monday dev
+monday service
+More by monday.com
+WorkCanvas
+WorkForms
+Use cases
+Marketing
+Project management
+Sales
+Developers
+HR
+IT
+Operations
+Construction
+Company
+About us
+Careers - We're hiring!
+Press
+Customer stories
+Become a partner
+Sustainability & ESG
+Affiliates
+Emergency Response
+Investor relations
+Resources
+Help Center
+Community
+Blog
+What's new
+Academy
+Global events
+monday spaces
+Startup for startup
+App development
+Find a partner
+Hire an expert
+Compare
+English
+Deutsch
+Español
+Français
+日本語
+Português
+Security
+Terms and privacy
+Privacy policy
+Your privacy choices
+Status
+All Rights Reserved © monday.com
+Accessibility statement
+English
+Deutsch
+Español
+Français
+日本語
+Português
+Products
+Work Management
+Sales CRM
+Dev
+monday service
+Features
+Dashboards
+Integrations
+Automations
+Gantt
+Kanban
+Docs
+Files
+Forms
+Company
+About us
+Careers
+Investor relations
+Become a partner
+Resources
+Blog
+What's new
+monday spaces
+Teams
+Project management
+Marketing
+Sales
+Product development
+Operations
+IT
+HR
+Company size
+Enterprise
+Small business
+Nonprofits
+Pricing
+Contact sales
+Contact us
+All Rights Reserved © monday.com
+Accessibility statement
+Terms and privacy

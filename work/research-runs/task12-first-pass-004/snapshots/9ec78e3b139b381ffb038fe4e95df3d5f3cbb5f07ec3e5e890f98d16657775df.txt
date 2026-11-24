@@ -1,0 +1,51 @@
+# Tool Categories
+Some MCP clients limit the amount of tools that an MCP server is allowed to advertise. Ahrefs' MCP server goes above this limit for many of them.
+We provide a way to make sure that the MCP client doesn't remove access to tools that you need.
+When connecting to the MCP server, you can use a URL query parameter `tools` to choose which groups you'd like to have access to. Separate multiple groups with a comma:
+```
+https://api.ahrefs.com/mcp/mcp?tools=site-explorer-overview,brand-radar-entities
+```
+If you omit the `tools` parameter, **all** tools are advertised.
+> **INFO**
+> Documentation and rendering helper tools are always included, regardless of which groups you select.
+## Available tool groups
+| Group | Description |
+| --- | --- |
+| `site-explorer-overview` | Core Site Explorer metrics — domain rating, backlink and outlink stats, organic/paid overview, metrics history. |
+| `site-explorer-reports` | Detailed Site Explorer reports — backlinks, referring domains, anchors, organic keywords and competitors, top pages, linked domains. |
+| `keywords-explorer` | Keyword research — overview, volume by country and history, matching/related terms, search suggestions. |
+| `serp-overview` | SERP overview for a keyword. |
+| `rank-tracker` | Rank Tracker — overview and competitor reports. |
+| `site-audit` | Site Audit — projects, issues, page explorer, page content. |
+| `brand-radar-simple` | Brand Radar reports (domain/URL level). |
+| `brand-radar-entities` | Brand Radar reports (entity level). |
+| `web-analytics-overview` | Web Analytics stats and charts. |
+| `web-analytics-sources` | Web Analytics traffic sources, source channels, and referrers. |
+| `web-analytics-geo` | Web Analytics geographic breakdowns — continents, countries, cities. |
+| `web-analytics-user-agents` | Web Analytics device, browser, operating system, and language breakdowns. |
+| `web-analytics-pages` | Web Analytics top pages, entry pages, and exit pages. |
+| `gsc` | Google Search Console — keywords, pages, positions, and performance history. |
+| `social-media` | Social media — channels, posts, authors, and their metrics. |
+| `content-helper` | Content Helper — the core topics the pages ranking for a keyword cover. |
+| `batch-analysis` | Batch analysis of multiple targets in a single request. |
+| `management` | Account management — projects, keyword lists, locations, and Brand Radar configuration. |
+| `public` | Public/free endpoints — crawler IP ranges and free domain rating. |
+| `subscription-info` | Your subscription limits and usage. |
+## Essentials
+If your client caps how many tools it accepts, use `tools=essentials` for a curated set of the most commonly used tools across all groups:
+```
+https://api.ahrefs.com/mcp/mcp?tools=essentials
+```
+> **INFO**
+> `essentials` is a standalone value, it can't be combined with other groups. `tools=essentials,site-audit` is rejected; request either `essentials` on its own, or a comma-separated list of the groups above.
+> **INFO**
+> If you request a group name that doesn't exist, the connection is rejected with an `invalid tool category` error. Double-check the spelling against the table above.
+## Search and exec
+Add `tools=search-exec` to the MCP URL to advertise `search`, `doc`, `exec`, and the three rendering tools:
+```
+https://api.ahrefs.com/mcp/mcp?tools=search-exec
+```
+In this mode:
+- `search` finds operations from a few keywords describing the task, such as `backlinks referring domains`. Matching covers names, descriptions and parameter names. Every word is optional, words in the operation name count most, and an exact operation name ranks first. Omit `query` to browse the catalog, and set `category` to one of the groups above (or `render`) to narrow it. Each result carries `name`, `category`, `description`, `read_only` and `destructive`, without schemas.
+- `doc` returns the input and output schemas for a selected operation.
+- `exec` runs an operation with its exact name and JSON arguments.

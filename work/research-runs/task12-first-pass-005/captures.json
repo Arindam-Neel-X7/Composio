@@ -1,0 +1,2776 @@
+[
+  {
+    "spec": {
+      "app_id": 51,
+      "url": "https://docs.dataforseo.com/v3/",
+      "kind": "primary_docs",
+      "scope": "DataForSEO v3 REST APIs and official MCP server, HTTP Basic API login/password auth, sandbox and paid pay-as-you-go access",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor/project-controlled documentation or product page selected by researcher",
+      "attribution_by": "task12-research-agent-claude"
+    },
+    "captured_on": "2026-11-23",
+    "capture_method": "http_content",
+    "snapshot_ref": "snapshots/d34cd36b07e08389c8f41321a6bd84c5d3bc214efa598d52600e9619bba88dd6.txt",
+    "content_sha256": "d34cd36b07e08389c8f41321a6bd84c5d3bc214efa598d52600e9619bba88dd6",
+    "line_count": 874
+  },
+  {
+    "spec": {
+      "app_id": 51,
+      "url": "https://docs.dataforseo.com/v3/auth/",
+      "kind": "primary_docs",
+      "scope": "DataForSEO v3 REST APIs and official MCP server, HTTP Basic API login/password auth, sandbox and paid pay-as-you-go access",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor/project-controlled documentation or product page selected by researcher",
+      "attribution_by": "task12-research-agent-claude"
+    },
+    "captured_on": "2026-11-23",
+    "capture_method": "http_content",
+    "snapshot_ref": "snapshots/8a8765906a3b942662b14cd66f87f6c30cd6d3f1e46dbd9ca47dd9a04895849b.txt",
+    "content_sha256": "8a8765906a3b942662b14cd66f87f6c30cd6d3f1e46dbd9ca47dd9a04895849b",
+    "line_count": 899
+  },
+  {
+    "spec": {
+      "app_id": 51,
+      "url": "https://docs.dataforseo.com/v3/appendix/sandbox/",
+      "kind": "primary_docs",
+      "scope": "DataForSEO v3 REST APIs and official MCP server, HTTP Basic API login/password auth, sandbox and paid pay-as-you-go access",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor/project-controlled documentation or product page selected by researcher",
+      "attribution_by": "task12-research-agent-claude"
+    },
+    "captured_on": "2026-11-23",
+    "capture_method": "http_content",
+    "snapshot_ref": "snapshots/748fd1ca09d413d78e7d9a607404d66850cc032ddd7ddaf41472378926b3f6c9.txt",
+    "content_sha256": "748fd1ca09d413d78e7d9a607404d66850cc032ddd7ddaf41472378926b3f6c9",
+    "line_count": 882
+  },
+  {
+    "spec": {
+      "app_id": 51,
+      "url": "https://docs.dataforseo.com/v3/serp/overview/",
+      "kind": "primary_docs",
+      "scope": "DataForSEO v3 REST APIs and official MCP server, HTTP Basic API login/password auth, sandbox and paid pay-as-you-go access",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor/project-controlled documentation or product page selected by researcher",
+      "attribution_by": "task12-research-agent-claude"
+    },
+    "captured_on": "2026-11-23",
+    "capture_method": "http_content",
+    "snapshot_ref": "snapshots/a7ec3f3951573164389f092b467e6dedab7f52a74e934122527dc57e7f325f50.txt",
+    "content_sha256": "a7ec3f3951573164389f092b467e6dedab7f52a74e934122527dc57e7f325f50",
+    "line_count": 832
+  },
+  {
+    "spec": {
+      "app_id": 51,
+      "url": "https://docs.dataforseo.com/v3/keywords_data/overview/",
+      "kind": "primary_docs",
+      "scope": "DataForSEO v3 REST APIs and official MCP server, HTTP Basic API login/password auth, sandbox and paid pay-as-you-go access",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor/project-controlled documentation or product page selected by researcher",
+      "attribution_by": "task12-research-agent-claude"
+    },
+    "captured_on": "2026-11-23",
+    "capture_method": "http_content",
+    "snapshot_ref": "snapshots/323c93803f82d44488830f605c2893212d4d5486cf4d1db13a72f6f44ebf0796.txt",
+    "content_sha256": "323c93803f82d44488830f605c2893212d4d5486cf4d1db13a72f6f44ebf0796",
+    "line_count": 826
+  },
+  {
+    "spec": {
+      "app_id": 51,
+      "url": "https://docs.dataforseo.com/v3/backlinks/overview/",
+      "kind": "primary_docs",
+      "scope": "DataForSEO v3 REST APIs and official MCP server, HTTP Basic API login/password auth, sandbox and paid pay-as-you-go access",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor/project-controlled documentation or product page selected by researcher",
+      "attribution_by": "task12-research-agent-claude"
+    },
+    "captured_on": "2026-11-23",
+    "capture_method": "http_content",
+    "snapshot_ref": "snapshots/9b317c3c7c0d80d21aca9e5f07bfe508c67371967b1c7080afc7e12290ec91de.txt",
+    "content_sha256": "9b317c3c7c0d80d21aca9e5f07bfe508c67371967b1c7080afc7e12290ec91de",
+    "line_count": 829
+  },
+  {
+    "spec": {
+      "app_id": 51,
+      "url": "https://docs.dataforseo.com/v3/on_page/overview/",
+      "kind": "primary_docs",
+      "scope": "DataForSEO v3 REST APIs and official MCP server, HTTP Basic API login/password auth, sandbox and paid pay-as-you-go access",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor/project-controlled documentation or product page selected by researcher",
+      "attribution_by": "task12-research-agent-claude"
+    },
+    "captured_on": "2026-11-23",
+    "capture_method": "http_content",
+    "snapshot_ref": "snapshots/66195ff0fc15d2849ff6d883a9772a0c10cd2bdf550fea3ff3f22f3a45593cad.txt",
+    "content_sha256": "66195ff0fc15d2849ff6d883a9772a0c10cd2bdf550fea3ff3f22f3a45593cad",
+    "line_count": 857
+  },
+  {
+    "spec": {
+      "app_id": 51,
+      "url": "https://docs.dataforseo.com/v3/dataforseo_labs/overview/",
+      "kind": "primary_docs",
+      "scope": "DataForSEO v3 REST APIs and official MCP server, HTTP Basic API login/password auth, sandbox and paid pay-as-you-go access",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor/project-controlled documentation or product page selected by researcher",
+      "attribution_by": "task12-research-agent-claude"
+    },
+    "captured_on": "2026-11-23",
+    "capture_method": "http_content",
+    "snapshot_ref": "snapshots/8cc23a5046a76c78c2f5527ec8a0bfd928dfd0bc5a5f307a946db5ab7015e6c1.txt",
+    "content_sha256": "8cc23a5046a76c78c2f5527ec8a0bfd928dfd0bc5a5f307a946db5ab7015e6c1",
+    "line_count": 811
+  },
+  {
+    "spec": {
+      "app_id": 51,
+      "url": "https://docs.dataforseo.com/v3/business_data/overview/",
+      "kind": "primary_docs",
+      "scope": "DataForSEO v3 REST APIs and official MCP server, HTTP Basic API login/password auth, sandbox and paid pay-as-you-go access",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor/project-controlled documentation or product page selected by researcher",
+      "attribution_by": "task12-research-agent-claude"
+    },
+    "captured_on": "2026-11-23",
+    "capture_method": "http_content",
+    "snapshot_ref": "snapshots/d6b6189ebcd34159af05b414eae299c6bfcb77e0d56d18cdcd70b5c317e046a7.txt",
+    "content_sha256": "d6b6189ebcd34159af05b414eae299c6bfcb77e0d56d18cdcd70b5c317e046a7",
+    "line_count": 814
+  },
+  {
+    "spec": {
+      "app_id": 51,
+      "url": "https://docs.dataforseo.com/v3/domain_analytics/overview/",
+      "kind": "primary_docs",
+      "scope": "DataForSEO v3 REST APIs and official MCP server, HTTP Basic API login/password auth, sandbox and paid pay-as-you-go access",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor/project-controlled documentation or product page selected by researcher",
+      "attribution_by": "task12-research-agent-claude"
+    },
+    "captured_on": "2026-11-23",
+    "capture_method": "http_content",
+    "snapshot_ref": "snapshots/4bc944909ccecabbb4db146130b9ae15f3b2bb48b5e8028eba8152d736325e6d.txt",
+    "content_sha256": "4bc944909ccecabbb4db146130b9ae15f3b2bb48b5e8028eba8152d736325e6d",
+    "line_count": 811
+  },
+  {
+    "spec": {
+      "app_id": 51,
+      "url": "https://docs.dataforseo.com/v3/app_data/overview/",
+      "kind": "primary_docs",
+      "scope": "DataForSEO v3 REST APIs and official MCP server, HTTP Basic API login/password auth, sandbox and paid pay-as-you-go access",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor/project-controlled documentation or product page selected by researcher",
+      "attribution_by": "task12-research-agent-claude"
+    },
+    "captured_on": "2026-11-23",
+    "capture_method": "http_content",
+    "snapshot_ref": "snapshots/f4f0cd669076e62f4ff1e12347f0573b9b61c365d29a251e127a8cbd707184cb.txt",
+    "content_sha256": "f4f0cd669076e62f4ff1e12347f0573b9b61c365d29a251e127a8cbd707184cb",
+    "line_count": 823
+  },
+  {
+    "spec": {
+      "app_id": 51,
+      "url": "https://docs.dataforseo.com/v3/merchant/overview/",
+      "kind": "primary_docs",
+      "scope": "DataForSEO v3 REST APIs and official MCP server, HTTP Basic API login/password auth, sandbox and paid pay-as-you-go access",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor/project-controlled documentation or product page selected by researcher",
+      "attribution_by": "task12-research-agent-claude"
+    },
+    "captured_on": "2026-11-23",
+    "capture_method": "http_content",
+    "snapshot_ref": "snapshots/da5012ffe156eb7e7d1a6a92c83f54af2161f42af819210478a26a9f3e663d6f.txt",
+    "content_sha256": "da5012ffe156eb7e7d1a6a92c83f54af2161f42af819210478a26a9f3e663d6f",
+    "line_count": 822
+  },
+  {
+    "spec": {
+      "app_id": 51,
+      "url": "https://docs.dataforseo.com/v3/content_analysis/overview/",
+      "kind": "primary_docs",
+      "scope": "DataForSEO v3 REST APIs and official MCP server, HTTP Basic API login/password auth, sandbox and paid pay-as-you-go access",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor/project-controlled documentation or product page selected by researcher",
+      "attribution_by": "task12-research-agent-claude"
+    },
+    "captured_on": "2026-11-23",
+    "capture_method": "http_content",
+    "snapshot_ref": "snapshots/b08fd77f2a2ac531bd399d1c04f5f893dda3923371abfd6419890d0f771214d5.txt",
+    "content_sha256": "b08fd77f2a2ac531bd399d1c04f5f893dda3923371abfd6419890d0f771214d5",
+    "line_count": 813
+  },
+  {
+    "spec": {
+      "app_id": 51,
+      "url": "https://docs.dataforseo.com/v3/ai_optimization/overview/",
+      "kind": "primary_docs",
+      "scope": "DataForSEO v3 REST APIs and official MCP server, HTTP Basic API login/password auth, sandbox and paid pay-as-you-go access",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor/project-controlled documentation or product page selected by researcher",
+      "attribution_by": "task12-research-agent-claude"
+    },
+    "captured_on": "2026-11-23",
+    "capture_method": "http_content",
+    "snapshot_ref": "snapshots/e204a7c44b8a2f59b39313ecff6a4f3bb6368bda279a7f99576e073ebf33b809.txt",
+    "content_sha256": "e204a7c44b8a2f59b39313ecff6a4f3bb6368bda279a7f99576e073ebf33b809",
+    "line_count": 815
+  },
+  {
+    "spec": {
+      "app_id": 51,
+      "url": "https://dataforseo.com/pricing",
+      "kind": "official_product_page",
+      "scope": "DataForSEO v3 REST APIs and official MCP server, HTTP Basic API login/password auth, sandbox and paid pay-as-you-go access",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor/project-controlled documentation or product page selected by researcher",
+      "attribution_by": "task12-research-agent-claude"
+    },
+    "captured_on": "2026-11-23",
+    "capture_method": "http_content",
+    "snapshot_ref": "snapshots/ed808bebb1988500cfebb29cfcea353f520869ff607278bb203599c1949e27ca.txt",
+    "content_sha256": "ed808bebb1988500cfebb29cfcea353f520869ff607278bb203599c1949e27ca",
+    "line_count": 394
+  },
+  {
+    "spec": {
+      "app_id": 51,
+      "url": "https://dataforseo.com/apis",
+      "kind": "official_product_page",
+      "scope": "DataForSEO v3 REST APIs and official MCP server, HTTP Basic API login/password auth, sandbox and paid pay-as-you-go access",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor/project-controlled documentation or product page selected by researcher",
+      "attribution_by": "task12-research-agent-claude"
+    },
+    "captured_on": "2026-11-23",
+    "capture_method": "http_content",
+    "snapshot_ref": "snapshots/521bdf3e221d6784dc4c080800af296ef9b5d881b1b116a193ea98ebef08db4f.txt",
+    "content_sha256": "521bdf3e221d6784dc4c080800af296ef9b5d881b1b116a193ea98ebef08db4f",
+    "line_count": 646
+  },
+  {
+    "spec": {
+      "app_id": 51,
+      "url": "https://dataforseo.com/model-context-protocol",
+      "kind": "official_product_page",
+      "scope": "DataForSEO v3 REST APIs and official MCP server, HTTP Basic API login/password auth, sandbox and paid pay-as-you-go access",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor/project-controlled documentation or product page selected by researcher",
+      "attribution_by": "task12-research-agent-claude"
+    },
+    "captured_on": "2026-11-23",
+    "capture_method": "http_content",
+    "snapshot_ref": "snapshots/bfda88cc33f36ec874c379975fdba9eb765b811b709347c543f9d468b5e63e17.txt",
+    "content_sha256": "bfda88cc33f36ec874c379975fdba9eb765b811b709347c543f9d468b5e63e17",
+    "line_count": 530
+  },
+  {
+    "spec": {
+      "app_id": 51,
+      "url": "https://github.com/dataforseo/mcp-server-typescript",
+      "kind": "official_repository",
+      "scope": "DataForSEO v3 REST APIs and official MCP server, HTTP Basic API login/password auth, sandbox and paid pay-as-you-go access",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor/project-controlled documentation or product page selected by researcher",
+      "attribution_by": "task12-research-agent-claude"
+    },
+    "captured_on": "2026-11-23",
+    "capture_method": "http_content",
+    "snapshot_ref": "snapshots/e24d0e19ed38894ad8b6946bb7486465675f4fe442d1bba69fb58a38bae8f8bd.txt",
+    "content_sha256": "e24d0e19ed38894ad8b6946bb7486465675f4fe442d1bba69fb58a38bae8f8bd",
+    "line_count": 424
+  },
+  {
+    "spec": {
+      "app_id": 52,
+      "url": "https://seranking.com/api/",
+      "kind": "official_product_page",
+      "scope": "SE Ranking Data API, Project API and hosted MCP server, API token auth and OAuth, paid plan and API credits",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor/project-controlled documentation or product page selected by researcher",
+      "attribution_by": "task12-research-agent-claude"
+    },
+    "captured_on": "2026-11-23",
+    "capture_method": "http_content",
+    "snapshot_ref": "snapshots/2a09b28d99ee425399365e429e1356a402186548dae81519cfa3c16047b329b8.txt",
+    "content_sha256": "2a09b28d99ee425399365e429e1356a402186548dae81519cfa3c16047b329b8",
+    "line_count": 706
+  },
+  {
+    "spec": {
+      "app_id": 52,
+      "url": "https://seranking.com/api/data/",
+      "kind": "official_product_page",
+      "scope": "SE Ranking Data API, Project API and hosted MCP server, API token auth and OAuth, paid plan and API credits",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor/project-controlled documentation or product page selected by researcher",
+      "attribution_by": "task12-research-agent-claude"
+    },
+    "captured_on": "2026-11-23",
+    "capture_method": "http_content",
+    "snapshot_ref": "snapshots/4ebd0943cfd7554a4d8b25d296c5ee8c664e10a180666bc790930479f1e6f36a.txt",
+    "content_sha256": "4ebd0943cfd7554a4d8b25d296c5ee8c664e10a180666bc790930479f1e6f36a",
+    "line_count": 533
+  },
+  {
+    "spec": {
+      "app_id": 52,
+      "url": "https://seranking.com/api/integrations/mcp/",
+      "kind": "official_product_page",
+      "scope": "SE Ranking Data API, Project API and hosted MCP server, API token auth and OAuth, paid plan and API credits",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor/project-controlled documentation or product page selected by researcher",
+      "attribution_by": "task12-research-agent-claude"
+    },
+    "captured_on": "2026-11-23",
+    "capture_method": "http_content",
+    "snapshot_ref": "snapshots/d95a70821fe2cdde83f6f8d6fa271b32949f3c89bafc354bb4605a530cf70d70.txt",
+    "content_sha256": "d95a70821fe2cdde83f6f8d6fa271b32949f3c89bafc354bb4605a530cf70d70",
+    "line_count": 694
+  },
+  {
+    "spec": {
+      "app_id": 52,
+      "url": "https://seranking.com/api/project/",
+      "kind": "official_product_page",
+      "scope": "SE Ranking Data API, Project API and hosted MCP server, API token auth and OAuth, paid plan and API credits",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor/project-controlled documentation or product page selected by researcher",
+      "attribution_by": "task12-research-agent-claude"
+    },
+    "captured_on": "2026-11-23",
+    "capture_method": "http_content",
+    "snapshot_ref": "snapshots/b496323cfb7e8a966a545b03d0312217ab72e7cc7e29fa9c76d0f4e027e67f33.txt",
+    "content_sha256": "b496323cfb7e8a966a545b03d0312217ab72e7cc7e29fa9c76d0f4e027e67f33",
+    "line_count": 516
+  },
+  {
+    "spec": {
+      "app_id": 52,
+      "url": "https://seranking.com/api/data/keyword-research/",
+      "kind": "official_product_page",
+      "scope": "SE Ranking Data API, Project API and hosted MCP server, API token auth and OAuth, paid plan and API credits",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor/project-controlled documentation or product page selected by researcher",
+      "attribution_by": "task12-research-agent-claude"
+    },
+    "captured_on": "2026-11-23",
+    "capture_method": "http_content",
+    "snapshot_ref": "snapshots/b7d39b6ddf7fec60aa36a2525b9c37f8021f92d7d7145cea665c6a05c48289b8.txt",
+    "content_sha256": "b7d39b6ddf7fec60aa36a2525b9c37f8021f92d7d7145cea665c6a05c48289b8",
+    "line_count": 1051
+  },
+  {
+    "spec": {
+      "app_id": 52,
+      "url": "https://seranking.com/api/data/backlinks/",
+      "kind": "official_product_page",
+      "scope": "SE Ranking Data API, Project API and hosted MCP server, API token auth and OAuth, paid plan and API credits",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor/project-controlled documentation or product page selected by researcher",
+      "attribution_by": "task12-research-agent-claude"
+    },
+    "captured_on": "2026-11-23",
+    "capture_method": "http_content",
+    "snapshot_ref": "snapshots/7f8919581d979a37c0d9d99ddbd9f08047938aff55b656e421795aba8fdabed3.txt",
+    "content_sha256": "7f8919581d979a37c0d9d99ddbd9f08047938aff55b656e421795aba8fdabed3",
+    "line_count": 2094
+  },
+  {
+    "spec": {
+      "app_id": 52,
+      "url": "https://seranking.com/api/data/domain-analysis/",
+      "kind": "official_product_page",
+      "scope": "SE Ranking Data API, Project API and hosted MCP server, API token auth and OAuth, paid plan and API credits",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor/project-controlled documentation or product page selected by researcher",
+      "attribution_by": "task12-research-agent-claude"
+    },
+    "captured_on": "2026-11-23",
+    "capture_method": "http_content",
+    "snapshot_ref": "snapshots/f4a7c33efe546ab2b03c84eb397d52bdbead9b56ab6e4115a1485cf82794e9cb.txt",
+    "content_sha256": "f4a7c33efe546ab2b03c84eb397d52bdbead9b56ab6e4115a1485cf82794e9cb",
+    "line_count": 1547
+  },
+  {
+    "spec": {
+      "app_id": 52,
+      "url": "https://seranking.com/api/data/website-audit/",
+      "kind": "official_product_page",
+      "scope": "SE Ranking Data API, Project API and hosted MCP server, API token auth and OAuth, paid plan and API credits",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor/project-controlled documentation or product page selected by researcher",
+      "attribution_by": "task12-research-agent-claude"
+    },
+    "captured_on": "2026-11-23",
+    "capture_method": "http_content",
+    "snapshot_ref": "snapshots/c13bb8112a19cf9f311a0675f61b546c76575b7fb67abf98bdbb72fd76567c4a.txt",
+    "content_sha256": "c13bb8112a19cf9f311a0675f61b546c76575b7fb67abf98bdbb72fd76567c4a",
+    "line_count": 1442
+  },
+  {
+    "spec": {
+      "app_id": 52,
+      "url": "https://seranking.com/api/data/ai-search/",
+      "kind": "official_product_page",
+      "scope": "SE Ranking Data API, Project API and hosted MCP server, API token auth and OAuth, paid plan and API credits",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor/project-controlled documentation or product page selected by researcher",
+      "attribution_by": "task12-research-agent-claude"
+    },
+    "captured_on": "2026-11-23",
+    "capture_method": "http_content",
+    "snapshot_ref": "snapshots/9275e523eb001ddcfca94be03f6342e33f4f95cdaec1fd8d05712724c35964b4.txt",
+    "content_sha256": "9275e523eb001ddcfca94be03f6342e33f4f95cdaec1fd8d05712724c35964b4",
+    "line_count": 893
+  },
+  {
+    "spec": {
+      "app_id": 52,
+      "url": "https://seranking.com/api/project/audit/",
+      "kind": "official_product_page",
+      "scope": "SE Ranking Data API, Project API and hosted MCP server, API token auth and OAuth, paid plan and API credits",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor/project-controlled documentation or product page selected by researcher",
+      "attribution_by": "task12-research-agent-claude"
+    },
+    "captured_on": "2026-11-23",
+    "capture_method": "http_content",
+    "snapshot_ref": "snapshots/53b6aa5c206ef20c088169fc21ab540776246e95f07a7b8a22387142a89d698f.txt",
+    "content_sha256": "53b6aa5c206ef20c088169fc21ab540776246e95f07a7b8a22387142a89d698f",
+    "line_count": 1631
+  },
+  {
+    "spec": {
+      "app_id": 52,
+      "url": "https://seranking.com/api/mcp/",
+      "kind": "official_product_page",
+      "scope": "SE Ranking Data API, Project API and hosted MCP server, API token auth and OAuth, paid plan and API credits",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor/project-controlled documentation or product page selected by researcher",
+      "attribution_by": "task12-research-agent-claude"
+    },
+    "captured_on": "2026-11-23",
+    "capture_method": "http_content",
+    "snapshot_ref": "snapshots/d95a70821fe2cdde83f6f8d6fa271b32949f3c89bafc354bb4605a530cf70d70.txt",
+    "content_sha256": "d95a70821fe2cdde83f6f8d6fa271b32949f3c89bafc354bb4605a530cf70d70",
+    "line_count": 694
+  },
+  {
+    "spec": {
+      "app_id": 52,
+      "url": "https://seranking.com/pricing.html",
+      "kind": "official_product_page",
+      "scope": "SE Ranking Data API, Project API and hosted MCP server, API token auth and OAuth, paid plan and API credits",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor/project-controlled documentation or product page selected by researcher",
+      "attribution_by": "task12-research-agent-claude"
+    },
+    "captured_on": "2026-11-23",
+    "capture_method": "http_content",
+    "snapshot_ref": "snapshots/50ade6664abb8b15b89b25551e639e19288915c8681b17c3bc6d5a72708e1479.txt",
+    "content_sha256": "50ade6664abb8b15b89b25551e639e19288915c8681b17c3bc6d5a72708e1479",
+    "line_count": 511
+  },
+  {
+    "spec": {
+      "app_id": 52,
+      "url": "https://github.com/seranking",
+      "kind": "official_repository",
+      "scope": "SE Ranking Data API, Project API and hosted MCP server, API token auth and OAuth, paid plan and API credits",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor/project-controlled documentation or product page selected by researcher",
+      "attribution_by": "task12-research-agent-claude"
+    },
+    "captured_on": "2026-11-23",
+    "capture_method": "http_content",
+    "snapshot_ref": "snapshots/00f2cb9f3db094ee06e6e6f6ffd8bedae7d0a66f74d7b0b0dc11500238d2c154.txt",
+    "content_sha256": "00f2cb9f3db094ee06e6e6f6ffd8bedae7d0a66f74d7b0b0dc11500238d2c154",
+    "line_count": 240
+  },
+  {
+    "spec": {
+      "app_id": 53,
+      "url": "https://docs.ahrefs.com/api/docs/introduction.md",
+      "kind": "primary_docs",
+      "scope": "Ahrefs API v3 and hosted MCP server, API key and OAuth auth, paid-plan/API-unit access (not the consumer web app)",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor/project-controlled documentation or product page selected by researcher",
+      "attribution_by": "task12-research-agent-claude"
+    },
+    "captured_on": "2026-11-23",
+    "capture_method": "http_content",
+    "snapshot_ref": "snapshots/4abbd2711ea53f3fe2d94ca70d3e81b125fd12082b3b5b017524373a06eda2f1.txt",
+    "content_sha256": "4abbd2711ea53f3fe2d94ca70d3e81b125fd12082b3b5b017524373a06eda2f1",
+    "line_count": 43
+  },
+  {
+    "spec": {
+      "app_id": 53,
+      "url": "https://docs.ahrefs.com/api/docs/free-test-queries.md",
+      "kind": "primary_docs",
+      "scope": "Ahrefs API v3 and hosted MCP server, API key and OAuth auth, paid-plan/API-unit access (not the consumer web app)",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor/project-controlled documentation or product page selected by researcher",
+      "attribution_by": "task12-research-agent-claude"
+    },
+    "captured_on": "2026-11-23",
+    "capture_method": "http_content",
+    "snapshot_ref": "snapshots/6708e56ad5f24c98bd25f2e0b184ab0a69562672bda3410ae794bc17e997096b.txt",
+    "content_sha256": "6708e56ad5f24c98bd25f2e0b184ab0a69562672bda3410ae794bc17e997096b",
+    "line_count": 24
+  },
+  {
+    "spec": {
+      "app_id": 53,
+      "url": "https://docs.ahrefs.com/api/docs/api-keys-creation-and-management.md",
+      "kind": "primary_docs",
+      "scope": "Ahrefs API v3 and hosted MCP server, API key and OAuth auth, paid-plan/API-unit access (not the consumer web app)",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor/project-controlled documentation or product page selected by researcher",
+      "attribution_by": "task12-research-agent-claude"
+    },
+    "captured_on": "2026-11-23",
+    "capture_method": "http_content",
+    "snapshot_ref": "snapshots/c1c3dabd3028ab5d7d593300f3a74fdb24654d7406330c1a1cd443f73b933e81.txt",
+    "content_sha256": "c1c3dabd3028ab5d7d593300f3a74fdb24654d7406330c1a1cd443f73b933e81",
+    "line_count": 12
+  },
+  {
+    "spec": {
+      "app_id": 53,
+      "url": "https://docs.ahrefs.com/api/docs/limits-consumption.md",
+      "kind": "primary_docs",
+      "scope": "Ahrefs API v3 and hosted MCP server, API key and OAuth auth, paid-plan/API-unit access (not the consumer web app)",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor/project-controlled documentation or product page selected by researcher",
+      "attribution_by": "task12-research-agent-claude"
+    },
+    "captured_on": "2026-11-23",
+    "capture_method": "http_content",
+    "snapshot_ref": "snapshots/e1949ea9f314994ce82091c5ab129660dc672cccd2ebc619a4b97222ed5d2904.txt",
+    "content_sha256": "e1949ea9f314994ce82091c5ab129660dc672cccd2ebc619a4b97222ed5d2904",
+    "line_count": 37
+  },
+  {
+    "spec": {
+      "app_id": 53,
+      "url": "https://docs.ahrefs.com/mcp/docs/introduction.md",
+      "kind": "primary_docs",
+      "scope": "Ahrefs API v3 and hosted MCP server, API key and OAuth auth, paid-plan/API-unit access (not the consumer web app)",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor/project-controlled documentation or product page selected by researcher",
+      "attribution_by": "task12-research-agent-claude"
+    },
+    "captured_on": "2026-11-23",
+    "capture_method": "http_content",
+    "snapshot_ref": "snapshots/7634eca34765950e05869dff728b14169159348077c673e34971281425e2f1a6.txt",
+    "content_sha256": "7634eca34765950e05869dff728b14169159348077c673e34971281425e2f1a6",
+    "line_count": 46
+  },
+  {
+    "spec": {
+      "app_id": 53,
+      "url": "https://docs.ahrefs.com/mcp/docs/tool-categories.md",
+      "kind": "primary_docs",
+      "scope": "Ahrefs API v3 and hosted MCP server, API key and OAuth auth, paid-plan/API-unit access (not the consumer web app)",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor/project-controlled documentation or product page selected by researcher",
+      "attribution_by": "task12-research-agent-claude"
+    },
+    "captured_on": "2026-11-23",
+    "capture_method": "http_content",
+    "snapshot_ref": "snapshots/9ec78e3b139b381ffb038fe4e95df3d5f3cbb5f07ec3e5e890f98d16657775df.txt",
+    "content_sha256": "9ec78e3b139b381ffb038fe4e95df3d5f3cbb5f07ec3e5e890f98d16657775df",
+    "line_count": 51
+  },
+  {
+    "spec": {
+      "app_id": 53,
+      "url": "https://docs.ahrefs.com/mcp/docs/claude-code.md",
+      "kind": "primary_docs",
+      "scope": "Ahrefs API v3 and hosted MCP server, API key and OAuth auth, paid-plan/API-unit access (not the consumer web app)",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor/project-controlled documentation or product page selected by researcher",
+      "attribution_by": "task12-research-agent-claude"
+    },
+    "captured_on": "2026-11-23",
+    "capture_method": "http_content",
+    "snapshot_ref": "snapshots/1b87b045e62b279b8f151427124f28a162f487c590bbd3baebbae8a5b2506bf7.txt",
+    "content_sha256": "1b87b045e62b279b8f151427124f28a162f487c590bbd3baebbae8a5b2506bf7",
+    "line_count": 12
+  },
+  {
+    "spec": {
+      "app_id": 53,
+      "url": "https://docs.ahrefs.com/llms.txt",
+      "kind": "primary_docs",
+      "scope": "Ahrefs API v3 and hosted MCP server, API key and OAuth auth, paid-plan/API-unit access (not the consumer web app)",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor/project-controlled documentation or product page selected by researcher",
+      "attribution_by": "task12-research-agent-claude"
+    },
+    "captured_on": "2026-11-23",
+    "capture_method": "http_content",
+    "snapshot_ref": "snapshots/ddcd7606525aae4bd41f159c059d2042c4a86317ddaf25f09f646f42e15ff84e.txt",
+    "content_sha256": "ddcd7606525aae4bd41f159c059d2042c4a86317ddaf25f09f646f42e15ff84e",
+    "line_count": 95
+  },
+  {
+    "spec": {
+      "app_id": 53,
+      "url": "https://docs.ahrefs.com/reference/public.json",
+      "kind": "primary_docs",
+      "scope": "Ahrefs API v3 and hosted MCP server, API key and OAuth auth, paid-plan/API-unit access (not the consumer web app)",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor/project-controlled documentation or product page selected by researcher",
+      "attribution_by": "task12-research-agent-claude"
+    },
+    "captured_on": "2026-11-23",
+    "capture_method": "http_content",
+    "snapshot_ref": "snapshots/391eb809f9225e21361147fa6d413f00470dd59ec4ebe02fc4ccced349ee0a7e.txt",
+    "content_sha256": "391eb809f9225e21361147fa6d413f00470dd59ec4ebe02fc4ccced349ee0a7e",
+    "line_count": 466
+  },
+  {
+    "spec": {
+      "app_id": 53,
+      "url": "https://docs.ahrefs.com/openapi.json",
+      "kind": "primary_docs",
+      "scope": "Ahrefs API v3 and hosted MCP server, API key and OAuth auth, paid-plan/API-unit access (not the consumer web app)",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor/project-controlled documentation or product page selected by researcher",
+      "attribution_by": "task12-research-agent-claude"
+    },
+    "captured_on": "2026-11-23",
+    "capture_method": "http_content",
+    "snapshot_ref": "snapshots/9a8ca38ddcdcc2a4e752a515d08c0f9556f02a080217aa8c12e6a7d48d0df2c4.txt",
+    "content_sha256": "9a8ca38ddcdcc2a4e752a515d08c0f9556f02a080217aa8c12e6a7d48d0df2c4",
+    "line_count": 72341
+  },
+  {
+    "spec": {
+      "app_id": 53,
+      "url": "https://ahrefs.com/pricing",
+      "kind": "official_product_page",
+      "scope": "Ahrefs API v3 and hosted MCP server, API key and OAuth auth, paid-plan/API-unit access (not the consumer web app)",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor/project-controlled documentation or product page selected by researcher",
+      "attribution_by": "task12-research-agent-claude"
+    },
+    "captured_on": "2026-11-23",
+    "capture_method": "http_content",
+    "snapshot_ref": "snapshots/7602750c8094ca36d00775a46b767563545b8ed35be6a2a4138e8f2dd87ed583.txt",
+    "content_sha256": "7602750c8094ca36d00775a46b767563545b8ed35be6a2a4138e8f2dd87ed583",
+    "line_count": 529
+  },
+  {
+    "spec": {
+      "app_id": 53,
+      "url": "https://docs.ahrefs.com/ahrefs-connect/docs/oauth-guide.md",
+      "kind": "primary_docs",
+      "scope": "Ahrefs API v3 and hosted MCP server, API key and OAuth auth, paid-plan/API-unit access (not the consumer web app)",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor/project-controlled documentation or product page selected by researcher",
+      "attribution_by": "task12-research-agent-claude"
+    },
+    "captured_on": "2026-11-23",
+    "capture_method": "http_content",
+    "snapshot_ref": "snapshots/b01660064470334c0c492d25f2e4c666c6d35b4a0fac1d95ba52194927b115d7.txt",
+    "content_sha256": "b01660064470334c0c492d25f2e4c666c6d35b4a0fac1d95ba52194927b115d7",
+    "line_count": 50
+  },
+  {
+    "spec": {
+      "app_id": 54,
+      "url": "https://docs.mrscraper.com/llms.txt",
+      "kind": "primary_docs",
+      "scope": "MrScraper hosted scraping API v3, MCP server and CLI, API token and OAuth auth, plan-based access",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor/project-controlled documentation or product page selected by researcher",
+      "attribution_by": "task12-research-agent-claude"
+    },
+    "captured_on": "2026-11-23",
+    "capture_method": "http_content",
+    "snapshot_ref": "snapshots/2282d6ef01e26da809c9953a4e1c10bbd2d901c850bf33bb7582ca86c7347a24.txt",
+    "content_sha256": "2282d6ef01e26da809c9953a4e1c10bbd2d901c850bf33bb7582ca86c7347a24",
+    "line_count": 123
+  },
+  {
+    "spec": {
+      "app_id": 54,
+      "url": "https://docs.mrscraper.com/docs/api/overview",
+      "kind": "primary_docs",
+      "scope": "MrScraper hosted scraping API v3, MCP server and CLI, API token and OAuth auth, plan-based access",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor/project-controlled documentation or product page selected by researcher",
+      "attribution_by": "task12-research-agent-claude"
+    },
+    "captured_on": "2026-11-23",
+    "capture_method": "http_content",
+    "snapshot_ref": "snapshots/fed1c330fc8cd7a2acecb254f1189d4789e3ec9d78683acfee4ee56f0615fccc.txt",
+    "content_sha256": "fed1c330fc8cd7a2acecb254f1189d4789e3ec9d78683acfee4ee56f0615fccc",
+    "line_count": 52
+  },
+  {
+    "spec": {
+      "app_id": 54,
+      "url": "https://docs.mrscraper.com/docs/api/authentication",
+      "kind": "primary_docs",
+      "scope": "MrScraper hosted scraping API v3, MCP server and CLI, API token and OAuth auth, plan-based access",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor/project-controlled documentation or product page selected by researcher",
+      "attribution_by": "task12-research-agent-claude"
+    },
+    "captured_on": "2026-11-23",
+    "capture_method": "http_content",
+    "snapshot_ref": "snapshots/8e5ba81aba5df9c8d2969b663dc70646681706fb11c0e69d64ac1b9a63385c0b.txt",
+    "content_sha256": "8e5ba81aba5df9c8d2969b663dc70646681706fb11c0e69d64ac1b9a63385c0b",
+    "line_count": 65
+  },
+  {
+    "spec": {
+      "app_id": 54,
+      "url": "https://docs.mrscraper.com/docs/getting-started/api-token",
+      "kind": "primary_docs",
+      "scope": "MrScraper hosted scraping API v3, MCP server and CLI, API token and OAuth auth, plan-based access",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor/project-controlled documentation or product page selected by researcher",
+      "attribution_by": "task12-research-agent-claude"
+    },
+    "captured_on": "2026-11-23",
+    "capture_method": "http_content",
+    "snapshot_ref": "snapshots/d76643d0e4dac925d4f1bfa5b10c87e098afd50c596abf4b91d5d1e9a79814f6.txt",
+    "content_sha256": "d76643d0e4dac925d4f1bfa5b10c87e098afd50c596abf4b91d5d1e9a79814f6",
+    "line_count": 122
+  },
+  {
+    "spec": {
+      "app_id": 54,
+      "url": "https://docs.mrscraper.com/docs/getting-started/billing",
+      "kind": "primary_docs",
+      "scope": "MrScraper hosted scraping API v3, MCP server and CLI, API token and OAuth auth, plan-based access",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor/project-controlled documentation or product page selected by researcher",
+      "attribution_by": "task12-research-agent-claude"
+    },
+    "captured_on": "2026-11-23",
+    "capture_method": "http_content",
+    "snapshot_ref": "snapshots/c2c4450e0e3f1ecb76c53968e7f262ca3d6d0dc8c914bdbad4b8eef324d6d8c4.txt",
+    "content_sha256": "c2c4450e0e3f1ecb76c53968e7f262ca3d6d0dc8c914bdbad4b8eef324d6d8c4",
+    "line_count": 98
+  },
+  {
+    "spec": {
+      "app_id": 54,
+      "url": "https://docs.mrscraper.com/docs/getting-started/mcp-server",
+      "kind": "primary_docs",
+      "scope": "MrScraper hosted scraping API v3, MCP server and CLI, API token and OAuth auth, plan-based access",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor/project-controlled documentation or product page selected by researcher",
+      "attribution_by": "task12-research-agent-claude"
+    },
+    "captured_on": "2026-11-23",
+    "capture_method": "http_content",
+    "snapshot_ref": "snapshots/839e145f67740c684b996657b2be661f05c3968b0e4e01384816b36db833024f.txt",
+    "content_sha256": "839e145f67740c684b996657b2be661f05c3968b0e4e01384816b36db833024f",
+    "line_count": 777
+  },
+  {
+    "spec": {
+      "app_id": 54,
+      "url": "https://docs.mrscraper.com/docs/getting-started/cli",
+      "kind": "primary_docs",
+      "scope": "MrScraper hosted scraping API v3, MCP server and CLI, API token and OAuth auth, plan-based access",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor/project-controlled documentation or product page selected by researcher",
+      "attribution_by": "task12-research-agent-claude"
+    },
+    "captured_on": "2026-11-23",
+    "capture_method": "http_content",
+    "snapshot_ref": "snapshots/3754aac7efe1de92457040f89cdb78e5eff770aeef729495970e9ed6dce13b74.txt",
+    "content_sha256": "3754aac7efe1de92457040f89cdb78e5eff770aeef729495970e9ed6dce13b74",
+    "line_count": 402
+  },
+  {
+    "spec": {
+      "app_id": 54,
+      "url": "https://docs.mrscraper.com/docs/getting-started/overview",
+      "kind": "primary_docs",
+      "scope": "MrScraper hosted scraping API v3, MCP server and CLI, API token and OAuth auth, plan-based access",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor/project-controlled documentation or product page selected by researcher",
+      "attribution_by": "task12-research-agent-claude"
+    },
+    "captured_on": "2026-11-23",
+    "capture_method": "http_content",
+    "snapshot_ref": "snapshots/37f31377efe1729a19a1b88870d4ea6744fc182818c6d4d6a4c388851a585cdc.txt",
+    "content_sha256": "37f31377efe1729a19a1b88870d4ea6744fc182818c6d4d6a4c388851a585cdc",
+    "line_count": 138
+  },
+  {
+    "spec": {
+      "app_id": 54,
+      "url": "https://docs.mrscraper.com/docs/api/scraper-api/scrape-json",
+      "kind": "primary_docs",
+      "scope": "MrScraper hosted scraping API v3, MCP server and CLI, API token and OAuth auth, plan-based access",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor/project-controlled documentation or product page selected by researcher",
+      "attribution_by": "task12-research-agent-claude"
+    },
+    "captured_on": "2026-11-23",
+    "capture_method": "http_content",
+    "snapshot_ref": "snapshots/acd787e9691e92be35e48ccb193e07c5ff0b018fd2f7b139b73197695f931c5a.txt",
+    "content_sha256": "acd787e9691e92be35e48ccb193e07c5ff0b018fd2f7b139b73197695f931c5a",
+    "line_count": 184
+  },
+  {
+    "spec": {
+      "app_id": 54,
+      "url": "https://docs.mrscraper.com/docs/api/v3/scraper/web-fetching-scraping",
+      "kind": "primary_docs",
+      "scope": "MrScraper hosted scraping API v3, MCP server and CLI, API token and OAuth auth, plan-based access",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor/project-controlled documentation or product page selected by researcher",
+      "attribution_by": "task12-research-agent-claude"
+    },
+    "captured_on": "2026-11-23",
+    "capture_method": "http_content",
+    "snapshot_ref": "snapshots/e0af3ee1b132ca3e83d6a5c379d609892da8e0b9c5d482008f7f97cbd0288ba4.txt",
+    "content_sha256": "e0af3ee1b132ca3e83d6a5c379d609892da8e0b9c5d482008f7f97cbd0288ba4",
+    "line_count": 115
+  },
+  {
+    "spec": {
+      "app_id": 54,
+      "url": "https://mrscraper.com/pricing",
+      "kind": "official_product_page",
+      "scope": "MrScraper hosted scraping API v3, MCP server and CLI, API token and OAuth auth, plan-based access",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor/project-controlled documentation or product page selected by researcher",
+      "attribution_by": "task12-research-agent-claude"
+    },
+    "captured_on": "2026-11-23",
+    "capture_method": "http_content",
+    "snapshot_ref": "snapshots/18a4c5a4a7386c88e12bdbfdeeee695baaba520d4f9cff84ff02d69d4a4b1fb7.txt",
+    "content_sha256": "18a4c5a4a7386c88e12bdbfdeeee695baaba520d4f9cff84ff02d69d4a4b1fb7",
+    "line_count": 174
+  },
+  {
+    "spec": {
+      "app_id": 55,
+      "url": "https://docs.apify.com/api/v2.md",
+      "kind": "primary_docs",
+      "scope": "Apify platform REST API v2, Apify MCP server, CLI and open-source Actors tooling, API token and OAuth auth, free and paid plans",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor/project-controlled documentation or product page selected by researcher",
+      "attribution_by": "task12-research-agent-claude"
+    },
+    "captured_on": "2026-11-23",
+    "capture_method": "http_content",
+    "snapshot_ref": "snapshots/c011e3ecfdf08b3af45279eed82e48a102d67b61a7705b3c9b70c48f3489608c.txt",
+    "content_sha256": "c011e3ecfdf08b3af45279eed82e48a102d67b61a7705b3c9b70c48f3489608c",
+    "line_count": 305
+  },
+  {
+    "spec": {
+      "app_id": 55,
+      "url": "https://docs.apify.com/platform/integrations/api.md",
+      "kind": "primary_docs",
+      "scope": "Apify platform REST API v2, Apify MCP server, CLI and open-source Actors tooling, API token and OAuth auth, free and paid plans",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor/project-controlled documentation or product page selected by researcher",
+      "attribution_by": "task12-research-agent-claude"
+    },
+    "captured_on": "2026-11-23",
+    "capture_method": "http_content",
+    "snapshot_ref": "snapshots/31e6a24109ae6fa1d7d2b79f82f661d5b5213eab39cb547b780d94314b78ebf2.txt",
+    "content_sha256": "31e6a24109ae6fa1d7d2b79f82f661d5b5213eab39cb547b780d94314b78ebf2",
+    "line_count": 132
+  },
+  {
+    "spec": {
+      "app_id": 55,
+      "url": "https://docs.apify.com/platform/integrations/mcp.md",
+      "kind": "primary_docs",
+      "scope": "Apify platform REST API v2, Apify MCP server, CLI and open-source Actors tooling, API token and OAuth auth, free and paid plans",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor/project-controlled documentation or product page selected by researcher",
+      "attribution_by": "task12-research-agent-claude"
+    },
+    "captured_on": "2026-11-23",
+    "capture_method": "http_content",
+    "snapshot_ref": "snapshots/71a26f89ac7ee35141bf90dd25c9787f2f49e8f5796065624536d471e8e3aa6b.txt",
+    "content_sha256": "71a26f89ac7ee35141bf90dd25c9787f2f49e8f5796065624536d471e8e3aa6b",
+    "line_count": 225
+  },
+  {
+    "spec": {
+      "app_id": 55,
+      "url": "https://docs.apify.com/llms.txt",
+      "kind": "primary_docs",
+      "scope": "Apify platform REST API v2, Apify MCP server, CLI and open-source Actors tooling, API token and OAuth auth, free and paid plans",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor/project-controlled documentation or product page selected by researcher",
+      "attribution_by": "task12-research-agent-claude"
+    },
+    "captured_on": "2026-11-23",
+    "capture_method": "http_content",
+    "snapshot_ref": "snapshots/b6fdd878fc51a39ee92905eb90f645224a8eade68095af404ef62b047b36041b.txt",
+    "content_sha256": "b6fdd878fc51a39ee92905eb90f645224a8eade68095af404ef62b047b36041b",
+    "line_count": 168
+  },
+  {
+    "spec": {
+      "app_id": 55,
+      "url": "https://docs.apify.com/cli/docs",
+      "kind": "primary_docs",
+      "scope": "Apify platform REST API v2, Apify MCP server, CLI and open-source Actors tooling, API token and OAuth auth, free and paid plans",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor/project-controlled documentation or product page selected by researcher",
+      "attribution_by": "task12-research-agent-claude"
+    },
+    "captured_on": "2026-11-23",
+    "capture_method": "http_content",
+    "snapshot_ref": "snapshots/c165501472677602cf16d0563bf8e80c1654f3dc62aa4b1fa46cd66533b1cf35.txt",
+    "content_sha256": "c165501472677602cf16d0563bf8e80c1654f3dc62aa4b1fa46cd66533b1cf35",
+    "line_count": 102
+  },
+  {
+    "spec": {
+      "app_id": 55,
+      "url": "https://docs.apify.com/platform/actors",
+      "kind": "primary_docs",
+      "scope": "Apify platform REST API v2, Apify MCP server, CLI and open-source Actors tooling, API token and OAuth auth, free and paid plans",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor/project-controlled documentation or product page selected by researcher",
+      "attribution_by": "task12-research-agent-claude"
+    },
+    "captured_on": "2026-11-23",
+    "capture_method": "http_content",
+    "snapshot_ref": "snapshots/448a54b6fbd577588956919a138d3e5163036c3adc6aa668b54d52570d31029e.txt",
+    "content_sha256": "448a54b6fbd577588956919a138d3e5163036c3adc6aa668b54d52570d31029e",
+    "line_count": 91
+  },
+  {
+    "spec": {
+      "app_id": 55,
+      "url": "https://docs.apify.com/platform/integrations",
+      "kind": "primary_docs",
+      "scope": "Apify platform REST API v2, Apify MCP server, CLI and open-source Actors tooling, API token and OAuth auth, free and paid plans",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor/project-controlled documentation or product page selected by researcher",
+      "attribution_by": "task12-research-agent-claude"
+    },
+    "captured_on": "2026-11-23",
+    "capture_method": "http_content",
+    "snapshot_ref": "snapshots/a723f69130ceb323164d05c9f18fceb0a21331345989b2ca9773c662d90d4ad3.txt",
+    "content_sha256": "a723f69130ceb323164d05c9f18fceb0a21331345989b2ca9773c662d90d4ad3",
+    "line_count": 161
+  },
+  {
+    "spec": {
+      "app_id": 55,
+      "url": "https://docs.apify.com/platform/security",
+      "kind": "primary_docs",
+      "scope": "Apify platform REST API v2, Apify MCP server, CLI and open-source Actors tooling, API token and OAuth auth, free and paid plans",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor/project-controlled documentation or product page selected by researcher",
+      "attribution_by": "task12-research-agent-claude"
+    },
+    "captured_on": "2026-11-23",
+    "capture_method": "http_content",
+    "snapshot_ref": "snapshots/f15169ff7d5ff8edd008ba2850fbee5aadcfec10271577ddfa09858b44a12996.txt",
+    "content_sha256": "f15169ff7d5ff8edd008ba2850fbee5aadcfec10271577ddfa09858b44a12996",
+    "line_count": 81
+  },
+  {
+    "spec": {
+      "app_id": 55,
+      "url": "https://docs.apify.com/platform/actors/running/usage-and-resources",
+      "kind": "primary_docs",
+      "scope": "Apify platform REST API v2, Apify MCP server, CLI and open-source Actors tooling, API token and OAuth auth, free and paid plans",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor/project-controlled documentation or product page selected by researcher",
+      "attribution_by": "task12-research-agent-claude"
+    },
+    "captured_on": "2026-11-23",
+    "capture_method": "http_content",
+    "snapshot_ref": "snapshots/aee21c03699cece8d3c67145916f73a6a2af6b7d1b53013b629a3b21ba71ede8.txt",
+    "content_sha256": "aee21c03699cece8d3c67145916f73a6a2af6b7d1b53013b629a3b21ba71ede8",
+    "line_count": 130
+  },
+  {
+    "spec": {
+      "app_id": 55,
+      "url": "https://docs.apify.com/platform/collaboration/access-rights",
+      "kind": "primary_docs",
+      "scope": "Apify platform REST API v2, Apify MCP server, CLI and open-source Actors tooling, API token and OAuth auth, free and paid plans",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor/project-controlled documentation or product page selected by researcher",
+      "attribution_by": "task12-research-agent-claude"
+    },
+    "captured_on": "2026-11-23",
+    "capture_method": "http_content",
+    "snapshot_ref": "snapshots/405701b8c4b43fc5d2bcfbb75e7b15118e8e933e6872abd70cfe9c67924ebef2.txt",
+    "content_sha256": "405701b8c4b43fc5d2bcfbb75e7b15118e8e933e6872abd70cfe9c67924ebef2",
+    "line_count": 85
+  },
+  {
+    "spec": {
+      "app_id": 55,
+      "url": "https://docs.apify.com/api/client/js/",
+      "kind": "primary_docs",
+      "scope": "Apify platform REST API v2, Apify MCP server, CLI and open-source Actors tooling, API token and OAuth auth, free and paid plans",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor/project-controlled documentation or product page selected by researcher",
+      "attribution_by": "task12-research-agent-claude"
+    },
+    "captured_on": "2026-11-23",
+    "capture_method": "http_content",
+    "snapshot_ref": "snapshots/3f6f1298b97fd617d80b484ca66df29e847a9815dcba195f31f4adc8f95a16c6.txt",
+    "content_sha256": "3f6f1298b97fd617d80b484ca66df29e847a9815dcba195f31f4adc8f95a16c6",
+    "line_count": 105
+  },
+  {
+    "spec": {
+      "app_id": 55,
+      "url": "https://docs.apify.com/api/client/python/",
+      "kind": "primary_docs",
+      "scope": "Apify platform REST API v2, Apify MCP server, CLI and open-source Actors tooling, API token and OAuth auth, free and paid plans",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor/project-controlled documentation or product page selected by researcher",
+      "attribution_by": "task12-research-agent-claude"
+    },
+    "captured_on": "2026-11-23",
+    "capture_method": "http_content",
+    "snapshot_ref": "snapshots/61a178fa35ce27f9b7c7b18837aab9e76d6ec4ee975d37028cfe2988ed453574.txt",
+    "content_sha256": "61a178fa35ce27f9b7c7b18837aab9e76d6ec4ee975d37028cfe2988ed453574",
+    "line_count": 134
+  },
+  {
+    "spec": {
+      "app_id": 55,
+      "url": "https://apify.com/pricing",
+      "kind": "official_product_page",
+      "scope": "Apify platform REST API v2, Apify MCP server, CLI and open-source Actors tooling, API token and OAuth auth, free and paid plans",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor/project-controlled documentation or product page selected by researcher",
+      "attribution_by": "task12-research-agent-claude"
+    },
+    "captured_on": "2026-11-23",
+    "capture_method": "http_content",
+    "snapshot_ref": "snapshots/aeefb506bde307c7429568e4e976ce7d915059143fba367e17dcafbbc47ac884.txt",
+    "content_sha256": "aeefb506bde307c7429568e4e976ce7d915059143fba367e17dcafbbc47ac884",
+    "line_count": 462
+  },
+  {
+    "spec": {
+      "app_id": 55,
+      "url": "https://github.com/apify/apify-mcp-server",
+      "kind": "official_repository",
+      "scope": "Apify platform REST API v2, Apify MCP server, CLI and open-source Actors tooling, API token and OAuth auth, free and paid plans",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor/project-controlled documentation or product page selected by researcher",
+      "attribution_by": "task12-research-agent-claude"
+    },
+    "captured_on": "2026-11-23",
+    "capture_method": "http_content",
+    "snapshot_ref": "snapshots/173ed09a3e2f8910bb7b7485cc7f152ebbd7add46aa7a5c12cdcbe3f1969a27c.txt",
+    "content_sha256": "173ed09a3e2f8910bb7b7485cc7f152ebbd7add46aa7a5c12cdcbe3f1969a27c",
+    "line_count": 702
+  },
+  {
+    "spec": {
+      "app_id": 55,
+      "url": "https://raw.githubusercontent.com/apify/apify-mcp-server/master/README.md",
+      "kind": "official_repository",
+      "scope": "Apify platform REST API v2, Apify MCP server, CLI and open-source Actors tooling, API token and OAuth auth, free and paid plans",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor/project-controlled documentation or product page selected by researcher",
+      "attribution_by": "task12-research-agent-claude"
+    },
+    "captured_on": "2026-11-23",
+    "capture_method": "http_content",
+    "snapshot_ref": "snapshots/1b13c1bf2092d273785a0bb34e7e1c58d0d8bd13d180af02aa66997e289aee4d.txt",
+    "content_sha256": "1b13c1bf2092d273785a0bb34e7e1c58d0d8bd13d180af02aa66997e289aee4d",
+    "line_count": 360
+  },
+  {
+    "spec": {
+      "app_id": 56,
+      "url": "https://docs.firecrawl.dev/introduction.md",
+      "kind": "primary_docs",
+      "scope": "Firecrawl hosted API v2 and MCP server, API key auth, free credits and paid plans, plus open-source self-hosted edition",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor/project-controlled documentation or product page selected by researcher",
+      "attribution_by": "task12-research-agent-claude"
+    },
+    "captured_on": "2026-11-23",
+    "capture_method": "http_content",
+    "snapshot_ref": "snapshots/eded7ba13b9c8e07128ac307e3b1f2b5b030e263d44ecca76762420810c5014e.txt",
+    "content_sha256": "eded7ba13b9c8e07128ac307e3b1f2b5b030e263d44ecca76762420810c5014e",
+    "line_count": 335
+  },
+  {
+    "spec": {
+      "app_id": 56,
+      "url": "https://docs.firecrawl.dev/api-reference/introduction.md",
+      "kind": "primary_docs",
+      "scope": "Firecrawl hosted API v2 and MCP server, API key auth, free credits and paid plans, plus open-source self-hosted edition",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor/project-controlled documentation or product page selected by researcher",
+      "attribution_by": "task12-research-agent-claude"
+    },
+    "captured_on": "2026-11-23",
+    "capture_method": "http_content",
+    "snapshot_ref": "snapshots/10e04747c690d3610008d04657cd917c132404f07df9985536cd3ba86deb1cbe.txt",
+    "content_sha256": "10e04747c690d3610008d04657cd917c132404f07df9985536cd3ba86deb1cbe",
+    "line_count": 69
+  },
+  {
+    "spec": {
+      "app_id": 56,
+      "url": "https://docs.firecrawl.dev/mcp-server.md",
+      "kind": "primary_docs",
+      "scope": "Firecrawl hosted API v2 and MCP server, API key auth, free credits and paid plans, plus open-source self-hosted edition",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor/project-controlled documentation or product page selected by researcher",
+      "attribution_by": "task12-research-agent-claude"
+    },
+    "captured_on": "2026-11-23",
+    "capture_method": "http_content",
+    "snapshot_ref": "snapshots/c3a856e59d1914c806d199a6c885f113e0faf2951c43d497132987185ef96982.txt",
+    "content_sha256": "c3a856e59d1914c806d199a6c885f113e0faf2951c43d497132987185ef96982",
+    "line_count": 52
+  },
+  {
+    "spec": {
+      "app_id": 56,
+      "url": "https://docs.firecrawl.dev/llms.txt",
+      "kind": "primary_docs",
+      "scope": "Firecrawl hosted API v2 and MCP server, API key auth, free credits and paid plans, plus open-source self-hosted edition",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor/project-controlled documentation or product page selected by researcher",
+      "attribution_by": "task12-research-agent-claude"
+    },
+    "captured_on": "2026-11-23",
+    "capture_method": "http_content",
+    "snapshot_ref": "snapshots/a96c2338baa6a720fb8a9c97a6fabdcf7422edc993ea8a5e655ff0faeaba49e4.txt",
+    "content_sha256": "a96c2338baa6a720fb8a9c97a6fabdcf7422edc993ea8a5e655ff0faeaba49e4",
+    "line_count": 54
+  },
+  {
+    "spec": {
+      "app_id": 56,
+      "url": "https://docs.firecrawl.dev/_llms/en/v2/documentation.txt",
+      "kind": "primary_docs",
+      "scope": "Firecrawl hosted API v2 and MCP server, API key auth, free credits and paid plans, plus open-source self-hosted edition",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor/project-controlled documentation or product page selected by researcher",
+      "attribution_by": "task12-research-agent-claude"
+    },
+    "captured_on": "2026-11-23",
+    "capture_method": "http_content",
+    "snapshot_ref": "snapshots/55e119b561fc0f7c06b77f8fd6bee9345eeb54c3ea771670b1a9b74cb8df966f.txt",
+    "content_sha256": "55e119b561fc0f7c06b77f8fd6bee9345eeb54c3ea771670b1a9b74cb8df966f",
+    "line_count": 170
+  },
+  {
+    "spec": {
+      "app_id": 56,
+      "url": "https://docs.firecrawl.dev/rate-limits",
+      "kind": "primary_docs",
+      "scope": "Firecrawl hosted API v2 and MCP server, API key auth, free credits and paid plans, plus open-source self-hosted edition",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor/project-controlled documentation or product page selected by researcher",
+      "attribution_by": "task12-research-agent-claude"
+    },
+    "captured_on": "2026-11-23",
+    "capture_method": "http_content",
+    "snapshot_ref": "snapshots/efb2525717fdddf39c562572450acf67d16016a51652f0a902e1af79598cb8a3.txt",
+    "content_sha256": "efb2525717fdddf39c562572450acf67d16016a51652f0a902e1af79598cb8a3",
+    "line_count": 197
+  },
+  {
+    "spec": {
+      "app_id": 56,
+      "url": "https://docs.firecrawl.dev/features/scrape",
+      "kind": "primary_docs",
+      "scope": "Firecrawl hosted API v2 and MCP server, API key auth, free credits and paid plans, plus open-source self-hosted edition",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor/project-controlled documentation or product page selected by researcher",
+      "attribution_by": "task12-research-agent-claude"
+    },
+    "captured_on": "2026-11-23",
+    "capture_method": "http_content",
+    "snapshot_ref": "snapshots/8981a6e12ba8c357fc53fe9549f63b271b9d69fdc6fbd4c789cdaa488b63bcbc.txt",
+    "content_sha256": "8981a6e12ba8c357fc53fe9549f63b271b9d69fdc6fbd4c789cdaa488b63bcbc",
+    "line_count": 1205
+  },
+  {
+    "spec": {
+      "app_id": 56,
+      "url": "https://docs.firecrawl.dev/contributing/self-host",
+      "kind": "primary_docs",
+      "scope": "Firecrawl hosted API v2 and MCP server, API key auth, free credits and paid plans, plus open-source self-hosted edition",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor/project-controlled documentation or product page selected by researcher",
+      "attribution_by": "task12-research-agent-claude"
+    },
+    "captured_on": "2026-11-23",
+    "capture_method": "http_content",
+    "snapshot_ref": "snapshots/dbe639e053d49fb4679891f3b4007f92b2ff5cdd2f58c8e820c16d8bd430b602.txt",
+    "content_sha256": "dbe639e053d49fb4679891f3b4007f92b2ff5cdd2f58c8e820c16d8bd430b602",
+    "line_count": 267
+  },
+  {
+    "spec": {
+      "app_id": 56,
+      "url": "https://www.firecrawl.dev/pricing",
+      "kind": "official_product_page",
+      "scope": "Firecrawl hosted API v2 and MCP server, API key auth, free credits and paid plans, plus open-source self-hosted edition",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor/project-controlled documentation or product page selected by researcher",
+      "attribution_by": "task12-research-agent-claude"
+    },
+    "captured_on": "2026-11-23",
+    "capture_method": "http_content",
+    "snapshot_ref": "snapshots/a25e057f2bd5ab319d47e9a24cdcedd9b75518dc2c5defcd1cabfc452082754d.txt",
+    "content_sha256": "a25e057f2bd5ab319d47e9a24cdcedd9b75518dc2c5defcd1cabfc452082754d",
+    "line_count": 271
+  },
+  {
+    "spec": {
+      "app_id": 56,
+      "url": "https://github.com/firecrawl/firecrawl-mcp-server",
+      "kind": "official_repository",
+      "scope": "Firecrawl hosted API v2 and MCP server, API key auth, free credits and paid plans, plus open-source self-hosted edition",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor/project-controlled documentation or product page selected by researcher",
+      "attribution_by": "task12-research-agent-claude"
+    },
+    "captured_on": "2026-11-23",
+    "capture_method": "http_content",
+    "snapshot_ref": "snapshots/432ff4a8ac15bef85c3494a0f9c45e8378c9969aa99c0337876a6c8d1b3fc6d3.txt",
+    "content_sha256": "432ff4a8ac15bef85c3494a0f9c45e8378c9969aa99c0337876a6c8d1b3fc6d3",
+    "line_count": 1291
+  },
+  {
+    "spec": {
+      "app_id": 56,
+      "url": "https://raw.githubusercontent.com/firecrawl/firecrawl-mcp-server/main/README.md",
+      "kind": "official_repository",
+      "scope": "Firecrawl hosted API v2 and MCP server, API key auth, free credits and paid plans, plus open-source self-hosted edition",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor/project-controlled documentation or product page selected by researcher",
+      "attribution_by": "task12-research-agent-claude"
+    },
+    "captured_on": "2026-11-23",
+    "capture_method": "http_content",
+    "snapshot_ref": "snapshots/8c177d6d24c54c77b7a8635f1ae178c5497164bb0322fdf044c70d7d4af06417.txt",
+    "content_sha256": "8c177d6d24c54c77b7a8635f1ae178c5497164bb0322fdf044c70d7d4af06417",
+    "line_count": 1130
+  },
+  {
+    "spec": {
+      "app_id": 56,
+      "url": "https://raw.githubusercontent.com/firecrawl/firecrawl/main/README.md",
+      "kind": "official_repository",
+      "scope": "Firecrawl hosted API v2 and MCP server, API key auth, free credits and paid plans, plus open-source self-hosted edition",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor/project-controlled documentation or product page selected by researcher",
+      "attribution_by": "task12-research-agent-claude"
+    },
+    "captured_on": "2026-11-23",
+    "capture_method": "http_content",
+    "snapshot_ref": "snapshots/82f52ff91952d0b051f25b8fa18be6bd3510c7d2e272e0f5e3fdddb882406dc2.txt",
+    "content_sha256": "82f52ff91952d0b051f25b8fa18be6bd3510c7d2e272e0f5e3fdddb882406dc2",
+    "line_count": 441
+  },
+  {
+    "spec": {
+      "app_id": 56,
+      "url": "https://raw.githubusercontent.com/firecrawl/firecrawl/main/LICENSE",
+      "kind": "official_repository",
+      "scope": "Firecrawl hosted API v2 and MCP server, API key auth, free credits and paid plans, plus open-source self-hosted edition",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor/project-controlled documentation or product page selected by researcher",
+      "attribution_by": "task12-research-agent-claude"
+    },
+    "captured_on": "2026-11-23",
+    "capture_method": "http_content",
+    "snapshot_ref": "snapshots/65243158bdf36c1976906b1a6821d9ee5fb4f6ee8578de21a60c02c22703cb3c.txt",
+    "content_sha256": "65243158bdf36c1976906b1a6821d9ee5fb4f6ee8578de21a60c02c22703cb3c",
+    "line_count": 558
+  },
+  {
+    "spec": {
+      "app_id": 57,
+      "url": "https://docs.brightdata.com/api-reference/authentication.md",
+      "kind": "primary_docs",
+      "scope": "Bright Data hosted APIs (Web Unlocker, SERP, Scrapers, datasets, account management) and official MCP server, API key auth, free tier and paid usage",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor/project-controlled documentation or product page selected by researcher",
+      "attribution_by": "task12-research-agent-claude"
+    },
+    "captured_on": "2026-11-23",
+    "capture_method": "http_content",
+    "snapshot_ref": "snapshots/9807b670abe6ed0c7919118794492d6ec15f3b89ae5c000bc9fe4bb9c02b91d8.txt",
+    "content_sha256": "9807b670abe6ed0c7919118794492d6ec15f3b89ae5c000bc9fe4bb9c02b91d8",
+    "line_count": 153
+  },
+  {
+    "spec": {
+      "app_id": 57,
+      "url": "https://docs.brightdata.com/products/mcp-server/overview.md",
+      "kind": "primary_docs",
+      "scope": "Bright Data hosted APIs (Web Unlocker, SERP, Scrapers, datasets, account management) and official MCP server, API key auth, free tier and paid usage",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor/project-controlled documentation or product page selected by researcher",
+      "attribution_by": "task12-research-agent-claude"
+    },
+    "captured_on": "2026-11-23",
+    "capture_method": "http_content",
+    "snapshot_ref": "snapshots/000e07729f6128be5c88f8b5e7256184ade84d81175216484293667546b97fc7.txt",
+    "content_sha256": "000e07729f6128be5c88f8b5e7256184ade84d81175216484293667546b97fc7",
+    "line_count": 42
+  },
+  {
+    "spec": {
+      "app_id": 57,
+      "url": "https://docs.brightdata.com/general/account/billing-and-pricing/free-tier.md",
+      "kind": "primary_docs",
+      "scope": "Bright Data hosted APIs (Web Unlocker, SERP, Scrapers, datasets, account management) and official MCP server, API key auth, free tier and paid usage",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor/project-controlled documentation or product page selected by researcher",
+      "attribution_by": "task12-research-agent-claude"
+    },
+    "captured_on": "2026-11-23",
+    "capture_method": "http_content",
+    "snapshot_ref": "snapshots/ae60a7f73d166619b7a09c2dca151ea130287f5c0c53cb4c2bbf09685c9229a2.txt",
+    "content_sha256": "ae60a7f73d166619b7a09c2dca151ea130287f5c0c53cb4c2bbf09685c9229a2",
+    "line_count": 82
+  },
+  {
+    "spec": {
+      "app_id": 57,
+      "url": "https://docs.brightdata.com/llms.txt",
+      "kind": "primary_docs",
+      "scope": "Bright Data hosted APIs (Web Unlocker, SERP, Scrapers, datasets, account management) and official MCP server, API key auth, free tier and paid usage",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor/project-controlled documentation or product page selected by researcher",
+      "attribution_by": "task12-research-agent-claude"
+    },
+    "captured_on": "2026-11-23",
+    "capture_method": "http_content",
+    "snapshot_ref": "snapshots/2cb4edaeb976cee65a45db20c488935f527031944e0e35e414a37cae0f7ebeb1.txt",
+    "content_sha256": "2cb4edaeb976cee65a45db20c488935f527031944e0e35e414a37cae0f7ebeb1",
+    "line_count": 157
+  },
+  {
+    "spec": {
+      "app_id": 57,
+      "url": "https://docs.brightdata.com/products/cli/overview.md",
+      "kind": "primary_docs",
+      "scope": "Bright Data hosted APIs (Web Unlocker, SERP, Scrapers, datasets, account management) and official MCP server, API key auth, free tier and paid usage",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor/project-controlled documentation or product page selected by researcher",
+      "attribution_by": "task12-research-agent-claude"
+    },
+    "captured_on": "2026-11-23",
+    "capture_method": "http_content",
+    "snapshot_ref": "snapshots/8458fe024a10af568f0c1119bf53f743db46a9368842d397ee988b92130ba8a0.txt",
+    "content_sha256": "8458fe024a10af568f0c1119bf53f743db46a9368842d397ee988b92130ba8a0",
+    "line_count": 70
+  },
+  {
+    "spec": {
+      "app_id": 57,
+      "url": "https://docs.brightdata.com/products/web-unlocker/introduction.md",
+      "kind": "primary_docs",
+      "scope": "Bright Data hosted APIs (Web Unlocker, SERP, Scrapers, datasets, account management) and official MCP server, API key auth, free tier and paid usage",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor/project-controlled documentation or product page selected by researcher",
+      "attribution_by": "task12-research-agent-claude"
+    },
+    "captured_on": "2026-11-23",
+    "capture_method": "http_content",
+    "snapshot_ref": "snapshots/043b102e313d04a3c19e43868061f246d122ef4a50d9f7f8b0cca5817b7bb961.txt",
+    "content_sha256": "043b102e313d04a3c19e43868061f246d122ef4a50d9f7f8b0cca5817b7bb961",
+    "line_count": 56
+  },
+  {
+    "spec": {
+      "app_id": 57,
+      "url": "https://docs.brightdata.com/products/serp-api/introduction.md",
+      "kind": "primary_docs",
+      "scope": "Bright Data hosted APIs (Web Unlocker, SERP, Scrapers, datasets, account management) and official MCP server, API key auth, free tier and paid usage",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor/project-controlled documentation or product page selected by researcher",
+      "attribution_by": "task12-research-agent-claude"
+    },
+    "captured_on": "2026-11-23",
+    "capture_method": "http_content",
+    "snapshot_ref": "snapshots/1f4c3d8dba6082570aa9ad16f21f4f3b74297890219b515ba5094d3136a4be25.txt",
+    "content_sha256": "1f4c3d8dba6082570aa9ad16f21f4f3b74297890219b515ba5094d3136a4be25",
+    "line_count": 196
+  },
+  {
+    "spec": {
+      "app_id": 57,
+      "url": "https://docs.brightdata.com/products/scrapers/overview.md",
+      "kind": "primary_docs",
+      "scope": "Bright Data hosted APIs (Web Unlocker, SERP, Scrapers, datasets, account management) and official MCP server, API key auth, free tier and paid usage",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor/project-controlled documentation or product page selected by researcher",
+      "attribution_by": "task12-research-agent-claude"
+    },
+    "captured_on": "2026-11-23",
+    "capture_method": "http_content",
+    "snapshot_ref": "snapshots/7d3e8973a49e3841dbac90ba648712912df61e7be542ab5c7cda5217b3bea998.txt",
+    "content_sha256": "7d3e8973a49e3841dbac90ba648712912df61e7be542ab5c7cda5217b3bea998",
+    "line_count": 195
+  },
+  {
+    "spec": {
+      "app_id": 57,
+      "url": "https://docs.brightdata.com/api-reference/marketplace-dataset-api/overview.md",
+      "kind": "primary_docs",
+      "scope": "Bright Data hosted APIs (Web Unlocker, SERP, Scrapers, datasets, account management) and official MCP server, API key auth, free tier and paid usage",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor/project-controlled documentation or product page selected by researcher",
+      "attribution_by": "task12-research-agent-claude"
+    },
+    "captured_on": "2026-11-23",
+    "capture_method": "http_content",
+    "snapshot_ref": "snapshots/58f8028b4868e2d22b0e1ef4897ab827d71f2270002ae2fb48dfe76e8e406761.txt",
+    "content_sha256": "58f8028b4868e2d22b0e1ef4897ab827d71f2270002ae2fb48dfe76e8e406761",
+    "line_count": 67
+  },
+  {
+    "spec": {
+      "app_id": 57,
+      "url": "https://docs.brightdata.com/api-reference/account-management-api/Add_a_Zone.md",
+      "kind": "primary_docs",
+      "scope": "Bright Data hosted APIs (Web Unlocker, SERP, Scrapers, datasets, account management) and official MCP server, API key auth, free tier and paid usage",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor/project-controlled documentation or product page selected by researcher",
+      "attribution_by": "task12-research-agent-claude"
+    },
+    "captured_on": "2026-11-23",
+    "capture_method": "http_content",
+    "snapshot_ref": "snapshots/819c740f0bab76bd85ea6151738fcba56dadafe1e6d51f21f0350378430fdc27.txt",
+    "content_sha256": "819c740f0bab76bd85ea6151738fcba56dadafe1e6d51f21f0350378430fdc27",
+    "line_count": 645
+  },
+  {
+    "spec": {
+      "app_id": 57,
+      "url": "https://docs.brightdata.com/products/scraping-browser/introduction.md",
+      "kind": "primary_docs",
+      "scope": "Bright Data hosted APIs (Web Unlocker, SERP, Scrapers, datasets, account management) and official MCP server, API key auth, free tier and paid usage",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor/project-controlled documentation or product page selected by researcher",
+      "attribution_by": "task12-research-agent-claude"
+    },
+    "captured_on": "2026-11-23",
+    "capture_method": "http_content",
+    "snapshot_ref": "snapshots/0d8cbe6b0d3ee2635752bcdec293bac5f0db1ac8943815458eeab5c62b59d48c.txt",
+    "content_sha256": "0d8cbe6b0d3ee2635752bcdec293bac5f0db1ac8943815458eeab5c62b59d48c",
+    "line_count": 44
+  },
+  {
+    "spec": {
+      "app_id": 57,
+      "url": "https://brightdata.com/pricing",
+      "kind": "official_product_page",
+      "scope": "Bright Data hosted APIs (Web Unlocker, SERP, Scrapers, datasets, account management) and official MCP server, API key auth, free tier and paid usage",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor/project-controlled documentation or product page selected by researcher",
+      "attribution_by": "task12-research-agent-claude"
+    },
+    "captured_on": "2026-11-23",
+    "capture_method": "http_content",
+    "snapshot_ref": "snapshots/d15b633ae4158afe3f68bf7ba33086a72e619700db8bf2e3eb2b7644ba6b6f3f.txt",
+    "content_sha256": "d15b633ae4158afe3f68bf7ba33086a72e619700db8bf2e3eb2b7644ba6b6f3f",
+    "line_count": 281
+  },
+  {
+    "spec": {
+      "app_id": 57,
+      "url": "https://github.com/brightdata/brightdata-mcp",
+      "kind": "official_repository",
+      "scope": "Bright Data hosted APIs (Web Unlocker, SERP, Scrapers, datasets, account management) and official MCP server, API key auth, free tier and paid usage",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor/project-controlled documentation or product page selected by researcher",
+      "attribution_by": "task12-research-agent-claude"
+    },
+    "captured_on": "2026-11-23",
+    "capture_method": "http_content",
+    "snapshot_ref": "snapshots/8ea1ef9d3e169e825e45dea2514dec4ce45a413658d3ffd969f0da6d5ff2592b.txt",
+    "content_sha256": "8ea1ef9d3e169e825e45dea2514dec4ce45a413658d3ffd969f0da6d5ff2592b",
+    "line_count": 787
+  },
+  {
+    "spec": {
+      "app_id": 57,
+      "url": "https://raw.githubusercontent.com/brightdata/brightdata-mcp/main/README.md",
+      "kind": "official_repository",
+      "scope": "Bright Data hosted APIs (Web Unlocker, SERP, Scrapers, datasets, account management) and official MCP server, API key auth, free tier and paid usage",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor/project-controlled documentation or product page selected by researcher",
+      "attribution_by": "task12-research-agent-claude"
+    },
+    "captured_on": "2026-11-23",
+    "capture_method": "http_content",
+    "snapshot_ref": "snapshots/61ca50806533e654522536a837d188a73a574bb939765ed13f820d470b10538f.txt",
+    "content_sha256": "61ca50806533e654522536a837d188a73a574bb939765ed13f820d470b10538f",
+    "line_count": 498
+  },
+  {
+    "spec": {
+      "app_id": 58,
+      "url": "https://github.com/sherlock-project/sherlock",
+      "kind": "official_repository",
+      "scope": "Sherlock Project open-source username-search CLI (sherlock-project), local installation, no hosted API",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor/project-controlled documentation or product page selected by researcher",
+      "attribution_by": "task12-research-agent-claude"
+    },
+    "captured_on": "2026-11-23",
+    "capture_method": "http_content",
+    "snapshot_ref": "snapshots/003345bafc4da21c86ec8f1847467c3a7ed83ca7744fb563dcde2886b7661fc5.txt",
+    "content_sha256": "003345bafc4da21c86ec8f1847467c3a7ed83ca7744fb563dcde2886b7661fc5",
+    "line_count": 270
+  },
+  {
+    "spec": {
+      "app_id": 58,
+      "url": "https://raw.githubusercontent.com/sherlock-project/sherlock/master/LICENSE",
+      "kind": "official_repository",
+      "scope": "Sherlock Project open-source username-search CLI (sherlock-project), local installation, no hosted API",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor/project-controlled documentation or product page selected by researcher",
+      "attribution_by": "task12-research-agent-claude"
+    },
+    "captured_on": "2026-11-23",
+    "capture_method": "http_content",
+    "snapshot_ref": "snapshots/0f10be9fc2d9398acedc33260ec0ee8a0267eff541a697ec8ba22a1dd9c5deee.txt",
+    "content_sha256": "0f10be9fc2d9398acedc33260ec0ee8a0267eff541a697ec8ba22a1dd9c5deee",
+    "line_count": 17
+  },
+  {
+    "spec": {
+      "app_id": 58,
+      "url": "https://raw.githubusercontent.com/sherlock-project/sherlock/master/pyproject.toml",
+      "kind": "official_repository",
+      "scope": "Sherlock Project open-source username-search CLI (sherlock-project), local installation, no hosted API",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor/project-controlled documentation or product page selected by researcher",
+      "attribution_by": "task12-research-agent-claude"
+    },
+    "captured_on": "2026-11-23",
+    "capture_method": "http_content",
+    "snapshot_ref": "snapshots/36a03943ebad610228f0f0557b172f8e292f5965313e210bb9fa5f59d31f1ced.txt",
+    "content_sha256": "36a03943ebad610228f0f0557b172f8e292f5965313e210bb9fa5f59d31f1ced",
+    "line_count": 59
+  },
+  {
+    "spec": {
+      "app_id": 58,
+      "url": "https://sherlockproject.xyz/usage",
+      "kind": "official_product_page",
+      "scope": "Sherlock Project open-source username-search CLI (sherlock-project), local installation, no hosted API",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor/project-controlled documentation or product page selected by researcher",
+      "attribution_by": "task12-research-agent-claude"
+    },
+    "captured_on": "2026-11-23",
+    "capture_method": "http_content",
+    "snapshot_ref": "snapshots/305dbe437b96fbcec081c7047f5c018f52a77efaf631ff076cfa11e3b62fc0f5.txt",
+    "content_sha256": "305dbe437b96fbcec081c7047f5c018f52a77efaf631ff076cfa11e3b62fc0f5",
+    "line_count": 75
+  },
+  {
+    "spec": {
+      "app_id": 58,
+      "url": "https://sherlockproject.xyz/installation",
+      "kind": "official_product_page",
+      "scope": "Sherlock Project open-source username-search CLI (sherlock-project), local installation, no hosted API",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor/project-controlled documentation or product page selected by researcher",
+      "attribution_by": "task12-research-agent-claude"
+    },
+    "captured_on": "2026-11-23",
+    "capture_method": "http_content",
+    "snapshot_ref": "snapshots/5b81dd980b2fec14a6c7085324293e7e8f1172df825825aad3627550eb09ff35.txt",
+    "content_sha256": "5b81dd980b2fec14a6c7085324293e7e8f1172df825825aad3627550eb09ff35",
+    "line_count": 92
+  },
+  {
+    "spec": {
+      "app_id": 58,
+      "url": "https://sherlockproject.xyz/",
+      "kind": "official_product_page",
+      "scope": "Sherlock Project open-source username-search CLI (sherlock-project), local installation, no hosted API",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor/project-controlled documentation or product page selected by researcher",
+      "attribution_by": "task12-research-agent-claude"
+    },
+    "captured_on": "2026-11-23",
+    "capture_method": "http_content",
+    "snapshot_ref": "snapshots/602d65e59c8240db89e99a16586e9999d78305d26cdfa35a9074178f11c74fad.txt",
+    "content_sha256": "602d65e59c8240db89e99a16586e9999d78305d26cdfa35a9074178f11c74fad",
+    "line_count": 24
+  },
+  {
+    "spec": {
+      "app_id": 58,
+      "url": "https://pypi.org/project/sherlock-project/",
+      "kind": "official_product_page",
+      "scope": "Sherlock Project open-source username-search CLI (sherlock-project), local installation, no hosted API",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor/project-controlled documentation or product page selected by researcher",
+      "attribution_by": "task12-research-agent-claude"
+    },
+    "captured_on": "2026-11-23",
+    "capture_method": "http_content",
+    "snapshot_ref": "snapshots/65c46a036936b3a21bec7a39b3ee33b81efa583ce2e872ebd7aba90481da1efe.txt",
+    "content_sha256": "65c46a036936b3a21bec7a39b3ee33b81efa583ce2e872ebd7aba90481da1efe",
+    "line_count": 4
+  },
+  {
+    "spec": {
+      "app_id": 59,
+      "url": "https://docs.waterfall.io/v1/overview.md",
+      "kind": "primary_docs",
+      "scope": "Waterfall.io B2B contact and company enrichment REST API (docs.waterfall.io v1), x-api-key auth, access request/paid usage; not other products named Waterfall",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor/project-controlled documentation or product page selected by researcher",
+      "attribution_by": "task12-research-agent-claude"
+    },
+    "captured_on": "2026-11-23",
+    "capture_method": "http_content",
+    "snapshot_ref": "snapshots/eef5b03d016f4921030b7d0aa4634442f4583cefd04a5b64d068d4d62437f901.txt",
+    "content_sha256": "eef5b03d016f4921030b7d0aa4634442f4583cefd04a5b64d068d4d62437f901",
+    "line_count": 35
+  },
+  {
+    "spec": {
+      "app_id": 59,
+      "url": "https://docs.waterfall.io/v1/about-waterfall.md",
+      "kind": "primary_docs",
+      "scope": "Waterfall.io B2B contact and company enrichment REST API (docs.waterfall.io v1), x-api-key auth, access request/paid usage; not other products named Waterfall",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor/project-controlled documentation or product page selected by researcher",
+      "attribution_by": "task12-research-agent-claude"
+    },
+    "captured_on": "2026-11-23",
+    "capture_method": "http_content",
+    "snapshot_ref": "snapshots/d93c202bac2f31f7349b2eb84d24b74b9c41df31c462cde80582334e093ac949.txt",
+    "content_sha256": "d93c202bac2f31f7349b2eb84d24b74b9c41df31c462cde80582334e093ac949",
+    "line_count": 43
+  },
+  {
+    "spec": {
+      "app_id": 59,
+      "url": "https://docs.waterfall.io/v1/authentication.md",
+      "kind": "primary_docs",
+      "scope": "Waterfall.io B2B contact and company enrichment REST API (docs.waterfall.io v1), x-api-key auth, access request/paid usage; not other products named Waterfall",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor/project-controlled documentation or product page selected by researcher",
+      "attribution_by": "task12-research-agent-claude"
+    },
+    "captured_on": "2026-11-23",
+    "capture_method": "http_content",
+    "snapshot_ref": "snapshots/56d4ecafe7212251ac1d6d2cb0a8f20286099e0ce77458c9370dcb82a3fe4134.txt",
+    "content_sha256": "56d4ecafe7212251ac1d6d2cb0a8f20286099e0ce77458c9370dcb82a3fe4134",
+    "line_count": 19
+  },
+  {
+    "spec": {
+      "app_id": 59,
+      "url": "https://docs.waterfall.io/v1/quickstart.md",
+      "kind": "primary_docs",
+      "scope": "Waterfall.io B2B contact and company enrichment REST API (docs.waterfall.io v1), x-api-key auth, access request/paid usage; not other products named Waterfall",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor/project-controlled documentation or product page selected by researcher",
+      "attribution_by": "task12-research-agent-claude"
+    },
+    "captured_on": "2026-11-23",
+    "capture_method": "http_content",
+    "snapshot_ref": "snapshots/93801eb5a6504a425efc3f0627bacf47f9e827d53fcc144a3478290b3b279a0f.txt",
+    "content_sha256": "93801eb5a6504a425efc3f0627bacf47f9e827d53fcc144a3478290b3b279a0f",
+    "line_count": 70
+  },
+  {
+    "spec": {
+      "app_id": 59,
+      "url": "https://docs.waterfall.io/v1/rate-limit.md",
+      "kind": "primary_docs",
+      "scope": "Waterfall.io B2B contact and company enrichment REST API (docs.waterfall.io v1), x-api-key auth, access request/paid usage; not other products named Waterfall",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor/project-controlled documentation or product page selected by researcher",
+      "attribution_by": "task12-research-agent-claude"
+    },
+    "captured_on": "2026-11-23",
+    "capture_method": "http_content",
+    "snapshot_ref": "snapshots/7927a9190bc4ad3767cdc3dd5a00dadd1554b142bdd698d3a956514cc1770797.txt",
+    "content_sha256": "7927a9190bc4ad3767cdc3dd5a00dadd1554b142bdd698d3a956514cc1770797",
+    "line_count": 25
+  },
+  {
+    "spec": {
+      "app_id": 59,
+      "url": "https://docs.waterfall.io/v1/book-demo.md",
+      "kind": "primary_docs",
+      "scope": "Waterfall.io B2B contact and company enrichment REST API (docs.waterfall.io v1), x-api-key auth, access request/paid usage; not other products named Waterfall",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor/project-controlled documentation or product page selected by researcher",
+      "attribution_by": "task12-research-agent-claude"
+    },
+    "captured_on": "2026-11-23",
+    "capture_method": "http_content",
+    "snapshot_ref": "snapshots/f28a9db4120a77da333f6bd4a77b59a1bec93d1f19838cadbde462f5ef8717ea.txt",
+    "content_sha256": "f28a9db4120a77da333f6bd4a77b59a1bec93d1f19838cadbde462f5ef8717ea",
+    "line_count": 17
+  },
+  {
+    "spec": {
+      "app_id": 59,
+      "url": "https://docs.waterfall.io/v1/faq.md",
+      "kind": "primary_docs",
+      "scope": "Waterfall.io B2B contact and company enrichment REST API (docs.waterfall.io v1), x-api-key auth, access request/paid usage; not other products named Waterfall",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor/project-controlled documentation or product page selected by researcher",
+      "attribution_by": "task12-research-agent-claude"
+    },
+    "captured_on": "2026-11-23",
+    "capture_method": "http_content",
+    "snapshot_ref": "snapshots/24094f730370974beee0d52aaeeaf4c5df802eb98fb612ab8043cb2211c40e7c.txt",
+    "content_sha256": "24094f730370974beee0d52aaeeaf4c5df802eb98fb612ab8043cb2211c40e7c",
+    "line_count": 131
+  },
+  {
+    "spec": {
+      "app_id": 59,
+      "url": "https://docs.waterfall.io/v1/evaluate-waterfall.md",
+      "kind": "primary_docs",
+      "scope": "Waterfall.io B2B contact and company enrichment REST API (docs.waterfall.io v1), x-api-key auth, access request/paid usage; not other products named Waterfall",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor/project-controlled documentation or product page selected by researcher",
+      "attribution_by": "task12-research-agent-claude"
+    },
+    "captured_on": "2026-11-23",
+    "capture_method": "http_content",
+    "snapshot_ref": "snapshots/9676d6e90afb1a2426fc3010c85c42fd26416c8670ca9569f178c9ada38ac126.txt",
+    "content_sha256": "9676d6e90afb1a2426fc3010c85c42fd26416c8670ca9569f178c9ada38ac126",
+    "line_count": 50
+  },
+  {
+    "spec": {
+      "app_id": 59,
+      "url": "https://docs.waterfall.io/v1/api-keys-overview.md",
+      "kind": "primary_docs",
+      "scope": "Waterfall.io B2B contact and company enrichment REST API (docs.waterfall.io v1), x-api-key auth, access request/paid usage; not other products named Waterfall",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor/project-controlled documentation or product page selected by researcher",
+      "attribution_by": "task12-research-agent-claude"
+    },
+    "captured_on": "2026-11-23",
+    "capture_method": "http_content",
+    "snapshot_ref": "snapshots/93b756448d0b30f064bf5833449376df43f21deeb7aca845b3f60446cc4aa9c5.txt",
+    "content_sha256": "93b756448d0b30f064bf5833449376df43f21deeb7aca845b3f60446cc4aa9c5",
+    "line_count": 20
+  },
+  {
+    "spec": {
+      "app_id": 59,
+      "url": "https://docs.waterfall.io/v1/skills-overview.md",
+      "kind": "primary_docs",
+      "scope": "Waterfall.io B2B contact and company enrichment REST API (docs.waterfall.io v1), x-api-key auth, access request/paid usage; not other products named Waterfall",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor/project-controlled documentation or product page selected by researcher",
+      "attribution_by": "task12-research-agent-claude"
+    },
+    "captured_on": "2026-11-23",
+    "capture_method": "http_content",
+    "snapshot_ref": "snapshots/4d15c2d7ec518326ee1584dd2aa8ff5e374c69b200d0b441ca71efcd320cd810.txt",
+    "content_sha256": "4d15c2d7ec518326ee1584dd2aa8ff5e374c69b200d0b441ca71efcd320cd810",
+    "line_count": 22
+  },
+  {
+    "spec": {
+      "app_id": 59,
+      "url": "https://docs.waterfall.io/llms.txt",
+      "kind": "primary_docs",
+      "scope": "Waterfall.io B2B contact and company enrichment REST API (docs.waterfall.io v1), x-api-key auth, access request/paid usage; not other products named Waterfall",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor/project-controlled documentation or product page selected by researcher",
+      "attribution_by": "task12-research-agent-claude"
+    },
+    "captured_on": "2026-11-23",
+    "capture_method": "http_content",
+    "snapshot_ref": "snapshots/91e072ec2f3fe449e1b5042c968bb5377e6c163e0edfd4b51619adacb9ea9ae8.txt",
+    "content_sha256": "91e072ec2f3fe449e1b5042c968bb5377e6c163e0edfd4b51619adacb9ea9ae8",
+    "line_count": 57
+  },
+  {
+    "spec": {
+      "app_id": 59,
+      "url": "https://docs.waterfall.io/v1/company-enrichment-launcher.md",
+      "kind": "primary_docs",
+      "scope": "Waterfall.io B2B contact and company enrichment REST API (docs.waterfall.io v1), x-api-key auth, access request/paid usage; not other products named Waterfall",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor/project-controlled documentation or product page selected by researcher",
+      "attribution_by": "task12-research-agent-claude"
+    },
+    "captured_on": "2026-11-23",
+    "capture_method": "http_content",
+    "snapshot_ref": "snapshots/88a8321cf89806aac7da33e54a45d20bb4a3c992333b54259013ce27f7edbebb.txt",
+    "content_sha256": "88a8321cf89806aac7da33e54a45d20bb4a3c992333b54259013ce27f7edbebb",
+    "line_count": 850
+  },
+  {
+    "spec": {
+      "app_id": 59,
+      "url": "https://docs.waterfall.io/v1/email-verifier.md",
+      "kind": "primary_docs",
+      "scope": "Waterfall.io B2B contact and company enrichment REST API (docs.waterfall.io v1), x-api-key auth, access request/paid usage; not other products named Waterfall",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor/project-controlled documentation or product page selected by researcher",
+      "attribution_by": "task12-research-agent-claude"
+    },
+    "captured_on": "2026-11-23",
+    "capture_method": "http_content",
+    "snapshot_ref": "snapshots/91c98fa567ab9338f4d779d7a6449c1aea0cd9e667457ce728ad9127bd650845.txt",
+    "content_sha256": "91c98fa567ab9338f4d779d7a6449c1aea0cd9e667457ce728ad9127bd650845",
+    "line_count": 939
+  },
+  {
+    "spec": {
+      "app_id": 59,
+      "url": "https://docs.waterfall.io/v1/company-reveal-launcher.md",
+      "kind": "primary_docs",
+      "scope": "Waterfall.io B2B contact and company enrichment REST API (docs.waterfall.io v1), x-api-key auth, access request/paid usage; not other products named Waterfall",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor/project-controlled documentation or product page selected by researcher",
+      "attribution_by": "task12-research-agent-claude"
+    },
+    "captured_on": "2026-11-23",
+    "capture_method": "http_content",
+    "snapshot_ref": "snapshots/78919850eabae608db8af08d67e8654d705840c18843a994862d5c1a8d23787f.txt",
+    "content_sha256": "78919850eabae608db8af08d67e8654d705840c18843a994862d5c1a8d23787f",
+    "line_count": 1179
+  },
+  {
+    "spec": {
+      "app_id": 59,
+      "url": "https://docs.waterfall.io/v1/job-change-launcher.md",
+      "kind": "primary_docs",
+      "scope": "Waterfall.io B2B contact and company enrichment REST API (docs.waterfall.io v1), x-api-key auth, access request/paid usage; not other products named Waterfall",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor/project-controlled documentation or product page selected by researcher",
+      "attribution_by": "task12-research-agent-claude"
+    },
+    "captured_on": "2026-11-23",
+    "capture_method": "http_content",
+    "snapshot_ref": "snapshots/1a90f2b85a2150015a522c7d346aac665faacf93221b552cfb718e605a33142c.txt",
+    "content_sha256": "1a90f2b85a2150015a522c7d346aac665faacf93221b552cfb718e605a33142c",
+    "line_count": 1385
+  },
+  {
+    "spec": {
+      "app_id": 59,
+      "url": "https://docs.waterfall.io/v1/account-reporter-v2.md",
+      "kind": "primary_docs",
+      "scope": "Waterfall.io B2B contact and company enrichment REST API (docs.waterfall.io v1), x-api-key auth, access request/paid usage; not other products named Waterfall",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor/project-controlled documentation or product page selected by researcher",
+      "attribution_by": "task12-research-agent-claude"
+    },
+    "captured_on": "2026-11-23",
+    "capture_method": "http_content",
+    "snapshot_ref": "snapshots/72302d845743518002480a1c346ec24ca882bf2c019e3726c5e54fe626f71a80.txt",
+    "content_sha256": "72302d845743518002480a1c346ec24ca882bf2c019e3726c5e54fe626f71a80",
+    "line_count": 1139
+  },
+  {
+    "spec": {
+      "app_id": 59,
+      "url": "https://docs.waterfall.io/v1/openapi-spec.md",
+      "kind": "primary_docs",
+      "scope": "Waterfall.io B2B contact and company enrichment REST API (docs.waterfall.io v1), x-api-key auth, access request/paid usage; not other products named Waterfall",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor/project-controlled documentation or product page selected by researcher",
+      "attribution_by": "task12-research-agent-claude"
+    },
+    "captured_on": "2026-11-23",
+    "capture_method": "http_content",
+    "snapshot_ref": "snapshots/eb746df0a33300fd2606bb3450e556d6ab6d6608a490a0c42decfd403a746168.txt",
+    "content_sha256": "eb746df0a33300fd2606bb3450e556d6ab6d6608a490a0c42decfd403a746168",
+    "line_count": 10
+  },
+  {
+    "spec": {
+      "app_id": 59,
+      "url": "https://waterfall.io/pricing",
+      "kind": "official_product_page",
+      "scope": "Waterfall.io B2B contact and company enrichment REST API (docs.waterfall.io v1), x-api-key auth, access request/paid usage; not other products named Waterfall",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor/project-controlled documentation or product page selected by researcher",
+      "attribution_by": "task12-research-agent-claude"
+    },
+    "captured_on": "2026-11-23",
+    "capture_method": "http_content",
+    "snapshot_ref": "snapshots/66170191765322a4168b0816a046ac3a85cebaefdaa20c8b0f709b73230738b3.txt",
+    "content_sha256": "66170191765322a4168b0816a046ac3a85cebaefdaa20c8b0f709b73230738b3",
+    "line_count": 69
+  },
+  {
+    "spec": {
+      "app_id": 59,
+      "url": "https://waterfall.io/",
+      "kind": "official_product_page",
+      "scope": "Waterfall.io B2B contact and company enrichment REST API (docs.waterfall.io v1), x-api-key auth, access request/paid usage; not other products named Waterfall",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor/project-controlled documentation or product page selected by researcher",
+      "attribution_by": "task12-research-agent-claude"
+    },
+    "captured_on": "2026-11-23",
+    "capture_method": "http_content",
+    "snapshot_ref": "snapshots/a221e608315f2120bd5c4702bc721cbdcc2230354cf0ca03f75014615ae3a932.txt",
+    "content_sha256": "a221e608315f2120bd5c4702bc721cbdcc2230354cf0ca03f75014615ae3a932",
+    "line_count": 227
+  },
+  {
+    "spec": {
+      "app_id": 60,
+      "url": "https://www.clay.com/docs",
+      "kind": "official_product_page",
+      "scope": "Clay (clay.com) GTM data-enrichment platform, Public API and hosted MCP server, API key and OAuth auth, plan-gated access",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor/project-controlled documentation or product page selected by researcher",
+      "attribution_by": "task12-research-agent-claude"
+    },
+    "captured_on": "2026-11-23",
+    "capture_method": "http_content",
+    "snapshot_ref": "snapshots/0a35119c8ce43e14345a82fb41d3bb3ab36b8e438bbd57b6be05212a6e6cc198.txt",
+    "content_sha256": "0a35119c8ce43e14345a82fb41d3bb3ab36b8e438bbd57b6be05212a6e6cc198",
+    "line_count": 201
+  },
+  {
+    "spec": {
+      "app_id": 60,
+      "url": "https://docs.clay.com/",
+      "kind": "primary_docs",
+      "scope": "Clay (clay.com) GTM data-enrichment platform, Public API and hosted MCP server, API key and OAuth auth, plan-gated access",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor/project-controlled documentation or product page selected by researcher",
+      "attribution_by": "task12-research-agent-claude"
+    },
+    "captured_on": "2026-11-23",
+    "capture_method": "http_content",
+    "snapshot_ref": "snapshots/4fd1f15986544131ac612b29a8744ca2183fcac4e5d86c8a615acefa63844bb1.txt",
+    "content_sha256": "4fd1f15986544131ac612b29a8744ca2183fcac4e5d86c8a615acefa63844bb1",
+    "line_count": 465
+  },
+  {
+    "spec": {
+      "app_id": 60,
+      "url": "https://www.clay.com/pricing",
+      "kind": "official_product_page",
+      "scope": "Clay (clay.com) GTM data-enrichment platform, Public API and hosted MCP server, API key and OAuth auth, plan-gated access",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor/project-controlled documentation or product page selected by researcher",
+      "attribution_by": "task12-research-agent-claude"
+    },
+    "captured_on": "2026-11-23",
+    "capture_method": "http_content",
+    "snapshot_ref": "snapshots/052dfeeb211b362c5ce66107480bd4ab94e7003863c0c6cb7c6d28a90439c1e8.txt",
+    "content_sha256": "052dfeeb211b362c5ce66107480bd4ab94e7003863c0c6cb7c6d28a90439c1e8",
+    "line_count": 824
+  },
+  {
+    "spec": {
+      "app_id": 60,
+      "url": "https://www.clay.com/mcp",
+      "kind": "official_product_page",
+      "scope": "Clay (clay.com) GTM data-enrichment platform, Public API and hosted MCP server, API key and OAuth auth, plan-gated access",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor/project-controlled documentation or product page selected by researcher",
+      "attribution_by": "task12-research-agent-claude"
+    },
+    "captured_on": "2026-11-23",
+    "capture_method": "http_content",
+    "snapshot_ref": "snapshots/d24426cdf98e5aa9f7faa18156f025d2fccd01c53375afe4f0614c3f1bf24f62.txt",
+    "content_sha256": "d24426cdf98e5aa9f7faa18156f025d2fccd01c53375afe4f0614c3f1bf24f62",
+    "line_count": 269
+  },
+  {
+    "spec": {
+      "app_id": 60,
+      "url": "https://developers.clay.com/index.md",
+      "kind": "primary_docs",
+      "scope": "Clay (clay.com) GTM data-enrichment platform, Public API and hosted MCP server, API key and OAuth auth, plan-gated access",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor/project-controlled documentation or product page selected by researcher",
+      "attribution_by": "task12-research-agent-claude"
+    },
+    "captured_on": "2026-11-23",
+    "capture_method": "http_content",
+    "snapshot_ref": "snapshots/e901eb481fd62f561dda372a109289490b3baff67f11d69e3fcd52de6575def7.txt",
+    "content_sha256": "e901eb481fd62f561dda372a109289490b3baff67f11d69e3fcd52de6575def7",
+    "line_count": 43
+  },
+  {
+    "spec": {
+      "app_id": 60,
+      "url": "https://developers.clay.com/quickstart.md",
+      "kind": "primary_docs",
+      "scope": "Clay (clay.com) GTM data-enrichment platform, Public API and hosted MCP server, API key and OAuth auth, plan-gated access",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor/project-controlled documentation or product page selected by researcher",
+      "attribution_by": "task12-research-agent-claude"
+    },
+    "captured_on": "2026-11-23",
+    "capture_method": "http_content",
+    "snapshot_ref": "snapshots/426693ccbbb4f83a009e6c0f6d54aa9c6dc4e8580ecde565ec9d5ff725ba7bae.txt",
+    "content_sha256": "426693ccbbb4f83a009e6c0f6d54aa9c6dc4e8580ecde565ec9d5ff725ba7bae",
+    "line_count": 30
+  },
+  {
+    "spec": {
+      "app_id": 60,
+      "url": "https://developers.clay.com/public-api/authentication.md",
+      "kind": "primary_docs",
+      "scope": "Clay (clay.com) GTM data-enrichment platform, Public API and hosted MCP server, API key and OAuth auth, plan-gated access",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor/project-controlled documentation or product page selected by researcher",
+      "attribution_by": "task12-research-agent-claude"
+    },
+    "captured_on": "2026-11-23",
+    "capture_method": "http_content",
+    "snapshot_ref": "snapshots/65b154aa93cec1cca73818a2c5ee255363193e4a88460b35593593888e6a0779.txt",
+    "content_sha256": "65b154aa93cec1cca73818a2c5ee255363193e4a88460b35593593888e6a0779",
+    "line_count": 24
+  },
+  {
+    "spec": {
+      "app_id": 60,
+      "url": "https://developers.clay.com/public-api/rate-limits.md",
+      "kind": "primary_docs",
+      "scope": "Clay (clay.com) GTM data-enrichment platform, Public API and hosted MCP server, API key and OAuth auth, plan-gated access",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor/project-controlled documentation or product page selected by researcher",
+      "attribution_by": "task12-research-agent-claude"
+    },
+    "captured_on": "2026-11-23",
+    "capture_method": "http_content",
+    "snapshot_ref": "snapshots/68838717886a663ac6cf231893528a47fa247b7cbdbced69eb69b772e13e999b.txt",
+    "content_sha256": "68838717886a663ac6cf231893528a47fa247b7cbdbced69eb69b772e13e999b",
+    "line_count": 28
+  },
+  {
+    "spec": {
+      "app_id": 60,
+      "url": "https://developers.clay.com/tables.md",
+      "kind": "primary_docs",
+      "scope": "Clay (clay.com) GTM data-enrichment platform, Public API and hosted MCP server, API key and OAuth auth, plan-gated access",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor/project-controlled documentation or product page selected by researcher",
+      "attribution_by": "task12-research-agent-claude"
+    },
+    "captured_on": "2026-11-23",
+    "capture_method": "http_content",
+    "snapshot_ref": "snapshots/562e1e574ff4e31d84cf8c7c7caaf5c616e20cfd08c117f391501548af17a536.txt",
+    "content_sha256": "562e1e574ff4e31d84cf8c7c7caaf5c616e20cfd08c117f391501548af17a536",
+    "line_count": 87
+  },
+  {
+    "spec": {
+      "app_id": 60,
+      "url": "https://developers.clay.com/audiences.md",
+      "kind": "primary_docs",
+      "scope": "Clay (clay.com) GTM data-enrichment platform, Public API and hosted MCP server, API key and OAuth auth, plan-gated access",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor/project-controlled documentation or product page selected by researcher",
+      "attribution_by": "task12-research-agent-claude"
+    },
+    "captured_on": "2026-11-23",
+    "capture_method": "http_content",
+    "snapshot_ref": "snapshots/2a63511f26040acec2210f325c95cadcdd7cba26e294896636c65c011559612e.txt",
+    "content_sha256": "2a63511f26040acec2210f325c95cadcdd7cba26e294896636c65c011559612e",
+    "line_count": 33
+  },
+  {
+    "spec": {
+      "app_id": 60,
+      "url": "https://developers.clay.com/searches.md",
+      "kind": "primary_docs",
+      "scope": "Clay (clay.com) GTM data-enrichment platform, Public API and hosted MCP server, API key and OAuth auth, plan-gated access",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor/project-controlled documentation or product page selected by researcher",
+      "attribution_by": "task12-research-agent-claude"
+    },
+    "captured_on": "2026-11-23",
+    "capture_method": "http_content",
+    "snapshot_ref": "snapshots/1f817708baeec7d5709e9c21b1884078d53a6d9f414323c67eeef3e71637123f.txt",
+    "content_sha256": "1f817708baeec7d5709e9c21b1884078d53a6d9f414323c67eeef3e71637123f",
+    "line_count": 41
+  },
+  {
+    "spec": {
+      "app_id": 60,
+      "url": "https://developers.clay.com/routines/index.md",
+      "kind": "primary_docs",
+      "scope": "Clay (clay.com) GTM data-enrichment platform, Public API and hosted MCP server, API key and OAuth auth, plan-gated access",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor/project-controlled documentation or product page selected by researcher",
+      "attribution_by": "task12-research-agent-claude"
+    },
+    "captured_on": "2026-11-23",
+    "capture_method": "http_content",
+    "snapshot_ref": "snapshots/643fe7c45ad40119917b0dcbdc35b840d865ea6d53be20813b4e308229303632.txt",
+    "content_sha256": "643fe7c45ad40119917b0dcbdc35b840d865ea6d53be20813b4e308229303632",
+    "line_count": 31
+  },
+  {
+    "spec": {
+      "app_id": 60,
+      "url": "https://developers.clay.com/routines/api.md",
+      "kind": "primary_docs",
+      "scope": "Clay (clay.com) GTM data-enrichment platform, Public API and hosted MCP server, API key and OAuth auth, plan-gated access",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor/project-controlled documentation or product page selected by researcher",
+      "attribution_by": "task12-research-agent-claude"
+    },
+    "captured_on": "2026-11-23",
+    "capture_method": "http_content",
+    "snapshot_ref": "snapshots/cc1115dcca38d12feaaab8aea4e7ac9d16d33b9379f027457a93585d3a739bde.txt",
+    "content_sha256": "cc1115dcca38d12feaaab8aea4e7ac9d16d33b9379f027457a93585d3a739bde",
+    "line_count": 101
+  },
+  {
+    "spec": {
+      "app_id": 60,
+      "url": "https://developers.clay.com/concepts/cli-basics.md",
+      "kind": "primary_docs",
+      "scope": "Clay (clay.com) GTM data-enrichment platform, Public API and hosted MCP server, API key and OAuth auth, plan-gated access",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor/project-controlled documentation or product page selected by researcher",
+      "attribution_by": "task12-research-agent-claude"
+    },
+    "captured_on": "2026-11-23",
+    "capture_method": "http_content",
+    "snapshot_ref": "snapshots/94d3440d8d9ad7eb0cc395bdde8ef5fc24d5faa86aea6ab07db66743bec3f2eb.txt",
+    "content_sha256": "94d3440d8d9ad7eb0cc395bdde8ef5fc24d5faa86aea6ab07db66743bec3f2eb",
+    "line_count": 38
+  },
+  {
+    "spec": {
+      "app_id": 60,
+      "url": "https://developers.clay.com/use-cases/agent-workflows.md",
+      "kind": "primary_docs",
+      "scope": "Clay (clay.com) GTM data-enrichment platform, Public API and hosted MCP server, API key and OAuth auth, plan-gated access",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor/project-controlled documentation or product page selected by researcher",
+      "attribution_by": "task12-research-agent-claude"
+    },
+    "captured_on": "2026-11-23",
+    "capture_method": "http_content",
+    "snapshot_ref": "snapshots/122ebe93cf442f93bfe0a9ba3545c5d43a542071c11879e8e56c79fb490df221.txt",
+    "content_sha256": "122ebe93cf442f93bfe0a9ba3545c5d43a542071c11879e8e56c79fb490df221",
+    "line_count": 18
+  },
+  {
+    "spec": {
+      "app_id": 60,
+      "url": "https://developers.clay.com/recipes/agent-function-access.md",
+      "kind": "primary_docs",
+      "scope": "Clay (clay.com) GTM data-enrichment platform, Public API and hosted MCP server, API key and OAuth auth, plan-gated access",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor/project-controlled documentation or product page selected by researcher",
+      "attribution_by": "task12-research-agent-claude"
+    },
+    "captured_on": "2026-11-23",
+    "capture_method": "http_content",
+    "snapshot_ref": "snapshots/2e3d74265cdad58b7801593982433bee97f3c23cf33d127dbc76a5b8edbe5e20.txt",
+    "content_sha256": "2e3d74265cdad58b7801593982433bee97f3c23cf33d127dbc76a5b8edbe5e20",
+    "line_count": 33
+  },
+  {
+    "spec": {
+      "app_id": 60,
+      "url": "https://developers.clay.com/signals.md",
+      "kind": "primary_docs",
+      "scope": "Clay (clay.com) GTM data-enrichment platform, Public API and hosted MCP server, API key and OAuth auth, plan-gated access",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor/project-controlled documentation or product page selected by researcher",
+      "attribution_by": "task12-research-agent-claude"
+    },
+    "captured_on": "2026-11-23",
+    "capture_method": "http_content",
+    "snapshot_ref": "snapshots/390e91ac660303f4432af994f59e24cec867f13ea602fdb274a286e2f6181249.txt",
+    "content_sha256": "390e91ac660303f4432af994f59e24cec867f13ea602fdb274a286e2f6181249",
+    "line_count": 28
+  },
+  {
+    "spec": {
+      "app_id": 60,
+      "url": "https://developers.clay.com/public-api/webhooks.md",
+      "kind": "primary_docs",
+      "scope": "Clay (clay.com) GTM data-enrichment platform, Public API and hosted MCP server, API key and OAuth auth, plan-gated access",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor/project-controlled documentation or product page selected by researcher",
+      "attribution_by": "task12-research-agent-claude"
+    },
+    "captured_on": "2026-11-23",
+    "capture_method": "http_content",
+    "snapshot_ref": "snapshots/ed1b550f7e3787ab4bfeaa6b0ab000a36df284b4d9b3b00d5dbe9edbd1878e89.txt",
+    "content_sha256": "ed1b550f7e3787ab4bfeaa6b0ab000a36df284b4d9b3b00d5dbe9edbd1878e89",
+    "line_count": 72
+  },
+  {
+    "spec": {
+      "app_id": 60,
+      "url": "https://developers.clay.com/llms.txt",
+      "kind": "primary_docs",
+      "scope": "Clay (clay.com) GTM data-enrichment platform, Public API and hosted MCP server, API key and OAuth auth, plan-gated access",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor/project-controlled documentation or product page selected by researcher",
+      "attribution_by": "task12-research-agent-claude"
+    },
+    "captured_on": "2026-11-23",
+    "capture_method": "http_content",
+    "snapshot_ref": "snapshots/afc569e43b05f76a9297e5f3e0eb022fd77f49a7a8ef1d9a17ab02777bacfd8e.txt",
+    "content_sha256": "afc569e43b05f76a9297e5f3e0eb022fd77f49a7a8ef1d9a17ab02777bacfd8e",
+    "line_count": 55
+  },
+  {
+    "spec": {
+      "app_id": 52,
+      "url": "https://raw.githubusercontent.com/seranking/openapi/main/README.md",
+      "kind": "official_repository",
+      "scope": "SE Ranking Data API, Project API and hosted MCP server, API token auth and OAuth, paid plan and API credits",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor/project-controlled documentation or product page selected by researcher",
+      "attribution_by": "task12-research-agent-claude"
+    },
+    "captured_on": "2026-11-23",
+    "capture_method": "http_content",
+    "snapshot_ref": "snapshots/e3e5f8a5cad161ccaea36840b4c2676e3f382372c0b2b29cea4f6323197f188b.txt",
+    "content_sha256": "e3e5f8a5cad161ccaea36840b4c2676e3f382372c0b2b29cea4f6323197f188b",
+    "line_count": 78
+  },
+  {
+    "spec": {
+      "app_id": 52,
+      "url": "https://raw.githubusercontent.com/seranking/seo-skills/main/README.md",
+      "kind": "official_repository",
+      "scope": "SE Ranking Data API, Project API and hosted MCP server, API token auth and OAuth, paid plan and API credits",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor/project-controlled documentation or product page selected by researcher",
+      "attribution_by": "task12-research-agent-claude"
+    },
+    "captured_on": "2026-11-23",
+    "capture_method": "http_content",
+    "snapshot_ref": "snapshots/45ce7b854d6f1ec381967c627d9fa0b5543eac5fc8952194f00664643838abe7.txt",
+    "content_sha256": "45ce7b854d6f1ec381967c627d9fa0b5543eac5fc8952194f00664643838abe7",
+    "line_count": 258
+  },
+  {
+    "spec": {
+      "app_id": 60,
+      "url": "https://developers.clay.com/routines/custom-functions.md",
+      "kind": "primary_docs",
+      "scope": "Clay (clay.com) GTM data-enrichment platform, Public API and hosted MCP server, API key and OAuth auth, plan-gated access",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor/project-controlled documentation or product page selected by researcher",
+      "attribution_by": "task12-research-agent-claude"
+    },
+    "captured_on": "2026-11-23",
+    "capture_method": "http_content",
+    "snapshot_ref": "snapshots/73249d5986fed6fb820f3e2cabbe821f7258f1cc886d15a02d8a8be8fb6943c2.txt",
+    "content_sha256": "73249d5986fed6fb820f3e2cabbe821f7258f1cc886d15a02d8a8be8fb6943c2",
+    "line_count": 48
+  },
+  {
+    "spec": {
+      "app_id": 60,
+      "url": "https://github.com/clay-run/agent-plugins",
+      "kind": "official_repository",
+      "scope": "Clay (clay.com) GTM data-enrichment platform, Public API and hosted MCP server, API key and OAuth auth, plan-gated access",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor/project-controlled documentation or product page selected by researcher",
+      "attribution_by": "task12-research-agent-claude"
+    },
+    "captured_on": "2026-11-23",
+    "capture_method": "http_content",
+    "snapshot_ref": "snapshots/8a193df45435050fddce0cf1963aaf2f9e92ff2bd0f4681b808214837eed84cf.txt",
+    "content_sha256": "8a193df45435050fddce0cf1963aaf2f9e92ff2bd0f4681b808214837eed84cf",
+    "line_count": 219
+  },
+  {
+    "spec": {
+      "app_id": 60,
+      "url": "https://raw.githubusercontent.com/clay-run/agent-plugins/main/README.md",
+      "kind": "official_repository",
+      "scope": "Clay (clay.com) GTM data-enrichment platform, Public API and hosted MCP server, API key and OAuth auth, plan-gated access",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor/project-controlled documentation or product page selected by researcher",
+      "attribution_by": "task12-research-agent-claude"
+    },
+    "captured_on": "2026-11-23",
+    "capture_method": "http_content",
+    "snapshot_ref": "snapshots/217ccfd41939fb79d650a05f79e4bcee75fc5c7de1f62970ef181192a642b24f.txt",
+    "content_sha256": "217ccfd41939fb79d650a05f79e4bcee75fc5c7de1f62970ef181192a642b24f",
+    "line_count": 52
+  }
+]

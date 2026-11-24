@@ -1,0 +1,148 @@
+{
+  "sources": [
+    {
+      "app_id": 82,
+      "url": "https://support.plaid.com/hc/en-us/articles/16110110883479-How-are-Sandbox-Production-Trial-plan-and-Limited-Production-different",
+      "kind": "primary_docs",
+      "scope": "Plaid developer API; Sandbox versus Production including Trial; product and institution entitlements vary",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Public vendor documentation or vendor-owned SDK repository; MCP repositories for Binance and iPayX conservatively treated as community implementations without established vendor endorsement.",
+      "attribution_by": "codex-task15-researcher"
+    },
+    {
+      "app_id": 82,
+      "url": "https://plaid.com/docs/resources/mcp/",
+      "kind": "primary_docs",
+      "scope": "Plaid developer API; Sandbox versus Production including Trial; product and institution entitlements vary",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Public vendor documentation or vendor-owned SDK repository; MCP repositories for Binance and iPayX conservatively treated as community implementations without established vendor endorsement.",
+      "attribution_by": "codex-task15-researcher"
+    },
+    {
+      "app_id": 83,
+      "url": "https://raw.githubusercontent.com/mujeeb8/Binance-MCP/main/README.md",
+      "kind": "community_repository",
+      "scope": "Binance global Spot API; public market data versus signed account/trading; Spot Testnet distinct from production and regional eligibility unresolved",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Public vendor documentation or vendor-owned SDK repository; MCP repositories for Binance and iPayX conservatively treated as community implementations without established vendor endorsement.",
+      "attribution_by": "codex-task15-researcher"
+    },
+    {
+      "app_id": 85,
+      "url": "https://raw.githubusercontent.com/iPAYX-Technologies/mcp-fx-audit/main/README.md",
+      "kind": "community_repository",
+      "scope": "iPayX Protocol on ipayx.ai original domain hint; FX audit API and MCP; public demo versus API credentials and production",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Public vendor documentation or vendor-owned SDK repository; MCP repositories for Binance and iPayX conservatively treated as community implementations without established vendor endorsement.",
+      "attribution_by": "codex-task15-researcher"
+    },
+    {
+      "app_id": 86,
+      "url": "https://raw.githubusercontent.com/intuit/QuickBooks-V3-PHP-SDK/master/README.md",
+      "kind": "official_repository",
+      "scope": "QuickBooks Online Accounting API; developer sandbox versus production app and company; not Desktop",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Public vendor documentation or vendor-owned SDK repository; MCP repositories for Binance and iPayX conservatively treated as community implementations without established vendor endorsement.",
+      "attribution_by": "codex-task15-researcher"
+    },
+    {
+      "app_id": 87,
+      "url": "https://developer.xero.com/faq/getting-started",
+      "kind": "primary_docs",
+      "scope": "Xero Accounting API commercial apps and official MCP; demo organisation versus real organisations; Custom Connections separately scoped",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Public vendor documentation or vendor-owned SDK repository; MCP repositories for Binance and iPayX conservatively treated as community implementations without established vendor endorsement.",
+      "attribution_by": "codex-task15-researcher"
+    },
+    {
+      "app_id": 87,
+      "url": "https://raw.githubusercontent.com/XeroAPI/xero-node/master/README.md",
+      "kind": "official_repository",
+      "scope": "Xero Accounting API commercial apps and official MCP; demo organisation versus real organisations; Custom Connections separately scoped",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Public vendor documentation or vendor-owned SDK repository; MCP repositories for Binance and iPayX conservatively treated as community implementations without established vendor endorsement.",
+      "attribution_by": "codex-task15-researcher"
+    },
+    {
+      "app_id": 88,
+      "url": "https://developer.brex.com/docs/mcp.md",
+      "kind": "primary_docs",
+      "scope": "Brex developer APIs; own-account user token versus developer-partner OAuth/staging; production account required for customer path",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Public vendor documentation or vendor-owned SDK repository; MCP repositories for Binance and iPayX conservatively treated as community implementations without established vendor endorsement.",
+      "attribution_by": "codex-task15-researcher"
+    },
+    {
+      "app_id": 89,
+      "url": "https://docs.ramp.com/llms-guides/authorization.txt",
+      "kind": "primary_docs",
+      "scope": "Ramp Developer API and callable MCP; sandbox versus production business; own-account versus partner integrations",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Public vendor documentation or vendor-owned SDK repository; MCP repositories for Binance and iPayX conservatively treated as community implementations without established vendor endorsement.",
+      "attribution_by": "codex-task15-researcher"
+    },
+    {
+      "app_id": 89,
+      "url": "https://docs.ramp.com/llms-guides/ramp-mcp.txt",
+      "kind": "primary_docs",
+      "scope": "Ramp Developer API and callable MCP; sandbox versus production business; own-account versus partner integrations",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Public vendor documentation or vendor-owned SDK repository; MCP repositories for Binance and iPayX conservatively treated as community implementations without established vendor endorsement.",
+      "attribution_by": "codex-task15-researcher"
+    },
+    {
+      "app_id": 89,
+      "url": "https://docs.ramp.com/llms-guides/getting-started.txt",
+      "kind": "primary_docs",
+      "scope": "Ramp Developer API and callable MCP; sandbox versus production business; own-account versus partner integrations",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Public vendor documentation or vendor-owned SDK repository; MCP repositories for Binance and iPayX conservatively treated as community implementations without established vendor endorsement.",
+      "attribution_by": "codex-task15-researcher"
+    },
+    {
+      "app_id": 90,
+      "url": "https://pitchbook.com/help/PitchBook-api",
+      "kind": "official_product_page",
+      "scope": "PitchBook research/data API and PitchBook Data MCP; commercial integration scope, distinct from Lens portfolio monitoring",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Public vendor documentation or vendor-owned SDK repository; MCP repositories for Binance and iPayX conservatively treated as community implementations without established vendor endorsement.",
+      "attribution_by": "codex-task15-researcher"
+    }
+  ]
+}

@@ -1,0 +1,102 @@
+Apify CLI overview | CLI | Apify Documentation
+Skip to main content
+Get started
+Get startedActorsStorageProxyAccountIntegrationsSecurity
+Academy
+API
+API reference
+Client for JavaScript
+Client for Python
+Client for Go
+Client for PHP
+Client for Java
+Client for .NET
+Client for Rust
+SDK
+SDK for JavaScript
+SDK for Python
+CLI
+Installation
+Quick start
+Command reference
+For AI agents
+Apify CLI
+DocsReferenceChangelogGitHub
+1.14
+Next
+1.14
+1.13
+1.12
+1.11
+1.10
+1.9
+1.8
+1.7
+1.6
+1.5
+1.4
+1.1.0
+Overview
+Installation
+Quick start
+Agent Skill
+Actor runtime
+Command reference
+Environment variables
+Use cases
+Troubleshooting
+Changelog
+Version: 1.14
+On this page
+Apify CLI overview
+Copy for LLM
+Apify command-line interface (Apify CLI) helps you create, develop, build and run Apify Actors, and manage the Apify platform from any computer.
+What are Apify Actors?
+Actors are cloud programs that can perform arbitrary web scraping, automation or data processing job. They accept input, perform their job and generate output.
+Why use Apify CLI?
+The Apify CLI enables you to develop Actors locally on your computer using your preferred tools:
+Your favorite code editor
+Version control system
+Development tools and workflows
+This gives you full control over your development environment and makes it easier to work on complex projects. You can leverage the Apify SDK with all its powerful features, then push your Actor to the Apify platform for deployment when ready.
+Actor development environment
+Actors run in Docker containers on the Apify platform. With an appropriate Dockerfile, you can build Actors in any programming language. We recommend JavaScript/Node.js and Python, for which we have the most comprehensive libraries and support.
+Learn more
+Learn everything you need to use the Apify CLI effectively:
+Learn how to install the CLI on your system
+Get started with your first Actor project
+See the complete reference of all CLI commands and options
+Find solutions to common issues
+Edit this page
+Next
+Installation
+What are Apify Actors?
+Why use Apify CLI?
+Learn more
+Reference
+API Reference
+SDK for JavaScript
+SDK for Python
+Client for JavaScript
+Client for Python
+CLI
+Glossary
+Open source
+Crawlee
+Fingerprint Suite
+impit
+MCP CLI
+Actor whitepaper
+proxy-chain
+Security
+Trust Center
+Community
+Discord
+X
+YouTube
+GitHub
+For AI
+llms.txt
+llms-full.txt
+OpenAPI (JSON)
+OpenAPI (YAML)

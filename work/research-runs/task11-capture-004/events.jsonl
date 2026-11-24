@@ -1,0 +1,60 @@
+{"event": "cache_reused", "app_id": 41, "url": "https://shopify.dev/docs/api"}
+{"event": "cache_reused", "app_id": 41, "url": "https://shopify.dev/docs/api/admin-graphql"}
+{"event": "cache_reused", "app_id": 41, "url": "https://shopify.dev/docs/apps/build/authentication-authorization/access-tokens/client-credentials-grant"}
+{"event": "fetch_attempt", "app_id": 41, "attempt": 1, "source_url": "https://shopify.dev/docs/apps/build/authentication/other-flows/authorization-code-grant", "attempted_on": "2026-11-23", "status": "http_error", "http_status": 404, "resolved_url": null, "error": "HTTP 404", "content_sha256": null}
+{"event": "cache_reused", "app_id": 41, "url": "https://shopify.dev/docs/api/development-stores"}
+{"event": "cache_reused", "app_id": 41, "url": "https://shopify.dev/docs/agents"}
+{"event": "fetch_attempt", "app_id": 41, "attempt": 1, "source_url": "https://shopify.dev/docs/apps/tools/ai-toolkit", "attempted_on": "2026-11-23", "status": "http_error", "http_status": 404, "resolved_url": null, "error": "HTTP 404", "content_sha256": null}
+{"event": "fetch_attempt", "app_id": 41, "attempt": 1, "source_url": "https://shopify.dev/docs/api/storefront/customer-accounts/mcp", "attempted_on": "2026-11-23", "status": "http_error", "http_status": 404, "resolved_url": null, "error": "HTTP 404", "content_sha256": null}
+{"event": "cache_reused", "app_id": 41, "url": "https://www.shopify.com/pricing"}
+{"event": "cache_reused", "app_id": 42, "url": "https://developer.woocommerce.com/docs/apis/rest-api/"}
+{"event": "cache_reused", "app_id": 42, "url": "https://woocommerce.github.io/woocommerce-rest-api-docs/"}
+{"event": "cache_reused", "app_id": 42, "url": "https://developer.woocommerce.com/docs/features/mcp/"}
+{"event": "cache_reused", "app_id": 42, "url": "https://woocommerce.com/pricing/"}
+{"event": "cache_reused", "app_id": 42, "url": "https://github.com/woocommerce/woocommerce"}
+{"event": "cache_reused", "app_id": 43, "url": "https://developer.bigcommerce.com/docs/start/authentication"}
+{"event": "cache_reused", "app_id": 43, "url": "https://developer.bigcommerce.com/docs/start/about/sandboxes"}
+{"event": "cache_reused", "app_id": 43, "url": "https://developer.bigcommerce.com/docs/rest-management"}
+{"event": "cache_reused", "app_id": 43, "url": "https://developer.bigcommerce.com/docs/storefront/graphql"}
+{"event": "cache_reused", "app_id": 43, "url": "https://www.bigcommerce.com/essentials/pricing/"}
+{"event": "cache_reused", "app_id": 43, "url": "https://docs.bigcommerce.com/llms.txt"}
+{"event": "cache_reused", "app_id": 44, "url": "https://www.salesforce.com/commerce/pricing/"}
+{"event": "cache_reused", "app_id": 44, "url": "https://github.com/SalesforceCommerceCloud/b2c-developer-tooling"}
+{"event": "fetch_attempt", "app_id": 44, "attempt": 1, "source_url": "https://github.com/SalesforceCommerceCloud/commerce-sdk", "attempted_on": "2026-11-23", "status": "fetched", "http_status": 200, "resolved_url": "https://github.com/SalesforceCommerceCloud/commerce-sdk", "error": null, "content_sha256": "896220eb6b3ad1e0c4a2e0a46675eb58307df9f27ee1b01e13c7d14ccd633e40"}
+{"event": "fetch_attempt", "app_id": 44, "attempt": 1, "source_url": "https://github.com/SalesforceCommerceCloud/commerce-sdk-isomorphic", "attempted_on": "2026-11-23", "status": "fetched", "http_status": 200, "resolved_url": "https://github.com/SalesforceCommerceCloud/commerce-sdk-isomorphic", "error": null, "content_sha256": "e0890aed5c3141e2c2b2425eee539f28f8e7fce14ef2f48a6329e8907ea0427c"}
+{"event": "cache_reused", "app_id": 45, "url": "https://developer.adobe.com/commerce/webapi/rest/"}
+{"event": "cache_reused", "app_id": 45, "url": "https://developer.adobe.com/commerce/webapi/graphql/"}
+{"event": "cache_reused", "app_id": 45, "url": "https://developer.adobe.com/commerce/webapi/get-started/authentication/"}
+{"event": "fetch_attempt", "app_id": 45, "attempt": 1, "source_url": "https://developer.adobe.com/commerce/webapi/get-started/authentication/gs-authentication-oauth/", "attempted_on": "2026-11-23", "status": "http_error", "http_status": 404, "resolved_url": null, "error": "HTTP 404", "content_sha256": null}
+{"event": "fetch_attempt", "app_id": 45, "attempt": 1, "source_url": "https://developer.adobe.com/commerce/webapi/rest/use-rest/", "attempted_on": "2026-11-23", "status": "fetched", "http_status": 200, "resolved_url": "https://developer.adobe.com/commerce/webapi/rest/use-rest/", "error": null, "content_sha256": "94e327b0a07964aa853df9634acf7ac8749a0f764c7b16d3509816430566f9f6"}
+{"event": "cache_reused", "app_id": 45, "url": "https://github.com/magento/magento2"}
+{"event": "cache_reused", "app_id": 46, "url": "https://developers.squarespace.com/commerce-apis"}
+{"event": "cache_reused", "app_id": 46, "url": "https://developers.squarespace.com/commerce-apis/authentication-and-permissions"}
+{"event": "cache_reused", "app_id": 46, "url": "https://developers.squarespace.com/oauth"}
+{"event": "fetch_attempt", "app_id": 46, "attempt": 1, "source_url": "https://developers.squarespace.com/commerce-apis/orders-overview", "attempted_on": "2026-11-23", "status": "fetched", "http_status": 200, "resolved_url": "https://developers.squarespace.com/commerce-apis/orders-overview", "error": null, "content_sha256": "3dcd5106194c8bec8867653f05b72a0283332b93e21eff65d318fe8418598284"}
+{"event": "fetch_attempt", "app_id": 46, "attempt": 1, "source_url": "https://www.squarespace.com/pricing", "attempted_on": "2026-11-23", "status": "fetched", "http_status": 200, "resolved_url": "https://www.squarespace.com/pricing", "error": null, "content_sha256": "fd99c23181660da236a29a8e880ef1d8dc4175f8ef28ee0d7010a0c1f1959fcc"}
+{"event": "fetch_attempt", "app_id": 46, "attempt": 1, "source_url": "https://support.squarespace.com/hc/en-us/articles/206545657-Choosing-the-right-Squarespace-plan", "attempted_on": "2026-11-23", "status": "timeout", "http_status": null, "resolved_url": null, "error": "Request timed out", "content_sha256": null}
+{"event": "fetch_attempt", "app_id": 46, "attempt": 2, "source_url": "https://support.squarespace.com/hc/en-us/articles/206545657-Choosing-the-right-Squarespace-plan", "attempted_on": "2026-11-23", "status": "timeout", "http_status": null, "resolved_url": null, "error": "Request timed out", "content_sha256": null}
+{"event": "cache_reused", "app_id": 47, "url": "https://docs.ecwid.com/api-reference/rest-api/overview"}
+{"event": "cache_reused", "app_id": 47, "url": "https://api-docs.ecwid.com/reference/overview"}
+{"event": "fetch_attempt", "app_id": 47, "attempt": 1, "source_url": "https://api-docs.ecwid.com/reference/authentication", "attempted_on": "2026-11-23", "status": "fetched", "http_status": 200, "resolved_url": "https://docs.ecwid.com/", "error": null, "content_sha256": "545cae6714a4af228e93f21a2838f40c98e0562c74003627e1704323487272ce"}
+{"event": "cache_reused", "app_id": 47, "url": "https://www.ecwid.com/pricing"}
+{"event": "cache_reused", "app_id": 48, "url": "https://gumroad.com/pricing"}
+{"event": "cache_reused", "app_id": 48, "url": "https://github.com/antiwork/gumroad"}
+{"event": "fetch_attempt", "app_id": 48, "attempt": 1, "source_url": "https://github.com/antiwork/gumroad-cli", "attempted_on": "2026-11-23", "status": "fetched", "http_status": 200, "resolved_url": "https://github.com/antiwork/gumroad-cli", "error": null, "content_sha256": "433ef9be71ef2a3aef009cca15f6757bb3f7b160684453f3098993312ccb3a52"}
+{"event": "fetch_attempt", "app_id": 48, "attempt": 1, "source_url": "https://github.com/rmarescu/gumroad-mcp", "attempted_on": "2026-11-23", "status": "fetched", "http_status": 200, "resolved_url": "https://github.com/rmarescu/gumroad-mcp", "error": null, "content_sha256": "e13bcdfac299b0855ccad6d92bae83e1041c2e158866fb966228b5475d61f46d"}
+{"event": "cache_reused", "app_id": 49, "url": "https://developer-docs.amazon.com/sp-api/docs/what-is-the-selling-partner-api"}
+{"event": "cache_reused", "app_id": 49, "url": "https://developer-docs.amazon.com/sp-api/docs/the-selling-partner-api-sandbox"}
+{"event": "fetch_attempt", "app_id": 49, "attempt": 1, "source_url": "https://developer-docs.amazon.com/sp-api/llms.txt", "attempted_on": "2026-11-23", "status": "fetched", "http_status": 200, "resolved_url": "https://developer-docs.amazon/sp-api/llms.txt", "error": null, "content_sha256": "2fd6ed76d682d9e6c62dac7c1c332711995faf18d789b7c211a134f5097bddbe"}
+{"event": "fetch_attempt", "app_id": 49, "attempt": 1, "source_url": "https://developer-docs.amazon.com/sp-api/docs/registering-as-a-developer", "attempted_on": "2026-11-23", "status": "fetched", "http_status": 200, "resolved_url": "https://developer-docs.amazon/sp-api/docs/sp-api-registration-overview", "error": null, "content_sha256": "a04fe69244ecf664d6daeae09b877cecff5212770758d534aa79eb06cf6d1640"}
+{"event": "fetch_attempt", "app_id": 49, "attempt": 1, "source_url": "https://developer-docs.amazon.com/sp-api/docs/authorizing-selling-partner-api-applications", "attempted_on": "2026-11-23", "status": "fetched", "http_status": 200, "resolved_url": "https://developer-docs.amazon/sp-api/docs/authorizing-selling-partner-api-applications", "error": null, "content_sha256": "08e72a92e423ed23aef18f4e49682320cd63c16974fd611fd2e9bd2c3c6d17c9"}
+{"event": "fetch_attempt", "app_id": 49, "attempt": 1, "source_url": "https://developer-docs.amazon.com/sp-api/docs/connecting-to-the-selling-partner-api", "attempted_on": "2026-11-23", "status": "fetched", "http_status": 200, "resolved_url": "https://developer-docs.amazon/sp-api/docs/connecting-to-the-selling-partner-api", "error": null, "content_sha256": "12d9526110ffdce77533bb68b622f824a7938db8b3ea25659ecaae7a67e5dc28"}
+{"event": "cache_reused", "app_id": 49, "url": "https://github.com/amzn/selling-partner-api-models"}
+{"event": "cache_reused", "app_id": 49, "url": "https://github.com/amzn/selling-partner-agentic-toolkit"}
+{"event": "fetch_attempt", "app_id": 49, "attempt": 1, "source_url": "https://github.com/jay-trivedi/amazon_sp_mcp", "attempted_on": "2026-11-23", "status": "fetched", "http_status": 200, "resolved_url": "https://github.com/jay-trivedi/amazon_sp_mcp", "error": null, "content_sha256": "6e9e3b16f4ce71e48398657b7d20b0607ef409728444dee83f6624f1d74b6dc5"}
+{"event": "cache_reused", "app_id": 50, "url": "https://www.fanbasis.com/"}
+{"event": "cache_reused", "app_id": 50, "url": "https://commas.com/"}
+{"event": "cache_reused", "app_id": 50, "url": "https://dev-docs.fanbasis.com/"}
+{"event": "fetch_attempt", "app_id": 50, "attempt": 1, "source_url": "https://commasdocs.com/", "attempted_on": "2026-11-23", "status": "fetched", "http_status": 200, "resolved_url": "https://commasdocs.com/", "error": null, "content_sha256": "391ad3da3bafdc5e402ed3498d75e9ab14072fe2bf5dd2f6b53a318fc0561233"}
+{"event": "fetch_attempt", "app_id": 50, "attempt": 1, "source_url": "https://commasdocs.com/llms.txt", "attempted_on": "2026-11-23", "status": "fetched", "http_status": 200, "resolved_url": "https://commasdocs.com/llms.txt", "error": null, "content_sha256": "391ad3da3bafdc5e402ed3498d75e9ab14072fe2bf5dd2f6b53a318fc0561233"}
+{"event": "validation", "structure_and_grounding": "passed", "backend": "Python jsonschema Draft202012Validator", "factual_truth": "requires independent review", "synthetic": false, "records": 10}

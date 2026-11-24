@@ -1,0 +1,321 @@
+MongoDB MCP Server Prerequisites for Running Atlas Tools - MongoDB MCP Server - MongoDB Docs
+For AI agents: a documentation index is available at https://www.mongodb.com/docs/llms.txt — markdown versions of all pages are available by appending .md to any URL path.
+Products
+Platform
+AtlasBuild with the intelligent data platform
+Platform Services
+DatabasePower critical apps with real-time dataSearchDeliver fast, relevant search at scaleVector SearchBuild AI apps with accurate contextVoyage AIEmbed meaning and rerank resultsAtlas Agent EngineBuild, deploy, and govern agents in production
+Self Managed
+Enterprise AdvancedManage your apps on your infrastructureCommunity EditionDevelop locally with MongoDB, at no cost
+Tools
+CompassWork with MongoDB data in a GUIIntegrationsIntegrations with third-party servicesRelational MigratorMigrate to MongoDB with confidence
+View All ProductsExplore our full product suitearrow-right
+MongoDB 9.0The best version of MongoDB ever builtarrow-right
+Build with MongoDB Atlas
+Get started for free in minutes
+Sign Up
+Explore Atlas Deployment Options
+Develop with self-managed MongoDB
+Learn more
+Try Community Edition
+Explore the latest version of MongoDB
+Download
+Resources
+DocumentationLearn how to build with MongoDB and get started todaySkills and CertificationsDevelop in-demand skills and earn MongoDB certificationsBooksRead books and e-books about MongoDB
+MongoDB for EducatorsTake advantage of educator resourcesMongoDB for StudentsTake advantage of student benefitsCommunityJoin a community of developersEvents and WebinarsFind an event or webinar near you
+Resources HubGet help building the next big thing with MongoDBarrow-right
+Solutions
+Use cases
+Artificial IntelligenceModernizationPaymentsServerless DevelopmentGamingIntelligent SearchEdge and Mobile
+Industries
+Financial ServicesTelecommunicationsHealthcareRetailPublic SectorManufacturing
+Solutions LibraryOrganized and tailored solutions to kick-start projectsarrow-right
+MongoDB AMP
+Modernize applications up to 3x faster
+Learn morearrow-right
+Startups and AI Innovators
+For world-changing ideas and AI pioneers
+Learn morearrow-right
+Customer Case Studies
+Hear directly from our users
+See storiesarrow-right
+Company
+CareersStart your next adventureBlogRead articles and announcementsNewsroomRead press releases and news stories
+PartnersLearn about our partner ecosystemLeadershipMeet our executive teamCompanyLearn more about who we are
+Contact Us
+Reach out to MongoDB
+Connect with an expertarrow-right
+Investors
+Visit our investor portal
+Learn morearrow-right
+Pricing
+Eng
+SupportSign In
+menu-vertical
+Get Started
+Products
+Platform
+AtlasBuild with the intelligent data platform
+Platform Services
+DatabasePower critical apps with real-time dataSearchDeliver fast, relevant search at scaleVector SearchBuild AI apps with accurate contextVoyage AIEmbed meaning and rerank resultsAtlas Agent EngineBuild, deploy, and govern agents in production
+Self Managed
+Enterprise AdvancedManage your apps on your infrastructureCommunity EditionDevelop locally with MongoDB, at no cost
+Tools
+CompassWork with MongoDB data in a GUIIntegrationsIntegrations with third-party servicesRelational MigratorMigrate to MongoDB with confidence
+View All ProductsExplore our full product suitearrow-right
+MongoDB 9.0The best version of MongoDB ever builtarrow-right
+Build with MongoDB Atlas
+Get started for free in minutes
+Sign Up
+Explore Atlas Deployment Options
+Develop with self-managed MongoDB
+Learn more
+Try Community Edition
+Explore the latest version of MongoDB
+Download
+Resources
+DocumentationLearn how to build with MongoDB and get started todaySkills and CertificationsDevelop in-demand skills and earn MongoDB certificationsBooksRead books and e-books about MongoDB
+MongoDB for EducatorsTake advantage of educator resourcesMongoDB for StudentsTake advantage of student benefitsCommunityJoin a community of developersEvents and WebinarsFind an event or webinar near you
+Resources HubGet help building the next big thing with MongoDBarrow-right
+Solutions
+Use cases
+Artificial IntelligenceModernizationPaymentsServerless DevelopmentGamingIntelligent SearchEdge and Mobile
+Industries
+Financial ServicesTelecommunicationsHealthcareRetailPublic SectorManufacturing
+Solutions LibraryOrganized and tailored solutions to kick-start projectsarrow-right
+MongoDB AMP
+Modernize applications up to 3x faster
+Learn morearrow-right
+Startups and AI Innovators
+For world-changing ideas and AI pioneers
+Learn morearrow-right
+Customer Case Studies
+Hear directly from our users
+See storiesarrow-right
+Company
+CareersStart your next adventureBlogRead articles and announcementsNewsroomRead press releases and news stories
+PartnersLearn about our partner ecosystemLeadershipMeet our executive teamCompanyLearn more about who we are
+Contact Us
+Reach out to MongoDB
+Connect with an expertarrow-right
+Investors
+Visit our investor portal
+Learn morearrow-right
+Pricing
+Eng
+SupportSign In
+menu-vertical
+Get Started
+Docs Menu
+Ask MongoDB AI
+/Docs Home
+/Tools
+/MongoDB MCP Server
+MongoDB MCP Server Prerequisites for Running Atlas Tools
+Copy page
+The MCP Server can run Atlas tools that perform various Atlas operations. To run the Atlas tools, your Atlas cluster requires a service account with the appropriate permissions. For a list of the tools, see MongoDB MCP Server Tools.
+If you don't need to initially run the Atlas tools, you can omit this task and do it later.
+To perform a simple MCP Server configuration, see Get Started. You can provide a connection string to your Atlas cluster.
+About this Task
+Select the permissions to run the MCP Server Atlas tools and create a service account with those permissions.
+Before you Begin
+Select the minimum permissions for the service account.
+Note
+Granting the Organization Owner role is rarely necessary and can be a security risk.
+The following table shows a subset of the operations you can perform with the MCP Server and the required roles for those operations:
+Operation
+Safest Role to Assign
+Level
+List organizations and projects
+Organization Member or Organization Read Only
+Organization
+Create new projects
+Organization Project Creator
+Organization
+View clusters and databases in a project
+Project Read Only
+Project
+Create and manage clusters in a project
+Project Cluster Manager
+Project
+Manage project access lists
+Project Network Access Manager
+Project
+Manage database users
+Project Database Access Admin
+Project
+You should typically use Project level roles for most operations, and assign those roles to the specific projects you need to manage or view. Avoid Organization Owner unless you require full administrative control over all projects and settings in the organization. Write down the permissions you want to use. You'll use them in the next section.
+For a full list of roles and privileges, see Atlas User
+Roles.
+Note
+The MCP Server doesn't disable or hide tools based on the service account permissions. If the service account doesn't have the permission to access a tool, trying to run the tool may result in an error.
+Enable AI Clients
+AI clients connect to Atlas through the MongoDB MCP Server. An organization owner must enable the AI Clients setting before members can connect with a plugin.
+Note
+The AI Clients setting only applies to user-delegated access through Atlas App Connections. It does not apply to programmatic access through connections that use the Atlas CLI or Atlas Admin API. For those connections, permissions come from the roles assigned to the service account in the MCP Server configuration.
+To enable AI client plugin connections for your organization:
+1
+Log in to Atlas.
+Log in to Atlas at cloud.mongodb.com.
+2
+Go to your Organization Settings page.
+If it's not already displayed, select your organization from the organization menu in the navigation bar.
+In the sidebar, click Organization Settings.
+3
+Click the App Connections tab.
+This tab lists the AI clients that users in your organization can connect to Atlas.
+4
+Toggle Allow users to connect AI clients to on.
+In the dropdown menu, select the permission level you want to allow for AI client connections.
+Steps
+To limit access, use a service account with Project level roles. Assign those roles to the specific projects you need to manage or view.
+You can also use a service account with Organization level roles. For example, if you need a service account with Organization roles to list all projects or manage multiple projects with one service account.
+The following sections provide instructions for creating a service account with either Project or Organization roles.
+Create an Atlas Service Account with Project Roles
+To create an Atlas service account with Project roles, perform these steps:
+1
+Create Atlas service account
+Log in to Atlas at cloud.mongodb.com.
+The instructions assume you have an organization and project already created. Click Project Identity & Access in the sidebar under the SECURITY section.
+Click Create Application > Service Account.
+Enter a Name.
+Enter a Description.
+Set a Client Secret Expiration period.
+From the Project Permissions menu, select the appropriate roles.
+Click Create.
+Note
+The Atlas user interface is subject to change and the steps may vary. For details, see Grant Programmatic Access to an Organization.
+2
+Save client credentials
+After you create your Atlas service account, you'll see a client ID and client secret. Copy and save the client secret. The UI won't display it again.
+You'll use the client ID and client secret to set the apiClientId and apiClientSecret in the Connecting with Atlas API Credentials section later.
+3
+Add access list entry
+To allow the MCP Server to connect to your Atlas cluster, add an access list entry for the IP address of the computer on which the MCP Server runs. If you run the MCP Server on your local computer, add your local IP address.
+Click Add Access List Entry.
+Enter your IP address.
+Click Save.
+Create an Atlas Service Account with Organization Roles
+If you need a service account with Organization roles, perform these steps:
+1
+Create Atlas service account
+Log in to Atlas at cloud.mongodb.com.
+The instructions assume you have an organization already created. Select your organization from the ORGANIZATION section near the top of the page.
+Click Applications in the sidebar under the IDENTITY & ACCESS section.
+Click Add new > Service Account.
+Enter a Name.
+Enter a Description.
+Set a Client Secret Expiration period.
+From the Organization Permissions menu, select the appropriate roles.
+Click Create.
+Note
+The Atlas user interface is subject to change and the steps may vary. For details, see Grant Programmatic Access to an Organization.
+2
+Save client credentials
+After you create your Atlas service account, you'll see a client ID and client secret. Copy and save the client secret. The UI won't display it again.
+You'll use the client ID and client secret to set the apiClientId and apiClientSecret in the Connecting with Atlas API Credentials section later.
+3
+Add access list entry
+To allow the MCP Server to connect to your Atlas cluster, add an access list entry for the IP address of the computer on which the MCP Server runs. If you run the MCP Server on your local machine, add your local IP address.
+Navigate to Network Access.
+Click Add IP Address.
+Enter your IP address.
+Next Steps
+After you create the service account, you can configure the MCP Server to use the Atlas API credentials. For details, see Connecting with Atlas API Credentials.
+Learn More
+MongoDB MCP Server Usage Examples
+MongoDB MCP Server Tools
+Back
+Get Started
+Next
+Tools
+Rate this page
+On this page
+About this Task
+Before you Begin
+Enable AI Clients
+Steps
+Create an Atlas Service Account with Project Roles
+Create an Atlas Service Account with Organization Roles
+Next Steps
+Learn More
+On this page
+About this Task
+Before you Begin
+Enable AI Clients
+Steps
+Create an Atlas Service Account with Project Roles
+Create an Atlas Service Account with Organization Roles
+Next Steps
+Learn More
+Documentation
+DatabaseAtlas Agent EngineVoyage AI Models
+Back to Tools
+MongoDB MCP Server
+Home
+Overview
+Get Started
+Prerequisites
+Tools
+Usage Examples
+Local MCP
+Atlas Managed MCP
+Documentation
+DatabaseAtlas Agent EngineVoyage AI Models
+Get Started
+Deployment
+Development
+Management
+Client Libraries
+Tools
+Atlas Architecture Center
+Back to Tools
+MongoDB MCP Server
+Home
+Overview
+Get Started
+Prerequisites
+Tools
+Usage Examples
+Local MCP
+Atlas Managed MCP
+English
+English
+Português
+Español
+한국어
+日本語
+简体中文
+© 2026 MongoDB, Inc.
+About
+Careers
+Investor Relations
+Legal
+Privacy Policy
+GitHub
+Security Information
+Trust Center
+Follow Us
+Support
+Contact Us
+Customer Portal
+Atlas Status
+Product Updates
+Customer Support
+Manage Cookies
+Your Privacy Choices
+Build
+MongoDB Atlas
+Enterprise Advanced
+Community Edition
+Voyage AI
+Data Basics
+Vector Databases
+NoSQL Databases
+Document Databases
+RAG Database
+ACID Transactions
+MERN Stack
+Agent Memory
+MEAN Stack
+© 2026 MongoDB, Inc.

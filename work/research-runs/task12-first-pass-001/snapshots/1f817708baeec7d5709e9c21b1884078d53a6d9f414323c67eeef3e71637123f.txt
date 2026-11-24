@@ -1,0 +1,41 @@
+> ## Documentation Index
+> Fetch the complete documentation index at: https://developers.clay.com/llms.txt
+> Use this file to discover all available pages before exploring further.
+# Searches
+> Find companies and people in Clay's proprietary GTM database.
+Searches let you find companies and people in Clay's GTM database, then fetch structured records to use in your application, workflow, or agent.
+## How you search
+Advanced search supports criteria in Clay's field catalog as well as cross-entity filters, such as people at companies matching firmographics, and nested Boolean logic. You fetch the query reference, write a query, create a search, and page through results.
+> [card] [Advanced search](https://developers.clay.com/searches/advanced.md)
+>
+> Write Clay search queries with cross-entity criteria and nested Boolean logic.
+## What you can search
+| Source type | Use it for |
+| - | - |
+| `people` | Contacts, titles, locations, and profile data |
+| `companies` | Accounts, domains, industries, and firmographics |
+## Result limits
+Clay caps how many search results a workspace can return through the API. These limits apply to results returned across the CLI and Public API, and they scale with your plan.
+| Plan | Results per request | Results per search | Results per period | Reset date |
+| - | - | - | - | - |
+| Free | 50 | 50 | 100 per 30 days | Rolling (ages out daily at midnight UTC) |
+| Trial | 50 | 50 | 10,000 for trial duration | Not applicable |
+| Paid | 500 | Up to your period limit | 1,000,000 per 30 days | Rolling (ages out daily at midnight UTC) |
+| Legacy paid (Starter, Explorer, Pro) | 500 | Up to your period limit | 1,000,000 per year | January 1 (UTC) |
+| Enterprise | 500 | Up to your period limit | 10,000,000 per 30 days | Rolling (ages out daily at midnight UTC) |
+* **Per request** is the largest limit you can request in a single call.
+* **Per search** is the total results you can fetch across all pages of one `search_id`.
+* **Reset date** is when the period limit resets. For rolling windows, usage ages out of the window daily at midnight UTC rather than resetting on a fixed calendar date.
+Legacy Starter, Explorer, and Pro plans keep the yearly period limit. Legacy Enterprise plans use the Enterprise row. Moving to a current paid plan or Enterprise is what switches a workspace to the rolling 30-day limit.
+When you exceed a limit, Clay returns HTTP `402` with a message naming the limit you hit. Period-limit errors also state when the limit resets. Malformed filters or other invalid input still return HTTP `400`. To increase a limit, paid customers can contact Clay Support; Enterprise customers should contact their assigned Clay GTME.
+## Related guides
+> [card] [Quickstart](https://developers.clay.com/quickstart.md#api)
+>
+> Set up your API key.
+> [card] [Generated API reference](https://developers.clay.com/api-reference/search/create-a-search-from-a-clay-search-query.md)
+>
+> See the create-search schema and try-it UI.
+> [card] [Run a search, then enrich with a function](https://developers.clay.com/recipes/search-and-enrich.md)
+>
+> Combine Searches with Clay-managed functions.
+This documentation is built and hosted on [Mintlify](https://mintlify.com), a developer documentation platform.

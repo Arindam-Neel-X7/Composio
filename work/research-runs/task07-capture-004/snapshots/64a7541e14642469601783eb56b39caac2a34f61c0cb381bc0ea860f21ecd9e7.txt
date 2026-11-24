@@ -1,0 +1,286 @@
+GitHub - twentyhq/twenty: The open alternative to Salesforce, designed for AI. · GitHub
+Skip to content
+Navigation Menu
+Sign in
+Products
+Platform
+GitHubRepository hosting, code review, and collaboration
+CopilotAI coding agent for tasks, projects, and automated work
+Build & Ship
+ActionsCI/CD and automation
+Code QualityQuality analysis, fixes, and enforcement
+CodespacesCloud development environments
+Secure
+Code SecurityVulnerability detection and remediation
+Secret ProtectionSecret scanning and leak prevention
+All Features
+Developers
+Learn
+Documentation
+Training
+Certifications
+Build
+Build with Copilot
+Customize Copilot
+Integrations
+Explore
+Trending repos
+GitHub Sponsors
+Developer articles
+Changelog
+ChangelogYour source for the latest features, improvements, and fixes across GitHub products, all in one place.
+Businesses
+By Stage
+Enterprises
+Team
+Startups
+Nonprofits
+By Industry
+Healthcare
+Financial services
+Manufacturing
+Government
+See all industries
+Evaluate GitHub
+Why GitHub
+Customer Stories
+Business insights
+Trust Center
+Add-ons
+GitHub Advanced SecurityEnterprise-grade code security
+Copilot for businessEnterprise-grade AI features
+Premium SupportEnterprise-grade 24/7 support
+Resources
+Learn & Connect
+Documentation
+Resource center
+Blog
+Events & webinars
+Community Forum
+Customer Stories
+Integrations
+Support
+Customer support
+Training
+GitHub Status
+Company
+About
+Partners
+Changelog
+GitHub Universe
+GitHub UniverseThe event for developers, by developers — talks, workshops, and what’s next for GitHub.
+Pricing
+Search/
+Sign in
+Sign up
+Appearance settings
+You signed in with another tab or window. Reload to refresh your session.
+You signed out in another tab or window. Reload to refresh your session.
+You switched accounts on another tab or window. Reload to refresh your session.
+Dismiss alert
+twentyhq
+twenty
+Repository navigation
+Code
+Issues85 (85)
+Pull requests89 (89)
+Only collaborators can create PRs
+Discussions
+Actions
+Projects
+Security and quality15 (15)
+Insights
+More items
+twenty
+Public
+NotificationsYou must be signed in to change notification settings
+Fork10.2k (10.2k)
+Star61.4k (61.4k)You must be signed in to star a repository
+About
+The open alternative to Salesforce, designed for AI.
+twenty.com
+Topics
+crmcrm-systemcustomergood-first-issuegraphqlhacktoberfestjavascriptmarketingmonoreponestjsopen-sourcepostgresqlreactreactjssalestypescriptweb
+Resources
+Readme
+License
+Code of conduct
+Code of conduct
+Contributing
+Contributing
+Security policy
+Security policy
+Activity
+Custom properties
+Stars
+61.4k stars
+Watchers
+239 watching
+Forks
+10.2k forks
+Report repository
+main
+BranchesTags
+Go to file
+Code
+Open more actions menu
+Latest commit
+History
+19,034 Commits
+19,034 Commits
+Folders and files
+NameName
+Last commit message
+Last commit date
+.claude
+.claude
+.github
+.github
+.vscode
+.vscode
+.yarn
+.yarn
+packages
+packages
+.dockerignore
+.dockerignore
+.gitattributes
+.gitattributes
+.gitignore
+.gitignore
+.mcp.json
+.mcp.json
+.nvmrc
+.nvmrc
+.oxfmtrc.jsonc
+.oxfmtrc.jsonc
+.yarnrc.yml
+.yarnrc.yml
+AGENTS.md
+AGENTS.md
+CLAUDE.md
+CLAUDE.md
+DESIGN.md
+DESIGN.md
+LICENSE
+LICENSE
+README.md
+README.md
+SKILLS.md
+SKILLS.md
+jest.preset.js
+jest.preset.js
+knip.json
+knip.json
+nx.json
+nx.json
+package.json
+package.json
+tsconfig.base.json
+tsconfig.base.json
+yarn.config.cjs
+yarn.config.cjs
+yarn.lock
+yarn.lock
+View all files
+Repository files navigation
+README
+Code of conduct
+Contributing
+License
+Security
+More items
+The #1 Open-Source CRM
+Website · Documentation · Roadmap · Discord · Figma
+Why Twenty
+Twenty gives technical teams the building blocks for a custom CRM that meets complex business needs and quickly adapts as the business evolves. Twenty is the CRM you build, ship, and version like the rest of your stack.
+Learn more about why we built Twenty
+Installation
+Cloud
+The fastest way to get started. Sign up at twenty.com and spin up a workspace in under a minute, with no infrastructure to manage and always up to date.
+Build an app
+Scaffold a new app with the Twenty CLI:
+npm install -g twenty
+twenty app init my-app
+cd my-app
+yarn install
+Define objects, fields, and views as code:
+import { defineObject, FieldType } from 'twenty-sdk/define';
+export default defineObject({
+nameSingular: 'deal',
+namePlural: 'deals',
+labelSingular: 'Deal',
+labelPlural: 'Deals',
+fields: [
+{ name: 'name', label: 'Name', type: FieldType.TEXT },
+{ name: 'amount', label: 'Amount', type: FieldType.CURRENCY },
+{ name: 'closeDate', label: 'Close Date', type: FieldType.DATE_TIME },
+],
+});
+Then ship it to your workspace:
+twenty auth login --url https://your-workspace.twenty.com
+twenty app publish --private
+See the app development guide for objects, views, agents, and logic functions.
+Building with a coding agent? Install the official Twenty app skills, which work in Claude Code, Codex, Cursor, Pi, and any other harness supported by the skills CLI:
+npx skills add https://github.com/twentyhq/twenty/tree/agent-skills --list
+The agent-skills branch is created by the first successful publish from main. Until then, use the local build instructions. SKILLS.md explains the other skill families in this repository and who they are for.
+Self-hosting
+Run Twenty on your own infrastructure with Docker Compose, or contribute locally via the local setup guide.
+Everything you need
+Twenty gives you the building blocks of a modern CRM (objects, views, workflows, and agents) and lets you extend them as code. Here's a tour of what's in the box.
+Want to go deeper? Read the User Guide for product walkthroughs, or the Documentation for developer reference.
+Learn more about apps in doc
+Learn more about version control in doc
+Learn more about primitives in doc
+Learn more about layouts in doc
+Learn more about AI in doc
+Learn more about CRM features in doc
+Stack
+TypeScript
+Nx
+NestJS, with BullMQ, PostgreSQL, Redis
+React, with Jotai, Linaria and Lingui
+Thanks
+Thanks to these amazing services that we use and recommend for code review (Greptile), catching bugs (Sentry) and translating (Crowdin).
+Join the Community
+Star the repo · Discord · Feature requests · Releases · X · LinkedIn · Crowdin · Contribute
+About
+The open alternative to Salesforce, designed for AI.
+twenty.com
+Topics
+crmcrm-systemcustomergood-first-issuegraphqlhacktoberfestjavascriptmarketingmonoreponestjsopen-sourcepostgresqlreactreactjssalestypescriptweb
+Resources
+Readme
+License
+Code of conduct
+Code of conduct
+Contributing
+Contributing
+Security policy
+Security policy
+Activity
+Custom properties
+Stars
+61.4k stars
+Watchers
+239 watching
+Forks
+10.2k forks
+Report repository
+Releases
+Used by
+Contributors
+Languages
+Footer
+© 2026 GitHub, Inc.
+Footer navigation
+Terms
+Privacy
+Security
+Status
+Community
+Docs
+Contact
+Manage cookies
+Do not share my personal information
+You can’t perform that action at this time.

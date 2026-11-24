@@ -1,0 +1,1139 @@
+> ## Documentation Index
+> Fetch the complete documentation index at: https://docs.waterfall.io/llms.txt
+> Use this file to discover all available pages before exploring further.
+# Account Reporter v2
+> Review API usage by key and account, current balance, and master-key unit prices.
+Use Account Reporter to review usage for the authenticated API key and the full account. Choose a calendar month or a custom UTC date range. This is useful for comparing usage across your teams, environments, or integrations.
+> [!NOTE]
+>
+> This call is free and does not count against your rate limit.
+## Choose a reporting period
+| Mode | Query parameters | Behavior |
+| - | - | - |
+| Current month | None | Returns usage for the current calendar month. |
+| Calendar month | `month` in `YYYY-MM` format | Returns usage for that month. |
+| Date range | `start_date` and `end_date` in `YYYY-MM-DD` format | Returns usage from the inclusive start date to the exclusive end date, in UTC. |
+The two modes are mutually exclusive. Do not combine `month` with `start_date` or `end_date`. A date range requires both dates, with the end after the start.
+The start must be within the past 12 months, the interval cannot exceed 12 months, and the interval cannot be entirely in the future.
+## Read the response
+* `key_usage` contains counters for the authenticated key.
+* `account_usage` contains counters across the account's keys.
+* `balance_remaining_usd` is the current account balance at the top level of the response.
+* `price` contains unit prices from the latest payment and is returned only for master API keys.
+The counters include requests and returned results for the supported services. Use the generated response reference for the full field list. Request counts and returned-result counts measure different things; do not assume one request equals one returned contact or one billable unit.
+> [!WARNING]
+>
+> `balance_remaining_usd` and `price` are current values. They are not historical values for the requested reporting period.
+## Reporting boundaries
+Usage is grouped by the UTC date it was recorded. This endpoint does not provide reporting within a day or guarantee that usage is assigned to the original request's start time.
+For an individual job's cost, use [inline usage](https://docs.waterfall.io/v1/inline-usage.md). To create separate keys for teams or integrations, see [API key management](https://docs.waterfall.io/v1/api-keys-overview.md).
+## OpenAPI
+````yaml api_specs.yaml GET /v2/account
+openapi: 3.1.0
+info:
+title: Waterfall
+version: 1.7.0
+description: >-
+Waterfall API provides a broad set of capabilities in V1. Most endpoints are
+asynchronous: you start a job (POST) and then retrieve results (GET). Some
+endpoints return immediate responses. Webhooks are also available to
+simplify asynchronous integrations. Below is an overview of the available
+endpoints:
+#### 1\. Prospector
+Find contacts at target accounts using filters like job titles and location.
+Get contact details such as titles, real-time verified emails, social
+profiles, and phone numbers.
+- **Prospector Launcher:** Start a contact search using a domain name,
+LinkedIn profile, or company name. Returns a `job_id`.
+- **Prospector Finder:** Retrieve results using the `job_id` from the
+Prospector Launcher.
+#### 2\. Contact Enrichment
+Enrich contact information by inputting professional/personal emails,
+LinkedIn URL/slug, or name + domain. Get enriched data like verified emails,
+job titles, and locations.
+- **Contact Enrichment Launcher**: Start a contact enrichment process.
+Returns a `job_id`.
+- **Contact Enrichment Finder**: Retrieve results using the `job_id` from
+the Contact Enrichment Launcher.
+#### 3\. Company Enrichment
+Enrich company data by inputting a domain, LinkedIn URL/slug, or company
+name. Receive details like headcount, industry, and headquarters.
+- **Company Enrichment Launcher**: Start a company search using a domain
+name, LinkedIn URL/slug, or company name. Returns a `job_id`.
+- **Company Enrichment Finder**: Retrieve results using the `job_id` from
+the Company Enrichment Launcher.
+#### 4\. Phone Number Enrichment
+Get mobile numbers by inputting an email, LinkedIn URL/slug, or name +
+domain.
+- **Phone Enrichment Launcher**: Start a phone number enrichment process.
+Returns a `job_id`.
+- **Phone Enrichment Finder**: Retrieve results using the `job_id` from the
+Phone Enrichment Launcher.
+#### 5\. Search Contact
+Search contacts using either a specific contact LinkedIn, a specific
+company, or company-set filters, with optional title, seniority, department,
+location, and hiring-date constraints.
+- **Search Contact Launcher**: Start a search contact job and get the result
+payload.
+- **Search Contact Finder**: Retrieve search contact job state and output by
+`job_id`.
+#### 6\. Search Company
+Search companies by industry, country, and company size filters with
+pagination support.
+- **Search Company Launcher**: Start a search company job and get the result
+payload.
+- **Search Company Finder**: Retrieve search company job state and output by
+`job_id`.
+#### 7\. Job Change
+Detect whether a contact has changed jobs using company and/or contact
+identifiers.
+- **Job Change Launcher**: Start a job change check and get the result
+payload.
+- **Job Change Finder**: Retrieve job change job state and output by
+`job_id`.
+#### 8\. Company Reveal
+Reveal company information from an IPv4 address and retrieve persisted
+reveal jobs by `job_id`.
+- **Company Reveal Launcher**: Submit an IPv4 and get the reveal job
+envelope immediately.
+- **Company Reveal Finder**: Retrieve a persisted company reveal job state
+and output by `job_id`.
+#### 9\. Email Verification
+Verify emails with high accuracy, reducing bounce rates. This endpoint works
+asynchronously, providing results in a single API call. You can start an
+email verification process and get the verification status of a given email.
+#### 10\. Account Reporter
+Provides information about your account's usage.
+#### 11\. API Keys Management
+Use a single master key to manage all your API keys: create new keys,
+activate/deactivate them, and view all your keys in one place. See [API Keys
+Management](https://docs.waterfall.io/v1/api-keys-overview).
+---
+# Versioning
+Waterfall API versioning follows Semantic Versioning (`MAJOR.MINOR.PATCH`):
+- **Patch** (`1.1.x`): Non-breaking revisions and fixes only. No existing
+contract changes.
+- **Minor** (`1.x.0`, for example `1.2.0`): Backward-compatible additions.
+Adding new services/endpoints uses a minor version increase when existing
+services are unchanged.
+- **Major** (`x.0.0`, for example `2.0.0`): Breaking changes to existing
+contracts/behavior and major platform overhauls.
+## Endpoint Lifecycle Stages
+Waterfall uses modern launch stages aligned with Google Cloud terminology:
+- **Preview**
+- Meaning: Early public version available for testing and feedback (equivalent to older Alpha/Beta phases).
+- Production use: Not recommended for critical production workloads.
+- SLA: No.
+- Stability: API behavior may change.
+- **GA (General Availability)**
+- Meaning: Fully released and production-ready service or API.
+- Production use: Yes.
+- SLA: Yes.
+- Stability: Backward compatibility is guaranteed within the version.
+- **Deprecated**
+- Meaning: Feature or API is scheduled for retirement and a newer alternative exists.
+- Production use: Should migrate away.
+- SLA: Limited.
+- Stability: No new features; removal date announced.
+- **Decommissioned / End of Life**
+- Meaning: Feature or API has been shut down and is no longer available.
+- Production use: No.
+- SLA: No.
+- Stability: Endpoint disabled or removed.
+Current mapping in this API spec: all endpoints are `GA` except
+`/v1/company-reveal`, `/v1/search/company`, `/v1/job/change`, and
+`/v1/company-titles`, which are `Preview`.
+---
+# Authentication
+To access the API, you need the API key provided in your contract. You can
+ask for multiple API keys for different teams' usage.
+All API request URLs start with
+[https://api.waterfall.io/v1/](https://api.waterfall.io/v1/). Provide your
+API key in the `x-api-key` header.
+---
+# Rate limit
+The Prospector, Search, Enrichment, Job Change and Verify Email APIs allow a
+maximum of 50 requests per minute (60 seconds). Should you encounter rate
+limit errors or anticipate a need for increased capacity, please reach out
+to your account manager for assistance. There are no rate limits for the
+Account Reporter API.
+##### X-RateLimit-Limit
+The maximum number of requests you can make per interval. Only sent when the
+rate limit is reached.
+##### X-RateLimit-Interval
+The length of the interval in seconds. Only sent when the rate limit is
+reached.
+##### Retry-After
+The number of seconds to wait until the rate limit window resets. Only sent
+when the rate limit is reached.
+---
+# Filters
+Waterfall offers three filtering options for prospect requests:
+## 1. Title Filter
+The `title_filter` parameter allows requesting specific titles with each
+request.
+- If `title_filter` is present, it must not be empty.
+- If `title_filter` is present and not empty (for example `"title_filter":
+"((accountant) OR (accounting)) AND NOT (intern)"`), Waterfall will use that
+filter.
+- If `title_filter` is not present, Waterfall will try
+[<code>title_filters</code>](https://docs.waterfall.io/v1/prospector-multiple-title-filters).
+- At least one of `title_filter` or `title_filters` must be provided.
+The filter can be any Boolean expression. Accepted operators are `AND`,
+`OR`, and `NOT`. Operators must be uppercase and separated by spaces.
+There is no need to enclose multi-word titles in parentheses.
+Matching for each title is inclusive. For example:
+- `manager` will match `program manager`, `senior manager` and `account
+manager sales`
+- `vp data` will match `vp innovation, data science, co-founder`, `vp
+information and data` and `vp data science`
+- `head product` will match `global head of product` and `head of product
+management office`
+- `data lead` will match `lead data scientist`, `data lead engineer`, `data
+lead` and `data engineering lead`
+A few valid filter examples:
+- manager
+- manager AND NOT project manager
+- manager AND NOT (project manager OR sales manager)
+- ( (manager OR director) AND (sales OR marketing) ) AND NOT ( project
+manager OR sales manager)
+- (accountant OR accounting) AND NOT intern
+- ( (ceo) OR (c.e.o) OR (co-ceo) OR (coceo) OR (chief executive officer) OR
+(founder) OR (co-founder) OR (cofounder) OR (owner) OR (co-owner) OR
+(coowner) OR (cmo) OR (c.m.o) OR (chief marketing officer) OR (cco) OR
+(c.c.o) OR (chief commercial officer) OR (chief e-commerce officer) OR
+(chief ecommerce officer) ) OR ( ( (chief) OR (cheffe) OR (director) OR (vp)
+OR (svp) OR (vice) OR (president) OR (vicepresident) OR (executive) OR
+(head) ) AND ( (marketing) OR (growth) OR (e-commerce) OR (ecommerce) ) AND
+NOT ( (assistant) OR (analyst) OR (intern) OR (apprenticeship) OR (sales) OR
+(finance) OR (recruitment) OR (project manager) OR (hr) OR (human resources)
+OR (talent) OR (design) OR (logistic) OR (warehouse) OR (engineer) OR
+(developer) OR (student) OR (merchandising) OR (digital) OR (brand) OR
+(trade) OR (influencer) OR (export) OR (wholesale) OR (whole sale) OR
+(information) OR (specialist) ) )
+A few invalid filter examples:
+- `mangerANDdirector`: spaces must be used around operators
+- `manager NOT (project manager)`: invalid boolean expression
+- `(accountant OR accounting AND NOT intern`: missing closing parenthesis
+before AND
+We recommend using parentheses to make sure operator precedence is what you
+intend.
+For example filter `(CFO) OR (Cofounder) AND NOT ((Vice) OR (Assistant) OR
+(Executive Assistant))` will match title `Assistant CFO.` The Boolean
+expression is `True OR False AND NOT True` and is evaluated as `True OR
+False AND NOT True = True OR False AND False = True OR False = True`
+In this case, the intended filter is `((CFO) OR (Cofounder)) AND NOT ((Vice)
+OR (Assistant) OR (Executive Assistant))`. Note the extra parenthesis around
+the first part.
+If you need help with writing title filters, contact your account manager to
+schedule a call with the support team.
+---
+## 2. Multiple Title Filters
+The `title_filters` parameter allows requesting multiple title filters in a
+specific order. It is used when
+[<code>title_filter</code>](https://docs.waterfall.io/v1/prospector-title-filter)
+is not present.
+Example:
+``` json
+"title_filters": [
+{
+"name": "ceo level",
+"filter": "ceo OR founder OR owner"
+},
+{
+"name": "sales",
+"filter": "revenue OR growth OR sales"
+},
+{
+"name": "marketing or operations",
+"filter": "marketing OR operations"
+}
+]
+```
+Waterfall will try each filter in the order provided up to the requested
+`limit`.
+You can provide up to 5 `title_filters` entries per request.
+---
+## 3. Location Filter
+The location-based search is performed with `location_name`,
+`location_country`, and `location_countries`.
+#### location_country
+The `location_country` parameter represents the country of the contact's
+current address. Use full country names such as `United States` or `France`.
+Partial values such as `United` or `Saudi` should be avoided. The country
+list is available
+[here](https://waterfall-io-public.s3.amazonaws.com/waterfall_location_country.txt).
+Empty values are ignored.
+#### location_countries
+The `location_countries` parameter is a list of countries where the
+contact's current address can be. If it is present and non-empty, it is used
+instead of `location_country`.
+- \["France"\]
+- \["France", "Germany"\]
+You can provide up to 50 countries. The full list is available
+[here](https://waterfall-io-public.s3.us-east-1.amazonaws.com/waterfall_location_country.txt).
+#### location_name
+The `location_name` parameter represents the location of the contact's
+current address. Typical locations are:
+- `San Francisco, California, United States`
+- `Paris, Ile-De-France, France`
+A location can include city, region/state, and country. Partial matches are
+possible. Common partial formats are:
+- city, region: `San Francisco, California`, `Paris, Ile-De-France`
+- region, country: `California, United States`, `Ile-De-France, France`
+- city: `San Francisco`, `Paris`
+- region: `California`, `Ile-De-France`
+- country:`United States`, `France`
+In many cases, the best results are obtained using only the region.
+Empty values are ignored.
+---
+# Errors
+The waterfall API uses conventional HTTP response codes to indicate the
+success or failure of a request, with detailed information in case of error.
+Error payload structure:
+- `category` is the high-level classification (`AUTH`, `VALIDATION`,
+`NOT_FOUND`, etc.).
+- `code` is the stable machine-readable identifier for a specific failure
+case.
+- Every `code` is namespaced by category using the format `CATEGORY_DETAIL`
+(for example `VALIDATION_BAD_REQUEST`).
+- The `category` field must always match the prefix of the `code` field.
+- Use `category` for broad handling (retry/auth/permissions) and `code` for
+precise logic and analytics.
+| Status Code | Description |
+| --- | --- |
+| 200 OK | The request was successful. |
+| 400 Bad Request | Your request was not valid. |
+| 401 Unauthorized | Missing API key. |
+| 403 Forbidden | Bad API key. |
+| 404 Not Found | The requested endpoint does not exist. |
+| 500 Internal Server Error | Something went wrong on our end. |
+---
+# Contact Support
+Contact Support: Email:
+[felix@waterfall.io](https://mailto:felix@waterfall.io)
+termsOfService: https://www.waterfall.io/#FAQs
+contact:
+email: felix@waterfall.io
+servers:
+- url: https://api.waterfall.io
+description: The production API server
+security: []
+tags:
+- name: prospector
+description: Prospector
+externalDocs:
+description: Prospector endpoint docs
+url: https://docs.waterfall.io/v1/prospector-launcher
+- name: enrichment-contact
+description: Enrichment Contact
+externalDocs:
+description: Contact enrichment endpoint docs
+url: https://docs.waterfall.io/v1/contact-enrichment-launcher
+- name: search-contact
+description: Search Contact
+externalDocs:
+description: Search Contact endpoint docs
+url: https://docs.waterfall.io/v1/search-contact-launcher
+- name: search-company
+description: Search Company
+externalDocs:
+description: Search Company endpoint docs
+url: https://docs.waterfall.io/v1/search-company-launcher
+- name: company-reveal
+description: Company Reveal
+- name: company-titles
+description: Company Titles
+- name: job-change
+description: Job Change
+externalDocs:
+description: Job Change endpoint docs
+url: https://docs.waterfall.io/v1/job-change-launcher
+- name: enrichment-phone
+description: Enrichment Phone
+externalDocs:
+description: Phone enrichment endpoint docs
+url: https://docs.waterfall.io/v1/phone-enrichment-launcher
+- name: enrichment-company
+description: Enrichment Company
+externalDocs:
+description: Company enrichment endpoint docs
+url: https://docs.waterfall.io/v1/company-enrichment-launcher
+- name: verify-email
+description: Verify Email
+externalDocs:
+description: Verify Email endpoint docs
+url: https://docs.waterfall.io/v1/email-verifier
+- name: account
+description: Account
+externalDocs:
+description: Account Reporter endpoint docs
+url: https://docs.waterfall.io/v1/account-reporter-v2
+- name: api-keys
+description: Api Keys Management **Enterprise Feature**
+externalDocs:
+description: API key management endpoint docs
+url: https://docs.waterfall.io/v1/api-keys-overview
+- name: webhook-authentication
+description: Webhook Authentication
+externalDocs:
+description: Find out more about Waterfall API
+url: https://docs.waterfall.io/v1/introduction
+paths:
+/v2/account:
+get:
+tags:
+- account
+summary: Account Reporter V2
+description: >
+Launch stage: GA.
+Get Waterfall usage information for both the authenticated API key and
+the full account. Values differ when multiple keys exist under one
+account. When authenticated with a master API key, the response also
+includes a `price` object with unit prices in USD from the latest
+payment. Sub-keys and single keys do not receive `price`. This call is
+free.
+By default, or when `month` is given, usage is scoped to one calendar
+month. Alternatively, pass `start_date` and `end_date` together to scope
+usage to a custom UTC date interval: `start_date` is inclusive,
+`end_date` is exclusive, and the interval cannot exceed 12 months.
+`start_date`/`end_date` are mutually exclusive with `month` — combining
+them, or supplying only one of `start_date`/`end_date`, is a bad
+request. The requested interval is echoed back in the response
+`start_date`/`end_date` fields.
+Whether given via `month` or `start_date`/`end_date`, the interval's
+start must not be more than 12 months before the current UTC date, and
+the interval must not be entirely in the future — at least one day of
+the interval must be today (UTC) or earlier.
+Usage is aggregated from daily records keyed by the UTC date usage was
+recorded on; this endpoint does not provide sub-day reporting or a
+guaranteed original request-start timestamp. `balance_remaining_usd` is
+always the current account balance, and for master keys `price` is
+always the latest-payment unit price — neither is scoped to, or a
+historical value for, the requested interval.
+operationId: getAccountInfo
+parameters:
+- $ref: '#/components/parameters/MonthQueryParameter'
+- $ref: '#/components/parameters/StartDateQueryParameter'
+- $ref: '#/components/parameters/EndDateQueryParameter'
+responses:
+'200':
+description: >
+Success. Returns usage for the authenticated key and account. Master
+API keys also receive unit prices in `price`.
+content:
+application/json:
+schema:
+$ref: '#/components/schemas/AccountReporterV2GetResponse'
+examples:
+master_key:
+summary: Master key response including unit prices
+value:
+key_usage:
+start_date: '2024-02-01'
+end_date: '2024-03-01'
+prospector_requests: 1
+prospector_persons: 0
+prospector_persons_phones: 0
+enrichment_contact_requests: 0
+enrichment_contact_persons: 0
+enrichment_contact_persons_phones: 0
+enrichment_phone_requests: 0
+enrichment_phone_phones: 0
+enrichment_company_requests: 0
+enrichment_company_companies: 0
+verify_email_requests: 0
+verify_email_verified: 0
+search_contact_requests: 1
+search_contact_found: 0
+account_usage:
+start_date: '2024-02-01'
+end_date: '2024-03-01'
+prospector_requests: 2
+prospector_persons: 0
+prospector_persons_phones: 0
+enrichment_contact_requests: 0
+enrichment_contact_persons: 0
+enrichment_contact_persons_phones: 0
+enrichment_phone_requests: 0
+enrichment_phone_phones: 0
+enrichment_company_requests: 0
+enrichment_company_companies: 0
+verify_email_requests: 0
+verify_email_verified: 0
+search_contact_requests: 2
+search_contact_found: 0
+balance_remaining_usd: 99.9
+price:
+prospector_persons: 0.138
+prospector_persons_phones: 0.32
+enrichment_contact_persons: 0.138
+enrichment_contact_persons_phones: 0.32
+enrichment_phone_phones: 0.32
+enrichment_company_companies: 0.138
+search_contact_found: 0.04
+search_company_found: 0.04
+company_reveal_found: 0.05
+company_titles_found: 0
+job_change_found: 0.1
+verify_email_verified: 0.02
+sub_key:
+summary: Sub-key response without unit prices
+value:
+key_usage:
+start_date: '2024-02-01'
+end_date: '2024-03-01'
+prospector_requests: 1
+prospector_persons: 0
+prospector_persons_phones: 0
+enrichment_contact_requests: 0
+enrichment_contact_persons: 0
+enrichment_contact_persons_phones: 0
+enrichment_phone_requests: 0
+enrichment_phone_phones: 0
+enrichment_company_requests: 0
+enrichment_company_companies: 0
+verify_email_requests: 0
+verify_email_verified: 0
+search_contact_requests: 1
+search_contact_found: 0
+account_usage:
+start_date: '2024-02-01'
+end_date: '2024-03-01'
+prospector_requests: 2
+prospector_persons: 0
+prospector_persons_phones: 0
+enrichment_contact_requests: 0
+enrichment_contact_persons: 0
+enrichment_contact_persons_phones: 0
+enrichment_phone_requests: 0
+enrichment_phone_phones: 0
+enrichment_company_requests: 0
+enrichment_company_companies: 0
+verify_email_requests: 0
+verify_email_verified: 0
+search_contact_requests: 2
+search_contact_found: 0
+balance_remaining_usd: 99.9
+custom_interval:
+summary: >
+Sub-key response for a custom `start_date`/`end_date`
+interval (e.g. `?start_date=2025-01-01&end_date=2025-01-15`)
+value:
+key_usage:
+start_date: '2025-01-01'
+end_date: '2025-01-15'
+prospector_requests: 1
+prospector_persons: 0
+prospector_persons_phones: 0
+enrichment_contact_requests: 0
+enrichment_contact_persons: 0
+enrichment_contact_persons_phones: 0
+enrichment_phone_requests: 0
+enrichment_phone_phones: 0
+enrichment_company_requests: 0
+enrichment_company_companies: 0
+verify_email_requests: 0
+verify_email_verified: 0
+search_contact_requests: 1
+search_contact_found: 0
+account_usage:
+start_date: '2025-01-01'
+end_date: '2025-01-15'
+prospector_requests: 2
+prospector_persons: 0
+prospector_persons_phones: 0
+enrichment_contact_requests: 0
+enrichment_contact_persons: 0
+enrichment_contact_persons_phones: 0
+enrichment_phone_requests: 0
+enrichment_phone_phones: 0
+enrichment_company_requests: 0
+enrichment_company_companies: 0
+verify_email_requests: 0
+verify_email_verified: 0
+search_contact_requests: 2
+search_contact_found: 0
+balance_remaining_usd: 99.9
+'400':
+description: >
+Invalid query parameters. Includes: malformed `month` or
+`start_date`/`end_date`; `month` combined with `start_date` or
+`end_date`; only one of `start_date`/`end_date` supplied; `end_date`
+not strictly after `start_date`; an interval longer than 12 months;
+an interval start more than 12 months before the current UTC date;
+or an interval entirely in the future.
+content:
+application/json:
+schema:
+$ref: '#/components/schemas/ErrorResponse'
+example:
+status: error
+message: Bad request
+category: VALIDATION
+code: VALIDATION_BAD_REQUEST
+'401':
+$ref: '#/components/responses/UnauthorizedResponse'
+'402':
+$ref: '#/components/responses/PaymentRequiredResponse'
+'403':
+$ref: '#/components/responses/ForbiddenResponse'
+'404':
+description: Account or key not found.
+content:
+application/json:
+schema:
+$ref: '#/components/schemas/ErrorResponse'
+example:
+status: error
+message: Account or key not found
+category: NOT_FOUND
+code: NOT_FOUND_ACCOUNT_OR_KEY_NOT_FOUND
+'429':
+$ref: '#/components/responses/TooManyRequestsResponse'
+security:
+- api_key: []
+components:
+parameters:
+MonthQueryParameter:
+name: month
+in: query
+required: false
+description: >
+Optional month in `YYYY-MM` format used to scope usage counters.
+Mutually exclusive with `start_date` and `end_date`. The month's start
+must not be more than 12 months in the past, and must not be entirely in
+the future.
+example: 2025-01
+schema:
+type: string
+pattern: ^\d{4}-\d{2}$
+minLength: 7
+maxLength: 7
+StartDateQueryParameter:
+name: start_date
+in: query
+required: false
+description: >
+Optional interval start date in `YYYY-MM-DD` format, UTC, inclusive.
+Must be provided together with `end_date`, and is mutually exclusive
+with `month`. Must not be more than 12 months before the current UTC
+date, and must not be entirely in the future (at least one day of the
+interval must be today or earlier).
+example: '2025-01-01'
+schema:
+type: string
+format: date
+pattern: ^\d{4}-\d{2}-\d{2}$
+minLength: 10
+maxLength: 10
+EndDateQueryParameter:
+name: end_date
+in: query
+required: false
+description: >
+Optional interval end date in `YYYY-MM-DD` format, UTC, exclusive. Must
+be provided together with `start_date`, must be strictly after
+`start_date`, and the interval cannot exceed 12 months. Mutually
+exclusive with `month`.
+example: '2025-02-01'
+schema:
+type: string
+format: date
+pattern: ^\d{4}-\d{2}-\d{2}$
+minLength: 10
+maxLength: 10
+schemas:
+AccountReporterV2GetResponse:
+type: object
+description: >
+Account reporter response containing key-level and account-level usage
+metrics. The optional `price` object is included only for master API
+keys.
+properties:
+key_usage:
+$ref: '#/components/schemas/Usage'
+account_usage:
+$ref: '#/components/schemas/Usage'
+balance_remaining_usd:
+type: number
+format: float
+description: >
+The current account balance. This is a present-moment value, not a
+balance as of or within the requested `month` or
+`start_date`/`end_date` interval.
+examples:
+- 23.34
+price:
+$ref: '#/components/schemas/AccountReporterV2Price'
+ErrorResponse:
+required:
+- status
+- message
+- category
+- code
+type: object
+description: Standard error envelope returned by the API.
+properties:
+status:
+type:
+- string
+- 'null'
+examples:
+- error
+message:
+type: string
+examples:
+- Bad request
+category:
+$ref: '#/components/schemas/ErrorCategory'
+code:
+$ref: '#/components/schemas/ErrorCode'
+error:
+oneOf:
+- type: array
+maxItems: 10
+items:
+type: string
+maxLength: 1000
+- type: string
+maxLength: 1000
+examples:
+- Rate limit exceeded
+Usage:
+type: object
+description: Usage counters for a given time window.
+properties:
+start_date:
+type: string
+format: date
+description: Start of the reported UTC window, inclusive.
+examples:
+- '2024-10-01'
+end_date:
+type: string
+format: date
+description: End of the reported UTC window, exclusive.
+examples:
+- '2024-11-01'
+prospector_requests:
+type: integer
+format: int64
+examples:
+- 10
+prospector_persons:
+type: integer
+format: int64
+examples:
+- 17
+prospector_persons_phones:
+type: integer
+format: int64
+examples:
+- 2
+enrichment_contact_requests:
+type: integer
+format: int64
+examples:
+- 4827
+enrichment_contact_persons:
+type: integer
+format: int64
+examples:
+- 2873
+enrichment_contact_persons_phones:
+type: integer
+format: int64
+examples:
+- 85
+enrichment_phone_requests:
+type: integer
+format: int64
+examples:
+- 2590
+enrichment_phone_phones:
+type: integer
+format: int64
+examples:
+- 2279
+enrichment_company_requests:
+type: integer
+format: int64
+examples:
+- 15
+enrichment_company_companies:
+type: integer
+format: int64
+examples:
+- 15
+search_contact_requests:
+type: integer
+format: int64
+examples:
+- 0
+search_contact_found:
+type: integer
+format: int64
+examples:
+- 0
+search_company_requests:
+type: integer
+format: int64
+examples:
+- 0
+search_company_found:
+type: integer
+format: int64
+examples:
+- 0
+company_reveal_requests:
+type: integer
+format: int64
+examples:
+- 0
+company_reveal_found:
+type: integer
+format: int64
+examples:
+- 0
+company_titles_requests:
+type: integer
+format: int64
+description: Count of company titles requests (jobs) in the usage period.
+examples:
+- 0
+company_titles_found:
+type: integer
+format: int64
+description: >-
+Total titles returned across company titles jobs in the usage
+period.
+examples:
+- 0
+job_change_requests:
+type: integer
+format: int64
+examples:
+- 0
+job_change_found:
+type: integer
+format: int64
+examples:
+- 0
+verify_email_requests:
+type: integer
+format: int64
+examples:
+- 0
+verify_email_verified:
+type: integer
+format: int64
+examples:
+- 0
+AccountReporterV2Price:
+type: object
+description: >
+Unit prices in USD keyed by their corresponding Account Reporter usage
+field, derived from the latest payment row. Present only when the
+request is authenticated with a master API key. May be an empty object
+when no payment row exists. These are current prices, not the actual
+historical prices in effect during the requested `month` or
+`start_date`/`end_date` interval.
+properties:
+prospector_persons:
+type: number
+format: float
+description: Unit price in USD for a Prospector person.
+examples:
+- 0.138
+prospector_persons_phones:
+type: number
+format: float
+description: Unit price in USD for a Prospector person phone.
+examples:
+- 0.32
+enrichment_contact_persons:
+type: number
+format: float
+description: Unit price in USD for a Contact Enrichment person.
+examples:
+- 0.138
+enrichment_contact_persons_phones:
+type: number
+format: float
+description: Unit price in USD for a Contact Enrichment person phone.
+examples:
+- 0.32
+enrichment_phone_phones:
+type: number
+format: float
+description: Unit price in USD for a Phone Enrichment phone.
+examples:
+- 0.32
+enrichment_company_companies:
+type: number
+format: float
+description: Unit price in USD for a Company Enrichment company.
+examples:
+- 0.138
+search_contact_found:
+type: number
+format: float
+description: Unit price in USD for a Search Contact found result.
+examples:
+- 0.04
+search_company_found:
+type: number
+format: float
+description: Unit price in USD for a Search Company found result.
+examples:
+- 0.04
+company_reveal_found:
+type: number
+format: float
+description: Unit price in USD for a Company Reveal found result.
+examples:
+- 0.05
+company_titles_found:
+type: number
+format: float
+description: Unit price in USD for a Company Titles found result.
+examples:
+- 0
+job_change_found:
+type: number
+format: float
+description: Unit price in USD for a Job Change found result.
+examples:
+- 0.1
+verify_email_verified:
+type: number
+format: float
+description: Unit price in USD for a verified Email Verification result.
+examples:
+- 0.02
+ErrorCategory:
+type: string
+description: >
+Stable high-level error category. This value must match the prefix of
+`code` (for example, `VALIDATION` for `VALIDATION_BAD_REQUEST`).
+enum:
+- AUTH
+- PERMISSION
+- QUOTA
+- VALIDATION
+- NOT_FOUND
+- RATE_LIMIT
+- ROUTING
+- INTERNAL
+examples:
+- VALIDATION
+ErrorCode:
+type: string
+description: >
+Stable machine-readable error code. Codes are grouped by category via
+prefix and always follow `CATEGORY_DETAIL`. The prefix must match
+`category`.
+pattern: >-
+^(AUTH|PERMISSION|QUOTA|VALIDATION|NOT_FOUND|RATE_LIMIT|ROUTING|INTERNAL)_[A-Z0-9_]+$
+enum:
+- AUTH_BAD_API_KEY
+- AUTH_MISSING_API_KEY
+- AUTH_NEED_MASTER_API_KEY
+- PERMISSION_FEATURE_NOT_ENABLED
+- PERMISSION_INCLUDE_PHONES_REQUIRES_PHONE_ENRICHMENT
+- PERMISSION_NEED_ADMIN_API_KEY
+- QUOTA_ACCOUNT_OVER_QUOTA
+- VALIDATION_BAD_DOMAIN
+- VALIDATION_BAD_DOMAIN_DISPOSABLE
+- VALIDATION_BAD_DOMAIN_EMAIL_PROVIDER
+- VALIDATION_BAD_DOMAIN_INVALID_CHARACTERS
+- VALIDATION_BAD_DOMAIN_NO_MX
+- VALIDATION_BAD_DOMAIN_PROVIDER_DOMAIN
+- VALIDATION_BAD_DOMAIN_SERVICE_DOMAIN
+- VALIDATION_BAD_DOMAIN_SOCIAL_MEDIA
+- VALIDATION_BAD_DOMAIN_TOP_LEVEL
+- VALIDATION_BAD_DOMAIN_URL_SHORTENER
+- VALIDATION_BAD_EMAIL_CONSECUTIVE_DIGITS
+- VALIDATION_BAD_EMAIL_INVALID
+- VALIDATION_BAD_EMAIL_PERSONAL_NOT_ALLOWED
+- VALIDATION_BAD_EMAIL_PROFESSIONAL_NOT_ALLOWED
+- VALIDATION_BAD_EMAIL_ROLE
+- VALIDATION_BAD_EMAIL_TOO_LONG
+- VALIDATION_BAD_EMAIL_TOO_MANY_DIGITS
+- VALIDATION_BAD_JOB_ID
+- VALIDATION_BAD_NAME_INVALID
+- VALIDATION_BAD_REQUEST
+- VALIDATION_BAD_TITLE_FILTER
+- VALIDATION_BAD_TITLE_FILTER_EXTRA_LEFT_PARENTHESIS
+- VALIDATION_BAD_TITLE_FILTER_EXTRA_RIGHT_PARENTHESIS
+- VALIDATION_BAD_TITLE_FILTER_EXTRA_STRING
+- VALIDATION_BAD_TITLE_FILTER_MISSING_RIGHT_PARENTHESIS
+- VALIDATION_BAD_TITLE_FILTER_MISSING_STRING
+- VALIDATION_BAD_TITLE_FILTER_MISSING_STRING_OR_NOT_OR_LEFT_PARENTHESIS
+- VALIDATION_CANNOT_EDIT_MASTER_API_KEY
+- VALIDATION_MISSING_BODY
+- VALIDATION_MISSING_JOB_ID_PARAMETER
+- VALIDATION_MISSING_TITLE_FILTERS
+- VALIDATION_SUBKEY_RATE_EXCEEDS_MASTER
+- NOT_FOUND_ACCOUNT_OR_KEY_NOT_FOUND
+- NOT_FOUND_API_KEY_NOT_FOUND
+- NOT_FOUND_JOB_NOT_FOUND
+- NOT_FOUND_NO_MASTER_API_KEY_FOUND
+- NOT_FOUND_NOT_FOUND
+- RATE_LIMIT_RATE_LIMIT_EXCEEDED
+- ROUTING_INVALID_PATH_OR_METHOD
+- INTERNAL_FAILED_CREATE_API_KEY
+- INTERNAL_FAILED_EDIT_API_KEY
+- INTERNAL_UNCLASSIFIED_ERROR
+examples:
+- VALIDATION_BAD_REQUEST
+ErrorResponseUnauthorized:
+description: Error response used when the API key header is missing.
+required:
+- status
+- message
+- category
+- code
+type: object
+properties:
+status:
+type:
+- string
+- 'null'
+examples:
+- error
+message:
+type: string
+examples:
+- Missing api key
+category:
+$ref: '#/components/schemas/ErrorCategory'
+code:
+$ref: '#/components/schemas/ErrorCode'
+error:
+oneOf:
+- type: array
+maxItems: 10
+items:
+type: string
+maxLength: 1000
+- type: string
+maxLength: 1000
+examples:
+- Missing api key
+ErrorResponseForbidden:
+description: Error response used when the API key is invalid.
+required:
+- status
+- message
+- category
+- code
+type: object
+properties:
+status:
+type:
+- string
+- 'null'
+examples:
+- error
+message:
+type: string
+examples:
+- Bad api key
+category:
+$ref: '#/components/schemas/ErrorCategory'
+code:
+$ref: '#/components/schemas/ErrorCode'
+error:
+oneOf:
+- type: array
+maxItems: 10
+items:
+type: string
+maxLength: 1000
+- type: string
+maxLength: 1000
+examples:
+- Bad api key
+responses:
+UnauthorizedResponse:
+description: API key not provided within the headers.
+content:
+application/json:
+schema:
+$ref: '#/components/schemas/ErrorResponseUnauthorized'
+example:
+status: error
+message: Missing api key
+category: AUTH
+code: AUTH_MISSING_API_KEY
+error: Missing api key
+PaymentRequiredResponse:
+description: Account is over quota.
+content:
+application/json:
+schema:
+$ref: '#/components/schemas/ErrorResponse'
+example:
+status: error
+message: >-
+Your account is over its quota. Please contact your account
+manager to discuss an upgrade.
+category: QUOTA
+code: QUOTA_ACCOUNT_OVER_QUOTA
+ForbiddenResponse:
+description: Wrong API key provided within the headers.
+content:
+application/json:
+schema:
+$ref: '#/components/schemas/ErrorResponseForbidden'
+example:
+status: error
+message: Bad api key
+category: AUTH
+code: AUTH_BAD_API_KEY
+error: Bad api key
+TooManyRequestsResponse:
+description: Too many requests. Rate limit exceeded.
+headers:
+X-RateLimit-Limit:
+description: Maximum number of requests allowed per interval.
+schema:
+type: integer
+format: int32
+minimum: 0
+X-RateLimit-Remaining:
+description: Remaining requests in the current interval.
+schema:
+type: integer
+format: int32
+minimum: 0
+X-RateLimit-Interval:
+description: Rate limit interval length in seconds.
+schema:
+type: number
+minimum: 0
+Retry-After:
+description: Seconds to wait before retrying.
+schema:
+type: number
+minimum: 0
+content:
+application/json:
+schema:
+$ref: '#/components/schemas/ErrorResponse'
+example:
+status: error
+message: Too many requests. Try again after 12.34 seconds
+error: Rate limit exceeded
+category: RATE_LIMIT
+code: RATE_LIMIT_RATE_LIMIT_EXCEEDED
+securitySchemes:
+api_key:
+description: To access the API, provide your API key in `x-api-key`.
+type: apiKey
+in: header
+name: x-api-key
+````
+This documentation is built and hosted on [Mintlify](https://mintlify.com), a developer documentation platform.

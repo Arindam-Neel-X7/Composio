@@ -1,0 +1,18 @@
+> ## Documentation Index
+> Fetch the complete documentation index at: https://developers.clay.com/llms.txt
+> Use this file to discover all available pages before exploring further.
+# Agent workflows
+> Use Clay with coding agents, MCP clients, local scripts, and JSON-first automations.
+Clay is useful for agents because it gives them a structured way to run GTM work. Instead of asking an agent to scrape, guess, or call many providers directly, expose Clay functions as routines and return predictable JSON.
+## Good agent tasks
+* Run a Clay function on a company domain and summarize the structured output.
+* Enrich a list of accounts from a JSON file.
+* Search for companies or people, then pass results into another workflow.
+* Trigger repeatable research or scoring logic from a local terminal.
+* Use MCP to call Clay functions from a coding agent like Claude Code, Codex, or Cursor.
+## Start with the CLI
+The CLI is the fastest path for most agent workflows because it handles authentication locally and returns JSON that agents can inspect.
+> [card] [Quickstart](https://developers.clay.com/quickstart.md#agent-plugin)
+>
+> Authenticate, list routines, and run your first Clay routine.
+This documentation is built and hosted on [Mintlify](https://mintlify.com), a developer documentation platform.

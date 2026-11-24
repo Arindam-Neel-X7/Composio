@@ -1,0 +1,86 @@
+[
+  {
+    "app_id": 2,
+    "claim_id": "2.api.breadth",
+    "change": "changed",
+    "reason": "Synthetic first extraction"
+  },
+  {
+    "app_id": 2,
+    "claim_id": "2.api.contacts",
+    "change": "added",
+    "reason": "Synthetic first extraction"
+  },
+  {
+    "app_id": 2,
+    "claim_id": "2.api.rest",
+    "change": "added",
+    "reason": "Synthetic first extraction"
+  },
+  {
+    "app_id": 2,
+    "claim_id": "2.auth.key",
+    "change": "added",
+    "reason": "Synthetic first extraction"
+  },
+  {
+    "app_id": 2,
+    "claim_id": "2.auth.oauth2",
+    "change": "added",
+    "reason": "Synthetic first extraction"
+  },
+  {
+    "app_id": 2,
+    "claim_id": "2.buildability",
+    "change": "changed",
+    "reason": "Synthetic first extraction"
+  },
+  {
+    "app_id": 2,
+    "claim_id": "2.identity",
+    "change": "changed",
+    "reason": "Synthetic first extraction"
+  },
+  {
+    "app_id": 2,
+    "claim_id": "2.mcp",
+    "change": "changed",
+    "reason": "Synthetic first extraction"
+  },
+  {
+    "app_id": 2,
+    "claim_id": "2.mcp.operational",
+    "change": "added",
+    "reason": "Synthetic first extraction"
+  },
+  {
+    "app_id": 2,
+    "claim_id": "2.mcp.server",
+    "change": "added",
+    "reason": "Synthetic first extraction"
+  },
+  {
+    "app_id": 2,
+    "claim_id": "2.purpose",
+    "change": "changed",
+    "reason": "Synthetic first extraction"
+  },
+  {
+    "app_id": 2,
+    "claim_id": "2.testing.free_access",
+    "change": "changed",
+    "reason": "Synthetic first extraction"
+  },
+  {
+    "app_id": 2,
+    "claim_id": "2.testing.sandbox_access",
+    "change": "changed",
+    "reason": "Synthetic first extraction"
+  },
+  {
+    "app_id": 2,
+    "claim_id": "2.testing.self_serve",
+    "change": "changed",
+    "reason": "Synthetic first extraction"
+  }
+]

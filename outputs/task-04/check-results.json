@@ -1,0 +1,1002 @@
+{
+  "task": "04",
+  "run_id": "pilot-first-pass-001",
+  "scope": "Coordinator handoff review only; Task 05 independent verification not started",
+  "validation": {
+    "structure_and_grounding": "passed",
+    "backend": "PowerShell Test-Json (Draft2020-12)",
+    "factual_truth": "requires independent review",
+    "synthetic": false,
+    "records": 5
+  },
+  "selected_apps": 5,
+  "captures": 26,
+  "unique_source_urls": 26,
+  "lineage_run_ids": [
+    "pilot-first-pass-001",
+    "pilot-capture-003",
+    "pilot-capture-002",
+    "pilot-capture-001"
+  ],
+  "claim_state_counts": {
+    "observed": 71,
+    "unknown": 48,
+    "inferred": 26,
+    "not_researched": 4,
+    "disputed": 1,
+    "not_found_in_checked_sources": 1
+  },
+  "research_accuracy": null,
+  "completed_adjudications": 0,
+  "metrics": {
+    "synthetic": false,
+    "app_findings_total": 5,
+    "apps_with_asserted_research": 5,
+    "selected_apps": 5,
+    "assignment_roster_denominator": 100,
+    "target_run_id": "pilot-first-pass-001",
+    "review_run_id": "pilot-first-pass-001",
+    "overall": {
+      "correct": 0,
+      "incorrect": 0,
+      "unsupported": 0,
+      "unresolved": 0,
+      "not_applicable": 0,
+      "eligible": 92,
+      "pending": 92,
+      "denominator": 0,
+      "accuracy": null,
+      "review_coverage": 0
+    },
+    "by_basis": {
+      "observed": {
+        "correct": 0,
+        "incorrect": 0,
+        "unsupported": 0,
+        "unresolved": 0,
+        "not_applicable": 0,
+        "eligible": 66,
+        "pending": 66,
+        "denominator": 0,
+        "accuracy": null,
+        "review_coverage": 0
+      },
+      "inferred": {
+        "correct": 0,
+        "incorrect": 0,
+        "unsupported": 0,
+        "unresolved": 0,
+        "not_applicable": 0,
+        "eligible": 26,
+        "pending": 26,
+        "denominator": 0,
+        "accuracy": null,
+        "review_coverage": 0
+      }
+    },
+    "research_coverage": {
+      "identity": {
+        "claim_status_counts": {
+          "observed": 5
+        },
+        "collection_status_counts": {},
+        "apps_with_assertions": 5,
+        "selected_app_denominator": 5,
+        "completion_not_inferred": true
+      },
+      "purpose": {
+        "claim_status_counts": {
+          "observed": 5
+        },
+        "collection_status_counts": {},
+        "apps_with_assertions": 5,
+        "selected_app_denominator": 5,
+        "completion_not_inferred": true
+      },
+      "auth": {
+        "claim_status_counts": {
+          "observed": 13,
+          "disputed": 1,
+          "inferred": 1
+        },
+        "collection_status_counts": {
+          "partial": 5
+        },
+        "apps_with_assertions": 5,
+        "selected_app_denominator": 5,
+        "completion_not_inferred": true
+      },
+      "credentials": {
+        "claim_status_counts": {
+          "observed": 17,
+          "unknown": 48,
+          "inferred": 15
+        },
+        "collection_status_counts": {},
+        "apps_with_assertions": 5,
+        "selected_app_denominator": 5,
+        "completion_not_inferred": true
+      },
+      "api": {
+        "claim_status_counts": {
+          "observed": 23,
+          "inferred": 5
+        },
+        "collection_status_counts": {
+          "partial": 10
+        },
+        "apps_with_assertions": 5,
+        "selected_app_denominator": 5,
+        "completion_not_inferred": true
+      },
+      "mcp": {
+        "claim_status_counts": {
+          "observed": 8,
+          "not_researched": 4,
+          "not_found_in_checked_sources": 1
+        },
+        "collection_status_counts": {},
+        "apps_with_assertions": 4,
+        "selected_app_denominator": 5,
+        "completion_not_inferred": true
+      },
+      "buildability": {
+        "claim_status_counts": {
+          "inferred": 5
+        },
+        "collection_status_counts": {},
+        "apps_with_assertions": 5,
+        "selected_app_denominator": 5,
+        "completion_not_inferred": true
+      }
+    },
+    "note": "Frozen claim inventory; unresolved/pending/null states are not correct. Synthetic scores are format demonstrations, never app accuracy. No held-out sample or improvement estimate is claimed."
+  },
+  "apps": [
+    {
+      "id": 2,
+      "app": "HubSpot",
+      "claim_states": {
+        "observed": 20,
+        "unknown": 9,
+        "inferred": 3,
+        "not_researched": 1
+      },
+      "asserted_research_claims": 22,
+      "captured_sources": 5,
+      "source_urls": [
+        "https://developers.hubspot.com/developer-platform-basics",
+        "https://developers.hubspot.com/docs/api-reference/latest/overview",
+        "https://developers.hubspot.com/docs/apps/developer-platform/build-apps/authentication/overview",
+        "https://developers.hubspot.com/docs/apps/developer-platform/build-apps/integrate-with-the-remote-hubspot-mcp-server",
+        "https://developers.hubspot.com/docs/apps/legacy-apps/private-apps/overview"
+      ],
+      "failed_attempt_count": 5,
+      "purpose": "CRM platform whose APIs let integrations work with customer records and business workflows.",
+      "auth": [
+        {
+          "status": "observed",
+          "method": "OAuth2",
+          "context": "Installed account API access",
+          "scopes": [],
+          "details": "OAuth access tokens for installed accounts; multi-account distribution needs hosted OAuth handling."
+        },
+        {
+          "status": "observed",
+          "method": "Bearer_token",
+          "context": "Current developer-platform single-account app",
+          "scopes": [],
+          "details": "Static access token for one authorized account; distinct from an OAuth user flow."
+        },
+        {
+          "status": "observed",
+          "method": "Bearer_token",
+          "context": "Existing legacy private apps",
+          "scopes": [],
+          "details": "Existing legacy private app token; this is not a new-app onboarding route."
+        },
+        {
+          "status": "observed",
+          "method": "API_key",
+          "context": "Selected developer app-management endpoints",
+          "scopes": [],
+          "details": "Developer API key for selected app-management features, not general CRM data access."
+        },
+        {
+          "status": "observed",
+          "method": "OAuth2",
+          "context": "App-global webhooks journal",
+          "scopes": [],
+          "details": "Client-credentials tokens manage app-global webhooks journal features, not installed-user CRM actions."
+        }
+      ],
+      "credentials": {
+        "testing": {
+          "free_access": {
+            "status": "observed",
+            "value": true
+          },
+          "trial_access": {
+            "status": "unknown",
+            "value": null
+          },
+          "sandbox_access": {
+            "status": "observed",
+            "value": true
+          },
+          "paid_required": {
+            "status": "observed",
+            "value": false
+          },
+          "admin_approval_required": {
+            "status": "unknown",
+            "value": null
+          },
+          "partner_approval_required": {
+            "status": "unknown",
+            "value": null
+          },
+          "contact_sales_required": {
+            "status": "unknown",
+            "value": null
+          },
+          "self_serve": {
+            "status": "inferred",
+            "value": true
+          }
+        },
+        "production": {
+          "free_access": {
+            "status": "observed",
+            "value": true
+          },
+          "trial_access": {
+            "status": "unknown",
+            "value": null
+          },
+          "sandbox_access": {
+            "status": "unknown",
+            "value": null
+          },
+          "paid_required": {
+            "status": "observed",
+            "value": false
+          },
+          "admin_approval_required": {
+            "status": "observed",
+            "value": true
+          },
+          "partner_approval_required": {
+            "status": "unknown",
+            "value": null
+          },
+          "contact_sales_required": {
+            "status": "unknown",
+            "value": null
+          },
+          "self_serve": {
+            "status": "unknown",
+            "value": null
+          }
+        }
+      },
+      "api_protocols": [
+        "REST"
+      ],
+      "api_breadth": "broad",
+      "mcp": {
+        "status": "observed",
+        "entries": [
+          {
+            "origin": "official",
+            "name": "HubSpot remote CRM MCP",
+            "source_url": "https://developers.hubspot.com/docs/apps/developer-platform/build-apps/integrate-with-the-remote-hubspot-mcp-server",
+            "repository_url": null,
+            "server_url": "https://mcp.hubspot.com",
+            "scope": "Callable server for account CRM data; distinct from local developer tooling.",
+            "operational_check": {
+              "claim_id": "2.mcp.remote.operational",
+              "status": "not_researched",
+              "value": null,
+              "context": "HubSpot CRM APIs and remote CRM MCP; developer testing and authorized production tenants; current and explicitly labeled legacy auth; plan-specific capabilities not generalized",
+              "evidence": [],
+              "supporting_claim_refs": [],
+              "rationale": "No MCP connection or tool call was attempted."
+            }
+          }
+        ]
+      },
+      "buildability": {
+        "verdict": "build_now",
+        "scope": "Prototype CRM record reads/writes in a developer test account via scoped APIs; production evaluated per tenant.",
+        "blockers": [],
+        "next_steps": [
+          "Use current OAuth or static developer-platform onboarding",
+          "Check requested scopes and tenant plan before production",
+          "Test MCP separately; no operational check in this pilot"
+        ]
+      }
+    },
+    {
+      "id": 13,
+      "app": "Freshdesk",
+      "claim_states": {
+        "observed": 14,
+        "inferred": 7,
+        "unknown": 10,
+        "not_researched": 1
+      },
+      "asserted_research_claims": 20,
+      "captured_sources": 5,
+      "source_urls": [
+        "https://developers.freshworks.com/docs/app-sdk/v3.0/support_ticket/oauth-implementation-in-apps/",
+        "https://developers.freshworks.com/docs/app-sdk/v3.0/support_ticket/rest-apis/",
+        "https://support.freshdesk.com/support/solutions/articles/215517-how-to-find-your-api-key",
+        "https://support.freshdesk.com/support/solutions/articles/50000011778",
+        "https://support.freshdesk.com/support/solutions/articles/50000012670"
+      ],
+      "failed_attempt_count": 8,
+      "purpose": "Customer-support helpdesk for handling tickets and conversations.",
+      "auth": [
+        {
+          "status": "observed",
+          "method": "API_key",
+          "context": "REST agent credential",
+          "scopes": [],
+          "details": "Verified agent personal API key, with role-limited API actions."
+        },
+        {
+          "status": "observed",
+          "method": "Basic",
+          "context": "REST transport for API-key credentials; same credential as personal_key",
+          "scopes": [],
+          "details": "Freshworks calls this Basic access using API keys. Exact username/dummy-password encoding remains uncaptured because the main API reference failed collection."
+        },
+        {
+          "status": "observed",
+          "method": "other",
+          "context": "FDK app OAuth path; version not explicitly captured",
+          "scopes": [],
+          "details": "OAuth authorization/access-token flow is documented for Freshworks and private FDK custom apps. Protocol version and general external-app registration conditions are not established here."
+        },
+        {
+          "status": "observed",
+          "method": "API_key",
+          "context": "Official hosted MCP",
+          "scopes": [],
+          "details": "MCP uses API-key authentication; this is distinct from the REST Basic wrapper."
+        }
+      ],
+      "credentials": {
+        "testing": {
+          "free_access": {
+            "status": "inferred",
+            "value": true
+          },
+          "trial_access": {
+            "status": "inferred",
+            "value": true
+          },
+          "sandbox_access": {
+            "status": "unknown",
+            "value": null
+          },
+          "paid_required": {
+            "status": "inferred",
+            "value": false
+          },
+          "admin_approval_required": {
+            "status": "unknown",
+            "value": null
+          },
+          "partner_approval_required": {
+            "status": "unknown",
+            "value": null
+          },
+          "contact_sales_required": {
+            "status": "unknown",
+            "value": null
+          },
+          "self_serve": {
+            "status": "inferred",
+            "value": true
+          }
+        },
+        "production": {
+          "free_access": {
+            "status": "unknown",
+            "value": null
+          },
+          "trial_access": {
+            "status": "unknown",
+            "value": null
+          },
+          "sandbox_access": {
+            "status": "unknown",
+            "value": null
+          },
+          "paid_required": {
+            "status": "unknown",
+            "value": null
+          },
+          "admin_approval_required": {
+            "status": "observed",
+            "value": true
+          },
+          "partner_approval_required": {
+            "status": "unknown",
+            "value": null
+          },
+          "contact_sales_required": {
+            "status": "unknown",
+            "value": null
+          },
+          "self_serve": {
+            "status": "inferred",
+            "value": true
+          }
+        }
+      },
+      "api_protocols": [
+        "REST"
+      ],
+      "api_breadth": "moderate",
+      "mcp": {
+        "status": "observed",
+        "entries": [
+          {
+            "origin": "official",
+            "name": "Freshdesk hosted MCP",
+            "source_url": "https://support.freshdesk.com/support/solutions/articles/50000012670",
+            "repository_url": null,
+            "server_url": null,
+            "scope": "Callable server for supported Freshdesk Standalone 2021/Unified Omni 2026 tenants; API key; tenant URL not instantiated.",
+            "operational_check": {
+              "claim_id": "13.mcp.official.operational",
+              "status": "not_researched",
+              "value": null,
+              "context": "Freshdesk REST v2 and official MCP; verified agents and FDK apps; trial testing versus licensed production tenants; plan-specific capabilities not generalized",
+              "evidence": [],
+              "supporting_claim_refs": [],
+              "rationale": "No MCP connection or tool call was attempted."
+            }
+          }
+        ]
+      },
+      "buildability": {
+        "verdict": "conditional",
+        "scope": "Read/update support tickets in an authorized trial or paid Freshdesk tenant via REST.",
+        "blockers": [
+          "Verified agent key and role permissions required",
+          "Long-term free-plan API eligibility and OAuth app registration were not established"
+        ],
+        "next_steps": [
+          "Use verified-agent key path for initial REST prototype",
+          "Confirm entitlement/rate limits for chosen plan",
+          "Validate Basic wire convention against full reference before implementation"
+        ]
+      }
+    },
+    {
+      "id": 31,
+      "app": "Google Ads",
+      "claim_states": {
+        "observed": 15,
+        "disputed": 1,
+        "unknown": 11,
+        "inferred": 4,
+        "not_researched": 1
+      },
+      "asserted_research_claims": 18,
+      "captured_sources": 7,
+      "source_urls": [
+        "https://developers.google.com/google-ads/api/docs/api-policy/access-levels",
+        "https://developers.google.com/google-ads/api/docs/api-policy/developer-token",
+        "https://developers.google.com/google-ads/api/docs/best-practices/testing",
+        "https://developers.google.com/google-ads/api/docs/concepts/api-structure",
+        "https://developers.google.com/google-ads/api/docs/developer-toolkit/mcp-server",
+        "https://developers.google.com/google-ads/api/docs/oauth/overview",
+        "https://developers.google.com/google-ads/api/rest/overview"
+      ],
+      "failed_attempt_count": 7,
+      "purpose": "Programmatic advertising account, campaign and performance management.",
+      "auth": [
+        {
+          "status": "observed",
+          "method": "OAuth2",
+          "context": "Authorized Google Ads user",
+          "scopes": [],
+          "details": "OAuth user authorization for Ads account access."
+        },
+        {
+          "status": "observed",
+          "method": "OAuth2",
+          "context": "Service-account workflow",
+          "scopes": [],
+          "details": "A service-account OAuth path is documented; principal still needs access to the target Ads accounts."
+        }
+      ],
+      "credentials": {
+        "testing": {
+          "free_access": {
+            "status": "unknown",
+            "value": null
+          },
+          "trial_access": {
+            "status": "unknown",
+            "value": null
+          },
+          "sandbox_access": {
+            "status": "observed",
+            "value": true
+          },
+          "paid_required": {
+            "status": "unknown",
+            "value": null
+          },
+          "admin_approval_required": {
+            "status": "unknown",
+            "value": null
+          },
+          "partner_approval_required": {
+            "status": "unknown",
+            "value": null
+          },
+          "contact_sales_required": {
+            "status": "unknown",
+            "value": null
+          },
+          "self_serve": {
+            "status": "observed",
+            "value": true
+          }
+        },
+        "production": {
+          "free_access": {
+            "status": "unknown",
+            "value": null
+          },
+          "trial_access": {
+            "status": "unknown",
+            "value": null
+          },
+          "sandbox_access": {
+            "status": "unknown",
+            "value": null
+          },
+          "paid_required": {
+            "status": "unknown",
+            "value": null
+          },
+          "admin_approval_required": {
+            "status": "inferred",
+            "value": true
+          },
+          "partner_approval_required": {
+            "status": "observed",
+            "value": true
+          },
+          "contact_sales_required": {
+            "status": "unknown",
+            "value": null
+          },
+          "self_serve": {
+            "status": "inferred",
+            "value": false
+          }
+        }
+      },
+      "api_protocols": [
+        "REST",
+        "RPC",
+        "SDK"
+      ],
+      "api_breadth": "moderate",
+      "mcp": {
+        "status": "observed",
+        "entries": [
+          {
+            "origin": "official",
+            "name": "Google Ads MCP server",
+            "source_url": "https://developers.google.com/google-ads/api/docs/developer-toolkit/mcp-server",
+            "repository_url": null,
+            "server_url": null,
+            "scope": "Callable server for Ads data analysis and selected mutations; configured locally or deployed remotely; no deployment URL captured.",
+            "operational_check": {
+              "claim_id": "31.mcp.official.operational",
+              "status": "not_researched",
+              "value": null,
+              "context": "Google Ads API current Cloud-project access and OAuth; test accounts versus authorized production accounts; legacy developer-token documentation identified separately",
+              "evidence": [],
+              "supporting_claim_refs": [],
+              "rationale": "No MCP connection or tool call was attempted."
+            }
+          }
+        ]
+      },
+      "buildability": {
+        "verdict": "conditional",
+        "scope": "Read campaign performance for authorized production Ads accounts; develop safe requests against test accounts.",
+        "blockers": [
+          "Production project needs Explorer or higher approval and target-account access",
+          "Test accounts cannot establish realistic performance-report behavior"
+        ],
+        "next_steps": [
+          "Use current Cloud-project onboarding and OAuth",
+          "Resolve token-summary inconsistency before implementing credential checklist",
+          "Request higher access for planning/billing operations if needed"
+        ]
+      }
+    },
+    {
+      "id": 58,
+      "app": "Sherlock",
+      "claim_states": {
+        "observed": 9,
+        "inferred": 5,
+        "unknown": 10,
+        "not_found_in_checked_sources": 1
+      },
+      "asserted_research_claims": 13,
+      "captured_sources": 4,
+      "source_urls": [
+        "https://github.com/sherlock-project/sherlock",
+        "https://raw.githubusercontent.com/sherlock-project/sherlock/master/LICENSE",
+        "https://sherlockproject.xyz/installation",
+        "https://sherlockproject.xyz/usage"
+      ],
+      "failed_attempt_count": 3,
+      "purpose": "Find candidate social-network profiles for a supplied username.",
+      "auth": [
+        {
+          "status": "inferred",
+          "method": "none",
+          "context": "Local CLI only",
+          "scopes": [],
+          "details": "The documented local username-search invocation exposes no Sherlock credential step; this is an inference about that interface, not target sites."
+        }
+      ],
+      "credentials": {
+        "testing": {
+          "free_access": {
+            "status": "observed",
+            "value": true
+          },
+          "trial_access": {
+            "status": "unknown",
+            "value": null
+          },
+          "sandbox_access": {
+            "status": "unknown",
+            "value": null
+          },
+          "paid_required": {
+            "status": "observed",
+            "value": false
+          },
+          "admin_approval_required": {
+            "status": "unknown",
+            "value": null
+          },
+          "partner_approval_required": {
+            "status": "unknown",
+            "value": null
+          },
+          "contact_sales_required": {
+            "status": "unknown",
+            "value": null
+          },
+          "self_serve": {
+            "status": "inferred",
+            "value": true
+          }
+        },
+        "production": {
+          "free_access": {
+            "status": "observed",
+            "value": true
+          },
+          "trial_access": {
+            "status": "unknown",
+            "value": null
+          },
+          "sandbox_access": {
+            "status": "unknown",
+            "value": null
+          },
+          "paid_required": {
+            "status": "observed",
+            "value": false
+          },
+          "admin_approval_required": {
+            "status": "unknown",
+            "value": null
+          },
+          "partner_approval_required": {
+            "status": "unknown",
+            "value": null
+          },
+          "contact_sales_required": {
+            "status": "unknown",
+            "value": null
+          },
+          "self_serve": {
+            "status": "inferred",
+            "value": true
+          }
+        }
+      },
+      "api_protocols": [
+        "CLI"
+      ],
+      "api_breadth": "narrow",
+      "mcp": {
+        "status": "not_found_in_checked_sources",
+        "entries": []
+      },
+      "buildability": {
+        "verdict": "build_now",
+        "scope": "Wrap the local Sherlock CLI as a username-search tool with structured result handling.",
+        "blockers": [],
+        "next_steps": [
+          "Install a supported package and bound runtime/output",
+          "Validate results on authorized examples; successful target detection was not tested",
+          "Do not advertise an existing official MCP or REST API without further evidence"
+        ]
+      }
+    },
+    {
+      "id": 91,
+      "app": "NotebookLM",
+      "claim_states": {
+        "observed": 13,
+        "inferred": 7,
+        "unknown": 8,
+        "not_researched": 1
+      },
+      "asserted_research_claims": 19,
+      "captured_sources": 5,
+      "source_urls": [
+        "https://docs.cloud.google.com/gemini/enterprise/notebooklm-enterprise/docs/api-notebooks",
+        "https://docs.cloud.google.com/gemini/enterprise/notebooklm-enterprise/docs/api-notebooks-sources",
+        "https://docs.cloud.google.com/gemini/enterprise/notebooklm-enterprise/docs/set-up-licensing",
+        "https://docs.cloud.google.com/gemini/enterprise/notebooklm-enterprise/docs/set-up-notebooklm",
+        "https://github.com/Morfeu333/notebooklm-mcp"
+      ],
+      "failed_attempt_count": 5,
+      "purpose": "Enterprise document research notebooks with programmatic notebook and source management.",
+      "auth": [
+        {
+          "status": "observed",
+          "method": "Bearer_token",
+          "context": "Enterprise notebook REST v1alpha; licensed user",
+          "scopes": [],
+          "details": "Licensed user access token from gcloud auth login/print-access-token; Cloud NotebookLM User role required."
+        },
+        {
+          "status": "observed",
+          "method": "Bearer_token",
+          "context": "Enterprise API Drive-source access",
+          "scopes": [],
+          "details": "Drive-backed source ingestion additionally requires user authorization to Google Drive."
+        }
+      ],
+      "credentials": {
+        "testing": {
+          "free_access": {
+            "status": "inferred",
+            "value": true
+          },
+          "trial_access": {
+            "status": "inferred",
+            "value": true
+          },
+          "sandbox_access": {
+            "status": "unknown",
+            "value": null
+          },
+          "paid_required": {
+            "status": "inferred",
+            "value": false
+          },
+          "admin_approval_required": {
+            "status": "observed",
+            "value": true
+          },
+          "partner_approval_required": {
+            "status": "unknown",
+            "value": null
+          },
+          "contact_sales_required": {
+            "status": "unknown",
+            "value": null
+          },
+          "self_serve": {
+            "status": "inferred",
+            "value": true
+          }
+        },
+        "production": {
+          "free_access": {
+            "status": "unknown",
+            "value": null
+          },
+          "trial_access": {
+            "status": "unknown",
+            "value": null
+          },
+          "sandbox_access": {
+            "status": "unknown",
+            "value": null
+          },
+          "paid_required": {
+            "status": "observed",
+            "value": true
+          },
+          "admin_approval_required": {
+            "status": "observed",
+            "value": true
+          },
+          "partner_approval_required": {
+            "status": "unknown",
+            "value": null
+          },
+          "contact_sales_required": {
+            "status": "unknown",
+            "value": null
+          },
+          "self_serve": {
+            "status": "inferred",
+            "value": true
+          }
+        }
+      },
+      "api_protocols": [
+        "REST"
+      ],
+      "api_breadth": "moderate",
+      "mcp": {
+        "status": "observed",
+        "entries": [
+          {
+            "origin": "community",
+            "name": "Morfeu333 NotebookLM MCP implementation",
+            "source_url": "https://github.com/Morfeu333/notebooklm-mcp",
+            "repository_url": "https://github.com/Morfeu333/notebooklm-mcp",
+            "server_url": null,
+            "scope": "Community callable server for personal notebooklm.google.com/internal APIs; not established as an Enterprise REST integration.",
+            "operational_check": {
+              "claim_id": "91.mcp.personal_community.operational",
+              "status": "not_researched",
+              "value": null,
+              "context": "NotebookLM assignment Enterprise API scope, now Gemini Notebook Enterprise; licensed user/project/IAM path for trial testing and paid production; personal MCP separately identified",
+              "evidence": [],
+              "supporting_claim_refs": [],
+              "rationale": "No MCP connection or tool call was attempted."
+            }
+          }
+        ]
+      },
+      "buildability": {
+        "verdict": "conditional",
+        "scope": "Create/share Enterprise notebooks and ingest sources for a licensed organizational user via REST.",
+        "blockers": [
+          "Enterprise subscription/license assignment, IAM roles and API-enabled billed project required",
+          "Notebook API is Preview; personal chat workflow parity is not established"
+        ],
+        "next_steps": [
+          "Provision trial and required roles through an authorized administrator",
+          "Use licensed-user token path and test notebook/source calls",
+          "Evaluate community personal MCP separately from the Enterprise toolkit"
+        ]
+      }
+    }
+  ],
+  "status": "completed_first_pass_coordinator_reviewed",
+  "research_agent": {
+    "agent_id": "01a2082a-e44e-75a0-bd9d-04fc1fd8c277",
+    "nickname": "Mendel"
+  },
+  "snapshot_date": "2026-11-23",
+  "source_selection": {
+    "selected": 27,
+    "captured": 26,
+    "official_or_vendor_project": 25,
+    "community_implementation_repository": 1,
+    "uncaptured": [
+      "https://developers.freshdesk.com/api/"
+    ]
+  },
+  "reproduction": {
+    "rebuilt_input_byte_identical": true,
+    "original_and_rebuilt_input_sha256": "fbe5426530de444110c30e725bb9894bd92a7ac00ff348929804ae1e9d897153",
+    "replay_run_id": "coordinator-replay-001",
+    "frozen_records_sha256": "10ff5bdb556920e5fd0c692e6a3694c219ee98011c6244d9cf796203505d8f90",
+    "frozen_seal_sha256": "eaebd62d4f63c52465b15d5d94aa708db3a2140f25b120ca28b704ac38e03ca2"
+  },
+  "protected_files": [
+    {
+      "path": "research_pipeline.py",
+      "sha256": "9C88CBC47082B41561B94473F63B4926B7567E6BA162B395CE7E31768078DF69",
+      "unchanged": true
+    },
+    {
+      "path": "data/apps.json",
+      "sha256": "6E3AADA149102C2E5539C126AA556C1CEACA3D9D25CA6E0A8F56B3A569F81C19",
+      "unchanged": true
+    },
+    {
+      "path": "schemas/record.json",
+      "sha256": "80B19BC6D18212E1DD001502AB4F5F03185E1B734A03A8574F4EE656674A5CAF",
+      "unchanged": true
+    },
+    {
+      "path": "docs/evidence-rules.md",
+      "sha256": "DEAE40872D27B58B83D05B1D5FBFE175258010131E9EC25E9D1941A453B0C3EF",
+      "unchanged": true
+    },
+    {
+      "path": "docs/pipeline-usage.md",
+      "sha256": "60041CBDC139114934042FDE9832561998FD8F7098B4A95B966D0792D1B41C4D",
+      "unchanged": true
+    },
+    {
+      "path": "README.md",
+      "sha256": "9FAF9C6ADCF30E92263FAE2C11C6BCD683611050667BB41B92B5A6D4D5330712",
+      "unchanged": true
+    },
+    {
+      "path": "research_agent.py",
+      "sha256": "1AE59FB9FC02CB40A6FAC5567A95D69C7C6CF6C2891B0D874736E789A2D2DB8C",
+      "unchanged": true
+    },
+    {
+      "path": "verify_sample.py",
+      "sha256": "CC4E54CDF6A32F0B23C5C978FA74DF3AFA50FFDCD058612C1AF6ADD977610A6E",
+      "unchanged": true
+    },
+    {
+      "path": "artifacts/research_results.json",
+      "sha256": "B5F6DFAB6399545F2028EE6CFA834558EB5B7BC204A7262BE0C35B027EA6088A",
+      "unchanged": true
+    },
+    {
+      "path": "artifacts/verification_ledger.json",
+      "sha256": "14ACC53D185243B25C7ADCA8AA8B77DFB8650B8A7D7B72DECD229191440B8DE1",
+      "unchanged": true
+    },
+    {
+      "path": "index.html",
+      "sha256": "4C7BA5D84AA448A16A8BA455585A311F75A137D72F615686266D6D4BE2438520",
+      "unchanged": true
+    }
+  ],
+  "review_boundary": {
+    "coordinator_review": "Handoff integrity, evidence consistency checks and selected source interpretation; not an independent scored verification.",
+    "independent_task_05_started": false,
+    "human_checks": 0,
+    "authenticated_api_or_mcp_calls": 0
+  },
+  "open_issues": [
+    {
+      "app": "Freshdesk",
+      "issue": "Main API reference failed capture with ValueError; exact guard cause not recorded. Exact Basic wire encoding and main-reference rate limits were not promoted."
+    },
+    {
+      "app": "Google Ads",
+      "issue": "Dated developer-token migration body conflicts with official summary text. Requirement retained as disputed."
+    },
+    {
+      "app": "Google Ads",
+      "issue": "Vendor API-access approval is mapped to partner_approval_required=true with a non-partnership qualifier. Do not aggregate as commercial partnership gating until Task05/06 resolves taxonomy."
+    },
+    {
+      "app": "NotebookLM",
+      "issue": "Community MCP observation mentions a tool list, but its locator ends at table header line165; first tool starts166. Preserve first pass and assess/correct via explicit child later."
+    },
+    {
+      "app": "All five",
+      "issue": "MCP discovery is bounded, no operational tool tests; source truth and claim accuracy await Task05."
+    }
+  ]
+}

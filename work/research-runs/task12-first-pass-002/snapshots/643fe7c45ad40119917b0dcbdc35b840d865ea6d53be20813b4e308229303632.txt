@@ -1,0 +1,31 @@
+> ## Documentation Index
+> Fetch the complete documentation index at: https://developers.clay.com/llms.txt
+> Use this file to discover all available pages before exploring further.
+# Routines overview
+> Understand the routine types: Clay-managed functions, custom functions, and Workflows.
+Routines are the umbrella for programmable Clay logic: enrichment, research, scoring, routing, cleanup, and other repeatable GTM work.
+| Routine type | Use it when | Status |
+| - | - | - |
+| [Clay-managed functions](https://developers.clay.com/routines/clay-managed-functions.md) | You want Clay-provided enrichment or research for common jobs | Available |
+| [Custom functions](https://developers.clay.com/routines/custom-functions.md) | You already have Clay logic you want to call from agents, the CLI, MCP, or the API | Available |
+| [Workflows (Alpha)](https://developers.clay.com/routines/workflows-alpha.md) | You want to create, edit, run, inspect, or batch-run Clay logic from the plugin or CLI | Alpha |
+> [!NOTE]
+>
+> **Workflows are in Alpha.** They overlap with functions in what they can execute, but differ in how you build and
+> manage them.
+## How routines are called
+Routines can be called from the Clay plugin, CLI, MCP, or direct API integrations.
+| Surface | What it is good for |
+| - | - |
+| Clay plugin | Agent workflows in Claude Code, Codex, and Cursor |
+| CLI | JSON-first runs, batch runs, workflow testing, and debugging |
+| MCP | Agent access to Clay objects and routines |
+| API | Backend services, internal tools, queue workers, custom UIs, and product workflows |
+## First pattern
+1. Use [Searches](https://developers.clay.com/searches.md) to find a list of companies or people.
+2. Use a Clay-managed function to enrich the results.
+3. Send the structured output to your CRM, warehouse, app, or agent.
+> [card] [Run a search, then enrich with a function](https://developers.clay.com/recipes/search-and-enrich.md)
+>
+> See the basic search-plus-function flow.
+This documentation is built and hosted on [Mintlify](https://mintlify.com), a developer documentation platform.

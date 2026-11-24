@@ -1,0 +1,66 @@
+{"event": "fetch_attempt", "app_id": 1, "attempt": 1, "source_url": "https://developer.salesforce.com/docs/atlas.en-us.api_rest.meta/api_rest/intro_what_is_rest_api.htm", "attempted_on": "2026-11-23", "status": "blocked", "http_status": 403, "resolved_url": null, "error": "HTTP 403", "content_sha256": null}
+{"event": "fetch_attempt", "app_id": 1, "attempt": 1, "source_url": "https://developer.salesforce.com/docs/atlas.en-us.api_rest.meta/api_rest/intro_supported_editions.htm", "attempted_on": "2026-11-23", "status": "blocked", "http_status": 403, "resolved_url": null, "error": "HTTP 403", "content_sha256": null}
+{"event": "fetch_attempt", "app_id": 1, "attempt": 1, "source_url": "https://developer.salesforce.com/docs/atlas.en-us.api_rest.meta/api_rest/intro_understanding_oauth.htm", "attempted_on": "2026-11-23", "status": "blocked", "http_status": 403, "resolved_url": null, "error": "HTTP 403", "content_sha256": null}
+{"event": "fetch_attempt", "app_id": 1, "attempt": 1, "source_url": "https://developer.salesforce.com/signup", "attempted_on": "2026-11-23", "status": "blocked", "http_status": 403, "resolved_url": null, "error": "HTTP 403", "content_sha256": null}
+{"event": "cache_reused", "app_id": 1, "url": "https://github.com/salesforcecli/mcp"}
+{"event": "cache_reused", "app_id": 2, "url": "https://developers.hubspot.com/developer-platform-basics"}
+{"event": "cache_reused", "app_id": 2, "url": "https://developers.hubspot.com/docs/apps/developer-platform/build-apps/authentication/overview"}
+{"event": "cache_reused", "app_id": 2, "url": "https://developers.hubspot.com/docs/apps/legacy-apps/private-apps/overview"}
+{"event": "cache_reused", "app_id": 2, "url": "https://developers.hubspot.com/docs/api-reference/latest/overview"}
+{"event": "cache_reused", "app_id": 2, "url": "https://developers.hubspot.com/docs/apps/developer-platform/build-apps/integrate-with-the-remote-hubspot-mcp-server"}
+{"event": "cache_reused", "app_id": 3, "url": "https://pipedrive.readme.io/llms.txt"}
+{"event": "cache_reused", "app_id": 3, "url": "https://pipedrive.readme.io/docs/core-api-concepts-authentication"}
+{"event": "cache_reused", "app_id": 3, "url": "https://pipedrive.readme.io/docs/marketplace-creating-a-proper-app"}
+{"event": "fetch_attempt", "app_id": 3, "attempt": 1, "source_url": "https://www.pipedrive.com/en/pricing", "attempted_on": "2026-11-23", "status": "blocked", "http_status": 403, "resolved_url": null, "error": "HTTP 403", "content_sha256": null}
+{"event": "cache_reused", "app_id": 4, "url": "https://docs.attio.com/rest-api/overview"}
+{"event": "cache_reused", "app_id": 4, "url": "https://docs.attio.com/rest-api/guides/authentication"}
+{"event": "cache_reused", "app_id": 4, "url": "https://attio.com/pricing"}
+{"event": "cache_reused", "app_id": 5, "url": "https://github.com/twentyhq/twenty"}
+{"event": "cache_reused", "app_id": 5, "url": "https://docs.twenty.com/developers/extend/api"}
+{"event": "cache_reused", "app_id": 5, "url": "https://twenty.com/pricing"}
+{"event": "cache_reused", "app_id": 5, "url": "https://github.com/jezweb/twenty-mcp"}
+{"event": "cache_reused", "app_id": 6, "url": "https://developers.podio.com/"}
+{"event": "cache_reused", "app_id": 6, "url": "https://developers.podio.com/authentication"}
+{"event": "cache_reused", "app_id": 6, "url": "https://developers.podio.com/doc"}
+{"event": "cache_reused", "app_id": 6, "url": "https://www.podio.com/site/pricing"}
+{"event": "cache_reused", "app_id": 7, "url": "https://www.zoho.com/crm/developer/docs/api/v8/"}
+{"event": "cache_reused", "app_id": 7, "url": "https://www.zoho.com/crm/developer/docs/api/v8/oauth-overview.html"}
+{"event": "cache_reused", "app_id": 7, "url": "https://www.zoho.com/crm/pricing.html"}
+{"event": "cache_reused", "app_id": 7, "url": "https://www.zoho.com/mcp/"}
+{"event": "cache_reused", "app_id": 8, "url": "https://developer.close.com/"}
+{"event": "cache_reused", "app_id": 8, "url": "https://developer.close.com/topics/authentication/"}
+{"event": "cache_reused", "app_id": 8, "url": "https://www.close.com/pricing"}
+{"event": "cache_reused", "app_id": 9, "url": "https://developer.copper.com/"}
+{"event": "cache_reused", "app_id": 9, "url": "https://www.copper.com/pricing"}
+{"event": "cache_reused", "app_id": 10, "url": "https://api.docs.dealcloud.com/"}
+{"event": "cache_reused", "app_id": 10, "url": "https://www.intapp.com/dealcloud/"}
+{"event": "cache_reused", "app_id": 1, "url": "https://www.salesforce.com/crm/pricing/"}
+{"event": "cache_reused", "app_id": 1, "url": "https://trailhead.salesforce.com/content/learn/modules/api_basics/api_basics_rest"}
+{"event": "cache_reused", "app_id": 1, "url": "https://github.com/forcedotcom/postman-salesforce-apis"}
+{"event": "fetch_attempt", "app_id": 1, "attempt": 1, "source_url": "https://www.salesforce.com/form/developer-signup/", "attempted_on": "2026-11-23", "status": "blocked", "http_status": 403, "resolved_url": null, "error": "HTTP 403", "content_sha256": null}
+{"event": "cache_reused", "app_id": 1, "url": "https://help.salesforce.com/s/articleView?id=platform.integrate_what_is_api.htm&type=5"}
+{"event": "cache_reused", "app_id": 2, "url": "https://developers.hubspot.com/docs/apps/developer-platform/build-apps/authentication/oauth/working-with-oauth"}
+{"event": "cache_reused", "app_id": 3, "url": "https://pipedrive.readme.io/docs/developer-sandbox-account.md"}
+{"event": "cache_reused", "app_id": 3, "url": "https://pipedrive.readme.io/docs/marketplace-oauth-api.md"}
+{"event": "cache_reused", "app_id": 3, "url": "https://pipedrive.readme.io/docs/pipedrive-api-v2.md"}
+{"event": "cache_reused", "app_id": 3, "url": "https://pipedrive.readme.io/docs/marketplace-app-approval-process.md"}
+{"event": "cache_reused", "app_id": 3, "url": "https://pipedrive.readme.io/docs/enabling-api-for-company-users.md"}
+{"event": "cache_reused", "app_id": 3, "url": "https://github.com/Wirasm/pipedrive-mcp"}
+{"event": "cache_reused", "app_id": 4, "url": "https://docs.attio.com/llms.txt"}
+{"event": "cache_reused", "app_id": 5, "url": "https://docs.twenty.com/llms.txt"}
+{"event": "cache_reused", "app_id": 7, "url": "https://www.zoho.com/crm/developer/docs/api/v8/register-client.html"}
+{"event": "cache_reused", "app_id": 7, "url": "https://www.zoho.com/crm/developer/docs/api/v8/api-limits.html"}
+{"event": "cache_reused", "app_id": 7, "url": "https://www.zoho.com/crm/developer/docs/api/v8/scopes.html"}
+{"event": "cache_reused", "app_id": 8, "url": "https://developer.close.com/llms.txt"}
+{"event": "cache_reused", "app_id": 8, "url": "https://developer.close.com/mcp/"}
+{"event": "cache_reused", "app_id": 9, "url": "https://developer.copper.com/introduction/authentication.html"}
+{"event": "cache_reused", "app_id": 10, "url": "https://api.docs.dealcloud.com/mcp/getting-started"}
+{"event": "cache_reused", "app_id": 10, "url": "https://api.docs.dealcloud.com/mcp/authentication"}
+{"event": "fetch_attempt", "app_id": 4, "attempt": 1, "source_url": "https://docs.attio.com/rest-api/tutorials/connect-an-app-through-oauth.md", "attempted_on": "2026-11-23", "status": "fetched", "http_status": 200, "resolved_url": "https://docs.attio.com/rest-api/tutorials/connect-an-app-through-oauth.md", "error": null, "content_sha256": "faea4cc9d02c5a8ac3c1f7f11cc9b750e17519a3fe002dce2b42210be9272980"}
+{"event": "fetch_attempt", "app_id": 4, "attempt": 1, "source_url": "https://docs.attio.com/mcp/overview.md", "attempted_on": "2026-11-23", "status": "fetched", "http_status": 200, "resolved_url": "https://docs.attio.com/mcp/overview.md", "error": null, "content_sha256": "5096a080a9d9f2d88170bd425a31e1fff1504adf8e937ad59a87be47d75551ae"}
+{"event": "fetch_attempt", "app_id": 8, "attempt": 1, "source_url": "https://developer.close.com/api/overview/oauth-authentication.md", "attempted_on": "2026-11-23", "status": "fetched", "http_status": 200, "resolved_url": "https://developer.close.com/api/overview/oauth-authentication.md", "error": null, "content_sha256": "e1f257204e96e3c527c932155c904410e14955ef61d8ccf8a81f13e3c7c8bf1c"}
+{"event": "fetch_attempt", "app_id": 8, "attempt": 1, "source_url": "https://developer.close.com/integrations/create-an-oauth-app.md", "attempted_on": "2026-11-23", "status": "fetched", "http_status": 200, "resolved_url": "https://developer.close.com/integrations/create-an-oauth-app.md", "error": null, "content_sha256": "2e04653bf8d5c927b7891329ada029d501b3223e4894cfaa0eedcbfabc425d76"}
+{"event": "fetch_attempt", "app_id": 8, "attempt": 1, "source_url": "https://developer.close.com/mcp/tools.md", "attempted_on": "2026-11-23", "status": "fetched", "http_status": 200, "resolved_url": "https://developer.close.com/mcp/tools.md", "error": null, "content_sha256": "24d0559296d6243d28181d1a078e567e979deabb9cd5389695f53b7d39ec0876"}
+{"event": "fetch_attempt", "app_id": 10, "attempt": 1, "source_url": "https://api.docs.dealcloud.com/getting-started/api-keys", "attempted_on": "2026-11-23", "status": "http_error", "http_status": 404, "resolved_url": null, "error": "HTTP 404", "content_sha256": null}
+{"event": "fetch_attempt", "app_id": 10, "attempt": 1, "source_url": "https://api.docs.dealcloud.com/getting-started/authorization-token", "attempted_on": "2026-11-23", "status": "http_error", "http_status": 404, "resolved_url": null, "error": "HTTP 404", "content_sha256": null}
+{"event": "validation", "structure_and_grounding": "passed", "backend": "Python jsonschema Draft202012Validator", "factual_truth": "requires independent review", "synthetic": false, "records": 10}

@@ -1,0 +1,1806 @@
+{
+  "run_id": "task12-first-pass-005",
+  "parent_run_id": "task12-first-pass-004",
+  "status": "complete",
+  "synthetic": false,
+  "selected_app_ids": [
+    51,
+    52,
+    53,
+    54,
+    55,
+    56,
+    57,
+    58,
+    59,
+    60
+  ],
+  "created_on": "2026-11-23",
+  "producer": {
+    "id": "pipeline-extractor",
+    "type": "ai"
+  },
+  "tool": {
+    "name": "research_pipeline",
+    "version": "0.2.0",
+    "python": "3.11.9",
+    "source_sha256": "263c88230b585de37de6afabd13e88033da9496eef7d08e89e7057dddd42b09d"
+  },
+  "config": {
+    "timeout": 10,
+    "retries": 1,
+    "max_bytes": 2000000,
+    "replay": false,
+    "refresh": false,
+    "extractor": "explicit_external_or_file",
+    "extractor_label": "researcher file intake; identify model in correction reason"
+  },
+  "contracts": {
+    "roster": {
+      "path": "contracts/roster.json",
+      "sha256": "6e3aada149102c2e5539c126aa556c1ceaca3d9d25ca6e0a8f56b3a569f81c19"
+    },
+    "schema": {
+      "path": "contracts/schema.json",
+      "sha256": "40e5552a4c838293e5f440e4abbc38b0e48eefa1f626e2ee9c61a3ee1a8d49c3"
+    },
+    "rules": {
+      "path": "contracts/rules.md",
+      "sha256": "c1f94b3142ed47740d0d1a90879ca0e962ada77542eddd39edc15e36ed93c733"
+    }
+  },
+  "source_specs": [
+    {
+      "app_id": 51,
+      "url": "https://docs.dataforseo.com/v3/",
+      "kind": "primary_docs",
+      "scope": "DataForSEO v3 REST APIs and official MCP server, HTTP Basic API login/password auth, sandbox and paid pay-as-you-go access",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor/project-controlled documentation or product page selected by researcher",
+      "attribution_by": "task12-research-agent-claude"
+    },
+    {
+      "app_id": 51,
+      "url": "https://docs.dataforseo.com/v3/auth/",
+      "kind": "primary_docs",
+      "scope": "DataForSEO v3 REST APIs and official MCP server, HTTP Basic API login/password auth, sandbox and paid pay-as-you-go access",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor/project-controlled documentation or product page selected by researcher",
+      "attribution_by": "task12-research-agent-claude"
+    },
+    {
+      "app_id": 51,
+      "url": "https://docs.dataforseo.com/v3/appendix/sandbox/",
+      "kind": "primary_docs",
+      "scope": "DataForSEO v3 REST APIs and official MCP server, HTTP Basic API login/password auth, sandbox and paid pay-as-you-go access",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor/project-controlled documentation or product page selected by researcher",
+      "attribution_by": "task12-research-agent-claude"
+    },
+    {
+      "app_id": 51,
+      "url": "https://docs.dataforseo.com/v3/serp/overview/",
+      "kind": "primary_docs",
+      "scope": "DataForSEO v3 REST APIs and official MCP server, HTTP Basic API login/password auth, sandbox and paid pay-as-you-go access",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor/project-controlled documentation or product page selected by researcher",
+      "attribution_by": "task12-research-agent-claude"
+    },
+    {
+      "app_id": 51,
+      "url": "https://docs.dataforseo.com/v3/keywords_data/overview/",
+      "kind": "primary_docs",
+      "scope": "DataForSEO v3 REST APIs and official MCP server, HTTP Basic API login/password auth, sandbox and paid pay-as-you-go access",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor/project-controlled documentation or product page selected by researcher",
+      "attribution_by": "task12-research-agent-claude"
+    },
+    {
+      "app_id": 51,
+      "url": "https://docs.dataforseo.com/v3/backlinks/overview/",
+      "kind": "primary_docs",
+      "scope": "DataForSEO v3 REST APIs and official MCP server, HTTP Basic API login/password auth, sandbox and paid pay-as-you-go access",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor/project-controlled documentation or product page selected by researcher",
+      "attribution_by": "task12-research-agent-claude"
+    },
+    {
+      "app_id": 51,
+      "url": "https://docs.dataforseo.com/v3/on_page/overview/",
+      "kind": "primary_docs",
+      "scope": "DataForSEO v3 REST APIs and official MCP server, HTTP Basic API login/password auth, sandbox and paid pay-as-you-go access",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor/project-controlled documentation or product page selected by researcher",
+      "attribution_by": "task12-research-agent-claude"
+    },
+    {
+      "app_id": 51,
+      "url": "https://docs.dataforseo.com/v3/dataforseo_labs/overview/",
+      "kind": "primary_docs",
+      "scope": "DataForSEO v3 REST APIs and official MCP server, HTTP Basic API login/password auth, sandbox and paid pay-as-you-go access",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor/project-controlled documentation or product page selected by researcher",
+      "attribution_by": "task12-research-agent-claude"
+    },
+    {
+      "app_id": 51,
+      "url": "https://docs.dataforseo.com/v3/business_data/overview/",
+      "kind": "primary_docs",
+      "scope": "DataForSEO v3 REST APIs and official MCP server, HTTP Basic API login/password auth, sandbox and paid pay-as-you-go access",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor/project-controlled documentation or product page selected by researcher",
+      "attribution_by": "task12-research-agent-claude"
+    },
+    {
+      "app_id": 51,
+      "url": "https://docs.dataforseo.com/v3/domain_analytics/overview/",
+      "kind": "primary_docs",
+      "scope": "DataForSEO v3 REST APIs and official MCP server, HTTP Basic API login/password auth, sandbox and paid pay-as-you-go access",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor/project-controlled documentation or product page selected by researcher",
+      "attribution_by": "task12-research-agent-claude"
+    },
+    {
+      "app_id": 51,
+      "url": "https://docs.dataforseo.com/v3/app_data/overview/",
+      "kind": "primary_docs",
+      "scope": "DataForSEO v3 REST APIs and official MCP server, HTTP Basic API login/password auth, sandbox and paid pay-as-you-go access",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor/project-controlled documentation or product page selected by researcher",
+      "attribution_by": "task12-research-agent-claude"
+    },
+    {
+      "app_id": 51,
+      "url": "https://docs.dataforseo.com/v3/merchant/overview/",
+      "kind": "primary_docs",
+      "scope": "DataForSEO v3 REST APIs and official MCP server, HTTP Basic API login/password auth, sandbox and paid pay-as-you-go access",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor/project-controlled documentation or product page selected by researcher",
+      "attribution_by": "task12-research-agent-claude"
+    },
+    {
+      "app_id": 51,
+      "url": "https://docs.dataforseo.com/v3/content_analysis/overview/",
+      "kind": "primary_docs",
+      "scope": "DataForSEO v3 REST APIs and official MCP server, HTTP Basic API login/password auth, sandbox and paid pay-as-you-go access",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor/project-controlled documentation or product page selected by researcher",
+      "attribution_by": "task12-research-agent-claude"
+    },
+    {
+      "app_id": 51,
+      "url": "https://docs.dataforseo.com/v3/ai_optimization/overview/",
+      "kind": "primary_docs",
+      "scope": "DataForSEO v3 REST APIs and official MCP server, HTTP Basic API login/password auth, sandbox and paid pay-as-you-go access",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor/project-controlled documentation or product page selected by researcher",
+      "attribution_by": "task12-research-agent-claude"
+    },
+    {
+      "app_id": 51,
+      "url": "https://dataforseo.com/pricing",
+      "kind": "official_product_page",
+      "scope": "DataForSEO v3 REST APIs and official MCP server, HTTP Basic API login/password auth, sandbox and paid pay-as-you-go access",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor/project-controlled documentation or product page selected by researcher",
+      "attribution_by": "task12-research-agent-claude"
+    },
+    {
+      "app_id": 51,
+      "url": "https://dataforseo.com/apis",
+      "kind": "official_product_page",
+      "scope": "DataForSEO v3 REST APIs and official MCP server, HTTP Basic API login/password auth, sandbox and paid pay-as-you-go access",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor/project-controlled documentation or product page selected by researcher",
+      "attribution_by": "task12-research-agent-claude"
+    },
+    {
+      "app_id": 51,
+      "url": "https://dataforseo.com/model-context-protocol",
+      "kind": "official_product_page",
+      "scope": "DataForSEO v3 REST APIs and official MCP server, HTTP Basic API login/password auth, sandbox and paid pay-as-you-go access",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor/project-controlled documentation or product page selected by researcher",
+      "attribution_by": "task12-research-agent-claude"
+    },
+    {
+      "app_id": 51,
+      "url": "https://github.com/dataforseo/mcp-server-typescript",
+      "kind": "official_repository",
+      "scope": "DataForSEO v3 REST APIs and official MCP server, HTTP Basic API login/password auth, sandbox and paid pay-as-you-go access",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor/project-controlled documentation or product page selected by researcher",
+      "attribution_by": "task12-research-agent-claude"
+    },
+    {
+      "app_id": 52,
+      "url": "https://seranking.com/api/",
+      "kind": "official_product_page",
+      "scope": "SE Ranking Data API, Project API and hosted MCP server, API token auth and OAuth, paid plan and API credits",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor/project-controlled documentation or product page selected by researcher",
+      "attribution_by": "task12-research-agent-claude"
+    },
+    {
+      "app_id": 52,
+      "url": "https://seranking.com/api/data/",
+      "kind": "official_product_page",
+      "scope": "SE Ranking Data API, Project API and hosted MCP server, API token auth and OAuth, paid plan and API credits",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor/project-controlled documentation or product page selected by researcher",
+      "attribution_by": "task12-research-agent-claude"
+    },
+    {
+      "app_id": 52,
+      "url": "https://seranking.com/api/integrations/mcp/",
+      "kind": "official_product_page",
+      "scope": "SE Ranking Data API, Project API and hosted MCP server, API token auth and OAuth, paid plan and API credits",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor/project-controlled documentation or product page selected by researcher",
+      "attribution_by": "task12-research-agent-claude"
+    },
+    {
+      "app_id": 52,
+      "url": "https://seranking.com/api/project/",
+      "kind": "official_product_page",
+      "scope": "SE Ranking Data API, Project API and hosted MCP server, API token auth and OAuth, paid plan and API credits",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor/project-controlled documentation or product page selected by researcher",
+      "attribution_by": "task12-research-agent-claude"
+    },
+    {
+      "app_id": 52,
+      "url": "https://seranking.com/api/data/keyword-research/",
+      "kind": "official_product_page",
+      "scope": "SE Ranking Data API, Project API and hosted MCP server, API token auth and OAuth, paid plan and API credits",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor/project-controlled documentation or product page selected by researcher",
+      "attribution_by": "task12-research-agent-claude"
+    },
+    {
+      "app_id": 52,
+      "url": "https://seranking.com/api/data/backlinks/",
+      "kind": "official_product_page",
+      "scope": "SE Ranking Data API, Project API and hosted MCP server, API token auth and OAuth, paid plan and API credits",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor/project-controlled documentation or product page selected by researcher",
+      "attribution_by": "task12-research-agent-claude"
+    },
+    {
+      "app_id": 52,
+      "url": "https://seranking.com/api/data/domain-analysis/",
+      "kind": "official_product_page",
+      "scope": "SE Ranking Data API, Project API and hosted MCP server, API token auth and OAuth, paid plan and API credits",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor/project-controlled documentation or product page selected by researcher",
+      "attribution_by": "task12-research-agent-claude"
+    },
+    {
+      "app_id": 52,
+      "url": "https://seranking.com/api/data/website-audit/",
+      "kind": "official_product_page",
+      "scope": "SE Ranking Data API, Project API and hosted MCP server, API token auth and OAuth, paid plan and API credits",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor/project-controlled documentation or product page selected by researcher",
+      "attribution_by": "task12-research-agent-claude"
+    },
+    {
+      "app_id": 52,
+      "url": "https://seranking.com/api/data/ai-search/",
+      "kind": "official_product_page",
+      "scope": "SE Ranking Data API, Project API and hosted MCP server, API token auth and OAuth, paid plan and API credits",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor/project-controlled documentation or product page selected by researcher",
+      "attribution_by": "task12-research-agent-claude"
+    },
+    {
+      "app_id": 52,
+      "url": "https://seranking.com/api/project/audit/",
+      "kind": "official_product_page",
+      "scope": "SE Ranking Data API, Project API and hosted MCP server, API token auth and OAuth, paid plan and API credits",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor/project-controlled documentation or product page selected by researcher",
+      "attribution_by": "task12-research-agent-claude"
+    },
+    {
+      "app_id": 52,
+      "url": "https://seranking.com/api/mcp/",
+      "kind": "official_product_page",
+      "scope": "SE Ranking Data API, Project API and hosted MCP server, API token auth and OAuth, paid plan and API credits",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor/project-controlled documentation or product page selected by researcher",
+      "attribution_by": "task12-research-agent-claude"
+    },
+    {
+      "app_id": 52,
+      "url": "https://seranking.com/pricing.html",
+      "kind": "official_product_page",
+      "scope": "SE Ranking Data API, Project API and hosted MCP server, API token auth and OAuth, paid plan and API credits",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor/project-controlled documentation or product page selected by researcher",
+      "attribution_by": "task12-research-agent-claude"
+    },
+    {
+      "app_id": 52,
+      "url": "https://github.com/seranking",
+      "kind": "official_repository",
+      "scope": "SE Ranking Data API, Project API and hosted MCP server, API token auth and OAuth, paid plan and API credits",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor/project-controlled documentation or product page selected by researcher",
+      "attribution_by": "task12-research-agent-claude"
+    },
+    {
+      "app_id": 53,
+      "url": "https://docs.ahrefs.com/api/docs/introduction.md",
+      "kind": "primary_docs",
+      "scope": "Ahrefs API v3 and hosted MCP server, API key and OAuth auth, paid-plan/API-unit access (not the consumer web app)",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor/project-controlled documentation or product page selected by researcher",
+      "attribution_by": "task12-research-agent-claude"
+    },
+    {
+      "app_id": 53,
+      "url": "https://docs.ahrefs.com/api/docs/free-test-queries.md",
+      "kind": "primary_docs",
+      "scope": "Ahrefs API v3 and hosted MCP server, API key and OAuth auth, paid-plan/API-unit access (not the consumer web app)",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor/project-controlled documentation or product page selected by researcher",
+      "attribution_by": "task12-research-agent-claude"
+    },
+    {
+      "app_id": 53,
+      "url": "https://docs.ahrefs.com/api/docs/api-keys-creation-and-management.md",
+      "kind": "primary_docs",
+      "scope": "Ahrefs API v3 and hosted MCP server, API key and OAuth auth, paid-plan/API-unit access (not the consumer web app)",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor/project-controlled documentation or product page selected by researcher",
+      "attribution_by": "task12-research-agent-claude"
+    },
+    {
+      "app_id": 53,
+      "url": "https://docs.ahrefs.com/api/docs/limits-consumption.md",
+      "kind": "primary_docs",
+      "scope": "Ahrefs API v3 and hosted MCP server, API key and OAuth auth, paid-plan/API-unit access (not the consumer web app)",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor/project-controlled documentation or product page selected by researcher",
+      "attribution_by": "task12-research-agent-claude"
+    },
+    {
+      "app_id": 53,
+      "url": "https://docs.ahrefs.com/mcp/docs/introduction.md",
+      "kind": "primary_docs",
+      "scope": "Ahrefs API v3 and hosted MCP server, API key and OAuth auth, paid-plan/API-unit access (not the consumer web app)",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor/project-controlled documentation or product page selected by researcher",
+      "attribution_by": "task12-research-agent-claude"
+    },
+    {
+      "app_id": 53,
+      "url": "https://docs.ahrefs.com/mcp/docs/tool-categories.md",
+      "kind": "primary_docs",
+      "scope": "Ahrefs API v3 and hosted MCP server, API key and OAuth auth, paid-plan/API-unit access (not the consumer web app)",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor/project-controlled documentation or product page selected by researcher",
+      "attribution_by": "task12-research-agent-claude"
+    },
+    {
+      "app_id": 53,
+      "url": "https://docs.ahrefs.com/mcp/docs/claude-code.md",
+      "kind": "primary_docs",
+      "scope": "Ahrefs API v3 and hosted MCP server, API key and OAuth auth, paid-plan/API-unit access (not the consumer web app)",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor/project-controlled documentation or product page selected by researcher",
+      "attribution_by": "task12-research-agent-claude"
+    },
+    {
+      "app_id": 53,
+      "url": "https://docs.ahrefs.com/llms.txt",
+      "kind": "primary_docs",
+      "scope": "Ahrefs API v3 and hosted MCP server, API key and OAuth auth, paid-plan/API-unit access (not the consumer web app)",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor/project-controlled documentation or product page selected by researcher",
+      "attribution_by": "task12-research-agent-claude"
+    },
+    {
+      "app_id": 53,
+      "url": "https://docs.ahrefs.com/reference/public.json",
+      "kind": "primary_docs",
+      "scope": "Ahrefs API v3 and hosted MCP server, API key and OAuth auth, paid-plan/API-unit access (not the consumer web app)",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor/project-controlled documentation or product page selected by researcher",
+      "attribution_by": "task12-research-agent-claude"
+    },
+    {
+      "app_id": 53,
+      "url": "https://docs.ahrefs.com/openapi.json",
+      "kind": "primary_docs",
+      "scope": "Ahrefs API v3 and hosted MCP server, API key and OAuth auth, paid-plan/API-unit access (not the consumer web app)",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor/project-controlled documentation or product page selected by researcher",
+      "attribution_by": "task12-research-agent-claude"
+    },
+    {
+      "app_id": 53,
+      "url": "https://ahrefs.com/pricing",
+      "kind": "official_product_page",
+      "scope": "Ahrefs API v3 and hosted MCP server, API key and OAuth auth, paid-plan/API-unit access (not the consumer web app)",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor/project-controlled documentation or product page selected by researcher",
+      "attribution_by": "task12-research-agent-claude"
+    },
+    {
+      "app_id": 53,
+      "url": "https://docs.ahrefs.com/ahrefs-connect/docs/oauth-guide.md",
+      "kind": "primary_docs",
+      "scope": "Ahrefs API v3 and hosted MCP server, API key and OAuth auth, paid-plan/API-unit access (not the consumer web app)",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor/project-controlled documentation or product page selected by researcher",
+      "attribution_by": "task12-research-agent-claude"
+    },
+    {
+      "app_id": 54,
+      "url": "https://docs.mrscraper.com/llms.txt",
+      "kind": "primary_docs",
+      "scope": "MrScraper hosted scraping API v3, MCP server and CLI, API token and OAuth auth, plan-based access",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor/project-controlled documentation or product page selected by researcher",
+      "attribution_by": "task12-research-agent-claude"
+    },
+    {
+      "app_id": 54,
+      "url": "https://docs.mrscraper.com/docs/api/overview",
+      "kind": "primary_docs",
+      "scope": "MrScraper hosted scraping API v3, MCP server and CLI, API token and OAuth auth, plan-based access",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor/project-controlled documentation or product page selected by researcher",
+      "attribution_by": "task12-research-agent-claude"
+    },
+    {
+      "app_id": 54,
+      "url": "https://docs.mrscraper.com/docs/api/authentication",
+      "kind": "primary_docs",
+      "scope": "MrScraper hosted scraping API v3, MCP server and CLI, API token and OAuth auth, plan-based access",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor/project-controlled documentation or product page selected by researcher",
+      "attribution_by": "task12-research-agent-claude"
+    },
+    {
+      "app_id": 54,
+      "url": "https://docs.mrscraper.com/docs/getting-started/api-token",
+      "kind": "primary_docs",
+      "scope": "MrScraper hosted scraping API v3, MCP server and CLI, API token and OAuth auth, plan-based access",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor/project-controlled documentation or product page selected by researcher",
+      "attribution_by": "task12-research-agent-claude"
+    },
+    {
+      "app_id": 54,
+      "url": "https://docs.mrscraper.com/docs/getting-started/billing",
+      "kind": "primary_docs",
+      "scope": "MrScraper hosted scraping API v3, MCP server and CLI, API token and OAuth auth, plan-based access",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor/project-controlled documentation or product page selected by researcher",
+      "attribution_by": "task12-research-agent-claude"
+    },
+    {
+      "app_id": 54,
+      "url": "https://docs.mrscraper.com/docs/getting-started/mcp-server",
+      "kind": "primary_docs",
+      "scope": "MrScraper hosted scraping API v3, MCP server and CLI, API token and OAuth auth, plan-based access",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor/project-controlled documentation or product page selected by researcher",
+      "attribution_by": "task12-research-agent-claude"
+    },
+    {
+      "app_id": 54,
+      "url": "https://docs.mrscraper.com/docs/getting-started/cli",
+      "kind": "primary_docs",
+      "scope": "MrScraper hosted scraping API v3, MCP server and CLI, API token and OAuth auth, plan-based access",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor/project-controlled documentation or product page selected by researcher",
+      "attribution_by": "task12-research-agent-claude"
+    },
+    {
+      "app_id": 54,
+      "url": "https://docs.mrscraper.com/docs/getting-started/overview",
+      "kind": "primary_docs",
+      "scope": "MrScraper hosted scraping API v3, MCP server and CLI, API token and OAuth auth, plan-based access",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor/project-controlled documentation or product page selected by researcher",
+      "attribution_by": "task12-research-agent-claude"
+    },
+    {
+      "app_id": 54,
+      "url": "https://docs.mrscraper.com/docs/api/scraper-api/scrape-json",
+      "kind": "primary_docs",
+      "scope": "MrScraper hosted scraping API v3, MCP server and CLI, API token and OAuth auth, plan-based access",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor/project-controlled documentation or product page selected by researcher",
+      "attribution_by": "task12-research-agent-claude"
+    },
+    {
+      "app_id": 54,
+      "url": "https://docs.mrscraper.com/docs/api/v3/scraper/web-fetching-scraping",
+      "kind": "primary_docs",
+      "scope": "MrScraper hosted scraping API v3, MCP server and CLI, API token and OAuth auth, plan-based access",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor/project-controlled documentation or product page selected by researcher",
+      "attribution_by": "task12-research-agent-claude"
+    },
+    {
+      "app_id": 54,
+      "url": "https://mrscraper.com/pricing",
+      "kind": "official_product_page",
+      "scope": "MrScraper hosted scraping API v3, MCP server and CLI, API token and OAuth auth, plan-based access",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor/project-controlled documentation or product page selected by researcher",
+      "attribution_by": "task12-research-agent-claude"
+    },
+    {
+      "app_id": 55,
+      "url": "https://docs.apify.com/api/v2.md",
+      "kind": "primary_docs",
+      "scope": "Apify platform REST API v2, Apify MCP server, CLI and open-source Actors tooling, API token and OAuth auth, free and paid plans",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor/project-controlled documentation or product page selected by researcher",
+      "attribution_by": "task12-research-agent-claude"
+    },
+    {
+      "app_id": 55,
+      "url": "https://docs.apify.com/platform/integrations/api.md",
+      "kind": "primary_docs",
+      "scope": "Apify platform REST API v2, Apify MCP server, CLI and open-source Actors tooling, API token and OAuth auth, free and paid plans",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor/project-controlled documentation or product page selected by researcher",
+      "attribution_by": "task12-research-agent-claude"
+    },
+    {
+      "app_id": 55,
+      "url": "https://docs.apify.com/platform/integrations/mcp.md",
+      "kind": "primary_docs",
+      "scope": "Apify platform REST API v2, Apify MCP server, CLI and open-source Actors tooling, API token and OAuth auth, free and paid plans",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor/project-controlled documentation or product page selected by researcher",
+      "attribution_by": "task12-research-agent-claude"
+    },
+    {
+      "app_id": 55,
+      "url": "https://docs.apify.com/llms.txt",
+      "kind": "primary_docs",
+      "scope": "Apify platform REST API v2, Apify MCP server, CLI and open-source Actors tooling, API token and OAuth auth, free and paid plans",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor/project-controlled documentation or product page selected by researcher",
+      "attribution_by": "task12-research-agent-claude"
+    },
+    {
+      "app_id": 55,
+      "url": "https://docs.apify.com/cli/docs",
+      "kind": "primary_docs",
+      "scope": "Apify platform REST API v2, Apify MCP server, CLI and open-source Actors tooling, API token and OAuth auth, free and paid plans",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor/project-controlled documentation or product page selected by researcher",
+      "attribution_by": "task12-research-agent-claude"
+    },
+    {
+      "app_id": 55,
+      "url": "https://docs.apify.com/platform/actors",
+      "kind": "primary_docs",
+      "scope": "Apify platform REST API v2, Apify MCP server, CLI and open-source Actors tooling, API token and OAuth auth, free and paid plans",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor/project-controlled documentation or product page selected by researcher",
+      "attribution_by": "task12-research-agent-claude"
+    },
+    {
+      "app_id": 55,
+      "url": "https://docs.apify.com/platform/integrations",
+      "kind": "primary_docs",
+      "scope": "Apify platform REST API v2, Apify MCP server, CLI and open-source Actors tooling, API token and OAuth auth, free and paid plans",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor/project-controlled documentation or product page selected by researcher",
+      "attribution_by": "task12-research-agent-claude"
+    },
+    {
+      "app_id": 55,
+      "url": "https://docs.apify.com/platform/security",
+      "kind": "primary_docs",
+      "scope": "Apify platform REST API v2, Apify MCP server, CLI and open-source Actors tooling, API token and OAuth auth, free and paid plans",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor/project-controlled documentation or product page selected by researcher",
+      "attribution_by": "task12-research-agent-claude"
+    },
+    {
+      "app_id": 55,
+      "url": "https://docs.apify.com/platform/actors/running/usage-and-resources",
+      "kind": "primary_docs",
+      "scope": "Apify platform REST API v2, Apify MCP server, CLI and open-source Actors tooling, API token and OAuth auth, free and paid plans",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor/project-controlled documentation or product page selected by researcher",
+      "attribution_by": "task12-research-agent-claude"
+    },
+    {
+      "app_id": 55,
+      "url": "https://docs.apify.com/platform/collaboration/access-rights",
+      "kind": "primary_docs",
+      "scope": "Apify platform REST API v2, Apify MCP server, CLI and open-source Actors tooling, API token and OAuth auth, free and paid plans",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor/project-controlled documentation or product page selected by researcher",
+      "attribution_by": "task12-research-agent-claude"
+    },
+    {
+      "app_id": 55,
+      "url": "https://docs.apify.com/api/client/js/",
+      "kind": "primary_docs",
+      "scope": "Apify platform REST API v2, Apify MCP server, CLI and open-source Actors tooling, API token and OAuth auth, free and paid plans",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor/project-controlled documentation or product page selected by researcher",
+      "attribution_by": "task12-research-agent-claude"
+    },
+    {
+      "app_id": 55,
+      "url": "https://docs.apify.com/api/client/python/",
+      "kind": "primary_docs",
+      "scope": "Apify platform REST API v2, Apify MCP server, CLI and open-source Actors tooling, API token and OAuth auth, free and paid plans",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor/project-controlled documentation or product page selected by researcher",
+      "attribution_by": "task12-research-agent-claude"
+    },
+    {
+      "app_id": 55,
+      "url": "https://apify.com/pricing",
+      "kind": "official_product_page",
+      "scope": "Apify platform REST API v2, Apify MCP server, CLI and open-source Actors tooling, API token and OAuth auth, free and paid plans",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor/project-controlled documentation or product page selected by researcher",
+      "attribution_by": "task12-research-agent-claude"
+    },
+    {
+      "app_id": 55,
+      "url": "https://github.com/apify/apify-mcp-server",
+      "kind": "official_repository",
+      "scope": "Apify platform REST API v2, Apify MCP server, CLI and open-source Actors tooling, API token and OAuth auth, free and paid plans",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor/project-controlled documentation or product page selected by researcher",
+      "attribution_by": "task12-research-agent-claude"
+    },
+    {
+      "app_id": 55,
+      "url": "https://raw.githubusercontent.com/apify/apify-mcp-server/master/README.md",
+      "kind": "official_repository",
+      "scope": "Apify platform REST API v2, Apify MCP server, CLI and open-source Actors tooling, API token and OAuth auth, free and paid plans",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor/project-controlled documentation or product page selected by researcher",
+      "attribution_by": "task12-research-agent-claude"
+    },
+    {
+      "app_id": 56,
+      "url": "https://docs.firecrawl.dev/introduction.md",
+      "kind": "primary_docs",
+      "scope": "Firecrawl hosted API v2 and MCP server, API key auth, free credits and paid plans, plus open-source self-hosted edition",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor/project-controlled documentation or product page selected by researcher",
+      "attribution_by": "task12-research-agent-claude"
+    },
+    {
+      "app_id": 56,
+      "url": "https://docs.firecrawl.dev/api-reference/introduction.md",
+      "kind": "primary_docs",
+      "scope": "Firecrawl hosted API v2 and MCP server, API key auth, free credits and paid plans, plus open-source self-hosted edition",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor/project-controlled documentation or product page selected by researcher",
+      "attribution_by": "task12-research-agent-claude"
+    },
+    {
+      "app_id": 56,
+      "url": "https://docs.firecrawl.dev/mcp-server.md",
+      "kind": "primary_docs",
+      "scope": "Firecrawl hosted API v2 and MCP server, API key auth, free credits and paid plans, plus open-source self-hosted edition",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor/project-controlled documentation or product page selected by researcher",
+      "attribution_by": "task12-research-agent-claude"
+    },
+    {
+      "app_id": 56,
+      "url": "https://docs.firecrawl.dev/llms.txt",
+      "kind": "primary_docs",
+      "scope": "Firecrawl hosted API v2 and MCP server, API key auth, free credits and paid plans, plus open-source self-hosted edition",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor/project-controlled documentation or product page selected by researcher",
+      "attribution_by": "task12-research-agent-claude"
+    },
+    {
+      "app_id": 56,
+      "url": "https://docs.firecrawl.dev/_llms/en/v2/documentation.txt",
+      "kind": "primary_docs",
+      "scope": "Firecrawl hosted API v2 and MCP server, API key auth, free credits and paid plans, plus open-source self-hosted edition",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor/project-controlled documentation or product page selected by researcher",
+      "attribution_by": "task12-research-agent-claude"
+    },
+    {
+      "app_id": 56,
+      "url": "https://docs.firecrawl.dev/rate-limits",
+      "kind": "primary_docs",
+      "scope": "Firecrawl hosted API v2 and MCP server, API key auth, free credits and paid plans, plus open-source self-hosted edition",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor/project-controlled documentation or product page selected by researcher",
+      "attribution_by": "task12-research-agent-claude"
+    },
+    {
+      "app_id": 56,
+      "url": "https://docs.firecrawl.dev/features/scrape",
+      "kind": "primary_docs",
+      "scope": "Firecrawl hosted API v2 and MCP server, API key auth, free credits and paid plans, plus open-source self-hosted edition",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor/project-controlled documentation or product page selected by researcher",
+      "attribution_by": "task12-research-agent-claude"
+    },
+    {
+      "app_id": 56,
+      "url": "https://docs.firecrawl.dev/contributing/self-host",
+      "kind": "primary_docs",
+      "scope": "Firecrawl hosted API v2 and MCP server, API key auth, free credits and paid plans, plus open-source self-hosted edition",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor/project-controlled documentation or product page selected by researcher",
+      "attribution_by": "task12-research-agent-claude"
+    },
+    {
+      "app_id": 56,
+      "url": "https://www.firecrawl.dev/pricing",
+      "kind": "official_product_page",
+      "scope": "Firecrawl hosted API v2 and MCP server, API key auth, free credits and paid plans, plus open-source self-hosted edition",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor/project-controlled documentation or product page selected by researcher",
+      "attribution_by": "task12-research-agent-claude"
+    },
+    {
+      "app_id": 56,
+      "url": "https://github.com/firecrawl/firecrawl-mcp-server",
+      "kind": "official_repository",
+      "scope": "Firecrawl hosted API v2 and MCP server, API key auth, free credits and paid plans, plus open-source self-hosted edition",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor/project-controlled documentation or product page selected by researcher",
+      "attribution_by": "task12-research-agent-claude"
+    },
+    {
+      "app_id": 56,
+      "url": "https://raw.githubusercontent.com/firecrawl/firecrawl-mcp-server/main/README.md",
+      "kind": "official_repository",
+      "scope": "Firecrawl hosted API v2 and MCP server, API key auth, free credits and paid plans, plus open-source self-hosted edition",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor/project-controlled documentation or product page selected by researcher",
+      "attribution_by": "task12-research-agent-claude"
+    },
+    {
+      "app_id": 56,
+      "url": "https://raw.githubusercontent.com/firecrawl/firecrawl/main/README.md",
+      "kind": "official_repository",
+      "scope": "Firecrawl hosted API v2 and MCP server, API key auth, free credits and paid plans, plus open-source self-hosted edition",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor/project-controlled documentation or product page selected by researcher",
+      "attribution_by": "task12-research-agent-claude"
+    },
+    {
+      "app_id": 56,
+      "url": "https://raw.githubusercontent.com/firecrawl/firecrawl/main/LICENSE",
+      "kind": "official_repository",
+      "scope": "Firecrawl hosted API v2 and MCP server, API key auth, free credits and paid plans, plus open-source self-hosted edition",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor/project-controlled documentation or product page selected by researcher",
+      "attribution_by": "task12-research-agent-claude"
+    },
+    {
+      "app_id": 57,
+      "url": "https://docs.brightdata.com/api-reference/authentication.md",
+      "kind": "primary_docs",
+      "scope": "Bright Data hosted APIs (Web Unlocker, SERP, Scrapers, datasets, account management) and official MCP server, API key auth, free tier and paid usage",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor/project-controlled documentation or product page selected by researcher",
+      "attribution_by": "task12-research-agent-claude"
+    },
+    {
+      "app_id": 57,
+      "url": "https://docs.brightdata.com/products/mcp-server/overview.md",
+      "kind": "primary_docs",
+      "scope": "Bright Data hosted APIs (Web Unlocker, SERP, Scrapers, datasets, account management) and official MCP server, API key auth, free tier and paid usage",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor/project-controlled documentation or product page selected by researcher",
+      "attribution_by": "task12-research-agent-claude"
+    },
+    {
+      "app_id": 57,
+      "url": "https://docs.brightdata.com/general/account/billing-and-pricing/free-tier.md",
+      "kind": "primary_docs",
+      "scope": "Bright Data hosted APIs (Web Unlocker, SERP, Scrapers, datasets, account management) and official MCP server, API key auth, free tier and paid usage",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor/project-controlled documentation or product page selected by researcher",
+      "attribution_by": "task12-research-agent-claude"
+    },
+    {
+      "app_id": 57,
+      "url": "https://docs.brightdata.com/llms.txt",
+      "kind": "primary_docs",
+      "scope": "Bright Data hosted APIs (Web Unlocker, SERP, Scrapers, datasets, account management) and official MCP server, API key auth, free tier and paid usage",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor/project-controlled documentation or product page selected by researcher",
+      "attribution_by": "task12-research-agent-claude"
+    },
+    {
+      "app_id": 57,
+      "url": "https://docs.brightdata.com/products/cli/overview.md",
+      "kind": "primary_docs",
+      "scope": "Bright Data hosted APIs (Web Unlocker, SERP, Scrapers, datasets, account management) and official MCP server, API key auth, free tier and paid usage",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor/project-controlled documentation or product page selected by researcher",
+      "attribution_by": "task12-research-agent-claude"
+    },
+    {
+      "app_id": 57,
+      "url": "https://docs.brightdata.com/products/web-unlocker/introduction.md",
+      "kind": "primary_docs",
+      "scope": "Bright Data hosted APIs (Web Unlocker, SERP, Scrapers, datasets, account management) and official MCP server, API key auth, free tier and paid usage",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor/project-controlled documentation or product page selected by researcher",
+      "attribution_by": "task12-research-agent-claude"
+    },
+    {
+      "app_id": 57,
+      "url": "https://docs.brightdata.com/products/serp-api/introduction.md",
+      "kind": "primary_docs",
+      "scope": "Bright Data hosted APIs (Web Unlocker, SERP, Scrapers, datasets, account management) and official MCP server, API key auth, free tier and paid usage",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor/project-controlled documentation or product page selected by researcher",
+      "attribution_by": "task12-research-agent-claude"
+    },
+    {
+      "app_id": 57,
+      "url": "https://docs.brightdata.com/products/scrapers/overview.md",
+      "kind": "primary_docs",
+      "scope": "Bright Data hosted APIs (Web Unlocker, SERP, Scrapers, datasets, account management) and official MCP server, API key auth, free tier and paid usage",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor/project-controlled documentation or product page selected by researcher",
+      "attribution_by": "task12-research-agent-claude"
+    },
+    {
+      "app_id": 57,
+      "url": "https://docs.brightdata.com/api-reference/marketplace-dataset-api/overview.md",
+      "kind": "primary_docs",
+      "scope": "Bright Data hosted APIs (Web Unlocker, SERP, Scrapers, datasets, account management) and official MCP server, API key auth, free tier and paid usage",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor/project-controlled documentation or product page selected by researcher",
+      "attribution_by": "task12-research-agent-claude"
+    },
+    {
+      "app_id": 57,
+      "url": "https://docs.brightdata.com/api-reference/account-management-api/Add_a_Zone.md",
+      "kind": "primary_docs",
+      "scope": "Bright Data hosted APIs (Web Unlocker, SERP, Scrapers, datasets, account management) and official MCP server, API key auth, free tier and paid usage",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor/project-controlled documentation or product page selected by researcher",
+      "attribution_by": "task12-research-agent-claude"
+    },
+    {
+      "app_id": 57,
+      "url": "https://docs.brightdata.com/products/scraping-browser/introduction.md",
+      "kind": "primary_docs",
+      "scope": "Bright Data hosted APIs (Web Unlocker, SERP, Scrapers, datasets, account management) and official MCP server, API key auth, free tier and paid usage",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor/project-controlled documentation or product page selected by researcher",
+      "attribution_by": "task12-research-agent-claude"
+    },
+    {
+      "app_id": 57,
+      "url": "https://brightdata.com/pricing",
+      "kind": "official_product_page",
+      "scope": "Bright Data hosted APIs (Web Unlocker, SERP, Scrapers, datasets, account management) and official MCP server, API key auth, free tier and paid usage",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor/project-controlled documentation or product page selected by researcher",
+      "attribution_by": "task12-research-agent-claude"
+    },
+    {
+      "app_id": 57,
+      "url": "https://github.com/brightdata/brightdata-mcp",
+      "kind": "official_repository",
+      "scope": "Bright Data hosted APIs (Web Unlocker, SERP, Scrapers, datasets, account management) and official MCP server, API key auth, free tier and paid usage",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor/project-controlled documentation or product page selected by researcher",
+      "attribution_by": "task12-research-agent-claude"
+    },
+    {
+      "app_id": 57,
+      "url": "https://raw.githubusercontent.com/brightdata/brightdata-mcp/main/README.md",
+      "kind": "official_repository",
+      "scope": "Bright Data hosted APIs (Web Unlocker, SERP, Scrapers, datasets, account management) and official MCP server, API key auth, free tier and paid usage",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor/project-controlled documentation or product page selected by researcher",
+      "attribution_by": "task12-research-agent-claude"
+    },
+    {
+      "app_id": 58,
+      "url": "https://github.com/sherlock-project/sherlock",
+      "kind": "official_repository",
+      "scope": "Sherlock Project open-source username-search CLI (sherlock-project), local installation, no hosted API",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor/project-controlled documentation or product page selected by researcher",
+      "attribution_by": "task12-research-agent-claude"
+    },
+    {
+      "app_id": 58,
+      "url": "https://raw.githubusercontent.com/sherlock-project/sherlock/master/LICENSE",
+      "kind": "official_repository",
+      "scope": "Sherlock Project open-source username-search CLI (sherlock-project), local installation, no hosted API",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor/project-controlled documentation or product page selected by researcher",
+      "attribution_by": "task12-research-agent-claude"
+    },
+    {
+      "app_id": 58,
+      "url": "https://raw.githubusercontent.com/sherlock-project/sherlock/master/pyproject.toml",
+      "kind": "official_repository",
+      "scope": "Sherlock Project open-source username-search CLI (sherlock-project), local installation, no hosted API",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor/project-controlled documentation or product page selected by researcher",
+      "attribution_by": "task12-research-agent-claude"
+    },
+    {
+      "app_id": 58,
+      "url": "https://sherlockproject.xyz/usage",
+      "kind": "official_product_page",
+      "scope": "Sherlock Project open-source username-search CLI (sherlock-project), local installation, no hosted API",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor/project-controlled documentation or product page selected by researcher",
+      "attribution_by": "task12-research-agent-claude"
+    },
+    {
+      "app_id": 58,
+      "url": "https://sherlockproject.xyz/installation",
+      "kind": "official_product_page",
+      "scope": "Sherlock Project open-source username-search CLI (sherlock-project), local installation, no hosted API",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor/project-controlled documentation or product page selected by researcher",
+      "attribution_by": "task12-research-agent-claude"
+    },
+    {
+      "app_id": 58,
+      "url": "https://sherlockproject.xyz/",
+      "kind": "official_product_page",
+      "scope": "Sherlock Project open-source username-search CLI (sherlock-project), local installation, no hosted API",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor/project-controlled documentation or product page selected by researcher",
+      "attribution_by": "task12-research-agent-claude"
+    },
+    {
+      "app_id": 58,
+      "url": "https://pypi.org/project/sherlock-project/",
+      "kind": "official_product_page",
+      "scope": "Sherlock Project open-source username-search CLI (sherlock-project), local installation, no hosted API",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor/project-controlled documentation or product page selected by researcher",
+      "attribution_by": "task12-research-agent-claude"
+    },
+    {
+      "app_id": 59,
+      "url": "https://docs.waterfall.io/v1/overview.md",
+      "kind": "primary_docs",
+      "scope": "Waterfall.io B2B contact and company enrichment REST API (docs.waterfall.io v1), x-api-key auth, access request/paid usage; not other products named Waterfall",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor/project-controlled documentation or product page selected by researcher",
+      "attribution_by": "task12-research-agent-claude"
+    },
+    {
+      "app_id": 59,
+      "url": "https://docs.waterfall.io/v1/about-waterfall.md",
+      "kind": "primary_docs",
+      "scope": "Waterfall.io B2B contact and company enrichment REST API (docs.waterfall.io v1), x-api-key auth, access request/paid usage; not other products named Waterfall",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor/project-controlled documentation or product page selected by researcher",
+      "attribution_by": "task12-research-agent-claude"
+    },
+    {
+      "app_id": 59,
+      "url": "https://docs.waterfall.io/v1/authentication.md",
+      "kind": "primary_docs",
+      "scope": "Waterfall.io B2B contact and company enrichment REST API (docs.waterfall.io v1), x-api-key auth, access request/paid usage; not other products named Waterfall",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor/project-controlled documentation or product page selected by researcher",
+      "attribution_by": "task12-research-agent-claude"
+    },
+    {
+      "app_id": 59,
+      "url": "https://docs.waterfall.io/v1/quickstart.md",
+      "kind": "primary_docs",
+      "scope": "Waterfall.io B2B contact and company enrichment REST API (docs.waterfall.io v1), x-api-key auth, access request/paid usage; not other products named Waterfall",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor/project-controlled documentation or product page selected by researcher",
+      "attribution_by": "task12-research-agent-claude"
+    },
+    {
+      "app_id": 59,
+      "url": "https://docs.waterfall.io/v1/rate-limit.md",
+      "kind": "primary_docs",
+      "scope": "Waterfall.io B2B contact and company enrichment REST API (docs.waterfall.io v1), x-api-key auth, access request/paid usage; not other products named Waterfall",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor/project-controlled documentation or product page selected by researcher",
+      "attribution_by": "task12-research-agent-claude"
+    },
+    {
+      "app_id": 59,
+      "url": "https://docs.waterfall.io/v1/book-demo.md",
+      "kind": "primary_docs",
+      "scope": "Waterfall.io B2B contact and company enrichment REST API (docs.waterfall.io v1), x-api-key auth, access request/paid usage; not other products named Waterfall",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor/project-controlled documentation or product page selected by researcher",
+      "attribution_by": "task12-research-agent-claude"
+    },
+    {
+      "app_id": 59,
+      "url": "https://docs.waterfall.io/v1/faq.md",
+      "kind": "primary_docs",
+      "scope": "Waterfall.io B2B contact and company enrichment REST API (docs.waterfall.io v1), x-api-key auth, access request/paid usage; not other products named Waterfall",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor/project-controlled documentation or product page selected by researcher",
+      "attribution_by": "task12-research-agent-claude"
+    },
+    {
+      "app_id": 59,
+      "url": "https://docs.waterfall.io/v1/evaluate-waterfall.md",
+      "kind": "primary_docs",
+      "scope": "Waterfall.io B2B contact and company enrichment REST API (docs.waterfall.io v1), x-api-key auth, access request/paid usage; not other products named Waterfall",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor/project-controlled documentation or product page selected by researcher",
+      "attribution_by": "task12-research-agent-claude"
+    },
+    {
+      "app_id": 59,
+      "url": "https://docs.waterfall.io/v1/api-keys-overview.md",
+      "kind": "primary_docs",
+      "scope": "Waterfall.io B2B contact and company enrichment REST API (docs.waterfall.io v1), x-api-key auth, access request/paid usage; not other products named Waterfall",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor/project-controlled documentation or product page selected by researcher",
+      "attribution_by": "task12-research-agent-claude"
+    },
+    {
+      "app_id": 59,
+      "url": "https://docs.waterfall.io/v1/skills-overview.md",
+      "kind": "primary_docs",
+      "scope": "Waterfall.io B2B contact and company enrichment REST API (docs.waterfall.io v1), x-api-key auth, access request/paid usage; not other products named Waterfall",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor/project-controlled documentation or product page selected by researcher",
+      "attribution_by": "task12-research-agent-claude"
+    },
+    {
+      "app_id": 59,
+      "url": "https://docs.waterfall.io/llms.txt",
+      "kind": "primary_docs",
+      "scope": "Waterfall.io B2B contact and company enrichment REST API (docs.waterfall.io v1), x-api-key auth, access request/paid usage; not other products named Waterfall",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor/project-controlled documentation or product page selected by researcher",
+      "attribution_by": "task12-research-agent-claude"
+    },
+    {
+      "app_id": 59,
+      "url": "https://docs.waterfall.io/v1/company-enrichment-launcher.md",
+      "kind": "primary_docs",
+      "scope": "Waterfall.io B2B contact and company enrichment REST API (docs.waterfall.io v1), x-api-key auth, access request/paid usage; not other products named Waterfall",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor/project-controlled documentation or product page selected by researcher",
+      "attribution_by": "task12-research-agent-claude"
+    },
+    {
+      "app_id": 59,
+      "url": "https://docs.waterfall.io/v1/email-verifier.md",
+      "kind": "primary_docs",
+      "scope": "Waterfall.io B2B contact and company enrichment REST API (docs.waterfall.io v1), x-api-key auth, access request/paid usage; not other products named Waterfall",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor/project-controlled documentation or product page selected by researcher",
+      "attribution_by": "task12-research-agent-claude"
+    },
+    {
+      "app_id": 59,
+      "url": "https://docs.waterfall.io/v1/company-reveal-launcher.md",
+      "kind": "primary_docs",
+      "scope": "Waterfall.io B2B contact and company enrichment REST API (docs.waterfall.io v1), x-api-key auth, access request/paid usage; not other products named Waterfall",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor/project-controlled documentation or product page selected by researcher",
+      "attribution_by": "task12-research-agent-claude"
+    },
+    {
+      "app_id": 59,
+      "url": "https://docs.waterfall.io/v1/job-change-launcher.md",
+      "kind": "primary_docs",
+      "scope": "Waterfall.io B2B contact and company enrichment REST API (docs.waterfall.io v1), x-api-key auth, access request/paid usage; not other products named Waterfall",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor/project-controlled documentation or product page selected by researcher",
+      "attribution_by": "task12-research-agent-claude"
+    },
+    {
+      "app_id": 59,
+      "url": "https://docs.waterfall.io/v1/account-reporter-v2.md",
+      "kind": "primary_docs",
+      "scope": "Waterfall.io B2B contact and company enrichment REST API (docs.waterfall.io v1), x-api-key auth, access request/paid usage; not other products named Waterfall",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor/project-controlled documentation or product page selected by researcher",
+      "attribution_by": "task12-research-agent-claude"
+    },
+    {
+      "app_id": 59,
+      "url": "https://docs.waterfall.io/v1/openapi-spec.md",
+      "kind": "primary_docs",
+      "scope": "Waterfall.io B2B contact and company enrichment REST API (docs.waterfall.io v1), x-api-key auth, access request/paid usage; not other products named Waterfall",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor/project-controlled documentation or product page selected by researcher",
+      "attribution_by": "task12-research-agent-claude"
+    },
+    {
+      "app_id": 59,
+      "url": "https://waterfall.io/pricing",
+      "kind": "official_product_page",
+      "scope": "Waterfall.io B2B contact and company enrichment REST API (docs.waterfall.io v1), x-api-key auth, access request/paid usage; not other products named Waterfall",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor/project-controlled documentation or product page selected by researcher",
+      "attribution_by": "task12-research-agent-claude"
+    },
+    {
+      "app_id": 59,
+      "url": "https://waterfall.io/",
+      "kind": "official_product_page",
+      "scope": "Waterfall.io B2B contact and company enrichment REST API (docs.waterfall.io v1), x-api-key auth, access request/paid usage; not other products named Waterfall",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor/project-controlled documentation or product page selected by researcher",
+      "attribution_by": "task12-research-agent-claude"
+    },
+    {
+      "app_id": 60,
+      "url": "https://www.clay.com/docs",
+      "kind": "official_product_page",
+      "scope": "Clay (clay.com) GTM data-enrichment platform, Public API and hosted MCP server, API key and OAuth auth, plan-gated access",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor/project-controlled documentation or product page selected by researcher",
+      "attribution_by": "task12-research-agent-claude"
+    },
+    {
+      "app_id": 60,
+      "url": "https://docs.clay.com/",
+      "kind": "primary_docs",
+      "scope": "Clay (clay.com) GTM data-enrichment platform, Public API and hosted MCP server, API key and OAuth auth, plan-gated access",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor/project-controlled documentation or product page selected by researcher",
+      "attribution_by": "task12-research-agent-claude"
+    },
+    {
+      "app_id": 60,
+      "url": "https://www.clay.com/pricing",
+      "kind": "official_product_page",
+      "scope": "Clay (clay.com) GTM data-enrichment platform, Public API and hosted MCP server, API key and OAuth auth, plan-gated access",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor/project-controlled documentation or product page selected by researcher",
+      "attribution_by": "task12-research-agent-claude"
+    },
+    {
+      "app_id": 60,
+      "url": "https://www.clay.com/mcp",
+      "kind": "official_product_page",
+      "scope": "Clay (clay.com) GTM data-enrichment platform, Public API and hosted MCP server, API key and OAuth auth, plan-gated access",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor/project-controlled documentation or product page selected by researcher",
+      "attribution_by": "task12-research-agent-claude"
+    },
+    {
+      "app_id": 60,
+      "url": "https://developers.clay.com/index.md",
+      "kind": "primary_docs",
+      "scope": "Clay (clay.com) GTM data-enrichment platform, Public API and hosted MCP server, API key and OAuth auth, plan-gated access",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor/project-controlled documentation or product page selected by researcher",
+      "attribution_by": "task12-research-agent-claude"
+    },
+    {
+      "app_id": 60,
+      "url": "https://developers.clay.com/quickstart.md",
+      "kind": "primary_docs",
+      "scope": "Clay (clay.com) GTM data-enrichment platform, Public API and hosted MCP server, API key and OAuth auth, plan-gated access",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor/project-controlled documentation or product page selected by researcher",
+      "attribution_by": "task12-research-agent-claude"
+    },
+    {
+      "app_id": 60,
+      "url": "https://developers.clay.com/public-api/authentication.md",
+      "kind": "primary_docs",
+      "scope": "Clay (clay.com) GTM data-enrichment platform, Public API and hosted MCP server, API key and OAuth auth, plan-gated access",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor/project-controlled documentation or product page selected by researcher",
+      "attribution_by": "task12-research-agent-claude"
+    },
+    {
+      "app_id": 60,
+      "url": "https://developers.clay.com/public-api/rate-limits.md",
+      "kind": "primary_docs",
+      "scope": "Clay (clay.com) GTM data-enrichment platform, Public API and hosted MCP server, API key and OAuth auth, plan-gated access",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor/project-controlled documentation or product page selected by researcher",
+      "attribution_by": "task12-research-agent-claude"
+    },
+    {
+      "app_id": 60,
+      "url": "https://developers.clay.com/tables.md",
+      "kind": "primary_docs",
+      "scope": "Clay (clay.com) GTM data-enrichment platform, Public API and hosted MCP server, API key and OAuth auth, plan-gated access",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor/project-controlled documentation or product page selected by researcher",
+      "attribution_by": "task12-research-agent-claude"
+    },
+    {
+      "app_id": 60,
+      "url": "https://developers.clay.com/audiences.md",
+      "kind": "primary_docs",
+      "scope": "Clay (clay.com) GTM data-enrichment platform, Public API and hosted MCP server, API key and OAuth auth, plan-gated access",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor/project-controlled documentation or product page selected by researcher",
+      "attribution_by": "task12-research-agent-claude"
+    },
+    {
+      "app_id": 60,
+      "url": "https://developers.clay.com/searches.md",
+      "kind": "primary_docs",
+      "scope": "Clay (clay.com) GTM data-enrichment platform, Public API and hosted MCP server, API key and OAuth auth, plan-gated access",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor/project-controlled documentation or product page selected by researcher",
+      "attribution_by": "task12-research-agent-claude"
+    },
+    {
+      "app_id": 60,
+      "url": "https://developers.clay.com/routines/index.md",
+      "kind": "primary_docs",
+      "scope": "Clay (clay.com) GTM data-enrichment platform, Public API and hosted MCP server, API key and OAuth auth, plan-gated access",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor/project-controlled documentation or product page selected by researcher",
+      "attribution_by": "task12-research-agent-claude"
+    },
+    {
+      "app_id": 60,
+      "url": "https://developers.clay.com/routines/api.md",
+      "kind": "primary_docs",
+      "scope": "Clay (clay.com) GTM data-enrichment platform, Public API and hosted MCP server, API key and OAuth auth, plan-gated access",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor/project-controlled documentation or product page selected by researcher",
+      "attribution_by": "task12-research-agent-claude"
+    },
+    {
+      "app_id": 60,
+      "url": "https://developers.clay.com/concepts/cli-basics.md",
+      "kind": "primary_docs",
+      "scope": "Clay (clay.com) GTM data-enrichment platform, Public API and hosted MCP server, API key and OAuth auth, plan-gated access",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor/project-controlled documentation or product page selected by researcher",
+      "attribution_by": "task12-research-agent-claude"
+    },
+    {
+      "app_id": 60,
+      "url": "https://developers.clay.com/use-cases/agent-workflows.md",
+      "kind": "primary_docs",
+      "scope": "Clay (clay.com) GTM data-enrichment platform, Public API and hosted MCP server, API key and OAuth auth, plan-gated access",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor/project-controlled documentation or product page selected by researcher",
+      "attribution_by": "task12-research-agent-claude"
+    },
+    {
+      "app_id": 60,
+      "url": "https://developers.clay.com/recipes/agent-function-access.md",
+      "kind": "primary_docs",
+      "scope": "Clay (clay.com) GTM data-enrichment platform, Public API and hosted MCP server, API key and OAuth auth, plan-gated access",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor/project-controlled documentation or product page selected by researcher",
+      "attribution_by": "task12-research-agent-claude"
+    },
+    {
+      "app_id": 60,
+      "url": "https://developers.clay.com/signals.md",
+      "kind": "primary_docs",
+      "scope": "Clay (clay.com) GTM data-enrichment platform, Public API and hosted MCP server, API key and OAuth auth, plan-gated access",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor/project-controlled documentation or product page selected by researcher",
+      "attribution_by": "task12-research-agent-claude"
+    },
+    {
+      "app_id": 60,
+      "url": "https://developers.clay.com/public-api/webhooks.md",
+      "kind": "primary_docs",
+      "scope": "Clay (clay.com) GTM data-enrichment platform, Public API and hosted MCP server, API key and OAuth auth, plan-gated access",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor/project-controlled documentation or product page selected by researcher",
+      "attribution_by": "task12-research-agent-claude"
+    },
+    {
+      "app_id": 60,
+      "url": "https://developers.clay.com/llms.txt",
+      "kind": "primary_docs",
+      "scope": "Clay (clay.com) GTM data-enrichment platform, Public API and hosted MCP server, API key and OAuth auth, plan-gated access",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor/project-controlled documentation or product page selected by researcher",
+      "attribution_by": "task12-research-agent-claude"
+    },
+    {
+      "app_id": 52,
+      "url": "https://raw.githubusercontent.com/seranking/openapi/main/README.md",
+      "kind": "official_repository",
+      "scope": "SE Ranking Data API, Project API and hosted MCP server, API token auth and OAuth, paid plan and API credits",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor/project-controlled documentation or product page selected by researcher",
+      "attribution_by": "task12-research-agent-claude"
+    },
+    {
+      "app_id": 52,
+      "url": "https://raw.githubusercontent.com/seranking/seo-skills/main/README.md",
+      "kind": "official_repository",
+      "scope": "SE Ranking Data API, Project API and hosted MCP server, API token auth and OAuth, paid plan and API credits",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor/project-controlled documentation or product page selected by researcher",
+      "attribution_by": "task12-research-agent-claude"
+    },
+    {
+      "app_id": 60,
+      "url": "https://developers.clay.com/routines/custom-functions.md",
+      "kind": "primary_docs",
+      "scope": "Clay (clay.com) GTM data-enrichment platform, Public API and hosted MCP server, API key and OAuth auth, plan-gated access",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor/project-controlled documentation or product page selected by researcher",
+      "attribution_by": "task12-research-agent-claude"
+    },
+    {
+      "app_id": 60,
+      "url": "https://github.com/clay-run/agent-plugins",
+      "kind": "official_repository",
+      "scope": "Clay (clay.com) GTM data-enrichment platform, Public API and hosted MCP server, API key and OAuth auth, plan-gated access",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor/project-controlled documentation or product page selected by researcher",
+      "attribution_by": "task12-research-agent-claude"
+    },
+    {
+      "app_id": 60,
+      "url": "https://raw.githubusercontent.com/clay-run/agent-plugins/main/README.md",
+      "kind": "official_repository",
+      "scope": "Clay (clay.com) GTM data-enrichment platform, Public API and hosted MCP server, API key and OAuth auth, plan-gated access",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor/project-controlled documentation or product page selected by researcher",
+      "attribution_by": "task12-research-agent-claude"
+    }
+  ]
+}

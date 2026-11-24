@@ -1,0 +1,64 @@
+{
+  "sources": [
+    {
+      "app_id": 92,
+      "url": "https://help.otter.ai/hc/en-us/articles/4412365535895-Does-Otter-offer-an-open-API",
+      "kind": "primary_docs",
+      "scope": "Otter AI public API and callable Otter MCP server; public documentary research, no execution",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor-controlled documentation/help/product domain matching roster product; ownership is researcher attribution, requires independent review",
+      "attribution_by": "task16-codex-researcher"
+    },
+    {
+      "app_id": 95,
+      "url": "https://docs.reducto.ai/reference/llms.txt",
+      "kind": "primary_docs",
+      "scope": "Reducto document processing API and agent integrations; public documentary research, no execution",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor-controlled documentation/help/product domain matching roster product; ownership is researcher attribution, requires independent review",
+      "attribution_by": "task16-codex-researcher"
+    },
+    {
+      "app_id": 95,
+      "url": "https://docs.reducto.ai/reference/credit-usage/index.md",
+      "kind": "primary_docs",
+      "scope": "Reducto document processing API and agent integrations; public documentary research, no execution",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor-controlled documentation/help/product domain matching roster product; ownership is researcher attribution, requires independent review",
+      "attribution_by": "task16-codex-researcher"
+    },
+    {
+      "app_id": 99,
+      "url": "https://transcriptapi.com/docs/api-reference/",
+      "kind": "primary_docs",
+      "scope": "YouTube Transcript via TranscriptAPI.com API and MCP; public documentary research, no execution",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor-controlled documentation/help/product domain matching roster product; ownership is researcher attribution, requires independent review",
+      "attribution_by": "task16-codex-researcher"
+    },
+    {
+      "app_id": 99,
+      "url": "https://transcriptapi.com/docs/billing/",
+      "kind": "primary_docs",
+      "scope": "YouTube Transcript via TranscriptAPI.com API and MCP; public documentary research, no execution",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor-controlled documentation/help/product domain matching roster product; ownership is researcher attribution, requires independent review",
+      "attribution_by": "task16-codex-researcher"
+    }
+  ]
+}

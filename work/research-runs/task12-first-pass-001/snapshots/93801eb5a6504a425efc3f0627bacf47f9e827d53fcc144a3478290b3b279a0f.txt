@@ -1,0 +1,70 @@
+> ## Documentation Index
+> Fetch the complete documentation index at: https://docs.waterfall.io/llms.txt
+> Use this file to discover all available pages before exploring further.
+# Enrich your first contact
+> Make your first Waterfall API request: submit an email address, save the job ID, and retrieve the contact enrichment result.
+Start with an email address and retrieve the available profile and contact data. This example uses Contact Enrichment, which runs as an asynchronous job.
+## 1. Set up your API key
+You need a Waterfall API key with Contact Enrichment enabled. [Contact the team](mailto:support@waterfall.io) for access and pricing. Requests use your account's configured rates.
+Store the key in an environment variable in your terminal:
+```bash theme={null}
+export WATERFALL_API_KEY="YOUR_API_KEY"
+```
+Keep the key on your server or in your local environment. See [Authentication](https://docs.waterfall.io/v1/authentication.md) for key management.
+## 2. Submit an email address
+Replace `person@company.com` with the contact you want to look up. This request leaves phone enrichment off.
+```bash theme={null}
+curl --request POST 'https://api.waterfall.io/v1/enrichment/contact' \
+--header "x-api-key: $WATERFALL_API_KEY" \
+--header 'Content-Type: application/json' \
+--data '{
+"email": "person@company.com",
+"include_phones": false
+}'
+```
+The response gives you a `job_id` and `start_date`. An illustrative response:
+```json theme={null}
+{
+"job_id": "1a836daa-ec37-4c75-8a10-080ee9b28a13",
+"start_date": "2026-10-12T09:00:00Z"
+}
+```
+Save the returned `job_id`. It identifies this lookup; the contact data arrives when the job finishes.
+## 3. Retrieve the result
+Set `WATERFALL_JOB_ID` to the ID from your response, then call the Finder:
+```bash theme={null}
+export WATERFALL_JOB_ID="YOUR_RETURNED_JOB_ID"
+curl --get 'https://api.waterfall.io/v1/enrichment/contact' \
+--header "x-api-key: $WATERFALL_API_KEY" \
+--data-urlencode "job_id=$WATERFALL_JOB_ID"
+```
+Read `status` before using the output:
+| Status | What to do |
+| - | - |
+| `RUNNING` | Wait before checking the same job again. Respect the [rate limit](https://docs.waterfall.io/v1/rate-limit.md). |
+| `SUCCEEDED` | Inspect `output.person` for available data and `output.usage` for returned cost information. |
+| `FAILED`, `TIMED_OUT`, or `ABORTED` | Stop polling this job and inspect the response before deciding what to do next. |
+A successful response might look like this (fictional contact; other fields omitted):
+```json theme={null}
+{
+"status": "SUCCEEDED",
+"output": {
+"person": {
+"first_name": "Jordan",
+"last_name": "Lee",
+"title": "Head of Sales",
+"company_name": "Example Company"
+}
+}
+}
+```
+Available profile fields can include the person's name, role, location, employment history, and email information. Use the [Contact Enrichment Finder](https://docs.waterfall.io/v1/contact-enrichment-finder.md) reference for the full response shape. Keep missing fields unresolved rather than filling them with guesses.
+## 4. Connect the result to your workflow
+Your application decides which fields to store or use. For a signup workflow, read [signup enrichment](https://docs.waterfall.io/v1/use-cases/signup-enrichment.md). For existing records, read [CRM enrichment](https://docs.waterfall.io/v1/use-cases/crm-enrichment.md).
+For automated delivery, add a `webhook_url` to the launch request. You can also pass `custom_fields` to carry your own record identifier. See the [launcher reference](https://docs.waterfall.io/v1/contact-enrichment-launcher.md) and [Webhook Verification](https://docs.waterfall.io/v1/webhook-verification.md).
+## Other ways to start
+* Have a LinkedIn identifier or a name and company domain? Contact Enrichment supports those input strategies too.
+* Need people at a company rather than a known contact? [Choose an API](https://docs.waterfall.io/v1/introduction.md) to compare Prospector and Search Contact.
+* Working with an agent? [Agent Skills](https://docs.waterfall.io/v1/skills-overview.md) covers direct calls and reusable integration code.
+* Got an error? Check [Errors](https://docs.waterfall.io/v1/errors.md) for validation, access, quota, and rate-limit guidance.
+This documentation is built and hosted on [Mintlify](https://mintlify.com), a developer documentation platform.

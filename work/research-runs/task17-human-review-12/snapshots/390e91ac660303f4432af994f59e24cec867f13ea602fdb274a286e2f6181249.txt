@@ -1,0 +1,28 @@
+> ## Documentation Index
+> Fetch the complete documentation index at: https://developers.clay.com/llms.txt
+> Use this file to discover all available pages before exploring further.
+# Signals
+> Create and manage signal triggers that detect relevant changes across your people and companies.
+Signal triggers watch records and produce signal events when Clay detects a relevant change. A trigger can watch a table view, one or more Audiences segments, or every record of its entity type.
+## Available signal types
+| Signal type | What triggers it | Setup |
+| - | - | - |
+| Job change | A tracked person changes companies | Web, CLI |
+| Job posting | A tracked company posts a job that matches your criteria | Web, CLI |
+| New hire | A tracked company hires someone who matches your criteria | Web, CLI |
+| Promotion | A tracked person's title advances at their company | Web, CLI |
+| News and fundraising | A tracked company appears in relevant news or announces funding | Web, CLI |
+| Person topic intent | A tracked person researches a topic you configured | Web, CLI |
+| Company topic intent | A tracked company researches a topic you configured | Web, CLI |
+| Custom | A custom enrichment you configured detects a change | Web |
+| Web intent | An identified company or person visits your website | Web |
+Custom and Web intent signal triggers are configured in the Clay web app. Their signal events are still available through Audiences.
+## Use the CLI
+Use `clay signals` to create and manage CLI-supported signal triggers. Run the built-in help for the current commands, inputs, JSON output, errors, and examples:
+```bash theme={"theme":{"light":"github-light","dark":"github-dark"}}
+clay signals --help
+```
+> [card] [Audiences](https://developers.clay.com/audiences.md)
+>
+> Work with records, activities, and the signal events produced by these triggers.
+This documentation is built and hosted on [Mintlify](https://mintlify.com), a developer documentation platform.

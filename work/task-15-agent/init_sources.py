@@ -1,0 +1,25 @@
+import json
+from pathlib import Path
+root=Path(r'D:\Composio')
+out=root/'work/task-15-agent'
+out.mkdir(parents=True,exist_ok=True)
+scopes={81:'Stripe payments API and callable MCP; test/sandbox versus live payments; account and country prerequisites apply',82:'Plaid developer API; Sandbox versus Production including Trial; product and institution entitlements vary',83:'Binance global Spot API; public market data versus signed account/trading; Spot Testnet distinct from production and regional eligibility unresolved',84:'Unresolved Paygent Connect; original hint paygent (NMI-powered); no vendor substitution',85:'iPayX Protocol on ipayx.ai original domain hint; FX audit API and MCP; public demo versus API credentials and production',86:'QuickBooks Online Accounting API; developer sandbox versus production app and company; not Desktop',87:'Xero Accounting API commercial apps and official MCP; demo organisation versus real organisations; Custom Connections separately scoped',88:'Brex developer APIs; own-account user token versus developer-partner OAuth/staging; production account required for customer path',89:'Ramp Developer API and callable MCP; sandbox versus production business; own-account versus partner integrations',90:'PitchBook research/data API and PitchBook Data MCP; commercial integration scope, distinct from Lens portfolio monitoring'}
+urls={
+81:['https://docs.stripe.com/api','https://docs.stripe.com/api/authentication','https://docs.stripe.com/keys','https://docs.stripe.com/testing','https://docs.stripe.com/get-started/account/activate','https://docs.stripe.com/mcp','https://stripe.com/pricing'],
+82:['https://plaid.com/docs/api/','https://plaid.com/docs/quickstart/','https://plaid.com/docs/sandbox/','https://plaid.com/docs/account/billing/','https://plaid.com/docs/resources/','https://plaid.com/docs/launch-checklist/','https://raw.githubusercontent.com/plaid/ai-coding-toolkit/main/sandbox/README.md'],
+83:['https://developers.binance.com/en/docs/products/spot/rest-api','https://developers.binance.com/en/docs/introduction','https://developers.binance.com/en/docs/products/spot/testnet/general-info','https://raw.githubusercontent.com/binance/binance-spot-api-docs/master/rest-api.md','https://raw.githubusercontent.com/binance/binance-spot-api-docs/master/testnet/general-info.md'],
+84:['https://www.nmi.com/','https://docs.nmi.com/'],
+85:['https://ipayx.ai/docs','https://www.ipayx.ai/docs/api','https://www.ipayx.ai/','https://www.ipayx.ai/pricing','https://www.ipayx.ai/docs/mcp','https://www.ipayx.ai/api-terms'],
+86:['https://developer.intuit.com/app/developer/qbo/docs/api/accounting/all-entities','https://static.developer.intuit.com/output_html/qbo/docs/develop/authentication-and-authorization/oauth-2.0.html','https://static.developer.intuit.com/output_html/qbo/docs/develop/sandboxes.html','https://static.developer.intuit.com/output_html/qbo/docs/go-live/publish-app.html','https://static.developer.intuit.com/output_html/tos/docs/tos.html','https://static.developer.intuit.com/output_html/qbo/docs/get-started/mcp-connector.html'],
+87:['https://developer.xero.com/documentation/getting-started-guide/','https://developer.xero.com/documentation/api/accounting/overview','https://developer.xero.com/documentation/guides/oauth2/overview','https://developer.xero.com/pricing','https://developer.xero.com/faq/remote-mcp','https://developer.xero.com/documentation/guides/remote-mcp/overview','https://developer.xero.com/faq/custom-integration'],
+88:['https://developer.brex.com/','https://developer.brex.com/guides/authentication','https://developer.brex.com/guides/partner_authentication','https://developer.brex.com/docs/partner_onboarding','https://developer.brex.com/changelog','https://developer.brex.com/docs/mcp-server'],
+89:['https://docs.ramp.com/','https://docs.ramp.com/developer-api/v1/authorization','https://docs.ramp.com/developer-api/v1/ramp-mcp','https://docs.ramp.com/developer-api/v1/setup'],
+90:['https://pitchbook.com/data/technology','https://pitchbook.com/products/pitchbooks-ai-capabilities','https://pitchbook.com/products/direct-data','https://pitchbook.com/products/pitchbook-api']}
+sources=[]
+for app,links in urls.items():
+ for url in links:
+  kind='official_repository' if 'raw.githubusercontent.com' in url else 'official_product_page' if app in (84,90) or url in ('https://stripe.com/pricing','https://www.ipayx.ai/','https://www.ipayx.ai/pricing') else 'primary_docs'
+  sources.append(dict(app_id=app,url=url,kind=kind,scope=scopes[app],environments=['testing','production'],attribution_basis='Vendor-controlled documentation/product domain or vendor-owned GitHub repository; selected by Codex from public web discovery and roster identity hints. Paygent NMI candidates are identity investigation only, not an established match.',attribution_by='codex-task15-researcher'))
+(out/'sources-001.json').write_text(json.dumps({'sources':sources},indent=2),encoding='utf-8')
+(out/'scopes.json').write_text(json.dumps(scopes,indent=2),encoding='utf-8')
+print(len(sources),'source declarations')

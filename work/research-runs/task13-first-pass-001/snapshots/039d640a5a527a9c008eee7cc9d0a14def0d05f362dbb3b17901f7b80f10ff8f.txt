@@ -1,0 +1,237 @@
+Deploy a Free Cluster - Atlas - MongoDB Docs
+For AI agents: a documentation index is available at https://www.mongodb.com/docs/llms.txt — markdown versions of all pages are available by appending .md to any URL path.
+Products
+Platform
+AtlasBuild with the intelligent data platform
+Platform Services
+DatabasePower critical apps with real-time dataSearchDeliver fast, relevant search at scaleVector SearchBuild AI apps with accurate contextVoyage AIEmbed meaning and rerank resultsAtlas Agent EngineBuild, deploy, and govern agents in production
+Self Managed
+Enterprise AdvancedManage your apps on your infrastructureCommunity EditionDevelop locally with MongoDB, at no cost
+Tools
+CompassWork with MongoDB data in a GUIIntegrationsIntegrations with third-party servicesRelational MigratorMigrate to MongoDB with confidence
+View All ProductsExplore our full product suitearrow-right
+MongoDB 9.0The best version of MongoDB ever builtarrow-right
+Build with MongoDB Atlas
+Get started for free in minutes
+Sign Up
+Explore Atlas Deployment Options
+Develop with self-managed MongoDB
+Learn more
+Try Community Edition
+Explore the latest version of MongoDB
+Download
+Resources
+DocumentationLearn how to build with MongoDB and get started todaySkills and CertificationsDevelop in-demand skills and earn MongoDB certificationsBooksRead books and e-books about MongoDB
+MongoDB for EducatorsTake advantage of educator resourcesMongoDB for StudentsTake advantage of student benefitsCommunityJoin a community of developersEvents and WebinarsFind an event or webinar near you
+Resources HubGet help building the next big thing with MongoDBarrow-right
+Solutions
+Use cases
+Artificial IntelligenceModernizationPaymentsServerless DevelopmentGamingIntelligent SearchEdge and Mobile
+Industries
+Financial ServicesTelecommunicationsHealthcareRetailPublic SectorManufacturing
+Solutions LibraryOrganized and tailored solutions to kick-start projectsarrow-right
+MongoDB AMP
+Modernize applications up to 3x faster
+Learn morearrow-right
+Startups and AI Innovators
+For world-changing ideas and AI pioneers
+Learn morearrow-right
+Customer Case Studies
+Hear directly from our users
+See storiesarrow-right
+Company
+CareersStart your next adventureBlogRead articles and announcementsNewsroomRead press releases and news stories
+PartnersLearn about our partner ecosystemLeadershipMeet our executive teamCompanyLearn more about who we are
+Contact Us
+Reach out to MongoDB
+Connect with an expertarrow-right
+Investors
+Visit our investor portal
+Learn morearrow-right
+Pricing
+Eng
+SupportSign In
+menu-vertical
+Get Started
+Products
+Platform
+AtlasBuild with the intelligent data platform
+Platform Services
+DatabasePower critical apps with real-time dataSearchDeliver fast, relevant search at scaleVector SearchBuild AI apps with accurate contextVoyage AIEmbed meaning and rerank resultsAtlas Agent EngineBuild, deploy, and govern agents in production
+Self Managed
+Enterprise AdvancedManage your apps on your infrastructureCommunity EditionDevelop locally with MongoDB, at no cost
+Tools
+CompassWork with MongoDB data in a GUIIntegrationsIntegrations with third-party servicesRelational MigratorMigrate to MongoDB with confidence
+View All ProductsExplore our full product suitearrow-right
+MongoDB 9.0The best version of MongoDB ever builtarrow-right
+Build with MongoDB Atlas
+Get started for free in minutes
+Sign Up
+Explore Atlas Deployment Options
+Develop with self-managed MongoDB
+Learn more
+Try Community Edition
+Explore the latest version of MongoDB
+Download
+Resources
+DocumentationLearn how to build with MongoDB and get started todaySkills and CertificationsDevelop in-demand skills and earn MongoDB certificationsBooksRead books and e-books about MongoDB
+MongoDB for EducatorsTake advantage of educator resourcesMongoDB for StudentsTake advantage of student benefitsCommunityJoin a community of developersEvents and WebinarsFind an event or webinar near you
+Resources HubGet help building the next big thing with MongoDBarrow-right
+Solutions
+Use cases
+Artificial IntelligenceModernizationPaymentsServerless DevelopmentGamingIntelligent SearchEdge and Mobile
+Industries
+Financial ServicesTelecommunicationsHealthcareRetailPublic SectorManufacturing
+Solutions LibraryOrganized and tailored solutions to kick-start projectsarrow-right
+MongoDB AMP
+Modernize applications up to 3x faster
+Learn morearrow-right
+Startups and AI Innovators
+For world-changing ideas and AI pioneers
+Learn morearrow-right
+Customer Case Studies
+Hear directly from our users
+See storiesarrow-right
+Company
+CareersStart your next adventureBlogRead articles and announcementsNewsroomRead press releases and news stories
+PartnersLearn about our partner ecosystemLeadershipMeet our executive teamCompanyLearn more about who we are
+Contact Us
+Reach out to MongoDB
+Connect with an expertarrow-right
+Investors
+Visit our investor portal
+Learn morearrow-right
+Pricing
+Eng
+SupportSign In
+menu-vertical
+Get Started
+Docs Menu
+Ask MongoDB AI
+/Docs Home
+Deploy a Free Cluster
+Copy page
+Estimated completion time: 3 minutes
+Atlas Free clusters (formerly known as M0) provide a small-scale development environment to host your data. Free clusters never expire, and provide access to a subset of Atlas features and functionality.
+Dedicated clusters provide full access to Atlas features, configuration options, and operational capabilities. For more information on dedicated clusters, including deployment instructions, see Create an Atlas Infinite or Atlas Core Cluster.
+Note
+When you create a Free cluster or a Flex cluster, you can select either Atlas Infinite or Atlas Core. However, the database edition you select doesn't impact how that cluster operates unless you scale to a dedicated cluster. Atlas automatically applies the stored database edition selection when you scale to a dedicated cluster, though you can also change the database edition at that time.
+To learn how to select a database edition and scale a Free or Flex cluster to a dedicated cluster, see Scale a Free or Flex Cluster to a Dedicated Cluster.
+Procedure
+You can create Free clusters through the Atlas CLI, Atlas User Interface, and Atlas Administration API. Select the appropriate tab based on how you would like to create the Free clusters.
+You can deploy only one Free cluster per Atlas project.
+Atlas CLIAtlas Administration APIAtlas UI
+To create one cluster, load sample data, add your IP address to your project IP access list, and create a MongoDB user for your cluster using the Atlas CLI, run the following command:
+atlas setup [options]
+To learn more about the command syntax and parameters, see the Atlas CLI documentation for atlas setup.
+For step-by-step instructions on using this command, see Create and Configure an Atlas Cluster using the Atlas CLI.
+To create a free cluster using the Atlas Administration API, send a POST request to the clusters endpoint with the instanceSize set to M0 (the cluster tier for Free clusters). To learn more about the resource and parameters, see Create.
+To create a free cluster through the Atlas UI:
+Important
+The following procedure applies to creating your very first cluster in the Atlas UI.
+1
+Log in to Atlas.
+Complete any welcome prompts. If you're logging in for the first time, Atlas sometimes skips the next two steps.
+2
+Go to the Project Overview page for your project.
+If it is not already displayed, select the organization that contains your desired project from the Organizations menu in the navigation bar.
+If it is not already displayed, select your desired project from the Projects menu in the navigation bar.
+If the Overview page is not already displayed, click Project Overview in the sidebar.
+3
+Create a cluster.
+Click the Create button to create a cluster.
+4
+Select the M0 option.
+Free clusters are free forever and suitable for users learning MongoDB or developing small proof-of-concept applications.
+5
+Select your preferred Provider.
+Atlas supports Free clusters on Amazon Web Services (AWS), Google Cloud Platform (GCP), and Microsoft Azure.
+6
+Select your preferred Region.
+Atlas displays only the cloud provider regions that support Free clusters.
+7
+Specify a name for your cluster in the Name box.
+You can specify any name for your cluster. The cluster name can contain ASCII letters, numbers, and hyphens.
+You can't change the cluster name after Atlas deploys the cluster. Cluster names can't exceed 64 characters in length.
+8
+Click Create to deploy the cluster.
+The Security Quickstart wizard appears.
+To learn more about the security features available, see Configure Security Features for Clusters.
+Once you deploy your free Atlas cluster, it takes less than 15 seconds for it to become ready to use.
+9
+Create a database user.
+Specify a Username for your database user.
+Specify a Password or copy the secure password that Atlas suggests.
+Click Create Database User.
+10
+Add your IP address to the IP access list.
+Click Add My Current IP Address.
+Click Finish and Close.
+Click Go to Overview.
+Next Steps
+Now that your cluster is provisioned, proceed to Manage the Database Users for Your Cluster.
+Rate this page
+On this page
+Procedure
+Next Steps
+On this page
+Procedure
+Next Steps
+Documentation
+DatabaseAtlas Agent EngineVoyage AI Models
+Get Started
+Deployment
+Development
+Management
+Client Libraries
+Tools
+Atlas Architecture Center
+Documentation
+DatabaseAtlas Agent EngineVoyage AI Models
+Get Started
+Deployment
+Development
+Management
+Client Libraries
+Tools
+Atlas Architecture Center
+English
+English
+Português
+Español
+한국어
+日本語
+简体中文
+© 2026 MongoDB, Inc.
+About
+Careers
+Investor Relations
+Legal
+Privacy Policy
+GitHub
+Security Information
+Trust Center
+Follow Us
+Support
+Contact Us
+Customer Portal
+Atlas Status
+Product Updates
+Customer Support
+Manage Cookies
+Your Privacy Choices
+Build
+MongoDB Atlas
+Enterprise Advanced
+Community Edition
+Voyage AI
+Data Basics
+Vector Databases
+NoSQL Databases
+Document Databases
+RAG Database
+ACID Transactions
+MERN Stack
+Agent Memory
+MEAN Stack
+© 2026 MongoDB, Inc.

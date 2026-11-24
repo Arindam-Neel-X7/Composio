@@ -1,0 +1,85 @@
+Grant access rights | Platform | Apify Documentation
+Skip to main content
+Get started
+Get startedActorsStorageProxyAccountIntegrationsSecurity
+Academy
+API
+API reference
+Client for JavaScript
+Client for Python
+Client for Go
+Client for PHP
+Client for Java
+Client for .NET
+Client for Rust
+SDK
+SDK for JavaScript
+SDK for Python
+CLI
+Installation
+Quick start
+Command reference
+For AI agents
+Overview
+Apify Console
+Apify AI
+Billing
+Limits
+Account settings
+Collaboration
+General resource access
+Grant access rights
+Organization account
+List of permissions
+Account
+Collaboration
+On this page
+Grant access rights
+Copy for LLM
+You can securely share your resources with others by using a granular permissions system. Such resources include Actors, tasks, key-value stores, datasets, and request queues.
+For example, you can let your colleague run an Actor or view a dataset but not modify it. You can also grant permission to update an Actor and build a new version. Storages are sharable in the same way as a read permission or a combination of both read and write permissions.
+Grant access to resources
+To share an Actor or a task:
+In Apify Console, go to the Actor or task page.
+From the menu, select Share.
+Under Invite, add the user ID, email, or username of a person you want to share the resource with and select Add user.
+From the dropdown, select the permissions to grant.
+To share a key-value store, request queue, or a dataset:
+In Apify Console, in the left-side menu, go to Storage.
+Use tabs to switch between datasets, key-value stores, and request queues.
+From the table, select the resource you want to share.
+Under Invite, add the user ID, email, or username of a person you want to share the resource with and select Add user.
+From the dropdown, select the permissions to grant.
+Transfer an Actor between accounts
+To transfer your Actor to another Apify account, contact support. The transfer keeps the Actor's reviews and usage statistics.
+Note that the Actor's URL in Apify Store changes, as it includes the account ID. The Actor's URL in Apify Console stays the same.
+Edit this page
+Grant access to resources
+Transfer an Actor between accounts
+Reference
+API Reference
+SDK for JavaScript
+SDK for Python
+Client for JavaScript
+Client for Python
+CLI
+Glossary
+Open source
+Crawlee
+Fingerprint Suite
+impit
+MCP CLI
+Actor whitepaper
+proxy-chain
+Security
+Trust Center
+Community
+Discord
+X
+YouTube
+GitHub
+For AI
+llms.txt
+llms-full.txt
+OpenAPI (JSON)
+OpenAPI (YAML)

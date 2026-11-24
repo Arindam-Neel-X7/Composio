@@ -1,0 +1,327 @@
+---
+updatedAt: 2026-11-18T17:49:57.000Z
+agentTools:
+projectIndex: https://dev.frontapp.com/llms.txt
+---
+# Admin MCP Server
+## Connect AI assistants to Front via the Admin MCP server
+Front's Admin MCP server (`mcp.frontapp.com/admin-mcp`) lets AI agents manage your Front configuration through a single OAuth-authenticated endpoint. Agents can set up AI teammates, author knowledge, build rules, and manage inboxes, tags, templates, teammates, and more. Agents authenticate as a specific Front admin, and can only reach what that admin can manage. The Admin MCP server is separate from the [Front MCP server](https://dev.frontapp.com/docs/mcp-server), which works with conversation data on behalf of any teammate.
+This article covers how to connect any MCP-compatible client to the Admin MCP server using an OAuth app you create yourself in the Front developer settings. For the user-facing overview and use case inspiration for Front admins, see the general <Anchor target="_blank" href="https://help.front.com/en/articles/5038272">Help Center article on the Admin MCP server.</Anchor>
+<Callout icon="📘" theme="info">
+### The Admin MCP server is in open beta
+The Admin MCP server is free on all plans during the beta. Tool names and parameters may change before general availability.
+</Callout>
+> **Looking for examples before you build?**
+>
+> The [MCP space in the Front Community](https://community.front.com/mcp-server-88) has workflow walkthroughs, sample prompts, and more. You can also start up discussions about the Admin MCP server with fellow users and our team.
+## Overview
+| | |
+| -------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Endpoint** | `https://mcp.frontapp.com/admin-mcp` |
+| **Transport** | Streamable HTTP (stateless) |
+| **MCP spec version** | 2025-11-25 |
+| **Auth** | OAuth 2.1 + PKCE compatibility<br /><br />**Note:** Front does not support Dynamic Client Registration. Your AI assistant must support a ***confidential connection that sends an OAuth client ID and secret***. Some popular AI assistants are currently [not compatible](#incompatibility-list). |
+| **Identity model** | Per-user tokens. Every tool call attributes to a specific Front admin |
+| **Who can connect** | Company admins and workspace admins |
+| **Scopes** | `read`, `write` |
+The connected agent can only manage what the authorizing admin can manage. Company admins can work across the whole company, while workspace admins can only change the workspaces they administer and don't see tools for company-level resources such as AI teammates, knowledge bases, or custom fields. Changes made through the Admin MCP server show in your audit log under the admin who authorized the connection.
+### Incompatibility list
+Some AI assistants do not support confidential connections. These clients cannot connect to the Front Admin MCP server:
+* Any client that requires Dynamic Client Registration (DCR)
+## Use cases
+A few patterns this surface unlocks:
+* **Set up an Autopilot AI teammate end to end.** Have your AI assistant read an inbox's resolved conversations to learn what to automate, then create the AI teammate, write its instructions, tone, and playbooks, connect a knowledge source, and build the rule that routes conversations to it.
+* **Tune AI teammates after launch.** Pull improvement opportunities and Replies Hub data, figure out whether a failure is a knowledge gap or a guidance problem, then edit the article, playbook, or instructions that caused it. Simulation sets and success criteria let you track whether a fix worked.
+* **Author and publish knowledge.** Create knowledge bases, categories, and articles, edit them in bulk, and publish them so AI teammates can answer from them.
+* **Build and maintain workspace configuration.** Create or update rules (including branching rules and SLA or CSAT recipes), inboxes, tags, message templates, views, custom fields, task templates, shifts, and teammate groups by describing what you need instead of clicking through settings.
+* **Connect AI teammates to your other systems.** Build custom application connectors, test their requests against the third-party API, and attach them to playbooks.
+## Set up the Admin MCP server connection
+Connecting an AI assistant to Front's Admin MCP server has two general steps: create a Front developer app with the Front Admin MCP feature, and then connect your AI client using the app's credentials.
+<Callout icon="👍" theme="okay">
+After you complete these two steps, other admins at your company will be able to find the Front Admin MCP server in your AI assistant and connect to it without having to create a developer app or configure the connection details on the AI client side.
+</Callout>
+<Callout icon="📘" theme="info">
+### Connect Claude from the official directory
+If you're using Claude, we recommend you connect the Front Admin MCP server from the [Claude official directory](https://claude.ai/directory/front-admin).
+If you connect from the directory, you do not need to complete either step in this section (**Set up the Front developer app with the Front Admin MCP feature** or **Connect your AI assistant**). If you are not using Claude, follow the steps in this section to set up the Admin MCP server as a custom connector.
+To connect via the official directory:
+- A Front admin (or any user authorized to install integrations from the Front App Store) must connect via the directory link above.
+- Then, any other admin in your company can use the directory link to connect their own account.
+</Callout>
+### 1. Set up the Front developer app with the Front Admin MCP feature
+<Callout icon="👍" theme="success">
+### These instructions are completed in your Front settings (Settings > Company > Developer)
+</Callout>
+<Callout icon="📘" theme="info">
+You need a dedicated developer app for the Admin MCP server. An app can't use both the Front MCP server and the Admin MCP server, so don't reuse an app you set up for the Front MCP server.
+</Callout>
+1. [Create a developer app](https://dev.frontapp.com/docs/create-and-manage-apps) and give it an appropriate name (e.g. "ChatGPT Admin MCP Connector").
+2. Click **Add feature** in the **Features** tab and select **Front Admin MCP**.
+<Callout icon="📘" theme="info">
+If **Front Admin MCP** isn't in the list, refresh the page.
+</Callout>
+3. Note the **Client ID** and **Client secret**.
+4. Add a **redirect URL** that corresponds to the AI assistant you're sending data to. For ChatGPT, use the callback URL ChatGPT shows when you add the connector (see the example below). CLI assistants often use a local callback such as `http://localhost/callback`, which lets them connect on a randomly generated local port. Check your assistant's documentation for the exact value.
+5. Under **Resource permissions**, select the resources available to the Admin MCP server and whether the agent can `read` or `write` each one. Besides the resources you may know from the Front MCP server, the Admin MCP feature includes `ai_agents`, `ai_resources` (playbooks, tones, and knowledge sources), `applications`, `macros`, and `task_templates`.
+<Callout icon="👍" theme="okay">
+Request the narrowest set that covers your use case. An agent that only audits or reports on your configuration needs `read`. Only grant `write` on the resources your agent will actually change.
+</Callout>
+<Callout icon="📘" theme="info">
+Remember that despite the permissions selected in the OAuth client, agents connecting to the Admin MCP server will be further limited by the subset of data and permissions that the admin who connects the agent has access to.
+</Callout>
+<Callout icon="📘" theme="info">
+If you change the resource permissions after the initial setup, you must disconnect and re-authorize your connection with your AI assistant ("Connect your AI Assistant" steps) before the new permissions take effect.
+</Callout>
+6. Save the app.
+<br />
+### 2. Connect your AI assistant
+<Callout icon="👍" theme="success">
+### These instructions are completed in your AI assistant, not Front
+</Callout>
+Once the app is configured, connect from your MCP client so that you and your team can view the Front Admin MCP server. Once it is set up for your company, individual admins can find the server in the list of connectors and authorize it for their own accounts, without configuring the server URL and credentials described in this section.
+The exact configuration syntax for initial configuration varies by AI client, but every client will need:
+* The Admin MCP server URL: `https://mcp.frontapp.com/admin-mcp`
+* Your app's `client_id` and `client_secret`
+* The OAuth scope the app should request. Either leave this blank or supply `feature:admin_mcp` if you need to input a value
+* If your AI assistant requests information about our OAuth URLs, use the following values:<br />
+| URL | Value |
+| ------------------- | ------------------------------------------ |
+| Authorization | `https://app.frontapp.com/oauth/authorize` |
+| Token & refresh URL | `https://app.frontapp.com/oauth/token` |
+<Callout icon="📘" theme="info">
+**Use the UI or command line to connect the Admin MCP server**
+We recommend using your AI assistant's UI menus to connect the Front Admin MCP server, or terminal commands for CLI assistants. Configuring JSON files is not recommended for most users because varying local paths and environment settings can cause issues. We've provided an example for ChatGPT below, plus a general JSON shape if you have to modify your AI assistant's configuration file directly.
+If you have issues connecting the Admin MCP server, please reach out to your AI assistant's support team and share this documentation with them so they can recommend the correct steps.
+</Callout>
+#### Example for ChatGPT
+1. In ChatGPT settings, turn on developer mode.
+2. In **Plugins**, click **+** and enter the server URL: `https://mcp.frontapp.com/admin-mcp`
+3. Open the advanced OAuth settings and enter your OAuth Client ID and Client Secret.
+4. Copy the callback URL ChatGPT shows and add it as a redirect URL in your Front developer app.
+5. Complete the OAuth authentication flow.
+#### Example for generic MCP server config (confirm with your client's docs on exactly how you structure and pass these properties) - Not recommended for most users
+```json
+{
+"mcpServers": {
+"front-admin": {
+"url": "https://mcp.frontapp.com/admin-mcp",
+"transport": "streamable-http",
+"oauth": {
+"client_id": "<your-client-id>",
+"client_secret": "<your-client-secret>",
+"scopes": ["read", "write"]
+}
+}
+}
+}
+```
+### Tips for authorization
+<Callout icon="📘" theme="info">
+**Match your client's requested scopes to your OAuth app.** By default, many AI assistants will request every scope the Admin MCP server supports. If those scopes exceed what you enabled on the Front developer app, the authorization flow may return an error.
+If you encounter this error, configure your client to only request the scopes your app is set up for. Check your client's documentation for the exact syntax.
+</Callout>
+When the client first connects, each admin will be redirected to Front to log in and consent. The resulting token is bound to that specific Front admin, and they can only manage what their Front role allows. AI teammates can't authorize the Admin MCP server.
+<Callout icon="📘" theme="info">
+**A note on enterprise deployment:** If your AI assistant is centrally managed (e.g. Claude Enterprise, ChatGPT Enterprise), your IT team may need to allow the connection or distribute the app credentials. Each admin still completes the OAuth consent flow individually. This is how Front guarantees that every tool call has a real, attributable admin behind it.
+</Callout>
+### Which tools you'll see
+Not every admin sees every tool. Workspace admins don't see tools for company-level resources, and some tools only appear when your plan or account includes the matching feature. For example, shift tools need the Shifts feature, simulation tools need Autopilot, and connector-building tools need custom application connectors.
+### Getting access to new tools
+When Front adds a tool that needs a permission your connection doesn't have yet, the tool appears in your AI assistant, but calling it returns a `missing required scopes` error. That's because a connection keeps the permissions that were approved when it was first authorized; it doesn't pick up new ones on its own.
+<Callout icon="📘" theme="info">
+1. A Front admin opens your developer app (**Settings > Company > Developer**), opens its **Front Admin MCP** feature, and enables the new permission under **Resource permissions**. The error message names the permission the tool needs.
+2. Each admin disconnects Front in their AI assistant and connects it again.
+Until both steps are done, the new tool keeps returning the error. Other tools keep working.
+</Callout>
+## Rate limits
+The Admin MCP server allows 200 tool calls per minute per company, on every plan. Every admin, AI assistant, and developer app at your company shares this limit, and every tool call counts the same regardless of which tool it is.
+<Callout icon="📘" theme="info">
+We'll revisit this limit before general availability based on usage during the beta.
+</Callout>
+### How to handle a limit
+When your company goes over the limit, the call fails with an MCP error that says how long to wait:
+```Text
+Admin MCP is limited to 200 tool calls per minute per company. Retry after Xs.
+```
+Wait the stated time before retrying. Earlier retries will simply be rejected again.
+## Tool reference
+<Callout icon="📘" theme="info">
+The Admin MCP server currently exposes the following tools. Each tool's full input schema is available to your AI assistant through the server. To get the most updated list, ask your AI agent to refresh the tool list, or reconnect.
+The **Access** column shows who can use each tool. Workspace-scoped tools are available to workspace admins, but only for the workspaces they administer. Edits and other write tools that change state in user-visible ways carry `destructiveHint: true`, which prompts MCP clients to request per-call user confirmation.
+</Callout>
+<Callout icon="👍" theme="okay">
+Reference existing resources by their public ID (for example `inb_xxx` or `tag_xxx`). The matching `list_*` tool returns them.
+</Callout>
+***
+## Identity and feedback
+| Tool | Type | Access | Description |
+| ----------------- | ----- | --------- | --------------------------------------------------------------------------------------------------------------------------------- |
+| `get_my_identity` | Read | Any admin | Returns the calling admin's identity and the connected Front company's public ID, name, and slug. Takes no arguments. |
+| `send_feedback` | Write | Any admin | Sends feedback about the Admin MCP server to Front, such as a missing tool or one that misbehaved. Changes nothing in your Front. |
+***
+## Conversations
+These tools let an admin study an inbox's history before automating it. They return only what the admin can see in Front, and always search across all inboxes the admin can access.
+| Tool | Type | Access | Description |
+| ---------------------- | ---- | --------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| `search_conversations` | Read | Any admin | Searches conversations by query and/or filters: inbox, assignee, team, tags, type, status, snoozed, and an updated date range. IDs in filters must include their prefix. |
+| `read_conversation` | Read | Any admin | Returns a conversation's header and a paginated, newest-first timeline of messages, comments, and activity. Message entries carry a preview of the body. |
+| `read_message` | Read | Any admin | Fetches one message with its full body (quoted replies stripped), recipients, attachments, and author. |
+***
+## AI teammates
+| Tool | Type | Access | Description |
+| ----------------------------- | ------------------- | ------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| `list_ai_teammates` | Read | Any admin | Lists AI teammates with their ID (`atc_xxx`), kind (Autopilot or external), and status (live or paused). |
+| `get_ai_teammate` | Read | Any admin | Reads one AI teammate's configuration, including its linked knowledge sources and playbooks. Can also return its instructions. |
+| `create_ai_teammate` | Write | Global admin | Creates an Autopilot or external (BYOA) AI teammate. Escalation settings are still set in Front, and an external AI teammate needs a connection secret generated in Front before it can call Front back. AI teammates can't be deleted. |
+| `edit_ai_teammate` | Write (destructive) | Global admin | Updates an AI teammate's name, handle, description, avatar, webhook URL, escalation timeout, workspaces, and status. For Autopilot, also sets its instructions, tone, playbooks, and knowledge sources. Pausing an AI teammate escalates its assigned conversations to people. |
+| `list_ai_teammate_tones` | Read | Global admin | Lists the tones an Autopilot AI teammate can answer in, including Front's built-in tones and your company's own. |
+| `get_ai_teammate_tone` | Read | Global admin | Reads one tone in full. |
+| `create_ai_teammate_tone` | Write | Global admin | Creates a company tone from a title, description, and body. Apply it to an AI teammate with `edit_ai_teammate`. |
+| `edit_ai_teammate_tone` | Write (destructive) | Global admin | Edits a company tone in place. Every AI teammate using it picks up the change on its next reply. Built-in tones are read-only. |
+| `list_ai_teammate_playbooks` | Read | Global admin | Lists playbooks by title and description. Pass an AI teammate ID to list only the playbooks it follows. |
+| `get_ai_teammate_playbook` | Read | Global admin | Reads one playbook in full, including its steps and connectors. |
+| `create_ai_teammate_playbook` | Write | Global admin | Creates a playbook from a title, description, steps, and connectors. The description decides when the playbook gets loaded, so it matters. Attach it to an AI teammate with `edit_ai_teammate`. |
+| `edit_ai_teammate_playbook` | Write (destructive) | Global admin | Edits a playbook's title, description, steps, or connectors in place. Every AI teammate following it picks up the change on its next reply. |
+| `list_connectors` | Read | Global admin | Lists installed apps whose tools an Autopilot AI teammate can call, with each tool's ID and whether an admin turned it off. Use these IDs in a playbook's connectors. |
+***
+## Knowledge
+| Tool | Type | Access | Description |
+| -------------------------------- | ------------------- | ------------ | ---------------------------------------------------------------------------------------------------------------------------------------------- |
+| `list_knowledge_bases` | Read | Any admin | Lists knowledge bases with their ID, type, status, languages, and published languages. |
+| `create_knowledge_base` | Write | Global admin | Creates a knowledge base. |
+| `edit_knowledge_base` | Write (destructive) | Global admin | Updates a knowledge base's name or configuration. |
+| `publish_knowledge_base` | Write | Global admin | Publishes one language of a help center, which also lets AI teammates answer from its articles. |
+| `list_knowledge_base_categories` | Read | Any admin | Lists the categories in a knowledge base, including each category's parent. |
+| `create_knowledge_base_category` | Write | Global admin | Creates a category in a knowledge base. |
+| `edit_knowledge_base_category` | Write (destructive) | Global admin | Updates a category. |
+| `list_knowledge_base_articles` | Read | Any admin | Lists articles in a knowledge base, optionally by category or language. |
+| `create_knowledge_base_article` | Write | Global admin | Creates an article. |
+| `edit_knowledge_base_article` | Write (destructive) | Global admin | Edits an article's title, body, search terms, or category. Saves a draft, so a published article keeps its current text until it is published. |
+| `publish_knowledge_base_article` | Write | Global admin | Publishes one language version of an article. Counts against your plan's published-article limit. |
+| `list_knowledge_sources` | Read | Any admin | Lists the knowledge sources assigned to a workspace in AI settings, with their public IDs. |
+| `create_knowledge_source` | Write | Global admin | Creates a website source (crawled after creation) or a note in your notes source. Returns the source ID to link with `edit_ai_teammate`. |
+| `edit_knowledge_source` | Write (destructive) | Global admin | Updates a website source's name, crawl paths, or JavaScript setting. The website address can't be changed, and changes can start a new crawl. |
+***
+## Rules
+| Tool | Type | Access | Description |
+| ----------------------- | ------------------- | --------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `list_rules` | Read | Any admin | Lists rules, filterable by inbox, tag, type, category, and active status. |
+| `get_rule` | Read | Any admin | Reads one rule's full configuration, including triggers, conditions, and actions. |
+| `create_rule` | Write | Any admin | Creates a rule with triggers, conditions, and actions, including assigning conversations to an AI teammate. |
+| `create_branching_rule` | Write | Any admin | Creates a branching rule from a plain-English description. |
+| `create_complex_rule` | Write | Any admin | Creates a multi-rule recipe such as an SLA, resolution-time SLA, CSAT survey, Smart QA, Smart CSAT, required tagging, or AI tagging. Only available when enabled for your company. |
+| `edit_rule` | Write (destructive) | Any admin | Proposes changes to a rule's triggers, conditions, or actions and returns a draft. Nothing is saved until the tool is called again with `confirm_draft_id`. Only available when enabled for your company. |
+| `edit_branching_rule` | Write (destructive) | Any admin | Proposes changes to a branching rule and returns a draft. Nothing is saved until the tool is called again with `confirm_draft_id`. |
+| `edit_rule_status` | Write (destructive) | Any admin | Enables or disables any rule, including every rule inside a recipe such as an SLA. Rules are deactivated rather than deleted. |
+***
+## Workspace configuration
+| Tool | Type | Access | Description |
+| -------------------------------- | ------------------- | ------------ | --------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `list_workspaces` | Read | Any admin | Lists workspaces with their teammates and configuration. |
+| `get_workspace` | Read | Any admin | Reads one workspace. |
+| `list_inboxes` | Read | Any admin | Lists inboxes. |
+| `get_inbox` | Read | Any admin | Reads one inbox: access mode, who has access and how, ticketing, AI status, business hours, and company rules. |
+| `create_inbox` | Write | Any admin | Creates a shared inbox. |
+| `edit_inbox` | Write (destructive) | Any admin | Updates an inbox's name or settings. |
+| `list_channels` | Read | Any admin | Lists channels, filterable by name or address, type, inbox, and status. |
+| `get_channel` | Read | Any admin | Reads one channel. |
+| `list_tags` | Read | Any admin | Lists tags. |
+| `get_tag` | Read | Any admin | Reads one tag. |
+| `create_tag` | Write | Any admin | Creates a tag, optionally nested under a parent tag. |
+| `edit_tag` | Write (destructive) | Any admin | Renames or moves a tag. |
+| `list_message_templates` | Read | Any admin | Lists message templates. |
+| `get_message_template` | Read | Any admin | Reads one message template. |
+| `create_message_template` | Write | Any admin | Creates a message template. |
+| `edit_message_template` | Write (destructive) | Any admin | Updates a message template. |
+| `list_message_template_folders` | Read | Any admin | Lists message template folders. |
+| `create_message_template_folder` | Write | Any admin | Creates a message template folder. |
+| `edit_message_template_folder` | Write (destructive) | Any admin | Updates a message template folder. |
+| `list_views` | Read | Any admin | Lists views with their inbox, tag, and assignee configuration. |
+| `get_view` | Read | Any admin | Reads one view. |
+| `create_view` | Write | Any admin | Creates a view. |
+| `edit_view` | Write (destructive) | Any admin | Updates a view. |
+| `list_custom_field_definitions` | Read | Any admin | Lists custom field definitions. |
+| `get_custom_field_definition` | Read | Any admin | Reads one custom field definition. |
+| `create_custom_field` | Write | Global admin | Creates a custom field. |
+| `edit_custom_field` | Write (destructive) | Global admin | Updates a custom field. |
+| `list_task_templates` | Read | Any admin | Lists task templates. |
+| `create_task_template` | Write | Any admin | Creates a task template. |
+| `edit_task_template` | Write (destructive) | Any admin | Updates a task template. |
+| `list_teammates` | Read | Any admin | Searches teammates by name or email. |
+| `get_teammate` | Read | Any admin | Reads one teammate. |
+| `invite_teammate` | Write (destructive) | Global admin | Invites a teammate by email, sets whether they are a company admin, and adds them to teammate groups. Sends the invitation and uses a paid seat. |
+| `edit_teammate` | Write (destructive) | Any admin | Updates a teammate's name, username, availability, or account status. |
+| `list_teammate_groups` | Read | Any admin | Lists teammate groups, optionally with the permissions each grants. |
+| `get_teammate_group` | Read | Any admin | Reads one teammate group. |
+| `create_teammate_group` | Write | Global admin | Creates a teammate group. |
+| `edit_teammate_group` | Write (destructive) | Global admin | Updates a teammate group. |
+| `list_shifts` | Read | Any admin | Lists shifts with their hours, teammates, and timezone. Requires the Shifts feature. |
+| `get_shift` | Read | Any admin | Reads one shift. Requires the Shifts feature. |
+| `create_shift` | Write | Any admin | Creates a shift. Requires the Shifts feature and isn't available with Workforce Management. |
+| `edit_shift` | Write (destructive) | Any admin | Updates a shift's name, color, timezone, weekly hours, teammates, or enabled status. Requires the Shifts feature and isn't available with Workforce Management. |
+| `list_signatures` | Read | Any admin | Lists signatures. |
+| `get_signature` | Read | Any admin | Reads one signature. |
+| `list_macros` | Read | Any admin | Lists macros. |
+| `get_macro` | Read | Any admin | Reads one macro. |
+| `list_statuses` | Read | Any admin | Lists ticket statuses. Returns empty when ticketing is not enabled. |
+| `list_ai_topics` | Read | Any admin | Lists the AI topics detected in a workspace. Topics are separate from tags. |
+| `list_vacation_responders` | Read | Any admin | Lists time off responders with their status, schedule, and channels. |
+| `list_contact_lists` | Read | Any admin | Lists contact lists, for use in rule conditions. |
+***
+## AI teammate evaluation and testing
+| Tool | Type | Access | Description |
+| -------------------------------- | ------------------- | ------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `list_improvement_opportunities` | Read | Any admin | Lists the improvement opportunities Front found for an AI teammate, most affected first, with the proposed fixes and the ID of the resource each fix would edit. |
+| `get_replies_hub_data` | Read | Any admin | Returns AI reply data matching the Replies Hub export, including diagnoses and how sent replies differ from AI-generated ones. Only available when enabled. |
+| `regenerate_reply` | Write | Any admin | Regenerates an AI reply on a conversation, to check whether a problem reproduces or a fix worked. Only available when enabled. |
+| `list_simulation_sets` | Read | Any admin | Lists an AI teammate's simulation sets with their last run date and Smart QA scorecard. Requires Autopilot and permission to edit AI teammates. |
+| `create_simulation_set` | Write | Global admin | Creates a simulation set on an AI teammate, with an optional Smart QA scorecard. Requires Autopilot. |
+| `edit_simulation_set` | Write (destructive) | Global admin | Renames a simulation set or changes its Smart QA scorecard. Requires Autopilot. |
+| `create_simulations` | Write | Global admin | Creates up to 20 simulations in a simulation set, written from scratch or modelled on a real conversation. When modelled on a conversation, Front fills in anything you leave out and drafts the scenario with AI. The result lists the simulations created and why any others weren't. Requires Autopilot. |
+| `edit_simulation` | Write (destructive) | Global admin | Changes a simulation's name, source conversation, first message, scenario, inbox and channel, customer, tags, or success criteria. Changing its content detaches it from the conversation it was modelled on. Runs already scored keep their results. Requires Autopilot. |
+| `list_simulations` | Read | Any admin | Lists the simulations in a set by name and first message. Requires Autopilot and permission to edit AI teammates. |
+| `get_simulation` | Read | Any admin | Reads one simulation in full: first message, scenario, inbox, contact, tags, and success criteria. Requires Autopilot and permission to edit AI teammates. |
+| `run_simulations` | Write | Any admin | Starts runs of an AI teammate's simulations: all of them by default, or only the sets and simulations you pick. Runs are queued, so the tool returns their IDs before any finish. A simulation that's already running isn't started again. Requires Autopilot and permission to edit AI teammates. |
+| `get_simulation_results` | Read | Any admin | Returns the latest run of each simulation in a set or list: its status, whether it passed, how many criteria it passed, and whether it's a regression or a fix compared to the previous run. Call it again while runs are in progress. Requires Autopilot and permission to edit AI teammates. |
+| `get_simulation_run` | Read | Any admin | Reads one run in full to show why it passed or failed: the simulated conversation, the steps the AI teammate took (resources retrieved, connectors called, instructions followed), how the conversation ended, and each criterion's verdict with the judge's reason. Requires Autopilot and permission to edit AI teammates. |
+| `list_success_criteria` | Read | Any admin | Lists your company's success criteria with what pass and fail mean. Requires Autopilot and permission to edit AI teammates. |
+| `create_success_criterion` | Write | Global admin | Creates a success criterion from a name, definition, and pass and fail text. Requires Autopilot. |
+| `edit_success_criterion` | Write (destructive) | Global admin | Updates a success criterion. The change applies to every simulation using it. Requires Autopilot. |
+***
+## Custom application connectors
+These tools build the custom applications whose requests AI teammates can call from playbooks. They require custom application connectors on your plan.
+| Tool | Type | Access | Description |
+| ---------------------------- | ------------------- | ------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| `list_local_applications` | Read | Any admin | Lists your company's custom applications. |
+| `create_local_application` | Write | Global admin | Creates a custom application. |
+| `create_application_server` | Write | Global admin | Adds a server origin to a custom application. |
+| `create_application_request` | Write | Global admin | Creates an app request: its inputs, HTTP steps, and outputs. |
+| `edit_application_request` | Write (destructive) | Global admin | Updates an app request. |
+| `create_application_object` | Write | Global admin | Creates an application object. |
+| `list_app_requests` | Read | Global admin | Lists the app requests on a custom application. |
+| `get_app_request` | Read | Global admin | Reads one app request: name, description, draft state, server origin, and HTTP requests. |
+| `check_app_credentials` | Read | Global admin | Checks whether a server origin needs credentials. Doesn't create or authorize them. |
+| `get_expression_reference` | Read | Global admin | Explains the `{{ }}` expressions some tools accept, such as the references in app requests. Tools that take expressions name the scope to pass. |
+| `test_app_request` | Test | Global admin | Tests an app request, including drafts, by calling the third-party API. This can create, update, or delete data in that system. Sensitive values in the response are redacted. |
+## Troubleshooting
+### `401 Unauthorized` on every request
+The token is invalid, expired, or has been revoked. Common causes:
+* The admin revoked the app's access in Front's connected apps settings.
+* A company admin uninstalled the OAuth app entirely.
+* The access token expired and the refresh flow didn't fire. Re-authenticate to mint a new token.
+### `missing required scopes` on a tool
+Your connection doesn't have a permission this tool needs. This usually happens after Front adds a tool. See [Getting access to new tools](#getting-access-to-new-tools).
+### `This token cannot access the Admin MCP Server`
+The connection is using a developer app set up for the Front MCP server. Create a separate developer app with the **Front Admin MCP** feature and connect with its credentials.
+### `The Admin MCP Server requires an admin requester`
+Only company admins and workspace admins can use the Admin MCP server. Have an admin authorize the connection instead.
+### A tool is missing or refuses a workspace
+Workspace admins only see workspace-level tools and can only change workspaces they administer. Some tools also depend on your plan or features enabled for your company. See [Which tools you'll see](#which-tools-youll-see).
+### A tool stops working after an admin's Front access changes
+Permissions are enforced at call time against the admin's current Front role. If the admin lost admin rights or access to a workspace after authorizing, tools that need that access will fail.
+### `Admin MCP is limited to 200 tool calls per minute per company`
+Your company went over its shared rate limit. Wait the number of seconds in the error before retrying. If this happens during normal use, look for a polling loop that's tighter than it needs to be, or several agents running at once, since everyone at your company shares the limit. For more details, see the [rate limits](#rate-limits) section.
+## Feedback & community discussions
+To share feedback about tools you'd like to see in the Admin MCP server, please [add an idea](https://community.front.com/ideas) in our community or vote on an existing one. You can also ask your AI assistant to send feedback directly with the `send_feedback` tool.<br /><br />To discuss Admin MCP server use cases and workflows, please create a post in or subscribe to our [discussion space](https://community.front.com/mcp-server-88).
+<br />
+***

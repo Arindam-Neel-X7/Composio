@@ -1,0 +1,162 @@
+Launch checklist | Plaid Docs
+Docs
+ALL DOCS
+Launch checklist
+# Production setup
+# Link setup
+# Webhook configuration
+# Error handling
+# Link in update mode
+# Storage & logging
+# Item management
+# Multi-app use cases
+# Product-specific recommendations
+# Auth
+# Balance
+# Identity
+# Transactions
+# Investments
+# Assets
+# Payment Initiation
+# Virtual Accounts
+# Income
+# Identity Verification
+# Monitor
+Docs
+Search or Ask a Question
+Markdown
+Plaid.com
+Log in
+Get API Keys
+Open nav
+Close search modal
+Search the docsAsk Bill!
+Ask a question...
+Hi! I'm Bill! You can ask me all about the Plaid API. Try asking questions like:Pssst -- I also moonlight as your IDE's research librarian! Plug me in via the Plaid MCP Server.
+Note: Bill isn't perfect. He's just a robot platypus that reads our docs for fun. You should treat his answers with the same healthy skepticism you might treat any other answer on the internet. This chat may be logged for quality and training purposes. Please don't send Bill any PII -- he's scared of intimacy. All chats with Bill are subject to Plaid's Privacy Policy.
+Launch in Production checklist
+Check off these recommended steps before launching your app in Production
+The Launch Checklist has been replaced by the Launch Center. The Launch Center shows a personalized list of steps for your integration, with links to supporting materials like videos, sample code, and docs. The Launch Checklist is no longer being updated.
+Below is a list of recommended steps to take before launching your Plaid integration in production. While they might not all be required for the minimal operation of your application, the steps below will help to make your Plaid integration more robust, secure, efficient, and maintainable.
+Production setup
+If you haven't already done so, request Production access.
+Complete your application profile and company profile, which are required to access certain institutions that use OAuth-based connections.
+Complete your security questionnaire, which is required to access certain US institutions that use OAuth-based connections.
+For European Union countries and the UK, there is a separate compliance process required to access financial institutions in Production. If your Plaid integration will support financial institutions in Europe (including the UK), and your business is not based in Europe, file a support ticket to request Production access for Europe. Allow at least one week for your request to be processed.
+Configure both Plaid Link and your server-side code to use the Production
+environment by setting the appropriate value when configuring your client object or (if not using a client library) your HTTP request. For language-specific details, see the GitHub page for your client library, or API host information if not using a library.
+Ensure you are using your Production secret, which can be found on the dashboard.
+If migrating from Sandbox, ensure that you remove any usage of Sandbox-specific functionality, such as the user_good test user or calls to /sandbox/ endpoints.
+Add teammates to the dashboard to give other users access. For more details, see Plaid teams.
+Link setup
+Follow the steps below to assist users in completing the Link flow, help ensure compliance with Plaid's policies, and avoid being billed for unneeded products.
+Implement OAuth support. Some institutions in both Europe and the US require the use of OAuth-based connections. While OAuth will typically "just work" on desktop, as long as you have completed your application profile, company profile, and security questionnaire, you may need to implement client-side redirect logic for users on mobile devices.
+Make sure your OAuth integration works with all the test cases recommended in the OAuth documentation.
+Add every redirect_uri you pass to /link/token/create to the Allowed redirect URIs in the Dashboard. Production redirect URIs must use HTTPS. See Create and register a redirect URI.
+To avoid unnecessary billing and user confusion, implement logic for preventing duplicate Items.
+Configure Link customizations within the
+dashboard and ensure that the countries and languages selected for the customizations match the settings provided to /link/token/create. For more details, see Link customization.
+For Link sessions in the US or Canada, select a use case under Data Transparency Messaging in the Link customization UI. Trial plans use a default use case, so this applies once you're on a paid plan.
+Ensure the client_name parameter of /link/token/create is set
+to display your company's name as you'd like it to appear within Link.
+Ensure that the products parameter of /link/token/create includes only the
+products you intend to use. The products listed here will influence which
+institutions and accounts appear in Link (only institutions and account types that support all specified products will
+appear in Link) and will trigger a billing event for listed products upon
+successful token exchange.
+If you are using multiple Plaid products, see the recommendations in Choosing how to initialize products to make sure your Link sessions are optimized for performance, conversion, and billing.
+If you plan to use a product later but aren't initializing it in Link, list it in the additional_consented_products parameter of /link/token/create. Otherwise, calling its endpoints on the Item can fail with ADDITIONAL_CONSENT_REQUIRED. See Adding products post-Link.
+Provide any notice and obtain any consent required for Plaid to process end user
+information in accordance with Plaid's End User Privacy Policy.
+You may find it helpful to know that some of our customers link to Plaid's privacy policy within their own privacy policy, while others surface a separate just-in-time notice and consent page during their onboarding flow. Ultimately, it is up to you to determine how to obtain any legally required consents.
+To maximize the number of users who complete the Link flow, review Plaid's recommendations for optimizing Link conversion and implement any practices relevant to your use case, such as providing pre-Link messaging.
+Callbacks
+Handle callbacks beyond just onSuccess in order to gracefully handle errors and build analytics around Link.
+Listen to the onExit() and onEvent() callbacks for error_type and error_code in order to implement error handling.
+Listen to the onEvent() callback for
+exit_status or timestamp in order to implement Link conversion analytics. Alternatively, you can use Plaid's built-in Link conversion analytics in the Dashboard.
+Webhook configuration
+Plaid uses webhooks for many common flows. If your integration does any of the following, webhooks are required or strongly recommended:
+(Any product) Your application is calling a Plaid endpoint for an Item repeatedly, over a period of time, not just immediately after Link.
+(Transactions or Investments) You are accessing transactions made after the end user linked their Item.
+(Auth) You are using automated micro-deposits for account verification, or making transfers over a year after the Item was initially linked.
+(Assets) You are creating Asset Reports.
+(Income) You are verifying a user's income.
+(Payment Initiation (UK and Europe)) You are initiating payments.
+(Virtual Accounts (UK and Europe) or Transfer) You are sending or receiving funds.
+Make sure Link has been initialized with your URL for receiving webhooks via /link/token/create.
+(For Identity Verification, Transfer or Payment Initiation, as well as optional Auth micro-deposit events) Make sure to configure account level webhook URLs via the Plaid Dashboard.
+Make sure you can receive webhooks from Plaid's webhook IPs.
+Review Plaid's webhook best practices to ensure your webhook handling logic is robust to outages and traffic spikes.
+For all Item-based products, listen for the PENDING_DISCONNECT webhook and send the Item through update mode when receiving it.
+Error handling
+Sometimes, Plaid API calls may fail due to intermittent outages or connectivity errors at supported institutions. Implement retry logic or error handling as necessary for product API calls.
+Link in update mode
+Update mode is used to fix Items that have entered an error state (for example, because a user changed their password). If your application needs to access an Item repeatedly over a period of time, rather than just immediately after Link, implementing update mode logic is strongly recommended.
+Handle the ITEM_LOGIN_REQUIRED, PENDING_DISCONNECT, and PENDING_EXPIRATION Item errors or webhooks by launching update mode to ensure your users retain access to their Items. For more information, see Updating Items via Link.
+Listen for the NEW_ACCOUNTS_AVAILABLE webhook to learn when an Item has a new account associated with it. To request access to that account, launch Link in update mode.
+(Optional, Auth and Identity only) Implement Product Validations in update mode to prevent customers from accidentally revoking required permissions during the update mode flow.
+Storage & logging
+Log Plaid identifiers and IDs properly to enhance security, when contacting Support about a specific request or callback, and for finding specific entries in the Activity Log. For more information, see Dashboard logs and troubleshooting.
+Access tokens and Item IDs are the core identifiers that map your users to
+their financial institutions. Store them securely and associate them with
+users of your application. Make sure, however, that these identifiers are
+never exposed client-side. Keep in mind that one user can create multiple
+Items if they have accounts with multiple financial institutions.
+The same storage requirements apply to other identifiers used instead of access tokens by certain products, such as asset report tokens (used with Assets), payment profile tokens (used with Transfer), and user IDs (or user tokens for legacy integrations) used with Income.
+Ensure that the following identifiers are securely logged, as they will be needed when contacting Support about a specific request or callback.
+link_session_id: Included in the onExit, onEvent, and onSuccess callback of a Link integration.
+request_id: Included in all Plaid API responses.
+account_id: Included in all successful Plaid API responses that relate to a specific Item or account.
+item_id: Included in all successful Plaid API responses that relate to a specific Item.
+Item management
+Delete Items using /item/remove when they are no longer being used. For example, you may wish to allow users to remove linked Items through your app's account management interface, or you may want to delete Items when a user deletes their account with your service or becomes inactive, or if the Item has been in an error state for an extended period. Deleting unneeded Items is a security best practice and will also prevent you from being charged for these Items when using a subscription-based product such as Transactions.
+Multi-app use cases
+If you anticipate having multiple apps that use Plaid or having multiple teams at your company using it, consider creating a single shared backend service to handle functions such as logging and token storage in a consolidated place.
+Product-specific recommendations
+Auth
+If launching in the US, support the Automated Micro-deposits and Same-Day Micro-deposits flows for maximum institution coverage.
+If supporting the Instant Match, Automated Micro-deposits, or Same-Day Micro-deposits flows, make sure that the country codes parameter provided to /link/token/create for these flows includes only the US and no other countries.
+If supporting the Automated Micro-deposits flow, make sure to listen for Auth webhooks to know when the transaction is completed.
+Make sure you are not displaying account numbers in your app's UI, even if truncated or masked, to avoid user confusion when working with institutions that provide virtualized or temporary account numbers. Always use values from the mask field instead.
+Listen for the USER_ACCOUNT_REVOKED and USER_PERMISSION_REVOKED webhooks to be notified when a temporary account number has become invalidated. To avoid R04 errors, do not make a transfer using an account number, processor token, or Stripe bank account token that has been revoked. Instead, send the user through update mode to restore the Item; if update mode cannot be launched (which can occur for USER_PERMISSION_REVOKED), create a new Item instead. Then call the auth endpoint again to obtain a new account number or token.
+Listen for the AUTH: DEFAULT_UPDATE webhook to be notified when an Item's account or routing number has changed, then call /auth/get or /processor/auth/get again to refresh your information on file.
+Balance
+If you are using Balance with non-depository accounts, such as credit card or loan accounts, make sure to specify min_last_updated_datetime when calling /accounts/balance/get to ensure balance calls to Capital One can succeed.
+Identity
+Transactions
+If fetching historical Transactions data using /transactions/get or /transactions/sync, make sure your app implements pagination logic. For sample code, see the integration instructions or the API Reference for the endpoint.
+If you use /transactions/sync, make sure your app properly handles errors that occur during pagination by restarting the pagination loop. For more details, see TRANSACTIONS_SYNC_MUTATION_DURING_PAGINATION.
+Handle Transactions webhooks, see Handling Transaction webhooks.
+Investments
+Handle the HOLDINGS-type DEFAULT_UPDATE webhook if your app needs to keep holdings, values, and balances up-to-date.
+Handle the INVESTMENTS_TRANSACTIONS-type DEFAULT_UPDATE webhook if your app needs to keep Investments transactions up-to-date.
+Handle the INVESTMENTS_TRANSACTIONS-type HISTORICAL_UPDATE webhook to know when an Item's full investment transaction history is available, and call /investments/transactions/get again when it fires. For details, see Investments transactions initialization behavior.
+If fetching historical Investments transactions using /investments/transactions/get, make sure your app implements pagination logic. For sample code, see the /investments/transactions/get API Reference (pagination examples available in Python and Ruby code samples).
+Assets
+Handle the ASSETS-type PRODUCT_READY webhook to know when to call /asset_report/get.
+Handle the ASSETS-type ERROR webhook to gracefully handle errors from failures in /asset_report/create.
+Payment Initiation
+Handle the PAYMENT_STATUS_UPDATE webhook to keep updated on payment status information.
+Virtual Accounts
+Handle the WALLET_TRANSACTION_STATUS_UPDATE webhook to keep updated on transaction status information.
+Income
+Handle the INCOME-type USER_INCOME_VERIFICATION webhook to know when the verification is complete and endpoints that show income or employment related data are ready to be called. Existing integrations that have not migrated should continue handling the legacy INCOME_VERIFICATION webhook.
+Identity Verification
+Make sure to update your template IDs when moving to Production; the Sandbox and Production environments have different template IDs.
+If you've set any of your Acceptable Risk Levels to "high" in your Risk Rules in order to prevent checks from failing during testing, make sure to change them back to the levels you plan to use in Production.
+Implement logic for users to retry identity verification if they have failed.
+You can integrate this process directly using the /identity_verification/retry
+endpoint or from the Dashboard.
+If enabling Selfie Check, make sure that you are requesting the required camera permissions on mobile.
+When performing your matching logic, make sure to take into account that no_data is
+different from no_match. no_data means that the list issuer didn't supply data
+against which to match. no_match means that data was provided by the list issuer
+and it did not match the information provided by your customer.
+Monitor
+Make sure to implement logic for both onboarding (adding users to a program when they are created) and offboarding (moving users to a program with rescans disabled when they close their account).
+Ensure that the Monitor review queue is checked regularly. For more details, see Building a reviewer workflow and preparing for ongoing screening.
+Developer community
+GitHub
+YouTube
+Discord

@@ -1,0 +1,67 @@
+{
+  "sources": [
+    {
+      "app_id": 81,
+      "url": "https://docs.stripe.com/connect/oauth-reference",
+      "kind": "primary_docs",
+      "scope": "Stripe payments API and callable MCP; test/sandbox versus live payments; account and country prerequisites apply",
+      "environments": ["testing", "production"],
+      "attribution_basis": "Official Stripe developer documentation for Stripe Connect OAuth 2.0.",
+      "attribution_by": "task15-research-agent"
+    },
+    {
+      "app_id": 83,
+      "url": "https://raw.githubusercontent.com/binance/binance-spot-api-docs/master/README.md",
+      "kind": "official_repository",
+      "scope": "Binance global Spot API; public market data versus signed account/trading; Spot Testnet distinct from production and regional eligibility unresolved",
+      "environments": ["testing", "production"],
+      "attribution_basis": "Official Binance Spot API documentation repository on GitHub.",
+      "attribution_by": "task15-research-agent"
+    },
+    {
+      "app_id": 86,
+      "url": "https://raw.githubusercontent.com/intuit/quickbooks-online-mcp-server/main/README.md",
+      "kind": "official_repository",
+      "scope": "QuickBooks Online Accounting API; developer sandbox versus production app and company; not Desktop",
+      "environments": ["testing", "production"],
+      "attribution_basis": "Official Intuit GitHub repository for QuickBooks Online MCP server.",
+      "attribution_by": "task15-research-agent"
+    },
+    {
+      "app_id": 87,
+      "url": "https://raw.githubusercontent.com/XeroAPI/xero-mcp-server/main/README.md",
+      "kind": "official_repository",
+      "scope": "Xero Accounting API commercial apps and official MCP; demo organisation versus real organisations; Custom Connections separately scoped",
+      "environments": ["testing", "production"],
+      "attribution_basis": "Official XeroAPI GitHub repository for Xero MCP server.",
+      "attribution_by": "task15-research-agent"
+    },
+    {
+      "app_id": 87,
+      "url": "https://raw.githubusercontent.com/XeroAPI/Xero-OpenAPI/master/README.md",
+      "kind": "official_repository",
+      "scope": "Xero Accounting API commercial apps and official MCP; demo organisation versus real organisations; Custom Connections separately scoped",
+      "environments": ["testing", "production"],
+      "attribution_basis": "Official XeroAPI GitHub repository for Xero OpenAPI specifications.",
+      "attribution_by": "task15-research-agent"
+    },
+    {
+      "app_id": 89,
+      "url": "https://docs.ramp.com/llms.txt",
+      "kind": "primary_docs",
+      "scope": "Ramp Developer API and callable MCP; sandbox versus production business; own-account versus partner integrations",
+      "environments": ["testing", "production"],
+      "attribution_basis": "Official Ramp developer documentation llms.txt index.",
+      "attribution_by": "task15-research-agent"
+    },
+    {
+      "app_id": 89,
+      "url": "https://docs.ramp.com/llms-api.txt",
+      "kind": "primary_docs",
+      "scope": "Ramp Developer API and callable MCP; sandbox versus production business; own-account versus partner integrations",
+      "environments": ["testing", "production"],
+      "attribution_basis": "Official Ramp developer documentation API index.",
+      "attribution_by": "task15-research-agent"
+    }
+  ]
+}

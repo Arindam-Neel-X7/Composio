@@ -1,0 +1,592 @@
+Make API calls using OAuth | Klaviyo DevelopersSkip to content
+This page is available as Markdown at https://developers.klaviyo.com/en/docs/set_up_oauth.md. An index of every page is at https://developers.klaviyo.com/llms.txt.
+Developers
+Home
+Guides
+API Reference
+Agents
+Search the docs
+v2026-10-15
+v2026-10-15Latest
+v2026-07-15
+v2026-04-15
+v2026-01-15
+v2025-10-15
+v2025-07-15
+v2025-04-15
+v2025-01-15
+Changelog
+Help Center
+Community
+Guides
+Partner resources
+Build your app
+Implement OAuth
+Make API calls using OAuth
+Make API calls using OAuth
+Copy as Markdown
+View as MarkdownOpen this page as plain Markdown
+Open in Claude↗(opens in a new tab)
+Open in ChatGPT↗(opens in a new tab)Ask ChatGPT about this page
+Open in Cursor↗(opens in a new tab)Ask Cursor about this page
+Learn how to set up OAuth for your Klaviyo integration.
+On March 31, 2025, Klaviyo started blocking all OAuth token traffic (oauth/token and oauth/revoke) routed through www.klaviyo.com. Ensure that your integration routes token traffic to https://a.klaviyo.com/oauth/token or https://a.klaviyo.com/oauth/revoke to avoid breakages.
+Before you begin
+Before you can initiate an OAuth connection, you need to create an app in Klaviyo. If each user should install and authorize your app separately, see Build a user-scoped app before you create it.
+Note that only owner, admin, and manager roles can create OAuth apps in Klaviyo. Learn more about user management and privileges.
+Set up OAuth with an AI agent
+Do this with an AI agentAdd Klaviyo OAuth to this app
+Copy prompt
+Show the prompt
+Add Klaviyo's OAuth authorization code flow, with PKCE, to this app, so it can call the Klaviyo API on behalf of the accounts that install it.
+First read https://developers.klaviyo.com/en/docs/set_up_oauth.md.
+Ask me for these before you change anything, unless I've already given them:
+- The app's client ID, from the app's page in Klaviyo, and the name of the environment variable that holds its client secret. Don't ask me to paste the secret here. If I haven't created the app yet, stop and point me to https://developers.klaviyo.com/en/docs/create_a_public_oauth_app; that step is done in Klaviyo.
+- The redirect URL the app uses, which must also be listed on the app in Klaviyo.
+- The scopes the app needs (for example, `accounts:read profiles:read`).
+Then build, following this app's language, framework and conventions:
+1. An install route that creates a PKCE code verifier and an S256 code challenge, stores the verifier with a unique `state`, and redirects to https://www.klaviyo.com/oauth/authorize with `response_type=code`, the client ID, redirect URL, scopes, `state`, `code_challenge_method=S256` and the code challenge.
+2. A callback route that checks `state`, handles a denied authorization, and exchanges the `code` (with the stored verifier) for tokens at https://a.klaviyo.com/oauth/token, using `Authorization: Basic <base64 of client_id:client_secret>`. Never send token requests to www.klaviyo.com.
+3. Storage for each account's access and refresh tokens, and a refresh with `grant_type=refresh_token` when the access token expires. Handle an `invalid_grant` error by asking the account to install the app again.
+4. API calls that send `Authorization: Bearer <access token>` and a `revision` header.
+Keep the client secret and tokens out of source control and logs: read the secret from the environment. When you're done, tell me what you added and how to try the flow end to end.
+You will learn
+After following this guide, you will successfully make authorized API calls with OAuth. You will:
+Learn about the OAuth authorization code flow.
+Construct your app's installation URL.
+Request authorization.
+Retrieve access and refresh tokens.
+Test OAuth in Postman.
+Refer to the OAuth endpoints table at the end of this guide for a quick overview of each endpoint, including descriptions and links to more details.
+You can also learn about how to set up OAuth for your app with our official Build an OAuth app with Klaviyo course.
+This guide includes code snippets from a Python example shared on our Github. You can also view our JavaScript example.
+OAuth authorization code flow
+Your app must use OAuth in order to be considered for Klaviyo’s App Marketplace.
+When a Klaviyo user installs your integration, they grant your app permission to use Klaviyo’s APIs on their behalf. You will be able to authenticate these APIs using access tokens. These access tokens come from integration with Klaviyo’s authorization code flow (shown below).
+Construct your app's installation URL
+The installation URL initiates the OAuth authorization flow for the account. This is where users will be directed to begin the installation process of your app after they click Install on your app’s listing page.
+When a user installs your app, the list of permissions they’ll see will look like this:
+Redirect the user to the authorization flow by constructing the following URL:
+https://www.klaviyo.com/oauth/authorize?response_type=code&client_id={client_id}&redirect_uri={redirect_uri}&scope={scopes}&state={state}&code_challenge_method=S256&code_challenge={code_challenge}
+The URL contains the following required parameters:
+Query parameter
+Description
+response_type
+Set to code. Represents the authorization code provided to retrieve the access token.
+client_id
+The client ID of your app.
+redirect_uri
+The user is redirected here after the authorization page. This must exactly match a URL that has been entered in the allowlist for your integration at https://www.klaviyo.com/manage-apps. Note that your OAuth app must be able to support installation from both klaviyo.com and any subdomain of klaviyo.com.
+scope
+A space-separated list of scopes corresponding to the list of permissions that the user will be shown when they are authorizing the app. Example: scope=lists:write campaigns:write metrics:read.
+state
+Klaviyo returns whatever value you pass here as a query parameter in the redirect URI. Since PKCE protects against cross-site requests, you may use this field to store any value you want to track across the authorization request. We outline how this can be used for PKCE below.
+code_challenge_method
+Set to S256.
+code_challenge
+Cryptographically random string generated by the client. This allows Klaviyo to validate that the client exchanging the authorization code is the same client that requested it and that the authorization code has not been stolen and injected into a different session.
+Add your redirect URI and scopes to your app’s settings in Klaviyo.
+You must use the least permissive scope set possible in compliance with our app listing requirements. If your app requests more scope permissions than necessary, it will be rejected.
+Your app does not have to be listed to share and use your installation URL with customers. Once you've set up OAuth for your app, share the installation URL you created to invite customers to install and start using your app. Doing so will help you meet our requirement of 5 active installs if you plan to submit your app to Klaviyo's App Marketplace.
+Generate the code challenge and code verifier
+Klaviyo requires PCKE for safely storing credentials for both public and confidential client types. PKCE consists of a code_verifierand code_challenge .
+code_verifier
+code_challenge
+A high-entropy cryptographic random string with a length between 43 and 128 characters. Can contain letters, digits, underscores, periods, hyphens, or tildes. This should be unique for every authorization request.
+The code verifier SHA-256 encoded
+Below are examples showing how to create the code_challenge and code_verifier:
+pythonCopy
+def generate_code_challenge():
+verifier_bytes = os.urandom(32)
+code_verifier = base64.urlsafe_b64encode(verifier_bytes).rstrip(b'=').decode('utf-8')
+challenge_bytes = hashlib.sha256(code_verifier.encode()).digest()
+code_challenge = base64.urlsafe_b64encode(challenge_bytes).rstrip(b'=').decode('utf-8')
+return code_verifier, code_challenge
+javascriptCopy
+let crypto;
+// use node:crypto if your version of node supports it
+try {
+crypto = require('node:crypto');
+} catch (error) {
+crypto = require('crypto');
+}
+function generateCodes() {
+const base64URLEncode = (str) => {
+return str.toString('base64')
+.replace(/\+/g, '-')
+.replace(/\//g, '_')
+.replace(/=/g, '');
+}
+const verifier = base64URLEncode(crypto.randomBytes(32));
+const sha256 = (buffer) => {
+return crypto.createHash('sha256').update(buffer).digest();
+}
+const challenge = base64URLEncode(sha256(verifier));
+return {
+codeVerifier: verifier,
+codeChallenge: challenge
+}
+}
+PHPCopy
+$verifier_bytes = random_bytes(32);
+$code_verifier = rtrim(strtr(base64_encode($verifier_bytes), '+/', '-_'), '=');
+$challenge_bytes = hash('sha256', $code_verifier, true);
+$code_challenge = rtrim(strtr(base64_encode($challenge_bytes), '+/', '-_'), '=');
+You are required to generate a new code_challenge and code_verifier pair for your installation URL for every unique authorization request.
+Store PKCE values across authorization requests
+When the user authorizes the app, the user is redirected to your redirect_uri with the returned authorization code (see Request authorization); you will exchange this code for an access token which will allow you to authenticate APIs on the user's behalf.
+In your authorization request, you will also need to pass the code_verifier so that we can check it against the code_challenge in your authorization request. To accomplish this, you will need some way to know which code_verifier to send alongside the code you are exchanging. To accomplish this:
+Store your code_verifier in a data store (database or cache) along with a unique customer identifier.
+Pass the unique customer identifier as state in your authorization request. After the user has authorized your app, state is returned alongside the authorization code.
+When you are exchanging your code for an access token, pass in the code_verifier corresponding to the code. Then, use the state that was passed alongside the code to look up the code_verifier corresponding to the customer identifier in your data store.
+The authorize() method below generates the code_verifier and uses state to store the code_verifier as a customer identifier (see our full Python example code):
+pythonCopy
+pkce_data_store = {}
+KLAVIYO_AUTHORIZATION_URL = "https://www.klaviyo.com/oauth/authorize"
+@app.route('/oauth/klaviyo/authorize')
+def authorize():
+code_verifier, code_challenge = generate_code_challenge()
+# Store code_verifier in datastore for later use
+pkce_data_store.update({customer_id: code_verifier})
+# Construct the authorization url
+# Note how we pass in the customer_id as the state param so that we can look up the code_verifier in callback
+auth_url = (f"{KLAVIYO_AUTHORIZATION_URL}?response_type=code&client_id={client_id}"
+f"&redirect_uri={redirect_uri}&scope={scope}&code_challenge_method=S256"
+f"&code_challenge={code_challenge}&state={customer_id}")
+# Redirect them to Klaviyo so that they can authorize your app
+return redirect(auth_url)
+Example installation URL
+Now that you are familiar with the required parameters, is an example of an installation URL, complete with PKCE values:
+Installation URLCopy
+https://www.klaviyo.com/oauth/authorize?response_type=code&client_id=client_id&redirect_uri=https://your-website.com/oauth/klaviyo/callback&scope=lists:write campaigns:write metrics:read&state=customer_id&code_challenge_method=S256&code_challenge=WZRHGrsBESr8wYFZ9sx0tPURuZgG2lmzyvWpwXPKz8U
+Request authorization
+When the user is directed to your app's installation URL, they will be prompted to provide permissions necessary for using the app.
+Handle your app’s OAuth flow
+Note that if the user is not logged into your app, they should be prompted to login. Once logged in, your app’s OAuth flow should redirect them to provide permissions needed for installation. As you develop your app, you should ensure that your app follows best practices, including handling OAuth flow properly for each possible user state.
+Authorization is allowed
+When the user selects allow, Klaviyo redirects to the redirect_uri provided in your installation URL. Klaviyo will pass the following query parameters:
+Query parameter
+Description
+code
+The authorization code that you can exchange for an access token and refresh token in the next step.
+state
+Klaviyo returns whatever state you pass us in your authorization request.
+If there is an error, Klaviyo follows the OAuth spec which defines the possible error responses.
+The authorization code expires in 5 minutes. Once expired, your app should gracefully handle the installation error by providing an error message to the user indicating that the session is no longer valid.
+Authorization is denied
+When the user denies authorization to the app, Klaviyo will redirect to the same redirect_uri noted above. Klaviyo will pass the following query parameters. Use error and error_description to redirect users to your site with your own messaging.
+Query parameter
+Description
+error
+Klaviyo will return an error of access_denied
+error_description
+The message will state The+resource+owner+or+authorization+server+denied+the+request
+state
+Klaviyo returns whatever state you pass us in your authorization request.
+Users should be notified with a message confirming that they have denied the permissions needed to use your app, and if they want to install the app, they’ll need to go back and select Allow to approve them.
+Ensure your error messages for installation errors offer enough clarity to users and allows installation to be re-attempted after it is dismissed.
+Retrieve access tokens
+Once the user has authorized your integration and you have an authorization code, use a server-to-server request to exchange the code for an access token. The endpoint is https://a.klaviyo.com/oauth/token.
+The client secret is private and should never be in the browser; this is a security risk that can expose all of your customer’s data. Be sure to use a server-to-server request. If you didn’t save your client secret, you can generate a new one for the client via the UI and add it to your app environment settings now.
+Structure your request with the request headers and body shown below:
+Request headers
+Value
+Authorization
+(Required) Base 64 encoded string that contains the client ID and client secret key. The field must have the format: Authorization: Basic <base64 encoded client_id:client_secret>
+Content-Type
+(Required) Set to application/x-www-form-urlencoded.
+Your request body must be in this format, not in some other format like JSON, which can result in difficult to debug errors.
+Request body
+Value
+grant_type
+Must be authorization_code.
+code
+The authorization code that is the query parameter in the request to the redirect URL (see Authorization is allowed).
+code_verifier
+This is the plain-text random string you used to generate the code_challenge in your authorization request. Klaviyo hashes this value to check that it matches the code_challenge you sent in the authorization request that created this code.
+redirect_uri
+This must be the same redirect_uri that you used in the authorization request to acquire this code. If there is a mismatch, this request will fail.
+The example callback() method below fetches the authorization code from the returned query parameter to exchange it for an access token.
+pythonCopy
+KLAVIYO_TOKEN_URL = "https://a.klaviyo.com/oauth/token"
+@app.route('/oauth/klaviyo/callback')
+def callback():
+# Get the auth code from the query param
+authorization_code = request.args.get('code')
+# Retrieve code_verifier from session or database
+code_verifier = pkce_data_store.get(customer_id)
+# Exchange code for token
+headers = {
+'Authorization': get_basic_authorization_header(),
+'Content-Type': 'application/x-www-form-urlencoded'
+}
+data = {
+'grant_type': 'authorization_code',
+'code': authorization_code,
+'code_verifier': code_verifier,
+'redirect_uri': redirect_uri
+}
+response = requests.post(KLAVIYO_TOKEN_URL, headers=headers, data=data)
+# Store the token info in your datastore
+token_data_store.update({customer_id: response.json()})
+make_api_call_with_refresh()
+return '<pre>' + json.dumps(response.json(), indent=4) + '</pre>'
+Access token considerations
+For company-scoped apps, access tokens and refresh tokens grant access to a Klaviyo account. For user-scoped apps, they grant access as the user who authorized the app, limited to what that user's role allows.
+Access tokens may be up to 4,096 characters long and refresh tokens may be 512 characters long. Please plan accordingly when storing them.
+Access tokens are valid for 1 hour (this is subject to change). Rely on the expires_in returned by /token.
+Safely store and reuse access tokens throughout their lifetime to improve the efficiency and performance of your integration.
+Use the received access token
+If your previous request is successful, you’ll receive the following response:
+Key
+Value type
+Value description
+access_token
+string
+An access token that can be used in the Authorization header for calling the API in place of an API key.
+token_type
+string
+How the access token may be used: always bearer.
+expires_in
+int
+The time period (in seconds) for which the access token is valid.
+refresh_token
+string
+This token can be used to request a new access token and refresh token.
+scope
+string
+The scopes that this access token has access to for accessing API resources.
+If unsuccessful, the possible error codes follow the OAuth spec.
+Once you have successfully received an access token and refresh token, use the access token to authenticate to our APIs. Here is a template curl request:
+curlCopy
+curl --request GET \
+--url https://a.klaviyo.com/api/{endpoint}/ \
+--header 'Authorization: Bearer {access_token}' \
+--header 'accept: application/json' \
+--header 'revision: {revision-header}'
+Note that this request is the same as authenticating with a private key to Klaviyo’s APIs, but with a different value for the authorization header. See information for private key authentication.
+Safely store and reuse access tokens
+Access tokens are designed to be reused for their entire lifetime (expires_in). Safely storing and reusing these tokens improves the efficiency and performance of your integration by avoiding unnecessary calls to the token endpoint, which can otherwise become a bottleneck.
+Reusing tokens helps your integration take full advantage of the higher rate limits on the API endpoints you're calling, while also avoiding increased latency. If your integration requests a new token before every API call, you'll be limited by the much lower rate limit of the oauth/token endpoint, instead of benefitting from the higher rate limits of the Klaviyo APIs you're accessing.
+Depending on your infrastructure, tokens can be stored in-memory, in a database, or in a key-value store like Redis or DynamoDB. To protect this sensitive information, your datastore must not be publicly accessible and supports encryption both at rest and in transit.
+Request refresh tokens
+When your access token expires, you can get a new access token by making a POST request. It is the same as your request exchanging an authorization code (https://a.klaviyo.com/oauth/token), but the body is a refresh token instead.
+This is the 401 error you will receive when the access token is expired:
+ErrorCopy
+{
+"errors": [
+{
+"id": "653528d5-ad97-40ed-bf14-9494d4fcddc3",
+"status": 401,
+"code": "authentication_failed",
+"title": "Incorrect authentication credentials.",
+"detail": "Incorrect authentication credentials.",
+"source": {
+"pointer": "/data/"
+}
+}
+]
+}
+Use the following request headers and body to structure your request:
+Request headers
+Value
+Authorization
+(Required) Base 64 encoded string that contains the client ID and client secret key. The field must have the format: Authorization: Basic <base64 encoded client_id:client_secret>
+Content-Type
+(Required) Set to application/x-www-form-urlencoded.
+Request body
+Value
+grant_type
+Set to refresh_token.
+refresh_token
+A valid refresh token.
+The example refresh_access_token() method below handles requesting refresh tokens:
+pythonCopy
+KLAVIYO_TOKEN_URL = "https://a.klaviyo.com/oauth/token"
+def refresh_access_token():
+customer_id = '1234' # Retrieve this as needed
+token_data = token_data_store.get(customer_id)
+refresh_token = token_data.get('refresh_token')
+headers = {
+'Authorization': get_basic_authorization_header(),
+'Content-Type': 'application/x-www-form-urlencoded'
+}
+data = {
+'grant_type': 'refresh_token',
+'refresh_token': refresh_token
+}
+response = requests.post(KLAVIYO_TOKEN_URL, headers=headers, data=data)
+print('<pre>' + json.dumps(response.json(), indent=4) + '</pre>')
+if response.status_code == 200:
+# Update the stored token info
+token_data_store.update({customer_id: response.json()})
+if response.status_code == 400 and response.json().get('error') == 'invalid_grant':
+# 1. Disconnect the integration on your end since the customer will need to re-authorize
+# 2. (Optional) Trigger a win back email to the customer
+pass
+Refresh token considerations
+A refresh token is issued when the app is authorized. This refresh token will remain valid until the app is uninstalled by the user.
+Caveat: If a refresh token is not used after 90 days, it is revoked. This is to clean up unused integrations.
+Every time the refresh token is called, a new access token is issued, but the previous access token is not revoked. The access token remains valid until it expires or the user uninstalls the app. Access tokens can't be revoked via /oauth/revoke.
+Refresh token can only be called 10 times per minute maximum. Existing access tokens will not be revoked, but no new access token will be provided until the time window passes.
+For a complete list of OAuth errors including refresh token errors and troubleshooting tips to resolve them, consult our OAuth troubleshooting guide.
+Invalid grant error
+If you make a refresh token request to /oauth/token and receive a 400 response with {"error":"invalid_grant"} in the response body, that means your refresh token is invalid. This could be due to several reasons, including:
+The customer uninstalled your app in Klaviyo,
+The token expired after 90 days of no-use
+The token has been revoked by Klaviyo's internal systems for security reasons
+The token is incorrect.
+You can treat all invalid_grant responses, regardless of the error_description, like the application has been uninstalled by the user. Learn about revoking refresh tokens below.
+Revoke refresh tokens
+To protect the security of your customers, make an API call to revoke the refresh token for the user (https://a.klaviyo.com/oauth/revoke). This should be done when a user uninstalls your app from your platform.
+The revoke endpoint only accepts refresh tokens. Revoking a refresh token revokes the install, so access tokens issued to it stop working within a few minutes, even before they expire.
+Structure your request with the request headers and body shown below:
+Request headers
+Value
+Authorization
+(Required) Base 64 encoded string that contains the client ID and client secret key. The field must have the format: Authorization: Basic <base64 encoded client_id:client_secret>
+Content-Type
+(Required) Set to application/x-www-form-urlencoded.
+Your request body must be in this format, not in some other format like JSON, which can result in difficult to debug errors.
+Request body
+Value
+token_type_hint
+(Optional) Set to refresh_token.
+token
+The refresh token to be revoked.
+The example revoke_refresh_token() method below calls the revoke endpoint to remove a refresh token:
+pythonCopy
+def revoke_refresh_token():
+url = "https://a.klaviyo.com/oauth/revoke"
+headers = {
+"Authorization": get_basic_authorization_header(),
+"Content-Type": "application/x-www-form-urlencoded"
+}
+data = {
+"token_type_hint": "refresh_token",
+"token": refresh_token
+}
+response = requests.post(url, headers=headers, data=data)
+After the refresh token is revoked for an account, the app should be removed from the account’s integration page in Klaviyo, and the user can re-install it if they wish.
+Learn about how to set up your app’s uninstallation flow and other flows applicable to your app in our guide on handling your app’s OAuth flow.
+Test OAuth in Postman
+To test OAuth in Postman, download our latest Postman collection and follow the steps below:
+In Klaviyo, navigate to the Manage apps page and click Edit on your listed OAuth app (three dots menu).
+Your app must have events:read and events:write scopes. Copy the client ID and client secret.
+Add Postman's callback URL (https://oauth.pstmn.io/v1/callback) to your redirect URLs.
+In Postman, import the Postman collection and navigate to the topmost tab of the collection. Under Authentication, add your OAuth client ID and client secret.
+Enter the Callback URL that was previously added to your redirect URLs (step 3) as a redirect URI to your OAuth client.
+Click Get New Access Token. Use the returned token to make an API call from the Events API.
+OAuth endpoints
+The table below provides an overview of each OAuth endpoint, including a brief description and its URL. Click on the links in the description to see related details in the documentation.
+Endpoint
+Description
+Endpoint URL
+GET /oauth/authorize
+Obtain authorization from the user in Klaviyo
+https://www.klaviyo.com/oauth/authorize
+POST /oauth/token
+Retrieve or refresh access tokens
+https://a.klaviyo.com/oauth/token
+POST /oauth/revoke
+Revoke refresh tokens
+https://a.klaviyo.com/oauth/revoke
+On March 31, 2025, Klaviyo started blocking all OAuth token traffic routed through www.klaviyo.com. Route calls to oauth/token and oauth/revoke through a.klaviyo.com to avoid breakages.
+Next steps
+For troubleshooting tips and a glossary of errors, consult our OAuth troubleshooting tips guide. Once your app has successfully configured OAuth, follow our Pass your app review and Submit your app for review guides to get your app in Klaviyo's App Marketplace.
+Additional resources
+Pass your app review
+Submit your app for review
+Troubleshoot OAuth errors
+Last updated 2026-11-18
+Guides
+Changelog
+Changelog
+API versioning and deprecation policy
+Get started
+Get started with Klaviyo
+Create a test account
+Install a library
+Authenticate API requests
+Make a test API request
+Rate limits, status codes, and errors
+Set up your AI agent
+Klaviyo API essentials
+Klaviyo's data model
+Klaviyo's architecture
+JSON:API feature guides
+Relationships
+Filtering
+Sorting
+Datetimes
+Sparse fieldsets
+Developer SDKS & tools
+Web and Mobile SDKs
+Developer tools
+Generate sample data
+Monitor API usage
+Review API error alerts
+Use Klaviyo's Postman collections
+Klaviyo CLI
+Create an allowlist for your public API key
+Glossary index
+Klaviyo MCP server
+Available tools
+Connect to the MCP server
+Klaviyo Stripe Projects Agent Context
+Klaviyo text messaging (SMS)
+Partner resources
+Join the Klaviyo ecosystem
+How your customers can use integrated data in Klaviyo
+Build your app
+Implement OAuth
+Create a public OAuth app
+Make API calls using OAuth
+Handle your app's OAuth flow
+Troubleshoot OAuth errors
+Update your OAuth scopes
+Build a user-scoped app
+Branding for app metrics
+Submit flow templates for your app
+Get performance data for flows triggered by your app metrics
+Submit Customer Hub content block templates for your app
+Submit, publish, and manage your app
+Prepare your app
+Klaviyo app listing requirements
+Create help docs for your integration
+Pass your app review
+Submit your app for review
+Create promotional material for your integration
+Monitor your app
+Manage your app
+Migrate to OAuth from private key authentication
+Application objects for app partners
+Integrate with Klaviyo
+Integrations by use case
+Integrate an ecommerce platform without a pre-built Klaviyo integration
+Integrate a subscription ecommerce platform
+Integrate a business with brick-and-mortar locations
+Integrate a ticket-based or registration-based platform
+Integrate a content-based platform
+Integrate with a Shopify Hydrogen store
+Integrate with a BigCommerce Catalyst store
+Integrate a direct mail platform
+Integrate a food and beverage platform
+Integrate a forms and popups platform
+Integrate a helpdesk platform
+Integrate a hotel and travel platform
+Integrate a loyalty platform
+Integrate a phone platform
+Integrate a quiz and survey platform
+Integrate a reviews platform
+Integrate a search and merchandising platform
+Integrate a shipping platform
+Integrate a wellness platform
+Integrate an ad platform
+Integrate an analytics and reporting platform
+Integrate an onsite personalization platform
+Custom integration FAQs
+Build with Klaviyo
+Use data in Klaviyo
+Set up SFTP data transfer with Klaviyo
+Importing data
+Bulk Import Profiles API
+Import profile and event data with SFTP
+Exporting data
+Export data from Klaviyo
+Use the Query Metric Aggregates endpoint
+Supported attributes
+Export event data with SFTP
+Track events & identify profiles
+Introduction to the klaviyo object
+JavaScript API for identification and tracking
+Set up API-based transactional emails
+Set up API-based website activity events
+Track API metrics with JavaScript
+Update profile identifiers via API
+Acceptable date and timestamp formats for profile and event properties
+Collect and sync consent
+Collect email and SMS consent via API
+Custom catalogs and Back in stock
+Sync a custom catalog feed to Klaviyo
+Enable back in stock for custom catalog feeds
+Set up back in stock via API
+Manage coupons with the Coupons API
+Get started with the Conversations API
+Personalize messages
+Flow webhooks
+How to add a webhook action to a flow
+Understanding webhook status codes
+Add a custom action to a flow
+System webhooks
+Working with system webhooks
+Django for message design
+Message design overview
+Use filters to customize variables
+Use conditionals in messages
+Django filter glossary
+Use custom catalog data in emails
+Send AMP emails in Klaviyo
+Forms
+Custom trigger a popup or flyout form
+Track Klaviyo form activity using JavaScript
+Reviews widget customization
+Use advanced CSS to style Klaviyo Reviews widgets
+Klaviyo Reviews CSS class reference
+On this page
+Before you begin
+Set up OAuth with an AI agent
+You will learn
+OAuth authorization code flow
+Construct your app's installation URL
+Generate the code challenge and code verifier
+Store PKCE values across authorization requests
+Example installation URL
+Request authorization
+Handle your app’s OAuth flow
+Authorization is allowed
+Authorization is denied
+Retrieve access tokens
+Access token considerations
+Use the received access token
+Safely store and reuse access tokens
+Request refresh tokens
+Refresh token considerations
+Invalid grant error
+Revoke refresh tokens
+Test OAuth in Postman
+OAuth endpoints
+Next steps
+Additional resources
+Power smarter digital relationships
+Sign up for our developer newsletter
+Get the latest API updates, product announcements, developer tool updates, and more sent right to your inbox.
+By entering your information and clicking “Sign up,” you consent to receive marketing emails (such as newsletters, blog posts, webinars, event invitations and new product updates) from Klaviyo from time to time. You can unsubscribe at any time by clicking on the “Unsubscribe” link at the bottom of our emails. For more information on how we process your personal information and what rights you have in this respect, please see our Privacy Policy.
+API docs
+API overview
+Events
+Profiles
+Lists
+Metrics
+Flows
+Resources
+Developer forum (opens in a new tab)
+Changelog
+SDK overview
+Help center (opens in a new tab)
+Contact us (opens in a new tab)
+About Klaviyo (opens in a new tab)
+Privacy Policy (opens in a new tab)
+Guides
+Get started
+Install SDKs
+Set up your AI agent
+For agents
+llms.txt
+llms-full.txt
+OpenAPI spec
+MCP server
+Agent skills
+Terms and Privacy (opens in a new tab)
+Trademarks (opens in a new tab)
+Security (opens in a new tab)

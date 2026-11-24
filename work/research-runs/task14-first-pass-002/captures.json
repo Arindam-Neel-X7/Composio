@@ -1,0 +1,990 @@
+[
+  {
+    "spec": {
+      "app_id": 71,
+      "url": "https://developers.notion.com/reference/intro",
+      "kind": "primary_docs",
+      "scope": "Notion hosted workspace REST API and official hosted MCP; internal connection and public OAuth integration paths; API version as documented, no dedicated sandbox assumed",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Researcher selected vendor-controlled developer or support documentation; attribution requires independent review",
+      "attribution_by": "task14-codex-research-worker"
+    },
+    "captured_on": "2026-11-23",
+    "capture_method": "http_content",
+    "snapshot_ref": "snapshots/4c9e5862133a8b12750d3e3426ddcfcca8c6ad5591666ea567131b913f478533.txt",
+    "content_sha256": "4c9e5862133a8b12750d3e3426ddcfcca8c6ad5591666ea567131b913f478533",
+    "line_count": 99
+  },
+  {
+    "spec": {
+      "app_id": 71,
+      "url": "https://developers.notion.com/docs/authorization",
+      "kind": "primary_docs",
+      "scope": "Notion hosted workspace REST API and official hosted MCP; internal connection and public OAuth integration paths; API version as documented, no dedicated sandbox assumed",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Researcher selected vendor-controlled developer or support documentation; attribution requires independent review",
+      "attribution_by": "task14-codex-research-worker"
+    },
+    "captured_on": "2026-11-23",
+    "capture_method": "http_content",
+    "snapshot_ref": "snapshots/f3bbd59e451a836a2c3bb3dde53596d825b508762980e9b770456feb449b6dcf.txt",
+    "content_sha256": "f3bbd59e451a836a2c3bb3dde53596d825b508762980e9b770456feb449b6dcf",
+    "line_count": 321
+  },
+  {
+    "spec": {
+      "app_id": 71,
+      "url": "https://developers.notion.com/docs/create-a-notion-integration",
+      "kind": "primary_docs",
+      "scope": "Notion hosted workspace REST API and official hosted MCP; internal connection and public OAuth integration paths; API version as documented, no dedicated sandbox assumed",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Researcher selected vendor-controlled developer or support documentation; attribution requires independent review",
+      "attribution_by": "task14-codex-research-worker"
+    },
+    "captured_on": "2026-11-23",
+    "capture_method": "http_content",
+    "snapshot_ref": "snapshots/330fdc8d0b8076feeea271778f2bccf7edec9de306e5e1ab9473a84def03c015.txt",
+    "content_sha256": "330fdc8d0b8076feeea271778f2bccf7edec9de306e5e1ab9473a84def03c015",
+    "line_count": 231
+  },
+  {
+    "spec": {
+      "app_id": 71,
+      "url": "https://developers.notion.com/docs/get-started-with-mcp",
+      "kind": "primary_docs",
+      "scope": "Notion hosted workspace REST API and official hosted MCP; internal connection and public OAuth integration paths; API version as documented, no dedicated sandbox assumed",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Researcher selected vendor-controlled developer or support documentation; attribution requires independent review",
+      "attribution_by": "task14-codex-research-worker"
+    },
+    "captured_on": "2026-11-23",
+    "capture_method": "http_content",
+    "snapshot_ref": "snapshots/7bc774048f31dfcd2c62d48ea4f8dd27ca40e380ad561b2dda572c8300d95c23.txt",
+    "content_sha256": "7bc774048f31dfcd2c62d48ea4f8dd27ca40e380ad561b2dda572c8300d95c23",
+    "line_count": 324
+  },
+  {
+    "spec": {
+      "app_id": 72,
+      "url": "https://airtable.com/developers/web/api/introduction",
+      "kind": "primary_docs",
+      "scope": "Airtable hosted Web API and official hosted MCP; personal access token and OAuth paths; account plan and base permissions apply, no dedicated sandbox assumed",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Researcher selected vendor-controlled developer or support documentation; attribution requires independent review",
+      "attribution_by": "task14-codex-research-worker"
+    },
+    "captured_on": "2026-11-23",
+    "capture_method": "http_content",
+    "snapshot_ref": "snapshots/1e151fb1452071c6215ecea195cff8044353335f4e39686e35339e70158867cc.txt",
+    "content_sha256": "1e151fb1452071c6215ecea195cff8044353335f4e39686e35339e70158867cc",
+    "line_count": 1
+  },
+  {
+    "spec": {
+      "app_id": 72,
+      "url": "https://support.airtable.com/docs/creating-personal-access-tokens",
+      "kind": "primary_docs",
+      "scope": "Airtable hosted Web API and official hosted MCP; personal access token and OAuth paths; account plan and base permissions apply, no dedicated sandbox assumed",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Researcher selected vendor-controlled developer or support documentation; attribution requires independent review",
+      "attribution_by": "task14-codex-research-worker"
+    },
+    "captured_on": "2026-11-23",
+    "capture_method": "http_content",
+    "snapshot_ref": "snapshots/165c00a74800ef9b25b3fa2f5a323d19dbbe06494bfb575ce20b7e137ddefc75.txt",
+    "content_sha256": "165c00a74800ef9b25b3fa2f5a323d19dbbe06494bfb575ce20b7e137ddefc75",
+    "line_count": 110
+  },
+  {
+    "spec": {
+      "app_id": 72,
+      "url": "https://support.airtable.com/docs/using-the-airtable-mcp-server",
+      "kind": "primary_docs",
+      "scope": "Airtable hosted Web API and official hosted MCP; personal access token and OAuth paths; account plan and base permissions apply, no dedicated sandbox assumed",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Researcher selected vendor-controlled developer or support documentation; attribution requires independent review",
+      "attribution_by": "task14-codex-research-worker"
+    },
+    "captured_on": "2026-11-23",
+    "capture_method": "http_content",
+    "snapshot_ref": "snapshots/0bbce834601ade311ed29a1f874959cd7ad22d7b87765d0dbdd2e83bbafd1429.txt",
+    "content_sha256": "0bbce834601ade311ed29a1f874959cd7ad22d7b87765d0dbdd2e83bbafd1429",
+    "line_count": 136
+  },
+  {
+    "spec": {
+      "app_id": 72,
+      "url": "https://airtable.com/developers/web/api/oauth-reference",
+      "kind": "primary_docs",
+      "scope": "Airtable hosted Web API and official hosted MCP; personal access token and OAuth paths; account plan and base permissions apply, no dedicated sandbox assumed",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Researcher selected vendor-controlled developer or support documentation; attribution requires independent review",
+      "attribution_by": "task14-codex-research-worker"
+    },
+    "captured_on": "2026-11-23",
+    "capture_method": "http_content",
+    "snapshot_ref": "snapshots/1e151fb1452071c6215ecea195cff8044353335f4e39686e35339e70158867cc.txt",
+    "content_sha256": "1e151fb1452071c6215ecea195cff8044353335f4e39686e35339e70158867cc",
+    "line_count": 1
+  },
+  {
+    "spec": {
+      "app_id": 73,
+      "url": "https://linear.app/developers/graphql",
+      "kind": "primary_docs",
+      "scope": "Linear hosted GraphQL API and official hosted MCP; personal API key and OAuth paths; workspace permissions apply, no dedicated sandbox assumed",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Researcher selected vendor-controlled developer or support documentation; attribution requires independent review",
+      "attribution_by": "task14-codex-research-worker"
+    },
+    "captured_on": "2026-11-23",
+    "capture_method": "http_content",
+    "snapshot_ref": "snapshots/92e59a481ad28d6f7f32024245f1b8962c3f7f9b4d7b66913dffda1a879a178b.txt",
+    "content_sha256": "92e59a481ad28d6f7f32024245f1b8962c3f7f9b4d7b66913dffda1a879a178b",
+    "line_count": 386
+  },
+  {
+    "spec": {
+      "app_id": 73,
+      "url": "https://linear.app/developers/oauth-2-0-authentication",
+      "kind": "primary_docs",
+      "scope": "Linear hosted GraphQL API and official hosted MCP; personal API key and OAuth paths; workspace permissions apply, no dedicated sandbox assumed",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Researcher selected vendor-controlled developer or support documentation; attribution requires independent review",
+      "attribution_by": "task14-codex-research-worker"
+    },
+    "captured_on": "2026-11-23",
+    "capture_method": "http_content",
+    "snapshot_ref": "snapshots/a3110fa02a973c353d7a2f0e90653ae0548b95c26eb1425289f0b625841bd8f4.txt",
+    "content_sha256": "a3110fa02a973c353d7a2f0e90653ae0548b95c26eb1425289f0b625841bd8f4",
+    "line_count": 329
+  },
+  {
+    "spec": {
+      "app_id": 73,
+      "url": "https://linear.app/docs/mcp",
+      "kind": "primary_docs",
+      "scope": "Linear hosted GraphQL API and official hosted MCP; personal API key and OAuth paths; workspace permissions apply, no dedicated sandbox assumed",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Researcher selected vendor-controlled developer or support documentation; attribution requires independent review",
+      "attribution_by": "task14-codex-research-worker"
+    },
+    "captured_on": "2026-11-23",
+    "capture_method": "http_content",
+    "snapshot_ref": "snapshots/2d1b12c57f25d2a02a7a183dcef9c882031697b56a0d23ff16f0ee1e94fc64f7.txt",
+    "content_sha256": "2d1b12c57f25d2a02a7a183dcef9c882031697b56a0d23ff16f0ee1e94fc64f7",
+    "line_count": 313
+  },
+  {
+    "spec": {
+      "app_id": 73,
+      "url": "https://linear.app/docs/api-and-webhooks",
+      "kind": "primary_docs",
+      "scope": "Linear hosted GraphQL API and official hosted MCP; personal API key and OAuth paths; workspace permissions apply, no dedicated sandbox assumed",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Researcher selected vendor-controlled developer or support documentation; attribution requires independent review",
+      "attribution_by": "task14-codex-research-worker"
+    },
+    "captured_on": "2026-11-23",
+    "capture_method": "http_content",
+    "snapshot_ref": "snapshots/672a399c23a4d52933fcfe3639bd0eb3abb29b295895d476b5680bb61377aaa9.txt",
+    "content_sha256": "672a399c23a4d52933fcfe3639bd0eb3abb29b295895d476b5680bb61377aaa9",
+    "line_count": 100
+  },
+  {
+    "spec": {
+      "app_id": 74,
+      "url": "https://developer.atlassian.com/cloud/jira/platform/rest/v3/intro/",
+      "kind": "primary_docs",
+      "scope": "Jira Cloud platform REST API v3 and Atlassian remote MCP; account API token and OAuth 2.0 3LO paths; excludes Jira Data Center and Server",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Researcher selected vendor-controlled developer or support documentation; attribution requires independent review",
+      "attribution_by": "task14-codex-research-worker"
+    },
+    "captured_on": "2026-11-23",
+    "capture_method": "http_content",
+    "snapshot_ref": "snapshots/f2dd103421dca234c90b181bdc6838a66686f49922b95fa2853868407d7a28a5.txt",
+    "content_sha256": "f2dd103421dca234c90b181bdc6838a66686f49922b95fa2853868407d7a28a5",
+    "line_count": 390
+  },
+  {
+    "spec": {
+      "app_id": 74,
+      "url": "https://developer.atlassian.com/cloud/jira/platform/basic-auth-for-rest-apis/",
+      "kind": "primary_docs",
+      "scope": "Jira Cloud platform REST API v3 and Atlassian remote MCP; account API token and OAuth 2.0 3LO paths; excludes Jira Data Center and Server",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Researcher selected vendor-controlled developer or support documentation; attribution requires independent review",
+      "attribution_by": "task14-codex-research-worker"
+    },
+    "captured_on": "2026-11-23",
+    "capture_method": "http_content",
+    "snapshot_ref": "snapshots/81d2f9c8d4edf542ce963664604207d8dbed9a5563de6844b4258b302c7c5b0a.txt",
+    "content_sha256": "81d2f9c8d4edf542ce963664604207d8dbed9a5563de6844b4258b302c7c5b0a",
+    "line_count": 169
+  },
+  {
+    "spec": {
+      "app_id": 74,
+      "url": "https://developer.atlassian.com/cloud/jira/platform/oauth-2-3lo-apps/",
+      "kind": "primary_docs",
+      "scope": "Jira Cloud platform REST API v3 and Atlassian remote MCP; account API token and OAuth 2.0 3LO paths; excludes Jira Data Center and Server",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Researcher selected vendor-controlled developer or support documentation; attribution requires independent review",
+      "attribution_by": "task14-codex-research-worker"
+    },
+    "captured_on": "2026-11-23",
+    "capture_method": "http_content",
+    "snapshot_ref": "snapshots/9b0aa6addbc4c504c15b3a364f1656b2c33daffa68e46cf9c23e846265c40fab.txt",
+    "content_sha256": "9b0aa6addbc4c504c15b3a364f1656b2c33daffa68e46cf9c23e846265c40fab",
+    "line_count": 827
+  },
+  {
+    "spec": {
+      "app_id": 74,
+      "url": "https://atlassian.github.io/atlassian-mcp-server/",
+      "kind": "primary_docs",
+      "scope": "Jira Cloud platform REST API v3 and Atlassian remote MCP; account API token and OAuth 2.0 3LO paths; excludes Jira Data Center and Server",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Researcher selected vendor-controlled developer or support documentation; attribution requires independent review",
+      "attribution_by": "task14-codex-research-worker"
+    },
+    "captured_on": "2026-11-23",
+    "capture_method": "http_content",
+    "snapshot_ref": "snapshots/4992fb29649a51bcd34218ed52d12003aca2e25a3fa6c8cd96435879ca48aadc.txt",
+    "content_sha256": "4992fb29649a51bcd34218ed52d12003aca2e25a3fa6c8cd96435879ca48aadc",
+    "line_count": 325
+  },
+  {
+    "spec": {
+      "app_id": 74,
+      "url": "https://developer.atlassian.com/cloud/jira/platform/getting-started/",
+      "kind": "primary_docs",
+      "scope": "Jira Cloud platform REST API v3 and Atlassian remote MCP; account API token and OAuth 2.0 3LO paths; excludes Jira Data Center and Server",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Researcher selected vendor-controlled developer or support documentation; attribution requires independent review",
+      "attribution_by": "task14-codex-research-worker"
+    },
+    "captured_on": "2026-11-23",
+    "capture_method": "http_content",
+    "snapshot_ref": "snapshots/f856449aad7d416ceddca08f7e6cf5f6f78aba55d4b2701abbf926b475b83838.txt",
+    "content_sha256": "f856449aad7d416ceddca08f7e6cf5f6f78aba55d4b2701abbf926b475b83838",
+    "line_count": 321
+  },
+  {
+    "spec": {
+      "app_id": 75,
+      "url": "https://developers.asana.com/docs/overview",
+      "kind": "primary_docs",
+      "scope": "Asana hosted REST API and official Asana V2 MCP; personal access token and OAuth paths; requested developer sandbox distinct from live workspace; Command MCP excluded",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Researcher selected vendor-controlled developer or support documentation; attribution requires independent review",
+      "attribution_by": "task14-codex-research-worker"
+    },
+    "captured_on": "2026-11-23",
+    "capture_method": "http_content",
+    "snapshot_ref": "snapshots/8c00ca274e79c35b87ba0a33989b2936d42b7c46767415c8c2f2cf00f4b5c409.txt",
+    "content_sha256": "8c00ca274e79c35b87ba0a33989b2936d42b7c46767415c8c2f2cf00f4b5c409",
+    "line_count": 135
+  },
+  {
+    "spec": {
+      "app_id": 75,
+      "url": "https://developers.asana.com/docs/personal-access-token",
+      "kind": "primary_docs",
+      "scope": "Asana hosted REST API and official Asana V2 MCP; personal access token and OAuth paths; requested developer sandbox distinct from live workspace; Command MCP excluded",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Researcher selected vendor-controlled developer or support documentation; attribution requires independent review",
+      "attribution_by": "task14-codex-research-worker"
+    },
+    "captured_on": "2026-11-23",
+    "capture_method": "http_content",
+    "snapshot_ref": "snapshots/9e3258b6bf685b22cb529ba6e61ec96734ec2c88546094bb6eed9eac8c78baa2.txt",
+    "content_sha256": "9e3258b6bf685b22cb529ba6e61ec96734ec2c88546094bb6eed9eac8c78baa2",
+    "line_count": 129
+  },
+  {
+    "spec": {
+      "app_id": 75,
+      "url": "https://developers.asana.com/docs/oauth",
+      "kind": "primary_docs",
+      "scope": "Asana hosted REST API and official Asana V2 MCP; personal access token and OAuth paths; requested developer sandbox distinct from live workspace; Command MCP excluded",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Researcher selected vendor-controlled developer or support documentation; attribution requires independent review",
+      "attribution_by": "task14-codex-research-worker"
+    },
+    "captured_on": "2026-11-23",
+    "capture_method": "http_content",
+    "snapshot_ref": "snapshots/6936d3ac561d38a788a72f756455b06daf56619b5bf040742e33402393e60e12.txt",
+    "content_sha256": "6936d3ac561d38a788a72f756455b06daf56619b5bf040742e33402393e60e12",
+    "line_count": 416
+  },
+  {
+    "spec": {
+      "app_id": 75,
+      "url": "https://developers.asana.com/docs/developer-sandbox",
+      "kind": "primary_docs",
+      "scope": "Asana hosted REST API and official Asana V2 MCP; personal access token and OAuth paths; requested developer sandbox distinct from live workspace; Command MCP excluded",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Researcher selected vendor-controlled developer or support documentation; attribution requires independent review",
+      "attribution_by": "task14-codex-research-worker"
+    },
+    "captured_on": "2026-11-23",
+    "capture_method": "http_content",
+    "snapshot_ref": "snapshots/be0b8a858dc18931ee6521381c8d16a7bdd2e60308d5a5326aed8fd3b79e4fd2.txt",
+    "content_sha256": "be0b8a858dc18931ee6521381c8d16a7bdd2e60308d5a5326aed8fd3b79e4fd2",
+    "line_count": 107
+  },
+  {
+    "spec": {
+      "app_id": 75,
+      "url": "https://developers.asana.com/docs/integrating-with-asanas-mcp-server",
+      "kind": "primary_docs",
+      "scope": "Asana hosted REST API and official Asana V2 MCP; personal access token and OAuth paths; requested developer sandbox distinct from live workspace; Command MCP excluded",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Researcher selected vendor-controlled developer or support documentation; attribution requires independent review",
+      "attribution_by": "task14-codex-research-worker"
+    },
+    "captured_on": "2026-11-23",
+    "capture_method": "http_content",
+    "snapshot_ref": "snapshots/a511ba5eafd67daaeb543d404923fd371cd3a987f45d0a2ec8b815587fbd288a.txt",
+    "content_sha256": "a511ba5eafd67daaeb543d404923fd371cd3a987f45d0a2ec8b815587fbd288a",
+    "line_count": 225
+  },
+  {
+    "spec": {
+      "app_id": 75,
+      "url": "https://developers.asana.com/reference/gettasks",
+      "kind": "primary_docs",
+      "scope": "Asana hosted REST API and official Asana V2 MCP; personal access token and OAuth paths; requested developer sandbox distinct from live workspace; Command MCP excluded",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Researcher selected vendor-controlled developer or support documentation; attribution requires independent review",
+      "attribution_by": "task14-codex-research-worker"
+    },
+    "captured_on": "2026-11-23",
+    "capture_method": "http_content",
+    "snapshot_ref": "snapshots/fcdb0f3e004585eae16319cdf869f75bf0ea45989e74a03e1f8ce1684e7abf2d.txt",
+    "content_sha256": "fcdb0f3e004585eae16319cdf869f75bf0ea45989e74a03e1f8ce1684e7abf2d",
+    "line_count": 447
+  },
+  {
+    "spec": {
+      "app_id": 76,
+      "url": "https://developer.monday.com/api-reference/docs/introduction-to-graphql",
+      "kind": "primary_docs",
+      "scope": "monday.com hosted platform GraphQL API v2 and official hosted MCP; personal V2 token and OAuth paths; free developer sandbox distinct from production workspace",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Researcher selected vendor-controlled developer or support documentation; attribution requires independent review",
+      "attribution_by": "task14-codex-research-worker"
+    },
+    "captured_on": "2026-11-23",
+    "capture_method": "http_content",
+    "snapshot_ref": "snapshots/cf1acdf082579b70c8f95df66ec184ca4e39822163e139581902c86772fa8dce.txt",
+    "content_sha256": "cf1acdf082579b70c8f95df66ec184ca4e39822163e139581902c86772fa8dce",
+    "line_count": 352
+  },
+  {
+    "spec": {
+      "app_id": 76,
+      "url": "https://developer.monday.com/api-reference/docs/authentication",
+      "kind": "primary_docs",
+      "scope": "monday.com hosted platform GraphQL API v2 and official hosted MCP; personal V2 token and OAuth paths; free developer sandbox distinct from production workspace",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Researcher selected vendor-controlled developer or support documentation; attribution requires independent review",
+      "attribution_by": "task14-codex-research-worker"
+    },
+    "captured_on": "2026-11-23",
+    "capture_method": "http_content",
+    "snapshot_ref": "snapshots/fc1d3005014c9eb71be2f86b92e69101f9325d08f1928ed5c0f3fbad8d851146.txt",
+    "content_sha256": "fc1d3005014c9eb71be2f86b92e69101f9325d08f1928ed5c0f3fbad8d851146",
+    "line_count": 206
+  },
+  {
+    "spec": {
+      "app_id": 76,
+      "url": "https://developer.monday.com/api-reference/docs/developer-sandbox",
+      "kind": "primary_docs",
+      "scope": "monday.com hosted platform GraphQL API v2 and official hosted MCP; personal V2 token and OAuth paths; free developer sandbox distinct from production workspace",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Researcher selected vendor-controlled developer or support documentation; attribution requires independent review",
+      "attribution_by": "task14-codex-research-worker"
+    },
+    "captured_on": "2026-11-23",
+    "capture_method": "http_content",
+    "snapshot_ref": "snapshots/4287f57eb56fb09da22ab2a3cdd499548105df935c73c8b8b34a5e22663401ff.txt",
+    "content_sha256": "4287f57eb56fb09da22ab2a3cdd499548105df935c73c8b8b34a5e22663401ff",
+    "line_count": 209
+  },
+  {
+    "spec": {
+      "app_id": 76,
+      "url": "https://developer.monday.com/apps/docs/oauth",
+      "kind": "primary_docs",
+      "scope": "monday.com hosted platform GraphQL API v2 and official hosted MCP; personal V2 token and OAuth paths; free developer sandbox distinct from production workspace",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Researcher selected vendor-controlled developer or support documentation; attribution requires independent review",
+      "attribution_by": "task14-codex-research-worker"
+    },
+    "captured_on": "2026-11-23",
+    "capture_method": "http_content",
+    "snapshot_ref": "snapshots/1bebbd29223729f266851f0f1bb24e954acadc9e306b9054fcb039558ae9d656.txt",
+    "content_sha256": "1bebbd29223729f266851f0f1bb24e954acadc9e306b9054fcb039558ae9d656",
+    "line_count": 298
+  },
+  {
+    "spec": {
+      "app_id": 76,
+      "url": "https://developer.monday.com/api-reference/docs/mcp-api-token",
+      "kind": "primary_docs",
+      "scope": "monday.com hosted platform GraphQL API v2 and official hosted MCP; personal V2 token and OAuth paths; free developer sandbox distinct from production workspace",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Researcher selected vendor-controlled developer or support documentation; attribution requires independent review",
+      "attribution_by": "task14-codex-research-worker"
+    },
+    "captured_on": "2026-11-23",
+    "capture_method": "http_content",
+    "snapshot_ref": "snapshots/b5d8c667e1ef78a92c860b6e1c70581ca6384c71cda9720d147bbaa7a17d4bda.txt",
+    "content_sha256": "b5d8c667e1ef78a92c860b6e1c70581ca6384c71cda9720d147bbaa7a17d4bda",
+    "line_count": 193
+  },
+  {
+    "spec": {
+      "app_id": 76,
+      "url": "https://support.monday.com/hc/en-us/articles/28588158981266-Get-started-with-monday-MCP",
+      "kind": "primary_docs",
+      "scope": "monday.com hosted platform GraphQL API v2 and official hosted MCP; personal V2 token and OAuth paths; free developer sandbox distinct from production workspace",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Researcher selected vendor-controlled developer or support documentation; attribution requires independent review",
+      "attribution_by": "task14-codex-research-worker"
+    },
+    "captured_on": "2026-11-23",
+    "capture_method": "http_content",
+    "snapshot_ref": "snapshots/95efcc97f97ee7e961b1c6ca908a24108a1913b0fd96c387118a971d163abe0a.txt",
+    "content_sha256": "95efcc97f97ee7e961b1c6ca908a24108a1913b0fd96c387118a971d163abe0a",
+    "line_count": 290
+  },
+  {
+    "spec": {
+      "app_id": 77,
+      "url": "https://developer.clickup.com/docs/authentication",
+      "kind": "primary_docs",
+      "scope": "ClickUp hosted public API v2 and official hosted MCP; personal API token and OAuth paths; excludes ClickUp consuming third-party MCP servers",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Researcher selected vendor-controlled developer or support documentation; attribution requires independent review",
+      "attribution_by": "task14-codex-research-worker"
+    },
+    "captured_on": "2026-11-23",
+    "capture_method": "http_content",
+    "snapshot_ref": "snapshots/c30a87750da8349cdb200d8d976b909a024d45f521a12af54952ac2e4e444332.txt",
+    "content_sha256": "c30a87750da8349cdb200d8d976b909a024d45f521a12af54952ac2e4e444332",
+    "line_count": 133
+  },
+  {
+    "spec": {
+      "app_id": 77,
+      "url": "https://developer.clickup.com/docs/mcp-tools",
+      "kind": "primary_docs",
+      "scope": "ClickUp hosted public API v2 and official hosted MCP; personal API token and OAuth paths; excludes ClickUp consuming third-party MCP servers",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Researcher selected vendor-controlled developer or support documentation; attribution requires independent review",
+      "attribution_by": "task14-codex-research-worker"
+    },
+    "captured_on": "2026-11-23",
+    "capture_method": "http_content",
+    "snapshot_ref": "snapshots/5c8bb5c692ee15e51d30afc3d252c8590db9ece33cbd113d15763f423f93d8a9.txt",
+    "content_sha256": "5c8bb5c692ee15e51d30afc3d252c8590db9ece33cbd113d15763f423f93d8a9",
+    "line_count": 319
+  },
+  {
+    "spec": {
+      "app_id": 77,
+      "url": "https://developer.clickup.com/reference/gettasks",
+      "kind": "primary_docs",
+      "scope": "ClickUp hosted public API v2 and official hosted MCP; personal API token and OAuth paths; excludes ClickUp consuming third-party MCP servers",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Researcher selected vendor-controlled developer or support documentation; attribution requires independent review",
+      "attribution_by": "task14-codex-research-worker"
+    },
+    "captured_on": "2026-11-23",
+    "capture_method": "http_content",
+    "snapshot_ref": "snapshots/43efbb48895c86124301864bb19b0734d20b8eec89843e48232bab8b95509437.txt",
+    "content_sha256": "43efbb48895c86124301864bb19b0734d20b8eec89843e48232bab8b95509437",
+    "line_count": 361
+  },
+  {
+    "spec": {
+      "app_id": 78,
+      "url": "https://coda.io/developers/apis/v1",
+      "kind": "primary_docs",
+      "scope": "Coda hosted REST API v1 and Coda hosted MCP; account API token paths; document permissions apply, no dedicated sandbox assumed",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Researcher selected vendor-controlled developer or support documentation; attribution requires independent review",
+      "attribution_by": "task14-codex-research-worker"
+    },
+    "captured_on": "2026-11-23",
+    "capture_method": "http_content",
+    "snapshot_ref": "snapshots/186c28508935b8b586eabdde86d00915cd97b79aea298cfa1e458aa5d1fba6f0.txt",
+    "content_sha256": "186c28508935b8b586eabdde86d00915cd97b79aea298cfa1e458aa5d1fba6f0",
+    "line_count": 5572
+  },
+  {
+    "spec": {
+      "app_id": 79,
+      "url": "https://developers.smartsheet.com/api/smartsheet/introduction",
+      "kind": "primary_docs",
+      "scope": "Smartsheet hosted REST API 2.0 and official hosted MCP; token and OAuth paths; Business/Enterprise API plan scope and requested developer environment distinct",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Researcher selected vendor-controlled developer or support documentation; attribution requires independent review",
+      "attribution_by": "task14-codex-research-worker"
+    },
+    "captured_on": "2026-11-23",
+    "capture_method": "http_content",
+    "snapshot_ref": "snapshots/9d3f38bbb6150ee3efa5795b1c889ed39b29af8aa575d95a3a4fb0c863a4e6f2.txt",
+    "content_sha256": "9d3f38bbb6150ee3efa5795b1c889ed39b29af8aa575d95a3a4fb0c863a4e6f2",
+    "line_count": 118
+  },
+  {
+    "spec": {
+      "app_id": 79,
+      "url": "https://developers.smartsheet.com/api/smartsheet/guides/basics/authentication",
+      "kind": "primary_docs",
+      "scope": "Smartsheet hosted REST API 2.0 and official hosted MCP; token and OAuth paths; Business/Enterprise API plan scope and requested developer environment distinct",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Researcher selected vendor-controlled developer or support documentation; attribution requires independent review",
+      "attribution_by": "task14-codex-research-worker"
+    },
+    "captured_on": "2026-11-23",
+    "capture_method": "http_content",
+    "snapshot_ref": "snapshots/ff4b5057581ea2a445a711f8af9f716a5a8bca29cab024474a336fe4cd47e01b.txt",
+    "content_sha256": "ff4b5057581ea2a445a711f8af9f716a5a8bca29cab024474a336fe4cd47e01b",
+    "line_count": 156
+  },
+  {
+    "spec": {
+      "app_id": 79,
+      "url": "https://developers.smartsheet.com/api/smartsheet/guides/advanced-topics/oauth",
+      "kind": "primary_docs",
+      "scope": "Smartsheet hosted REST API 2.0 and official hosted MCP; token and OAuth paths; Business/Enterprise API plan scope and requested developer environment distinct",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Researcher selected vendor-controlled developer or support documentation; attribution requires independent review",
+      "attribution_by": "task14-codex-research-worker"
+    },
+    "captured_on": "2026-11-23",
+    "capture_method": "http_content",
+    "snapshot_ref": "snapshots/92c9d20f995f867e59bd5951522436bee349ffa02225b47364f9ee8dd4372ed3.txt",
+    "content_sha256": "92c9d20f995f867e59bd5951522436bee349ffa02225b47364f9ee8dd4372ed3",
+    "line_count": 250
+  },
+  {
+    "spec": {
+      "app_id": 79,
+      "url": "https://developers.smartsheet.com/ai-mcp/smartsheet/mcp-server-tools",
+      "kind": "primary_docs",
+      "scope": "Smartsheet hosted REST API 2.0 and official hosted MCP; token and OAuth paths; Business/Enterprise API plan scope and requested developer environment distinct",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Researcher selected vendor-controlled developer or support documentation; attribution requires independent review",
+      "attribution_by": "task14-codex-research-worker"
+    },
+    "captured_on": "2026-11-23",
+    "capture_method": "http_content",
+    "snapshot_ref": "snapshots/1a8685d8e7259e1fb6ce235eb6e7639a086e78b7fd3c4918aff0c83c94ee9c0d.txt",
+    "content_sha256": "1a8685d8e7259e1fb6ce235eb6e7639a086e78b7fd3c4918aff0c83c94ee9c0d",
+    "line_count": 2408
+  },
+  {
+    "spec": {
+      "app_id": 79,
+      "url": "https://www.smartsheet.com/content-center/best-practices/tips-tricks/api-getting-started",
+      "kind": "official_product_page",
+      "scope": "Smartsheet hosted REST API 2.0 and official hosted MCP; token and OAuth paths; Business/Enterprise API plan scope and requested developer environment distinct",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Researcher selected vendor-controlled developer or support documentation; attribution requires independent review",
+      "attribution_by": "task14-codex-research-worker"
+    },
+    "captured_on": "2026-11-23",
+    "capture_method": "http_content",
+    "snapshot_ref": "snapshots/55b151312cba31cea3d59515f576a2741f421c0b417bf49d4e8b5a23658d0a3e.txt",
+    "content_sha256": "55b151312cba31cea3d59515f576a2741f421c0b417bf49d4e8b5a23658d0a3e",
+    "line_count": 240
+  },
+  {
+    "spec": {
+      "app_id": 79,
+      "url": "https://help.smartsheet.com/articles/2483656-install-smartsheet-connector-claude",
+      "kind": "primary_docs",
+      "scope": "Smartsheet hosted REST API 2.0 and official hosted MCP; token and OAuth paths; Business/Enterprise API plan scope and requested developer environment distinct",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Researcher selected vendor-controlled developer or support documentation; attribution requires independent review",
+      "attribution_by": "task14-codex-research-worker"
+    },
+    "captured_on": "2026-11-23",
+    "capture_method": "http_content",
+    "snapshot_ref": "snapshots/756325880f9ecc386140643510bac50438d044ac8adbabcb17ea954ebc0facbb.txt",
+    "content_sha256": "756325880f9ecc386140643510bac50438d044ac8adbabcb17ea954ebc0facbb",
+    "line_count": 199
+  },
+  {
+    "spec": {
+      "app_id": 80,
+      "url": "https://help.getharvest.com/api-v2/",
+      "kind": "primary_docs",
+      "scope": "Harvest time-tracking hosted API v2; personal access token and OAuth2 paths; excludes Greenhouse recruiting Harvest API and Forecast-only scope",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Researcher selected vendor-controlled developer or support documentation; attribution requires independent review",
+      "attribution_by": "task14-codex-research-worker"
+    },
+    "captured_on": "2026-11-23",
+    "capture_method": "http_content",
+    "snapshot_ref": "snapshots/2117df6926bf5415ac9f1937195e6bf2fca4d0ecd20191a81120c2d1128f65f7.txt",
+    "content_sha256": "2117df6926bf5415ac9f1937195e6bf2fca4d0ecd20191a81120c2d1128f65f7",
+    "line_count": 123
+  },
+  {
+    "spec": {
+      "app_id": 80,
+      "url": "https://help.getharvest.com/api-v2/introduction/overview/general/",
+      "kind": "primary_docs",
+      "scope": "Harvest time-tracking hosted API v2; personal access token and OAuth2 paths; excludes Greenhouse recruiting Harvest API and Forecast-only scope",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Researcher selected vendor-controlled developer or support documentation; attribution requires independent review",
+      "attribution_by": "task14-codex-research-worker"
+    },
+    "captured_on": "2026-11-23",
+    "capture_method": "http_content",
+    "snapshot_ref": "snapshots/0e68b5777b13981fdfbe65206e901bb32b7bca979b05f4fddd13f5b555600a3f.txt",
+    "content_sha256": "0e68b5777b13981fdfbe65206e901bb32b7bca979b05f4fddd13f5b555600a3f",
+    "line_count": 138
+  },
+  {
+    "spec": {
+      "app_id": 80,
+      "url": "https://help.getharvest.com/api-v2/authentication-api/authentication/authentication/",
+      "kind": "primary_docs",
+      "scope": "Harvest time-tracking hosted API v2; personal access token and OAuth2 paths; excludes Greenhouse recruiting Harvest API and Forecast-only scope",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Researcher selected vendor-controlled developer or support documentation; attribution requires independent review",
+      "attribution_by": "task14-codex-research-worker"
+    },
+    "captured_on": "2026-11-23",
+    "capture_method": "http_content",
+    "snapshot_ref": "snapshots/c79ccd362eb46ad2a2b5c8ca32aeac922acb8122154060ab213618679d13244e.txt",
+    "content_sha256": "c79ccd362eb46ad2a2b5c8ca32aeac922acb8122154060ab213618679d13244e",
+    "line_count": 168
+  },
+  {
+    "spec": {
+      "app_id": 80,
+      "url": "https://www.getharvest.com/pricing",
+      "kind": "official_product_page",
+      "scope": "Harvest time-tracking hosted API v2; personal access token and OAuth2 paths; excludes Greenhouse recruiting Harvest API and Forecast-only scope",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Researcher selected vendor-controlled developer or support documentation; attribution requires independent review",
+      "attribution_by": "task14-codex-research-worker"
+    },
+    "captured_on": "2026-11-23",
+    "capture_method": "http_content",
+    "snapshot_ref": "snapshots/4ba8136a83dd60bfad0bce20297375844ed7e1ef9dba38f03c609c08cc07b4a0.txt",
+    "content_sha256": "4ba8136a83dd60bfad0bce20297375844ed7e1ef9dba38f03c609c08cc07b4a0",
+    "line_count": 376
+  },
+  {
+    "spec": {
+      "app_id": 71,
+      "url": "https://developers.notion.com/docs/mcp",
+      "kind": "primary_docs",
+      "scope": "Notion hosted workspace REST API and official hosted MCP; internal connection and public OAuth integration paths; API version as documented, no dedicated sandbox assumed",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Researcher selected vendor-controlled developer or support documentation; attribution requires independent review",
+      "attribution_by": "task14-codex-research-worker"
+    },
+    "captured_on": "2026-11-23",
+    "capture_method": "http_content",
+    "snapshot_ref": "snapshots/d69aba1df7a09f370af02ef76f3d37ac1790f4aba2e0d18afbda568b477fef68.txt",
+    "content_sha256": "d69aba1df7a09f370af02ef76f3d37ac1790f4aba2e0d18afbda568b477fef68",
+    "line_count": 106
+  },
+  {
+    "spec": {
+      "app_id": 72,
+      "url": "https://support.airtable.com/docs/getting-started-with-airtables-web-api",
+      "kind": "primary_docs",
+      "scope": "Airtable hosted Web API and official hosted MCP; personal access token and OAuth paths; account plan and base permissions apply, no dedicated sandbox assumed",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor-controlled developer/support documentation selected by researcher",
+      "attribution_by": "task14-codex-research-worker"
+    },
+    "captured_on": "2026-11-23",
+    "capture_method": "http_content",
+    "snapshot_ref": "snapshots/e611458f5597104a1470db2bab76150019278fc920cb76c22a4a62031f9ece9c.txt",
+    "content_sha256": "e611458f5597104a1470db2bab76150019278fc920cb76c22a4a62031f9ece9c",
+    "line_count": 58
+  },
+  {
+    "spec": {
+      "app_id": 72,
+      "url": "https://support.airtable.com/docs/managing-api-call-limits-in-airtable",
+      "kind": "primary_docs",
+      "scope": "Airtable hosted Web API and official hosted MCP; personal access token and OAuth paths; account plan and base permissions apply, no dedicated sandbox assumed",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor-controlled developer/support documentation selected by researcher",
+      "attribution_by": "task14-codex-research-worker"
+    },
+    "captured_on": "2026-11-23",
+    "capture_method": "http_content",
+    "snapshot_ref": "snapshots/fd91a5e77e906f9e6e1934151f9c6a2afc559bb9ca22e69db514c8e6d169fbb6.txt",
+    "content_sha256": "fd91a5e77e906f9e6e1934151f9c6a2afc559bb9ca22e69db514c8e6d169fbb6",
+    "line_count": 100
+  },
+  {
+    "spec": {
+      "app_id": 77,
+      "url": "https://developer.clickup.com/",
+      "kind": "primary_docs",
+      "scope": "ClickUp hosted public API v2 and official hosted MCP; personal API token and OAuth paths; excludes ClickUp consuming third-party MCP servers",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor-controlled developer/support documentation selected by researcher",
+      "attribution_by": "task14-codex-research-worker"
+    },
+    "captured_on": "2026-11-23",
+    "capture_method": "http_content",
+    "snapshot_ref": "snapshots/4bc63abff109fd937f7d06d1ee139ca10db4b3a80691822a8d11ccef903b4af3.txt",
+    "content_sha256": "4bc63abff109fd937f7d06d1ee139ca10db4b3a80691822a8d11ccef903b4af3",
+    "line_count": 31
+  },
+  {
+    "spec": {
+      "app_id": 77,
+      "url": "https://developer.clickup.com/docs/connect-an-ai-assistant-to-clickups-mcp-server-1",
+      "kind": "primary_docs",
+      "scope": "ClickUp hosted public API v2 and official hosted MCP; personal API token and OAuth paths; excludes ClickUp consuming third-party MCP servers",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor-controlled developer/support documentation selected by researcher",
+      "attribution_by": "task14-codex-research-worker"
+    },
+    "captured_on": "2026-11-23",
+    "capture_method": "http_content",
+    "snapshot_ref": "snapshots/255aeeaa05acc3822b07a56c0e39bdd83ffe95fab9a2aee140badc5343c8049b.txt",
+    "content_sha256": "255aeeaa05acc3822b07a56c0e39bdd83ffe95fab9a2aee140badc5343c8049b",
+    "line_count": 212
+  },
+  {
+    "spec": {
+      "app_id": 77,
+      "url": "https://help.clickup.com/hc/en-us/articles/33335772678423-What-is-ClickUp-MCP",
+      "kind": "primary_docs",
+      "scope": "ClickUp hosted public API v2 and official hosted MCP; personal API token and OAuth paths; excludes ClickUp consuming third-party MCP servers",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor-controlled developer/support documentation selected by researcher",
+      "attribution_by": "task14-codex-research-worker"
+    },
+    "captured_on": "2026-11-23",
+    "capture_method": "http_content",
+    "snapshot_ref": "snapshots/1816b06bbb82cdebaf2200a680b6031d8277d2c02845a9c7c2b708b35e8b7065.txt",
+    "content_sha256": "1816b06bbb82cdebaf2200a680b6031d8277d2c02845a9c7c2b708b35e8b7065",
+    "line_count": 99
+  },
+  {
+    "spec": {
+      "app_id": 78,
+      "url": "https://coda.io/product/whats-new",
+      "kind": "primary_docs",
+      "scope": "Coda hosted REST API v1 and Coda hosted MCP; account API token paths; document permissions apply, no dedicated sandbox assumed",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor-controlled developer/support documentation selected by researcher",
+      "attribution_by": "task14-codex-research-worker"
+    },
+    "captured_on": "2026-11-23",
+    "capture_method": "http_content",
+    "snapshot_ref": "snapshots/c5e6f2e8322c6ce8dda8400abefe1256b4cc5fa778a4a4f5130f43f7c840bc1f.txt",
+    "content_sha256": "c5e6f2e8322c6ce8dda8400abefe1256b4cc5fa778a4a4f5130f43f7c840bc1f",
+    "line_count": 171
+  },
+  {
+    "spec": {
+      "app_id": 78,
+      "url": "https://help.coda.io/hc/en-us/articles/44722661982989-Connect-to-the-Coda-MCP?output=1",
+      "kind": "primary_docs",
+      "scope": "Coda hosted REST API v1 and Coda hosted MCP; account API token paths; document permissions apply, no dedicated sandbox assumed",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor-controlled developer/support documentation selected by researcher",
+      "attribution_by": "task14-codex-research-worker"
+    },
+    "captured_on": "2026-11-23",
+    "capture_method": "http_content",
+    "snapshot_ref": "snapshots/ff3793852b9ad9a6e53fdbdd69896014a312e09fc517fc63ff20e6c2af855410.txt",
+    "content_sha256": "ff3793852b9ad9a6e53fdbdd69896014a312e09fc517fc63ff20e6c2af855410",
+    "line_count": 257
+  },
+  {
+    "spec": {
+      "app_id": 80,
+      "url": "https://github.com/southleft/harvest-mcp",
+      "kind": "community_repository",
+      "scope": "Harvest time-tracking hosted API v2; personal access token and OAuth2 paths; excludes Greenhouse recruiting Harvest API and Forecast-only scope",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Community-maintainer repository, not Harvest vendor endorsement",
+      "attribution_by": "task14-codex-research-worker"
+    },
+    "captured_on": "2026-11-23",
+    "capture_method": "http_content",
+    "snapshot_ref": "snapshots/18f780d05325eca8370170c3b73c13691bca53dcdfd45d71607ad64d29829e64.txt",
+    "content_sha256": "18f780d05325eca8370170c3b73c13691bca53dcdfd45d71607ad64d29829e64",
+    "line_count": 423
+  }
+]

@@ -1,0 +1,69 @@
+How are Sandbox, Production, Trial plan, and Limited Production different? – Plaid Customer Help Center
+Skip to main content
+Dashboard
+Docs
+API Status
+Plaid Customer Help Center
+Getting Started
+Environments and Coverage
+Articles in this section
+What Plaid products are supported in each country and region?
+What institutions does Plaid support?
+How are Sandbox, Production, Trial plan, and Limited Production different?
+How are Sandbox, Production, Trial plan, and Limited Production different?
+Plaid has one environment for development (Sandbox) and one for live use (Production). Trial plan and Limited Production are two ways to access Production for free, on a limited basis, before applying for full paid access. Use the table below to find the right one for your stage; details on each follow.
+Sandbox
+Production (full)
+Trial plan
+Limited Production
+Cost
+Free
+Paid
+Free
+Free
+Data
+Mock
+Real
+Real
+Real, with usage caps
+Item limit
+Unlimited
+Unlimited
+10 Production Items
+Capped
+Approval
+None
+Required (a few business days; company + use-case info)
+Auto-approved for most developers
+Required
+Availability
+All developers
+All developers
+US/CA developers, signups on or after April 15, 2026
+Existing Limited Production customers only (no new US/CA signups after April 15, 2026)
+Best for
+Building and testing without touching live data
+Deploying your application
+Trying Plaid with real data before committing to a paid plan
+Legacy free-tier access for existing customers
+Sandbox
+The Sandbox is a free environment for application development and testing with mock data. It supports all Plaid functionality, including the Plaid API and Plaid Link. The Sandbox provides a variety of test accounts and institutions to test against, and developers can create an unlimited number of test Items.
+The Sandbox is designed for development purposes and does not interact with any real data, which is ideal for developers who are experimenting with Plaid or still working out the bugs in their application.
+Production
+Use the Production environment to deploy an application with Plaid's products or to test with live data. This environment provides access to real data.
+Approval for the Production environment takes a couple of business days, and you'll need to provide more information about your company and how you plan to use the Plaid API. The Plaid Dashboard walks you through the process of requesting Production access.
+Trial plan
+For developers in the US and Canada who sign up on or after April 15, 2026, Plaid offers a Trial plan — a free way to use Plaid with real production data before applying for full Production access. Trial plans are auto-approved for most developers and support up to 10 Production Items. Eight core products are included: Auth, Transactions (including Transactions Refresh), Balance, Identity, Assets, Liabilities, Investments (including Investments Refresh), and Statements. Trial plan developers also have access to OAuth institutions without needing to complete the full Production registration process.
+To start a Trial plan, create a Dashboard account and verify your email address, then complete the Trial plan application form.
+If you need more than 10 Items, or need products not included in the Trial bundle, you will need to apply for full Production access.
+Limited Production
+Note: As of April 15, 2026, new Limited Production signups are no longer available for developers in the US and Canada. If you are a new US/CA developer, see "Trial plan" above. Existing Limited Production customers retain access.
+Limited Production is a special mode of the Production environment that is available for some Plaid products and can be used to try the Plaid API with real data before obtaining full Production access. In Limited Production, you have access to Plaid's Production server and can make a limited number of free API calls, but your API usage is capped and some functionality is unavailable. Unlike Sandbox, Limited Production is not a separate environment from Production. For more details on Limited Production, see Testing with Real Data in Limited Production.
+Return to top
+Related articles
+Can I use Plaid for free?
+What institutions does Plaid support?
+Why does this Item include only three months of transaction history?
+Why am I receiving a 414 Request-URI Too Large when connecting my Virgin Money Credit Card account?
+How can I detect when transaction information has been updated?
+Need more help? Log in to your Plaid Dashboard account to open a new support case or review your existing support cases.

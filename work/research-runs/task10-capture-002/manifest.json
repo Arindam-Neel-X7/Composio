@@ -1,0 +1,651 @@
+{
+  "run_id": "task10-capture-002",
+  "parent_run_id": "task10-capture-001",
+  "status": "complete",
+  "synthetic": false,
+  "selected_app_ids": [
+    31,
+    32,
+    33,
+    34,
+    35,
+    36,
+    37,
+    38,
+    39,
+    40
+  ],
+  "created_on": "2026-11-23",
+  "producer": {
+    "id": "pipeline-collector",
+    "type": "script"
+  },
+  "tool": {
+    "name": "research_pipeline",
+    "version": "0.2.0",
+    "python": "3.11.9",
+    "source_sha256": "263c88230b585de37de6afabd13e88033da9496eef7d08e89e7057dddd42b09d"
+  },
+  "config": {
+    "timeout": 15.0,
+    "retries": 1,
+    "max_bytes": 5000000,
+    "replay": false,
+    "refresh": false,
+    "extractor": null,
+    "extractor_label": null
+  },
+  "contracts": {
+    "roster": {
+      "path": "contracts/roster.json",
+      "sha256": "6e3aada149102c2e5539c126aa556c1ceaca3d9d25ca6e0a8f56b3a569f81c19"
+    },
+    "schema": {
+      "path": "contracts/schema.json",
+      "sha256": "40e5552a4c838293e5f440e4abbc38b0e48eefa1f626e2ee9c61a3ee1a8d49c3"
+    },
+    "rules": {
+      "path": "contracts/rules.md",
+      "sha256": "c1f94b3142ed47740d0d1a90879ca0e962ada77542eddd39edc15e36ed93c733"
+    }
+  },
+  "source_specs": [
+    {
+      "app_id": 31,
+      "url": "https://developers.google.com/google-ads/api/docs/start",
+      "kind": "primary_docs",
+      "scope": "Google Ads API (gRPC/REST) and official Google Ads MCP server; Cloud-project access tiers and OAuth 2.0; test accounts versus production access",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Official Google Ads API developer documentation",
+      "attribution_by": "task10-research-agent-gemini"
+    },
+    {
+      "app_id": 31,
+      "url": "https://developers.google.com/google-ads/api/docs/oauth/overview",
+      "kind": "primary_docs",
+      "scope": "Google Ads API (gRPC/REST) and official Google Ads MCP server; Cloud-project access tiers and OAuth 2.0; test accounts versus production access",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Official Google Ads API OAuth documentation",
+      "attribution_by": "task10-research-agent-gemini"
+    },
+    {
+      "app_id": 31,
+      "url": "https://developers.google.com/google-ads/api/docs/api-policy/access-levels",
+      "kind": "primary_docs",
+      "scope": "Google Ads API (gRPC/REST) and official Google Ads MCP server; Cloud-project access tiers and OAuth 2.0; test accounts versus production access",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Official Google Ads API access levels policy documentation",
+      "attribution_by": "task10-research-agent-gemini"
+    },
+    {
+      "app_id": 31,
+      "url": "https://developers.google.com/google-ads/api/docs/best-practices/testing",
+      "kind": "primary_docs",
+      "scope": "Google Ads API (gRPC/REST) and official Google Ads MCP server; Cloud-project access tiers and OAuth 2.0; test accounts versus production access",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Official Google Ads API testing documentation",
+      "attribution_by": "task10-research-agent-gemini"
+    },
+    {
+      "app_id": 31,
+      "url": "https://developers.google.com/google-ads/api/docs/concepts/api-structure",
+      "kind": "primary_docs",
+      "scope": "Google Ads API (gRPC/REST) and official Google Ads MCP server; Cloud-project access tiers and OAuth 2.0; test accounts versus production access",
+      "environments": [],
+      "attribution_basis": "Official Google Ads API architecture documentation",
+      "attribution_by": "task10-research-agent-gemini"
+    },
+    {
+      "app_id": 31,
+      "url": "https://developers.google.com/google-ads/api/docs/developer-toolkit/mcp-server",
+      "kind": "primary_docs",
+      "scope": "Google Ads API (gRPC/REST) and official Google Ads MCP server; Cloud-project access tiers and OAuth 2.0; test accounts versus production access",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Official Google Ads API MCP server documentation",
+      "attribution_by": "task10-research-agent-gemini"
+    },
+    {
+      "app_id": 31,
+      "url": "https://raw.githubusercontent.com/googleads/google-ads-mcp/main/README.md",
+      "kind": "official_repository",
+      "scope": "Google Ads API (gRPC/REST) and official Google Ads MCP server; Cloud-project access tiers and OAuth 2.0; test accounts versus production access",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Official googleads GitHub organization repository README",
+      "attribution_by": "task10-research-agent-gemini"
+    },
+    {
+      "app_id": 32,
+      "url": "https://developers.facebook.com/docs/marketing-apis/",
+      "kind": "primary_docs",
+      "scope": "Meta Marketing API (Graph API) for Facebook/Instagram Ads; OAuth 2.0 access tokens and App Review tiers; test/development versus production access",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Official Meta for Developers Marketing API landing documentation",
+      "attribution_by": "task10-research-agent-gemini"
+    },
+    {
+      "app_id": 32,
+      "url": "https://developers.facebook.com/docs/marketing-api/overview",
+      "kind": "primary_docs",
+      "scope": "Meta Marketing API (Graph API) for Facebook/Instagram Ads; OAuth 2.0 access tokens and App Review tiers; test/development versus production access",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Official Meta Marketing API overview documentation",
+      "attribution_by": "task10-research-agent-gemini"
+    },
+    {
+      "app_id": 32,
+      "url": "https://developers.facebook.com/docs/marketing-api/overview/authorization",
+      "kind": "primary_docs",
+      "scope": "Meta Marketing API (Graph API) for Facebook/Instagram Ads; OAuth 2.0 access tokens and App Review tiers; test/development versus production access",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Official Meta Marketing API authorization documentation",
+      "attribution_by": "task10-research-agent-gemini"
+    },
+    {
+      "app_id": 32,
+      "url": "https://developers.facebook.com/docs/marketing-api/access",
+      "kind": "primary_docs",
+      "scope": "Meta Marketing API (Graph API) for Facebook/Instagram Ads; OAuth 2.0 access tokens and App Review tiers; test/development versus production access",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Official Meta Marketing API access levels documentation",
+      "attribution_by": "task10-research-agent-gemini"
+    },
+    {
+      "app_id": 32,
+      "url": "https://raw.githubusercontent.com/facebook/facebook-python-business-sdk/main/README.md",
+      "kind": "official_repository",
+      "scope": "Meta Marketing API (Graph API) for Facebook/Instagram Ads; OAuth 2.0 access tokens and App Review tiers; test/development versus production access",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Official Meta (facebook) GitHub Business SDK repository README",
+      "attribution_by": "task10-research-agent-gemini"
+    },
+    {
+      "app_id": 32,
+      "url": "https://raw.githubusercontent.com/pipeboard-co/meta-ads-mcp/main/README.md",
+      "kind": "community_repository",
+      "scope": "Meta Marketing API (Graph API) for Facebook/Instagram Ads; OAuth 2.0 access tokens and App Review tiers; test/development versus production access",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Community Meta Ads MCP repository README (establishes community implementation only)",
+      "attribution_by": "task10-research-agent-gemini"
+    },
+    {
+      "app_id": 33,
+      "url": "https://learn.microsoft.com/en-us/linkedin/marketing/",
+      "kind": "primary_docs",
+      "scope": "LinkedIn Marketing API / Advertising API; OAuth 2.0 and Development vs Standard access tiers; testing versus production ad accounts",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Official LinkedIn Marketing API documentation hosted on Microsoft Learn",
+      "attribution_by": "task10-research-agent-gemini"
+    },
+    {
+      "app_id": 33,
+      "url": "https://learn.microsoft.com/en-us/linkedin/marketing/getting-started",
+      "kind": "primary_docs",
+      "scope": "LinkedIn Marketing API / Advertising API; OAuth 2.0 and Development vs Standard access tiers; testing versus production ad accounts",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Official LinkedIn Marketing API getting-started documentation on Microsoft Learn",
+      "attribution_by": "task10-research-agent-gemini"
+    },
+    {
+      "app_id": 33,
+      "url": "https://learn.microsoft.com/en-us/linkedin/marketing/quick-start",
+      "kind": "primary_docs",
+      "scope": "LinkedIn Marketing API / Advertising API; OAuth 2.0 and Development vs Standard access tiers; testing versus production ad accounts",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Official LinkedIn Marketing API quick-start and access tiers documentation on Microsoft Learn",
+      "attribution_by": "task10-research-agent-gemini"
+    },
+    {
+      "app_id": 33,
+      "url": "https://learn.microsoft.com/en-us/linkedin/shared/authentication/authentication",
+      "kind": "primary_docs",
+      "scope": "LinkedIn Marketing API / Advertising API; OAuth 2.0 and Development vs Standard access tiers; testing versus production ad accounts",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Official LinkedIn OAuth 2.0 authentication documentation on Microsoft Learn",
+      "attribution_by": "task10-research-agent-gemini"
+    },
+    {
+      "app_id": 33,
+      "url": "https://learn.microsoft.com/en-us/linkedin/marketing/integrations/ads/account-structure/create-and-manage-campaigns",
+      "kind": "primary_docs",
+      "scope": "LinkedIn Marketing API / Advertising API; OAuth 2.0 and Development vs Standard access tiers; testing versus production ad accounts",
+      "environments": [],
+      "attribution_basis": "Official LinkedIn Campaign Management API documentation on Microsoft Learn",
+      "attribution_by": "task10-research-agent-gemini"
+    },
+    {
+      "app_id": 33,
+      "url": "https://raw.githubusercontent.com/amekala/ads-mcp/main/README.md",
+      "kind": "community_repository",
+      "scope": "LinkedIn Marketing API / Advertising API; OAuth 2.0 and Development vs Standard access tiers; testing versus production ad accounts",
+      "environments": [],
+      "attribution_basis": "Community multi-platform ads MCP repository README (establishes community implementation only)",
+      "attribution_by": "task10-research-agent-gemini"
+    },
+    {
+      "app_id": 34,
+      "url": "https://marketplace.gohighlevel.com/docs/",
+      "kind": "primary_docs",
+      "scope": "GoHighLevel (HighLevel) API v2 and official MCP server; OAuth 2.0 and Private Integration Tokens; paid subscription plans and agency/sub-account scopes",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Official GoHighLevel Developer Marketplace API v2 documentation",
+      "attribution_by": "task10-research-agent-gemini"
+    },
+    {
+      "app_id": 34,
+      "url": "https://marketplace.gohighlevel.com/docs/Authorization/OAuth2.0/",
+      "kind": "primary_docs",
+      "scope": "GoHighLevel (HighLevel) API v2 and official MCP server; OAuth 2.0 and Private Integration Tokens; paid subscription plans and agency/sub-account scopes",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Official GoHighLevel OAuth 2.0 authorization documentation",
+      "attribution_by": "task10-research-agent-gemini"
+    },
+    {
+      "app_id": 34,
+      "url": "https://marketplace.gohighlevel.com/docs/Authorization/PrivateIntegrationsToken/",
+      "kind": "primary_docs",
+      "scope": "GoHighLevel (HighLevel) API v2 and official MCP server; OAuth 2.0 and Private Integration Tokens; paid subscription plans and agency/sub-account scopes",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Official GoHighLevel Private Integration Token documentation",
+      "attribution_by": "task10-research-agent-gemini"
+    },
+    {
+      "app_id": 34,
+      "url": "https://marketplace.gohighlevel.com/docs/other/mcp/",
+      "kind": "primary_docs",
+      "scope": "GoHighLevel (HighLevel) API v2 and official MCP server; OAuth 2.0 and Private Integration Tokens; paid subscription plans and agency/sub-account scopes",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Official GoHighLevel MCP server documentation",
+      "attribution_by": "task10-research-agent-gemini"
+    },
+    {
+      "app_id": 34,
+      "url": "https://www.gohighlevel.com/pricing",
+      "kind": "official_product_page",
+      "scope": "GoHighLevel (HighLevel) API v2 and official MCP server; OAuth 2.0 and Private Integration Tokens; paid subscription plans and agency/sub-account scopes",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Official GoHighLevel pricing page",
+      "attribution_by": "task10-research-agent-gemini"
+    },
+    {
+      "app_id": 35,
+      "url": "https://mailchimp.com/developer/marketing/api/",
+      "kind": "primary_docs",
+      "scope": "Mailchimp Marketing API v3.0 (distinct from Transactional/Mandrill API); API key and OAuth 2.0 auth; Free vs paid Marketing plans",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Official Mailchimp Marketing API v3.0 reference",
+      "attribution_by": "task10-research-agent-gemini"
+    },
+    {
+      "app_id": 35,
+      "url": "https://mailchimp.com/developer/marketing/guides/quick-start/",
+      "kind": "primary_docs",
+      "scope": "Mailchimp Marketing API v3.0 (distinct from Transactional/Mandrill API); API key and OAuth 2.0 auth; Free vs paid Marketing plans",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Official Mailchimp Marketing API quick-start guide",
+      "attribution_by": "task10-research-agent-gemini"
+    },
+    {
+      "app_id": 35,
+      "url": "https://mailchimp.com/developer/marketing/guides/access-user-data-oauth-2/",
+      "kind": "primary_docs",
+      "scope": "Mailchimp Marketing API v3.0 (distinct from Transactional/Mandrill API); API key and OAuth 2.0 auth; Free vs paid Marketing plans",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Official Mailchimp Marketing API OAuth 2.0 documentation",
+      "attribution_by": "task10-research-agent-gemini"
+    },
+    {
+      "app_id": 35,
+      "url": "https://mailchimp.com/pricing/marketing/",
+      "kind": "official_product_page",
+      "scope": "Mailchimp Marketing API v3.0 (distinct from Transactional/Mandrill API); API key and OAuth 2.0 auth; Free vs paid Marketing plans",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Official Mailchimp Marketing plans and pricing page",
+      "attribution_by": "task10-research-agent-gemini"
+    },
+    {
+      "app_id": 35,
+      "url": "https://mailchimp.com/developer/transactional/docs/mcp-server/",
+      "kind": "primary_docs",
+      "scope": "Mailchimp Marketing API v3.0 (distinct from Transactional/Mandrill API); API key and OAuth 2.0 auth; Free vs paid Marketing plans",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Official Mailchimp Transactional MCP server docs (checked to confirm edition scope vs Marketing API)",
+      "attribution_by": "task10-research-agent-gemini"
+    },
+    {
+      "app_id": 36,
+      "url": "https://developers.klaviyo.com/en/reference/api_overview",
+      "kind": "primary_docs",
+      "scope": "Klaviyo REST API and official Klaviyo MCP server; Private API keys, Public site IDs, and OAuth 2.0; Free vs paid platform plans",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Official Klaviyo API overview documentation",
+      "attribution_by": "task10-research-agent-gemini"
+    },
+    {
+      "app_id": 36,
+      "url": "https://developers.klaviyo.com/en/docs/retrieve_api_credentials",
+      "kind": "primary_docs",
+      "scope": "Klaviyo REST API and official Klaviyo MCP server; Private API keys, Public site IDs, and OAuth 2.0; Free vs paid platform plans",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Official Klaviyo API credentials documentation",
+      "attribution_by": "task10-research-agent-gemini"
+    },
+    {
+      "app_id": 36,
+      "url": "https://developers.klaviyo.com/en/docs/set_up_oauth",
+      "kind": "primary_docs",
+      "scope": "Klaviyo REST API and official Klaviyo MCP server; Private API keys, Public site IDs, and OAuth 2.0; Free vs paid platform plans",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Official Klaviyo OAuth setup documentation",
+      "attribution_by": "task10-research-agent-gemini"
+    },
+    {
+      "app_id": 36,
+      "url": "https://developers.klaviyo.com/en/docs/klaviyo_mcp_server",
+      "kind": "primary_docs",
+      "scope": "Klaviyo REST API and official Klaviyo MCP server; Private API keys, Public site IDs, and OAuth 2.0; Free vs paid platform plans",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Official Klaviyo MCP server documentation",
+      "attribution_by": "task10-research-agent-gemini"
+    },
+    {
+      "app_id": 36,
+      "url": "https://raw.githubusercontent.com/klaviyo/klaviyo-mcp-server/main/README.md",
+      "kind": "official_repository",
+      "scope": "Klaviyo REST API and official Klaviyo MCP server; Private API keys, Public site IDs, and OAuth 2.0; Free vs paid platform plans",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Official klaviyo GitHub organization MCP server repository README",
+      "attribution_by": "task10-research-agent-gemini"
+    },
+    {
+      "app_id": 36,
+      "url": "https://www.klaviyo.com/pricing",
+      "kind": "official_product_page",
+      "scope": "Klaviyo REST API and official Klaviyo MCP server; Private API keys, Public site IDs, and OAuth 2.0; Free vs paid platform plans",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Official Klaviyo pricing page",
+      "attribution_by": "task10-research-agent-gemini"
+    },
+    {
+      "app_id": 37,
+      "url": "https://developer.systeme.io/reference",
+      "kind": "primary_docs",
+      "scope": "systeme.io Public API and official MCP server; API key and MCP key auth; Free vs paid subscription plans",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Official systeme.io Public API reference",
+      "attribution_by": "task10-research-agent-gemini"
+    },
+    {
+      "app_id": 37,
+      "url": "https://systeme.io/pricing",
+      "kind": "official_product_page",
+      "scope": "systeme.io Public API and official MCP server; API key and MCP key auth; Free vs paid subscription plans",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Official systeme.io pricing page",
+      "attribution_by": "task10-research-agent-gemini"
+    },
+    {
+      "app_id": 37,
+      "url": "https://systeme.io/",
+      "kind": "official_product_page",
+      "scope": "systeme.io Public API and official MCP server; API key and MCP key auth; Free vs paid subscription plans",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Official systeme.io product homepage",
+      "attribution_by": "task10-research-agent-gemini"
+    },
+    {
+      "app_id": 38,
+      "url": "https://developers.pinterest.com/docs/api/v5/",
+      "kind": "primary_docs",
+      "scope": "Pinterest API v5; OAuth 2.0 and Trial vs Standard access tiers; sandbox/trial testing versus production access",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Official Pinterest API v5 reference",
+      "attribution_by": "task10-research-agent-gemini"
+    },
+    {
+      "app_id": 38,
+      "url": "https://developers.pinterest.com/docs/getting-started/set-up-authentication-and-authorization/",
+      "kind": "primary_docs",
+      "scope": "Pinterest API v5; OAuth 2.0 and Trial vs Standard access tiers; sandbox/trial testing versus production access",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Official Pinterest API v5 OAuth documentation",
+      "attribution_by": "task10-research-agent-gemini"
+    },
+    {
+      "app_id": 38,
+      "url": "https://developers.pinterest.com/docs/getting-started/getting-access/",
+      "kind": "primary_docs",
+      "scope": "Pinterest API v5; OAuth 2.0 and Trial vs Standard access tiers; sandbox/trial testing versus production access",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Official Pinterest API v5 access tiers (Trial vs Standard) documentation",
+      "attribution_by": "task10-research-agent-gemini"
+    },
+    {
+      "app_id": 39,
+      "url": "https://developers.facebook.com/docs/threads/",
+      "kind": "primary_docs",
+      "scope": "Meta Threads API (graph.threads.net); OAuth 2.0 user access tokens and App Review; Development/tester mode versus Live production access",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Official Meta Threads API overview documentation",
+      "attribution_by": "task10-research-agent-gemini"
+    },
+    {
+      "app_id": 39,
+      "url": "https://developers.facebook.com/docs/threads/get-started",
+      "kind": "primary_docs",
+      "scope": "Meta Threads API (graph.threads.net); OAuth 2.0 user access tokens and App Review; Development/tester mode versus Live production access",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Official Meta Threads API getting-started documentation",
+      "attribution_by": "task10-research-agent-gemini"
+    },
+    {
+      "app_id": 39,
+      "url": "https://developers.facebook.com/docs/threads/get-started/get-access-tokens-and-permissions",
+      "kind": "primary_docs",
+      "scope": "Meta Threads API (graph.threads.net); OAuth 2.0 user access tokens and App Review; Development/tester mode versus Live production access",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Official Meta Threads API OAuth and permissions documentation",
+      "attribution_by": "task10-research-agent-gemini"
+    },
+    {
+      "app_id": 39,
+      "url": "https://raw.githubusercontent.com/fbsamples/threads_api/main/README.md",
+      "kind": "official_repository",
+      "scope": "Meta Threads API (graph.threads.net); OAuth 2.0 user access tokens and App Review; Development/tester mode versus Live production access",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Official Meta fbsamples Threads API reference repository README",
+      "attribution_by": "task10-research-agent-gemini"
+    },
+    {
+      "app_id": 39,
+      "url": "https://raw.githubusercontent.com/quinnjr/threads-mcp/main/README.md",
+      "kind": "community_repository",
+      "scope": "Meta Threads API (graph.threads.net); OAuth 2.0 user access tokens and App Review; Development/tester mode versus Live production access",
+      "environments": [],
+      "attribution_basis": "Community Threads MCP repository README (establishes community implementation only)",
+      "attribution_by": "task10-research-agent-gemini"
+    },
+    {
+      "app_id": 40,
+      "url": "https://www.twilio.com/docs/sendgrid/api-reference",
+      "kind": "primary_docs",
+      "scope": "Twilio SendGrid Web API v3; API key Bearer auth; Free/Trial vs paid Email API plans; community MCP ecosystem",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Official Twilio SendGrid Web API v3 reference",
+      "attribution_by": "task10-research-agent-gemini"
+    },
+    {
+      "app_id": 40,
+      "url": "https://www.twilio.com/docs/sendgrid/for-developers/sending-email/authentication",
+      "kind": "primary_docs",
+      "scope": "Twilio SendGrid Web API v3; API key Bearer auth; Free/Trial vs paid Email API plans; community MCP ecosystem",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Official Twilio SendGrid API authentication documentation",
+      "attribution_by": "task10-research-agent-gemini"
+    },
+    {
+      "app_id": 40,
+      "url": "https://www.twilio.com/docs/sendgrid/ui/account-and-settings/api-keys",
+      "kind": "primary_docs",
+      "scope": "Twilio SendGrid Web API v3; API key Bearer auth; Free/Trial vs paid Email API plans; community MCP ecosystem",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Official Twilio SendGrid API Keys management documentation",
+      "attribution_by": "task10-research-agent-gemini"
+    },
+    {
+      "app_id": 40,
+      "url": "https://www.twilio.com/en-us/pricing/email-api",
+      "kind": "official_product_page",
+      "scope": "Twilio SendGrid Web API v3; API key Bearer auth; Free/Trial vs paid Email API plans; community MCP ecosystem",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Official Twilio SendGrid Email API pricing page",
+      "attribution_by": "task10-research-agent-gemini"
+    },
+    {
+      "app_id": 40,
+      "url": "https://raw.githubusercontent.com/Garoth/sendgrid-mcp/main/README.md",
+      "kind": "community_repository",
+      "scope": "Twilio SendGrid Web API v3; API key Bearer auth; Free/Trial vs paid Email API plans; community MCP ecosystem",
+      "environments": [],
+      "attribution_basis": "Community SendGrid MCP repository README (establishes community implementation only)",
+      "attribution_by": "task10-research-agent-gemini"
+    }
+  ]
+}

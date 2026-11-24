@@ -1,0 +1,72 @@
+> ## Documentation Index
+> Fetch the complete documentation index at: https://developers.clay.com/llms.txt
+> Use this file to discover all available pages before exploring further.
+# Webhooks
+> Get notified when a routine run finishes, then verify and handle the delivery.
+Webhooks let Clay notify your service when a routine run finishes, so you can react without polling. Register a webhook, pass its id when you start a run, and handle the signed `POST` Clay sends once results are ready.
+## Register a webhook
+Create a webhook with the CLI — run `clay webhooks --help` for the full command surface (create, list, test, delete):
+```bash theme={"theme":{"light":"github-light","dark":"github-dark"}}
+clay webhooks create https://example.com/hooks/clay
+```
+`create` returns the signing secret exactly once — store it immediately, it can't be retrieved later:
+```json theme={"theme":{"light":"github-light","dark":"github-dark"}}
+{
+"id": "wh_abc123",
+"url": "https://example.com/hooks/clay",
+"createdAt": "2026-06-16T17:50:00.000Z",
+"signingSecret": "whsec_..."
+}
+```
+## Trigger a delivery
+Pass the webhook id as `webhook_id` when you start a routine run (see [Routines](https://developers.clay.com/routines/api.md)). Clay sends a signed `POST` to the webhook URL when the run is ready to read.
+## Delivery payload
+```json theme={"theme":{"light":"github-light","dark":"github-dark"}}
+{
+"webhookId": "wh_abc123",
+"createdAt": "2026-06-16T17:50:00.000Z",
+"data": {
+"routine_run_id": "run_abc123"
+}
+}
+```
+For test events, `data` is `{}`. The `routine_run_id` can identify an inline or a bulk run. If one webhook handles both, store the run mode when you start the run, or use `clay routines runs get`, which fetches results for either mode.
+## Verify and fetch results
+Clay signs the exact request body with your webhook signing secret and sends it in the `X-Clay-Signature` header. Verify the signature before trusting a delivery, then fetch the run's results.
+```javascript theme={"theme":{"light":"github-light","dark":"github-dark"}}
+import crypto from 'node:crypto';
+import express from 'express';
+const app = express();
+function sign(body) {
+return `sha256=${crypto
+.createHmac('sha256', process.env.CLAY_WEBHOOK_SIGNING_SECRET)
+.update(body, 'utf8')
+.digest('hex')}`;
+}
+function signaturesMatch(actual, expected) {
+const actualBuffer = Buffer.from(actual);
+const expectedBuffer = Buffer.from(expected);
+return actualBuffer.length === expectedBuffer.length && crypto.timingSafeEqual(actualBuffer, expectedBuffer);
+}
+async function fetchRunResults(routineRunId) {
+// For batch routine runs, use `/public/v0/routines/run-batch/${routineRunId}/results`.
+const result = await fetch(`https://api.clay.com/public/v0/routines/run/${routineRunId}/results`, {
+headers: { 'clay-api-key': process.env.CLAY_PUBLIC_API_KEY },
+});
+return result.json();
+}
+app.post('/hooks/clay', express.raw({ type: 'application/json' }), async (req, res) => {
+const body = req.body.toString('utf8');
+const actualSignature = req.get('X-Clay-Signature') ?? '';
+const expectedSignature = sign(body);
+if (!signaturesMatch(actualSignature, expectedSignature)) {
+return res.sendStatus(401);
+}
+const event = JSON.parse(body);
+const routineRunId = event.data.routine_run_id;
+const run = await fetchRunResults(routineRunId);
+return res.sendStatus(204);
+});
+```
+Webhook delivery is not guaranteed. Use webhooks to react faster, but keep polling the run's results as a fallback.
+This documentation is built and hosted on [Mintlify](https://mintlify.com), a developer documentation platform.

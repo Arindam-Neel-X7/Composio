@@ -1,0 +1,206 @@
+Authentication
+For AI agents: the docs index is at https://developer.monday.com/api-reference/llms.txt. The index for every project on this site is at https://developer.monday.com/llms.txt. Append .md to any documentation page URL to get its markdown version.
+Jump to Content
+HomeGuidesAPI ReferenceChangelogBuild with AIPlaygroundApps DocsCommunityNeed Help?
+Guides
+Apps DocsCommunityNeed Help?
+HomeGuidesAPI ReferenceChangelogBuild with AIPlayground
+Authentication
+About the monday API
+The basics
+Authentication
+Versioning
+Rate limits
+Idempotency
+Error handling
+Release notes
+Migrating the User entity: 2026-04 → 2026-10
+Migrating to version 2025-04
+Platform MCP overview
+Compatible MCP clients
+Integrate with the monday MCP server
+Authenticate with an API token
+Control MCP access with your own OAuth app
+Integrating monday MCP with Copilot Studio using a Custom App
+Integrating monday MCP with Claude using a Custom App
+Make your MCP integration publicly available
+Dynamic connectors
+Enterprise managed auth
+Set up enterprise-managed authorization for Claude
+Set up enterprise managed auth with Okta
+claude-ema-advanced-tab
+claude-ema-setup-modal
+copilot-studio-add-mcp-server
+Platform MCP tools
+Create Board (Platform MCP)
+Get Board Info (Platform MCP)
+Get Board Items (Platform MCP)
+Get Board Activity (Platform MCP)
+Board Insights (Platform MCP)
+Create Group (Platform MCP)
+Create Column (Platform MCP)
+Get Column Type Info (Platform MCP)
+Create Item (Platform MCP)
+Change Item Column Values (Platform MCP)
+Create Workspace (Platform MCP)
+Update Workspace (Platform MCP)
+List Workspaces (Platform MCP)
+Workspace Info (Platform MCP)
+Create Folder (Platform MCP)
+Update Folder (Platform MCP)
+Move Object (Platform MCP)
+Create Doc (Platform MCP)
+Update Doc (Platform MCP)
+Read Docs (Platform MCP)
+Create Dashboard (Platform MCP)
+Create Widget (Platform MCP)
+All Widgets Schema (Platform MCP)
+Create View (Platform MCP)
+Create Table View (Platform MCP)
+Update View (Platform MCP)
+Update Table View (Platform MCP)
+Create Form (Platform MCP)
+Get Form (Platform MCP)
+Update Form (Platform MCP)
+Form Questions Editor (Platform MCP)
+Create Form Submission (Platform MCP)
+Get User Context (Platform MCP)
+List Users and Teams (Platform MCP)
+Create Update (Platform MCP)
+Get Updates (Platform MCP)
+Create Notification (Platform MCP)
+Search (Platform MCP)
+Get Assets (Platform MCP)
+Get Asset Upload URL (Platform MCP)
+Finalize Asset Upload (Platform MCP)
+List Automations (Platform MCP)
+Manage Automations (Platform MCP)
+Create Automation (Platform MCP)
+Plan Workflow (Platform MCP)
+Create Workflow (Platform MCP)
+Update Workflow (Platform MCP)
+Publish Workflow (Platform MCP)
+Manage Agent (Platform MCP)
+Manage Agent Triggers (Platform MCP)
+Manage Agent Skills (Platform MCP)
+Manage Agent Knowledge (Platform MCP)
+Agent Catalog (Platform MCP)
+Get Notetaker Meetings (Platform MCP)
+Get Sprints Boards (Platform MCP)
+Get Sprints Metadata (Platform MCP)
+Get Sprint Summary (Platform MCP)
+Execute API Query (Platform MCP)
+Get GraphQL Schema (Platform MCP)
+Get Type Details (Platform MCP)
+Show Table (Platform MCP UI)
+Show Chart (Platform MCP UI)
+Show Battery (Platform MCP UI)
+Show Assign (Platform MCP UI)
+Platform MCP security
+Guides
+GraphQL overview
+Making your first request
+Querying board items
+Working with multi-level boards
+Changing column values
+Searching across your account
+Optimizing API usage
+Aggregating Board Data
+Validation Rules
+Importing items in bulk
+Connect a custom agent
+Working with the dependency column
+AI Skills
+Build on monday.com with AI
+Build an external agent
+Agent API key capabilities
+mcli - monday.com GraphQL CLI
+Portfolio Agent Skills
+Skill: Archive / Delete a Project
+Skill: Update Project Status
+Skill: List All Projects in a Portfolio
+Skill: Get Tasks Assigned to a Person Across Projects
+Skill: Get Project Status / Health
+Skill: Duplicate a Project
+Skill: Create a New Portfolio
+Skill: Connect a Project to a Portfolio
+Build monday agents with Make
+Connect to the Platform Agent over A2A
+Tools
+Developer Sandbox Account
+The Developer Center
+API analytics dashboard
+API playground
+Postman collection
+External APIs
+Developer AI assistant
+Apps MCP
+SDKs
+JavaScript SDK
+Python SDK
+Resources
+Get help
+Youtube
+monday.com help center
+API coverage gaps
+Models API
+Models API
+Getting started with the Models API
+Models API supported models
+Powered by
+Authentication
+Learn about monday platform API token permissions, how to access tokens, and how to authenticate requests
+The monday.com platform API utilizes personal V2 API tokens to authenticate requests and identify the user making the call. These tokens are unique to each user and have no explicit length.
+Personal tokens allow you to interact with the API using your own user account. Their permissions mirror what you can do in the monday.com UI, ensuring that API access is consistent with your platform-level permissions.
+If you don't have a monday.com account yet, create a free developer account to get an API token and start testing.
+Token permissions
+Personal tokens mirror all permission levels set in the monday.com UI, including board, column, item, or account access.
+For example: If you don't have permission to access a certain workspace via the UI, you won't have permission using your personal API token either.
+App tokens have an additional set of permission scopes that specify which queries and mutations it can access, while personal tokens have all permission scopes.
+Accessing your token
+You can access your API token in two ways, depending on your user type.
+In the Developer Center (all users)
+All users with API access can follow these steps to access their API token:
+In your monday.com account, click on your profile picture in the top right corner.
+Select Developers. This will open the Developer Center in another tab.
+Click API token > Show.
+Copy your personal token.
+In the Administration tab (account admins only)
+Account admins can use the Developer Center steps above or access their token via the Administration tab:
+In your monday.com account, click on your profile picture in the top right corner.
+Select Administration > Connections > Personal API token.
+Copy your personal token.
+Making requests with your token
+Once you have your token, you can make requests with the API by passing the token in the Authorization header.
+cURL
+curl -X POST https://api.monday.com/v2 \
+-H "Authorization: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx" \
+-H "Content-Type: application/json" \
+-d '{"query": "query { me { id name } }"}'
+Regenerating a token
+API tokens can be regenerated at any time. However, this will immediately invalidate your current token, so be sure to update any integrations using it.
+How to regenerate a token
+In the Developer Center
+In your monday.com account, click on your profile picture in the top right corner.
+Select Developers. This will open the Developer Center in another tab.
+Click API token > Regenerate.
+In the Administration tab
+In your monday.com account, click on your profile picture in the top right corner.
+Select Administration > Connections > Personal API token.
+Click Regenerate.
+Updated about 2 months ago
+The basics
+Versioning
+Did this page help you?
+Yes
+No
+Copy Page
+Token permissions
+Accessing your token
+In the Developer Center (all users)
+In the Administration tab (account admins only)
+Making requests with your token
+Regenerating a token
+How to regenerate a token
+In the Developer Center
+In the Administration tab

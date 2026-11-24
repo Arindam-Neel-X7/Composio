@@ -1,0 +1,3 @@
+{"event": "fetch_attempt", "app_id": 92, "attempt": 1, "source_url": "https://help.otter.ai/hc/en-us/articles/36130822688279", "attempted_on": "2026-11-23", "status": "blocked", "http_status": 403, "resolved_url": null, "error": "HTTP 403", "content_sha256": null}
+{"event": "fetch_attempt", "app_id": 92, "attempt": 1, "source_url": "https://help.otter.ai/hc/en-us/articles/36130822688279-Otter-ai-Public-API?preview=false", "attempted_on": "2026-11-23", "status": "blocked", "http_status": 403, "resolved_url": null, "error": "HTTP 403", "content_sha256": null}
+{"event": "validation", "structure_and_grounding": "passed", "backend": "Python jsonschema Draft202012Validator", "factual_truth": "requires independent review", "synthetic": false, "records": 10}

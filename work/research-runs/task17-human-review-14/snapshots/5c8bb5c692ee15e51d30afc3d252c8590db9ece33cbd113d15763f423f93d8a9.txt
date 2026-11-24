@@ -1,0 +1,319 @@
+Supported Tools
+For AI agents: the docs index is at https://developer.clickup.com/llms.txt. Append .md to any documentation page URL to get its markdown version.
+Jump to Content
+HomeGuidesAPI Docs
+Guides
+Jump to Content
+HomeGuidesAPI Docs
+Supported Tools
+Getting Started
+Authentication
+Try the API in your web browser
+General
+ClickUp API v2 and v3 Terminology
+Rate Limits
+API availability by Plan
+Date formatting
+OpenAPI Specification
+MCP
+ClickUp's MCP Server
+MCP Server Setup Instructions
+Supported Tools
+Tasks
+Tasks
+Attachments
+Move a task to a new List
+Custom Task Types
+Custom Fields
+Custom Fields
+Filter tasks using Custom Fields
+Range operator with Custom Fields
+Views
+Views
+Filter Views
+Communication
+Comments
+Chat
+Comment formatting
+Task comments pagination
+Docs
+Docs API limitation
+Webhooks
+Webhooks
+Webhook signature
+Webhook health status
+Space webhook payloads
+Folder webhook payloads
+List webhook payloads
+Task webhook payloads
+Automation Call webhook payload
+Goal and Target webhook payloads
+Automation Call webhook Legacy payload
+FAQ
+Frequently asked questions
+Common Errors
+Supported Tools
+Use these supported tools with ClickUp's MCP Server.
+The ClickUp MCP exposes many of the capabilities available in our API. The real magic happens when your AI assistant combines several tools to complete a larger request.
+Note: Your AI assistant will only be able to perform actions in ClickUp that you have permission to do.
+Search
+ToolDefinitionExample usage (for an AI assistant)
+Search WorkspaceSearches for items across the entire ClickUp Workspace, including tasks, Docs, dashboards, attachments, whiteboards, Chats, and forms."Find all tasks related to the 'Q4 Marketing Launch'."
+Search tasks by tagRetrieves tasks filtered by tags."Show me the tasks with the 'UX-quality' tag."
+Task management
+ToolDefinitionExample usage (for an AI assistant)
+Create TaskCreates a new task in a specific List. You can specify details like the task name, description, assignees, due date, and priority."Create a task to 'Draft blog post' in the 'Content Pipeline' List, assign it to me, and set the due date for this Friday."
+Get TaskRetrieves the full details of a single task using its unique task ID."What are the details for task 'Design-123'?"
+Update TaskModifies the properties of an existing task. This can include changing the task's name, description, status, assignees, or due date."Change the status of task 'Draft blog post' to 'In Progress' and add 'Review' as a subtask."
+Set Custom FieldsSet Custom Fields on tasks.
+Note: Your AI assistant understands the Custom Fields, options, and supported values that are available on tasks."Set the 'release number' to '4.07'."
+Get Custom FieldsRetrieves the Custom Fields available on a List, Folder, Space, or Workspace."What Custom Fields does the 'Bugs' List have?"
+Delete taskDeletes a task or subtask.
+Note: Your AI assistant may confirm the correct task is selected before deleting the task."Delete the "testing use only" task."
+Merge tasksMerges one or more tasks into a target task, combining their comments, attachments, subtasks, and tracked time."Merge the duplicate 'Login bug' tasks into the original one."
+Manage tasks in bulk
+Bulk actions run through the Execute Operator tool (see Generic operations).
+ToolDefinitionExample usage (for an AI assistant)
+Create tasks in bulk (clickup_execute_operator, task.create_many)Creates multiple tasks in a specified List with a single call."Add these items as new tasks in the 'Onboarding' List: 'Send welcome email', 'Schedule orientation', and 'Set up hardware'."
+Update tasks in bulk (clickup_execute_operator, task.update_many)Applies the same change to multiple tasks at once. This is useful for changing the status, assignee, or due date for a group of tasks simultaneously."Move all tasks in the 'Sprint 3' List with the 'Ready for Review' status to 'In Review'."
+Task attachments
+ToolDefinitionExample usage (for an AI assistant)
+Attach File to TaskUploads and attaches a file (like a document, image, or ZIP file) to a specific task."Attach this document [file_upload] to the 'Submit Final Report' task."
+Request Attachment UploadGets a short-lived upload link for adding a large file (up to 1 GB) to a task or Chat."Upload this recording to the 'Customer Interview' task."
+Download Task AttachmentRetrieves a file attached to a task."Open the spec PDF attached to task 'Design-123'."
+Task comments
+ToolDefinitionExample usage (for an AI assistant)
+Get Task CommentsRetrieves all comments from a specific task."What's the latest update on the 'Develop new feature' task?"
+Get Threaded RepliesRetrieves threaded replies under a parent task comment."Summarize this comment thread and tell me my action items."
+Create Task CommentAdds a new comment to a task. This can be used to ask questions, provide updates, or @mention other team members."Add a comment to task 'Design-123' saying: '@Mark, can you please provide the latest mockups?'"
+Create CommentAdds a comment to a task, List, or view, or replies to an existing comment."Reply to Mark's comment and say the mockups are attached."
+Update CommentEdits, resolves, or reassigns an existing comment."Resolve my comment on the 'Design-123' task."
+Delete CommentDeletes a comment."Delete my last comment on the 'Design-123' task."
+Task tags
+ToolDefinitionExample usage (for an AI assistant)
+Create Space TagCreates a new tag that every task in a Space can use."Create an 'Urgent' tag in the 'Engineering' Space."
+Add Tag to TaskApplies an existing tag (label) to a task for categorization."Add the 'Urgent' tag to task 'Fix login bug'."
+Remove Tag from TaskRemoves a specific tag from a task."Remove the 'Backend' tag from task 'Update button color'."
+Task relationships
+ToolDefinitionExample usage (for an AI assistant)
+Add task linkRelate two tasks by linking them."Link feature 123 with design for feature 123."
+Remove task linkRemove links between tasks."Remove the link between feature 123 and scope designs for feature 123."
+Add dependencyCreate a dependency relationship between tasks."This task is blocked by its subtask called 'support Google authentication'."
+Remove dependencyRemove a dependency relationship between tasks."Remove the dependency between feature 123 and support Google authentication."
+Move and add tasks to other Lists
+ToolDefinitionExample usage (for an AI assistant)
+Move task to a new ListMove a task to a new home List."Move the feature 123 task from the Backlog List to 'Sprint 3'."
+Add task to another ListAdd a task to another List."Add the feature 123 task to 'Sprint 3'."
+Remove task from a ListRemove a task from an additional List. The task stays in its home List."Take the feature 123 task out of 'Sprint 3'."
+Time tracking
+ToolDefinitionExample usage (for an AI assistant)
+Get Task Time EntriesRetrieves all time log entries for a specific task."How much time has been logged for the 'Client Research' task?"
+Get time entries for multiple tasksRetrieves time entries and totals across tasks, filtered by date range, assignee, or billable status."How much time did I log last week?"
+Start Time TrackingStarts a timer for a specific task for the current user."Start tracking time for the 'Code Review' task."
+Stop Time TrackingStops the currently active timer for the user."Stop the timer."
+Add Time EntryManually adds a block of time (a time entry) to a task, including a start and end time or a duration."Log 2 hours of work on the 'Database optimization' task for yesterday."
+Get Current Time EntryChecks if the user has a timer currently running and, if so, returns the details of that time entry."What am I currently tracking time for?"
+Workspace Hierarchy
+ToolDefinitionExample usage (for an AI assistant)
+Get Workspace HierarchyRetrieves the full structure of the Workspace, including all Spaces, Folders, and Lists."Show me all the Lists in the 'Engineering' Space."
+Create ListCreates a new List within a specific Space. To create a List inside a Folder, use Create List in Folder."Create a new List named 'Sprint 4 Planning' in the 'Product' Space."
+Create List in FolderCreates a new List specifically inside a designated Folder."Inside the 'Marketing Campaigns' Folder, create a new List called 'Social Media Content'."
+Get ListRetrieves the details and settings for a single List."What are the custom statuses for the 'Bugs' List?"
+Update ListModifies the settings of an existing List, such as changing its name, description, or status."Rename the 'New Ideas' List to 'Approved Ideas'."
+Get FolderRetrieves the details for a single Folder, such as its ID, name, and the Space it belongs to."Which Space is the 'Client Projects' Folder in?"
+Create FolderCreates a new Folder within a specific Space."Create a new Folder named 'Q1 Projects' in the 'Operations' Space."
+Update FolderModifies the settings of an existing Folder, such as changing its name."Rename the 'Design' Folder to 'Design Team'."
+Members and assignees
+ToolDefinitionExample usage (for an AI assistant)
+Get Workspace MembersRetrieves a list of all members and guests in the Workspace."Who are all the members of this Workspace?"
+Find Member by NameSearches for a Workspace member using their name or email."What is David Smith's user ID?"
+Resolve AssigneesA utility to confirm and retrieve the user objects for a list of potential assignees, often used before adding them to a task."When you say, 'Assign this task to Mark and Sarah,' this tool finds the correct user IDs for 'Mark' and 'Sarah'."
+Get UserRetrieves the signed-in user, their timezone, and the current time."What time is it for me right now?"
+Chat
+ToolDefinitionExample usage (for an AI assistant)
+Get Chat ChannelsRetrieves a list of all Chat channels (views) in the Workspace."List all available Chat channels."
+Send Chat MessageSends a message to a specific Chat channel."Post a message in the 'General' channel: 'Team lunch at 1 PM today.'"
+Get Channel MessagesRetrieves recent messages from a Chat channel."What did I miss in the 'General' channel today?"
+Get Message RepliesRetrieves the replies in a message thread."Summarize the replies to the launch announcement."
+Update Chat MessageEdits, resolves, or reassigns a message."Fix the typo in my last message in 'General'."
+React to Chat MessageAdds or removes your emoji reaction on a message."Give the launch announcement a 🎉."
+Docs
+ToolDefinitionExample usage (for an AI assistant)
+Create DocumentCreates a new Doc within the Workspace, usually in a specific location (like a Space or Folder) or in the private Docs area."Create a new document named 'Project Kickoff Notes' in the 'Project Phoenix' Space."
+List Document PagesRetrieves the structure or table of contents of a Doc, listing all its pages."What are the pages in the 'Employee Handbook' Doc?"
+Get Document PagesRetrieves the content of one or more pages from a specific Doc."Show me the content of the 'Onboarding' page from the 'Team Wiki' Doc."
+Create Document PageAdds a new page (or sub-page) to an existing Doc."Add a new page titled 'Security Protocols' to the 'Company Policies' Doc."
+Update Document PageEdits the content of an existing page within a Doc."On the 'Security Protocols' page, add a new section for 'Password Management'."
+List Page AttachmentsLists the files attached to a Doc page."What files are attached to the 'Onboarding' page?"
+Download Page AttachmentRetrieves a file attached to a Doc page."Open the org chart attached to the 'Onboarding' page."
+Time in status reporting
+ToolDefinitionExample usage (for an AI assistant)
+Get Time in Status for a taskRetrieve the amount of time a task has been in a status."How long has feature 123 been in progress?"
+Get Time in Status for multiple tasksRetrieve time in status metrics for up to 100 tasks by task ID."How long did these five tasks spend in QA review?"
+Reminders
+ToolDefinitionExample usage (for an AI assistant)
+Create ReminderCreates a personal reminder."Remind me to send the report Friday at 9 AM."
+Update ReminderEdits or completes one of your reminders."Move my report reminder to Monday."
+Search RemindersFinds your reminders."What reminders do I have this week?"
+Generic operations
+ToolDefinitionExample usage (for an AI assistant)
+Get OperatorsLists the extra operations this server allows, such as bulk task changes, archiving, statuses, views, and forms."Can you archive tasks?"
+Get SchemaDescribes how ClickUp objects relate to each other.(Used by your AI assistant to plan requests.)
+Execute OperatorRuns one of those operations, such as creating or updating tasks in bulk."Archive the three 'old campaign' tasks."
+Tool details
+To connect a client and sign in, see MCP Server Setup Instructions. Tool names below are the exact names your MCP client sees.
+Every tool acts as the signed-in user, with that user's ClickUp permissions, exactly as in the app. The server adds no access of its own. In ChatGPT Team, Enterprise and Edu workspaces, only owners and admins can configure MCP servers. Every tool also accepts an optional workspace_id (required when the user belongs to more than one workspace; if it's missing, the server lists the choices).
+Columns: Type is Read or Write. Sensitive marks tools that delete or irreversibly overwrite data, post content as the user, or move files. Side effects covers what changes in ClickUp and who is notified.
+Tasks
+ToolTypeSensitiveInputsReturnsSide effects / permissions
+clickup_create_taskWriteNoname, list_id. Optional: status, priority, dates, assignees (user IDs), watchers, tags, custom fields, parent, time estimate, task typeTask ID and URLCreates a task. Assignees and watchers are notified. Missing tags are created. Repeating the call creates a duplicate.
+clickup_get_taskReadNotask_id. Optional: include, expand_statusesTask summary, plus valid statuses when requestedNone
+clickup_update_taskWriteNotask_id plus fields to changeTask ID and URLOverwrites the given fields. Setting assignees replaces the whole list. Affected people are notified. Each field needs its own permission (e.g. Change Status).
+clickup_delete_taskWriteYestask_idTask IDSends the task and its subtasks to Trash. Requires Delete permission.
+clickup_filter_tasksReadNoAll optional: lists, folders, spaces, statuses, assignees, tags, dates, custom fields, or view_idTasks, pagedNone
+clickup_move_taskWriteNotask_id, destination list_idNew List IDMoves the task. Its current status must exist in the destination List.
+clickup_add_task_to_listWriteNotask_id, list_idSuccessTask also appears in a second List. Requires the Tasks in Multiple Lists ClickApp.
+clickup_remove_task_from_listWriteNotask_id, list_idSuccessRemoves the task from an extra List. The task itself remains.
+clickup_merge_tasksWriteYesTarget task_id, source_task_idsMerged task IDMoves assignees, comments, attachments, subtasks and tracked time into the target and consumes the sources. No undo. Requires Merge permission on every task.
+Bulk create / update: use clickup_execute_operator with task.create_many or task.update_many (see Generic operations).
+Task relationships and tags
+ToolTypeSensitiveInputsReturnsSide effects / permissions
+clickup_add_task_dependencyWriteNotask_id, depends_on, type (waiting on / blocking)SuccessAdds a dependency, shown on both tasks.
+clickup_remove_task_dependencyWriteNotask_id, depends_on, typeSuccessRemoves the dependency.
+clickup_add_task_linkWriteNotask_id, links_toSuccessLinks two tasks.
+clickup_remove_task_linkWriteNotask_id, links_toSuccessRemoves the link.
+clickup_create_space_tagWriteNospace_id, name. Optional: colorsTag, and whether it was newCreates a Space-wide tag. No-op if it exists.
+clickup_add_tag_to_taskWriteNotask_id, tag_name (must exist)SuccessTags the task.
+clickup_remove_tag_from_taskWriteNotask_id, tag_nameSuccessUntags the task. The tag stays in the Space.
+clickup_get_custom_fieldsReadNoOne or more of list_id, folder_id, space_id, include_workspaceField definitions per levelNone
+Time tracking
+ToolTypeSensitiveInputsReturnsSide effects / permissions
+clickup_start_time_trackingWriteNotask_id. Optional: description, billable, tagsRunning entryStarts the user's timer. Refuses if one is already running.
+clickup_stop_time_trackingWriteNoAll optional: description, tags, time_entry_idFinished entryStops the timer and saves the entry.
+clickup_add_time_entryWriteNotask_id, start, and duration or end_timeNew entryLogs time. Repeating the call counts the time twice.
+clickup_get_current_time_entryReadNoNoneRunning entry, if anyNone
+clickup_get_time_entriesReadNoAll optional: task_id, dates, assignee, billableEntries and totalsNone. Other people's time appears only if the user can see it.
+clickup_get_task_time_in_statusReadNotask_idTime in each statusNone. Requires the Total time in Status ClickApp.
+clickup_get_bulk_tasks_time_in_statusReadNotask_ids (up to 100)Time in each status, per taskNone. Same ClickApp required.
+Attachments
+ToolTypeSensitiveInputsReturnsSide effects / permissions
+clickup_attach_task_fileWriteYestask_id, plus base64 file_data or file_urlAttachment ID and URLAdds a file visible to everyone on the task. URLs are fetched by the server (up to 100 MB).
+clickup_request_attachment_uploadWriteYesExactly one of task_id, channel_id, parent_message_idShort-lived upload URL and ticketNone by itself. The client then uploads a file (up to 1 GB) to the task or chat.
+clickup_download_task_attachmentReadNotask_id, attachment_idFile details and a ~5 minute download linkNone
+Comments
+ToolTypeSensitiveInputsReturnsSide effects / permissions
+clickup_create_commentWriteYescomment_text, plus entity_id (task, List or view) or reply_to_id. Optional: notify_all, assigneeComment IDPosts as the user. Mentioned people (or all assignees with notify_all) are notified.
+clickup_create_task_commentWriteYestask_id, comment_textComment IDSame as clickup_create_comment (legacy name).
+clickup_get_task_commentsReadNotask_id. Optional: pagingComments with reply countsNone
+clickup_get_threaded_commentsReadNocomment_idRepliesNone
+clickup_update_commentWriteYescomment_id, plus new text, resolved or assigneeComment IDReplaces the text, or resolves/reassigns the comment.
+clickup_delete_commentWriteYescomment_idComment IDDeletes the comment. Cannot be undone by the tool.
+Docs
+ToolTypeSensitiveInputsReturnsSide effects / permissions
+clickup_create_documentWriteNoname, parent, visibility, create_pageDoc ID and URLCreates a Doc. PUBLIC means visible to members who can open the parent, not the internet.
+clickup_list_document_pagesReadNodocument_idPage names and structureNone
+clickup_get_document_pagesReadNodocument_id, page_idsPage content (plain text or Markdown)None
+clickup_create_document_pageWriteNodocument_id, name, contentPage IDAdds a page.
+clickup_update_document_pageWriteYesdocument_id, page_id. Optional: content, title, content_edit_modePage IDReplaces the whole page by default. append / prepend keep existing content.
+clickup_list_document_page_attachmentsReadNopage_idFile details, pagedNone
+clickup_download_document_page_attachmentReadNopage_id, attachment_id~5 minute download linkNone
+Chat
+ToolTypeSensitiveInputsReturnsSide effects / permissions
+clickup_get_chat_channelsReadNoOptional pagingChannelsNone
+clickup_get_chat_channel_messagesReadNochannel_id. Optional: paging, reactionsMessagesNone
+clickup_get_chat_message_repliesReadNomessage_idThread repliesNone
+clickup_send_chat_messageWriteYescontent, plus one of channel_id, user_ids (DM, up to 15 people), parent_message_idMessage IDPosts as the user. Channel members or recipients see it and are notified.
+clickup_update_chat_messageWriteYesmessage_id, plus content, title, resolved or assigneeMessage IDReplaces the message text. Files omitted from the new text are removed.
+clickup_react_to_chat_messageWriteNomessage_id, add or remove, emojiSuccessAdds or removes the user's own reaction.
+Lists and Folders
+ToolTypeSensitiveInputsReturnsSide effects / permissions
+clickup_get_listReadNolist_id or list_nameList details, including its statusesNone
+clickup_create_listWriteNoname, plus space_id or space_nameList ID and URLCreates a List in a Space.
+clickup_create_list_in_folderWriteNoname, folder_idList ID and URLCreates a List in a Folder.
+clickup_update_listWriteNolist_id, plus name, description or statusSuccessOverwrites those fields.
+clickup_get_folderReadNofolder_id, or Folder name plus SpaceFolder detailsNone
+clickup_create_folderWriteNoname, plus space_id or space_nameFolder IDCreates a Folder.
+clickup_update_folderWriteNofolder_id, plus name or override_statusesSuccessRenames the Folder, or changes statuses for every List in it.
+Reminders (the user's own)
+ToolTypeSensitiveInputsReturnsSide effects / permissions
+clickup_create_reminderWriteNotitle, due_date. Optional: descriptionReminderCreates a personal reminder.
+clickup_update_reminderWriteNoreminder_id, plus fields to changeReminderEdits or completes the user's own reminder.
+clickup_search_remindersReadNoOptional filters and pagingRemindersNone
+Workspace, people and search
+ToolTypeSensitiveInputsReturnsSide effects / permissions
+clickup_get_workspace_hierarchyReadNoOptional depth, Space IDs, pagingSpaces, Folders and Lists the user can seeNone
+clickup_get_workspace_membersReadNoNoneMembers, including email addressesNone
+clickup_find_member_by_nameReadNoname_or_emailOne memberNone
+clickup_resolve_assigneesReadNoNames, emails or "me"User IDsNone
+clickup_get_userReadNoNoneSigned-in user, timezone, current timeNone
+clickup_searchReadNoAll optional: keywords, filters, sort, pagingMatching tasks, Docs, chats and moreNone
+Generic operations (Unified API)
+ToolTypeSensitiveInputsReturnsSide effects / permissions
+clickup_get_operatorsReadNoOptional filterAllowed operations and their inputsNone
+clickup_get_schemaReadNoOptional filterHow ClickUp objects relateNone
+clickup_execute_operatorWriteYesmodel, operator. Optional: parameters, body, queryThe operation's resultRuns one allowed operation as the user. Don't retry a timeout; the operation may have completed.
+Allowed operations: Tasks: read many by ID, create many (task.create_many), update many (task.update_many, one shared change applied to every named task), archive, unarchive. Lists and statuses: update a List; read statuses of a List, Space or Folder; add, rename or remove a Space's statuses. Custom fields: create, list. Views: create, update, read, list. Forms: create, update, read, list. None of these delete anything; archive is reversible. Bulk update and archive must name task IDs.
+Status handling
+Success: a normal result. Writes return success: true plus the IDs of what changed.
+Failure: a result with isError: true and a JSON body {"error": "..."} (see Errors).
+No pending states: every tool completes in a single request; there is nothing to poll.
+Paging: pass next_cursor back as cursor. Cursor-paged read tools also return has_more.
+Partial results: some writes return warnings naming parts of the request that weren't applied (e.g. an unresolvable watcher) while the rest succeeded.
+Task statuses: statuses are defined per List. Use clickup_get_list or clickup_get_task (with expand_statuses) to find a List's valid statuses before setting one.
+Errors
+ErrorMeaningRetry?
+HTTP 401 with WWW-Authenticate: Bearer ... error="invalid_token"Sign-in missing or invalidSign in again
+HTTP 400x-workspace-id header isn't a numberFix the header
+HTTP 429 with Retry-After: 60Too many requests to the serverWait, then retry
+JSON-RPC -32602 Unknown tool: <name>Tool doesn't exist or is switched offNo
+Tool result isError: true, {"error":"Failed to <action>: <reason>"}The operation failedSee below
+Tool result errorCode: RATE_LIMIT_EXCEEDED, retryAfter: <seconds>Daily or per-plan limit reachedRetry after retryAfter seconds
+Bad input, permission or "not found" errors: don't retry; change the request.
+"Request timed out" or "ClickUp server error" on a read: safe to retry.
+Same errors on a write: check whether it happened first. Creates, sends, comments and time entries make a second copy if repeated.
+Rate limits
+Server: 1,000 requests per minute per connection.
+File uploads: 20 per 15 minutes per user, up to 1 GB per file.
+Daily MCP call limits by plan: see ClickUp's MCP Server.
+Updated 27 days ago
+MCP Server Setup Instructions
+Tasks
+Did this page help you?
+Yes
+No
+Copy Page
+Search
+Task management
+Manage tasks in bulk
+Task attachments
+Task comments
+Task tags
+Task relationships
+Move and add tasks to other Lists
+Time tracking
+Workspace Hierarchy
+Members and assignees
+Chat
+Docs
+Time in status reporting
+Reminders
+Generic operations
+Tool details
+Tasks
+Task relationships and tags
+Time tracking
+Attachments
+Comments
+Docs
+Chat
+Lists and Folders
+Reminders (the user's own)
+Workspace, people and search
+Generic operations (Unified API)
+Status handling
+Errors
+Rate limits
+© 2026 ClickUp
+Security
+Your Privacy
+Terms

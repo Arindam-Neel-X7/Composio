@@ -1,0 +1,2188 @@
+---
+title: get-a-deployment-by-id-or-url
+product: vercel
+url: /docs/rest-api/deployments/get-a-deployment-by-id-or-url
+canonical_url: "https://vercel.com/docs/rest-api/deployments/get-a-deployment-by-id-or-url"
+last_updated: 2026-11-23
+type: reference
+prerequisites:
+[]
+related:
+- /docs/rest-api
+summary: Learn about get-a-deployment-by-id-or-url on Vercel.
+install_vercel_plugin: npx plugins add vercel/vercel-plugin
+search_with_vercel_cli: npx vercel@latest docs search "<query>"
+---
+# Get a deployment by ID or URL
+```http
+GET /v13/deployments/{idOrUrl}
+```
+Retrieves information for a deployment either by supplying its ID (`id` property) or Hostname (`url` property). Additional details will be included when the authenticated user or team is an owner of the deployment.
+## Authentication
+**bearerToken**: HTTP bearer
+## Path parameters
+| Name | Type | Required | Description |
+|---|---|---|---|
+| `idOrUrl` | string | Yes | The unique identifier or hostname of the deployment. |
+## Query parameters
+| Name | Type | Required | Description |
+|---|---|---|---|
+| `withGitRepoInfo` | string | No | When `true`, the response includes the `gitSource` object with the commit SHA, branch name, and connected repository metadata. Defaults to `false`. |
+| `teamId` | string | No | The Team identifier to perform the request on behalf of. |
+| `slug` | string | No | The Team slug to perform the request on behalf of. |
+## Example request
+### TypeScript
+```typescript
+const response = await fetch('https://api.vercel.com/v13/deployments/idOrUrl?withGitRepoInfo=string&teamId=string&slug=string', {
+method: 'GET',
+headers: {
+'Authorization': 'Bearer YOUR_ACCESS_TOKEN',
+'Content-Type': 'application/json',
+},
+});
+const data = await response.json();
+console.log(data);
+```
+### Next.js
+```typescript
+'use server';
+export async function callEndpoint() {
+const response = await fetch('https://api.vercel.com/v13/deployments/idOrUrl?withGitRepoInfo=string&teamId=string&slug=string', {
+method: 'GET',
+headers: {
+'Authorization': `Bearer ${process.env.VERCEL_ACCESS_TOKEN}`,
+'Content-Type': 'application/json',
+},
+next: { revalidate: 3600 }
+});
+if (!response.ok) {
+throw new Error('Request failed');
+}
+return response.json();
+}
+```
+### cURL
+```bash
+curl -X GET 'https://api.vercel.com/v13/deployments/idOrUrl?withGitRepoInfo=string&teamId=string&slug=string' \
+-H 'Authorization: Bearer YOUR_ACCESS_TOKEN' \
+-H 'Content-Type: application/json'
+```
+## Example response
+```json
+{
+"alias": [],
+"aliasAssigned": "false",
+"aliasError": {
+"code": "string",
+"message": "string"
+},
+"aliasWarning": {
+"action": "string",
+"code": "string",
+"link": "string",
+"message": "string"
+},
+"duration": {
+"endTime": "123",
+"endTimeCapped": "123",
+"startTime": "123",
+"timeForBilling": "123",
+"timeToContainerExit": "123",
+"timeToContainerExitCapped": "123",
+"timeToReady": "123"
+},
+"errorCode": "string",
+"errorMessage": "string",
+"id": "dpl_89qyp1cskzkLrVicDaZoDbjyHuDJ",
+"readyState": "READY",
+"target": "null"
+}
+```
+## Responses
+### 200: Returns a reduced view of the deployment with public information only. Private fields are omitted when the requester is not the deployment owner.
+Returns the reduced deployment view for anonymous (`vcn_`) callers. Pool-team details are withheld.
+Content-Type: `application/json`
+```json
+{
+"oneOf": [
+{
+"type": "object",
+"description": "Returns the reduced deployment view for anonymous (`vcn_`) callers. Pool-team details are withheld.",
+"required": [
+"aliasAssigned",
+"duration",
+"id",
+"readyState"
+],
+"properties": {
+"alias": {
+"type": "array",
+"items": {
+"type": "string"
+}
+},
+"aliasAssigned": {
+"type": "boolean",
+"enum": [
+false,
+true
+]
+},
+"aliasError": {
+"type": "object",
+"description": "An object that will contain a `code` and a `message` when the aliasing fails, otherwise the value will be `null`",
+"nullable": true,
+"required": [
+"code",
+"message"
+],
+"properties": {
+"code": {
+"type": "string"
+},
+"message": {
+"type": "string"
+}
+}
+},
+"aliasWarning": {
+"type": "object",
+"nullable": true,
+"required": [
+"code",
+"message"
+],
+"properties": {
+"action": {
+"type": "string"
+},
+"code": {
+"type": "string"
+},
+"link": {
+"type": "string"
+},
+"message": {
+"type": "string"
+}
+}
+},
+"duration": {
+"type": "object",
+"properties": {
+"endTime": {
+"type": "number",
+"description": "Unix timestamp in milliseconds when the build container exited."
+},
+"endTimeCapped": {
+"type": "number",
+"description": "Build-container exit Unix timestamp in milliseconds, capped at 45 minutes after `startTime`."
+},
+"startTime": {
+"type": "number",
+"description": "Unix timestamp in milliseconds when the deployment entered BUILDING."
+},
+"timeForBilling": {
+"type": "number",
+"description": "Billable build-container duration in milliseconds, capped at 45 minutes, rounded up to a whole minute, with a one-minute minimum."
+},
+"timeToContainerExit": {
+"type": "number",
+"description": "Milliseconds from entering BUILDING until the build container exited, without the billing cap."
+},
+"timeToContainerExitCapped": {
+"type": "number",
+"description": "Build-container duration in milliseconds, capped at 45 minutes and without billing rounding."
+},
+"timeToReady": {
+"type": "number",
+"description": "Milliseconds from entering BUILDING until the deployment reached its current ready state."
+}
+}
+},
+"errorCode": {
+"type": "string"
+},
+"errorMessage": {
+"type": "string",
+"nullable": true
+},
+"id": {
+"type": "string",
+"description": "A string holding the unique ID of the deployment"
+},
+"readyState": {
+"type": "string",
+"description": "The state of the deployment depending on the process of deploying, or if it is ready or in an error state",
+"enum": [
+"BLOCKED",
+"BUILDING",
+"CANCELED",
+"ERROR",
+"INITIALIZING",
+"QUEUED",
+"READY"
+]
+},
+"target": {
+"type": "string",
+"description": "If defined, either `staging` if a staging alias in the format `<project>.<team>.now.sh` was assigned upon creation, or `production` if the aliases from `alias` were assigned. `null` value indicates the \"preview\" deployment.",
+"enum": [
+"production",
+"staging",
+null
+],
+"nullable": true
+}
+}
+},
+{
+"type": "object",
+"required": [
+"aliasAssigned",
+"bootedAt",
+"build",
+"buildSkipped",
+"buildingAt",
+"createdAt",
+"createdIn",
+"creator",
+"duration",
+"env",
+"id",
+"inspectorUrl",
+"isInConcurrentBuildsQueue",
+"isInSystemBuildsQueue",
+"meta",
+"name",
+"ownerId",
+"plan",
+"projectId",
+"projectSettings",
+"public",
+"readyState",
+"regions",
+"routes",
+"status",
+"type",
+"url",
+"version"
+],
+"properties": {
+"alias": {
+"type": "array",
+"description": "A list of all the aliases (default aliases, staging aliases and production aliases) that were assigned upon deployment creation",
+"items": {
+"type": "string"
+}
+},
+"aliasAssigned": {
+"type": "boolean",
+"description": "A boolean that will be true when the aliases from the alias property were assigned successfully",
+"enum": [
+false,
+true
+]
+},
+"aliasAssignedAt": {
+"nullable": true,
+"oneOf": [
+{
+"type": "number"
+},
+{
+"type": "boolean",
+"enum": [
+false,
+true
+]
+}
+]
+},
+"aliasError": {
+"type": "object",
+"description": "An object that will contain a `code` and a `message` when the aliasing fails, otherwise the value will be `null`",
+"nullable": true,
+"required": [
+"code",
+"message"
+],
+"properties": {
+"code": {
+"type": "string"
+},
+"message": {
+"type": "string"
+}
+}
+},
+"aliasFinal": {
+"type": "string",
+"nullable": true
+},
+"aliasWarning": {
+"type": "object",
+"nullable": true,
+"required": [
+"code",
+"message"
+],
+"properties": {
+"action": {
+"type": "string"
+},
+"code": {
+"type": "string"
+},
+"link": {
+"type": "string"
+},
+"message": {
+"type": "string"
+}
+}
+},
+"alwaysRefuseToBuild": {
+"type": "boolean",
+"enum": [
+false,
+true
+]
+},
+"atproto": {
+"oneOf": [
+{
+"type": "object",
+"required": [
+"enabled"
+]
+},
+{
+"type": "object",
+"required": [
+"enabled",
+"subscription"
+]
+}
+]
+},
+"attribution": {
+"type": "object",
+"description": "Attribution metadata for the deployment, linking commit author to git and Vercel users. Only populated when the `enable-deployment-attribution` flag is enabled.",
+"properties": {
+"commitMeta": {
+"type": "object",
+"description": "Commit metadata from the git commit author"
+},
+"gitUser": {
+"type": "object",
+"description": "Git provider user associated with the commit author email (only set if resolved)",
+"required": [
+"id",
+"login"
+]
+},
+"vercelUser": {
+"type": "object",
+"description": "Vercel user linked to the git provider account (only set if resolved)",
+"required": [
+"id",
+"username"
+]
+}
+}
+},
+"autoAssignCustomDomains": {
+"type": "boolean",
+"description": "applies to custom domains only, defaults to `true`",
+"enum": [
+false,
+true
+]
+},
+"automaticAliases": {
+"type": "array",
+"items": {
+"type": "string"
+}
+},
+"bootedAt": {
+"type": "number"
+},
+"build": {
+"type": "object",
+"required": [
+"env"
+],
+"properties": {
+"env": {
+"type": "array"
+}
+}
+},
+"buildArtifactUrls": {
+"type": "array",
+"items": {
+"type": "string"
+}
+},
+"buildContainerFinishedAt": {
+"type": "number",
+"description": "Since April 2025 it necessary for On-Demand Concurrency Minutes calculation"
+},
+"buildErrorAt": {
+"type": "number"
+},
+"buildingAt": {
+"type": "number"
+},
+"builds": {
+"type": "array",
+"items": {
+"type": "object",
+"required": [
+"use"
+]
+}
+},
+"buildSkipped": {
+"type": "boolean",
+"enum": [
+false,
+true
+]
+},
+"canceledAt": {
+"type": "number"
+},
+"checks": {
+"type": "object",
+"required": [
+"deployment-alias"
+],
+"properties": {
+"deployment-alias": {
+"type": "object",
+"required": [
+"startedAt",
+"state"
+]
+}
+}
+},
+"checksConclusion": {
+"type": "string",
+"enum": [
+"canceled",
+"failed",
+"skipped",
+"succeeded"
+]
+},
+"checksState": {
+"type": "string",
+"enum": [
+"completed",
+"registered",
+"running"
+]
+},
+"config": {
+"type": "object",
+"description": "Since February 2025 the configuration must include snapshot data at the time of deployment creation to capture properties for the /deployments/:id/config endpoint utilized for displaying Deployment Configuration on the frontend This is optional because older deployments may not have this data captured",
+"required": [
+"functionMemoryType",
+"functionTimeout",
+"functionType",
+"secureComputeFallbackRegion",
+"secureComputePrimaryRegion"
+],
+"properties": {
+"functionMemoryType": {
+"type": "string",
+"enum": [
+"performance",
+"performance_xl",
+"standard",
+"standard_legacy"
+]
+},
+"functionTimeout": {
+"type": "number",
+"nullable": true
+},
+"functionType": {
+"type": "string",
+"enum": [
+"fluid",
+"standard"
+]
+},
+"isUsingActiveCPU": {
+"type": "boolean",
+"enum": [
+false,
+true
+]
+},
+"resourceConfig": {
+"type": "object",
+"description": "Build resource configuration snapshot for this deployment."
+},
+"secureComputeFallbackRegion": {
+"type": "string",
+"nullable": true
+},
+"secureComputePrimaryRegion": {
+"type": "string",
+"nullable": true
+},
+"version": {
+"type": "number"
+}
+}
+},
+"connectBuildsEnabled": {
+"type": "boolean",
+"enum": [
+false,
+true
+]
+},
+"connectConfigurationId": {
+"type": "string"
+},
+"createdAt": {
+"type": "number",
+"description": "A number containing the date when the deployment was created in milliseconds"
+},
+"createdIn": {
+"type": "string"
+},
+"creator": {
+"type": "object",
+"description": "Information about the deployment creator",
+"required": [
+"uid"
+],
+"properties": {
+"avatar": {
+"type": "string",
+"description": "The avatar of the user that created the deployment"
+},
+"type": {
+"type": "string",
+"description": "Principal type of the deployment creator.",
+"enum": [
+"app",
+"integration",
+"project",
+"system",
+"user"
+]
+},
+"uid": {
+"type": "string",
+"description": "Stable creator id across principal types (user id, app id, integration configuration id, or `system`)."
+},
+"username": {
+"type": "string",
+"description": "The username of the user that created the deployment"
+}
+}
+},
+"crons": {
+"type": "array",
+"items": {
+"type": "object",
+"required": [
+"path",
+"schedule"
+]
+}
+},
+"customEnvironment": {
+"oneOf": [
+{
+"type": "object",
+"description": "If the deployment was created using a Custom Environment, then this property contains information regarding the environment used.",
+"required": [
+"createdAt",
+"id",
+"slug",
+"type",
+"updatedAt"
+]
+},
+{
+"type": "object",
+"description": "If the deployment was created using a Custom Environment, then this property contains information regarding the environment used.",
+"required": [
+"id"
+]
+}
+]
+},
+"defaultRoute": {
+"type": "string",
+"description": "Computed field that is only available for deployments with a microfrontend configuration."
+},
+"deletedAt": {
+"type": "number",
+"description": "A number containing the date when the deployment was deleted at milliseconds",
+"nullable": true
+},
+"duration": {
+"type": "object",
+"properties": {
+"endTime": {
+"type": "number",
+"description": "Unix timestamp in milliseconds when the build container exited."
+},
+"endTimeCapped": {
+"type": "number",
+"description": "Build-container exit Unix timestamp in milliseconds, capped at 45 minutes after `startTime`."
+},
+"startTime": {
+"type": "number",
+"description": "Unix timestamp in milliseconds when the deployment entered BUILDING."
+},
+"timeForBilling": {
+"type": "number",
+"description": "Billable build-container duration in milliseconds, capped at 45 minutes, rounded up to a whole minute, with a one-minute minimum."
+},
+"timeToContainerExit": {
+"type": "number",
+"description": "Milliseconds from entering BUILDING until the build container exited, without the billing cap."
+},
+"timeToContainerExitCapped": {
+"type": "number",
+"description": "Build-container duration in milliseconds, capped at 45 minutes and without billing rounding."
+},
+"timeToReady": {
+"type": "number",
+"description": "Milliseconds from entering BUILDING until the deployment reached its current ready state."
+}
+}
+},
+"env": {
+"type": "array",
+"items": {
+"type": "string"
+}
+},
+"errorCode": {
+"type": "string"
+},
+"errorLink": {
+"type": "string"
+},
+"errorMessage": {
+"type": "string",
+"nullable": true
+},
+"errorStep": {
+"type": "string"
+},
+"flags": {
+"oneOf": [
+{
+"type": "object",
+"description": "Flags defined in the Build Output API, used by this deployment. Primarily used by the Toolbar to know about the used flags.",
+"required": [
+"definitions"
+]
+},
+{
+"type": "array",
+"description": "Flags defined in the Build Output API, used by this deployment. Primarily used by the Toolbar to know about the used flags."
+}
+]
+},
+"functions": {
+"type": "object",
+"nullable": true,
+"additionalProperties": {
+"type": "object"
+}
+},
+"gitRepo": {
+"nullable": true,
+"oneOf": [
+{
+"type": "object",
+"required": [
+"defaultBranch",
+"name",
+"namespace",
+"ownerType",
+"path",
+"private",
+"projectId",
+"type",
+"url"
+]
+},
+{
+"type": "object",
+"required": [
+"defaultBranch",
+"name",
+"org",
+"ownerType",
+"path",
+"private",
+"repo",
+"repoId",
+"repoOwnerId",
+"type"
+]
+},
+{
+"type": "object",
+"required": [
+"defaultBranch",
+"name",
+"owner",
+"ownerType",
+"path",
+"private",
+"repoUuid",
+"slug",
+"type",
+"workspaceUuid"
+]
+},
+{
+"type": "object",
+"required": [
+"defaultBranch",
+"name",
+"org",
+"ownerType",
+"path",
+"private",
+"repo",
+"type"
+]
+},
+{
+"type": "object",
+"required": [
+"defaultBranch",
+"name",
+"owner",
+"ownerType",
+"path",
+"private",
+"repo",
+"repoId",
+"type"
+]
+}
+]
+},
+"gitSource": {
+"oneOf": [
+{
+"type": "object",
+"required": [
+"repoId",
+"type"
+]
+},
+{
+"type": "object",
+"required": [
+"org",
+"repo",
+"type"
+]
+},
+{
+"type": "object",
+"required": [
+"host",
+"repoId",
+"type"
+]
+},
+{
+"type": "object",
+"required": [
+"host",
+"org",
+"repo",
+"type"
+]
+},
+{
+"type": "object",
+"required": [
+"repoId",
+"type"
+]
+},
+{
+"description": "(14 more variants — see OpenAPI spec)"
+}
+]
+},
+"id": {
+"type": "string",
+"description": "A string holding the unique ID of the deployment"
+},
+"images": {
+"type": "object",
+"properties": {
+"contentDispositionType": {
+"type": "string",
+"enum": [
+"attachment",
+"inline"
+]
+},
+"contentSecurityPolicy": {
+"type": "string"
+},
+"dangerouslyAllowSVG": {
+"type": "boolean",
+"enum": [
+false,
+true
+]
+},
+"domains": {
+"type": "array"
+},
+"formats": {
+"type": "array"
+},
+"localPatterns": {
+"type": "array"
+},
+"minimumCacheTTL": {
+"type": "number"
+},
+"qualities": {
+"type": "array"
+},
+"remotePatterns": {
+"type": "array"
+},
+"sizes": {
+"type": "array"
+}
+}
+},
+"initReadyAt": {
+"type": "number"
+},
+"inspectorUrl": {
+"type": "string",
+"nullable": true
+},
+"integrations": {
+"type": "object",
+"required": [
+"startedAt",
+"status"
+],
+"properties": {
+"claimedAt": {
+"type": "number"
+},
+"completedAt": {
+"type": "number"
+},
+"skippedAt": {
+"type": "number"
+},
+"skippedBy": {
+"type": "string"
+},
+"startedAt": {
+"type": "number"
+},
+"status": {
+"type": "string",
+"enum": [
+"error",
+"pending",
+"ready",
+"skipped",
+"timeout"
+]
+}
+}
+},
+"isFirstBranchDeployment": {
+"type": "boolean",
+"enum": [
+false,
+true
+]
+},
+"isInConcurrentBuildsQueue": {
+"type": "boolean",
+"enum": [
+false,
+true
+]
+},
+"isInstantStatic": {
+"type": "boolean",
+"description": "Whether this deployment completed through the instant static fast path.",
+"enum": [
+false,
+true
+]
+},
+"isInSystemBuildsQueue": {
+"type": "boolean",
+"enum": [
+false,
+true
+]
+},
+"lambdas": {
+"type": "array",
+"items": {
+"type": "object",
+"description": "A partial representation of a Build used by the deployment endpoint.",
+"required": [
+"id",
+"output"
+]
+}
+},
+"manualProvisioning": {
+"type": "object",
+"description": "Present when deployment was created with manual provisioning enabled, either explicitly or via the experimental BYOC git flow. The deployment stays in INITIALIZING until /continue is called.",
+"required": [
+"state"
+],
+"properties": {
+"completedAt": {
+"type": "number",
+"description": "Timestamp when manual provisioning completed"
+},
+"state": {
+"type": "string",
+"description": "Current provisioning state",
+"enum": [
+"COMPLETE",
+"PENDING",
+"TIMEOUT"
+]
+}
+}
+},
+"meta": {
+"type": "object",
+"additionalProperties": {
+"type": "string"
+}
+},
+"microfrontends": {
+"oneOf": [
+{
+"type": "object",
+"required": [
+"defaultAppProjectName",
+"groupIds"
+]
+},
+{
+"type": "object",
+"required": [
+"defaultAppProjectName",
+"groupIds",
+"isDefaultApp"
+]
+}
+]
+},
+"monorepoManager": {
+"type": "string",
+"nullable": true
+},
+"name": {
+"type": "string",
+"description": "The name of the project associated with the deployment at the time that the deployment was created"
+},
+"nodeVersion": {
+"type": "string",
+"description": "If set it overrides the `projectSettings.nodeVersion` for this deployment.",
+"enum": [
+"10.x",
+"12.x",
+"14.x",
+"16.x",
+"18.x",
+"20.x",
+"22.x",
+"24.x",
+"26.x",
+"8.10.x"
+]
+},
+"oidcTokenClaims": {
+"type": "object",
+"required": [
+"aud",
+"environment",
+"iss",
+"owner",
+"owner_id",
+"project",
+"project_id",
+"scope",
+"sub"
+],
+"properties": {
+"aud": {
+"type": "string"
+},
+"custom_environment_id": {
+"type": "string"
+},
+"deployment_id": {
+"type": "string"
+},
+"environment": {
+"type": "string"
+},
+"iss": {
+"type": "string"
+},
+"mfe_group_ids": {
+"type": "array"
+},
+"owner": {
+"type": "string"
+},
+"owner_id": {
+"type": "string"
+},
+"plan": {
+"type": "string"
+},
+"project": {
+"type": "string"
+},
+"project_id": {
+"type": "string"
+},
+"scope": {
+"type": "string"
+},
+"sub": {
+"type": "string"
+}
+}
+},
+"oomReport": {
+"type": "string",
+"enum": [
+"out-of-memory"
+]
+},
+"originCacheRegion": {
+"type": "string"
+},
+"ownerId": {
+"type": "string"
+},
+"passiveConnectConfigurationId": {
+"type": "string",
+"description": "Since November 2023 this field defines a Secure Compute network that will only be used to deploy passive lambdas to (as in passiveRegions)"
+},
+"passiveRegions": {
+"type": "array",
+"description": "Since November 2023 this field defines a set of regions that we will deploy the lambda to passively Lambdas will be deployed to these regions but only invoked if all of the primary `regions` are marked as out of service",
+"items": {
+"type": "string"
+}
+},
+"plan": {
+"type": "string",
+"enum": [
+"enterprise",
+"hobby",
+"pro"
+]
+},
+"platform": {
+"type": "object",
+"description": "Metadata about the source platform that triggered the deployment. Allows us to map a deployment back to a platform (e.g. the chat that created it)",
+"required": [
+"creator",
+"origin",
+"source"
+],
+"properties": {
+"creator": {
+"type": "object",
+"description": "The user on the external platform who triggered the deployment.",
+"required": [
+"name"
+]
+},
+"meta": {
+"type": "object",
+"description": "Arbitrary key-value metadata provided by the platform."
+},
+"origin": {
+"type": "object",
+"description": "Reference back to the entity on the platform that initiated the deployment.",
+"required": [
+"type",
+"value"
+]
+},
+"source": {
+"type": "object",
+"description": "The external platform that created the deployment (e.g. its display name).",
+"required": [
+"name"
+]
+}
+}
+},
+"prebuilt": {
+"type": "boolean",
+"enum": [
+false,
+true
+]
+},
+"previewCommentsEnabled": {
+"type": "boolean",
+"description": "Whether or not preview comments are enabled for the deployment",
+"enum": [
+false,
+true
+]
+},
+"project": {
+"type": "object",
+"description": "The public project information associated with the deployment.",
+"required": [
+"id",
+"name"
+],
+"properties": {
+"framework": {
+"type": "string",
+"nullable": true
+},
+"id": {
+"type": "string"
+},
+"name": {
+"type": "string"
+}
+}
+},
+"projectId": {
+"type": "string"
+},
+"projectSettings": {
+"type": "object",
+"properties": {
+"buildCommand": {
+"type": "string",
+"nullable": true
+},
+"commandForIgnoringBuildStep": {
+"type": "string",
+"nullable": true
+},
+"devCommand": {
+"type": "string",
+"nullable": true
+},
+"framework": {
+"type": "string",
+"enum": [
+"actix-web",
+"angular",
+"ash",
+"astro",
+"axum",
+"blitzjs",
+"brunch",
+"bun",
+"container",
+"create-react-app",
+"django",
+"docusaurus",
+"docusaurus-2",
+"dojo",
+"eleventy",
+"elysia",
+"ember",
+"eve",
+"express",
+"factory-eve",
+"fastapi",
+"fasthtml",
+"fastify",
+"flask",
+"gatsby",
+"go",
+"gridsome",
+"h3",
+"hexo",
+"hono",
+"hugo",
+"hydrogen",
+"ionic-angular",
+"ionic-react",
+"jekyll",
+"koa",
+"mastra",
+"middleman",
+"nestjs",
+"nextjs",
+"nitro",
+"node",
+"nuxtjs",
+"parcel",
+"polymer",
+"preact",
+"python",
+"react-router",
+"redwoodjs",
+"remix",
+"ruby",
+"rust",
+"saber",
+"sanity",
+"sanity-v2",
+"sapper",
+"scully",
+"services",
+"solidstart",
+"solidstart-1",
+"stencil",
+"storybook",
+"svelte",
+"sveltekit",
+"sveltekit-1",
+"tanstack-start",
+"tanstack-start-lovable",
+"umijs",
+"vite",
+"vitepress",
+"vue",
+"vuepress",
+"xmcp",
+"zola",
+null
+],
+"nullable": true
+},
+"installCommand": {
+"type": "string",
+"nullable": true
+},
+"nodeVersion": {
+"type": "string",
+"enum": [
+"10.x",
+"12.x",
+"14.x",
+"16.x",
+"18.x",
+"20.x",
+"22.x",
+"24.x",
+"26.x",
+"8.10.x"
+]
+},
+"outputDirectory": {
+"type": "string",
+"nullable": true
+},
+"speedInsights": {
+"type": "object",
+"required": [
+"id"
+]
+},
+"vercelFlags": {
+"type": "object",
+"description": "Vercel Flags activation metadata copied from the project at deployment creation."
+},
+"webAnalytics": {
+"type": "object",
+"required": [
+"id"
+]
+}
+}
+},
+"public": {
+"type": "boolean",
+"description": "A boolean representing if the deployment is public or not. By default this is `false`",
+"enum": [
+false,
+true
+]
+},
+"ready": {
+"type": "number"
+},
+"readyState": {
+"type": "string",
+"description": "The state of the deployment depending on the process of deploying, or if it is ready or in an error state",
+"enum": [
+"BLOCKED",
+"BUILDING",
+"CANCELED",
+"ERROR",
+"INITIALIZING",
+"QUEUED",
+"READY"
+]
+},
+"readyStateReason": {
+"type": "string"
+},
+"readySubstate": {
+"type": "string",
+"description": "Substate of deployment when readyState is 'READY' Tracks whether or not deployment has seen production traffic: - STAGED: never seen production traffic - ROLLING: in the process of having production traffic gradually transitioned. - PROMOTED: has seen production traffic",
+"enum": [
+"PROMOTED",
+"ROLLING",
+"STAGED"
+]
+},
+"regions": {
+"type": "array",
+"description": "The regions the deployment exists in",
+"items": {
+"type": "string"
+}
+},
+"resourceConfig": {
+"type": "object",
+"properties": {
+"buildMachine": {}
+}
+},
+"routes": {
+"type": "array",
+"nullable": true,
+"items": {}
+},
+"seatBlock": {
+"type": "object",
+"description": "NSNB Blocked metadata",
+"required": [
+"blockCode"
+],
+"properties": {
+"blockCode": {
+"type": "string",
+"description": "The NSNB decision code for the seat block. TODO: We should consolidate block types.",
+"enum": [
+"COMMIT_AUTHOR_REQUIRED",
+"TEAM_ACCESS_REQUIRED"
+]
+},
+"gitProvider": {
+"type": "string",
+"description": "The git provider type associated with gitUserId.",
+"enum": [
+"bitbucket",
+"github",
+"gitlab"
+]
+},
+"gitUserId": {},
+"isVerified": {
+"type": "boolean",
+"description": "Determines if the user was verified during the block. In the git integration case, the commit sender was the author.",
+"enum": [
+false,
+true
+]
+},
+"userId": {
+"type": "string",
+"description": "The blocked vercel user ID."
+}
+}
+},
+"services": {
+"type": "array",
+"description": "Services detected during build from vercel.json experimentalServices or auto-detected from project structure. Used to inject service URLs as environment variables at runtime.",
+"items": {}
+},
+"softDeletedByRetention": {
+"type": "boolean",
+"description": "flag to indicate if the deployment was deleted by retention policy",
+"enum": [
+false,
+true
+]
+},
+"source": {
+"type": "string",
+"description": "Where was the deployment created from. Best-effort guess for metrics only — not authoritative; do not gate behavior on it.",
+"enum": [
+"api-trigger-git-deploy",
+"cli",
+"clone/repo",
+"drop",
+"git",
+"git-deploy-hook",
+"import",
+"import/repo",
+"redeploy",
+"v0-web"
+]
+},
+"status": {
+"type": "string",
+"enum": [
+"BLOCKED",
+"BUILDING",
+"CANCELED",
+"ERROR",
+"INITIALIZING",
+"QUEUED",
+"READY"
+]
+},
+"target": {
+"type": "string",
+"description": "If defined, either `staging` if a staging alias in the format `<project>.<team>.now.sh` was assigned upon creation, or `production` if the aliases from `alias` were assigned. `null` value indicates the \"preview\" deployment.",
+"enum": [
+"production",
+"staging",
+null
+],
+"nullable": true
+},
+"team": {
+"type": "object",
+"description": "The team that owns the deployment if any",
+"required": [
+"id",
+"name",
+"slug"
+],
+"properties": {
+"avatar": {
+"type": "string"
+},
+"id": {
+"type": "string"
+},
+"name": {
+"type": "string"
+},
+"slug": {
+"type": "string"
+}
+}
+},
+"ttyBuildLogs": {
+"type": "boolean",
+"enum": [
+false,
+true
+]
+},
+"type": {
+"type": "string",
+"enum": [
+"LAMBDAS"
+]
+},
+"undeletedAt": {
+"type": "number",
+"description": "A number containing the date when the deployment was undeleted at milliseconds"
+},
+"url": {
+"type": "string",
+"description": "A string with the unique URL of the deployment"
+},
+"userAliases": {
+"type": "array",
+"description": "An array of domains that were provided by the user when creating the Deployment.",
+"items": {
+"type": "string"
+}
+},
+"userConfiguredDeploymentId": {
+"type": "string",
+"description": "Since January 2025 User-configured deployment ID for skew protection with pre-built deployments. This is set when users configure a custom deploymentId in their next.config.js file. This allows Next.js to use skew protection even when deployments are pre-built outside of Vercel's build system."
+},
+"version": {
+"type": "number",
+"description": "The platform version that was used to create the deployment.",
+"enum": [
+2
+]
+}
+}
+},
+{
+"type": "object",
+"description": "Returns a reduced view of the deployment with public information only. Private fields are omitted when the requester is not the deployment owner.",
+"required": [
+"aliasAssigned",
+"bootedAt",
+"buildSkipped",
+"buildingAt",
+"createdAt",
+"creator",
+"duration",
+"id",
+"meta",
+"name",
+"public",
+"readyState",
+"regions",
+"status",
+"type",
+"url",
+"version"
+],
+"properties": {
+"alias": {
+"type": "array",
+"description": "A list of all the aliases (default aliases, staging aliases and production aliases) that were assigned upon deployment creation",
+"items": {
+"type": "string"
+}
+},
+"aliasAssigned": {
+"type": "boolean",
+"description": "A boolean that will be true when the aliases from the alias property were assigned successfully",
+"enum": [
+false,
+true
+]
+},
+"aliasError": {
+"type": "object",
+"description": "An object that will contain a `code` and a `message` when the aliasing fails, otherwise the value will be `null`",
+"nullable": true,
+"required": [
+"code",
+"message"
+],
+"properties": {
+"code": {
+"type": "string"
+},
+"message": {
+"type": "string"
+}
+}
+},
+"aliasFinal": {
+"type": "string",
+"nullable": true
+},
+"aliasWarning": {
+"type": "object",
+"nullable": true,
+"required": [
+"code",
+"message"
+],
+"properties": {
+"action": {
+"type": "string"
+},
+"code": {
+"type": "string"
+},
+"link": {
+"type": "string"
+},
+"message": {
+"type": "string"
+}
+}
+},
+"autoAssignCustomDomains": {
+"type": "boolean",
+"description": "applies to custom domains only, defaults to `true`",
+"enum": [
+false,
+true
+]
+},
+"automaticAliases": {
+"type": "array",
+"items": {
+"type": "string"
+}
+},
+"bootedAt": {
+"type": "number"
+},
+"buildContainerFinishedAt": {
+"type": "number",
+"description": "Since April 2025 it necessary for On-Demand Concurrency Minutes calculation"
+},
+"buildErrorAt": {
+"type": "number"
+},
+"buildingAt": {
+"type": "number"
+},
+"buildSkipped": {
+"type": "boolean",
+"enum": [
+false,
+true
+]
+},
+"canceledAt": {
+"type": "number"
+},
+"checksConclusion": {
+"type": "string",
+"enum": [
+"canceled",
+"failed",
+"skipped",
+"succeeded"
+]
+},
+"checksState": {
+"type": "string",
+"enum": [
+"completed",
+"registered",
+"running"
+]
+},
+"createdAt": {
+"type": "number",
+"description": "A number containing the date when the deployment was created in milliseconds"
+},
+"creator": {
+"type": "object",
+"description": "Information about the deployment creator",
+"required": [
+"uid"
+],
+"properties": {
+"avatar": {
+"type": "string",
+"description": "The avatar of the user that created the deployment"
+},
+"type": {
+"type": "string",
+"description": "Principal type of the deployment creator.",
+"enum": [
+"app",
+"integration",
+"project",
+"system",
+"user"
+]
+},
+"uid": {
+"type": "string",
+"description": "Stable creator id across principal types (user id, app id, integration configuration id, or `system`)."
+},
+"username": {
+"type": "string",
+"description": "The username of the user that created the deployment"
+}
+}
+},
+"customEnvironment": {
+"oneOf": [
+{
+"type": "object",
+"description": "If the deployment was created using a Custom Environment, then this property contains information regarding the environment used.",
+"required": [
+"createdAt",
+"id",
+"slug",
+"type",
+"updatedAt"
+]
+},
+{
+"type": "object",
+"description": "If the deployment was created using a Custom Environment, then this property contains information regarding the environment used.",
+"required": [
+"id"
+]
+}
+]
+},
+"defaultRoute": {
+"type": "string",
+"description": "Computed field that is only available for deployments with a microfrontend configuration."
+},
+"deletedAt": {
+"type": "number",
+"description": "A number containing the date when the deployment was deleted at milliseconds",
+"nullable": true
+},
+"duration": {
+"type": "object",
+"description": "Build timestamps, elapsed durations, and billing measurements. The object is always present, but fields are omitted when their source timestamps are unavailable, such as for running or legacy deployments.",
+"properties": {
+"endTime": {
+"type": "number",
+"description": "Unix timestamp in milliseconds when the build container exited."
+},
+"endTimeCapped": {
+"type": "number",
+"description": "Build-container exit Unix timestamp in milliseconds, capped at 45 minutes after `startTime`."
+},
+"startTime": {
+"type": "number",
+"description": "Unix timestamp in milliseconds when the deployment entered BUILDING."
+},
+"timeForBilling": {
+"type": "number",
+"description": "Billable build-container duration in milliseconds, capped at 45 minutes, rounded up to a whole minute, with a one-minute minimum."
+},
+"timeToContainerExit": {
+"type": "number",
+"description": "Milliseconds from entering BUILDING until the build container exited, without the billing cap."
+},
+"timeToContainerExitCapped": {
+"type": "number",
+"description": "Build-container duration in milliseconds, capped at 45 minutes and without billing rounding."
+},
+"timeToReady": {
+"type": "number",
+"description": "Milliseconds from entering BUILDING until the deployment reached its current ready state."
+}
+}
+},
+"errorCode": {
+"type": "string"
+},
+"errorLink": {
+"type": "string"
+},
+"errorMessage": {
+"type": "string",
+"nullable": true
+},
+"errorStep": {
+"type": "string"
+},
+"gitSource": {
+"oneOf": [
+{
+"type": "object",
+"required": [
+"repoId",
+"type"
+]
+},
+{
+"type": "object",
+"required": [
+"org",
+"repo",
+"type"
+]
+},
+{
+"type": "object",
+"required": [
+"host",
+"repoId",
+"type"
+]
+},
+{
+"type": "object",
+"required": [
+"host",
+"org",
+"repo",
+"type"
+]
+},
+{
+"type": "object",
+"required": [
+"repoId",
+"type"
+]
+},
+{
+"description": "(14 more variants — see OpenAPI spec)"
+}
+]
+},
+"id": {
+"type": "string",
+"description": "A string holding the unique ID of the deployment"
+},
+"initReadyAt": {
+"type": "number"
+},
+"isFirstBranchDeployment": {
+"type": "boolean",
+"enum": [
+false,
+true
+]
+},
+"lambdas": {
+"type": "array",
+"items": {
+"type": "object",
+"description": "A partial representation of a Build used by the deployment endpoint.",
+"required": [
+"id",
+"output"
+]
+}
+},
+"manualProvisioning": {
+"type": "object",
+"description": "Present when deployment was created with manual provisioning enabled, either explicitly or via the experimental BYOC git flow. The deployment stays in INITIALIZING until /continue is called.",
+"required": [
+"state"
+],
+"properties": {
+"completedAt": {
+"type": "number",
+"description": "Timestamp when manual provisioning completed"
+},
+"state": {
+"type": "string",
+"description": "Current provisioning state",
+"enum": [
+"COMPLETE",
+"PENDING",
+"TIMEOUT"
+]
+}
+}
+},
+"meta": {
+"type": "object",
+"additionalProperties": {
+"type": "string"
+}
+},
+"name": {
+"type": "string",
+"description": "The name of the project associated with the deployment at the time that the deployment was created"
+},
+"nodeVersion": {
+"type": "string",
+"description": "If set it overrides the `projectSettings.nodeVersion` for this deployment.",
+"enum": [
+"10.x",
+"12.x",
+"14.x",
+"16.x",
+"18.x",
+"20.x",
+"22.x",
+"24.x",
+"26.x",
+"8.10.x"
+]
+},
+"oidcTokenClaims": {
+"type": "object",
+"required": [
+"aud",
+"environment",
+"iss",
+"owner",
+"owner_id",
+"project",
+"project_id",
+"scope",
+"sub"
+],
+"properties": {
+"aud": {
+"type": "string"
+},
+"custom_environment_id": {
+"type": "string"
+},
+"deployment_id": {
+"type": "string"
+},
+"environment": {
+"type": "string"
+},
+"iss": {
+"type": "string"
+},
+"mfe_group_ids": {
+"type": "array"
+},
+"owner": {
+"type": "string"
+},
+"owner_id": {
+"type": "string"
+},
+"plan": {
+"type": "string"
+},
+"project": {
+"type": "string"
+},
+"project_id": {
+"type": "string"
+},
+"scope": {
+"type": "string"
+},
+"sub": {
+"type": "string"
+}
+}
+},
+"oomReport": {
+"type": "string",
+"enum": [
+"out-of-memory"
+]
+},
+"originCacheRegion": {
+"type": "string"
+},
+"passiveRegions": {
+"type": "array",
+"description": "Since November 2023 this field defines a set of regions that we will deploy the lambda to passively Lambdas will be deployed to these regions but only invoked if all of the primary `regions` are marked as out of service",
+"items": {
+"type": "string"
+}
+},
+"prebuilt": {
+"type": "boolean",
+"enum": [
+false,
+true
+]
+},
+"previewCommentsEnabled": {
+"type": "boolean",
+"description": "Whether or not preview comments are enabled for the deployment",
+"enum": [
+false,
+true
+]
+},
+"project": {
+"type": "object",
+"description": "The public project information associated with the deployment.",
+"required": [
+"id",
+"name"
+],
+"properties": {
+"framework": {
+"type": "string",
+"nullable": true
+},
+"id": {
+"type": "string"
+},
+"name": {
+"type": "string"
+}
+}
+},
+"public": {
+"type": "boolean",
+"description": "A boolean representing if the deployment is public or not. By default this is `false`",
+"enum": [
+false,
+true
+]
+},
+"ready": {
+"type": "number"
+},
+"readyState": {
+"type": "string",
+"description": "The state of the deployment depending on the process of deploying, or if it is ready or in an error state",
+"enum": [
+"BLOCKED",
+"BUILDING",
+"CANCELED",
+"ERROR",
+"INITIALIZING",
+"QUEUED",
+"READY"
+]
+},
+"readyStateReason": {
+"type": "string"
+},
+"readySubstate": {
+"type": "string",
+"description": "Substate of deployment when readyState is 'READY' Tracks whether or not deployment has seen production traffic: - STAGED: never seen production traffic - ROLLING: in the process of having production traffic gradually transitioned. - PROMOTED: has seen production traffic",
+"enum": [
+"PROMOTED",
+"ROLLING",
+"STAGED"
+]
+},
+"regions": {
+"type": "array",
+"description": "The regions the deployment exists in",
+"items": {
+"type": "string"
+}
+},
+"softDeletedByRetention": {
+"type": "boolean",
+"description": "flag to indicate if the deployment was deleted by retention policy",
+"enum": [
+false,
+true
+]
+},
+"source": {
+"type": "string",
+"description": "Where was the deployment created from. Best-effort guess for metrics only — not authoritative; do not gate behavior on it.",
+"enum": [
+"api-trigger-git-deploy",
+"cli",
+"clone/repo",
+"drop",
+"git",
+"git-deploy-hook",
+"import",
+"import/repo",
+"redeploy",
+"v0-web"
+]
+},
+"status": {
+"type": "string",
+"enum": [
+"BLOCKED",
+"BUILDING",
+"CANCELED",
+"ERROR",
+"INITIALIZING",
+"QUEUED",
+"READY"
+]
+},
+"target": {
+"type": "string",
+"description": "If defined, either `staging` if a staging alias in the format `<project>.<team>.now.sh` was assigned upon creation, or `production` if the aliases from `alias` were assigned. `null` value indicates the \"preview\" deployment.",
+"enum": [
+"production",
+"staging",
+null
+],
+"nullable": true
+},
+"team": {
+"type": "object",
+"description": "The team that owns the deployment if any",
+"required": [
+"id",
+"name",
+"slug"
+],
+"properties": {
+"avatar": {
+"type": "string"
+},
+"id": {
+"type": "string"
+},
+"name": {
+"type": "string"
+},
+"slug": {
+"type": "string"
+}
+}
+},
+"ttyBuildLogs": {
+"type": "boolean",
+"enum": [
+false,
+true
+]
+},
+"type": {
+"type": "string",
+"enum": [
+"LAMBDAS"
+]
+},
+"undeletedAt": {
+"type": "number",
+"description": "A number containing the date when the deployment was undeleted at milliseconds"
+},
+"url": {
+"type": "string",
+"description": "A string with the unique URL of the deployment"
+},
+"userAliases": {
+"type": "array",
+"description": "An array of domains that were provided by the user when creating the Deployment.",
+"items": {
+"type": "string"
+}
+},
+"userConfiguredDeploymentId": {
+"type": "string",
+"description": "Since January 2025 User-configured deployment ID for skew protection with pre-built deployments. This is set when users configure a custom deploymentId in their next.config.js file. This allows Next.js to use skew protection even when deployments are pre-built outside of Vercel's build system."
+},
+"version": {
+"type": "number",
+"description": "The platform version that was used to create the deployment.",
+"enum": [
+2
+]
+}
+}
+}
+]
+}
+```
+### 400: One of the provided values in the request query is invalid.
+### 401: No description
+### 403: You do not have permission to access this resource.
+### 404: The deployment was not found
+### 410: No description
+### 429: No description
+---
+## Related
+- [deployments endpoints](/docs/rest-api#deployments)
+- [REST API overview](/docs/rest-api)
+- [OpenAPI spec](https://vercel.com/openapi.json) (machine-readable, all endpoints)
+## Search the docs from your terminal
+Search the Vercel docs and read pages as Markdown with the Vercel CLI. No login required.
+```bash
+# Find docs pages by keyword
+npx vercel@latest docs search "environment variables"
+npx vercel@latest docs search "function timeout"
+# Print a docs page as Markdown, by path or URL
+npx vercel@latest docs inspect <page>
+```
+---
+[View full sitemap](/docs/sitemap)
+If you encounter incorrect information, can’t find what you need, need a capability Vercel doesn’t currently offer, or have any other feedback to report, please do it by following the instructions at https://vercel.com/feedback.md.

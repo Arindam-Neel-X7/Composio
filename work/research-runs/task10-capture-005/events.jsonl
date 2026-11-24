@@ -1,0 +1,2 @@
+{"event": "fetch_attempt", "app_id": 37, "attempt": 1, "source_url": "https://developer.systeme.io/docs/mcp-server.md", "attempted_on": "2026-11-23", "status": "fetched", "http_status": 200, "resolved_url": "https://developer.systeme.io/docs/mcp-server.md", "error": null, "content_sha256": "69d34c23f44bc32ceab591acc7ad8c89087b15214eafc49b8198d1ce115f3ee6"}
+{"event": "validation", "structure_and_grounding": "passed", "backend": "Python jsonschema Draft202012Validator", "factual_truth": "requires independent review", "synthetic": false, "records": 10}

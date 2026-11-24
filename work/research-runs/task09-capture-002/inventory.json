@@ -1,0 +1,2562 @@
+[
+  {
+    "app_id": 21,
+    "claim_id": "21.identity",
+    "path": [
+      "identity",
+      "resolution"
+    ],
+    "status": "not_researched",
+    "eligible": false
+  },
+  {
+    "app_id": 21,
+    "claim_id": "21.purpose",
+    "path": [
+      "purpose"
+    ],
+    "status": "not_researched",
+    "eligible": false
+  },
+  {
+    "app_id": 21,
+    "claim_id": "21.testing.free_access",
+    "path": [
+      "credential_eligibility",
+      "testing",
+      "free_access"
+    ],
+    "status": "not_researched",
+    "eligible": false
+  },
+  {
+    "app_id": 21,
+    "claim_id": "21.testing.trial_access",
+    "path": [
+      "credential_eligibility",
+      "testing",
+      "trial_access"
+    ],
+    "status": "not_researched",
+    "eligible": false
+  },
+  {
+    "app_id": 21,
+    "claim_id": "21.testing.sandbox_access",
+    "path": [
+      "credential_eligibility",
+      "testing",
+      "sandbox_access"
+    ],
+    "status": "not_researched",
+    "eligible": false
+  },
+  {
+    "app_id": 21,
+    "claim_id": "21.testing.paid_required",
+    "path": [
+      "credential_eligibility",
+      "testing",
+      "paid_required"
+    ],
+    "status": "not_researched",
+    "eligible": false
+  },
+  {
+    "app_id": 21,
+    "claim_id": "21.testing.admin_approval_required",
+    "path": [
+      "credential_eligibility",
+      "testing",
+      "admin_approval_required"
+    ],
+    "status": "not_researched",
+    "eligible": false
+  },
+  {
+    "app_id": 21,
+    "claim_id": "21.testing.vendor_approval_required",
+    "path": [
+      "credential_eligibility",
+      "testing",
+      "vendor_approval_required"
+    ],
+    "status": "not_researched",
+    "eligible": false
+  },
+  {
+    "app_id": 21,
+    "claim_id": "21.testing.partner_approval_required",
+    "path": [
+      "credential_eligibility",
+      "testing",
+      "partner_approval_required"
+    ],
+    "status": "not_researched",
+    "eligible": false
+  },
+  {
+    "app_id": 21,
+    "claim_id": "21.testing.contact_sales_required",
+    "path": [
+      "credential_eligibility",
+      "testing",
+      "contact_sales_required"
+    ],
+    "status": "not_researched",
+    "eligible": false
+  },
+  {
+    "app_id": 21,
+    "claim_id": "21.testing.self_serve",
+    "path": [
+      "credential_eligibility",
+      "testing",
+      "self_serve"
+    ],
+    "status": "not_researched",
+    "eligible": false
+  },
+  {
+    "app_id": 21,
+    "claim_id": "21.production.free_access",
+    "path": [
+      "credential_eligibility",
+      "production",
+      "free_access"
+    ],
+    "status": "not_researched",
+    "eligible": false
+  },
+  {
+    "app_id": 21,
+    "claim_id": "21.production.trial_access",
+    "path": [
+      "credential_eligibility",
+      "production",
+      "trial_access"
+    ],
+    "status": "not_researched",
+    "eligible": false
+  },
+  {
+    "app_id": 21,
+    "claim_id": "21.production.sandbox_access",
+    "path": [
+      "credential_eligibility",
+      "production",
+      "sandbox_access"
+    ],
+    "status": "not_researched",
+    "eligible": false
+  },
+  {
+    "app_id": 21,
+    "claim_id": "21.production.paid_required",
+    "path": [
+      "credential_eligibility",
+      "production",
+      "paid_required"
+    ],
+    "status": "not_researched",
+    "eligible": false
+  },
+  {
+    "app_id": 21,
+    "claim_id": "21.production.admin_approval_required",
+    "path": [
+      "credential_eligibility",
+      "production",
+      "admin_approval_required"
+    ],
+    "status": "not_researched",
+    "eligible": false
+  },
+  {
+    "app_id": 21,
+    "claim_id": "21.production.vendor_approval_required",
+    "path": [
+      "credential_eligibility",
+      "production",
+      "vendor_approval_required"
+    ],
+    "status": "not_researched",
+    "eligible": false
+  },
+  {
+    "app_id": 21,
+    "claim_id": "21.production.partner_approval_required",
+    "path": [
+      "credential_eligibility",
+      "production",
+      "partner_approval_required"
+    ],
+    "status": "not_researched",
+    "eligible": false
+  },
+  {
+    "app_id": 21,
+    "claim_id": "21.production.contact_sales_required",
+    "path": [
+      "credential_eligibility",
+      "production",
+      "contact_sales_required"
+    ],
+    "status": "not_researched",
+    "eligible": false
+  },
+  {
+    "app_id": 21,
+    "claim_id": "21.production.self_serve",
+    "path": [
+      "credential_eligibility",
+      "production",
+      "self_serve"
+    ],
+    "status": "not_researched",
+    "eligible": false
+  },
+  {
+    "app_id": 21,
+    "claim_id": "21.api.public_documentation",
+    "path": [
+      "api_surface",
+      "public_documentation"
+    ],
+    "status": "not_researched",
+    "eligible": false
+  },
+  {
+    "app_id": 21,
+    "claim_id": "21.api.breadth",
+    "path": [
+      "api_surface",
+      "breadth"
+    ],
+    "status": "not_researched",
+    "eligible": false
+  },
+  {
+    "app_id": 21,
+    "claim_id": "21.mcp",
+    "path": [
+      "mcp",
+      "discovery"
+    ],
+    "status": "not_researched",
+    "eligible": false
+  },
+  {
+    "app_id": 21,
+    "claim_id": "21.buildability",
+    "path": [
+      "buildability"
+    ],
+    "status": "not_researched",
+    "eligible": false
+  },
+  {
+    "app_id": 22,
+    "claim_id": "22.identity",
+    "path": [
+      "identity",
+      "resolution"
+    ],
+    "status": "not_researched",
+    "eligible": false
+  },
+  {
+    "app_id": 22,
+    "claim_id": "22.purpose",
+    "path": [
+      "purpose"
+    ],
+    "status": "not_researched",
+    "eligible": false
+  },
+  {
+    "app_id": 22,
+    "claim_id": "22.testing.free_access",
+    "path": [
+      "credential_eligibility",
+      "testing",
+      "free_access"
+    ],
+    "status": "not_researched",
+    "eligible": false
+  },
+  {
+    "app_id": 22,
+    "claim_id": "22.testing.trial_access",
+    "path": [
+      "credential_eligibility",
+      "testing",
+      "trial_access"
+    ],
+    "status": "not_researched",
+    "eligible": false
+  },
+  {
+    "app_id": 22,
+    "claim_id": "22.testing.sandbox_access",
+    "path": [
+      "credential_eligibility",
+      "testing",
+      "sandbox_access"
+    ],
+    "status": "not_researched",
+    "eligible": false
+  },
+  {
+    "app_id": 22,
+    "claim_id": "22.testing.paid_required",
+    "path": [
+      "credential_eligibility",
+      "testing",
+      "paid_required"
+    ],
+    "status": "not_researched",
+    "eligible": false
+  },
+  {
+    "app_id": 22,
+    "claim_id": "22.testing.admin_approval_required",
+    "path": [
+      "credential_eligibility",
+      "testing",
+      "admin_approval_required"
+    ],
+    "status": "not_researched",
+    "eligible": false
+  },
+  {
+    "app_id": 22,
+    "claim_id": "22.testing.vendor_approval_required",
+    "path": [
+      "credential_eligibility",
+      "testing",
+      "vendor_approval_required"
+    ],
+    "status": "not_researched",
+    "eligible": false
+  },
+  {
+    "app_id": 22,
+    "claim_id": "22.testing.partner_approval_required",
+    "path": [
+      "credential_eligibility",
+      "testing",
+      "partner_approval_required"
+    ],
+    "status": "not_researched",
+    "eligible": false
+  },
+  {
+    "app_id": 22,
+    "claim_id": "22.testing.contact_sales_required",
+    "path": [
+      "credential_eligibility",
+      "testing",
+      "contact_sales_required"
+    ],
+    "status": "not_researched",
+    "eligible": false
+  },
+  {
+    "app_id": 22,
+    "claim_id": "22.testing.self_serve",
+    "path": [
+      "credential_eligibility",
+      "testing",
+      "self_serve"
+    ],
+    "status": "not_researched",
+    "eligible": false
+  },
+  {
+    "app_id": 22,
+    "claim_id": "22.production.free_access",
+    "path": [
+      "credential_eligibility",
+      "production",
+      "free_access"
+    ],
+    "status": "not_researched",
+    "eligible": false
+  },
+  {
+    "app_id": 22,
+    "claim_id": "22.production.trial_access",
+    "path": [
+      "credential_eligibility",
+      "production",
+      "trial_access"
+    ],
+    "status": "not_researched",
+    "eligible": false
+  },
+  {
+    "app_id": 22,
+    "claim_id": "22.production.sandbox_access",
+    "path": [
+      "credential_eligibility",
+      "production",
+      "sandbox_access"
+    ],
+    "status": "not_researched",
+    "eligible": false
+  },
+  {
+    "app_id": 22,
+    "claim_id": "22.production.paid_required",
+    "path": [
+      "credential_eligibility",
+      "production",
+      "paid_required"
+    ],
+    "status": "not_researched",
+    "eligible": false
+  },
+  {
+    "app_id": 22,
+    "claim_id": "22.production.admin_approval_required",
+    "path": [
+      "credential_eligibility",
+      "production",
+      "admin_approval_required"
+    ],
+    "status": "not_researched",
+    "eligible": false
+  },
+  {
+    "app_id": 22,
+    "claim_id": "22.production.vendor_approval_required",
+    "path": [
+      "credential_eligibility",
+      "production",
+      "vendor_approval_required"
+    ],
+    "status": "not_researched",
+    "eligible": false
+  },
+  {
+    "app_id": 22,
+    "claim_id": "22.production.partner_approval_required",
+    "path": [
+      "credential_eligibility",
+      "production",
+      "partner_approval_required"
+    ],
+    "status": "not_researched",
+    "eligible": false
+  },
+  {
+    "app_id": 22,
+    "claim_id": "22.production.contact_sales_required",
+    "path": [
+      "credential_eligibility",
+      "production",
+      "contact_sales_required"
+    ],
+    "status": "not_researched",
+    "eligible": false
+  },
+  {
+    "app_id": 22,
+    "claim_id": "22.production.self_serve",
+    "path": [
+      "credential_eligibility",
+      "production",
+      "self_serve"
+    ],
+    "status": "not_researched",
+    "eligible": false
+  },
+  {
+    "app_id": 22,
+    "claim_id": "22.api.public_documentation",
+    "path": [
+      "api_surface",
+      "public_documentation"
+    ],
+    "status": "not_researched",
+    "eligible": false
+  },
+  {
+    "app_id": 22,
+    "claim_id": "22.api.breadth",
+    "path": [
+      "api_surface",
+      "breadth"
+    ],
+    "status": "not_researched",
+    "eligible": false
+  },
+  {
+    "app_id": 22,
+    "claim_id": "22.mcp",
+    "path": [
+      "mcp",
+      "discovery"
+    ],
+    "status": "not_researched",
+    "eligible": false
+  },
+  {
+    "app_id": 22,
+    "claim_id": "22.buildability",
+    "path": [
+      "buildability"
+    ],
+    "status": "not_researched",
+    "eligible": false
+  },
+  {
+    "app_id": 23,
+    "claim_id": "23.identity",
+    "path": [
+      "identity",
+      "resolution"
+    ],
+    "status": "not_researched",
+    "eligible": false
+  },
+  {
+    "app_id": 23,
+    "claim_id": "23.purpose",
+    "path": [
+      "purpose"
+    ],
+    "status": "not_researched",
+    "eligible": false
+  },
+  {
+    "app_id": 23,
+    "claim_id": "23.testing.free_access",
+    "path": [
+      "credential_eligibility",
+      "testing",
+      "free_access"
+    ],
+    "status": "not_researched",
+    "eligible": false
+  },
+  {
+    "app_id": 23,
+    "claim_id": "23.testing.trial_access",
+    "path": [
+      "credential_eligibility",
+      "testing",
+      "trial_access"
+    ],
+    "status": "not_researched",
+    "eligible": false
+  },
+  {
+    "app_id": 23,
+    "claim_id": "23.testing.sandbox_access",
+    "path": [
+      "credential_eligibility",
+      "testing",
+      "sandbox_access"
+    ],
+    "status": "not_researched",
+    "eligible": false
+  },
+  {
+    "app_id": 23,
+    "claim_id": "23.testing.paid_required",
+    "path": [
+      "credential_eligibility",
+      "testing",
+      "paid_required"
+    ],
+    "status": "not_researched",
+    "eligible": false
+  },
+  {
+    "app_id": 23,
+    "claim_id": "23.testing.admin_approval_required",
+    "path": [
+      "credential_eligibility",
+      "testing",
+      "admin_approval_required"
+    ],
+    "status": "not_researched",
+    "eligible": false
+  },
+  {
+    "app_id": 23,
+    "claim_id": "23.testing.vendor_approval_required",
+    "path": [
+      "credential_eligibility",
+      "testing",
+      "vendor_approval_required"
+    ],
+    "status": "not_researched",
+    "eligible": false
+  },
+  {
+    "app_id": 23,
+    "claim_id": "23.testing.partner_approval_required",
+    "path": [
+      "credential_eligibility",
+      "testing",
+      "partner_approval_required"
+    ],
+    "status": "not_researched",
+    "eligible": false
+  },
+  {
+    "app_id": 23,
+    "claim_id": "23.testing.contact_sales_required",
+    "path": [
+      "credential_eligibility",
+      "testing",
+      "contact_sales_required"
+    ],
+    "status": "not_researched",
+    "eligible": false
+  },
+  {
+    "app_id": 23,
+    "claim_id": "23.testing.self_serve",
+    "path": [
+      "credential_eligibility",
+      "testing",
+      "self_serve"
+    ],
+    "status": "not_researched",
+    "eligible": false
+  },
+  {
+    "app_id": 23,
+    "claim_id": "23.production.free_access",
+    "path": [
+      "credential_eligibility",
+      "production",
+      "free_access"
+    ],
+    "status": "not_researched",
+    "eligible": false
+  },
+  {
+    "app_id": 23,
+    "claim_id": "23.production.trial_access",
+    "path": [
+      "credential_eligibility",
+      "production",
+      "trial_access"
+    ],
+    "status": "not_researched",
+    "eligible": false
+  },
+  {
+    "app_id": 23,
+    "claim_id": "23.production.sandbox_access",
+    "path": [
+      "credential_eligibility",
+      "production",
+      "sandbox_access"
+    ],
+    "status": "not_researched",
+    "eligible": false
+  },
+  {
+    "app_id": 23,
+    "claim_id": "23.production.paid_required",
+    "path": [
+      "credential_eligibility",
+      "production",
+      "paid_required"
+    ],
+    "status": "not_researched",
+    "eligible": false
+  },
+  {
+    "app_id": 23,
+    "claim_id": "23.production.admin_approval_required",
+    "path": [
+      "credential_eligibility",
+      "production",
+      "admin_approval_required"
+    ],
+    "status": "not_researched",
+    "eligible": false
+  },
+  {
+    "app_id": 23,
+    "claim_id": "23.production.vendor_approval_required",
+    "path": [
+      "credential_eligibility",
+      "production",
+      "vendor_approval_required"
+    ],
+    "status": "not_researched",
+    "eligible": false
+  },
+  {
+    "app_id": 23,
+    "claim_id": "23.production.partner_approval_required",
+    "path": [
+      "credential_eligibility",
+      "production",
+      "partner_approval_required"
+    ],
+    "status": "not_researched",
+    "eligible": false
+  },
+  {
+    "app_id": 23,
+    "claim_id": "23.production.contact_sales_required",
+    "path": [
+      "credential_eligibility",
+      "production",
+      "contact_sales_required"
+    ],
+    "status": "not_researched",
+    "eligible": false
+  },
+  {
+    "app_id": 23,
+    "claim_id": "23.production.self_serve",
+    "path": [
+      "credential_eligibility",
+      "production",
+      "self_serve"
+    ],
+    "status": "not_researched",
+    "eligible": false
+  },
+  {
+    "app_id": 23,
+    "claim_id": "23.api.public_documentation",
+    "path": [
+      "api_surface",
+      "public_documentation"
+    ],
+    "status": "not_researched",
+    "eligible": false
+  },
+  {
+    "app_id": 23,
+    "claim_id": "23.api.breadth",
+    "path": [
+      "api_surface",
+      "breadth"
+    ],
+    "status": "not_researched",
+    "eligible": false
+  },
+  {
+    "app_id": 23,
+    "claim_id": "23.mcp",
+    "path": [
+      "mcp",
+      "discovery"
+    ],
+    "status": "not_researched",
+    "eligible": false
+  },
+  {
+    "app_id": 23,
+    "claim_id": "23.buildability",
+    "path": [
+      "buildability"
+    ],
+    "status": "not_researched",
+    "eligible": false
+  },
+  {
+    "app_id": 24,
+    "claim_id": "24.identity",
+    "path": [
+      "identity",
+      "resolution"
+    ],
+    "status": "not_researched",
+    "eligible": false
+  },
+  {
+    "app_id": 24,
+    "claim_id": "24.purpose",
+    "path": [
+      "purpose"
+    ],
+    "status": "not_researched",
+    "eligible": false
+  },
+  {
+    "app_id": 24,
+    "claim_id": "24.testing.free_access",
+    "path": [
+      "credential_eligibility",
+      "testing",
+      "free_access"
+    ],
+    "status": "not_researched",
+    "eligible": false
+  },
+  {
+    "app_id": 24,
+    "claim_id": "24.testing.trial_access",
+    "path": [
+      "credential_eligibility",
+      "testing",
+      "trial_access"
+    ],
+    "status": "not_researched",
+    "eligible": false
+  },
+  {
+    "app_id": 24,
+    "claim_id": "24.testing.sandbox_access",
+    "path": [
+      "credential_eligibility",
+      "testing",
+      "sandbox_access"
+    ],
+    "status": "not_researched",
+    "eligible": false
+  },
+  {
+    "app_id": 24,
+    "claim_id": "24.testing.paid_required",
+    "path": [
+      "credential_eligibility",
+      "testing",
+      "paid_required"
+    ],
+    "status": "not_researched",
+    "eligible": false
+  },
+  {
+    "app_id": 24,
+    "claim_id": "24.testing.admin_approval_required",
+    "path": [
+      "credential_eligibility",
+      "testing",
+      "admin_approval_required"
+    ],
+    "status": "not_researched",
+    "eligible": false
+  },
+  {
+    "app_id": 24,
+    "claim_id": "24.testing.vendor_approval_required",
+    "path": [
+      "credential_eligibility",
+      "testing",
+      "vendor_approval_required"
+    ],
+    "status": "not_researched",
+    "eligible": false
+  },
+  {
+    "app_id": 24,
+    "claim_id": "24.testing.partner_approval_required",
+    "path": [
+      "credential_eligibility",
+      "testing",
+      "partner_approval_required"
+    ],
+    "status": "not_researched",
+    "eligible": false
+  },
+  {
+    "app_id": 24,
+    "claim_id": "24.testing.contact_sales_required",
+    "path": [
+      "credential_eligibility",
+      "testing",
+      "contact_sales_required"
+    ],
+    "status": "not_researched",
+    "eligible": false
+  },
+  {
+    "app_id": 24,
+    "claim_id": "24.testing.self_serve",
+    "path": [
+      "credential_eligibility",
+      "testing",
+      "self_serve"
+    ],
+    "status": "not_researched",
+    "eligible": false
+  },
+  {
+    "app_id": 24,
+    "claim_id": "24.production.free_access",
+    "path": [
+      "credential_eligibility",
+      "production",
+      "free_access"
+    ],
+    "status": "not_researched",
+    "eligible": false
+  },
+  {
+    "app_id": 24,
+    "claim_id": "24.production.trial_access",
+    "path": [
+      "credential_eligibility",
+      "production",
+      "trial_access"
+    ],
+    "status": "not_researched",
+    "eligible": false
+  },
+  {
+    "app_id": 24,
+    "claim_id": "24.production.sandbox_access",
+    "path": [
+      "credential_eligibility",
+      "production",
+      "sandbox_access"
+    ],
+    "status": "not_researched",
+    "eligible": false
+  },
+  {
+    "app_id": 24,
+    "claim_id": "24.production.paid_required",
+    "path": [
+      "credential_eligibility",
+      "production",
+      "paid_required"
+    ],
+    "status": "not_researched",
+    "eligible": false
+  },
+  {
+    "app_id": 24,
+    "claim_id": "24.production.admin_approval_required",
+    "path": [
+      "credential_eligibility",
+      "production",
+      "admin_approval_required"
+    ],
+    "status": "not_researched",
+    "eligible": false
+  },
+  {
+    "app_id": 24,
+    "claim_id": "24.production.vendor_approval_required",
+    "path": [
+      "credential_eligibility",
+      "production",
+      "vendor_approval_required"
+    ],
+    "status": "not_researched",
+    "eligible": false
+  },
+  {
+    "app_id": 24,
+    "claim_id": "24.production.partner_approval_required",
+    "path": [
+      "credential_eligibility",
+      "production",
+      "partner_approval_required"
+    ],
+    "status": "not_researched",
+    "eligible": false
+  },
+  {
+    "app_id": 24,
+    "claim_id": "24.production.contact_sales_required",
+    "path": [
+      "credential_eligibility",
+      "production",
+      "contact_sales_required"
+    ],
+    "status": "not_researched",
+    "eligible": false
+  },
+  {
+    "app_id": 24,
+    "claim_id": "24.production.self_serve",
+    "path": [
+      "credential_eligibility",
+      "production",
+      "self_serve"
+    ],
+    "status": "not_researched",
+    "eligible": false
+  },
+  {
+    "app_id": 24,
+    "claim_id": "24.api.public_documentation",
+    "path": [
+      "api_surface",
+      "public_documentation"
+    ],
+    "status": "not_researched",
+    "eligible": false
+  },
+  {
+    "app_id": 24,
+    "claim_id": "24.api.breadth",
+    "path": [
+      "api_surface",
+      "breadth"
+    ],
+    "status": "not_researched",
+    "eligible": false
+  },
+  {
+    "app_id": 24,
+    "claim_id": "24.mcp",
+    "path": [
+      "mcp",
+      "discovery"
+    ],
+    "status": "not_researched",
+    "eligible": false
+  },
+  {
+    "app_id": 24,
+    "claim_id": "24.buildability",
+    "path": [
+      "buildability"
+    ],
+    "status": "not_researched",
+    "eligible": false
+  },
+  {
+    "app_id": 25,
+    "claim_id": "25.identity",
+    "path": [
+      "identity",
+      "resolution"
+    ],
+    "status": "not_researched",
+    "eligible": false
+  },
+  {
+    "app_id": 25,
+    "claim_id": "25.purpose",
+    "path": [
+      "purpose"
+    ],
+    "status": "not_researched",
+    "eligible": false
+  },
+  {
+    "app_id": 25,
+    "claim_id": "25.testing.free_access",
+    "path": [
+      "credential_eligibility",
+      "testing",
+      "free_access"
+    ],
+    "status": "not_researched",
+    "eligible": false
+  },
+  {
+    "app_id": 25,
+    "claim_id": "25.testing.trial_access",
+    "path": [
+      "credential_eligibility",
+      "testing",
+      "trial_access"
+    ],
+    "status": "not_researched",
+    "eligible": false
+  },
+  {
+    "app_id": 25,
+    "claim_id": "25.testing.sandbox_access",
+    "path": [
+      "credential_eligibility",
+      "testing",
+      "sandbox_access"
+    ],
+    "status": "not_researched",
+    "eligible": false
+  },
+  {
+    "app_id": 25,
+    "claim_id": "25.testing.paid_required",
+    "path": [
+      "credential_eligibility",
+      "testing",
+      "paid_required"
+    ],
+    "status": "not_researched",
+    "eligible": false
+  },
+  {
+    "app_id": 25,
+    "claim_id": "25.testing.admin_approval_required",
+    "path": [
+      "credential_eligibility",
+      "testing",
+      "admin_approval_required"
+    ],
+    "status": "not_researched",
+    "eligible": false
+  },
+  {
+    "app_id": 25,
+    "claim_id": "25.testing.vendor_approval_required",
+    "path": [
+      "credential_eligibility",
+      "testing",
+      "vendor_approval_required"
+    ],
+    "status": "not_researched",
+    "eligible": false
+  },
+  {
+    "app_id": 25,
+    "claim_id": "25.testing.partner_approval_required",
+    "path": [
+      "credential_eligibility",
+      "testing",
+      "partner_approval_required"
+    ],
+    "status": "not_researched",
+    "eligible": false
+  },
+  {
+    "app_id": 25,
+    "claim_id": "25.testing.contact_sales_required",
+    "path": [
+      "credential_eligibility",
+      "testing",
+      "contact_sales_required"
+    ],
+    "status": "not_researched",
+    "eligible": false
+  },
+  {
+    "app_id": 25,
+    "claim_id": "25.testing.self_serve",
+    "path": [
+      "credential_eligibility",
+      "testing",
+      "self_serve"
+    ],
+    "status": "not_researched",
+    "eligible": false
+  },
+  {
+    "app_id": 25,
+    "claim_id": "25.production.free_access",
+    "path": [
+      "credential_eligibility",
+      "production",
+      "free_access"
+    ],
+    "status": "not_researched",
+    "eligible": false
+  },
+  {
+    "app_id": 25,
+    "claim_id": "25.production.trial_access",
+    "path": [
+      "credential_eligibility",
+      "production",
+      "trial_access"
+    ],
+    "status": "not_researched",
+    "eligible": false
+  },
+  {
+    "app_id": 25,
+    "claim_id": "25.production.sandbox_access",
+    "path": [
+      "credential_eligibility",
+      "production",
+      "sandbox_access"
+    ],
+    "status": "not_researched",
+    "eligible": false
+  },
+  {
+    "app_id": 25,
+    "claim_id": "25.production.paid_required",
+    "path": [
+      "credential_eligibility",
+      "production",
+      "paid_required"
+    ],
+    "status": "not_researched",
+    "eligible": false
+  },
+  {
+    "app_id": 25,
+    "claim_id": "25.production.admin_approval_required",
+    "path": [
+      "credential_eligibility",
+      "production",
+      "admin_approval_required"
+    ],
+    "status": "not_researched",
+    "eligible": false
+  },
+  {
+    "app_id": 25,
+    "claim_id": "25.production.vendor_approval_required",
+    "path": [
+      "credential_eligibility",
+      "production",
+      "vendor_approval_required"
+    ],
+    "status": "not_researched",
+    "eligible": false
+  },
+  {
+    "app_id": 25,
+    "claim_id": "25.production.partner_approval_required",
+    "path": [
+      "credential_eligibility",
+      "production",
+      "partner_approval_required"
+    ],
+    "status": "not_researched",
+    "eligible": false
+  },
+  {
+    "app_id": 25,
+    "claim_id": "25.production.contact_sales_required",
+    "path": [
+      "credential_eligibility",
+      "production",
+      "contact_sales_required"
+    ],
+    "status": "not_researched",
+    "eligible": false
+  },
+  {
+    "app_id": 25,
+    "claim_id": "25.production.self_serve",
+    "path": [
+      "credential_eligibility",
+      "production",
+      "self_serve"
+    ],
+    "status": "not_researched",
+    "eligible": false
+  },
+  {
+    "app_id": 25,
+    "claim_id": "25.api.public_documentation",
+    "path": [
+      "api_surface",
+      "public_documentation"
+    ],
+    "status": "not_researched",
+    "eligible": false
+  },
+  {
+    "app_id": 25,
+    "claim_id": "25.api.breadth",
+    "path": [
+      "api_surface",
+      "breadth"
+    ],
+    "status": "not_researched",
+    "eligible": false
+  },
+  {
+    "app_id": 25,
+    "claim_id": "25.mcp",
+    "path": [
+      "mcp",
+      "discovery"
+    ],
+    "status": "not_researched",
+    "eligible": false
+  },
+  {
+    "app_id": 25,
+    "claim_id": "25.buildability",
+    "path": [
+      "buildability"
+    ],
+    "status": "not_researched",
+    "eligible": false
+  },
+  {
+    "app_id": 26,
+    "claim_id": "26.identity",
+    "path": [
+      "identity",
+      "resolution"
+    ],
+    "status": "not_researched",
+    "eligible": false
+  },
+  {
+    "app_id": 26,
+    "claim_id": "26.purpose",
+    "path": [
+      "purpose"
+    ],
+    "status": "not_researched",
+    "eligible": false
+  },
+  {
+    "app_id": 26,
+    "claim_id": "26.testing.free_access",
+    "path": [
+      "credential_eligibility",
+      "testing",
+      "free_access"
+    ],
+    "status": "not_researched",
+    "eligible": false
+  },
+  {
+    "app_id": 26,
+    "claim_id": "26.testing.trial_access",
+    "path": [
+      "credential_eligibility",
+      "testing",
+      "trial_access"
+    ],
+    "status": "not_researched",
+    "eligible": false
+  },
+  {
+    "app_id": 26,
+    "claim_id": "26.testing.sandbox_access",
+    "path": [
+      "credential_eligibility",
+      "testing",
+      "sandbox_access"
+    ],
+    "status": "not_researched",
+    "eligible": false
+  },
+  {
+    "app_id": 26,
+    "claim_id": "26.testing.paid_required",
+    "path": [
+      "credential_eligibility",
+      "testing",
+      "paid_required"
+    ],
+    "status": "not_researched",
+    "eligible": false
+  },
+  {
+    "app_id": 26,
+    "claim_id": "26.testing.admin_approval_required",
+    "path": [
+      "credential_eligibility",
+      "testing",
+      "admin_approval_required"
+    ],
+    "status": "not_researched",
+    "eligible": false
+  },
+  {
+    "app_id": 26,
+    "claim_id": "26.testing.vendor_approval_required",
+    "path": [
+      "credential_eligibility",
+      "testing",
+      "vendor_approval_required"
+    ],
+    "status": "not_researched",
+    "eligible": false
+  },
+  {
+    "app_id": 26,
+    "claim_id": "26.testing.partner_approval_required",
+    "path": [
+      "credential_eligibility",
+      "testing",
+      "partner_approval_required"
+    ],
+    "status": "not_researched",
+    "eligible": false
+  },
+  {
+    "app_id": 26,
+    "claim_id": "26.testing.contact_sales_required",
+    "path": [
+      "credential_eligibility",
+      "testing",
+      "contact_sales_required"
+    ],
+    "status": "not_researched",
+    "eligible": false
+  },
+  {
+    "app_id": 26,
+    "claim_id": "26.testing.self_serve",
+    "path": [
+      "credential_eligibility",
+      "testing",
+      "self_serve"
+    ],
+    "status": "not_researched",
+    "eligible": false
+  },
+  {
+    "app_id": 26,
+    "claim_id": "26.production.free_access",
+    "path": [
+      "credential_eligibility",
+      "production",
+      "free_access"
+    ],
+    "status": "not_researched",
+    "eligible": false
+  },
+  {
+    "app_id": 26,
+    "claim_id": "26.production.trial_access",
+    "path": [
+      "credential_eligibility",
+      "production",
+      "trial_access"
+    ],
+    "status": "not_researched",
+    "eligible": false
+  },
+  {
+    "app_id": 26,
+    "claim_id": "26.production.sandbox_access",
+    "path": [
+      "credential_eligibility",
+      "production",
+      "sandbox_access"
+    ],
+    "status": "not_researched",
+    "eligible": false
+  },
+  {
+    "app_id": 26,
+    "claim_id": "26.production.paid_required",
+    "path": [
+      "credential_eligibility",
+      "production",
+      "paid_required"
+    ],
+    "status": "not_researched",
+    "eligible": false
+  },
+  {
+    "app_id": 26,
+    "claim_id": "26.production.admin_approval_required",
+    "path": [
+      "credential_eligibility",
+      "production",
+      "admin_approval_required"
+    ],
+    "status": "not_researched",
+    "eligible": false
+  },
+  {
+    "app_id": 26,
+    "claim_id": "26.production.vendor_approval_required",
+    "path": [
+      "credential_eligibility",
+      "production",
+      "vendor_approval_required"
+    ],
+    "status": "not_researched",
+    "eligible": false
+  },
+  {
+    "app_id": 26,
+    "claim_id": "26.production.partner_approval_required",
+    "path": [
+      "credential_eligibility",
+      "production",
+      "partner_approval_required"
+    ],
+    "status": "not_researched",
+    "eligible": false
+  },
+  {
+    "app_id": 26,
+    "claim_id": "26.production.contact_sales_required",
+    "path": [
+      "credential_eligibility",
+      "production",
+      "contact_sales_required"
+    ],
+    "status": "not_researched",
+    "eligible": false
+  },
+  {
+    "app_id": 26,
+    "claim_id": "26.production.self_serve",
+    "path": [
+      "credential_eligibility",
+      "production",
+      "self_serve"
+    ],
+    "status": "not_researched",
+    "eligible": false
+  },
+  {
+    "app_id": 26,
+    "claim_id": "26.api.public_documentation",
+    "path": [
+      "api_surface",
+      "public_documentation"
+    ],
+    "status": "not_researched",
+    "eligible": false
+  },
+  {
+    "app_id": 26,
+    "claim_id": "26.api.breadth",
+    "path": [
+      "api_surface",
+      "breadth"
+    ],
+    "status": "not_researched",
+    "eligible": false
+  },
+  {
+    "app_id": 26,
+    "claim_id": "26.mcp",
+    "path": [
+      "mcp",
+      "discovery"
+    ],
+    "status": "not_researched",
+    "eligible": false
+  },
+  {
+    "app_id": 26,
+    "claim_id": "26.buildability",
+    "path": [
+      "buildability"
+    ],
+    "status": "not_researched",
+    "eligible": false
+  },
+  {
+    "app_id": 27,
+    "claim_id": "27.identity",
+    "path": [
+      "identity",
+      "resolution"
+    ],
+    "status": "not_researched",
+    "eligible": false
+  },
+  {
+    "app_id": 27,
+    "claim_id": "27.purpose",
+    "path": [
+      "purpose"
+    ],
+    "status": "not_researched",
+    "eligible": false
+  },
+  {
+    "app_id": 27,
+    "claim_id": "27.testing.free_access",
+    "path": [
+      "credential_eligibility",
+      "testing",
+      "free_access"
+    ],
+    "status": "not_researched",
+    "eligible": false
+  },
+  {
+    "app_id": 27,
+    "claim_id": "27.testing.trial_access",
+    "path": [
+      "credential_eligibility",
+      "testing",
+      "trial_access"
+    ],
+    "status": "not_researched",
+    "eligible": false
+  },
+  {
+    "app_id": 27,
+    "claim_id": "27.testing.sandbox_access",
+    "path": [
+      "credential_eligibility",
+      "testing",
+      "sandbox_access"
+    ],
+    "status": "not_researched",
+    "eligible": false
+  },
+  {
+    "app_id": 27,
+    "claim_id": "27.testing.paid_required",
+    "path": [
+      "credential_eligibility",
+      "testing",
+      "paid_required"
+    ],
+    "status": "not_researched",
+    "eligible": false
+  },
+  {
+    "app_id": 27,
+    "claim_id": "27.testing.admin_approval_required",
+    "path": [
+      "credential_eligibility",
+      "testing",
+      "admin_approval_required"
+    ],
+    "status": "not_researched",
+    "eligible": false
+  },
+  {
+    "app_id": 27,
+    "claim_id": "27.testing.vendor_approval_required",
+    "path": [
+      "credential_eligibility",
+      "testing",
+      "vendor_approval_required"
+    ],
+    "status": "not_researched",
+    "eligible": false
+  },
+  {
+    "app_id": 27,
+    "claim_id": "27.testing.partner_approval_required",
+    "path": [
+      "credential_eligibility",
+      "testing",
+      "partner_approval_required"
+    ],
+    "status": "not_researched",
+    "eligible": false
+  },
+  {
+    "app_id": 27,
+    "claim_id": "27.testing.contact_sales_required",
+    "path": [
+      "credential_eligibility",
+      "testing",
+      "contact_sales_required"
+    ],
+    "status": "not_researched",
+    "eligible": false
+  },
+  {
+    "app_id": 27,
+    "claim_id": "27.testing.self_serve",
+    "path": [
+      "credential_eligibility",
+      "testing",
+      "self_serve"
+    ],
+    "status": "not_researched",
+    "eligible": false
+  },
+  {
+    "app_id": 27,
+    "claim_id": "27.production.free_access",
+    "path": [
+      "credential_eligibility",
+      "production",
+      "free_access"
+    ],
+    "status": "not_researched",
+    "eligible": false
+  },
+  {
+    "app_id": 27,
+    "claim_id": "27.production.trial_access",
+    "path": [
+      "credential_eligibility",
+      "production",
+      "trial_access"
+    ],
+    "status": "not_researched",
+    "eligible": false
+  },
+  {
+    "app_id": 27,
+    "claim_id": "27.production.sandbox_access",
+    "path": [
+      "credential_eligibility",
+      "production",
+      "sandbox_access"
+    ],
+    "status": "not_researched",
+    "eligible": false
+  },
+  {
+    "app_id": 27,
+    "claim_id": "27.production.paid_required",
+    "path": [
+      "credential_eligibility",
+      "production",
+      "paid_required"
+    ],
+    "status": "not_researched",
+    "eligible": false
+  },
+  {
+    "app_id": 27,
+    "claim_id": "27.production.admin_approval_required",
+    "path": [
+      "credential_eligibility",
+      "production",
+      "admin_approval_required"
+    ],
+    "status": "not_researched",
+    "eligible": false
+  },
+  {
+    "app_id": 27,
+    "claim_id": "27.production.vendor_approval_required",
+    "path": [
+      "credential_eligibility",
+      "production",
+      "vendor_approval_required"
+    ],
+    "status": "not_researched",
+    "eligible": false
+  },
+  {
+    "app_id": 27,
+    "claim_id": "27.production.partner_approval_required",
+    "path": [
+      "credential_eligibility",
+      "production",
+      "partner_approval_required"
+    ],
+    "status": "not_researched",
+    "eligible": false
+  },
+  {
+    "app_id": 27,
+    "claim_id": "27.production.contact_sales_required",
+    "path": [
+      "credential_eligibility",
+      "production",
+      "contact_sales_required"
+    ],
+    "status": "not_researched",
+    "eligible": false
+  },
+  {
+    "app_id": 27,
+    "claim_id": "27.production.self_serve",
+    "path": [
+      "credential_eligibility",
+      "production",
+      "self_serve"
+    ],
+    "status": "not_researched",
+    "eligible": false
+  },
+  {
+    "app_id": 27,
+    "claim_id": "27.api.public_documentation",
+    "path": [
+      "api_surface",
+      "public_documentation"
+    ],
+    "status": "not_researched",
+    "eligible": false
+  },
+  {
+    "app_id": 27,
+    "claim_id": "27.api.breadth",
+    "path": [
+      "api_surface",
+      "breadth"
+    ],
+    "status": "not_researched",
+    "eligible": false
+  },
+  {
+    "app_id": 27,
+    "claim_id": "27.mcp",
+    "path": [
+      "mcp",
+      "discovery"
+    ],
+    "status": "not_researched",
+    "eligible": false
+  },
+  {
+    "app_id": 27,
+    "claim_id": "27.buildability",
+    "path": [
+      "buildability"
+    ],
+    "status": "not_researched",
+    "eligible": false
+  },
+  {
+    "app_id": 28,
+    "claim_id": "28.identity",
+    "path": [
+      "identity",
+      "resolution"
+    ],
+    "status": "not_researched",
+    "eligible": false
+  },
+  {
+    "app_id": 28,
+    "claim_id": "28.purpose",
+    "path": [
+      "purpose"
+    ],
+    "status": "not_researched",
+    "eligible": false
+  },
+  {
+    "app_id": 28,
+    "claim_id": "28.testing.free_access",
+    "path": [
+      "credential_eligibility",
+      "testing",
+      "free_access"
+    ],
+    "status": "not_researched",
+    "eligible": false
+  },
+  {
+    "app_id": 28,
+    "claim_id": "28.testing.trial_access",
+    "path": [
+      "credential_eligibility",
+      "testing",
+      "trial_access"
+    ],
+    "status": "not_researched",
+    "eligible": false
+  },
+  {
+    "app_id": 28,
+    "claim_id": "28.testing.sandbox_access",
+    "path": [
+      "credential_eligibility",
+      "testing",
+      "sandbox_access"
+    ],
+    "status": "not_researched",
+    "eligible": false
+  },
+  {
+    "app_id": 28,
+    "claim_id": "28.testing.paid_required",
+    "path": [
+      "credential_eligibility",
+      "testing",
+      "paid_required"
+    ],
+    "status": "not_researched",
+    "eligible": false
+  },
+  {
+    "app_id": 28,
+    "claim_id": "28.testing.admin_approval_required",
+    "path": [
+      "credential_eligibility",
+      "testing",
+      "admin_approval_required"
+    ],
+    "status": "not_researched",
+    "eligible": false
+  },
+  {
+    "app_id": 28,
+    "claim_id": "28.testing.vendor_approval_required",
+    "path": [
+      "credential_eligibility",
+      "testing",
+      "vendor_approval_required"
+    ],
+    "status": "not_researched",
+    "eligible": false
+  },
+  {
+    "app_id": 28,
+    "claim_id": "28.testing.partner_approval_required",
+    "path": [
+      "credential_eligibility",
+      "testing",
+      "partner_approval_required"
+    ],
+    "status": "not_researched",
+    "eligible": false
+  },
+  {
+    "app_id": 28,
+    "claim_id": "28.testing.contact_sales_required",
+    "path": [
+      "credential_eligibility",
+      "testing",
+      "contact_sales_required"
+    ],
+    "status": "not_researched",
+    "eligible": false
+  },
+  {
+    "app_id": 28,
+    "claim_id": "28.testing.self_serve",
+    "path": [
+      "credential_eligibility",
+      "testing",
+      "self_serve"
+    ],
+    "status": "not_researched",
+    "eligible": false
+  },
+  {
+    "app_id": 28,
+    "claim_id": "28.production.free_access",
+    "path": [
+      "credential_eligibility",
+      "production",
+      "free_access"
+    ],
+    "status": "not_researched",
+    "eligible": false
+  },
+  {
+    "app_id": 28,
+    "claim_id": "28.production.trial_access",
+    "path": [
+      "credential_eligibility",
+      "production",
+      "trial_access"
+    ],
+    "status": "not_researched",
+    "eligible": false
+  },
+  {
+    "app_id": 28,
+    "claim_id": "28.production.sandbox_access",
+    "path": [
+      "credential_eligibility",
+      "production",
+      "sandbox_access"
+    ],
+    "status": "not_researched",
+    "eligible": false
+  },
+  {
+    "app_id": 28,
+    "claim_id": "28.production.paid_required",
+    "path": [
+      "credential_eligibility",
+      "production",
+      "paid_required"
+    ],
+    "status": "not_researched",
+    "eligible": false
+  },
+  {
+    "app_id": 28,
+    "claim_id": "28.production.admin_approval_required",
+    "path": [
+      "credential_eligibility",
+      "production",
+      "admin_approval_required"
+    ],
+    "status": "not_researched",
+    "eligible": false
+  },
+  {
+    "app_id": 28,
+    "claim_id": "28.production.vendor_approval_required",
+    "path": [
+      "credential_eligibility",
+      "production",
+      "vendor_approval_required"
+    ],
+    "status": "not_researched",
+    "eligible": false
+  },
+  {
+    "app_id": 28,
+    "claim_id": "28.production.partner_approval_required",
+    "path": [
+      "credential_eligibility",
+      "production",
+      "partner_approval_required"
+    ],
+    "status": "not_researched",
+    "eligible": false
+  },
+  {
+    "app_id": 28,
+    "claim_id": "28.production.contact_sales_required",
+    "path": [
+      "credential_eligibility",
+      "production",
+      "contact_sales_required"
+    ],
+    "status": "not_researched",
+    "eligible": false
+  },
+  {
+    "app_id": 28,
+    "claim_id": "28.production.self_serve",
+    "path": [
+      "credential_eligibility",
+      "production",
+      "self_serve"
+    ],
+    "status": "not_researched",
+    "eligible": false
+  },
+  {
+    "app_id": 28,
+    "claim_id": "28.api.public_documentation",
+    "path": [
+      "api_surface",
+      "public_documentation"
+    ],
+    "status": "not_researched",
+    "eligible": false
+  },
+  {
+    "app_id": 28,
+    "claim_id": "28.api.breadth",
+    "path": [
+      "api_surface",
+      "breadth"
+    ],
+    "status": "not_researched",
+    "eligible": false
+  },
+  {
+    "app_id": 28,
+    "claim_id": "28.mcp",
+    "path": [
+      "mcp",
+      "discovery"
+    ],
+    "status": "not_researched",
+    "eligible": false
+  },
+  {
+    "app_id": 28,
+    "claim_id": "28.buildability",
+    "path": [
+      "buildability"
+    ],
+    "status": "not_researched",
+    "eligible": false
+  },
+  {
+    "app_id": 29,
+    "claim_id": "29.identity",
+    "path": [
+      "identity",
+      "resolution"
+    ],
+    "status": "not_researched",
+    "eligible": false
+  },
+  {
+    "app_id": 29,
+    "claim_id": "29.purpose",
+    "path": [
+      "purpose"
+    ],
+    "status": "not_researched",
+    "eligible": false
+  },
+  {
+    "app_id": 29,
+    "claim_id": "29.testing.free_access",
+    "path": [
+      "credential_eligibility",
+      "testing",
+      "free_access"
+    ],
+    "status": "not_researched",
+    "eligible": false
+  },
+  {
+    "app_id": 29,
+    "claim_id": "29.testing.trial_access",
+    "path": [
+      "credential_eligibility",
+      "testing",
+      "trial_access"
+    ],
+    "status": "not_researched",
+    "eligible": false
+  },
+  {
+    "app_id": 29,
+    "claim_id": "29.testing.sandbox_access",
+    "path": [
+      "credential_eligibility",
+      "testing",
+      "sandbox_access"
+    ],
+    "status": "not_researched",
+    "eligible": false
+  },
+  {
+    "app_id": 29,
+    "claim_id": "29.testing.paid_required",
+    "path": [
+      "credential_eligibility",
+      "testing",
+      "paid_required"
+    ],
+    "status": "not_researched",
+    "eligible": false
+  },
+  {
+    "app_id": 29,
+    "claim_id": "29.testing.admin_approval_required",
+    "path": [
+      "credential_eligibility",
+      "testing",
+      "admin_approval_required"
+    ],
+    "status": "not_researched",
+    "eligible": false
+  },
+  {
+    "app_id": 29,
+    "claim_id": "29.testing.vendor_approval_required",
+    "path": [
+      "credential_eligibility",
+      "testing",
+      "vendor_approval_required"
+    ],
+    "status": "not_researched",
+    "eligible": false
+  },
+  {
+    "app_id": 29,
+    "claim_id": "29.testing.partner_approval_required",
+    "path": [
+      "credential_eligibility",
+      "testing",
+      "partner_approval_required"
+    ],
+    "status": "not_researched",
+    "eligible": false
+  },
+  {
+    "app_id": 29,
+    "claim_id": "29.testing.contact_sales_required",
+    "path": [
+      "credential_eligibility",
+      "testing",
+      "contact_sales_required"
+    ],
+    "status": "not_researched",
+    "eligible": false
+  },
+  {
+    "app_id": 29,
+    "claim_id": "29.testing.self_serve",
+    "path": [
+      "credential_eligibility",
+      "testing",
+      "self_serve"
+    ],
+    "status": "not_researched",
+    "eligible": false
+  },
+  {
+    "app_id": 29,
+    "claim_id": "29.production.free_access",
+    "path": [
+      "credential_eligibility",
+      "production",
+      "free_access"
+    ],
+    "status": "not_researched",
+    "eligible": false
+  },
+  {
+    "app_id": 29,
+    "claim_id": "29.production.trial_access",
+    "path": [
+      "credential_eligibility",
+      "production",
+      "trial_access"
+    ],
+    "status": "not_researched",
+    "eligible": false
+  },
+  {
+    "app_id": 29,
+    "claim_id": "29.production.sandbox_access",
+    "path": [
+      "credential_eligibility",
+      "production",
+      "sandbox_access"
+    ],
+    "status": "not_researched",
+    "eligible": false
+  },
+  {
+    "app_id": 29,
+    "claim_id": "29.production.paid_required",
+    "path": [
+      "credential_eligibility",
+      "production",
+      "paid_required"
+    ],
+    "status": "not_researched",
+    "eligible": false
+  },
+  {
+    "app_id": 29,
+    "claim_id": "29.production.admin_approval_required",
+    "path": [
+      "credential_eligibility",
+      "production",
+      "admin_approval_required"
+    ],
+    "status": "not_researched",
+    "eligible": false
+  },
+  {
+    "app_id": 29,
+    "claim_id": "29.production.vendor_approval_required",
+    "path": [
+      "credential_eligibility",
+      "production",
+      "vendor_approval_required"
+    ],
+    "status": "not_researched",
+    "eligible": false
+  },
+  {
+    "app_id": 29,
+    "claim_id": "29.production.partner_approval_required",
+    "path": [
+      "credential_eligibility",
+      "production",
+      "partner_approval_required"
+    ],
+    "status": "not_researched",
+    "eligible": false
+  },
+  {
+    "app_id": 29,
+    "claim_id": "29.production.contact_sales_required",
+    "path": [
+      "credential_eligibility",
+      "production",
+      "contact_sales_required"
+    ],
+    "status": "not_researched",
+    "eligible": false
+  },
+  {
+    "app_id": 29,
+    "claim_id": "29.production.self_serve",
+    "path": [
+      "credential_eligibility",
+      "production",
+      "self_serve"
+    ],
+    "status": "not_researched",
+    "eligible": false
+  },
+  {
+    "app_id": 29,
+    "claim_id": "29.api.public_documentation",
+    "path": [
+      "api_surface",
+      "public_documentation"
+    ],
+    "status": "not_researched",
+    "eligible": false
+  },
+  {
+    "app_id": 29,
+    "claim_id": "29.api.breadth",
+    "path": [
+      "api_surface",
+      "breadth"
+    ],
+    "status": "not_researched",
+    "eligible": false
+  },
+  {
+    "app_id": 29,
+    "claim_id": "29.mcp",
+    "path": [
+      "mcp",
+      "discovery"
+    ],
+    "status": "not_researched",
+    "eligible": false
+  },
+  {
+    "app_id": 29,
+    "claim_id": "29.buildability",
+    "path": [
+      "buildability"
+    ],
+    "status": "not_researched",
+    "eligible": false
+  },
+  {
+    "app_id": 30,
+    "claim_id": "30.identity",
+    "path": [
+      "identity",
+      "resolution"
+    ],
+    "status": "not_researched",
+    "eligible": false
+  },
+  {
+    "app_id": 30,
+    "claim_id": "30.purpose",
+    "path": [
+      "purpose"
+    ],
+    "status": "not_researched",
+    "eligible": false
+  },
+  {
+    "app_id": 30,
+    "claim_id": "30.testing.free_access",
+    "path": [
+      "credential_eligibility",
+      "testing",
+      "free_access"
+    ],
+    "status": "not_researched",
+    "eligible": false
+  },
+  {
+    "app_id": 30,
+    "claim_id": "30.testing.trial_access",
+    "path": [
+      "credential_eligibility",
+      "testing",
+      "trial_access"
+    ],
+    "status": "not_researched",
+    "eligible": false
+  },
+  {
+    "app_id": 30,
+    "claim_id": "30.testing.sandbox_access",
+    "path": [
+      "credential_eligibility",
+      "testing",
+      "sandbox_access"
+    ],
+    "status": "not_researched",
+    "eligible": false
+  },
+  {
+    "app_id": 30,
+    "claim_id": "30.testing.paid_required",
+    "path": [
+      "credential_eligibility",
+      "testing",
+      "paid_required"
+    ],
+    "status": "not_researched",
+    "eligible": false
+  },
+  {
+    "app_id": 30,
+    "claim_id": "30.testing.admin_approval_required",
+    "path": [
+      "credential_eligibility",
+      "testing",
+      "admin_approval_required"
+    ],
+    "status": "not_researched",
+    "eligible": false
+  },
+  {
+    "app_id": 30,
+    "claim_id": "30.testing.vendor_approval_required",
+    "path": [
+      "credential_eligibility",
+      "testing",
+      "vendor_approval_required"
+    ],
+    "status": "not_researched",
+    "eligible": false
+  },
+  {
+    "app_id": 30,
+    "claim_id": "30.testing.partner_approval_required",
+    "path": [
+      "credential_eligibility",
+      "testing",
+      "partner_approval_required"
+    ],
+    "status": "not_researched",
+    "eligible": false
+  },
+  {
+    "app_id": 30,
+    "claim_id": "30.testing.contact_sales_required",
+    "path": [
+      "credential_eligibility",
+      "testing",
+      "contact_sales_required"
+    ],
+    "status": "not_researched",
+    "eligible": false
+  },
+  {
+    "app_id": 30,
+    "claim_id": "30.testing.self_serve",
+    "path": [
+      "credential_eligibility",
+      "testing",
+      "self_serve"
+    ],
+    "status": "not_researched",
+    "eligible": false
+  },
+  {
+    "app_id": 30,
+    "claim_id": "30.production.free_access",
+    "path": [
+      "credential_eligibility",
+      "production",
+      "free_access"
+    ],
+    "status": "not_researched",
+    "eligible": false
+  },
+  {
+    "app_id": 30,
+    "claim_id": "30.production.trial_access",
+    "path": [
+      "credential_eligibility",
+      "production",
+      "trial_access"
+    ],
+    "status": "not_researched",
+    "eligible": false
+  },
+  {
+    "app_id": 30,
+    "claim_id": "30.production.sandbox_access",
+    "path": [
+      "credential_eligibility",
+      "production",
+      "sandbox_access"
+    ],
+    "status": "not_researched",
+    "eligible": false
+  },
+  {
+    "app_id": 30,
+    "claim_id": "30.production.paid_required",
+    "path": [
+      "credential_eligibility",
+      "production",
+      "paid_required"
+    ],
+    "status": "not_researched",
+    "eligible": false
+  },
+  {
+    "app_id": 30,
+    "claim_id": "30.production.admin_approval_required",
+    "path": [
+      "credential_eligibility",
+      "production",
+      "admin_approval_required"
+    ],
+    "status": "not_researched",
+    "eligible": false
+  },
+  {
+    "app_id": 30,
+    "claim_id": "30.production.vendor_approval_required",
+    "path": [
+      "credential_eligibility",
+      "production",
+      "vendor_approval_required"
+    ],
+    "status": "not_researched",
+    "eligible": false
+  },
+  {
+    "app_id": 30,
+    "claim_id": "30.production.partner_approval_required",
+    "path": [
+      "credential_eligibility",
+      "production",
+      "partner_approval_required"
+    ],
+    "status": "not_researched",
+    "eligible": false
+  },
+  {
+    "app_id": 30,
+    "claim_id": "30.production.contact_sales_required",
+    "path": [
+      "credential_eligibility",
+      "production",
+      "contact_sales_required"
+    ],
+    "status": "not_researched",
+    "eligible": false
+  },
+  {
+    "app_id": 30,
+    "claim_id": "30.production.self_serve",
+    "path": [
+      "credential_eligibility",
+      "production",
+      "self_serve"
+    ],
+    "status": "not_researched",
+    "eligible": false
+  },
+  {
+    "app_id": 30,
+    "claim_id": "30.api.public_documentation",
+    "path": [
+      "api_surface",
+      "public_documentation"
+    ],
+    "status": "not_researched",
+    "eligible": false
+  },
+  {
+    "app_id": 30,
+    "claim_id": "30.api.breadth",
+    "path": [
+      "api_surface",
+      "breadth"
+    ],
+    "status": "not_researched",
+    "eligible": false
+  },
+  {
+    "app_id": 30,
+    "claim_id": "30.mcp",
+    "path": [
+      "mcp",
+      "discovery"
+    ],
+    "status": "not_researched",
+    "eligible": false
+  },
+  {
+    "app_id": 30,
+    "claim_id": "30.buildability",
+    "path": [
+      "buildability"
+    ],
+    "status": "not_researched",
+    "eligible": false
+  }
+]

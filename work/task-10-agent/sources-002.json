@@ -1,0 +1,67 @@
+{
+  "sources": [
+    {
+      "app_id": 32,
+      "url": "https://developers.facebook.com/documentation/ads-commerce/llms.txt",
+      "kind": "primary_docs",
+      "scope": "Meta Marketing API (Graph API) for Facebook/Instagram Ads; OAuth 2.0 access tokens and App Review tiers; test/development versus production access",
+      "environments": ["testing", "production"],
+      "attribution_basis": "Official Meta Ads and Commerce documentation index (llms.txt)",
+      "attribution_by": "task10-research-agent-gemini"
+    },
+    {
+      "app_id": 35,
+      "url": "https://raw.githubusercontent.com/AlexlaGuardia/mcp-mailchimp/main/README.md",
+      "kind": "community_repository",
+      "scope": "Mailchimp Marketing API v3.0 (distinct from Transactional/Mandrill API); API key and OAuth 2.0 auth; Free vs paid Marketing plans",
+      "environments": [],
+      "attribution_basis": "Community Mailchimp Marketing API MCP repository README (establishes community implementation only)",
+      "attribution_by": "task10-research-agent-gemini"
+    },
+    {
+      "app_id": 38,
+      "url": "https://raw.githubusercontent.com/pinterest/api-description/main/README.md",
+      "kind": "official_repository",
+      "scope": "Pinterest API v5; OAuth 2.0 and Trial vs Standard access tiers; sandbox/trial testing versus production access",
+      "environments": ["testing", "production"],
+      "attribution_basis": "Official Pinterest GitHub OpenAPI description repository README",
+      "attribution_by": "task10-research-agent-gemini"
+    },
+    {
+      "app_id": 38,
+      "url": "https://developers.pinterest.com/docs/getting-started/access-tiers/",
+      "kind": "primary_docs",
+      "scope": "Pinterest API v5; OAuth 2.0 and Trial vs Standard access tiers; sandbox/trial testing versus production access",
+      "environments": ["testing", "production"],
+      "attribution_basis": "Official Pinterest API v5 access tiers documentation",
+      "attribution_by": "task10-research-agent-gemini"
+    },
+    {
+      "app_id": 38,
+      "url": "https://raw.githubusercontent.com/terryso/mcp-pinterest/main/README.md",
+      "kind": "community_repository",
+      "scope": "Pinterest API v5; OAuth 2.0 and Trial vs Standard access tiers; sandbox/trial testing versus production access",
+      "environments": [],
+      "attribution_basis": "Community Pinterest MCP repository README (establishes community implementation only)",
+      "attribution_by": "task10-research-agent-gemini"
+    },
+    {
+      "app_id": 39,
+      "url": "https://developers.facebook.com/docs/threads/posts",
+      "kind": "primary_docs",
+      "scope": "Meta Threads API (graph.threads.net); OAuth 2.0 user access tokens and App Review; Development/tester mode versus Live production access",
+      "environments": ["testing", "production"],
+      "attribution_basis": "Official Meta Threads API posts documentation",
+      "attribution_by": "task10-research-agent-gemini"
+    },
+    {
+      "app_id": 39,
+      "url": "https://developers.facebook.com/docs/threads/insights",
+      "kind": "primary_docs",
+      "scope": "Meta Threads API (graph.threads.net); OAuth 2.0 user access tokens and App Review; Development/tester mode versus Live production access",
+      "environments": ["testing", "production"],
+      "attribution_basis": "Official Meta Threads API insights documentation",
+      "attribution_by": "task10-research-agent-gemini"
+    }
+  ]
+}

@@ -1,0 +1,781 @@
+[
+  {
+    "spec": {
+      "app_id": 21,
+      "url": "https://docs.slack.dev/apis/web-api/",
+      "kind": "primary_docs",
+      "scope": "Slack Web API, OAuth 2.0/bot and user token auth, free/paid workspace plans, and official hosted MCP server",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor-controlled official documentation or product page",
+      "attribution_by": "task09-research-agent-gemini"
+    },
+    "captured_on": "2026-11-23",
+    "capture_method": "http_content",
+    "snapshot_ref": "snapshots/1815330a4b99e5c8a0cdbfb36e3cbc835fe1c954e64aa3533ce2c3649a93d9f2.txt",
+    "content_sha256": "1815330a4b99e5c8a0cdbfb36e3cbc835fe1c954e64aa3533ce2c3649a93d9f2",
+    "line_count": 177
+  },
+  {
+    "spec": {
+      "app_id": 21,
+      "url": "https://docs.slack.dev/authentication/installing-with-oauth",
+      "kind": "primary_docs",
+      "scope": "Slack Web API, OAuth 2.0/bot and user token auth, free/paid workspace plans, and official hosted MCP server",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor-controlled official documentation or product page",
+      "attribution_by": "task09-research-agent-gemini"
+    },
+    "captured_on": "2026-11-23",
+    "capture_method": "http_content",
+    "snapshot_ref": "snapshots/0fc8652eac15e4f58bbd5f876bdc384ee94500f3b7af7e7f4bf72c8a319334ed.txt",
+    "content_sha256": "0fc8652eac15e4f58bbd5f876bdc384ee94500f3b7af7e7f4bf72c8a319334ed",
+    "line_count": 306
+  },
+  {
+    "spec": {
+      "app_id": 21,
+      "url": "https://docs.slack.dev/ai/slack-mcp-server",
+      "kind": "primary_docs",
+      "scope": "Slack Web API, OAuth 2.0/bot and user token auth, free/paid workspace plans, and official hosted MCP server",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor-controlled official documentation or product page",
+      "attribution_by": "task09-research-agent-gemini"
+    },
+    "captured_on": "2026-11-23",
+    "capture_method": "http_content",
+    "snapshot_ref": "snapshots/206c3fb57678c42e2a6c8e68554ab3487eefc50cac445c037396f206257df236.txt",
+    "content_sha256": "206c3fb57678c42e2a6c8e68554ab3487eefc50cac445c037396f206257df236",
+    "line_count": 216
+  },
+  {
+    "spec": {
+      "app_id": 21,
+      "url": "https://docs.slack.dev/reference/methods",
+      "kind": "primary_docs",
+      "scope": "Slack Web API, OAuth 2.0/bot and user token auth, free/paid workspace plans, and official hosted MCP server",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor-controlled official documentation or product page",
+      "attribution_by": "task09-research-agent-gemini"
+    },
+    "captured_on": "2026-11-23",
+    "capture_method": "http_content",
+    "snapshot_ref": "snapshots/c73ad1b9571156fb2ab8ca8acd42091fd97581095463d7110b29720bca4912f1.txt",
+    "content_sha256": "c73ad1b9571156fb2ab8ca8acd42091fd97581095463d7110b29720bca4912f1",
+    "line_count": 103
+  },
+  {
+    "spec": {
+      "app_id": 21,
+      "url": "https://slack.com/pricing",
+      "kind": "official_product_page",
+      "scope": "Slack Web API, OAuth 2.0/bot and user token auth, free/paid workspace plans, and official hosted MCP server",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor-controlled official documentation or product page",
+      "attribution_by": "task09-research-agent-gemini"
+    },
+    "captured_on": "2026-11-23",
+    "capture_method": "http_content",
+    "snapshot_ref": "snapshots/0b9cc6808b06190ba7eeb03aa7b944aacfacf3b2d7e39a7cfd860d9fdae56866.txt",
+    "content_sha256": "0b9cc6808b06190ba7eeb03aa7b944aacfacf3b2d7e39a7cfd860d9fdae56866",
+    "line_count": 820
+  },
+  {
+    "spec": {
+      "app_id": 22,
+      "url": "https://www.twilio.com/docs/usage/api",
+      "kind": "primary_docs",
+      "scope": "Twilio REST APIs, HTTP Basic Account SID/Auth Token and API Key auth, free trial/pay-as-you-go pricing, and official MCP servers",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor-controlled official documentation or product page",
+      "attribution_by": "task09-research-agent-gemini"
+    },
+    "captured_on": "2026-11-23",
+    "capture_method": "http_content",
+    "snapshot_ref": "snapshots/400dcf655bdf09b3e8b13fbd81eaa92acb4d96cc05c6cd80fb9a5aab09310f52.txt",
+    "content_sha256": "400dcf655bdf09b3e8b13fbd81eaa92acb4d96cc05c6cd80fb9a5aab09310f52",
+    "line_count": 90
+  },
+  {
+    "spec": {
+      "app_id": 22,
+      "url": "https://www.twilio.com/docs/iam/api-keys",
+      "kind": "primary_docs",
+      "scope": "Twilio REST APIs, HTTP Basic Account SID/Auth Token and API Key auth, free trial/pay-as-you-go pricing, and official MCP servers",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor-controlled official documentation or product page",
+      "attribution_by": "task09-research-agent-gemini"
+    },
+    "captured_on": "2026-11-23",
+    "capture_method": "http_content",
+    "snapshot_ref": "snapshots/da4aae9d238464ee7b96fd87e24d04ad80217bc4828123118f248417e6b3f64d.txt",
+    "content_sha256": "da4aae9d238464ee7b96fd87e24d04ad80217bc4828123118f248417e6b3f64d",
+    "line_count": 113
+  },
+  {
+    "spec": {
+      "app_id": 22,
+      "url": "https://www.twilio.com/docs/usage/tutorials/how-to-use-your-free-trial-account",
+      "kind": "primary_docs",
+      "scope": "Twilio REST APIs, HTTP Basic Account SID/Auth Token and API Key auth, free trial/pay-as-you-go pricing, and official MCP servers",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor-controlled official documentation or product page",
+      "attribution_by": "task09-research-agent-gemini"
+    },
+    "captured_on": "2026-11-23",
+    "capture_method": "http_content",
+    "snapshot_ref": "snapshots/30e7291253e9309f3c8a17ecad50e071ebdfe653b6f75faf73a760f34876fc14.txt",
+    "content_sha256": "30e7291253e9309f3c8a17ecad50e071ebdfe653b6f75faf73a760f34876fc14",
+    "line_count": 288
+  },
+  {
+    "spec": {
+      "app_id": 22,
+      "url": "https://www.twilio.com/en-us/pricing",
+      "kind": "official_product_page",
+      "scope": "Twilio REST APIs, HTTP Basic Account SID/Auth Token and API Key auth, free trial/pay-as-you-go pricing, and official MCP servers",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor-controlled official documentation or product page",
+      "attribution_by": "task09-research-agent-gemini"
+    },
+    "captured_on": "2026-11-23",
+    "capture_method": "http_content",
+    "snapshot_ref": "snapshots/d20f905ca1b357a96c1957d0fd25ac98643e2c3ecb6cf4ae3d52f9c5873831d0.txt",
+    "content_sha256": "d20f905ca1b357a96c1957d0fd25ac98643e2c3ecb6cf4ae3d52f9c5873831d0",
+    "line_count": 964
+  },
+  {
+    "spec": {
+      "app_id": 22,
+      "url": "https://github.com/twilio-labs/mcp",
+      "kind": "official_repository",
+      "scope": "Twilio REST APIs, HTTP Basic Account SID/Auth Token and API Key auth, free trial/pay-as-you-go pricing, and official MCP servers",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Official Twilio Labs GitHub repository",
+      "attribution_by": "task09-research-agent-gemini"
+    },
+    "captured_on": "2026-11-23",
+    "capture_method": "http_content",
+    "snapshot_ref": "snapshots/a480832c9c450e2122ac8ad86e4d79bdec28f92cf0f706613c866c73c2737bd0.txt",
+    "content_sha256": "a480832c9c450e2122ac8ad86e4d79bdec28f92cf0f706613c866c73c2737bd0",
+    "line_count": 251
+  },
+  {
+    "spec": {
+      "app_id": 23,
+      "url": "https://www.zoho.com/cliq/help/restapi/v2/",
+      "kind": "primary_docs",
+      "scope": "Zoho Cliq REST API, OAuth 2.0 auth, free/paid workspace plans, and community MCP ecosystem",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor-controlled official documentation or product page",
+      "attribution_by": "task09-research-agent-gemini"
+    },
+    "captured_on": "2026-11-23",
+    "capture_method": "http_content",
+    "snapshot_ref": "snapshots/d07ab28d613ab1db28f2f2c3f705c1d6041140e1cf7ebfe0fe63e2993d1c4af7.txt",
+    "content_sha256": "d07ab28d613ab1db28f2f2c3f705c1d6041140e1cf7ebfe0fe63e2993d1c4af7",
+    "line_count": 10572
+  },
+  {
+    "spec": {
+      "app_id": 23,
+      "url": "https://www.zoho.com/cliq/pricing.html",
+      "kind": "official_product_page",
+      "scope": "Zoho Cliq REST API, OAuth 2.0 auth, free/paid workspace plans, and community MCP ecosystem",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor-controlled official documentation or product page",
+      "attribution_by": "task09-research-agent-gemini"
+    },
+    "captured_on": "2026-11-23",
+    "capture_method": "http_content",
+    "snapshot_ref": "snapshots/c15b43b33a358c08f362680e45726349fae06afaee4b47c846ddf7be54d37d76.txt",
+    "content_sha256": "c15b43b33a358c08f362680e45726349fae06afaee4b47c846ddf7be54d37d76",
+    "line_count": 561
+  },
+  {
+    "spec": {
+      "app_id": 23,
+      "url": "https://github.com/rohansen856/cliq-mcp",
+      "kind": "community_repository",
+      "scope": "Zoho Cliq REST API, OAuth 2.0 auth, free/paid workspace plans, and community MCP ecosystem",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Community-authored GitHub repository for Zoho Cliq MCP",
+      "attribution_by": "task09-research-agent-gemini"
+    },
+    "captured_on": "2026-11-23",
+    "capture_method": "http_content",
+    "snapshot_ref": "snapshots/adc4d51434748acecbf89f8f02ade8c1deb44c8872569b6426789c6142c7e8d7.txt",
+    "content_sha256": "adc4d51434748acecbf89f8f02ade8c1deb44c8872569b6426789c6142c7e8d7",
+    "line_count": 451
+  },
+  {
+    "spec": {
+      "app_id": 24,
+      "url": "https://open.larksuite.com/document/home/index",
+      "kind": "primary_docs",
+      "scope": "Lark (Larksuite) Open Platform REST APIs, app/tenant/user access token auth, free/paid workspace plans, and official MCP server",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor-controlled official documentation or product page",
+      "attribution_by": "task09-research-agent-gemini"
+    },
+    "captured_on": "2026-11-23",
+    "capture_method": "http_content",
+    "snapshot_ref": "snapshots/521178ab0d91354f53bb5caf7bddb2c751434f4eec3cc7b347138fe839b4ac04.txt",
+    "content_sha256": "521178ab0d91354f53bb5caf7bddb2c751434f4eec3cc7b347138fe839b4ac04",
+    "line_count": 1
+  },
+  {
+    "spec": {
+      "app_id": 24,
+      "url": "https://open.larksuite.com/document/server-docs/authentication-management/access-token/tenant_access_token_internal",
+      "kind": "primary_docs",
+      "scope": "Lark (Larksuite) Open Platform REST APIs, app/tenant/user access token auth, free/paid workspace plans, and official MCP server",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor-controlled official documentation or product page",
+      "attribution_by": "task09-research-agent-gemini"
+    },
+    "captured_on": "2026-11-23",
+    "capture_method": "http_content",
+    "snapshot_ref": "snapshots/521178ab0d91354f53bb5caf7bddb2c751434f4eec3cc7b347138fe839b4ac04.txt",
+    "content_sha256": "521178ab0d91354f53bb5caf7bddb2c751434f4eec3cc7b347138fe839b4ac04",
+    "line_count": 1
+  },
+  {
+    "spec": {
+      "app_id": 24,
+      "url": "https://www.larksuite.com/en_us/plans",
+      "kind": "official_product_page",
+      "scope": "Lark (Larksuite) Open Platform REST APIs, app/tenant/user access token auth, free/paid workspace plans, and official MCP server",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor-controlled official documentation or product page",
+      "attribution_by": "task09-research-agent-gemini"
+    },
+    "captured_on": "2026-11-23",
+    "capture_method": "http_content",
+    "snapshot_ref": "snapshots/1893c6c30e17a71a9cbfc4cbf1b4e9bc713cfadd5c6a4b2a06eb99fca98a10ae.txt",
+    "content_sha256": "1893c6c30e17a71a9cbfc4cbf1b4e9bc713cfadd5c6a4b2a06eb99fca98a10ae",
+    "line_count": 1
+  },
+  {
+    "spec": {
+      "app_id": 24,
+      "url": "https://github.com/larksuite/lark-openapi-mcp",
+      "kind": "official_repository",
+      "scope": "Lark (Larksuite) Open Platform REST APIs, app/tenant/user access token auth, free/paid workspace plans, and official MCP server",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Official Larksuite GitHub repository for OpenAPI MCP",
+      "attribution_by": "task09-research-agent-gemini"
+    },
+    "captured_on": "2026-11-23",
+    "capture_method": "http_content",
+    "snapshot_ref": "snapshots/e5b750f946ee236139a49c06924547c177f23eead91cb03a2efd660f53f4365d.txt",
+    "content_sha256": "e5b750f946ee236139a49c06924547c177f23eead91cb03a2efd660f53f4365d",
+    "line_count": 343
+  },
+  {
+    "spec": {
+      "app_id": 25,
+      "url": "https://pumble.com/help/integrations/add-pumble-apps/api-keys/",
+      "kind": "primary_docs",
+      "scope": "Pumble REST API/Addon and SDK, API key/webhook/app token auth, free/paid workspace plans, and community MCP ecosystem",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor-controlled official documentation or product page",
+      "attribution_by": "task09-research-agent-gemini"
+    },
+    "captured_on": "2026-11-23",
+    "capture_method": "http_content",
+    "snapshot_ref": "snapshots/7a57759ab16d1cfaa52defc701caad34388e6cecf77c0ca6816f38c644d2226d.txt",
+    "content_sha256": "7a57759ab16d1cfaa52defc701caad34388e6cecf77c0ca6816f38c644d2226d",
+    "line_count": 193
+  },
+  {
+    "spec": {
+      "app_id": 25,
+      "url": "https://pumble.com/help/integrations/add-pumble-apps/incoming-webhooks/",
+      "kind": "primary_docs",
+      "scope": "Pumble REST API/Addon and SDK, API key/webhook/app token auth, free/paid workspace plans, and community MCP ecosystem",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor-controlled official documentation or product page",
+      "attribution_by": "task09-research-agent-gemini"
+    },
+    "captured_on": "2026-11-23",
+    "capture_method": "http_content",
+    "snapshot_ref": "snapshots/5a77820b017f0cf3e588443f523cd6f8d27ec86e23a2f3e8476bafbbc6b8805e.txt",
+    "content_sha256": "5a77820b017f0cf3e588443f523cd6f8d27ec86e23a2f3e8476bafbbc6b8805e",
+    "line_count": 237
+  },
+  {
+    "spec": {
+      "app_id": 25,
+      "url": "https://github.com/infralayers/pumble-mcp",
+      "kind": "community_repository",
+      "scope": "Pumble REST API/Addon and SDK, API key/webhook/app token auth, free/paid workspace plans, and community MCP ecosystem",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Community-authored GitHub repository for Pumble MCP",
+      "attribution_by": "task09-research-agent-gemini"
+    },
+    "captured_on": "2026-11-23",
+    "capture_method": "http_content",
+    "snapshot_ref": "snapshots/6fa3d69416457104b732e05ebb61efd01bc628d6f8b9597fef36f71e771f0e85.txt",
+    "content_sha256": "6fa3d69416457104b732e05ebb61efd01bc628d6f8b9597fef36f71e771f0e85",
+    "line_count": 393
+  },
+  {
+    "spec": {
+      "app_id": 26,
+      "url": "https://discord.com/developers/docs/intro",
+      "kind": "primary_docs",
+      "scope": "Discord HTTP REST API and Gateway, Bot token and OAuth 2.0 auth, free developer portal/app access, and community MCP ecosystem",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor-controlled official documentation or product page",
+      "attribution_by": "task09-research-agent-gemini"
+    },
+    "captured_on": "2026-11-23",
+    "capture_method": "http_content",
+    "snapshot_ref": "snapshots/f12b35506ca105d5e785ebe4640345b327cb862bbc49bef87ca38cac601a8769.txt",
+    "content_sha256": "f12b35506ca105d5e785ebe4640345b327cb862bbc49bef87ca38cac601a8769",
+    "line_count": 86
+  },
+  {
+    "spec": {
+      "app_id": 26,
+      "url": "https://discord.com/developers/docs/reference",
+      "kind": "primary_docs",
+      "scope": "Discord HTTP REST API and Gateway, Bot token and OAuth 2.0 auth, free developer portal/app access, and community MCP ecosystem",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor-controlled official documentation or product page",
+      "attribution_by": "task09-research-agent-gemini"
+    },
+    "captured_on": "2026-11-23",
+    "capture_method": "http_content",
+    "snapshot_ref": "snapshots/c68c3d84b01e49aea324563f2128e847b295fef57f2e74fea79944adac25db83.txt",
+    "content_sha256": "c68c3d84b01e49aea324563f2128e847b295fef57f2e74fea79944adac25db83",
+    "line_count": 482
+  },
+  {
+    "spec": {
+      "app_id": 26,
+      "url": "https://discord.com/developers/docs/topics/oauth2",
+      "kind": "primary_docs",
+      "scope": "Discord HTTP REST API and Gateway, Bot token and OAuth 2.0 auth, free developer portal/app access, and community MCP ecosystem",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor-controlled official documentation or product page",
+      "attribution_by": "task09-research-agent-gemini"
+    },
+    "captured_on": "2026-11-23",
+    "capture_method": "http_content",
+    "snapshot_ref": "snapshots/b2cbf46878e9b203c667c24ef4bc9e91004b5ca6745195326437177510e882d6.txt",
+    "content_sha256": "b2cbf46878e9b203c667c24ef4bc9e91004b5ca6745195326437177510e882d6",
+    "line_count": 420
+  },
+  {
+    "spec": {
+      "app_id": 26,
+      "url": "https://discord.com/developers/docs/resources/message",
+      "kind": "primary_docs",
+      "scope": "Discord HTTP REST API and Gateway, Bot token and OAuth 2.0 auth, free developer portal/app access, and community MCP ecosystem",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor-controlled official documentation or product page",
+      "attribution_by": "task09-research-agent-gemini"
+    },
+    "captured_on": "2026-11-23",
+    "capture_method": "http_content",
+    "snapshot_ref": "snapshots/657a714c913c9a31e1fe4f85bb932c77dd64df686bd8722f5221fbb6d47612fc.txt",
+    "content_sha256": "657a714c913c9a31e1fe4f85bb932c77dd64df686bd8722f5221fbb6d47612fc",
+    "line_count": 948
+  },
+  {
+    "spec": {
+      "app_id": 26,
+      "url": "https://github.com/hanweg/mcp-discord",
+      "kind": "community_repository",
+      "scope": "Discord HTTP REST API and Gateway, Bot token and OAuth 2.0 auth, free developer portal/app access, and community MCP ecosystem",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Community-authored GitHub repository for Discord MCP",
+      "attribution_by": "task09-research-agent-gemini"
+    },
+    "captured_on": "2026-11-23",
+    "capture_method": "http_content",
+    "snapshot_ref": "snapshots/2b3728066ea1ad4d52df3555b17c6e548ef942903ebe04abbbf34d7b74c10a24.txt",
+    "content_sha256": "2b3728066ea1ad4d52df3555b17c6e548ef942903ebe04abbbf34d7b74c10a24",
+    "line_count": 234
+  },
+  {
+    "spec": {
+      "app_id": 27,
+      "url": "https://core.telegram.org/bots",
+      "kind": "primary_docs",
+      "scope": "Telegram Bot API and MTProto API, BotFather token and api_id/api_hash auth, free API access, and community MCP ecosystem",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor-controlled official documentation or product page",
+      "attribution_by": "task09-research-agent-gemini"
+    },
+    "captured_on": "2026-11-23",
+    "capture_method": "http_content",
+    "snapshot_ref": "snapshots/e3b1dfb386a32da4d206f7bbe8b2180c2503c102aceaa4cdbaac0da2f372eb0d.txt",
+    "content_sha256": "e3b1dfb386a32da4d206f7bbe8b2180c2503c102aceaa4cdbaac0da2f372eb0d",
+    "line_count": 111
+  },
+  {
+    "spec": {
+      "app_id": 27,
+      "url": "https://core.telegram.org/bots/api",
+      "kind": "primary_docs",
+      "scope": "Telegram Bot API and MTProto API, BotFather token and api_id/api_hash auth, free API access, and community MCP ecosystem",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor-controlled official documentation or product page",
+      "attribution_by": "task09-research-agent-gemini"
+    },
+    "captured_on": "2026-11-23",
+    "capture_method": "http_content",
+    "snapshot_ref": "snapshots/ba70aa9153d82b34a98d8f1f5042f94fa97e470d756fea79cd385eef1ed5273c.txt",
+    "content_sha256": "ba70aa9153d82b34a98d8f1f5042f94fa97e470d756fea79cd385eef1ed5273c",
+    "line_count": 14067
+  },
+  {
+    "spec": {
+      "app_id": 27,
+      "url": "https://core.telegram.org/api",
+      "kind": "primary_docs",
+      "scope": "Telegram Bot API and MTProto API, BotFather token and api_id/api_hash auth, free API access, and community MCP ecosystem",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor-controlled official documentation or product page",
+      "attribution_by": "task09-research-agent-gemini"
+    },
+    "captured_on": "2026-11-23",
+    "capture_method": "http_content",
+    "snapshot_ref": "snapshots/b7fbe6fb1f1d0c85b6603fec22f459f2b6a6643522efc46942631934bff914b0.txt",
+    "content_sha256": "b7fbe6fb1f1d0c85b6603fec22f459f2b6a6643522efc46942631934bff914b0",
+    "line_count": 300
+  },
+  {
+    "spec": {
+      "app_id": 27,
+      "url": "https://github.com/sparfenyuk/mcp-telegram",
+      "kind": "community_repository",
+      "scope": "Telegram Bot API and MTProto API, BotFather token and api_id/api_hash auth, free API access, and community MCP ecosystem",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Community-authored GitHub repository for Telegram MTProto MCP",
+      "attribution_by": "task09-research-agent-gemini"
+    },
+    "captured_on": "2026-11-23",
+    "capture_method": "http_content",
+    "snapshot_ref": "snapshots/26b6f5e4336b748d6e5f92215ad8273b8193013e21dc6f108f6f531b8f6b57e3.txt",
+    "content_sha256": "26b6f5e4336b748d6e5f92215ad8273b8193013e21dc6f108f6f531b8f6b57e3",
+    "line_count": 309
+  },
+  {
+    "spec": {
+      "app_id": 27,
+      "url": "https://github.com/node2flow-th/telegram-bot-mcp-community",
+      "kind": "community_repository",
+      "scope": "Telegram Bot API and MTProto API, BotFather token and api_id/api_hash auth, free API access, and community MCP ecosystem",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Community-authored GitHub repository for Telegram Bot API MCP",
+      "attribution_by": "task09-research-agent-gemini"
+    },
+    "captured_on": "2026-11-23",
+    "capture_method": "http_content",
+    "snapshot_ref": "snapshots/6e4760cb5121de7ab69866494c873d584b369e8ff2be3a3c6bba7058483b60f7.txt",
+    "content_sha256": "6e4760cb5121de7ab69866494c873d584b369e8ff2be3a3c6bba7058483b60f7",
+    "line_count": 333
+  },
+  {
+    "spec": {
+      "app_id": 28,
+      "url": "https://developers.facebook.com/docs/whatsapp/cloud-api/",
+      "kind": "primary_docs",
+      "scope": "WhatsApp Business Cloud API, Meta Graph API access token/OAuth auth, sandbox/per-message pricing, and official/community MCP ecosystem",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor-controlled official documentation or product page",
+      "attribution_by": "task09-research-agent-gemini"
+    },
+    "captured_on": "2026-11-23",
+    "capture_method": "http_content",
+    "snapshot_ref": "snapshots/cfe100fb6f50f2ad41201c16ba327263264a98705995096e65b86644f2a2fc28.txt",
+    "content_sha256": "cfe100fb6f50f2ad41201c16ba327263264a98705995096e65b86644f2a2fc28",
+    "line_count": 195
+  },
+  {
+    "spec": {
+      "app_id": 28,
+      "url": "https://developers.facebook.com/docs/whatsapp/cloud-api/get-started",
+      "kind": "primary_docs",
+      "scope": "WhatsApp Business Cloud API, Meta Graph API access token/OAuth auth, sandbox/per-message pricing, and official/community MCP ecosystem",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor-controlled official documentation or product page",
+      "attribution_by": "task09-research-agent-gemini"
+    },
+    "captured_on": "2026-11-23",
+    "capture_method": "http_content",
+    "snapshot_ref": "snapshots/a5267e5ccfb174db081cfded3b4dc869c585c7187430efd8db6c94f696a5064e.txt",
+    "content_sha256": "a5267e5ccfb174db081cfded3b4dc869c585c7187430efd8db6c94f696a5064e",
+    "line_count": 150
+  },
+  {
+    "spec": {
+      "app_id": 28,
+      "url": "https://developers.facebook.com/docs/whatsapp/pricing",
+      "kind": "primary_docs",
+      "scope": "WhatsApp Business Cloud API, Meta Graph API access token/OAuth auth, sandbox/per-message pricing, and official/community MCP ecosystem",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor-controlled official documentation or product page",
+      "attribution_by": "task09-research-agent-gemini"
+    },
+    "captured_on": "2026-11-23",
+    "capture_method": "http_content",
+    "snapshot_ref": "snapshots/923cdd7f0cd824ea438644fd88ca8193d1d904cf6791e654d5ff09ff7104458a.txt",
+    "content_sha256": "923cdd7f0cd824ea438644fd88ca8193d1d904cf6791e654d5ff09ff7104458a",
+    "line_count": 607
+  },
+  {
+    "spec": {
+      "app_id": 28,
+      "url": "https://business.whatsapp.com/products/platform-pricing",
+      "kind": "official_product_page",
+      "scope": "WhatsApp Business Cloud API, Meta Graph API access token/OAuth auth, sandbox/per-message pricing, and official/community MCP ecosystem",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor-controlled official documentation or product page",
+      "attribution_by": "task09-research-agent-gemini"
+    },
+    "captured_on": "2026-11-23",
+    "capture_method": "http_content",
+    "snapshot_ref": "snapshots/2dfaf7038ce9c8c09f1697448a6230a0c825607b2ac824f1f901681179b347f9.txt",
+    "content_sha256": "2dfaf7038ce9c8c09f1697448a6230a0c825607b2ac824f1f901681179b347f9",
+    "line_count": 230
+  },
+  {
+    "spec": {
+      "app_id": 29,
+      "url": "https://developer.aircall.io/api-references/",
+      "kind": "primary_docs",
+      "scope": "Aircall Public REST API, HTTP Basic API key and OAuth 2.0 auth, paid plans/partner onboarding, and MCP ecosystem",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor-controlled official documentation or product page",
+      "attribution_by": "task09-research-agent-gemini"
+    },
+    "captured_on": "2026-11-23",
+    "capture_method": "http_content",
+    "snapshot_ref": "snapshots/34bcb97bcd86cb53f80f1b750cf7bf0f857a09deaedc3de981d5db5e32574b7a.txt",
+    "content_sha256": "34bcb97bcd86cb53f80f1b750cf7bf0f857a09deaedc3de981d5db5e32574b7a",
+    "line_count": 13223
+  },
+  {
+    "spec": {
+      "app_id": 29,
+      "url": "https://aircall.io/pricing/",
+      "kind": "official_product_page",
+      "scope": "Aircall Public REST API, HTTP Basic API key and OAuth 2.0 auth, paid plans/partner onboarding, and MCP ecosystem",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor-controlled official documentation or product page",
+      "attribution_by": "task09-research-agent-gemini"
+    },
+    "captured_on": "2026-11-23",
+    "capture_method": "http_content",
+    "snapshot_ref": "snapshots/a2b057ca1f1e9a6bd24341222e62e6163ec41272b874b78dd6c3b48936d28423.txt",
+    "content_sha256": "a2b057ca1f1e9a6bd24341222e62e6163ec41272b874b78dd6c3b48936d28423",
+    "line_count": 428
+  },
+  {
+    "spec": {
+      "app_id": 29,
+      "url": "https://developer.aircall.io/",
+      "kind": "primary_docs",
+      "scope": "Aircall Public REST API, HTTP Basic API key and OAuth 2.0 auth, paid plans/partner onboarding, and MCP ecosystem",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor-controlled official documentation or product page",
+      "attribution_by": "task09-research-agent-gemini"
+    },
+    "captured_on": "2026-11-23",
+    "capture_method": "http_content",
+    "snapshot_ref": "snapshots/cc0f20b2446c2ee80bf3ac7646d7e012b054175b3bad51efc2f5636b8c4612ca.txt",
+    "content_sha256": "cc0f20b2446c2ee80bf3ac7646d7e012b054175b3bad51efc2f5636b8c4612ca",
+    "line_count": 147
+  },
+  {
+    "spec": {
+      "app_id": 30,
+      "url": "https://developer.vonage.com/en/getting-started/concepts/authentication",
+      "kind": "primary_docs",
+      "scope": "Vonage Communications APIs, API key/secret and JWT auth, free credit/pay-per-use pricing, and official MCP servers",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor-controlled official documentation or product page",
+      "attribution_by": "task09-research-agent-gemini"
+    },
+    "captured_on": "2026-11-23",
+    "capture_method": "http_content",
+    "snapshot_ref": "snapshots/52f65a4b2c63d5956ed3dc6d804e4f409d7d1debee551a3cdadb8826db9ce098.txt",
+    "content_sha256": "52f65a4b2c63d5956ed3dc6d804e4f409d7d1debee551a3cdadb8826db9ce098",
+    "line_count": 506
+  },
+  {
+    "spec": {
+      "app_id": 30,
+      "url": "https://developer.vonage.com/en/api",
+      "kind": "primary_docs",
+      "scope": "Vonage Communications APIs, API key/secret and JWT auth, free credit/pay-per-use pricing, and official MCP servers",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor-controlled official documentation or product page",
+      "attribution_by": "task09-research-agent-gemini"
+    },
+    "captured_on": "2026-11-23",
+    "capture_method": "http_content",
+    "snapshot_ref": "snapshots/4522d446b2260b31bbf837a64002a239f02d847ed87bb78845db49355bc28391.txt",
+    "content_sha256": "4522d446b2260b31bbf837a64002a239f02d847ed87bb78845db49355bc28391",
+    "line_count": 115
+  },
+  {
+    "spec": {
+      "app_id": 30,
+      "url": "https://www.vonage.com/communications-apis/pricing/",
+      "kind": "official_product_page",
+      "scope": "Vonage Communications APIs, API key/secret and JWT auth, free credit/pay-per-use pricing, and official MCP servers",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor-controlled official documentation or product page",
+      "attribution_by": "task09-research-agent-gemini"
+    },
+    "captured_on": "2026-11-23",
+    "capture_method": "http_content",
+    "snapshot_ref": "snapshots/c618ced1bf80a551e42f7928039c92cdad9c5ffd7c9d7706dbfa5ae853db8a89.txt",
+    "content_sha256": "c618ced1bf80a551e42f7928039c92cdad9c5ffd7c9d7706dbfa5ae853db8a89",
+    "line_count": 1066
+  },
+  {
+    "spec": {
+      "app_id": 30,
+      "url": "https://github.com/Vonage-Community/vonage-mcp-server-api-bindings",
+      "kind": "official_repository",
+      "scope": "Vonage Communications APIs, API key/secret and JWT auth, free credit/pay-per-use pricing, and official MCP servers",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Official Vonage Community GitHub repository for Vonage MCP Server API Bindings",
+      "attribution_by": "task09-research-agent-gemini"
+    },
+    "captured_on": "2026-11-23",
+    "capture_method": "http_content",
+    "snapshot_ref": "snapshots/3836eba8af53197467a0b7c113dfac649d6ef7c8a293e39b8bd0ccc91db93ff6.txt",
+    "content_sha256": "3836eba8af53197467a0b7c113dfac649d6ef7c8a293e39b8bd0ccc91db93ff6",
+    "line_count": 408
+  }
+]

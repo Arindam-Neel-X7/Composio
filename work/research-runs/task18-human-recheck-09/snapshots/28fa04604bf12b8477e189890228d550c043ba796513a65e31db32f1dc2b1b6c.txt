@@ -1,0 +1,192 @@
+GitHub - CAKE-com/pumble-node-sdk: Pumble SDK for Node.js · GitHub
+Skip to content
+Navigation Menu
+Sign in
+Products
+Platform
+GitHubRepository hosting, code review, and collaboration
+CopilotAI coding agent for tasks, projects, and automated work
+Build & Ship
+ActionsCI/CD and automation
+Code QualityQuality analysis, fixes, and enforcement
+CodespacesCloud development environments
+Secure
+Code SecurityVulnerability detection and remediation
+Secret ProtectionSecret scanning and leak prevention
+All Features
+Developers
+Learn
+Documentation
+Training
+Certifications
+Build
+Build with Copilot
+Customize Copilot
+Integrations
+Explore
+Trending repos
+GitHub Sponsors
+Developer articles
+Changelog
+ChangelogYour source for the latest features, improvements, and fixes across GitHub products, all in one place.
+Businesses
+By Stage
+Enterprises
+Team
+Startups
+Nonprofits
+By Industry
+Healthcare
+Financial services
+Manufacturing
+Government
+See all industries
+Evaluate GitHub
+Why GitHub
+Customer Stories
+Business insights
+Trust Center
+Add-ons
+GitHub Advanced SecurityEnterprise-grade code security
+Copilot for businessEnterprise-grade AI features
+Premium SupportEnterprise-grade 24/7 support
+Resources
+Learn & Connect
+Documentation
+Resource center
+Blog
+Events & webinars
+Community Forum
+Customer Stories
+Integrations
+Support
+Customer support
+Training
+GitHub Status
+Company
+About
+Partners
+Changelog
+GitHub Universe
+GitHub UniverseThe event for developers, by developers — talks, workshops, and what’s next for GitHub.
+Pricing
+Search/
+Sign in
+Sign up
+Appearance settings
+You signed in with another tab or window. Reload to refresh your session.
+You signed out in another tab or window. Reload to refresh your session.
+You switched accounts on another tab or window. Reload to refresh your session.
+Dismiss alert
+CAKE-com
+pumble-node-sdk
+Repository navigation
+Code
+Issues1 (1)
+Pull requests2 (2)
+Actions
+Projects
+Security and quality
+Insights
+More items
+pumble-node-sdk
+Public
+NotificationsYou must be signed in to change notification settings
+Fork3 (3)
+Star11 (11)You must be signed in to star a repository
+About
+Pumble SDK for Node.js
+Resources
+Readme
+Activity
+Custom properties
+Stars
+11 stars
+Watchers
+1 watching
+Forks
+3 forks
+Report repository
+master
+BranchesTags
+Go to file
+Code
+Open more actions menu
+Latest commit
+History
+306 Commits
+306 Commits
+Folders and files
+NameName
+Last commit message
+Last commit date
+.github/workflows
+.github/workflows
+docs
+docs
+examples
+examples
+playground
+playground
+pumble-cli
+pumble-cli
+pumble-sdk
+pumble-sdk
+.gitignore
+.gitignore
+README.md
+README.md
+View all files
+Repository files navigation
+README
+More items
+Pumble SDK
+This repository contains the tools to create Pumble apps.
+Pumble SDK - A javascript framework to quickly build Pumble apps.
+Pumble CLI - A cli tool to generate and run Pumble apps from your local environment.
+Read the full documentation to get started.
+Quick Start
+npm i -g pumble-cli
+After successfully installing pumble-cli use the command below to log in to your workspace
+pumble-cli login
+You will be asked to input your email address and you will receive a code in your inbox.
+After logging in you can proceed to create your first Pumble App.
+pumble-cli create
+This command will ask you to type a name and description and will generate the project.
+After this command has completed you can then cd into the generated directory and start the addon.
+cd my_app
+npm run dev
+If you login into Pumble you will see your App is installed and ready to use.
+Tip
+You can also skip installing pumble-cli and use npx pumble-cli create instead
+About
+Pumble SDK for Node.js
+Resources
+Readme
+Activity
+Custom properties
+Stars
+11 stars
+Watchers
+1 watching
+Forks
+3 forks
+Report repository
+Releases
+Packages
+Used by
+Contributors
+Languages
+Footer
+© 2026 GitHub, Inc.
+Footer navigation
+Terms
+Privacy
+Security
+Status
+Community
+Docs
+Contact
+Manage cookies
+Do not share my personal information
+You can’t perform that action at this time.

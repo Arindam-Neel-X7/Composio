@@ -1,0 +1,226 @@
+GitHub - forcedotcom/postman-salesforce-apis: Salesforce API Postman Collection · GitHub
+Skip to content
+Navigation Menu
+Sign in
+Products
+Platform
+GitHubRepository hosting, code review, and collaboration
+CopilotAI coding agent for tasks, projects, and automated work
+Build & Ship
+ActionsCI/CD and automation
+Code QualityQuality analysis, fixes, and enforcement
+CodespacesCloud development environments
+Secure
+Code SecurityVulnerability detection and remediation
+Secret ProtectionSecret scanning and leak prevention
+All Features
+Developers
+Learn
+Documentation
+Training
+Certifications
+Build
+Build with Copilot
+Customize Copilot
+Integrations
+Explore
+Trending repos
+GitHub Sponsors
+Developer articles
+Changelog
+ChangelogYour source for the latest features, improvements, and fixes across GitHub products, all in one place.
+Businesses
+By Stage
+Enterprises
+Team
+Startups
+Nonprofits
+By Industry
+Healthcare
+Financial services
+Manufacturing
+Government
+See all industries
+Evaluate GitHub
+Why GitHub
+Customer Stories
+Business insights
+Trust Center
+Add-ons
+GitHub Advanced SecurityEnterprise-grade code security
+Copilot for businessEnterprise-grade AI features
+Premium SupportEnterprise-grade 24/7 support
+Resources
+Learn & Connect
+Documentation
+Resource center
+Blog
+Events & webinars
+Community Forum
+Customer Stories
+Integrations
+Support
+Customer support
+Training
+GitHub Status
+Company
+About
+Partners
+Changelog
+GitHub Universe
+GitHub UniverseThe event for developers, by developers — talks, workshops, and what’s next for GitHub.
+Pricing
+Search/
+Sign in
+Sign up
+Appearance settings
+You signed in with another tab or window. Reload to refresh your session.
+You signed out in another tab or window. Reload to refresh your session.
+You switched accounts on another tab or window. Reload to refresh your session.
+Dismiss alert
+This repository was archived by the owner on Jul 21, 2025. It is now read-only.
+forcedotcom
+postman-salesforce-apis
+Repository navigation
+Code
+Issues5 (5)
+Pull requests
+Actions
+Projects
+Security and quality
+Insights
+More items
+postman-salesforce-apis
+Public archive
+NotificationsYou must be signed in to change notification settings
+Fork701 (701)
+Star1.2k (1.2k)You must be signed in to star a repository
+About
+Salesforce API Postman Collection
+Resources
+Readme
+CC0-1.0 license
+Code of conduct
+Code of conduct
+Contributing
+Contributing
+Security policy
+Security policy
+Activity
+Custom properties
+Stars
+1.2k stars
+Watchers
+2 watching
+Forks
+701 forks
+Report repository
+master
+BranchesTags
+Go to file
+Code
+Open more actions menu
+Latest commit
+History
+82 Commits
+82 Commits
+Folders and files
+NameName
+Last commit message
+Last commit date
+doc-gfx
+doc-gfx
+.gitignore
+.gitignore
+CODEOWNERS
+CODEOWNERS
+LICENSE
+LICENSE
+README.md
+README.md
+contributing.md
+contributing.md
+install-with-app.md
+install-with-app.md
+install-with-web.md
+install-with-web.md
+updating.md
+updating.md
+working-with-environments.md
+working-with-environments.md
+View all files
+Repository files navigation
+README
+Code of conduct
+Contributing
+CC0-1.0 license
+Security
+More items
+Salesforce APIs for Postman
+A Postman collection that contains 250+ requests and example responses for the following Salesforce Platform APIs::
+Auth
+Bulk (v1 & v2)
+Composite
+Connect
+CPQ
+Einstein Prediction Service
+Event PlatformGraphQL
+Metadata
+REST
+Subscription Management
+Tooling
+UI
+Learn more about the Collection:
+🎥 Webinar
+📖 Blog post
+⚠️ Disclaimers:
+This collection is provided as-is. It's not officially supported by Salesforce or covered by SLAs.
+API documentation is not provided with the collection. Please refer to the official documentation.
+Issues and Questions
+Report issues and ask questions here.
+Installation
+You can use the Postman desktop app or the Postman web UI to connect to Salesforce with the Salesforce APIs collection:
+Install using the Postman desktop app (recommended)
+Install using the Postman web UI (longer setup, requires CORS configuration in Salesforce org)
+Regardless of whether you choose the desktop app or the web UI, you can use all of the collection’s requests and your changes are synchronized between the two environments so you can easily switch between them at any time.
+Additional Documentation
+Keeping the collection up to date
+Working with environments to connect to multiple orgs
+Contributing
+About
+Salesforce API Postman Collection
+Resources
+Readme
+CC0-1.0 license
+Code of conduct
+Code of conduct
+Contributing
+Contributing
+Security policy
+Security policy
+Activity
+Custom properties
+Stars
+1.2k stars
+Watchers
+2 watching
+Forks
+701 forks
+Report repository
+Releases
+Packages
+Used by
+Contributors
+Footer
+© 2026 GitHub, Inc.
+Footer navigation
+Terms
+Privacy
+Security
+Status
+Community
+Docs
+Contact
+Manage cookies
+Do not share my personal information
+You can’t perform that action at this time.

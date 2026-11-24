@@ -1,0 +1,60 @@
+{"event": "cache_reused", "app_id": 71, "url": "https://developers.notion.com/reference/intro"}
+{"event": "cache_reused", "app_id": 71, "url": "https://developers.notion.com/docs/authorization"}
+{"event": "cache_reused", "app_id": 71, "url": "https://developers.notion.com/docs/create-a-notion-integration"}
+{"event": "fetch_attempt", "app_id": 71, "attempt": 1, "source_url": "https://developers.notion.com/docs/mcp", "attempted_on": "2026-11-23", "status": "fetched", "http_status": 200, "resolved_url": "https://developers.notion.com/guides/mcp/overview", "error": null, "content_sha256": "d69aba1df7a09f370af02ef76f3d37ac1790f4aba2e0d18afbda568b477fef68"}
+{"event": "cache_reused", "app_id": 71, "url": "https://developers.notion.com/docs/get-started-with-mcp"}
+{"event": "cache_reused", "app_id": 72, "url": "https://airtable.com/developers/web/api/introduction"}
+{"event": "cache_reused", "app_id": 72, "url": "https://support.airtable.com/docs/creating-personal-access-tokens"}
+{"event": "fetch_attempt", "app_id": 72, "attempt": 1, "source_url": "https://support.airtable.com/docs/airtable-api-faqs", "attempted_on": "2026-11-23", "status": "http_error", "http_status": 404, "resolved_url": null, "error": "HTTP 404", "content_sha256": null}
+{"event": "cache_reused", "app_id": 72, "url": "https://support.airtable.com/docs/using-the-airtable-mcp-server"}
+{"event": "cache_reused", "app_id": 72, "url": "https://airtable.com/developers/web/api/oauth-reference"}
+{"event": "cache_reused", "app_id": 73, "url": "https://linear.app/developers/graphql"}
+{"event": "cache_reused", "app_id": 73, "url": "https://linear.app/developers/oauth-2-0-authentication"}
+{"event": "cache_reused", "app_id": 73, "url": "https://linear.app/docs/mcp"}
+{"event": "cache_reused", "app_id": 73, "url": "https://linear.app/docs/api-and-webhooks"}
+{"event": "cache_reused", "app_id": 74, "url": "https://developer.atlassian.com/cloud/jira/platform/rest/v3/intro/"}
+{"event": "cache_reused", "app_id": 74, "url": "https://developer.atlassian.com/cloud/jira/platform/basic-auth-for-rest-apis/"}
+{"event": "cache_reused", "app_id": 74, "url": "https://developer.atlassian.com/cloud/jira/platform/oauth-2-3lo-apps/"}
+{"event": "cache_reused", "app_id": 74, "url": "https://atlassian.github.io/atlassian-mcp-server/"}
+{"event": "cache_reused", "app_id": 74, "url": "https://developer.atlassian.com/cloud/jira/platform/getting-started/"}
+{"event": "cache_reused", "app_id": 75, "url": "https://developers.asana.com/docs/overview"}
+{"event": "cache_reused", "app_id": 75, "url": "https://developers.asana.com/docs/personal-access-token"}
+{"event": "cache_reused", "app_id": 75, "url": "https://developers.asana.com/docs/oauth"}
+{"event": "cache_reused", "app_id": 75, "url": "https://developers.asana.com/docs/developer-sandbox"}
+{"event": "cache_reused", "app_id": 75, "url": "https://developers.asana.com/docs/integrating-with-asanas-mcp-server"}
+{"event": "cache_reused", "app_id": 75, "url": "https://developers.asana.com/reference/gettasks"}
+{"event": "cache_reused", "app_id": 76, "url": "https://developer.monday.com/api-reference/docs/introduction-to-graphql"}
+{"event": "cache_reused", "app_id": 76, "url": "https://developer.monday.com/api-reference/docs/authentication"}
+{"event": "cache_reused", "app_id": 76, "url": "https://developer.monday.com/api-reference/docs/developer-sandbox"}
+{"event": "cache_reused", "app_id": 76, "url": "https://developer.monday.com/apps/docs/oauth"}
+{"event": "cache_reused", "app_id": 76, "url": "https://developer.monday.com/api-reference/docs/mcp-api-token"}
+{"event": "cache_reused", "app_id": 76, "url": "https://support.monday.com/hc/en-us/articles/28588158981266-Get-started-with-monday-MCP"}
+{"event": "fetch_attempt", "app_id": 77, "attempt": 1, "source_url": "https://developer.clickup.com/docs/general", "attempted_on": "2026-11-23", "status": "http_error", "http_status": 404, "resolved_url": null, "error": "HTTP 404", "content_sha256": null}
+{"event": "cache_reused", "app_id": 77, "url": "https://developer.clickup.com/docs/authentication"}
+{"event": "fetch_attempt", "app_id": 77, "attempt": 1, "source_url": "https://developer.clickup.com/docs/mcp-server", "attempted_on": "2026-11-23", "status": "http_error", "http_status": 404, "resolved_url": null, "error": "HTTP 404", "content_sha256": null}
+{"event": "cache_reused", "app_id": 77, "url": "https://developer.clickup.com/docs/mcp-tools"}
+{"event": "cache_reused", "app_id": 77, "url": "https://developer.clickup.com/reference/gettasks"}
+{"event": "cache_reused", "app_id": 78, "url": "https://coda.io/developers/apis/v1"}
+{"event": "fetch_attempt", "app_id": 78, "attempt": 1, "source_url": "https://help.coda.io/hc/en-us/articles/39555814921229-Coda-API", "attempted_on": "2026-11-23", "status": "blocked", "http_status": 403, "resolved_url": null, "error": "HTTP 403", "content_sha256": null}
+{"event": "fetch_attempt", "app_id": 78, "attempt": 1, "source_url": "https://help.coda.io/hc/en-us/articles/44722661982989-Connect-to-the-Coda-MCP", "attempted_on": "2026-11-23", "status": "blocked", "http_status": 403, "resolved_url": null, "error": "HTTP 403", "content_sha256": null}
+{"event": "cache_reused", "app_id": 79, "url": "https://developers.smartsheet.com/api/smartsheet/introduction"}
+{"event": "cache_reused", "app_id": 79, "url": "https://developers.smartsheet.com/api/smartsheet/guides/basics/authentication"}
+{"event": "cache_reused", "app_id": 79, "url": "https://developers.smartsheet.com/api/smartsheet/guides/advanced-topics/oauth"}
+{"event": "cache_reused", "app_id": 79, "url": "https://developers.smartsheet.com/ai-mcp/smartsheet/mcp-server-tools"}
+{"event": "cache_reused", "app_id": 79, "url": "https://www.smartsheet.com/content-center/best-practices/tips-tricks/api-getting-started"}
+{"event": "cache_reused", "app_id": 79, "url": "https://help.smartsheet.com/articles/2483656-install-smartsheet-connector-claude"}
+{"event": "cache_reused", "app_id": 80, "url": "https://help.getharvest.com/api-v2/"}
+{"event": "cache_reused", "app_id": 80, "url": "https://help.getharvest.com/api-v2/introduction/overview/general/"}
+{"event": "cache_reused", "app_id": 80, "url": "https://help.getharvest.com/api-v2/authentication-api/authentication/authentication/"}
+{"event": "cache_reused", "app_id": 80, "url": "https://www.getharvest.com/pricing"}
+{"event": "fetch_attempt", "app_id": 80, "attempt": 1, "source_url": "https://help.getharvest.com/api-v2/time-tracking-api/time-entries/time-entries/", "attempted_on": "2026-11-23", "status": "http_error", "http_status": 404, "resolved_url": null, "error": "HTTP 404", "content_sha256": null}
+{"event": "fetch_attempt", "app_id": 72, "attempt": 1, "source_url": "https://support.airtable.com/docs/getting-started-with-airtables-web-api", "attempted_on": "2026-11-23", "status": "fetched", "http_status": 200, "resolved_url": "https://support.airtable.com/articles/6292134965-getting-started-with-airtable-s-web-api", "error": null, "content_sha256": "e611458f5597104a1470db2bab76150019278fc920cb76c22a4a62031f9ece9c"}
+{"event": "fetch_attempt", "app_id": 72, "attempt": 1, "source_url": "https://support.airtable.com/docs/managing-api-call-limits-in-airtable", "attempted_on": "2026-11-23", "status": "fetched", "http_status": 200, "resolved_url": "https://support.airtable.com/articles/7735693959-managing-api-call-limits-in-airtable", "error": null, "content_sha256": "fd91a5e77e906f9e6e1934151f9c6a2afc559bb9ca22e69db514c8e6d169fbb6"}
+{"event": "fetch_attempt", "app_id": 77, "attempt": 1, "source_url": "https://developer.clickup.com/", "attempted_on": "2026-11-23", "status": "fetched", "http_status": 200, "resolved_url": "https://developer.clickup.com/", "error": null, "content_sha256": "4bc63abff109fd937f7d06d1ee139ca10db4b3a80691822a8d11ccef903b4af3"}
+{"event": "fetch_attempt", "app_id": 77, "attempt": 1, "source_url": "https://developer.clickup.com/docs/connect-an-ai-assistant-to-clickups-mcp-server-1", "attempted_on": "2026-11-23", "status": "fetched", "http_status": 200, "resolved_url": "https://developer.clickup.com/docs/connect-an-ai-assistant-to-clickups-mcp-server-1", "error": null, "content_sha256": "255aeeaa05acc3822b07a56c0e39bdd83ffe95fab9a2aee140badc5343c8049b"}
+{"event": "fetch_attempt", "app_id": 77, "attempt": 1, "source_url": "https://help.clickup.com/hc/en-us/articles/33335772678423-What-is-ClickUp-MCP", "attempted_on": "2026-11-23", "status": "fetched", "http_status": 200, "resolved_url": "https://help.clickup.com/hc/en-us/articles/33335772678423-What-is-ClickUp-MCP", "error": null, "content_sha256": "1816b06bbb82cdebaf2200a680b6031d8277d2c02845a9c7c2b708b35e8b7065"}
+{"event": "fetch_attempt", "app_id": 78, "attempt": 1, "source_url": "https://help.coda.io/en/articles/1337373-coda-api", "attempted_on": "2026-11-23", "status": "http_error", "http_status": 404, "resolved_url": null, "error": "HTTP 404", "content_sha256": null}
+{"event": "fetch_attempt", "app_id": 78, "attempt": 1, "source_url": "https://coda.io/product/whats-new", "attempted_on": "2026-11-23", "status": "fetched", "http_status": 200, "resolved_url": "https://superhuman.com/products/whats-new?filter[product]=docs", "error": null, "content_sha256": "c5e6f2e8322c6ce8dda8400abefe1256b4cc5fa778a4a4f5130f43f7c840bc1f"}
+{"event": "fetch_attempt", "app_id": 78, "attempt": 1, "source_url": "https://help.coda.io/hc/en-us/articles/44722661982989-Connect-to-the-Coda-MCP?output=1", "attempted_on": "2026-11-23", "status": "fetched", "http_status": 200, "resolved_url": "https://help.coda.io/hc/en-us/articles/44722661982989-Connect-to-the-Coda-MCP?output=1", "error": null, "content_sha256": "ff3793852b9ad9a6e53fdbdd69896014a312e09fc517fc63ff20e6c2af855410"}
+{"event": "fetch_attempt", "app_id": 80, "attempt": 1, "source_url": "https://github.com/southleft/harvest-mcp", "attempted_on": "2026-11-23", "status": "fetched", "http_status": 200, "resolved_url": "https://github.com/southleft/harvest-mcp", "error": null, "content_sha256": "18f780d05325eca8370170c3b73c13691bca53dcdfd45d71607ad64d29829e64"}
+{"event": "validation", "structure_and_grounding": "passed", "backend": "PowerShell Test-Json (Draft2020-12)", "factual_truth": "requires independent review", "synthetic": false, "records": 10}

@@ -1,0 +1,363 @@
+mcp | HighLevel API
+Skip to main content
+Marketplace DocsHighLevel API ReferenceSDKCLI
+v3
+v3
+2023-02-21
+2021-07-28
+2021-04-15
+Sign In
+Authorization
+MCP Server
+Rate Limits
+Versioning
+Changelog
+Country List
+FAQs
+Marketplace Docs
+OAuth 2.0
+Ad Manager
+Affiliate Manager
+AI Agent Studio
+Associations
+Blogs
+Brand Boards
+Business
+Calendars
+Campaigns
+Chat Widget
+Client App Builder
+Companies
+Contacts
+Conversation AI
+Conversations
+Countdown Timer
+Courses
+Custom Fields V2
+Custom menus
+Email ISV
+Email
+Files
+Forms
+Funnels
+Invoice
+Knowledge Base
+Trigger Links
+Sub-Account (Formerly location)
+Developer marketplace
+Media Storage
+Objects
+Opportunities
+Payments
+LC Phone
+Products
+Projects
+Proposals
+SaaS
+Snapshots
+Social Planner
+Store
+Surveys
+Users
+Voice AI
+Wallet & Transactions
+Workflows
+Webhook Integration Guide
+Webhook Logs Dashboard
+Webhook
+Version: v3
+On this page
+HighLevel MCP Server
+Stop clicking. Start asking.
+Your next booking, follow-up, or invoice can start with a sentence. Connect HighLevel to your AI assistant, then ask it to find a contact, book an appointment, send a message, update a deal, or schedule a social post. The assistant works directly with your HighLevel account, so you can get work done from the conversation you’re already having.
+More than 700 actions across 38 HighLevel features give you room to hand off everyday work:
+Follow up while the context is fresh. Look up a lead’s messages, check their appointments, and send your reply from the same chat.
+Turn a decision into action. Create and send an invoice, update a deal, or add a follow-up task without opening each record yourself.
+Keep marketing moving. Schedule social posts, review email campaign results, and manage promotions.
+Skip screen navigation. The assistant searches and updates records directly, without opening HighLevel pages or reading screenshots. See why use MCP.
+Keep access on your terms. Connect the sub-accounts you want to use and approve the permissions. Agencies with multi-sub-account installation enabled can switch between connected sub-accounts in one chat.
+No API key to create or paste. Sign in with your HighLevel login, connect your sub-account, and try your first request.
+One request, from lookup to follow-up​
+“Find open deals in the Sales Pipeline worth more than $5,000. Show me the largest first, then add a follow-up task for Friday to each contact.”
+That request connects your pipeline to your follow-up work. The assistant can find the matching deals, use their linked contacts to create tasks, and report the results in your chat. You supply the goal; it handles the lookups and individual actions.
+Hand off whole jobs​
+You can ask for work that spans several parts of HighLevel:
+Prepare for a customer conversation: “Catch me up on Jane Cooper: her latest messages, upcoming appointments, open deals, and unpaid invoices.”
+Turn interest into a booking: “Find an open consultation slot next week, book Jane Cooper, then text her the appointment details.”
+Finish the sale: “Create and send Jane Cooper an invoice for three coaching sessions at $150 each, then mark her deal as won.”
+Launch a promotion: “Schedule these three posts on our connected Facebook account for Monday, Wednesday, and Friday at 9 a.m., and create a 20% coupon for the promotion.”
+Build follow-up that keeps working: “Draft a welcome workflow for consultation requests: tag the contact, send a welcome SMS, wait one day, then create a follow-up task.”
+The assistant combines supported actions to carry out the request. It may need details such as the calendar, recipient, or sending account; required permissions and existing product setup still apply. Each action runs separately, so review its results when a job has several steps.
+Why use MCP instead of asking AI to click through HighLevel?​
+Give your assistant a direct connection to the work. With MCP, it can ask HighLevel for records and act on the results without navigating menus, opening each contact, or scrolling through screens.
+For a request like “Find Jane, book her consultation, and text her the details,” the assistant can look up her contact, check calendar availability, create the appointment, and send the message through HighLevel’s supported operations. That removes the page navigation between those steps.
+What matters to youAI using the HighLevel interfaceHighLevel MCP Server
+Getting the work doneNavigates pages and interacts with on-screen controlsCalls supported HighLevel actions directly, with no app pages to load
+Finding the right recordsUses the search and lists exposed in the interfaceUses record searches and filters where supported; can fetch further pages of results
+Working with detailsReads values from the interfaceReceives record details directly and uses those records in the next action
+When the layout changesMay need to adjust to moved buttons, menus, or dialogsCalls API operations independently of the app’s visual layout
+Controlling accessWorks through the browser session’s accessUses the connection’s approved permissions and checks the selected sub-account for each execution
+Reviewing a changeDepends on the assistant and the screen’s controlsSupports a preview of the proposed request before the action is sent
+Use MCP for the everyday work in the capability table: looking up information, updating records, booking, messaging, and managing your business from chat. Browser use remains useful for visual work or features the connection doesn’t expose.
+Previews show the proposed request; they don’t guarantee the action will succeed. Approval prompts and how results appear depend on your assistant.
+Get connected in three steps​
+Add HighLevel to your assistant using the app or address below.
+Sign in with your HighLevel login, and choose the sub-account (or sub-accounts) to connect.
+Approve, then ask: “Show me the last 5 contacts I added.”
+Your assistantWhat to addStep-by-step
+ChatGPTThe official HighLevel app in ChatGPTConnect ChatGPT
+Claude (Claude.ai, Claude Cowork)https://services.leadconnectorhq.com/mcp/anthropic/v2Connect Claude
+MuseThe official HighLevel app in MuseConnect Muse
+Grok BotThe official HighLevel app in Grok BotConnect Grok Bot
+Claude Code, Codex, CursorThe developer setup for your toolClaude Code · Codex · Cursor
+Copy addresses exactly as shown. The sign-in page is on leadconnectorhq.com, a HighLevel domain, so use your usual HighLevel login there.
+Everything your assistant can do​
+Start with the job you want done. Use these examples to see where your assistant can help, from replying to a lead to organizing client delivery.
+The table covers 717 supported actions across 38 feature areas, grouped by the HighLevel menu. Available actions depend on your connection’s permissions and the features enabled in your sub-account. An action is one operation, such as finding a contact or creating an appointment; a request can combine several.
+MenuFeatureAsk your assistantActions
+ConversationsConversations
+Catch up on messages and follow up from chat“Who’s waiting on a reply from us?”20
+CalendarsCalendars
+Find availability and book without the back-and-forth“Book Jane into my next free slot.”59
+ContactsContacts
+Keep customer details and follow-up together“Add this week’s new leads to my nurture workflow.”32
+ContactsCompanies
+See everyone at a client business together“Add Jane to Acme Dental.”5
+OpportunitiesOpportunities and pipelines
+Find the deals that need your attention“Show my open deals worth more than $5,000.”16
+PaymentsInvoices and estimates
+Create, send, and track invoices and estimates“Find Jane’s unpaid invoice and send it to her.”40
+PaymentsOrders, subscriptions, and coupons
+Track sales and run promotions“Create a 20% coupon for our spring sale.”23
+PaymentsProducts
+Keep your offers and prices current“Raise our strategy call price to $300.”27
+PaymentsStore and shipping
+Manage shipping zones, rates, and store settings“Offer free shipping on US orders over $100.”17
+PaymentsDocuments and contracts
+Send agreements for signature from chat“Send Jane our service agreement to sign.”4
+AI AgentsVoice AI
+Review AI call transcripts and manage your voice agents“What did callers ask our AI receptionist yesterday?”11
+AI AgentsKnowledge Base
+Keep your agents’ business knowledge current“Add the service pages from our website to our knowledge base.”18
+AI AgentsAgent Studio
+Find your published agents and review their details“List my agents.”2
+MarketingSocial Planner
+Stay visible on social without hours of posting“Plan a week of posts for our spring sale.”51
+MarketingEmail marketing
+Reach your whole list and see what lands“How did last week’s newsletter do?”18
+MarketingEmail verification
+Protect your sender reputation from bad addresses“Is this lead’s email address valid?”1
+MarketingAd Manager
+Review ad results and manage connected campaigns“Show last month’s Facebook campaign results.”96
+MarketingAffiliate Manager
+Manage affiliates, commissions, and payouts“Which affiliate commissions need approval?”31
+MarketingBrand Boards
+Maintain your brand voice and design kits“Update our saved brand voice to friendly and concise.”12
+MarketingTrigger Links
+Create and manage tracked links for follow-up“Create a tracked link to our pricing page.”6
+MarketingCountdown Timers
+Add urgency to time-limited offers“Create a countdown timer for our Black Friday sale.”6
+AutomationWorkflows
+Build follow-up and investigate workflow runs“Build a welcome workflow for new leads.”
+“Why didn’t Jane get the welcome email?”11
+AutomationCampaigns
+See the campaigns set up in your account“List my campaigns.”1
+SitesFunnels and websites
+Keep visitors on track when pages change“Send visitors from our old offer page to the new one.”7
+SitesBlogs
+Create and update blog content from chat“Draft a blog post on spring skincare tips.”8
+SitesForms
+See every lead your forms bring in“Who filled out our consultation form this week?”2
+SitesSurveys
+Hear what your customers think“What are customers saying in this month’s survey?”2
+SitesChat widgets
+Manage the chat widgets on your sites“Copy our chat widget for the new landing page.”7
+MembershipsCourses
+Manage course content, access, and progress“Enroll new clients in our onboarding course.”42
+Media StorageMedia Storage
+Keep logos, images, and files in one place“Upload our new logo from this link.”8
+ProjectsProjects
+Run client work right next to your CRM“Set up an onboarding project for Acme.”45
+Client PortalClient Portal apps
+Build and manage client apps from templates“Build a client portal app from a template.”29
+SettingsSub-account settings
+Fit HighLevel to how your business runs“Add a ‘Preferred contact time’ field.”25
+SettingsCustom objects
+Track what’s unique to your business, like properties or policies“Add 12 Oak Street to our Properties.”8
+SettingsCustom object fields
+Capture the details that matter for each record“Add a ‘Bedrooms’ field to Properties.”8
+SettingsAssociations
+Connect records to see the full picture“Link 12 Oak Street to its buyer, Jane.”10
+SettingsStaff
+Manage staff access without leaving the conversation“Give our new hire, Sam, access.”5
+SettingsPhone numbers
+Get local numbers customers recognize“Get us a local 512 number.”4
+Total717
+Some actions require existing product setup, such as a sending number for SMS or a connected social account for posting.
+More ways to put your assistant to work​
+Beyond CRM updates, you can organize Projects and recurring tasks, manage Courses and enrollments, review affiliate commissions, maintain Media Storage, build Client Portal apps, and create Countdown Timers. You can also build and publish workflows, inspect their execution history, and compare failures by step.
+Ask “What can you do with invoices?” to discover the actions available to your connection. As HighLevel adds supported actions, your assistant can discover them through the same connection. New permissions require fresh approval; some clients may need a new chat or tool refresh.
+Want your assistant to do something that isn’t here yet? Tell us.
+Working across sub-accounts (agencies)​
+▶️ Walkthrough video: Multiple sub-account support in Claude.ai — watch on Loom
+Connect a single sub-account for everyday work, or use an agency installation with the multi-sub-account option enabled to work across many connected sub-accounts from the same chat.
+Install for your agency. When you connect, choose which sub-accounts to include: one, several, or all. The assistant can reach those sub-accounts and no others.
+Name the sub-account. Refer to a sub-account by name, such as “in Downtown Clinic, …”. If the sub-account isn’t clear, name it before asking for a change.
+Switch in the same chat. Ask about one sub-account, then another, without reconnecting: “Now do the same for Uptown Med Spa.”
+“Compare how many new contacts Downtown Clinic and Uptown Med Spa added this month.”
+Each action in this guide runs in one selected sub-account. Comparing two sub-accounts uses separate actions for each. Access uses the connection’s authorized sub-account credentials; an unauthorized sub-account is refused.
+Availability: working across sub-accounts requires the multi-sub-account (bulk) installation option for your app. If your install only offers a single sub-account, connect that sub-account to get started.
+Stay in control​
+The assistant only gets the access you give it, and HighLevel checks that access every time it acts.
+You choose the sub-accounts. The assistant can only work in the sub-accounts you selected when you connected.
+You choose the permissions. It can only take actions your approved permissions allow, and each action is checked again when it runs.
+No passwords or API keys to share. You sign in on HighLevel’s own sign-in page. Your assistant never sees your password.
+Preview before anything changes. Ask the assistant to preview a change first. The server can return the proposed request without running that action. A preview does not simulate the result or confirm that HighLevel will accept the change.
+Approve each change. Assistants that support approvals can ask you before every action that changes your data. Keep that setting on.
+Workflows start as drafts. New workflows are saved as drafts, so nothing goes live until you publish. Review them in the workflow builder first.
+Disconnect at any time. Remove the connection in your assistant, or revoke the app from your HighLevel account.
+Actions affect your real account: sending a message initiates delivery, deleting a record can remove it permanently, publishing a workflow activates its triggers, and purchasing a phone number can incur charges. Try unfamiliar requests in a test sub-account first.
+Set up your assistant​
+Every assistant uses the same secure sign-in: sign in with your HighLevel login, choose your sub-account(s), and approve.
+ChatGPT and Codex​
+HighLevel is an official app in ChatGPT. Custom ChatGPT plugins, Codex, and other compatible OpenAI clients connect to https://services.leadconnectorhq.com/mcp/openai/v2/. This address ends with a slash.
+ChatGPT​
+Open HighLevel in ChatGPT Plugins and connect it.
+Complete the sign-in (sign in → pick sub-account(s) → approve).
+Start a new conversation, type @, and select HighLevel.
+Or add HighLevel as a custom plugin:
+Check that your account or workspace allows custom MCP connections.
+Open ChatGPT Plugins, select the plus button, then Add custom MCP server.
+Enter a name and description. Under Connection, add https://services.leadconnectorhq.com/mcp/openai/v2/ as the MCP server URL and complete the connection prompts.
+Finish creating the plugin and complete the HighLevel sign-in (sign in → pick sub-account(s) → approve).
+Start a new conversation, type @, and select HighLevel.
+For current menu names and availability, see OpenAI’s custom MCP setup guide.
+▶️ Custom plugin setup video: Connect ChatGPT to HighLevel — watch on Loom
+Codex​
+Add the HighLevel server, then start the sign-in:
+codex mcp add highlevel --url https://services.leadconnectorhq.com/mcp/openai/v2/
+codex mcp login highlevel
+In the Codex IDE extension, open the gear menu → MCP servers → Add server, choose Streamable HTTP, and enter the same URL. Save the server, select Restart extension, then Authenticate when sign-in is required. See the MCP setup guide.
+Other compatible OpenAI clients can use the same address as a remote Streamable HTTP MCP server and complete the sign-in when prompted.
+Claude​
+Claude connects to https://services.leadconnectorhq.com/mcp/anthropic/v2.
+Claude.ai​
+Open Claude.ai → Settings → Connectors → Add custom connector.
+Set the server URL to https://services.leadconnectorhq.com/mcp/anthropic/v2.
+Click Connect and complete the sign-in (sign in → pick sub-account(s) → approve).
+Start a new chat. The HighLevel tools are now available.
+▶️ Walkthrough video: Watch on Loom
+Claude Cowork​
+In Claude Cowork, open the connectors / integrations settings and choose Add custom connector.
+Set the server URL to https://services.leadconnectorhq.com/mcp/anthropic/v2.
+Complete the sign-in (sign in → pick sub-account(s) → approve).
+Your Cowork agents can now use the HighLevel tools.
+Claude Code (CLI)​
+claude mcp add --transport http highlevel https://services.leadconnectorhq.com/mcp/anthropic/v2
+Or add it to .mcp.json at your project root:
+{
+"mcpServers": {
+"highlevel": {
+"type": "http",
+"url": "https://services.leadconnectorhq.com/mcp/anthropic/v2"
+}
+}
+}
+Run /mcp in Claude Code and follow the authentication prompts to sign in. Verify the server configuration with claude mcp list. See Claude Code’s MCP guide.
+Muse​
+HighLevel (LeadConnector) is available as an official app in Muse. Connect the app in Muse and complete the sign-in (sign in → pick sub-account(s) → approve).
+Muse connects to https://services.leadconnectorhq.com/mcp/muse/v2/.
+▶️ Setup video: Connect Muse to HighLevel — watch on Loom
+Grok Bot​
+HighLevel is available as an official app in Grok Bot.
+Open Grok Bot → Connect apps.
+Search for HighLevel and choose Add.
+Complete the sign-in (sign in → pick sub-account(s) → approve).
+Optional: In chat, type @ and select HighLevel to attach the app to a specific task.
+▶️ Setup video: Connect Grok Bot to HighLevel — watch on Loom
+For more on connecting apps, see the Grok Bot app setup guide.
+Cursor​
+Cursor connects to HighLevel as a custom MCP server at https://services.leadconnectorhq.com/mcp/cursor/v2.
+Add the following server to .cursor/mcp.json in your project, or to ~/.cursor/mcp.json to make it available across projects. If you already have MCP servers configured, add the highlevel entry to your existing mcpServers object.
+{
+"mcpServers": {
+"highlevel": {
+"url": "https://services.leadconnectorhq.com/mcp/cursor/v2"
+}
+}
+}
+Complete the sign-in when Cursor prompts you (sign in → pick sub-account(s) → approve). See Cursor’s MCP configuration guide for more details.
+▶️ Setup video: Connect Cursor to HighLevel — watch on Loom
+How it works​
+HighLevel gives your assistant four tools to find and use the actions available to your connection. It can discover an action, read its requirements, and execute it without loading hundreds of separate action definitions upfront.
+ToolWhat it does
+list_locationsLists the sub-accounts this connection can use, so the right one is chosen
+search_operationsFinds the right action for a request. It only returns actions your permissions allow
+describe_operationShows what an action needs, with an example, the permissions it requires, and its safety information
+execute_operationRuns the action after checking permissions and sub-account access, or previews it without sending anything
+New supported actions can be discovered through the same tools. If an action needs a permission you haven’t approved, reconnect to grant it. Availability also depends on your sub-account’s enabled features.
+One request, step by step​
+“Find the contact with email [email protected], add the tag ‘vip-2026’, and create a $5,000 opportunity for them in the Sales Pipeline.”
+The assistant searches for the actions to look up a contact and a pipeline, add a tag, and create an opportunity.
+It checks what each of those actions needs.
+It looks up Jane’s contact and the Sales Pipeline.
+It adds the tag and creates the opportunity.
+Ask the assistant to summarize what succeeded and include links to the affected records when available.
+Frequently asked questions​
+What is MCP?​
+MCP (Model Context Protocol) is an open standard for connecting AI assistants to the apps you use. HighLevel uses it to connect compatible assistants that support remote Streamable HTTP servers and HighLevel’s sign-in flow.
+Can the assistant do everything I can do in HighLevel?​
+It supports more than 700 actions across the features listed above. Coverage varies by feature: for example, it can read your published Agent Studio agents, while supported workflow actions include building and publishing. Ask what’s available for your connection, or tell us what’s missing.
+Do I need to be technical?​
+No. If you can describe what you want done in HighLevel, you can ask the assistant to do it. Setup takes a few clicks in ChatGPT, Claude.ai, Muse, or Grok Bot.
+Do I need an API key or a Private Integration token?​
+No. You connect by signing in with your HighLevel login, choosing your sub-account(s), and approving the requested permissions. There’s no key to create, paste, or rotate.
+Will the assistant change things without asking me?​
+Assistants that support approvals can ask before every action that changes your data, and new workflows are always saved as drafts. You can also ask for a preview of any change first. Keep approvals on, especially when you’re trying something new.
+Can I undo a change?​
+Not automatically. Treat changes as final: deleted contacts, records, and workflows can’t be restored through the assistant. Ask for a preview first, and try new kinds of requests in a test sub-account.
+The assistant says it can’t do something, or reports a permission error.​
+Check the error first. A missing-permission error may require disconnecting and reconnecting to approve new permissions; refreshing the connection doesn’t expand its existing grants. An action can also be unavailable because the sub-account isn’t authorized, the feature isn’t enabled, or a required service isn’t connected.
+Can the assistant upload a file I attached in the chat?​
+It depends on your assistant. If it can securely supply the original file, MCP supports uploading it to Media Storage, up to 25 MB per file; your assistant may have a lower limit. Chat attachments are not automatically passed to HighLevel. If your assistant cannot transfer the file, it can provide a link to the selected sub-account’s Media Storage page for you to upload it. It can also add an existing public HTTPS file by link; that mode keeps the file externally hosted.
+Is this the same as the Developer MCP Server?​
+No. This server connects AI assistants to the data in your HighLevel sub-accounts. The Marketplace Developer MCP Server is a separate tool that helps developers build and release Marketplace apps.
+Try it with a real task​
+Connect your assistant, then start with a lookup:
+“Find Jane Cooper and summarize her latest messages, next appointment, and open deals.”
+Then put that context to work:
+“Add a follow-up task for Friday and draft a reply for me to review.”
+Tell us what to build next​
+What should your assistant be able to do in HighLevel next? Tell us what you’re using it for, what worked, and what’s missing. Your requests shape what we add.
+Previous
+Handling Access Tokens for Apps with Target User: Sub-Account
+Next
+Rate Limits
+One request, from lookup to follow-up
+Hand off whole jobs
+Why use MCP instead of asking AI to click through HighLevel?
+Get connected in three steps
+Everything your assistant can do
+More ways to put your assistant to work
+Working across sub-accounts (agencies)
+Stay in control
+Set up your assistant
+ChatGPT and Codex
+Claude
+Muse
+Grok Bot
+Cursor
+How it works
+One request, step by step
+Frequently asked questions
+What is MCP?
+Can the assistant do everything I can do in HighLevel?
+Do I need to be technical?
+Do I need an API key or a Private Integration token?
+Will the assistant change things without asking me?
+Can I undo a change?
+The assistant says it can’t do something, or reports a permission error.
+Can the assistant upload a file I attached in the chat?
+Is this the same as the Developer MCP Server?
+Try it with a real task
+Tell us what to build next

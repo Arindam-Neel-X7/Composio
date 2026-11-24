@@ -1,0 +1,1051 @@
+Keyword Research - SE Ranking API Documentation
+BLACK FRIDAY | Extra 20% off SE Ranking annual plans and add-ons until Dec 4
+SE Ranking
+Grow your visibility with AI SEO
+SE Visible
+Analyze AI visibility strategically
+Planable
+Manage your socials as a team
+API
+Solutions
+By business type Migrate to SE Ranking
+See product tour
+Agencies
+Enterprises
+Growing business
+Tools
+Core SEO tools AI Search tools Other SEO tools Agency Pack Content Marketing Local Marketing Software Integrations
+See product tour
+Rank Tracker
+Keyword Research
+On-Page SEO Checker
+Website Audit
+Competitor Analysis Tool
+Backlink Checker
+AI Search Toolkit
+AI Overviews Tracker
+AI Mode Tracker
+ChatGPT Tracker
+Gemini Tracker
+ChatGPT ads tracker
+AI Mode ads tracker
+SERP Tracker
+Insights
+Keyword Grouper
+SEO Dashboard
+Agency Pack
+SEO Report Generator
+Lead Generator
+White Label
+Content Marketing Tool
+Content Editor
+AI Writer
+Resources
+Education Customer Hub Agency Catalog
+See product tour
+Blog
+Webinars
+Podcast
+Academy
+Help center
+What’s new
+Case studies
+Pricing
+Platform plans
+API Plans
+API & MCP
+API MCP Our data API Pricing
+See product tour
+API
+Keyword Research API
+Backlinks API
+Domain Analysis API
+Rank Tracker API
+Website Traffic API
+Website Audit API
+AI Visibility API
+MCP
+SEO Skills for Claude
+Marketing Skills for Claude
+Content Skills for Claude
+Products
+SE Ranking
+Grow your visibility with AI SEO
+SE Visible
+Analyze AI visibility strategically
+Planable
+Manage your socials as a team
+See product tour
+Start free trial
+en
+enEnglish
+deDeutsch
+frFrançais
+esEspañol
+nlNederlands
+itItaliano
+ptPortuguês
+uaУкраїнська
+ruРусский
+あ日本語
+Sign in
+See product tour
+Start free trial
+Back
+API
+Introduction
+Getting API access
+API credit system
+API rate limits
+Integrations
+Data Studio
+MCP
+n8n
+Make.com
+Usage guidelines for commercial purposes
+Data
+Overview
+Getting started
+Authentication
+Making requests
+Postman collection
+Unit costs
+Plans and pricing
+Quickstarts
+Find keyword opportunities
+Assess AI search visibility
+Retrieve URLs with SEO issues
+Use Website Audit API for SEO growth
+Generate reports with SEOIntel
+Build authority with link building
+Analyze domain traffic & competitors
+Backlinks
+Get backlink summary
+Get backlink metrics
+List all backlinks
+Fetch backlinks in batches
+Get total backlinks count
+Export backlinks data
+List new/lost backlinks
+Get daily new/lost backlinks
+Get cumulative backlinks
+Get backlink anchor texts
+List referring domains
+Get referring domains count
+List new/lost referring domains
+Get daily new/lost referring domains
+List referring IPs
+Get total referring IPs count
+Get total referring subnets count
+List pages with backlinks
+Get page/domain authority
+Get domain authority
+Get domain authority distribution
+Get domain authority history
+Get page authority
+Get page authority history
+Domain Analysis
+Get domain overview by region
+Get worldwide domain overview
+Get worldwide URL overview
+Get traffic/keyword history
+Get keyword rankings
+Get domain pages
+Get domain subdomains
+Get paid ads by keyword
+Get paid ads for domain
+Get domain competitors
+Analyze keyword overlap/gaps
+Keyword Research
+Get Keywords metrics
+Get similar keywords
+Get related keywords
+Get question keywords
+Get longtail keywords
+AI Search
+Get AI search overview
+Get AI search leaderboard
+Discover brand by URL
+Get prompts by brand
+Get prompts by target
+Filtering results
+Website Audit
+Create audit
+List audits
+Get audit status
+Get audit report
+Get all crawled pages
+Get audit pages by issue
+Get all issues by URL
+Get all found links
+Get audit by date
+Update audit title
+Delete audit
+Recheck audit
+Account System
+Get subscription details
+Reference
+Glossary
+Regional codes
+SERP features
+Site Audit issue codes
+Error handling
+Project
+Overview
+Getting started
+API access and keys
+Making requests
+Rate limits
+Error handling
+Project Management
+List projects
+List project search engines
+Add search engine to project
+Change search engine in project
+Delete search engine from project
+List website keywords
+Get project summary statistics
+Get keyword statistics
+Get total number of ads chart
+Get historical dates
+Add keywords to project
+Add project
+Change project settings
+Delete project
+Delete keywords
+Set manual keyword position
+Run position check
+Project Groups
+Add project group
+Rename project group
+Delete project group
+List project groups
+Move projects to project group
+Keyword Groups
+Add keyword group
+Move keywords to another group
+Rename keyword group
+Delete keyword group
+List keyword groups
+Competitors
+Add competitor
+List competitors
+Get competitor keyword positions
+Delete competitor
+Get TOP 10 results
+Get TOP 100 results
+Get all competitors
+URL Tags
+List tags
+Add tag
+Update tag assignment
+Delete tag
+Analytics Traffic
+Get Google Search Console data
+Calculate SEO potential
+Account Management
+Get user profile
+List sub-accounts
+Create sub-account
+Get sub-account details
+Delete sub-account
+Update sub-account
+List shared projects
+List owned projects
+Share project with sub-account
+General Data
+List search engines
+List languages for Google
+List regions to get search volume
+Get keyword search volume
+Marketing Plan
+List plan items
+Add task
+Update task
+Delete task
+Set task status
+Website Audit
+Create audit
+List audits
+Get audit status
+Get audit report
+Get all crawled pages
+Get audit pages by issue
+Get all issues for URL
+Get all links
+Get audit history
+Update audit title
+Delete audit
+Recheck audit
+Backlink Checker
+List backlinks
+Add backlink
+Import backlinks list
+Update backlink import settings
+Start backlink import from Google Search Console
+Get backlink import status from Google Search Console
+Delete backlinks
+Recheck backlinks
+Get backlink statistics
+List disavowed backlinks
+Add disavowed backlinks
+Delete disavowed backlink
+List backlink groups
+Create backlink group
+Delete backlink group
+Rename backlink group
+Move backlinks to group
+AI Results Tracker
+Get site brand
+Save site brand
+List LLM engines
+Get LLM engine
+Create LLM engine
+Update LLM engine
+Delete LLM engine
+Get LLM status
+Get LLM statistics
+List prompts
+Add prompts
+Delete prompts
+Get prompt answer
+Get prompt rankings
+AIRT Sources
+Get sources summary
+List source domains
+List source pages
+Get sources recommendations
+AIRT Competitors
+Get competitors breakdown
+Get competitors check dates
+Get source metrics
+AIRT Groups
+List prompt groups
+Create prompt group
+Rename prompt group
+Delete prompt group
+Change group order
+Delete all prompts in group
+Move prompts to group
+Move all prompts from one group to another
+Local Marketing
+Overview
+Getting started
+Usage and limits
+Pagination
+Errors
+Locations
+List locations
+Get location details
+Location overview
+Get location overview
+Local Rankings
+Get Local Rankings keyword list
+Get Local Rankings positions
+Get rankings indexed percent
+Local Marketing Audit
+Get latest audit report
+Get audit report history
+Google Business Profile
+Get Google Business Profile metrics
+Get Google Business Profile keyword report
+Get Google Business Profile searches trend
+Business Listings
+List business listings
+Get business listings overview
+Reviews
+List reviews
+Get reviews overview
+SE VisibleBeta
+Overview
+Getting started
+Base URL
+Authentication
+Resource model
+Making requests
+Pagination
+Filtering and array parameters
+Date ranges and compare mode
+Usage and limits
+Errors
+Support
+Projects
+List projects
+Create project
+Get project details
+Update tracking settings
+Delete a project
+Locations
+List project locations
+Add a location
+Update a location
+Delete a location
+Geo autocomplete
+List countries
+Search cities and regions
+Engines
+List project engines
+Add an engine
+Replace the engine set
+Remove an engine
+Brands
+List tracked brands
+Create competitor brand
+List mentioned brands
+Get aggregated brand metrics
+Update brand
+Delete brand
+Add aliases to brand
+Topics
+Create topics
+Update a topic title
+Delete a topic
+Prompts
+List prompts or topics
+Delete prompts
+Create prompts for a topic
+Move prompts to a topic
+Change prompt locations
+Get prompt details
+Get prompt result list
+Get prompt result details
+Sources
+Get project sources
+Get aggregated source metrics
+Reference
+AI models
+Sentiment
+Project status
+Country codes
+Language codes
+Source type
+URL category types
+Brand match mode
+Prompt list grouping
+Brand metrics dimensions and metrics
+Sort fields
+Date ranges and compare mode
+Array parameters
+Pagination
+Error codes
+Authentication
+Subscription
+Get subscription details
+API
+Data API / Keyword Research
+Keyword Research
+Keyword Research API provides programmatic access to keyword metrics and discovery. Data is refreshed on a monthly basis.
+Using the API, you can:
+retrieve keyword metrics such as search volume, CPC, competition, difficulty, and historical trends
+discover similar keywords with the same user intent
+find related keywords based on overlapping search results
+get question keywords associated with a seed keyword
+discover long-tail keywords that are lower-volume and more specific
+Get Keyword Metrics (Bulk)
+POST https://api.seranking.com/v1/keywords/export
+Cost: 100 credits per request
+Retrieves various data points for a list of specified keywords within a given regional database. It’s designed for bulk analysis and returns metrics like search volume, CPC, competition, keyword difficulty, search intent, and historical search volume trends for each submitted keyword.
+By default, the returned history_trend covers the 12 most recent months, ending at the current month. Use the optional history_to parameter to end the window at an earlier month, and history_from to start it later — together they return a custom date range (e.g. to reconstruct a keyword’s seasonality as of a past date). The window is always capped at 12 months.
+Request
+Send source in the query string and all other inputs in a JSON request body (Content-Type: application/json).
+Note: The source parameter must be provided as a query parameter in the endpoint URL.
+Query parameters
+ParameterTypeRequiredDefaultDescription
+sourceStringYes—Country code of the regional keyword database (e.g., us). For acceptable values, see Regional database codes.
+Body parameters
+ParameterTypeRequiredDefaultDescription
+keywordsString[]Yes—Array of keywords to analyze, e.g. ["seo platform", "seranking.com"]. Between 1 and 5,000 keywords per request.
+sortStringNocpcField the results are sorted by: volume, cpc, difficulty, or competition.
+sort_orderStringNodescSorting order: asc (ascending) or desc (descending).
+history_fromStringNo—Start month of the history_trend window, YYYY-MM-DD (the day is ignored). Only takes effect together with history_to — sent on its own it is ignored. The window then runs from history_from through history_to inclusive, capped at the most recent 12 months. Must not be later than history_to.
+history_toStringNoCurrent monthEnd month of the history_trend window, YYYY-MM-DD (the day is ignored). On its own it returns the 12 months ending at this month — e.g. 2024-05-01 returns 2023-06-01 through 2024-05-01. Combine with history_from for a shorter range. Must not be a future month.
+Request example
+Copy
+curl -X POST 'https://api.seranking.com/v1/keywords/export?source=us' \
+-H 'Authorization: Token YOUR_API_KEY' \
+-H 'Content-Type: application/json' \
+-d '{
+"keywords": ["seo platform", "seranking.com"],
+"sort": "cpc",
+"sort_order": "desc"
+}'
+Request example — custom history window
+Copy
+curl -X POST 'https://api.seranking.com/v1/keywords/export?source=us' \
+-H 'Authorization: Token YOUR_API_KEY' \
+-H 'Content-Type: application/json' \
+-d '{
+"keywords": ["seo platform"],
+"history_from": "2024-01-01",
+"history_to": "2024-05-01"
+}'
+Omit history_from to get the full 12 months ending at history_to.
+Response parameters
+If successful, the server returns a JSON array. Each object in this array corresponds to one of the keywords submitted in the request and contains the requested data points.
+ParameterTypeDescription
+is_data_foundBooleanIndicates whether data was successfully found and retrieved for this specific keyword: true (found) / false (otherwise).
+keywordStringKeyword phrase as submitted in the request.
+volumeIntegerAverage monthly search volume for this keyword in the specified source database.
+cpcFloatAverage Cost Per Click for this keyword.
+competitionFloatPaid-search competition level for this keyword, on a 0–1 scale (higher = more competition).
+difficultyIntegerKeyword difficulty — how hard it is to rank organically for this keyword, on a 0–100 scale (higher = harder).
+intentsArrayArray of search intent codes. Possible values: I (Informational — user is looking for information), C (Commercial — user is investigating products, services, or brands), T (Transactional — user wants to complete an action or purchase), L (Local — user is looking for a location or something nearby), N (Navigational — user is looking for a specific website or page).
+history_trendObjectObject containing historical search volume data for the keyword. Each key is a YYYY-MM-DD string representing the first day of a month, and the value is the search volume for that month. By default the window covers the 12 months ending at the current month; it is shifted by history_to and narrowed by history_from (see Request).
+Response example
+Copy
+[
+{
+"is_data_found": true,
+"keyword": "seo platform",
+"volume": 160,
+"cpc": 3.87,
+"competition": 0.06,
+"difficulty": 31,
+"intents": ["C", "I"],
+"history_trend": {
+"2024-06-01": 70,
+"2024-07-01": 70,
+"2024-08-01": 80,
+"2024-09-01": 140,
+"2024-10-01": 140,
+"2024-11-01": 140,
+"2024-12-01": 110,
+"2025-01-01": 160,
+"2025-02-01": 200,
+"2025-03-01": 240,
+"2025-04-01": 240,
+"2025-05-01": 300
+}
+},
+{
+"is_data_found": true,
+"keyword": "seranking.com",
+"volume": 480,
+"cpc": 2,
+"competition": 0.01,
+"difficulty": 16,
+"intents": ["C", "I"],
+"history_trend": {
+"2024-06-01": 30,
+"2024-07-01": 50,
+"2024-08-01": 40,
+"2024-09-01": 70,
+"2024-10-01": 20,
+"2024-11-01": 30,
+"2024-12-01": 40,
+"2025-01-01": 260,
+"2025-02-01": 1300,
+"2025-03-01": 1600,
+"2025-04-01": 1300,
+"2025-05-01": 880
+}
+}
+]
+Get similar keywords
+GET https://api.seranking.com/v1/keywords/similar
+Cost: 10 credits per returned keyword
+Retrieves keywords similar to a specified seed keyword within a regional database. Semantically similar keywords include synonyms, close variations, or different phrasings with the same intent. The method returns metrics such as search volume, CPC, competition, keyword difficulty, search intent, and historical trends.
+Request parameters
+ParameterTypeRequiredDefaultDescription
+sourceStringYesN/ACountry code of the regional keyword database (e.g., us). For acceptable values, see Regional database codes.
+keywordStringYesN/ASeed keyword used to find similar keywords (e.g., avocado).
+limitIntegerNo100Maximum number of keywords to return per page (e.g., 10). Positive integer.
+offsetIntegerNo0Starting offset for pagination (e.g., 0). Non-negative integer.
+sortStringNoN/AField by which keywords are sorted:
+• keyword
+• volume
+• cpc
+• difficulty
+• competition
+sort_orderStringNodescSorting order:
+• asc – ascending
+• desc – descending
+history_trendBooleanNoFALSEIndicates whether to include historical search volume trend data in the response:
+• true
+• false
+filter[volume][from]IntegerNoN/AMinimum monthly search volume (e.g., 50). Non-negative integer.
+filter[volume][to]IntegerNoN/AMaximum monthly search volume (e.g., 5000). Non-negative integer.
+filter[difficulty][from]IntegerNoN/AMinimum keyword difficulty score. Integers from 0 to 100.
+filter[difficulty][to]IntegerNoN/AMaximum keyword difficulty score. Integers from 0 to 100.
+filter[cpc][from]FloatNoN/AMinimum Cost Per Click (e.g., 0.1). Non-negative float.
+filter[cpc][to]FloatNoN/AMaximum Cost Per Click (e.g., 3). Non-negative float.
+filter[competition][from]FloatNoN/AMinimum competition score (e.g., 0.2). Floats from 0.0 to 1.0.
+filter[competition][to]FloatNoN/AMaximum competition score (e.g., 0.7). Floats from 0.0 to 1.0.
+filter[keyword_count][from]IntegerNoN/AMinimum number of words in the keyword (e.g., 3). Positive integer.
+filter[keyword_count][to]IntegerNoN/AMaximum number of words in the keyword (e.g., 5). Positive integer.
+filter[characters_count][from]IntegerNoN/AMinimum character length of the keyword (e.g., 20). Positive integer.
+filter[characters_count][to]IntegerNoN/AMaximum character length of the keyword (e.g., 50). Positive integer.
+filter[serp_features]StringNoN/AComma-separated list of SERP features to filter results (e.g., sge, images, top_stories). For acceptable values, see SERP features.
+filter[intents]StringNoN/AComma-separated list of intent codes:
+• I – informational
+• N – navigational
+• T – transactional
+• C – commercial
+• L – local
+filter[multi_keyword_included]ArrayNoN/AKeywords to include based on specific patterns. Each element is an array of objects with type (begins, contains, ends, exact) and value (string to match).
+filter[multi_keyword_excluded]ArrayNoN/AKeywords to exclude based on specific patterns. Each element is an array of objects with type (begins, contains, ends, exact) and value (string to match).
+Request example
+Copy
+curl --location 'https://api.seranking.com/v1/keywords/similar?source=us&keyword=avocado&limit=10&offset=0&sort=keyword&sort_order=asc&history_trend=true&filter[volume][from]=50&filter[volume][to]=5000&filter[difficulty][from]=18&filter[difficulty][to]=40&filter[cpc][from]=0.10&filter[cpc][to]=3.00&filter[competition][from]=0.2&filter[competition][to]=0.7&filter[keyword_count][from]=3&filter[keyword_count][to]=5&filter[characters_count][from]=20&filter[characters_count][to]=50&filter[serp_features]=featured_snippets,images&filter[intents]=I,C&filter[multi_keyword_included]=[[{"type":"contains","value":"oil"}],[{"type":"exact","value":"avocado recipes"}]]' \
+--header 'Authorization: Token YOUR_API_KEY'
+Response parameters
+If successful, the server returns a JSON object containing the total count of available similar keywords and an array of keyword objects.
+ParameterTypeDescription
+totalIntegerTotal number of similar keywords matching the criteria (ignoring limit and offset).
+keywordsArrayArray of objects, each representing a similar keyword with its metrics.
+Each object in the keywords array has the following structure:
+ParameterTypeDescription
+keywordStringSimilar keyword phrase.
+volumeIntegerAverage monthly search volume for this keyword in the specified source database.
+cpcFloatAverage Cost Per Click for this keyword.
+difficultyIntegerScore indicating the keyword’s ranking difficulty (0-100).
+competitionFloatScore indicating the level of competition for this keyword (0.0-1.0).
+intentsArrayArray of search intent codes.
+serp_featuresArrayArray of SERP features associated with the keyword.
+history_trendObjectIf history_trend=true is included in the request, the object contains the historical search volume for the keyword:
+• Each key is a date string in YYYY-MM-DD format (the first day of the month).
+• Each value is the search volume for that month.
+• Can be null if historical data is unavailable.
+Response example
+Copy
+{
+"total": 35,
+"keywords": [
+{
+"keyword": "can you cook with avocado oil",
+"volume": 480,
+"cpc": 1.20,
+"difficulty": 6,
+"competition": 0.4,
+"intents": ["I"],
+"serp_features": ["featured_snippets", "videos"],
+"history_trend": {
+"2024-05-01": 400,
+"2024-06-01": 450,
+"2024-07-01": 480,
+"2024-08-01": 500,
+"2024-09-01": 520,
+"2024-10-01": 480,
+"2024-11-01": 460,
+"2024-12-01": 440,
+"2025-01-01": 500,
+"2025-02-01": 550,
+"2025-03-01": 600,
+"2025-04-01": 0
+}
+},
+{
+"keyword": "avocado recipes",
+"volume": 1000,
+"cpc": 0.80,
+"difficulty": 12,
+"competition": 0.3,
+"intents": ["I", "C"],
+"serp_features": ["recipes", "images"],
+"history_trend": {
+"2024-05-01": 900,
+"2024-06-01": 950,
+"2024-07-01": 1000,
+"2024-08-01": 1050,
+"2024-09-01": 1100,
+"2024-10-01": 1000,
+"2024-11-01": 950,
+"2024-12-01": 900,
+"2025-01-01": 1050,
+"2025-02-01": 1100,
+"2025-03-01": 1200,
+"2025-04-01": 0
+}
+}
+]
+}
+Get related keywords
+GET https://api.seranking.com/v1/keywords/related
+Cost: 10 credits per returned keyword
+Retrieves keywords that are topically related to a specified seed keyword within a regional database. Topically related keywords are based on having a high degree of overlapping URLs in their search results. The method returns metrics such as search volume, CPC, competition, keyword difficulty, search intent, relevance score, and optional historical search volume trends.
+Request parameters
+ParameterTypeRequiredDefaultDescription
+sourceStringYesN/ACountry code of the regional keyword database (e.g., us, uk). For acceptable values, see Regional database codes.
+keywordStringYesN/ASeed keyword used to find related keywords (e.g., avocado).
+limitIntegerNo100Maximum number of keywords to return per page (e.g., 10). Positive integer.
+offsetIntegerNo0Starting offset for pagination (e.g., 0). Non-negative integer.
+sortStringNoN/AField by which keywords are sorted:
+• keyword
+• volume
+• cpc
+• difficulty
+• competition
+sort_orderStringNodescSorting order:
+• asc – ascending
+• desc – descending
+history_trendBooleanNoFALSEIndicates whether to include historical search volume trend data in the response:
+• true
+• false
+filter[volume][from]IntegerNoN/AMinimum monthly search volume (e.g., 50). Non-negative integer.
+filter[volume][to]IntegerNoN/AMaximum monthly search volume (e.g., 5000). Non-negative integer.
+filter[difficulty][from]IntegerNoN/AMinimum keyword difficulty score. Integers from 0 to 100.
+filter[difficulty][to]IntegerNoN/AMaximum keyword difficulty score. Integers from 0 to 100.
+filter[cpc][from]FloatNoN/AMinimum Cost Per Click (e.g., 0.1). Non-negative float.
+filter[cpc][to]FloatNoN/AMaximum Cost Per Click (e.g., 3). Non-negative float.
+filter[competition][from]FloatNoN/AMinimum competition score (e.g., 0.2). Floats from 0.0 to 1.0.
+filter[competition][to]FloatNoN/AMaximum competition score (e.g., 0.7). Floats from 0.0 to 1.0.
+filter[keyword_count][from]IntegerNoN/AMinimum number of words in the keyword (e.g., 3). Positive integer.
+filter[keyword_count][to]IntegerNoN/AMaximum number of words in the keyword (e.g., 5). Positive integer.
+filter[characters_count][from]IntegerNoN/AMinimum character length of the keyword (e.g., 20). Positive integer.
+filter[characters_count][to]IntegerNoN/AMaximum character length of the keyword (e.g., 50). Positive integer.
+filter[serp_features]StringNoN/AComma-separated list of SERP features to filter results (e.g., sge, images, top_stories).
+For acceptable values, see SERP features.
+filter[intents]StringNoN/AComma-separated list of intent codes:
+• I – informational
+• N – navigational
+• T – transactional
+• C – commercial
+• L – local
+filter[multi_keyword_included]ArrayNoN/AKeywords to include based on specific patterns. Each element is an array of objects with type (begins, contains, ends, exact) and value (string to match).
+filter[multi_keyword_excluded]ArrayNoN/AKeywords to exclude based on specific patterns. Each element is an array of objects with type (begins, contains, ends, exact) and value (string to match).
+Request example
+Copy
+curl --location 'https://api.seranking.com/v1/keywords/related?source=us&keyword=avocado&limit=10&offset=0&sort=keyword&sort_order=asc&history_trend=true&filter[volume][from]=50&filter[volume][to]=5000&filter[difficulty][from]=18&filter[difficulty][to]=40&filter[cpc][from]=0.10&filter[cpc][to]=3.00&filter[competition][from]=0.2&filter[competition][to]=0.7&filter[keyword_count][from]=3&filter[keyword_count][to]=5&filter[characters_count][from]=20&filter[characters_count][to]=50&filter[serp_features]=featured_snippets,images&filter[intents]=I,C&filter[multi_keyword_included]=[[{"type":"contains","value":"oil"}],[{"type":"exact","value":"avocado recipes"}]]' \
+--header 'Authorization: Token YOUR_API_KEY'
+Response parameters
+If successful, the server returns a JSON object containing the total count of available related keywords and an array of keyword objects.
+ParameterTypeDescription
+totalIntegerTotal number of related keywords matching the criteria (ignoring limit and offset).
+keywordsArrayArray of objects, each representing a related keyword with its metrics.
+Each object in the keywords array has the following structure:
+ParameterTypeDescription
+keywordStringRelated keyword phrase.
+volumeIntegerAverage monthly search volume for this keyword in the specified source database.
+cpcFloatAverage Cost Per Click for this keyword.
+difficultyIntegerScore indicating the keyword’s ranking difficulty (0-100).
+competitionFloatScore indicating the level of competition for this keyword (0.0-1.0).
+serp_featuresArrayArray of SERP features associated with the keyword.
+relevanceIntegerRelevance score of the returned keyword in relation to the queried keyword.
+intentsArrayArray of search intent codes.
+history_trendObjectIf history_trend=true is included in the request, the object contains the historical search volume for the keyword:
+• Each key is a date string in YYYY-MM-DD format (the first day of the month).
+• Each value is the search volume for that month.
+• Can be null if historical data is unavailable.
+Response example
+Copy
+{
+"total": 21,
+"keywords": [
+{
+"keyword": "avocado anbauen deutschland",
+"cpc": 0,
+"difficulty": 9,
+"volume": 140,
+"competition": 0.06,
+"serp_features": [
+"images",
+"sge",
+"related_searches"
+],
+"relevance": 6,
+"intents": [
+"I"
+],
+"history_trend": {
+"2024-06-01": 140,
+"2024-07-01": 170,
+"2024-08-01": 140,
+"2024-09-01": 140,
+"2024-10-01": 110,
+"2024-11-01": 90,
+"2024-12-01": 110,
+"2025-01-01": 170,
+"2025-02-01": 140,
+"2025-03-01": 260,
+"2025-04-01": 140,
+"2025-05-01": 170
+}
+},
+{
+"keyword": "avocado baum deutschland",
+"cpc": 0,
+"difficulty": 9,
+"volume": 110,
+"competition": 0.09,
+"serp_features": [
+"featured_snippets",
+"reviews",
+"images",
+"sge",
+"related_searches"
+],
+"relevance": 6,
+"intents": [
+"I"
+],
+"history_trend": {
+"2024-06-01": 90,
+"2024-07-01": 110,
+"2024-08-01": 110,
+"2024-09-01": 110,
+"2024-10-01": 110,
+"2024-11-01": 90,
+"2024-12-01": 90,
+"2025-01-01": 70,
+"2025-02-01": 110,
+"2025-03-01": 170,
+"2025-04-01": 140,
+"2025-05-01": 140
+}
+}
+]
+}
+Get question keywords
+GET https://api.seranking.com/v1/keywords/questions
+Cost: 10 credits per returned keyword
+Retrieves keywords phrased as common user questions related to a specified seed keyword within a regional database. The method returns metrics such as search volume, CPC, competition, keyword difficulty, search intent, and optional historical search volume trends.
+Request parameters
+ParameterTypeRequiredDefaultDescription
+sourceStringYesN/ACountry code of the regional keyword database (e.g., us). For acceptable values, see Regional database codes.
+keywordStringYesN/ASeed keyword to retrieve question-style keywords (e.g., avocado).
+limitIntegerNo100Maximum number of keywords to return per page (e.g., 10). Positive integer.
+offsetIntegerNo0Starting offset for pagination (e.g., 0). Non-negative integer.
+sortStringNoN/AField by which keywords are sorted:
+• keyword
+• volume
+• cpc
+• difficulty
+• competition
+sort_orderStringNodescSorting order:
+• asc – ascending
+• desc – descending
+history_trendBooleanNoFALSEIndicates whether to include historical search volume trend data in the response:
+• true
+• false
+filter[volume][from]IntegerNoN/AMinimum monthly search volume (e.g., 50). Non-negative integer.
+filter[volume][to]IntegerNoN/AMaximum monthly search volume (e.g., 5000). Non-negative integer.
+filter[difficulty][from]IntegerNoN/AMinimum keyword difficulty score. Integers from 0 to 100.
+filter[difficulty][to]IntegerNoN/AMaximum keyword difficulty score. Integers from 0 to 100.
+filter[cpc][from]FloatNoN/AMinimum Cost Per Click (e.g., 0.1). Non-negative float.
+filter[cpc][to]FloatNoN/AMaximum Cost Per Click (e.g., 3). Non-negative float.
+filter[competition][from]FloatNoN/AMinimum competition score (e.g., 0.2). Floats from 0.0 to 1.0.
+filter[competition][to]FloatNoN/AMaximum competition score (e.g., 0.7). Floats from 0.0 to 1.0.
+filter[keyword_count][from]IntegerNoN/AMinimum number of words in the keyword (e.g., 3). Positive integer.
+filter[keyword_count][to]IntegerNoN/AMaximum number of words in the keyword (e.g., 5). Positive integer.
+filter[characters_count][from]IntegerNoN/AMinimum character length of the keyword (e.g., 20). Positive integer.
+filter[characters_count][to]IntegerNoN/AMaximum character length of the keyword (e.g., 50). Positive integer.
+filter[serp_features]StringNoN/AComma-separated list of SERP features to filter results (e.g., sge, images, top_stories). For acceptable values, see SERP features.
+filter[intents]StringNoN/AComma-separated list of intent codes:
+• I – informational
+• N – navigational
+• T – transactional
+• C – commercial
+• L – local
+filter[multi_keyword_included]ArrayNoN/AKeywords to include based on specific patterns. Each element is an array of objects with type (begins, contains, ends, exact) and value (string to match).
+filter[multi_keyword_excluded]ArrayNoN/AKeywords to exclude based on specific patterns. Each element is an array of objects with type (begins, contains, ends, exact) and value (string to match).
+Request example
+Copy
+curl --location --globoff 'https://api.seranking.com/v1/keywords/questions?source=us&keyword=avocado&limit=10&offset=0&sort=keyword&sort_order=asc&history_trend=true&filter[volume][from]=100&filter[volume][to]=100000&filter[difficulty][from]=0&filter[difficulty][to]=30&filter[cpc][from]=0&filter[cpc][to]=100&filter[competition][from]=0&filter[competition][to]=0.1&filter[keyword_count][from]=3&filter[keyword_count][to]=8&filter[characters_count][from]=15&filter[characters_count][to]=50&filter[serp_features]=sge,images&filter[intents]=I,C&filter[multi_keyword_included]=[[{"type":"contains","value":"oil"}],[{"type":"exact","value":"avocado recipes"}]]' \
+--header 'Authorization: Token YOUR_API_KEY'
+Response parameters
+If successful, the server returns a JSON object containing the total count of available question keywords and an array of keyword objects.
+ParameterTypeDescription
+totalIntegerTotal number of question keywords matching the criteria (ignoring limit and offset).
+keywordsArrayArray of objects, each representing a question keyword with its metrics.
+Each object in the keywords array has the following structure:
+ParameterTypeDescription
+keywordStringQuestion keyword phrase.
+volumeIntegerAverage monthly search volume for this keyword in the specified source database.
+cpcFloatAverage Cost Per Click for this keyword.
+difficultyIntegerScore indicating the keyword’s ranking difficulty (0-100).
+competitionFloatScore indicating the level of competition for this keyword (0.0-1.0).
+serp_featuresArrayArray of SERP features associated with the keyword.
+intentsArrayArray of search intent codes.
+history_trendObjectIf history_trend=true is included in the request, the object contains the historical search volume for the keyword:
+• Each key is a date string in YYYY-MM-DD format (the first day of the month).
+• Each value is the search volume for that month.
+• Can be null if historical data is unavailable.
+Response example
+Copy
+{
+"total": 3,
+"keywords": [
+{
+"keyword": "für welche organe sind avocados gut",
+"cpc": 0,
+"difficulty": 11,
+"volume": 140,
+"competition": 0,
+"serp_features": [
+"images",
+"sge",
+"related_searches"
+],
+"intents": [
+"I"
+],
+"history_trend": null
+},
+{
+"keyword": "how are avocados grown",
+"cpc": 0,
+"difficulty": 24,
+"volume": 110,
+"competition": 0.03,
+"serp_features": [
+"featured_snippets",
+"reviews",
+"images",
+"related_searches"
+],
+"intents": [
+"I"
+],
+"history_trend": {
+"2024-06-01": 140,
+"2024-07-01": 140,
+"2024-08-01": 110,
+"2024-09-01": 90,
+"2024-10-01": 140,
+"2024-11-01": 90,
+"2024-12-01": 70,
+"2025-01-01": 110,
+"2025-02-01": 90,
+"2025-03-01": 110,
+"2025-04-01": 90,
+"2025-05-01": 140
+}
+},
+{
+"keyword": "how to ripen avocados fast",
+"cpc": 0,
+"difficulty": 19,
+"volume": 170,
+"competition": 0.01,
+"serp_features": [
+"featured_snippets",
+"people_also_ask",
+"sge",
+"related_searches"
+],
+"intents": [
+"I"
+],
+"history_trend": {
+"2024-06-01": 210,
+"2024-07-01": 170,
+"2024-08-01": 140,
+"2024-09-01": 110,
+"2024-10-01": 170,
+"2024-11-01": 170,
+"2024-12-01": 140,
+"2025-01-01": 210,
+"2025-02-01": 140,
+"2025-03-01": 140,
+"2025-04-01": 210,
+"2025-05-01": 210
+}
+}
+]
+}
+Get longtail keywords
+GET https://api.seranking.com/v1/keywords/longtail
+Cost: 1 credit per returned keyword
+Retrieves long-tail keywords related to a specified seed keyword within a regional database. Long-tail keywords have a lower search volume, often indicating more specific user intent and less competition.
+Request parameters
+ParameterTypeRequiredDefaultDescription
+sourceStringYesN/ACountry code of the regional keyword database (e.g., us). For acceptable values, see Regional database codes.
+keywordStringYesN/ASeed keyword used to find longtail keywords (e.g., avocado).
+limitIntegerNo100Maximum number of keywords to return per page (e.g., 10). Positive integer.
+offsetIntegerNo0Starting offset for pagination (e.g., 0). Non-negative integer.
+Request example
+Copy
+curl --location --globoff 'https://api.seranking.com/v1/keywords/longtail?source=us&keyword=avocado&limit=10&offset=0' \
+--header 'Authorization: Token YOUR_API_KEY'
+Response parameters
+If successful, the server returns a JSON object containing the total count of available longtail keywords and an array of keyword strings.
+ParameterTypeDescription
+totalIntegerTotal number of longtail keywords matching the criteria (ignoring limit and offset).
+keywordsArrayArray of longtail keyword strings.
+Response example
+Copy
+{
+"total": 40717,
+"keywords": [
+"1 1/2 oz avocado",
+"1 1/2 oz of avocado",
+"1 2 medium avocado protein",
+"1 8 avocado calories",
+"1 avocado brownies",
+"1 avocado dip recipe",
+"1 avocado eiweiß",
+"1 avocado fett",
+"1 avocado gewicht ohne kern",
+"1 avocado guacamole calories"
+]
+}
+Learn how SE Ranking’s API can boost your SEO!
+Hi! Meet our product experts!
+One of them will walk you through the API and show you how to get the most out of it.
+Enjoy a tailored demo on integrating rich, structured SEO data into your stack.
+Pin down every tech detail live—auth, endpoints, rate limits, data formats.
+Compare usage tiers and pricing so you can unlock maximum data value.
+Request a free demo to see our tools and integrations in action
+By clicking this button, you agree to SE Ranking’s
+Terms of Service and Privacy Statement.
+column
+Core SEO Tools
+Rank Tracker
+Website Audit
+On-Page SEO Checker
+SERP Tracker
+Backlink Checker
+Keyword Grouper
+Keyword Tool
+Website Competitor Analysis Tool
+AI Overviews Tracker
+All features
+Performance & Reporting Tools
+Webpage Monitor
+SEO Report Generator
+SEO Dashboard
+column
+Add-ons
+Local Marketing Software
+Content Marketing Tool
+Agency Pack
+White Label
+Additional Services
+SEO API
+Free SEO tools
+SEO Task Manager
+Support & Partnership
+Contact
+Help
+Affiliate
+Educational Partnership Program
+column
+Company & Resources
+SEO Blog
+About
+Stand with Ukraine
+Careers
+What’s New
+Testimonials
+Webinars
+Academy
+Competitors
+FAQ
+Legal & Technical
+Privacy Statement
+Cookie Policy
+Legal Information
+Open Source Attributions
+Download
+enEnglish
+enEnglish
+deDeutsch
+frFrançais
+esEspañol
+nlNederlands
+itItaliano
+ptPortuguês
+uaУкраїнська
+ruРусский
+あ日本語
+© 2013 - 2026 SER Acquisition Inc. All Rights Reserved

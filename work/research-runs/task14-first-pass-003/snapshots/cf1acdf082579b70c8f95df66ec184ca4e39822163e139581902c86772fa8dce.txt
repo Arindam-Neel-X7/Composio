@@ -1,0 +1,352 @@
+GraphQL overview
+For AI agents: the docs index is at https://developer.monday.com/api-reference/llms.txt. The index for every project on this site is at https://developer.monday.com/llms.txt. Append .md to any documentation page URL to get its markdown version.
+Jump to Content
+HomeGuidesAPI ReferenceChangelogBuild with AIPlaygroundApps DocsCommunityNeed Help?
+Guides
+Apps DocsCommunityNeed Help?
+HomeGuidesAPI ReferenceChangelogBuild with AIPlayground
+GraphQL overview
+About the monday API
+The basics
+Authentication
+Versioning
+Rate limits
+Idempotency
+Error handling
+Release notes
+Migrating the User entity: 2026-04 → 2026-10
+Migrating to version 2025-04
+Platform MCP overview
+Compatible MCP clients
+Integrate with the monday MCP server
+Authenticate with an API token
+Control MCP access with your own OAuth app
+Integrating monday MCP with Copilot Studio using a Custom App
+Integrating monday MCP with Claude using a Custom App
+Make your MCP integration publicly available
+Dynamic connectors
+Enterprise managed auth
+Set up enterprise-managed authorization for Claude
+Set up enterprise managed auth with Okta
+claude-ema-advanced-tab
+claude-ema-setup-modal
+copilot-studio-add-mcp-server
+Platform MCP tools
+Create Board (Platform MCP)
+Get Board Info (Platform MCP)
+Get Board Items (Platform MCP)
+Get Board Activity (Platform MCP)
+Board Insights (Platform MCP)
+Create Group (Platform MCP)
+Create Column (Platform MCP)
+Get Column Type Info (Platform MCP)
+Create Item (Platform MCP)
+Change Item Column Values (Platform MCP)
+Create Workspace (Platform MCP)
+Update Workspace (Platform MCP)
+List Workspaces (Platform MCP)
+Workspace Info (Platform MCP)
+Create Folder (Platform MCP)
+Update Folder (Platform MCP)
+Move Object (Platform MCP)
+Create Doc (Platform MCP)
+Update Doc (Platform MCP)
+Read Docs (Platform MCP)
+Create Dashboard (Platform MCP)
+Create Widget (Platform MCP)
+All Widgets Schema (Platform MCP)
+Create View (Platform MCP)
+Create Table View (Platform MCP)
+Update View (Platform MCP)
+Update Table View (Platform MCP)
+Create Form (Platform MCP)
+Get Form (Platform MCP)
+Update Form (Platform MCP)
+Form Questions Editor (Platform MCP)
+Create Form Submission (Platform MCP)
+Get User Context (Platform MCP)
+List Users and Teams (Platform MCP)
+Create Update (Platform MCP)
+Get Updates (Platform MCP)
+Create Notification (Platform MCP)
+Search (Platform MCP)
+Get Assets (Platform MCP)
+Get Asset Upload URL (Platform MCP)
+Finalize Asset Upload (Platform MCP)
+List Automations (Platform MCP)
+Manage Automations (Platform MCP)
+Create Automation (Platform MCP)
+Plan Workflow (Platform MCP)
+Create Workflow (Platform MCP)
+Update Workflow (Platform MCP)
+Publish Workflow (Platform MCP)
+Manage Agent (Platform MCP)
+Manage Agent Triggers (Platform MCP)
+Manage Agent Skills (Platform MCP)
+Manage Agent Knowledge (Platform MCP)
+Agent Catalog (Platform MCP)
+Get Notetaker Meetings (Platform MCP)
+Get Sprints Boards (Platform MCP)
+Get Sprints Metadata (Platform MCP)
+Get Sprint Summary (Platform MCP)
+Execute API Query (Platform MCP)
+Get GraphQL Schema (Platform MCP)
+Get Type Details (Platform MCP)
+Show Table (Platform MCP UI)
+Show Chart (Platform MCP UI)
+Show Battery (Platform MCP UI)
+Show Assign (Platform MCP UI)
+Platform MCP security
+Guides
+GraphQL overview
+Making your first request
+Querying board items
+Working with multi-level boards
+Changing column values
+Searching across your account
+Optimizing API usage
+Aggregating Board Data
+Validation Rules
+Importing items in bulk
+Connect a custom agent
+Working with the dependency column
+AI Skills
+Build on monday.com with AI
+Build an external agent
+Agent API key capabilities
+mcli - monday.com GraphQL CLI
+Portfolio Agent Skills
+Skill: Archive / Delete a Project
+Skill: Update Project Status
+Skill: List All Projects in a Portfolio
+Skill: Get Tasks Assigned to a Person Across Projects
+Skill: Get Project Status / Health
+Skill: Duplicate a Project
+Skill: Create a New Portfolio
+Skill: Connect a Project to a Portfolio
+Build monday agents with Make
+Connect to the Platform Agent over A2A
+Tools
+Developer Sandbox Account
+The Developer Center
+API analytics dashboard
+API playground
+Postman collection
+External APIs
+Developer AI assistant
+Apps MCP
+SDKs
+JavaScript SDK
+Python SDK
+Resources
+Get help
+Youtube
+monday.com help center
+API coverage gaps
+Models API
+Models API
+Getting started with the Models API
+Models API supported models
+Powered by
+GraphQL overview
+The monday.com API is built with GraphQL, a flexible query language that allows you to return as much or as little data as you need. It's important to know that GraphQL is an application layer that parses the query you send it and returns (or changes) data accordingly.
+Unlike REST APIs, where multiple endpoints return different data, GraphQL always exposes one endpoint and allows you to determine the structure of the returned data. Our API uses the following endpoint: https://api.monday.com/v2.
+This document will walk through the GraphQL operations and object types to help you understand the essential components of a request. We will also discuss the GraphQL visual interface that enables you to test your queries and mutations, and finally, we cover where you can access the monday.com schema. Let's get started!
+👍
+Pro tip
+Check out this introduction to GraphQL to understand what all you can do with GraphQL!
+Operations
+There are two possible operations in GraphQL: queries and mutations.
+Query
+Queries perform the READ operation and do not change or alter any data. The result of each query will be formatted in the same way as the query itself. The following example retrieves the ID, title, and type of each column on board 1234567890.
+Sample query
+GraphQL
+query {
+boards {
+columns {
+id
+title
+type
+}
+}
+}
+Sample response
+JSON
+{
+"columns": [
+{
+"id": "name",
+"title": "Name",
+"type": "name"
+},
+{
+"id": "subitems",
+"title": "Subitems",
+"type": "subtasks"
+},
+{
+"id": "person",
+"title": "Person",
+"type": "people"
+},
+{
+"id": "status",
+"title": "Status",
+"type": "status"
+}
+]
+}
+Mutation
+Mutations are special queries that perform the CUD (Create, Update, Delete) operations to modify your data. Mutations return an instance of the object you just modified, so you can query the data you changed. The following example creates a new item on board 1234567890 and returns the ID and name of the new item.
+Sample mutation
+GraphQL
+mutation{
+create_item (board_id: 1234567890, item_name: "New Item"){
+id
+name
+}
+}
+Sample response
+JSON
+{
+"data": {
+"create_item": {
+"id": "9876543210",
+"name": "New Item"
+}
+},
+"account_id": 12345678
+}
+Multiple operations in one request
+You can also send multiple queries in one request, and they will be executed one after the other. The following query returns the ID and name for boards 1234567890 and 9876543210. The mutation creates a new item and retrieves the item's ID and name on both boards 1234567890 and 9876543210.
+Sample query
+GraphQL
+query {
+checkBoard1: boards (ids:1234567890) {
+id
+name
+}
+checkBoard2: boards (ids:9876543210) {
+id
+name
+}
+}
+Sample response
+JSON
+{
+"data": {
+"checkBoard1": [
+{
+"id": "1234567890",
+"name": "Test Board 1"
+}
+],
+"checkBoard2": [
+{
+"id": "9876543210",
+"name": "Test Board 2"
+}
+]
+},
+"account_id": 12345678
+}
+Sample mutation
+GraphQL
+mutation{
+createItem1: create_item (board_id: 1234567890, item_name:"Test Item 1") {
+id
+name
+}
+createItem2: create_item(board_id: 9876543210, item_name:"Test Item 2") {
+id
+name
+}
+}
+Sample response
+JSON
+{
+"data": {
+"createItem1": {
+"id": "11223344",
+"name": "Test Item 1"
+},
+"createItem2": {
+"id": "44332211",
+"name": "Test Item 2"
+}
+},
+"account_id": 12345678
+}
+Object Types
+Object types are a collection of fields used to describe the set of possible data you can query using the API. They can also have arguments on the fields to pass parameters when querying data.
+Fields
+Fields specify properties or attributes of objects to help define what information to retrieve from a query. Every object in the schema contains fields that can be queried by name to retrieve specific properties of the object.
+Take the boards object, for example. You can query these fields to return specific information about your board(s). The following example returns the boards' ID and name and the ID, title, and type of each column on the boards.
+GraphQL
+query {
+boards {
+id
+name
+columns {
+id
+title
+type
+}
+}
+}
+Arguments
+You can pass arguments in a query to specify what data to return (i.e., filter the search results) and narrow down the results to only the specific ones you’re after.
+Building on the boards example above, you can also use these arguments to reduce the number of results returned in your query. The following example returns the ID and name only for boards 1234567890 and 9876543210 and the ID, title, and type of each column on those boards.
+GraphQL
+query {
+boards (ids: [1234567890, 9876543210]) {
+id
+name
+columns {
+id
+title
+type
+}
+}
+}
+Variables
+You can use variables to pass dynamic values to your arguments. They are written outside of the query string itself in the variables section and passed to the arguments.
+When we start working with variables, we need to do three things:
+Replace the static value in the query with $variableName
+Declare $variableName as one of the variables accepted by the query
+Pass variableName: value in the separate, transport-specific (usually JSON) variables dictionary
+GraphQL
+mutation change_column_value($value: JSON!) {
+change_column_value (board_id: 157244624,item_id: 9539475, column_id: "status", value: $value) {
+id
+}
+}
+query variables:
+{
+"value": "{\"index\": 1}"
+}
+monday.com schema
+Our GraphQL schema defines the structure of the available API data and contains all of the available queries and mutations. It is a valuable resource for verifying API responses and extracting useful information from the metadata.
+We expose our schema here. By default, it is in introspection JSON format for the Current API version. You can request a different version using the optional version=<API-Version> parameter with the version name.
+For example: https://api.monday.com/v2/get_schema?version=2024-04
+You can also retrieve the schema definition language (SDL) version using the optional format=sdl parameter.
+For example: https://api.monday.com/v2/get_schema?format=sdl
+📘
+Join our developer community!
+We've created a community specifically for our devs where you can search through previous topics to find solutions, ask new questions, hear about new features and updates, and learn tips and tricks from other devs. Come join in on the fun! 😎
+Updated 3 months ago
+Platform MCP security
+Making your first request
+Did this page help you?
+Yes
+No
+Copy Page
+Operations
+Query
+Mutation
+Multiple operations in one request
+Object Types
+Fields
+Arguments
+Variables
+monday.com schema

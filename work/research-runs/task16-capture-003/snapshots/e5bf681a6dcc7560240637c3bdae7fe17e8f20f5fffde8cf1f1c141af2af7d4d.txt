@@ -1,0 +1,103 @@
+Getting Started | TranscriptAPI.comSkip to content
+TranscriptAPI.com
+SearchCtrlK
+Cancel
+Select themeDarkLightAuto
+Menu
+Home
+Getting Started
+Overview
+Python
+JavaScript / Node.js
+cURL
+LLMS.txt
+API
+API Reference
+MCP
+MCP Overview
+ChatGPT
+Claude
+OpenAI Agent Builder
+Contact
+Billing
+Select themeDarkLightAuto
+On this page
+Overview
+Quick Start by Language
+Choose Your Integration Method
+REST API Integration
+MCP (Model Context Protocol) Integration
+What You Can Do
+Next Steps
+Have Questions?
+On this page
+Overview
+Quick Start by Language
+Choose Your Integration Method
+REST API Integration
+MCP (Model Context Protocol) Integration
+What You Can Do
+Next Steps
+Have Questions?
+Getting Started
+Getting Started
+Section titled “Getting Started”
+Welcome to TranscriptAPI! Get YouTube video transcripts through our REST API or seamlessly integrate with AI assistants using Model Context Protocol (MCP).
+Quick Start by Language
+Section titled “Quick Start by Language”
+Each guide takes you from an API key to a working transcript request, then covers plain-text output, language selection, and error handling. The examples need nothing beyond requests in Python or the built-in fetch in Node.js.
+Python: get a YouTube transcript with requests
+JavaScript / Node.js: get a YouTube transcript with the built-in fetch
+cURL: test your key and see the response from the command line
+The shortest version, once you have an API key:
+Terminal window
+curl -G "https://transcriptapi.com/api/v2/youtube/transcript" \
+--data-urlencode "video_url=https://www.youtube.com/watch?v=dQw4w9WgXcQ" \
+-H "Authorization: Bearer YOUR_API_KEY"
+Choose Your Integration Method
+Section titled “Choose Your Integration Method”
+REST API Integration
+Section titled “REST API Integration”
+Perfect for direct integration into your applications, scripts, and workflows.
+Quick Start:
+Sign up for an API key
+Make your first API request using the YouTube Transcript API
+Start fetching transcripts in your application
+View Complete API Reference →
+MCP (Model Context Protocol) Integration
+Section titled “MCP (Model Context Protocol) Integration”
+Ideal for AI assistants like Claude, ChatGPT, and custom agent workflows.
+Quick Start:
+Get your TranscriptAPI credentials
+Choose your platform:
+Claude Setup Guide
+ChatGPT Setup Guide
+OpenAI Agent Builder Guide
+Start analyzing YouTube videos in natural conversation
+Learn More About MCP Integration →
+What You Can Do
+Section titled “What You Can Do”
+With TranscriptAPI, you can:
+Extract transcripts from any YouTube video with captions
+Search YouTube videos and channels (paginated)
+Browse channel uploads with pagination
+Get latest channel videos (free, via RSS)
+Browse playlist contents with pagination
+Resolve channel handles to IDs (free)
+Get structured JSON or plain text formats
+Include video metadata (title, author, thumbnail)
+Control timestamp inclusion
+Integrate with AI workflows through MCP
+Next Steps
+Section titled “Next Steps”
+API Users: Check the API Reference for complete endpoint documentation
+MCP Users: Read the MCP documentation to understand authentication options
+Need Help?: Visit our Contact page
+Looking for ideas? See what you can build with TranscriptAPI.
+Have Questions?
+Section titled “Have Questions?”
+Contact our support team for assistance with your integration.
+Last updated: Oct 6, 2026
+Previous
+HomeNext
+Python

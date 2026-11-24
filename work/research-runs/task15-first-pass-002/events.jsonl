@@ -1,0 +1,8 @@
+{"event": "cache_reused", "app_id": 81, "url": "https://docs.stripe.com/connect/oauth-reference"}
+{"event": "cache_reused", "app_id": 83, "url": "https://raw.githubusercontent.com/binance/binance-spot-api-docs/master/README.md"}
+{"event": "cache_reused", "app_id": 86, "url": "https://raw.githubusercontent.com/intuit/quickbooks-online-mcp-server/main/README.md"}
+{"event": "cache_reused", "app_id": 87, "url": "https://raw.githubusercontent.com/XeroAPI/xero-mcp-server/main/README.md"}
+{"event": "cache_reused", "app_id": 87, "url": "https://raw.githubusercontent.com/XeroAPI/Xero-OpenAPI/master/README.md"}
+{"event": "cache_reused", "app_id": 89, "url": "https://docs.ramp.com/llms.txt"}
+{"event": "cache_reused", "app_id": 89, "url": "https://docs.ramp.com/llms-api.txt"}
+{"event": "validation", "structure_and_grounding": "passed", "backend": "Python jsonschema Draft202012Validator", "factual_truth": "requires independent review", "synthetic": false, "records": 10}

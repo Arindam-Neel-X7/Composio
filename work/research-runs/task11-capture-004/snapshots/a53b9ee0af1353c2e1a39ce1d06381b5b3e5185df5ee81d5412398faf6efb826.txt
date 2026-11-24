@@ -1,0 +1,283 @@
+GitHub - magento/magento2: Prior to making any Submission(s), you must sign an Adobe Contributor License Agreement, available here at: https://opensource.adobe.com/cla.html. All Submissions you make to Adobe Inc. and its affiliates, assigns and subsidiaries (collectively “Adobe”) are subject to the terms of the Adobe Contributor License Agreement. · GitHub
+Skip to content
+Navigation Menu
+Sign in
+Products
+Platform
+GitHubRepository hosting, code review, and collaboration
+CopilotAI coding agent for tasks, projects, and automated work
+Build & Ship
+ActionsCI/CD and automation
+Code QualityQuality analysis, fixes, and enforcement
+CodespacesCloud development environments
+Secure
+Code SecurityVulnerability detection and remediation
+Secret ProtectionSecret scanning and leak prevention
+All Features
+Developers
+Learn
+Documentation
+Training
+Certifications
+Build
+Build with Copilot
+Customize Copilot
+Integrations
+Explore
+Trending repos
+GitHub Sponsors
+Developer articles
+Changelog
+ChangelogYour source for the latest features, improvements, and fixes across GitHub products, all in one place.
+Businesses
+By Stage
+Enterprises
+Team
+Startups
+Nonprofits
+By Industry
+Healthcare
+Financial services
+Manufacturing
+Government
+See all industries
+Evaluate GitHub
+Why GitHub
+Customer Stories
+Business insights
+Trust Center
+Add-ons
+GitHub Advanced SecurityEnterprise-grade code security
+Copilot for businessEnterprise-grade AI features
+Premium SupportEnterprise-grade 24/7 support
+Resources
+Learn & Connect
+Documentation
+Resource center
+Blog
+Events & webinars
+Community Forum
+Customer Stories
+Integrations
+Support
+Customer support
+Training
+GitHub Status
+Company
+About
+Partners
+Changelog
+GitHub Universe
+GitHub UniverseThe event for developers, by developers — talks, workshops, and what’s next for GitHub.
+Pricing
+Search/
+Sign in
+Sign up
+Appearance settings
+You signed in with another tab or window. Reload to refresh your session.
+You signed out in another tab or window. Reload to refresh your session.
+You switched accounts on another tab or window. Reload to refresh your session.
+Dismiss alert
+magento
+magento2
+Repository navigation
+Code
+Issues1.3k (1.3k)
+Pull requests1.3k (1.3k)
+Projects
+Wiki
+Security and quality
+Insights
+More items
+magento2
+Public
+NotificationsYou must be signed in to change notification settings
+Fork9.4k (9.4k)
+Star12.2k (12.2k)You must be signed in to star a repository
+About
+Prior to making any Submission(s), you must sign an Adobe Contributor License Agreement, available here at: https://opensource.adobe.com/cla.html. All Submissions you make to Adobe Inc. and its affiliates, assigns and subsidiaries (collectively “Adobe”) are subject to the terms of the Adobe Contributor License Agreement.
+www.magento.com
+Topics
+ecommerceecommerce-platformhacktoberfestmagentomagento2php
+Resources
+Readme
+OSL-3.0 and 2 other licenses found
+Code of conduct
+Code of conduct
+Contributing
+Contributing
+Security policy
+Security policy
+Activity
+Custom properties
+Stars
+12.2k stars
+Watchers
+1.2k watching
+Forks
+9.4k forks
+Report repository
+2.4-develop
+BranchesTags
+Go to file
+Code
+Open more actions menu
+Latest commit
+History
+162,779 Commits
+162,779 Commits
+Folders and files
+NameName
+Last commit message
+Last commit date
+.github
+.github
+app
+app
+bin
+bin
+dev
+dev
+generated
+generated
+lib
+lib
+phpserver
+phpserver
+pub
+pub
+setup
+setup
+var
+var
+vendor
+vendor
+.editorconfig
+.editorconfig
+.gitignore
+.gitignore
+.htaccess
+.htaccess
+.htaccess.sample
+.htaccess.sample
+.php-cs-fixer.dist.php
+.php-cs-fixer.dist.php
+.user.ini
+.user.ini
+CHANGELOG.md
+CHANGELOG.md
+COPYING.txt
+COPYING.txt
+Gruntfile.js.sample
+Gruntfile.js.sample
+LICENSE.txt
+LICENSE.txt
+LICENSE_AFL.txt
+LICENSE_AFL.txt
+README.md
+README.md
+SECURITY.md
+SECURITY.md
+auth.json.sample
+auth.json.sample
+composer.json
+composer.json
+composer.lock
+composer.lock
+grunt-config.json.sample
+grunt-config.json.sample
+nginx.conf.sample
+nginx.conf.sample
+package.json.sample
+package.json.sample
+View all files
+Repository files navigation
+README
+Code of conduct
+Contributing
+OSL-3.0 license
+License
+AFL-3.0 license
+Security
+More items
+Magento Open Source
+Welcome to the Magento Open Source project! Magento Open Source software delivers basic eCommerce capabilities to build a unique online store from the ground up.
+However, for those who need a full-featured eCommerce solution, we recommend Adobe Commerce, which includes our optimized cloud architecture and hosting as well as AI-powered merchandising and analytics.
+Get started
+Quick start install
+System requirements
+Prerequisites
+More installation options
+Get help
+Help center
+Contribute
+Our Community is large and diverse, and our project is enormous. As a contributor, you have countless opportunities to impact product development and delivery by introducing new features or improving existing ones, enhancing test coverage, updating documentation for developers and end-users, catching and fixing code bugs, suggesting points for optimization, and sharing your great ideas.
+Contribute to the code
+Report an issue
+Improve the developer documentation
+Improve the end-user documentation
+Shape the future of Magento Open Source
+Maintainers
+We encourage experts from the Community to help us with GitHub routines such as accepting, merging, or rejecting pull requests and reviewing issues. Adobe has granted the Community Maintainers permission to accept, merge, and reject pull requests, as well as review issues. Thanks to invaluable input from the Community Maintainers team, we can significantly improve contribution quality and accelerate the time to deliver your updates to production.
+Learn more about the Maintainer role
+Maintainer's Handbook
+Leaders
+Adobe highly appreciates contributions that help us to improve the code, clarify the documentation, and increase test coverage. Check out our Community leaders, superstars, and superheroes on the leaderboard.
+Labeling
+We use labels in the GitHub issues and pull requests to help the participants retrieve additional information such as progress, component assignments, or release lines.
+Labels applied by the Community Engineering team
+Security
+Security is one of the highest priorities at Adobe. To learn more about reporting security concerns, visit the Adobe Bug Bounty Program.
+Stay up-to-date on the latest security news and patches by signing up for Security Alert Notifications.
+Licensing
+Each Magento source file included in this distribution is licensed under OSL 3.0 or the terms and conditions of the applicable ordering document between Licensee/Customer and Adobe (or Magento).
+Open Software License (OSL 3.0) – Please see LICENSE.txt for the full text of the OSL 3.0 license.
+Subject to Licensee's/Customer's payment of fees and compliance with the terms and conditions of the applicable ordering document between Licensee/Customer and Adobe (or Magento), the terms and conditions of the applicable ordering between Licensee/Customer and Adobe (or Magento) supersede the OSL 3.0 license for each source file.
+Communications
+We are dedicated to our Community and encourage your contributions and welcome feedback through events, our DevBlog, Twitter and YouTube channels, and other Community resources.
+To connect with people from the Community and Adobe engineering, join us in Slack. We have a channel for every project. To join a particular channel, send us a request at engcom@adobe.com, or sign up.
+Popular Slack channels
+If you are a new Community member, check out the following channels:
+general is an open chat for introductions and Magento 2 questions
+github is a support channel for GitHub issues, pull requests, and processes
+public-backlog for discussions of the backlog
+About
+Prior to making any Submission(s), you must sign an Adobe Contributor License Agreement, available here at: https://opensource.adobe.com/cla.html. All Submissions you make to Adobe Inc. and its affiliates, assigns and subsidiaries (collectively “Adobe”) are subject to the terms of the Adobe Contributor License Agreement.
+www.magento.com
+Topics
+ecommerceecommerce-platformhacktoberfestmagentomagento2php
+Resources
+Readme
+OSL-3.0 and 2 other licenses found
+Code of conduct
+Code of conduct
+Contributing
+Contributing
+Security policy
+Security policy
+Activity
+Custom properties
+Stars
+12.2k stars
+Watchers
+1.2k watching
+Forks
+9.4k forks
+Report repository
+Releases
+Used by
+Contributors
+Languages
+Footer
+© 2026 GitHub, Inc.
+Footer navigation
+Terms
+Privacy
+Security
+Status
+Community
+Docs
+Contact
+Manage cookies
+Do not share my personal information
+You can’t perform that action at this time.

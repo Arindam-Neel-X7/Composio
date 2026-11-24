@@ -1,0 +1,82 @@
+> ## Documentation Index
+> Fetch the complete documentation index at: https://docs.consensus.app/llms.txt
+> Use this file to discover all available pages before exploring further.
+# Connection reference
+> The technical facts every integration needs: the MCP endpoint, transport behavior, both authentication options, OAuth discovery documents, and the domains to allowlist.
+Everything on this page applies to any MCP client or gateway. The platform guides link back here rather than repeating it.
+## Endpoint and transport
+| | |
+| - | - |
+| **MCP endpoint** | `https://mcp.consensus.app/mcp` |
+| **Transport** | Streamable HTTP |
+| **Responses** | Buffered JSON. There is no SSE endpoint and the server never returns SSE event streams. |
+| **Sessions** | Stateless. No `Mcp-Session-Id`, no session affinity, so your gateway needs no sticky-session configuration. |
+| **Tools** | `search`, plus the thread tools `create_thread`, `get_thread`, `add_to_thread`, and `find_threads` for signed-in accounts and API keys, and `get_full_text` for paid plans. See the [tool reference](https://docs.consensus.app/mcp-tools/quickstart.md). |
+> [!WARNING]
+>
+> All MCP and JSON-RPC calls must target the `/mcp` path. The bare host `https://mcp.consensus.app/` only answers health checks and OAuth discovery.
+Where a product lets you choose a transport, pick **Streamable HTTP** explicitly. Some gateways default to SSE, which will fail against this server.
+## Authentication
+Two options. For a shared, server-side gateway credential, use an API key.
+> [tab] API key (recommended for gateways)
+>
+> A single opaque credential sent as a bearer token:
+>
+> ```http theme={null}
+> Authorization: Bearer ak_live_...
+> ```
+>
+> It lives entirely server-side, involves no user redirect and no token refresh, and maps to your Enterprise tier. Generate one from your Consensus account: profile icon → **API & MCP Dashboard** → **Keys and clients** → **New key**. The full key is shown once.
+>
+> Treat it like a password: keep it out of client-side code, public repositories, and screenshots.
+> [tab] OAuth 2.0 (per-user)
+>
+> Authorization-code flow only. There is no client-credentials grant, so OAuth always involves a per-user consent step; each user signs in to their own Consensus account.
+>
+> | | |
+> | - | - |
+> | **Authorization URL** | `https://consensus.app/oauth/authorize/` |
+> | **Token URL** | `https://consensus.app/oauth/token/` |
+> | **Dynamic Client Registration** | `https://consensus.app/oauth/register/` (RFC 7591) |
+> | **Scope** | `search`. Request `scope=search` or omit it; it's the default. This is not an OIDC provider, so there are no `openid` or `email` scopes. |
+> | **PKCE** | Required. `S256` only; requests without a `code_challenge` are rejected. |
+>
+> Keep the trailing slashes on the URLs.
+>
+> **Dynamic Client Registration issues public clients**: a `client_id` with no `client_secret`, which is why PKCE is required. If your gateway needs a confidential client (a `client_id` and `client_secret` pair) and can't do DCR, Consensus provisions those manually for enterprise partners. [Contact sales](https://consensus.app/home/contact/sales/) and we'll set one up.
+## Discovery documents
+Gateways that support automatic configuration can read these:
+* `https://mcp.consensus.app/.well-known/oauth-protected-resource` — points to the authorization server
+* `https://consensus.app/.well-known/oauth-authorization-server` — full metadata: endpoints, scopes, and `S256`
+## Firewall allowlist
+If your organization runs an egress firewall, allow these hosts. Per-host wildcards cover any path changes on our end (new discovery documents, versioned endpoints) without another change request, while staying scoped to the hosts this integration touches:
+```text theme={null}
+mcp.consensus.app/*
+consensus.app/*
+clerk.consensus.app/*
+```
+`clerk.consensus.app` is our authentication provider. Sign-in does a browser redirect through it, so it needs to be reachable wherever your users complete the consent screen. If you use the API-key path only, users never sign in and this host isn't needed.
+> [accordion] Tighter scope: exact URLs
+>
+> If policy requires exact URLs rather than wildcards, allow these. Expect a new change request any time we add or change a path.
+>
+> ```text theme={null}
+> https://mcp.consensus.app/mcp MCP JSON-RPC endpoint
+> https://mcp.consensus.app/ health check
+> https://mcp.consensus.app/.well-known/oauth-protected-resource
+> https://consensus.app/.well-known/oauth-authorization-server
+> https://consensus.app/oauth/register/
+> https://consensus.app/oauth/authorize/
+> https://consensus.app/oauth/token/
+> https://clerk.consensus.app/* sign-in redirects
+> ```
+## Protocol version
+The server tracks the current MCP specification. Some gateways refuse upstream servers below a minimum protocol version (Kong and Azure API Management require `2025-06-18` or later). If your gateway reports a version mismatch, [contact us](https://consensus.app/home/contact/sales/) with the version it requires.
+## What Enterprise unlocks
+| | Paid plans | Enterprise |
+| - | - | - |
+| Rate limit | 3 requests per second | Custom |
+| Papers per call | Up to 300 (Pro, Teams) or 750 (Deep) | Up to 1,000 |
+| Monthly calls | 500 to 2,000 included, with paid overage | Unlimited search; complete text and Threads billed per credit |
+| Full-text excerpts | Yes | Yes |
+This documentation is built and hosted on [Mintlify](https://mintlify.com), a developer documentation platform.

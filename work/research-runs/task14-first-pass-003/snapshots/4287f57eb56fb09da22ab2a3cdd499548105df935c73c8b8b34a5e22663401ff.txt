@@ -1,0 +1,209 @@
+Developer Sandbox Account
+For AI agents: the docs index is at https://developer.monday.com/api-reference/llms.txt. The index for every project on this site is at https://developer.monday.com/llms.txt. Append .md to any documentation page URL to get its markdown version.
+Jump to Content
+HomeGuidesAPI ReferenceChangelogBuild with AIPlaygroundApps DocsCommunityNeed Help?
+Guides
+Apps DocsCommunityNeed Help?
+HomeGuidesAPI ReferenceChangelogBuild with AIPlayground
+Developer Sandbox Account
+About the monday API
+The basics
+Authentication
+Versioning
+Rate limits
+Idempotency
+Error handling
+Release notes
+Migrating the User entity: 2026-04 → 2026-10
+Migrating to version 2025-04
+Platform MCP overview
+Compatible MCP clients
+Integrate with the monday MCP server
+Authenticate with an API token
+Control MCP access with your own OAuth app
+Integrating monday MCP with Copilot Studio using a Custom App
+Integrating monday MCP with Claude using a Custom App
+Make your MCP integration publicly available
+Dynamic connectors
+Enterprise managed auth
+Set up enterprise-managed authorization for Claude
+Set up enterprise managed auth with Okta
+claude-ema-advanced-tab
+claude-ema-setup-modal
+copilot-studio-add-mcp-server
+Platform MCP tools
+Create Board (Platform MCP)
+Get Board Info (Platform MCP)
+Get Board Items (Platform MCP)
+Get Board Activity (Platform MCP)
+Board Insights (Platform MCP)
+Create Group (Platform MCP)
+Create Column (Platform MCP)
+Get Column Type Info (Platform MCP)
+Create Item (Platform MCP)
+Change Item Column Values (Platform MCP)
+Create Workspace (Platform MCP)
+Update Workspace (Platform MCP)
+List Workspaces (Platform MCP)
+Workspace Info (Platform MCP)
+Create Folder (Platform MCP)
+Update Folder (Platform MCP)
+Move Object (Platform MCP)
+Create Doc (Platform MCP)
+Update Doc (Platform MCP)
+Read Docs (Platform MCP)
+Create Dashboard (Platform MCP)
+Create Widget (Platform MCP)
+All Widgets Schema (Platform MCP)
+Create View (Platform MCP)
+Create Table View (Platform MCP)
+Update View (Platform MCP)
+Update Table View (Platform MCP)
+Create Form (Platform MCP)
+Get Form (Platform MCP)
+Update Form (Platform MCP)
+Form Questions Editor (Platform MCP)
+Create Form Submission (Platform MCP)
+Get User Context (Platform MCP)
+List Users and Teams (Platform MCP)
+Create Update (Platform MCP)
+Get Updates (Platform MCP)
+Create Notification (Platform MCP)
+Search (Platform MCP)
+Get Assets (Platform MCP)
+Get Asset Upload URL (Platform MCP)
+Finalize Asset Upload (Platform MCP)
+List Automations (Platform MCP)
+Manage Automations (Platform MCP)
+Create Automation (Platform MCP)
+Plan Workflow (Platform MCP)
+Create Workflow (Platform MCP)
+Update Workflow (Platform MCP)
+Publish Workflow (Platform MCP)
+Manage Agent (Platform MCP)
+Manage Agent Triggers (Platform MCP)
+Manage Agent Skills (Platform MCP)
+Manage Agent Knowledge (Platform MCP)
+Agent Catalog (Platform MCP)
+Get Notetaker Meetings (Platform MCP)
+Get Sprints Boards (Platform MCP)
+Get Sprints Metadata (Platform MCP)
+Get Sprint Summary (Platform MCP)
+Execute API Query (Platform MCP)
+Get GraphQL Schema (Platform MCP)
+Get Type Details (Platform MCP)
+Show Table (Platform MCP UI)
+Show Chart (Platform MCP UI)
+Show Battery (Platform MCP UI)
+Show Assign (Platform MCP UI)
+Platform MCP security
+Guides
+GraphQL overview
+Making your first request
+Querying board items
+Working with multi-level boards
+Changing column values
+Searching across your account
+Optimizing API usage
+Aggregating Board Data
+Validation Rules
+Importing items in bulk
+Connect a custom agent
+Working with the dependency column
+AI Skills
+Build on monday.com with AI
+Build an external agent
+Agent API key capabilities
+mcli - monday.com GraphQL CLI
+Portfolio Agent Skills
+Skill: Archive / Delete a Project
+Skill: Update Project Status
+Skill: List All Projects in a Portfolio
+Skill: Get Tasks Assigned to a Person Across Projects
+Skill: Get Project Status / Health
+Skill: Duplicate a Project
+Skill: Create a New Portfolio
+Skill: Connect a Project to a Portfolio
+Build monday agents with Make
+Connect to the Platform Agent over A2A
+Tools
+Developer Sandbox Account
+The Developer Center
+API analytics dashboard
+API playground
+Postman collection
+External APIs
+Developer AI assistant
+Apps MCP
+SDKs
+JavaScript SDK
+Python SDK
+Resources
+Get help
+Youtube
+monday.com help center
+API coverage gaps
+Models API
+Models API
+Getting started with the Models API
+Models API supported models
+Powered by
+Developer Sandbox Account
+Sign up for a free monday.com developer account to build and test apps and API integrations in a sandbox separate from your production data.
+A developer account (also called a sandbox account) is a free monday.com account designed for building and testing monday apps and API integrations. It runs in an environment separate from your production or work data, so you can experiment without affecting live workflows.
+You can use any monday.com account to explore the apps framework and API. A developer account is the recommended option when you need higher limits and Pro/Enterprise capabilities for thorough testing.
+Sign up for a developer account
+Create a free developer account and start building right away:
+Sign up for a free developer account
+After sign-up, open the Developer Center from your profile menu (Developers) to manage apps, API tokens, and usage.
+Other account options
+OptionWhen to use it
+Existing monday.com accountYou already have an account and only need light testing.
+Trial accountYou want to evaluate monday.com beyond development. Sign up for a trial.
+Trial extensionYour trial is ending but you need more time. Contact support to request an extension.
+What's included
+Developer accounts include everything in the Free plan, plus higher limits and advanced capabilities tailored for app development. They also include select Pro and Enterprise features commonly needed for building and testing apps.
+FeatureLimit
+monday.com productsAccess to all products (Work Management, CRM, Service, Dev, and more)
+SeatsUp to 10
+ItemsUp to 1,000 items per product
+Boards, dashboards, and workdocsUnlimited
+Automations25,000 actions/month
+Integrations25,000 actions/month
+API complexity10M
+PermissionsAccount-, column-, and item-level permissions
+Column typesAccess to all column types
+BoardsPrivate and shareable boards
+ViewsItem and board views
+Activity logTracking and filtering
+TemplatesIncluded
+ThemeHacker theme
+📘
+Existing developer accounts were upgraded automatically with full product access and higher limits. See the developer account upgrades changelog for details.
+Account terms and intended use
+Developer accounts are for development and testing only. They are not intended for running production business workflows or serving end customers.
+Keep these guidelines in mind:
+Separate from production data — Use your developer account to build and test apps and API integrations without touching live account data.
+Invite teammates for realistic testing — You can add up to 10 users to simulate collaboration, permissions, and multi-user app flows.
+Respect account limits — Item, automation, integration, and API complexity limits apply. Plan load tests and large-scale scenarios accordingly.
+Request more capacity when needed — If your app requires limits beyond the defaults, submit a request (see below). The team reviews requests within five business days.
+Request additional testing capacity
+If your app needs higher limits—for example, more items, automation actions, or API complexity—submit a request through the marketplace partner extensions form. The monday.com team reviews requests within five business days.
+Next steps
+Open the Developer Center — Manage API tokens, the API playground, and analytics.
+Make your first API request — Set up authentication and send a GraphQL query.
+Build your first app — Create an app in the apps framework.
+Join the developer community — Ask questions, share feedback, and stay up to date on releases.
+Updated about 2 months ago
+Connect to the Platform Agent over A2A
+The Developer Center
+Did this page help you?
+Yes
+No
+Copy Page
+Sign up for a developer account
+Other account options
+What's included
+Account terms and intended use
+Request additional testing capacity
+Next steps

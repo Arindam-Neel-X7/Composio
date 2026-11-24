@@ -1,0 +1,893 @@
+AI Search - SE Ranking API Documentation
+BLACK FRIDAY | Extra 20% off SE Ranking annual plans and add-ons until Dec 4
+SE Ranking
+Grow your visibility with AI SEO
+SE Visible
+Analyze AI visibility strategically
+Planable
+Manage your socials as a team
+API
+Solutions
+By business type Migrate to SE Ranking
+See product tour
+Agencies
+Enterprises
+Growing business
+Tools
+Core SEO tools AI Search tools Other SEO tools Agency Pack Content Marketing Local Marketing Software Integrations
+See product tour
+Rank Tracker
+Keyword Research
+On-Page SEO Checker
+Website Audit
+Competitor Analysis Tool
+Backlink Checker
+AI Search Toolkit
+AI Overviews Tracker
+AI Mode Tracker
+ChatGPT Tracker
+Gemini Tracker
+ChatGPT ads tracker
+AI Mode ads tracker
+SERP Tracker
+Insights
+Keyword Grouper
+SEO Dashboard
+Agency Pack
+SEO Report Generator
+Lead Generator
+White Label
+Content Marketing Tool
+Content Editor
+AI Writer
+Resources
+Education Customer Hub Agency Catalog
+See product tour
+Blog
+Webinars
+Podcast
+Academy
+Help center
+What’s new
+Case studies
+Pricing
+Platform plans
+API Plans
+API & MCP
+API MCP Our data API Pricing
+See product tour
+API
+Keyword Research API
+Backlinks API
+Domain Analysis API
+Rank Tracker API
+Website Traffic API
+Website Audit API
+AI Visibility API
+MCP
+SEO Skills for Claude
+Marketing Skills for Claude
+Content Skills for Claude
+Products
+SE Ranking
+Grow your visibility with AI SEO
+SE Visible
+Analyze AI visibility strategically
+Planable
+Manage your socials as a team
+See product tour
+Start free trial
+en
+enEnglish
+deDeutsch
+frFrançais
+esEspañol
+nlNederlands
+itItaliano
+ptPortuguês
+uaУкраїнська
+ruРусский
+あ日本語
+Sign in
+See product tour
+Start free trial
+Back
+API
+Introduction
+Getting API access
+API credit system
+API rate limits
+Integrations
+Data Studio
+MCP
+n8n
+Make.com
+Usage guidelines for commercial purposes
+Data
+Overview
+Getting started
+Authentication
+Making requests
+Postman collection
+Unit costs
+Plans and pricing
+Quickstarts
+Find keyword opportunities
+Assess AI search visibility
+Retrieve URLs with SEO issues
+Use Website Audit API for SEO growth
+Generate reports with SEOIntel
+Build authority with link building
+Analyze domain traffic & competitors
+Backlinks
+Get backlink summary
+Get backlink metrics
+List all backlinks
+Fetch backlinks in batches
+Get total backlinks count
+Export backlinks data
+List new/lost backlinks
+Get daily new/lost backlinks
+Get cumulative backlinks
+Get backlink anchor texts
+List referring domains
+Get referring domains count
+List new/lost referring domains
+Get daily new/lost referring domains
+List referring IPs
+Get total referring IPs count
+Get total referring subnets count
+List pages with backlinks
+Get page/domain authority
+Get domain authority
+Get domain authority distribution
+Get domain authority history
+Get page authority
+Get page authority history
+Domain Analysis
+Get domain overview by region
+Get worldwide domain overview
+Get worldwide URL overview
+Get traffic/keyword history
+Get keyword rankings
+Get domain pages
+Get domain subdomains
+Get paid ads by keyword
+Get paid ads for domain
+Get domain competitors
+Analyze keyword overlap/gaps
+Keyword Research
+Get Keywords metrics
+Get similar keywords
+Get related keywords
+Get question keywords
+Get longtail keywords
+AI Search
+Get AI search overview
+Get AI search leaderboard
+Discover brand by URL
+Get prompts by brand
+Get prompts by target
+Filtering results
+Website Audit
+Create audit
+List audits
+Get audit status
+Get audit report
+Get all crawled pages
+Get audit pages by issue
+Get all issues by URL
+Get all found links
+Get audit by date
+Update audit title
+Delete audit
+Recheck audit
+Account System
+Get subscription details
+Reference
+Glossary
+Regional codes
+SERP features
+Site Audit issue codes
+Error handling
+Project
+Overview
+Getting started
+API access and keys
+Making requests
+Rate limits
+Error handling
+Project Management
+List projects
+List project search engines
+Add search engine to project
+Change search engine in project
+Delete search engine from project
+List website keywords
+Get project summary statistics
+Get keyword statistics
+Get total number of ads chart
+Get historical dates
+Add keywords to project
+Add project
+Change project settings
+Delete project
+Delete keywords
+Set manual keyword position
+Run position check
+Project Groups
+Add project group
+Rename project group
+Delete project group
+List project groups
+Move projects to project group
+Keyword Groups
+Add keyword group
+Move keywords to another group
+Rename keyword group
+Delete keyword group
+List keyword groups
+Competitors
+Add competitor
+List competitors
+Get competitor keyword positions
+Delete competitor
+Get TOP 10 results
+Get TOP 100 results
+Get all competitors
+URL Tags
+List tags
+Add tag
+Update tag assignment
+Delete tag
+Analytics Traffic
+Get Google Search Console data
+Calculate SEO potential
+Account Management
+Get user profile
+List sub-accounts
+Create sub-account
+Get sub-account details
+Delete sub-account
+Update sub-account
+List shared projects
+List owned projects
+Share project with sub-account
+General Data
+List search engines
+List languages for Google
+List regions to get search volume
+Get keyword search volume
+Marketing Plan
+List plan items
+Add task
+Update task
+Delete task
+Set task status
+Website Audit
+Create audit
+List audits
+Get audit status
+Get audit report
+Get all crawled pages
+Get audit pages by issue
+Get all issues for URL
+Get all links
+Get audit history
+Update audit title
+Delete audit
+Recheck audit
+Backlink Checker
+List backlinks
+Add backlink
+Import backlinks list
+Update backlink import settings
+Start backlink import from Google Search Console
+Get backlink import status from Google Search Console
+Delete backlinks
+Recheck backlinks
+Get backlink statistics
+List disavowed backlinks
+Add disavowed backlinks
+Delete disavowed backlink
+List backlink groups
+Create backlink group
+Delete backlink group
+Rename backlink group
+Move backlinks to group
+AI Results Tracker
+Get site brand
+Save site brand
+List LLM engines
+Get LLM engine
+Create LLM engine
+Update LLM engine
+Delete LLM engine
+Get LLM status
+Get LLM statistics
+List prompts
+Add prompts
+Delete prompts
+Get prompt answer
+Get prompt rankings
+AIRT Sources
+Get sources summary
+List source domains
+List source pages
+Get sources recommendations
+AIRT Competitors
+Get competitors breakdown
+Get competitors check dates
+Get source metrics
+AIRT Groups
+List prompt groups
+Create prompt group
+Rename prompt group
+Delete prompt group
+Change group order
+Delete all prompts in group
+Move prompts to group
+Move all prompts from one group to another
+Local Marketing
+Overview
+Getting started
+Usage and limits
+Pagination
+Errors
+Locations
+List locations
+Get location details
+Location overview
+Get location overview
+Local Rankings
+Get Local Rankings keyword list
+Get Local Rankings positions
+Get rankings indexed percent
+Local Marketing Audit
+Get latest audit report
+Get audit report history
+Google Business Profile
+Get Google Business Profile metrics
+Get Google Business Profile keyword report
+Get Google Business Profile searches trend
+Business Listings
+List business listings
+Get business listings overview
+Reviews
+List reviews
+Get reviews overview
+SE VisibleBeta
+Overview
+Getting started
+Base URL
+Authentication
+Resource model
+Making requests
+Pagination
+Filtering and array parameters
+Date ranges and compare mode
+Usage and limits
+Errors
+Support
+Projects
+List projects
+Create project
+Get project details
+Update tracking settings
+Delete a project
+Locations
+List project locations
+Add a location
+Update a location
+Delete a location
+Geo autocomplete
+List countries
+Search cities and regions
+Engines
+List project engines
+Add an engine
+Replace the engine set
+Remove an engine
+Brands
+List tracked brands
+Create competitor brand
+List mentioned brands
+Get aggregated brand metrics
+Update brand
+Delete brand
+Add aliases to brand
+Topics
+Create topics
+Update a topic title
+Delete a topic
+Prompts
+List prompts or topics
+Delete prompts
+Create prompts for a topic
+Move prompts to a topic
+Change prompt locations
+Get prompt details
+Get prompt result list
+Get prompt result details
+Sources
+Get project sources
+Get aggregated source metrics
+Reference
+AI models
+Sentiment
+Project status
+Country codes
+Language codes
+Source type
+URL category types
+Brand match mode
+Prompt list grouping
+Brand metrics dimensions and metrics
+Sort fields
+Date ranges and compare mode
+Array parameters
+Pagination
+Error codes
+Authentication
+Subscription
+Get subscription details
+API
+Data API / AI Search
+AI Search
+AI Search API provides programmatic access to a domain’s performance in Large Language Model (LLM) results. Data is refreshed on a monthly basis.
+Using the API, you can:
+get an AI search overview with metrics like link presence, average position, AI traffic, and historical trends
+compare a primary domain against competitors across multiple LLM engines and retrieve a share of voice leaderboard
+discover the brand associated with a domain or URL
+retrieve prompts by target, showing where a domain or URL appears in LLM responses
+retrieve prompts by brand, showing where a brand is mentioned in LLM results
+Get AI search overview
+GET https://api.seranking.com/v1/ai-search/overview/by-engine/time-series
+Cost: 800 credits per request
+Retrieves a high-level overview of a domain’s brand presence in an LLM, including historical trends over time and other metrics like link presence, average position, and AI traffic.
+Request parameters
+ParameterTypeRequiredDefaultDescription
+engineStringYesN/ALLM to query (e.g., ai-overview, chatgpt, gemini, ai-mode).
+targetStringYesN/ATarget to analyze for LLM performance. Can be a root domain, subdomain, or a specific URL (e.g., seranking.com).
+sourcestringYesN/ACountry code for the regional prompt database (e.g., us for the United States results). For acceptable values, see Regional database codes.
+scopeStringNobase_domainScope of analysis:
+• base_domain – aggregate by registrable domain, includes all subdomains.
+• domain – exact host only, no subdomain aggregation.
+• url – exact URL including path and query.
+brandStringNoN/ABrand to filter the brand presence analysis (e.g., SE Ranking).
+Request example
+Copy
+curl --location 'https://api.seranking.com/v1/ai-search/overview/by-engine/time-series?target=seranking.com&source=us&engine=ai-overview' \
+--header 'Authorization: Token YOUR_API_KEY'
+Response parameters
+If successful, the server returns a JSON object containing aggregated metrics, changes from the previous period, and time-series data for generating charts.
+ParameterTypeDescription
+summaryObjectObject containing key performance metrics like brand_presence, link_presence, average_position, and ai_opportunity_traffic.
+time_seriesObjectObject containing historical data arrays for overall_traffic, organic_traffic, ai_traffic, link_presence, and average_position.
+Each object within the summary object has the following structure:
+ParameterTypeDescription
+currentFloatValue for the current period.
+previousFloatValue for the previous period.
+change_absoluteFloatAbsolute difference between the current and previous periods.
+change_percentFloatPercentage change between the current and previous periods.
+Each array within the time_series object contains a series of objects with the following structure:
+ParameterTypeDescription
+dateStringMonth and year of the data point in YYYY-MM format.
+valueFloatMetric’s value for that month.
+Response example
+Copy
+{
+"summary": {
+"brand_presence": {
+"current": 50,
+"previous": 45,
+"change_absolute": 5,
+"change_percent": 11.1
+},
+"link_presence": {
+"current": 120,
+"previous": 110,
+"change_absolute": 10,
+"change_percent": 9.1
+},
+"average_position": {
+"current": 8.5,
+"previous": 9.2,
+"change_absolute": 0.7,
+"change_percent": 7.6
+},
+"ai_opportunity_traffic": {
+"current": 2000,
+"previous": 1800,
+"change_absolute": 200,
+"change_percent": 11.1
+}
+},
+"time_series": {
+"overall_traffic": [
+{ "date": "2025-08", "value": 43000 },
+{ "date": "2025-09", "value": 45000 }
+],
+"organic_traffic": [
+{ "date": "2025-08", "value": 40000 },
+{ "date": "2025-09", "value": 42000 }
+],
+"ai_traffic": [
+{ "date": "2025-08", "value": 3000 },
+{ "date": "2025-09", "value": 3000 }
+],
+"link_presence": [
+{ "date": "2025-08", "value": 110 },
+{ "date": "2025-09", "value": 120 }
+],
+"average_position": [
+{ "date": "2025-08", "value": 9.2 },
+{ "date": "2025-09", "value": 8.5 }
+]
+}
+}
+Get AI search leaderboard
+POST https://api.seranking.com/v1/ai-search/overview/leaderboard
+Cost: 7,500 credits per request (flat)
+Compares a primary domain against up to 10 competitors across multiple LLM engines and returns a share of voice leaderboard showing which domains have the highest AI search visibility. The leaderboard is calculated based on both brand and link presence across the selected engines.
+Request parameters
+ParameterTypeRequiredDefaultDescription
+primaryObjectYesN/APrimary domain and brand information.
+competitorsArrayYesN/AList of competitors to compare (1–10 items).
+scopeStringNobase_domainScope of the analysis:
+• base_domain – aggregate by registrable domain, includes all subdomains.
+• domain – exact host only, no subdomain aggregation.
+• url – exact URL including path and query.
+sourceStringYesN/ACountry code for the regional database (e.g., us for United States results). For acceptable values, see Regional database codes.
+enginesArrayYesN/ALLM engines to query (ai-overview, chatgpt, gemini, ai-mode).
+Each object within the primary parameter has the following structure:
+ParameterTypeRequiredDescription
+targetStringYesTarget to analyze for LLM performance. Can be a root domain, subdomain, or a specific URL (e.g., seranking.com).
+brandStringNoBrand name (e.g., SE Ranking).
+Each object within the competitors parameter has the following structure:
+ParameterTypeRequiredDescription
+targetStringYesCompetitor to analyze for LLM performance. Can be a root domain, subdomain, or a specific URL (e.g., semrush.com).
+brandStringNoCompetitor brand name (e.g., Semrush).
+Request example
+Copy
+curl --location 'https://api.seranking.com/v1/ai-search/overview/leaderboard' \
+--header 'Authorization: Token YOUR_API_KEY' \
+--header 'Content-Type: application/json' \
+--data '{
+"primary": {
+"target": "example.com",
+"brand": "Example"
+},
+"competitors": [
+{ "target": "example1.com", "brand": "Example 1" },
+{ "target": "example2.com", "brand": "Example 2" }
+],
+"scope": "base_domain",
+"source": "us",
+"engines": ["ai-overview", "chatgpt"]
+}'
+Response parameters
+If successful, the server returns a JSON object containing leaderboard and per-domain, per-engine metrics.
+ParameterTypeDescription
+request_metadataObjectMetadata describing the request.
+leaderboardArrayLeaderboard of domains sorted by share of voice.
+resultsObjectDetailed per-domain, per-engine metrics.
+Each object in request_metadata has the following structure:
+ParameterTypeDescription
+primaryStringPrimary target domain.
+competitorsArrayCompetitor domains included in the request.
+enginesArrayEngines used for the comparison.
+sourceStringCountry code for the regional database.
+Each object in leaderboard array has the following structure:
+ParameterTypeDescription
+rankIntegerPosition in the leaderboard (1 = highest share of voice).
+domainStringDomain name.
+share_of_voiceFloatCalculated share of voice.
+brand_presenceIntegerTotal brand mentions across selected engines.
+link_presenceIntegerTotal link citations across selected engines.
+is_primary_targetBooleanIndicates whether this is the primary domain.
+Each object in results has the following structure:
+Each domain object (results.{domain}) contains:
+ParameterTypeDescription
+{engine}ObjectMetrics for a specific engine.
+Each engine object (results.{domain}.{engine}) contains:
+ParameterTypeDescription
+brand_presenceIntegerBrand presence for this domain on this engine.
+link_presenceIntegerLink presence for this domain on this engine.
+Response example
+Copy
+{
+"results": {
+"example.com": {
+"chatgpt": {
+"brand_presence": 5,
+"link_presence": 18
+},
+"ai-overview": {
+"brand_presence": 4798,
+"link_presence": 9245
+}
+},
+"example1.com": {
+"chatgpt": {
+"brand_presence": 3042,
+"link_presence": 287
+},
+"ai-overview": {
+"brand_presence": 13688,
+"link_presence": 10083
+}
+},
+"example2.com": {
+"chatgpt": {
+"brand_presence": 55,
+"link_presence": 324
+},
+"ai-overview": {
+"brand_presence": 20161,
+"link_presence": 37952
+}
+}
+},
+"request_metadata": {
+"engines": [
+"ai-overview",
+"chatgpt",
+],
+"competitors": [
+"example1.com",
+"example2.com"
+],
+"source": "us",
+"primary": "example.com"
+},
+"leaderboard": [
+{
+"rank": 1,
+"link_presence": 41092,
+"share_of_voice": 0.5719,
+"is_primary_target": false,
+"brand_presence": 20682,
+"domain": "example2.com"
+},
+{
+"rank": 2,
+"link_presence": 11100,
+"share_of_voice": 0.2923,
+"is_primary_target": false,
+"brand_presence": 17467,
+"domain": "example1.com"
+},
+{
+"rank": 3,
+"link_presence": 9679,
+"share_of_voice": 0.1358,
+"is_primary_target": true,
+"brand_presence": 4965,
+"domain": "example.com"
+}
+]
+}
+Discover brand by URL
+GET https://api.seranking.com/v1/ai-search/discover-brand
+Cost: 100 credits per request
+Identifies the brand name associated with the specified target domain. This utility endpoint is useful for programmatically finding a brand before using it in other queries.
+Request parameters
+ParameterTypeRequiredDefaultDescription
+targetStringYesN/ATarget to analyze for LLM performance. Can be a root domain, subdomain, or a specific URL (e.g., seranking.com).
+sourceStringYesN/ACountry code for the regional prompt database (e.g., us for United States results). For acceptable values, see Regional database codes.
+scopeStringYesbase_domainScope of analysis:
+• base_domain – aggregate by registrable domain, includes all subdomains.
+• domain – exact host only, no subdomain aggregation.
+• url – exact URL including path and query.
+Request example
+Copy
+curl --location 'https://api.seranking.com/v1/ai-search/discover-brand?target=microsoft.com&scope=domain&source=us' \
+--header 'Authorization: Token YOUR_API_KEY'
+Response parameters
+If successful, the server returns a JSON object containing an array of discovered brand names.
+ParameterTypeDescription
+brandsArrayArray of strings, each a potential brand name.
+Response example
+Copy
+{
+"brands": [
+"Microsoft"
+]
+}
+Get prompts by target
+GET https://api.seranking.com/v1/ai-search/prompts-by-target
+Cost: 200 credits per returned prompt
+Retrieves a paginated list of prompts where the specified domain, subdomain, or URL appears in LLM results.
+Request parameters
+ParameterTypeRequiredDefaultDescription
+engineStringYesN/ALLM to query (e.g., ai-overview, chatgpt, gemini, ai-mode).
+targetStringYesN/ATarget to analyze for LLM performance. Can be a root domain, subdomain, or a specific URL.
+sourceStringYesN/ACountry code for the regional prompt database (e.g., us for United States results).
+For acceptable values, see Regional database codes.
+scopeStringYesbase_domainScope of the analysis:
+• base_domain – aggregate by registrable domain, includes all subdomains.
+• domain – exact host only, no subdomain aggregation.
+• url – exact URL including path and query.
+sortStringNovolumeField to sort the results by: volume, type, snippet_length.
+sort_orderStringNodescSort order for the results:
+• asc – for ascending
+• desc – for descending
+limitIntegerNo100Maximum number of prompts to return per page (max 1000).
+offsetIntegerNo0Starting position for the paginated list.
+filterObjectNoN/AObject for filtering results. See the Filtering results section for details.
+Request example
+Copy
+curl --location --globoff 'https://api.seranking.com/v1/ai-search/prompts-by-target?target=seranking.com&scope=domain&source=us&engine=ai-mode&limit=1' \
+--header 'Authorization: Token YOUR_API_KEY'
+Response parameters
+If successful, the server returns a JSON object containing a list of prompts and metadata.
+ParameterTypeDescription
+totalIntegerTotal number of prompts found for the target.
+dateStringDate of the data snapshot in YYYY-MM-DD format.
+promptsArrayArray of objects, each representing a found prompt.
+Each object in the prompts array has the following structure:
+ParameterTypeDescription
+promptStringUser query or prompt text that triggered the LLM response.
+volumeIntegerEstimated monthly search volume for the prompt.
+typeStringType of appearance for the target in the LLM result (e.g., Link, Brand).
+answerObjectObject containing the detailed response from the LLM.
+The answer object contains the following fields:
+ParameterTypeDescription
+textStringFull text of the snippet generated by the LLM.
+linksArrayArray of URL strings that were included as links within the LLM’s answer.
+Response example
+Copy
+{
+"total": 5448,
+"date": "2025-09-01",
+"prompts": [
+{
+"prompt": "peliculas en netflix",
+"volume": 14800,
+"type": "Link",
+"answer": {
+"text": "Hay una gran variedad de peliculas disponibles en Netflix...",
+"links": [ "[https://movies.sitioficial.netflix.com/browse/genre/34399](https://movies.sitioficial.netflix.com/browse/genre/34399)" ]
+}
+}
+]
+}
+Get prompts by brand
+GET https://api.seranking.com/v1/ai-search/prompts-by-brand
+Cost: 200 credits per returned prompt
+Retrieves a paginated list of prompts where the specified brand name is mentioned in LLM results.
+Request parameters
+ParameterTypeRequiredDefaultDescription
+engineStringYesN/ALLM to query (e.g., ai-overview, chatgpt, gemini, ai-mode).
+brandStringYesN/ABrand name to search for in LLM snippets.
+sourceStringYesN/ACountry code for the regional prompt database (e.g., us for United States results). For acceptable values, see Regional database codes.
+sortStringNovolumeField to sort the results by: volume, type, snippet_length.
+sort_orderStringNodescSort order for the results:
+• asc – for ascending
+• desc – for descending
+limitIntegerNo100Maximum number of prompts to return per page (max 1000).
+offsetIntegerNo0Starting position for the paginated list.
+filterObjectNoN/AObject for filtering results. See the Filtering results section for details.
+Request example
+Copy
+curl --location 'https://api.seranking.com/v1/ai-search/prompts-by-brand?brand=Netflix&source=us&engine=chatgpt&sort=volume&sort_order=desc&offset=0&limit=10' \
+--header 'Authorization: Token YOUR_API_KEY'
+Response parameters
+If successful, the server returns a JSON object containing a list of prompts that mention the specified brand.
+ParameterTypeDescription
+totalIntegerTotal number of times the brand has been mentioned in the specified LLM for the current month.
+dateStringDate of the data snapshot in YYYY-MM-DD format.
+promptsArrayArray of objects, each representing a found prompt. See the structure below for details.
+Each object in the prompts array has the following structure:
+ParameterTypeDescription
+promptStringUser query or prompt text that triggered the LLM response.
+volumeIntegerEstimated monthly search volume for the prompt.
+typeStringType of appearance for the target in the LLM result (e.g., Link, Brand).
+answerObjectObject containing the detailed response from the LLM.
+The answer object contains the following fields:
+ParameterTypeDescription
+textStringFull text of the snippet generated by the LLM.
+linksArrayArray of URL strings that were included as links within the LLM’s answer.
+Response example
+Copy
+{
+"total": 5448,
+"date": "2025-09-01",
+"prompts": [
+{
+"prompt": "peliculas en netflix",
+"volume": 14800,
+"type": "Link",
+"answer": {
+"text": "Hay una gran variedad de peliculas disponibles en Netflix...",
+"links": [ "[https://movies.sitioficial.netflix.com/browse/genre/34399](https://movies.sitioficial.netflix.com/browse/genre/34399)" ]
+}
+}
+]
+}
+Filtering results
+The Get prompts by target and Get prompts by brand endpoints support advanced filtering to refine your search results. The filter parameter is passed as an object in the query string.
+Range filters (volume, keyword_count, characters_count)
+These filters allow you to specify a numeric range for your results. Both from and to values are inclusive. You can use one or both to define the range.
+To get values greater than or equal to a number: Use filter[<parameter>][from]=<value>.
+Example: filter[volume][from]=100 returns prompts with a search volume of 100 or more.
+To get values less than or equal to a number: Use filter[<parameter>][to]=<value>.
+Example: filter[keyword_count][to]=5 returns prompts with 5 or fewer words.
+To get values within a specific range: Use both from and to.
+Example: filter[characters_count][from]=10&filter[characters_count][to]=50 returns prompts that are between 10 and 50 characters long.
+Text search filters (multi_keyword_included, multi_keyword_excluded)
+These filters allow you to include or exclude specific keywords from the prompt text.
+multi_keyword_included: A URL-encoded JSON string specifying keywords that must be present in the prompt.
+multi_keyword_excluded: A URL-encoded JSON string specifying keywords that must not be present in the prompt.
+For details on how to structure the JSON for these filters, please refer to the Text search JSON structure documentation.
+Learn how SE Ranking’s API can boost your SEO!
+Hi! Meet our product experts!
+One of them will walk you through the API and show you how to get the most out of it.
+Enjoy a tailored demo on integrating rich, structured SEO data into your stack.
+Pin down every tech detail live—auth, endpoints, rate limits, data formats.
+Compare usage tiers and pricing so you can unlock maximum data value.
+Request a free demo to see our tools and integrations in action
+By clicking this button, you agree to SE Ranking’s
+Terms of Service and Privacy Statement.
+column
+Core SEO Tools
+Rank Tracker
+Website Audit
+On-Page SEO Checker
+SERP Tracker
+Backlink Checker
+Keyword Grouper
+Keyword Tool
+Website Competitor Analysis Tool
+AI Overviews Tracker
+All features
+Performance & Reporting Tools
+Webpage Monitor
+SEO Report Generator
+SEO Dashboard
+column
+Add-ons
+Local Marketing Software
+Content Marketing Tool
+Agency Pack
+White Label
+Additional Services
+SEO API
+Free SEO tools
+SEO Task Manager
+Support & Partnership
+Contact
+Help
+Affiliate
+Educational Partnership Program
+column
+Company & Resources
+SEO Blog
+About
+Stand with Ukraine
+Careers
+What’s New
+Testimonials
+Webinars
+Academy
+Competitors
+FAQ
+Legal & Technical
+Privacy Statement
+Cookie Policy
+Legal Information
+Open Source Attributions
+Download
+enEnglish
+enEnglish
+deDeutsch
+frFrançais
+esEspañol
+nlNederlands
+itItaliano
+ptPortuguês
+uaУкраїнська
+ruРусский
+あ日本語
+© 2013 - 2026 SER Acquisition Inc. All Rights Reserved

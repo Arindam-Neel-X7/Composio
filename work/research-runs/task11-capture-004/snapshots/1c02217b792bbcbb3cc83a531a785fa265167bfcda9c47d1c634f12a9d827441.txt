@@ -1,0 +1,436 @@
+GitHub - SalesforceCommerceCloud/b2c-developer-tooling: B2C CLI, VSCode Extension, Skills+MCP, and Tooling SDK for Salesforce Agentforce Commerce B2C · GitHub
+Skip to content
+Navigation Menu
+Sign in
+Products
+Platform
+GitHubRepository hosting, code review, and collaboration
+CopilotAI coding agent for tasks, projects, and automated work
+Build & Ship
+ActionsCI/CD and automation
+Code QualityQuality analysis, fixes, and enforcement
+CodespacesCloud development environments
+Secure
+Code SecurityVulnerability detection and remediation
+Secret ProtectionSecret scanning and leak prevention
+All Features
+Developers
+Learn
+Documentation
+Training
+Certifications
+Build
+Build with Copilot
+Customize Copilot
+Integrations
+Explore
+Trending repos
+GitHub Sponsors
+Developer articles
+Changelog
+ChangelogYour source for the latest features, improvements, and fixes across GitHub products, all in one place.
+Businesses
+By Stage
+Enterprises
+Team
+Startups
+Nonprofits
+By Industry
+Healthcare
+Financial services
+Manufacturing
+Government
+See all industries
+Evaluate GitHub
+Why GitHub
+Customer Stories
+Business insights
+Trust Center
+Add-ons
+GitHub Advanced SecurityEnterprise-grade code security
+Copilot for businessEnterprise-grade AI features
+Premium SupportEnterprise-grade 24/7 support
+Resources
+Learn & Connect
+Documentation
+Resource center
+Blog
+Events & webinars
+Community Forum
+Customer Stories
+Integrations
+Support
+Customer support
+Training
+GitHub Status
+Company
+About
+Partners
+Changelog
+GitHub Universe
+GitHub UniverseThe event for developers, by developers — talks, workshops, and what’s next for GitHub.
+Pricing
+Search/
+Sign in
+Sign up
+Appearance settings
+You signed in with another tab or window. Reload to refresh your session.
+You signed out in another tab or window. Reload to refresh your session.
+You switched accounts on another tab or window. Reload to refresh your session.
+Dismiss alert
+SalesforceCommerceCloud
+b2c-developer-tooling
+Repository navigation
+Code
+Issues5 (5)
+Pull requests15 (15)
+Actions
+Security and quality1 (1)
+Insights
+More items
+b2c-developer-tooling
+Public
+NotificationsYou must be signed in to change notification settings
+Fork26 (26)
+Star58 (58)You must be signed in to star a repository
+About
+B2C CLI, VSCode Extension, Skills+MCP, and Tooling SDK for Salesforce Agentforce Commerce B2C
+salesforcecommercecloud.github.io/b2c-developer-tooling/
+Topics
+b2cclidx
+Resources
+Readme
+Apache-2.0 license
+Code of conduct
+Code of conduct
+Contributing
+Contributing
+Security policy
+Security policy
+Activity
+Custom properties
+Stars
+58 stars
+Watchers
+8 watching
+Forks
+26 forks
+Report repository
+main
+BranchesTags
+Go to file
+Code
+Open more actions menu
+Latest commit
+History
+979 Commits
+979 Commits
+Folders and files
+NameName
+Last commit message
+Last commit date
+.agents
+.agents
+.changeset
+.changeset
+.claude-plugin
+.claude-plugin
+.claude
+.claude
+.git2gus
+.git2gus
+.github
+.github
+actions
+actions
+docs
+docs
+packages
+packages
+patches
+patches
+plugins/b2c-dx-mcp
+plugins/b2c-dx-mcp
+python
+python
+schemas
+schemas
+scripts
+scripts
+skills
+skills
+types
+types
+.gitattributes
+.gitattributes
+.gitignore
+.gitignore
+.prettierrc.json
+.prettierrc.json
+AGENTS.md
+AGENTS.md
+CLAUDE.md
+CLAUDE.md
+CODEOWNERS
+CODEOWNERS
+CODE_OF_CONDUCT.md
+CODE_OF_CONDUCT.md
+CONTRIBUTING.md
+CONTRIBUTING.md
+PUBLISHING.md
+PUBLISHING.md
+README.md
+README.md
+SECURITY.md
+SECURITY.md
+SMOKE-TEST.md
+SMOKE-TEST.md
+action.yml
+action.yml
+cli
+cli
+eslint.config.mjs
+eslint.config.mjs
+license.txt
+license.txt
+package.json
+package.json
+pnpm-lock.yaml
+pnpm-lock.yaml
+pnpm-workspace.yaml
+pnpm-workspace.yaml
+renovate.json
+renovate.json
+View all files
+Repository files navigation
+README
+Code of conduct
+Contributing
+Apache-2.0 license
+Security
+More items
+B2C CLI, MCP and Tooling SDK
+Note
+This project is Generally Available (GA). Please provide feedback via GitHub issues.
+Salesforce B2C Commerce Command Line Tools.
+Tip
+Just looking for the B2C CLI or MCP install instructions? Visit the documentation site at https://salesforcecommercecloud.github.io/b2c-developer-tooling/ for the latest install guide and CLI reference.
+Agent Skills & Plugins
+Install B2C Commerce agent skills and plugins in your AI-powered editor. Three plugins are available: b2c-cli (CLI operations), b2c (development patterns), and b2c-dx-mcp (MCP server — Claude Code only).
+Claude Code: run these commands in chat:
+/plugin marketplace add SalesforceCommerceCloud/b2c-developer-tooling
+/plugin install b2c-cli@b2c-developer-tooling
+/plugin install b2c@b2c-developer-tooling
+/plugin install b2c-dx-mcp@b2c-developer-tooling
+Claude Code does not auto-update third-party marketplaces by default. To get new releases automatically, run /plugin again, open Marketplaces, select b2c-developer-tooling, and choose Enable auto-update.
+VS Code (GitHub Copilot): Command Palette (Cmd+Shift+P / Ctrl+Shift+P) → Chat: Install Plugin From Source → enter the repo SalesforceCommerceCloud/b2c-developer-tooling.
+GitHub Copilot CLI:
+copilot plugin marketplace add SalesforceCommerceCloud/b2c-developer-tooling
+copilot plugin install b2c-cli@b2c-developer-tooling
+copilot plugin install b2c@b2c-developer-tooling
+Cursor: add the marketplace from this repo URL in Cursor Settings → Plugins, then install b2c-cli / b2c.
+Codex CLI: run /plugins and add from this repo (GitHub URL).
+Gemini CLI: gemini extensions install https://github.com/SalesforceCommerceCloud/b2c-developer-tooling
+Any supported IDE (file-copy install via CLI):
+npx @salesforce/b2c-cli setup skills
+For Windsurf, OpenCode, Agentforce Vibes, manual installs, and the full install matrix, see docs/guide/agent-skills.
+Packages
+This is a pnpm monorepo with the following packages:
+Package
+Description
+b2c-cli
+Command line interface built with oclif
+b2c-tooling-sdk
+SDK/library for B2C Commerce operations; supports the CLI and can be used standalone
+b2c-dx-mcp
+MCP server for B2C Commerce developer experience tools
+Development
+Prerequisites
+Node.js >= 22.19.0
+pnpm 10.17.1+
+Setup
+pnpm install
+Running the CLI in Development Mode
+pnpm start
+# or directly:
+pnpm --filter @salesforce/b2c-cli run dev
+# or using convenience script:
+./cli
+The dev mode uses Node.js --conditions=development to resolve TypeScript source files directly from @salesforce/b2c-tooling-sdk without needing to build first.
+Building
+# Build all packages
+pnpm -r run build
+# Build individual packages
+pnpm --filter @salesforce/b2c-cli run build
+pnpm --filter @salesforce/b2c-tooling-sdk run build
+Testing
+Tests use Mocha + Chai with c8 for coverage. HTTP mocking uses MSW.
+# Run all tests with coverage (also runs linter after tests)
+pnpm test
+# Run tests for a specific package
+pnpm --filter @salesforce/b2c-tooling-sdk run test
+# Run tests without coverage (faster)
+pnpm --filter @salesforce/b2c-tooling-sdk run test:unit
+# Watch mode for TDD
+pnpm --filter @salesforce/b2c-tooling-sdk run test:watch
+# Run a specific test file
+cd packages/b2c-tooling-sdk
+pnpm mocha "test/clients/webdav.test.ts"
+# Run tests matching a pattern
+pnpm mocha --grep "uploads a file" "test/**/*.test.ts"
+Coverage
+Coverage reports are generated in each package's coverage/ directory:
+coverage/index.html - HTML report
+coverage/lcov.info - LCOV format for CI integration
+The SDK package has a 5% coverage threshold that will fail the build if not met.
+Linting
+# Run linter only
+pnpm --filter @salesforce/b2c-cli run lint
+pnpm --filter @salesforce/b2c-tooling-sdk run lint
+Code Formatting
+This project uses Prettier for code formatting.
+# Format all packages
+pnpm -r run format
+# Check formatting without modifying files
+pnpm -r run format:check
+Documentation
+Documentation is built using TypeDoc for API reference generation and VitePress for the documentation site.
+Structure
+docs/ - VitePress documentation source
+guide/ - User guide and getting started
+cli/ - CLI command reference
+api/ - Generated API documentation (do not edit manually)
+typedoc.json - TypeDoc configuration with entry points for SDK modules
+Development Server
+pnpm run docs:dev
+This runs typedoc to generate API docs, then starts VitePress in development mode with hot reload.
+Building Documentation
+pnpm run docs:build
+Previewing Built Documentation
+pnpm run docs:preview
+Deployed Documentation
+The documentation site serves two versions:
+Stable (root URL) — built from the most recent release tag, updated on every stable release
+Dev (/dev/) — built from the main branch, updated on every push to main
+Doc-only releases (without bumping CLI/SDK/MCP versions) are possible by creating a changeset targeting @salesforce/b2c-dx-docs. See PUBLISHING.md for details.
+API Documentation
+API documentation is auto-generated from JSDoc comments in the @salesforce/b2c-tooling-sdk package. The entry points are defined in typedoc.json:
+See the documentation site for the generated API reference.
+auth - Authentication strategies (OAuth, API Key, Basic)
+instance - B2C instance configuration
+platform - MRT and ODS clients
+operations/code - Cartridge code operations
+operations/jobs - Job execution
+operations/sites - Site management
+i18n - Internationalization utilities
+logging - Structured logging
+When adding new public APIs, ensure they have comprehensive JSDoc comments as these will appear in the generated documentation.
+Bundled Platform Data (Script API docs, schemas, job steps)
+The SDK ships several corpora derived from the B2C Commerce platform under packages/b2c-tooling-sdk/data/:
+Directory
+Contents
+Consumed by
+script-api/
+Script API reference markdown + search index
+b2c docs search / docs read, MCP docs_*
+content-schemas/
+Page Designer / content metadefinition JSON schemas
+b2c content validate
+xsd/
+Import/export XSD schemas + search index
+b2c docs schema *, b2c validate, MCP validate_xml_schema
+xml-validator/
+libxml2 compiled to WebAssembly; built by wasm/xml-validator/build.sh and verified in CI
+b2c validate, MCP validate_xml_schema
+job-steps/
+Standard job-step markdown + dataset + search index
+b2c docs search / docs read
+All of these originate from the same documentation archive that b2c docs download fetches from an instance (the inner DWAPP-<version>-API-doc.zip). To refresh all of them to a new platform release at once, run the maintainer script against a current instance (it uses your default instance/auth via the CLI):
+# Refresh every data set and regenerate the derived indexes
+pnpm --filter @salesforce/b2c-tooling-sdk run refresh:docs-data
+# Target a non-default instance, or keep the temp workdir for inspection
+B2C_INSTANCE=my-sandbox KEEP_WORKDIR=1 pnpm --filter @salesforce/b2c-tooling-sdk run refresh:docs-data
+The script prints the detected platform version (e.g. DWAPP 26.7). Afterward, review the diff under packages/b2c-tooling-sdk/data/ (index files always change their generatedAt timestamp; look for substantive schema/doc changes), run pnpm --filter @salesforce/b2c-tooling-sdk run test:agent, and add a changeset if the refresh changes user-facing behavior. See the sdk-module-development skill for details.
+Releases and Publishing
+This project uses Changesets for version management and publishes to npm using OIDC trusted publishers.
+Release Type
+npm Tag
+Trigger
+Stable
+@latest
+Merge version PR on main
+Release Branch
+@latest or @release-X.Y
+Push to release/** branch
+Nightly
+@nightly
+Manual
+For detailed information about the release process, including release branches, see PUBLISHING.md.
+Quick Reference
+# Create a changeset for your changes
+pnpm changeset
+# Check pending changesets
+pnpm changeset status
+Preview Releases
+Preview releases are available as tgz files on GitHub Releases for testing before npm publication.
+Package Exports
+The @salesforce/b2c-tooling-sdk package uses the exports field in package.json to define its public API surface. Each module is available as a subpath export:
+import {OAuthStrategy} from '@salesforce/b2c-tooling-sdk/auth';
+import {B2CInstance} from '@salesforce/b2c-tooling-sdk/instance';
+import {getLogger} from '@salesforce/b2c-tooling-sdk/logging';
+The development condition in exports enables direct TypeScript source resolution when using --conditions=development, which is how bin/dev.js works for local development.
+Contributing
+We welcome contributions! Please see our Contributing Guide for details on how to get started, submit pull requests, and our code of conduct.
+Third-Party Dependency Review
+To prevent net-new third-party libraries from being added without discussion, PRs are checked by the 3PL Guard workflow (Net-new 3PL check).
+The check compares changed package.json files in the PR and detects net-new external dependencies.
+If net-new dependencies are found, the PR is labeled needs-3pl-review and the check fails.
+After discussion and approval, a maintainer adds the 3pl-approved label to allow the check to pass.
+If the net-new dependency is removed, needs-3pl-review is removed automatically.
+To enforce this as a merge gate, keep Net-new 3PL check as a required status check in branch protection.
+Security
+For security concerns, please review our Security Policy. Report any security issues to security@salesforce.com.
+License
+This project is licensed under the Apache License 2.0. See LICENSE.txt for full details.
+Disclaimer
+This project is provided "as-is" without warranty of any kind. While the CLI, SDK, and MCP server are Generally Available, the VS Code extension is currently in Developer Preview — see its documentation for details. Breaking changes to any component will follow a documented deprecation cycle.
+About
+B2C CLI, VSCode Extension, Skills+MCP, and Tooling SDK for Salesforce Agentforce Commerce B2C
+salesforcecommercecloud.github.io/b2c-developer-tooling/
+Topics
+b2cclidx
+Resources
+Readme
+Apache-2.0 license
+Code of conduct
+Code of conduct
+Contributing
+Contributing
+Security policy
+Security policy
+Activity
+Custom properties
+Stars
+58 stars
+Watchers
+8 watching
+Forks
+26 forks
+Report repository
+Releases
+Packages
+Contributors
+Languages
+Footer
+© 2026 GitHub, Inc.
+Footer navigation
+Terms
+Privacy
+Security
+Status
+Community
+Docs
+Contact
+Manage cookies
+Do not share my personal information
+You can’t perform that action at this time.

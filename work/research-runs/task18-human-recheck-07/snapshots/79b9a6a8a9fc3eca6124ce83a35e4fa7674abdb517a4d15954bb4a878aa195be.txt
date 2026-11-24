@@ -1,0 +1,176 @@
+Working with OAuth - HubSpot docs
+Documentation Index
+Fetch the complete documentation index at: /docs/llms.txt
+Use this file to discover all available pages before exploring further.
+Skip to main content
+HubSpot docs home page
+Platform
+Search...
+⌘KAsk Assistant⌘I
+Changelog
+Log In
+Sign up
+Sign up
+Search...
+Navigation
+OAuth
+Working with OAuth
+Home
+Get Started
+Apps
+CMS
+APIs
+Developer Tooling
+Build with AI
+Overview
+Developer seats
+Build apps
+Authentication
+Overview
+OAuth
+OAuth quickstart
+Working with OAuth
+Service keys
+Scopes
+Request validation
+User-level apps
+Create an app
+Migrate an app
+App configuration
+Manage apps in HubSpot
+HubSpot MCP server
+Add features
+UI extensions
+App events
+App objects
+Agent tools
+Serverless functions
+MCP server
+Beta
+Configure webhooks
+Define custom workflow actions
+Add telemetry
+Set up SCIM
+Publish to the HubSpot Marketplace
+Listing your app
+Apply for certification
+Provide testing credentials for your app
+Review app performance and feedback
+Schedule app demos
+Understand app install flow
+Understand partner tiers
+View marketplace contacts
+Agent tool listing requirements
+MCP server listing requirements
+Skeleton group 5
+English
+close
+On this page
+Back to top
+Recommended resources
+Set up OAuth authentication
+Query parameters
+Configure scopes
+Monitor OAuth installation logs
+Related articles
+OAuth
+Working with OAuth
+OAuth is a secure means of authentication for your app. It uses authorization tokens rather than a password to connect your app to a user account.
+OAuth is a secure means of authentication that uses authorization tokens rather than a password to connect your app to a user account. Initiating OAuth access is the first step towards allowing users to install your app in their HubSpot accounts.
+Please note:
+Any app designed for installation by multiple HubSpot accounts or listing on the HubSpot Marketplace must use OAuth.
+Users installing apps in their HubSpot account must either be a Super Admin or have HubSpot Marketplace Access permissions.
+Recommended resources
+The OAuth Quickstart Guide will get you up and running with a working example app.
+You can also check out the blog post linked below for a full walkthrough of how OAuth works and guidance on setting up a backend service for storing OAuth tokens:
+Set up OAuth authentication
+To set up OAuth authentication for your app:
+Create a new app. After creating the app, you’ll be able to find the app’s client ID and client secret on the Auth page of your app settings.
+Use the client ID along with the query parameters and scopes outlined below in steps 2 and 3, to build your authorization URL.
+Your app’s client secret will be used in step 4 below, after the user is redirected back to your app and you’re ready to generate the initial access and refresh tokens.
+Send users installing your app to the authorization URL, where they’ll be presented with a screen that allows them to select their account and grant access to your integration. You can set the authorization URL to be for a specific HubSpot account by adding the account ID between /oauth/ and /authorize, as shown below.
+After granting access, they’ll be redirected back to your application via a redirect_uri, which will have a code query parameter appended to it.
+Example authorization URLs
+Any account: https://app.hubspot.com/oauth/authorize?client_id=xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx&scope=contacts%20automation&redirect_uri=https://www.example.com/
+Specific account (ID 123456): https://app.hubspot.com/oauth/123456/authorize?client_id=xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx&scope=contacts%20automation&redirect_uri=https://www.example.com/
+Example redirect URL: https://example.com/?code=xxxx
+Example error: https://www.example.com/?error=error_code&error_description=Human%20readable%20description%20of%20the%20error
+You’ll then make an API request to /oauth/v3/token with a request body that includes the code, the redirect_uri, your app’s client_id and client_secret, and a grant_type of authorization_code to get an access_token and refresh_token from HubSpot.
+Use the access_token to authenticate any API calls made for that HubSpot account.
+Once the access_token expires, use the refresh_token to generate a new access_token. Learn more about how to refresh an access token.
+Please note:
+Your app will not appear as a Connected App in a user’s account unless you generate the refresh token and initial access token.
+Access tokens reflect the scopes requested from the app and do not reflect the permissions or limitations of what a user can do in their HubSpot account. For example, if a user has permissions to view only owned contacts but authorizes a request for the crm.objects.contacts.read scope, the resulting access token can view all contacts in the account and not only those owned by the authorizing user.
+Query parameters
+The following query parameters are required when building an authorization URL for your app:
+ParameterDescriptionHow to use
+client_idAn ID that serves as a unique identifier for your app.Get this from your app’s Auth settings page (as described above).
+redirect_uriThe URL visitors will be redirected to after granting access to your app.You’ll also designate this on your app’s Auth settings page. Note: For security reasons, this URL must use https in production. (When testing using localhost, http can be used.) You also must use a domain, as IP addresses are not supported.
+scopeA space-separated set of permissions that your app needs access to.Any scopes that you’ve checked off in your app’s Auth settings will be treated as required, and you’ll need to include them in this parameter or the authorization page will display an error. Additionally, users will get an error if they try to install your app in an account that doesn’t have access to an included scope. Consult the scopes reference documentation for more details about which endpoints can be accessed by specific scopes.
+The following parameters are optional:
+ParameterHow to useDescription
+optional_scopeA space-separated set of optional permissions for your app.Optional scopes will be automatically dropped from the authorization request if the user selects a HubSpot account that doesn’t have access to that tool (e.g., authorizing a Content Hub Enterprise scope in a HubSpot free account). If you’re using optional scopes, you will need to check the access token or refresh token to see which ones were granted. Check out the reference documentation on scopes for more details.
+stateIf this parameter is included in the authorization URL, the value will be included in a state query parameter when the user is directed to the redirect_uri.A string value that can be used to maintain the user’s state when they’re redirected back to your app.
+Configure scopes
+OAuth requires you to set scopes, or permissions, for your app. Each scope provides access to a set of HubSpot API endpoints and allows users to grant your app access to specific tools in their HubSpot account.
+You can review your app’s current scopes in the development settings in your HubSpot account:
+In your HubSpot account, navigate to Development.
+In the left sidebar menu, click Projects.
+Click the name of the project configured with OAuth authentication.
+Under Project Components, click the UID of your app.
+Click the Auth tab, then review your app’s required, conditionally required, and optional scopes in the Scopes section.
+To update your app’s scopes, edit the corresponding scopes within the auth property of your app’s app-hsmeta.json file locally, then run the hs project upload command to upload the changes to your account.
+{
+"uid": "oauth-sample-app",
+"type": "app",
+"config": {
+"description": "An example OAuth app.",
+"name": "my first app",
+"logo": "/app/app-logo.png",
+"distribution": "marketplace",
+"auth": {
+"type": "oauth",
+"redirectUrls": ["http://localhost:3000/oauth-callback"],
+"requiredScopes": ["crm.objects.contacts.read", "crm.objects.contacts.write"],
+"optionalScopes": [],
+"conditionallyRequiredScopes": []
+},
+"permittedUrls": {
+"fetch": ["https://api.hubapi.com"],
+"iframe": [],
+"img": []
+},
+"support": {
+"supportEmail": "support@example.com",
+"documentationUrl": "https://example.com/docs",
+"supportUrl": "https://example.com/support",
+"supportPhone": "+18005555555"
+}
+}
+}
+A full list of scopes is available here.
+Monitor OAuth installation logs
+After you’ve set up the OAuth authentication flow for your app, you can review installation attempts, successes, and failures in your development settings:
+In your HubSpot account, navigate to Development.
+In the left sidebar menu, navigate to Monitoring > Logs.
+Click the dropdown menu at the top of the page and select the name of your OAuth app.
+Click the OAuth tab.
+Review all installation events for your app. The following event types are logged:
+AUTHORIZATION_REQUEST: logged when a user tries to load the app’s authorization URL in their account. This event will be logged as an error if the app is misconfigured or the user doesn’t have sufficient permissions to install the app.
+AUTHORIZATION_GRANT: logged when a user clicks the Connect app button to start the installation process. This will result in HubSpot generating a code query parameter.
+AUTHORIZATION_CODE_EXPIRY: an error that occurs when the auth code expired before the token was exchanged.
+TOKEN_EXCHANGE: your OAuth service successfully exchanged the code to get an access token and refresh token. At this point, the app is installed in the user’s account.
+To view more details about a specific event, click the ellipses icon under the Actions column, then select an option:
+Open details: open a side panel with more information, including the Account ID, Log ID, Trace ID, and the full error messages
+Open tracing: navigate to an error details page, which also provides the sequence of related OAuth events triggered by the same account.
+You can use the top dropdown menus to search for specific events by Account ID or Log ID, or filter events by date range.
+To export OAuth event data, click Export in the top right. In the dialog box, confirm the date range, then click Export.
+Related articles
+OAuth Quickstart guide
+OAuth v3 API guide
+Last modified on March 30, 2026
+Was this page helpful?
+YesNo
+facebookinstagramyoutubexlinkedinmedium
+Assistant
+Responses are generated using AI and may contain mistakes.

@@ -1,0 +1,21 @@
+> For a complete page index, fetch https://developer.close.com/llms.txt
+# Creating an OAuth App
+OAuth 2.0 allows third-party applications to access Close data on behalf of users without exposing passwords or sharing API keys. You can create custom OAuth apps for Close to add bespoke features, automate tasks, and enhance data analytics, tailored to your business needs.
+## Create a new OAuth app
+#### Go to OAuth Apps settings
+Navigate to [**Settings** → **Developer** → **OAuth Apps**](https://app.close.com/settings/developer/oauth-apps) and click **Create App**.
+#### Fill in your app details
+* **App Name** — Your application name that users will see on the consent screen.
+* **App Description** — 1–2 sentence description of what your app does.
+* **Redirect URL** — The http**s** URL where users are redirected after authorizing your app (e.g. `https://yourapp.com/callback/close`). Must use TLS/SSL — plain `http://` URLs are not accepted.
+* **Terms of Service URL** — Optional for internal-only apps
+* **Privacy Policy URL** — Optional for internal-only apps
+#### Get your credentials
+Click **Create**, then copy your **Client ID** and **Client Secret** — you'll need these to implement the [OAuth 2.0 flow](/api/overview/oauth-authentication).
+### Scopes
+All OAuth applications are granted the `all.full_access offline_access` scopes, providing the same level of access as API keys. If you have a use case for different scopes, we'd like to [hear about it](mailto:support@close.com?Subject=OAuth%20App%20Scopes).
+## Make authenticated requests
+Once you have your Client ID and Client Secret, you're ready to follow the [OAuth 2.0 authorization flow guide](/api/overview/oauth-authentication) to obtain access tokens and make authenticated requests to the Close API on behalf of your users.
+## Making your app public (optional)
+OAuth apps are **Private** by default, meaning only members of your own Close organization can authorize them. This is fine if you and your teammates (in the same organization) are the only users.
+If you want other Close customers to authorize it, you'll need to request to [make it public and optionally get listed](/integrations/publish).

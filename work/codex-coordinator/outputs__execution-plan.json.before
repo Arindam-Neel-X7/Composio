@@ -1,0 +1,289 @@
+{
+  "scope": "Complete Composio 100-app assignment through sequential, reviewable agent tasks.",
+  "mode": "Sequential: one active execution task; later agents spawned or resumed only when dependencies pass. Coordinator reviews every handoff.",
+  "current_task": null,
+  "active_agent": null,
+  "next_task": "10",
+  "checkpoint": "Task 09 (Research batch 3: Communications and Messaging, IDs 21-30) approved (PASS) after independent read-only AI review and remediation in sealed run work/research-runs/task09-first-pass-004 (see outputs/task-09-review.md; 54 captures, 192 eligible assertions, 417 verified evidence refs, accuracy null, AI review only). Task 10 (Marketing, Ads, Email and Social, IDs 31-40) remains queued and has not started.",
+  "rules": [
+    "Existing results are preliminary hypotheses, not completed research.",
+    "Every task returns files, evidence, checks and unresolved issues.",
+    "An unknown can be a valid research result; an inaccessible page is not proof that the product has no API.",
+    "No fabricated human review, accuracy improvement or publication.",
+    "Future owners below are queued role assignments, not claims that agents are already running.",
+    "Respect user-requested review checkpoints: share the completed task's reviewed results before starting the next task."
+  ],
+  "tasks": [
+    {
+      "id": "01",
+      "title": "Audit the existing work",
+      "owner": "Intake agent (Erdos)",
+      "status": "completed",
+      "review": "Accepted by coordinator after inspecting audit, source and ledger and independently checking saved counts; see outputs/task-01-review.md.",
+      "depends_on": [],
+      "output": "work/intake-audit.md and .json",
+      "acceptance": "Confirm the exact 100-app input; list placeholder fields and missing deliverables."
+    },
+    {
+      "id": "02",
+      "title": "Define the research record and evidence rules",
+      "owner": "Pipeline agent (Darwin), reviewed by coordinator",
+      "status": "completed",
+      "review": "Accepted after full format/rules review, revisions for partial API knowledge and per-entry evidence, and 22 passing structural/integrity checks; see outputs/task-02-review.md.",
+      "depends_on": [
+        "01"
+      ],
+      "output": "data/apps.json; schemas/record.json; evidence rules",
+      "acceptance": "Multiple auth methods allowed; sandbox vs production access separated; each material claim has a source or an explicit unknown."
+    },
+    {
+      "id": "03",
+      "title": "Implement source retrieval and extraction",
+      "owner": "Pipeline agent (Darwin), reviewed by coordinator",
+      "status": "completed",
+      "review": "Accepted after implementation/usage review, requested fixes, 19 passing fresh-package regression tests, 10 passing independent synthetic checks and a live example.com retrieval smoke; see outputs/task-03-review.md. No Task 04 research.",
+      "depends_on": [
+        "02"
+      ],
+      "output": "Runnable research command, cache, run log and recovery handling",
+      "acceptance": "Retrieve and read source content; keep source URL, timestamp and claim support; distinguish retrieval errors from product gates; do not use app-name lookup lists as findings."
+    },
+    {
+      "id": "04",
+      "title": "Run a five-app pilot",
+      "owner": "Research agent (Mendel), reviewed by coordinator",
+      "status": "completed",
+      "review": "First-pass pilot accepted with documented capture, taxonomy and locator issues. Five records and 26 sources validate; original input reproduced byte-for-byte. All 92 research assertions remain pending independent Task 05 review. See outputs/task-04-review.md.",
+      "depends_on": [
+        "03"
+      ],
+      "output": "Pilot records for IDs 2, 13, 31, 58, 91",
+      "acceptance": "Research HubSpot, Freshdesk, Google Ads, Sherlock and NotebookLM using primary sources; preserve the original first pass."
+    },
+    {
+      "id": "05",
+      "title": "Review the pilot independently",
+      "owner": "Verification agent (gemini-task05-independent, AI)",
+      "status": "completed",
+      "review": "Accepted (PASS) after coordinator audit (see outputs/task-05-review.md). Independent AI verification completed in sealed child run task05-review-002 against frozen target pilot-first-pass-001: 87/92 correct (94.57%), 0 incorrect, 5 unsupported, 0 unresolved/pending; observed 62/66 (93.94%), inferred 25/26 (96.15%). See outputs/task-05/verification-report.md. AI review only; not human review.",
+      "depends_on": [
+        "04"
+      ],
+      "output": "work/task-04-runs/task05-review-002; work/task-05-agent/judgments.json; outputs/task-05/verification-report.md",
+      "acceptance": "Reopen primary sources, check each substantive field and identify unsupported claims; label the reviewer as AI."
+    },
+    {
+      "id": "06",
+      "title": "Repair the pipeline and freeze the evaluation method",
+      "owner": "Pipeline agent + coordinator",
+      "status": "completed",
+      "review": "Accepted (PASS) after independent read-only AI review and documentation remediation (see outputs/task-06-review.md). Pipeline v0.2.0, contract v1.1, 23/23 tests, sealed v1.0 run preservation, frozen 20-app sample manifest (composio-20app-sample-v1), and evaluation rubric verified.",
+      "depends_on": [
+        "05"
+      ],
+      "output": "research_pipeline.py (v0.2.0); schemas/record.json & docs/evidence-rules.md (v1.1); tests/test_research_pipeline.py (23 tests); outputs/task-06/sampling-manifest.json; outputs/task-06/evaluation-rubric.md; outputs/task-06/completion-report.md",
+      "acceptance": "Address pilot failures; define the denominator and treatment of unknowns; select two apps per category reproducibly before the full run."
+    },
+    {
+      "id": "07",
+      "title": "Research batch 1: CRM and Sales",
+      "owner": "Research agent (task07-research-agent-gemini); independent AI auditor (20c35940-52d8-4433-9470-263d3ef2478a)",
+      "status": "completed",
+      "review": "Accepted (PASS) after independent read-only AI review and remediation in sealed run work/research-runs/task07-first-pass-003 (see outputs/task-07-review.md; superseded task07-first-pass-002 preserved untouched; 58 captures, 164 eligible assertions, 296 verified evidence refs, accuracy null, AI review only; formal blind scoring deferred to Task 17).",
+      "depends_on": [
+        "06"
+      ],
+      "output": "work/research-runs/task07-first-pass-003; outputs/task-07/ (records.json, source-index.md, findings-matrix.md, batch-report.md, exceptions-for-reviewer.md, metrics.json); outputs/task-07-review.md",
+      "acceptance": "All ten identities covered; category and one-line purpose, auth, credential access, API type/breadth, MCP and buildability filled with supported findings or explicit unknowns. Reviewer checks evidence links and consequential claims before next batch."
+    },
+    {
+      "id": "08",
+      "title": "Research batch 2: Support and Helpdesk",
+      "owner": "Research agent (task08-research-agent-gemini); independent AI auditor (427f6350-a54b-4baf-a55b-7ec71f328212)",
+      "status": "completed",
+      "review": "Accepted (PASS) after independent read-only AI review and remediation in sealed run work/research-runs/task08-first-pass-003 (see outputs/task-08-review.md; superseded task08-first-pass-002 preserved untouched; 58 captures, 152 eligible assertions, 295 verified evidence refs, accuracy null, AI review only; formal blind scoring deferred to Task 17).",
+      "depends_on": [
+        "07"
+      ],
+      "output": "work/research-runs/task08-first-pass-003; outputs/task-08/ (records.json, source-index.md, findings-matrix.md, batch-report.md, exceptions-for-reviewer.md, metrics.json); outputs/task-08-review.md",
+      "acceptance": "All ten identities covered; category and one-line purpose, auth, credential access, API type/breadth, MCP and buildability filled with supported findings or explicit unknowns. Reviewer checks evidence links and consequential claims before next batch."
+    },
+    {
+      "id": "09",
+      "title": "Research batch 3: Communications and Messaging",
+      "owner": "Research agent (task09-research-agent-gemini); independent AI auditor (6545c1d5-1dbf-4871-953d-99def292ba15)",
+      "status": "completed",
+      "review": "Accepted (PASS) after independent read-only AI review and remediation in sealed run work/research-runs/task09-first-pass-004 (see outputs/task-09-review.md; superseded task09-first-pass-002 and task09-first-pass-003 preserved untouched; 54 captures, 192 eligible assertions, 417 verified evidence refs, accuracy null, AI review only; formal blind scoring deferred to Task 17).",
+      "depends_on": [
+        "08"
+      ],
+      "output": "work/research-runs/task09-first-pass-004; outputs/task-09/ (records.json, source-index.md, findings-matrix.md, batch-report.md, exceptions-for-reviewer.md, metrics.json); outputs/task-09-review.md",
+      "acceptance": "All ten identities covered; category and one-line purpose, auth, credential access, API type/breadth, MCP and buildability filled with supported findings or explicit unknowns. Reviewer checks evidence links and consequential claims before next batch."
+    },
+    {
+      "id": "10",
+      "title": "Research batch 4: Marketing, Ads, Email and Social",
+      "owner": "Research agent; verification agent accepts batch",
+      "status": "queued",
+      "depends_on": [
+        "09"
+      ],
+      "output": "Ten records, IDs 31–40; field citations; batch exceptions",
+      "acceptance": "All ten identities covered; category and one-line purpose, auth, credential access, API type/breadth, MCP and buildability filled with supported findings or explicit unknowns. Reviewer checks evidence links and consequential claims before next batch."
+    },
+    {
+      "id": "11",
+      "title": "Research batch 5: Ecommerce",
+      "owner": "Research agent; verification agent accepts batch",
+      "status": "queued",
+      "depends_on": [
+        "10"
+      ],
+      "output": "Ten records, IDs 41–50; field citations; batch exceptions",
+      "acceptance": "All ten identities covered; category and one-line purpose, auth, credential access, API type/breadth, MCP and buildability filled with supported findings or explicit unknowns. Reviewer checks evidence links and consequential claims before next batch."
+    },
+    {
+      "id": "12",
+      "title": "Research batch 6: Data, SEO and Scraping",
+      "owner": "Research agent; verification agent accepts batch",
+      "status": "queued",
+      "depends_on": [
+        "11"
+      ],
+      "output": "Ten records, IDs 51–60; field citations; batch exceptions",
+      "acceptance": "All ten identities covered; category and one-line purpose, auth, credential access, API type/breadth, MCP and buildability filled with supported findings or explicit unknowns. Reviewer checks evidence links and consequential claims before next batch."
+    },
+    {
+      "id": "13",
+      "title": "Research batch 7: Developer, Infra and Data platforms",
+      "owner": "Research agent; verification agent accepts batch",
+      "status": "queued",
+      "depends_on": [
+        "12"
+      ],
+      "output": "Ten records, IDs 61–70; field citations; batch exceptions",
+      "acceptance": "All ten identities covered; category and one-line purpose, auth, credential access, API type/breadth, MCP and buildability filled with supported findings or explicit unknowns. Reviewer checks evidence links and consequential claims before next batch."
+    },
+    {
+      "id": "14",
+      "title": "Research batch 8: Productivity and Project Management",
+      "owner": "Research agent; verification agent accepts batch",
+      "status": "queued",
+      "depends_on": [
+        "13"
+      ],
+      "output": "Ten records, IDs 71–80; field citations; batch exceptions",
+      "acceptance": "All ten identities covered; category and one-line purpose, auth, credential access, API type/breadth, MCP and buildability filled with supported findings or explicit unknowns. Reviewer checks evidence links and consequential claims before next batch."
+    },
+    {
+      "id": "15",
+      "title": "Research batch 9: Finance and Fintech",
+      "owner": "Research agent; verification agent accepts batch",
+      "status": "queued",
+      "depends_on": [
+        "14"
+      ],
+      "output": "Ten records, IDs 81–90; field citations; batch exceptions",
+      "acceptance": "All ten identities covered; category and one-line purpose, auth, credential access, API type/breadth, MCP and buildability filled with supported findings or explicit unknowns. Reviewer checks evidence links and consequential claims before next batch."
+    },
+    {
+      "id": "16",
+      "title": "Research batch 10: AI, Research and Media-native",
+      "owner": "Research agent; verification agent accepts batch",
+      "status": "queued",
+      "depends_on": [
+        "15"
+      ],
+      "output": "Ten records, IDs 91–100; field citations; batch exceptions",
+      "acceptance": "All ten identities covered; category and one-line purpose, auth, credential access, API type/breadth, MCP and buildability filled with supported findings or explicit unknowns. Reviewer checks evidence links and consequential claims before next batch."
+    },
+    {
+      "id": "17",
+      "title": "Audit the frozen 20-app sample",
+      "owner": "Independent verification agent",
+      "status": "queued",
+      "depends_on": [
+        "16"
+      ],
+      "output": "Blind review, gold judgments and first-pass scores",
+      "acceptance": "Use two apps from each category; inspect primary sources independently; report correct, incorrect, unsupported and unknown claims with denominators. This is AI verification, not human verification."
+    },
+    {
+      "id": "18",
+      "title": "Correct errors and remeasure",
+      "owner": "Research agent + verification agent",
+      "status": "queued",
+      "depends_on": [
+        "17"
+      ],
+      "output": "Correction log, final scores and remaining unknowns",
+      "acceptance": "Preserve before/after versions, use the same rubric, disclose that the corrected sample is no longer an unbiased held-out estimate. Prepare a human checklist; only a real person can sign human checks."
+    },
+    {
+      "id": "19",
+      "title": "Calculate patterns and build priorities",
+      "owner": "Analysis agent",
+      "status": "queued",
+      "depends_on": [
+        "18"
+      ],
+      "output": "Reproducible aggregates and recommendations",
+      "acceptance": "Every percentage has a denominator; unknowns visible; prioritize build-now, conditional and outreach queues from evidence."
+    },
+    {
+      "id": "20",
+      "title": "Build the self-contained case study",
+      "owner": "Case-study agent",
+      "status": "queued",
+      "depends_on": [
+        "19"
+      ],
+      "output": "Single HTML with searchable matrix and evidence/verification sections",
+      "acceptance": "Two-minute overview, supported headline findings, process, run instructions, misses and limitations; no invented accuracy or human claims."
+    },
+    {
+      "id": "21",
+      "title": "Test reproduction and page presentation",
+      "owner": "QA agent",
+      "status": "queued",
+      "depends_on": [
+        "20"
+      ],
+      "output": "Run report and page QA evidence",
+      "acceptance": "Fresh offline replay works; live-research prerequisites documented; outputs agree with the page; inspect desktop/mobile and links where available."
+    },
+    {
+      "id": "22",
+      "title": "Publish the source repository",
+      "owner": "Publisher agent + coordinator",
+      "status": "queued",
+      "depends_on": [
+        "21"
+      ],
+      "output": "Dedicated GitHub repository with runnable README",
+      "acceptance": "Use connected GitHub capabilities; create a dedicated repository through supported access; preserve unrelated repositories; verify source and instructions at returned URL. Record an actual blocker if creation authority is missing."
+    },
+    {
+      "id": "23",
+      "title": "Deploy the case study",
+      "owner": "Publisher agent + coordinator",
+      "status": "queued",
+      "depends_on": [
+        "22"
+      ],
+      "output": "Verified live page URL and deployment record",
+      "acceptance": "Reuse registered Site appgprj_6b040e5b3768819193392c23590d7d81 if using Sites; confirm deployed version and intended reviewer access; never treat expected_url as a completed deployment."
+    },
+    {
+      "id": "24",
+      "title": "Review and hand off",
+      "owner": "Coordinator",
+      "status": "queued",
+      "depends_on": [
+        "23"
+      ],
+      "output": "Submission links, source bundle, final limitations",
+      "acceptance": "Reconcile counts, evidence, measured scores, GitHub URL and live URL; identify any remaining external blocker explicitly."
+    }
+  ]
+}

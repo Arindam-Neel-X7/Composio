@@ -1,0 +1,109 @@
+Export meetings | Grain
+Skip to main content
+Developer docsGet started
+Developer docsGet started
+Search for articles...
+All Collections
+Meetings
+Export meetings
+Export meetings
+Download or export your Grain meetings and transcripts, one at a time, in bulk, or via API.
+Updated over a month ago
+Table of contents
+Whether you're building an AI workflow with your meeting data, migrating to a new tool, or just want your transcripts in a format you can work with elsewhere, Grain gives you several ways to get your data out. The right option depends on how many meetings you need and what you're doing with them.
+Which option is right for you?
+What you're trying to do
+Best option
+Download one or a few meetings
+Option 1: Single-meeting download
+Bulk download transcripts for AI workflows
+Option 2: Multi-select bulk download
+Bulk download all meetings in a curated collection
+Option 3: Playlists bulk export
+Pipe all workspace meetings to a database or custom AI
+Option 4: Grain API
+Query meeting data directly in Claude or ChatGPT
+Option 5: Grain MCP
+Option 1: Download a single meeting
+Use this for one-off downloads when you need a specific meeting's recording or transcript.
+From the 'Meetings' page:
+Select the three-dot menu on any meeting card.
+Select your desired download option:
+Open in AI: opens your meeting data directly in ChatGPT or Claude.
+Download transcript for AI: downloads a transcript with metadata for AI.
+Download recording: downloads an MP4 video of your meeting.
+Download transcript: downloads the plain transcript text in your desired file format.
+From inside a meeting:
+Open the meeting.
+Click the three-dot icon in the top right.
+Hover over 'Download' and select your desired download option.
+Alternatively, inside a meeting, you can:
+Click the drop-down next to the three-dot icon in the top right.
+Select your desired download option:
+Open in AI: opens your meeting data directly in ChatGPT or Claude.
+Copy/Download transcript for AI: copy or download a transcript with metadata for AI.
+What you can download
+Recording — MP4 video file (720p)
+Transcript — available in Markdown, DOCX, PDF, SRT, or VTT format
+For more detail on the 'Open in AI' and 'Download transcript for AI' options, including how the transcript is packaged and link expiration, see AI Transcript Actions.
+Note: Downloading the recording exports the video only. To get the transcript, select 'Download transcript' separately and choose your format.
+Option 2: Bulk select and download
+Use this to grab transcripts from multiple meetings at once. Bulk download is limited to 20 meetings at a time.
+From the 'Meetings' page:
+On your Meetings page, check the box next to any meeting to enter multi-select mode.
+Select as many meetings as you want.
+Choose an action from the bar that appears:
+Open in AI: combines selected transcripts into a temporary link and opens them in ChatGPT or Claude for analysis.
+Download: downloads a ZIP file containing Markdown transcripts for all selected meetings.
+If you've already organized your meetings into a Playlist, you can download all of them without re-selecting:
+Select the three dots on any Playlist.
+Use the 'Open in AI' or 'Download' actions available to export your meeting data.
+Note: The ZIP file contains one Markdown file per meeting. Video recordings are not included.
+Option 3: Bulk export from a Playlist
+If you have meetings organized into a Playlist, you can download all transcripts in that Playlist at once, optimized for feeding into an AI tool.
+1. Go to 'Playlists' in the left sidebar and open any Playlist.
+2. Click the AI actions dropdown arrow at the top of the Playlist.
+3. Select 'Download Transcripts for AI'.
+Grain packages all transcripts in the Playlist into a ZIP folder with a Markdown file for each meeting in the Playlist, ready to paste or upload into any AI tool. See Playlists for more.
+Option 4: Export via the Grain API
+Use the API to programmatically extract transcripts and recordings.
+Personal API token
+Any user, on every plan including Free, can generate a personal token to access meetings they have permission to view.
+Go to 'Account settings' → 'Integrations' → 'Personal API'.
+Click 'Generate personal API token'.
+Workspace API token (admins only)
+Workspace admins on Business and Enterprise plans can generate a token with access to all meetings across the workspace.
+Go to 'Workspace settings' → 'Integrations' → 'API'.
+Click 'Generate workspace API token'.
+What you can extract:
+Transcripts
+MP4 recordings
+Rate limit: ~300 API calls per minute.
+Note: Workspace API tokens provide access to all meetings in your workspace. Only generate one if you're the admin responsible for managing workspace data.
+For full API reference, see Grain API Documentation
+Option 5: Use the Grain MCP
+Use the Grain MCP to query and analyze your meeting data directly inside Claude, ChatGPT, or Cursor.
+What the MCP can access:
+Meetings and transcripts
+Notes and action items
+Coaching feedback
+Deal data
+Clips
+Setup
+A workspace admin enables the Grain MCP connector for the workspace.
+Each user connects their own Grain account via OAuth. Users can only access meetings they already have permission to view in Grain.
+Example prompt:
+Pull my 10 most recent meeting transcripts and compile them into a single summary. For each meeting, include:
+- Meeting title and date
+- Key decisions made
+- Action items and who owns them
+Then identify any themes or topics that came up across multiple meetings.
+Once connected, you can ask your AI tool to pull transcripts, search meeting content, surface action items, or analyze deal data.
+Note: The MCP doesn't download files, it lets your AI tool read and search meeting data interactively. Use Options 1, 2, or 3 if you need files to keep or move elsewhere. For full setup instructions, see the Official Grain MCP Server.
+Next up: Tags
+Did this answer your question?
+Disappointed Reaction😞Neutral Reaction😐Smiley Reaction😃
+Table of contents
+Sign Up
+Login
+Download Desktop App

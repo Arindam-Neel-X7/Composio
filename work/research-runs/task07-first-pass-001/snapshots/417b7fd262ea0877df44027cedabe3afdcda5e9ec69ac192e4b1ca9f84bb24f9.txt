@@ -1,0 +1,50 @@
+# Twenty Documentation
+- [User Guide (121 pages)](https://docs.twenty.com/_llms/en/user-guide.txt): User Guide, Data Model, Data Migration, Calendar & Emails, Email Campaigns, Workflows, AI, Layout, Dashboards, Permissions & Access, Billing, Settings, Legal.
+- [Developers (146 pages)](https://docs.twenty.com/_llms/en/developers.txt): Developers, Apps, API, Self-Host, Contribute, UI Library.
+## Getting Started
+### Getting Started
+- [Meet Twenty](https://docs.twenty.com/getting-started/introduction.md): See what makes Twenty different, set up your workspace, and learn the concepts behind it.
+- [Key Features](https://docs.twenty.com/getting-started/key-features.md): A tour of everything Twenty can do — from custom data models to AI-powered automation.
+- [Quickstart](https://docs.twenty.com/getting-started/quickstart.md): Get Twenty up and running in under 5 minutes — on the cloud or self-hosted.
+### Core Concepts
+- [Data Model](https://docs.twenty.com/getting-started/core-concepts/data-model.md): Understand how Twenty structures your data with objects, fields, and relations.
+- [Layout](https://docs.twenty.com/getting-started/core-concepts/layout.md): How to navigate, browse, and view records in Twenty.
+- [Workflows](https://docs.twenty.com/getting-started/core-concepts/workflows.md): Automate your business processes with Twenty's visual workflow builder.
+- [Calendar & Email](https://docs.twenty.com/getting-started/core-concepts/calendar-and-email.md): Sync your email and calendar with Twenty.
+- [AI](https://docs.twenty.com/getting-started/core-concepts/ai.md): How Twenty uses AI to enhance your CRM experience.
+- [Apps](https://docs.twenty.com/getting-started/core-concepts/apps.md): Extend Twenty with code — custom objects, server-side logic, UI components, and AI agents, all as TypeScript packages.
+- [Dashboards](https://docs.twenty.com/getting-started/core-concepts/dashboards.md): Track performance and visualize your CRM data with custom dashboards.
+- [Glossary](https://docs.twenty.com/getting-started/core-concepts/glossary.md): Key terms used throughout Twenty.
+> The links below point to documentation indexes. Follow each `/_llms/` index recursively until you reach documentation pages.
+## Indexes
+- [English / User Guide (121 pages)](https://docs.twenty.com/_llms/en/user-guide.txt): User Guide, Data Model, Data Migration, Calendar & Emails, Email Campaigns, Workflows, AI, Layout, Dashboards, Permissions & Access, Billing, Settings, Legal.
+- [English / Developers (146 pages)](https://docs.twenty.com/_llms/en/developers.txt): Developers, Apps, API, Self-Host, Contribute, UI Library.
+- [French (172 pages)](https://docs.twenty.com/_llms/fr.txt): Prise en main, Guide de l'utilisateur, Développeurs.
+- [French / Guide de l'utilisateur (108 pages)](https://docs.twenty.com/_llms/fr/guide-de-l-utilisateur.txt): Vue d'ensemble, Modèle de données, Migration de données, Calendrier et e-mails, Flux de travail, IA, Disposition, Tableaux de bord, Autorisations et accès, Facturation, Paramètres, Juridique.
+- [Arabic (278 pages)](https://docs.twenty.com/_llms/ar.txt): البدء, دليل المستخدم, المطورون.
+- [Arabic / دليل المستخدم (121 pages)](https://docs.twenty.com/_llms/ar/dlyl-almstkhdm.txt): دليل المستخدم, نموذج البيانات, ترحيل البيانات, التقويم والبريد الإلكتروني, حملات البريد الإلكتروني, سير العمل, الذكاء الاصطناعي, التخطيط, لوحات القيادة, الصلاحيات والوصول, الفوترة, الإعدادات, قانوني.
+- [Arabic / المطورون (146 pages)](https://docs.twenty.com/_llms/ar/almtwrwn.txt): المطورون, التطبيقات, واجهة برمجة التطبيقات, الاستضافة الذاتية, المساهمة, مكتبة واجهة المستخدم.
+- [Czech (172 pages)](https://docs.twenty.com/_llms/cs.txt): Začínáme, Uživatelská příručka, Vývojáři.
+- [Czech / Uživatelská příručka (108 pages)](https://docs.twenty.com/_llms/cs/uzivatelska-prirucka.txt): Přehled, Datový model, Migrace dat, Kalendář a e-maily, Pracovní postupy, AI, Rozvržení, Panely, Oprávnění a přístup, Fakturace, Nastavení, Právní.
+- [German (172 pages)](https://docs.twenty.com/_llms/de.txt): Erste Schritte, Benutzerhandbuch, Entwickler.
+- [German / Benutzerhandbuch (108 pages)](https://docs.twenty.com/_llms/de/benutzerhandbuch.txt): Übersicht, Datenmodell, Datenmigration, Kalender & E-Mails, Workflows, KI, Layout, Dashboards, Berechtigungen & Zugriff, Abrechnung, Einstellungen, Rechtliches.
+- [Spanish (277 pages)](https://docs.twenty.com/_llms/es.txt): Primeros pasos, Guía de usuario, Desarrolladores.
+- [Spanish / Guía de usuario (120 pages)](https://docs.twenty.com/_llms/es/guia-de-usuario.txt): Guía de usuario, Modelo de datos, Migración de datos, Calendario y correos electrónicos, Campañas de correo electrónico, Flujos de trabajo, IA, Diseño, Tableros, Permisos y acceso, Facturación, Configuración, Legal.
+- [Spanish / Desarrolladores (146 pages)](https://docs.twenty.com/_llms/es/desarrolladores.txt): Desarrolladores, Aplicaciones, API, Autoalojamiento, Contribuir, Biblioteca de IU.
+- [Italian (278 pages)](https://docs.twenty.com/_llms/it.txt): Per iniziare, Guida utente, Sviluppatori.
+- [Italian / Guida utente (121 pages)](https://docs.twenty.com/_llms/it/guida-utente.txt): Guida utente, Modello dati, Migrazione dei dati, Calendario & Email, Campagne email, Flussi di Lavoro, AI, Disposizione, Cruscotti, Autorizzazioni & Accesso, Fatturazione, Impostazioni, Legale.
+- [Italian / Sviluppatori (146 pages)](https://docs.twenty.com/_llms/it/sviluppatori.txt): Sviluppatori, App, API, Auto-ospitazione, Contribuire, Libreria UI.
+- [Japanese (172 pages)](https://docs.twenty.com/_llms/ja.txt): 始めに, ユーザーガイド, 開発者.
+- [Korean (172 pages)](https://docs.twenty.com/_llms/ko.txt): 시작하기, 사용자 안내서, 개발자.
+- [Portuguese (172 pages)](https://docs.twenty.com/_llms/pt.txt): Primeiros passos, Manual do Usuário, Programadores.
+- [Portuguese / Manual do Usuário (108 pages)](https://docs.twenty.com/_llms/pt/manual-do-usuario.txt): Visão Geral, Modelo de dados, Migração de dados, Calendário e E-mails, Fluxos de trabalho, IA, Layout, Painéis, Permissões e Acesso, Faturação, Configurações, Jurídico.
+- [Romanian (278 pages)](https://docs.twenty.com/_llms/ro.txt): Începeți, Ghid de utilizator, Dezvoltatori.
+- [Romanian / Ghid de utilizator (121 pages)](https://docs.twenty.com/_llms/ro/ghid-de-utilizator.txt): Ghid de utilizator, Model de date, Migrarea Datelor, Calendar & E-mailuri, Campanii de e-mail, Fluxuri de lucru, AI, Aspect, Tablouri de Bord, Permisiuni & Acces, Facturare, Setări, Juridic.
+- [Romanian / Dezvoltatori (146 pages)](https://docs.twenty.com/_llms/ro/dezvoltatori.txt): Dezvoltatori, Aplicații, API, Autogazda, Contribuie, Biblioteca UI.
+- [Russian (274 pages)](https://docs.twenty.com/_llms/ru.txt): Начало работы, Руководство пользователя, Разработчики.
+- [Russian / Руководство пользователя (119 pages)](https://docs.twenty.com/_llms/ru/rukovodstvo-polzovatelya.txt): Руководство пользователя, Модель данных, Миграция данных, Календарь и электронная почта, Кампании по электронной почте, Рабочие процессы, ИИ, Макет, Панели управления, Разрешения и доступ, Биллинг, Настройки, Юридическая информация.
+- [Russian / Разработчики (144 pages)](https://docs.twenty.com/_llms/ru/razrabotchiki.txt): Разработчики, Приложения, API, Самостоятельный хостинг, Внести вклад, Библиотека интерфейса.
+- [Turkish (172 pages)](https://docs.twenty.com/_llms/tr.txt): Başlarken, Kullanıcı Rehberi, Geliştiriciler.
+- [Turkish / Kullanıcı Rehberi (108 pages)](https://docs.twenty.com/_llms/tr/kullanici-rehberi.txt): Genel Bakış, Veri modeli, Veri Geçişi, Takvim ve E-postalar, İş Akışları, AI, Düzen, Gösterge Panelleri, İzinler ve Erişim, Faturalandırma, Ayarlar, Yasal.
+- [Chinese (172 pages)](https://docs.twenty.com/_llms/zh.txt): 开始使用, 用户指南, 开发者.
+This documentation is built and hosted on [Mintlify](https://mintlify.com), a developer documentation platform.

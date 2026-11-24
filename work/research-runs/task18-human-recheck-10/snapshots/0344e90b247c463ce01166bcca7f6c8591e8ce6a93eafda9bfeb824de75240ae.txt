@@ -1,0 +1,170 @@
+Key Concepts - LinkedIn | Microsoft Learn
+Skip to main content
+Skip to Ask Learn chat experience
+This browser is no longer supported.
+Upgrade to Microsoft Edge to take advantage of the latest features, security updates, and technical support.
+Download Microsoft Edge
+More info about Internet Explorer and Microsoft Edge
+Table of contents
+Exit editor mode
+Ask Learn
+Ask Learn
+Reading mode
+Table of contents
+Read in English
+Add
+Add to Plans
+Edit
+Copy Markdown
+Print
+Note
+Access to this page requires authorization. You can try signing in or changing directories.
+Access to this page requires authorization. You can try changing directories.
+Key Concepts
+Feedback
+Summarize this article for me
+In this article
+Warning
+Deprecation Notice:
+The Marketing Version 202601 (Marketing January 2026) will be sunset on January 15, 2027. We recommend that you migrate to the latest versioned APIs to avoid disruptions. For information on all the supported versions, refer to the migrations documentation.
+If you haven’t yet migrated and have questions, submit a request on the LinkedIn Developer Support Portal.
+What is a Company Page/Organization?
+A Company Page is an entity that represents an organization on LinkedIn. The Company Page is where a company can post organic content and interact with members on LinkedIn. In addition to the Ad Account, the Company Page is one of the key entities that's used across marketing APIs for both sponsored and organic use cases.
+See Creating a LinkedIn Page guide for instructions on creating a company page.
+Note
+Company Pages are also referred to as "Organizations", and these terms are used interchangeably in the documentation.
+Company Page Roles
+Company Pages can be managed by members who have been granted one of the following roles within that Company Page.
+Role
+Description
+ADMINISTRATOR
+Administer an organizational entity; Post updates; Edit the organization page; Manage administrators; View analytics and notifications
+DIRECT_SPONSORED_CONTENT_POSTER
+Create/View direct sponsored content (DSC) for an organizational entity
+RECRUITING_POSTER
+Post to an organizational entity
+LEAD_CAPTURE_ADMINISTRATOR
+View/Manage landing pages for the company; Create/Edit landing pages
+LEAD_GEN_FORMS_MANAGER
+Access leads that belong to a specific account which is associated with a company page
+ANALYST
+Access to view an organization's private administrative data that relates to its social presence on LinkedIn, access limited to analytics tab to monitor the Page’s performance to help drive goals. Can edit the competitors of a page.
+CURATOR
+Access to broadcast content to employees of the organization, view Content Suggestions, create recommended content, and view and export Page analytics. Can edit the competitors of a page.
+CONTENT_ADMINISTRATOR
+Access to create and manage Page content, including updates, pinned posts, boosting updates, events, jobs etc.
+The creator of the Company Page is the Administrator by default. All others can be added and given roles through the UI. Click "Admin tools" on the right side of the admin view of the Company Page and then select "Manage Admins". To add a member to a company page you must be connected on LinkedIn.
+What is an Ad Account?
+An Ad Account (a.k.a. Sponsored Account) is an umbrella entity for advertising management on LinkedIn, e.g., billing, campaigns, ad creatives, tracking tags, and more.
+Ad Accounts can be managed through the UI using the Campaign Manager tool. Learn how to access Campaign Manager from the LinkedIn homepage, or for more information see Campaign Manager Overview
+Ad Account Roles
+Ad Accounts can be managed by members who have been granted one of the following roles within that Ad Account. Please note that you must be connected to a LinkedIn member to add them to a Company Page.
+Role
+Description
+VIEWER
+View campaign data and reports (can't Create/Edit campaigns or ads)
+CREATIVE_MANAGER
+Create/Edit/View campaign data and reports; Create/Edit ads
+CAMPAIGN_MANAGER
+View campaign data and reports; Create/Edit campaigns and ads
+ACCOUNT_MANAGER
+View campaign data and reports. Create/Edit campaigns and ads; Edit account data and manage user access
+ACCOUNT_BILLING_ADMIN
+View campaign data and reports; Create/Edit campaigns and ads. Edit account data and manage user access. Can also access billing data and will be billed for this account. (See next paragraph for more details on this role
+Account Billing Admin role
+There should be only one ACCOUNT_BILLING_ADMIN user role for an account.
+The creator of the Ad Account is assigned Account Billing Administrator by default.
+Other roles can be added and given roles through the UI.
+Click the gear icon in the upper right corner of Campaign Manager and then select "Manage Access".
+Managing Your Ad Accounts List
+Once your application has been accepted into the Development Tier, you can manage and view your Ad Accounts from the developer portal. Add up to 5 accounts to manage in the Development Tier.
+Select your application from the list of apps..
+Click the "Products" tab in the navigation.
+Click the "View settings" link next to "Advertising API".
+Add or remove Ad Accounts from this page .
+Only accounts that have been configured for access in the Ad Accounts tab of your application can be managed through the API.
+You can't create new accounts through the API in the Development Tier.
+How do Company Pages and Ad Accounts relate to each other?
+Company Pages can be associated with Ad Accounts to advertise on behalf of that organization. For example, if an organization wanted to boost exposure to their Company Page's content by sponsoring it, they would need to associate their Company Page with an Ad Account.
+While not required, we recommended that you always associate a Company Page with an Ad Account to get the full benefits of LinkedIn's marketing capabilities. Some campaign objectives and ad creative types require a Company Page to be associated with the Ad Account.
+A Company Page can be associated with multiple Ad Accounts.
+An Ad Account can only be associated with a single Company Page.
+Once an Ad Account is linked to a particular Company Page, it can't be changed.
+How do I make API calls on behalf of a LinkedIn member?
+Once you have a developer application that has been given access to the LinkedIn Marketing API Program, you're ready to start generating OAuth access tokens to make API calls on behalf of authenticated members.
+Before an API call can be made, any required permission scopes must first be granted by the LinkedIn member. This ensures that members are made aware of what an application could potentially access or do on their behalf.
+If your application requires multiple permissions to access all the data it requires, members who use your application are required to accept all of them. They can't accept only a subset of the requested application permissions. To provide the best experience for the member, ensure that your application requests the fewest necessary permissions.
+How do I know what roles a member has?
+One of the common errors developers encounter is attempting to make API calls to Company Pages, Ad Accounts, and their associated objects using a token belonging to a member who doesn't have a role defined under a given Company Page or Ad Account. Use the /adAccountUsers and /organizationAcls API to validate what roles a member has.
+The LinkedIn Advertising API gives you access to the following permissions. All these permission scopes are 3-legged permissions requiring explicit consent from a LinkedIn member. The 2-legged client credentials flow is not available for any marketing use cases.
+Permission
+Description
+rw_organization_admin
+Manage an authenticated member’s company pages and retrieve reporting data.
+r_organization_admin
+Retrieve your organization's pages and their reporting data (including follower, visitor, and content analytics).
+w_organization_social
+Post, comment, and like posts on behalf of an organization. Restricted to organizations in which the authenticated member has one of the following company page roles:
+ADMINISTRATOR
+DIRECT_SPONSORED_CONTENT_POSTER
+LEAD_GEN_FORMS_MANAGER
+r_organization_social
+Retrieve organizations' posts, comments, and likes.
+w_member_social
+Post, comment, and like posts on behalf of an authenticated member.
+rw_ads
+Manage and read an authenticated member's ad accounts. Restricted to ad accounts in which the authenticated member has one of the following ad account roles:
+ACCOUNT_BILLING_ADMIN
+ACCOUNT_MANAGER
+CAMPAIGN_MANAGER
+CREATIVE_MANAGER
+r_ads
+Read an authenticated member's Ad Accounts. Restricted to ad accounts in which the authenticated member has one of the following Ad Account roles:
+ACCOUNT_BILLING_ADMIN
+ACCOUNT_MANAGER
+CAMPAIGN_MANAGER
+CREATIVE_MANAGER
+VIEWER
+r_ads_reporting
+Retrieve reporting for advertising accounts.
+r_1st_connections_size
+Retrieve the count of an authenticated member's 1st-degree connections.
+r_basicprofile
+Read an authenticated member's basic profile including name, photo, headline, and public profile URL.
+In addition to these permissions, members must have the appropriate roles as defined in Company Page Roles and Ad Account Roles to act on or read data from a given Company Page or Ad Account. See How Do I Know What Roles a Member Has to determine which roles an authenticated member has through the API.
+One of the common errors developers encounter is attempting to make API calls to Company Pages, Ad Accounts, and their associated objects using a token belonging to a member who doesn't have a role defined under a given Company Page or Ad Account. Use the API to validate what roles a member has.
+Feedback
+Was this page helpful?
+Yes
+No
+No
+Need help with this topic?
+Want to try using Ask Learn to clarify or guide you through this topic?
+Ask Learn
+Ask Learn
+Suggest a fix?
+Additional resources
+Last updated on
+2026-02-11
+In this article
+Was this page helpful?
+Need help with this topic?
+Want to try using Ask Learn to clarify or guide you through this topic?
+Ask Learn
+Ask Learn
+Suggest a fix?
+en-us
+Your Privacy Choices
+Theme
+Light
+Dark
+High contrast
+AI Disclaimer
+Previous Versions
+Blog
+Contribute
+Privacy
+Consumer Health Privacy
+Terms of Use
+Trademarks
+© Microsoft 2026

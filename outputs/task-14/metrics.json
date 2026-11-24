@@ -1,0 +1,120 @@
+{
+  "synthetic": false,
+  "app_findings_total": 10,
+  "apps_with_asserted_research": 10,
+  "selected_apps": 10,
+  "assignment_roster_denominator": 100,
+  "target_run_id": "task14-first-pass-003",
+  "review_run_id": "task14-first-pass-003",
+  "overall": {
+    "correct": 0,
+    "incorrect": 0,
+    "unsupported": 0,
+    "unresolved": 0,
+    "not_applicable": 0,
+    "eligible": 138,
+    "pending": 138,
+    "denominator": 0,
+    "accuracy": null,
+    "review_coverage": 0.0
+  },
+  "by_basis": {
+    "observed": {
+      "correct": 0,
+      "incorrect": 0,
+      "unsupported": 0,
+      "unresolved": 0,
+      "not_applicable": 0,
+      "eligible": 117,
+      "pending": 117,
+      "denominator": 0,
+      "accuracy": null,
+      "review_coverage": 0.0
+    },
+    "inferred": {
+      "correct": 0,
+      "incorrect": 0,
+      "unsupported": 0,
+      "unresolved": 0,
+      "not_applicable": 0,
+      "eligible": 21,
+      "pending": 21,
+      "denominator": 0,
+      "accuracy": null,
+      "review_coverage": 0.0
+    }
+  },
+  "research_coverage": {
+    "identity": {
+      "claim_status_counts": {
+        "observed": 10
+      },
+      "collection_status_counts": {},
+      "apps_with_assertions": 10,
+      "selected_app_denominator": 10,
+      "completion_not_inferred": true
+    },
+    "purpose": {
+      "claim_status_counts": {
+        "observed": 10
+      },
+      "collection_status_counts": {},
+      "apps_with_assertions": 10,
+      "selected_app_denominator": 10,
+      "completion_not_inferred": true
+    },
+    "auth": {
+      "claim_status_counts": {
+        "observed": 26
+      },
+      "collection_status_counts": {
+        "partial": 10
+      },
+      "apps_with_assertions": 10,
+      "selected_app_denominator": 10,
+      "completion_not_inferred": true
+    },
+    "credentials": {
+      "claim_status_counts": {
+        "unknown": 167,
+        "observed": 13
+      },
+      "collection_status_counts": {},
+      "apps_with_assertions": 6,
+      "selected_app_denominator": 10,
+      "completion_not_inferred": true
+    },
+    "api": {
+      "claim_status_counts": {
+        "observed": 48,
+        "inferred": 11
+      },
+      "collection_status_counts": {
+        "partial": 20
+      },
+      "apps_with_assertions": 10,
+      "selected_app_denominator": 10,
+      "completion_not_inferred": true
+    },
+    "mcp": {
+      "claim_status_counts": {
+        "observed": 20,
+        "not_researched": 10
+      },
+      "collection_status_counts": {},
+      "apps_with_assertions": 10,
+      "selected_app_denominator": 10,
+      "completion_not_inferred": true
+    },
+    "buildability": {
+      "claim_status_counts": {
+        "inferred": 10
+      },
+      "collection_status_counts": {},
+      "apps_with_assertions": 10,
+      "selected_app_denominator": 10,
+      "completion_not_inferred": true
+    }
+  },
+  "note": "Frozen claim inventory; unresolved/pending/null states are not correct. Synthetic scores are format demonstrations, never app accuracy. No held-out sample or improvement estimate is claimed."
+}

@@ -1,0 +1,91 @@
+Actors | Platform | Apify Documentation
+Skip to main content
+Get started
+Get startedActorsStorageProxyAccountIntegrationsSecurity
+Academy
+API
+API reference
+Client for JavaScript
+Client for Python
+Client for Go
+Client for PHP
+Client for Java
+Client for .NET
+Client for Rust
+SDK
+SDK for JavaScript
+SDK for Python
+CLI
+Installation
+Quick start
+Command reference
+For AI agents
+Overview
+Run
+Develop
+Publish
+Monetize
+Promote
+On this page
+Actors
+Copy for LLM
+Actors are serverless cloud programs that take a structured JSON input, perform a task (web scraping, browser automation, data processing, and more), and optionally produce a structured output. Run them manually in Apify Console, through the API or CLI, or on a schedule, and combine them into larger automations.
+Additional context
+For more context, read the Actor whitepaper.
+Actor lifecycle
+Run Actors
+Learn about Actor configuration, versioning, data retention, usage, and pricing.
+Develop Actors
+Learn about the technical part of building Apify Actors. Define Actor inputs, build new versions, persist Actor state, and choose base Docker images.
+Publish Actors
+Learn how to publish your Actor on Apify Store so that anyone can find and use it.
+Monetize Actors
+Learn how to choose a pricing model, set your Actor's price, and receive monthly payouts.
+Promote Actors
+Learn how to help users find and trust your Actor, from SEO to building credibility and reaching new audiences.
+Actor components
+Actors consist of these elements:
+Dockerfile which specifies where the Actor's source code is, how to build it, and run it.
+Documentation in a form of a README.md file.
+Input and output schemas that describe what input the Actor requires, and what results it produces.
+Access to an out-of-the-box storage system for Actor data, results, and files.
+Metadata such as the Actor name, description, author, and version.
+The documentation and input/output schemas help people understand what the Actor does, enter required inputs in the user interface or API, and integrate results into other workflows. Actors can call and interact with each other to build more complex systems from simple ones.
+Public and private Actors
+Actors can be public or private. Private Actors are yours to use and keep; no one will see them if you don't want them to. Public Actors are available to everyone in Apify Store. You can make them free to use, or you can charge for them.
+Next steps
+Storage - where every run stores its results and how to export them.
+Proxy - IP addresses your Actors use to access websites without being blocked.
+Integrations - send results to your tools, or trigger Actors from them.
+Edit this page
+Actor lifecycle
+Actor components
+Public and private Actors
+Next steps
+Reference
+API Reference
+SDK for JavaScript
+SDK for Python
+Client for JavaScript
+Client for Python
+CLI
+Glossary
+Open source
+Crawlee
+Fingerprint Suite
+impit
+MCP CLI
+Actor whitepaper
+proxy-chain
+Security
+Trust Center
+Community
+Discord
+X
+YouTube
+GitHub
+For AI
+llms.txt
+llms-full.txt
+OpenAPI (JSON)
+OpenAPI (YAML)

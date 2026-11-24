@@ -1,0 +1,32 @@
+Build with Intuit Developer Plugin
+Use Intuit Developer Plugin to set up your developer workspace, create an app, configure scopes, authenticate, and make your first QuickBooks API call from an AI-enabled development environment.
+Intuit Developer Plugin helps you complete the setup steps required to call Intuit APIs without switching between the Developer Portal, API docs, OAuth guides, and your IDE.
+What is Intuit Developer Plugin?
+Intuit Developer Plugin is an AI-assisted onboarding experience for developers building with Intuit APIs.
+It guides you through the setup flow for your first API call:
+Intuit Developer Plugin is designed for developer setup and API onboarding.
+Who should use this guide?
+Use this guide if you are:
+New to Intuit Developer and want to make your first QuickBooks API call
+Building a QuickBooks Online API integration for the first time
+Using an existing workspace to set up an app, scopes, credentials, and sandbox
+Using an AI-enabled IDE or development assistant to help build your integration
+Looking for a guided path from account setup to a successful sandbox API call
+Before you begin
+Before you begin, be sure you have the following:
+An Intuit Developer account
+Access to a developer workspace
+A clear first API goal, such as listing invoices, retrieving company information, or testing a basic sandbox request
+Use sandbox data while building and testing.
+Do not use production credentials or production company data for initial setup.
+Security best practices
+Follow these practices when using Intuit Developer Plugin:
+Use sandbox while building and testing
+Use least-privilege scopes
+Review any scope change before approving it
+Keep client secrets and tokens private
+Do not paste secrets into AI prompts or public tools
+Do not commit credentials to source control
+Rotate credentials if they are exposed
+Review generated requests and code before using them
+Complete required compliance steps before production use

@@ -1,0 +1,422 @@
+[
+  {
+    "spec": {
+      "app_id": 2,
+      "url": "https://developers.hubspot.com/developer-platform-basics",
+      "kind": "official_product_page",
+      "scope": "HubSpot CRM APIs and remote CRM MCP; developer testing and authorized production tenants; current and explicitly labeled legacy auth; plan-specific capabilities not generalized",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor-controlled developer/support documentation or official onboarding page; primary content read using web tool",
+      "attribution_by": "task04-research-agent-gpt-6.1-sol"
+    },
+    "captured_on": "2026-11-23",
+    "capture_method": "http_content",
+    "snapshot_ref": "snapshots/b18b10c56e9402a64f5a581ed357c8186ffdb67ce748b5a19c3af16bad322802.txt",
+    "content_sha256": "b18b10c56e9402a64f5a581ed357c8186ffdb67ce748b5a19c3af16bad322802",
+    "line_count": 328
+  },
+  {
+    "spec": {
+      "app_id": 2,
+      "url": "https://developers.hubspot.com/docs/apps/developer-platform/build-apps/authentication/overview",
+      "kind": "primary_docs",
+      "scope": "HubSpot CRM APIs and remote CRM MCP; developer testing and authorized production tenants; current and explicitly labeled legacy auth; plan-specific capabilities not generalized",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor-controlled developer/support documentation or official onboarding page; primary content read using web tool",
+      "attribution_by": "task04-research-agent-gpt-6.1-sol"
+    },
+    "captured_on": "2026-11-23",
+    "capture_method": "http_content",
+    "snapshot_ref": "snapshots/60ec5450f10f883744679a09ae17ecc45bd9604c28b59bbb8aabd937da9344e6.txt",
+    "content_sha256": "60ec5450f10f883744679a09ae17ecc45bd9604c28b59bbb8aabd937da9344e6",
+    "line_count": 131
+  },
+  {
+    "spec": {
+      "app_id": 2,
+      "url": "https://developers.hubspot.com/docs/apps/legacy-apps/private-apps/overview",
+      "kind": "primary_docs",
+      "scope": "HubSpot CRM APIs and remote CRM MCP; developer testing and authorized production tenants; current and explicitly labeled legacy auth; plan-specific capabilities not generalized",
+      "environments": [
+        "production"
+      ],
+      "attribution_basis": "Vendor-controlled developer/support documentation or official onboarding page; primary content read using web tool",
+      "attribution_by": "task04-research-agent-gpt-6.1-sol"
+    },
+    "captured_on": "2026-11-23",
+    "capture_method": "http_content",
+    "snapshot_ref": "snapshots/745a044246324b19c9dacda5b37fdcaea45a9e43a2b20d169f01b26b1a019862.txt",
+    "content_sha256": "745a044246324b19c9dacda5b37fdcaea45a9e43a2b20d169f01b26b1a019862",
+    "line_count": 154
+  },
+  {
+    "spec": {
+      "app_id": 2,
+      "url": "https://developers.hubspot.com/docs/api-reference/latest/overview",
+      "kind": "primary_docs",
+      "scope": "HubSpot CRM APIs and remote CRM MCP; developer testing and authorized production tenants; current and explicitly labeled legacy auth; plan-specific capabilities not generalized",
+      "environments": [],
+      "attribution_basis": "Vendor-controlled developer/support documentation or official onboarding page; primary content read using web tool",
+      "attribution_by": "task04-research-agent-gpt-6.1-sol"
+    },
+    "captured_on": "2026-11-23",
+    "capture_method": "http_content",
+    "snapshot_ref": "snapshots/197e437888bccd01b07eec8230a384cc05ed9efa9ddfcb83b064dc42f3d9b175.txt",
+    "content_sha256": "197e437888bccd01b07eec8230a384cc05ed9efa9ddfcb83b064dc42f3d9b175",
+    "line_count": 132
+  },
+  {
+    "spec": {
+      "app_id": 2,
+      "url": "https://developers.hubspot.com/docs/apps/developer-platform/build-apps/integrate-with-the-remote-hubspot-mcp-server",
+      "kind": "primary_docs",
+      "scope": "HubSpot CRM APIs and remote CRM MCP; developer testing and authorized production tenants; current and explicitly labeled legacy auth; plan-specific capabilities not generalized",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor-controlled developer/support documentation or official onboarding page; primary content read using web tool",
+      "attribution_by": "task04-research-agent-gpt-6.1-sol"
+    },
+    "captured_on": "2026-11-23",
+    "capture_method": "http_content",
+    "snapshot_ref": "snapshots/14840c27104d17fd89f2ad53ec53085c313996743776c0de45d19a67a9317b7a.txt",
+    "content_sha256": "14840c27104d17fd89f2ad53ec53085c313996743776c0de45d19a67a9317b7a",
+    "line_count": 182
+  },
+  {
+    "spec": {
+      "app_id": 13,
+      "url": "https://support.freshdesk.com/support/solutions/articles/215517-how-to-find-your-api-key",
+      "kind": "primary_docs",
+      "scope": "Freshdesk REST v2 and official MCP; verified agents and FDK apps; trial testing versus licensed production tenants; plan-specific capabilities not generalized",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor-controlled developer/support documentation or official onboarding page; primary content read using web tool",
+      "attribution_by": "task04-research-agent-gpt-6.1-sol"
+    },
+    "captured_on": "2026-11-23",
+    "capture_method": "http_content",
+    "snapshot_ref": "snapshots/8992754847e4774df777d046d608371e489fbc710b44cbcd42db9682562b5a2a.txt",
+    "content_sha256": "8992754847e4774df777d046d608371e489fbc710b44cbcd42db9682562b5a2a",
+    "line_count": 153
+  },
+  {
+    "spec": {
+      "app_id": 13,
+      "url": "https://developers.freshworks.com/docs/app-sdk/v3.0/support_ticket/oauth-implementation-in-apps/",
+      "kind": "primary_docs",
+      "scope": "Freshdesk REST v2 and official MCP; verified agents and FDK apps; trial testing versus licensed production tenants; plan-specific capabilities not generalized",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor-controlled developer/support documentation or official onboarding page; primary content read using web tool",
+      "attribution_by": "task04-research-agent-gpt-6.1-sol"
+    },
+    "captured_on": "2026-11-23",
+    "capture_method": "http_content",
+    "snapshot_ref": "snapshots/07d6e7c9d1e04107d199da1bd5dd8c3db5d68ec46ff42b214b67e99d6e083b49.txt",
+    "content_sha256": "07d6e7c9d1e04107d199da1bd5dd8c3db5d68ec46ff42b214b67e99d6e083b49",
+    "line_count": 94
+  },
+  {
+    "spec": {
+      "app_id": 13,
+      "url": "https://support.freshdesk.com/support/solutions/articles/50000011778",
+      "kind": "primary_docs",
+      "scope": "Freshdesk REST v2 and official MCP; verified agents and FDK apps; trial testing versus licensed production tenants; plan-specific capabilities not generalized",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor-controlled developer/support documentation or official onboarding page; primary content read using web tool",
+      "attribution_by": "task04-research-agent-gpt-6.1-sol"
+    },
+    "captured_on": "2026-11-23",
+    "capture_method": "http_content",
+    "snapshot_ref": "snapshots/2bc4b4baa653da6b55f71691057e8d26e460019c61858a60790b1e8faae31a3d.txt",
+    "content_sha256": "2bc4b4baa653da6b55f71691057e8d26e460019c61858a60790b1e8faae31a3d",
+    "line_count": 261
+  },
+  {
+    "spec": {
+      "app_id": 13,
+      "url": "https://support.freshdesk.com/support/solutions/articles/50000012670",
+      "kind": "primary_docs",
+      "scope": "Freshdesk REST v2 and official MCP; verified agents and FDK apps; trial testing versus licensed production tenants; plan-specific capabilities not generalized",
+      "environments": [
+        "production"
+      ],
+      "attribution_basis": "Vendor-controlled developer/support documentation or official onboarding page; primary content read using web tool",
+      "attribution_by": "task04-research-agent-gpt-6.1-sol"
+    },
+    "captured_on": "2026-11-23",
+    "capture_method": "http_content",
+    "snapshot_ref": "snapshots/45c76d163aa76bbf4818305fa78fb97cf556321f04c338d0d12627b390a65157.txt",
+    "content_sha256": "45c76d163aa76bbf4818305fa78fb97cf556321f04c338d0d12627b390a65157",
+    "line_count": 545
+  },
+  {
+    "spec": {
+      "app_id": 31,
+      "url": "https://developers.google.com/google-ads/api/docs/oauth/overview",
+      "kind": "primary_docs",
+      "scope": "Google Ads API current Cloud-project access and OAuth; test accounts versus authorized production accounts; legacy developer-token documentation identified separately",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor-controlled developer/support documentation or official onboarding page; primary content read using web tool",
+      "attribution_by": "task04-research-agent-gpt-6.1-sol"
+    },
+    "captured_on": "2026-11-23",
+    "capture_method": "http_content",
+    "snapshot_ref": "snapshots/4dddc5e4f3721859e57c4356517166d8ad537de9b7e3f1ac36f20bb2ec6eeecf.txt",
+    "content_sha256": "4dddc5e4f3721859e57c4356517166d8ad537de9b7e3f1ac36f20bb2ec6eeecf",
+    "line_count": 504
+  },
+  {
+    "spec": {
+      "app_id": 31,
+      "url": "https://developers.google.com/google-ads/api/docs/api-policy/developer-token",
+      "kind": "primary_docs",
+      "scope": "Google Ads API current Cloud-project access and OAuth; test accounts versus authorized production accounts; legacy developer-token documentation identified separately",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor-controlled developer/support documentation or official onboarding page; primary content read using web tool",
+      "attribution_by": "task04-research-agent-gpt-6.1-sol"
+    },
+    "captured_on": "2026-11-23",
+    "capture_method": "http_content",
+    "snapshot_ref": "snapshots/e2bda0aca868f1487b01d728315d706ae543fb42ead023a73516bf53067fce69.txt",
+    "content_sha256": "e2bda0aca868f1487b01d728315d706ae543fb42ead023a73516bf53067fce69",
+    "line_count": 489
+  },
+  {
+    "spec": {
+      "app_id": 31,
+      "url": "https://developers.google.com/google-ads/api/docs/api-policy/access-levels",
+      "kind": "primary_docs",
+      "scope": "Google Ads API current Cloud-project access and OAuth; test accounts versus authorized production accounts; legacy developer-token documentation identified separately",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor-controlled developer/support documentation or official onboarding page; primary content read using web tool",
+      "attribution_by": "task04-research-agent-gpt-6.1-sol"
+    },
+    "captured_on": "2026-11-23",
+    "capture_method": "http_content",
+    "snapshot_ref": "snapshots/9ad2996ee07d4f26bb7bf5ee0627233fe1e5019cf7585fe323adebc746f40669.txt",
+    "content_sha256": "9ad2996ee07d4f26bb7bf5ee0627233fe1e5019cf7585fe323adebc746f40669",
+    "line_count": 295
+  },
+  {
+    "spec": {
+      "app_id": 31,
+      "url": "https://developers.google.com/google-ads/api/docs/best-practices/testing",
+      "kind": "primary_docs",
+      "scope": "Google Ads API current Cloud-project access and OAuth; test accounts versus authorized production accounts; legacy developer-token documentation identified separately",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor-controlled developer/support documentation or official onboarding page; primary content read using web tool",
+      "attribution_by": "task04-research-agent-gpt-6.1-sol"
+    },
+    "captured_on": "2026-11-23",
+    "capture_method": "http_content",
+    "snapshot_ref": "snapshots/54c7f6b803c8aa1fd84e690c351a2611abb737ec3a5dfb786530cbc922a14d16.txt",
+    "content_sha256": "54c7f6b803c8aa1fd84e690c351a2611abb737ec3a5dfb786530cbc922a14d16",
+    "line_count": 562
+  },
+  {
+    "spec": {
+      "app_id": 31,
+      "url": "https://developers.google.com/google-ads/api/docs/concepts/api-structure",
+      "kind": "primary_docs",
+      "scope": "Google Ads API current Cloud-project access and OAuth; test accounts versus authorized production accounts; legacy developer-token documentation identified separately",
+      "environments": [],
+      "attribution_basis": "Vendor-controlled developer/support documentation or official onboarding page; primary content read using web tool",
+      "attribution_by": "task04-research-agent-gpt-6.1-sol"
+    },
+    "captured_on": "2026-11-23",
+    "capture_method": "http_content",
+    "snapshot_ref": "snapshots/eb67307fd7612a7d6b6f58a394edf5729ded03d152253018eab4a590dea7215f.txt",
+    "content_sha256": "eb67307fd7612a7d6b6f58a394edf5729ded03d152253018eab4a590dea7215f",
+    "line_count": 657
+  },
+  {
+    "spec": {
+      "app_id": 31,
+      "url": "https://developers.google.com/google-ads/api/docs/developer-toolkit/mcp-server",
+      "kind": "primary_docs",
+      "scope": "Google Ads API current Cloud-project access and OAuth; test accounts versus authorized production accounts; legacy developer-token documentation identified separately",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor-controlled developer/support documentation or official onboarding page; primary content read using web tool",
+      "attribution_by": "task04-research-agent-gpt-6.1-sol"
+    },
+    "captured_on": "2026-11-23",
+    "capture_method": "http_content",
+    "snapshot_ref": "snapshots/5e5dcc003f4a96e22fda7e107da371878f8eac641f43b8acc9699576d6828356.txt",
+    "content_sha256": "5e5dcc003f4a96e22fda7e107da371878f8eac641f43b8acc9699576d6828356",
+    "line_count": 946
+  },
+  {
+    "spec": {
+      "app_id": 58,
+      "url": "https://github.com/sherlock-project/sherlock",
+      "kind": "official_repository",
+      "scope": "Sherlock Project open-source username-search CLI; local installation for testing or deployment; third-party target-site access not guaranteed",
+      "environments": [],
+      "attribution_basis": "Sherlock assignment repository or project documentation linked from that repository",
+      "attribution_by": "task04-research-agent-gpt-6.1-sol"
+    },
+    "captured_on": "2026-11-23",
+    "capture_method": "http_content",
+    "snapshot_ref": "snapshots/2af06d5f18e66cdbc67a3700f0a59e416807cb1bfb0e6a321d1d8e2831d9e3dd.txt",
+    "content_sha256": "2af06d5f18e66cdbc67a3700f0a59e416807cb1bfb0e6a321d1d8e2831d9e3dd",
+    "line_count": 271
+  },
+  {
+    "spec": {
+      "app_id": 58,
+      "url": "https://sherlockproject.xyz/usage",
+      "kind": "primary_docs",
+      "scope": "Sherlock Project open-source username-search CLI; local installation for testing or deployment; third-party target-site access not guaranteed",
+      "environments": [],
+      "attribution_basis": "Sherlock assignment repository or project documentation linked from that repository",
+      "attribution_by": "task04-research-agent-gpt-6.1-sol"
+    },
+    "captured_on": "2026-11-23",
+    "capture_method": "http_content",
+    "snapshot_ref": "snapshots/75aed623804d6e458c151998fab29bf6b3e84f6c631840ec815c096ebae77101.txt",
+    "content_sha256": "75aed623804d6e458c151998fab29bf6b3e84f6c631840ec815c096ebae77101",
+    "line_count": 77
+  },
+  {
+    "spec": {
+      "app_id": 58,
+      "url": "https://raw.githubusercontent.com/sherlock-project/sherlock/master/LICENSE",
+      "kind": "official_repository",
+      "scope": "Sherlock Project open-source username-search CLI; local installation for testing or deployment; third-party target-site access not guaranteed",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Sherlock assignment repository or project documentation linked from that repository",
+      "attribution_by": "task04-research-agent-gpt-6.1-sol"
+    },
+    "captured_on": "2026-11-23",
+    "capture_method": "http_content",
+    "snapshot_ref": "snapshots/0f10be9fc2d9398acedc33260ec0ee8a0267eff541a697ec8ba22a1dd9c5deee.txt",
+    "content_sha256": "0f10be9fc2d9398acedc33260ec0ee8a0267eff541a697ec8ba22a1dd9c5deee",
+    "line_count": 17
+  },
+  {
+    "spec": {
+      "app_id": 91,
+      "url": "https://docs.cloud.google.com/gemini/enterprise/notebooklm-enterprise/docs/api-notebooks",
+      "kind": "primary_docs",
+      "scope": "NotebookLM assignment Enterprise API scope, now Gemini Notebook Enterprise; licensed user/project/IAM path for trial testing and paid production; personal MCP separately identified",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor-controlled developer/support documentation or official onboarding page; primary content read using web tool",
+      "attribution_by": "task04-research-agent-gpt-6.1-sol"
+    },
+    "captured_on": "2026-11-23",
+    "capture_method": "http_content",
+    "snapshot_ref": "snapshots/45a6e891559e7fe1f723f84fbc58e1befc7905c4640c0567e6414fea04f1859e.txt",
+    "content_sha256": "45a6e891559e7fe1f723f84fbc58e1befc7905c4640c0567e6414fea04f1859e",
+    "line_count": 510
+  },
+  {
+    "spec": {
+      "app_id": 91,
+      "url": "https://docs.cloud.google.com/gemini/enterprise/notebooklm-enterprise/docs/api-notebooks-sources",
+      "kind": "primary_docs",
+      "scope": "NotebookLM assignment Enterprise API scope, now Gemini Notebook Enterprise; licensed user/project/IAM path for trial testing and paid production; personal MCP separately identified",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor-controlled developer/support documentation or official onboarding page; primary content read using web tool",
+      "attribution_by": "task04-research-agent-gpt-6.1-sol"
+    },
+    "captured_on": "2026-11-23",
+    "capture_method": "http_content",
+    "snapshot_ref": "snapshots/3032f20bf7e34036f8433a878f4f4f7c928072d67d844e43845f0d8511e68490.txt",
+    "content_sha256": "3032f20bf7e34036f8433a878f4f4f7c928072d67d844e43845f0d8511e68490",
+    "line_count": 537
+  },
+  {
+    "spec": {
+      "app_id": 91,
+      "url": "https://docs.cloud.google.com/gemini/enterprise/notebooklm-enterprise/docs/set-up-notebooklm",
+      "kind": "primary_docs",
+      "scope": "NotebookLM assignment Enterprise API scope, now Gemini Notebook Enterprise; licensed user/project/IAM path for trial testing and paid production; personal MCP separately identified",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor-controlled developer/support documentation or official onboarding page; primary content read using web tool",
+      "attribution_by": "task04-research-agent-gpt-6.1-sol"
+    },
+    "captured_on": "2026-11-23",
+    "capture_method": "http_content",
+    "snapshot_ref": "snapshots/7a39c4a868c92d33af078f6185dfc6705c5bea2b5e689aa3346f080c856baef1.txt",
+    "content_sha256": "7a39c4a868c92d33af078f6185dfc6705c5bea2b5e689aa3346f080c856baef1",
+    "line_count": 431
+  },
+  {
+    "spec": {
+      "app_id": 91,
+      "url": "https://docs.cloud.google.com/gemini/enterprise/notebooklm-enterprise/docs/set-up-licensing",
+      "kind": "primary_docs",
+      "scope": "NotebookLM assignment Enterprise API scope, now Gemini Notebook Enterprise; licensed user/project/IAM path for trial testing and paid production; personal MCP separately identified",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor-controlled developer/support documentation or official onboarding page; primary content read using web tool",
+      "attribution_by": "task04-research-agent-gpt-6.1-sol"
+    },
+    "captured_on": "2026-11-23",
+    "capture_method": "http_content",
+    "snapshot_ref": "snapshots/d0e343a24d857acc39256da6647afd82be4d50fdffa4bb7fbd321ecd452f5f9b.txt",
+    "content_sha256": "d0e343a24d857acc39256da6647afd82be4d50fdffa4bb7fbd321ecd452f5f9b",
+    "line_count": 368
+  },
+  {
+    "spec": {
+      "app_id": 91,
+      "url": "https://github.com/Morfeu333/notebooklm-mcp",
+      "kind": "community_repository",
+      "scope": "NotebookLM assignment Enterprise API scope, now Gemini Notebook Enterprise; licensed user/project/IAM path for trial testing and paid production; personal MCP separately identified",
+      "environments": [],
+      "attribution_basis": "Repository publisher documents its own unofficial personal NotebookLM implementation; not Google endorsement",
+      "attribution_by": "task04-research-agent-gpt-6.1-sol"
+    },
+    "captured_on": "2026-11-23",
+    "capture_method": "http_content",
+    "snapshot_ref": "snapshots/e1dff21532ffbd8f44178daa0bdbdeff135f7cde4fb29c51ae7a5c1500ae1e5c.txt",
+    "content_sha256": "e1dff21532ffbd8f44178daa0bdbdeff135f7cde4fb29c51ae7a5c1500ae1e5c",
+    "line_count": 526
+  }
+]

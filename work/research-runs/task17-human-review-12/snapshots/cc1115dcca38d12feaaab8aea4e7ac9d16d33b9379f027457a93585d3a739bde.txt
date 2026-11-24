@@ -1,0 +1,101 @@
+> ## Documentation Index
+> Fetch the complete documentation index at: https://developers.clay.com/llms.txt
+> Use this file to discover all available pages before exploring further.
+# Routines API
+> Run Clay-managed functions and custom functions through the Public API.
+Routines are the programmable way to run Clay logic. Through the Public API, you can run Clay-managed functions and custom functions from backend services, queue workers, internal tools, and custom apps.
+Use [Clay-managed functions](https://developers.clay.com/routines/clay-managed-functions.md) for common enrichment and research jobs. Use [custom functions](https://developers.clay.com/routines/custom-functions.md) for team-specific Clay logic built in the Clay UI.
+## Run a function routine
+Custom function routine ids use the format `function:t_...`. To start a run, call `POST /routines/{routine_id}/run`.
+Replace `function:t_abc123` and the input names with your function's routine id and inputs. Give each item an id you can use to match its result later.
+```bash theme={"theme":{"light":"github-light","dark":"github-dark"}}
+ROUTINE_RUN_ID=$(curl --request POST \
+--url "https://api.clay.com/public/v0/routines/function:t_abc123/run" \
+--header "Content-Type: application/json" \
+--header "clay-api-key: $CLAY_PUBLIC_API_KEY" \
+--data '{
+"items": [
+{
+"id": "row-1",
+"inputs": {
+"domain": "clay.com"
+}
+},
+{
+"id": "row-2",
+"inputs": {
+"domain": "example.com"
+}
+}
+]
+}' | jq -r '.routine_run_id')
+```
+## Read the results
+Use the returned `routine_run_id` to request the run's results:
+```bash theme={"theme":{"light":"github-light","dark":"github-dark"}}
+curl --request GET \
+--url "https://api.clay.com/public/v0/routines/run/$ROUTINE_RUN_ID/results" \
+--header "clay-api-key: $CLAY_PUBLIC_API_KEY"
+```
+While the run is processing, the endpoint returns **HTTP 202** with progress counters. There is no `data` array yet:
+```json theme={"theme":{"light":"github-light","dark":"github-dark"}}
+{
+"routine_run_id": "run_xyz789",
+"status": "in_progress",
+"total": 2,
+"finished": 1
+}
+```
+Repeat the GET request until it returns **HTTP 200** with `status: "complete"`. Use a delay between polls and a timeout appropriate for your application. For HTTP errors, follow the [error handling](https://developers.clay.com/public-api/errors.md) and [rate limit](https://developers.clay.com/public-api/rate-limits.md) guidance rather than continuing to poll unchanged.
+Read individual results from **`data`**. Each item's `id` matches an id you supplied in the run request. Check each item's `status`: a completed run can contain failed items. For example, a function with a `company_name` output could return:
+```json theme={"theme":{"light":"github-light","dark":"github-dark"}}
+{
+"routine_run_id": "run_xyz789",
+"status": "complete",
+"total": 2,
+"finished": 2,
+"data": [
+{
+"id": "row-1",
+"status": "complete",
+"result": {
+"company_name": "Clay"
+}
+},
+{
+"id": "row-2",
+"status": "failed",
+"error": {
+"message": "Provider request failed"
+}
+}
+]
+}
+```
+The keys inside `result` depend on your function's outputs. Use item ids to associate results with inputs rather than relying on response order. `finished` counts finished items, including failures; it is not a count of successful results.
+### Retrieve every page
+A completed run's results can span multiple pages. If the response includes `cursor`, pass that value to the same endpoint to retrieve the next page:
+```bash theme={"theme":{"light":"github-light","dark":"github-dark"}}
+NEXT_CURSOR="<cursor from the previous response>"
+curl --get \
+--url "https://api.clay.com/public/v0/routines/run/$ROUTINE_RUN_ID/results" \
+--header "clay-api-key: $CLAY_PUBLIC_API_KEY" \
+--data-urlencode "cursor=$NEXT_CURSOR" \
+--data-urlencode "limit=20"
+```
+Collect `data` from each page and continue with each returned cursor until `cursor` is omitted. Treat cursors as opaque values. `total` and `finished` describe the whole run, not the current page. See [pagination](https://developers.clay.com/public-api/pagination.md) for the general cursor pattern.
+This polling flow applies to runs started with `/routines/{routine_id}/run`. Runs started through the batch API use the separate [batch results endpoint](https://developers.clay.com/routines/batch-runs.md).
+## Webhook notifications
+The `run` and `run-batch/start` requests accept an optional `webhook_id`. Clay notifies that webhook when the run finishes, so your system can react without polling.
+Run `clay webhooks --help` for webhook creation, testing, delivery payloads, and signature verification.
+## Batch run a function routine
+For large input sets, create an upload URL, upload JSONL input, then start a batch run.
+> [card] [Batch runs](https://developers.clay.com/routines/batch-runs.md)
+>
+> Learn how batch runs fit into Routines.
+## When to use Workflows
+Workflows are also routines, but they are in Alpha and are built differently. Use Workflows when you want to build, edit, validate, run, inspect, or batch-run Clay logic from the plugin or CLI instead of building the logic in the Clay UI.
+> [card] [Workflows (Alpha)](https://developers.clay.com/routines/workflows-alpha.md)
+>
+> Compare Workflows with functions.
+This documentation is built and hosted on [Mintlify](https://mintlify.com), a developer documentation platform.

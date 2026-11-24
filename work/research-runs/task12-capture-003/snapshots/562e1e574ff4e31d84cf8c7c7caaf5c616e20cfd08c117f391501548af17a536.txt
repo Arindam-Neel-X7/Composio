@@ -1,0 +1,87 @@
+> ## Documentation Index
+> Fetch the complete documentation index at: https://developers.clay.com/llms.txt
+> Use this file to discover all available pages before exploring further.
+# Tables (Enterprise)
+> Query known Clay tables with structured filters, selected fields, ordering, and pagination.
+Tables let Enterprise customers read structured data from known Clay tables. Use table queries when your integration already knows which table it needs and wants specific fields, filters, ordering, and pagination.
+> [!NOTE]
+>
+> Tables are available on Enterprise plans.
+Clay tables can act as a GTM database for your downstream systems. You can build dashboards, internal tools, QA views, scoring jobs, and interactive apps on top of data that already exists in Clay.
+The current public API does not include a list-tables endpoint. You need the table identifiers your integration uses before querying table data. You can find the table id in a Clay URL after `/tables/`, for example `https://app.clay.com/workspaces/{workspaceId}/tables/t_0te9i4tZEHwc9hihBXu`.
+## Common uses
+* Pull records into a dashboard or internal tool.
+* Power interactive apps that search, filter, and inspect Clay table data.
+* Run QA checks against known Clay tables.
+* Sync selected table fields into another system.
+* Power alerts, scoring models, and warehouse jobs.
+## Query shape
+Table queries are structured. You select fields, apply filters, and page through results with a cursor.
+```bash theme={"theme":{"light":"github-light","dark":"github-dark"}}
+curl --request POST \
+--url https://api.clay.com/public/v0/tables/query \
+--header "Content-Type: application/json" \
+--header "clay-api-key: $CLAY_PUBLIC_API_KEY" \
+--data '{
+"query": {
+"tables": [
+{
+"id": "t_0te9i4tZEHwc9hihBXu"
+}
+],
+"select": [
+{
+"field": "Company Name",
+"as": "company_name"
+},
+{
+"field": "Domain",
+"as": "domain"
+}
+],
+"filter": {
+"field": "Domain",
+"op": "is_not_empty"
+},
+"field_mode": "names"
+},
+"limit": 20
+}'
+```
+`query` is required and holds the fields, filters, ordering, and joins. `limit` and `cursor` are top-level siblings of `query`: `limit` (max 100) caps the page size, and `cursor` pages through results.
+The response includes a `data` array and an optional `cursor` for pagination. When a `cursor` is returned, pass it back as the top-level `cursor` in your next request to fetch the following page. Cell values are returned with a status so your integration can distinguish successful, empty, pending, and errored cells.
+```json theme={"theme":{"light":"github-light","dark":"github-dark"}}
+{
+"data": [
+{
+"company_name": {
+"status": "success",
+"value": "Clay",
+"fields": null
+},
+"domain": {
+"status": "success",
+"value": "clay.com",
+"fields": null
+}
+}
+],
+"fields": {
+"company_name": {
+"id": "field_company_name",
+"name": "Company Name",
+"type": "text"
+},
+"domain": {
+"id": "field_domain",
+"name": "Domain",
+"type": "text"
+}
+},
+"cursor": "eyJwYWdlIjoyfQ"
+}
+```
+> [card] [Generated API reference](https://developers.clay.com/api-reference/tables/run-a-structured-query-across-one-or-more-tables.md)
+>
+> See the table-query schema and try-it UI.
+This documentation is built and hosted on [Mintlify](https://mintlify.com), a developer documentation platform.

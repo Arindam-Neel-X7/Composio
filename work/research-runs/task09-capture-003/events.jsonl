@@ -1,0 +1,53 @@
+{"event": "cache_reused", "app_id": 21, "url": "https://docs.slack.dev/apis/web-api/"}
+{"event": "cache_reused", "app_id": 21, "url": "https://docs.slack.dev/authentication/installing-with-oauth"}
+{"event": "cache_reused", "app_id": 21, "url": "https://docs.slack.dev/ai/slack-mcp-server"}
+{"event": "cache_reused", "app_id": 21, "url": "https://docs.slack.dev/reference/methods"}
+{"event": "cache_reused", "app_id": 21, "url": "https://slack.com/pricing"}
+{"event": "cache_reused", "app_id": 22, "url": "https://www.twilio.com/docs/usage/api"}
+{"event": "cache_reused", "app_id": 22, "url": "https://www.twilio.com/docs/iam/api-keys"}
+{"event": "cache_reused", "app_id": 22, "url": "https://www.twilio.com/docs/usage/tutorials/how-to-use-your-free-trial-account"}
+{"event": "cache_reused", "app_id": 22, "url": "https://www.twilio.com/en-us/pricing"}
+{"event": "cache_reused", "app_id": 22, "url": "https://github.com/twilio-labs/mcp"}
+{"event": "cache_reused", "app_id": 23, "url": "https://www.zoho.com/cliq/help/restapi/v2/"}
+{"event": "cache_reused", "app_id": 23, "url": "https://www.zoho.com/cliq/pricing.html"}
+{"event": "cache_reused", "app_id": 23, "url": "https://github.com/rohansen856/cliq-mcp"}
+{"event": "cache_reused", "app_id": 24, "url": "https://open.larksuite.com/document/home/index"}
+{"event": "cache_reused", "app_id": 24, "url": "https://open.larksuite.com/document/server-docs/authentication-management/access-token/tenant_access_token_internal"}
+{"event": "cache_reused", "app_id": 24, "url": "https://www.larksuite.com/en_us/plans"}
+{"event": "cache_reused", "app_id": 24, "url": "https://github.com/larksuite/lark-openapi-mcp"}
+{"event": "cache_reused", "app_id": 25, "url": "https://pumble.com/help/integrations/add-pumble-apps/api-keys/"}
+{"event": "cache_reused", "app_id": 25, "url": "https://pumble.com/help/integrations/add-pumble-apps/incoming-webhooks/"}
+{"event": "cache_reused", "app_id": 25, "url": "https://github.com/infralayers/pumble-mcp"}
+{"event": "cache_reused", "app_id": 26, "url": "https://discord.com/developers/docs/intro"}
+{"event": "cache_reused", "app_id": 26, "url": "https://discord.com/developers/docs/reference"}
+{"event": "cache_reused", "app_id": 26, "url": "https://discord.com/developers/docs/topics/oauth2"}
+{"event": "cache_reused", "app_id": 26, "url": "https://discord.com/developers/docs/resources/message"}
+{"event": "cache_reused", "app_id": 26, "url": "https://github.com/hanweg/mcp-discord"}
+{"event": "cache_reused", "app_id": 27, "url": "https://core.telegram.org/bots"}
+{"event": "cache_reused", "app_id": 27, "url": "https://core.telegram.org/bots/api"}
+{"event": "cache_reused", "app_id": 27, "url": "https://core.telegram.org/api"}
+{"event": "cache_reused", "app_id": 27, "url": "https://github.com/sparfenyuk/mcp-telegram"}
+{"event": "cache_reused", "app_id": 27, "url": "https://github.com/node2flow-th/telegram-bot-mcp-community"}
+{"event": "cache_reused", "app_id": 28, "url": "https://developers.facebook.com/docs/whatsapp/cloud-api/"}
+{"event": "cache_reused", "app_id": 28, "url": "https://developers.facebook.com/docs/whatsapp/cloud-api/get-started"}
+{"event": "cache_reused", "app_id": 28, "url": "https://developers.facebook.com/docs/whatsapp/pricing"}
+{"event": "cache_reused", "app_id": 28, "url": "https://business.whatsapp.com/products/platform-pricing"}
+{"event": "cache_reused", "app_id": 29, "url": "https://developer.aircall.io/api-references/"}
+{"event": "fetch_attempt", "app_id": 29, "attempt": 1, "source_url": "https://developer.aircall.io/tutorials/oauth/", "attempted_on": "2026-11-23", "status": "fetched", "http_status": 200, "resolved_url": "https://developer.aircall.io/docs/introduction", "error": null, "content_sha256": "50ea2754f9167184d6ec2e1ef6aae433f9cf81c146a9d953973244aeff6bc8bf"}
+{"event": "cache_reused", "app_id": 29, "url": "https://aircall.io/pricing/"}
+{"event": "cache_reused", "app_id": 29, "url": "https://developer.aircall.io/"}
+{"event": "cache_reused", "app_id": 30, "url": "https://developer.vonage.com/en/getting-started/concepts/authentication"}
+{"event": "cache_reused", "app_id": 30, "url": "https://developer.vonage.com/en/api"}
+{"event": "cache_reused", "app_id": 30, "url": "https://www.vonage.com/communications-apis/pricing/"}
+{"event": "cache_reused", "app_id": 30, "url": "https://github.com/Vonage-Community/vonage-mcp-server-api-bindings"}
+{"event": "fetch_attempt", "app_id": 24, "attempt": 1, "source_url": "https://github.com/larksuite/oapi-sdk-python", "attempted_on": "2026-11-23", "status": "timeout", "http_status": null, "resolved_url": null, "error": "Request timed out", "content_sha256": null}
+{"event": "fetch_attempt", "app_id": 24, "attempt": 2, "source_url": "https://github.com/larksuite/oapi-sdk-python", "attempted_on": "2026-11-23", "status": "fetched", "http_status": 200, "resolved_url": "https://github.com/larksuite/oapi-sdk-python", "error": null, "content_sha256": "da078b3ae2c10b1db5649feae6ccc897f3c0e252307604e97205e47c818dae8b"}
+{"event": "fetch_attempt", "app_id": 24, "attempt": 1, "source_url": "https://github.com/larksuite/node-sdk", "attempted_on": "2026-11-23", "status": "fetched", "http_status": 200, "resolved_url": "https://github.com/larksuite/node-sdk", "error": null, "content_sha256": "00a6b9377b4b6eb1c3a1731f018ca9a337567dd8789ab37670282775e47203a0"}
+{"event": "fetch_attempt", "app_id": 25, "attempt": 1, "source_url": "https://github.com/CAKE-com/pumble-node-sdk", "attempted_on": "2026-11-23", "status": "fetched", "http_status": 200, "resolved_url": "https://github.com/CAKE-com/pumble-node-sdk", "error": null, "content_sha256": "28fa04604bf12b8477e189890228d550c043ba796513a65e31db32f1dc2b1b6c"}
+{"event": "fetch_attempt", "app_id": 25, "attempt": 1, "source_url": "https://pumble.com/", "attempted_on": "2026-11-23", "status": "fetched", "http_status": 200, "resolved_url": "https://pumble.com/", "error": null, "content_sha256": "75c1bd9e6605801bd150dca46c6d02e3e4c2dca81bc384bc0f3fc2e2018f4f06"}
+{"event": "fetch_attempt", "app_id": 25, "attempt": 1, "source_url": "https://pumble.com/help/", "attempted_on": "2026-11-23", "status": "fetched", "http_status": 200, "resolved_url": "https://pumble.com/help/", "error": null, "content_sha256": "c1da590eae107372661734acfb28f241c76105fbbf7edf45ccf02df1d5d66e7a"}
+{"event": "fetch_attempt", "app_id": 28, "attempt": 1, "source_url": "https://developers.facebook.com/documentation/business-messaging/whatsapp/llms.txt", "attempted_on": "2026-11-23", "status": "fetched", "http_status": 200, "resolved_url": "https://developers.facebook.com/documentation/business-messaging/whatsapp/llms.txt", "error": null, "content_sha256": "28bee3a4de7240091df61591f8cac90cec3f153df3322bffd242a27fa559583b"}
+{"event": "fetch_attempt", "app_id": 28, "attempt": 1, "source_url": "https://developers.facebook.com/documentation/business-messaging/whatsapp/access-tokens", "attempted_on": "2026-11-23", "status": "fetched", "http_status": 200, "resolved_url": "https://developers.facebook.com/documentation/business-messaging/whatsapp/access-tokens", "error": null, "content_sha256": "1233fdb330c63ded083e8d0f335b4cb9c3951e9555c797a3db2b8ce821deaf22"}
+{"event": "fetch_attempt", "app_id": 29, "attempt": 1, "source_url": "https://developer.aircall.io/llms.txt", "attempted_on": "2026-11-23", "status": "fetched", "http_status": 200, "resolved_url": "https://developer.aircall.io/llms.txt", "error": null, "content_sha256": "8e4ddb90d3ee7db5e6c9cf62e10b1a7c78de287a1ac0b164a95009ffc47cb31f"}
+{"event": "fetch_attempt", "app_id": 30, "attempt": 1, "source_url": "https://github.com/Vonage/vonage-kiro-power", "attempted_on": "2026-11-23", "status": "fetched", "http_status": 200, "resolved_url": "https://github.com/Vonage/vonage-kiro-power", "error": null, "content_sha256": "c0b61c5e7c4c181c10e5e2e59e8db7f725e8152976779cf7ac1b6aa2e2dacfa7"}
+{"event": "validation", "structure_and_grounding": "passed", "backend": "Python jsonschema Draft202012Validator", "factual_truth": "requires independent review", "synthetic": false, "records": 10}

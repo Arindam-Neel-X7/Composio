@@ -1,0 +1,203 @@
+Connect OAuth reference | Stripe Documentation
+Skip to content
+Home
+Create account or Sign in
+The Stripe Docs logo
+Search/Ask AI
+Create accountSign in
+Get started
+Payments
+Revenue
+Risk
+Data
+Money management
+Stablecoins
+Embedded Finance
+Developer resources
+More
+APIs & SDKsHelp
+Connect OAuth reference
+This reference lists available public methods for our OAuth endpoints for Connect.
+Ask about this page
+Copy for LLM
+View as Markdown
+Set up agent
+Applicable connected accounts
+This content applies only to connected accounts with certain configurations.
+This content applies to connected accounts that can access the full Stripe Dashboard.
+The OAuth Connect flow allows you to customize the user’s experience by passing additional parameters to Stripe. Some common examples are explained below, and the rest of the reference lists every possible option.
+Note
+As a platform, remember that data you create for a Standard account (that is, charges, customers, invoices, and so on) will be visible on their Stripe account. This also means if they connect other platforms, those platforms will have access to that data too.
+Starting in June 2021, Platforms using OAuth with read_write scope won’t be able to connect to accounts that are controlled by another platform.
+Extensions won’t experience any changes to how OAuth behaves. Learn more about OAuth changes for Standard Platforms.
+Common examples
+Prefill fields
+Provide the best possible user experience for users who need to create a new Stripe account by prefilling the account form fields with information you already have, like the user’s email and name. Prefilling has no effect if your user already has a Stripe account. You can’t prefill certain fields, including terms of service acceptance and RISA acceptance in Japan.
+Dynamically set the redirect URI
+For security purposes, Stripe redirects a user only to a predefined URI. However, Connect allows you to define more than one redirect URI, which you can use to further customize the user’s experience. For example, you could redirect some of your users back to https://sub1.example.com and others to https://sub2.example.com.
+To dynamically set the redirect URI:
+In your platform settings, add each redirect URI.
+Add a redirect_uri parameter to your authorization request and set the value to one of your redirect URIs.
+https://connect.stripe.com/oauth/authorize?response_type=code&client_id=ca_FkyHCg7X8mlvCUdMDao4mMxagUfhIwXb&scope=read_write&redirect_uri=https://sub2.example.com
+If no redirect_uri is specified in the URL, then Stripe uses the first URI configured in your platform settings.
+Authorize the account
+GET https://connect.stripe.com/oauth/authorize
+Sends the user to Stripe to connect to your platform.
+Request
+ParameterDescription
+client_idThe unique identifier provided to your application, found in your application settings.
+response_typeThe only option at the moment is code.
+redirect_uriOptionalThe URL for the authorise response redirect. If provided, this must exactly match one of the comma-separated redirect_uri values in your application settings. To protect yourself from certain forms of man-in-the-middle attacks, the live mode redirect_uri must use a secure HTTPS connection. Defaults to the redirect_uri in your application settings if not provided.
+scopeOptionalread_write or read_only. The default is read_only, but platforms must explicitly set scope to read_write. Only applications registered as extensions can use read_only. If a platform requests read_only or omits scope, Stripe displays an error directing you to use read_write or contact Stripe Support. For read-only access to another account’s data, build a Stripe App, which replaces Connect extensions.
+stateOptionalAn arbitrary string value we’ll pass back to you, useful for CSRF protection.
+The following query string parameters are all optional—we use them to prefill details in the account form for new users. Some prefilled fields (for example, URL or product category) might be automatically hidden. Any parameters with invalid values are silently ignored.
+Some of these parameters apply only to Standard accounts (indicated).
+ParameterDescription
+stripe_user[email]RecommendedThe user’s email address. Must be a valid email format.
+stripe_user[url]RecommendedThe URL for the user’s business. This can be the user’s website, a profile page within your application, or another publicly available profile for the business, such as a LinkedIn or Facebook profile. It must be URL-encoded and include a scheme (http or https). If you pre-fill this field, include a description of the user’s products or services and their contact information in the linked page. If we don’t have enough information, we’ll have to reach out to the user directly before initiating payouts.
+stripe_user[country]Two-letter country code (for example, US or CA). Must be a country that Stripe currently supports.
+stripe_user[phone_number]The business phone number. Must be 10 digits only. Must also prefill stripe_user[country] with the corresponding country.
+stripe_user[business_name]The legal name of the business.
+stripe_user[business_type]The type of the business. The value must be sole_prop, corporation, non_profit, partnership, or llc.
+stripe_user[first_name]First name of the person filling out a Stripe application.
+stripe_user[last_name]Last name of the person filling out a Stripe application.
+stripe_user[dob_day] stripe_user[dob_month] stripe_user[dob_year]Day (0-31), month (1-12), and year (YYYY, greater than 1900) for the birth date of the person filling out a Stripe application. If you choose to pass these parameters, you must pass all three.
+stripe_user[street_address]Standard onlyStreet address of the business.
+stripe_user[city]Standard onlyAddress city of the business. To prevent ambiguity, also prefill stripe_user[country] with the corresponding country.
+stripe_user[state]Standard onlyAddress state of the business. Must be the two-letter state or province code (for example, NY for a US business or AB for a Canadian one). Must also pre-fill stripe_user[country] with the corresponding country.
+stripe_user[zip]Standard onlyAddress postal code of the business. Must be a string. To prevent ambiguity, also prefill stripe_user[country] with the corresponding country.
+stripe_user[physical_product]Standard onlyA string: true if the user sells a physical product, false otherwise.
+stripe_user[product_description]A description of what the business is accepting payments for.
+stripe_user[currency]Standard onlyThree-letter ISO code representing currency, in lowercase (for example, usd or cad). Must be a valid country and currency combination that Stripe supports. Must prefill stripe_user[country] with the corresponding country.
+stripe_user[first_name_kana]The Kana variation of the first name of the person filling out a Stripe application. Must prefill stripe_user[country] with JP, as this parameter is only relevant for Japan.
+stripe_user[first_name_kanji]The Kanji variation of the first name of the person filling out a Stripe application. Must prefill stripe_user[country] with JP, as this parameter is only relevant for Japan.
+stripe_user[last_name_kana]The Kana variation of the last name of the person filling out a Stripe application. Must prefill stripe_user[country] with JP, as this parameter is only relevant for Japan.
+stripe_user[last_name_kanji]The Kanji variation of the last name of the person filling out a Stripe application. Must prefill stripe_user[country] with JP, as this parameter is only relevant for Japan.
+stripe_user[gender]The gender of the person filling out a Stripe application. (International regulations require either male or female.) Must prefill stripe_user[country] with JP, as this parameter is only relevant for Japan.
+stripe_user[block_kana]Standard onlyThe Kana variation of the address block. This parameter is only relevant for Japan. You must prefill stripe_user[country] with JP and stripe_user[zip] with a valid Japanese postal code to use this parameter.
+stripe_user[block_kanji]Standard onlyThe Kanji variation of the address block. This parameter is only relevant for Japan. You must prefill stripe_user[country] with JP and stripe_user[zip] with a valid Japanese postal code to use this parameter.
+stripe_user[building_kana]Standard onlyThe Kana variation of the address building. This parameter is only relevant for Japan. You must prefill stripe_user[country] with JP and stripe_user[zip] with a valid Japanese postal code to use this parameter.
+stripe_user[building_kanji]Standard onlyThe Kanji variation of the address building. This parameter is only relevant for Japan. You must prefill stripe_user[country] with JP and stripe_user[zip] with a valid Japanese postal code to use this parameter.
+Response
+The user’s browser is redirected back to your configured redirect URI or the value you passed in the redirect_uri parameter. When successful, you receive the following query parameters:
+ParameterDescription
+codeAn authorization code you can use in the next call to get an access token for your user. This can only be used once and expires in 5 minutes.
+scoperead_write or read_only, depending what you passed on the initial GET request.
+stateThe value of the state parameter you provided on the initial GET request.
+Error Response
+In case of an error, the user’s browser won’t be redirected except in the case of access_denied. Instead, errors will be returned in a JSON dictionary with the following fields:
+ParameterDescription
+errorA unique error code per error type.
+error_descriptionA human readable description of the error.
+stateThe value of the state parameter you provided on the initial GET request.
+Error Codes
+ParameterDescription
+access_deniedUser denied authorization.
+invalid_scopeInvalid scope parameter provided.
+invalid_redirect_uriProvided redirect_uri parameter is an invalid URL or isn’t allowed by your application settings.
+invalid_requestMissing response_type parameter.
+unsupported_response_typeUnsupported response_type parameter. Currently the only supported response_type is code.
+Complete the connection and get the account ID
+POST https://connect.stripe.com/oauth/token
+Used both for turning an authorization_code into an account connection, and for getting a new access token using a refresh_token.
+Request
+Make this call with your secret API key or a restricted API key as a client_secret POST parameter:
+Command Line
+Select a language
+curl
+Ruby
+Python
+PHP
+Java
+Node.js
+Go
+.NET
+No results
+curl https://connect.stripe.com/oauth/token \
+-u sk_test_...: \
+-d "code"="ac_123456789" \
+-d "grant_type"="authorization_code"
+A restricted API key needs the Write permission for the Connect OAuth resource. Without this permission, the request fails with an invalid_client error.
+When converting an authorization code to an access token, you must use an API key that matches the mode—live or test—of the authorization code (which depends on whether the client_id used was production or development).
+When using a refresh token to request an access token, you can use either a test or live API key to obtain a test or live access token respectively. Any existing access token with the same scope and mode – live or test – is revoked.
+Note
+Per OAuth v2, this endpoint isn’t idempotent. Consuming an authorization code more than once revokes the account connection.
+ParameterDescription
+grant_typeauthorization_code when turning an authorization code into an access token, or refresh_token when using a refresh token to get a new access token.
+code or refresh_tokenThe value of the code or refresh_token, depending on the grant_type.
+scopeOptionalWhen requesting a new access token from a refresh token, any scope that has an equal or lesser scope as the refresh token. Has no effect when requesting an access token from an authorization code. Defaults to the scope of the refresh token.
+Response
+ParameterDescription
+scopeThe scope granted to the access token, depending on the scope of the authorization code and scope parameter.
+stripe_user_idThe unique ID of the account you’ve been granted access to, as a string.
+livemodeIndicates whether the platform’s access to perform updates on behalf of the connected account includes live mode access, or is limited to test mode actions. This matches the live mode of the application used to authorise the OAuth request.
+token_typeAlways has a value of bearer.
+access_tokenDeprecated Use the Stripe-Account header with your platform’s secret key (that can make requests on behalf of this Stripe account).
+stripe_publishable_keyDeprecated Use the Stripe-Account header with your platform’s publishable key (that can make requests on behalf of this Stripe account).
+refresh_tokenDeprecated Use this token to get a new access token with an equal or narrower scope, or with a different livemode value where applicable.
+Error Response
+ParameterDescription
+errorA unique error code per error type.
+error_descriptionA human readable description of the error.
+Error Codes
+ParameterDescription
+invalid_requestNo code, refresh_token, or grant_type parameter provided (where required).
+invalid_grantA variety of things can prompt this error:
+code doesn’t exist, is expired, has been used, or doesn’t belong to you
+refresh_token doesn’t exist or doesn’t belong to you
+API key mode (live or test key) doesn’t match the code or refresh_token mode
+unsupported_grant_typeUnsupported grant_type parameter specified. The only currently supported types are authorization_code and refresh_token.
+invalid_scopeInvalid scope parameter provided.
+unsupported_response_typeUnsupported response_type parameter. Currently the only supported response_type is code.
+API
+Dashboard
+Revoke the account’s access
+POST https://connect.stripe.com/oauth/deauthorize
+Used for revoking access to an account. After revocation, the account can’t be accessed by your platform in the Dashboard or through the API. The account can continue to access its own data and functionality through the account’s Dashboard.
+Note
+You can only revoke a Standard account’s access to your platform.
+Request
+Make this call with your secret API key or a restricted API key in the Authorization header. A restricted API key needs the Write permission for the Connect OAuth resource. Without this permission, the request fails with an invalid_client error.
+Command Line
+Select a language
+curl
+Ruby
+Python
+PHP
+Java
+Node.js
+Go
+.NET
+No results
+curl https://connect.stripe.com/oauth/deauthorize \
+-u sk_test_...: \
+-d client_id="ca_FkyHCg7X8mlvCUdMDao4mMxagUfhIwXb" \
+-d stripe_user_id={{CONNECTED_ACCOUNT_ID}}
+When revoking access to an account, you must use an API key that matches the mode (live or test) used to connect to the account. Use a live mode API key if a production client_id created the connection, or a test API key if a development client_id created it.
+ParameterDescription
+client_idThe client_id of the application that you’d like to disconnect the account from. The account must be connected to this application.
+stripe_user_idThe account you’d like to disconnect from.
+Response
+ParameterDescription
+stripe_user_idThe unique ID of the account you have revoked access to, as a string. This is the same as the stripe_user_id you passed in. If this is returned, the revocation is successful.
+Error Response
+ParameterDescription
+errorA unique error code per error type.
+error_descriptionA human readable description of the error.
+Error Codes
+ParameterDescription
+invalid_requestNo client_id or stripe_user_id parameter provided (where required).
+invalid_clientA variety of things can prompt this error:
+client_id doesn’t belong to you
+stripe_user_id doesn’t exist or isn’t connected to your application
+API key mode (live or test key) doesn’t match the client_id mode
+no_deauth_on_controlled_account the account can’t be disconnected and instead use the rejection API.
+Was this page helpful?
+YesNo
+Need help? Contact Support.
+Chat with Stripe developers on Discord.
+Check out our changelog.
+Questions? Contact Sales.
+LLM? Read llms.txt.
+Powered by Markdoc
+On this page

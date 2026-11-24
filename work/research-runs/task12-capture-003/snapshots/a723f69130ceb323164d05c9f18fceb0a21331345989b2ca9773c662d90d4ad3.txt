@@ -1,0 +1,161 @@
+Integrations | Platform | Apify Documentation
+Skip to main content
+Get started
+Get startedActorsStorageProxyAccountIntegrationsSecurity
+Academy
+API
+API reference
+Client for JavaScript
+Client for Python
+Client for Go
+Client for PHP
+Client for Java
+Client for .NET
+Client for Rust
+SDK
+SDK for JavaScript
+SDK for Python
+CLI
+Installation
+Quick start
+Command reference
+For AI agents
+Overview
+Create new integration
+Actor-to-Actor
+Programming
+Agents
+AI
+Data and storage
+Workflows and notifications
+On this page
+Integrations
+Copy for LLM
+Integrations let you combine Apify Actors with the rest of your stack - workflow automation platforms, data warehouses, AI agents, and the tools your team already uses. The sections below mirror the integrations sidebar; each links through to the full list.
+Actors
+Connect Apify Actors to other Actors and tasks to build multi-step workflows directly on the platform. Set up integration-ready Actors that take run output from an upstream Actor and push it into a downstream system.
+Actor-to-Actor
+Trigger other Actors or tasks from your Actor's runs.
+Integration-ready Actors
+Build Actors that act as integration targets.
+See all Actor integrations →
+Programming
+Drive the Apify platform programmatically with the REST API, react to platform events through webhooks, and trigger Actors from your GitHub activity.
+API
+Control the Apify platform programmatically from your code.
+Webhooks
+Trigger external events when an Actor run succeeds or fails.
+GitHub
+Trigger Apify runs from GitHub events.
+See all Programming integrations →
+AI
+Connect any MCP client to Apify through the Apify MCP server, use Actors in agents built on SDKs and frameworks such as OpenAI Agents, LangChain, and the Vercel AI SDK, and load the results into vector databases for retrieval.
+Apify MCP server
+Expose Apify Actors and storages to any MCP-compatible AI client.
+OpenAI Agents SDK
+Use Apify Actors as tools in agents built on the OpenAI Agents SDK.
+LangChain
+Wrap Apify Actors as LangChain tools for retrieval and agents.
+Vercel AI SDK
+Call Apify Actors from agents built on the Vercel AI SDK.
+Google ADK
+Add Apify Actors as tools in Google Agent Development Kit agents.
+Pinecone
+Embed and index scraped content in Pinecone for RAG.
+See all AI integrations →
+Agents
+Set up Apify in an AI agent such as Claude Code, Codex, or Cursor, with the Apify plugin or the MCP server and Agent Skills. To compare these options first, start at For AI agents.
+Claude
+Anthropic's chat assistant and its Claude Code coding agent.
+ChatGPT/Codex
+OpenAI's chat assistant and its Codex coding agent.
+Cursor
+AI code editor with a built-in coding agent.
+Antigravity
+Google's agentic development platform in the desktop app and CLI.
+GitHub Copilot
+GitHub's AI coding agent in the CLI and desktop app.
+VS Code
+Microsoft's code editor, with Copilot in agent mode.
+OpenCode
+Open-source coding agent that runs in your terminal.
+Kimi Code
+Moonshot AI's coding agent for the command line.
+Qoder/Qwen
+Alibaba's agentic coding platform and terminal agent.
+DeepSeek Harness
+DeepSeek's open-source agent harness for the terminal and web.
+Grok Build
+xAI's agentic coding tool that runs in your terminal.
+Grok Bot
+xAI's AI teammate that works from a persistent cloud computer.
+OpenClaw
+Open-source personal AI assistant you run yourself.
+Hermes Agent
+Nous Research's open-source, self-improving agent.
+See all agent integrations →
+Data and storage
+Send Apify Actor output to data warehouses, structured stores, CRMs, and shared drives where your team analyzes, models, and acts on it.
+Snowflake
+Stream Apify datasets straight into a Snowflake warehouse.
+Airtable
+Land Actor output as structured rows in Airtable bases.
+Google Drive
+Upload Actor datasets and exports to a shared Drive folder - a native Apify integration.
+HubSpot
+Enrich your HubSpot CRM with business contacts scraped from company websites.
+See all Data and storage integrations →
+Workflows and notifications
+Trigger Apify Actors from workflow automation platforms (n8n, Make, and Zapier), embed them as nodes in no-code agent builders, and route results into chat, email, and other team tools.
+n8n
+Run Apify Actors and route their data through n8n's node graph.
+Make
+Visual scenarios that connect Apify Actors with 1,500+ apps.
+Zapier
+Trigger Apify Actors from any of Zapier's 6,000+ apps.
+Gumloop
+Drag-and-drop agent builder with Apify Actors as nodes.
+See all Workflow and notification integrations →
+Create a new integration
+If you're building a service or platform and want your users to be able to connect it with Apify, create a new integration. The page walks through both routes - building an integration-ready Actor that other Apify users can plug into their workflows, or connecting your service to Apify externally via the API. If your team uses an AI coding agent, that page also covers the apify-integration-development skill, which guides the agent through the build.
+If your tool isn't listed above, you can also browse Apify Store for community-built integration Actors like MongoDB Import or MySQL Insert.
+Next steps
+Integrate Actors - the path through the API, webhooks, and workflow tools, in order.
+Schedules - run an Actor automatically so your integrations get fresh data.
+Storage - what a run produces and the formats you can export it in.
+Edit this page
+Actors
+Programming
+AI
+Agents
+Data and storage
+Workflows and notifications
+Create a new integration
+Next steps
+Reference
+API Reference
+SDK for JavaScript
+SDK for Python
+Client for JavaScript
+Client for Python
+CLI
+Glossary
+Open source
+Crawlee
+Fingerprint Suite
+impit
+MCP CLI
+Actor whitepaper
+proxy-chain
+Security
+Trust Center
+Community
+Discord
+X
+YouTube
+GitHub
+For AI
+llms.txt
+llms-full.txt
+OpenAPI (JSON)
+OpenAPI (YAML)

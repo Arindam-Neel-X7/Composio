@@ -1,0 +1,1916 @@
+[
+  {
+    "app_id": 11,
+    "claim_id": "11.api.breadth",
+    "change": "changed",
+    "reason": "Task 08 first-pass extraction (Support and Helpdesk, IDs 11-20, contract v1.1); fixed enum casing after rejected task08-first-pass-001; independent review pending"
+  },
+  {
+    "app_id": 11,
+    "claim_id": "11.api.group.collab_tasks_approvals",
+    "change": "added",
+    "reason": "Task 08 first-pass extraction (Support and Helpdesk, IDs 11-20, contract v1.1); fixed enum casing after rejected task08-first-pass-001; independent review pending"
+  },
+  {
+    "app_id": 11,
+    "claim_id": "11.api.group.rules_sla_config",
+    "change": "added",
+    "reason": "Task 08 first-pass extraction (Support and Helpdesk, IDs 11-20, contract v1.1); fixed enum casing after rejected task08-first-pass-001; independent review pending"
+  },
+  {
+    "app_id": 11,
+    "claim_id": "11.api.group.tickets_users_orgs",
+    "change": "added",
+    "reason": "Task 08 first-pass extraction (Support and Helpdesk, IDs 11-20, contract v1.1); fixed enum casing after rejected task08-first-pass-001; independent review pending"
+  },
+  {
+    "app_id": 11,
+    "claim_id": "11.api.protocol.rest",
+    "change": "added",
+    "reason": "Task 08 first-pass extraction (Support and Helpdesk, IDs 11-20, contract v1.1); fixed enum casing after rejected task08-first-pass-001; independent review pending"
+  },
+  {
+    "app_id": 11,
+    "claim_id": "11.api.public_docs",
+    "change": "added",
+    "reason": "Task 08 first-pass extraction (Support and Helpdesk, IDs 11-20, contract v1.1); fixed enum casing after rejected task08-first-pass-001; independent review pending"
+  },
+  {
+    "app_id": 11,
+    "claim_id": "11.api.public_documentation",
+    "change": "removed",
+    "reason": "Task 08 first-pass extraction (Support and Helpdesk, IDs 11-20, contract v1.1); fixed enum casing after rejected task08-first-pass-001; independent review pending"
+  },
+  {
+    "app_id": 11,
+    "claim_id": "11.auth.api_token_basic_deprecated",
+    "change": "added",
+    "reason": "Task 08 first-pass extraction (Support and Helpdesk, IDs 11-20, contract v1.1); fixed enum casing after rejected task08-first-pass-001; independent review pending"
+  },
+  {
+    "app_id": 11,
+    "claim_id": "11.auth.global_oauth2",
+    "change": "added",
+    "reason": "Task 08 first-pass extraction (Support and Helpdesk, IDs 11-20, contract v1.1); fixed enum casing after rejected task08-first-pass-001; independent review pending"
+  },
+  {
+    "app_id": 11,
+    "claim_id": "11.auth.oauth2",
+    "change": "added",
+    "reason": "Task 08 first-pass extraction (Support and Helpdesk, IDs 11-20, contract v1.1); fixed enum casing after rejected task08-first-pass-001; independent review pending"
+  },
+  {
+    "app_id": 11,
+    "claim_id": "11.buildability",
+    "change": "changed",
+    "reason": "Task 08 first-pass extraction (Support and Helpdesk, IDs 11-20, contract v1.1); fixed enum casing after rejected task08-first-pass-001; independent review pending"
+  },
+  {
+    "app_id": 11,
+    "claim_id": "11.identity",
+    "change": "changed",
+    "reason": "Task 08 first-pass extraction (Support and Helpdesk, IDs 11-20, contract v1.1); fixed enum casing after rejected task08-first-pass-001; independent review pending"
+  },
+  {
+    "app_id": 11,
+    "claim_id": "11.mcp",
+    "change": "changed",
+    "reason": "Task 08 first-pass extraction (Support and Helpdesk, IDs 11-20, contract v1.1); fixed enum casing after rejected task08-first-pass-001; independent review pending"
+  },
+  {
+    "app_id": 11,
+    "claim_id": "11.mcp.community_reminia",
+    "change": "added",
+    "reason": "Task 08 first-pass extraction (Support and Helpdesk, IDs 11-20, contract v1.1); fixed enum casing after rejected task08-first-pass-001; independent review pending"
+  },
+  {
+    "app_id": 11,
+    "claim_id": "11.mcp.community_reminia.operational",
+    "change": "added",
+    "reason": "Task 08 first-pass extraction (Support and Helpdesk, IDs 11-20, contract v1.1); fixed enum casing after rejected task08-first-pass-001; independent review pending"
+  },
+  {
+    "app_id": 11,
+    "claim_id": "11.production.admin_approval_required",
+    "change": "changed",
+    "reason": "Task 08 first-pass extraction (Support and Helpdesk, IDs 11-20, contract v1.1); fixed enum casing after rejected task08-first-pass-001; independent review pending"
+  },
+  {
+    "app_id": 11,
+    "claim_id": "11.production.contact_sales_required",
+    "change": "changed",
+    "reason": "Task 08 first-pass extraction (Support and Helpdesk, IDs 11-20, contract v1.1); fixed enum casing after rejected task08-first-pass-001; independent review pending"
+  },
+  {
+    "app_id": 11,
+    "claim_id": "11.production.free_access",
+    "change": "changed",
+    "reason": "Task 08 first-pass extraction (Support and Helpdesk, IDs 11-20, contract v1.1); fixed enum casing after rejected task08-first-pass-001; independent review pending"
+  },
+  {
+    "app_id": 11,
+    "claim_id": "11.production.paid_required",
+    "change": "changed",
+    "reason": "Task 08 first-pass extraction (Support and Helpdesk, IDs 11-20, contract v1.1); fixed enum casing after rejected task08-first-pass-001; independent review pending"
+  },
+  {
+    "app_id": 11,
+    "claim_id": "11.production.partner_approval_required",
+    "change": "changed",
+    "reason": "Task 08 first-pass extraction (Support and Helpdesk, IDs 11-20, contract v1.1); fixed enum casing after rejected task08-first-pass-001; independent review pending"
+  },
+  {
+    "app_id": 11,
+    "claim_id": "11.production.sandbox_access",
+    "change": "changed",
+    "reason": "Task 08 first-pass extraction (Support and Helpdesk, IDs 11-20, contract v1.1); fixed enum casing after rejected task08-first-pass-001; independent review pending"
+  },
+  {
+    "app_id": 11,
+    "claim_id": "11.production.self_serve",
+    "change": "changed",
+    "reason": "Task 08 first-pass extraction (Support and Helpdesk, IDs 11-20, contract v1.1); fixed enum casing after rejected task08-first-pass-001; independent review pending"
+  },
+  {
+    "app_id": 11,
+    "claim_id": "11.production.trial_access",
+    "change": "changed",
+    "reason": "Task 08 first-pass extraction (Support and Helpdesk, IDs 11-20, contract v1.1); fixed enum casing after rejected task08-first-pass-001; independent review pending"
+  },
+  {
+    "app_id": 11,
+    "claim_id": "11.production.vendor_approval_required",
+    "change": "changed",
+    "reason": "Task 08 first-pass extraction (Support and Helpdesk, IDs 11-20, contract v1.1); fixed enum casing after rejected task08-first-pass-001; independent review pending"
+  },
+  {
+    "app_id": 11,
+    "claim_id": "11.purpose",
+    "change": "changed",
+    "reason": "Task 08 first-pass extraction (Support and Helpdesk, IDs 11-20, contract v1.1); fixed enum casing after rejected task08-first-pass-001; independent review pending"
+  },
+  {
+    "app_id": 11,
+    "claim_id": "11.testing.admin_approval_required",
+    "change": "changed",
+    "reason": "Task 08 first-pass extraction (Support and Helpdesk, IDs 11-20, contract v1.1); fixed enum casing after rejected task08-first-pass-001; independent review pending"
+  },
+  {
+    "app_id": 11,
+    "claim_id": "11.testing.contact_sales_required",
+    "change": "changed",
+    "reason": "Task 08 first-pass extraction (Support and Helpdesk, IDs 11-20, contract v1.1); fixed enum casing after rejected task08-first-pass-001; independent review pending"
+  },
+  {
+    "app_id": 11,
+    "claim_id": "11.testing.free_access",
+    "change": "changed",
+    "reason": "Task 08 first-pass extraction (Support and Helpdesk, IDs 11-20, contract v1.1); fixed enum casing after rejected task08-first-pass-001; independent review pending"
+  },
+  {
+    "app_id": 11,
+    "claim_id": "11.testing.paid_required",
+    "change": "changed",
+    "reason": "Task 08 first-pass extraction (Support and Helpdesk, IDs 11-20, contract v1.1); fixed enum casing after rejected task08-first-pass-001; independent review pending"
+  },
+  {
+    "app_id": 11,
+    "claim_id": "11.testing.partner_approval_required",
+    "change": "changed",
+    "reason": "Task 08 first-pass extraction (Support and Helpdesk, IDs 11-20, contract v1.1); fixed enum casing after rejected task08-first-pass-001; independent review pending"
+  },
+  {
+    "app_id": 11,
+    "claim_id": "11.testing.sandbox_access",
+    "change": "changed",
+    "reason": "Task 08 first-pass extraction (Support and Helpdesk, IDs 11-20, contract v1.1); fixed enum casing after rejected task08-first-pass-001; independent review pending"
+  },
+  {
+    "app_id": 11,
+    "claim_id": "11.testing.self_serve",
+    "change": "changed",
+    "reason": "Task 08 first-pass extraction (Support and Helpdesk, IDs 11-20, contract v1.1); fixed enum casing after rejected task08-first-pass-001; independent review pending"
+  },
+  {
+    "app_id": 11,
+    "claim_id": "11.testing.trial_access",
+    "change": "changed",
+    "reason": "Task 08 first-pass extraction (Support and Helpdesk, IDs 11-20, contract v1.1); fixed enum casing after rejected task08-first-pass-001; independent review pending"
+  },
+  {
+    "app_id": 11,
+    "claim_id": "11.testing.vendor_approval_required",
+    "change": "changed",
+    "reason": "Task 08 first-pass extraction (Support and Helpdesk, IDs 11-20, contract v1.1); fixed enum casing after rejected task08-first-pass-001; independent review pending"
+  },
+  {
+    "app_id": 12,
+    "claim_id": "12.api.breadth",
+    "change": "changed",
+    "reason": "Task 08 first-pass extraction (Support and Helpdesk, IDs 11-20, contract v1.1); fixed enum casing after rejected task08-first-pass-001; independent review pending"
+  },
+  {
+    "app_id": 12,
+    "claim_id": "12.api.group.contacts_helpcenter_reporting",
+    "change": "added",
+    "reason": "Task 08 first-pass extraction (Support and Helpdesk, IDs 11-20, contract v1.1); fixed enum casing after rejected task08-first-pass-001; independent review pending"
+  },
+  {
+    "app_id": 12,
+    "claim_id": "12.api.group.messaging_inbox_tickets",
+    "change": "added",
+    "reason": "Task 08 first-pass extraction (Support and Helpdesk, IDs 11-20, contract v1.1); fixed enum casing after rejected task08-first-pass-001; independent review pending"
+  },
+  {
+    "app_id": 12,
+    "claim_id": "12.api.protocol.rest",
+    "change": "added",
+    "reason": "Task 08 first-pass extraction (Support and Helpdesk, IDs 11-20, contract v1.1); fixed enum casing after rejected task08-first-pass-001; independent review pending"
+  },
+  {
+    "app_id": 12,
+    "claim_id": "12.api.public_docs",
+    "change": "added",
+    "reason": "Task 08 first-pass extraction (Support and Helpdesk, IDs 11-20, contract v1.1); fixed enum casing after rejected task08-first-pass-001; independent review pending"
+  },
+  {
+    "app_id": 12,
+    "claim_id": "12.api.public_documentation",
+    "change": "removed",
+    "reason": "Task 08 first-pass extraction (Support and Helpdesk, IDs 11-20, contract v1.1); fixed enum casing after rejected task08-first-pass-001; independent review pending"
+  },
+  {
+    "app_id": 12,
+    "claim_id": "12.auth.access_token",
+    "change": "added",
+    "reason": "Task 08 first-pass extraction (Support and Helpdesk, IDs 11-20, contract v1.1); fixed enum casing after rejected task08-first-pass-001; independent review pending"
+  },
+  {
+    "app_id": 12,
+    "claim_id": "12.auth.oauth2",
+    "change": "added",
+    "reason": "Task 08 first-pass extraction (Support and Helpdesk, IDs 11-20, contract v1.1); fixed enum casing after rejected task08-first-pass-001; independent review pending"
+  },
+  {
+    "app_id": 12,
+    "claim_id": "12.buildability",
+    "change": "changed",
+    "reason": "Task 08 first-pass extraction (Support and Helpdesk, IDs 11-20, contract v1.1); fixed enum casing after rejected task08-first-pass-001; independent review pending"
+  },
+  {
+    "app_id": 12,
+    "claim_id": "12.identity",
+    "change": "changed",
+    "reason": "Task 08 first-pass extraction (Support and Helpdesk, IDs 11-20, contract v1.1); fixed enum casing after rejected task08-first-pass-001; independent review pending"
+  },
+  {
+    "app_id": 12,
+    "claim_id": "12.mcp",
+    "change": "changed",
+    "reason": "Task 08 first-pass extraction (Support and Helpdesk, IDs 11-20, contract v1.1); fixed enum casing after rejected task08-first-pass-001; independent review pending"
+  },
+  {
+    "app_id": 12,
+    "claim_id": "12.mcp.hosted_official",
+    "change": "added",
+    "reason": "Task 08 first-pass extraction (Support and Helpdesk, IDs 11-20, contract v1.1); fixed enum casing after rejected task08-first-pass-001; independent review pending"
+  },
+  {
+    "app_id": 12,
+    "claim_id": "12.mcp.hosted_official.operational",
+    "change": "added",
+    "reason": "Task 08 first-pass extraction (Support and Helpdesk, IDs 11-20, contract v1.1); fixed enum casing after rejected task08-first-pass-001; independent review pending"
+  },
+  {
+    "app_id": 12,
+    "claim_id": "12.production.admin_approval_required",
+    "change": "changed",
+    "reason": "Task 08 first-pass extraction (Support and Helpdesk, IDs 11-20, contract v1.1); fixed enum casing after rejected task08-first-pass-001; independent review pending"
+  },
+  {
+    "app_id": 12,
+    "claim_id": "12.production.contact_sales_required",
+    "change": "changed",
+    "reason": "Task 08 first-pass extraction (Support and Helpdesk, IDs 11-20, contract v1.1); fixed enum casing after rejected task08-first-pass-001; independent review pending"
+  },
+  {
+    "app_id": 12,
+    "claim_id": "12.production.free_access",
+    "change": "changed",
+    "reason": "Task 08 first-pass extraction (Support and Helpdesk, IDs 11-20, contract v1.1); fixed enum casing after rejected task08-first-pass-001; independent review pending"
+  },
+  {
+    "app_id": 12,
+    "claim_id": "12.production.paid_required",
+    "change": "changed",
+    "reason": "Task 08 first-pass extraction (Support and Helpdesk, IDs 11-20, contract v1.1); fixed enum casing after rejected task08-first-pass-001; independent review pending"
+  },
+  {
+    "app_id": 12,
+    "claim_id": "12.production.partner_approval_required",
+    "change": "changed",
+    "reason": "Task 08 first-pass extraction (Support and Helpdesk, IDs 11-20, contract v1.1); fixed enum casing after rejected task08-first-pass-001; independent review pending"
+  },
+  {
+    "app_id": 12,
+    "claim_id": "12.production.sandbox_access",
+    "change": "changed",
+    "reason": "Task 08 first-pass extraction (Support and Helpdesk, IDs 11-20, contract v1.1); fixed enum casing after rejected task08-first-pass-001; independent review pending"
+  },
+  {
+    "app_id": 12,
+    "claim_id": "12.production.self_serve",
+    "change": "changed",
+    "reason": "Task 08 first-pass extraction (Support and Helpdesk, IDs 11-20, contract v1.1); fixed enum casing after rejected task08-first-pass-001; independent review pending"
+  },
+  {
+    "app_id": 12,
+    "claim_id": "12.production.trial_access",
+    "change": "changed",
+    "reason": "Task 08 first-pass extraction (Support and Helpdesk, IDs 11-20, contract v1.1); fixed enum casing after rejected task08-first-pass-001; independent review pending"
+  },
+  {
+    "app_id": 12,
+    "claim_id": "12.production.vendor_approval_required",
+    "change": "changed",
+    "reason": "Task 08 first-pass extraction (Support and Helpdesk, IDs 11-20, contract v1.1); fixed enum casing after rejected task08-first-pass-001; independent review pending"
+  },
+  {
+    "app_id": 12,
+    "claim_id": "12.purpose",
+    "change": "changed",
+    "reason": "Task 08 first-pass extraction (Support and Helpdesk, IDs 11-20, contract v1.1); fixed enum casing after rejected task08-first-pass-001; independent review pending"
+  },
+  {
+    "app_id": 12,
+    "claim_id": "12.testing.admin_approval_required",
+    "change": "changed",
+    "reason": "Task 08 first-pass extraction (Support and Helpdesk, IDs 11-20, contract v1.1); fixed enum casing after rejected task08-first-pass-001; independent review pending"
+  },
+  {
+    "app_id": 12,
+    "claim_id": "12.testing.contact_sales_required",
+    "change": "changed",
+    "reason": "Task 08 first-pass extraction (Support and Helpdesk, IDs 11-20, contract v1.1); fixed enum casing after rejected task08-first-pass-001; independent review pending"
+  },
+  {
+    "app_id": 12,
+    "claim_id": "12.testing.free_access",
+    "change": "changed",
+    "reason": "Task 08 first-pass extraction (Support and Helpdesk, IDs 11-20, contract v1.1); fixed enum casing after rejected task08-first-pass-001; independent review pending"
+  },
+  {
+    "app_id": 12,
+    "claim_id": "12.testing.paid_required",
+    "change": "changed",
+    "reason": "Task 08 first-pass extraction (Support and Helpdesk, IDs 11-20, contract v1.1); fixed enum casing after rejected task08-first-pass-001; independent review pending"
+  },
+  {
+    "app_id": 12,
+    "claim_id": "12.testing.partner_approval_required",
+    "change": "changed",
+    "reason": "Task 08 first-pass extraction (Support and Helpdesk, IDs 11-20, contract v1.1); fixed enum casing after rejected task08-first-pass-001; independent review pending"
+  },
+  {
+    "app_id": 12,
+    "claim_id": "12.testing.sandbox_access",
+    "change": "changed",
+    "reason": "Task 08 first-pass extraction (Support and Helpdesk, IDs 11-20, contract v1.1); fixed enum casing after rejected task08-first-pass-001; independent review pending"
+  },
+  {
+    "app_id": 12,
+    "claim_id": "12.testing.self_serve",
+    "change": "changed",
+    "reason": "Task 08 first-pass extraction (Support and Helpdesk, IDs 11-20, contract v1.1); fixed enum casing after rejected task08-first-pass-001; independent review pending"
+  },
+  {
+    "app_id": 12,
+    "claim_id": "12.testing.trial_access",
+    "change": "changed",
+    "reason": "Task 08 first-pass extraction (Support and Helpdesk, IDs 11-20, contract v1.1); fixed enum casing after rejected task08-first-pass-001; independent review pending"
+  },
+  {
+    "app_id": 12,
+    "claim_id": "12.testing.vendor_approval_required",
+    "change": "changed",
+    "reason": "Task 08 first-pass extraction (Support and Helpdesk, IDs 11-20, contract v1.1); fixed enum casing after rejected task08-first-pass-001; independent review pending"
+  },
+  {
+    "app_id": 13,
+    "claim_id": "13.api.breadth",
+    "change": "changed",
+    "reason": "Task 08 first-pass extraction (Support and Helpdesk, IDs 11-20, contract v1.1); fixed enum casing after rejected task08-first-pass-001; independent review pending"
+  },
+  {
+    "app_id": 13,
+    "claim_id": "13.api.group.contacts_core",
+    "change": "added",
+    "reason": "Task 08 first-pass extraction (Support and Helpdesk, IDs 11-20, contract v1.1); fixed enum casing after rejected task08-first-pass-001; independent review pending"
+  },
+  {
+    "app_id": 13,
+    "claim_id": "13.api.group.tickets_forms_fields",
+    "change": "added",
+    "reason": "Task 08 first-pass extraction (Support and Helpdesk, IDs 11-20, contract v1.1); fixed enum casing after rejected task08-first-pass-001; independent review pending"
+  },
+  {
+    "app_id": 13,
+    "claim_id": "13.api.protocol.rest",
+    "change": "added",
+    "reason": "Task 08 first-pass extraction (Support and Helpdesk, IDs 11-20, contract v1.1); fixed enum casing after rejected task08-first-pass-001; independent review pending"
+  },
+  {
+    "app_id": 13,
+    "claim_id": "13.api.public_docs",
+    "change": "added",
+    "reason": "Task 08 first-pass extraction (Support and Helpdesk, IDs 11-20, contract v1.1); fixed enum casing after rejected task08-first-pass-001; independent review pending"
+  },
+  {
+    "app_id": 13,
+    "claim_id": "13.api.public_documentation",
+    "change": "removed",
+    "reason": "Task 08 first-pass extraction (Support and Helpdesk, IDs 11-20, contract v1.1); fixed enum casing after rejected task08-first-pass-001; independent review pending"
+  },
+  {
+    "app_id": 13,
+    "claim_id": "13.auth.api_key_basic",
+    "change": "added",
+    "reason": "Task 08 first-pass extraction (Support and Helpdesk, IDs 11-20, contract v1.1); fixed enum casing after rejected task08-first-pass-001; independent review pending"
+  },
+  {
+    "app_id": 13,
+    "claim_id": "13.auth.mcp_api_key",
+    "change": "added",
+    "reason": "Task 08 first-pass extraction (Support and Helpdesk, IDs 11-20, contract v1.1); fixed enum casing after rejected task08-first-pass-001; independent review pending"
+  },
+  {
+    "app_id": 13,
+    "claim_id": "13.auth.oauth2_fdk",
+    "change": "added",
+    "reason": "Task 08 first-pass extraction (Support and Helpdesk, IDs 11-20, contract v1.1); fixed enum casing after rejected task08-first-pass-001; independent review pending"
+  },
+  {
+    "app_id": 13,
+    "claim_id": "13.buildability",
+    "change": "changed",
+    "reason": "Task 08 first-pass extraction (Support and Helpdesk, IDs 11-20, contract v1.1); fixed enum casing after rejected task08-first-pass-001; independent review pending"
+  },
+  {
+    "app_id": 13,
+    "claim_id": "13.identity",
+    "change": "changed",
+    "reason": "Task 08 first-pass extraction (Support and Helpdesk, IDs 11-20, contract v1.1); fixed enum casing after rejected task08-first-pass-001; independent review pending"
+  },
+  {
+    "app_id": 13,
+    "claim_id": "13.mcp",
+    "change": "changed",
+    "reason": "Task 08 first-pass extraction (Support and Helpdesk, IDs 11-20, contract v1.1); fixed enum casing after rejected task08-first-pass-001; independent review pending"
+  },
+  {
+    "app_id": 13,
+    "claim_id": "13.mcp.hosted_official",
+    "change": "added",
+    "reason": "Task 08 first-pass extraction (Support and Helpdesk, IDs 11-20, contract v1.1); fixed enum casing after rejected task08-first-pass-001; independent review pending"
+  },
+  {
+    "app_id": 13,
+    "claim_id": "13.mcp.hosted_official.operational",
+    "change": "added",
+    "reason": "Task 08 first-pass extraction (Support and Helpdesk, IDs 11-20, contract v1.1); fixed enum casing after rejected task08-first-pass-001; independent review pending"
+  },
+  {
+    "app_id": 13,
+    "claim_id": "13.production.admin_approval_required",
+    "change": "changed",
+    "reason": "Task 08 first-pass extraction (Support and Helpdesk, IDs 11-20, contract v1.1); fixed enum casing after rejected task08-first-pass-001; independent review pending"
+  },
+  {
+    "app_id": 13,
+    "claim_id": "13.production.contact_sales_required",
+    "change": "changed",
+    "reason": "Task 08 first-pass extraction (Support and Helpdesk, IDs 11-20, contract v1.1); fixed enum casing after rejected task08-first-pass-001; independent review pending"
+  },
+  {
+    "app_id": 13,
+    "claim_id": "13.production.free_access",
+    "change": "changed",
+    "reason": "Task 08 first-pass extraction (Support and Helpdesk, IDs 11-20, contract v1.1); fixed enum casing after rejected task08-first-pass-001; independent review pending"
+  },
+  {
+    "app_id": 13,
+    "claim_id": "13.production.paid_required",
+    "change": "changed",
+    "reason": "Task 08 first-pass extraction (Support and Helpdesk, IDs 11-20, contract v1.1); fixed enum casing after rejected task08-first-pass-001; independent review pending"
+  },
+  {
+    "app_id": 13,
+    "claim_id": "13.production.partner_approval_required",
+    "change": "changed",
+    "reason": "Task 08 first-pass extraction (Support and Helpdesk, IDs 11-20, contract v1.1); fixed enum casing after rejected task08-first-pass-001; independent review pending"
+  },
+  {
+    "app_id": 13,
+    "claim_id": "13.production.sandbox_access",
+    "change": "changed",
+    "reason": "Task 08 first-pass extraction (Support and Helpdesk, IDs 11-20, contract v1.1); fixed enum casing after rejected task08-first-pass-001; independent review pending"
+  },
+  {
+    "app_id": 13,
+    "claim_id": "13.production.self_serve",
+    "change": "changed",
+    "reason": "Task 08 first-pass extraction (Support and Helpdesk, IDs 11-20, contract v1.1); fixed enum casing after rejected task08-first-pass-001; independent review pending"
+  },
+  {
+    "app_id": 13,
+    "claim_id": "13.production.trial_access",
+    "change": "changed",
+    "reason": "Task 08 first-pass extraction (Support and Helpdesk, IDs 11-20, contract v1.1); fixed enum casing after rejected task08-first-pass-001; independent review pending"
+  },
+  {
+    "app_id": 13,
+    "claim_id": "13.production.vendor_approval_required",
+    "change": "changed",
+    "reason": "Task 08 first-pass extraction (Support and Helpdesk, IDs 11-20, contract v1.1); fixed enum casing after rejected task08-first-pass-001; independent review pending"
+  },
+  {
+    "app_id": 13,
+    "claim_id": "13.purpose",
+    "change": "changed",
+    "reason": "Task 08 first-pass extraction (Support and Helpdesk, IDs 11-20, contract v1.1); fixed enum casing after rejected task08-first-pass-001; independent review pending"
+  },
+  {
+    "app_id": 13,
+    "claim_id": "13.testing.admin_approval_required",
+    "change": "changed",
+    "reason": "Task 08 first-pass extraction (Support and Helpdesk, IDs 11-20, contract v1.1); fixed enum casing after rejected task08-first-pass-001; independent review pending"
+  },
+  {
+    "app_id": 13,
+    "claim_id": "13.testing.contact_sales_required",
+    "change": "changed",
+    "reason": "Task 08 first-pass extraction (Support and Helpdesk, IDs 11-20, contract v1.1); fixed enum casing after rejected task08-first-pass-001; independent review pending"
+  },
+  {
+    "app_id": 13,
+    "claim_id": "13.testing.free_access",
+    "change": "changed",
+    "reason": "Task 08 first-pass extraction (Support and Helpdesk, IDs 11-20, contract v1.1); fixed enum casing after rejected task08-first-pass-001; independent review pending"
+  },
+  {
+    "app_id": 13,
+    "claim_id": "13.testing.paid_required",
+    "change": "changed",
+    "reason": "Task 08 first-pass extraction (Support and Helpdesk, IDs 11-20, contract v1.1); fixed enum casing after rejected task08-first-pass-001; independent review pending"
+  },
+  {
+    "app_id": 13,
+    "claim_id": "13.testing.partner_approval_required",
+    "change": "changed",
+    "reason": "Task 08 first-pass extraction (Support and Helpdesk, IDs 11-20, contract v1.1); fixed enum casing after rejected task08-first-pass-001; independent review pending"
+  },
+  {
+    "app_id": 13,
+    "claim_id": "13.testing.sandbox_access",
+    "change": "changed",
+    "reason": "Task 08 first-pass extraction (Support and Helpdesk, IDs 11-20, contract v1.1); fixed enum casing after rejected task08-first-pass-001; independent review pending"
+  },
+  {
+    "app_id": 13,
+    "claim_id": "13.testing.self_serve",
+    "change": "changed",
+    "reason": "Task 08 first-pass extraction (Support and Helpdesk, IDs 11-20, contract v1.1); fixed enum casing after rejected task08-first-pass-001; independent review pending"
+  },
+  {
+    "app_id": 13,
+    "claim_id": "13.testing.trial_access",
+    "change": "changed",
+    "reason": "Task 08 first-pass extraction (Support and Helpdesk, IDs 11-20, contract v1.1); fixed enum casing after rejected task08-first-pass-001; independent review pending"
+  },
+  {
+    "app_id": 13,
+    "claim_id": "13.testing.vendor_approval_required",
+    "change": "changed",
+    "reason": "Task 08 first-pass extraction (Support and Helpdesk, IDs 11-20, contract v1.1); fixed enum casing after rejected task08-first-pass-001; independent review pending"
+  },
+  {
+    "app_id": 14,
+    "claim_id": "14.api.breadth",
+    "change": "changed",
+    "reason": "Task 08 first-pass extraction (Support and Helpdesk, IDs 11-20, contract v1.1); fixed enum casing after rejected task08-first-pass-001; independent review pending"
+  },
+  {
+    "app_id": 14,
+    "claim_id": "14.api.group.accounts_analytics_channels",
+    "change": "added",
+    "reason": "Task 08 first-pass extraction (Support and Helpdesk, IDs 11-20, contract v1.1); fixed enum casing after rejected task08-first-pass-001; independent review pending"
+  },
+  {
+    "app_id": 14,
+    "claim_id": "14.api.group.contacts_conversations_kb",
+    "change": "added",
+    "reason": "Task 08 first-pass extraction (Support and Helpdesk, IDs 11-20, contract v1.1); fixed enum casing after rejected task08-first-pass-001; independent review pending"
+  },
+  {
+    "app_id": 14,
+    "claim_id": "14.api.protocol.rest",
+    "change": "added",
+    "reason": "Task 08 first-pass extraction (Support and Helpdesk, IDs 11-20, contract v1.1); fixed enum casing after rejected task08-first-pass-001; independent review pending"
+  },
+  {
+    "app_id": 14,
+    "claim_id": "14.api.public_docs",
+    "change": "added",
+    "reason": "Task 08 first-pass extraction (Support and Helpdesk, IDs 11-20, contract v1.1); fixed enum casing after rejected task08-first-pass-001; independent review pending"
+  },
+  {
+    "app_id": 14,
+    "claim_id": "14.api.public_documentation",
+    "change": "removed",
+    "reason": "Task 08 first-pass extraction (Support and Helpdesk, IDs 11-20, contract v1.1); fixed enum casing after rejected task08-first-pass-001; independent review pending"
+  },
+  {
+    "app_id": 14,
+    "claim_id": "14.auth.api_token",
+    "change": "added",
+    "reason": "Task 08 first-pass extraction (Support and Helpdesk, IDs 11-20, contract v1.1); fixed enum casing after rejected task08-first-pass-001; independent review pending"
+  },
+  {
+    "app_id": 14,
+    "claim_id": "14.auth.oauth2",
+    "change": "added",
+    "reason": "Task 08 first-pass extraction (Support and Helpdesk, IDs 11-20, contract v1.1); fixed enum casing after rejected task08-first-pass-001; independent review pending"
+  },
+  {
+    "app_id": 14,
+    "claim_id": "14.buildability",
+    "change": "changed",
+    "reason": "Task 08 first-pass extraction (Support and Helpdesk, IDs 11-20, contract v1.1); fixed enum casing after rejected task08-first-pass-001; independent review pending"
+  },
+  {
+    "app_id": 14,
+    "claim_id": "14.identity",
+    "change": "changed",
+    "reason": "Task 08 first-pass extraction (Support and Helpdesk, IDs 11-20, contract v1.1); fixed enum casing after rejected task08-first-pass-001; independent review pending"
+  },
+  {
+    "app_id": 14,
+    "claim_id": "14.mcp",
+    "change": "changed",
+    "reason": "Task 08 first-pass extraction (Support and Helpdesk, IDs 11-20, contract v1.1); fixed enum casing after rejected task08-first-pass-001; independent review pending"
+  },
+  {
+    "app_id": 14,
+    "claim_id": "14.mcp.admin_hosted_official",
+    "change": "added",
+    "reason": "Task 08 first-pass extraction (Support and Helpdesk, IDs 11-20, contract v1.1); fixed enum casing after rejected task08-first-pass-001; independent review pending"
+  },
+  {
+    "app_id": 14,
+    "claim_id": "14.mcp.admin_hosted_official.operational",
+    "change": "added",
+    "reason": "Task 08 first-pass extraction (Support and Helpdesk, IDs 11-20, contract v1.1); fixed enum casing after rejected task08-first-pass-001; independent review pending"
+  },
+  {
+    "app_id": 14,
+    "claim_id": "14.mcp.hosted_official",
+    "change": "added",
+    "reason": "Task 08 first-pass extraction (Support and Helpdesk, IDs 11-20, contract v1.1); fixed enum casing after rejected task08-first-pass-001; independent review pending"
+  },
+  {
+    "app_id": 14,
+    "claim_id": "14.mcp.hosted_official.operational",
+    "change": "added",
+    "reason": "Task 08 first-pass extraction (Support and Helpdesk, IDs 11-20, contract v1.1); fixed enum casing after rejected task08-first-pass-001; independent review pending"
+  },
+  {
+    "app_id": 14,
+    "claim_id": "14.production.admin_approval_required",
+    "change": "changed",
+    "reason": "Task 08 first-pass extraction (Support and Helpdesk, IDs 11-20, contract v1.1); fixed enum casing after rejected task08-first-pass-001; independent review pending"
+  },
+  {
+    "app_id": 14,
+    "claim_id": "14.production.contact_sales_required",
+    "change": "changed",
+    "reason": "Task 08 first-pass extraction (Support and Helpdesk, IDs 11-20, contract v1.1); fixed enum casing after rejected task08-first-pass-001; independent review pending"
+  },
+  {
+    "app_id": 14,
+    "claim_id": "14.production.free_access",
+    "change": "changed",
+    "reason": "Task 08 first-pass extraction (Support and Helpdesk, IDs 11-20, contract v1.1); fixed enum casing after rejected task08-first-pass-001; independent review pending"
+  },
+  {
+    "app_id": 14,
+    "claim_id": "14.production.paid_required",
+    "change": "changed",
+    "reason": "Task 08 first-pass extraction (Support and Helpdesk, IDs 11-20, contract v1.1); fixed enum casing after rejected task08-first-pass-001; independent review pending"
+  },
+  {
+    "app_id": 14,
+    "claim_id": "14.production.partner_approval_required",
+    "change": "changed",
+    "reason": "Task 08 first-pass extraction (Support and Helpdesk, IDs 11-20, contract v1.1); fixed enum casing after rejected task08-first-pass-001; independent review pending"
+  },
+  {
+    "app_id": 14,
+    "claim_id": "14.production.sandbox_access",
+    "change": "changed",
+    "reason": "Task 08 first-pass extraction (Support and Helpdesk, IDs 11-20, contract v1.1); fixed enum casing after rejected task08-first-pass-001; independent review pending"
+  },
+  {
+    "app_id": 14,
+    "claim_id": "14.production.self_serve",
+    "change": "changed",
+    "reason": "Task 08 first-pass extraction (Support and Helpdesk, IDs 11-20, contract v1.1); fixed enum casing after rejected task08-first-pass-001; independent review pending"
+  },
+  {
+    "app_id": 14,
+    "claim_id": "14.production.trial_access",
+    "change": "changed",
+    "reason": "Task 08 first-pass extraction (Support and Helpdesk, IDs 11-20, contract v1.1); fixed enum casing after rejected task08-first-pass-001; independent review pending"
+  },
+  {
+    "app_id": 14,
+    "claim_id": "14.production.vendor_approval_required",
+    "change": "changed",
+    "reason": "Task 08 first-pass extraction (Support and Helpdesk, IDs 11-20, contract v1.1); fixed enum casing after rejected task08-first-pass-001; independent review pending"
+  },
+  {
+    "app_id": 14,
+    "claim_id": "14.purpose",
+    "change": "changed",
+    "reason": "Task 08 first-pass extraction (Support and Helpdesk, IDs 11-20, contract v1.1); fixed enum casing after rejected task08-first-pass-001; independent review pending"
+  },
+  {
+    "app_id": 14,
+    "claim_id": "14.testing.admin_approval_required",
+    "change": "changed",
+    "reason": "Task 08 first-pass extraction (Support and Helpdesk, IDs 11-20, contract v1.1); fixed enum casing after rejected task08-first-pass-001; independent review pending"
+  },
+  {
+    "app_id": 14,
+    "claim_id": "14.testing.contact_sales_required",
+    "change": "changed",
+    "reason": "Task 08 first-pass extraction (Support and Helpdesk, IDs 11-20, contract v1.1); fixed enum casing after rejected task08-first-pass-001; independent review pending"
+  },
+  {
+    "app_id": 14,
+    "claim_id": "14.testing.free_access",
+    "change": "changed",
+    "reason": "Task 08 first-pass extraction (Support and Helpdesk, IDs 11-20, contract v1.1); fixed enum casing after rejected task08-first-pass-001; independent review pending"
+  },
+  {
+    "app_id": 14,
+    "claim_id": "14.testing.paid_required",
+    "change": "changed",
+    "reason": "Task 08 first-pass extraction (Support and Helpdesk, IDs 11-20, contract v1.1); fixed enum casing after rejected task08-first-pass-001; independent review pending"
+  },
+  {
+    "app_id": 14,
+    "claim_id": "14.testing.partner_approval_required",
+    "change": "changed",
+    "reason": "Task 08 first-pass extraction (Support and Helpdesk, IDs 11-20, contract v1.1); fixed enum casing after rejected task08-first-pass-001; independent review pending"
+  },
+  {
+    "app_id": 14,
+    "claim_id": "14.testing.sandbox_access",
+    "change": "changed",
+    "reason": "Task 08 first-pass extraction (Support and Helpdesk, IDs 11-20, contract v1.1); fixed enum casing after rejected task08-first-pass-001; independent review pending"
+  },
+  {
+    "app_id": 14,
+    "claim_id": "14.testing.self_serve",
+    "change": "changed",
+    "reason": "Task 08 first-pass extraction (Support and Helpdesk, IDs 11-20, contract v1.1); fixed enum casing after rejected task08-first-pass-001; independent review pending"
+  },
+  {
+    "app_id": 14,
+    "claim_id": "14.testing.trial_access",
+    "change": "changed",
+    "reason": "Task 08 first-pass extraction (Support and Helpdesk, IDs 11-20, contract v1.1); fixed enum casing after rejected task08-first-pass-001; independent review pending"
+  },
+  {
+    "app_id": 14,
+    "claim_id": "14.testing.vendor_approval_required",
+    "change": "changed",
+    "reason": "Task 08 first-pass extraction (Support and Helpdesk, IDs 11-20, contract v1.1); fixed enum casing after rejected task08-first-pass-001; independent review pending"
+  },
+  {
+    "app_id": 15,
+    "claim_id": "15.api.breadth",
+    "change": "changed",
+    "reason": "Task 08 first-pass extraction (Support and Helpdesk, IDs 11-20, contract v1.1); fixed enum casing after rejected task08-first-pass-001; independent review pending"
+  },
+  {
+    "app_id": 15,
+    "claim_id": "15.api.group.accounts_contacts_issues",
+    "change": "added",
+    "reason": "Task 08 first-pass extraction (Support and Helpdesk, IDs 11-20, contract v1.1); fixed enum casing after rejected task08-first-pass-001; independent review pending"
+  },
+  {
+    "app_id": 15,
+    "claim_id": "15.api.group.kb_messages_tasks_admin",
+    "change": "added",
+    "reason": "Task 08 first-pass extraction (Support and Helpdesk, IDs 11-20, contract v1.1); fixed enum casing after rejected task08-first-pass-001; independent review pending"
+  },
+  {
+    "app_id": 15,
+    "claim_id": "15.api.protocol.cli",
+    "change": "added",
+    "reason": "Task 08 first-pass extraction (Support and Helpdesk, IDs 11-20, contract v1.1); fixed enum casing after rejected task08-first-pass-001; independent review pending"
+  },
+  {
+    "app_id": 15,
+    "claim_id": "15.api.protocol.rest",
+    "change": "added",
+    "reason": "Task 08 first-pass extraction (Support and Helpdesk, IDs 11-20, contract v1.1); fixed enum casing after rejected task08-first-pass-001; independent review pending"
+  },
+  {
+    "app_id": 15,
+    "claim_id": "15.api.protocol.sdk",
+    "change": "added",
+    "reason": "Task 08 first-pass extraction (Support and Helpdesk, IDs 11-20, contract v1.1); fixed enum casing after rejected task08-first-pass-001; independent review pending"
+  },
+  {
+    "app_id": 15,
+    "claim_id": "15.api.public_docs",
+    "change": "added",
+    "reason": "Task 08 first-pass extraction (Support and Helpdesk, IDs 11-20, contract v1.1); fixed enum casing after rejected task08-first-pass-001; independent review pending"
+  },
+  {
+    "app_id": 15,
+    "claim_id": "15.api.public_documentation",
+    "change": "removed",
+    "reason": "Task 08 first-pass extraction (Support and Helpdesk, IDs 11-20, contract v1.1); fixed enum casing after rejected task08-first-pass-001; independent review pending"
+  },
+  {
+    "app_id": 15,
+    "claim_id": "15.auth.api_token_bearer",
+    "change": "added",
+    "reason": "Task 08 first-pass extraction (Support and Helpdesk, IDs 11-20, contract v1.1); fixed enum casing after rejected task08-first-pass-001; independent review pending"
+  },
+  {
+    "app_id": 15,
+    "claim_id": "15.auth.mcp_oauth2",
+    "change": "added",
+    "reason": "Task 08 first-pass extraction (Support and Helpdesk, IDs 11-20, contract v1.1); fixed enum casing after rejected task08-first-pass-001; independent review pending"
+  },
+  {
+    "app_id": 15,
+    "claim_id": "15.buildability",
+    "change": "changed",
+    "reason": "Task 08 first-pass extraction (Support and Helpdesk, IDs 11-20, contract v1.1); fixed enum casing after rejected task08-first-pass-001; independent review pending"
+  },
+  {
+    "app_id": 15,
+    "claim_id": "15.identity",
+    "change": "changed",
+    "reason": "Task 08 first-pass extraction (Support and Helpdesk, IDs 11-20, contract v1.1); fixed enum casing after rejected task08-first-pass-001; independent review pending"
+  },
+  {
+    "app_id": 15,
+    "claim_id": "15.mcp",
+    "change": "changed",
+    "reason": "Task 08 first-pass extraction (Support and Helpdesk, IDs 11-20, contract v1.1); fixed enum casing after rejected task08-first-pass-001; independent review pending"
+  },
+  {
+    "app_id": 15,
+    "claim_id": "15.mcp.hosted_official",
+    "change": "added",
+    "reason": "Task 08 first-pass extraction (Support and Helpdesk, IDs 11-20, contract v1.1); fixed enum casing after rejected task08-first-pass-001; independent review pending"
+  },
+  {
+    "app_id": 15,
+    "claim_id": "15.mcp.hosted_official.operational",
+    "change": "added",
+    "reason": "Task 08 first-pass extraction (Support and Helpdesk, IDs 11-20, contract v1.1); fixed enum casing after rejected task08-first-pass-001; independent review pending"
+  },
+  {
+    "app_id": 15,
+    "claim_id": "15.production.admin_approval_required",
+    "change": "changed",
+    "reason": "Task 08 first-pass extraction (Support and Helpdesk, IDs 11-20, contract v1.1); fixed enum casing after rejected task08-first-pass-001; independent review pending"
+  },
+  {
+    "app_id": 15,
+    "claim_id": "15.production.contact_sales_required",
+    "change": "changed",
+    "reason": "Task 08 first-pass extraction (Support and Helpdesk, IDs 11-20, contract v1.1); fixed enum casing after rejected task08-first-pass-001; independent review pending"
+  },
+  {
+    "app_id": 15,
+    "claim_id": "15.production.free_access",
+    "change": "changed",
+    "reason": "Task 08 first-pass extraction (Support and Helpdesk, IDs 11-20, contract v1.1); fixed enum casing after rejected task08-first-pass-001; independent review pending"
+  },
+  {
+    "app_id": 15,
+    "claim_id": "15.production.paid_required",
+    "change": "changed",
+    "reason": "Task 08 first-pass extraction (Support and Helpdesk, IDs 11-20, contract v1.1); fixed enum casing after rejected task08-first-pass-001; independent review pending"
+  },
+  {
+    "app_id": 15,
+    "claim_id": "15.production.partner_approval_required",
+    "change": "changed",
+    "reason": "Task 08 first-pass extraction (Support and Helpdesk, IDs 11-20, contract v1.1); fixed enum casing after rejected task08-first-pass-001; independent review pending"
+  },
+  {
+    "app_id": 15,
+    "claim_id": "15.production.sandbox_access",
+    "change": "changed",
+    "reason": "Task 08 first-pass extraction (Support and Helpdesk, IDs 11-20, contract v1.1); fixed enum casing after rejected task08-first-pass-001; independent review pending"
+  },
+  {
+    "app_id": 15,
+    "claim_id": "15.production.self_serve",
+    "change": "changed",
+    "reason": "Task 08 first-pass extraction (Support and Helpdesk, IDs 11-20, contract v1.1); fixed enum casing after rejected task08-first-pass-001; independent review pending"
+  },
+  {
+    "app_id": 15,
+    "claim_id": "15.production.trial_access",
+    "change": "changed",
+    "reason": "Task 08 first-pass extraction (Support and Helpdesk, IDs 11-20, contract v1.1); fixed enum casing after rejected task08-first-pass-001; independent review pending"
+  },
+  {
+    "app_id": 15,
+    "claim_id": "15.production.vendor_approval_required",
+    "change": "changed",
+    "reason": "Task 08 first-pass extraction (Support and Helpdesk, IDs 11-20, contract v1.1); fixed enum casing after rejected task08-first-pass-001; independent review pending"
+  },
+  {
+    "app_id": 15,
+    "claim_id": "15.purpose",
+    "change": "changed",
+    "reason": "Task 08 first-pass extraction (Support and Helpdesk, IDs 11-20, contract v1.1); fixed enum casing after rejected task08-first-pass-001; independent review pending"
+  },
+  {
+    "app_id": 15,
+    "claim_id": "15.testing.admin_approval_required",
+    "change": "changed",
+    "reason": "Task 08 first-pass extraction (Support and Helpdesk, IDs 11-20, contract v1.1); fixed enum casing after rejected task08-first-pass-001; independent review pending"
+  },
+  {
+    "app_id": 15,
+    "claim_id": "15.testing.contact_sales_required",
+    "change": "changed",
+    "reason": "Task 08 first-pass extraction (Support and Helpdesk, IDs 11-20, contract v1.1); fixed enum casing after rejected task08-first-pass-001; independent review pending"
+  },
+  {
+    "app_id": 15,
+    "claim_id": "15.testing.free_access",
+    "change": "changed",
+    "reason": "Task 08 first-pass extraction (Support and Helpdesk, IDs 11-20, contract v1.1); fixed enum casing after rejected task08-first-pass-001; independent review pending"
+  },
+  {
+    "app_id": 15,
+    "claim_id": "15.testing.paid_required",
+    "change": "changed",
+    "reason": "Task 08 first-pass extraction (Support and Helpdesk, IDs 11-20, contract v1.1); fixed enum casing after rejected task08-first-pass-001; independent review pending"
+  },
+  {
+    "app_id": 15,
+    "claim_id": "15.testing.partner_approval_required",
+    "change": "changed",
+    "reason": "Task 08 first-pass extraction (Support and Helpdesk, IDs 11-20, contract v1.1); fixed enum casing after rejected task08-first-pass-001; independent review pending"
+  },
+  {
+    "app_id": 15,
+    "claim_id": "15.testing.sandbox_access",
+    "change": "changed",
+    "reason": "Task 08 first-pass extraction (Support and Helpdesk, IDs 11-20, contract v1.1); fixed enum casing after rejected task08-first-pass-001; independent review pending"
+  },
+  {
+    "app_id": 15,
+    "claim_id": "15.testing.self_serve",
+    "change": "changed",
+    "reason": "Task 08 first-pass extraction (Support and Helpdesk, IDs 11-20, contract v1.1); fixed enum casing after rejected task08-first-pass-001; independent review pending"
+  },
+  {
+    "app_id": 15,
+    "claim_id": "15.testing.trial_access",
+    "change": "changed",
+    "reason": "Task 08 first-pass extraction (Support and Helpdesk, IDs 11-20, contract v1.1); fixed enum casing after rejected task08-first-pass-001; independent review pending"
+  },
+  {
+    "app_id": 15,
+    "claim_id": "15.testing.vendor_approval_required",
+    "change": "changed",
+    "reason": "Task 08 first-pass extraction (Support and Helpdesk, IDs 11-20, contract v1.1); fixed enum casing after rejected task08-first-pass-001; independent review pending"
+  },
+  {
+    "app_id": 16,
+    "claim_id": "16.api.breadth",
+    "change": "changed",
+    "reason": "Task 08 first-pass extraction (Support and Helpdesk, IDs 11-20, contract v1.1); fixed enum casing after rejected task08-first-pass-001; independent review pending"
+  },
+  {
+    "app_id": 16,
+    "claim_id": "16.api.group.conversations_messages",
+    "change": "added",
+    "reason": "Task 08 first-pass extraction (Support and Helpdesk, IDs 11-20, contract v1.1); fixed enum casing after rejected task08-first-pass-001; independent review pending"
+  },
+  {
+    "app_id": 16,
+    "claim_id": "16.api.protocol.rest",
+    "change": "added",
+    "reason": "Task 08 first-pass extraction (Support and Helpdesk, IDs 11-20, contract v1.1); fixed enum casing after rejected task08-first-pass-001; independent review pending"
+  },
+  {
+    "app_id": 16,
+    "claim_id": "16.api.public_docs",
+    "change": "added",
+    "reason": "Task 08 first-pass extraction (Support and Helpdesk, IDs 11-20, contract v1.1); fixed enum casing after rejected task08-first-pass-001; independent review pending"
+  },
+  {
+    "app_id": 16,
+    "claim_id": "16.api.public_documentation",
+    "change": "removed",
+    "reason": "Task 08 first-pass extraction (Support and Helpdesk, IDs 11-20, contract v1.1); fixed enum casing after rejected task08-first-pass-001; independent review pending"
+  },
+  {
+    "app_id": 16,
+    "claim_id": "16.auth.api_key",
+    "change": "added",
+    "reason": "Task 08 first-pass extraction (Support and Helpdesk, IDs 11-20, contract v1.1); fixed enum casing after rejected task08-first-pass-001; independent review pending"
+  },
+  {
+    "app_id": 16,
+    "claim_id": "16.auth.mcp_bearer_token",
+    "change": "added",
+    "reason": "Task 08 first-pass extraction (Support and Helpdesk, IDs 11-20, contract v1.1); fixed enum casing after rejected task08-first-pass-001; independent review pending"
+  },
+  {
+    "app_id": 16,
+    "claim_id": "16.auth.mcp_oauth2_pkce",
+    "change": "added",
+    "reason": "Task 08 first-pass extraction (Support and Helpdesk, IDs 11-20, contract v1.1); fixed enum casing after rejected task08-first-pass-001; independent review pending"
+  },
+  {
+    "app_id": 16,
+    "claim_id": "16.buildability",
+    "change": "changed",
+    "reason": "Task 08 first-pass extraction (Support and Helpdesk, IDs 11-20, contract v1.1); fixed enum casing after rejected task08-first-pass-001; independent review pending"
+  },
+  {
+    "app_id": 16,
+    "claim_id": "16.identity",
+    "change": "changed",
+    "reason": "Task 08 first-pass extraction (Support and Helpdesk, IDs 11-20, contract v1.1); fixed enum casing after rejected task08-first-pass-001; independent review pending"
+  },
+  {
+    "app_id": 16,
+    "claim_id": "16.mcp",
+    "change": "changed",
+    "reason": "Task 08 first-pass extraction (Support and Helpdesk, IDs 11-20, contract v1.1); fixed enum casing after rejected task08-first-pass-001; independent review pending"
+  },
+  {
+    "app_id": 16,
+    "claim_id": "16.mcp.hosted_official",
+    "change": "added",
+    "reason": "Task 08 first-pass extraction (Support and Helpdesk, IDs 11-20, contract v1.1); fixed enum casing after rejected task08-first-pass-001; independent review pending"
+  },
+  {
+    "app_id": 16,
+    "claim_id": "16.mcp.hosted_official.operational",
+    "change": "added",
+    "reason": "Task 08 first-pass extraction (Support and Helpdesk, IDs 11-20, contract v1.1); fixed enum casing after rejected task08-first-pass-001; independent review pending"
+  },
+  {
+    "app_id": 16,
+    "claim_id": "16.production.admin_approval_required",
+    "change": "changed",
+    "reason": "Task 08 first-pass extraction (Support and Helpdesk, IDs 11-20, contract v1.1); fixed enum casing after rejected task08-first-pass-001; independent review pending"
+  },
+  {
+    "app_id": 16,
+    "claim_id": "16.production.contact_sales_required",
+    "change": "changed",
+    "reason": "Task 08 first-pass extraction (Support and Helpdesk, IDs 11-20, contract v1.1); fixed enum casing after rejected task08-first-pass-001; independent review pending"
+  },
+  {
+    "app_id": 16,
+    "claim_id": "16.production.free_access",
+    "change": "changed",
+    "reason": "Task 08 first-pass extraction (Support and Helpdesk, IDs 11-20, contract v1.1); fixed enum casing after rejected task08-first-pass-001; independent review pending"
+  },
+  {
+    "app_id": 16,
+    "claim_id": "16.production.paid_required",
+    "change": "changed",
+    "reason": "Task 08 first-pass extraction (Support and Helpdesk, IDs 11-20, contract v1.1); fixed enum casing after rejected task08-first-pass-001; independent review pending"
+  },
+  {
+    "app_id": 16,
+    "claim_id": "16.production.partner_approval_required",
+    "change": "changed",
+    "reason": "Task 08 first-pass extraction (Support and Helpdesk, IDs 11-20, contract v1.1); fixed enum casing after rejected task08-first-pass-001; independent review pending"
+  },
+  {
+    "app_id": 16,
+    "claim_id": "16.production.sandbox_access",
+    "change": "changed",
+    "reason": "Task 08 first-pass extraction (Support and Helpdesk, IDs 11-20, contract v1.1); fixed enum casing after rejected task08-first-pass-001; independent review pending"
+  },
+  {
+    "app_id": 16,
+    "claim_id": "16.production.self_serve",
+    "change": "changed",
+    "reason": "Task 08 first-pass extraction (Support and Helpdesk, IDs 11-20, contract v1.1); fixed enum casing after rejected task08-first-pass-001; independent review pending"
+  },
+  {
+    "app_id": 16,
+    "claim_id": "16.production.trial_access",
+    "change": "changed",
+    "reason": "Task 08 first-pass extraction (Support and Helpdesk, IDs 11-20, contract v1.1); fixed enum casing after rejected task08-first-pass-001; independent review pending"
+  },
+  {
+    "app_id": 16,
+    "claim_id": "16.production.vendor_approval_required",
+    "change": "changed",
+    "reason": "Task 08 first-pass extraction (Support and Helpdesk, IDs 11-20, contract v1.1); fixed enum casing after rejected task08-first-pass-001; independent review pending"
+  },
+  {
+    "app_id": 16,
+    "claim_id": "16.purpose",
+    "change": "changed",
+    "reason": "Task 08 first-pass extraction (Support and Helpdesk, IDs 11-20, contract v1.1); fixed enum casing after rejected task08-first-pass-001; independent review pending"
+  },
+  {
+    "app_id": 16,
+    "claim_id": "16.testing.admin_approval_required",
+    "change": "changed",
+    "reason": "Task 08 first-pass extraction (Support and Helpdesk, IDs 11-20, contract v1.1); fixed enum casing after rejected task08-first-pass-001; independent review pending"
+  },
+  {
+    "app_id": 16,
+    "claim_id": "16.testing.contact_sales_required",
+    "change": "changed",
+    "reason": "Task 08 first-pass extraction (Support and Helpdesk, IDs 11-20, contract v1.1); fixed enum casing after rejected task08-first-pass-001; independent review pending"
+  },
+  {
+    "app_id": 16,
+    "claim_id": "16.testing.free_access",
+    "change": "changed",
+    "reason": "Task 08 first-pass extraction (Support and Helpdesk, IDs 11-20, contract v1.1); fixed enum casing after rejected task08-first-pass-001; independent review pending"
+  },
+  {
+    "app_id": 16,
+    "claim_id": "16.testing.paid_required",
+    "change": "changed",
+    "reason": "Task 08 first-pass extraction (Support and Helpdesk, IDs 11-20, contract v1.1); fixed enum casing after rejected task08-first-pass-001; independent review pending"
+  },
+  {
+    "app_id": 16,
+    "claim_id": "16.testing.partner_approval_required",
+    "change": "changed",
+    "reason": "Task 08 first-pass extraction (Support and Helpdesk, IDs 11-20, contract v1.1); fixed enum casing after rejected task08-first-pass-001; independent review pending"
+  },
+  {
+    "app_id": 16,
+    "claim_id": "16.testing.sandbox_access",
+    "change": "changed",
+    "reason": "Task 08 first-pass extraction (Support and Helpdesk, IDs 11-20, contract v1.1); fixed enum casing after rejected task08-first-pass-001; independent review pending"
+  },
+  {
+    "app_id": 16,
+    "claim_id": "16.testing.self_serve",
+    "change": "changed",
+    "reason": "Task 08 first-pass extraction (Support and Helpdesk, IDs 11-20, contract v1.1); fixed enum casing after rejected task08-first-pass-001; independent review pending"
+  },
+  {
+    "app_id": 16,
+    "claim_id": "16.testing.trial_access",
+    "change": "changed",
+    "reason": "Task 08 first-pass extraction (Support and Helpdesk, IDs 11-20, contract v1.1); fixed enum casing after rejected task08-first-pass-001; independent review pending"
+  },
+  {
+    "app_id": 16,
+    "claim_id": "16.testing.vendor_approval_required",
+    "change": "changed",
+    "reason": "Task 08 first-pass extraction (Support and Helpdesk, IDs 11-20, contract v1.1); fixed enum casing after rejected task08-first-pass-001; independent review pending"
+  },
+  {
+    "app_id": 17,
+    "claim_id": "17.api.breadth",
+    "change": "changed",
+    "reason": "Task 08 first-pass extraction (Support and Helpdesk, IDs 11-20, contract v1.1); fixed enum casing after rejected task08-first-pass-001; independent review pending"
+  },
+  {
+    "app_id": 17,
+    "claim_id": "17.api.group.customers_accounts_threads_sla",
+    "change": "added",
+    "reason": "Task 08 first-pass extraction (Support and Helpdesk, IDs 11-20, contract v1.1); fixed enum casing after rejected task08-first-pass-001; independent review pending"
+  },
+  {
+    "app_id": 17,
+    "claim_id": "17.api.group.messaging_reporting_kb_webhooks",
+    "change": "added",
+    "reason": "Task 08 first-pass extraction (Support and Helpdesk, IDs 11-20, contract v1.1); fixed enum casing after rejected task08-first-pass-001; independent review pending"
+  },
+  {
+    "app_id": 17,
+    "claim_id": "17.api.protocol.graphql",
+    "change": "added",
+    "reason": "Task 08 first-pass extraction (Support and Helpdesk, IDs 11-20, contract v1.1); fixed enum casing after rejected task08-first-pass-001; independent review pending"
+  },
+  {
+    "app_id": 17,
+    "claim_id": "17.api.protocol.sdk",
+    "change": "added",
+    "reason": "Task 08 first-pass extraction (Support and Helpdesk, IDs 11-20, contract v1.1); fixed enum casing after rejected task08-first-pass-001; independent review pending"
+  },
+  {
+    "app_id": 17,
+    "claim_id": "17.api.public_docs",
+    "change": "added",
+    "reason": "Task 08 first-pass extraction (Support and Helpdesk, IDs 11-20, contract v1.1); fixed enum casing after rejected task08-first-pass-001; independent review pending"
+  },
+  {
+    "app_id": 17,
+    "claim_id": "17.api.public_documentation",
+    "change": "removed",
+    "reason": "Task 08 first-pass extraction (Support and Helpdesk, IDs 11-20, contract v1.1); fixed enum casing after rejected task08-first-pass-001; independent review pending"
+  },
+  {
+    "app_id": 17,
+    "claim_id": "17.auth.machine_user_api_key",
+    "change": "added",
+    "reason": "Task 08 first-pass extraction (Support and Helpdesk, IDs 11-20, contract v1.1); fixed enum casing after rejected task08-first-pass-001; independent review pending"
+  },
+  {
+    "app_id": 17,
+    "claim_id": "17.auth.oauth2_pkce",
+    "change": "added",
+    "reason": "Task 08 first-pass extraction (Support and Helpdesk, IDs 11-20, contract v1.1); fixed enum casing after rejected task08-first-pass-001; independent review pending"
+  },
+  {
+    "app_id": 17,
+    "claim_id": "17.buildability",
+    "change": "changed",
+    "reason": "Task 08 first-pass extraction (Support and Helpdesk, IDs 11-20, contract v1.1); fixed enum casing after rejected task08-first-pass-001; independent review pending"
+  },
+  {
+    "app_id": 17,
+    "claim_id": "17.identity",
+    "change": "changed",
+    "reason": "Task 08 first-pass extraction (Support and Helpdesk, IDs 11-20, contract v1.1); fixed enum casing after rejected task08-first-pass-001; independent review pending"
+  },
+  {
+    "app_id": 17,
+    "claim_id": "17.mcp",
+    "change": "changed",
+    "reason": "Task 08 first-pass extraction (Support and Helpdesk, IDs 11-20, contract v1.1); fixed enum casing after rejected task08-first-pass-001; independent review pending"
+  },
+  {
+    "app_id": 17,
+    "claim_id": "17.mcp.hosted_official",
+    "change": "added",
+    "reason": "Task 08 first-pass extraction (Support and Helpdesk, IDs 11-20, contract v1.1); fixed enum casing after rejected task08-first-pass-001; independent review pending"
+  },
+  {
+    "app_id": 17,
+    "claim_id": "17.mcp.hosted_official.operational",
+    "change": "added",
+    "reason": "Task 08 first-pass extraction (Support and Helpdesk, IDs 11-20, contract v1.1); fixed enum casing after rejected task08-first-pass-001; independent review pending"
+  },
+  {
+    "app_id": 17,
+    "claim_id": "17.production.admin_approval_required",
+    "change": "changed",
+    "reason": "Task 08 first-pass extraction (Support and Helpdesk, IDs 11-20, contract v1.1); fixed enum casing after rejected task08-first-pass-001; independent review pending"
+  },
+  {
+    "app_id": 17,
+    "claim_id": "17.production.contact_sales_required",
+    "change": "changed",
+    "reason": "Task 08 first-pass extraction (Support and Helpdesk, IDs 11-20, contract v1.1); fixed enum casing after rejected task08-first-pass-001; independent review pending"
+  },
+  {
+    "app_id": 17,
+    "claim_id": "17.production.free_access",
+    "change": "changed",
+    "reason": "Task 08 first-pass extraction (Support and Helpdesk, IDs 11-20, contract v1.1); fixed enum casing after rejected task08-first-pass-001; independent review pending"
+  },
+  {
+    "app_id": 17,
+    "claim_id": "17.production.paid_required",
+    "change": "changed",
+    "reason": "Task 08 first-pass extraction (Support and Helpdesk, IDs 11-20, contract v1.1); fixed enum casing after rejected task08-first-pass-001; independent review pending"
+  },
+  {
+    "app_id": 17,
+    "claim_id": "17.production.partner_approval_required",
+    "change": "changed",
+    "reason": "Task 08 first-pass extraction (Support and Helpdesk, IDs 11-20, contract v1.1); fixed enum casing after rejected task08-first-pass-001; independent review pending"
+  },
+  {
+    "app_id": 17,
+    "claim_id": "17.production.sandbox_access",
+    "change": "changed",
+    "reason": "Task 08 first-pass extraction (Support and Helpdesk, IDs 11-20, contract v1.1); fixed enum casing after rejected task08-first-pass-001; independent review pending"
+  },
+  {
+    "app_id": 17,
+    "claim_id": "17.production.self_serve",
+    "change": "changed",
+    "reason": "Task 08 first-pass extraction (Support and Helpdesk, IDs 11-20, contract v1.1); fixed enum casing after rejected task08-first-pass-001; independent review pending"
+  },
+  {
+    "app_id": 17,
+    "claim_id": "17.production.trial_access",
+    "change": "changed",
+    "reason": "Task 08 first-pass extraction (Support and Helpdesk, IDs 11-20, contract v1.1); fixed enum casing after rejected task08-first-pass-001; independent review pending"
+  },
+  {
+    "app_id": 17,
+    "claim_id": "17.production.vendor_approval_required",
+    "change": "changed",
+    "reason": "Task 08 first-pass extraction (Support and Helpdesk, IDs 11-20, contract v1.1); fixed enum casing after rejected task08-first-pass-001; independent review pending"
+  },
+  {
+    "app_id": 17,
+    "claim_id": "17.purpose",
+    "change": "changed",
+    "reason": "Task 08 first-pass extraction (Support and Helpdesk, IDs 11-20, contract v1.1); fixed enum casing after rejected task08-first-pass-001; independent review pending"
+  },
+  {
+    "app_id": 17,
+    "claim_id": "17.testing.admin_approval_required",
+    "change": "changed",
+    "reason": "Task 08 first-pass extraction (Support and Helpdesk, IDs 11-20, contract v1.1); fixed enum casing after rejected task08-first-pass-001; independent review pending"
+  },
+  {
+    "app_id": 17,
+    "claim_id": "17.testing.contact_sales_required",
+    "change": "changed",
+    "reason": "Task 08 first-pass extraction (Support and Helpdesk, IDs 11-20, contract v1.1); fixed enum casing after rejected task08-first-pass-001; independent review pending"
+  },
+  {
+    "app_id": 17,
+    "claim_id": "17.testing.free_access",
+    "change": "changed",
+    "reason": "Task 08 first-pass extraction (Support and Helpdesk, IDs 11-20, contract v1.1); fixed enum casing after rejected task08-first-pass-001; independent review pending"
+  },
+  {
+    "app_id": 17,
+    "claim_id": "17.testing.paid_required",
+    "change": "changed",
+    "reason": "Task 08 first-pass extraction (Support and Helpdesk, IDs 11-20, contract v1.1); fixed enum casing after rejected task08-first-pass-001; independent review pending"
+  },
+  {
+    "app_id": 17,
+    "claim_id": "17.testing.partner_approval_required",
+    "change": "changed",
+    "reason": "Task 08 first-pass extraction (Support and Helpdesk, IDs 11-20, contract v1.1); fixed enum casing after rejected task08-first-pass-001; independent review pending"
+  },
+  {
+    "app_id": 17,
+    "claim_id": "17.testing.sandbox_access",
+    "change": "changed",
+    "reason": "Task 08 first-pass extraction (Support and Helpdesk, IDs 11-20, contract v1.1); fixed enum casing after rejected task08-first-pass-001; independent review pending"
+  },
+  {
+    "app_id": 17,
+    "claim_id": "17.testing.self_serve",
+    "change": "changed",
+    "reason": "Task 08 first-pass extraction (Support and Helpdesk, IDs 11-20, contract v1.1); fixed enum casing after rejected task08-first-pass-001; independent review pending"
+  },
+  {
+    "app_id": 17,
+    "claim_id": "17.testing.trial_access",
+    "change": "changed",
+    "reason": "Task 08 first-pass extraction (Support and Helpdesk, IDs 11-20, contract v1.1); fixed enum casing after rejected task08-first-pass-001; independent review pending"
+  },
+  {
+    "app_id": 17,
+    "claim_id": "17.testing.vendor_approval_required",
+    "change": "changed",
+    "reason": "Task 08 first-pass extraction (Support and Helpdesk, IDs 11-20, contract v1.1); fixed enum casing after rejected task08-first-pass-001; independent review pending"
+  },
+  {
+    "app_id": 18,
+    "claim_id": "18.api.breadth",
+    "change": "changed",
+    "reason": "Task 08 first-pass extraction (Support and Helpdesk, IDs 11-20, contract v1.1); fixed enum casing after rejected task08-first-pass-001; independent review pending"
+  },
+  {
+    "app_id": 18,
+    "claim_id": "18.api.protocol.api_access",
+    "change": "added",
+    "reason": "Task 08 first-pass extraction (Support and Helpdesk, IDs 11-20, contract v1.1); fixed enum casing after rejected task08-first-pass-001; independent review pending"
+  },
+  {
+    "app_id": 18,
+    "claim_id": "18.api.public_documentation",
+    "change": "changed",
+    "reason": "Task 08 first-pass extraction (Support and Helpdesk, IDs 11-20, contract v1.1); fixed enum casing after rejected task08-first-pass-001; independent review pending"
+  },
+  {
+    "app_id": 18,
+    "claim_id": "18.auth.oauth_apps",
+    "change": "added",
+    "reason": "Task 08 first-pass extraction (Support and Helpdesk, IDs 11-20, contract v1.1); fixed enum casing after rejected task08-first-pass-001; independent review pending"
+  },
+  {
+    "app_id": 18,
+    "claim_id": "18.buildability",
+    "change": "changed",
+    "reason": "Task 08 first-pass extraction (Support and Helpdesk, IDs 11-20, contract v1.1); fixed enum casing after rejected task08-first-pass-001; independent review pending"
+  },
+  {
+    "app_id": 18,
+    "claim_id": "18.identity",
+    "change": "changed",
+    "reason": "Task 08 first-pass extraction (Support and Helpdesk, IDs 11-20, contract v1.1); fixed enum casing after rejected task08-first-pass-001; independent review pending"
+  },
+  {
+    "app_id": 18,
+    "claim_id": "18.mcp",
+    "change": "changed",
+    "reason": "Task 08 first-pass extraction (Support and Helpdesk, IDs 11-20, contract v1.1); fixed enum casing after rejected task08-first-pass-001; independent review pending"
+  },
+  {
+    "app_id": 18,
+    "claim_id": "18.production.admin_approval_required",
+    "change": "changed",
+    "reason": "Task 08 first-pass extraction (Support and Helpdesk, IDs 11-20, contract v1.1); fixed enum casing after rejected task08-first-pass-001; independent review pending"
+  },
+  {
+    "app_id": 18,
+    "claim_id": "18.production.contact_sales_required",
+    "change": "changed",
+    "reason": "Task 08 first-pass extraction (Support and Helpdesk, IDs 11-20, contract v1.1); fixed enum casing after rejected task08-first-pass-001; independent review pending"
+  },
+  {
+    "app_id": 18,
+    "claim_id": "18.production.free_access",
+    "change": "changed",
+    "reason": "Task 08 first-pass extraction (Support and Helpdesk, IDs 11-20, contract v1.1); fixed enum casing after rejected task08-first-pass-001; independent review pending"
+  },
+  {
+    "app_id": 18,
+    "claim_id": "18.production.paid_required",
+    "change": "changed",
+    "reason": "Task 08 first-pass extraction (Support and Helpdesk, IDs 11-20, contract v1.1); fixed enum casing after rejected task08-first-pass-001; independent review pending"
+  },
+  {
+    "app_id": 18,
+    "claim_id": "18.production.partner_approval_required",
+    "change": "changed",
+    "reason": "Task 08 first-pass extraction (Support and Helpdesk, IDs 11-20, contract v1.1); fixed enum casing after rejected task08-first-pass-001; independent review pending"
+  },
+  {
+    "app_id": 18,
+    "claim_id": "18.production.sandbox_access",
+    "change": "changed",
+    "reason": "Task 08 first-pass extraction (Support and Helpdesk, IDs 11-20, contract v1.1); fixed enum casing after rejected task08-first-pass-001; independent review pending"
+  },
+  {
+    "app_id": 18,
+    "claim_id": "18.production.self_serve",
+    "change": "changed",
+    "reason": "Task 08 first-pass extraction (Support and Helpdesk, IDs 11-20, contract v1.1); fixed enum casing after rejected task08-first-pass-001; independent review pending"
+  },
+  {
+    "app_id": 18,
+    "claim_id": "18.production.trial_access",
+    "change": "changed",
+    "reason": "Task 08 first-pass extraction (Support and Helpdesk, IDs 11-20, contract v1.1); fixed enum casing after rejected task08-first-pass-001; independent review pending"
+  },
+  {
+    "app_id": 18,
+    "claim_id": "18.production.vendor_approval_required",
+    "change": "changed",
+    "reason": "Task 08 first-pass extraction (Support and Helpdesk, IDs 11-20, contract v1.1); fixed enum casing after rejected task08-first-pass-001; independent review pending"
+  },
+  {
+    "app_id": 18,
+    "claim_id": "18.purpose",
+    "change": "changed",
+    "reason": "Task 08 first-pass extraction (Support and Helpdesk, IDs 11-20, contract v1.1); fixed enum casing after rejected task08-first-pass-001; independent review pending"
+  },
+  {
+    "app_id": 18,
+    "claim_id": "18.testing.admin_approval_required",
+    "change": "changed",
+    "reason": "Task 08 first-pass extraction (Support and Helpdesk, IDs 11-20, contract v1.1); fixed enum casing after rejected task08-first-pass-001; independent review pending"
+  },
+  {
+    "app_id": 18,
+    "claim_id": "18.testing.contact_sales_required",
+    "change": "changed",
+    "reason": "Task 08 first-pass extraction (Support and Helpdesk, IDs 11-20, contract v1.1); fixed enum casing after rejected task08-first-pass-001; independent review pending"
+  },
+  {
+    "app_id": 18,
+    "claim_id": "18.testing.free_access",
+    "change": "changed",
+    "reason": "Task 08 first-pass extraction (Support and Helpdesk, IDs 11-20, contract v1.1); fixed enum casing after rejected task08-first-pass-001; independent review pending"
+  },
+  {
+    "app_id": 18,
+    "claim_id": "18.testing.paid_required",
+    "change": "changed",
+    "reason": "Task 08 first-pass extraction (Support and Helpdesk, IDs 11-20, contract v1.1); fixed enum casing after rejected task08-first-pass-001; independent review pending"
+  },
+  {
+    "app_id": 18,
+    "claim_id": "18.testing.partner_approval_required",
+    "change": "changed",
+    "reason": "Task 08 first-pass extraction (Support and Helpdesk, IDs 11-20, contract v1.1); fixed enum casing after rejected task08-first-pass-001; independent review pending"
+  },
+  {
+    "app_id": 18,
+    "claim_id": "18.testing.sandbox_access",
+    "change": "changed",
+    "reason": "Task 08 first-pass extraction (Support and Helpdesk, IDs 11-20, contract v1.1); fixed enum casing after rejected task08-first-pass-001; independent review pending"
+  },
+  {
+    "app_id": 18,
+    "claim_id": "18.testing.self_serve",
+    "change": "changed",
+    "reason": "Task 08 first-pass extraction (Support and Helpdesk, IDs 11-20, contract v1.1); fixed enum casing after rejected task08-first-pass-001; independent review pending"
+  },
+  {
+    "app_id": 18,
+    "claim_id": "18.testing.trial_access",
+    "change": "changed",
+    "reason": "Task 08 first-pass extraction (Support and Helpdesk, IDs 11-20, contract v1.1); fixed enum casing after rejected task08-first-pass-001; independent review pending"
+  },
+  {
+    "app_id": 18,
+    "claim_id": "18.testing.vendor_approval_required",
+    "change": "changed",
+    "reason": "Task 08 first-pass extraction (Support and Helpdesk, IDs 11-20, contract v1.1); fixed enum casing after rejected task08-first-pass-001; independent review pending"
+  },
+  {
+    "app_id": 19,
+    "claim_id": "19.api.breadth",
+    "change": "changed",
+    "reason": "Task 08 first-pass extraction (Support and Helpdesk, IDs 11-20, contract v1.1); fixed enum casing after rejected task08-first-pass-001; independent review pending"
+  },
+  {
+    "app_id": 19,
+    "claim_id": "19.api.group.customers_macros_integrations",
+    "change": "added",
+    "reason": "Task 08 first-pass extraction (Support and Helpdesk, IDs 11-20, contract v1.1); fixed enum casing after rejected task08-first-pass-001; independent review pending"
+  },
+  {
+    "app_id": 19,
+    "claim_id": "19.api.group.tickets_rules_voice_stats",
+    "change": "added",
+    "reason": "Task 08 first-pass extraction (Support and Helpdesk, IDs 11-20, contract v1.1); fixed enum casing after rejected task08-first-pass-001; independent review pending"
+  },
+  {
+    "app_id": 19,
+    "claim_id": "19.api.protocol.rest",
+    "change": "added",
+    "reason": "Task 08 first-pass extraction (Support and Helpdesk, IDs 11-20, contract v1.1); fixed enum casing after rejected task08-first-pass-001; independent review pending"
+  },
+  {
+    "app_id": 19,
+    "claim_id": "19.api.public_docs",
+    "change": "added",
+    "reason": "Task 08 first-pass extraction (Support and Helpdesk, IDs 11-20, contract v1.1); fixed enum casing after rejected task08-first-pass-001; independent review pending"
+  },
+  {
+    "app_id": 19,
+    "claim_id": "19.api.public_documentation",
+    "change": "removed",
+    "reason": "Task 08 first-pass extraction (Support and Helpdesk, IDs 11-20, contract v1.1); fixed enum casing after rejected task08-first-pass-001; independent review pending"
+  },
+  {
+    "app_id": 19,
+    "claim_id": "19.auth.api_key",
+    "change": "added",
+    "reason": "Task 08 first-pass extraction (Support and Helpdesk, IDs 11-20, contract v1.1); fixed enum casing after rejected task08-first-pass-001; independent review pending"
+  },
+  {
+    "app_id": 19,
+    "claim_id": "19.auth.oauth2",
+    "change": "added",
+    "reason": "Task 08 first-pass extraction (Support and Helpdesk, IDs 11-20, contract v1.1); fixed enum casing after rejected task08-first-pass-001; independent review pending"
+  },
+  {
+    "app_id": 19,
+    "claim_id": "19.buildability",
+    "change": "changed",
+    "reason": "Task 08 first-pass extraction (Support and Helpdesk, IDs 11-20, contract v1.1); fixed enum casing after rejected task08-first-pass-001; independent review pending"
+  },
+  {
+    "app_id": 19,
+    "claim_id": "19.identity",
+    "change": "changed",
+    "reason": "Task 08 first-pass extraction (Support and Helpdesk, IDs 11-20, contract v1.1); fixed enum casing after rejected task08-first-pass-001; independent review pending"
+  },
+  {
+    "app_id": 19,
+    "claim_id": "19.mcp",
+    "change": "changed",
+    "reason": "Task 08 first-pass extraction (Support and Helpdesk, IDs 11-20, contract v1.1); fixed enum casing after rejected task08-first-pass-001; independent review pending"
+  },
+  {
+    "app_id": 19,
+    "claim_id": "19.mcp.community_mattcoatsworth",
+    "change": "added",
+    "reason": "Task 08 first-pass extraction (Support and Helpdesk, IDs 11-20, contract v1.1); fixed enum casing after rejected task08-first-pass-001; independent review pending"
+  },
+  {
+    "app_id": 19,
+    "claim_id": "19.mcp.community_mattcoatsworth.operational",
+    "change": "added",
+    "reason": "Task 08 first-pass extraction (Support and Helpdesk, IDs 11-20, contract v1.1); fixed enum casing after rejected task08-first-pass-001; independent review pending"
+  },
+  {
+    "app_id": 19,
+    "claim_id": "19.production.admin_approval_required",
+    "change": "changed",
+    "reason": "Task 08 first-pass extraction (Support and Helpdesk, IDs 11-20, contract v1.1); fixed enum casing after rejected task08-first-pass-001; independent review pending"
+  },
+  {
+    "app_id": 19,
+    "claim_id": "19.production.contact_sales_required",
+    "change": "changed",
+    "reason": "Task 08 first-pass extraction (Support and Helpdesk, IDs 11-20, contract v1.1); fixed enum casing after rejected task08-first-pass-001; independent review pending"
+  },
+  {
+    "app_id": 19,
+    "claim_id": "19.production.free_access",
+    "change": "changed",
+    "reason": "Task 08 first-pass extraction (Support and Helpdesk, IDs 11-20, contract v1.1); fixed enum casing after rejected task08-first-pass-001; independent review pending"
+  },
+  {
+    "app_id": 19,
+    "claim_id": "19.production.paid_required",
+    "change": "changed",
+    "reason": "Task 08 first-pass extraction (Support and Helpdesk, IDs 11-20, contract v1.1); fixed enum casing after rejected task08-first-pass-001; independent review pending"
+  },
+  {
+    "app_id": 19,
+    "claim_id": "19.production.partner_approval_required",
+    "change": "changed",
+    "reason": "Task 08 first-pass extraction (Support and Helpdesk, IDs 11-20, contract v1.1); fixed enum casing after rejected task08-first-pass-001; independent review pending"
+  },
+  {
+    "app_id": 19,
+    "claim_id": "19.production.sandbox_access",
+    "change": "changed",
+    "reason": "Task 08 first-pass extraction (Support and Helpdesk, IDs 11-20, contract v1.1); fixed enum casing after rejected task08-first-pass-001; independent review pending"
+  },
+  {
+    "app_id": 19,
+    "claim_id": "19.production.self_serve",
+    "change": "changed",
+    "reason": "Task 08 first-pass extraction (Support and Helpdesk, IDs 11-20, contract v1.1); fixed enum casing after rejected task08-first-pass-001; independent review pending"
+  },
+  {
+    "app_id": 19,
+    "claim_id": "19.production.trial_access",
+    "change": "changed",
+    "reason": "Task 08 first-pass extraction (Support and Helpdesk, IDs 11-20, contract v1.1); fixed enum casing after rejected task08-first-pass-001; independent review pending"
+  },
+  {
+    "app_id": 19,
+    "claim_id": "19.production.vendor_approval_required",
+    "change": "changed",
+    "reason": "Task 08 first-pass extraction (Support and Helpdesk, IDs 11-20, contract v1.1); fixed enum casing after rejected task08-first-pass-001; independent review pending"
+  },
+  {
+    "app_id": 19,
+    "claim_id": "19.purpose",
+    "change": "changed",
+    "reason": "Task 08 first-pass extraction (Support and Helpdesk, IDs 11-20, contract v1.1); fixed enum casing after rejected task08-first-pass-001; independent review pending"
+  },
+  {
+    "app_id": 19,
+    "claim_id": "19.testing.admin_approval_required",
+    "change": "changed",
+    "reason": "Task 08 first-pass extraction (Support and Helpdesk, IDs 11-20, contract v1.1); fixed enum casing after rejected task08-first-pass-001; independent review pending"
+  },
+  {
+    "app_id": 19,
+    "claim_id": "19.testing.contact_sales_required",
+    "change": "changed",
+    "reason": "Task 08 first-pass extraction (Support and Helpdesk, IDs 11-20, contract v1.1); fixed enum casing after rejected task08-first-pass-001; independent review pending"
+  },
+  {
+    "app_id": 19,
+    "claim_id": "19.testing.free_access",
+    "change": "changed",
+    "reason": "Task 08 first-pass extraction (Support and Helpdesk, IDs 11-20, contract v1.1); fixed enum casing after rejected task08-first-pass-001; independent review pending"
+  },
+  {
+    "app_id": 19,
+    "claim_id": "19.testing.paid_required",
+    "change": "changed",
+    "reason": "Task 08 first-pass extraction (Support and Helpdesk, IDs 11-20, contract v1.1); fixed enum casing after rejected task08-first-pass-001; independent review pending"
+  },
+  {
+    "app_id": 19,
+    "claim_id": "19.testing.partner_approval_required",
+    "change": "changed",
+    "reason": "Task 08 first-pass extraction (Support and Helpdesk, IDs 11-20, contract v1.1); fixed enum casing after rejected task08-first-pass-001; independent review pending"
+  },
+  {
+    "app_id": 19,
+    "claim_id": "19.testing.sandbox_access",
+    "change": "changed",
+    "reason": "Task 08 first-pass extraction (Support and Helpdesk, IDs 11-20, contract v1.1); fixed enum casing after rejected task08-first-pass-001; independent review pending"
+  },
+  {
+    "app_id": 19,
+    "claim_id": "19.testing.self_serve",
+    "change": "changed",
+    "reason": "Task 08 first-pass extraction (Support and Helpdesk, IDs 11-20, contract v1.1); fixed enum casing after rejected task08-first-pass-001; independent review pending"
+  },
+  {
+    "app_id": 19,
+    "claim_id": "19.testing.trial_access",
+    "change": "changed",
+    "reason": "Task 08 first-pass extraction (Support and Helpdesk, IDs 11-20, contract v1.1); fixed enum casing after rejected task08-first-pass-001; independent review pending"
+  },
+  {
+    "app_id": 19,
+    "claim_id": "19.testing.vendor_approval_required",
+    "change": "changed",
+    "reason": "Task 08 first-pass extraction (Support and Helpdesk, IDs 11-20, contract v1.1); fixed enum casing after rejected task08-first-pass-001; independent review pending"
+  },
+  {
+    "app_id": 20,
+    "claim_id": "20.api.breadth",
+    "change": "changed",
+    "reason": "Task 08 first-pass extraction (Support and Helpdesk, IDs 11-20, contract v1.1); fixed enum casing after rejected task08-first-pass-001; independent review pending"
+  },
+  {
+    "app_id": 20,
+    "claim_id": "20.api.group.agents_answers_conversations",
+    "change": "added",
+    "reason": "Task 08 first-pass extraction (Support and Helpdesk, IDs 11-20, contract v1.1); fixed enum casing after rejected task08-first-pass-001; independent review pending"
+  },
+  {
+    "app_id": 20,
+    "claim_id": "20.api.group.customers_tasks_reports_webhooks",
+    "change": "added",
+    "reason": "Task 08 first-pass extraction (Support and Helpdesk, IDs 11-20, contract v1.1); fixed enum casing after rejected task08-first-pass-001; independent review pending"
+  },
+  {
+    "app_id": 20,
+    "claim_id": "20.api.protocol.rest",
+    "change": "added",
+    "reason": "Task 08 first-pass extraction (Support and Helpdesk, IDs 11-20, contract v1.1); fixed enum casing after rejected task08-first-pass-001; independent review pending"
+  },
+  {
+    "app_id": 20,
+    "claim_id": "20.api.public_docs",
+    "change": "added",
+    "reason": "Task 08 first-pass extraction (Support and Helpdesk, IDs 11-20, contract v1.1); fixed enum casing after rejected task08-first-pass-001; independent review pending"
+  },
+  {
+    "app_id": 20,
+    "claim_id": "20.api.public_documentation",
+    "change": "removed",
+    "reason": "Task 08 first-pass extraction (Support and Helpdesk, IDs 11-20, contract v1.1); fixed enum casing after rejected task08-first-pass-001; independent review pending"
+  },
+  {
+    "app_id": 20,
+    "claim_id": "20.auth.api_token_basic",
+    "change": "added",
+    "reason": "Task 08 first-pass extraction (Support and Helpdesk, IDs 11-20, contract v1.1); fixed enum casing after rejected task08-first-pass-001; independent review pending"
+  },
+  {
+    "app_id": 20,
+    "claim_id": "20.buildability",
+    "change": "changed",
+    "reason": "Task 08 first-pass extraction (Support and Helpdesk, IDs 11-20, contract v1.1); fixed enum casing after rejected task08-first-pass-001; independent review pending"
+  },
+  {
+    "app_id": 20,
+    "claim_id": "20.identity",
+    "change": "changed",
+    "reason": "Task 08 first-pass extraction (Support and Helpdesk, IDs 11-20, contract v1.1); fixed enum casing after rejected task08-first-pass-001; independent review pending"
+  },
+  {
+    "app_id": 20,
+    "claim_id": "20.mcp",
+    "change": "changed",
+    "reason": "Task 08 first-pass extraction (Support and Helpdesk, IDs 11-20, contract v1.1); fixed enum casing after rejected task08-first-pass-001; independent review pending"
+  },
+  {
+    "app_id": 20,
+    "claim_id": "20.production.admin_approval_required",
+    "change": "changed",
+    "reason": "Task 08 first-pass extraction (Support and Helpdesk, IDs 11-20, contract v1.1); fixed enum casing after rejected task08-first-pass-001; independent review pending"
+  },
+  {
+    "app_id": 20,
+    "claim_id": "20.production.contact_sales_required",
+    "change": "changed",
+    "reason": "Task 08 first-pass extraction (Support and Helpdesk, IDs 11-20, contract v1.1); fixed enum casing after rejected task08-first-pass-001; independent review pending"
+  },
+  {
+    "app_id": 20,
+    "claim_id": "20.production.free_access",
+    "change": "changed",
+    "reason": "Task 08 first-pass extraction (Support and Helpdesk, IDs 11-20, contract v1.1); fixed enum casing after rejected task08-first-pass-001; independent review pending"
+  },
+  {
+    "app_id": 20,
+    "claim_id": "20.production.paid_required",
+    "change": "changed",
+    "reason": "Task 08 first-pass extraction (Support and Helpdesk, IDs 11-20, contract v1.1); fixed enum casing after rejected task08-first-pass-001; independent review pending"
+  },
+  {
+    "app_id": 20,
+    "claim_id": "20.production.partner_approval_required",
+    "change": "changed",
+    "reason": "Task 08 first-pass extraction (Support and Helpdesk, IDs 11-20, contract v1.1); fixed enum casing after rejected task08-first-pass-001; independent review pending"
+  },
+  {
+    "app_id": 20,
+    "claim_id": "20.production.sandbox_access",
+    "change": "changed",
+    "reason": "Task 08 first-pass extraction (Support and Helpdesk, IDs 11-20, contract v1.1); fixed enum casing after rejected task08-first-pass-001; independent review pending"
+  },
+  {
+    "app_id": 20,
+    "claim_id": "20.production.self_serve",
+    "change": "changed",
+    "reason": "Task 08 first-pass extraction (Support and Helpdesk, IDs 11-20, contract v1.1); fixed enum casing after rejected task08-first-pass-001; independent review pending"
+  },
+  {
+    "app_id": 20,
+    "claim_id": "20.production.trial_access",
+    "change": "changed",
+    "reason": "Task 08 first-pass extraction (Support and Helpdesk, IDs 11-20, contract v1.1); fixed enum casing after rejected task08-first-pass-001; independent review pending"
+  },
+  {
+    "app_id": 20,
+    "claim_id": "20.production.vendor_approval_required",
+    "change": "changed",
+    "reason": "Task 08 first-pass extraction (Support and Helpdesk, IDs 11-20, contract v1.1); fixed enum casing after rejected task08-first-pass-001; independent review pending"
+  },
+  {
+    "app_id": 20,
+    "claim_id": "20.purpose",
+    "change": "changed",
+    "reason": "Task 08 first-pass extraction (Support and Helpdesk, IDs 11-20, contract v1.1); fixed enum casing after rejected task08-first-pass-001; independent review pending"
+  },
+  {
+    "app_id": 20,
+    "claim_id": "20.testing.admin_approval_required",
+    "change": "changed",
+    "reason": "Task 08 first-pass extraction (Support and Helpdesk, IDs 11-20, contract v1.1); fixed enum casing after rejected task08-first-pass-001; independent review pending"
+  },
+  {
+    "app_id": 20,
+    "claim_id": "20.testing.contact_sales_required",
+    "change": "changed",
+    "reason": "Task 08 first-pass extraction (Support and Helpdesk, IDs 11-20, contract v1.1); fixed enum casing after rejected task08-first-pass-001; independent review pending"
+  },
+  {
+    "app_id": 20,
+    "claim_id": "20.testing.free_access",
+    "change": "changed",
+    "reason": "Task 08 first-pass extraction (Support and Helpdesk, IDs 11-20, contract v1.1); fixed enum casing after rejected task08-first-pass-001; independent review pending"
+  },
+  {
+    "app_id": 20,
+    "claim_id": "20.testing.paid_required",
+    "change": "changed",
+    "reason": "Task 08 first-pass extraction (Support and Helpdesk, IDs 11-20, contract v1.1); fixed enum casing after rejected task08-first-pass-001; independent review pending"
+  },
+  {
+    "app_id": 20,
+    "claim_id": "20.testing.partner_approval_required",
+    "change": "changed",
+    "reason": "Task 08 first-pass extraction (Support and Helpdesk, IDs 11-20, contract v1.1); fixed enum casing after rejected task08-first-pass-001; independent review pending"
+  },
+  {
+    "app_id": 20,
+    "claim_id": "20.testing.sandbox_access",
+    "change": "changed",
+    "reason": "Task 08 first-pass extraction (Support and Helpdesk, IDs 11-20, contract v1.1); fixed enum casing after rejected task08-first-pass-001; independent review pending"
+  },
+  {
+    "app_id": 20,
+    "claim_id": "20.testing.self_serve",
+    "change": "changed",
+    "reason": "Task 08 first-pass extraction (Support and Helpdesk, IDs 11-20, contract v1.1); fixed enum casing after rejected task08-first-pass-001; independent review pending"
+  },
+  {
+    "app_id": 20,
+    "claim_id": "20.testing.trial_access",
+    "change": "changed",
+    "reason": "Task 08 first-pass extraction (Support and Helpdesk, IDs 11-20, contract v1.1); fixed enum casing after rejected task08-first-pass-001; independent review pending"
+  },
+  {
+    "app_id": 20,
+    "claim_id": "20.testing.vendor_approval_required",
+    "change": "changed",
+    "reason": "Task 08 first-pass extraction (Support and Helpdesk, IDs 11-20, contract v1.1); fixed enum casing after rejected task08-first-pass-001; independent review pending"
+  }
+]

@@ -1,0 +1,210 @@
+Introduction - Neo4j MCP
+Docs
+Docs
+Neo4j DBMS
+Getting Started
+Operations
+Migration and Upgrade
+Data Ingestion Guide
+Status Codes
+Java Reference
+Kerberos Add-on
+Neo4j Aura
+Neo4j Tools
+Neo4j Bloom
+Neo4j Browser
+Neo4j Data Importer
+Neo4j Desktop
+Neo4j Enterprise Studio
+Neo4j Ops Manager
+Neodash commercial
+Neo4j Graph Data Science
+Neo4j Graph Data Science Library
+Neo4j Graph Data Science Client
+Neo4j Graph Analytics for Snowflake
+Cypher Query Language
+Cypher
+Cypher Cheat Sheet
+APOC Library
+Generative AI
+Neo4j GraphRAG for Python
+Embeddings and vector indexes tutorial
+GenAI plugin
+Vector search indexes
+Vector search functions
+GraphQL vector index search documentation
+Create applications
+Python Driver
+Go Driver
+Java Driver
+JDBC Driver
+JavaScript Driver
+.Net Driver
+MCP
+Neo4j GraphQL Library
+Neo4j Visualization Library
+OGM Library
+Spring Data Neo4j
+HTTP API
+Neo4j Query API
+Bolt
+Connect data sources
+Neo4j Connector for Apache Spark
+Neo4j Connector for Apache Kafka
+Change Data Capture (CDC)
+BigQuery to Neo4j
+Google Cloud to Neo4j
+Labs
+GenAI Ecosystem
+LLM Knowledge Graph Builder
+Vector Index & Search
+LangChain
+LangChain.js
+LlamaIndex
+Haystack
+DSPy
+Agent Memory
+Getting Started
+Tutorials
+Framework Integrations
+MCP Server
+Developer Tools
+APOC Extended
+Aura CLI
+arrows.app
+Cypher Workbench
+ETL Tool
+NeoDash
+Frameworks & Integrations
+Needle Starter Kit
+Neo4j Plugin for Liquibase
+Neo4j Migrations
+neomodel
+RDF & Linked Data
+Neosemantics (Java)
+RDFLib-Neo4j (Python)
+Get Help
+Community Forum
+Discord Chat
+Product Support
+Neo4j Developer Blog
+Neo4j Videos
+GraphAcademy
+Beginners Courses
+Neo4j Fundamentals
+Cypher Fundamentals
+Importing Data Fundamentals
+Importing CSV Data
+Graph Data Modeling
+Data Scientist Courses
+Get started with Graph Data Science
+Path Finding
+Generative AI Courses
+Neo4j & Generative AI Fundamentals
+Vector Indexes & Unstructured Data
+Constructing Knowledge Graphs
+Building Agents in Neo4j Aura
+Neo4j Certification
+Neo4j Certified Professional
+Neo4j Graph Data Science Certification
+Get Started Free
+Theme
+Light
+Dark
+Search
+Skip to content
+Neo4j MCP
+Product Version
+Version 2 (Current)
+Version 1
+Neo4j MCP
+Introduction
+Quickstart
+Tools
+Security
+Setup
+MCP for Aura
+Installation
+Client configuration
+HTTP Authentication
+HTTP mode
+Configuration reference
+STDIO configuration
+HTTP configuration
+Requirement checks
+Monitoring
+Logging
+Telemetry
+Versions and support
+Migrate from v1 to v2
+Known issues
+Is this page helpful?
+Neo4j MCP
+Introduction
+Raise an issue
+Introduction
+Neo4j MCP implements the Model Context Protocol (MCP), an open standard that lets applications connect to external data sources and tools.
+It bridges any MCP-compatible client and your Neo4j instance, giving that client direct, structured access to your graph database.
+AI assistants and agents are the most common MCP clients today, tools like Claude, Cursor, or VS Code with MCP support.
+But MCP itself doesn’t require AI.
+Any application that implements the MCP client specification can connect to Neo4j through it, whether or not a model is involved.
+Neo4j MCP is built for:
+Developers who want to query Neo4j conversationally while prototyping.
+Data scientists and analysts exploring graph data without deep Cypher® expertise.
+Platform teams deploying shared tooling that needs structured, auditable access to Neo4j.
+Application builders using Neo4j as a knowledge source or reasoning backend, including in multi-agent systems.
+A connected client can:
+Explore your graph schema - discover node labels, relationship types, and property keys, and reason about your data model without knowing it in advance.
+Run Cypher queries - execute reads and writes against your database from natural language prompts or programmatic calls.
+Inspect and analyze data - retrieve nodes, relationships, and paths to answer questions, generate summaries, or feed other workflows.
+Prerequisites
+A running Neo4j database instance. Options include Aura, neo4j-desktop or self-managed.
+The APOC plugin installed in the Neo4j instance.
+Any MCP-compatible client, e.g. VSCode with MCP support.
+Optional requirements
+The Graph Data Science (GDS) library is optional.
+See GDS requirement for details.
+Examples for natural language prompts
+Here are some example prompts you can try in Copilot or any other MCP client:
+"What does my Neo4j instance contain? List all node labels, relationship types, and property keys."
+"Find all Person nodes and their relationships in my Neo4j instance."
+"Create a new User node with a name 'John' in my Neo4j instance."
+Quickstart
+Products
+Neo4j Graph Database
+Neo4j AuraDB
+Neo4j Graph Data Science
+Deployment Center
+Professional Services
+Pricing
+Developers
+Developer Home
+Documentation
+Deployment Center
+Developer Blog
+Community
+Virtual Events
+GraphAcademy
+Learn
+Resource Library
+Neo4j Blog
+GraphAcademy
+Research Center
+Case Studies
+Events Calendar
+NODES 2026
+Webinars
+Company
+About Us
+Newsroom
+Awards and Honors
+Careers
+Culture
+Leadership
+Support
+Social Networks
+© 2026 Neo4j, Inc.
+Terms | Privacy Policy | Sitemap
+Neo4j®, Neo Technology®, Cypher®, Neo4j® Bloom™, Neo4j® AuraDB℠ and
+Neo4j® AuraDS℠ are registered trademarks
+of Neo4j, Inc. All other marks are owned by their respective companies.

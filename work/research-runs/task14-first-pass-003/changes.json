@@ -1,0 +1,590 @@
+[
+  {
+    "app_id": 71,
+    "claim_id": "71.api.protocol.rest",
+    "change": "changed",
+    "reason": "Remediate all 36 independent AI review findings in outputs/task-14-review.md: per-claim attachments, locator ranges, Monday.com Platform OAuth 2.0, and v1.1 line-59 credential path scoping"
+  },
+  {
+    "app_id": 71,
+    "claim_id": "71.auth.internal",
+    "change": "changed",
+    "reason": "Remediate all 36 independent AI review findings in outputs/task-14-review.md: per-claim attachments, locator ranges, Monday.com Platform OAuth 2.0, and v1.1 line-59 credential path scoping"
+  },
+  {
+    "app_id": 71,
+    "claim_id": "71.buildability",
+    "change": "changed",
+    "reason": "Remediate all 36 independent AI review findings in outputs/task-14-review.md: per-claim attachments, locator ranges, Monday.com Platform OAuth 2.0, and v1.1 line-59 credential path scoping"
+  },
+  {
+    "app_id": 71,
+    "claim_id": "71.identity",
+    "change": "changed",
+    "reason": "Remediate all 36 independent AI review findings in outputs/task-14-review.md: per-claim attachments, locator ranges, Monday.com Platform OAuth 2.0, and v1.1 line-59 credential path scoping"
+  },
+  {
+    "app_id": 71,
+    "claim_id": "71.production.admin_approval_required",
+    "change": "changed",
+    "reason": "Remediate all 36 independent AI review findings in outputs/task-14-review.md: per-claim attachments, locator ranges, Monday.com Platform OAuth 2.0, and v1.1 line-59 credential path scoping"
+  },
+  {
+    "app_id": 71,
+    "claim_id": "71.production.self_serve",
+    "change": "changed",
+    "reason": "Remediate all 36 independent AI review findings in outputs/task-14-review.md: per-claim attachments, locator ranges, Monday.com Platform OAuth 2.0, and v1.1 line-59 credential path scoping"
+  },
+  {
+    "app_id": 71,
+    "claim_id": "71.production.vendor_approval_required",
+    "change": "changed",
+    "reason": "Remediate all 36 independent AI review findings in outputs/task-14-review.md: per-claim attachments, locator ranges, Monday.com Platform OAuth 2.0, and v1.1 line-59 credential path scoping"
+  },
+  {
+    "app_id": 71,
+    "claim_id": "71.testing.admin_approval_required",
+    "change": "changed",
+    "reason": "Remediate all 36 independent AI review findings in outputs/task-14-review.md: per-claim attachments, locator ranges, Monday.com Platform OAuth 2.0, and v1.1 line-59 credential path scoping"
+  },
+  {
+    "app_id": 71,
+    "claim_id": "71.testing.self_serve",
+    "change": "changed",
+    "reason": "Remediate all 36 independent AI review findings in outputs/task-14-review.md: per-claim attachments, locator ranges, Monday.com Platform OAuth 2.0, and v1.1 line-59 credential path scoping"
+  },
+  {
+    "app_id": 71,
+    "claim_id": "71.testing.vendor_approval_required",
+    "change": "changed",
+    "reason": "Remediate all 36 independent AI review findings in outputs/task-14-review.md: per-claim attachments, locator ranges, Monday.com Platform OAuth 2.0, and v1.1 line-59 credential path scoping"
+  },
+  {
+    "app_id": 72,
+    "claim_id": "72.api.breadth",
+    "change": "changed",
+    "reason": "Remediate all 36 independent AI review findings in outputs/task-14-review.md: per-claim attachments, locator ranges, Monday.com Platform OAuth 2.0, and v1.1 line-59 credential path scoping"
+  },
+  {
+    "app_id": 72,
+    "claim_id": "72.api.group.records",
+    "change": "changed",
+    "reason": "Remediate all 36 independent AI review findings in outputs/task-14-review.md: per-claim attachments, locator ranges, Monday.com Platform OAuth 2.0, and v1.1 line-59 credential path scoping"
+  },
+  {
+    "app_id": 72,
+    "claim_id": "72.api.protocol.rest",
+    "change": "changed",
+    "reason": "Remediate all 36 independent AI review findings in outputs/task-14-review.md: per-claim attachments, locator ranges, Monday.com Platform OAuth 2.0, and v1.1 line-59 credential path scoping"
+  },
+  {
+    "app_id": 72,
+    "claim_id": "72.api.public_docs",
+    "change": "changed",
+    "reason": "Remediate all 36 independent AI review findings in outputs/task-14-review.md: per-claim attachments, locator ranges, Monday.com Platform OAuth 2.0, and v1.1 line-59 credential path scoping"
+  },
+  {
+    "app_id": 72,
+    "claim_id": "72.auth.pat",
+    "change": "changed",
+    "reason": "Remediate all 36 independent AI review findings in outputs/task-14-review.md: per-claim attachments, locator ranges, Monday.com Platform OAuth 2.0, and v1.1 line-59 credential path scoping"
+  },
+  {
+    "app_id": 72,
+    "claim_id": "72.buildability",
+    "change": "changed",
+    "reason": "Remediate all 36 independent AI review findings in outputs/task-14-review.md: per-claim attachments, locator ranges, Monday.com Platform OAuth 2.0, and v1.1 line-59 credential path scoping"
+  },
+  {
+    "app_id": 72,
+    "claim_id": "72.identity",
+    "change": "changed",
+    "reason": "Remediate all 36 independent AI review findings in outputs/task-14-review.md: per-claim attachments, locator ranges, Monday.com Platform OAuth 2.0, and v1.1 line-59 credential path scoping"
+  },
+  {
+    "app_id": 72,
+    "claim_id": "72.production.admin_approval_required",
+    "change": "changed",
+    "reason": "Remediate all 36 independent AI review findings in outputs/task-14-review.md: per-claim attachments, locator ranges, Monday.com Platform OAuth 2.0, and v1.1 line-59 credential path scoping"
+  },
+  {
+    "app_id": 72,
+    "claim_id": "72.production.free_access",
+    "change": "changed",
+    "reason": "Remediate all 36 independent AI review findings in outputs/task-14-review.md: per-claim attachments, locator ranges, Monday.com Platform OAuth 2.0, and v1.1 line-59 credential path scoping"
+  },
+  {
+    "app_id": 72,
+    "claim_id": "72.production.paid_required",
+    "change": "changed",
+    "reason": "Remediate all 36 independent AI review findings in outputs/task-14-review.md: per-claim attachments, locator ranges, Monday.com Platform OAuth 2.0, and v1.1 line-59 credential path scoping"
+  },
+  {
+    "app_id": 72,
+    "claim_id": "72.production.self_serve",
+    "change": "changed",
+    "reason": "Remediate all 36 independent AI review findings in outputs/task-14-review.md: per-claim attachments, locator ranges, Monday.com Platform OAuth 2.0, and v1.1 line-59 credential path scoping"
+  },
+  {
+    "app_id": 72,
+    "claim_id": "72.testing.admin_approval_required",
+    "change": "changed",
+    "reason": "Remediate all 36 independent AI review findings in outputs/task-14-review.md: per-claim attachments, locator ranges, Monday.com Platform OAuth 2.0, and v1.1 line-59 credential path scoping"
+  },
+  {
+    "app_id": 72,
+    "claim_id": "72.testing.free_access",
+    "change": "changed",
+    "reason": "Remediate all 36 independent AI review findings in outputs/task-14-review.md: per-claim attachments, locator ranges, Monday.com Platform OAuth 2.0, and v1.1 line-59 credential path scoping"
+  },
+  {
+    "app_id": 72,
+    "claim_id": "72.testing.paid_required",
+    "change": "changed",
+    "reason": "Remediate all 36 independent AI review findings in outputs/task-14-review.md: per-claim attachments, locator ranges, Monday.com Platform OAuth 2.0, and v1.1 line-59 credential path scoping"
+  },
+  {
+    "app_id": 72,
+    "claim_id": "72.testing.self_serve",
+    "change": "changed",
+    "reason": "Remediate all 36 independent AI review findings in outputs/task-14-review.md: per-claim attachments, locator ranges, Monday.com Platform OAuth 2.0, and v1.1 line-59 credential path scoping"
+  },
+  {
+    "app_id": 73,
+    "claim_id": "73.api.breadth",
+    "change": "changed",
+    "reason": "Remediate all 36 independent AI review findings in outputs/task-14-review.md: per-claim attachments, locator ranges, Monday.com Platform OAuth 2.0, and v1.1 line-59 credential path scoping"
+  },
+  {
+    "app_id": 73,
+    "claim_id": "73.api.group.issues",
+    "change": "changed",
+    "reason": "Remediate all 36 independent AI review findings in outputs/task-14-review.md: per-claim attachments, locator ranges, Monday.com Platform OAuth 2.0, and v1.1 line-59 credential path scoping"
+  },
+  {
+    "app_id": 73,
+    "claim_id": "73.api.group.teams",
+    "change": "changed",
+    "reason": "Remediate all 36 independent AI review findings in outputs/task-14-review.md: per-claim attachments, locator ranges, Monday.com Platform OAuth 2.0, and v1.1 line-59 credential path scoping"
+  },
+  {
+    "app_id": 73,
+    "claim_id": "73.api.public_docs",
+    "change": "changed",
+    "reason": "Remediate all 36 independent AI review findings in outputs/task-14-review.md: per-claim attachments, locator ranges, Monday.com Platform OAuth 2.0, and v1.1 line-59 credential path scoping"
+  },
+  {
+    "app_id": 73,
+    "claim_id": "73.buildability",
+    "change": "changed",
+    "reason": "Remediate all 36 independent AI review findings in outputs/task-14-review.md: per-claim attachments, locator ranges, Monday.com Platform OAuth 2.0, and v1.1 line-59 credential path scoping"
+  },
+  {
+    "app_id": 73,
+    "claim_id": "73.identity",
+    "change": "changed",
+    "reason": "Remediate all 36 independent AI review findings in outputs/task-14-review.md: per-claim attachments, locator ranges, Monday.com Platform OAuth 2.0, and v1.1 line-59 credential path scoping"
+  },
+  {
+    "app_id": 73,
+    "claim_id": "73.production.admin_approval_required",
+    "change": "changed",
+    "reason": "Remediate all 36 independent AI review findings in outputs/task-14-review.md: per-claim attachments, locator ranges, Monday.com Platform OAuth 2.0, and v1.1 line-59 credential path scoping"
+  },
+  {
+    "app_id": 73,
+    "claim_id": "73.production.self_serve",
+    "change": "changed",
+    "reason": "Remediate all 36 independent AI review findings in outputs/task-14-review.md: per-claim attachments, locator ranges, Monday.com Platform OAuth 2.0, and v1.1 line-59 credential path scoping"
+  },
+  {
+    "app_id": 73,
+    "claim_id": "73.purpose",
+    "change": "changed",
+    "reason": "Remediate all 36 independent AI review findings in outputs/task-14-review.md: per-claim attachments, locator ranges, Monday.com Platform OAuth 2.0, and v1.1 line-59 credential path scoping"
+  },
+  {
+    "app_id": 73,
+    "claim_id": "73.testing.admin_approval_required",
+    "change": "changed",
+    "reason": "Remediate all 36 independent AI review findings in outputs/task-14-review.md: per-claim attachments, locator ranges, Monday.com Platform OAuth 2.0, and v1.1 line-59 credential path scoping"
+  },
+  {
+    "app_id": 73,
+    "claim_id": "73.testing.self_serve",
+    "change": "changed",
+    "reason": "Remediate all 36 independent AI review findings in outputs/task-14-review.md: per-claim attachments, locator ranges, Monday.com Platform OAuth 2.0, and v1.1 line-59 credential path scoping"
+  },
+  {
+    "app_id": 74,
+    "claim_id": "74.auth.oauth",
+    "change": "changed",
+    "reason": "Remediate all 36 independent AI review findings in outputs/task-14-review.md: per-claim attachments, locator ranges, Monday.com Platform OAuth 2.0, and v1.1 line-59 credential path scoping"
+  },
+  {
+    "app_id": 74,
+    "claim_id": "74.buildability",
+    "change": "changed",
+    "reason": "Remediate all 36 independent AI review findings in outputs/task-14-review.md: per-claim attachments, locator ranges, Monday.com Platform OAuth 2.0, and v1.1 line-59 credential path scoping"
+  },
+  {
+    "app_id": 74,
+    "claim_id": "74.identity",
+    "change": "changed",
+    "reason": "Remediate all 36 independent AI review findings in outputs/task-14-review.md: per-claim attachments, locator ranges, Monday.com Platform OAuth 2.0, and v1.1 line-59 credential path scoping"
+  },
+  {
+    "app_id": 74,
+    "claim_id": "74.production.admin_approval_required",
+    "change": "changed",
+    "reason": "Remediate all 36 independent AI review findings in outputs/task-14-review.md: per-claim attachments, locator ranges, Monday.com Platform OAuth 2.0, and v1.1 line-59 credential path scoping"
+  },
+  {
+    "app_id": 74,
+    "claim_id": "74.production.self_serve",
+    "change": "changed",
+    "reason": "Remediate all 36 independent AI review findings in outputs/task-14-review.md: per-claim attachments, locator ranges, Monday.com Platform OAuth 2.0, and v1.1 line-59 credential path scoping"
+  },
+  {
+    "app_id": 74,
+    "claim_id": "74.purpose",
+    "change": "changed",
+    "reason": "Remediate all 36 independent AI review findings in outputs/task-14-review.md: per-claim attachments, locator ranges, Monday.com Platform OAuth 2.0, and v1.1 line-59 credential path scoping"
+  },
+  {
+    "app_id": 74,
+    "claim_id": "74.testing.admin_approval_required",
+    "change": "changed",
+    "reason": "Remediate all 36 independent AI review findings in outputs/task-14-review.md: per-claim attachments, locator ranges, Monday.com Platform OAuth 2.0, and v1.1 line-59 credential path scoping"
+  },
+  {
+    "app_id": 74,
+    "claim_id": "74.testing.self_serve",
+    "change": "changed",
+    "reason": "Remediate all 36 independent AI review findings in outputs/task-14-review.md: per-claim attachments, locator ranges, Monday.com Platform OAuth 2.0, and v1.1 line-59 credential path scoping"
+  },
+  {
+    "app_id": 75,
+    "claim_id": "75.auth.oauth",
+    "change": "changed",
+    "reason": "Remediate all 36 independent AI review findings in outputs/task-14-review.md: per-claim attachments, locator ranges, Monday.com Platform OAuth 2.0, and v1.1 line-59 credential path scoping"
+  },
+  {
+    "app_id": 75,
+    "claim_id": "75.buildability",
+    "change": "changed",
+    "reason": "Remediate all 36 independent AI review findings in outputs/task-14-review.md: per-claim attachments, locator ranges, Monday.com Platform OAuth 2.0, and v1.1 line-59 credential path scoping"
+  },
+  {
+    "app_id": 75,
+    "claim_id": "75.identity",
+    "change": "changed",
+    "reason": "Remediate all 36 independent AI review findings in outputs/task-14-review.md: per-claim attachments, locator ranges, Monday.com Platform OAuth 2.0, and v1.1 line-59 credential path scoping"
+  },
+  {
+    "app_id": 75,
+    "claim_id": "75.mcp.discovery",
+    "change": "changed",
+    "reason": "Remediate all 36 independent AI review findings in outputs/task-14-review.md: per-claim attachments, locator ranges, Monday.com Platform OAuth 2.0, and v1.1 line-59 credential path scoping"
+  },
+  {
+    "app_id": 75,
+    "claim_id": "75.mcp.server",
+    "change": "changed",
+    "reason": "Remediate all 36 independent AI review findings in outputs/task-14-review.md: per-claim attachments, locator ranges, Monday.com Platform OAuth 2.0, and v1.1 line-59 credential path scoping"
+  },
+  {
+    "app_id": 75,
+    "claim_id": "75.testing.free_access",
+    "change": "changed",
+    "reason": "Remediate all 36 independent AI review findings in outputs/task-14-review.md: per-claim attachments, locator ranges, Monday.com Platform OAuth 2.0, and v1.1 line-59 credential path scoping"
+  },
+  {
+    "app_id": 75,
+    "claim_id": "75.testing.sandbox_access",
+    "change": "changed",
+    "reason": "Remediate all 36 independent AI review findings in outputs/task-14-review.md: per-claim attachments, locator ranges, Monday.com Platform OAuth 2.0, and v1.1 line-59 credential path scoping"
+  },
+  {
+    "app_id": 75,
+    "claim_id": "75.testing.self_serve",
+    "change": "changed",
+    "reason": "Remediate all 36 independent AI review findings in outputs/task-14-review.md: per-claim attachments, locator ranges, Monday.com Platform OAuth 2.0, and v1.1 line-59 credential path scoping"
+  },
+  {
+    "app_id": 75,
+    "claim_id": "75.testing.vendor_approval_required",
+    "change": "changed",
+    "reason": "Remediate all 36 independent AI review findings in outputs/task-14-review.md: per-claim attachments, locator ranges, Monday.com Platform OAuth 2.0, and v1.1 line-59 credential path scoping"
+  },
+  {
+    "app_id": 76,
+    "claim_id": "76.auth.mcp_oauth",
+    "change": "changed",
+    "reason": "Remediate all 36 independent AI review findings in outputs/task-14-review.md: per-claim attachments, locator ranges, Monday.com Platform OAuth 2.0, and v1.1 line-59 credential path scoping"
+  },
+  {
+    "app_id": 76,
+    "claim_id": "76.auth.oauth",
+    "change": "added",
+    "reason": "Remediate all 36 independent AI review findings in outputs/task-14-review.md: per-claim attachments, locator ranges, Monday.com Platform OAuth 2.0, and v1.1 line-59 credential path scoping"
+  },
+  {
+    "app_id": 76,
+    "claim_id": "76.buildability",
+    "change": "changed",
+    "reason": "Remediate all 36 independent AI review findings in outputs/task-14-review.md: per-claim attachments, locator ranges, Monday.com Platform OAuth 2.0, and v1.1 line-59 credential path scoping"
+  },
+  {
+    "app_id": 76,
+    "claim_id": "76.identity",
+    "change": "changed",
+    "reason": "Remediate all 36 independent AI review findings in outputs/task-14-review.md: per-claim attachments, locator ranges, Monday.com Platform OAuth 2.0, and v1.1 line-59 credential path scoping"
+  },
+  {
+    "app_id": 76,
+    "claim_id": "76.production.self_serve",
+    "change": "changed",
+    "reason": "Remediate all 36 independent AI review findings in outputs/task-14-review.md: per-claim attachments, locator ranges, Monday.com Platform OAuth 2.0, and v1.1 line-59 credential path scoping"
+  },
+  {
+    "app_id": 76,
+    "claim_id": "76.purpose",
+    "change": "changed",
+    "reason": "Remediate all 36 independent AI review findings in outputs/task-14-review.md: per-claim attachments, locator ranges, Monday.com Platform OAuth 2.0, and v1.1 line-59 credential path scoping"
+  },
+  {
+    "app_id": 76,
+    "claim_id": "76.testing.free_access",
+    "change": "changed",
+    "reason": "Remediate all 36 independent AI review findings in outputs/task-14-review.md: per-claim attachments, locator ranges, Monday.com Platform OAuth 2.0, and v1.1 line-59 credential path scoping"
+  },
+  {
+    "app_id": 76,
+    "claim_id": "76.testing.paid_required",
+    "change": "changed",
+    "reason": "Remediate all 36 independent AI review findings in outputs/task-14-review.md: per-claim attachments, locator ranges, Monday.com Platform OAuth 2.0, and v1.1 line-59 credential path scoping"
+  },
+  {
+    "app_id": 76,
+    "claim_id": "76.testing.sandbox_access",
+    "change": "changed",
+    "reason": "Remediate all 36 independent AI review findings in outputs/task-14-review.md: per-claim attachments, locator ranges, Monday.com Platform OAuth 2.0, and v1.1 line-59 credential path scoping"
+  },
+  {
+    "app_id": 76,
+    "claim_id": "76.testing.self_serve",
+    "change": "changed",
+    "reason": "Remediate all 36 independent AI review findings in outputs/task-14-review.md: per-claim attachments, locator ranges, Monday.com Platform OAuth 2.0, and v1.1 line-59 credential path scoping"
+  },
+  {
+    "app_id": 76,
+    "claim_id": "76.testing.trial_access",
+    "change": "changed",
+    "reason": "Remediate all 36 independent AI review findings in outputs/task-14-review.md: per-claim attachments, locator ranges, Monday.com Platform OAuth 2.0, and v1.1 line-59 credential path scoping"
+  },
+  {
+    "app_id": 77,
+    "claim_id": "77.buildability",
+    "change": "changed",
+    "reason": "Remediate all 36 independent AI review findings in outputs/task-14-review.md: per-claim attachments, locator ranges, Monday.com Platform OAuth 2.0, and v1.1 line-59 credential path scoping"
+  },
+  {
+    "app_id": 77,
+    "claim_id": "77.identity",
+    "change": "changed",
+    "reason": "Remediate all 36 independent AI review findings in outputs/task-14-review.md: per-claim attachments, locator ranges, Monday.com Platform OAuth 2.0, and v1.1 line-59 credential path scoping"
+  },
+  {
+    "app_id": 77,
+    "claim_id": "77.production.admin_approval_required",
+    "change": "changed",
+    "reason": "Remediate all 36 independent AI review findings in outputs/task-14-review.md: per-claim attachments, locator ranges, Monday.com Platform OAuth 2.0, and v1.1 line-59 credential path scoping"
+  },
+  {
+    "app_id": 77,
+    "claim_id": "77.production.free_access",
+    "change": "changed",
+    "reason": "Remediate all 36 independent AI review findings in outputs/task-14-review.md: per-claim attachments, locator ranges, Monday.com Platform OAuth 2.0, and v1.1 line-59 credential path scoping"
+  },
+  {
+    "app_id": 77,
+    "claim_id": "77.production.paid_required",
+    "change": "changed",
+    "reason": "Remediate all 36 independent AI review findings in outputs/task-14-review.md: per-claim attachments, locator ranges, Monday.com Platform OAuth 2.0, and v1.1 line-59 credential path scoping"
+  },
+  {
+    "app_id": 77,
+    "claim_id": "77.production.self_serve",
+    "change": "changed",
+    "reason": "Remediate all 36 independent AI review findings in outputs/task-14-review.md: per-claim attachments, locator ranges, Monday.com Platform OAuth 2.0, and v1.1 line-59 credential path scoping"
+  },
+  {
+    "app_id": 77,
+    "claim_id": "77.testing.admin_approval_required",
+    "change": "changed",
+    "reason": "Remediate all 36 independent AI review findings in outputs/task-14-review.md: per-claim attachments, locator ranges, Monday.com Platform OAuth 2.0, and v1.1 line-59 credential path scoping"
+  },
+  {
+    "app_id": 77,
+    "claim_id": "77.testing.free_access",
+    "change": "changed",
+    "reason": "Remediate all 36 independent AI review findings in outputs/task-14-review.md: per-claim attachments, locator ranges, Monday.com Platform OAuth 2.0, and v1.1 line-59 credential path scoping"
+  },
+  {
+    "app_id": 77,
+    "claim_id": "77.testing.paid_required",
+    "change": "changed",
+    "reason": "Remediate all 36 independent AI review findings in outputs/task-14-review.md: per-claim attachments, locator ranges, Monday.com Platform OAuth 2.0, and v1.1 line-59 credential path scoping"
+  },
+  {
+    "app_id": 77,
+    "claim_id": "77.testing.self_serve",
+    "change": "changed",
+    "reason": "Remediate all 36 independent AI review findings in outputs/task-14-review.md: per-claim attachments, locator ranges, Monday.com Platform OAuth 2.0, and v1.1 line-59 credential path scoping"
+  },
+  {
+    "app_id": 78,
+    "claim_id": "78.buildability",
+    "change": "changed",
+    "reason": "Remediate all 36 independent AI review findings in outputs/task-14-review.md: per-claim attachments, locator ranges, Monday.com Platform OAuth 2.0, and v1.1 line-59 credential path scoping"
+  },
+  {
+    "app_id": 78,
+    "claim_id": "78.mcp.discovery",
+    "change": "changed",
+    "reason": "Remediate all 36 independent AI review findings in outputs/task-14-review.md: per-claim attachments, locator ranges, Monday.com Platform OAuth 2.0, and v1.1 line-59 credential path scoping"
+  },
+  {
+    "app_id": 78,
+    "claim_id": "78.mcp.server",
+    "change": "changed",
+    "reason": "Remediate all 36 independent AI review findings in outputs/task-14-review.md: per-claim attachments, locator ranges, Monday.com Platform OAuth 2.0, and v1.1 line-59 credential path scoping"
+  },
+  {
+    "app_id": 78,
+    "claim_id": "78.production.free_access",
+    "change": "changed",
+    "reason": "Remediate all 36 independent AI review findings in outputs/task-14-review.md: per-claim attachments, locator ranges, Monday.com Platform OAuth 2.0, and v1.1 line-59 credential path scoping"
+  },
+  {
+    "app_id": 78,
+    "claim_id": "78.production.paid_required",
+    "change": "changed",
+    "reason": "Remediate all 36 independent AI review findings in outputs/task-14-review.md: per-claim attachments, locator ranges, Monday.com Platform OAuth 2.0, and v1.1 line-59 credential path scoping"
+  },
+  {
+    "app_id": 78,
+    "claim_id": "78.production.self_serve",
+    "change": "changed",
+    "reason": "Remediate all 36 independent AI review findings in outputs/task-14-review.md: per-claim attachments, locator ranges, Monday.com Platform OAuth 2.0, and v1.1 line-59 credential path scoping"
+  },
+  {
+    "app_id": 78,
+    "claim_id": "78.purpose",
+    "change": "changed",
+    "reason": "Remediate all 36 independent AI review findings in outputs/task-14-review.md: per-claim attachments, locator ranges, Monday.com Platform OAuth 2.0, and v1.1 line-59 credential path scoping"
+  },
+  {
+    "app_id": 78,
+    "claim_id": "78.testing.free_access",
+    "change": "changed",
+    "reason": "Remediate all 36 independent AI review findings in outputs/task-14-review.md: per-claim attachments, locator ranges, Monday.com Platform OAuth 2.0, and v1.1 line-59 credential path scoping"
+  },
+  {
+    "app_id": 78,
+    "claim_id": "78.testing.paid_required",
+    "change": "changed",
+    "reason": "Remediate all 36 independent AI review findings in outputs/task-14-review.md: per-claim attachments, locator ranges, Monday.com Platform OAuth 2.0, and v1.1 line-59 credential path scoping"
+  },
+  {
+    "app_id": 78,
+    "claim_id": "78.testing.self_serve",
+    "change": "changed",
+    "reason": "Remediate all 36 independent AI review findings in outputs/task-14-review.md: per-claim attachments, locator ranges, Monday.com Platform OAuth 2.0, and v1.1 line-59 credential path scoping"
+  },
+  {
+    "app_id": 79,
+    "claim_id": "79.buildability",
+    "change": "changed",
+    "reason": "Remediate all 36 independent AI review findings in outputs/task-14-review.md: per-claim attachments, locator ranges, Monday.com Platform OAuth 2.0, and v1.1 line-59 credential path scoping"
+  },
+  {
+    "app_id": 79,
+    "claim_id": "79.identity",
+    "change": "changed",
+    "reason": "Remediate all 36 independent AI review findings in outputs/task-14-review.md: per-claim attachments, locator ranges, Monday.com Platform OAuth 2.0, and v1.1 line-59 credential path scoping"
+  },
+  {
+    "app_id": 79,
+    "claim_id": "79.production.paid_required",
+    "change": "changed",
+    "reason": "Remediate all 36 independent AI review findings in outputs/task-14-review.md: per-claim attachments, locator ranges, Monday.com Platform OAuth 2.0, and v1.1 line-59 credential path scoping"
+  },
+  {
+    "app_id": 79,
+    "claim_id": "79.production.self_serve",
+    "change": "changed",
+    "reason": "Remediate all 36 independent AI review findings in outputs/task-14-review.md: per-claim attachments, locator ranges, Monday.com Platform OAuth 2.0, and v1.1 line-59 credential path scoping"
+  },
+  {
+    "app_id": 79,
+    "claim_id": "79.production.vendor_approval_required",
+    "change": "changed",
+    "reason": "Remediate all 36 independent AI review findings in outputs/task-14-review.md: per-claim attachments, locator ranges, Monday.com Platform OAuth 2.0, and v1.1 line-59 credential path scoping"
+  },
+  {
+    "app_id": 79,
+    "claim_id": "79.testing.paid_required",
+    "change": "changed",
+    "reason": "Remediate all 36 independent AI review findings in outputs/task-14-review.md: per-claim attachments, locator ranges, Monday.com Platform OAuth 2.0, and v1.1 line-59 credential path scoping"
+  },
+  {
+    "app_id": 79,
+    "claim_id": "79.testing.sandbox_access",
+    "change": "changed",
+    "reason": "Remediate all 36 independent AI review findings in outputs/task-14-review.md: per-claim attachments, locator ranges, Monday.com Platform OAuth 2.0, and v1.1 line-59 credential path scoping"
+  },
+  {
+    "app_id": 79,
+    "claim_id": "79.testing.self_serve",
+    "change": "changed",
+    "reason": "Remediate all 36 independent AI review findings in outputs/task-14-review.md: per-claim attachments, locator ranges, Monday.com Platform OAuth 2.0, and v1.1 line-59 credential path scoping"
+  },
+  {
+    "app_id": 79,
+    "claim_id": "79.testing.vendor_approval_required",
+    "change": "changed",
+    "reason": "Remediate all 36 independent AI review findings in outputs/task-14-review.md: per-claim attachments, locator ranges, Monday.com Platform OAuth 2.0, and v1.1 line-59 credential path scoping"
+  },
+  {
+    "app_id": 80,
+    "claim_id": "80.auth.oauth_implicit",
+    "change": "changed",
+    "reason": "Remediate all 36 independent AI review findings in outputs/task-14-review.md: per-claim attachments, locator ranges, Monday.com Platform OAuth 2.0, and v1.1 line-59 credential path scoping"
+  },
+  {
+    "app_id": 80,
+    "claim_id": "80.buildability",
+    "change": "changed",
+    "reason": "Remediate all 36 independent AI review findings in outputs/task-14-review.md: per-claim attachments, locator ranges, Monday.com Platform OAuth 2.0, and v1.1 line-59 credential path scoping"
+  },
+  {
+    "app_id": 80,
+    "claim_id": "80.identity",
+    "change": "changed",
+    "reason": "Remediate all 36 independent AI review findings in outputs/task-14-review.md: per-claim attachments, locator ranges, Monday.com Platform OAuth 2.0, and v1.1 line-59 credential path scoping"
+  },
+  {
+    "app_id": 80,
+    "claim_id": "80.production.self_serve",
+    "change": "changed",
+    "reason": "Remediate all 36 independent AI review findings in outputs/task-14-review.md: per-claim attachments, locator ranges, Monday.com Platform OAuth 2.0, and v1.1 line-59 credential path scoping"
+  },
+  {
+    "app_id": 80,
+    "claim_id": "80.testing.self_serve",
+    "change": "changed",
+    "reason": "Remediate all 36 independent AI review findings in outputs/task-14-review.md: per-claim attachments, locator ranges, Monday.com Platform OAuth 2.0, and v1.1 line-59 credential path scoping"
+  }
+]

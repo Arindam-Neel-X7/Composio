@@ -1,0 +1,408 @@
+GitHub - Vonage-Community/vonage-mcp-server-api-bindings: Vonage MCP server with tools to interact with APIs · GitHub
+Skip to content
+Navigation Menu
+Sign in
+Products
+Platform
+GitHubRepository hosting, code review, and collaboration
+CopilotAI coding agent for tasks, projects, and automated work
+Build & Ship
+ActionsCI/CD and automation
+Code QualityQuality analysis, fixes, and enforcement
+CodespacesCloud development environments
+Secure
+Code SecurityVulnerability detection and remediation
+Secret ProtectionSecret scanning and leak prevention
+All Features
+Developers
+Learn
+Documentation
+Training
+Certifications
+Build
+Build with Copilot
+Customize Copilot
+Integrations
+Explore
+Trending repos
+GitHub Sponsors
+Developer articles
+Changelog
+ChangelogYour source for the latest features, improvements, and fixes across GitHub products, all in one place.
+Businesses
+By Stage
+Enterprises
+Team
+Startups
+Nonprofits
+By Industry
+Healthcare
+Financial services
+Manufacturing
+Government
+See all industries
+Evaluate GitHub
+Why GitHub
+Customer Stories
+Business insights
+Trust Center
+Add-ons
+GitHub Advanced SecurityEnterprise-grade code security
+Copilot for businessEnterprise-grade AI features
+Premium SupportEnterprise-grade 24/7 support
+Resources
+Learn & Connect
+Documentation
+Resource center
+Blog
+Events & webinars
+Community Forum
+Customer Stories
+Integrations
+Support
+Customer support
+Training
+GitHub Status
+Company
+About
+Partners
+Changelog
+GitHub Universe
+GitHub UniverseThe event for developers, by developers — talks, workshops, and what’s next for GitHub.
+Pricing
+Search/
+Sign in
+Sign up
+Appearance settings
+You signed in with another tab or window. Reload to refresh your session.
+You signed out in another tab or window. Reload to refresh your session.
+You switched accounts on another tab or window. Reload to refresh your session.
+Dismiss alert
+Vonage-Community
+vonage-mcp-server-api-bindings
+Repository navigation
+Code
+Issues4 (4)
+Pull requests3 (3)
+Actions
+Projects
+Security and quality
+Insights
+More items
+vonage-mcp-server-api-bindings
+Public
+NotificationsYou must be signed in to change notification settings
+Fork5 (5)
+Star3 (3)You must be signed in to star a repository
+About
+Vonage MCP server with tools to interact with APIs
+Resources
+Readme
+Apache-2.0 license
+Code of conduct
+Code of conduct
+Contributing
+Contributing
+Activity
+Custom properties
+Stars
+3 stars
+Watchers
+2 watching
+Forks
+5 forks
+Report repository
+main
+BranchesTags
+Go to file
+Code
+Open more actions menu
+Latest commit
+History
+64 Commits
+64 Commits
+Folders and files
+NameName
+Last commit message
+Last commit date
+.github
+.github
+src
+src
+test
+test
+.gitattributes
+.gitattributes
+.gitignore
+.gitignore
+.npmignore
+.npmignore
+.prettierignore
+.prettierignore
+.prettierrc
+.prettierrc
+CODE_OF_CONDUCT.md
+CODE_OF_CONDUCT.md
+CONTRIBUTING.md
+CONTRIBUTING.md
+LICENSE
+LICENSE
+Makefile
+Makefile
+README.md
+README.md
+eslint.config.mjs
+eslint.config.mjs
+package-lock.json
+package-lock.json
+package.json
+package.json
+server.json
+server.json
+tsconfig.json
+tsconfig.json
+vite.config.ts
+vite.config.ts
+View all files
+Repository files navigation
+README
+Code of conduct
+Contributing
+Apache-2.0 license
+More items
+Vonage API MCP server
+Available Tools
+This MCP server provides access to various Vonage API functionalities through the following tools:
+Category
+Tool Name
+Description
+Account Management
+balance
+Get your Vonage account balance
+list-applications
+List all applications attached to your API key with their configurations and capabilities
+create-application
+Create a new Vonage application with a specified name
+list-purchased-numbers
+List telephone numbers associated with your account and their metadata
+Number Management
+search-available-numbers
+Search for available phone numbers to purchase from Vonage in a specific country
+link-number-to-vonage-application
+Link an owned number to a specific Vonage Application
+Reports
+get-records-report
+Retrieve activity records from the Vonage Reports API (date-based or ID-based queries)
+Messaging & Communication
+SMS
+Send SMS messages using Vonage
+whatsapp-send-text
+Send text messages via WhatsApp
+whatsapp-send-text-with-sms-failover
+Send a WhatsApp text message with automatic SMS failover
+rcs-send-text
+Send text messages via RCS
+rcs-send-text-with-sms-failover
+Send an RCS text message with automatic SMS failover
+outbound-voice-message
+Send outbound voice messages with Vonage
+Data Visualization
+make-chart
+Create charts based on data retrieved
+Usage Examples
+Check Account Balance
+Can you check my Vonage account balance?
+List Your Phone Numbers
+Can you list out the numbers that I own for Vonage?
+Search for Available Numbers to Purchase
+Can you search for available Vonage numbers to purchase in the US?
+Or search with specific criteria:
+Can you search for available Vonage numbers in the US with SMS and VOICE features?
+Can you search for available numbers in GB starting with pattern "44207*"?
+List Applications
+Can you list out the applications on my account?
+Create a New Application
+Can you create a new Vonage application called "My Chat App"?
+Or let the system suggest a name:
+Can you create a new Vonage application?
+Get a Records Report
+Query by date range:
+Can you get a report of all outbound SMS sent over the last week?
+Query by specific ID:
+Can you get the report for Voice Call ID 1234-abcd-5678-efgh?
+Send an SMS
+Can you send an SMS to +1234567890 with the message "Hello from Vonage!"?
+Send a WhatsApp Message
+Can you send a WhatsApp message to +1234567890 with the message "Hello from Vonage over WhatsApp!"?
+Send a WhatsApp Message with SMS Failover
+Can you send a WhatsApp message with SMS failover to +1234567890 saying "Hello from Vonage with failover!"?
+Send an RCS Message
+Can you send an RCS message to +1234567890 with the message "Hello from Vonage via RCS!"?
+Send an RCS Message with SMS Failover
+Can you send an RCS message with SMS failover to +1234567890 saying "Hello from Vonage RCS with fallback!"?
+Generate a Chart
+Please create a chart showing all the outbound SMS sent over the last week.
+Set up the MCP server
+VS Code
+Cursor
+Windsurf
+Claude Desktop
+The details of the MCP server should look like this.
+"vonage-mcp-server-api-bindings": {
+"type": "stdio",
+"command": "npx",
+"args": [
+"-y",
+"@vonage/vonage-mcp-server-api-bindings"
+],
+"env": {
+"VONAGE_APPLICATION_ID": "<YOUR_VONAGE_APPLICATION_ID>",
+"VONAGE_PRIVATE_KEY64": "<YOUR_VONAGE_PRIVATE_KEY64>",
+"VONAGE_API_KEY": "<YOUR_VONAGE_API_KEY>",
+"VONAGE_API_SECRET": "<YOUR_VONAGE_API_SECRET>",
+"VONAGE_VIRTUAL_NUMBER": "<YOUR_VONAGE_VIRTUAL_NUMBER>",
+"VONAGE_WHATSAPP_NUMBER": "<YOUR_VONAGE_WHATSAPP_NUMBER>",
+"RCS_SENDER_ID": "<YOUR_RCS_SENDER_ID>"
+}
+}
+Encoding your private key
+VONAGE_PRIVATE_KEY64 must be your application's private key file, base64 encoded on a single line.
+Run one of these commands locally, replacing private.key with the path to your key file, and paste
+the output into your config:
+macOS:
+base64 -i private.key
+Linux:
+base64 -w 0 private.key
+Windows PowerShell:
+[Convert]::ToBase64String([IO.File]::ReadAllBytes((Resolve-Path .\private.key)))
+Security
+STDIO transport
+This server runs locally and talks to your MCP client (VS Code, Cursor, Claude Desktop, etc.) over
+STDIO. Tool calls and their responses travel between the two processes as plaintext JSON-RPC. There
+is no transport-layer encryption or authentication on this channel, which is how local MCP servers
+are designed to work.
+That is safe on a single-user machine you trust, which is the intended way to run this server. Keep
+in mind that:
+Any process with enough privilege on the same machine can read or tamper with the STDIO stream. If
+the machine is compromised, the server cannot protect the data passing through it.
+In shared, multi-user, or containerised environments, other users or workloads may be able to
+observe the process. Only run the server where you trust everything else running alongside it.
+Storing credentials
+The setup above puts your Vonage credentials, including VONAGE_PRIVATE_KEY64, into your MCP
+client's config file (for example claude_desktop_config.json or .cursor/mcp.json) as plaintext.
+Any process running as your user can read that file, and it is easy to leak by accident.
+Treat VONAGE_PRIVATE_KEY64 like a private SSH key. Anyone who has it can act as your Vonage
+application.
+If the config file lives inside a project, such as .cursor/mcp.json or .vscode/mcp.json, add
+it to that project's .gitignore so it is never committed.
+Cloud sync services (iCloud, Dropbox, OneDrive, Google Drive) can silently upload config
+directories. Exclude those directories from sync, or keep credential-bearing config files outside
+synced folders.
+For stronger protection, keep the secrets out of the config file entirely. The options are below.
+Keeping secrets out of the config file
+The server only reads credentials from its environment, so the goal is to have your MCP client
+supply VONAGE_PRIVATE_KEY64 and VONAGE_API_SECRET at launch without writing them into a file.
+This protects the credentials at rest. Once the server is running, they are still in its
+environment.
+macOS (Keychain)
+Store the secrets in your login Keychain. The private key is too long to paste at a terminal prompt,
+so the first command reads it straight from the key file. The second command ends with -w, which
+makes security prompt for the API secret so it doesn't end up in your shell history:
+security add-generic-password -a "$USER" -s vonage-mcp-private-key64 -w "$(base64 -i private.key)"
+security add-generic-password -a "$USER" -s vonage-mcp-api-secret -w
+Then launch the server through a shell that reads them from Keychain, and keep only the non-secret
+values in env:
+"vonage-mcp-server-api-bindings": {
+"type": "stdio",
+"command": "/bin/sh",
+"args": [
+"-c",
+"VONAGE_PRIVATE_KEY64=$(security find-generic-password -s vonage-mcp-private-key64 -w) || exit 1; VONAGE_API_SECRET=$(security find-generic-password -s vonage-mcp-api-secret -w) || exit 1; export VONAGE_PRIVATE_KEY64 VONAGE_API_SECRET; exec npx -y @vonage/vonage-mcp-server-api-bindings"
+],
+"env": {
+"VONAGE_APPLICATION_ID": "<YOUR_VONAGE_APPLICATION_ID>",
+"VONAGE_API_KEY": "<YOUR_VONAGE_API_KEY>",
+"VONAGE_VIRTUAL_NUMBER": "<YOUR_VONAGE_VIRTUAL_NUMBER>",
+"VONAGE_WHATSAPP_NUMBER": "<YOUR_VONAGE_WHATSAPP_NUMBER>",
+"RCS_SENDER_ID": "<YOUR_RCS_SENDER_ID>"
+}
+}
+The first time the server starts, macOS may ask whether security can access the items. Choose
+Always Allow so later launches don't prompt.
+VS Code (input variables)
+VS Code can prompt for a secret the first time the server starts and store it securely, using input
+variables in .vscode/mcp.json or your user-profile mcp.json:
+{
+"inputs": [
+{
+"type": "promptString",
+"id": "vonage-private-key64",
+"description": "Vonage private key (base64)",
+"password": true
+},
+{
+"type": "promptString",
+"id": "vonage-api-secret",
+"description": "Vonage API secret",
+"password": true
+}
+],
+"servers": {
+"vonage-mcp-server-api-bindings": {
+"type": "stdio",
+"command": "npx",
+"args": ["-y", "@vonage/vonage-mcp-server-api-bindings"],
+"env": {
+"VONAGE_APPLICATION_ID": "<YOUR_VONAGE_APPLICATION_ID>",
+"VONAGE_API_KEY": "<YOUR_VONAGE_API_KEY>",
+"VONAGE_PRIVATE_KEY64": "${input:vonage-private-key64}",
+"VONAGE_API_SECRET": "${input:vonage-api-secret}"
+}
+}
+}
+}
+Add the remaining non-secret variables from the setup example to env as needed. VS Code doesn't
+forward servers that use input variables to Copilot harness sessions. See the
+VS Code MCP configuration reference
+for details.
+Linux and Windows
+Neither has a secret store with a command-line client that is installed and working by default. If
+you already use one, such as secret-tool with GNOME Keyring or PowerShell SecretManagement, you
+can apply the same pattern as the macOS example: launch the server through a shell that reads the
+secrets and exports them before starting it. Otherwise, follow the file-handling guidance above.
+About
+Vonage MCP server with tools to interact with APIs
+Resources
+Readme
+Apache-2.0 license
+Code of conduct
+Code of conduct
+Contributing
+Contributing
+Activity
+Custom properties
+Stars
+3 stars
+Watchers
+2 watching
+Forks
+5 forks
+Report repository
+Releases
+Packages
+Used by
+Contributors
+Languages
+Footer
+© 2026 GitHub, Inc.
+Footer navigation
+Terms
+Privacy
+Security
+Status
+Community
+Docs
+Contact
+Manage cookies
+Do not share my personal information
+You can’t perform that action at this time.

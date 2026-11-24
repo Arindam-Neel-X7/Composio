@@ -1,0 +1,35 @@
+> ## Documentation Index
+> Fetch the complete documentation index at: https://docs.waterfall.io/llms.txt
+> Use this file to discover all available pages before exploring further.
+# One GTM API for contacts and companies
+> Find prospects, enrich contact and company profiles, find emails and mobile numbers, verify emails, and check job changes with the Waterfall API.
+Waterfall brings together 30+ data vendors through one B2B data API. Find people at target accounts, match emails to business profiles, find contact details, and check whether existing contacts have changed jobs.
+Use it to build signup enrichment, prospecting, and CRM workflows with the data your team needs. [About Waterfall](https://docs.waterfall.io/v1/about-waterfall.md) explains how it fits into your stack.
+> [card] [Explore use cases](https://docs.waterfall.io/v1/use-cases/overview.md)
+>
+> Start with a signup, target account, or CRM record and see the workflow.
+> [card] [Use with agents](https://docs.waterfall.io/v1/skills-overview.md)
+>
+> Run a lookup with an agent or build Waterfall into your application.
+> [card] [Evaluate Waterfall](https://docs.waterfall.io/v1/evaluate-waterfall.md)
+>
+> Compare useful results, match quality, and cost on your own records.
+> [card] [Make your first request](https://docs.waterfall.io/v1/quickstart.md)
+>
+> Launch a contact enrichment job and retrieve its result.
+Already know what you want to build? [Choose an API](https://docs.waterfall.io/v1/introduction.md) to compare the inputs, results, and availability of each capability.
+## What do you want to build?
+| Your task | Start here |
+| - | - |
+| See who is behind a signup email | [Signup enrichment](https://docs.waterfall.io/v1/use-cases/signup-enrichment.md) |
+| Find people at your target accounts | [Account prospecting](https://docs.waterfall.io/v1/use-cases/account-prospecting.md) |
+| Fill gaps in contact and company records | [CRM enrichment](https://docs.waterfall.io/v1/use-cases/crm-enrichment.md) |
+| Check where existing contacts work | [Job changes](https://docs.waterfall.io/v1/use-cases/job-changes.md) |
+| Check an email before outreach | [Email verification](https://docs.waterfall.io/v1/use-cases/email-verification.md) |
+| Identify companies visiting your website | [Website company identification](https://docs.waterfall.io/v1/use-cases/website-company-identification.md) |
+## How the API works
+Send requests to `https://api.waterfall.io` with your API key in the `x-api-key` header. [Authentication](https://docs.waterfall.io/v1/authentication.md) covers access and key management.
+Prospector and the contact, phone, and company enrichment APIs return a `job_id`. Use the matching Finder to retrieve the result, or provide a `webhook_url` to receive it. Search and verification APIs return results in the same request. The [API selection guide](https://docs.waterfall.io/v1/introduction.md) lists the response pattern and availability for each capability.
+Every reference page shows the supported inputs and outputs. Use [Usage Tracking](https://docs.waterfall.io/v1/inline-usage.md) to read returned costs, and [Account Reporting](https://docs.waterfall.io/v1/account-reporter-v2.md) for usage across a date range.
+For API access, pricing, or help choosing the right workflow, [talk to the Waterfall team](mailto:support@waterfall.io). Common product and integration questions are covered in the [FAQ](https://docs.waterfall.io/v1/faq.md).
+This documentation is built and hosted on [Mintlify](https://mintlify.com), a developer documentation platform.

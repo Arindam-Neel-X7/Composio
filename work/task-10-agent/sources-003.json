@@ -1,0 +1,40 @@
+{
+  "sources": [
+    {
+      "app_id": 32,
+      "url": "https://developers.facebook.com/documentation/ads-commerce/ads-ai-connectors/ads-mcp-server/ads-mcp-server-overview.md",
+      "kind": "primary_docs",
+      "scope": "Meta Marketing API (Graph API) for Facebook/Instagram Ads; OAuth 2.0 access tokens and App Review tiers; test/development versus production access",
+      "environments": ["testing", "production"],
+      "attribution_basis": "Official Meta Ads MCP Server overview documentation",
+      "attribution_by": "task10-research-agent-gemini"
+    },
+    {
+      "app_id": 32,
+      "url": "https://developers.facebook.com/documentation/ads-commerce/ads-ai-connectors/ads-mcp-server/ads-mcp-server-get-started.md",
+      "kind": "primary_docs",
+      "scope": "Meta Marketing API (Graph API) for Facebook/Instagram Ads; OAuth 2.0 access tokens and App Review tiers; test/development versus production access",
+      "environments": ["testing", "production"],
+      "attribution_basis": "Official Meta Ads MCP Server get-started documentation",
+      "attribution_by": "task10-research-agent-gemini"
+    },
+    {
+      "app_id": 37,
+      "url": "https://developer.systeme.io/llms.txt",
+      "kind": "primary_docs",
+      "scope": "systeme.io Public API and official MCP server; API key and MCP key auth; Free vs paid subscription plans",
+      "environments": ["testing", "production"],
+      "attribution_basis": "Official systeme.io developer documentation index (llms.txt)",
+      "attribution_by": "task10-research-agent-gemini"
+    },
+    {
+      "app_id": 37,
+      "url": "https://developer.systeme.io/docs/getting-started.md",
+      "kind": "primary_docs",
+      "scope": "systeme.io Public API and official MCP server; API key and MCP key auth; Free vs paid subscription plans",
+      "environments": ["testing", "production"],
+      "attribution_basis": "Official systeme.io developer getting-started documentation",
+      "attribution_by": "task10-research-agent-gemini"
+    }
+  ]
+}

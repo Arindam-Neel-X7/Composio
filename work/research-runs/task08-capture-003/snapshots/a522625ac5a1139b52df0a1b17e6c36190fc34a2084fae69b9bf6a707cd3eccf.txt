@@ -1,0 +1,20 @@
+---
+updatedAt: 2026-01-16T10:22:01.000Z
+agentTools:
+projectIndex: https://developers.gorgias.com/llms.txt
+---
+# Overview
+Below are the major steps of the process you need to follow when building a public app with Gorgias.
+1. Register on the [Developer Portal]() to submit your app and manage your listing.
+2. Create a Draft app in the Developer Portal.
+3. Get Gorgias Sandbox to test your app: [create a trial account](https://www.gorgias.com/signup) and reach out to <techpartners@gorgias.com> to convert it into a Sandbox account.
+1. :warning: You need to complete steps 1-2 to convert Trial to Sandbox account.
+4. **[Set up OAuth2](https://developers.gorgias.com/docs/set-up-oauth2-app-store) for your app.**
+5. Build your app using our [API docs](https://developers.gorgias.com/reference/introduction) and test it.
+6. Complete the rest of the form on the Developer Portal and submit your app for review
+1. :warning: Make sure to include testing instructions with a test account
+7. Once your app is approved, we will announce it at our next [Product Town Hall](https://www.gorgias.com/events/gorgias-product-town-hall-june).
+1. :loudspeaker: You can sync with our Partnerships team <techpartners@gorgias.com> for additional opportunities to promote your app to Gorgias customers.
+<HTMLBlock>{`
+<blockquote class="callout callout_okay" theme="👍"><h3 class="callout-heading false"><span class="callout-icon">🚀</span><p>Congrats!</p></h3><p>Your app is now available on our App Store and is ready to be used by thousands of Gorgias customers.</p></blockquote>
+`}</HTMLBlock>

@@ -1,0 +1,199 @@
+Access Smartsheet in Claude | Smartsheet Learning Center
+Skip to main content
+To learn more about Smartsheet Regions, click here.
+
+Help Center
+Community
+University
+Go to Smartsheet.com
+Help Center
+Open navigation
+Close navigation
+Documentation
+Articles
+Explore our comprehensive library created to help you get the most out of Smartsheet.
+Explore our articles
+Functions list
+Dive into Smartsheet’s powerful functions and formulas.
+View all functions
+Categories
+Building your solution
+SVG
+Connectors and integrations
+SVG
+Sharing and collaboration
+Analytics and insights
+Formulas and functions
+SVG
+Account settings
+SVG
+See all categories
+Premium features
+Brandfolder
+SVG
+Resource Management
+SVG
+Bridge
+SVG
+WorkApps
+SVG
+Control Center
+SVG
+Pivot App
+SVG
+See all premium features
+Community
+Explore user-generated content and stay updated on our latest product features.
+Join the Community
+Developers and API
+Explore API docs, try requests, develop faster on SDKs, and join a thriving community building on Smartsheet.
+Guided Learning
+Learning guides
+SVG
+Follow structured learning paths designed to help you master Smartsheet at your own pace.
+Explore our learning guides
+Learn on your own
+Recorded webinars
+SVG
+eLearning
+SVG
+API guides
+Learn from someone else
+Register for a free webinar
+SVG
+Instructor-led training
+SVG
+Pro Desk
+SVG
+Smartsheet University
+Follow clear learning plans to official Smartsheet Certification.
+Explore more
+ENGAGE
+Join global customers, experts, and partners at the conference for changemakers.
+Learn more
+Community
+Smartsheet University
+Contact support
+Login
+Select your language
+EnglishDeutschEspañolFrançaisItalianoPortuguêsPусский日本語
+Contact support
+Select your language
+EnglishDeutschEspañolFrançaisItalianoPortuguêsPусский日本語
+Search Help Center
+Login
+Breadcrumb
+Smartsheet
+AI in Smartsheet
+AI assistants
+In this article:
+USM Content
+User model
+Legacy model
+Info
+Access Smartsheet in Claude
+Link your Smartsheet account to Claude to generate natural-language summaries and take action on individual sheets.
+Who can use this?
+Plans:
+Business
+Enterprise
+Advanced Work Management
+USM Content
+This Connector uses the Model Context Protocol (MCP), a secure standard that allows Claude to access your Smartsheet data with your permission, understand your work in context, and act on your behalf.
+Claude securely accesses live sheet data—such as task progress, overdue items, and key risks—and presents a concise summary directly in the Claude interface. You can also update statuses, dates, and risks using natural-language prompts, making it easy to understand project status and keep work moving without navigating multiple sheets.
+The Smartsheet MCP prompt library shows you how to prompt the Smartsheet Connector (the MCP server) to get powerful insights and take action.
+Prerequisites
+The following items are required for you to use the Smartsheet Connector in Claude:
+You are an active user on a Claude plan.
+A Claude Owner must enable the integration for your organization. Refer to Claude’s instructions here.
+The Claude Connector AI capability must be enabled. It's enabled by default for all eligible plans. If Claude access to Smartsheet appears to be blocked, contact your System Admin to activate it in the Smartsheet Admin Center.
+Connect to Smartsheet
+The following steps demonstrate how to connect Claude to Smartsheet:
+Open Claude and sign in with your credentials.
+Go to Customize > Connectors.
+If the Smartsheet Connector doesn't appear, select the search icon (magnifying glass) and search for Smartsheet.
+Once found, select it and then select Connect.
+Claude prompts you for your credentials.
+Log in with your Smartsheet credentials and select Allow.
+When prompted, select the URL for your Smartsheet region:
+US: https://mcp.smartsheet.com
+EU: https://mcp.smartsheet.eu
+AU: https://mcp.smartsheet.au
+The Configure button and the server URL appear, confirming the connection.
+Start a new chat.
+Enable the Smartsheet Connector by selecting + > Connectors > Smartsheet.
+You’re now connected to the Smartsheet MCP Server.
+Manage Claude's permissions for Smartsheet functionality
+You can configure permissions for individual Smartsheet tools, or apply them broadly to all read-only or write functions. In Claude, go to Customize > Connectors > Smartsheet > Configure. The following Smartsheet tools permission pages appears.
+Brandfolder Image
+When a prompt triggers a tool, the Smartsheet MCP Server Connector applies its designated permission level. Every tool operates under one of three permissions:
+Always allow: Executes the tool automatically without asking.
+Needs approval: Prompts you for confirmation before running. If you decline, the tool is skipped.
+Blocked: Prevents the tool from running entirely and returns a notice that it is blocked.
+See some examples on how you can use this Connector in your day-to-day work in Use the Smartsheet Connector with Claude.
+FAQ
+What access do Smartsheet and Claude have to my data via the integration?
+Claude can access only the Smartsheet data you explicitly allow, including specific sheets, workspaces, or objects that you already have permission to view or edit, and only when you initiate a request. It cannot browse your account independently or access data outside the scope you select. Data is processed at runtime to generate a response and is not stored or used for model training. Smartsheet itself does not use customer data to train Claude or any other AI models, and does not access or process Claude-generated content, except for aggregated usage and reliability tracking.
+How do I change the region for my Smartsheet MCP Connector?
+When you set up the Smartsheet MCP Connector for the first time, you are prompted to select your region. This choice is cached to keep your connection stable.
+If you need to switch to a different region later, you cannot simply change it in the settings or disconnect. You must fully reset the connection.
+Follow these steps to reconfigure your region:
+Remove the Connector.
+Add the Connector again.
+During Connector setup, select your new region.
+How do I limit Smartsheet and Claude's access to my data and prompts?
+You control access through existing Smartsheet permissions and Admin controls. Both Smartsheet AI features and Claude can access only the specific sheets, workspaces, and objects you already have permission to use, and only when you actively initiate a request. Organization sysadmins can turn on and off Read/Write permissions. Data and prompts are processed at runtime solely to fulfill your request and are not stored or used for model training.
+Related Content
+Use the Smartsheet Connector with Claude
+Smartsheet MCP prompt library
+Smartsheet MCP Server overview
+Community
+USM Content
+Get help from fellow users
+Share your feature requests
+Connect with industry peers
+Was this article helpful?
+YesNo
+Also in this category
+AI capabilities
+Smartsheet Help Center
+Help Center
+Help Center
+Articles
+Functions list
+Categories
+Premium features
+Learning guides
+Other resources
+Other resources
+Community
+Content Center
+Developers & API
+Product updates & insights
+Smartsheet University
+Support packages
+Company
+Company
+About us
+Newsroom
+Privacy
+Legal
+Contact Support
+Smartsheet status
+Learn more about ENGAGE
+Unlock the power of Smartsheet with AI
+Select your language
+EnglishDeutschEspañolFrançaisItalianoPortuguêsPусский日本語
+Facebook
+X
+LinkedIn
+TikTok
+YouTube
+Instagram
+©2026. All Rights Reserved Smartsheet Inc.
+•
+Machine Translation Disclaimer
+•
+Cookie Preferences
+•
+Your Privacy Choices

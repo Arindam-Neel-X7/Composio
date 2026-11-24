@@ -1,0 +1,16 @@
+{
+  "sources": [
+    {
+      "app_id": 92,
+      "url": "https://help.otter.ai/api/v2/help_center/en-us/articles/36130822688279.json",
+      "kind": "primary_docs",
+      "scope": "Otter AI public API and callable Otter MCP server; public documentary research, no execution",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor-controlled documentation/help/product domain matching roster product; ownership is researcher attribution, requires independent review",
+      "attribution_by": "task16-codex-researcher"
+    }
+  ]
+}

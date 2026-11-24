@@ -1,0 +1,28 @@
+> ## Documentation Index
+> Fetch the complete documentation index at: https://developers.clay.com/llms.txt
+> Use this file to discover all available pages before exploring further.
+# Rate limits
+> Understand Clay Public API rate limits and how to handle 429 responses.
+The Clay Public API enforces per-workspace request rate limits. When you exceed a limit, Clay returns HTTP `429` and you should back off before retrying.
+## Limits
+The default limit is **300 requests per minute per workspace** (about 5 requests per second), shared across all API keys and OAuth credentials in the workspace.
+Spread requests evenly over time. Sending many requests at once can return `429` even when you're under the per-minute total.
+Some endpoints, such as `POST /workflows/runs/query`, also have their own per-endpoint limits.
+Limits may differ for specific workspaces. Contact Clay if you need higher limits.
+## Reading the limit
+When a request is rate limited, Clay returns `429` with a `Retry-After` header (seconds to wait). When available, Clay also sends `X-RateLimit-Limit`, `X-RateLimit-Remaining`, and `X-RateLimit-Reset` so you can pace requests before you hit the ceiling.
+The CLI surfaces the same signal: rate-limited commands exit with code `4`, and the error `details` include `retryAfter` (seconds), plus `limit`, `remaining`, and `reset` when Clay sends the `X-RateLimit-*` headers.
+## Recommended handling
+* Treat `429` as retryable. Wait for the `Retry-After` interval, then retry.
+* Add exponential backoff and jitter when you issue many requests concurrently.
+* Prefer batch and async endpoints over tight polling loops. For async runs, poll the result endpoint at a modest interval rather than as fast as possible.
+```bash theme={"theme":{"light":"github-light","dark":"github-dark"}}
+# CLI: exit code 4 signals rate limiting; back off using details.retryAfter.
+clay routines runs list >out.json 2>err.json
+status=$?
+if [ "$status" -eq 4 ]; then
+sleep "$(jq -r '.error.details.retryAfter // 5' err.json)"
+# ...then retry the command
+fi
+```
+This documentation is built and hosted on [Mintlify](https://mintlify.com), a developer documentation platform.

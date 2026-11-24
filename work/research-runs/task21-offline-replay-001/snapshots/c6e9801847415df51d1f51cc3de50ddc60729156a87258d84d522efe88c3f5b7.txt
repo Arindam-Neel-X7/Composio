@@ -1,0 +1,96 @@
+Overview - Attio Docs
+Documentation Index
+Fetch the complete documentation index at: /llms.txt
+Use this file to discover all available pages before exploring further.
+Skip to main content
+Assistant
+Responses are generated using AI and may contain mistakes.
+Attio Docs home page
+Search...
+⌘KAsk Assistant⌘I
+Search...
+Navigation
+Introduction
+Overview
+Overview
+App SDK
+REST API
+MCP
+SQL
+Share
+Changelog
+Developer console
+Support
+Introduction
+Overview
+Guides
+Authenticating requests
+Handling rate limits
+Filtering and sorting
+Linking referenced records
+Paginating API results
+Configuring webhooks
+Working with activities
+Tutorials
+Connect an app to Attio through OAuth
+Attribute types
+Overview
+Actor reference
+Checkbox
+Currency
+Date
+Domain
+Email address
+Interaction
+Location
+(Personal) name
+Number
+Phone number
+Rating
+Record reference
+Select
+Status
+Text
+Timestamp
+Endpoint reference
+OpenAPI
+Core endpoints
+Standard objects
+SCIM 2.0
+OAuth 2.0
+Webhook reference
+Activity events
+Activity attribute events
+Activity record events
+Call recording events
+Comment events
+List events
+List attribute events
+List entry events
+Object attribute events
+Note events
+Note content events
+Record events
+Task events
+Workspace member events
+Introduction
+Overview
+Copy pageCopy page
+Learn about the REST API
+Copy pageCopy page
+Attio provides a public REST API which exchanges JSON over HTTPS. In this section, you will find
+guidance about working with the API.
+To get up and running, read our guide on how to authenticate requests.
+From there, feel free to explore other topics or jump straight to the reference documentation.
+Building an OAuth flow for your app
+Working within our rate limits
+Setting up and listening to webhooks
+Filtering and sorting record and entry API queries
+Paginating API responses
+If you’re looking to move beyond just the REST API and understand the Attio developer platform as a
+whole, you can find general documentation for Attio developers here.
+Was this page helpful?
+YesNo
+Authenticating requests
+xwebsite
+Powered byThis documentation is built and hosted on Mintlify, a developer documentation platform

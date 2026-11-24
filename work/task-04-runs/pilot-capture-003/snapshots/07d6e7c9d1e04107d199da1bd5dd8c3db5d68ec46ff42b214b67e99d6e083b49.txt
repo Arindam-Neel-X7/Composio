@@ -1,0 +1,94 @@
+Freshworks Developer Docs | OAuth implementation in apps
+NewAgentic Developer Toolkit with Agent Skills is now GA — Build apps faster with AI in minutes. Try Now
+Build
+AI
+Grow
+Docs
+Resources
+LoginSign Up
+Menu
+Platform
+Product
+2Products selected
+Module
+Freshworks global app ecosystem
+What's new?
+Developer toolkit
+App development process
+Global app concepts
+Module introduction
+REST APIs
+OAuth implementation in apps
+Front-end apps
+Serverless apps
+App settings
+Basic dev tools
+Advanced interfaces
+Data store
+App UI
+End-to-end app testing
+App development guidelines
+App submission process
+Rate limits and constraints
+Migration guide
+OAuth implementation in apps
+Apps use the Freshdesk REST APIs to access Freshdesk data (resources). API authentication is a process that verifies the identity of app users who want to access the Freshdesk data. API authentication ensures that only authorized users have access to the data.
+We offer the following API authentication mechanisms to access Freshdesk resources:
+Basic access authentication. For information on this, see API Authentication using API keys.
+OAuth authorization and access token authentication. This section explains how your apps can use OAuth authorization.
+Through OAuth authorization, the apps access the resources securely, without collecting or exposing sensitive credentials from the app user. Freshworks enables you to implement OAuth authorization flows in Freshworks apps and Custom apps.
+Important:OAuth implementation is supported on all categories of apps: front-end, serverless, and SMI apps.
+Notes:
+Freshworks apps are built using the FDK and published to the Freshworks Marketplace. Custom apps are built using the FDK and are private to an organization.
+In this document, any app (Freshworks or Custom) that uses OAuth flow is called an OAuth app.
+The OAuth authorization and authentication flow, on successful implementation,
+Enables app users to authorize the app to act on their behalf to access Freshdesk data.
+Enables the app to request user's authorization and place a request for an access token.
+Enables the app to obtain the access token and place authenticated REST API calls.
+Contact Freshworks
+devplatforms@dev-assist.freshservice.com
+Platform
+Platform// eslint-disable-next-line react/no-unknown-property
+Documentation
+API Reference
+Crayons Design Library
+App Marketplace
+Changelog
+Developer Status
+Products
+Products// eslint-disable-next-line react/no-unknown-property
+Freshdesk Omni
+Freshservice
+Freshsales
+Freshchat
+Freshmarketer
+Resources
+Resources// eslint-disable-next-line react/no-unknown-property
+Getting Started
+Tutorials & Guides
+Sample Apps
+Developer Blog
+Events
+Community & Support
+Community & Support// eslint-disable-next-line react/no-unknown-property
+Developer Community
+Support
+Partner Program
+Feature Requests
+Company
+Company// eslint-disable-next-line react/no-unknown-property
+About Us
+Customers
+Partners
+All Systems Operational (opens Freshworks system status)
+Legal
+Privacy Notice
+Site Terms
+Cookie Policy
+Do Not Share My Personal Information
+Security
+Accessibility
+Unsubscribe
+Sitemap
+Developer Portal Terms
+© 2026 Freshworks Inc. All Rights Reserved

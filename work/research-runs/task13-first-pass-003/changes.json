@@ -1,0 +1,110 @@
+[
+  {
+    "app_id": 61,
+    "claim_id": "61.buildability",
+    "change": "changed",
+    "reason": "Remediate all 7 Contract v1.1 independent AI review defects (61/62/65/68 narrow-path booleans -> unknown, 66 remove v2, 69 attach GovCloud lines 42-44 to identity, 70 breadth -> moderate) and 2 polish items (70.testing.free_access lines 182-200, clean buildability rationale)."
+  },
+  {
+    "app_id": 61,
+    "claim_id": "61.production.admin_approval_required",
+    "change": "changed",
+    "reason": "Remediate all 7 Contract v1.1 independent AI review defects (61/62/65/68 narrow-path booleans -> unknown, 66 remove v2, 69 attach GovCloud lines 42-44 to identity, 70 breadth -> moderate) and 2 polish items (70.testing.free_access lines 182-200, clean buildability rationale)."
+  },
+  {
+    "app_id": 62,
+    "claim_id": "62.buildability",
+    "change": "changed",
+    "reason": "Remediate all 7 Contract v1.1 independent AI review defects (61/62/65/68 narrow-path booleans -> unknown, 66 remove v2, 69 attach GovCloud lines 42-44 to identity, 70 breadth -> moderate) and 2 polish items (70.testing.free_access lines 182-200, clean buildability rationale)."
+  },
+  {
+    "app_id": 62,
+    "claim_id": "62.production.vendor_approval_required",
+    "change": "changed",
+    "reason": "Remediate all 7 Contract v1.1 independent AI review defects (61/62/65/68 narrow-path booleans -> unknown, 66 remove v2, 69 attach GovCloud lines 42-44 to identity, 70 breadth -> moderate) and 2 polish items (70.testing.free_access lines 182-200, clean buildability rationale)."
+  },
+  {
+    "app_id": 63,
+    "claim_id": "63.buildability",
+    "change": "changed",
+    "reason": "Remediate all 7 Contract v1.1 independent AI review defects (61/62/65/68 narrow-path booleans -> unknown, 66 remove v2, 69 attach GovCloud lines 42-44 to identity, 70 breadth -> moderate) and 2 polish items (70.testing.free_access lines 182-200, clean buildability rationale)."
+  },
+  {
+    "app_id": 64,
+    "claim_id": "64.buildability",
+    "change": "changed",
+    "reason": "Remediate all 7 Contract v1.1 independent AI review defects (61/62/65/68 narrow-path booleans -> unknown, 66 remove v2, 69 attach GovCloud lines 42-44 to identity, 70 breadth -> moderate) and 2 polish items (70.testing.free_access lines 182-200, clean buildability rationale)."
+  },
+  {
+    "app_id": 65,
+    "claim_id": "65.buildability",
+    "change": "changed",
+    "reason": "Remediate all 7 Contract v1.1 independent AI review defects (61/62/65/68 narrow-path booleans -> unknown, 66 remove v2, 69 attach GovCloud lines 42-44 to identity, 70 breadth -> moderate) and 2 polish items (70.testing.free_access lines 182-200, clean buildability rationale)."
+  },
+  {
+    "app_id": 65,
+    "claim_id": "65.production.paid_required",
+    "change": "changed",
+    "reason": "Remediate all 7 Contract v1.1 independent AI review defects (61/62/65/68 narrow-path booleans -> unknown, 66 remove v2, 69 attach GovCloud lines 42-44 to identity, 70 breadth -> moderate) and 2 polish items (70.testing.free_access lines 182-200, clean buildability rationale)."
+  },
+  {
+    "app_id": 66,
+    "claim_id": "66.buildability",
+    "change": "changed",
+    "reason": "Remediate all 7 Contract v1.1 independent AI review defects (61/62/65/68 narrow-path booleans -> unknown, 66 remove v2, 69 attach GovCloud lines 42-44 to identity, 70 breadth -> moderate) and 2 polish items (70.testing.free_access lines 182-200, clean buildability rationale)."
+  },
+  {
+    "app_id": 66,
+    "claim_id": "66.identity",
+    "change": "changed",
+    "reason": "Remediate all 7 Contract v1.1 independent AI review defects (61/62/65/68 narrow-path booleans -> unknown, 66 remove v2, 69 attach GovCloud lines 42-44 to identity, 70 breadth -> moderate) and 2 polish items (70.testing.free_access lines 182-200, clean buildability rationale)."
+  },
+  {
+    "app_id": 67,
+    "claim_id": "67.buildability",
+    "change": "changed",
+    "reason": "Remediate all 7 Contract v1.1 independent AI review defects (61/62/65/68 narrow-path booleans -> unknown, 66 remove v2, 69 attach GovCloud lines 42-44 to identity, 70 breadth -> moderate) and 2 polish items (70.testing.free_access lines 182-200, clean buildability rationale)."
+  },
+  {
+    "app_id": 68,
+    "claim_id": "68.buildability",
+    "change": "changed",
+    "reason": "Remediate all 7 Contract v1.1 independent AI review defects (61/62/65/68 narrow-path booleans -> unknown, 66 remove v2, 69 attach GovCloud lines 42-44 to identity, 70 breadth -> moderate) and 2 polish items (70.testing.free_access lines 182-200, clean buildability rationale)."
+  },
+  {
+    "app_id": 68,
+    "claim_id": "68.production.admin_approval_required",
+    "change": "changed",
+    "reason": "Remediate all 7 Contract v1.1 independent AI review defects (61/62/65/68 narrow-path booleans -> unknown, 66 remove v2, 69 attach GovCloud lines 42-44 to identity, 70 breadth -> moderate) and 2 polish items (70.testing.free_access lines 182-200, clean buildability rationale)."
+  },
+  {
+    "app_id": 69,
+    "claim_id": "69.buildability",
+    "change": "changed",
+    "reason": "Remediate all 7 Contract v1.1 independent AI review defects (61/62/65/68 narrow-path booleans -> unknown, 66 remove v2, 69 attach GovCloud lines 42-44 to identity, 70 breadth -> moderate) and 2 polish items (70.testing.free_access lines 182-200, clean buildability rationale)."
+  },
+  {
+    "app_id": 69,
+    "claim_id": "69.identity",
+    "change": "changed",
+    "reason": "Remediate all 7 Contract v1.1 independent AI review defects (61/62/65/68 narrow-path booleans -> unknown, 66 remove v2, 69 attach GovCloud lines 42-44 to identity, 70 breadth -> moderate) and 2 polish items (70.testing.free_access lines 182-200, clean buildability rationale)."
+  },
+  {
+    "app_id": 70,
+    "claim_id": "70.api.breadth",
+    "change": "changed",
+    "reason": "Remediate all 7 Contract v1.1 independent AI review defects (61/62/65/68 narrow-path booleans -> unknown, 66 remove v2, 69 attach GovCloud lines 42-44 to identity, 70 breadth -> moderate) and 2 polish items (70.testing.free_access lines 182-200, clean buildability rationale)."
+  },
+  {
+    "app_id": 70,
+    "claim_id": "70.buildability",
+    "change": "changed",
+    "reason": "Remediate all 7 Contract v1.1 independent AI review defects (61/62/65/68 narrow-path booleans -> unknown, 66 remove v2, 69 attach GovCloud lines 42-44 to identity, 70 breadth -> moderate) and 2 polish items (70.testing.free_access lines 182-200, clean buildability rationale)."
+  },
+  {
+    "app_id": 70,
+    "claim_id": "70.testing.free_access",
+    "change": "changed",
+    "reason": "Remediate all 7 Contract v1.1 independent AI review defects (61/62/65/68 narrow-path booleans -> unknown, 66 remove v2, 69 attach GovCloud lines 42-44 to identity, 70 breadth -> moderate) and 2 polish items (70.testing.free_access lines 182-200, clean buildability rationale)."
+  }
+]

@@ -1,0 +1,206 @@
+GitHub - amzn/selling-partner-api-models: This repository contains OpenAPI models for developers to use when developing software to call Selling Partner APIs. · GitHub
+Skip to content
+Navigation Menu
+Sign in
+Products
+Platform
+GitHubRepository hosting, code review, and collaboration
+CopilotAI coding agent for tasks, projects, and automated work
+Build & Ship
+ActionsCI/CD and automation
+Code QualityQuality analysis, fixes, and enforcement
+CodespacesCloud development environments
+Secure
+Code SecurityVulnerability detection and remediation
+Secret ProtectionSecret scanning and leak prevention
+All Features
+Developers
+Learn
+Documentation
+Training
+Certifications
+Build
+Build with Copilot
+Customize Copilot
+Integrations
+Explore
+Trending repos
+GitHub Sponsors
+Developer articles
+Changelog
+ChangelogYour source for the latest features, improvements, and fixes across GitHub products, all in one place.
+Businesses
+By Stage
+Enterprises
+Team
+Startups
+Nonprofits
+By Industry
+Healthcare
+Financial services
+Manufacturing
+Government
+See all industries
+Evaluate GitHub
+Why GitHub
+Customer Stories
+Business insights
+Trust Center
+Add-ons
+GitHub Advanced SecurityEnterprise-grade code security
+Copilot for businessEnterprise-grade AI features
+Premium SupportEnterprise-grade 24/7 support
+Resources
+Learn & Connect
+Documentation
+Resource center
+Blog
+Events & webinars
+Community Forum
+Customer Stories
+Integrations
+Support
+Customer support
+Training
+GitHub Status
+Company
+About
+Partners
+Changelog
+GitHub Universe
+GitHub UniverseThe event for developers, by developers — talks, workshops, and what’s next for GitHub.
+Pricing
+Search/
+Sign in
+Sign up
+Appearance settings
+You signed in with another tab or window. Reload to refresh your session.
+You signed out in another tab or window. Reload to refresh your session.
+You switched accounts on another tab or window. Reload to refresh your session.
+Dismiss alert
+amzn
+selling-partner-api-models
+Repository navigation
+Code
+Issues260 (260)
+Pull requests50 (50)
+Discussions
+Actions
+Security and quality
+Insights
+More items
+selling-partner-api-models
+Public
+NotificationsYou must be signed in to change notification settings
+Fork789 (789)
+Star934 (934)You must be signed in to star a repository
+About
+This repository contains OpenAPI models for developers to use when developing software to call Selling Partner APIs.
+Resources
+Readme
+Apache-2.0 license
+Code of conduct
+Code of conduct
+Contributing
+Contributing
+Security policy
+Security policy
+Activity
+Custom properties
+Stars
+934 stars
+Watchers
+63 watching
+Forks
+789 forks
+Report repository
+main
+BranchesTags
+Go to file
+Code
+Open more actions menu
+Latest commit
+History
+660 Commits
+660 Commits
+Folders and files
+NameName
+Last commit message
+Last commit date
+.github
+.github
+clients
+clients
+models
+models
+schemas
+schemas
+.gitignore
+.gitignore
+CODE_OF_CONDUCT.md
+CODE_OF_CONDUCT.md
+CONTRIBUTING.md
+CONTRIBUTING.md
+LICENSE
+LICENSE
+NOTICE
+NOTICE
+README.md
+README.md
+View all files
+Repository files navigation
+README
+Code of conduct
+Contributing
+Apache-2.0 license
+Security
+More items
+Selling Partner API Models
+This repository contains Swagger models for developers to use to create software that calls Selling Partner APIs. Developers can use swagger codegen to generate client libraries from these models. Please refer to selling-partner-api-docs for additional documentation and read the Selling Partner API Developer Guide for instructions to get started.
+The models directory contains all of the currently available Selling Partner API models.
+The clients directory contains a Java library and a C# library with mustache templates for use with swagger-codegen to generate client libraries with authentication and authorization functionality included. The templates are located in resources/swagger-codegen.
+The schemas directory contains all of the currently available Selling Partner Api schemas.
+Note: For any issues related to SP API like bugs or troubleshooting, please reach out to Developer Support so that the right team can help / channel your inputs (in case of bugs / feature requests) to the development team.
+Security
+See CONTRIBUTING for more information.
+License
+This project is licensed under the Apache-2.0 License.
+About
+This repository contains OpenAPI models for developers to use when developing software to call Selling Partner APIs.
+Resources
+Readme
+Apache-2.0 license
+Code of conduct
+Code of conduct
+Contributing
+Contributing
+Security policy
+Security policy
+Activity
+Custom properties
+Stars
+934 stars
+Watchers
+63 watching
+Forks
+789 forks
+Report repository
+Releases
+Packages
+Used by
+Contributors
+Languages
+Generated from amazon-archives/__template_Apache-2.0
+Footer
+© 2026 GitHub, Inc.
+Footer navigation
+Terms
+Privacy
+Security
+Status
+Community
+Docs
+Contact
+Manage cookies
+Do not share my personal information
+You can’t perform that action at this time.

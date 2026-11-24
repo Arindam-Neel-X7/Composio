@@ -1,0 +1,134 @@
+[
+  {
+    "app_id": 44,
+    "claim_id": "44.api.breadth",
+    "change": "changed",
+    "reason": "Remediate 4 independent AI audit locator range findings on Apps 44, 46, and 50 (contract v1.1)"
+  },
+  {
+    "app_id": 44,
+    "claim_id": "44.api.group.admin_mrt_ods",
+    "change": "changed",
+    "reason": "Remediate 4 independent AI audit locator range findings on Apps 44, 46, and 50 (contract v1.1)"
+  },
+  {
+    "app_id": 44,
+    "claim_id": "44.api.group.shopper_catalog_search",
+    "change": "changed",
+    "reason": "Remediate 4 independent AI audit locator range findings on Apps 44, 46, and 50 (contract v1.1)"
+  },
+  {
+    "app_id": 44,
+    "claim_id": "44.api.group.shopper_login_custom",
+    "change": "changed",
+    "reason": "Remediate 4 independent AI audit locator range findings on Apps 44, 46, and 50 (contract v1.1)"
+  },
+  {
+    "app_id": 44,
+    "claim_id": "44.api.protocol.cli",
+    "change": "changed",
+    "reason": "Remediate 4 independent AI audit locator range findings on Apps 44, 46, and 50 (contract v1.1)"
+  },
+  {
+    "app_id": 44,
+    "claim_id": "44.api.protocol.rest",
+    "change": "changed",
+    "reason": "Remediate 4 independent AI audit locator range findings on Apps 44, 46, and 50 (contract v1.1)"
+  },
+  {
+    "app_id": 44,
+    "claim_id": "44.api.protocol.sdk",
+    "change": "changed",
+    "reason": "Remediate 4 independent AI audit locator range findings on Apps 44, 46, and 50 (contract v1.1)"
+  },
+  {
+    "app_id": 44,
+    "claim_id": "44.auth.slas_oauth2_jwt",
+    "change": "changed",
+    "reason": "Remediate 4 independent AI audit locator range findings on Apps 44, 46, and 50 (contract v1.1)"
+  },
+  {
+    "app_id": 44,
+    "claim_id": "44.buildability",
+    "change": "changed",
+    "reason": "Remediate 4 independent AI audit locator range findings on Apps 44, 46, and 50 (contract v1.1)"
+  },
+  {
+    "app_id": 44,
+    "claim_id": "44.identity",
+    "change": "changed",
+    "reason": "Remediate 4 independent AI audit locator range findings on Apps 44, 46, and 50 (contract v1.1)"
+  },
+  {
+    "app_id": 44,
+    "claim_id": "44.mcp.b2c_dx_mcp",
+    "change": "changed",
+    "reason": "Remediate 4 independent AI audit locator range findings on Apps 44, 46, and 50 (contract v1.1)"
+  },
+  {
+    "app_id": 44,
+    "claim_id": "44.mcp.discovery",
+    "change": "changed",
+    "reason": "Remediate 4 independent AI audit locator range findings on Apps 44, 46, and 50 (contract v1.1)"
+  },
+  {
+    "app_id": 44,
+    "claim_id": "44.purpose",
+    "change": "changed",
+    "reason": "Remediate 4 independent AI audit locator range findings on Apps 44, 46, and 50 (contract v1.1)"
+  },
+  {
+    "app_id": 46,
+    "claim_id": "46.api.public_docs",
+    "change": "changed",
+    "reason": "Remediate 4 independent AI audit locator range findings on Apps 44, 46, and 50 (contract v1.1)"
+  },
+  {
+    "app_id": 46,
+    "claim_id": "46.auth.oauth2_extensions",
+    "change": "changed",
+    "reason": "Remediate 4 independent AI audit locator range findings on Apps 44, 46, and 50 (contract v1.1)"
+  },
+  {
+    "app_id": 46,
+    "claim_id": "46.buildability",
+    "change": "changed",
+    "reason": "Remediate 4 independent AI audit locator range findings on Apps 44, 46, and 50 (contract v1.1)"
+  },
+  {
+    "app_id": 50,
+    "claim_id": "50.api.group.checkouts_payouts_refunds",
+    "change": "changed",
+    "reason": "Remediate 4 independent AI audit locator range findings on Apps 44, 46, and 50 (contract v1.1)"
+  },
+  {
+    "app_id": 50,
+    "claim_id": "50.api.protocol.sdk",
+    "change": "changed",
+    "reason": "Remediate 4 independent AI audit locator range findings on Apps 44, 46, and 50 (contract v1.1)"
+  },
+  {
+    "app_id": 50,
+    "claim_id": "50.buildability",
+    "change": "changed",
+    "reason": "Remediate 4 independent AI audit locator range findings on Apps 44, 46, and 50 (contract v1.1)"
+  },
+  {
+    "app_id": 50,
+    "claim_id": "50.mcp.commas_mcp_beta",
+    "change": "changed",
+    "reason": "Remediate 4 independent AI audit locator range findings on Apps 44, 46, and 50 (contract v1.1)"
+  },
+  {
+    "app_id": 50,
+    "claim_id": "50.mcp.discovery",
+    "change": "changed",
+    "reason": "Remediate 4 independent AI audit locator range findings on Apps 44, 46, and 50 (contract v1.1)"
+  },
+  {
+    "app_id": 50,
+    "claim_id": "50.purpose",
+    "change": "changed",
+    "reason": "Remediate 4 independent AI audit locator range findings on Apps 44, 46, and 50 (contract v1.1)"
+  }
+]

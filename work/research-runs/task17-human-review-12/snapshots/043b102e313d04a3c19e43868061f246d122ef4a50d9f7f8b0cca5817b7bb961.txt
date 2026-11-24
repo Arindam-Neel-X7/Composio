@@ -1,0 +1,56 @@
+> ## Documentation Index
+> Fetch the complete documentation index at: https://docs.brightdata.com/llms.txt
+> Use this file to discover all available pages before exploring further.
+# Web Unlocker API overview
+> Bright Data Web Unlocker API (98% success rate) handles proxy rotation, anti-bot challenges and CAPTCHA solving in 1 call. Returns clean HTML or JSON.
+The **Web Unlocker API** unlocks any public web page in a single API call with a 98% success rate and returns clean HTML or JSON. You send one request with your target URL, and Bright Data handles proxy rotation, browser fingerprints, CAPTCHA solving and retries on its side. You pay only for successful requests.
+The Web Unlocker API is part of Bright Data's [Unlocker scraping suite](https://docs.brightdata.com/left-over/scraping-automation-introduction.md). Instead of managing proxies, headers, fingerprints and anti-bot logic yourself, you call one endpoint and get back a response that is already unblocked and ready to parse.
+```sh Direct API access theme={null}
+curl -H "Content-Type: application/json" \
+-H "Authorization: Bearer YOUR_API_KEY" \
+-d '{"zone":"YOUR_ZONE_NAME","url":"https://example.com","format":"raw"}' \
+https://api.brightdata.com/request
+```
+The response is the target page's raw HTML or JSON. No proxy orchestration, browser automation or custom retry logic is required. See [Send your first request](https://docs.brightdata.com/products/web-unlocker/send-your-first-request.md) for the full walkthrough with Python, Node.js and cURL examples.
+## How does the Web Unlocker API work?
+Every request is optimized on Bright Data's side before it reaches the target site. A single call to `https://api.brightdata.com/request`:
+* Selects the most effective proxy network for the target site
+* Sets request headers and fingerprints to match real-user browser traffic
+* Solves CAPTCHAs and anti-bot challenges automatically
+* Retries failed attempts with alternative configurations until the request succeeds
+* Charges only for requests that return a successful response
+Bright Data provides two access methods that return identical results: **direct API access**, a REST call to a single endpoint (recommended), and **native proxy-based access**, which routes requests through the Bright Data super proxy. See [Send your first request](https://docs.brightdata.com/products/web-unlocker/send-your-first-request.md) to set up either one.
+## When should you use the Web Unlocker API?
+Use the Web Unlocker API when you need reliable, large-scale access to public web data without building and maintaining proxy and anti-bot infrastructure yourself. It fits:
+* Scraping any website, including sites with advanced anti-bot protection
+* Emulating real-user behavior to reach protected or geo-restricted content
+* Engineering teams without a scalable proxy and unblocking stack
+* Production workloads that need high success rates and predictable, pay-per-success costs
+> [!WARNING]
+>
+> Social network account management is not a supported use case for the Web Unlocker API. This includes managing accounts on Facebook, TikTok, Instagram, X (Twitter), LinkedIn, YouTube, Reddit, Pinterest, Snapchat and Discord.
+> [!NOTE]
+>
+> The Web Unlocker API is not intended for browser-based automation or third-party browser tools such as [Adspower](https://docs.brightdata.com/integrations/adspower.md), [Puppeteer](https://docs.brightdata.com/integrations/puppeteer.md), [Playwright](https://docs.brightdata.com/integrations/playwright.md), or [Multilogin (MLA)](https://docs.brightdata.com/integrations/multilogin.md). If your workflow requires direct interaction with a browser or scripted user actions, use the [Browser API](https://brightdata.com/products/scraping-browser) instead.
+## FAQ
+### What format does the Web Unlocker API return?
+With native proxy access, the target page's raw HTML is returned as-is. With direct API access, set `format` in the request body: `"raw"` for the unmodified response, or `"json"` for a JSON envelope. Either way, the body comes back ready to parse, with no post-processing required
+### Do you pay for failed requests?
+No. With both the Web Unlocker API and the [SERP API](https://docs.brightdata.com/products/serp-api/introduction.md), you are charged only for successful requests to your target domain.
+### Can the Web Unlocker API control a browser?
+No. The Web Unlocker API returns page content from a single request. For scripted browser actions such as clicking, scrolling or filling forms, use the [Browser API](https://brightdata.com/products/scraping-browser).
+### Does the Web Unlocker API work on search engines?
+For Google, Bing and other search engines, use the [SERP API](https://docs.brightdata.com/products/serp-api/introduction.md). It is purpose-built for search result pages and returns parsed results.
+## Related
+> [card] [Send your first request](https://docs.brightdata.com/products/web-unlocker/send-your-first-request.md)
+>
+> Make your first Web Unlocker API call in Python, Node.js or cURL.
+> [card] [Quickstart](https://docs.brightdata.com/products/web-unlocker/quickstart.md)
+>
+> Create a Web Unlocker API zone and get your API key.
+> [card] [Configuration](https://docs.brightdata.com/products/web-unlocker/configuration.md)
+>
+> Tune country targeting, response format and request options.
+> [card] [Target API endpoints](https://docs.brightdata.com/products/web-unlocker/target-api-endpoints.md)
+>
+> Get the highest success rates and lowest cost per request.

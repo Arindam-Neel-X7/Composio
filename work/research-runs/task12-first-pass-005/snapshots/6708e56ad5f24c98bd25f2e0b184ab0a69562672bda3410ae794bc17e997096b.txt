@@ -1,0 +1,24 @@
+# Free test queries
+Users on any paid plan can test Ahrefs API by running a limited set of free test queries. Note that you still need to [create an API key](./api-keys-creation-and-management.md) to run free test queries.
+## Site Explorer
+For Site Explorer endpoints, requests will not consume API units if you use the `ahrefs.com`, `yep.com` or `firehose.com` domains, or any URL from these domains, in the `target` query parameter.
+For example, these requests will be free:
+```json
+https://api.ahrefs.com/v3/site-explorer/domain-rating?date=2023-05-18&target=firehose.com
+https://api.ahrefs.com/v3/site-explorer/all-backlinks?limit=3&mode=prefix&target=ahrefs.com/blog&select=url_from,url_rating_source,traffic,url_to
+```
+## Keywords Explorer and SERP Overview
+For Keywords Explorer and SERP Overview endpoints, requests will not consume API units if you use only `ahrefs`, `yep` or `firehose` in the `keywords` or `keyword` query parameter, depending on the endpoint.
+For example, these requests will be free:
+```json
+https://api.ahrefs.com/v3/keywords-explorer/overview?country=us&keywords=ahrefs&select=keyword,volume,traffic_potential,difficulty
+https://api.ahrefs.com/v3/serp-overview/serp-overview?country=us&date=2023-05-16&keyword=yep&select=url,position,url_rating,backlinks,traffic&top_positions=3
+```
+Note that if you include other keywords along with `ahrefs`, `yep` or `firehose` in the query, that request will consume the usual number of API units. Also, if the `keyword_list_id` parameter is specified in the query, that query will also consume API units regardless of which keywords are included in the list or in the `keywords` query parameter.
+For example, these requests will consume the usual amount of API units:
+```json
+https://api.ahrefs.com/v3/keywords-explorer/overview?country=us&keywords=ahrefs,seo&select=keyword,volume,traffic_potential,difficulty
+https://api.ahrefs.com/v3/keywords-explorer/overview?country=us&keywords=ahrefs&keywords_list_id=123&select=keyword,volume,traffic_potential,difficulty
+```
+> **INFO**
+> The `limit` parameter is capped at 100 in free test requests. Even if you request more, the response will contain 100 results max.

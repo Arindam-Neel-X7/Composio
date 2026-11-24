@@ -1,0 +1,101 @@
+Remote MCP FAQs — Xero Developer
+Skip to main content
+Getting Started
+Grow with Xero
+Documentation
+Tools
+Support
+Sign upLog in
+Menu
+Frequently asked questions
+Answers to your most common questions.
+FAQs
+All
+AI Toolkit
+API Updates
+App Awards
+Custom Integration
+Getting started
+Granular Scopes
+Limits
+OAuth 2.0
+Permissions
+Pricing and Policy Updates
+Remote MCP
+Xero Ecosystem Security Requirements Update
+Xero Functionality
+Main content start
+Remote MCP
+Can I connect to more than one organisation?
+Yes. A user can authorise several organisations for the same app. Ask the agent to list the connected organisations, then tell it which one to act on. Each organisation still goes through the standard OAuth consent step.
+Can I see what my agent did?
+Every Xero API call your agent makes is logged in the Developer Portal, under the app you own. Only the API calls are logged, not the tool calls or prompts behind them. If you need a record of what your agent asked for and why, you will need to log that in your own client or agent.
+Can I try it before I upgrade?
+Yes, apps on Starter plan can use it with the demo organisation. You can connect, run the tools, and decide whether it's worth upgrading to Core. Real customer organisations need the Core plan or above.
+Can I use a web app instead of PKCE?
+Technically yes. We don't recommend it. A web app's client ID and client secret are easy to paste into an AI-enabled tool by accident, and a PKCE app removes that risk.
+Can I use the Remote MCP for free as an Accountant or Bookkeeper?
+Yes. If you’re building an integration for your practice or a client, MCP access is included in your API fee exemption. To apply, go to Manage plan for your app in the Developer Portal and select Get in touch.
+Do I need a Custom Connection?
+No. Custom Connections apps are not eligible to access the Remote MCP Server.
+Does a tool call run against one organisation or several?
+One. Each call runs against a single organisation.
+Does certification apply?
+Certification rules haven't changed. Apps on Plus, Advanced and Enterprise must be certified, whether or not they use Remote MCP.
+Does my client need to support OAuth?
+Yes. The server authorises through Xero's OAuth 2.0 flow with PKCE, so your client needs to be able to start that flow.
+Does the server ask the user to confirm before changing Xero data?
+The tools on V1 do not elicit user confirmation. Always ask your agent to confirm with you before writing anything back to Xero.
+How do I disconnect an organisation or revoke access?
+The user who authorized can disconnect access from their Connected Apps page in the Xero App.
+The app developer can manage connections through the Connection Management page in the Developer Portal. See Managing Connections.
+How is this different from the Xero connector in Claude?
+The Developer Remote MCP is for developers & builders building custom agents and apps. It can be used with any MCP compatible client and offers tools that reads and writes Xero data. It supports multiple organisations with user consent.
+What are the rate limits?
+Rate limits are the same as Xero APIs. Today that's 1,000 calls per day per organisation on the Starter plan and 5,000 per day per organisation on the Core plan and above, per the pricing page.
+What model should I use?
+Use a model with sufficient reasoning you trust for your financial data.
+What scopes does it need?
+Only the scopes for the tools you want the agent to call. Each tool's required scope is listed in the tools table.
+What should my agent do to avoid writing to the wrong organisation?
+Always ask your agent to confirm with you before writing anything back to Xero. The server doesn't do this for you. For development, point the agent at the demo organisation and say that in its instructions.
+What tools are available?
+The full tool list with scopes is in the documentation.
+What's the server URL?
+https://api.xero.com/mcp/v1
+Which MCP clients does it work with?
+Any client that supports remote MCP servers. We've documented setup for Claude Desktop, Claude Code, Cursor and VS Code.
+Who can use it?
+The Remote MCP is included on plans Core and above. Apps on the Starter plan can use it with the demo organisation only. See Xero Developer Pricing and Policies.
+Why PKCE?
+PKCE doesn't need a client secret, so there's no secret to leak into a prompt, a config file or an AI development tool.
+Why would I use the official server instead of a community one?
+It's built, monitored and maintained by the team that builds the API. It uses the same OAuth 2.0 sign-in, permissions and rate limits as the rest of the Xero API, and the layer between your AI tool and your accounting data runs on Xero infrastructure.
+AI toolkit
+RMCP Server
+Agents Toolkit
+Prompt Library
+Documentation
+OAuth 2
+API reference
+Webhooks
+Community
+GitHub
+Product Feedback
+Connect to the Community
+Dev Day Discord Server
+Find a developer
+Events
+News
+DevBlog
+API status
+Changelog
+Support
+Contact us
+FAQ
+© 2026 Xero Limited. All rights reserved. "Xero", "Beautiful business" and "Your business supercharged" are trademarks of Xero Limited.
+About Xero
+Developer Platform Terms and Conditions
+The Xero Developer Platform Commercial Terms
+Xero ecosystem principles
+Dev Council Terms and Conditions

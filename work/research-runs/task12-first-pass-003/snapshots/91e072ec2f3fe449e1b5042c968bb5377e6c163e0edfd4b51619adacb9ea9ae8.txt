@@ -1,0 +1,57 @@
+# Waterfall.io API Documentation
+> One GTM API to find prospects, enrich contacts and companies, verify emails, and check job changes. Explore use cases and API references.
+- [Waterfall API introduction](https://docs.waterfall.io/v1/introduction.md): Explore Waterfall's APIs and compare their inputs, results, and use cases to choose the right endpoint for your workflow.
+- [Enrich your first contact](https://docs.waterfall.io/v1/quickstart.md): Make your first Waterfall API request: submit an email address, save the job ID, and retrieve the contact enrichment result.
+- [Authentication](https://docs.waterfall.io/v1/authentication.md): Get access to the Waterfall API, send your API key in the x-api-key header, and manage keys for separate workflows.
+- [Rate limits](https://docs.waterfall.io/v1/rate-limit.md): Plan Waterfall API request volume, handle HTTP 429 responses, and use Retry-After when polling or processing batches.
+- [Errors](https://docs.waterfall.io/v1/errors.md): Resolve Waterfall API validation, authentication, quota, rate-limit, and job errors using HTTP status and machine-readable error codes.
+- [Usage Tracking](https://docs.waterfall.io/v1/inline-usage.md): Read Waterfall per-job costs and balance snapshots from output.usage, and compare usage across a date range with Account Reporter.
+- [Webhook Verification](https://docs.waterfall.io/v1/webhook-verification.md): Verify Waterfall webhook deliveries using Ed25519 signatures.
+- [Prospector Launcher](https://docs.waterfall.io/v1/prospector-launcher.md): Find contacts at a target company by role, with verified emails and optional phone enrichment.
+- [Prospector Finder](https://docs.waterfall.io/v1/prospector-finder.md): Retrieve prospector results and job status using the job_id returned at launch.
+- [Prospector title filter](https://docs.waterfall.io/v1/prospector-title-filter.md): How to build boolean expressions for `title_filter`.
+- [Prospector multiple title filters](https://docs.waterfall.io/v1/prospector-multiple-title-filters.md): Try up to five groups of job titles in priority order when finding contacts at a company.
+- [Prospector location filter](https://docs.waterfall.io/v1/prospector-location-filter.md): How location_country, location_countries, and location_name work.
+- [Search Contact Launcher](https://docs.waterfall.io/v1/search-contact-launcher.md): Find professional profiles by LinkedIn, company, role, location, or hiring date, without email or phone enrichment.
+- [Search Contact Finder](https://docs.waterfall.io/v1/search-contact-finder.md): Retrieve a previous contact search with its original filters and profile results.
+- [Search Contact filters](https://docs.waterfall.io/v1/search-contact-filters.md): Filter contact searches by role, department, seniority, location, company criteria, and hiring date.
+- [Search Company Launcher](https://docs.waterfall.io/v1/search-company-launcher.md): Discover companies by industry, country, and employee size, with paginated company profiles.
+- [Search Company Finder](https://docs.waterfall.io/v1/search-company-finder.md): Retrieve a previous company search with its original filters and company results.
+- [Contact Enrichment Launcher](https://docs.waterfall.io/v1/contact-enrichment-launcher.md): Enrich a known contact from a work or personal email, LinkedIn profile, or name and company domain.
+- [Contact Enrichment Finder](https://docs.waterfall.io/v1/contact-enrichment-finder.md): Retrieve contact enrichment results and job status using the job_id returned at launch.
+- [Phone Enrichment Launcher](https://docs.waterfall.io/v1/phone-enrichment-launcher.md): Find phone numbers for a known contact using LinkedIn, email, or name and company domain.
+- [Phone Enrichment Finder](https://docs.waterfall.io/v1/phone-enrichment-finder.md): Retrieve phone enrichment results and job status using the job_id returned at launch.
+- [Company Enrichment Launcher](https://docs.waterfall.io/v1/company-enrichment-launcher.md): Add company profile data to a known account using its domain, LinkedIn profile, or name.
+- [Company Enrichment Finder](https://docs.waterfall.io/v1/company-enrichment-finder.md): Retrieve company enrichment results and job status using the job_id returned at launch.
+- [Job Change Launcher](https://docs.waterfall.io/v1/job-change-launcher.md): Check whether a known contact has moved to another company, left a company, or stayed in place.
+- [Job Change Finder](https://docs.waterfall.io/v1/job-change-finder.md): Retrieve a previous job change check and interpret moved, left, no_change, or unknown results.
+- [Company Reveal Launcher](https://docs.waterfall.io/v1/company-reveal-launcher.md): Look up company information associated with an IPv4 address, with IP location and confidence fields.
+- [Company Reveal Finder](https://docs.waterfall.io/v1/company-reveal-finder.md): Retrieve a previous IPv4-to-company lookup using its job_id.
+- [Company Titles Launcher](https://docs.waterfall.io/v1/company-titles-launcher.md): List job titles associated with a company before choosing roles for a contact search.
+- [Company Titles Finder](https://docs.waterfall.io/v1/company-titles-finder.md): Retrieve a previous company title list with the pagination and raw title mode used at launch.
+- [Email Verifier](https://docs.waterfall.io/v1/email-verifier.md): Check an existing email address and receive a valid, invalid, risky, or unknown result in one call.
+- [Webhook JWKS](https://docs.waterfall.io/v1/webhook-jwks.md): Fetch Waterfall public signing keys to verify that webhook deliveries came from Waterfall.
+- [Account Reporter v2](https://docs.waterfall.io/v1/account-reporter-v2.md): Review API usage by key and account, current balance, and master-key unit prices.
+- [API Keys Management](https://docs.waterfall.io/v1/api-keys-overview.md): Create and manage separate API keys for teams, environments, and integrations.
+- [API Keys - List](https://docs.waterfall.io/v1/api-keys-list.md): List account API keys to review their active status, labels, and request rate limits.
+- [API Keys - Create](https://docs.waterfall.io/v1/api-keys-create.md): Create a sub-key to track and manage API usage for a team, environment, or integration.
+- [API Keys - Modify](https://docs.waterfall.io/v1/api-keys-modify.md): Update an existing sub-key label, active status, or request rate limit using the master API key.
+- [Open API Specification](https://docs.waterfall.io/v1/openapi-spec.md): Download the Waterfall API OpenAPI specification.
+- [One GTM API for contacts and companies](https://docs.waterfall.io/v1/overview.md): Find prospects, enrich contact and company profiles, find emails and mobile numbers, verify emails, and check job changes with the Waterfall API.
+- [About Waterfall](https://docs.waterfall.io/v1/about-waterfall.md): B2B contact and company data from 30+ providers, through one API.
+- [Use cases](https://docs.waterfall.io/v1/use-cases/overview.md): Build signup enrichment, account prospecting, CRM enrichment, job change checks, email verification, and company identification with Waterfall.
+- [Enrich inbound signups](https://docs.waterfall.io/v1/use-cases/signup-enrichment.md): Match signup emails to business profiles with Waterfall, then use role and company data in lead qualification and routing.
+- [Find decision-makers at target accounts](https://docs.waterfall.io/v1/use-cases/account-prospecting.md): Map roles across target accounts with Company Titles, then find relevant contacts with Prospector or Search Contact.
+- [Enrich contact and company records](https://docs.waterfall.io/v1/use-cases/crm-enrichment.md): Fill gaps in CRM records with Waterfall contact and company enrichment, using email, LinkedIn, or company identifiers.
+- [Track champions when they change jobs](https://docs.waterfall.io/v1/use-cases/job-changes.md): Check whether a contact has left or moved from their previous employer with Waterfall Job Change, then use the result in your CRM workflow.
+- [Verify email addresses before outreach](https://docs.waterfall.io/v1/use-cases/email-verification.md): Check business and personal email addresses with Waterfall Email Verifier and use valid, invalid, risky, or unknown results in your sending rules.
+- [Identify companies visiting your website](https://docs.waterfall.io/v1/use-cases/website-company-identification.md): Use Waterfall Company Reveal to connect website activity with company profiles and add company context to your account workflows.
+- [Use Waterfall with an agent](https://docs.waterfall.io/v1/skills-overview.md): Run contact and company lookups with an agent, or build Waterfall into your application using the official API skills.
+- [Run a Waterfall lookup with an agent](https://docs.waterfall.io/v1/skills-direct-api.md): Use the waterfall-direct-api skill to retrieve contact or company data and verify emails through Waterfall HTTP API calls.
+- [Build a Waterfall integration with an agent](https://docs.waterfall.io/v1/skills-integration.md): Use the waterfall-integration skill to create Waterfall API integration code in your own Python, JavaScript, or TypeScript project.
+- [Evaluate Waterfall](https://docs.waterfall.io/v1/evaluate-waterfall.md): Compare Waterfall on your own inputs: useful results, accurate matches, freshness, and actual cost. Get help planning the test and building your data pipeline.
+- [Waterfall API FAQ](https://docs.waterfall.io/v1/faq.md): What Waterfall does, who it serves, which API to choose, and how to evaluate, price, and use contact and company data in workflows and agents.
+- [Get API access](https://docs.waterfall.io/v1/book-demo.md): Request an API key or book a call. Our team reviews every access request and helps you plan your integration.
+## OpenAPI Specs
+- [api_specs](/api_specs.yaml)
+This documentation is built and hosted on [Mintlify](https://mintlify.com), a developer documentation platform.

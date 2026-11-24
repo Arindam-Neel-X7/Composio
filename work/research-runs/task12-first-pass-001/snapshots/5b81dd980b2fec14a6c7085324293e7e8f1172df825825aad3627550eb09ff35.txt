@@ -1,0 +1,92 @@
+Installation - Sherlock Project
+Documentation Index
+Fetch the complete documentation index at: /llms.txt
+Use this file to discover all available pages before exploring further.
+Skip to main content
+Sherlock Project home page
+Sherlock Project
+Search...
+⌘K
+sherlock-project/sherlock
+sherlock-project/sherlock
+Search...
+Navigation
+Get started
+Installation
+Get started
+Installation
+Usage
+Supported sites
+Contributing
+How to contribute
+Adding sites
+Get started
+Installation
+PyPI (pip)
+Brew
+Apt
+Dnf
+BlackArch
+Docker
+GitHub
+This is an officially supported package, maintained by a member of the Sherlock Project itself.
+pipx is often recommended over pip, having more predictable behavior.
+pipx install sherlock-project
+For those who prefer classic pip, it’s very similar. Userspace is recommended.
+pip install --user sherlock-project
+That’s it! You can now run sherlock from anywhere.
+sherlock --version
+This package is not officially supported, but it’s maintained by a trusted packager.
+brew install sherlock
+That’s it! You can now run sherlock from anywhere.
+sherlock --version
+This package is not officially supported, but it’s maintained under the trusted purview of the Debian Security Tools Packaging Team. The ParrotOS image is maintained by the ParrotOS team.We may begin to officially support this package in the future.
+Supported distributions are Kali and ParrotOS. Work is underway to support Debian, Ubuntu, and others.
+sudo apt install sherlock
+That’s it! You can now run sherlock from anywhere.
+sherlock --version
+This is an officially supported package, maintained by a member of the Sherlock Project itself.Sherlock has out-of-the-box support for Fedora. Enterprise Linux support through EPEL is planned.
+Enterprise Linux distributions are RHEL, CentOS, Alma, Rocky, Oracle, and Scientific.
+sudo dnf install sherlock-project
+That’s it! You can now run sherlock from anywhere.
+sherlock --version
+This package is not officially supported, but still closely follows our release cycle.
+sudo pacman -S sherlock
+That’s it! You can now run sherlock from anywhere.
+sherlock --version
+This is an officially supported image, maintained by a member of the Sherlock Project itself.
+docker pull sherlock/sherlock
+Sherlock doesn’t yet have context detection. It’s recommended that Docker containers be ran with option -o /opt/sherlock/results/{user123}.txt (replace {user123}) when an output file is desired at the mounted volume (as seen in the compose). This has no effect on stdout, which functions as expected out of the box.
+# One-off searches
+docker run --rm -t sherlock/sherlock user123
+# If you need to save the output file... (modify as needed)
+# Output file will land in ${pwd}/results
+docker run --rm -t -v "$PWD/results:/opt/sherlock/results" sherlock/sherlock -o /opt/sherlock/results/text.txt user123
+# At any time, you may update the image via this command
+docker pull sherlock/sherlock
+Using compose
+version: "3"
+services:
+sherlock:
+container_name: sherlock
+image: sherlock/sherlock
+volumes:
+- ./sherlock/:/opt/sherlock/results/
+docker compose run sherlock user123
+Build image from source (useful for contributors)
+# Assumes ${pwd} is repository root
+docker build -t sherlock .
+docker run --rm -t sherlock user123
+While this method uses the official repository, it’s not an officially supported installation method. This method is recommended for contributors, packagers, and other users who need access to the source code.
+git clone https://github.com/sherlock-project/sherlock.git
+cd sherlock
+virtualenv .
+source bin/activate
+Build live package from source (useful for contributors)
+Building an editable (or live) package links the entry point to your current directory, rather than to the standard install location. This is often useful when working with the code base, as changes are reflected immediately without reinstallation.Note that the version number will be 0.0.0 for pipx local builds unless manually changed in the pyproject file (it will prompt the user for an update).
+pipx install -e .
+Run package from source (without installing)
+If you’d rather not install directly to your system, you can import the module at runtime with -m.
+python3 -m sherlock_project user123 user789
+Usage
+Powered byThis documentation is built and hosted on Mintlify, a developer documentation platform

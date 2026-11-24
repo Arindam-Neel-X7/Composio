@@ -1,0 +1,214 @@
+# Systeme Public API Documentation
+> Documentation for Systeme Public API
+## Guides: API Basics
+- [API recipes and how to use them](https://developer.systeme.io/docs/api-recipes-and-how-to-use-them.md): Learn how to use our API through recipes
+## Guides: Webhooks
+- [Webhooks](https://developer.systeme.io/docs/webhooks.md)
+- [Events](https://developer.systeme.io/docs/webhooks-events.md)
+- [CONTACT_OPT_IN](https://developer.systeme.io/docs/new-optin.md)
+- [CONTACT_CREATED](https://developer.systeme.io/docs/webhooks-events-contact-created.md)
+- [CONTACT_TAG_ADDED](https://developer.systeme.io/docs/webhooks-events-contact-tag-added.md)
+- [CONTACT_TAG_REMOVED](https://developer.systeme.io/docs/webhooks-events-contact-tag-removed.md)
+- [SALE_NEW](https://developer.systeme.io/docs/webhooks-events-new-sale.md)
+- [SALE_CANCELED](https://developer.systeme.io/docs/webhooks-events-sale-canceled.md)
+## Guides: MCP Server
+- [MCP Server ](https://developer.systeme.io/docs/mcp-server.md)
+## API Reference: Systeme.io Public API
+- [Public API](https://developer.systeme.io/reference/api.md)
+- Automation
+- [Retrieves the collection of AutomationRule resources.](https://developer.systeme.io/reference/api_automationrules_get_collection.md): Retrieves the collection of AutomationRule resources.
+- [Creates a AutomationRule resource.](https://developer.systeme.io/reference/api_automationrules_post.md): Creates a AutomationRule resource.
+- [Retrieves a AutomationRule resource.](https://developer.systeme.io/reference/api_automationrules_id_get.md): Retrieves a AutomationRule resource.
+- [Removes the AutomationRule resource.](https://developer.systeme.io/reference/api_automationrules_id_delete.md): Removes the AutomationRule resource.
+- [Updates the AutomationRule resource.](https://developer.systeme.io/reference/api_automationrules_id_patch.md): Updates the AutomationRule resource.
+- Booking Calendar
+- [Retrieves the collection of Booking resources.](https://developer.systeme.io/reference/api_booking-calendarbookings_get_collection.md): Retrieves the collection of Booking resources.
+- [Retrieves the collection of Event resources.](https://developer.systeme.io/reference/api_booking-calendarevents_get_collection.md): Retrieves the collection of Event resources.
+- [Creates a CalendarEvent resource.](https://developer.systeme.io/reference/api_booking-calendarevents_post.md): Creates a CalendarEvent resource.
+- [Retrieves a CalendarEvent resource.](https://developer.systeme.io/reference/api_booking-calendarevents_eventid_get.md): Retrieves a CalendarEvent resource.
+- [Removes the CalendarEvent resource.](https://developer.systeme.io/reference/api_booking-calendarevents_eventid_delete.md): Removes the CalendarEvent resource.
+- [Updates the CalendarEvent resource.](https://developer.systeme.io/reference/api_booking-calendarevents_eventid_patch.md): Updates the CalendarEvent resource.
+- [Retrieves a UserAvailability resource.](https://developer.systeme.io/reference/api_booking-calendaruser-availability_get.md): Retrieves a UserAvailability resource.
+- [Creates a UserAvailability resource.](https://developer.systeme.io/reference/api_booking-calendaruser-availability_post.md): Creates a UserAvailability resource.
+- [Updates the UserAvailability resource.](https://developer.systeme.io/reference/api_booking-calendaruser-availability_patch.md): Updates the UserAvailability resource.
+- Community
+- [Retrieves the collection of Community resources.](https://developer.systeme.io/reference/api_communitycommunities_get_collection-1.md): Retrieves the collection of Community resources.
+- [Creates a Membership resource.](https://developer.systeme.io/reference/api_communitycommunities_communityidmemberships_post-1.md): Creates a Membership resource.
+- [Retrieves the collection of Membership resources.](https://developer.systeme.io/reference/api_communitymemberships_get_collection-1.md): Retrieves the collection of Membership resources.
+- [Removes the Membership resource.](https://developer.systeme.io/reference/api_communitymemberships_id_delete-1.md): Removes the Membership resource.
+- [Creates a Community resource.](https://developer.systeme.io/reference/api_communitycommunities_post.md): Creates a Community resource.
+- [Retrieves a Community resource.](https://developer.systeme.io/reference/api_communitycommunities_id_get.md): Retrieves a Community resource.
+- [Removes the Community resource.](https://developer.systeme.io/reference/api_communitycommunities_id_delete.md): Removes the Community resource.
+- [Updates the Community resource.](https://developer.systeme.io/reference/api_communitycommunities_id_patch.md): Updates the Community resource.
+- [Retrieves the collection of Topic resources.](https://developer.systeme.io/reference/api_communitycommunities_communityidtopics_get_collection.md): Retrieves the collection of Topic resources.
+- [Retrieves a Topic resource.](https://developer.systeme.io/reference/api_communitytopics_topicid_get.md): Retrieves a Topic resource.
+- [[Beta] Returns the posts of a community.](https://developer.systeme.io/reference/api_communitycommunities_communityidposts_get_collection.md): **Beta:** This endpoint is experimental. Its contract may change without backward compatibility. Returns posts of a community owned by the authenticated account, without post content and…
+- [Creates a Topic resource.](https://developer.systeme.io/reference/api_communitycommunities_communityidtopics_post.md): Creates a Topic resource.
+- [[Beta] Returns a community post.](https://developer.systeme.io/reference/api_communityposts_postid_get.md): **Beta:** This endpoint is experimental. Its contract may change without backward compatibility. Returns a post with its content and read-only attachments.
+- [Removes the Topic resource.](https://developer.systeme.io/reference/api_communitytopics_topicid_delete.md): Removes the Topic resource.
+- [Updates the Topic resource.](https://developer.systeme.io/reference/api_communitytopics_topicid_patch.md): Updates the Topic resource.
+- Contact
+- [Retrieves the collection of Contact resources.](https://developer.systeme.io/reference/api_contacts_get_collection-1.md): Retrieves the collection of Contact resources.
+- [Creates a Contact resource.](https://developer.systeme.io/reference/post_contact-1.md): Contacts are not immediately removed upon deletion. For security reasons, the actual deletion of contact data may take several days. If you add a new contact using the same email address as a…
+- [Retrieves a Contact resource.](https://developer.systeme.io/reference/api_contacts_id_get-1.md): Retrieves a Contact resource.
+- [Removes the Contact resource.](https://developer.systeme.io/reference/delete_contact-1.md): Removes the Contact resource.
+- [Updates the Contact resource.](https://developer.systeme.io/reference/api_contacts_id_patch-1.md): Updates the Contact resource.
+- [Assigns a Tag to a Contact.](https://developer.systeme.io/reference/post_contact_tag-1.md): Assigns a Tag to a Contact.
+- [Removes a Tag from a Contact.](https://developer.systeme.io/reference/delete_contact_tag-1.md): Removes a Tag from a Contact.
+- ContactField
+- [Retrieves the collection of ContactField resources.](https://developer.systeme.io/reference/api_contact_fields_get_collection-1.md): Retrieves the collection of ContactField resources.
+- [Creates a ContactField resource.](https://developer.systeme.io/reference/api_contact_fields_post-1.md): Creates a ContactField resource.
+- [Removes the ContactField resource.](https://developer.systeme.io/reference/api_contact_fields_slug_delete-1.md): Removes the ContactField resource.
+- [Updates the ContactField resource.](https://developer.systeme.io/reference/api_contact_fields_slug_patch-1.md): Updates the ContactField resource.
+- Domains
+- [Retrieves the collection of Domain resources.](https://developer.systeme.io/reference/api_domains_get_collection.md): Retrieves the collection of Domain resources.
+- FeatureFlagFieldPilot
+- [Creates a FeatureFlagFieldPilot resource.](https://developer.systeme.io/reference/automation_feature_flag_field_pilot_post.md): Creates a FeatureFlagFieldPilot resource.
+- [Creates a FeatureFlagFieldPilot resource.](https://developer.systeme.io/reference/automation_feature_flag_field_pilot_control_post.md): Creates a FeatureFlagFieldPilot resource.
+- Files
+- [Retrieves the collection of File resources.](https://developer.systeme.io/reference/api_files_get_collection.md): Retrieves the collection of File resources.
+- Funnels
+- [Retrieves a FunnelStep resource.](https://developer.systeme.io/reference/api_funnel-steps_id_get.md): Retrieves a FunnelStep resource.
+- [Retrieves the collection of Funnel resources.](https://developer.systeme.io/reference/api_funnels_get_collection.md): Retrieves the collection of Funnel resources.
+- [Creates a Funnel resource.](https://developer.systeme.io/reference/api_funnels_post.md): Creates a Funnel resource.
+- [Retrieves the collection of FunnelStep resources.](https://developer.systeme.io/reference/api_funnels_funnelidsteps_get_collection.md): Retrieves the collection of FunnelStep resources.
+- [Creates a FunnelStep resource.](https://developer.systeme.io/reference/api_funnels_funnelidsteps_post.md): Creates a FunnelStep resource.
+- [Retrieves a Funnel resource.](https://developer.systeme.io/reference/api_funnels_id_get.md): Retrieves a Funnel resource.
+- [Retrieves the collection of FunnelStepSearchResult resources.](https://developer.systeme.io/reference/api_funnelssteps_get_collection.md): Retrieves the collection of FunnelStepSearchResult resources.
+- [[Beta] Moves a funnel step to a new position.](https://developer.systeme.io/reference/funnel_step_move.md): **Beta:** This endpoint is experimental. Its contract may change without backward compatibility. Moves a funnel step to a new 1-based position among the funnel's steps; the other steps shift to keep…
+- Mailing
+- [Retrieves the collection of Newsletter resources.](https://developer.systeme.io/reference/api_mailingnewsletters_get_collection.md): Retrieves the collection of Newsletter resources.
+- [Creates a Newsletter resource.](https://developer.systeme.io/reference/api_mailingnewsletters_post.md): Creates a Newsletter resource.
+- [Retrieves a Newsletter resource.](https://developer.systeme.io/reference/api_mailingnewsletters_id_get.md): Retrieves a Newsletter resource.
+- [This endpoint is deprecated. Use PATCH instead](https://developer.systeme.io/reference/api_mailingnewsletters_id_put.md): Replaces the Newsletter resource.
+- [Updates the Newsletter resource.](https://developer.systeme.io/reference/api_mailingnewsletters_id_patch.md): Updates the Newsletter resource.
+- [Retrieves a CampaignStep resource.](https://developer.systeme.io/reference/api_mailingcampaign-steps_id_get.md): Retrieves a CampaignStep resource.
+- [Removes the CampaignStep resource.](https://developer.systeme.io/reference/api_mailingcampaign-steps_id_delete.md): Removes the CampaignStep resource.
+- [Updates the CampaignStep resource.](https://developer.systeme.io/reference/api_mailingcampaign-steps_id_patch.md): Updates the CampaignStep resource.
+- [Retrieves the collection of Campaign resources.](https://developer.systeme.io/reference/api_mailingcampaigns_get_collection.md): Retrieves the collection of Campaign resources.
+- [Creates a Campaign resource.](https://developer.systeme.io/reference/api_mailingcampaigns_post.md): Creates a Campaign resource.
+- [Retrieves the collection of CampaignStep resources.](https://developer.systeme.io/reference/api_mailingcampaigns_campaignidsteps_get_collection.md): Retrieves the collection of CampaignStep resources.
+- [Creates a CampaignStep resource.](https://developer.systeme.io/reference/api_mailingcampaigns_campaignidsteps_post.md): Creates a CampaignStep resource.
+- [Retrieves a Campaign resource.](https://developer.systeme.io/reference/api_mailingcampaigns_id_get.md): Retrieves a Campaign resource.
+- [Removes the Campaign resource.](https://developer.systeme.io/reference/api_mailingcampaigns_id_delete.md): Removes the Campaign resource.
+- [Updates the Campaign resource.](https://developer.systeme.io/reference/api_mailingcampaigns_id_patch.md): Updates the Campaign resource.
+- [Retrieves the collection of MailingTag resources.](https://developer.systeme.io/reference/newsletter_excluded_tags_get.md): Retrieves the collection of MailingTag resources.
+- [Replaces the MailingTag resource.](https://developer.systeme.io/reference/newsletter_excluded_tags_put.md): Replaces the MailingTag resource.
+- [Retrieves the collection of MailingTag resources.](https://developer.systeme.io/reference/newsletter_included_tags_get.md): Retrieves the collection of MailingTag resources.
+- [Replaces the MailingTag resource.](https://developer.systeme.io/reference/newsletter_included_tags_put.md): Replaces the MailingTag resource.
+- [Removes the Newsletter resource.](https://developer.systeme.io/reference/api_mailingnewsletters_id_delete.md): Removes the Newsletter resource.
+- [Retrieves a NewsletterSchedule resource.](https://developer.systeme.io/reference/newsletter_schedule_get.md): Retrieves a NewsletterSchedule resource.
+- [Replaces the NewsletterSchedule resource.](https://developer.systeme.io/reference/newsletter_schedule_put.md): Replaces the NewsletterSchedule resource.
+- [Creates a Newsletter resource.](https://developer.systeme.io/reference/newsletter_send.md): Creates a Newsletter resource.
+- [Creates a Newsletter resource.](https://developer.systeme.io/reference/newsletter_send_test.md): Creates a Newsletter resource.
+- [Creates a CampaignStep resource.](https://developer.systeme.io/reference/campaign_step_send_test.md): Creates a CampaignStep resource.
+- [Retrieves the collection of AutomationEmail resources.](https://developer.systeme.io/reference/api_mailingautomation-emails_get_collection.md): Retrieves the collection of AutomationEmail resources.
+- [Creates a AutomationEmail resource.](https://developer.systeme.io/reference/api_mailingautomation-emails_post.md): Creates a AutomationEmail resource.
+- [Retrieves the collection of AutomationEmailToSpecificAddress resources.](https://developer.systeme.io/reference/api_mailingautomation-emails-to-specific-address_get_collection.md): Retrieves the collection of AutomationEmailToSpecificAddress resources.
+- [Creates a AutomationEmailToSpecificAddress resource.](https://developer.systeme.io/reference/api_mailingautomation-emails-to-specific-address_post.md): Creates a AutomationEmailToSpecificAddress resource.
+- [Retrieves a AutomationEmailToSpecificAddress resource.](https://developer.systeme.io/reference/api_mailingautomation-emails-to-specific-address_id_get.md): Retrieves a AutomationEmailToSpecificAddress resource.
+- [Updates the AutomationEmailToSpecificAddress resource.](https://developer.systeme.io/reference/api_mailingautomation-emails-to-specific-address_id_patch.md): Updates the AutomationEmailToSpecificAddress resource.
+- [Retrieves a AutomationEmail resource.](https://developer.systeme.io/reference/api_mailingautomation-emails_id_get.md): Retrieves a AutomationEmail resource.
+- [Updates the AutomationEmail resource.](https://developer.systeme.io/reference/api_mailingautomation-emails_id_patch.md): Updates the AutomationEmail resource.
+- [[Beta] Retrieves a AutomationEmail resource.](https://developer.systeme.io/reference/automation_email_statistics.md): **Beta:** This endpoint is experimental. Its contract may change without backward compatibility. Retrieves a AutomationEmail resource.
+- [[Beta] Retrieves a CampaignStep resource.](https://developer.systeme.io/reference/campaign_step_statistics.md): **Beta:** This endpoint is experimental. Its contract may change without backward compatibility. Retrieves a CampaignStep resource.
+- [[Beta] Retrieves a Newsletter resource.](https://developer.systeme.io/reference/newsletter_statistics.md): **Beta:** This endpoint is experimental. Its contract may change without backward compatibility. Retrieves a Newsletter resource.
+- [[Beta] Retrieves the collection of AutomationEmailStatisticsListItem resources.](https://developer.systeme.io/reference/api_mailingstatisticsautomation-emails_get_collection.md): **Beta:** This endpoint is experimental. Its contract may change without backward compatibility. Retrieves the collection of AutomationEmailStatisticsListItem resources.
+- [[Beta] Retrieve automation email statistics overview](https://developer.systeme.io/reference/mailing_automation_email_statistics_overview_get.md): **Beta:** This endpoint is experimental. Its contract may change without backward compatibility. Aggregates the statistics of every automation email over the requested period.
+- [[Beta] Retrieves the collection of CampaignStepStatisticsListItem resources.](https://developer.systeme.io/reference/api_mailingstatisticscampaign-steps_get_collection.md): **Beta:** This endpoint is experimental. Its contract may change without backward compatibility. Retrieves the collection of CampaignStepStatisticsListItem resources.
+- [[Beta] Retrieve campaign step statistics overview](https://developer.systeme.io/reference/mailing_campaign_step_statistics_overview_get.md): **Beta:** This endpoint is experimental. Its contract may change without backward compatibility. Aggregates the statistics of every campaign step email over the requested period.
+- [[Beta] Retrieves the collection of NewsletterStatisticsListItem resources.](https://developer.systeme.io/reference/api_mailingstatisticsnewsletters_get_collection.md): **Beta:** This endpoint is experimental. Its contract may change without backward compatibility. Retrieves the collection of NewsletterStatisticsListItem resources.
+- [[Beta] Retrieve newsletter statistics overview](https://developer.systeme.io/reference/mailing_newsletter_statistics_overview_get.md): **Beta:** This endpoint is experimental. Its contract may change without backward compatibility. Aggregates the statistics of every regular newsletter over the requested period. Split-test…
+- [List automation email recipient statistics](https://developer.systeme.io/reference/mailing_automation_email_statistics_recipients_get.md): Retrieves the collection of RecipientStatisticsItem resources.
+- [List campaign step recipient statistics](https://developer.systeme.io/reference/mailing_campaign_step_statistics_recipients_get.md): Retrieves the collection of RecipientStatisticsItem resources.
+- [List newsletter recipient statistics](https://developer.systeme.io/reference/mailing_newsletter_statistics_recipients_get.md): Retrieves the collection of RecipientStatisticsItem resources.
+- Page Editor
+- [Replaces the PageContentSave resource.](https://developer.systeme.io/reference/api_page-editorpages_idsave_put.md): Replaces the PageContentSave resource.
+- [Returns a Page JSON Schema.](https://developer.systeme.io/reference/api_page-editorpage-schema_post.md): Returns the JSON Schema for the requested page type.
+- [[Beta] Returns a page template description.](https://developer.systeme.io/reference/api_page-editorpage-template_post.md): **Beta:** This endpoint is experimental. Its contract may change without backward compatibility. Returns the Page Editor template selected for the requested page type, including its placeholders and…
+- [[Beta] Replaces page content from a template.](https://developer.systeme.io/reference/api_pages_pageidcontentfrom-template_put.md): **Beta:** This endpoint is experimental. Its contract may change without backward compatibility. Submits placeholder values to replace the content of an existing page from the selected template.
+- Payment
+- [Retrieves the collection of Coupon resources.](https://developer.systeme.io/reference/api_paymentcoupons_get_collection.md): Retrieves the collection of Coupon resources.
+- [Creates a Coupon resource.](https://developer.systeme.io/reference/api_paymentcoupons_post.md): Creates a Coupon resource.
+- [Retrieves a Coupon resource.](https://developer.systeme.io/reference/api_paymentcoupons_id_get.md): Retrieves a Coupon resource.
+- [This endpoint is deprecated. Use PATCH instead](https://developer.systeme.io/reference/api_paymentcoupons_id_put.md): Replaces the Coupon resource.
+- [Removes the Coupon resource.](https://developer.systeme.io/reference/api_paymentcoupons_id_delete.md): Removes the Coupon resource.
+- [Updates the Coupon resource.](https://developer.systeme.io/reference/api_paymentcoupons_id_patch.md): Updates the Coupon resource.
+- [Retrieves the collection of PricePlan resources.](https://developer.systeme.io/reference/api_paymentprice-plans_get_collection.md): Retrieves the collection of PricePlan resources.
+- [Creates a PricePlan resource.](https://developer.systeme.io/reference/api_paymentprice-plans_post.md): Creates a PricePlan resource.
+- [Retrieves a PricePlan resource.](https://developer.systeme.io/reference/api_paymentprice-plans_id_get.md): Retrieves a PricePlan resource.
+- [Removes the PricePlan resource.](https://developer.systeme.io/reference/api_paymentprice-plans_id_delete.md): Removes the PricePlan resource.
+- [Updates the PricePlan resource.](https://developer.systeme.io/reference/api_paymentprice-plans_id_patch.md): Updates the PricePlan resource.
+- [Retrieves the collection of DigitalProduct resources.](https://developer.systeme.io/reference/api_paymentdigital-products_get_collection.md): Retrieves the collection of DigitalProduct resources.
+- [Creates a DigitalProduct resource.](https://developer.systeme.io/reference/api_paymentdigital-products_post.md): Creates a DigitalProduct resource.
+- [Retrieves a DigitalProduct resource.](https://developer.systeme.io/reference/api_paymentdigital-products_id_get.md): Retrieves a DigitalProduct resource.
+- [Removes the DigitalProduct resource.](https://developer.systeme.io/reference/api_paymentdigital-products_id_delete.md): Removes the DigitalProduct resource.
+- [Updates the DigitalProduct resource.](https://developer.systeme.io/reference/api_paymentdigital-products_id_patch.md): Updates the DigitalProduct resource.
+- [Creates a Offer resource.](https://developer.systeme.io/reference/api_paymentoffers_post.md): Creates a Offer resource.
+- [Retrieves a Offer resource.](https://developer.systeme.io/reference/api_paymentoffers_id_get.md): Retrieves a Offer resource.
+- [Updates the Offer resource.](https://developer.systeme.io/reference/api_paymentoffers_id_patch.md): Updates the Offer resource.
+- [Retrieves the collection of PhysicalProduct resources.](https://developer.systeme.io/reference/api_paymentphysical-products_get_collection.md): Retrieves the collection of PhysicalProduct resources.
+- [Creates a PhysicalProduct resource.](https://developer.systeme.io/reference/api_paymentphysical-products_post.md): Creates a PhysicalProduct resource.
+- [Retrieves a PhysicalProduct resource.](https://developer.systeme.io/reference/api_paymentphysical-products_id_get.md): Retrieves a PhysicalProduct resource.
+- [Removes the PhysicalProduct resource.](https://developer.systeme.io/reference/api_paymentphysical-products_id_delete.md): Removes the PhysicalProduct resource.
+- [Updates the PhysicalProduct resource.](https://developer.systeme.io/reference/api_paymentphysical-products_id_patch.md): Updates the PhysicalProduct resource.
+- [Retrieves a AvailablePaymentMethods resource.](https://developer.systeme.io/reference/api_paymentsale-settingspayment-methods_currency_get.md): Retrieves a AvailablePaymentMethods resource.
+- [Retrieves a SaleSettings resource.](https://developer.systeme.io/reference/api_paymentsale-settings_externalid_get.md): Retrieves a SaleSettings resource.
+- [Updates the SaleSettings resource.](https://developer.systeme.io/reference/api_paymentsale-settings_externalid_patch.md): Updates the SaleSettings resource.
+- SMS
+- [Retrieves the collection of SmsTemplate resources.](https://developer.systeme.io/reference/api_smstemplates_get_collection.md): Retrieves the collection of SmsTemplate resources.
+- [Retrieves the collection of SmsMessageService resources.](https://developer.systeme.io/reference/api_smsmessage-services_get_collection.md): Retrieves the collection of SmsMessageService resources.
+- [Retrieves a SmsPhoneNumbers resource.](https://developer.systeme.io/reference/api_smsphone-numbers_get.md): Retrieves a SmsPhoneNumbers resource.
+- [Creates a SmsTemplate resource.](https://developer.systeme.io/reference/api_smstemplates_post.md): Creates a SmsTemplate resource.
+- [Retrieves a SmsTemplate resource.](https://developer.systeme.io/reference/api_smstemplates_templateid_get.md): Retrieves a SmsTemplate resource.
+- [Removes the SmsTemplate resource.](https://developer.systeme.io/reference/api_smstemplates_templateid_delete.md): Removes the SmsTemplate resource.
+- [Updates the SmsTemplate resource.](https://developer.systeme.io/reference/api_smstemplates_templateid_patch.md): Updates the SmsTemplate resource.
+- [Retrieves a SmsTwilioAccount resource.](https://developer.systeme.io/reference/api_smstwilio-account_get.md): Retrieves a SmsTwilioAccount resource.
+- School
+- [Retrieves the collection of Course resources.](https://developer.systeme.io/reference/api_schoolcourses_get_collection-1.md): Retrieves the collection of Course resources.
+- [Creates an Enrollment resource.](https://developer.systeme.io/reference/api_schoolcourses_courseidenrollments_post-1.md): Creates an Enrollment resource.
+- [Retrieves the collection of Enrollment resources.](https://developer.systeme.io/reference/api_schoolenrollments_get_collection-1.md): Retrieves the collection of Enrollment resources.
+- [Removes the Enrollment resource.](https://developer.systeme.io/reference/api_schoolenrollments_id_delete-1.md): Removes the Enrollment resource.
+- [Retrieves the collection of CourseTheme resources.](https://developer.systeme.io/reference/api_schoolcourse-themes_get_collection.md): Retrieves the collection of CourseTheme resources.
+- [Retrieves a Course resource.](https://developer.systeme.io/reference/api_schoolcourses_id_get.md): Retrieves a Course resource.
+- [Retrieves the collection of Module resources.](https://developer.systeme.io/reference/api_schoolcourse-modules_get_collection.md): Retrieves the collection of Module resources.
+- [Retrieves a Module resource.](https://developer.systeme.io/reference/api_schoolcourse-modules_moduleid_get.md): Retrieves a Module resource.
+- [Removes the Module resource.](https://developer.systeme.io/reference/api_schoolcourse-modules_moduleid_delete.md): Removes the Module resource.
+- [Updates the Module resource.](https://developer.systeme.io/reference/api_schoolcourse-modules_moduleid_patch.md): Updates the Module resource.
+- [Creates a Course resource.](https://developer.systeme.io/reference/api_schoolcoursesclassic_post.md): Creates a Course resource.
+- [Creates a Module resource.](https://developer.systeme.io/reference/api_schoolcourses_courseidmodules_post.md): Creates a Module resource.
+- [Retrieves the collection of CourseModulesWithLectures resources.](https://developer.systeme.io/reference/api_schoolcourses_courseidmodules-with-lectures_get_collection.md): Retrieves the collection of CourseModulesWithLectures resources.
+- [Removes the Course resource.](https://developer.systeme.io/reference/api_schoolcourses_id_delete.md): Removes the Course resource.
+- [Updates the Course resource.](https://developer.systeme.io/reference/api_schoolcourses_id_patch.md): Updates the Course resource.
+- [Creates a Course resource.](https://developer.systeme.io/reference/course_activate.md): Creates a Course resource.
+- [Creates a Course resource.](https://developer.systeme.io/reference/course_deactivate.md): Creates a Course resource.
+- [Retrieves a Lecture resource.](https://developer.systeme.io/reference/api_schoollectures_lectureid_get.md): Retrieves a Lecture resource.
+- [Removes the Lecture resource.](https://developer.systeme.io/reference/api_schoollectures_lectureid_delete.md): Removes the Lecture resource.
+- [Updates the Lecture resource.](https://developer.systeme.io/reference/api_schoollectures_lectureid_patch.md): Updates the Lecture resource.
+- [Creates a Lecture resource.](https://developer.systeme.io/reference/lecture_activate.md): Creates a Lecture resource.
+- [Creates a Lecture resource.](https://developer.systeme.io/reference/lecture_deactivate.md): Creates a Lecture resource.
+- [Creates a Lecture resource.](https://developer.systeme.io/reference/api_schoolmodules_moduleidclassic-lectures_post.md): Creates a Lecture resource.
+- Subscription
+- [Retrieves the collection of Subscription resources.](https://developer.systeme.io/reference/api_paymentsubscriptions_get_collection-1.md): Retrieves the collection of Subscription resources.
+- [Unsubscribe.](https://developer.systeme.io/reference/cancel_subscription-1.md): Cancels the subscription.
+- Tag
+- [Retrieves the collection of Tag resources.](https://developer.systeme.io/reference/api_tags_get_collection-1.md): Retrieves the collection of Tag resources.
+- [Creates a Tag resource.](https://developer.systeme.io/reference/api_tags_post-1.md): Creates a Tag resource.
+- [Retrieves a Tag resource.](https://developer.systeme.io/reference/api_tags_id_get-1.md): Retrieves a Tag resource.
+- [Replaces the Tag resource.](https://developer.systeme.io/reference/api_tags_id_put-1.md): Replaces the Tag resource.
+- [Removes the Tag resource.](https://developer.systeme.io/reference/api_tags_id_delete-1.md): Removes the Tag resource.
+- Webhook
+- [Retrieves the collection of Webhook resources.](https://developer.systeme.io/reference/api_webhooks_get_collection-1.md): Retrieves the collection of Webhook resources.
+- [Creates a Webhook resource.](https://developer.systeme.io/reference/api_webhooks_post-1.md): Creates a Webhook resource.
+- [Retrieves a Webhook resource.](https://developer.systeme.io/reference/api_webhooks_id_get-1.md): Retrieves a Webhook resource.
+- [Removes the Webhook resource.](https://developer.systeme.io/reference/api_webhooks_id_delete-1.md): Removes the Webhook resource.
+- [Updates the Webhook resource.](https://developer.systeme.io/reference/api_webhooks_id_patch-1.md): Updates the Webhook resource.
+- Workflows
+- [[Beta] Replaces a workflow step configuration.](https://developer.systeme.io/reference/api_workflow-steps_id_put.md): **Beta:** This endpoint is experimental. Its contract may change without backward compatibility. Fully replaces the configuration. Step identity, kind, and placement remain unchanged. Replacing a…
+- [[Beta] Deletes a workflow step.](https://developer.systeme.io/reference/api_workflow-steps_id_delete.md): **Beta:** This endpoint is experimental. Its contract may change without backward compatibility. Deletes the step and reconnects remaining steps when applicable. Deleting a condition also deletes…
+- [[Beta] Retrieves workflow steps.](https://developer.systeme.io/reference/api_workflows_workflowidsteps_get_collection.md): **Beta:** This endpoint is experimental. Its contract may change without backward compatibility. Returns supported steps in graph execution order: triggers, then conditions with YES branches before…
+- [[Beta] Creates a workflow step.](https://developer.systeme.io/reference/api_workflows_workflowidsteps_post.md): **Beta:** This endpoint is experimental. Its contract may change without backward compatibility. Adds a supported step to a workflow. Use afterStepId and branch to select its position; trigger…
+- Workspace
+- [Retrieves the collection of WorkspaceMember resources.](https://developer.systeme.io/reference/api_workspacemembers_get_collection.md): Retrieves the collection of WorkspaceMember resources.
+## Recipes
+- [Create a contact with a tag](https://developer.systeme.io/recipes/create-a-contact-with-a-tag.md)

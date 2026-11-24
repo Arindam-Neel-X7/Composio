@@ -1,0 +1,402 @@
+CLI | MrScraper Documentation
+Documentation
+Core Features
+Dashboard
+Getting Started
+OverviewQuickstartWeb Search
+Scraper API
+Token PlanCLIMCP ServerBilling
+Features
+Workflow
+Workflow API AccessBulk ScrapingProxyMarketplaceScheduleS3 StorageScraping TipsCookieTeam
+Guides
+Common Use Case
+Optimizing CostCreate and Run a Scraper ProgrammaticallyBulk Scraping With Custom Scraper
+Integrations
+EmailSQL/DatabaseWebhookZapierClawHub
+x402
+n8n
+DifyScalekit
+SDKs
+MrScraper
+Search
+⌘K
+Dashboard
+DocumentationAPI ReferenceResidential ProxyChangelog
+CLI
+CLI
+Install, authenticate, and use the MrScraper CLI to retrieve pages as HTML, Markdown, or screenshots, extract brand details and structured JSON, search the web, and check account status.
+The MrScraper CLI provides terminal access to the seven MrScraper services, with browser sign-in and optional agent skill setup. Its commands share their descriptions, parameter meanings, and defaults with the MCP server, the SDKs, and the other integrations. This guide covers installation, authentication, output, environment variables, programmatic usage, and complete command details.
+CommandDescription
+statusReturn the raw account status API response without summarizing, redacting body fields, or adding calculated fields.
+scrape-htmlRetrieve the raw HTML of a page. Browser rendering is optional.
+scrape-markdownRetrieve a page as Markdown. Including HTML also enables browser rendering and returns both outputs as JSON.
+get-screenshotCapture a base64 screenshot of the full page or top viewport. Browser rendering is always enabled.
+scrape-brandExtract a website's colors, typography, logos, and social links as JSON.
+scrape-jsonExtract structured JSON from a page using a natural-language prompt. Append Json Schema: and a JSON schema to shape the output.
+web-searchSearch the web and return ranked results with titles, URLs, descriptions, and sources.
+init, login, auth status, logout, and setup skills are configuration commands.
+Requirements
+Node.js 20 or newer
+A MrScraper account for browser login, or an API key for non-interactive use
+Package information
+This page documents version 0.7.1. Version 0.7.0 replaced scraperAPI with scrape-html, scrape-markdown, and get-screenshot, replaced account with status, added scrape-brand and scrape-json, renamed webSearch to web-search, and switched to a three-skill pack. See Migrating from 0.6.x. See @mrscraper/cli on npm for the current published version.
+Installation
+Install only the CLI globally:
+npm install -g @mrscraper/cli@latest
+mrscraper --version
+Install the CLI and the MrScraper agent skill pack for every detected harness:
+npx -y @mrscraper/cli@latest init --all
+Install for one harness:
+npx -y @mrscraper/cli@latest init --agent codex
+Supported IDs are claude-code, cursor, codex, grok, hermes, opencode, openclaw, pi, and omp.
+The skill pack contains three skills: mrscraper for setup and account usage, mrscraper-fetch for page retrieval, and mrscraper-serp for web search.
+Copyable AI setup prompt
+Read and follow https://github.com/mrscraper-com/cli/blob/main/skills/mrscraper/SKILL.md
+For an agent-controlled, non-interactive setup, skip authentication during bootstrap and start login separately:
+npx -y @mrscraper/cli@latest init --agent codex --yes --skip-auth
+mrscraper auth status --json
+mrscraper login
+CLI and skills only
+mrscraper init installs the CLI and skill pack. It does not install or configure MCP. See MCP Server for hosted MCP setup.
+init parameters
+ParameterDefaultScopeBehavior
+--api-key <key>—LocalSaves the supplied key during bootstrap instead of browser login.
+--allenabledLocalInstalls skills for every supported harness detected on this machine.
+--agent <id>—LocalInstalls skills for one supported harness, even when its detection directory is absent.
+-y, --yesoffLocalKeeps bootstrap non-interactive. Missing authentication is left for a later login.
+--skip-installoffLocalDoes not install the current CLI version globally.
+--skip-authoffLocalPerforms no authentication step.
+--skip-skillsoffLocalDoes not install the skill pack.
+--dry-runoffLocalPrints intended actions without installing, authenticating, or copying skills.
+Refresh only the skills with mrscraper setup skills. It accepts --agent <id> for one harness and --dry-run; without --agent, it targets detected harnesses.
+mrscraper setup skills
+mrscraper setup skills --agent hermes
+mrscraper init --all --yes --skip-auth --dry-run
+Native plugins (optional)
+Native agent plugins are maintained separately from the CLI for ChatGPT and Codex and Claude. See Claude Code setup for installing the Claude plugin.
+Choose one skill installation method
+If npx ... init already installed the MrScraper skills for an agent, skip plugin installation for that agent. Enabling both methods can load duplicate copies of the same skills.
+Verifying installation
+After completing installation, verify that the CLI binary and commands are accessible in your environment:
+mrscraper --version
+mrscraper auth status --json
+mrscraper status
+A successful status call confirms that the CLI can load its authentication and reach the MrScraper service.
+Skill pack reloading
+Restart an agent harness or open a new terminal session after installing skills so it reloads the skill pack properly.
+Authentication
+Browser login
+mrscraper login
+The CLI opens the MrScraper login page, waits for browser approval, and saves a dedicated API key in ~/.mrscraper/auth.json. Keep mrscraper login running until approval completes. Set MRSCRAPER_HOME to change the containing directory.
+API-key login
+mrscraper login --api-key "$MRSCRAPER_API_KEY"
+For automation, set an environment variable instead of saving a key:
+export MRSCRAPER_API_KEY="YOUR_TOKEN"
+Authentication precedence for service commands is:
+Command --token
+MRSCRAPER_API_KEY
+MRSCRAPER_API_TOKEN
+~/.mrscraper/auth.json
+--token is sent in request headers, never in the request URL.
+login parameters
+ParameterDefaultScopeBehavior
+--api-key <key>—LocalSaves this API key and does not open browser login.
+--token <key>—LocalDeprecated alias for login's --api-key.
+--no-browseroffLocalPrompts a human for an API key; requires an interactive terminal.
+--no-openoffLocalPrints the browser sign-in URL without launching it. The CLI still waits for approval.
+--timeout <seconds>180LocalMaximum time to wait for browser approval.
+Auth status and logout
+mrscraper auth status reports the credential currently available to the CLI. It reads the local configuration without sending a test request. JSON output uses the credential_configured field, plus source for an environment variable or path for a saved key:
+{
+"credential_configured": true,
+"auth_type": "api_key",
+"path": "/home/user/.mrscraper/auth.json"
+}
+mrscraper logout deletes local credential files. It does not revoke an API key remotely.
+Output
+Every service command prints a JSON envelope to stdout:
+{
+"status_code": 200,
+"data": "<html><body>Example page content...</body></html>",
+"headers": {
+"content-type": "text/html; charset=utf-8"
+}
+}
+status_code contains the HTTP response code.
+data contains the API response body. JSON bodies are parsed; other bodies, such as HTML or Markdown text, remain strings. Field names are returned as the API sends them.
+headers contains response headers. Credential-bearing headers are filtered, and known credential metadata in scraping and search JSON is redacted. status preserves its body fields.
+Failed API calls print a JSON envelope with error and exit non-zero. HTTP failures keep the status in status_code; network failures use null.
+Progress messages use stderr so stdout stays machine-readable. Invalid arguments fail before any request.
+Save large output with shell redirection:
+mrscraper scrape-html https://example.com > result.json
+mrscraper scrape-markdown https://example.com | jq -r '.data'
+Response examples on this page show selected keys with placeholder values. Actual responses may contain additional fields.
+Environment variables
+VariableDefaultPurpose
+MRSCRAPER_API_KEY—Preferred API-key environment override.
+MRSCRAPER_API_TOKEN—Alternative API-key environment override.
+MRSCRAPER_HOME~/.mrscraperCredential directory override.
+MRSCRAPER_API_BASE_URLhttps://api.app.mrscraper.com/api/v1Development override for status and login.
+MRSCRAPER_FETCH_BASE_URLhttps://api.mrscraper.comDevelopment override for scraping and search commands.
+The CLI also loads a .env file from the current working directory.
+Shared parameters
+Service options use kebab-case. Run mrscraper <command> --help to see the options a command accepts. Every service command also accepts --token <key>.
+Page controls
+scrape-html, scrape-markdown, get-screenshot, and scrape-json accept these options. Page defaults are 300 seconds, US geolocation and proxy country, real-device routing off, and dashboard saving off. Omitted retry limits mean no limit.
+ParameterAPI fieldTypeDefaultDescription
+<url>urlstringRequiredAbsolute HTTP or HTTPS URL of the page to process.
+--timeouttimeoutinteger300Page load timeout in seconds, from 1 to 300. The HTTP request allows 30 additional seconds.
+--geo-codegeoCodestring"us"Two-letter country code to load the page from, sent in lowercase.
+--proxy-countryproxyCountrystring"us"Two-letter country code of the proxy server, sent in lowercase.
+--supersuperbooleanfalseWhether to route the request through real devices.
+--wait-untilwaitUntilstring: domcontentloaded, load, networkidle0, networkidle2"domcontentloaded"Navigation completion event to wait for: domcontentloaded, load, networkidle0, or networkidle2.
+--proxyproxystringOmittedCustom proxy URL used to load the page.
+--max-retriesmaxRetriesintegerOmittedMaximum number of retries, as a nonnegative integer. Omit this parameter for no limit.
+--save-resultsaveResultbooleanfalseWhether to save the result to the dashboard Result tab.
+Loading controls
+scrape-html, scrape-markdown, and get-screenshot also accept these options. scrape-json does not.
+ParameterAPI fieldTypeDefaultDescription
+--block-resourcesblockResourcesbooleanfalseWhether to block images, fonts, and stylesheets while loading the page.
+--wait-for-selectorwaitForSelectorstringOmittedWait for the page to contain the specified CSS selector before returning the result.
+--return-cookiereturnCookiebooleanfalseWhether to include browser session cookies in the response.
+Browser rendering is optional for HTML, Markdown, and JSON; screenshots always enable it. Markdown with HTML also enables browser rendering.
+CLI command list
+status
+Return the raw account status API response without summarizing, redacting body fields, or adding calculated fields. It takes no service parameters, and its HTTP deadline is fixed at 600 seconds. --json is accepted for compatibility; JSON is already the default.
+mrscraper status
+mrscraper status | jq '.data.data.tokenUsage'
+The API body contains message and data. Account details remain nested in data, including subscriptionItem and scraperAllowance, so the envelope exposes them at data.data.
+{
+"status_code": 200,
+"data": {
+"message": "Example response",
+"data": {
+"id": "ACCOUNT_ID",
+"tokenLimit": 100000,
+"tokenUsage": 2500,
+"stripeStatus": "active",
+"user": {
+"name": "Example user",
+"email": "user@example.com",
+"isVerified": true
+},
+"subscriptionItem": {
+"name": "Example plan",
+"tokenLimit": 100000
+},
+"scraperAllowance": {
+"remaining": 97500,
+"plans": [{ "remaining": 97500 }]
+}
+}
+},
+"headers": {
+"content-type": "application/json; charset=utf-8"
+}
+}
+scrape-html
+Retrieve the raw HTML of a page. Browser rendering is optional.
+Accepts page controls, loading controls, and:
+ParameterAPI fieldTypeDefaultDescription
+--browser-renderingbrowserRenderingbooleanfalseWhether to render the page in a browser before returning the result.
+--warm-startwarmStartbooleanfalseWhether to enable warm start for more reliable scraping, at the cost of additional latency.
+mrscraper scrape-html https://example.com --browser-rendering --warm-start \
+--wait-for-selector 'body' --timeout 120 --max-retries 0
+The default response body is HTML text. Additional controls can cause the API to return JSON; the returned structure is preserved.
+Scrape HTML usage is based on runtime and bandwidth. Resource blocking can reduce bandwidth for text-focused pages, and --max-retries limits retry usage. See the Token Plan for the complete calculation.
+scrape-markdown
+Retrieve a page as Markdown. Including HTML also enables browser rendering and returns both outputs as JSON.
+Accepts page controls, loading controls, and:
+ParameterAPI fieldTypeDefaultDescription
+--browser-renderingbrowserRenderingbooleanfalseWhether to render the page in a browser before returning the result.
+--warm-startwarmStartbooleanfalseWhether to enable warm start for more reliable scraping, at the cost of additional latency.
+--htmlhtmlbooleanfalseWhether to include the page HTML in the response.
+mrscraper scrape-markdown https://example.com --html --warm-start
+The default response body is Markdown text. With --html, data is an object containing both outputs:
+{
+"status_code": 200,
+"data": {
+"html": "<html>...</html>",
+"markdown": "# Example page\n\n..."
+},
+"headers": {
+"content-type": "application/json"
+}
+}
+get-screenshot
+Capture a base64 screenshot of the full page or top viewport. Browser rendering is always enabled.
+Accepts page controls, loading controls, and:
+ParameterAPI fieldTypeDefaultDescription
+--screenshotscreenshotstring: full, top"full"Screenshot area to capture: full for the entire page or top for the top viewport.
+--no-htmlhtmlbooleantrueSets html=false. Whether to include the page HTML in the response.
+--markdownmarkdownbooleanfalseWhether to include the page Markdown in the response.
+mrscraper get-screenshot https://example.com --screenshot top --no-html --markdown
+mrscraper get-screenshot https://example.com --no-html | jq -r '.data.screenshot' | base64 -d > page.png
+The response body contains a base64 screenshot and the requested page outputs. The API can still include HTML when HTML output is disabled.
+{
+"status_code": 200,
+"data": {
+"html": "<html>...</html>",
+"screenshot": "BASE64_PNG_DATA",
+"markdown": "# Example page\n\n..."
+},
+"headers": {
+"content-type": "application/json; charset=utf-8"
+}
+}
+scrape-brand
+Extract a website's colors, typography, logos, and social links as JSON. It takes only the URL; page controls are not accepted. The HTTP deadline is fixed at 120 seconds.
+mrscraper scrape-brand https://example.com
+The API body contains message and a data object with job_id, status, url, final_url, brand, and error. Brand details are at data.data.brand.
+{
+"status_code": 200,
+"data": {
+"data": {
+"job_id": "JOB_ID",
+"status": "succeeded",
+"url": "https://example.com",
+"final_url": "https://example.com",
+"brand": {
+"name": "Example brand",
+"colors": { "background": "#ffffff", "text": "#222222" },
+"typography": { "body": { "font_family": "Example font" } }
+},
+"error": null,
+"bundle_url": null
+},
+"message": "Example response"
+},
+"headers": {
+"content-type": "application/json"
+}
+}
+scrape-json
+Extract structured JSON from a page using a natural-language prompt. Append Json Schema: and a JSON schema to shape the output.
+Accepts page controls and:
+ParameterAPI fieldTypeDefaultDescription
+--promptpromptstring"Extract all data as complete as possible."Instructions describing the data to extract. Append Json Schema: and a JSON schema to shape the output.
+--browser-renderingbrowserRenderingbooleanfalseWhether to render the page in a browser before returning the result.
+--htmlhtmlbooleanfalseWhether to include the page HTML in the response.
+--screenshotscreenshotbooleanfalseWhether to include a base64 screenshot in the response.
+mrscraper scrape-json https://example.com --browser-rendering \
+--prompt 'Extract the first 2 items with title and price. Json Schema: {"type":"array","items":{"type":"object","properties":{"title":{"type":"string"},"price":{"type":"string"}},"required":["title","price"]}}'
+Extraction results are in the API body's data field and follow the requested schema. Response metadata includes thread_id, token_usage, status, error, runtime, and cookies. html, markdown, and screenshot can be empty strings when not requested.
+{
+"status_code": 200,
+"data": {
+"success": true,
+"data": [{ "title": "Example item", "price": "10.00" }],
+"thread_id": "THREAD_ID",
+"token_usage": 1,
+"html": "",
+"markdown": "",
+"screenshot": "",
+"status": "Results ready",
+"error": "",
+"runtime": 1.23,
+"cookies": []
+},
+"headers": {
+"content-type": "application/json"
+}
+}
+web-search
+Search the web and return ranked results with titles, URLs, descriptions, and sources. The HTTP deadline is fixed at 120 seconds.
+ParameterAPI fieldTypeDefaultDescription
+<query>querystringRequiredSearch query text, trimmed before sending, containing 1 to 1000 characters.
+--countrycountrystring"us"Two-letter country code to search from, sent in lowercase.
+--num-resultsnumResultsinteger10Number of search results to request, as an integer from 10 to 100. Fewer results may be returned.
+mrscraper web-search "site:example.com documentation" --country id --num-results 20
+The API body contains success, message, a data array, and tokenUsage. Each result includes rank, title, url, description, and source.
+{
+"status_code": 200,
+"data": {
+"success": true,
+"message": "Example response",
+"data": [
+{
+"rank": 1,
+"title": "Example result",
+"url": "https://example.com",
+"description": "Example result description.",
+"source": "example.com"
+}
+],
+"tokenUsage": 1
+},
+"headers": {
+"content-type": "application/json; charset=utf-8"
+}
+}
+Programmatic use
+The package exports the low-level functions used by the commands: scrapeHtml, scrapeMarkdown, getScreenshot, scrapeBrand, scrapeJson, webSearch, and getSubscriptionAccountApi.
+import { scrapeMarkdown, webSearch, getSubscriptionAccountApi } from "@mrscraper/cli";
+const token = process.env.MRSCRAPER_API_KEY;
+const page = await scrapeMarkdown({ token, url: "https://example.com" });
+console.log(page.data);
+const results = await webSearch({ token, query: "books", country: "us", numResults: 10 });
+for (const item of results.data.data) console.log(item.rank, item.title, item.url);
+const status = await getSubscriptionAccountApi(token);
+console.log(status.data.data.tokenUsage);
+The functions take a single options object and return the same envelope the commands print. Options use camelCase, and the JavaScript option for super is superMode. getSubscriptionAccountApi takes the token as its only argument. Programmatic calls require an explicit token and do not load saved CLI credentials or .env files. For an application client, prefer the Node.js SDK.
+Troubleshooting
+For missing credentials, run mrscraper login or set MRSCRAPER_API_KEY.
+For slow pages, increase --timeout up to 300 seconds. scrape-brand and web-search have fixed 120-second deadlines.
+Use --help on a command to inspect its accepted options.
+Migrating from earlier versions
+From 0.6.x
+Version 0.7.0 replaces the three 0.6.x data commands with seven service commands. The old command names are not kept as aliases.
+0.6.x0.7.x
+mrscraper scraperAPI <url>mrscraper scrape-html <url>
+mrscraper scraperAPI <url> --no-html --markdownmrscraper scrape-markdown <url>
+mrscraper scraperAPI <url> --markdownmrscraper scrape-markdown <url> --html
+mrscraper scraperAPI <url> --no-html --screenshotmrscraper get-screenshot <url> --no-html
+mrscraper scraperAPI <url> --home-pagemrscraper scrape-html <url> --warm-start
+mrscraper webSearch <query>mrscraper web-search <query>
+mrscraper accountmrscraper status
+scraperAPI({ token, url, ... })scrapeHtml, scrapeMarkdown, or getScreenshot
+account({ token })getSubscriptionAccountApi(token)
+status prints the raw API body as JSON. The 0.6.x summary at data.account, the terminal dashboard, and the --pretty and --no-color options are gone.
+status and web-search no longer accept --timeout.
+Defaults changed: page --timeout is now 300, --geo-code and --proxy-country default to us, and an omitted --max-retries means no limit.
+--no-use-proxy, --bypass-proxy, --cookie-jar, --headers, --token-cap, --stream, --discard-token-secret, --no-browser-rendering, and --save are removed. Use shell redirection instead of --save.
+The skill pack changed from four skills (mrscraper, mrscraper-scraper-api, mrscraper-account, mrscraper-web-search) to three (mrscraper, mrscraper-fetch, mrscraper-serp). Run mrscraper setup skills to refresh installed skills.
+Earlier versions
+0.5.x to 0.6.0: the format-specific 0.5.x commands (scraperHtml, scraperMarkdown, getScreenshot, scraperJson, scraperMultiplePage, scraperSitemap, scrapeBrand, getBrand) were merged into scraperAPI. Upgrade directly to the 0.7.x commands above.
+From 0.4.x: webSearch moved to action: "websearch" with --country and --num-results, and the MRSCRAPER_SYNC_BASE_URL setting was removed.
+Before 0.4.0: fetch became scraperAPI, serp became webSearch, and the original status command (with domain analytics) became account. Manage AI scrapers, reruns, and stored results in the MrScraper dashboard.
+Token Plan
+Learn how plan tokens and API tokens work in MrScraper, why token usage varies between runs, and how to create your own API token for authentication.
+MCP Server
+Official MrScraper MCP server for retrieving web pages, web search, and account usage. Connect AI clients or run the open-source server locally.
+On this page
+Requirements
+Installation
+Copyable AI setup prompt
+init parameters
+Native plugins (optional)
+Verifying installation
+Authentication
+Browser login
+API-key login
+login parameters
+Auth status and logout
+Output
+Environment variables
+Shared parameters
+Page controls
+Loading controls
+CLI command list
+status
+scrape-html
+scrape-markdown
+get-screenshot
+scrape-brand
+scrape-json
+web-search
+Programmatic use
+Troubleshooting
+Migrating from earlier versions
+From 0.6.x
+Earlier versions

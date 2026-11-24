@@ -1,0 +1,101 @@
+Set up your account | Stripe Documentation
+Skip to content
+Set up your account
+Create account or Sign in
+The Stripe Docs logo
+Search/Ask AI
+Create accountSign in
+Get started
+Payments
+Revenue
+Risk
+Data
+Money management
+Stablecoins
+Embedded Finance
+Developer resources
+More
+APIs & SDKsHelp
+OverviewSee all products
+About the APIs
+Stripe glossary
+Start building
+Create an account
+Set up your account
+Add funds to your balance
+Account checklist
+Acceptable verification documents
+Account structure
+Start a team
+Organisations
+Multiple separate accounts
+Linked external accounts
+Settings
+Approvals
+Profile
+Branding
+Statement descriptors
+Custom email domain
+Custom domain
+Single sign-on
+Stripe Verified
+Quickstarts
+Start developing
+Build with agents
+Use Stripe without code
+Migrate to Stripe
+Common use cases
+OverviewAccept simple payments as a startupSell subscriptions as a SaaS startupAccept payments in personSend invoices to collect payments
+India
+English (United Kingdom)
+Home/
+Get started/
+Create an account
+Set up your account
+Verify your business to set up Stripe services on a live account.
+Ask about this page
+Copy for LLM
+View as Markdown
+Set up agent
+To securely set up your account:
+Create a Stripe account if you haven’t already.
+Complete the account checklist for safety and security compliance.
+Verify your business in the Dashboard. Provide information about your business, product and relationship to the business. As you use more Stripe services, we might request additional information or verification.
+Accounts used only for Stripe Apps
+If you use your account only to build and test Stripe Apps without accepting payments, you don’t need to configure payment processing. Follow the account-security recommendations. To publish to the Stripe App Marketplace, you must activate your account with a verified email address and business details, and meet the Marketplace requirements and restrictions.
+After creating a Stripe account, you can test Stripe services in a sandbox. To use a service in live mode, verify your business and complete its activation requirements.
+Our “Know Your Customer” (KYC) obligations require us to collect and maintain this information for all users. Regulators and financial partners require it to help prevent financial-system abuse. We review it for compliance with our services agreement and contact you if we need anything else.
+After activating a Stripe service on a live account, you can’t change the business origin country. To use a different supported country as your primary business location, create a new account.
+Caution
+Privacy and security are priorities for Stripe. Our privacy policy explains how and for what purposes we collect, use, retain, disclose, and safeguard any personal data you provide to us.
+Public business information
+Even if you don’t accept payments (for example, if you only plan to create and publish Stripe Apps), you must provide business information to verify your business.
+If you accept payments, your customers see the following details on either their card statements or in email receipts sent by Stripe.
+Business name and website URL
+Support email address, phone number and address
+Support site URL
+Statement descriptor text
+You provide this information when you verify your business, and can update it any time in your Account settings. Make sure that your statement descriptor text and business information are clearly associated with you. If your customer can’t recognise one of your payments, they might dispute it.
+Keep your account safe
+After you set up your account, you’ll want to keep it safe. Here are our recommendations:
+Keep private information private: Don’t share your password and keep your secret API keys confidential on your own servers. Store secret keys in a secrets vault, not in source code. Use restricted API keys instead of secret keys wherever possible. As a reminder, Stripe employees never ask you for your keys.
+Don’t reuse your Stripe password: Use a password that’s unique to Stripe. If you use your password on another site and that site is compromised, an attacker could use those stolen credentials to take over your account. If you need to reset your password, click Edit > Change password in your Personal details settings and enter a new password.
+Use team members to provide others with access to your account: You can invite others (with limited access) to your Stripe account so that they can log in and take certain actions.
+Update your computer and browser regularly: We recommend configuring your computer to automatically download and install updates (for example, macOS or Windows). This helps protect your system against automated attacks and malware.
+Beware of phishing: All genuine Stripe sites use the stripe.com domain and HTTPS. If you get an email from us that you don’t expect, go directly to our site to log in. Don’t enter your password after clicking a link in an email. If you’re not sure if a message is from Stripe, review Verified Stripe domains on Stripe Support.
+Enable two-factor authentication with a passkey or security key: When you enable two-factor authentication (2FA), you need to provide an additional verification step to complete the login process. Stripe supports passkeys, security keys, authenticator apps and SMS. We recommend passkeys or security keys because they’re resistant to phishing. SMS-based 2FA is vulnerable to SIM-swapping and interception, so use it only as a last resort. To enable this feature, go to your user settings.
+Close your account
+You can close your account any time you want. We recommend you leave it dormant in case you need to access any financial data or take action to resolve a dispute.
+See also
+Account checklist
+Multiple accounts
+Single sign-on
+Was this page helpful?
+YesNo
+Need help? Contact Support.
+Chat with Stripe developers on Discord.
+Check out our changelog.
+Questions? Contact Sales.
+LLM? Read llms.txt.
+Powered by Markdoc
+On this page

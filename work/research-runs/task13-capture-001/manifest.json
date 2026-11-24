@@ -1,0 +1,570 @@
+{
+  "run_id": "task13-capture-001",
+  "parent_run_id": null,
+  "status": "complete",
+  "synthetic": false,
+  "selected_app_ids": [
+    61,
+    62,
+    63,
+    64,
+    65,
+    66,
+    67,
+    68,
+    69,
+    70
+  ],
+  "created_on": "2026-11-23",
+  "producer": {
+    "id": "pipeline-collector",
+    "type": "script"
+  },
+  "tool": {
+    "name": "research_pipeline",
+    "version": "0.2.0",
+    "python": "3.11.9",
+    "source_sha256": "263c88230b585de37de6afabd13e88033da9496eef7d08e89e7057dddd42b09d"
+  },
+  "config": {
+    "timeout": 15.0,
+    "retries": 0,
+    "max_bytes": 10000000,
+    "replay": false,
+    "refresh": false,
+    "extractor": null,
+    "extractor_label": null
+  },
+  "contracts": {
+    "roster": {
+      "path": "contracts/roster.json",
+      "sha256": "6e3aada149102c2e5539c126aa556c1ceaca3d9d25ca6e0a8f56b3a569f81c19"
+    },
+    "schema": {
+      "path": "contracts/schema.json",
+      "sha256": "40e5552a4c838293e5f440e4abbc38b0e48eefa1f626e2ee9c61a3ee1a8d49c3"
+    },
+    "rules": {
+      "path": "contracts/rules.md",
+      "sha256": "c1f94b3142ed47740d0d1a90879ca0e962ada77542eddd39edc15e36ed93c733"
+    }
+  },
+  "source_specs": [
+    {
+      "app_id": 61,
+      "url": "https://docs.github.com/en/rest/about-the-rest-api/about-the-rest-api",
+      "kind": "primary_docs",
+      "scope": "GitHub.com REST API and official GitHub MCP server; personal and organization access, not Enterprise Server; testing versus production credential conditions remain separately assessed",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor-controlled documentation/product domain or vendor-owned GitHub repository; content inspected after capture",
+      "attribution_by": "task13-codex-research-worker"
+    },
+    {
+      "app_id": 61,
+      "url": "https://docs.github.com/en/rest/authentication/authenticating-to-the-rest-api",
+      "kind": "primary_docs",
+      "scope": "GitHub.com REST API and official GitHub MCP server; personal and organization access, not Enterprise Server; testing versus production credential conditions remain separately assessed",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor-controlled documentation/product domain or vendor-owned GitHub repository; content inspected after capture",
+      "attribution_by": "task13-codex-research-worker"
+    },
+    {
+      "app_id": 61,
+      "url": "https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens",
+      "kind": "primary_docs",
+      "scope": "GitHub.com REST API and official GitHub MCP server; personal and organization access, not Enterprise Server; testing versus production credential conditions remain separately assessed",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor-controlled documentation/product domain or vendor-owned GitHub repository; content inspected after capture",
+      "attribution_by": "task13-codex-research-worker"
+    },
+    {
+      "app_id": 61,
+      "url": "https://raw.githubusercontent.com/github/github-mcp-server/main/README.md",
+      "kind": "official_repository",
+      "scope": "GitHub.com REST API and official GitHub MCP server; personal and organization access, not Enterprise Server; testing versus production credential conditions remain separately assessed",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor-controlled documentation/product domain or vendor-owned GitHub repository; content inspected after capture",
+      "attribution_by": "task13-codex-research-worker"
+    },
+    {
+      "app_id": 62,
+      "url": "https://vercel.com/docs/rest-api",
+      "kind": "primary_docs",
+      "scope": "Vercel REST API and official Vercel MCP server; hosted account/team resources, Hobby versus paid restrictions; testing and production assessed separately",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor-controlled documentation/product domain or vendor-owned GitHub repository; content inspected after capture",
+      "attribution_by": "task13-codex-research-worker"
+    },
+    {
+      "app_id": 62,
+      "url": "https://vercel.com/docs/agent-resources/vercel-mcp",
+      "kind": "primary_docs",
+      "scope": "Vercel REST API and official Vercel MCP server; hosted account/team resources, Hobby versus paid restrictions; testing and production assessed separately",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor-controlled documentation/product domain or vendor-owned GitHub repository; content inspected after capture",
+      "attribution_by": "task13-codex-research-worker"
+    },
+    {
+      "app_id": 62,
+      "url": "https://vercel.com/docs/plans/hobby",
+      "kind": "primary_docs",
+      "scope": "Vercel REST API and official Vercel MCP server; hosted account/team resources, Hobby versus paid restrictions; testing and production assessed separately",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor-controlled documentation/product domain or vendor-owned GitHub repository; content inspected after capture",
+      "attribution_by": "task13-codex-research-worker"
+    },
+    {
+      "app_id": 63,
+      "url": "https://docs.netlify.com/api-and-cli-guides/api-guides/get-started-with-api/",
+      "kind": "primary_docs",
+      "scope": "Netlify hosted REST API v1 and official Netlify MCP server; personal/team sites and deployments; testing and production assessed separately",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor-controlled documentation/product domain or vendor-owned GitHub repository; content inspected after capture",
+      "attribution_by": "task13-codex-research-worker"
+    },
+    {
+      "app_id": 63,
+      "url": "https://raw.githubusercontent.com/netlify/netlify-mcp/main/README.md",
+      "kind": "official_repository",
+      "scope": "Netlify hosted REST API v1 and official Netlify MCP server; personal/team sites and deployments; testing and production assessed separately",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor-controlled documentation/product domain or vendor-owned GitHub repository; content inspected after capture",
+      "attribution_by": "task13-codex-research-worker"
+    },
+    {
+      "app_id": 63,
+      "url": "https://www.netlify.com/pricing/",
+      "kind": "official_product_page",
+      "scope": "Netlify hosted REST API v1 and official Netlify MCP server; personal/team sites and deployments; testing and production assessed separately",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor-controlled documentation/product domain or vendor-owned GitHub repository; content inspected after capture",
+      "attribution_by": "task13-codex-research-worker"
+    },
+    {
+      "app_id": 64,
+      "url": "https://developers.cloudflare.com/api/",
+      "kind": "primary_docs",
+      "scope": "Cloudflare v4 management API and Cloudflare official remote MCP servers; account/zone resources and scoped tokens; testing and production assessed separately",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor-controlled documentation/product domain or vendor-owned GitHub repository; content inspected after capture",
+      "attribution_by": "task13-codex-research-worker"
+    },
+    {
+      "app_id": 64,
+      "url": "https://developers.cloudflare.com/fundamentals/api/get-started/create-token/",
+      "kind": "primary_docs",
+      "scope": "Cloudflare v4 management API and Cloudflare official remote MCP servers; account/zone resources and scoped tokens; testing and production assessed separately",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor-controlled documentation/product domain or vendor-owned GitHub repository; content inspected after capture",
+      "attribution_by": "task13-codex-research-worker"
+    },
+    {
+      "app_id": 64,
+      "url": "https://raw.githubusercontent.com/cloudflare/mcp-server-cloudflare/main/README.md",
+      "kind": "official_repository",
+      "scope": "Cloudflare v4 management API and Cloudflare official remote MCP servers; account/zone resources and scoped tokens; testing and production assessed separately",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor-controlled documentation/product domain or vendor-owned GitHub repository; content inspected after capture",
+      "attribution_by": "task13-codex-research-worker"
+    },
+    {
+      "app_id": 65,
+      "url": "https://supabase.com/docs/guides/api",
+      "kind": "primary_docs",
+      "scope": "Supabase hosted project Data REST API, Management API and official Supabase MCP; project API keys versus management OAuth/PAT; development and production separated",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor-controlled documentation/product domain or vendor-owned GitHub repository; content inspected after capture",
+      "attribution_by": "task13-codex-research-worker"
+    },
+    {
+      "app_id": 65,
+      "url": "https://supabase.com/docs/guides/api/api-keys",
+      "kind": "primary_docs",
+      "scope": "Supabase hosted project Data REST API, Management API and official Supabase MCP; project API keys versus management OAuth/PAT; development and production separated",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor-controlled documentation/product domain or vendor-owned GitHub repository; content inspected after capture",
+      "attribution_by": "task13-codex-research-worker"
+    },
+    {
+      "app_id": 65,
+      "url": "https://supabase.com/docs/reference/api/introduction",
+      "kind": "primary_docs",
+      "scope": "Supabase hosted project Data REST API, Management API and official Supabase MCP; project API keys versus management OAuth/PAT; development and production separated",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor-controlled documentation/product domain or vendor-owned GitHub repository; content inspected after capture",
+      "attribution_by": "task13-codex-research-worker"
+    },
+    {
+      "app_id": 65,
+      "url": "https://supabase.com/docs/guides/getting-started/mcp",
+      "kind": "primary_docs",
+      "scope": "Supabase hosted project Data REST API, Management API and official Supabase MCP; project API keys versus management OAuth/PAT; development and production separated",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor-controlled documentation/product domain or vendor-owned GitHub repository; content inspected after capture",
+      "attribution_by": "task13-codex-research-worker"
+    },
+    {
+      "app_id": 65,
+      "url": "https://supabase.com/pricing",
+      "kind": "official_product_page",
+      "scope": "Supabase hosted project Data REST API, Management API and official Supabase MCP; project API keys versus management OAuth/PAT; development and production separated",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor-controlled documentation/product domain or vendor-owned GitHub repository; content inspected after capture",
+      "attribution_by": "task13-codex-research-worker"
+    },
+    {
+      "app_id": 66,
+      "url": "https://neo4j.com/docs/query-api/current/",
+      "kind": "primary_docs",
+      "scope": "Neo4j Query API v2 and official Neo4j MCP; Community database Basic auth versus Enterprise/Aura SSO; local development versus production separated",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor-controlled documentation/product domain or vendor-owned GitHub repository; content inspected after capture",
+      "attribution_by": "task13-codex-research-worker"
+    },
+    {
+      "app_id": 66,
+      "url": "https://neo4j.com/docs/query-api/current/authentication-authorization/",
+      "kind": "primary_docs",
+      "scope": "Neo4j Query API v2 and official Neo4j MCP; Community database Basic auth versus Enterprise/Aura SSO; local development versus production separated",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor-controlled documentation/product domain or vendor-owned GitHub repository; content inspected after capture",
+      "attribution_by": "task13-codex-research-worker"
+    },
+    {
+      "app_id": 66,
+      "url": "https://neo4j.com/docs/mcp/current/",
+      "kind": "primary_docs",
+      "scope": "Neo4j Query API v2 and official Neo4j MCP; Community database Basic auth versus Enterprise/Aura SSO; local development versus production separated",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor-controlled documentation/product domain or vendor-owned GitHub repository; content inspected after capture",
+      "attribution_by": "task13-codex-research-worker"
+    },
+    {
+      "app_id": 66,
+      "url": "https://neo4j.com/docs/mcp/current/authentication/",
+      "kind": "primary_docs",
+      "scope": "Neo4j Query API v2 and official Neo4j MCP; Community database Basic auth versus Enterprise/Aura SSO; local development versus production separated",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor-controlled documentation/product domain or vendor-owned GitHub repository; content inspected after capture",
+      "attribution_by": "task13-codex-research-worker"
+    },
+    {
+      "app_id": 66,
+      "url": "https://neo4j.com/cloud/platform/aura-graph-database/",
+      "kind": "official_product_page",
+      "scope": "Neo4j Query API v2 and official Neo4j MCP; Community database Basic auth versus Enterprise/Aura SSO; local development versus production separated",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor-controlled documentation/product domain or vendor-owned GitHub repository; content inspected after capture",
+      "attribution_by": "task13-codex-research-worker"
+    },
+    {
+      "app_id": 67,
+      "url": "https://docs.snowflake.com/en/developer-guide/sql-api/index",
+      "kind": "primary_docs",
+      "scope": "Snowflake SQL REST API and Snowflake-managed MCP server; account SQL execution, OAuth/key-pair/PAT and role privileges; trial versus production separated",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor-controlled documentation/product domain or vendor-owned GitHub repository; content inspected after capture",
+      "attribution_by": "task13-codex-research-worker"
+    },
+    {
+      "app_id": 67,
+      "url": "https://docs.snowflake.com/en/developer-guide/sql-api/authenticating",
+      "kind": "primary_docs",
+      "scope": "Snowflake SQL REST API and Snowflake-managed MCP server; account SQL execution, OAuth/key-pair/PAT and role privileges; trial versus production separated",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor-controlled documentation/product domain or vendor-owned GitHub repository; content inspected after capture",
+      "attribution_by": "task13-codex-research-worker"
+    },
+    {
+      "app_id": 67,
+      "url": "https://docs.snowflake.com/en/user-guide/snowflake-cortex/cortex-agents-mcp",
+      "kind": "primary_docs",
+      "scope": "Snowflake SQL REST API and Snowflake-managed MCP server; account SQL execution, OAuth/key-pair/PAT and role privileges; trial versus production separated",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor-controlled documentation/product domain or vendor-owned GitHub repository; content inspected after capture",
+      "attribution_by": "task13-codex-research-worker"
+    },
+    {
+      "app_id": 67,
+      "url": "https://docs.snowflake.com/en/user-guide/admin-trial-account",
+      "kind": "primary_docs",
+      "scope": "Snowflake SQL REST API and Snowflake-managed MCP server; account SQL execution, OAuth/key-pair/PAT and role privileges; trial versus production separated",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor-controlled documentation/product domain or vendor-owned GitHub repository; content inspected after capture",
+      "attribution_by": "task13-codex-research-worker"
+    },
+    {
+      "app_id": 68,
+      "url": "https://www.mongodb.com/docs/atlas/api/",
+      "kind": "primary_docs",
+      "scope": "MongoDB Atlas Administration API v2 and official MongoDB MCP Atlas management tools; service accounts/API keys distinct from database connection credentials; free/testing versus production separated",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor-controlled documentation/product domain or vendor-owned GitHub repository; content inspected after capture",
+      "attribution_by": "task13-codex-research-worker"
+    },
+    {
+      "app_id": 68,
+      "url": "https://www.mongodb.com/docs/atlas/api/api-authentication/",
+      "kind": "primary_docs",
+      "scope": "MongoDB Atlas Administration API v2 and official MongoDB MCP Atlas management tools; service accounts/API keys distinct from database connection credentials; free/testing versus production separated",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor-controlled documentation/product domain or vendor-owned GitHub repository; content inspected after capture",
+      "attribution_by": "task13-codex-research-worker"
+    },
+    {
+      "app_id": 68,
+      "url": "https://www.mongodb.com/docs/mcp-server/overview/",
+      "kind": "primary_docs",
+      "scope": "MongoDB Atlas Administration API v2 and official MongoDB MCP Atlas management tools; service accounts/API keys distinct from database connection credentials; free/testing versus production separated",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor-controlled documentation/product domain or vendor-owned GitHub repository; content inspected after capture",
+      "attribution_by": "task13-codex-research-worker"
+    },
+    {
+      "app_id": 68,
+      "url": "https://www.mongodb.com/docs/mcp-server/prerequisites/",
+      "kind": "primary_docs",
+      "scope": "MongoDB Atlas Administration API v2 and official MongoDB MCP Atlas management tools; service accounts/API keys distinct from database connection credentials; free/testing versus production separated",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor-controlled documentation/product domain or vendor-owned GitHub repository; content inspected after capture",
+      "attribution_by": "task13-codex-research-worker"
+    },
+    {
+      "app_id": 68,
+      "url": "https://www.mongodb.com/docs/mcp-server/tools/",
+      "kind": "primary_docs",
+      "scope": "MongoDB Atlas Administration API v2 and official MongoDB MCP Atlas management tools; service accounts/API keys distinct from database connection credentials; free/testing versus production separated",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor-controlled documentation/product domain or vendor-owned GitHub repository; content inspected after capture",
+      "attribution_by": "task13-codex-research-worker"
+    },
+    {
+      "app_id": 68,
+      "url": "https://www.mongodb.com/docs/atlas/tutorial/deploy-free-tier-cluster/",
+      "kind": "primary_docs",
+      "scope": "MongoDB Atlas Administration API v2 and official MongoDB MCP Atlas management tools; service accounts/API keys distinct from database connection credentials; free/testing versus production separated",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor-controlled documentation/product domain or vendor-owned GitHub repository; content inspected after capture",
+      "attribution_by": "task13-codex-research-worker"
+    },
+    {
+      "app_id": 69,
+      "url": "https://docs.datadoghq.com/api/latest/",
+      "kind": "primary_docs",
+      "scope": "Datadog hosted REST APIs v1/v2 and official Datadog MCP server; site-specific endpoints, API/application keys and OAuth; testing versus production assessed separately",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor-controlled documentation/product domain or vendor-owned GitHub repository; content inspected after capture",
+      "attribution_by": "task13-codex-research-worker"
+    },
+    {
+      "app_id": 69,
+      "url": "https://docs.datadoghq.com/account_management/api-app-keys/",
+      "kind": "primary_docs",
+      "scope": "Datadog hosted REST APIs v1/v2 and official Datadog MCP server; site-specific endpoints, API/application keys and OAuth; testing versus production assessed separately",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor-controlled documentation/product domain or vendor-owned GitHub repository; content inspected after capture",
+      "attribution_by": "task13-codex-research-worker"
+    },
+    {
+      "app_id": 69,
+      "url": "https://docs.datadoghq.com/mcp_server/",
+      "kind": "primary_docs",
+      "scope": "Datadog hosted REST APIs v1/v2 and official Datadog MCP server; site-specific endpoints, API/application keys and OAuth; testing versus production assessed separately",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor-controlled documentation/product domain or vendor-owned GitHub repository; content inspected after capture",
+      "attribution_by": "task13-codex-research-worker"
+    },
+    {
+      "app_id": 69,
+      "url": "https://docs.datadoghq.com/mcp_server/setup/",
+      "kind": "primary_docs",
+      "scope": "Datadog hosted REST APIs v1/v2 and official Datadog MCP server; site-specific endpoints, API/application keys and OAuth; testing versus production assessed separately",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor-controlled documentation/product domain or vendor-owned GitHub repository; content inspected after capture",
+      "attribution_by": "task13-codex-research-worker"
+    },
+    {
+      "app_id": 69,
+      "url": "https://www.datadoghq.com/free-datadog-trial/",
+      "kind": "official_product_page",
+      "scope": "Datadog hosted REST APIs v1/v2 and official Datadog MCP server; site-specific endpoints, API/application keys and OAuth; testing versus production assessed separately",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor-controlled documentation/product domain or vendor-owned GitHub repository; content inspected after capture",
+      "attribution_by": "task13-codex-research-worker"
+    },
+    {
+      "app_id": 70,
+      "url": "https://docs.sentry.io/api/",
+      "kind": "primary_docs",
+      "scope": "Sentry hosted Web API and official Sentry MCP server; organization/user bearer tokens and remote OAuth MCP; self-hosted compatibility not presumed; testing and production assessed separately",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor-controlled documentation/product domain or vendor-owned GitHub repository; content inspected after capture",
+      "attribution_by": "task13-codex-research-worker"
+    },
+    {
+      "app_id": 70,
+      "url": "https://docs.sentry.io/api/auth/",
+      "kind": "primary_docs",
+      "scope": "Sentry hosted Web API and official Sentry MCP server; organization/user bearer tokens and remote OAuth MCP; self-hosted compatibility not presumed; testing and production assessed separately",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor-controlled documentation/product domain or vendor-owned GitHub repository; content inspected after capture",
+      "attribution_by": "task13-codex-research-worker"
+    },
+    {
+      "app_id": 70,
+      "url": "https://mcp.sentry.dev/",
+      "kind": "primary_docs",
+      "scope": "Sentry hosted Web API and official Sentry MCP server; organization/user bearer tokens and remote OAuth MCP; self-hosted compatibility not presumed; testing and production assessed separately",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor-controlled documentation/product domain or vendor-owned GitHub repository; content inspected after capture",
+      "attribution_by": "task13-codex-research-worker"
+    },
+    {
+      "app_id": 70,
+      "url": "https://raw.githubusercontent.com/getsentry/sentry-mcp/main/README.md",
+      "kind": "official_repository",
+      "scope": "Sentry hosted Web API and official Sentry MCP server; organization/user bearer tokens and remote OAuth MCP; self-hosted compatibility not presumed; testing and production assessed separately",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor-controlled documentation/product domain or vendor-owned GitHub repository; content inspected after capture",
+      "attribution_by": "task13-codex-research-worker"
+    },
+    {
+      "app_id": 70,
+      "url": "https://sentry.io/pricing/",
+      "kind": "official_product_page",
+      "scope": "Sentry hosted Web API and official Sentry MCP server; organization/user bearer tokens and remote OAuth MCP; self-hosted compatibility not presumed; testing and production assessed separately",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor-controlled documentation/product domain or vendor-owned GitHub repository; content inspected after capture",
+      "attribution_by": "task13-codex-research-worker"
+    }
+  ]
+}

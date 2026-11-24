@@ -1,0 +1,129 @@
+Personal access token
+For AI agents: the docs index is at https://developers.asana.com/llms.txt. Append .md to any documentation page URL to get its markdown version.
+Jump to Content
+HomeGuidesAPI ReferenceApp directoryDocsForumMy apps
+Guides
+App directoryDocsForumMy apps
+HomeGuidesAPI Reference
+Personal access token
+Overview
+Build an app with Asana
+Object hierarchy
+Common use cases
+Get started
+API explorer
+Developer sandbox
+Quick start guide
+FAQ
+feature guides
+Authentication
+Personal access token
+OAuth
+OAuth Code Samples / Libraries
+OAuth scopes
+OpenID Connect
+API
+Input/output options
+Batch requests
+Custom fields
+Custom external data
+Dates and times
+Rich text
+Rate limits
+Errors
+Pagination
+SCIM
+Audit log events
+Deprecations
+Workspace events
+Graph exports
+App components
+Building app components
+App components on tasks
+App components on automations
+UI builder
+Troubleshooting
+App component approval checklist
+Incoming web requests
+Manage your app
+Share your app
+App listing guidelines
+Publish your app
+Update your app
+Script Actions
+How to write a Script Action script
+Dynamic value inputs
+FAQ
+Webhooks
+Tutorials
+Export project statuses to CSV
+Automate status reports with Google Apps Scripts
+Resources
+API reference
+Client libraries
+JavaScript
+Migration guide: v3
+Python
+Migration guide: v5
+Ruby
+Java
+PHP
+Asana CLI
+MCP Server
+Using Asana's MCP Server
+Using Asana's Command MCP Server
+Compatible MCP Clients
+Connecting Coding Clients to Asana's V2 server
+Integrating with Asana's MCP Server
+MCP Tools Reference
+Examples
+App component examples
+Custom field analysis
+Portfolio to CSV export
+Script action examples
+Triage bot
+Using bots
+Postman Collection
+Changelog
+Powered by
+Personal access token
+Overview
+A personal access token (PAT) contains your security credentials for the Asana platform. Much like an API key, generating a PAT allows you to access (i.e., make requests to) the Asana REST API upon successful authentication.
+A user can create many, but not unlimited, personal access tokens. When creating a token, you must give it a description to help you remember what you created the token for.
+📘
+PAT or OAuth?
+If you build an app, and the app needs to perform actions on behalf of users (e.g., getting data from Asana or making changes within Asana), you should use OAuth.
+Generating a PAT
+You can generate a personal access token from the Asana developer console.
+📘
+API explorer
+Your PAT also gives you access to the API explorer, where you can make API requests (and view responses) directly in your browser window. For more information, see API explorer.
+Example
+Personal access tokens should be used similarly to OAuth access tokens when accessing the API (i.e., passing them in the Authorization header).
+Below is an example of a cURL request authenticating with a PAT:
+Shell
+curl https://app.asana.com/api/1.0/users/me \
+-H "Authorization: Bearer ACCESS_TOKEN"
+In the above snippet, replace ACCESS_TOKEN with your PAT.
+⚠️
+Note on token format
+Asana API tokens should be treated as opaque. Token formats may change without notice. Validating a token’s format on the client side could result in unexpected breakages. This applies to any Asana API tokens, including: personal access tokens, service account tokens, and both OAuth refresh tokens and access tokens.
+PAT security
+For security, you should regularly review the list of personal access tokens you have created and deauthorize those that you no longer need.
+📘
+Advanced admin controls
+Personal access tokens are persistent by default. Enterprise+ tiers include admin controls—such as those in the Manage apps panel—that influence how PATs are handled. See this Help Center article for additional information.
+Remember to keep your tokens secret and treat them just like passwords. Your tokens act on your behalf when interacting with the API. As such, do not hardcode them into your programs.
+Especially as your application grows, it's recommended to use a robust secrets management solution (e.g., HashiCorp Vault, AWS Secrets Manager, or Azure Key Vault) to prevent potential security risks. These solutions provide secure storage, encryption, access control, and auditing capabilities. In containerized environments, tools like Kubernetes Secrets or Docker Secrets with encryption enabled can further enhance security. Additionally, you should pull secrets into memory at runtime, ensuring they are never exposed in logs or code repositories.
+By implementing these practices, you ensure your tokens remain safe and your application stays secure as it scales.
+Updated 10 months ago
+Authentication
+OAuth
+Did this page help you?
+Yes
+No
+Copy Page
+Overview
+Generating a PAT
+Example
+PAT security

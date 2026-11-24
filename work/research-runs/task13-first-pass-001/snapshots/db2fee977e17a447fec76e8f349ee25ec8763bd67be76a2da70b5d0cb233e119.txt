@@ -1,0 +1,803 @@
+---
+title: Set Up the Datadog MCP Server
+description: Learn how to connect your AI agent to the Datadog MCP Server.
+breadcrumbs: Docs > Datadog MCP Server > Set Up the Datadog MCP Server
+---
+> For the complete documentation index, see [llms.txt](https://docs.datadoghq.com/llms.txt).
+# Set Up the Datadog MCP Server
+{% callout %}
+# Important note for users on the following Datadog sites: app.ddog-gov.com, us2.ddog-gov.com
+{% alert level="danger" %}
+This product is not supported for your selected [Datadog site](https://docs.datadoghq.com/getting_started/site.md). ({% placeholder "user-datadog-site-name" /%}).
+{% /alert %}
+{% /callout %}
+Learn how to set up and configure the Datadog MCP Server, which lets you retrieve telemetry insights and manage platform features directly from AI-powered clients. Select your client:
+{% tab title="Antigravity" %}
+Install the Datadog plugin from the Antigravity marketplace. The plugin packages the Datadog MCP Server with bundled skills. For more details, see the [plugin repository](https://github.com/datadog-labs/antigravity-plugin).
+**Note**: If you previously installed the Datadog MCP Server manually (for example, a `datadog` entry in your `mcp_config.json` file), remove or disable it to avoid conflicts.
+{% callout %}
+# Important note for users on the following Datadog sites: app.datadoghq.com, us3.datadoghq.com, us5.datadoghq.com, app.datadoghq.eu, ap1.datadoghq.com, ap2.datadoghq.com, uk1.datadoghq.com
+1. Install the Datadog plugin from the Antigravity marketplace, using either the CLI or the app:
+- **CLI**: Run the following command:
+```
+agy plugin install datadog
+```
+If you're prompted to choose a marketplace, specify it directly with `agy plugin install datadog@antigravity-plugins-partners`. Run `agy plugin list` to confirm that the plugin is installed and enabled. Plugins installed with the CLI are also available in the Antigravity app and IDE.
+- **App or IDE**: In the left sidebar, select Skills & Customizations (or go to Settings > Customizations). Open the Marketplace tab, search for `Datadog`, and click Install. If prompted, restart Antigravity to load the plugin's MCP server and skills. You can also open the plugin controls by typing `/plugin` in the chat input.
+1. Run `/ddsetup` in Antigravity to connect the plugin to your Datadog account. During setup, select your [Datadog site](https://docs.datadoghq.com/getting_started/site.md).
+1. Follow the agent's instructions to refresh the MCP servers, then complete the OAuth login flow in your browser.
+1. Run `/ddtoolsets` to enable or disable groups of product-specific MCP tools.
+1. After making any configuration change, refresh the MCP servers for the new setting to take effect. If the plugin stops working after a plugin update, run `/ddsetup` again to reconnect.
+1. Verify that you have the required permissions for the Datadog resources you want to access.
+{% alert level="info" %}
+See the [plugin repository](https://github.com/datadog-labs/antigravity-plugin) for all available slash commands and configuration options.
+{% /alert %}
+{% /callout %}
+{% callout %}
+# Important note for users on the following Datadog sites: app.ddog-gov.com, us2.ddog-gov.com
+{% alert level="danger" %}
+Datadog MCP Server is not supported for your selected site ({% placeholder "user-datadog-site-name" /%}).
+{% /alert %}
+{% /callout %}
+{% /tab %}
+{% tab title="ChatGPT" %}
+Connect Datadog to ChatGPT by installing the [Datadog app](https://chatgpt.com/apps/datadog--preview/asdk_app_69e8c7f174a08191a28b6da96c8062c4) from ChatGPT's app directory. The app authenticates with your Datadog organization through an OAuth flow.
+{% callout %}
+# Important note for users on the following Datadog sites: app.datadoghq.com
+{% alert level="info" %}
+The Datadog ChatGPT app is in Preview. During the Preview, it is available for US1 customers only.
+{% /alert %}
+1. In ChatGPT, go to Settings > Apps > Browse Apps and search for **Datadog**. If the Datadog app is not available, contact your organization's ChatGPT administrator for approval.
+1. Select the app, click Connect, and follow the guided setup.
+1. Complete the OAuth login flow when prompted.
+1. Verify that you have the required permissions for the Datadog resources you want to access.
+{% /callout %}
+{% callout %}
+# Important note for users on the following Datadog sites: us3.datadoghq.com, us5.datadoghq.com, app.datadoghq.eu, ap1.datadoghq.com, ap2.datadoghq.com, uk1.datadoghq.com, app.ddog-gov.com, us2.ddog-gov.com
+{% alert level="danger" %}
+The Datadog ChatGPT app is not supported for your selected [Datadog site](https://docs.datadoghq.com/getting_started/site.md) ({% placeholder "user-datadog-site-name" /%}).
+{% /alert %}
+{% /callout %}
+{% /tab %}
+{% tab title="Claude" %}
+Install the [Datadog Connector](https://claude.ai/directory/connectors/datadog) from the Claude Connectors Directory. The official connector is the recommended way to connect Datadog to Claude (including Claude Cowork) and includes MCP Apps for in-product visualizations. If you previously added Datadog as a custom connector, remove it to avoid conflicts.
+{% callout %}
+# Important note for users on the following Datadog sites: app.datadoghq.com, us3.datadoghq.com, us5.datadoghq.com, app.datadoghq.eu, ap1.datadoghq.com, ap2.datadoghq.com, uk1.datadoghq.com
+1. In Claude, click the + icon at the bottom of any prompt, then click Add Connector.
+1. Find **Datadog** in the directory and enable the connector.
+1. When prompted to choose the region where your account is hosted, select your [Datadog site][3] ({% placeholder "user-datadog-site-name" /%}), then click Connect.
+1. Complete the OAuth login flow when prompted.
+1. Verify that you have the required permissions for the Datadog resources you want to access.
+{% collapsible-section #claude-custom-connector %}
+#### Manual setup with a custom connector
+If the directory connector is not available to you, you can add Datadog as a [custom connector](https://support.claude.com/en/articles/11175166-get-started-with-custom-connectors-using-remote-mcp) using the remote MCP URL for your [Datadog site](https://docs.datadoghq.com/getting_started/site.md) ({% placeholder "user-datadog-site-name" /%}). For the correct instructions, use the Datadog Site selector on the right side of this documentation page to select your site.
+1. Follow the Claude help center guide on [custom connectors](https://support.claude.com/en/articles/11175166-get-started-with-custom-connectors-using-remote-mcp) to add a new custom connector.
+1. When prompted for a URL, enter:
+```
+<YOUR_MCP_SERVER_ENDPOINT>
+```
+To enable product-specific tools, include the `toolsets` query parameter at the end of the endpoint URL. For example, this URL enables *only* APM and Agent Observability tools (use `toolsets=all` to enable all generally available toolsets, best for clients that support tool filtering):
+```
+<YOUR_MCP_SERVER_ENDPOINT>?toolsets=apm,llmobs
+```
+1. Complete the OAuth login flow when prompted.
+{% /collapsible-section %}
+{% /callout %}
+{% callout %}
+# Important note for users on the following Datadog sites: app.ddog-gov.com, us2.ddog-gov.com
+{% alert level="danger" %}
+Datadog MCP Server is not supported for your selected [Datadog site](https://docs.datadoghq.com/getting_started/site.md) ({% placeholder "user-datadog-site-name" /%}).
+{% /alert %}
+{% /callout %}
+{% /tab %}
+{% tab title="Claude Code" %}
+Install the Datadog plugin from the [official Anthropic Plugin Marketplace](https://code.claude.com/docs/en/discover-plugins#official-anthropic-marketplace). The plugin packages the Datadog MCP Server with bundled skills and auto-updates when new plugin versions ship. For more details, see the [plugin repository](https://github.com/datadog-labs/claude-code-plugin).
+**Note**: If you previously installed the Datadog MCP Server manually, remove it from your Claude Code configuration to avoid conflicts.
+{% callout %}
+# Important note for users on the following Datadog sites: app.datadoghq.com, us3.datadoghq.com, us5.datadoghq.com, app.datadoghq.eu, ap1.datadoghq.com, ap2.datadoghq.com, uk1.datadoghq.com
+1. Install the Datadog plugin:
+```
+/plugin install datadog@claude-plugins-official
+```
+1. For first-time setup, either run `/ddsetup` or enter any Datadog-related prompt. During setup, select your [Datadog site](https://docs.datadoghq.com/getting_started/site.md) and complete OAuth login. Alternatively, set the MCP Server domain (and optionally Datadog API and application keys) as environment variables before starting Claude Code.
+1. Run `/ddtoolsets` to enable or disable groups of product-specific MCP tools.
+1. After making any configuration change, run `/reload-plugins` and reauthenticate by opening `/plugin` and selecting the Datadog plugin.
+1. Verify that you have the required permissions for the Datadog resources you want to access.
+{% alert level="info" %}
+See the [plugin repository](https://github.com/datadog-labs/claude-code-plugin) for all available slash commands and configuration options.
+{% /alert %}
+{% collapsible-section #claudecode-manual %}
+#### Manual MCP Server configuration
+If the plugin is not available to you, point Claude Code at the MCP Server endpoint for your regional [Datadog site](https://docs.datadoghq.com/getting_started/site.md) directly. Selected endpoint ({% placeholder "user-datadog-site-name" /%}): ``.
+1. Run in terminal:
+```
+claude mcp add --transport http datadog-mcp <YOUR_MCP_SERVER_ENDPOINT>
+```
+Alternatively, add to `~/.claude.json`:
+```
+{
+"mcpServers": {
+"datadog": {
+"type": "http",
+"url": "<YOUR_MCP_SERVER_ENDPOINT>"
+}
+}
+}
+```
+1. To enable product-specific tools, include the `toolsets` query parameter at the end of the endpoint URL. For example, this URL enables *only* APM and Agent Observability tools (use `toolsets=all` to enable all generally available toolsets, best for clients that support tool filtering):
+```
+<YOUR_MCP_SERVER_ENDPOINT>?toolsets=apm,llmobs
+```
+{% /collapsible-section %}
+{% /callout %}
+{% callout %}
+# Important note for users on the following Datadog sites: app.ddog-gov.com, us2.ddog-gov.com
+{% alert level="danger" %}
+Datadog MCP Server is not supported for your selected site ({% placeholder "user-datadog-site-name" /%}).
+{% /alert %}
+{% /callout %}
+{% /tab %}
+{% tab title="Codex" %}
+Point your AI agent to the MCP Server endpoint for your regional [Datadog site](https://docs.datadoghq.com/getting_started/site.md). For the correct instructions, use the Datadog Site selector on the right side of this documentation page to select your site.
+{% callout %}
+# Important note for users on the following Datadog sites: app.datadoghq.com, us3.datadoghq.com, us5.datadoghq.com, app.datadoghq.eu, ap1.datadoghq.com, ap2.datadoghq.com, uk1.datadoghq.com
+Selected endpoint ({% placeholder "user-datadog-site-name" /%}): ``.
+1. Edit `~/.codex/config.toml` (or your Codex CLI configuration file) to add the Datadog MCP Server with HTTP transport and the endpoint URL for your site. For example:
+```
+[mcp_servers.datadog]
+url = "<YOUR_MCP_SERVER_ENDPOINT>"
+```
+To enable product-specific tools, define a header `X-Datadog-MCP-Toolsets` in the `config.toml` file on the line after the URL. For example, this header enables *only* APM and Agent Observability tools (use `X-Datadog-MCP-Toolsets = "all"` to enable all generally available toolsets, best for clients that support tool filtering):
+```
+http_headers = { "X-Datadog-MCP-Toolsets" = "apm,llmobs" }
+```
+1. Log in to the Datadog MCP Server:
+```shell
+codex mcp login datadog
+```
+This opens your browser to complete the OAuth flow. Codex stores the resulting credentials so you don't need to log in again until the token expires.
+1. Verify that you have the required permissions for the Datadog resources you want to access.
+{% alert level="info" %}
+The [Codex Plugin (Preview)](https://github.com/openai/plugins/tree/main/plugins/datadog) can be used in the Codex Desktop app in the US1 region only. To install, use the ChatGPT app instructions. After you install the ChatGPT app, the Codex Plugin is automatically included as well.
+{% /alert %}
+{% /callout %}
+{% callout %}
+# Important note for users on the following Datadog sites: app.ddog-gov.com, us2.ddog-gov.com
+{% alert level="danger" %}
+Datadog MCP Server is not supported for your selected site ({% placeholder "user-datadog-site-name" /%}).
+{% /alert %}
+{% /callout %}
+{% /tab %}
+{% tab title="Copilot CLI" %}
+Install the Datadog plugin from the [`awesome-copilot`](https://awesome-copilot.github.com/) plugin marketplace. The plugin packages the Datadog MCP Server with bundled skills and auto-updates when new plugin versions ship. For more details, see Datadog's [copilot-plugin](https://github.com/datadog-labs/copilot-plugin) repository.
+**Note**: If you previously installed the Datadog MCP Server manually, remove it from your Copilot configuration before installing the plugin to avoid conflicts.
+{% callout %}
+# Important note for users on the following Datadog sites: app.datadoghq.com, us3.datadoghq.com, us5.datadoghq.com, app.datadoghq.eu, ap1.datadoghq.com, ap2.datadoghq.com
+1. Install the Datadog plugin:
+```
+copilot plugin install datadog@awesome-copilot
+```
+1. For first-time setup, either run `/ddsetup` or enter any Datadog-related prompt. During setup, select your [Datadog site](https://docs.datadoghq.com/getting_started/site.md) and complete OAuth login. Alternatively, set the MCP Server domain (and optionally Datadog API and application keys) as environment variables before starting Copilot.
+1. Run `/ddtoolsets` to enable or disable groups of product-specific MCP tools.
+1. After making any configuration change, restart `copilot` and reauthenticate the Datadog MCP Server.
+1. Verify that you have the required permissions for the Datadog resources you want to access.
+{% alert level="info" %}
+See the [copilot-plugin](https://github.com/datadog-labs/copilot-plugin) repository for all available slash commands and configuration options.
+{% /alert %}
+{% collapsible-section #copilot-manual %}
+#### Manual MCP Server configuration
+If the plugin is not available to you, point Copilot at the MCP Server endpoint for your regional [Datadog site](https://docs.datadoghq.com/getting_started/site.md) directly. Selected endpoint ({% placeholder "user-datadog-site-name" /%}): ``.
+1. Run in terminal:
+```
+copilot mcp add --transport http datadog-mcp <YOUR_MCP_SERVER_ENDPOINT>
+```
+Alternatively, add to `~/.copilot/mcp-config.json`:
+```
+{
+"mcpServers": {
+"datadog": {
+"type": "http",
+"url": "<YOUR_MCP_SERVER_ENDPOINT>"
+}
+}
+}
+```
+1. To enable product-specific tools, include the `toolsets` query parameter at the end of the endpoint URL. For example, this URL enables *only* APM and Agent Observability tools (use `toolsets=all` to enable all generally available toolsets, best for clients that support tool filtering):
+```
+<YOUR_MCP_SERVER_ENDPOINT>?toolsets=apm,llmobs
+```
+{% /collapsible-section %}
+{% /callout %}
+{% callout %}
+# Important note for users on the following Datadog sites: app.ddog-gov.com, us2.ddog-gov.com
+{% alert level="danger" %}
+Datadog MCP Server is not supported for your selected site ({% placeholder "user-datadog-site-name" /%}).
+{% /alert %}
+{% /callout %}
+{% /tab %}
+{% tab title="Cursor" %}
+Install the [Datadog Plugin](https://cursor.com/marketplace/datadog) from the Cursor Marketplace—the plugin includes the Datadog MCP Server and other resources.
+**Note**: If you previously installed the Datadog MCP Server manually, remove it from the IDE's configuration to avoid conflicts.
+{% callout %}
+# Important note for users on the following Datadog sites: app.datadoghq.com, us3.datadoghq.com, us5.datadoghq.com, app.datadoghq.eu, ap1.datadoghq.com, ap2.datadoghq.com, uk1.datadoghq.com
+1. You can install the plugin from the Cursor Marketplace or from within Cursor:
+- From the Cursor Marketplace, open the [Datadog Plugin](https://cursor.com/marketplace/datadog) and click Add to Cursor.
+- In Cursor, navigate to Cursor Settings > Plugins, then search for the Datadog plugin and click Add to Cursor.
+1. After installation of the plugin, type `/ddsetup` in the agent chat to perform first-time setup.
+1. Verify that you have the required permissions for the Datadog resources you want to access.
+{% /callout %}
+{% callout %}
+# Important note for users on the following Datadog sites: app.ddog-gov.com, us2.ddog-gov.com
+{% alert level="danger" %}
+Datadog MCP Server is not supported for your selected site ({% placeholder "user-datadog-site-name" /%}).
+{% /alert %}
+{% /callout %}
+{% /tab %}
+{% tab title="Devin" %}
+Connect Devin to the Datadog MCP Server by enabling it from Devin's MCP Marketplace. For the correct instructions, use the Datadog Site selector on the right side of this documentation page to select your site.
+{% callout %}
+# Important note for users on the following Datadog sites: app.datadoghq.com, us3.datadoghq.com, us5.datadoghq.com, app.datadoghq.eu, ap1.datadoghq.com, ap2.datadoghq.com, uk1.datadoghq.com
+1. In Devin, go to Settings > MCP Marketplace and search for `Datadog`.
+1. Select your Datadog site for the Server URL; for example, your selected site is <YOUR_DATADOG_SITE_NAME>.
+1. Enter your Datadog API and application keys.
+1. Install and enable the server, and complete the OAuth login flow when prompted.
+1. Verify that you have the required permissions for the Datadog resources you want to access.
+{% alert level="info" %}
+To use product-specific toolsets, set up a [custom MCP server](https://docs.devin.ai/work-with-devin/mcp#setting-up-a-custom-mcp-server) in Devin and include the `toolsets` query at the end of the endpoint URL. See Toolsets for more information.
+{% /alert %}
+{% /callout %}
+{% callout %}
+# Important note for users on the following Datadog sites: app.ddog-gov.com, us2.ddog-gov.com
+{% alert level="danger" %}
+Datadog MCP Server is not supported for your selected site ({% placeholder "user-datadog-site-name" /%}).
+{% /alert %}
+{% /callout %}
+{% /tab %}
+{% tab title="Goose" %}
+Point your AI agent to the MCP Server endpoint for your regional [Datadog site](https://docs.datadoghq.com/getting_started/site.md). For the correct instructions, use the Datadog Site selector on the right side of this documentation page to select your site.
+{% callout %}
+# Important note for users on the following Datadog sites: app.datadoghq.com, us3.datadoghq.com, us5.datadoghq.com, app.datadoghq.eu, ap1.datadoghq.com, ap2.datadoghq.com, uk1.datadoghq.com
+Selected endpoint ({% placeholder "user-datadog-site-name" /%}): ``.
+1. Add the Datadog MCP Server to Goose using one of the following methods:
+- **One-click install (recommended):** Use the Datadog MCP Server install deeplink.
+- **Manual configuration:** Follow Goose's instructions to [add an MCP server](https://goose-docs.ai/docs/getting-started/using-extensions#mcp-servers), using the endpoint listed in this section as the streamable HTTP server URL. To edit the configuration directly, modify `~/.config/goose/config.yaml`.
+1. To enable product-specific tools, include the `toolsets` query parameter at the end of the endpoint URL. For example, this URL enables *only* APM and Agent Observability tools:
+```
+<YOUR_MCP_SERVER_ENDPOINT>?toolsets=apm,llmobs
+```
+To enable all generally available toolsets, use `toolsets=all`. This works best for clients that support tool filtering.
+1. On first session launch, choose your Datadog account when prompted to authenticate.
+1. Verify that you have the required permissions for the Datadog resources you want to access.
+{% /callout %}
+{% callout %}
+# Important note for users on the following Datadog sites: app.ddog-gov.com, us2.ddog-gov.com
+{% alert level="danger" %}
+Datadog MCP Server is not supported for your selected site ({% placeholder "user-datadog-site-name" /%}).
+{% /alert %}
+{% /callout %}
+{% /tab %}
+{% tab title="Grok Build" %}
+Install the Datadog Plugin from the Grok Build Plugin Marketplace. The plugin packages the Datadog MCP Server with auto-updates when new plugin versions ship. For more details, see the [plugin marketplace repository](https://github.com/xai-org/plugin-marketplace).
+**Note**: If you previously installed the Datadog MCP Server manually, remove it from your Grok Build configuration to avoid conflicts.
+{% callout %}
+# Important note for users on the following Datadog sites: app.datadoghq.com, us3.datadoghq.com, us5.datadoghq.com, app.datadoghq.eu, ap1.datadoghq.com, ap2.datadoghq.com, uk1.datadoghq.com
+1. In Grok Build, type `/marketplace` to open the Marketplace catalog. Under xAI Official, find and install the Datadog plugin.
+1. Open the **MCP Servers** tab or type `/mcps`. Under **Plugin: datadog**, find **datadog-grok** and press `i` to authenticate. Select your [Datadog site](https://docs.datadoghq.com/getting_started/site.md) and complete the OAuth login flow.
+1. Verify that you have the required permissions for the Datadog resources you want to access.
+{% /callout %}
+{% callout %}
+# Important note for users on the following Datadog sites: app.ddog-gov.com, us2.ddog-gov.com
+{% alert level="danger" %}
+Datadog MCP Server is not supported for your selected site ({% placeholder "user-datadog-site-name" /%}).
+{% /alert %}
+{% /callout %}
+{% /tab %}
+{% tab title="JetBrains IDEs" %}
+JetBrains offers the [Junie](https://plugins.jetbrains.com/plugin/26104-junie-the-ai-coding-agent-by-jetbrains) and [AI Assistant](https://plugins.jetbrains.com/plugin/22282-jetbrains-ai-assistant) plugins for their range of IDEs. GitHub offers the [Copilot](https://plugins.jetbrains.com/plugin/17718-github-copilot--your-ai-pair-programmer) plugin. Alternatively, many developers use an agent CLI, such as Claude Code or Codex, alongside their IDE.
+Point your plugin to the MCP Server endpoint for your regional [Datadog site](https://docs.datadoghq.com/getting_started/site.md). For the correct instructions, use the Datadog Site selector on the right side of this documentation page to select your site.
+{% callout %}
+# Important note for users on the following Datadog sites: app.datadoghq.com, us3.datadoghq.com, us5.datadoghq.com, app.datadoghq.eu, ap1.datadoghq.com, ap2.datadoghq.com, uk1.datadoghq.com
+Selected endpoint ({% placeholder "user-datadog-site-name" /%}): ``.
+{% collapsible-section #jetbrains-junie %}
+#### Junie
+1. Go to Tools > Junie > MCP Settings and add the following block:
+```
+{
+"mcpServers": {
+"datadog": {
+"type": "http",
+"url": "<YOUR_MCP_SERVER_ENDPOINT>"
+}
+}
+}
+```
+1. To enable product-specific tools, include the `toolsets` query parameter at the end of the endpoint URL. For example, this URL enables *only* APM and Agent Observability tools (use `toolsets=all` to enable all generally available toolsets, best for clients that support tool filtering):
+```
+<YOUR_MCP_SERVER_ENDPOINT>?toolsets=apm,llmobs
+```
+1. You are prompted to login through OAuth. The status indicator in the settings displays a green tick when the connection is successful.
+1. Verify that you have the required permissions for the Datadog resources you want to access.
+{% /collapsible-section %}
+{% collapsible-section #jetbrains-ai-assistant %}
+#### JetBrains AI Assistant
+1. Go to Tools > AI Assistant > Model Context Protocol (MCP) and add the following block:
+```
+{
+"mcpServers": {
+"datadog": {
+"url": "<YOUR_MCP_SERVER_ENDPOINT>",
+"headers": {
+"DD_API_KEY": "<YOUR_API_KEY>",
+"DD_APPLICATION_KEY": "<YOUR_APP_KEY>"
+}
+}
+}
+}
+```
+1. To enable product-specific tools, include the `toolsets` query parameter at the end of the endpoint URL. For example, this URL enables *only* APM and Agent Observability tools (use `toolsets=all` to enable all generally available toolsets, best for clients that support tool filtering):
+```
+<YOUR_MCP_SERVER_ENDPOINT>?toolsets=apm,llmobs
+```
+1. The status indicator in the settings displays a green tick when the connection is successful.
+1. Verify that you have the required permissions for the Datadog resources you want to access.
+{% /collapsible-section %}
+{% collapsible-section #github-copilot %}
+#### GitHub Copilot
+1. Go to Tools > GitHub Copilot > Model Context Protocol (MCP) and add the following block:
+```
+{
+"servers": {
+"datadog": {
+"type": "http",
+"url": "<YOUR_MCP_SERVER_ENDPOINT>"
+}
+}
+}
+```
+1. To enable product-specific tools, include the `toolsets` query parameter at the end of the endpoint URL. For example, this URL enables *only* APM and Agent Observability tools (use `toolsets=all` to enable all generally available toolsets, best for clients that support tool filtering):
+```
+<YOUR_MCP_SERVER_ENDPOINT>?toolsets=apm,llmobs
+```
+1. Click the Start element that appears in the editor to start the server. You are prompted to log in through OAuth.
+1. Verify that you have the required permissions for the Datadog resources you want to access.
+{% /collapsible-section %}
+{% collapsible-section #jetbrains-agent-clis %}
+#### Agent CLIs
+Many developers use an agent CLI such as Claude Code or Codex alongside their JetBrains IDE. See the configuration for those CLI tools:
+- [Claude Code](https://docs.datadoghq.com/mcp_server/setup.md?tab=claudecode)
+- [Codex](https://docs.datadoghq.com/mcp_server/setup.md?tab=codex)
+The [Datadog plugin for JetBrains IDEs](https://docs.datadoghq.com/ide_plugins/idea.md) integrates with these agent CLIs. For an uninterrupted experience, install the plugin at the same time as you configure the Datadog MCP Server.
+{% /collapsible-section %}
+{% /callout %}
+{% callout %}
+# Important note for users on the following Datadog sites: app.ddog-gov.com, us2.ddog-gov.com
+{% alert level="danger" %}
+Datadog MCP Server is not supported for your selected site ({% placeholder "user-datadog-site-name" /%}).
+{% /alert %}
+{% /callout %}
+{% /tab %}
+{% tab title="Kiro" %}
+Point your AI agent to the MCP Server endpoint for your regional [Datadog site](https://docs.datadoghq.com/getting_started/site.md). For the correct instructions, use the Datadog Site selector on the right side of this documentation page to select your site.
+{% callout %}
+# Important note for users on the following Datadog sites: app.datadoghq.com, us3.datadoghq.com, us5.datadoghq.com, app.datadoghq.eu, ap1.datadoghq.com, ap2.datadoghq.com, uk1.datadoghq.com
+Selected endpoint ({% placeholder "user-datadog-site-name" /%}): ``.
+1. Add the following to your [Kiro MCP configuration file](https://kiro.dev/docs/mcp/configuration/) (`~/.kiro/settings/mcp.json` for user-scoped configuration):
+```
+{
+"mcpServers": {
+"datadog": {
+"url": "<YOUR_MCP_SERVER_ENDPOINT>"
+}
+}
+}
+```
+1. To enable product-specific tools, include the `toolsets` query parameter at the end of the endpoint URL. For example, this URL enables *only* APM and Agent Observability tools (use `toolsets=all` to enable all generally available toolsets, best for clients that support tool filtering):
+```
+<YOUR_MCP_SERVER_ENDPOINT>?toolsets=apm,llmobs
+```
+1. Verify that you have the required permissions for the Datadog resources you want to access.
+{% /callout %}
+{% callout %}
+# Important note for users on the following Datadog sites: app.ddog-gov.com, us2.ddog-gov.com
+{% alert level="danger" %}
+Datadog MCP Server is not supported for your selected site ({% placeholder "user-datadog-site-name" /%}).
+{% /alert %}
+{% /callout %}
+{% /tab %}
+{% tab title="OpenCode" %}
+Connect [OpenCode](https://opencode.ai/) to the Datadog MCP Server with the official [Datadog OpenCode Plugin](https://github.com/datadog-labs/opencode-plugin) (in Preview). The plugin writes and maintains the MCP Server entry in your `opencode.json` and exposes the `ddsetup`, `ddconfig`, and `ddtoolsets` tools that the agent uses to handle setup, site changes, and toolset selection.
+{% callout %}
+# Important note for users on the following Datadog sites: app.datadoghq.com, us3.datadoghq.com, us5.datadoghq.com, app.datadoghq.eu, ap1.datadoghq.com, ap2.datadoghq.com, uk1.datadoghq.com
+1. Add the plugin to your `opencode.json` configuration file. Create the file if it doesn't exist:
+```
+{
+"plugin": ["@datadog/opencode-plugin"]
+}
+```
+If a `plugin` array already exists, add `"@datadog/opencode-plugin"` to it.
+If you previously configured the Datadog MCP Server manually in `opencode.json`, remove or disable that entry to avoid conflicts with the plugin.
+1. Restart OpenCode. The package is fetched from npm at startup.
+1. Ask the agent to run `ddsetup`. The plugin walks through site selection.
+1. Restart OpenCode again to activate the MCP Server, and complete the OAuth login flow when prompted.
+1. Verify that you have the required permissions for the Datadog resources you want to access.
+1. To enable product-specific tools, ask the agent to run `ddtoolsets`.
+After setup, ask the agent to run `ddconfig` to change your Datadog site or troubleshoot the connection.
+{% collapsible-section #opencode-manual %}
+#### Manual configuration
+To configure the MCP Server without the plugin, add the following to your `opencode.json` configuration file.
+Selected endpoint ({% placeholder "user-datadog-site-name" /%}): ``.
+```
+{
+"mcp": {
+"datadog": {
+"type": "remote",
+"url": "<YOUR_MCP_SERVER_ENDPOINT>",
+"enabled": true
+}
+}
+}
+```
+To enable product-specific tools, include the `toolsets` query parameter at the end of the endpoint URL. For example, this URL enables *only* APM and Agent Observability tools:
+```
+<YOUR_MCP_SERVER_ENDPOINT>?toolsets=apm,llmobs
+```
+To enable all generally available toolsets (except for the [`chat` toolset][2]), use `toolsets=all`. This works best for clients that support tool filtering.
+{% /collapsible-section %}
+{% /callout %}
+{% callout %}
+# Important note for users on the following Datadog sites: app.ddog-gov.com, us2.ddog-gov.com
+{% alert level="danger" %}
+Datadog MCP Server is not supported for your selected site ({% placeholder "user-datadog-site-name" /%}).
+{% /alert %}
+{% /callout %}
+{% /tab %}
+{% tab title="Pi" %}
+Install the [Datadog Pi plugin](https://github.com/datadog-labs/pi-plugin) to connect the [Pi coding agent](https://pi.dev/) to the Datadog MCP Server. The plugin handles sign-in, connections to one or more Datadog organizations, and toolset selection.
+{% callout %}
+# Important note for users on the following Datadog sites: app.datadoghq.com, us3.datadoghq.com, us5.datadoghq.com, app.datadoghq.eu, ap1.datadoghq.com, ap2.datadoghq.com, uk1.datadoghq.com
+1. Install the plugin:
+```
+pi install npm:@datadog/pi-plugin
+```
+1. Restart Pi.
+1. Run `/datadog` in Pi to open the connection screen. Select your [Datadog site](https://docs.datadoghq.com/getting_started/site.md) and complete the OAuth login flow in your browser. Your first connection becomes the default.
+1. Run `/datadog toolsets` to enable or disable groups of product-specific MCP tools.
+1. Verify that you have the required permissions for the Datadog resources you want to access.
+To connect another Datadog organization, run `/datadog` and select Connect another organization. If your authorization expires, run `/datadog` and select Sign in again. After updating the plugin, run `/reload` in Pi.
+{% alert level="info" %}
+See the [plugin repository](https://github.com/datadog-labs/pi-plugin) for all available commands, API key authentication for headless usage, and configuration options.
+{% /alert %}
+{% /callout %}
+{% callout %}
+# Important note for users on the following Datadog sites: app.ddog-gov.com, us2.ddog-gov.com
+{% alert level="danger" %}
+Datadog MCP Server is not supported for your selected site ({% placeholder "user-datadog-site-name" /%}).
+{% /alert %}
+{% /callout %}
+{% /tab %}
+{% tab title="VS Code" %}
+For Copilot, install the [Datadog Copilot plugin](https://awesome-copilot.github.com/plugins/#file=plugins%2Fdatadog) from the marketplace. For more information, see the instructions for the [Copilot CLI](https://docs.datadoghq.com/mcp_server/setup.md?tab=copilotcli).
+For other extensions & CLIs, Datadog's [Cursor and VS Code extension](https://docs.datadoghq.com/ide_plugins/vscode.md) provides a configuration assistant for the Datadog MCP Server.
+{% callout %}
+# Important note for users on the following Datadog sites: app.datadoghq.com, us3.datadoghq.com, us5.datadoghq.com, app.datadoghq.eu, ap1.datadoghq.com, ap2.datadoghq.com, uk1.datadoghq.com
+1. Install the [Datadog extension](https://docs.datadoghq.com/ide_plugins/vscode.md?tab=vscode#installation). If you have the extension installed already, make sure it's the latest version.
+1. Sign in to your Datadog account.
+1. **Restart the IDE.**
+1. Run the Datadog: Open MCP Configuration Assistant and follow the guidance to configure the Datadog MCP Server.
+1. Verify that you have the required permissions for the Datadog resources you want to access.
+The Datadog MCP server connection is managed by Copilot (or whichever agent you are using), not the Datadog extension. You must authorize the Datadog MCP server independently of the extension.
+{% /callout %}
+{% callout %}
+# Important note for users on the following Datadog sites: app.ddog-gov.com, us2.ddog-gov.com
+{% alert level="danger" %}
+Datadog MCP Server is not supported for your selected site ({% placeholder "user-datadog-site-name" /%}).
+{% /alert %}
+{% /callout %}
+{% /tab %}
+{% tab title="Warp" %}
+[Warp](https://www.warp.dev/) is an agentic terminal with built-in MCP support. Point the Warp agent to the MCP Server endpoint for your regional [Datadog site](https://docs.datadoghq.com/getting_started/site.md). For the correct instructions, use the Datadog Site selector on the right side of this documentation page to select your site.
+{% callout %}
+# Important note for users on the following Datadog sites: app.datadoghq.com, us3.datadoghq.com, us5.datadoghq.com, app.datadoghq.eu, ap1.datadoghq.com, ap2.datadoghq.com, uk1.datadoghq.com
+Selected endpoint ({% placeholder "user-datadog-site-name" /%}): ``.
+1. In the Warp app, go to Settings > MCP Servers and click + Add.
+1. Paste the following configuration:
+```
+{
+"Datadog": {
+"url": "<YOUR_MCP_SERVER_ENDPOINT>"
+}
+}
+```
+To enable product-specific tools, include the `toolsets` query parameter at the end of the endpoint URL. For example, this URL enables *only* APM and Agent Observability tools (use `toolsets=all` to enable all generally available toolsets (except for the [`chat` toolset](https://docs.datadoghq.com/mcp_server/tools.md#chat)), best for clients that support tool filtering):
+```
+<YOUR_MCP_SERVER_ENDPOINT>?toolsets=apm,llmobs
+```
+1. Click Start on the Datadog server. Warp opens your browser to complete the OAuth login flow. Credentials are stored securely on your device and reused for future sessions.
+1. Verify that you have the required permissions for the Datadog resources you want to access.
+{% /callout %}
+{% callout %}
+# Important note for users on the following Datadog sites: app.ddog-gov.com, us2.ddog-gov.com
+{% alert level="danger" %}
+Datadog MCP Server is not supported for your selected site ({% placeholder "user-datadog-site-name" /%}).
+{% /alert %}
+{% /callout %}
+{% /tab %}
+{% tab title="Other" %}
+For most other supported clients, use these instructions.
+Point your AI agent to the MCP Server endpoint for your regional [Datadog site](https://docs.datadoghq.com/getting_started/site.md). For the correct instructions, use the Datadog Site selector on the right side of this documentation page to select your site.
+{% callout %}
+# Important note for users on the following Datadog sites: app.datadoghq.com, us3.datadoghq.com, us5.datadoghq.com, app.datadoghq.eu, ap1.datadoghq.com, ap2.datadoghq.com, uk1.datadoghq.com
+Selected endpoint ({% placeholder "user-datadog-site-name" /%}): ``.
+1. Add the Datadog MCP Server to your client's configuration file using the HTTP transport and your site's endpoint URL. For example:
+```
+{
+"mcpServers": {
+"datadog": {
+"type": "http",
+"url": "<YOUR_MCP_SERVER_ENDPOINT>"
+}
+}
+}
+```
+1. To enable product-specific tools, include the `toolsets` query parameter at the end of the endpoint URL. For example, this URL enables *only* APM and Agent Observability tools (use `toolsets=all` to enable all generally available toolsets (except for the [`chat` toolset](https://docs.datadoghq.com/mcp_server/tools.md#chat)), best for clients that support tool filtering):
+```
+<YOUR_MCP_SERVER_ENDPOINT>?toolsets=apm,llmobs
+```
+1. Verify that you have the required permissions for the Datadog resources you want to access.
+{% /callout %}
+{% callout %}
+# Important note for users on the following Datadog sites: app.ddog-gov.com, us2.ddog-gov.com
+{% alert level="danger" %}
+Datadog MCP Server is not supported for your selected site ({% placeholder "user-datadog-site-name" /%}).
+{% /alert %}
+{% /callout %}
+{% /tab %}
+## MCP Server endpoints{% #mcp-server-endpoints %}
+Each [Datadog site](https://docs.datadoghq.com/getting_started/site.md) has its own MCP Server endpoint. To build the endpoint for your site, add `mcp.` before your site parameter and append `/v1/mcp`. Use the endpoint that matches the site where your Datadog organization is hosted:
+| Site | Site parameter | MCP Server endpoint |
+| ------- | ------------------- | -------------------------------------- |
+| US1 | `datadoghq.com` | `https://mcp.datadoghq.com/v1/mcp` |
+| US3 | `us3.datadoghq.com` | `https://mcp.us3.datadoghq.com/v1/mcp` |
+| US5 | `us5.datadoghq.com` | `https://mcp.us5.datadoghq.com/v1/mcp` |
+| EU1 | `datadoghq.eu` | `https://mcp.datadoghq.eu/v1/mcp` |
+| AP1 | `ap1.datadoghq.com` | `https://mcp.ap1.datadoghq.com/v1/mcp` |
+| AP2 | `ap2.datadoghq.com` | `https://mcp.ap2.datadoghq.com/v1/mcp` |
+| UK1 | `uk1.datadoghq.com` | `https://mcp.uk1.datadoghq.com/v1/mcp` |
+| US1-FED | `ddog-gov.com` | Not supported |
+| US2-FED | `us2.ddog-gov.com` | Not supported |
+## Toolsets{% #toolsets %}
+The Datadog MCP Server supports *toolsets*, which allow you to use only the [MCP tools](https://docs.datadoghq.com/mcp_server/tools.md) you need, saving valuable context window space. To use a toolset, include the `toolsets` query parameter in the endpoint URL when connecting to the MCP Server (remote authentication only).
+{% callout %}
+# Important note for users on the following Datadog sites: app.datadoghq.com, us3.datadoghq.com, us5.datadoghq.com, app.datadoghq.eu, ap1.datadoghq.com, ap2.datadoghq.com, uk1.datadoghq.com
+Use `toolsets=all` to enable all generally available toolsets (except for the [`chat` toolset](https://docs.datadoghq.com/mcp_server/tools.md#chat)) at once. Enabling all toolsets increases the number of tool definitions sent to your AI client, which consumes context window space. `toolsets=all` works best with clients that support tool search.
+Tools in Preview and the [`chat` toolset](https://docs.datadoghq.com/mcp_server/tools.md#chat) are not included in `toolsets=all`. To use them, explicitly add the toolset to the `toolsets` parameter (for example, `?toolsets=all,apm,chat`).
+For example, based on your selected [Datadog site](https://docs.datadoghq.com/getting_started/site.md#navigate-the-datadog-documentation-by-site) ({% placeholder "user-datadog-site-name" /%}):
+- Retrieve only the core tools (this is the default if `toolsets` is not specified):
+```
+<YOUR_MCP_SERVER_ENDPOINT>
+```
+- Retrieve only Synthetic Testing-related tools:
+```
+<YOUR_MCP_SERVER_ENDPOINT>?toolsets=synthetics
+```
+- Retrieve core, Synthetic Testing, and Software Delivery tools:
+```
+<YOUR_MCP_SERVER_ENDPOINT>?toolsets=core,synthetics,software-delivery
+```
+- Retrieve all generally available tools (except for the [`chat` toolset](https://docs.datadoghq.com/mcp_server/tools.md#chat)):
+```
+<YOUR_MCP_SERVER_ENDPOINT>?toolsets=all
+```
+{% /callout %}
+{% alert level="info" %}
+For the Codex CLI, use the `X-Datadog-MCP-Toolsets` header described in the Codex setup instructions, not the query parameter described here.
+{% /alert %}
+### Omit specific tools{% #omit-specific-tools %}
+Use the `omit_tools` query parameter to remove specific tools from the final tool list.
+{% callout %}
+# Important note for users on the following Datadog sites: app.datadoghq.com, us3.datadoghq.com, us5.datadoghq.com, app.datadoghq.eu, ap1.datadoghq.com, ap2.datadoghq.com, uk1.datadoghq.com
+Examples for your selected site ({% placeholder "user-datadog-site-name" /%}):
+- Omit tools from the default set:
+```
+<YOUR_MCP_SERVER_ENDPOINT>?omit_tools=search_datadog_logs,search_datadog_spans
+```
+- Select toolsets, then omit one tool:
+```
+<YOUR_MCP_SERVER_ENDPOINT>?toolsets=core,software-delivery&omit_tools=search_datadog_incidents
+```
+- Start from all generally available toolsets, then omit write tools:
+```
+<YOUR_MCP_SERVER_ENDPOINT>?toolsets=all&omit_tools=create_datadog_notebook,edit_datadog_notebook
+```
+{% /callout %}
+Provide tool names as a comma-separated list. When both parameters are present, the server resolves `toolsets` first and then removes matching tools in `omit_tools`. If `omit_tools` includes unknown tool names, the server warns and continues.
+### Available toolsets{% #available-toolsets %}
+These toolsets are generally available. See [Datadog MCP Server Tools](https://docs.datadoghq.com/mcp_server/tools.md) for a complete reference of available tools organized by toolset, with example prompts.
+- `core`: The default toolset for logs, metrics, traces, dashboards, monitors, incidents, hosts, services, events, notebooks, and code execution.
+- `alerting`: Tools for validating and creating monitors, searching monitor groups, retrieving monitor templates, analyzing monitor coverage, and searching SLOs.
+- `apm`: Tools for [APM](https://docs.datadoghq.com/tracing.md), including checking service health, investigating errors and latency, finding optimization opportunities, and managing sampling and service remapping rules. Some tools in this toolset are in Preview and are available only when you request `apm` by name and have Preview access ([sign up](https://www.datadoghq.com/product-preview/apm-mcp-toolset/)). See [Datadog MCP Server Tools](https://docs.datadoghq.com/mcp_server/tools.md) for details.
+- `audit-trail`: Tools for [Audit Trail](https://docs.datadoghq.com/account_management/audit_trail.md), including searching and retrieving Audit Trail events and forming Audit Trail search queries.
+- `cases`: Tools for [Work Management](https://docs.datadoghq.com/service_management/case_management.md), including creating, searching, updating, and commenting on work items (cases); managing projects; linking work items to each other and to Jira issues; managing attachments; and finding users to assign. Some tools in this toolset are in Preview and are available only when you request `cases` by name. See [Datadog MCP Server Tools](https://docs.datadoghq.com/mcp_server/tools.md) for details.
+- `chat`: Tools for interacting with [Bits Chat](https://docs.datadoghq.com/bits_ai/bits_chat.md), including sending messages, retrieving conversation history, and listing conversations.
+- `code-exec`: Tools for running agent-authored JavaScript in a Datadog-managed sandbox with direct access to Datadog APIs, for multi-signal investigation and ad-hoc data exploration in one call. These tools are also included in the default `core` toolset. See [Code Execution with the MCP Server](https://docs.datadoghq.com/mcp_server/code_execution.md) for more information.
+- `cost`: Tools for [Cloud Cost Management](https://docs.datadoghq.com/cloud_cost_management.md), including listing cost-saving recommendations ranked by estimated potential daily savings.
+- `dashboards`: Tools for retrieving, creating, updating, and deleting [dashboards](https://docs.datadoghq.com/dashboards.md), plus widget schema reference and validation.
+- `data-observability`: Tools for [Data Observability](https://docs.datadoghq.com/data_observability.md), including data catalog search, lineage analysis, data quality monitoring, and cost and performance recommendations for data warehouses and Spark jobs.
+- `dbm`: Tools for interacting with [Database Monitoring](https://docs.datadoghq.com/database_monitoring.md).
+- `ddsql`: Tools for querying Datadog data using [DDSQL](https://docs.datadoghq.com/ddsql_editor.md), a SQL dialect with support for infrastructure resources, logs, metrics, RUM, spans, and other Datadog data sources.
+- `derived-metrics`: Tools for creating, updating, and deleting [derived metrics](https://docs.datadoghq.com/metrics/derived-metrics.md) from formulas and named metric queries.
+- `documentation`: Tools for searching and reading published Datadog documentation, with source URLs your agent can cite.
+- `error-tracking`: Tools for interacting with Datadog [Error Tracking](https://docs.datadoghq.com/error_tracking.md).
+- `feature-flags`: Tools for managing [feature flags](https://docs.datadoghq.com/feature_flags.md), including creating, listing, and updating flags and their environments.
+- `governance`: Tools for [Governance Console](https://docs.datadoghq.com/account_management/governance_console.md), including governance insights, controls, detections, mitigations, limits, best practices, and tag rules.
+- `investigator`: Tools for triggering, searching, and steering [Bits Investigation](https://docs.datadoghq.com/bits_ai/bits_investigation.md) investigations for monitor alerts, incidents, and general troubleshooting.
+- `kubernetes`: Tools for searching and describing [Kubernetes](https://docs.datadoghq.com/containers/monitoring/kubernetes_explorer.md) resources and retrieving manifests across all clusters.
+- `kubernetes-ops-center`: Tools for inspecting [Kubernetes](https://docs.datadoghq.com/containers/monitoring/kubernetes_explorer.md) API server load and affecting principal.
+- `llmobs`: Tools for searching and analyzing [Agent Observability](https://docs.datadoghq.com/llm_observability/build_with_ai/mcp_server.md) spans and experiments.
+- `logs-configuration`: Tools for viewing, creating, updating, deleting, and reordering [log pipelines](https://docs.datadoghq.com/logs/log_configuration/pipelines.md), [indexes](https://docs.datadoghq.com/logs/log_configuration/indexes.md), and [archives](https://docs.datadoghq.com/logs/log_configuration/archives.md).
+- `networks`: Tools for [Cloud Network Monitoring](https://docs.datadoghq.com/network_monitoring/cloud_network_monitoring.md) analysis and [Network Device Monitoring](https://docs.datadoghq.com/network_monitoring/devices.md).
+- `notebooks`: Extended tools for [notebooks](https://docs.datadoghq.com/notebooks.md), beyond the notebook tools included in the `core` toolset.
+- `observability-pipelines`: Tools for [Observability Pipelines](https://docs.datadoghq.com/observability_pipelines.md), including inspecting existing pipelines and building, validating, and creating new pipelines.
+- `onboarding`: Agentic onboarding tools for guided Datadog setup and configuration.
+- `processes`: Tools for searching recent [Live Processes](https://docs.datadoghq.com/infrastructure/process.md) observations on your hosts.
+- `product-analytics`: Tools for interacting with [Product Analytics](https://docs.datadoghq.com/product_analytics.md) queries.
+- `profiling`: Tools for discovering, exploring, and analyzing [Continuous Profiler](https://docs.datadoghq.com/getting_started/profiler.md) data.
+- `reference-tables`: Tools for managing [Reference Tables](https://docs.datadoghq.com/reference_tables.md), including listing tables, reading rows, appending rows, and creating tables from cloud storage.
+- `rum`: Tools for [Real User Monitoring](https://docs.datadoghq.com/real_user_monitoring.md), including resolving applications, summarizing performance, surfacing aggregated insights, monitoring and managing operations, exploring metrics, managing retention filters, and managing custom RUM metrics.
+- `security`: Tools for code security scanning and searching [security signals](https://docs.datadoghq.com/security/threats/security_signals.md) and [security findings](https://docs.datadoghq.com/security/misconfigurations/findings.md).
+- `sheets`: Tools for creating, reading, updating, and deleting [Datadog spreadsheets](https://docs.datadoghq.com/sheets.md).
+- `software-delivery`: Tools for interacting with Software Delivery ([CI Visibility](https://docs.datadoghq.com/continuous_integration.md) and [Test Optimization](https://docs.datadoghq.com/tests.md)).
+- `synthetics`: Tools for interacting with Datadog [Synthetic tests](https://docs.datadoghq.com/synthetics.md).
+- `widgets`: Tools for [dashboard](https://docs.datadoghq.com/dashboards.md) and [notebook](https://docs.datadoghq.com/notebooks.md) widget visualization, validation, and type conversion.
+- `workflows`: Tools for [Workflow Automation](https://docs.datadoghq.com/actions/workflows.md), including listing, inspecting, executing, and configuring workflows for agent use.
+### Preview toolsets{% #preview-toolsets %}
+These toolsets are in Preview and are not included in the `all` alias; request them explicitly by name. Access requirements vary by toolset, as noted below. Where a Product Preview form is listed, sign up through it or contact [Datadog support](https://docs.datadoghq.com/help/) to request access.
+- `gpu-monitoring`: Tools for [GPU Monitoring](https://docs.datadoghq.com/gpu_monitoring.md), including listing self-hosted LLM inference deployments, measuring their serving performance, inspecting their configuration, profiling their forward passes, and ranking and tracking GPU kernels. Contact your Customer Success Manager for access.
+- `live-debugger`: Tools for debugging running applications with [Live Debugger](https://docs.datadoghq.com/tracing/live_debugger.md) logpoints, which instrument code to capture runtime variables and execution state without a redeployment.
+- `remote-actions`: ([Sign up](https://www.datadoghq.com/product-preview/datadog-agent-mcp/)) Tools for on-host diagnostics, including reading files, listing directories, and running safe read-only shell commands directly on instrumented hosts through the Agent.
+## Supported clients{% #supported-clients %}
+| Client | Developer | Notes |
+| ---------------------------------------------------------------- | --------------------- | --------------------------------------------------------------------------------------------------------------- |
+| [Antigravity](https://antigravity.google/) | Google | Datadog [Antigravity plugin](https://github.com/datadog-labs/antigravity-plugin) recommended. |
+| [ChatGPT](https://chatgpt.com/) | OpenAI | In Preview, and available for US1 customers only. |
+| [Cursor](https://cursor.com) | Cursor | Datadog [Cursor plugin](https://cursor.com/marketplace/datadog) recommended. |
+| [Claude Code](https://claude.com/product/claude-code) | Anthropic | Datadog [Claude Code plugin](https://claude.com/plugins/datadog) recommended. |
+| [Claude](https://claude.ai) | Anthropic | Datadog [Claude Connector](https://claude.ai/directory/connectors/datadog) recommended. Includes Claude Cowork. |
+| [Codex CLI](https://chatgpt.com/codex) | OpenAI |
+| [Copilot CLI](https://github.com/features/copilot/cli) | Microsoft | Datadog [Copilot plugin](https://awesome-copilot.github.com/plugins/#file=plugins%2Fdatadog) recommended. |
+| [Grok Build](https://x.ai/build) | SpaceXAI | Datadog [Grok Build plugin](https://github.com/xai-org/plugin-marketplace) recommended. |
+| [Warp](https://www.warp.dev/) | Warp |
+| [VS Code](https://code.visualstudio.com/) | Microsoft | Datadog [Copilot plugin](https://awesome-copilot.github.com/plugins/#file=plugins%2Fdatadog) recommended. |
+| [JetBrains IDEs](https://docs.datadoghq.com/ide_plugins/idea.md) | JetBrains | [Datadog plugin](https://docs.datadoghq.com/ide_plugins/idea.md) recommended. |
+| [Kiro](https://kiro.dev/), [Kiro CLI](https://kiro.dev/cli/) | Amazon Web Services |
+| [Goose](https://github.com/block/goose) | Agentic AI Foundation |
+| [OpenCode](https://opencode.ai/) | SST | Datadog [OpenCode plugin](https://github.com/datadog-labs/opencode-plugin) recommended. |
+| [Pi](https://pi.dev/) | Earendil | Datadog [Pi plugin](https://github.com/datadog-labs/pi-plugin) recommended. |
+| [Cline](https://cline.bot/) | Various | See the Other tab above. |
+{% alert level="info" %}
+The Datadog MCP Server is under significant development, and additional supported clients may become available.
+{% /alert %}
+## Required permissions{% #required-permissions %}
+The Datadog MCP Server requires both user role permissions and organization-wide access. See the following sections for details.
+For a complete overview of MCP access controls, including how to restrict the actions an individual AI client can perform, see [Access Control for MCP](https://docs.datadoghq.com/account_management/rbac/mcp_access.md).
+### User role permissions{% #user-role-permissions %}
+MCP Server tools require the following [Datadog user role permissions](https://docs.datadoghq.com/account_management/rbac/permissions.md#mcp):
+| Permission | Required for |
+| ---------- | --------------------------------------------------------------------------------------------------------- |
+| mcp_read | Tools that read data from Datadog (for example, querying monitors, searching logs, retrieving dashboards) |
+| mcp_write | Tools that create or modify resources in Datadog (for example, creating monitors, muting hosts) |
+In addition to `mcp_read` or `mcp_write`, users need the standard Datadog permissions for the underlying resource. For example, using an MCP tool that reads monitors requires both `mcp_read` and the [Monitors Read](https://docs.datadoghq.com/account_management/rbac/permissions.md#monitors) permission. See [Datadog Role Permissions](https://docs.datadoghq.com/account_management/rbac/permissions.md) for the full list of resource-level permissions.
+Users with the Datadog Standard Role have both MCP Server permissions by default. If your organization uses [custom roles](https://docs.datadoghq.com/account_management/rbac.md?tab=datadogapplication#custom-roles), add the permissions manually:
+1. Go to [Organization Settings > Roles](https://app.datadoghq.com/organization-settings/roles) as an administrator, and click the role you want to update.
+1. Click Edit Role (pencil icon).
+1. Under the permissions list, select the MCP Read and MCP Write checkboxes.
+1. Select any other resource-level permissions you need for the role.
+1. Click Save.
+### Organization-wide access{% #organization-wide-access %}
+MCP Server tools also require global, organization-wide MCP access and write capabilities, which organization administrators manage in [Organization Settings](https://app.datadoghq.com/organization-settings/mcp). Enable these settings to allow access to the Datadog MCP Server and its tools:
+| Organization Setting | Description |
+| -------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| MCP Access | Enable to allow access to the Datadog MCP Server. When disabled, users cannot access any MCP functionality, regardless of individual role permissions. This allows organizations to completely opt out of the MCP Server. |
+| MCP Write Access | Enable to allow access to MCP Server tools that create or modify resources, such as `create_datadog_monitor`. When disabled, the MCP Server hides write tools from all users, regardless of individual role permissions. See Troubleshooting for more information. |
+### Restrict network access{% #restrict-network-access %}
+To control which networks can connect to the Datadog MCP Server, enable the [IP allowlist](https://docs.datadoghq.com/account_management/org_settings/ip_allowlist.md). This prevents users from connecting to the MCP Server from unapproved origins, even if they have the required permissions.
+## Authentication{% #authentication %}
+For most users, OAuth 2.0 is the recommended authentication method, and your MCP client handles it during setup. Use one of the header-based methods below only when you cannot complete the OAuth flow, for example on a server or in a CI environment.
+### OAuth 2.0 (recommended){% #oauth-20-recommended %}
+Most clients complete the OAuth 2.0 flow automatically during setup. Select your client at the top of this page for instructions. With OAuth, you don't manage long-lived credentials directly. For details, see the [MCP authorization specification](https://modelcontextprotocol.io/specification/draft/basic/authorization).
+#### Custom subdomains{% #custom-subdomains %}
+If your organization signs in through a custom subdomain, such as `<SUBDOMAIN>.datadoghq.com`, add the `subdomain` query parameter to the endpoint URL. The MCP client uses this value to send the OAuth flow directly to your subdomain. Without it, the flow starts on the default Datadog domain, so users already signed in on their subdomain are redirected and have to sign in again before they can be authorized.
+{% callout %}
+# Important note for users on the following Datadog sites: app.datadoghq.com, us3.datadoghq.com, us5.datadoghq.com, app.datadoghq.eu, ap1.datadoghq.com, ap2.datadoghq.com, uk1.datadoghq.com
+For example, based on your selected [Datadog site](https://docs.datadoghq.com/getting_started/site.md#navigate-the-datadog-documentation-by-site) ({% placeholder "user-datadog-site-name" /%}):
+```
+<YOUR_MCP_SERVER_ENDPOINT>?subdomain=<SUBDOMAIN>
+```
+To combine `subdomain` with toolsets or other query parameters, separate them with `&`:
+```
+<YOUR_MCP_SERVER_ENDPOINT>?subdomain=<SUBDOMAIN>&toolsets=apm,llmobs
+```
+{% /callout %}
+#### Revoke OAuth access{% #revoke-oauth-access %}
+When you authorize an MCP client, Datadog creates a consent grant scoped to your user, that client, and the organization you selected during the OAuth flow. Revoking the grant invalidates the client's credentials, and the client must complete the OAuth flow again to reconnect.
+**Note**: A client that already holds a valid access token can keep making requests until that token expires. Revoking prevents it from obtaining a new one.
+To revoke your own access for a client:
+1. In Datadog, navigate to [**Personal Settings > Authorized Apps**](https://app.datadoghq.com/personal-settings/apps).
+1. Find the MCP client you want to disconnect and hover over it to show a removal icon.
+1. Click the removal icon and from the modal, revoke the authorization.
+Repeat for each client and each organization you authorized from.
+Revoking an authorization has no effect on Personal Access Tokens, Service Access Tokens, or API and application keys. Delete or rotate those in their own management pages.
+Administrators can disable an AI client or remove specific scopes from it for the entire organization. To do this, use the [Mobile and Third-Party Access](https://app.datadoghq.com/organization-settings/oauth-applications) page. See [Restrict actions for a specific AI client](https://docs.datadoghq.com/account_management/rbac/mcp_access.md#restrict-actions-for-a-specific-ai-client).
+### Personal or Service Access Token{% #personal-or-service-access-token %}
+For header-based authentication, a Datadog [Personal Access Token (PAT)](https://docs.datadoghq.com/account_management/personal-access-tokens.md) or [Service Access Token (SAT)](https://docs.datadoghq.com/account_management/service-access-tokens.md) is the preferred option. Pass the token as a bearer token in the `Authorization` header. No API key is required.
+{% callout %}
+# Important note for users on the following Datadog sites: app.datadoghq.com, us3.datadoghq.com, us5.datadoghq.com, app.datadoghq.eu, ap1.datadoghq.com, ap2.datadoghq.com
+For example, based on your selected [Datadog site](https://docs.datadoghq.com/getting_started/site.md#navigate-the-datadog-documentation-by-site) ({% placeholder "user-datadog-site-name" /%}):
+```
+{
+"mcpServers": {
+"datadog": {
+"type": "http",
+"url": "<YOUR_MCP_SERVER_ENDPOINT>",
+"headers": {
+"Authorization": "Bearer <YOUR_ACCESS_TOKEN>"
+}
+}
+}
+}
+```
+{% /callout %}
+Use a PAT for an individual user or a SAT for a [service account](https://docs.datadoghq.com/account_management/org_settings/service_accounts.md). For scopes, token management, and other authentication methods, see the [PAT](https://docs.datadoghq.com/account_management/personal-access-tokens.md) and [SAT](https://docs.datadoghq.com/account_management/service-access-tokens.md) documentation.
+### API and application keys{% #api-and-application-keys %}
+Alternatively, provide a Datadog [API key and application key](https://docs.datadoghq.com/account_management/api-app-keys.md) as `DD_API_KEY` and `DD_APPLICATION_KEY` HTTP headers:
+{% callout %}
+# Important note for users on the following Datadog sites: app.datadoghq.com, us3.datadoghq.com, us5.datadoghq.com, app.datadoghq.eu, ap1.datadoghq.com, ap2.datadoghq.com, uk1.datadoghq.com
+For example, based on your selected [Datadog site](https://docs.datadoghq.com/getting_started/site.md#navigate-the-datadog-documentation-by-site) ({% placeholder "user-datadog-site-name" /%}):
+```
+{
+"mcpServers": {
+"datadog": {
+"type": "http",
+"url": "<YOUR_MCP_SERVER_ENDPOINT>",
+"headers": {
+"DD_API_KEY": "<YOUR_API_KEY>",
+"DD_APPLICATION_KEY": "<YOUR_APPLICATION_KEY>"
+}
+}
+}
+}
+```
+{% /callout %}
+For security, use a scoped API key and application key from a [service account](https://docs.datadoghq.com/account_management/org_settings/service_accounts.md) that has only the required permissions.
+**Note**: An AI client's [OAuth application scopes](https://docs.datadoghq.com/account_management/rbac/mcp_access.md#restrict-actions-for-a-specific-ai-client) do not apply to connections that use API and application keys or access tokens. These connections have the access of the key or token.
+### Adding OAuth clients{% #adding-oauth-clients %}
+To allow-list a redirect URL, open [MCP OAuth Redirect URLs](https://app.datadoghq.com/organization-settings/mcp#mcp-oauth-redirect-urls) in Organization Settings, enter the URL, and select Add URL.
+If you are a partner or vendor adding Datadog to an MCP directory for your AI agent platform, submit your interest through Datadog's [Technology Partner Signup](https://partners.datadoghq.com/s/login/SelfRegister).
+## Test access to the MCP Server{% #test-access-to-the-mcp-server %}
+1. Install the [MCP inspector](https://github.com/modelcontextprotocol/inspector), a developer tool for testing and debugging MCP servers.
+```bash
+npx @modelcontextprotocol/inspector
+```
+1. In the inspector's web UI, for Transport Type, select Streamable HTTP.
+1. For URL, enter the MCP Server endpoint for your regional Datadog site.
+Important note for users on the following Datadog sites: app.datadoghq.com, us3.datadoghq.com, us5.datadoghq.com, app.datadoghq.eu, ap1.datadoghq.com, ap2.datadoghq.com, uk1.datadoghq.com:
+For example, for {% placeholder "user-datadog-site-name" /%}: ``
+1. Click Connect, then go to Tools > List Tools.
+1. Check if the [available tools](https://docs.datadoghq.com/mcp_server/tools.md) appear.
+## Troubleshooting{% #troubleshooting %}
+### Write tools are missing{% #write-tools-are-missing %}
+If your AI client does not list Datadog MCP Server tools that create or modify resources (such as `create_datadog_monitor`), check the following:
+- **Organization write access**: When MCP write capabilities are disabled for your organization, the MCP Server hides write tools from the tool list for all users, regardless of individual user role permissions. An organization administrator can enable MCP Write Access from [Organization Settings](https://app.datadoghq.com/organization-settings/mcp).
+- **Role permissions**: Confirm that your role includes the `mcp_write` permission and the permission for the underlying resource, such as [Monitors Write](https://docs.datadoghq.com/account_management/rbac/permissions.md#monitors) for creating monitors. See Required permissions.
+- **Toolsets**: Confirm that you enabled the toolset that contains the tool. If you don't specify toolsets, only `core` tools are available. For example, `create_datadog_monitor` is in the `alerting` toolset. Preview toolsets are not included in `toolsets=all`, so request them by name.
+- **Omitted tools**: Confirm that the tool is not listed in the `omit_tools` query parameter.
+- **OAuth application scopes**: If an administrator removed a scope from your AI client, you cannot use that client for actions that need the scope. This applies even if your role includes the permission. See [Restrict actions for a specific AI client](https://docs.datadoghq.com/account_management/rbac/mcp_access.md#restrict-actions-for-a-specific-ai-client).
+After you change any of these settings, refresh the tool list in your AI client. Reconnecting the client is a typical way to do this, but some AI clients provide other ways to refresh the tool list.
+## Further reading{% #further-reading %}
+Additional helpful documentation, links, and articles:
+- [Datadog MCP Server](https://docs.datadoghq.com/mcp_server.md)
+- [Datadog MCP Server Tools](https://docs.datadoghq.com/mcp_server/tools.md)
+- [Code Execution with the MCP Server](https://docs.datadoghq.com/mcp_server/code_execution.md)
+- [Access Control for MCP](https://docs.datadoghq.com/account_management/rbac/mcp_access.md)
+- [Investigate Kubernetes resources with Datadog MCP tools](https://www.datadoghq.com/blog/kubernetes-mcp-tools/)
+- [Bring live Datadog telemetry into your AI agents with native integrations](https://www.datadoghq.com/blog/datadog-ai-agent-integrations/)

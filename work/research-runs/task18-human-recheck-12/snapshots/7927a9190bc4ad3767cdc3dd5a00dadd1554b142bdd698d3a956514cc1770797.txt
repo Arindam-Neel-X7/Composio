@@ -1,0 +1,25 @@
+> ## Documentation Index
+> Fetch the complete documentation index at: https://docs.waterfall.io/llms.txt
+> Use this file to discover all available pages before exploring further.
+# Rate limits
+> Plan Waterfall API request volume, handle HTTP 429 responses, and use Retry-After when polling or processing batches.
+The default limit for Prospector, Search, Enrichment, Job Change, and Email Verification is **50 requests per 60 seconds**. Your key may have a different configured limit. Account Reporter is exempt from rate limiting.
+## Higher request volumes
+> [!NOTE]
+>
+> Waterfall can support **more than 10× the default limit** with the right setup. Email [support@waterfall.io](mailto:support@waterfall.io) with your APIs and expected volume to arrange higher limits.
+A sub-key's `per_interval` cannot exceed the master key's configured value. See [API Key Management](https://docs.waterfall.io/v1/api-keys-overview.md) for key settings.
+## Handle a rate-limit response
+When a request exceeds the limit, the API returns `429`. Rate-limit responses include these headers:
+| Header | Meaning |
+| - | - |
+| `X-RateLimit-Limit` | Max requests allowed in interval |
+| `X-RateLimit-Interval` | Interval duration in seconds |
+| `Retry-After` | Seconds to wait before retry |
+## Retry guidance
+* Wait for `Retry-After` before retrying a rate-limited request.
+* Use exponential backoff if repeated attempts still receive `429`.
+* Limit concurrency when processing a list of records.
+* For asynchronous jobs, keep the returned `job_id` and poll the Finder. Do not start another job to check whether the first one finished.
+For asynchronous workflows, a `webhook_url` can reduce polling. See [Webhook Verification](https://docs.waterfall.io/v1/webhook-verification.md). A `402` quota error is different from a rate limit; use the [Errors guide](https://docs.waterfall.io/v1/errors.md) to choose the next step.
+This documentation is built and hosted on [Mintlify](https://mintlify.com), a developer documentation platform.

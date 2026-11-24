@@ -1,0 +1,136 @@
+{
+  "sources": [
+    {
+      "app_id": 91,
+      "url": "https://docs.cloud.google.com/gemini/enterprise/notebooklm-enterprise/docs/api-notebooks-sources",
+      "kind": "primary_docs",
+      "scope": "NotebookLM Enterprise on Google Cloud; personal NotebookLM API excluded; public documentary research, no execution",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor-controlled documentation/help/product domain matching roster product; ownership is researcher attribution, requires independent review",
+      "attribution_by": "task16-codex-researcher"
+    },
+    {
+      "app_id": 91,
+      "url": "https://docs.cloud.google.com/gemini/enterprise/notebooklm-enterprise/docs/set-up-licensing",
+      "kind": "primary_docs",
+      "scope": "NotebookLM Enterprise on Google Cloud; personal NotebookLM API excluded; public documentary research, no execution",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor-controlled documentation/help/product domain matching roster product; ownership is researcher attribution, requires independent review",
+      "attribution_by": "task16-codex-researcher"
+    },
+    {
+      "app_id": 92,
+      "url": "https://help.otter.ai/hc/en-us/articles/35287607569687-Otter-MCP-Server?preview=false",
+      "kind": "primary_docs",
+      "scope": "Otter AI public API and callable Otter MCP server; public documentary research, no execution",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor-controlled documentation/help/product domain matching roster product; ownership is researcher attribution, requires independent review",
+      "attribution_by": "task16-codex-researcher"
+    },
+    {
+      "app_id": 92,
+      "url": "https://help.otter.ai/api/v2/help_center/en-us/articles/35287607569687.json",
+      "kind": "primary_docs",
+      "scope": "Otter AI public API and callable Otter MCP server; public documentary research, no execution",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor-controlled documentation/help/product domain matching roster product; ownership is researcher attribution, requires independent review",
+      "attribution_by": "task16-codex-researcher"
+    },
+    {
+      "app_id": 92,
+      "url": "https://otter.ai/mcp",
+      "kind": "primary_docs",
+      "scope": "Otter AI public API and callable Otter MCP server; public documentary research, no execution",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor-controlled documentation/help/product domain matching roster product; ownership is researcher attribution, requires independent review",
+      "attribution_by": "task16-codex-researcher"
+    },
+    {
+      "app_id": 92,
+      "url": "https://otter.ai/developers",
+      "kind": "primary_docs",
+      "scope": "Otter AI public API and callable Otter MCP server; public documentary research, no execution",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor-controlled documentation/help/product domain matching roster product; ownership is researcher attribution, requires independent review",
+      "attribution_by": "task16-codex-researcher"
+    },
+    {
+      "app_id": 95,
+      "url": "https://docs.reducto.ai/pricing/index.md",
+      "kind": "primary_docs",
+      "scope": "Reducto document processing API and agent integrations; public documentary research, no execution",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor-controlled documentation/help/product domain matching roster product; ownership is researcher attribution, requires independent review",
+      "attribution_by": "task16-codex-researcher"
+    },
+    {
+      "app_id": 96,
+      "url": "https://docs.devin.ai/api-reference/getting-started/teams-quickstart.md",
+      "kind": "primary_docs",
+      "scope": "Devin API and callable Devin MCP server; outgoing MCP clients distinguished; public documentary research, no execution",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor-controlled documentation/help/product domain matching roster product; ownership is researcher attribution, requires independent review",
+      "attribution_by": "task16-codex-researcher"
+    },
+    {
+      "app_id": 96,
+      "url": "https://docs.devin.ai/api-reference/v3/overview.md",
+      "kind": "primary_docs",
+      "scope": "Devin API and callable Devin MCP server; outgoing MCP clients distinguished; public documentary research, no execution",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor-controlled documentation/help/product domain matching roster product; ownership is researcher attribution, requires independent review",
+      "attribution_by": "task16-codex-researcher"
+    },
+    {
+      "app_id": 100,
+      "url": "https://developers.grain.com/authentication.html",
+      "kind": "primary_docs",
+      "scope": "Grain personal/workspace APIs and callable MCP server; public documentary research, no execution",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor-controlled documentation/help/product domain matching roster product; ownership is researcher attribution, requires independent review",
+      "attribution_by": "task16-codex-researcher"
+    },
+    {
+      "app_id": 100,
+      "url": "https://developers.grain.com/mcp/claude-setup.html",
+      "kind": "primary_docs",
+      "scope": "Grain personal/workspace APIs and callable MCP server; public documentary research, no execution",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor-controlled documentation/help/product domain matching roster product; ownership is researcher attribution, requires independent review",
+      "attribution_by": "task16-codex-researcher"
+    }
+  ]
+}

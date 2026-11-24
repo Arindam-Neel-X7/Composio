@@ -1,0 +1,17 @@
+# Reference
+## Pages
+- [Changelog](https://docs.reducto.ai/reference/changelog/index.md) — Release notes for the Reducto hosted API and Studio
+- [Checking API Health & Usage](https://docs.reducto.ai/reference/checking-api-health/index.md) — Check Reducto hosted API availability, usage, and throttling signals
+- [Citation Location](https://docs.reducto.ai/reference/cite/index.md) — Locate exact bounding boxes for text citations in parsed documents
+- [Usage and Pricing](https://docs.reducto.ai/reference/credit-usage/index.md) — Understanding how Reducto measures and bills API usage across products
+- [Error Codes](https://docs.reducto.ai/reference/error-codes/index.md) — Understanding and handling Reducto API errors
+- [Frequently Asked Questions](https://docs.reducto.ai/reference/faq/index.md) — Common questions about using Reducto
+- [Glossary](https://docs.reducto.ai/reference/glossary/index.md) — Key terms and concepts in Reducto
+- [Legacy Credit Usage](https://docs.reducto.ai/reference/legacy-credit-usage/index.md) — Credit rates that applied before the September 1, 2026 pricing change
+- [Model Versions](https://docs.reducto.ai/reference/model-versions/index.md) — Current model versions and status
+- [Per-Page Billing Breakdown](https://docs.reducto.ai/reference/page-billing-breakdown/index.md) — Understand exactly which billing features were applied to each page of your document
+- [Pricing Migration Guide](https://docs.reducto.ai/reference/pricing-migration/index.md) — How Reducto's move from credit-based billing to per-product pricing affects you
+- [Rate Limits](https://docs.reducto.ai/reference/rate-limits/index.md)
+- [Concurrency Throttle (Legacy)](https://docs.reducto.ai/reference/throttling/index.md) — How Reducto queues parallel legacy Parse work per account, baselines by tier, and when you'll see slow P90
+- [Usage Export API](https://docs.reducto.ai/reference/usage-export-api/index.md) — Programmatically export usage data from your Reducto account
+- [Version Pinning](https://docs.reducto.ai/reference/version-pinning/index.md) — How Reducto model versioning works and how to pin versions

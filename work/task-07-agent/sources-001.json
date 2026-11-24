@@ -1,0 +1,456 @@
+{
+  "sources": [
+    {
+      "app_id": 1,
+      "url": "https://developer.salesforce.com/docs/atlas.en-us.api_rest.meta/api_rest/intro_what_is_rest_api.htm",
+      "kind": "primary_docs",
+      "scope": "Salesforce CRM REST API, OAuth 2.0, Developer Edition/Sandbox access, and official Salesforce MCP servers",
+      "environments": [],
+      "attribution_basis": "Vendor-controlled official documentation or product page",
+      "attribution_by": "task07-research-agent-gemini"
+    },
+    {
+      "app_id": 1,
+      "url": "https://developer.salesforce.com/docs/atlas.en-us.api_rest.meta/api_rest/intro_supported_editions.htm",
+      "kind": "primary_docs",
+      "scope": "Salesforce CRM REST API, OAuth 2.0, Developer Edition/Sandbox access, and official Salesforce MCP servers",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor-controlled official documentation or product page",
+      "attribution_by": "task07-research-agent-gemini"
+    },
+    {
+      "app_id": 1,
+      "url": "https://developer.salesforce.com/docs/atlas.en-us.api_rest.meta/api_rest/intro_understanding_oauth.htm",
+      "kind": "primary_docs",
+      "scope": "Salesforce CRM REST API, OAuth 2.0, Developer Edition/Sandbox access, and official Salesforce MCP servers",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor-controlled official documentation or product page",
+      "attribution_by": "task07-research-agent-gemini"
+    },
+    {
+      "app_id": 1,
+      "url": "https://developer.salesforce.com/signup",
+      "kind": "official_product_page",
+      "scope": "Salesforce CRM REST API, OAuth 2.0, Developer Edition/Sandbox access, and official Salesforce MCP servers",
+      "environments": [
+        "testing"
+      ],
+      "attribution_basis": "Vendor-controlled official documentation or product page",
+      "attribution_by": "task07-research-agent-gemini"
+    },
+    {
+      "app_id": 1,
+      "url": "https://github.com/salesforcecli/mcp",
+      "kind": "official_repository",
+      "scope": "Salesforce CRM REST API, OAuth 2.0, Developer Edition/Sandbox access, and official Salesforce MCP servers",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Official Salesforce CLI GitHub organization repository",
+      "attribution_by": "task07-research-agent-gemini"
+    },
+    {
+      "app_id": 2,
+      "url": "https://developers.hubspot.com/developer-platform-basics",
+      "kind": "official_product_page",
+      "scope": "HubSpot CRM APIs and remote CRM MCP; developer testing and authorized production tenants; current and explicitly labeled legacy auth; plan-specific capabilities not generalized",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor-controlled official documentation or product page",
+      "attribution_by": "task07-research-agent-gemini"
+    },
+    {
+      "app_id": 2,
+      "url": "https://developers.hubspot.com/docs/apps/developer-platform/build-apps/authentication/overview",
+      "kind": "primary_docs",
+      "scope": "HubSpot CRM APIs and remote CRM MCP; developer testing and authorized production tenants; current and explicitly labeled legacy auth; plan-specific capabilities not generalized",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor-controlled official documentation or product page",
+      "attribution_by": "task07-research-agent-gemini"
+    },
+    {
+      "app_id": 2,
+      "url": "https://developers.hubspot.com/docs/apps/legacy-apps/private-apps/overview",
+      "kind": "primary_docs",
+      "scope": "HubSpot CRM APIs and remote CRM MCP; developer testing and authorized production tenants; current and explicitly labeled legacy auth; plan-specific capabilities not generalized",
+      "environments": [
+        "production"
+      ],
+      "attribution_basis": "Vendor-controlled official documentation or product page",
+      "attribution_by": "task07-research-agent-gemini"
+    },
+    {
+      "app_id": 2,
+      "url": "https://developers.hubspot.com/docs/api-reference/latest/overview",
+      "kind": "primary_docs",
+      "scope": "HubSpot CRM APIs and remote CRM MCP; developer testing and authorized production tenants; current and explicitly labeled legacy auth; plan-specific capabilities not generalized",
+      "environments": [],
+      "attribution_basis": "Vendor-controlled official documentation or product page",
+      "attribution_by": "task07-research-agent-gemini"
+    },
+    {
+      "app_id": 2,
+      "url": "https://developers.hubspot.com/docs/apps/developer-platform/build-apps/integrate-with-the-remote-hubspot-mcp-server",
+      "kind": "primary_docs",
+      "scope": "HubSpot CRM APIs and remote CRM MCP; developer testing and authorized production tenants; current and explicitly labeled legacy auth; plan-specific capabilities not generalized",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor-controlled official documentation or product page",
+      "attribution_by": "task07-research-agent-gemini"
+    },
+    {
+      "app_id": 2,
+      "url": "https://www.hubspot.com/pricing/crm",
+      "kind": "official_product_page",
+      "scope": "HubSpot CRM APIs and remote CRM MCP; developer testing and authorized production tenants; current and explicitly labeled legacy auth; plan-specific capabilities not generalized",
+      "environments": [
+        "production"
+      ],
+      "attribution_basis": "Vendor-controlled official documentation or product page",
+      "attribution_by": "task07-research-agent-gemini"
+    },
+    {
+      "app_id": 3,
+      "url": "https://pipedrive.readme.io/llms.txt",
+      "kind": "primary_docs",
+      "scope": "Pipedrive CRM REST API (v1/v2), OAuth 2.0/API token auth, developer sandbox, paid plans, and native MCP server",
+      "environments": [],
+      "attribution_basis": "Vendor-controlled official documentation or product page",
+      "attribution_by": "task07-research-agent-gemini"
+    },
+    {
+      "app_id": 3,
+      "url": "https://pipedrive.readme.io/docs/core-api-concepts-authentication",
+      "kind": "primary_docs",
+      "scope": "Pipedrive CRM REST API (v1/v2), OAuth 2.0/API token auth, developer sandbox, paid plans, and native MCP server",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor-controlled official documentation or product page",
+      "attribution_by": "task07-research-agent-gemini"
+    },
+    {
+      "app_id": 3,
+      "url": "https://pipedrive.readme.io/docs/oauth-authorization",
+      "kind": "primary_docs",
+      "scope": "Pipedrive CRM REST API (v1/v2), OAuth 2.0/API token auth, developer sandbox, paid plans, and native MCP server",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor-controlled official documentation or product page",
+      "attribution_by": "task07-research-agent-gemini"
+    },
+    {
+      "app_id": 3,
+      "url": "https://pipedrive.readme.io/docs/marketplace-creating-a-proper-app",
+      "kind": "primary_docs",
+      "scope": "Pipedrive CRM REST API (v1/v2), OAuth 2.0/API token auth, developer sandbox, paid plans, and native MCP server",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor-controlled official documentation or product page",
+      "attribution_by": "task07-research-agent-gemini"
+    },
+    {
+      "app_id": 3,
+      "url": "https://www.pipedrive.com/en/pricing",
+      "kind": "official_product_page",
+      "scope": "Pipedrive CRM REST API (v1/v2), OAuth 2.0/API token auth, developer sandbox, paid plans, and native MCP server",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor-controlled official documentation or product page",
+      "attribution_by": "task07-research-agent-gemini"
+    },
+    {
+      "app_id": 4,
+      "url": "https://docs.attio.com/rest-api/overview",
+      "kind": "primary_docs",
+      "scope": "Attio CRM REST API v2, OAuth 2.0/access token auth, Free/paid plans, and official hosted MCP server",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor-controlled official documentation or product page",
+      "attribution_by": "task07-research-agent-gemini"
+    },
+    {
+      "app_id": 4,
+      "url": "https://docs.attio.com/rest-api/guides/authentication",
+      "kind": "primary_docs",
+      "scope": "Attio CRM REST API v2, OAuth 2.0/access token auth, Free/paid plans, and official hosted MCP server",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor-controlled official documentation or product page",
+      "attribution_by": "task07-research-agent-gemini"
+    },
+    {
+      "app_id": 4,
+      "url": "https://attio.com/pricing",
+      "kind": "official_product_page",
+      "scope": "Attio CRM REST API v2, OAuth 2.0/access token auth, Free/paid plans, and official hosted MCP server",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor-controlled official documentation or product page",
+      "attribution_by": "task07-research-agent-gemini"
+    },
+    {
+      "app_id": 5,
+      "url": "https://github.com/twentyhq/twenty",
+      "kind": "official_repository",
+      "scope": "Twenty open-source CRM REST/GraphQL APIs, API key/OAuth auth, self-hosted and cloud plans, and MCP ecosystem",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Official Twenty open-source CRM repository",
+      "attribution_by": "task07-research-agent-gemini"
+    },
+    {
+      "app_id": 5,
+      "url": "https://docs.twenty.com/developers/extend/api",
+      "kind": "primary_docs",
+      "scope": "Twenty open-source CRM REST/GraphQL APIs, API key/OAuth auth, self-hosted and cloud plans, and MCP ecosystem",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor-controlled official documentation or product page",
+      "attribution_by": "task07-research-agent-gemini"
+    },
+    {
+      "app_id": 5,
+      "url": "https://twenty.com/pricing",
+      "kind": "official_product_page",
+      "scope": "Twenty open-source CRM REST/GraphQL APIs, API key/OAuth auth, self-hosted and cloud plans, and MCP ecosystem",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor-controlled official documentation or product page",
+      "attribution_by": "task07-research-agent-gemini"
+    },
+    {
+      "app_id": 5,
+      "url": "https://github.com/jezweb/twenty-mcp",
+      "kind": "community_repository",
+      "scope": "Twenty open-source CRM REST/GraphQL APIs, API key/OAuth auth, self-hosted and cloud plans, and MCP ecosystem",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Third-party community GitHub repository implementing a Twenty CRM MCP server",
+      "attribution_by": "task07-research-agent-gemini"
+    },
+    {
+      "app_id": 6,
+      "url": "https://developers.podio.com/",
+      "kind": "primary_docs",
+      "scope": "Podio REST API, OAuth 2.0/App auth flows, Free/paid plans, and bounded MCP discovery",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor-controlled official documentation or product page",
+      "attribution_by": "task07-research-agent-gemini"
+    },
+    {
+      "app_id": 6,
+      "url": "https://developers.podio.com/authentication",
+      "kind": "primary_docs",
+      "scope": "Podio REST API, OAuth 2.0/App auth flows, Free/paid plans, and bounded MCP discovery",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor-controlled official documentation or product page",
+      "attribution_by": "task07-research-agent-gemini"
+    },
+    {
+      "app_id": 6,
+      "url": "https://developers.podio.com/doc",
+      "kind": "primary_docs",
+      "scope": "Podio REST API, OAuth 2.0/App auth flows, Free/paid plans, and bounded MCP discovery",
+      "environments": [],
+      "attribution_basis": "Vendor-controlled official documentation or product page",
+      "attribution_by": "task07-research-agent-gemini"
+    },
+    {
+      "app_id": 6,
+      "url": "https://www.podio.com/site/pricing",
+      "kind": "official_product_page",
+      "scope": "Podio REST API, OAuth 2.0/App auth flows, Free/paid plans, and bounded MCP discovery",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor-controlled official documentation or product page",
+      "attribution_by": "task07-research-agent-gemini"
+    },
+    {
+      "app_id": 7,
+      "url": "https://www.zoho.com/crm/developer/docs/api/v8/",
+      "kind": "primary_docs",
+      "scope": "Zoho CRM REST API (v8), OAuth 2.0 auth, Sandbox/Free/paid editions, and official Zoho MCP servers",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor-controlled official documentation or product page",
+      "attribution_by": "task07-research-agent-gemini"
+    },
+    {
+      "app_id": 7,
+      "url": "https://www.zoho.com/crm/developer/docs/api/v8/oauth-overview.html",
+      "kind": "primary_docs",
+      "scope": "Zoho CRM REST API (v8), OAuth 2.0 auth, Sandbox/Free/paid editions, and official Zoho MCP servers",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor-controlled official documentation or product page",
+      "attribution_by": "task07-research-agent-gemini"
+    },
+    {
+      "app_id": 7,
+      "url": "https://www.zoho.com/crm/pricing.html",
+      "kind": "official_product_page",
+      "scope": "Zoho CRM REST API (v8), OAuth 2.0 auth, Sandbox/Free/paid editions, and official Zoho MCP servers",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor-controlled official documentation or product page",
+      "attribution_by": "task07-research-agent-gemini"
+    },
+    {
+      "app_id": 7,
+      "url": "https://www.zoho.com/mcp/",
+      "kind": "official_product_page",
+      "scope": "Zoho CRM REST API (v8), OAuth 2.0 auth, Sandbox/Free/paid editions, and official Zoho MCP servers",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor-controlled official documentation or product page",
+      "attribution_by": "task07-research-agent-gemini"
+    },
+    {
+      "app_id": 8,
+      "url": "https://developer.close.com/",
+      "kind": "primary_docs",
+      "scope": "Close CRM REST API, API key/OAuth 2.0 auth, trial/paid plans, and official hosted MCP server",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor-controlled official documentation or product page",
+      "attribution_by": "task07-research-agent-gemini"
+    },
+    {
+      "app_id": 8,
+      "url": "https://developer.close.com/topics/authentication/",
+      "kind": "primary_docs",
+      "scope": "Close CRM REST API, API key/OAuth 2.0 auth, trial/paid plans, and official hosted MCP server",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor-controlled official documentation or product page",
+      "attribution_by": "task07-research-agent-gemini"
+    },
+    {
+      "app_id": 8,
+      "url": "https://developer.close.com/topics/oauth/",
+      "kind": "primary_docs",
+      "scope": "Close CRM REST API, API key/OAuth 2.0 auth, trial/paid plans, and official hosted MCP server",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor-controlled official documentation or product page",
+      "attribution_by": "task07-research-agent-gemini"
+    },
+    {
+      "app_id": 8,
+      "url": "https://www.close.com/pricing",
+      "kind": "official_product_page",
+      "scope": "Close CRM REST API, API key/OAuth 2.0 auth, trial/paid plans, and official hosted MCP server",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor-controlled official documentation or product page",
+      "attribution_by": "task07-research-agent-gemini"
+    },
+    {
+      "app_id": 9,
+      "url": "https://developer.copper.com/",
+      "kind": "primary_docs",
+      "scope": "Copper CRM Developer REST API, API key/OAuth 2.0 auth, trial/paid plans, and MCP discovery",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor-controlled official documentation or product page",
+      "attribution_by": "task07-research-agent-gemini"
+    },
+    {
+      "app_id": 9,
+      "url": "https://www.copper.com/pricing",
+      "kind": "official_product_page",
+      "scope": "Copper CRM Developer REST API, API key/OAuth 2.0 auth, trial/paid plans, and MCP discovery",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor-controlled official documentation or product page",
+      "attribution_by": "task07-research-agent-gemini"
+    },
+    {
+      "app_id": 10,
+      "url": "https://api.docs.dealcloud.com/",
+      "kind": "primary_docs",
+      "scope": "Intapp DealCloud REST API, OAuth 2.0 auth, enterprise licensing/sandbox, and official DealCloud MCP server",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor-controlled official documentation or product page",
+      "attribution_by": "task07-research-agent-gemini"
+    },
+    {
+      "app_id": 10,
+      "url": "https://www.intapp.com/dealcloud/",
+      "kind": "official_product_page",
+      "scope": "Intapp DealCloud REST API, OAuth 2.0 auth, enterprise licensing/sandbox, and official DealCloud MCP server",
+      "environments": [
+        "production"
+      ],
+      "attribution_basis": "Vendor-controlled official documentation or product page",
+      "attribution_by": "task07-research-agent-gemini"
+    }
+  ]
+}

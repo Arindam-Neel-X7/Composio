@@ -1,0 +1,212 @@
+# Plain Docs: Developer
+## Developer
+### GraphQL API
+- [Introduction](https://www.plain.com/docs/graphql/introduction.md): An overview of Plain's GraphQL API and the data model behind it.
+- [Authentication](https://www.plain.com/docs/graphql/authentication.md): Create a machine user and an API key, and scope it with fine-grained permissions.
+- [OAuth](https://www.plain.com/docs/graphql/oauth.md): Call the API as a user in your workspace after they sign in to your OAuth app.
+- [Schema](https://www.plain.com/docs/graphql/schema.md): Download the GraphQL schema for code generation, or read it in the API explorer.
+- [Pagination](https://www.plain.com/docs/graphql/pagination.md): Every collection in the API follows the Relay cursor pagination spec.
+- [Error handling](https://www.plain.com/docs/graphql/error-handling.md): GraphQL queries and mutations require different error handling.
+- [Error codes](https://www.plain.com/docs/graphql/error-codes.md): Look up what an error code from the Plain API means and how to handle it.
+- [AI feedback](https://www.plain.com/docs/graphql/ai-feedback.md): List the feedback your team has left on Customer Agent replies and other Plain AI features.
+- [Notes](https://www.plain.com/docs/graphql/notes.md): Notes are internal comments on a thread. They appear in the timeline but never reach the customer.
+- [Building your own ticket importer](https://www.plain.com/docs/graphql/custom-ticket-importer.md): Write your own importer to bring support history into Plain from a tool with no built-in importer.
+- [Attachments](https://www.plain.com/docs/graphql/attachments.md): How to upload attachments programmatically for messages and events in Plain.
+- [API explorer](https://www.plain.com/docs/graphql/api-explorer.md)
+- [GraphQL SDK](https://www.plain.com/docs/graphql/sdk.md): A typed SDK for Plain's GraphQL API, auto-generated from the schema.
+#### Customers
+- [Customers](https://www.plain.com/docs/graphql/customers.md): Customers are created automatically when someone contacts you, and you can also upsert them yourself.
+- [Fetch customers](https://www.plain.com/docs/graphql/customers/get.md): Fetch customers by ID, email, or external ID, or as a paginated collection.
+- [Upserting customers](https://www.plain.com/docs/graphql/customers/upsert.md): Learn how to create and update customers programmatically.
+- [Delete customers](https://www.plain.com/docs/graphql/customers/delete.md): Permanently delete a customer and their threads with the deleteCustomer mutation.
+- [Mark customer as spam](https://www.plain.com/docs/graphql/customers/spam.md): Flag a customer as spam to hide their threads and keep them out of your metrics.
+- [Customer groups](https://www.plain.com/docs/graphql/customers/customer-groups.md): Segment customers into named groups you define, separate from accounts.
+#### Accounts
+- [Accounts](https://www.plain.com/docs/graphql/accounts.md): Accounts are how you group the customers you support into the organizations that they belong to.
+- [Upserting accounts](https://www.plain.com/docs/graphql/accounts/upsert.md): Create or update an account, keyed on the external ID it has in your own product.
+- [Get accounts](https://www.plain.com/docs/graphql/accounts/get.md): Fetch accounts by ID or external ID, or as a paginated collection.
+- [Delete an account](https://www.plain.com/docs/graphql/accounts/delete.md): Delete an account, unlinking its customers and removing its account fields.
+- [Account fields](https://www.plain.com/docs/graphql/accounts/account-fields.md): Attach custom fields to an account, such as plan, MRR, or account owner.
+- [Add customers to accounts](https://www.plain.com/docs/graphql/accounts/add-customers.md): Add a customer to one or more accounts in a single call.
+- [Remove customers from accounts](https://www.plain.com/docs/graphql/accounts/remove-customers.md): Remove a customer from one or more accounts in a single call.
+- [Set customer accounts](https://www.plain.com/docs/graphql/accounts/set-customer-accounts.md): Replace all of a customer's accounts at once, rather than adding or removing individually.
+#### Threads
+- [Threads](https://www.plain.com/docs/graphql/threads.md): Threads are the core of Plain's data model. Every customer conversation becomes one.
+- [Fetch threads](https://www.plain.com/docs/graphql/threads/get.md): Fetch threads by ID or external ID, list them with filters, or search their contents.
+- [Create threads](https://www.plain.com/docs/graphql/threads/create.md): Create a thread from the API, for contact forms or proactive outreach.
+- [Importing threads](https://www.plain.com/docs/graphql/threads/import.md): Import historical threads and their messages, preserving original timestamps.
+- [Update thread attributes](https://www.plain.com/docs/graphql/threads/update.md): Change individual thread attributes such as title, priority, customer, or account.
+- [Delete a thread](https://www.plain.com/docs/graphql/threads/delete.md): Permanently delete a thread and all its associated data from Plain.
+- [Assignment](https://www.plain.com/docs/graphql/threads/assignment.md): Assign a thread to a user or a machine user, add co-assignees, or unassign it.
+- [Escalating threads](https://www.plain.com/docs/graphql/threads/escalation.md): Move a thread up an escalation path, or set which path it follows.
+- [Changing status](https://www.plain.com/docs/graphql/threads/status-changes.md): Move a thread between Todo, Snoozed, and Done, and read what each status means.
+- [Thread fields](https://www.plain.com/docs/graphql/threads/thread-fields.md): Extend the thread model with your own typed fields, defined by a schema.
+- [Autoresponders](https://www.plain.com/docs/graphql/threads/autoresponders.md): Build an autoresponder that decides what to send, rather than using a fixed workspace reply.
+#### Tiers
+- [Tiers & SLAs](https://www.plain.com/docs/graphql/tiers.md): Tiers group accounts so you can attach different SLA targets to each.
+- [Get tiers](https://www.plain.com/docs/graphql/tiers/get.md): Fetch tiers by ID or as a paginated collection, with their SLA configuration.
+- [Update account tier](https://www.plain.com/docs/graphql/tiers/update-account-tier.md): Set the tier for an account explicitly, rather than inheriting it.
+- [Add accounts to tiers](https://www.plain.com/docs/graphql/tiers/add-members.md): Add accounts to a tier in a single mutation.
+- [Remove accounts from tiers](https://www.plain.com/docs/graphql/tiers/remove-members.md): Remove accounts from the tiers they belong to.
+- [Service level agreements](https://www.plain.com/docs/graphql/tiers/service-level-agreements.md): Set first response, next response, and resolution time SLA targets per tier and per priority.
+#### SLA policies
+- [SLA policies](https://www.plain.com/docs/graphql/sla-policies.md): SLA policies are named sets of SLA targets that you create once and apply to threads with a workflow or the API.
+- [Get SLA policies](https://www.plain.com/docs/graphql/sla-policies/get.md): List the SLA policies in your workspace or fetch one by ID.
+- [Manage SLA policies](https://www.plain.com/docs/graphql/sla-policies/manage.md): Create, update, and delete SLA policies and their targets.
+- [Apply SLA policies](https://www.plain.com/docs/graphql/sla-policies/apply-to-thread.md): Set or remove the SLA policy on a thread.
+#### Business hours
+- [Business hours](https://www.plain.com/docs/graphql/business-hours.md): Read business hours schedules and manage the overrides that change their hours on specific dates.
+- [Manage business hours overrides](https://www.plain.com/docs/graphql/business-hours/overrides.md): List, create, update, and delete overrides that replace a schedule's weekly hours for holidays and one-off closures.
+#### Reporting
+- [Reporting](https://www.plain.com/docs/graphql/reporting.md): Query Plain Insights metrics from the API, with filters, group-by, percentiles, and the thread IDs behind each number.
+- [Reporting metrics reference](https://www.plain.com/docs/graphql/reporting/metrics.md): Every metric name the Reporting API accepts, what it measures, its unit, and which queries support it.
+- [Filter and group reporting queries](https://www.plain.com/docs/graphql/reporting/filters.md): Narrow Reporting API queries with filters and AND, OR, and NOT, and split results by a dimension with groupBy and topN.
+- [Get a time series metric](https://www.plain.com/docs/graphql/reporting/time-series.md): Fetch a metric as one value per hour, day, week, or longer bucket with threadTimeSeriesMetric.
+- [Get a single value metric](https://www.plain.com/docs/graphql/reporting/single-value.md): Fetch one value for a whole date range, overall or per group, with threadSingleValueMetric.
+- [Get a heatmap](https://www.plain.com/docs/graphql/reporting/heatmap.md): Fetch thread counts by day of week and hour of day, in UTC, with threadHeatmapMetric.
+#### Events
+- [Events](https://www.plain.com/docs/graphql/events.md): Log important events to have the full picture of what happened in Plain.
+- [Create a customer event](https://www.plain.com/docs/graphql/events/create-customer-event.md): Add a custom event to every thread belonging to a customer.
+- [Create a thread event](https://www.plain.com/docs/graphql/events/create-thread-event.md): Add a custom event to a single thread's timeline.
+#### Labels
+- [Labels](https://www.plain.com/docs/graphql/labels.md): Labels categorize threads. Each one references a label type that defines its name, icon, and color.
+- [Add labels](https://www.plain.com/docs/graphql/labels/add.md): Add one or more labels to a thread by label type ID.
+- [Remove labels](https://www.plain.com/docs/graphql/labels/remove.md): Remove labels from a thread by label ID.
+- [Manage label types](https://www.plain.com/docs/graphql/labels/label-types.md): Create, update, archive, and fetch the label types available in your workspace.
+#### Messaging
+- [Messaging](https://www.plain.com/docs/graphql/messaging.md): Send and reply to customer messages over email and chat from the API.
+- [Reply to threads](https://www.plain.com/docs/graphql/messaging/reply-to-thread.md): Reply on a thread over whichever channel it already uses.
+- [Send new emails](https://www.plain.com/docs/graphql/messaging/send-email.md): Start a new outbound email to a customer, creating a thread for it.
+- [Reply to emails](https://www.plain.com/docs/graphql/messaging/reply-email.md): Reply to a specific inbound email with the replyToEmail mutation.
+- [Suggested replies](https://www.plain.com/docs/graphql/messaging/suggested-replies.md): Add a suggested reply to a thread for a user to review, edit, and send.
+#### Snippets
+- [Snippets](https://www.plain.com/docs/graphql/snippets.md): Snippets are reusable pieces of text that users insert into a reply with a few keystrokes.
+- [Fetch snippets](https://www.plain.com/docs/graphql/snippets/get.md): Fetch snippets by ID or as a paginated collection.
+- [Create a snippet](https://www.plain.com/docs/graphql/snippets/create.md): Create a snippet, with a name to find it by and optional dynamic variables.
+- [Update a snippet](https://www.plain.com/docs/graphql/snippets/update.md): Change a snippet's name, text, or group using field-level wrapper inputs.
+- [Delete a snippet](https://www.plain.com/docs/graphql/snippets/delete.md): Soft-delete a snippet, hiding it from the picker while keeping reply history intact.
+#### Tasks
+- [Tasks](https://www.plain.com/docs/graphql/tasks.md): Tasks are internal reminders and follow-ups, tracked alongside threads rather than on them.
+- [Fetch tasks](https://www.plain.com/docs/graphql/tasks/get.md): Fetch tasks by ID, by their short reference, or as a paginated collection.
+- [Create a task](https://www.plain.com/docs/graphql/tasks/create.md): Create a task with a title, and optionally a description, priority, assignee, and due date.
+- [Update a task](https://www.plain.com/docs/graphql/tasks/update.md): Change individual fields on a task, including who and what it is linked to.
+- [Delete a task](https://www.plain.com/docs/graphql/tasks/delete.md): Soft-delete a task, removing it from the active list but keeping it queryable by ID.
+#### Knowledge gaps
+- [Knowledge gaps](https://www.plain.com/docs/graphql/knowledge-gaps.md): Knowledge gaps are questions customers keep asking that your knowledge sources do not answer, detected by the Customer Agent and tracked as tasks.
+- [Fetch knowledge gaps](https://www.plain.com/docs/graphql/knowledge-gaps/get.md): List the knowledge gaps in your workspace or fetch one by ID.
+- [Record a knowledge gap signal](https://www.plain.com/docs/graphql/knowledge-gaps/create-signal.md): Tell Plain a thread revealed a question your knowledge sources do not answer, so it can group it into a knowledge gap.
+#### Webhook targets
+- [Webhook targets](https://www.plain.com/docs/graphql/webhook-targets.md): A webhook target is an HTTP endpoint Plain delivers events to, subscribed to the events you choose.
+- [Fetch webhook targets](https://www.plain.com/docs/graphql/webhook-targets/get.md): Fetch webhook targets by ID or as a paginated collection.
+- [Create a webhook target](https://www.plain.com/docs/graphql/webhook-targets/create.md): Register an HTTP endpoint to receive webhook events, and choose which events it gets.
+- [Update a webhook target](https://www.plain.com/docs/graphql/webhook-targets/update.md): Change a target's URL, pause it, or move it to a newer schema version.
+- [Delete a webhook target](https://www.plain.com/docs/graphql/webhook-targets/delete.md): Delete a webhook target and stop all deliveries to that endpoint.
+- [Inspect delivery attempts](https://www.plain.com/docs/graphql/webhook-targets/delivery-attempts.md): Inspect each delivery attempt to a webhook target, including failures and retries.
+#### Discussions
+- [Discussions](https://www.plain.com/docs/graphql/discussions.md): A discussion is an internal Slack thread, email chain, agent session, or workflow task.
+- [Fetch discussions](https://www.plain.com/docs/graphql/discussions/get.md): Fetch a discussion by ID or a filtered list, including messages and permissions.
+- [Start a discussion](https://www.plain.com/docs/graphql/discussions/create.md): Open a Slack or email side-conversation attached to an existing thread.
+- [Send a discussion message](https://www.plain.com/docs/graphql/discussions/send-message.md): Post a new message into an existing discussion, in its original channel.
+#### Help center
+- [Help Center](https://www.plain.com/docs/graphql/help-center.md): Publish and manage Help Center articles, groups, and navigation through the API.
+- [Fetch help centers and articles](https://www.plain.com/docs/graphql/help-center/get.md): Fetch help centers, and fetch articles by slug or ID.
+- [Manage articles](https://www.plain.com/docs/graphql/help-center/manage-articles.md): Create, update, publish, and delete individual Help Center articles.
+- [Manage article groups](https://www.plain.com/docs/graphql/help-center/manage-article-groups.md): Create, update, and delete the nested groups that organize Help Center articles.
+- [Manage the navigation](https://www.plain.com/docs/graphql/help-center/navigation.md): Set the order of groups and articles in your Help Center navigation.
+- [Access & authentication](https://www.plain.com/docs/graphql/help-center/authentication.md): Control who can read your Help Center, from fully public to signed-in customers only.
+### Building Agents
+- [Set up an agent](https://www.plain.com/docs/agents.md): Create a machine user for your agent, give it an API key, and start receiving events from Plain.
+- [Interacting in discussions](https://www.plain.com/docs/agents/discussions.md): Let users talk to your agent in Ask Agent, receive their messages as webhooks, and reply through the API.
+- [Working on threads](https://www.plain.com/docs/agents/threads.md): Listen for thread events, check whether your agent is assigned, and read, reply to, and hand off threads through the API.
+- [Tool calls](https://www.plain.com/docs/agents/tool-calls.md): Show users which tools your agent ran, and in discussions, wait for approval or ask a question before carrying on.
+- [Suggesting replies](https://www.plain.com/docs/agents/suggested-replies.md): Draft a reply on a thread for a user to review, edit, and send, instead of replying to the customer directly.
+- [Working with notes](https://www.plain.com/docs/agents/notes.md): Get a webhook when a user mentions your agent in a note on a thread, and reply with a note of your own.
+- [Using knowledge](https://www.plain.com/docs/agents/searching-knowledge.md): Search Help Center articles and indexed documents from your agent and put the results in its prompt.
+- [Example agents](https://www.plain.com/docs/agents/examples.md): Working agents built on the Plain API that you can run locally and copy from.
+### Agent integrations
+- [Agent integrations](https://www.plain.com/docs/integrations.md): Connect Plain to your editor or a local assistant.
+- [MCP server](https://www.plain.com/docs/integrations/mcp-server.md): Connect Claude Code, Cursor, or any MCP client to your Plain workspace over the Model Context Protocol.
+- [Agent skill](https://www.plain.com/docs/integrations/agent-skill.md): Connect Plain to AI coding agents like Claude Code, Codex, Amp, and OpenCode using the Plain Support Skill.
+- [Cursor](https://www.plain.com/docs/integrations/cursor.md): Ask Cursor about your product's code from inside a Plain thread.
+### Webhooks
+- [Webhooks](https://www.plain.com/docs/webhooks.md): Get notified when something happens in your workspace, and react to it in your own systems.
+- [Webhook versions](https://www.plain.com/docs/webhooks/versions.md): Every webhook target is pinned to a schema version. This page lists each version and what changed.
+- [Webhooks SDK](https://www.plain.com/docs/webhooks/sdk.md): Webhook parsing and signature verification for Plain webhooks.
+#### Webhook events
+- [Thread created](https://www.plain.com/docs/webhooks/thread-created.md): Fired when a new thread is created in your workspace, whatever channel it arrived on.
+- [Thread status transitioned](https://www.plain.com/docs/webhooks/thread-status-transitioned.md): Fired when a thread moves between Todo, Snoozed, Done, or Ignored.
+- [Thread assignment transitioned](https://www.plain.com/docs/webhooks/thread-assignment-transitioned.md): Fired when a thread's assignee changes or the thread is unassigned.
+- [Thread labels changed](https://www.plain.com/docs/webhooks/thread-labels-changed.md): Fired when labels are added to or removed from a thread.
+- [Thread priority changed](https://www.plain.com/docs/webhooks/thread-priority-changed.md): Fired when the priority of a thread changes.
+- [Note created](https://www.plain.com/docs/webhooks/thread-note-created.md): Fired when an internal note is added to a thread.
+- [Note mention created](https://www.plain.com/docs/webhooks/thread-note-mention-created.md): Fired when a note on a thread mentions a machine user.
+- [Email received](https://www.plain.com/docs/webhooks/thread-email-received.md): Fired when an inbound email arrives in your workspace.
+- [Email sent](https://www.plain.com/docs/webhooks/thread-email-sent.md): Fired when an email is sent from your workspace.
+- [Slack message received](https://www.plain.com/docs/webhooks/thread-slack-message-received.md): Fired when a Slack message arrives in a connected channel.
+- [Slack message sent](https://www.plain.com/docs/webhooks/thread-slack-message-sent.md): Fired when a Slack message is sent from your workspace.
+- [Slack message updated](https://www.plain.com/docs/webhooks/thread-slack-message-updated.md): Fired when a Slack message on a thread is edited, deleted or reacted to.
+- [Discord message received](https://www.plain.com/docs/webhooks/thread-discord-message-received.md): Fired when a customer sends a Discord message on a thread.
+- [Discord message sent](https://www.plain.com/docs/webhooks/thread-discord-message-sent.md): Fired when a Discord message is sent on a thread.
+- [Discord message updated](https://www.plain.com/docs/webhooks/thread-discord-message-updated.md): Fired when a Discord message on a thread is edited or deleted.
+- [Microsoft Teams message received](https://www.plain.com/docs/webhooks/thread-ms-teams-message-received.md): Fired when a customer sends a Microsoft Teams message on a thread.
+- [Microsoft Teams message sent](https://www.plain.com/docs/webhooks/thread-ms-teams-message-sent.md): Fired when a Microsoft Teams message is sent on a thread.
+- [Chat sent](https://www.plain.com/docs/webhooks/thread-chat-sent.md): Fired when a chat message is sent to a customer on a thread.
+- [Chat received](https://www.plain.com/docs/webhooks/thread-chat-received.md): Fired when a customer sends a chat message, with the payload schema and an example.
+- [Thread field created](https://www.plain.com/docs/webhooks/thread-field-created.md): Fired when a thread field is set on a thread for the first time.
+- [Thread field updated](https://www.plain.com/docs/webhooks/thread-field-updated.md): Fired when the value of a thread field changes.
+- [Thread field deleted](https://www.plain.com/docs/webhooks/thread-field-deleted.md): Fired when a thread field is removed from a thread.
+- [Thread SLA status transitioned](https://www.plain.com/docs/webhooks/thread-service-level-agreement-status-transitioned.md): Fired when the status of an SLA attached to a thread changes, including breaches.
+- [Thread account updated](https://www.plain.com/docs/webhooks/thread-account-updated.md): Fired when the account a thread belongs to is changed, added or removed.
+- [Thread locked](https://www.plain.com/docs/webhooks/thread-locked.md): Fired when a thread is locked and can no longer receive new customer messages.
+- [Discussion created](https://www.plain.com/docs/webhooks/discussion-created.md): Fired when a discussion is started on a thread.
+- [Discussion message created](https://www.plain.com/docs/webhooks/discussion-message-created.md): Fired when a message is posted in a discussion.
+- [Tool call approval requested](https://www.plain.com/docs/webhooks/discussion-tool-call-approval-requested.md): Fired when your agent asks a user to approve one of its tool calls.
+- [Tool call approval resolved](https://www.plain.com/docs/webhooks/discussion-tool-call-approval-resolved.md): Fired when a user approves or denies a tool call made by your agent.
+- [Question resolved](https://www.plain.com/docs/webhooks/discussion-question-resolved.md): Fired when a user answers or dismisses a question card your agent asked.
+- [Discussion turn stop requested](https://www.plain.com/docs/webhooks/discussion-turn-stop-requested.md): Fired when someone requests that an agent stop its current turn.
+- [Task created](https://www.plain.com/docs/webhooks/task-created.md): Fired when a new task is created in your workspace.
+- [Task updated](https://www.plain.com/docs/webhooks/task-updated.md): Fired when a task's title, description, priority, account, or assignment changes.
+- [Task status transitioned](https://www.plain.com/docs/webhooks/task-status-transitioned.md): Fired when a task's status changes, for example moving to done or canceled.
+- [Task deleted](https://www.plain.com/docs/webhooks/task-deleted.md): Fired when a task in your workspace is deleted.
+- [Account created](https://www.plain.com/docs/webhooks/account-created.md): Fired when an account is created in your workspace.
+- [Account updated](https://www.plain.com/docs/webhooks/account-updated.md): Fired when the details of an account in your workspace change.
+- [Account deleted](https://www.plain.com/docs/webhooks/account-deleted.md): Fired when an account in your workspace is deleted.
+- [Account membership changed](https://www.plain.com/docs/webhooks/account-membership-changed.md): Fired when a customer is added to or removed from an account.
+- [Account field created](https://www.plain.com/docs/webhooks/account-field-created.md): Fired when a field is set on an account for the first time.
+- [Account field updated](https://www.plain.com/docs/webhooks/account-field-updated.md): Fired when the value of a field on an account changes.
+- [Account field deleted](https://www.plain.com/docs/webhooks/account-field-deleted.md): Fired when a field is removed from an account.
+- [Customer created](https://www.plain.com/docs/webhooks/customer-created.md): Fired when a new customer is created in your workspace. Includes the payload schema and an example.
+- [Customer updated](https://www.plain.com/docs/webhooks/customer-updated.md): Fired when a customer is updated, including which changes trigger it.
+- [Customer deleted](https://www.plain.com/docs/webhooks/customer-deleted.md): Fired when a customer is deleted from your workspace. Includes the payload schema and an example.
+- [Customer changed](https://www.plain.com/docs/webhooks/customer-changed.md): Fired when a customer is created or updated, with the previous state on updates.
+- [Customer group membership changed](https://www.plain.com/docs/webhooks/customer-group-membership-changed.md): Fired when a customer is added to or removed from a customer group.
+- [Customer group changed](https://www.plain.com/docs/webhooks/customer-group-changed.md): Fired when a customer group is created, updated or deleted.
+- [Timeline entry changed](https://www.plain.com/docs/webhooks/timeline-entry-changed.md): Fired when a timeline entry is added, updated or removed.
+### Channels
+- [Headless portal](https://www.plain.com/docs/headless-portal.md): Build a support portal inside your own product using the Plain API, so customers read and reply to their threads without leaving your UI.
+- [Custom channels](https://www.plain.com/docs/custom-channels.md): Bring messages from any channel Plain does not support yet into Plain as threads.
+### Customer Cards
+- [Customer cards](https://www.plain.com/docs/customer-cards.md): Live context straight from your own systems when helping customers.
+- [Create a customer card](https://www.plain.com/docs/customer-cards/create-a-customer-card.md): Define the details of the customer card.
+- [Protocol](https://www.plain.com/docs/customer-cards/protocol.md): Learn how we request customer cards from your API and how to respond to these requests.
+- [Playground](https://www.plain.com/docs/customer-cards/playground.md)
+- [Examples](https://www.plain.com/docs/customer-cards/examples.md)
+### UI Components
+- [UI components](https://www.plain.com/docs/ui-components.md): Describe UI declaratively when creating threads, events, and customer cards.
+- [Badge](https://www.plain.com/docs/ui-components/badge.md): Useful for statuses or when you need to attract attention to something.
+- [Container](https://www.plain.com/docs/ui-components/container.md): Useful when you need to create a bit of structure.
+- [CopyButton](https://www.plain.com/docs/ui-components/copy-button.md): Useful if you have any IDs or other details you want to copy for use in messages or outside of Plain.
+- [Divider](https://www.plain.com/docs/ui-components/divider.md): Useful when you need a bit of structure.
+- [LinkButton](https://www.plain.com/docs/ui-components/link-button.md): Links out to an external tool, such as your own admin panel or payment provider.
+- [WorkflowButton](https://www.plain.com/docs/ui-components/workflow-button.md): Lets users trigger a workflow directly from a customer card.
+- [PlainText](https://www.plain.com/docs/ui-components/plain-text.md): Useful when you want to show any text that should not have any formatting (is not Markdown). If you want markdown please use [Text](/ui-components/text).
+- [Row](https://www.plain.com/docs/ui-components/row.md): Useful when you need to show two things next to each-other.
+- [Spacer](https://www.plain.com/docs/ui-components/spacer.md): Adds vertical space between components, in one of five fixed sizes.
+- [Text](https://www.plain.com/docs/ui-components/text.md): Renders a line of text, with optional size, color, and formatting.
+- [UI components SDK](https://www.plain.com/docs/ui-components/sdk.md): Helper functions for building Plain UI components with full type safety.
+### Security
+- [Request signing](https://www.plain.com/docs/request-signing.md): Verify that a webhook or customer card request came from Plain using its HMAC signature.
+- [mTLS](https://www.plain.com/docs/mtls.md): Plain presents a client certificate on outbound requests, so you can verify they came from Plain.
+- [Allowlist the IP addresses Plain sends requests from](https://www.plain.com/docs/ip-addresses.md): The fixed IP addresses Plain sends webhooks, customer card requests, and workflow HTTP requests from.
+### Changelog
+- [API and webhook updates](https://www.plain.com/docs/changelog.md): Updates to Plain's API, and new webhook schema versions.

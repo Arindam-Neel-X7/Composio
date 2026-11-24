@@ -1,0 +1,184 @@
+Scrape JSON | MrScraper Documentation
+API Reference
+API Reference
+Dashboard
+Introduction
+API OverviewAuthenticationPaginationResponse HeadersError Handling
+Web Search
+Web Search GET
+Scraper API
+Scrape HTML GETScrape Markdown GETGet Screenshot GET
+Scrape Brand
+Scrape JSON GET
+Platform
+Authentication
+Workflow
+Cancel Bulk Scraping
+Result
+Analytic
+MrScraper
+Search
+⌘K
+Dashboard
+DocumentationAPI ReferenceResidential ProxyChangelog
+Scrape JSON
+Extract structured, strongly-typed JSON from a single page with the Scrape JSON endpoint, using a natural language prompt instead of CSS selectors or XPath.
+Scrape a single page and return structured JSON. The general agent analyzes the page against your prompt and returns clean, strongly-typed data without fragile CSS selectors or custom XPath parsers.
+Note
+Use the Scraper API Server (https://api.mrscraper.com) host when calling this endpoint.
+agent=general must be set.
+The prompt only parses the scraped content. It cannot instruct the scraper itself.
+To shape the output with a JSON schema, append it to the prompt as a Json Schema: section.
+Send every field in the query string, URL-encoded. A request URL over about 8 KB is refused with 414, so send a long prompt (for example one with a JSON schema) as a POST with url, prompt and agent in a JSON body.
+The tokens used are in the token_usage response header and field. A failed run returns success: false and is not billed.
+See Scrape JSON in the Scraper API guide for the full list of settings.
+loading...
+GET
+/
+Send
+Header
+Query
+Query Parameters
+url*string
+URL-encoded URL of the page you want to scrape, such as https%3A%2F%2Fquotes.toscrape.com%2F. Must include the protocol (https://).
+Formaturi
+prompt?string
+URL-encoded description of the data shape you want back, for example fields like title, price, and rating. The prompt only parses the scraped content — it cannot instruct the scraper itself. To shape the output with a JSON schema, append it to the prompt as a 'Json Schema:' section. A request URL over about 8 KB is refused with 414, so send a longer prompt as a POST with a JSON body.
+Default"Extract all data as complete as possible."
+agent*string
+The AI agent used for extraction. Must be set to general, the agent optimised for single-page structured extraction.
+Default"general"
+Value in"general"
+html?boolean
+Returns the raw HTML of the scraped page in the response. On by default; set false to leave it out.
+Defaulttrue
+browserRendering?boolean
+Controls whether the page is loaded in a browser. Leave it out to load the page without a browser first and switch to a browser automatically if the request is blocked. Set true to always load the page in a browser, which JavaScript-heavy sites, SPAs, and pages that load content dynamically need. Set false to never use a browser.
+waitForSelector?string
+Waits until a specific CSS selector or text appears on the page before returning it, such as #results. Up to 500 characters. Useful for content that loads asynchronously after the initial page load.
+Lengthlength <= 500
+warmStart?boolean
+Opens the site's home page first to warm the session before loading the target URL. Useful for sites that expect a normal browsing session before deeper pages.
+Defaultfalse
+blockResources?boolean
+Blocks images, fonts, and stylesheets from loading. Speeds up scraping and reduces bandwidth usage.
+Defaultfalse
+timeout?integer
+Maximum seconds to wait for the page to fully load before the request times out. Increase for slow or complex pages.
+Default300
+screenshot?boolean
+Captures a screenshot of the rendered page as a base64-encoded image. Useful for verifying what the scraper actually saw.
+Defaultfalse
+geoCode?string
+Two-letter country code to load the page from, such as us or gb. Defaults to the United States.
+Default"us"
+saveResult?boolean
+Saves the result to the Result tab.
+Defaulttrue
+maxAge?integer
+Serves a cached result of the same request when it is newer than this age, in milliseconds, such as 86400000 for 1 day. Up to 604800000 (7 days). Omit or send 0 to always scrape fresh. A cached result costs the same tokens as the original scrape.
+Range0 <= value <= 604800000
+tokenCap?integer
+Maximum total tokens the scrape and its retries can use. Automatic retries are bounded by this cap, so the total tokens for a single run stay at or below the value you set. Omit for no limit.
+Range1 <= value
+maxRetries?integer
+Maximum number of retries for the request. Omit for no limit.
+Range0 <= value
+Header Parameters
+x-api-token*string
+API token.
+Response Body
+200
+application/json
+401
+application/json
+502
+application/json
+504
+application/json
+cURL
+JavaScript
+Go
+Python
+Java
+C#
+curl -X GET "https://api.mrscraper.com/?url=https%3A%2F%2Fquotes.toscrape.com%2F&prompt=Extract+all+data+as+complete+as+possible.&agent=general" \ -H "x-api-token: string"
+200401502504
+{
+"success": true,
+"data": {
+"site": {
+"name": "Quotes to Scrape",
+"url": "https://quotes.toscrape.com/",
+"navigation": [
+{
+"label": "Login",
+"url": "/login"
+}
+]
+},
+"quotes": [
+{
+"text": "The world as we have created it is a process of our thinking. It cannot be changed without changing our thinking.",
+"author": "Albert Einstein",
+"author_url": "/author/Albert-Einstein",
+"tags": [
+{
+"name": "change",
+"url": "/tag/change/page/1/"
+},
+{
+"name": "deep-thoughts",
+"url": "/tag/deep-thoughts/page/1/"
+}
+]
+},
+{
+"text": "It is our choices, Harry, that show what we truly are, far more than our abilities.",
+"author": "J.K. Rowling",
+"author_url": "/author/J-K-Rowling",
+"tags": [
+{
+"name": "abilities",
+"url": "/tag/abilities/page/1/"
+},
+{
+"name": "choices",
+"url": "/tag/choices/page/1/"
+}
+]
+}
+],
+"pagination": {
+"next": {
+"label": "Next →",
+"url": "/page/2/"
+}
+}
+},
+"thread_id": "01a1e8cb-0fb2-7d42-a67c-38c57e9e77eb",
+"token_usage": 10,
+"html": "",
+"markdown": "",
+"screenshot": "",
+"status": "Results ready",
+"error": "",
+"runtime": 16.636244,
+"cookies": []
+}
+{
+"message": "Unauthorized access",
+"data": null
+}
+{
+"error": "All upstream servers are unavailable"
+}
+{
+"error": "Scrape timed out: the scraper did not answer in time"
+}
+Get Brand GET
+Read a brand you already scraped with the Get Brand endpoint, or download its HTML, screenshots, and ZIP page bundle by job ID.
+Verify API Token GET
+Verify your API token and retrieve subscription account information, including token usage, limits, and billing details, with the MrScraper API.
+curl -X GET "https://api.mrscraper.com/?url=https%3A%2F%2Fquotes.toscrape.com%2F&prompt=Extract+all+data+as+complete+as+possible.&agent=general" \
+-H "x-api-token: string"

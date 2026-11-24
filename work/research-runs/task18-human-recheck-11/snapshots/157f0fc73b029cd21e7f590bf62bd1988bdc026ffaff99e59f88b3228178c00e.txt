@@ -1,0 +1,230 @@
+GitHub - amzn/selling-partner-agentic-toolkit: Skills for managing an Amazon seller account via SP-API, through the Amazon Selling Partner Connector (MCP). Write actions are always human-in-the-loop (drafted for your approval). · GitHub
+Skip to content
+Navigation Menu
+Sign in
+Products
+Platform
+GitHubRepository hosting, code review, and collaboration
+CopilotAI coding agent for tasks, projects, and automated work
+Build & Ship
+ActionsCI/CD and automation
+Code QualityQuality analysis, fixes, and enforcement
+CodespacesCloud development environments
+Secure
+Code SecurityVulnerability detection and remediation
+Secret ProtectionSecret scanning and leak prevention
+All Features
+Developers
+Learn
+Documentation
+Training
+Certifications
+Build
+Build with Copilot
+Customize Copilot
+Integrations
+Explore
+Trending repos
+GitHub Sponsors
+Developer articles
+Changelog
+ChangelogYour source for the latest features, improvements, and fixes across GitHub products, all in one place.
+Businesses
+By Stage
+Enterprises
+Team
+Startups
+Nonprofits
+By Industry
+Healthcare
+Financial services
+Manufacturing
+Government
+See all industries
+Evaluate GitHub
+Why GitHub
+Customer Stories
+Business insights
+Trust Center
+Add-ons
+GitHub Advanced SecurityEnterprise-grade code security
+Copilot for businessEnterprise-grade AI features
+Premium SupportEnterprise-grade 24/7 support
+Resources
+Learn & Connect
+Documentation
+Resource center
+Blog
+Events & webinars
+Community Forum
+Customer Stories
+Integrations
+Support
+Customer support
+Training
+GitHub Status
+Company
+About
+Partners
+Changelog
+GitHub Universe
+GitHub UniverseThe event for developers, by developers — talks, workshops, and what’s next for GitHub.
+Pricing
+Search/
+Sign in
+Sign up
+Appearance settings
+You signed in with another tab or window. Reload to refresh your session.
+You signed out in another tab or window. Reload to refresh your session.
+You switched accounts on another tab or window. Reload to refresh your session.
+Dismiss alert
+amzn
+selling-partner-agentic-toolkit
+Repository navigation
+Code
+Issues3 (3)
+Pull requests1 (1)
+Actions
+Security and quality
+Insights
+More items
+selling-partner-agentic-toolkit
+Public
+NotificationsYou must be signed in to change notification settings
+Fork8 (8)
+Star50 (50)You must be signed in to star a repository
+About
+Skills for managing an Amazon seller account via SP-API, through the Amazon Selling Partner Connector (MCP). Write actions are always human-in-the-loop (drafted for your approval).
+Resources
+Readme
+License
+Code of conduct
+Code of conduct
+Contributing
+Contributing
+Security policy
+Security policy
+Activity
+Custom properties
+Stars
+50 stars
+Watchers
+1 watching
+Forks
+8 forks
+Report repository
+main
+BranchesTags
+Go to file
+Code
+Open more actions menu
+Latest commit
+History
+17 Commits
+17 Commits
+Folders and files
+NameName
+Last commit message
+Last commit date
+.claude-plugin
+.claude-plugin
+commands
+commands
+skills
+skills
+.gitignore
+.gitignore
+.mcp.json
+.mcp.json
+LICENSE
+LICENSE
+README.md
+README.md
+icon.png
+icon.png
+View all files
+Repository files navigation
+README
+Code of conduct
+Contributing
+License
+Security
+More items
+Amazon Selling Partner
+Skills for managing an Amazon seller account via SP-API, through the Amazon Selling Partner Connector (MCP). Write actions are always human-in-the-loop (drafted for your approval).
+Connector
+The bundled .mcp.json registers the Amazon Selling Partner Connector (MCP server) at
+https://sellingpartner-ai.amazon.com/mcp. You authorize
+access through the standard Seller Central OAuth consent flow; the assistant can only use
+tools allowed by your Seller Central roles. Write actions are drafted for your approval.
+Skills
+seller-analytics — seller performance metrics (inventory, traffic, sales); discovers metric IDs before querying.
+finance-month-end-closer — close and reconcile a completed Amazon month: reconcile net proceeds against settlements, confirm payout statuses, help match bank deposits (seller-supplied; no bank integration), and produce an accountant-ready summary. Read-and-explain only; never files, submits, pays, or moves money.
+stockout-prevention — quantify stockout risk from days-of-supply and velocity, recommend how much to reorder and by when, and check the inbound-shipment gap. Gives no pricing advice in either direction; if you name a specific price it will draft that exact change for your approval.
+fba-inbound-management — full FBA inbound plan workflow (create -> packing -> placement -> transportation -> confirm) with approval gates.
+listing-troubleshooter — the router for "something's wrong with my listing"; scans status/issues and routes to the right specialist.
+listing-issues — diagnose and fix reported listing issues (suppressions, attribute errors) with preview -> approve.
+listing-buyability — why a listing isn't buyable (offer, completeness, inventory) and fix the offer with approval.
+listing-searchability — why a listing isn't found + search-content optimization with approval.
+listing-compliance — a pre-flight compliance gate run before any compliance-sensitive listing write (claims, ingredients, category, condition, images, identifiers); advisory, never writes.
+invite-secondary-users — guide the account admin to grant AI-agent access to secondary users via Seller Central Manage Agents (advisory; UI action).
+support-case-helper — route the seller to Amazon Seller Support and prepare a clean, PII-free case summary; never submits without explicit confirmation.
+sp-api-knowledge — answer SP-API developer questions and guide integration design, grounded in the SP-API documentation.
+Commands
+/sp-stockout-check — run the stockout-prevention workflow.
+/sp-fix-listing — find and fix suppressed/inactive listings.
+/sp-sales-drop — diagnose why sales dropped and get safe next steps.
+Data sent
+When you use these skills, the assistant sends requests to the Amazon Selling Partner Connector (MCP) at (https://sellingpartner-ai.amazon.com/mcp) over an authenticated connection:
+What is sent: the tool calls the skills make on your behalf (e.g. requests for your
+inventory, sales/traffic analytics, listing status, or a drafted listing/price change) and
+the parameters those calls need (such as your Merchant Token / marketplace and the SKU/ASIN
+in question). Your prompt text is processed by your AI assistant per its own terms.
+What comes back: your Amazon business data (inventory, analytics, listing details) that
+the gateway returns for the calls you approved.
+Authorization & scope: access is granted through the Seller Central OAuth consent flow
+and is limited to the tools your Seller Central roles allow. Write actions are never executed
+without your explicit approval.
+Not sent by these skills: the skills do not transmit data to any non-Amazon endpoint,
+and do not persist your account identifiers or data beyond the session. Some skills
+(e.g. support-case-helper) explicitly redact PII from any summary they produce.
+Privacy: data handled by Amazon is subject to the
+Amazon.com Privacy Notice.
+Data processed by your AI assistant is subject to that assistant's own terms and privacy policy.
+About
+Skills for managing an Amazon seller account via SP-API, through the Amazon Selling Partner Connector (MCP). Write actions are always human-in-the-loop (drafted for your approval).
+Resources
+Readme
+License
+Code of conduct
+Code of conduct
+Contributing
+Contributing
+Security policy
+Security policy
+Activity
+Custom properties
+Stars
+50 stars
+Watchers
+1 watching
+Forks
+8 forks
+Report repository
+Releases
+Packages
+Used by
+Contributors
+Footer
+© 2026 GitHub, Inc.
+Footer navigation
+Terms
+Privacy
+Security
+Status
+Community
+Docs
+Contact
+Manage cookies
+Do not share my personal information
+You can’t perform that action at this time.

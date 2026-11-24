@@ -1,0 +1,38 @@
+> ## Documentation Index
+> Fetch the complete documentation index at: https://developers.clay.com/llms.txt
+> Use this file to discover all available pages before exploring further.
+# CLI basics
+> Understand the Clay CLI output contract, exit codes, environment variables, and authentication.
+The Clay CLI (`clay`) is JSON-first: every command writes machine-readable JSON to stdout on success and a structured error envelope to stderr on failure. There are no spinners, colors, or progress bars, so agents and scripts can branch on the output and exit code directly.
+## Output contract
+| Result | Behavior |
+| - | - |
+| Success | JSON is written to stdout, exit code `0`. |
+| Failure | `{ "error": { "code", "message", "details"? } }` is written to stderr, non-zero exit code. |
+Pipe stdout straight into `jq`, and read the exit code (`$?`) to decide what to do next.
+```bash theme={"theme":{"light":"github-light","dark":"github-dark"}}
+clay whoami | jq -r '.user.id'
+```
+## Exit codes
+Branch on these from agents and scripts instead of parsing error text.
+| Exit | Meaning |
+| - | - |
+| `0` | Success. |
+| `1` | Generic or unrecoverable (`server_error`, `contract_mismatch`, `conflict`, `internal_error`, `invalid_config_file`). |
+| `2` | `validation_error` — input was rejected as malformed. |
+| `3` | `auth_required` \| `auth_invalid` \| `auth_forbidden` — run `clay login` to (re)authenticate. |
+| `4` | `rate_limited` (HTTP 429) — `details` has `retryAfter` (seconds), plus `limit`/`remaining`/`reset` when Clay sends the `X-RateLimit-*` headers. |
+| `5` | `network_error` \| `network_timeout` — could not reach Clay. |
+| `6` | `not_found` (HTTP 404). |
+## Environment variables
+| Variable | Purpose |
+| - | - |
+| `CLAY_CONFIG_HOME` | Highest-precedence config directory parent; `config.json` and the identity cache live under `<CLAY_CONFIG_HOME>/clay`. |
+| `XDG_CONFIG_HOME` | Used when `CLAY_CONFIG_HOME` is unset (`<XDG_CONFIG_HOME>/clay`), falling back to `~/.config/clay` when neither is set. |
+| `CLAY_REQUEST_TIMEOUT_MS` | Per-request network timeout in milliseconds (default `60000`). |
+| `CLAY_UPLOAD_TIMEOUT_MS` | Bulk file-upload timeout in milliseconds (default `600000`). |
+## Authentication
+`clay login` opens a browser to authorize the CLI with OAuth — this works from a human terminal or an agent's shell tool. Use `clay whoami` as the canonical check that authentication is working, and `clay logout` to clear a stored credential.
+Each sign-in covers one workspace — the one you pick on the consent screen. To work across several, run `clay login` once per workspace: signing into a second keeps the first. `clay workspaces list` shows what you are signed into, `clay workspaces current` shows which one commands run against, and `clay workspaces switch <id>` switches. Signing in makes the workspace just added the active one, so switch back explicitly if you were working in another. `clay logout` signs out of the active workspace and leaves the rest.
+On machines where a local browser can't open — SSH sessions, containers, headless machines — use `clay login --device` instead. It prints a link and a short code; open the link in a browser on any device to approve the sign-in, and the CLI completes automatically. Run `clay login --help` for details.
+This documentation is built and hosted on [Mintlify](https://mintlify.com), a developer documentation platform.

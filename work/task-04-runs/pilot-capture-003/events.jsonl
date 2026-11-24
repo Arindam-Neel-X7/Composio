@@ -1,0 +1,28 @@
+{"event": "cache_reused", "app_id": 2, "url": "https://developers.hubspot.com/developer-platform-basics"}
+{"event": "cache_reused", "app_id": 2, "url": "https://developers.hubspot.com/docs/apps/developer-platform/build-apps/authentication/overview"}
+{"event": "cache_reused", "app_id": 2, "url": "https://developers.hubspot.com/docs/apps/legacy-apps/private-apps/overview"}
+{"event": "cache_reused", "app_id": 2, "url": "https://developers.hubspot.com/docs/api-reference/latest/overview"}
+{"event": "cache_reused", "app_id": 2, "url": "https://developers.hubspot.com/docs/apps/developer-platform/build-apps/integrate-with-the-remote-hubspot-mcp-server"}
+{"event": "fetch_attempt", "app_id": 13, "attempt": 1, "source_url": "https://developers.freshdesk.com/api/", "attempted_on": "2026-11-23", "status": "other_error", "http_status": null, "resolved_url": null, "error": "Capture failed: ValueError", "content_sha256": null}
+{"event": "cache_reused", "app_id": 13, "url": "https://support.freshdesk.com/support/solutions/articles/215517-how-to-find-your-api-key"}
+{"event": "cache_reused", "app_id": 13, "url": "https://developers.freshworks.com/docs/app-sdk/v3.0/support_ticket/oauth-implementation-in-apps/"}
+{"event": "cache_reused", "app_id": 13, "url": "https://support.freshdesk.com/support/solutions/articles/50000011778"}
+{"event": "cache_reused", "app_id": 13, "url": "https://support.freshdesk.com/support/solutions/articles/50000012670"}
+{"event": "cache_reused", "app_id": 31, "url": "https://developers.google.com/google-ads/api/docs/oauth/overview"}
+{"event": "cache_reused", "app_id": 31, "url": "https://developers.google.com/google-ads/api/docs/api-policy/developer-token"}
+{"event": "cache_reused", "app_id": 31, "url": "https://developers.google.com/google-ads/api/docs/api-policy/access-levels"}
+{"event": "cache_reused", "app_id": 31, "url": "https://developers.google.com/google-ads/api/docs/best-practices/testing"}
+{"event": "cache_reused", "app_id": 31, "url": "https://developers.google.com/google-ads/api/docs/concepts/api-structure"}
+{"event": "cache_reused", "app_id": 31, "url": "https://developers.google.com/google-ads/api/docs/developer-toolkit/mcp-server"}
+{"event": "cache_reused", "app_id": 58, "url": "https://github.com/sherlock-project/sherlock"}
+{"event": "cache_reused", "app_id": 58, "url": "https://sherlockproject.xyz/usage"}
+{"event": "cache_reused", "app_id": 58, "url": "https://raw.githubusercontent.com/sherlock-project/sherlock/master/LICENSE"}
+{"event": "cache_reused", "app_id": 91, "url": "https://docs.cloud.google.com/gemini/enterprise/notebooklm-enterprise/docs/api-notebooks"}
+{"event": "cache_reused", "app_id": 91, "url": "https://docs.cloud.google.com/gemini/enterprise/notebooklm-enterprise/docs/api-notebooks-sources"}
+{"event": "cache_reused", "app_id": 91, "url": "https://docs.cloud.google.com/gemini/enterprise/notebooklm-enterprise/docs/set-up-notebooklm"}
+{"event": "cache_reused", "app_id": 91, "url": "https://docs.cloud.google.com/gemini/enterprise/notebooklm-enterprise/docs/set-up-licensing"}
+{"event": "cache_reused", "app_id": 91, "url": "https://github.com/Morfeu333/notebooklm-mcp"}
+{"event": "fetch_attempt", "app_id": 31, "attempt": 1, "source_url": "https://developers.google.com/google-ads/api/rest/overview", "attempted_on": "2026-11-23", "status": "fetched", "http_status": 200, "resolved_url": "https://developers.google.com/google-ads/api/rest/overview", "error": null, "content_sha256": "27ff9528dd6b2bc86582379874bb208ca7d5454903e3cd73618b890bcea150b1"}
+{"event": "fetch_attempt", "app_id": 58, "attempt": 1, "source_url": "https://sherlockproject.xyz/installation", "attempted_on": "2026-11-23", "status": "fetched", "http_status": 200, "resolved_url": "https://sherlockproject.xyz/installation", "error": null, "content_sha256": "ef65ba8b650097d9d7403141066f76808d08749277a867d42dac1be28c64aa28"}
+{"event": "fetch_attempt", "app_id": 13, "attempt": 1, "source_url": "https://developers.freshworks.com/docs/app-sdk/v3.0/support_ticket/rest-apis/", "attempted_on": "2026-11-23", "status": "fetched", "http_status": 200, "resolved_url": "https://developers.freshworks.com/docs/app-sdk/v3.0/support_ticket/rest-apis/", "error": null, "content_sha256": "cb68a81b9dbad982918fc9f07012b208fc11e909a36c0386a4c25ac33bc35062"}
+{"event": "validation", "structure_and_grounding": "passed", "backend": "PowerShell Test-Json (Draft2020-12)", "factual_truth": "requires independent review", "synthetic": false, "records": 5}

@@ -1,0 +1,285 @@
+GitHub - rmarescu/gumroad-mcp: A Model Context Protocol (MCP) server implementation for Gumroad API · GitHub
+Skip to content
+Navigation Menu
+Sign in
+Products
+Platform
+GitHubRepository hosting, code review, and collaboration
+CopilotAI coding agent for tasks, projects, and automated work
+Build & Ship
+ActionsCI/CD and automation
+Code QualityQuality analysis, fixes, and enforcement
+CodespacesCloud development environments
+Secure
+Code SecurityVulnerability detection and remediation
+Secret ProtectionSecret scanning and leak prevention
+All Features
+Developers
+Learn
+Documentation
+Training
+Certifications
+Build
+Build with Copilot
+Customize Copilot
+Integrations
+Explore
+Trending repos
+GitHub Sponsors
+Developer articles
+Changelog
+ChangelogYour source for the latest features, improvements, and fixes across GitHub products, all in one place.
+Businesses
+By Stage
+Enterprises
+Team
+Startups
+Nonprofits
+By Industry
+Healthcare
+Financial services
+Manufacturing
+Government
+See all industries
+Evaluate GitHub
+Why GitHub
+Customer Stories
+Business insights
+Trust Center
+Add-ons
+GitHub Advanced SecurityEnterprise-grade code security
+Copilot for businessEnterprise-grade AI features
+Premium SupportEnterprise-grade 24/7 support
+Resources
+Learn & Connect
+Documentation
+Resource center
+Blog
+Events & webinars
+Community Forum
+Customer Stories
+Integrations
+Support
+Customer support
+Training
+GitHub Status
+Company
+About
+Partners
+Changelog
+GitHub Universe
+GitHub UniverseThe event for developers, by developers — talks, workshops, and what’s next for GitHub.
+Pricing
+Search/
+Sign in
+Sign up
+Appearance settings
+You signed in with another tab or window. Reload to refresh your session.
+You signed out in another tab or window. Reload to refresh your session.
+You switched accounts on another tab or window. Reload to refresh your session.
+Dismiss alert
+This repository was archived by the owner on Oct 15, 2026. It is now read-only.
+rmarescu
+gumroad-mcp
+Repository navigation
+Code
+Issues
+Pull requests1 (1)
+Actions
+Security and quality
+Insights
+More items
+gumroad-mcp
+Public archive
+NotificationsYou must be signed in to change notification settings
+Fork11 (11)
+Star32 (32)You must be signed in to star a repository
+About
+A Model Context Protocol (MCP) server implementation for Gumroad API
+Topics
+apigumroadmcpmodelcontextprotocol
+Resources
+Readme
+MIT license
+Activity
+Stars
+32 stars
+Watchers
+2 watching
+Forks
+11 forks
+Report repository
+main
+BranchesTags
+Go to file
+Code
+Open more actions menu
+Latest commit
+History
+39 Commits
+39 Commits
+Folders and files
+NameName
+Last commit message
+Last commit date
+.husky
+.husky
+src
+src
+.gitignore
+.gitignore
+.prettierignore
+.prettierignore
+.prettierrc
+.prettierrc
+Dockerfile
+Dockerfile
+LICENSE
+LICENSE
+README.md
+README.md
+eslint.config.js
+eslint.config.js
+package-lock.json
+package-lock.json
+package.json
+package.json
+smithery.yaml
+smithery.yaml
+tsconfig.json
+tsconfig.json
+View all files
+Repository files navigation
+README
+MIT license
+More items
+Gumroad MCP Server
+gumroad-mcp-60.mp4
+Overview
+A Model Context Protocol (MCP) server implementation for Gumroad, enabling MCP-compatible AI clients like Claude Desktop to interact with Gumroad API.
+The Model Context Protocol (MCP) allows AI assistants to interact with external tools and services.
+Quickstart
+Start using Gumroad MCP Server with Claude Desktop in seconds:
+npx gumroad-mcp@latest init
+This command sets up the MCP server with your Gumroad credentials through an interactive prompt.
+Usage
+Once configured, try these commands in your MCP-compatible client:
+How many sales did I make last month vs a year ago?
+Generate an interactive chart with last year's sales
+List my top-selling products on Gumroad from last year
+Show month-over-month trend of my top-selling product last year
+Disable "Product Name" product
+Enable "Product Name" product
+List all offer codes for "Product Name"
+Create a new offer code "FAFO" with 99% off for "Product Name"
+Delete offer code "abc123" from "Product Name"
+Tools
+Products
+gumroad_get_products - Get all products
+gumroad_get_product - Get a single product by ID
+gumroad_disable_product - Disable a product
+gumroad_enable_product - Enable a product
+Sales
+gumroad_get_sales - Get sales data
+Offer Codes
+gumroad_get_offer_codes - Get all offer codes for a product
+gumroad_get_offer_code - Get a single offer code
+gumroad_create_offer_code - Create a new offer code
+gumroad_update_offer_code - Update an existing offer code
+gumroad_delete_offer_code - Delete an offer code
+User
+gumroad_get_user - Get authenticated user data
+Installation
+Installing via Smithery
+To install gumroad-mcp for Claude Desktop automatically via Smithery:
+npx -y @smithery/cli install @rmarescu/gumroad-mcp --client claude
+Prerequisites
+Node.js 18 or later
+A Gumroad account with API access
+An MCP-compatible client (like Claude Desktop)
+To verify you have Node installed, open the command line on your computer.
+On macOS, open the Terminal from your Applications folder
+On Windows, press Windows + R, type "cmd", and press Enter
+Once in the command line, verify you have Node installed by entering in the following command:
+node --version
+Generate a Gumroad access token
+Gumroad API requires authentication. To generate an access token, follow these steps:
+Log in to your Gumroad account (or your own instance of Gumroad).
+Go to Settings > Advanced page.
+Create a new application by providing the following information:
+Application icon (optional): A small thumbnail image to identify your application.
+Application name: A name for your application.
+Redirect URI: For personal use, you can enter http://127.0.0.1 (localhost) as this value is not meaningful in this context.
+Click "Create application."
+Use the "Generate access token" button to get your access token.
+Keep your access token safe and confidential, like a password. You'll need to include it in your configuration as shown below.
+Claude Desktop installation
+If you use Claude Desktop, you can use the interactive setup:
+npx gumroad-mcp@latest init
+Manual installation
+For other MCP-enabled applications, you will need to update the MCP configuration manually.
+Example config
+{
+"mcpServers": {
+"gumroad": {
+"command": "npx",
+"args": ["-y", "gumroad-mcp@latest"],
+"env": {
+"GUMROAD_ACCESS_TOKEN": "<YOUR_TOKEN>"
+}
+}
+}
+}
+If you're using a self-hosted Gumroad instance, you can configure the server to connect to your custom URL via GUMROAD_BASE_URL:
+{
+"mcpServers": {
+"gumroad": {
+"command": "npx",
+"args": ["-y", "gumroad-mcp@latest"],
+"env": {
+"GUMROAD_ACCESS_TOKEN": "<YOUR_TOKEN>",
+"GUMROAD_BASE_URL": "https://example.com"
+}
+}
+}
+}
+Note
+The server automatically appends the API version (/v2) to your base URL. For example, with GUMROAD_BASE_URL="https://example.com", API requests will be sent to https://example.com/v2.
+Please refer to these instructions on how to add the MCP Server to Claude Desktop.
+Contributing
+Found a bug or want to suggest a feature? Please open an issue or submit a pull request on GitHub.
+License
+This MCP server is licensed under the MIT License. This means you are free to use, modify, and distribute the software, subject to the terms and conditions of the MIT License. For more details, please see the LICENSE file in the project repository.
+About
+A Model Context Protocol (MCP) server implementation for Gumroad API
+Topics
+apigumroadmcpmodelcontextprotocol
+Resources
+Readme
+MIT license
+Activity
+Stars
+32 stars
+Watchers
+2 watching
+Forks
+11 forks
+Report repository
+Releases
+Packages
+Used by
+Contributors
+Languages
+Footer
+© 2026 GitHub, Inc.
+Footer navigation
+Terms
+Privacy
+Security
+Status
+Community
+Docs
+Contact
+Manage cookies
+Do not share my personal information
+You can’t perform that action at this time.

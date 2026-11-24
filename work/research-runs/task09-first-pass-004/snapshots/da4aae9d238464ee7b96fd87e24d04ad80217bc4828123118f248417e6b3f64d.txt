@@ -1,0 +1,113 @@
+API keys overview | Twilio
+Skip to contentSkip to navigationSkip to topbar
+Go to the Twilio Docs home page
+Twilio Docs
+Identity and Access Management (IAM)
+Getting Started
+OverviewTest CredentialsREST API: Auth TokenREST API: Secondary Auth Token
+Accounts
+REST API: Accounts ResourceSubaccounts
+Organizations
+OrganizationsManaged AccountsManaged UsersDomains
+SCIM API
+SCIM API overviewOkta SCIM integrationEntra ID SCIM integrationSCIM API reference
+Keys and Tokens
+API Keys OverviewCreate API Keys in the ConsoleREST API: Key Resource v1REST API: Key Resource v2010Restricted API KeysAccess Tokens
+OAuth Apps
+OverviewAccount OAuth AppsOrganization OAuth AppsOAuth Token APIREST API: OAuth App resourceFAQs
+Credentials
+REST API: CredentialsREST API: CredentialPublicKey ResourceREST API: CredentialAWS Resource
+Public Key Client Validation
+OverviewGetting StartedAccount and Key Management with API Keys
+Access Control
+OverviewRBAC in Twilio ConsoleRBAC in Legacy Console (Beta)Types of RolesREST API: Role Assignment ResourceREST API: Role Resource
+Single Sign-On
+Overview
+IP ACL
+OverviewDry run and events
+Twilio Editions
+OverviewHIPAA AccountsStatic Proxy for Webhooks
+Twilio Connect
+OverviewREST API: ConnectApps ResourceREST API: AuthorizedConnectApps Resource
+Quickstarts
+C#/.NETJavaPHPPythonRuby
+Search
+Messaging
+Voice
+Video
+Conversations
+Flex
+Studio
+All docs...
+Build with AI
+SDKs
+Help CenterHelp Center
+Search
+Log in
+Sign up
+Page tools
+Copy as markdown
+Useful for sharing or LLM
+Copy and view
+Copy as markdownView as markdown
+Open in assistant
+Open in ChatGPTOpen in ClaudeOpen in CursorOpen in Perplexity
+Build with AI
+Connect your AI agentInstall Twilio Skills
+Accelerate development with AI
+On this page
+Why you should use API keys
+Types of API keys
+What's next?
+Looking for more inspiration?Visit the
+Developer Hub
+On this page
+Why you should use API keys
+Types of API keys
+What's next?
+Copy as markdown
+Copy and view
+Copy as markdownView as markdown
+Open in assistant
+Open in ChatGPTOpen in ClaudeOpen in CursorOpen in Perplexity
+Build with AI
+Connect your AI agentInstall Twilio Skills
+API keys overview
+Positive FeedbackNegative Feedback
+API keys are the preferred way to authenticate with Twilio's REST APIs. With API keys, you control which users and applications have access to your Twilio Account's API resources, and you can revoke access at your discretion.
+If your Twilio application uses one of the client-side SDKs, then you need to use API keys to create Access Tokens.
+(information)
+Info
+Twilio API credentials are a Region-specific resource. If your Account uses Twilio Regions, refer to Manage Regional API Credentials.
+When using the Twilio CLI to create regional profiles, you must specify both --region and --edge flags together. See Regional CLI usage for details.
+Why you should use API keys
+why-you-should-use-api-keys page anchor
+Positive FeedbackNegative Feedback
+API keys are a powerful and flexible way to manage access to Twilio resources.
+Create individual API keys for specific purposes and individuals. You have complete control of the lifecycle of the API credentials for your Twilio Account. For example, you can issue separate API keys to different developers or subsystems within your application. If a key is compromised or no longer used, revoke it to prevent unauthorized access.
+You can further reduce security risks by using Restricted API keys to provide minimum and specific levels of access.
+Types of API keys
+types-of-api-keys page anchor
+Positive FeedbackNegative Feedback
+(information)
+Best practices for working with API keys
+For guidance on securing your API credentials and configuring your environment:
+Learn how to safely store your API keys in environment variables in the How to Set Environment Variables blog post(link takes you to an external page).
+Learn more about general API security best practices in the Guide to Basic API Security Best Practices blog post(link takes you to an external page).
+The API key types are Main, Standard, and Restricted (Key resource v1 only). The following table describes each type:
+Key typeAccess permissionsCreate in ConsoleCreate with REST API
+MainFull access to all Twilio API resources. Equivalent to using your Account SID and Auth Token for API requests.YesNo
+StandardAccess to all Twilio API resources, except for Accounts (/Accounts) or Keys (/Accounts/{SID}/Keys, /v1/Keys) resources.YesYes
+RestrictedCustomized, fine-grained access to specific Twilio API resources. Learn more about Restricted API keys.YesYes (v1 only)
+What's next?
+whats-next page anchor
+Positive FeedbackNegative Feedback
+Create and manage API keys in the Twilio Console.
+Create and manage API keys using the REST API.
+Create and manage API Keys using CLI profiles for regional authentication.
+Create Access Tokens if you plan on using a client-side SDK with Twilio. Learn more about Access Tokens.
+Need some help?
+We all do sometimes; code is hard. Get help now from our support team(link takes you to an external page), or lean on the wisdom of the crowd by browsing the Twilio tag(link takes you to an external page) on Stack Overflow.
+Terms of service
+Privacy Policy
+Copyright © 2026 Twilio Inc.

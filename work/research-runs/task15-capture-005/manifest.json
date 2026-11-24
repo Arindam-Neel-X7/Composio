@@ -1,0 +1,138 @@
+{
+  "run_id": "task15-capture-005",
+  "parent_run_id": "task15-capture-003",
+  "status": "complete",
+  "synthetic": false,
+  "selected_app_ids": [
+    81,
+    82,
+    83,
+    84,
+    85,
+    86,
+    87,
+    88,
+    89,
+    90
+  ],
+  "created_on": "2026-11-23",
+  "producer": {
+    "id": "pipeline-collector",
+    "type": "script"
+  },
+  "tool": {
+    "name": "research_pipeline",
+    "version": "0.2.0",
+    "python": "3.11.9",
+    "source_sha256": "263c88230b585de37de6afabd13e88033da9496eef7d08e89e7057dddd42b09d"
+  },
+  "config": {
+    "timeout": 15.0,
+    "retries": 1,
+    "max_bytes": 5000000,
+    "replay": false,
+    "refresh": false,
+    "extractor": null,
+    "extractor_label": null
+  },
+  "contracts": {
+    "roster": {
+      "path": "contracts/roster.json",
+      "sha256": "6e3aada149102c2e5539c126aa556c1ceaca3d9d25ca6e0a8f56b3a569f81c19"
+    },
+    "schema": {
+      "path": "contracts/schema.json",
+      "sha256": "40e5552a4c838293e5f440e4abbc38b0e48eefa1f626e2ee9c61a3ee1a8d49c3"
+    },
+    "rules": {
+      "path": "contracts/rules.md",
+      "sha256": "c1f94b3142ed47740d0d1a90879ca0e962ada77542eddd39edc15e36ed93c733"
+    }
+  },
+  "source_specs": [
+    {
+      "app_id": 81,
+      "url": "https://docs.stripe.com/connect/oauth-reference",
+      "kind": "primary_docs",
+      "scope": "Stripe payments API and callable MCP; test/sandbox versus live payments; account and country prerequisites apply",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Official Stripe developer documentation for Stripe Connect OAuth 2.0.",
+      "attribution_by": "task15-research-agent"
+    },
+    {
+      "app_id": 83,
+      "url": "https://raw.githubusercontent.com/binance/binance-spot-api-docs/master/README.md",
+      "kind": "official_repository",
+      "scope": "Binance global Spot API; public market data versus signed account/trading; Spot Testnet distinct from production and regional eligibility unresolved",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Official Binance Spot API documentation repository on GitHub.",
+      "attribution_by": "task15-research-agent"
+    },
+    {
+      "app_id": 86,
+      "url": "https://raw.githubusercontent.com/intuit/quickbooks-online-mcp-server/main/README.md",
+      "kind": "official_repository",
+      "scope": "QuickBooks Online Accounting API; developer sandbox versus production app and company; not Desktop",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Official Intuit GitHub repository for QuickBooks Online MCP server.",
+      "attribution_by": "task15-research-agent"
+    },
+    {
+      "app_id": 87,
+      "url": "https://raw.githubusercontent.com/XeroAPI/xero-mcp-server/main/README.md",
+      "kind": "official_repository",
+      "scope": "Xero Accounting API commercial apps and official MCP; demo organisation versus real organisations; Custom Connections separately scoped",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Official XeroAPI GitHub repository for Xero MCP server.",
+      "attribution_by": "task15-research-agent"
+    },
+    {
+      "app_id": 87,
+      "url": "https://raw.githubusercontent.com/XeroAPI/Xero-OpenAPI/master/README.md",
+      "kind": "official_repository",
+      "scope": "Xero Accounting API commercial apps and official MCP; demo organisation versus real organisations; Custom Connections separately scoped",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Official XeroAPI GitHub repository for Xero OpenAPI specifications.",
+      "attribution_by": "task15-research-agent"
+    },
+    {
+      "app_id": 89,
+      "url": "https://docs.ramp.com/llms.txt",
+      "kind": "primary_docs",
+      "scope": "Ramp Developer API and callable MCP; sandbox versus production business; own-account versus partner integrations",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Official Ramp developer documentation llms.txt index.",
+      "attribution_by": "task15-research-agent"
+    },
+    {
+      "app_id": 89,
+      "url": "https://docs.ramp.com/llms-api.txt",
+      "kind": "primary_docs",
+      "scope": "Ramp Developer API and callable MCP; sandbox versus production business; own-account versus partner integrations",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Official Ramp developer documentation API index.",
+      "attribution_by": "task15-research-agent"
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+[
+  {
+    "spec": {
+      "app_id": 2,
+      "url": "https://synthetic.example/docs",
+      "kind": "primary_docs",
+      "scope": "SYNTHETIC testing edition v1; no real app facts",
+      "environments": [
+        "testing"
+      ],
+      "attribution_basis": "Synthetic fixture only; deliberately not vendor documentation or real HubSpot identity evidence",
+      "attribution_by": "synthetic-test-author",
+      "fixture": "tests/fixtures/vendor.html"
+    },
+    "captured_on": "2026-11-23",
+    "capture_method": "local_snapshot",
+    "snapshot_ref": "snapshots/261d1ad11cfee94b7db701fed9c8cd7b52313735b964173b4a5c27e59ac4b791.txt",
+    "content_sha256": "261d1ad11cfee94b7db701fed9c8cd7b52313735b964173b4a5c27e59ac4b791",
+    "line_count": 12
+  },
+  {
+    "spec": {
+      "app_id": 2,
+      "url": "https://synthetic.example/docs",
+      "kind": "primary_docs",
+      "scope": "SYNTHETIC second scope",
+      "environments": [
+        "testing"
+      ],
+      "attribution_basis": "Synthetic fixture only; deliberately not vendor documentation or real HubSpot identity evidence",
+      "attribution_by": "synthetic-test-author",
+      "fixture": "tests/fixtures/vendor.html"
+    },
+    "captured_on": "2026-11-23",
+    "capture_method": "local_snapshot",
+    "snapshot_ref": "snapshots/261d1ad11cfee94b7db701fed9c8cd7b52313735b964173b4a5c27e59ac4b791.txt",
+    "content_sha256": "261d1ad11cfee94b7db701fed9c8cd7b52313735b964173b4a5c27e59ac4b791",
+    "line_count": 12
+  }
+]

@@ -1,0 +1,69 @@
+Reducto DocumentationSkip to content
+This page is available in Markdown format. Markdown is recommended for AI
+consumption. See https://docs.reducto.ai/index.md for this page, or
+https://docs.reducto.ai/llms.txt for the full documentation index.
+Search documentationCtrlK
+Get started
+OverviewAPI quickstartStudio quickstartAgent guide
+Developer tools
+Reducto CLIReducto MCP server
+Core functions
+Upload
+OverviewUploading large files
+Parse
+OverviewParse r-1, r-1 miniResponse formatBest practices
+Extract
+OverviewResponse formatSchema keywordsBest practicesContextual schema optimization
+OverviewAPIreducto-beta MCP
+SplitClassify
+OverviewResponse formatBest practices
+Edit
+Workflows and pipelines
+Pipelines
+Pipeline basicsMulti-document pipelines
+Chaining API callsAsync processing & webhooks
+Async processingSvix webhooksDirect webhooksBatch processingBatch queueDeleting jobs & uploads
+Configurations
+Configuration overviewParse configurations
+Chunking methodsTable output formatsPage rangesProcessing settingsSpreadsheet processingAdditional document dataAdd-ons
+Parse citationsChart extractionLLM enrichment
+Legacy settings
+Extract configurations
+Deep extractArray extractionCitations
+Split configurations
+Split configurationDeep split
+Classify configurations
+Classify configuration
+Edit configurations
+Form schema
+Reference
+ChangelogModel versionsVersion pinningError codesCitation locationRate limitsConcurrency throttle (legacy)Checking API health & usageUsage and pricingPricing migration guideUsage export APIPer-page billing breakdownGlossaryFrequently asked questionsLegacy credit usageMore answers
+Account informationCredit usage and ratesLegacy credit ratesJob ID not foundSystem statusURL responses
+Studio
+Get started
+Studio quickstart
+Pipelines
+Parse pipelineExtract pipelineSplit pipelineEdit pipelineDeploying to production
+Account
+Account & settingsRoles & permissions
+Reducto APIReducto OfficeGuidesAPI referenceSDKsCookbooksDeploy
+Ask AILog in
+Reducto Documentation
+Copy pageCopied
+Reducto is the agentic document platform for AI teams who need production-grade document processing at enterprise scale.
+Reducto API
+For developers building automated pipelines. Available in Python, Node.js, Go, and REST, with Studio for visual pipeline building.
+/parse/extract/split/classify/edit
+API QuickstartStudio Quickstart
+Reducto Office
+Build editing, redlining and conversion of .docx, .pptx and .xlsx into your own product with the Reducto Office SDK. Or try the hosted editor, where you and your agent edit the same file live.
+.docx.pptx.xlsx
+SDK overview
+Agent-ready tooling
+Agent GuideOne-page reference for coding agents using Reducto.MCP ServerGive agents Reducto tools directly in Claude Code, Codex, Cursor, and other MCP clients.CLIParse local files and folders from a terminal with minimal setup.
+Next →Overview
+esc
+Type to search…
+↑↓Navigate↵OpenescClose⌘↵Ask AI
+Ask the docs
+↵

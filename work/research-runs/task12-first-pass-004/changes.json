@@ -1,0 +1,446 @@
+[
+  {
+    "app_id": 51,
+    "claim_id": "51.auth.basic_api_credentials",
+    "change": "changed",
+    "reason": "Task 12 remediation after independent read-only AI audit of task12-first-pass-003 (15 claim-level locator, attachment, wording, and blocker-hygiene fixes); researcher: task12-research-agent"
+  },
+  {
+    "app_id": 51,
+    "claim_id": "51.buildability",
+    "change": "changed",
+    "reason": "Task 12 remediation after independent read-only AI audit of task12-first-pass-003 (15 claim-level locator, attachment, wording, and blocker-hygiene fixes); researcher: task12-research-agent"
+  },
+  {
+    "app_id": 51,
+    "claim_id": "51.identity",
+    "change": "changed",
+    "reason": "Task 12 remediation after independent read-only AI audit of task12-first-pass-003 (15 claim-level locator, attachment, wording, and blocker-hygiene fixes); researcher: task12-research-agent"
+  },
+  {
+    "app_id": 51,
+    "claim_id": "51.mcp.discovery",
+    "change": "changed",
+    "reason": "Task 12 remediation after independent read-only AI audit of task12-first-pass-003 (15 claim-level locator, attachment, wording, and blocker-hygiene fixes); researcher: task12-research-agent"
+  },
+  {
+    "app_id": 51,
+    "claim_id": "51.mcp.official_local_npx",
+    "change": "changed",
+    "reason": "Task 12 remediation after independent read-only AI audit of task12-first-pass-003 (15 claim-level locator, attachment, wording, and blocker-hygiene fixes); researcher: task12-research-agent"
+  },
+  {
+    "app_id": 51,
+    "claim_id": "51.mcp.official_remote_http",
+    "change": "changed",
+    "reason": "Task 12 remediation after independent read-only AI audit of task12-first-pass-003 (15 claim-level locator, attachment, wording, and blocker-hygiene fixes); researcher: task12-research-agent"
+  },
+  {
+    "app_id": 51,
+    "claim_id": "51.production.free_access",
+    "change": "changed",
+    "reason": "Task 12 remediation after independent read-only AI audit of task12-first-pass-003 (15 claim-level locator, attachment, wording, and blocker-hygiene fixes); researcher: task12-research-agent"
+  },
+  {
+    "app_id": 51,
+    "claim_id": "51.production.paid_required",
+    "change": "changed",
+    "reason": "Task 12 remediation after independent read-only AI audit of task12-first-pass-003 (15 claim-level locator, attachment, wording, and blocker-hygiene fixes); researcher: task12-research-agent"
+  },
+  {
+    "app_id": 51,
+    "claim_id": "51.production.self_serve",
+    "change": "changed",
+    "reason": "Task 12 remediation after independent read-only AI audit of task12-first-pass-003 (15 claim-level locator, attachment, wording, and blocker-hygiene fixes); researcher: task12-research-agent"
+  },
+  {
+    "app_id": 51,
+    "claim_id": "51.purpose",
+    "change": "changed",
+    "reason": "Task 12 remediation after independent read-only AI audit of task12-first-pass-003 (15 claim-level locator, attachment, wording, and blocker-hygiene fixes); researcher: task12-research-agent"
+  },
+  {
+    "app_id": 52,
+    "claim_id": "52.api.protocol.rest",
+    "change": "changed",
+    "reason": "Task 12 remediation after independent read-only AI audit of task12-first-pass-003 (15 claim-level locator, attachment, wording, and blocker-hygiene fixes); researcher: task12-research-agent"
+  },
+  {
+    "app_id": 52,
+    "claim_id": "52.api.public_docs",
+    "change": "changed",
+    "reason": "Task 12 remediation after independent read-only AI audit of task12-first-pass-003 (15 claim-level locator, attachment, wording, and blocker-hygiene fixes); researcher: task12-research-agent"
+  },
+  {
+    "app_id": 52,
+    "claim_id": "52.auth.mcp_oauth2",
+    "change": "changed",
+    "reason": "Task 12 remediation after independent read-only AI audit of task12-first-pass-003 (15 claim-level locator, attachment, wording, and blocker-hygiene fixes); researcher: task12-research-agent"
+  },
+  {
+    "app_id": 52,
+    "claim_id": "52.buildability",
+    "change": "changed",
+    "reason": "Task 12 remediation after independent read-only AI audit of task12-first-pass-003 (15 claim-level locator, attachment, wording, and blocker-hygiene fixes); researcher: task12-research-agent"
+  },
+  {
+    "app_id": 52,
+    "claim_id": "52.identity",
+    "change": "changed",
+    "reason": "Task 12 remediation after independent read-only AI audit of task12-first-pass-003 (15 claim-level locator, attachment, wording, and blocker-hygiene fixes); researcher: task12-research-agent"
+  },
+  {
+    "app_id": 52,
+    "claim_id": "52.mcp.discovery",
+    "change": "changed",
+    "reason": "Task 12 remediation after independent read-only AI audit of task12-first-pass-003 (15 claim-level locator, attachment, wording, and blocker-hygiene fixes); researcher: task12-research-agent"
+  },
+  {
+    "app_id": 52,
+    "claim_id": "52.mcp.official_remote_mcp",
+    "change": "changed",
+    "reason": "Task 12 remediation after independent read-only AI audit of task12-first-pass-003 (15 claim-level locator, attachment, wording, and blocker-hygiene fixes); researcher: task12-research-agent"
+  },
+  {
+    "app_id": 52,
+    "claim_id": "52.purpose",
+    "change": "changed",
+    "reason": "Task 12 remediation after independent read-only AI audit of task12-first-pass-003 (15 claim-level locator, attachment, wording, and blocker-hygiene fixes); researcher: task12-research-agent"
+  },
+  {
+    "app_id": 52,
+    "claim_id": "52.testing.self_serve",
+    "change": "changed",
+    "reason": "Task 12 remediation after independent read-only AI audit of task12-first-pass-003 (15 claim-level locator, attachment, wording, and blocker-hygiene fixes); researcher: task12-research-agent"
+  },
+  {
+    "app_id": 52,
+    "claim_id": "52.testing.trial_access",
+    "change": "changed",
+    "reason": "Task 12 remediation after independent read-only AI audit of task12-first-pass-003 (15 claim-level locator, attachment, wording, and blocker-hygiene fixes); researcher: task12-research-agent"
+  },
+  {
+    "app_id": 54,
+    "claim_id": "54.api.protocol.cli",
+    "change": "changed",
+    "reason": "Task 12 remediation after independent read-only AI audit of task12-first-pass-003 (15 claim-level locator, attachment, wording, and blocker-hygiene fixes); researcher: task12-research-agent"
+  },
+  {
+    "app_id": 54,
+    "claim_id": "54.api.protocol.sdk",
+    "change": "changed",
+    "reason": "Task 12 remediation after independent read-only AI audit of task12-first-pass-003 (15 claim-level locator, attachment, wording, and blocker-hygiene fixes); researcher: task12-research-agent"
+  },
+  {
+    "app_id": 54,
+    "claim_id": "54.auth.mcp_oauth2",
+    "change": "changed",
+    "reason": "Task 12 remediation after independent read-only AI audit of task12-first-pass-003 (15 claim-level locator, attachment, wording, and blocker-hygiene fixes); researcher: task12-research-agent"
+  },
+  {
+    "app_id": 54,
+    "claim_id": "54.auth.x_api_token",
+    "change": "changed",
+    "reason": "Task 12 remediation after independent read-only AI audit of task12-first-pass-003 (15 claim-level locator, attachment, wording, and blocker-hygiene fixes); researcher: task12-research-agent"
+  },
+  {
+    "app_id": 54,
+    "claim_id": "54.buildability",
+    "change": "changed",
+    "reason": "Task 12 remediation after independent read-only AI audit of task12-first-pass-003 (15 claim-level locator, attachment, wording, and blocker-hygiene fixes); researcher: task12-research-agent"
+  },
+  {
+    "app_id": 54,
+    "claim_id": "54.identity",
+    "change": "changed",
+    "reason": "Task 12 remediation after independent read-only AI audit of task12-first-pass-003 (15 claim-level locator, attachment, wording, and blocker-hygiene fixes); researcher: task12-research-agent"
+  },
+  {
+    "app_id": 54,
+    "claim_id": "54.production.paid_required",
+    "change": "changed",
+    "reason": "Task 12 remediation after independent read-only AI audit of task12-first-pass-003 (15 claim-level locator, attachment, wording, and blocker-hygiene fixes); researcher: task12-research-agent"
+  },
+  {
+    "app_id": 54,
+    "claim_id": "54.production.self_serve",
+    "change": "changed",
+    "reason": "Task 12 remediation after independent read-only AI audit of task12-first-pass-003 (15 claim-level locator, attachment, wording, and blocker-hygiene fixes); researcher: task12-research-agent"
+  },
+  {
+    "app_id": 54,
+    "claim_id": "54.purpose",
+    "change": "changed",
+    "reason": "Task 12 remediation after independent read-only AI audit of task12-first-pass-003 (15 claim-level locator, attachment, wording, and blocker-hygiene fixes); researcher: task12-research-agent"
+  },
+  {
+    "app_id": 54,
+    "claim_id": "54.testing.free_access",
+    "change": "changed",
+    "reason": "Task 12 remediation after independent read-only AI audit of task12-first-pass-003 (15 claim-level locator, attachment, wording, and blocker-hygiene fixes); researcher: task12-research-agent"
+  },
+  {
+    "app_id": 54,
+    "claim_id": "54.testing.self_serve",
+    "change": "changed",
+    "reason": "Task 12 remediation after independent read-only AI audit of task12-first-pass-003 (15 claim-level locator, attachment, wording, and blocker-hygiene fixes); researcher: task12-research-agent"
+  },
+  {
+    "app_id": 55,
+    "claim_id": "55.api.breadth",
+    "change": "changed",
+    "reason": "Task 12 remediation after independent read-only AI audit of task12-first-pass-003 (15 claim-level locator, attachment, wording, and blocker-hygiene fixes); researcher: task12-research-agent"
+  },
+  {
+    "app_id": 55,
+    "claim_id": "55.api.group.actors_runs_tasks",
+    "change": "changed",
+    "reason": "Task 12 remediation after independent read-only AI audit of task12-first-pass-003 (15 claim-level locator, attachment, wording, and blocker-hygiene fixes); researcher: task12-research-agent"
+  },
+  {
+    "app_id": 55,
+    "claim_id": "55.api.group.datasets",
+    "change": "changed",
+    "reason": "Task 12 remediation after independent read-only AI audit of task12-first-pass-003 (15 claim-level locator, attachment, wording, and blocker-hygiene fixes); researcher: task12-research-agent"
+  },
+  {
+    "app_id": 55,
+    "claim_id": "55.api.group.kv_stores_request_queues",
+    "change": "changed",
+    "reason": "Task 12 remediation after independent read-only AI audit of task12-first-pass-003 (15 claim-level locator, attachment, wording, and blocker-hygiene fixes); researcher: task12-research-agent"
+  },
+  {
+    "app_id": 55,
+    "claim_id": "55.api.group.webhooks_schedules_access",
+    "change": "changed",
+    "reason": "Task 12 remediation after independent read-only AI audit of task12-first-pass-003 (15 claim-level locator, attachment, wording, and blocker-hygiene fixes); researcher: task12-research-agent"
+  },
+  {
+    "app_id": 55,
+    "claim_id": "55.api.protocol.cli",
+    "change": "changed",
+    "reason": "Task 12 remediation after independent read-only AI audit of task12-first-pass-003 (15 claim-level locator, attachment, wording, and blocker-hygiene fixes); researcher: task12-research-agent"
+  },
+  {
+    "app_id": 55,
+    "claim_id": "55.api.protocol.rest",
+    "change": "changed",
+    "reason": "Task 12 remediation after independent read-only AI audit of task12-first-pass-003 (15 claim-level locator, attachment, wording, and blocker-hygiene fixes); researcher: task12-research-agent"
+  },
+  {
+    "app_id": 55,
+    "claim_id": "55.api.protocol.sdk",
+    "change": "changed",
+    "reason": "Task 12 remediation after independent read-only AI audit of task12-first-pass-003 (15 claim-level locator, attachment, wording, and blocker-hygiene fixes); researcher: task12-research-agent"
+  },
+  {
+    "app_id": 55,
+    "claim_id": "55.api.public_docs",
+    "change": "changed",
+    "reason": "Task 12 remediation after independent read-only AI audit of task12-first-pass-003 (15 claim-level locator, attachment, wording, and blocker-hygiene fixes); researcher: task12-research-agent"
+  },
+  {
+    "app_id": 55,
+    "claim_id": "55.auth.bearer_api_token",
+    "change": "changed",
+    "reason": "Task 12 remediation after independent read-only AI audit of task12-first-pass-003 (15 claim-level locator, attachment, wording, and blocker-hygiene fixes); researcher: task12-research-agent"
+  },
+  {
+    "app_id": 55,
+    "claim_id": "55.buildability",
+    "change": "changed",
+    "reason": "Task 12 remediation after independent read-only AI audit of task12-first-pass-003 (15 claim-level locator, attachment, wording, and blocker-hygiene fixes); researcher: task12-research-agent"
+  },
+  {
+    "app_id": 55,
+    "claim_id": "55.identity",
+    "change": "changed",
+    "reason": "Task 12 remediation after independent read-only AI audit of task12-first-pass-003 (15 claim-level locator, attachment, wording, and blocker-hygiene fixes); researcher: task12-research-agent"
+  },
+  {
+    "app_id": 55,
+    "claim_id": "55.purpose",
+    "change": "changed",
+    "reason": "Task 12 remediation after independent read-only AI audit of task12-first-pass-003 (15 claim-level locator, attachment, wording, and blocker-hygiene fixes); researcher: task12-research-agent"
+  },
+  {
+    "app_id": 55,
+    "claim_id": "55.testing.self_serve",
+    "change": "changed",
+    "reason": "Task 12 remediation after independent read-only AI audit of task12-first-pass-003 (15 claim-level locator, attachment, wording, and blocker-hygiene fixes); researcher: task12-research-agent"
+  },
+  {
+    "app_id": 56,
+    "claim_id": "56.api.breadth",
+    "change": "changed",
+    "reason": "Task 12 remediation after independent read-only AI audit of task12-first-pass-003 (15 claim-level locator, attachment, wording, and blocker-hygiene fixes); researcher: task12-research-agent"
+  },
+  {
+    "app_id": 56,
+    "claim_id": "56.api.group.crawl_map_webhooks",
+    "change": "changed",
+    "reason": "Task 12 remediation after independent read-only AI audit of task12-first-pass-003 (15 claim-level locator, attachment, wording, and blocker-hygiene fixes); researcher: task12-research-agent"
+  },
+  {
+    "app_id": 56,
+    "claim_id": "56.api.group.scrape_batch_extract",
+    "change": "changed",
+    "reason": "Task 12 remediation after independent read-only AI audit of task12-first-pass-003 (15 claim-level locator, attachment, wording, and blocker-hygiene fixes); researcher: task12-research-agent"
+  },
+  {
+    "app_id": 56,
+    "claim_id": "56.api.group.search_interact_monitor",
+    "change": "changed",
+    "reason": "Task 12 remediation after independent read-only AI audit of task12-first-pass-003 (15 claim-level locator, attachment, wording, and blocker-hygiene fixes); researcher: task12-research-agent"
+  },
+  {
+    "app_id": 56,
+    "claim_id": "56.api.group.usage_billing_account",
+    "change": "changed",
+    "reason": "Task 12 remediation after independent read-only AI audit of task12-first-pass-003 (15 claim-level locator, attachment, wording, and blocker-hygiene fixes); researcher: task12-research-agent"
+  },
+  {
+    "app_id": 56,
+    "claim_id": "56.api.protocol.cli",
+    "change": "changed",
+    "reason": "Task 12 remediation after independent read-only AI audit of task12-first-pass-003 (15 claim-level locator, attachment, wording, and blocker-hygiene fixes); researcher: task12-research-agent"
+  },
+  {
+    "app_id": 56,
+    "claim_id": "56.api.protocol.sdk",
+    "change": "changed",
+    "reason": "Task 12 remediation after independent read-only AI audit of task12-first-pass-003 (15 claim-level locator, attachment, wording, and blocker-hygiene fixes); researcher: task12-research-agent"
+  },
+  {
+    "app_id": 56,
+    "claim_id": "56.api.public_docs",
+    "change": "changed",
+    "reason": "Task 12 remediation after independent read-only AI audit of task12-first-pass-003 (15 claim-level locator, attachment, wording, and blocker-hygiene fixes); researcher: task12-research-agent"
+  },
+  {
+    "app_id": 56,
+    "claim_id": "56.auth.bearer_api_key",
+    "change": "changed",
+    "reason": "Task 12 remediation after independent read-only AI audit of task12-first-pass-003 (15 claim-level locator, attachment, wording, and blocker-hygiene fixes); researcher: task12-research-agent"
+  },
+  {
+    "app_id": 56,
+    "claim_id": "56.auth.keyless_trial",
+    "change": "changed",
+    "reason": "Task 12 remediation after independent read-only AI audit of task12-first-pass-003 (15 claim-level locator, attachment, wording, and blocker-hygiene fixes); researcher: task12-research-agent"
+  },
+  {
+    "app_id": 56,
+    "claim_id": "56.buildability",
+    "change": "changed",
+    "reason": "Task 12 remediation after independent read-only AI audit of task12-first-pass-003 (15 claim-level locator, attachment, wording, and blocker-hygiene fixes); researcher: task12-research-agent"
+  },
+  {
+    "app_id": 56,
+    "claim_id": "56.identity",
+    "change": "changed",
+    "reason": "Task 12 remediation after independent read-only AI audit of task12-first-pass-003 (15 claim-level locator, attachment, wording, and blocker-hygiene fixes); researcher: task12-research-agent"
+  },
+  {
+    "app_id": 56,
+    "claim_id": "56.mcp.discovery",
+    "change": "changed",
+    "reason": "Task 12 remediation after independent read-only AI audit of task12-first-pass-003 (15 claim-level locator, attachment, wording, and blocker-hygiene fixes); researcher: task12-research-agent"
+  },
+  {
+    "app_id": 56,
+    "claim_id": "56.mcp.official_hosted_mcp",
+    "change": "changed",
+    "reason": "Task 12 remediation after independent read-only AI audit of task12-first-pass-003 (15 claim-level locator, attachment, wording, and blocker-hygiene fixes); researcher: task12-research-agent"
+  },
+  {
+    "app_id": 56,
+    "claim_id": "56.mcp.official_local_mcp",
+    "change": "changed",
+    "reason": "Task 12 remediation after independent read-only AI audit of task12-first-pass-003 (15 claim-level locator, attachment, wording, and blocker-hygiene fixes); researcher: task12-research-agent"
+  },
+  {
+    "app_id": 56,
+    "claim_id": "56.purpose",
+    "change": "changed",
+    "reason": "Task 12 remediation after independent read-only AI audit of task12-first-pass-003 (15 claim-level locator, attachment, wording, and blocker-hygiene fixes); researcher: task12-research-agent"
+  },
+  {
+    "app_id": 57,
+    "claim_id": "57.api.breadth",
+    "change": "changed",
+    "reason": "Task 12 remediation after independent read-only AI audit of task12-first-pass-003 (15 claim-level locator, attachment, wording, and blocker-hygiene fixes); researcher: task12-research-agent"
+  },
+  {
+    "app_id": 57,
+    "claim_id": "57.api.group.unlocker_serp_browser",
+    "change": "changed",
+    "reason": "Task 12 remediation after independent read-only AI audit of task12-first-pass-003 (15 claim-level locator, attachment, wording, and blocker-hygiene fixes); researcher: task12-research-agent"
+  },
+  {
+    "app_id": 57,
+    "claim_id": "57.api.protocol.rest",
+    "change": "changed",
+    "reason": "Task 12 remediation after independent read-only AI audit of task12-first-pass-003 (15 claim-level locator, attachment, wording, and blocker-hygiene fixes); researcher: task12-research-agent"
+  },
+  {
+    "app_id": 60,
+    "claim_id": "60.api.breadth",
+    "change": "changed",
+    "reason": "Task 12 remediation after independent read-only AI audit of task12-first-pass-003 (15 claim-level locator, attachment, wording, and blocker-hygiene fixes); researcher: task12-research-agent"
+  },
+  {
+    "app_id": 60,
+    "claim_id": "60.api.group.audiences_signals_webhooks_credits",
+    "change": "changed",
+    "reason": "Task 12 remediation after independent read-only AI audit of task12-first-pass-003 (15 claim-level locator, attachment, wording, and blocker-hygiene fixes); researcher: task12-research-agent"
+  },
+  {
+    "app_id": 60,
+    "claim_id": "60.api.group.routines_functions_workflows",
+    "change": "changed",
+    "reason": "Task 12 remediation after independent read-only AI audit of task12-first-pass-003 (15 claim-level locator, attachment, wording, and blocker-hygiene fixes); researcher: task12-research-agent"
+  },
+  {
+    "app_id": 60,
+    "claim_id": "60.api.group.searches_gtm_db",
+    "change": "changed",
+    "reason": "Task 12 remediation after independent read-only AI audit of task12-first-pass-003 (15 claim-level locator, attachment, wording, and blocker-hygiene fixes); researcher: task12-research-agent"
+  },
+  {
+    "app_id": 60,
+    "claim_id": "60.api.group.tables_enterprise",
+    "change": "changed",
+    "reason": "Task 12 remediation after independent read-only AI audit of task12-first-pass-003 (15 claim-level locator, attachment, wording, and blocker-hygiene fixes); researcher: task12-research-agent"
+  },
+  {
+    "app_id": 60,
+    "claim_id": "60.api.public_docs",
+    "change": "changed",
+    "reason": "Task 12 remediation after independent read-only AI audit of task12-first-pass-003 (15 claim-level locator, attachment, wording, and blocker-hygiene fixes); researcher: task12-research-agent"
+  },
+  {
+    "app_id": 60,
+    "claim_id": "60.buildability",
+    "change": "changed",
+    "reason": "Task 12 remediation after independent read-only AI audit of task12-first-pass-003 (15 claim-level locator, attachment, wording, and blocker-hygiene fixes); researcher: task12-research-agent"
+  },
+  {
+    "app_id": 60,
+    "claim_id": "60.identity",
+    "change": "changed",
+    "reason": "Task 12 remediation after independent read-only AI audit of task12-first-pass-003 (15 claim-level locator, attachment, wording, and blocker-hygiene fixes); researcher: task12-research-agent"
+  },
+  {
+    "app_id": 60,
+    "claim_id": "60.mcp.official_clay_mcp",
+    "change": "changed",
+    "reason": "Task 12 remediation after independent read-only AI audit of task12-first-pass-003 (15 claim-level locator, attachment, wording, and blocker-hygiene fixes); researcher: task12-research-agent"
+  },
+  {
+    "app_id": 60,
+    "claim_id": "60.purpose",
+    "change": "changed",
+    "reason": "Task 12 remediation after independent read-only AI audit of task12-first-pass-003 (15 claim-level locator, attachment, wording, and blocker-hygiene fixes); researcher: task12-research-agent"
+  }
+]

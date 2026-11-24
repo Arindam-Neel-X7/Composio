@@ -1,0 +1,1286 @@
+[
+  {
+    "app_id": 41,
+    "claim_id": "41.api.breadth",
+    "change": "changed",
+    "reason": "Task 11 first-pass extraction for Ecommerce apps 41-50 (contract v1.1, task11-research-agent-gemini)"
+  },
+  {
+    "app_id": 41,
+    "claim_id": "41.api.group.orders_customers",
+    "change": "added",
+    "reason": "Task 11 first-pass extraction for Ecommerce apps 41-50 (contract v1.1, task11-research-agent-gemini)"
+  },
+  {
+    "app_id": 41,
+    "claim_id": "41.api.group.partner_data",
+    "change": "added",
+    "reason": "Task 11 first-pass extraction for Ecommerce apps 41-50 (contract v1.1, task11-research-agent-gemini)"
+  },
+  {
+    "app_id": 41,
+    "claim_id": "41.api.group.payments_events",
+    "change": "added",
+    "reason": "Task 11 first-pass extraction for Ecommerce apps 41-50 (contract v1.1, task11-research-agent-gemini)"
+  },
+  {
+    "app_id": 41,
+    "claim_id": "41.api.group.products_inventory",
+    "change": "added",
+    "reason": "Task 11 first-pass extraction for Ecommerce apps 41-50 (contract v1.1, task11-research-agent-gemini)"
+  },
+  {
+    "app_id": 41,
+    "claim_id": "41.api.protocol.cli",
+    "change": "added",
+    "reason": "Task 11 first-pass extraction for Ecommerce apps 41-50 (contract v1.1, task11-research-agent-gemini)"
+  },
+  {
+    "app_id": 41,
+    "claim_id": "41.api.protocol.graphql",
+    "change": "added",
+    "reason": "Task 11 first-pass extraction for Ecommerce apps 41-50 (contract v1.1, task11-research-agent-gemini)"
+  },
+  {
+    "app_id": 41,
+    "claim_id": "41.api.protocol.rest",
+    "change": "added",
+    "reason": "Task 11 first-pass extraction for Ecommerce apps 41-50 (contract v1.1, task11-research-agent-gemini)"
+  },
+  {
+    "app_id": 41,
+    "claim_id": "41.api.public_docs",
+    "change": "added",
+    "reason": "Task 11 first-pass extraction for Ecommerce apps 41-50 (contract v1.1, task11-research-agent-gemini)"
+  },
+  {
+    "app_id": 41,
+    "claim_id": "41.api.public_documentation",
+    "change": "removed",
+    "reason": "Task 11 first-pass extraction for Ecommerce apps 41-50 (contract v1.1, task11-research-agent-gemini)"
+  },
+  {
+    "app_id": 41,
+    "claim_id": "41.auth.admin_access_token",
+    "change": "added",
+    "reason": "Task 11 first-pass extraction for Ecommerce apps 41-50 (contract v1.1, task11-research-agent-gemini)"
+  },
+  {
+    "app_id": 41,
+    "claim_id": "41.auth.client_credentials_oauth2",
+    "change": "added",
+    "reason": "Task 11 first-pass extraction for Ecommerce apps 41-50 (contract v1.1, task11-research-agent-gemini)"
+  },
+  {
+    "app_id": 41,
+    "claim_id": "41.buildability",
+    "change": "changed",
+    "reason": "Task 11 first-pass extraction for Ecommerce apps 41-50 (contract v1.1, task11-research-agent-gemini)"
+  },
+  {
+    "app_id": 41,
+    "claim_id": "41.identity",
+    "change": "changed",
+    "reason": "Task 11 first-pass extraction for Ecommerce apps 41-50 (contract v1.1, task11-research-agent-gemini)"
+  },
+  {
+    "app_id": 41,
+    "claim_id": "41.mcp",
+    "change": "removed",
+    "reason": "Task 11 first-pass extraction for Ecommerce apps 41-50 (contract v1.1, task11-research-agent-gemini)"
+  },
+  {
+    "app_id": 41,
+    "claim_id": "41.mcp.discovery",
+    "change": "added",
+    "reason": "Task 11 first-pass extraction for Ecommerce apps 41-50 (contract v1.1, task11-research-agent-gemini)"
+  },
+  {
+    "app_id": 41,
+    "claim_id": "41.mcp.shop_mcp",
+    "change": "added",
+    "reason": "Task 11 first-pass extraction for Ecommerce apps 41-50 (contract v1.1, task11-research-agent-gemini)"
+  },
+  {
+    "app_id": 41,
+    "claim_id": "41.mcp.shop_mcp.operational",
+    "change": "added",
+    "reason": "Task 11 first-pass extraction for Ecommerce apps 41-50 (contract v1.1, task11-research-agent-gemini)"
+  },
+  {
+    "app_id": 41,
+    "claim_id": "41.production.admin_approval_required",
+    "change": "changed",
+    "reason": "Task 11 first-pass extraction for Ecommerce apps 41-50 (contract v1.1, task11-research-agent-gemini)"
+  },
+  {
+    "app_id": 41,
+    "claim_id": "41.production.paid_required",
+    "change": "changed",
+    "reason": "Task 11 first-pass extraction for Ecommerce apps 41-50 (contract v1.1, task11-research-agent-gemini)"
+  },
+  {
+    "app_id": 41,
+    "claim_id": "41.production.vendor_approval_required",
+    "change": "changed",
+    "reason": "Task 11 first-pass extraction for Ecommerce apps 41-50 (contract v1.1, task11-research-agent-gemini)"
+  },
+  {
+    "app_id": 41,
+    "claim_id": "41.purpose",
+    "change": "changed",
+    "reason": "Task 11 first-pass extraction for Ecommerce apps 41-50 (contract v1.1, task11-research-agent-gemini)"
+  },
+  {
+    "app_id": 41,
+    "claim_id": "41.testing.sandbox_access",
+    "change": "changed",
+    "reason": "Task 11 first-pass extraction for Ecommerce apps 41-50 (contract v1.1, task11-research-agent-gemini)"
+  },
+  {
+    "app_id": 41,
+    "claim_id": "41.testing.self_serve",
+    "change": "changed",
+    "reason": "Task 11 first-pass extraction for Ecommerce apps 41-50 (contract v1.1, task11-research-agent-gemini)"
+  },
+  {
+    "app_id": 41,
+    "claim_id": "41.testing.trial_access",
+    "change": "changed",
+    "reason": "Task 11 first-pass extraction for Ecommerce apps 41-50 (contract v1.1, task11-research-agent-gemini)"
+  },
+  {
+    "app_id": 42,
+    "claim_id": "42.api.breadth",
+    "change": "changed",
+    "reason": "Task 11 first-pass extraction for Ecommerce apps 41-50 (contract v1.1, task11-research-agent-gemini)"
+  },
+  {
+    "app_id": 42,
+    "claim_id": "42.api.group.customers",
+    "change": "added",
+    "reason": "Task 11 first-pass extraction for Ecommerce apps 41-50 (contract v1.1, task11-research-agent-gemini)"
+  },
+  {
+    "app_id": 42,
+    "claim_id": "42.api.group.orders_payments",
+    "change": "added",
+    "reason": "Task 11 first-pass extraction for Ecommerce apps 41-50 (contract v1.1, task11-research-agent-gemini)"
+  },
+  {
+    "app_id": 42,
+    "claim_id": "42.api.group.products_coupons",
+    "change": "added",
+    "reason": "Task 11 first-pass extraction for Ecommerce apps 41-50 (contract v1.1, task11-research-agent-gemini)"
+  },
+  {
+    "app_id": 42,
+    "claim_id": "42.api.group.webhooks",
+    "change": "added",
+    "reason": "Task 11 first-pass extraction for Ecommerce apps 41-50 (contract v1.1, task11-research-agent-gemini)"
+  },
+  {
+    "app_id": 42,
+    "claim_id": "42.api.protocol.cli",
+    "change": "added",
+    "reason": "Task 11 first-pass extraction for Ecommerce apps 41-50 (contract v1.1, task11-research-agent-gemini)"
+  },
+  {
+    "app_id": 42,
+    "claim_id": "42.api.protocol.rest",
+    "change": "added",
+    "reason": "Task 11 first-pass extraction for Ecommerce apps 41-50 (contract v1.1, task11-research-agent-gemini)"
+  },
+  {
+    "app_id": 42,
+    "claim_id": "42.api.protocol.sdk",
+    "change": "added",
+    "reason": "Task 11 first-pass extraction for Ecommerce apps 41-50 (contract v1.1, task11-research-agent-gemini)"
+  },
+  {
+    "app_id": 42,
+    "claim_id": "42.api.public_docs",
+    "change": "added",
+    "reason": "Task 11 first-pass extraction for Ecommerce apps 41-50 (contract v1.1, task11-research-agent-gemini)"
+  },
+  {
+    "app_id": 42,
+    "claim_id": "42.api.public_documentation",
+    "change": "removed",
+    "reason": "Task 11 first-pass extraction for Ecommerce apps 41-50 (contract v1.1, task11-research-agent-gemini)"
+  },
+  {
+    "app_id": 42,
+    "claim_id": "42.auth.basic_consumer_keys",
+    "change": "added",
+    "reason": "Task 11 first-pass extraction for Ecommerce apps 41-50 (contract v1.1, task11-research-agent-gemini)"
+  },
+  {
+    "app_id": 42,
+    "claim_id": "42.auth.oauth1a_http",
+    "change": "added",
+    "reason": "Task 11 first-pass extraction for Ecommerce apps 41-50 (contract v1.1, task11-research-agent-gemini)"
+  },
+  {
+    "app_id": 42,
+    "claim_id": "42.auth.wp_application_password_mcp",
+    "change": "added",
+    "reason": "Task 11 first-pass extraction for Ecommerce apps 41-50 (contract v1.1, task11-research-agent-gemini)"
+  },
+  {
+    "app_id": 42,
+    "claim_id": "42.buildability",
+    "change": "changed",
+    "reason": "Task 11 first-pass extraction for Ecommerce apps 41-50 (contract v1.1, task11-research-agent-gemini)"
+  },
+  {
+    "app_id": 42,
+    "claim_id": "42.identity",
+    "change": "changed",
+    "reason": "Task 11 first-pass extraction for Ecommerce apps 41-50 (contract v1.1, task11-research-agent-gemini)"
+  },
+  {
+    "app_id": 42,
+    "claim_id": "42.mcp",
+    "change": "removed",
+    "reason": "Task 11 first-pass extraction for Ecommerce apps 41-50 (contract v1.1, task11-research-agent-gemini)"
+  },
+  {
+    "app_id": 42,
+    "claim_id": "42.mcp.discovery",
+    "change": "added",
+    "reason": "Task 11 first-pass extraction for Ecommerce apps 41-50 (contract v1.1, task11-research-agent-gemini)"
+  },
+  {
+    "app_id": 42,
+    "claim_id": "42.mcp.wp_mcp_adapter",
+    "change": "added",
+    "reason": "Task 11 first-pass extraction for Ecommerce apps 41-50 (contract v1.1, task11-research-agent-gemini)"
+  },
+  {
+    "app_id": 42,
+    "claim_id": "42.mcp.wp_mcp_adapter.operational",
+    "change": "added",
+    "reason": "Task 11 first-pass extraction for Ecommerce apps 41-50 (contract v1.1, task11-research-agent-gemini)"
+  },
+  {
+    "app_id": 42,
+    "claim_id": "42.production.admin_approval_required",
+    "change": "changed",
+    "reason": "Task 11 first-pass extraction for Ecommerce apps 41-50 (contract v1.1, task11-research-agent-gemini)"
+  },
+  {
+    "app_id": 42,
+    "claim_id": "42.production.free_access",
+    "change": "changed",
+    "reason": "Task 11 first-pass extraction for Ecommerce apps 41-50 (contract v1.1, task11-research-agent-gemini)"
+  },
+  {
+    "app_id": 42,
+    "claim_id": "42.production.paid_required",
+    "change": "changed",
+    "reason": "Task 11 first-pass extraction for Ecommerce apps 41-50 (contract v1.1, task11-research-agent-gemini)"
+  },
+  {
+    "app_id": 42,
+    "claim_id": "42.production.self_serve",
+    "change": "changed",
+    "reason": "Task 11 first-pass extraction for Ecommerce apps 41-50 (contract v1.1, task11-research-agent-gemini)"
+  },
+  {
+    "app_id": 42,
+    "claim_id": "42.purpose",
+    "change": "changed",
+    "reason": "Task 11 first-pass extraction for Ecommerce apps 41-50 (contract v1.1, task11-research-agent-gemini)"
+  },
+  {
+    "app_id": 42,
+    "claim_id": "42.testing.free_access",
+    "change": "changed",
+    "reason": "Task 11 first-pass extraction for Ecommerce apps 41-50 (contract v1.1, task11-research-agent-gemini)"
+  },
+  {
+    "app_id": 42,
+    "claim_id": "42.testing.self_serve",
+    "change": "changed",
+    "reason": "Task 11 first-pass extraction for Ecommerce apps 41-50 (contract v1.1, task11-research-agent-gemini)"
+  },
+  {
+    "app_id": 43,
+    "claim_id": "43.api.breadth",
+    "change": "changed",
+    "reason": "Task 11 first-pass extraction for Ecommerce apps 41-50 (contract v1.1, task11-research-agent-gemini)"
+  },
+  {
+    "app_id": 43,
+    "claim_id": "43.api.group.catalog_inventory",
+    "change": "added",
+    "reason": "Task 11 first-pass extraction for Ecommerce apps 41-50 (contract v1.1, task11-research-agent-gemini)"
+  },
+  {
+    "app_id": 43,
+    "claim_id": "43.api.group.channels_sites",
+    "change": "added",
+    "reason": "Task 11 first-pass extraction for Ecommerce apps 41-50 (contract v1.1, task11-research-agent-gemini)"
+  },
+  {
+    "app_id": 43,
+    "claim_id": "43.api.group.customers_b2b",
+    "change": "added",
+    "reason": "Task 11 first-pass extraction for Ecommerce apps 41-50 (contract v1.1, task11-research-agent-gemini)"
+  },
+  {
+    "app_id": 43,
+    "claim_id": "43.api.group.orders_checkouts",
+    "change": "added",
+    "reason": "Task 11 first-pass extraction for Ecommerce apps 41-50 (contract v1.1, task11-research-agent-gemini)"
+  },
+  {
+    "app_id": 43,
+    "claim_id": "43.api.protocol.graphql",
+    "change": "added",
+    "reason": "Task 11 first-pass extraction for Ecommerce apps 41-50 (contract v1.1, task11-research-agent-gemini)"
+  },
+  {
+    "app_id": 43,
+    "claim_id": "43.api.protocol.rest",
+    "change": "added",
+    "reason": "Task 11 first-pass extraction for Ecommerce apps 41-50 (contract v1.1, task11-research-agent-gemini)"
+  },
+  {
+    "app_id": 43,
+    "claim_id": "43.api.public_docs",
+    "change": "added",
+    "reason": "Task 11 first-pass extraction for Ecommerce apps 41-50 (contract v1.1, task11-research-agent-gemini)"
+  },
+  {
+    "app_id": 43,
+    "claim_id": "43.api.public_documentation",
+    "change": "removed",
+    "reason": "Task 11 first-pass extraction for Ecommerce apps 41-50 (contract v1.1, task11-research-agent-gemini)"
+  },
+  {
+    "app_id": 43,
+    "claim_id": "43.auth.oauth_api_accounts",
+    "change": "added",
+    "reason": "Task 11 first-pass extraction for Ecommerce apps 41-50 (contract v1.1, task11-research-agent-gemini)"
+  },
+  {
+    "app_id": 43,
+    "claim_id": "43.auth.storefront_graphql_bearer",
+    "change": "added",
+    "reason": "Task 11 first-pass extraction for Ecommerce apps 41-50 (contract v1.1, task11-research-agent-gemini)"
+  },
+  {
+    "app_id": 43,
+    "claim_id": "43.buildability",
+    "change": "changed",
+    "reason": "Task 11 first-pass extraction for Ecommerce apps 41-50 (contract v1.1, task11-research-agent-gemini)"
+  },
+  {
+    "app_id": 43,
+    "claim_id": "43.identity",
+    "change": "changed",
+    "reason": "Task 11 first-pass extraction for Ecommerce apps 41-50 (contract v1.1, task11-research-agent-gemini)"
+  },
+  {
+    "app_id": 43,
+    "claim_id": "43.mcp",
+    "change": "removed",
+    "reason": "Task 11 first-pass extraction for Ecommerce apps 41-50 (contract v1.1, task11-research-agent-gemini)"
+  },
+  {
+    "app_id": 43,
+    "claim_id": "43.mcp.discovery",
+    "change": "added",
+    "reason": "Task 11 first-pass extraction for Ecommerce apps 41-50 (contract v1.1, task11-research-agent-gemini)"
+  },
+  {
+    "app_id": 43,
+    "claim_id": "43.mcp.docs_mcp",
+    "change": "added",
+    "reason": "Task 11 first-pass extraction for Ecommerce apps 41-50 (contract v1.1, task11-research-agent-gemini)"
+  },
+  {
+    "app_id": 43,
+    "claim_id": "43.mcp.docs_mcp.operational",
+    "change": "added",
+    "reason": "Task 11 first-pass extraction for Ecommerce apps 41-50 (contract v1.1, task11-research-agent-gemini)"
+  },
+  {
+    "app_id": 43,
+    "claim_id": "43.mcp.store_mcp_suite",
+    "change": "added",
+    "reason": "Task 11 first-pass extraction for Ecommerce apps 41-50 (contract v1.1, task11-research-agent-gemini)"
+  },
+  {
+    "app_id": 43,
+    "claim_id": "43.mcp.store_mcp_suite.operational",
+    "change": "added",
+    "reason": "Task 11 first-pass extraction for Ecommerce apps 41-50 (contract v1.1, task11-research-agent-gemini)"
+  },
+  {
+    "app_id": 43,
+    "claim_id": "43.production.paid_required",
+    "change": "changed",
+    "reason": "Task 11 first-pass extraction for Ecommerce apps 41-50 (contract v1.1, task11-research-agent-gemini)"
+  },
+  {
+    "app_id": 43,
+    "claim_id": "43.production.self_serve",
+    "change": "changed",
+    "reason": "Task 11 first-pass extraction for Ecommerce apps 41-50 (contract v1.1, task11-research-agent-gemini)"
+  },
+  {
+    "app_id": 43,
+    "claim_id": "43.purpose",
+    "change": "changed",
+    "reason": "Task 11 first-pass extraction for Ecommerce apps 41-50 (contract v1.1, task11-research-agent-gemini)"
+  },
+  {
+    "app_id": 43,
+    "claim_id": "43.testing.partner_approval_required",
+    "change": "changed",
+    "reason": "Task 11 first-pass extraction for Ecommerce apps 41-50 (contract v1.1, task11-research-agent-gemini)"
+  },
+  {
+    "app_id": 43,
+    "claim_id": "43.testing.sandbox_access",
+    "change": "changed",
+    "reason": "Task 11 first-pass extraction for Ecommerce apps 41-50 (contract v1.1, task11-research-agent-gemini)"
+  },
+  {
+    "app_id": 43,
+    "claim_id": "43.testing.trial_access",
+    "change": "changed",
+    "reason": "Task 11 first-pass extraction for Ecommerce apps 41-50 (contract v1.1, task11-research-agent-gemini)"
+  },
+  {
+    "app_id": 44,
+    "claim_id": "44.api.breadth",
+    "change": "changed",
+    "reason": "Task 11 first-pass extraction for Ecommerce apps 41-50 (contract v1.1, task11-research-agent-gemini)"
+  },
+  {
+    "app_id": 44,
+    "claim_id": "44.api.group.admin_mrt_ods",
+    "change": "added",
+    "reason": "Task 11 first-pass extraction for Ecommerce apps 41-50 (contract v1.1, task11-research-agent-gemini)"
+  },
+  {
+    "app_id": 44,
+    "claim_id": "44.api.group.shopper_catalog_search",
+    "change": "added",
+    "reason": "Task 11 first-pass extraction for Ecommerce apps 41-50 (contract v1.1, task11-research-agent-gemini)"
+  },
+  {
+    "app_id": 44,
+    "claim_id": "44.api.group.shopper_login_custom",
+    "change": "added",
+    "reason": "Task 11 first-pass extraction for Ecommerce apps 41-50 (contract v1.1, task11-research-agent-gemini)"
+  },
+  {
+    "app_id": 44,
+    "claim_id": "44.api.protocol.cli",
+    "change": "added",
+    "reason": "Task 11 first-pass extraction for Ecommerce apps 41-50 (contract v1.1, task11-research-agent-gemini)"
+  },
+  {
+    "app_id": 44,
+    "claim_id": "44.api.protocol.rest",
+    "change": "added",
+    "reason": "Task 11 first-pass extraction for Ecommerce apps 41-50 (contract v1.1, task11-research-agent-gemini)"
+  },
+  {
+    "app_id": 44,
+    "claim_id": "44.api.protocol.sdk",
+    "change": "added",
+    "reason": "Task 11 first-pass extraction for Ecommerce apps 41-50 (contract v1.1, task11-research-agent-gemini)"
+  },
+  {
+    "app_id": 44,
+    "claim_id": "44.api.public_docs",
+    "change": "added",
+    "reason": "Task 11 first-pass extraction for Ecommerce apps 41-50 (contract v1.1, task11-research-agent-gemini)"
+  },
+  {
+    "app_id": 44,
+    "claim_id": "44.api.public_documentation",
+    "change": "removed",
+    "reason": "Task 11 first-pass extraction for Ecommerce apps 41-50 (contract v1.1, task11-research-agent-gemini)"
+  },
+  {
+    "app_id": 44,
+    "claim_id": "44.auth.b2c_tooling_auth",
+    "change": "added",
+    "reason": "Task 11 first-pass extraction for Ecommerce apps 41-50 (contract v1.1, task11-research-agent-gemini)"
+  },
+  {
+    "app_id": 44,
+    "claim_id": "44.auth.slas_oauth2_jwt",
+    "change": "added",
+    "reason": "Task 11 first-pass extraction for Ecommerce apps 41-50 (contract v1.1, task11-research-agent-gemini)"
+  },
+  {
+    "app_id": 44,
+    "claim_id": "44.buildability",
+    "change": "changed",
+    "reason": "Task 11 first-pass extraction for Ecommerce apps 41-50 (contract v1.1, task11-research-agent-gemini)"
+  },
+  {
+    "app_id": 44,
+    "claim_id": "44.identity",
+    "change": "changed",
+    "reason": "Task 11 first-pass extraction for Ecommerce apps 41-50 (contract v1.1, task11-research-agent-gemini)"
+  },
+  {
+    "app_id": 44,
+    "claim_id": "44.mcp",
+    "change": "removed",
+    "reason": "Task 11 first-pass extraction for Ecommerce apps 41-50 (contract v1.1, task11-research-agent-gemini)"
+  },
+  {
+    "app_id": 44,
+    "claim_id": "44.mcp.b2c_dx_mcp",
+    "change": "added",
+    "reason": "Task 11 first-pass extraction for Ecommerce apps 41-50 (contract v1.1, task11-research-agent-gemini)"
+  },
+  {
+    "app_id": 44,
+    "claim_id": "44.mcp.b2c_dx_mcp.operational",
+    "change": "added",
+    "reason": "Task 11 first-pass extraction for Ecommerce apps 41-50 (contract v1.1, task11-research-agent-gemini)"
+  },
+  {
+    "app_id": 44,
+    "claim_id": "44.mcp.discovery",
+    "change": "added",
+    "reason": "Task 11 first-pass extraction for Ecommerce apps 41-50 (contract v1.1, task11-research-agent-gemini)"
+  },
+  {
+    "app_id": 44,
+    "claim_id": "44.production.contact_sales_required",
+    "change": "changed",
+    "reason": "Task 11 first-pass extraction for Ecommerce apps 41-50 (contract v1.1, task11-research-agent-gemini)"
+  },
+  {
+    "app_id": 44,
+    "claim_id": "44.production.paid_required",
+    "change": "changed",
+    "reason": "Task 11 first-pass extraction for Ecommerce apps 41-50 (contract v1.1, task11-research-agent-gemini)"
+  },
+  {
+    "app_id": 44,
+    "claim_id": "44.purpose",
+    "change": "changed",
+    "reason": "Task 11 first-pass extraction for Ecommerce apps 41-50 (contract v1.1, task11-research-agent-gemini)"
+  },
+  {
+    "app_id": 45,
+    "claim_id": "45.api.breadth",
+    "change": "changed",
+    "reason": "Task 11 first-pass extraction for Ecommerce apps 41-50 (contract v1.1, task11-research-agent-gemini)"
+  },
+  {
+    "app_id": 45,
+    "claim_id": "45.api.group.customers_accounts",
+    "change": "added",
+    "reason": "Task 11 first-pass extraction for Ecommerce apps 41-50 (contract v1.1, task11-research-agent-gemini)"
+  },
+  {
+    "app_id": 45,
+    "claim_id": "45.api.group.graphql_core_b2b",
+    "change": "added",
+    "reason": "Task 11 first-pass extraction for Ecommerce apps 41-50 (contract v1.1, task11-research-agent-gemini)"
+  },
+  {
+    "app_id": 45,
+    "claim_id": "45.api.group.storefront_shopping_crm_erp",
+    "change": "added",
+    "reason": "Task 11 first-pass extraction for Ecommerce apps 41-50 (contract v1.1, task11-research-agent-gemini)"
+  },
+  {
+    "app_id": 45,
+    "claim_id": "45.api.protocol.graphql",
+    "change": "added",
+    "reason": "Task 11 first-pass extraction for Ecommerce apps 41-50 (contract v1.1, task11-research-agent-gemini)"
+  },
+  {
+    "app_id": 45,
+    "claim_id": "45.api.protocol.rest",
+    "change": "added",
+    "reason": "Task 11 first-pass extraction for Ecommerce apps 41-50 (contract v1.1, task11-research-agent-gemini)"
+  },
+  {
+    "app_id": 45,
+    "claim_id": "45.api.public_docs",
+    "change": "added",
+    "reason": "Task 11 first-pass extraction for Ecommerce apps 41-50 (contract v1.1, task11-research-agent-gemini)"
+  },
+  {
+    "app_id": 45,
+    "claim_id": "45.api.public_documentation",
+    "change": "removed",
+    "reason": "Task 11 first-pass extraction for Ecommerce apps 41-50 (contract v1.1, task11-research-agent-gemini)"
+  },
+  {
+    "app_id": 45,
+    "claim_id": "45.auth.paas_bearer_token",
+    "change": "added",
+    "reason": "Task 11 first-pass extraction for Ecommerce apps 41-50 (contract v1.1, task11-research-agent-gemini)"
+  },
+  {
+    "app_id": 45,
+    "claim_id": "45.auth.paas_oauth1a",
+    "change": "added",
+    "reason": "Task 11 first-pass extraction for Ecommerce apps 41-50 (contract v1.1, task11-research-agent-gemini)"
+  },
+  {
+    "app_id": 45,
+    "claim_id": "45.auth.paas_session_cookie",
+    "change": "added",
+    "reason": "Task 11 first-pass extraction for Ecommerce apps 41-50 (contract v1.1, task11-research-agent-gemini)"
+  },
+  {
+    "app_id": 45,
+    "claim_id": "45.auth.saas_adobe_ims_bearer",
+    "change": "added",
+    "reason": "Task 11 first-pass extraction for Ecommerce apps 41-50 (contract v1.1, task11-research-agent-gemini)"
+  },
+  {
+    "app_id": 45,
+    "claim_id": "45.buildability",
+    "change": "changed",
+    "reason": "Task 11 first-pass extraction for Ecommerce apps 41-50 (contract v1.1, task11-research-agent-gemini)"
+  },
+  {
+    "app_id": 45,
+    "claim_id": "45.identity",
+    "change": "changed",
+    "reason": "Task 11 first-pass extraction for Ecommerce apps 41-50 (contract v1.1, task11-research-agent-gemini)"
+  },
+  {
+    "app_id": 45,
+    "claim_id": "45.mcp",
+    "change": "removed",
+    "reason": "Task 11 first-pass extraction for Ecommerce apps 41-50 (contract v1.1, task11-research-agent-gemini)"
+  },
+  {
+    "app_id": 45,
+    "claim_id": "45.mcp.discovery",
+    "change": "added",
+    "reason": "Task 11 first-pass extraction for Ecommerce apps 41-50 (contract v1.1, task11-research-agent-gemini)"
+  },
+  {
+    "app_id": 45,
+    "claim_id": "45.production.admin_approval_required",
+    "change": "changed",
+    "reason": "Task 11 first-pass extraction for Ecommerce apps 41-50 (contract v1.1, task11-research-agent-gemini)"
+  },
+  {
+    "app_id": 45,
+    "claim_id": "45.production.free_access",
+    "change": "changed",
+    "reason": "Task 11 first-pass extraction for Ecommerce apps 41-50 (contract v1.1, task11-research-agent-gemini)"
+  },
+  {
+    "app_id": 45,
+    "claim_id": "45.purpose",
+    "change": "changed",
+    "reason": "Task 11 first-pass extraction for Ecommerce apps 41-50 (contract v1.1, task11-research-agent-gemini)"
+  },
+  {
+    "app_id": 45,
+    "claim_id": "45.testing.free_access",
+    "change": "changed",
+    "reason": "Task 11 first-pass extraction for Ecommerce apps 41-50 (contract v1.1, task11-research-agent-gemini)"
+  },
+  {
+    "app_id": 45,
+    "claim_id": "45.testing.self_serve",
+    "change": "changed",
+    "reason": "Task 11 first-pass extraction for Ecommerce apps 41-50 (contract v1.1, task11-research-agent-gemini)"
+  },
+  {
+    "app_id": 46,
+    "claim_id": "46.api.breadth",
+    "change": "changed",
+    "reason": "Task 11 first-pass extraction for Ecommerce apps 41-50 (contract v1.1, task11-research-agent-gemini)"
+  },
+  {
+    "app_id": 46,
+    "claim_id": "46.api.group.contacts_profiles_discounts",
+    "change": "added",
+    "reason": "Task 11 first-pass extraction for Ecommerce apps 41-50 (contract v1.1, task11-research-agent-gemini)"
+  },
+  {
+    "app_id": 46,
+    "claim_id": "46.api.group.orders_transactions",
+    "change": "added",
+    "reason": "Task 11 first-pass extraction for Ecommerce apps 41-50 (contract v1.1, task11-research-agent-gemini)"
+  },
+  {
+    "app_id": 46,
+    "claim_id": "46.api.group.products_inventory",
+    "change": "added",
+    "reason": "Task 11 first-pass extraction for Ecommerce apps 41-50 (contract v1.1, task11-research-agent-gemini)"
+  },
+  {
+    "app_id": 46,
+    "claim_id": "46.api.group.webhooks",
+    "change": "added",
+    "reason": "Task 11 first-pass extraction for Ecommerce apps 41-50 (contract v1.1, task11-research-agent-gemini)"
+  },
+  {
+    "app_id": 46,
+    "claim_id": "46.api.protocol.rest",
+    "change": "added",
+    "reason": "Task 11 first-pass extraction for Ecommerce apps 41-50 (contract v1.1, task11-research-agent-gemini)"
+  },
+  {
+    "app_id": 46,
+    "claim_id": "46.api.public_docs",
+    "change": "added",
+    "reason": "Task 11 first-pass extraction for Ecommerce apps 41-50 (contract v1.1, task11-research-agent-gemini)"
+  },
+  {
+    "app_id": 46,
+    "claim_id": "46.api.public_documentation",
+    "change": "removed",
+    "reason": "Task 11 first-pass extraction for Ecommerce apps 41-50 (contract v1.1, task11-research-agent-gemini)"
+  },
+  {
+    "app_id": 46,
+    "claim_id": "46.auth.api_key_bearer",
+    "change": "added",
+    "reason": "Task 11 first-pass extraction for Ecommerce apps 41-50 (contract v1.1, task11-research-agent-gemini)"
+  },
+  {
+    "app_id": 46,
+    "claim_id": "46.auth.oauth2_extensions",
+    "change": "added",
+    "reason": "Task 11 first-pass extraction for Ecommerce apps 41-50 (contract v1.1, task11-research-agent-gemini)"
+  },
+  {
+    "app_id": 46,
+    "claim_id": "46.buildability",
+    "change": "changed",
+    "reason": "Task 11 first-pass extraction for Ecommerce apps 41-50 (contract v1.1, task11-research-agent-gemini)"
+  },
+  {
+    "app_id": 46,
+    "claim_id": "46.identity",
+    "change": "changed",
+    "reason": "Task 11 first-pass extraction for Ecommerce apps 41-50 (contract v1.1, task11-research-agent-gemini)"
+  },
+  {
+    "app_id": 46,
+    "claim_id": "46.mcp",
+    "change": "removed",
+    "reason": "Task 11 first-pass extraction for Ecommerce apps 41-50 (contract v1.1, task11-research-agent-gemini)"
+  },
+  {
+    "app_id": 46,
+    "claim_id": "46.mcp.discovery",
+    "change": "added",
+    "reason": "Task 11 first-pass extraction for Ecommerce apps 41-50 (contract v1.1, task11-research-agent-gemini)"
+  },
+  {
+    "app_id": 46,
+    "claim_id": "46.production.paid_required",
+    "change": "changed",
+    "reason": "Task 11 first-pass extraction for Ecommerce apps 41-50 (contract v1.1, task11-research-agent-gemini)"
+  },
+  {
+    "app_id": 46,
+    "claim_id": "46.production.self_serve",
+    "change": "changed",
+    "reason": "Task 11 first-pass extraction for Ecommerce apps 41-50 (contract v1.1, task11-research-agent-gemini)"
+  },
+  {
+    "app_id": 46,
+    "claim_id": "46.production.vendor_approval_required",
+    "change": "changed",
+    "reason": "Task 11 first-pass extraction for Ecommerce apps 41-50 (contract v1.1, task11-research-agent-gemini)"
+  },
+  {
+    "app_id": 46,
+    "claim_id": "46.purpose",
+    "change": "changed",
+    "reason": "Task 11 first-pass extraction for Ecommerce apps 41-50 (contract v1.1, task11-research-agent-gemini)"
+  },
+  {
+    "app_id": 46,
+    "claim_id": "46.testing.trial_access",
+    "change": "changed",
+    "reason": "Task 11 first-pass extraction for Ecommerce apps 41-50 (contract v1.1, task11-research-agent-gemini)"
+  },
+  {
+    "app_id": 47,
+    "claim_id": "47.api.breadth",
+    "change": "changed",
+    "reason": "Task 11 first-pass extraction for Ecommerce apps 41-50 (contract v1.1, task11-research-agent-gemini)"
+  },
+  {
+    "app_id": 47,
+    "claim_id": "47.api.group.customers_discounts",
+    "change": "added",
+    "reason": "Task 11 first-pass extraction for Ecommerce apps 41-50 (contract v1.1, task11-research-agent-gemini)"
+  },
+  {
+    "app_id": 47,
+    "claim_id": "47.api.group.orders_carts",
+    "change": "added",
+    "reason": "Task 11 first-pass extraction for Ecommerce apps 41-50 (contract v1.1, task11-research-agent-gemini)"
+  },
+  {
+    "app_id": 47,
+    "claim_id": "47.api.group.products_categories",
+    "change": "added",
+    "reason": "Task 11 first-pass extraction for Ecommerce apps 41-50 (contract v1.1, task11-research-agent-gemini)"
+  },
+  {
+    "app_id": 47,
+    "claim_id": "47.api.group.store_shipping_payment_webhooks",
+    "change": "added",
+    "reason": "Task 11 first-pass extraction for Ecommerce apps 41-50 (contract v1.1, task11-research-agent-gemini)"
+  },
+  {
+    "app_id": 47,
+    "claim_id": "47.api.protocol.rest",
+    "change": "added",
+    "reason": "Task 11 first-pass extraction for Ecommerce apps 41-50 (contract v1.1, task11-research-agent-gemini)"
+  },
+  {
+    "app_id": 47,
+    "claim_id": "47.api.protocol.sdk",
+    "change": "added",
+    "reason": "Task 11 first-pass extraction for Ecommerce apps 41-50 (contract v1.1, task11-research-agent-gemini)"
+  },
+  {
+    "app_id": 47,
+    "claim_id": "47.api.public_docs",
+    "change": "added",
+    "reason": "Task 11 first-pass extraction for Ecommerce apps 41-50 (contract v1.1, task11-research-agent-gemini)"
+  },
+  {
+    "app_id": 47,
+    "claim_id": "47.api.public_documentation",
+    "change": "removed",
+    "reason": "Task 11 first-pass extraction for Ecommerce apps 41-50 (contract v1.1, task11-research-agent-gemini)"
+  },
+  {
+    "app_id": 47,
+    "claim_id": "47.auth.oauth2_rest",
+    "change": "added",
+    "reason": "Task 11 first-pass extraction for Ecommerce apps 41-50 (contract v1.1, task11-research-agent-gemini)"
+  },
+  {
+    "app_id": 47,
+    "claim_id": "47.buildability",
+    "change": "changed",
+    "reason": "Task 11 first-pass extraction for Ecommerce apps 41-50 (contract v1.1, task11-research-agent-gemini)"
+  },
+  {
+    "app_id": 47,
+    "claim_id": "47.identity",
+    "change": "changed",
+    "reason": "Task 11 first-pass extraction for Ecommerce apps 41-50 (contract v1.1, task11-research-agent-gemini)"
+  },
+  {
+    "app_id": 47,
+    "claim_id": "47.mcp",
+    "change": "removed",
+    "reason": "Task 11 first-pass extraction for Ecommerce apps 41-50 (contract v1.1, task11-research-agent-gemini)"
+  },
+  {
+    "app_id": 47,
+    "claim_id": "47.mcp.discovery",
+    "change": "added",
+    "reason": "Task 11 first-pass extraction for Ecommerce apps 41-50 (contract v1.1, task11-research-agent-gemini)"
+  },
+  {
+    "app_id": 47,
+    "claim_id": "47.production.paid_required",
+    "change": "changed",
+    "reason": "Task 11 first-pass extraction for Ecommerce apps 41-50 (contract v1.1, task11-research-agent-gemini)"
+  },
+  {
+    "app_id": 47,
+    "claim_id": "47.purpose",
+    "change": "changed",
+    "reason": "Task 11 first-pass extraction for Ecommerce apps 41-50 (contract v1.1, task11-research-agent-gemini)"
+  },
+  {
+    "app_id": 48,
+    "claim_id": "48.api.breadth",
+    "change": "changed",
+    "reason": "Task 11 first-pass extraction for Ecommerce apps 41-50 (contract v1.1, task11-research-agent-gemini)"
+  },
+  {
+    "app_id": 48,
+    "claim_id": "48.api.group.licenses_webhooks",
+    "change": "added",
+    "reason": "Task 11 first-pass extraction for Ecommerce apps 41-50 (contract v1.1, task11-research-agent-gemini)"
+  },
+  {
+    "app_id": 48,
+    "claim_id": "48.api.group.products_files_offercodes",
+    "change": "added",
+    "reason": "Task 11 first-pass extraction for Ecommerce apps 41-50 (contract v1.1, task11-research-agent-gemini)"
+  },
+  {
+    "app_id": 48,
+    "claim_id": "48.api.group.sales_payouts_subscribers",
+    "change": "added",
+    "reason": "Task 11 first-pass extraction for Ecommerce apps 41-50 (contract v1.1, task11-research-agent-gemini)"
+  },
+  {
+    "app_id": 48,
+    "claim_id": "48.api.protocol.cli",
+    "change": "added",
+    "reason": "Task 11 first-pass extraction for Ecommerce apps 41-50 (contract v1.1, task11-research-agent-gemini)"
+  },
+  {
+    "app_id": 48,
+    "claim_id": "48.api.protocol.rest",
+    "change": "added",
+    "reason": "Task 11 first-pass extraction for Ecommerce apps 41-50 (contract v1.1, task11-research-agent-gemini)"
+  },
+  {
+    "app_id": 48,
+    "claim_id": "48.api.public_docs",
+    "change": "added",
+    "reason": "Task 11 first-pass extraction for Ecommerce apps 41-50 (contract v1.1, task11-research-agent-gemini)"
+  },
+  {
+    "app_id": 48,
+    "claim_id": "48.api.public_documentation",
+    "change": "removed",
+    "reason": "Task 11 first-pass extraction for Ecommerce apps 41-50 (contract v1.1, task11-research-agent-gemini)"
+  },
+  {
+    "app_id": 48,
+    "claim_id": "48.auth.oauth_device_browser",
+    "change": "added",
+    "reason": "Task 11 first-pass extraction for Ecommerce apps 41-50 (contract v1.1, task11-research-agent-gemini)"
+  },
+  {
+    "app_id": 48,
+    "claim_id": "48.auth.seller_access_token",
+    "change": "added",
+    "reason": "Task 11 first-pass extraction for Ecommerce apps 41-50 (contract v1.1, task11-research-agent-gemini)"
+  },
+  {
+    "app_id": 48,
+    "claim_id": "48.buildability",
+    "change": "changed",
+    "reason": "Task 11 first-pass extraction for Ecommerce apps 41-50 (contract v1.1, task11-research-agent-gemini)"
+  },
+  {
+    "app_id": 48,
+    "claim_id": "48.identity",
+    "change": "changed",
+    "reason": "Task 11 first-pass extraction for Ecommerce apps 41-50 (contract v1.1, task11-research-agent-gemini)"
+  },
+  {
+    "app_id": 48,
+    "claim_id": "48.mcp",
+    "change": "removed",
+    "reason": "Task 11 first-pass extraction for Ecommerce apps 41-50 (contract v1.1, task11-research-agent-gemini)"
+  },
+  {
+    "app_id": 48,
+    "claim_id": "48.mcp.community_gumroad_mcp",
+    "change": "added",
+    "reason": "Task 11 first-pass extraction for Ecommerce apps 41-50 (contract v1.1, task11-research-agent-gemini)"
+  },
+  {
+    "app_id": 48,
+    "claim_id": "48.mcp.community_gumroad_mcp.operational",
+    "change": "added",
+    "reason": "Task 11 first-pass extraction for Ecommerce apps 41-50 (contract v1.1, task11-research-agent-gemini)"
+  },
+  {
+    "app_id": 48,
+    "claim_id": "48.mcp.discovery",
+    "change": "added",
+    "reason": "Task 11 first-pass extraction for Ecommerce apps 41-50 (contract v1.1, task11-research-agent-gemini)"
+  },
+  {
+    "app_id": 48,
+    "claim_id": "48.mcp.official_gumroad_cli_mcp",
+    "change": "added",
+    "reason": "Task 11 first-pass extraction for Ecommerce apps 41-50 (contract v1.1, task11-research-agent-gemini)"
+  },
+  {
+    "app_id": 48,
+    "claim_id": "48.mcp.official_gumroad_cli_mcp.operational",
+    "change": "added",
+    "reason": "Task 11 first-pass extraction for Ecommerce apps 41-50 (contract v1.1, task11-research-agent-gemini)"
+  },
+  {
+    "app_id": 48,
+    "claim_id": "48.production.free_access",
+    "change": "changed",
+    "reason": "Task 11 first-pass extraction for Ecommerce apps 41-50 (contract v1.1, task11-research-agent-gemini)"
+  },
+  {
+    "app_id": 48,
+    "claim_id": "48.production.paid_required",
+    "change": "changed",
+    "reason": "Task 11 first-pass extraction for Ecommerce apps 41-50 (contract v1.1, task11-research-agent-gemini)"
+  },
+  {
+    "app_id": 48,
+    "claim_id": "48.production.self_serve",
+    "change": "changed",
+    "reason": "Task 11 first-pass extraction for Ecommerce apps 41-50 (contract v1.1, task11-research-agent-gemini)"
+  },
+  {
+    "app_id": 48,
+    "claim_id": "48.purpose",
+    "change": "changed",
+    "reason": "Task 11 first-pass extraction for Ecommerce apps 41-50 (contract v1.1, task11-research-agent-gemini)"
+  },
+  {
+    "app_id": 48,
+    "claim_id": "48.testing.free_access",
+    "change": "changed",
+    "reason": "Task 11 first-pass extraction for Ecommerce apps 41-50 (contract v1.1, task11-research-agent-gemini)"
+  },
+  {
+    "app_id": 48,
+    "claim_id": "48.testing.self_serve",
+    "change": "changed",
+    "reason": "Task 11 first-pass extraction for Ecommerce apps 41-50 (contract v1.1, task11-research-agent-gemini)"
+  },
+  {
+    "app_id": 49,
+    "claim_id": "49.api.breadth",
+    "change": "changed",
+    "reason": "Task 11 first-pass extraction for Ecommerce apps 41-50 (contract v1.1, task11-research-agent-gemini)"
+  },
+  {
+    "app_id": 49,
+    "claim_id": "49.api.group.finance_reports_notifications",
+    "change": "added",
+    "reason": "Task 11 first-pass extraction for Ecommerce apps 41-50 (contract v1.1, task11-research-agent-gemini)"
+  },
+  {
+    "app_id": 49,
+    "claim_id": "49.api.group.listings_inventory_pricing",
+    "change": "added",
+    "reason": "Task 11 first-pass extraction for Ecommerce apps 41-50 (contract v1.1, task11-research-agent-gemini)"
+  },
+  {
+    "app_id": 49,
+    "claim_id": "49.api.group.orders_fulfillment",
+    "change": "added",
+    "reason": "Task 11 first-pass extraction for Ecommerce apps 41-50 (contract v1.1, task11-research-agent-gemini)"
+  },
+  {
+    "app_id": 49,
+    "claim_id": "49.api.protocol.rest",
+    "change": "added",
+    "reason": "Task 11 first-pass extraction for Ecommerce apps 41-50 (contract v1.1, task11-research-agent-gemini)"
+  },
+  {
+    "app_id": 49,
+    "claim_id": "49.api.protocol.sdk",
+    "change": "added",
+    "reason": "Task 11 first-pass extraction for Ecommerce apps 41-50 (contract v1.1, task11-research-agent-gemini)"
+  },
+  {
+    "app_id": 49,
+    "claim_id": "49.api.public_docs",
+    "change": "added",
+    "reason": "Task 11 first-pass extraction for Ecommerce apps 41-50 (contract v1.1, task11-research-agent-gemini)"
+  },
+  {
+    "app_id": 49,
+    "claim_id": "49.api.public_documentation",
+    "change": "removed",
+    "reason": "Task 11 first-pass extraction for Ecommerce apps 41-50 (contract v1.1, task11-research-agent-gemini)"
+  },
+  {
+    "app_id": 49,
+    "claim_id": "49.auth.lwa_oauth2_client_credentials",
+    "change": "added",
+    "reason": "Task 11 first-pass extraction for Ecommerce apps 41-50 (contract v1.1, task11-research-agent-gemini)"
+  },
+  {
+    "app_id": 49,
+    "claim_id": "49.auth.lwa_oauth2_refresh",
+    "change": "added",
+    "reason": "Task 11 first-pass extraction for Ecommerce apps 41-50 (contract v1.1, task11-research-agent-gemini)"
+  },
+  {
+    "app_id": 49,
+    "claim_id": "49.buildability",
+    "change": "changed",
+    "reason": "Task 11 first-pass extraction for Ecommerce apps 41-50 (contract v1.1, task11-research-agent-gemini)"
+  },
+  {
+    "app_id": 49,
+    "claim_id": "49.identity",
+    "change": "changed",
+    "reason": "Task 11 first-pass extraction for Ecommerce apps 41-50 (contract v1.1, task11-research-agent-gemini)"
+  },
+  {
+    "app_id": 49,
+    "claim_id": "49.mcp",
+    "change": "removed",
+    "reason": "Task 11 first-pass extraction for Ecommerce apps 41-50 (contract v1.1, task11-research-agent-gemini)"
+  },
+  {
+    "app_id": 49,
+    "claim_id": "49.mcp.amazon_sp_connector_mcp",
+    "change": "added",
+    "reason": "Task 11 first-pass extraction for Ecommerce apps 41-50 (contract v1.1, task11-research-agent-gemini)"
+  },
+  {
+    "app_id": 49,
+    "claim_id": "49.mcp.amazon_sp_connector_mcp.operational",
+    "change": "added",
+    "reason": "Task 11 first-pass extraction for Ecommerce apps 41-50 (contract v1.1, task11-research-agent-gemini)"
+  },
+  {
+    "app_id": 49,
+    "claim_id": "49.mcp.community_amazon_sp_mcp",
+    "change": "added",
+    "reason": "Task 11 first-pass extraction for Ecommerce apps 41-50 (contract v1.1, task11-research-agent-gemini)"
+  },
+  {
+    "app_id": 49,
+    "claim_id": "49.mcp.community_amazon_sp_mcp.operational",
+    "change": "added",
+    "reason": "Task 11 first-pass extraction for Ecommerce apps 41-50 (contract v1.1, task11-research-agent-gemini)"
+  },
+  {
+    "app_id": 49,
+    "claim_id": "49.mcp.discovery",
+    "change": "added",
+    "reason": "Task 11 first-pass extraction for Ecommerce apps 41-50 (contract v1.1, task11-research-agent-gemini)"
+  },
+  {
+    "app_id": 49,
+    "claim_id": "49.production.admin_approval_required",
+    "change": "changed",
+    "reason": "Task 11 first-pass extraction for Ecommerce apps 41-50 (contract v1.1, task11-research-agent-gemini)"
+  },
+  {
+    "app_id": 49,
+    "claim_id": "49.production.paid_required",
+    "change": "changed",
+    "reason": "Task 11 first-pass extraction for Ecommerce apps 41-50 (contract v1.1, task11-research-agent-gemini)"
+  },
+  {
+    "app_id": 49,
+    "claim_id": "49.production.vendor_approval_required",
+    "change": "changed",
+    "reason": "Task 11 first-pass extraction for Ecommerce apps 41-50 (contract v1.1, task11-research-agent-gemini)"
+  },
+  {
+    "app_id": 49,
+    "claim_id": "49.purpose",
+    "change": "changed",
+    "reason": "Task 11 first-pass extraction for Ecommerce apps 41-50 (contract v1.1, task11-research-agent-gemini)"
+  },
+  {
+    "app_id": 49,
+    "claim_id": "49.testing.sandbox_access",
+    "change": "changed",
+    "reason": "Task 11 first-pass extraction for Ecommerce apps 41-50 (contract v1.1, task11-research-agent-gemini)"
+  },
+  {
+    "app_id": 49,
+    "claim_id": "49.testing.vendor_approval_required",
+    "change": "changed",
+    "reason": "Task 11 first-pass extraction for Ecommerce apps 41-50 (contract v1.1, task11-research-agent-gemini)"
+  },
+  {
+    "app_id": 50,
+    "claim_id": "50.api.breadth",
+    "change": "changed",
+    "reason": "Task 11 first-pass extraction for Ecommerce apps 41-50 (contract v1.1, task11-research-agent-gemini)"
+  },
+  {
+    "app_id": 50,
+    "claim_id": "50.api.group.checkouts_payouts_refunds",
+    "change": "added",
+    "reason": "Task 11 first-pass extraction for Ecommerce apps 41-50 (contract v1.1, task11-research-agent-gemini)"
+  },
+  {
+    "app_id": 50,
+    "claim_id": "50.api.protocol.sdk",
+    "change": "added",
+    "reason": "Task 11 first-pass extraction for Ecommerce apps 41-50 (contract v1.1, task11-research-agent-gemini)"
+  },
+  {
+    "app_id": 50,
+    "claim_id": "50.api.public_docs",
+    "change": "added",
+    "reason": "Task 11 first-pass extraction for Ecommerce apps 41-50 (contract v1.1, task11-research-agent-gemini)"
+  },
+  {
+    "app_id": 50,
+    "claim_id": "50.api.public_documentation",
+    "change": "removed",
+    "reason": "Task 11 first-pass extraction for Ecommerce apps 41-50 (contract v1.1, task11-research-agent-gemini)"
+  },
+  {
+    "app_id": 50,
+    "claim_id": "50.buildability",
+    "change": "changed",
+    "reason": "Task 11 first-pass extraction for Ecommerce apps 41-50 (contract v1.1, task11-research-agent-gemini)"
+  },
+  {
+    "app_id": 50,
+    "claim_id": "50.identity",
+    "change": "changed",
+    "reason": "Task 11 first-pass extraction for Ecommerce apps 41-50 (contract v1.1, task11-research-agent-gemini)"
+  },
+  {
+    "app_id": 50,
+    "claim_id": "50.mcp",
+    "change": "removed",
+    "reason": "Task 11 first-pass extraction for Ecommerce apps 41-50 (contract v1.1, task11-research-agent-gemini)"
+  },
+  {
+    "app_id": 50,
+    "claim_id": "50.mcp.commas_mcp_beta",
+    "change": "added",
+    "reason": "Task 11 first-pass extraction for Ecommerce apps 41-50 (contract v1.1, task11-research-agent-gemini)"
+  },
+  {
+    "app_id": 50,
+    "claim_id": "50.mcp.commas_mcp_beta.operational",
+    "change": "added",
+    "reason": "Task 11 first-pass extraction for Ecommerce apps 41-50 (contract v1.1, task11-research-agent-gemini)"
+  },
+  {
+    "app_id": 50,
+    "claim_id": "50.mcp.discovery",
+    "change": "added",
+    "reason": "Task 11 first-pass extraction for Ecommerce apps 41-50 (contract v1.1, task11-research-agent-gemini)"
+  },
+  {
+    "app_id": 50,
+    "claim_id": "50.production.self_serve",
+    "change": "changed",
+    "reason": "Task 11 first-pass extraction for Ecommerce apps 41-50 (contract v1.1, task11-research-agent-gemini)"
+  },
+  {
+    "app_id": 50,
+    "claim_id": "50.purpose",
+    "change": "changed",
+    "reason": "Task 11 first-pass extraction for Ecommerce apps 41-50 (contract v1.1, task11-research-agent-gemini)"
+  },
+  {
+    "app_id": 50,
+    "claim_id": "50.testing.sandbox_access",
+    "change": "changed",
+    "reason": "Task 11 first-pass extraction for Ecommerce apps 41-50 (contract v1.1, task11-research-agent-gemini)"
+  }
+]

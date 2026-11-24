@@ -1,0 +1,162 @@
+{
+  "task": "03",
+  "status": "completed_reviewed_accepted",
+  "pipeline_agent": "Darwin",
+  "date": "2026-11-23",
+  "pipeline_sha256": "9c88cbc47082b41561b94473f63b4926b7567e6ba162b395ce7e31768078df69",
+  "test_sha256": "c04663d8826f1e6d982a9f1e12daff1610eaf8013641de862483edc6f9bc21f3",
+  "readme_sha256": "9faf9c6adcf30e92263fae2c11c6bcd683611050667bb41b92b5a6d4d5330712",
+  "regression_suite": {
+    "validator": "installed PowerShell Test-Json, Draft2020-12",
+    "command": "python -B -m unittest discover -s tests -p test_research_pipeline.py -v",
+    "location": "Fresh copy of the 11-file source package in work/task-03-package-review/source",
+    "tests": 19,
+    "passed": 19,
+    "failed": 0,
+    "duration_seconds": 18.514,
+    "synthetic_only": true
+  },
+  "independent_integration_checks": {
+    "scope": "Task 03 coordinator integration checks; synthetic data only",
+    "store": "C:\\Users\\User\\Documents\\Codex\\2026-11-23\\referenced-chatgpt-conversation-this-is-an\\work\\task-03-review-checks-3_9053ed",
+    "total": 10,
+    "passed": 10,
+    "failed": 0,
+    "checks": [
+      {
+        "check": "Replay creates a child without network access",
+        "passed": true
+      },
+      {
+        "check": "Existing run ID cannot overwrite a parent",
+        "passed": true
+      },
+      {
+        "check": "Fabricated quotation is rejected and logged",
+        "passed": true
+      },
+      {
+        "check": "Incorrect evidence hash is rejected and logged",
+        "passed": true
+      },
+      {
+        "check": "Extractor cannot sign a completed human review",
+        "passed": true
+      },
+      {
+        "check": "Missing supporting claim reference is rejected",
+        "passed": true
+      },
+      {
+        "check": "Pending synthetic claims yield unmeasured accuracy and zero real findings",
+        "passed": true
+      },
+      {
+        "check": "Synthetic review computes the approved denominator and coverage",
+        "passed": true
+      },
+      {
+        "check": "All 100 inputs initialize without invented findings or network access",
+        "passed": true
+      },
+      {
+        "check": "Parent remains byte-identical after replay, rejection and review children",
+        "passed": true
+      }
+    ],
+    "pilot_started": false
+  },
+  "live_http_smoke": {
+    "test": "live HTTP retrieval and readable-text extraction",
+    "source_url": "https://example.com",
+    "attempts": [
+      {
+        "source_url": "https://example.com",
+        "attempted_on": "2026-11-23",
+        "status": "fetched",
+        "http_status": 200,
+        "resolved_url": "https://example.com",
+        "error": null,
+        "content_sha256": "1ed28570e7280731af597cdd85b659b82fe399f9bd4831318c62cea9a05bf137"
+      }
+    ],
+    "passed": true,
+    "text_characters": 172,
+    "text_lines": 2,
+    "content_sha256": "1ed28570e7280731af597cdd85b659b82fe399f9bd4831318c62cea9a05bf137",
+    "digest_matches_extracted_text": true,
+    "snapshot_persisted": false,
+    "app_research_run_created": false,
+    "pilot_started": false
+  },
+  "protected_files": [
+    {
+      "path": "data/apps.json",
+      "sha256": "6E3AADA149102C2E5539C126AA556C1CEACA3D9D25CA6E0A8F56B3A569F81C19",
+      "unchanged": true
+    },
+    {
+      "path": "schemas/record.json",
+      "sha256": "80B19BC6D18212E1DD001502AB4F5F03185E1B734A03A8574F4EE656674A5CAF",
+      "unchanged": true
+    },
+    {
+      "path": "docs/evidence-rules.md",
+      "sha256": "DEAE40872D27B58B83D05B1D5FBFE175258010131E9EC25E9D1941A453B0C3EF",
+      "unchanged": true
+    },
+    {
+      "path": "examples/unresearched-record.json",
+      "sha256": "6EEB6A1820BA6D4CB858C6AD5D0B4440BCB04835C2302DFAD8E02D86CF2BC30A",
+      "unchanged": true
+    },
+    {
+      "path": "research_agent.py",
+      "sha256": "1AE59FB9FC02CB40A6FAC5567A95D69C7C6CF6C2891B0D874736E789A2D2DB8C",
+      "unchanged": true
+    },
+    {
+      "path": "verify_sample.py",
+      "sha256": "CC4E54CDF6A32F0B23C5C978FA74DF3AFA50FFDCD058612C1AF6ADD977610A6E",
+      "unchanged": true
+    },
+    {
+      "path": "build_html.py",
+      "sha256": "72E9BAA2D6AE73B178D8FD753D6965402DF8F26FAC6C64854898840620A32210",
+      "unchanged": true
+    },
+    {
+      "path": "artifacts/research_results.json",
+      "sha256": "B5F6DFAB6399545F2028EE6CFA834558EB5B7BC204A7262BE0C35B027EA6088A",
+      "unchanged": true
+    },
+    {
+      "path": "artifacts/research_results.csv",
+      "sha256": "CB330370D07145DA52FACB47A62DFE81F1AB276E0330D49B4DEC8C849922D446",
+      "unchanged": true
+    },
+    {
+      "path": "artifacts/verification_ledger.json",
+      "sha256": "14ACC53D185243B25C7ADCA8AA8B77DFB8650B8A7D7B72DECD229191440B8DE1",
+      "unchanged": true
+    },
+    {
+      "path": "index.html",
+      "sha256": "4C7BA5D84AA448A16A8BA455585A311F75A137D72F615686266D6D4BE2438520",
+      "unchanged": true
+    }
+  ],
+  "real_app_accuracy": null,
+  "real_apps_researched": 0,
+  "pilot_started": false,
+  "dependencies_installed": false,
+  "limitations": [
+    "Explicit public source URLs must be chosen by a researcher/agent; keyword candidates are not findings.",
+    "No embedded model/API credential or Composio SDK; extraction uses a supplied trusted adapter command or researcher-produced structured records.",
+    "Grounding checks verify structure, captured snapshots, literal anchoring, scopes and references; they cannot prove paraphrase truth, attribution or actual reviewer identity.",
+    "HTTP-readable text only; no browser/PDF import or operational execution-receipt intake. Operational MCP checks remain unresearched.",
+    "Sampling and full paired evaluation remain later tasks; frozen-target metrics do not claim a held-out result.",
+    "Versioned URLs/new branches are required when refreshing changed source content; seals are unsigned integrity checksums.",
+    "No repository or hosting publication attempted."
+  ]
+}

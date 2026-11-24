@@ -1,0 +1,69 @@
+Pricing | How Waterfall.io pricing works
+Products
+Contact enrich
+Verified emails & profiles, instantly
+Phone enrich
+Find phone numbers that convert
+Prospector
+Find contacts at your target accounts
+Job change
+Track your best customers
+Contact search
+Search any contact, at any company
+Docs
+Book a Call
+Waterfall Pricing
+Pay for answers, not for lookups
+Outcome-based across every endpoint: a credit is deducted when we return a verified result, never once per vendor we queried to find it
+The model
+Three rules that decide what you pay
+A miss costs nothing
+Billing
+We are charged by our vendors on every request we make on your behalf, including the ones that come back empty. You are not. A credit is deducted only when we hand back a verified result, so the risk of a low-coverage file sits with us rather than with your budget.
+One credit covers the whole waterfall
+Coverage
+A single request may pass through several of our 30+ sources before one returns a verified answer. You are charged once, for the answer. This is the structural difference from buying vendors directly, where each contract you add multiplies your cost per record whether or not that vendor was the one that found it.
+Rates are quoted against your data
+Commercials
+Per-credit rates depend on the endpoints you use and the volume you commit to. We quote after running a benchmark on a sample of your own records, because a list price set against someone else's file tells you nothing about what your file will cost.
+Why there is no public rate card
+Straight answer
+Because a per-record price is not comparable across vendors and we would rather not pretend otherwise. Two providers quoting the same cent-per-email can differ by a factor of three on what fraction of your file they actually resolve, and the cheaper one is usually the more expensive one once you divide by results. The number that matters is your cost per verified result on your records, and the only honest way to produce it is to run both against the same file. We will do that before quoting, and we will show you the working.
+Customers
+Hear what our customers say about us
+Stop comparing vendors on their numbers. Run the benchmark on yours.
+Three commercial reasons to start
+Flexible Commercials
+Best International Coverage
+High Data Accuracy
+Three technical reasons to start
+One single API
+Unified Response & Request structure
+Sync & Async solution
+Visit our API Documentation
+What moves your cost per result
+The identifier you send
+A professional email or a LinkedIn URL resolves more often, and in fewer hops, than a name plus a company domain. Better inputs mean fewer paid-for misses upstream and a lower blended cost.
+Which endpoints you call
+Mobile numbers cost more than emails because the underlying data costs more. Job-change checks are cheap to run at scale because unchanged contacts are never billed.
+How hard your records are
+Enterprise contacts in North America resolve on the first source. Smaller companies, non-standard email patterns and coverage outside a vendor's home region go deeper into the waterfall — the same price to you, a different cost to us.
+What you commit to
+Per-credit rates fall with committed volume and term. Platforms reselling enrichment downstream are priced differently from teams enriching their own CRM, because the volume shape and the support load are different.
+FAQ
+How does Waterfall.io pricing work?
+Outcome-based, on credits. A credit is deducted only when we return a verified result — a verified email, a matched profile, a mobile number, a confirmed job change. Requests that come back empty are free, and one credit covers the entire waterfall regardless of how many of our 30+ sources we had to query to get the answer. Per-credit rates depend on the endpoints you use and the volume you commit to, and are quoted after a benchmark on a sample of your own records rather than from a list price.
+Is it cheaper than buying the vendors directly?
+It depends on how many vendors you need, and the honest answer is that one vendor is usually cheaper on paper. The arithmetic changes as you add the second and third: buying direct means paying each contract in full whether or not it was the one that resolved a given record, plus the minimums, the separate integrations and the schema-mapping work. With a waterfall you pay once per result. The crossover is usually around the second vendor, and it arrives sooner the harder your records are.
+What counts as a billable result?
+A result we return to you that meets the verification bar for that endpoint. For email, that means a verified address rather than a pattern guess. For phone, a mobile number rather than a switchboard line. For job change, an actual detected move — a contact who has not moved is never billed, which is what makes running your whole CRM on a weekly schedule affordable. Every response carries a usage object so you can reconcile what you were charged against what you received, per request.
+Is there a free trial, and is there a minimum?
+Before anything is signed we run a benchmark on your data at no cost: send a sample of records your current vendors missed and we return coverage and cost per result against what you are paying today. Commitments and minimums are set at contract and depend on volume and term — if you would rather not commit before seeing numbers on your own file, the benchmark is designed for exactly that.
+Book a call to hear more
+Every company has different needs. Talk to our team (most likely one of the founders) to share your use case and see how Waterfall can help.
+Waterfall® aggregates 30+ different data vendors so that you can maximize contact, email and mobile number coverage and optimize cost.
+WATERFALL is a registered trademark of Waterfall Data, LLC (U.S. Reg. No. 8,508,955).
+Legal
+Privacy Policy
+Terms
+Waterfall.io © 2026 Waterfall Data, LLC | All Rights Reserved.

@@ -1,0 +1,43 @@
+> ## Documentation Index
+> Fetch the complete documentation index at: https://developers.clay.com/llms.txt
+> Use this file to discover all available pages before exploring further.
+# Overview
+> Use Clay from agents, terminals, backend services, internal tools, and custom apps.
+Clay used to live primarily in the Clay UI. Now Clay also works where your agents, developers, and business systems already are.
+Use the developer platform to search Clay's GTM data, run reusable Clay logic, read table data, and work with Audiences programmatically.
+## Start here
+> [card] [Install the Clay plugin](https://developers.clay.com/quickstart.md#agent-plugin)
+>
+> Best for Claude Code, Codex, Cursor, and agent-first work. The plugin ships skills and the Clay CLI.
+> [card] [Call the API directly](https://developers.clay.com/quickstart.md#api)
+>
+> Best for backend jobs, internal tools, custom apps, queues, and product workflows.
+## Core primitives
+| Primitive | Use it for |
+| - | - |
+| [Searches](https://developers.clay.com/searches.md) | Find companies and people using Clay's GTM database |
+| [Routines](https://developers.clay.com/routines.md) | Run Clay-managed functions, custom functions, and Workflows |
+| [Tables (Enterprise)](https://developers.clay.com/tables.md) | Query existing Clay table data from known tables |
+| [Audiences](https://developers.clay.com/audiences.md) | Work with records, saved segments, activities, and signal events |
+| [Signals](https://developers.clay.com/signals.md) | Create triggers that detect relevant changes across records |
+Start with the primitive that matches where your data lives and what you want to do.
+## Choose the right primitive
+* Need a target list? Use [Searches](https://developers.clay.com/searches.md).
+* Need enrichment, scoring, routing, or reusable logic? Use [Routines](https://developers.clay.com/routines.md).
+* Need existing table data? Use [Tables](https://developers.clay.com/tables.md). Tables are Enterprise only.
+* Need Audiences records, saved segments, activities, or signal events? Use [Audiences](https://developers.clay.com/audiences.md).
+* Need triggers that watch records and produce signal events? Use [Signals](https://developers.clay.com/signals.md).
+## Start with a recipe
+> [card] [Run a search, then enrich with a function](https://developers.clay.com/recipes/search-and-enrich.md)
+>
+> Pull a target list from Clay data, then run Clay-managed functions on the results.
+> [card] [Give an agent access to a Clay function](https://developers.clay.com/recipes/agent-function-access.md)
+>
+> Let an agent call Clay logic as part of its normal work.
+> [card] [Build a Workflow (Alpha)](https://developers.clay.com/recipes/build-workflow-alpha.md)
+>
+> Create, edit, validate, run, and inspect a Workflow from the plugin or CLI.
+> [card] [Analyze recent closed-won deals](https://developers.clay.com/use-cases/analyze-recent-closed-won-deals.md)
+>
+> Use an agent to find patterns in recent successful deals.
+This documentation is built and hosted on [Mintlify](https://mintlify.com), a developer documentation platform.

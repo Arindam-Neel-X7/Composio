@@ -1,0 +1,1047 @@
+[
+  {
+    "spec": {
+      "app_id": 81,
+      "url": "https://docs.stripe.com/api",
+      "kind": "primary_docs",
+      "scope": "Stripe payments API and callable MCP; test/sandbox versus live payments; account and country prerequisites apply",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor-controlled documentation/product domain or vendor-owned GitHub repository; selected by Codex from public web discovery and roster identity hints. Paygent NMI candidates are identity investigation only, not an established match.",
+      "attribution_by": "codex-task15-researcher"
+    },
+    "captured_on": "2026-11-23",
+    "capture_method": "http_content",
+    "snapshot_ref": "snapshots/5cae63b6aac4d02f144138a6442962955f5aa11773f4f4a2615c0a268398e69d.txt",
+    "content_sha256": "5cae63b6aac4d02f144138a6442962955f5aa11773f4f4a2615c0a268398e69d",
+    "line_count": 256
+  },
+  {
+    "spec": {
+      "app_id": 81,
+      "url": "https://docs.stripe.com/api/authentication",
+      "kind": "primary_docs",
+      "scope": "Stripe payments API and callable MCP; test/sandbox versus live payments; account and country prerequisites apply",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor-controlled documentation/product domain or vendor-owned GitHub repository; selected by Codex from public web discovery and roster identity hints. Paygent NMI candidates are identity investigation only, not an established match.",
+      "attribution_by": "codex-task15-researcher"
+    },
+    "captured_on": "2026-11-23",
+    "capture_method": "http_content",
+    "snapshot_ref": "snapshots/d110e331cc56d91ced70e5543a87079d92f4752a1d0a63ce779ea01776a762b3.txt",
+    "content_sha256": "d110e331cc56d91ced70e5543a87079d92f4752a1d0a63ce779ea01776a762b3",
+    "line_count": 240
+  },
+  {
+    "spec": {
+      "app_id": 81,
+      "url": "https://docs.stripe.com/keys",
+      "kind": "primary_docs",
+      "scope": "Stripe payments API and callable MCP; test/sandbox versus live payments; account and country prerequisites apply",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor-controlled documentation/product domain or vendor-owned GitHub repository; selected by Codex from public web discovery and roster identity hints. Paygent NMI candidates are identity investigation only, not an established match.",
+      "attribution_by": "codex-task15-researcher"
+    },
+    "captured_on": "2026-11-23",
+    "capture_method": "http_content",
+    "snapshot_ref": "snapshots/a8a235bc1ebbe740583077dfa715552482168c962565bcb876e347c34bfb4136.txt",
+    "content_sha256": "a8a235bc1ebbe740583077dfa715552482168c962565bcb876e347c34bfb4136",
+    "line_count": 289
+  },
+  {
+    "spec": {
+      "app_id": 81,
+      "url": "https://docs.stripe.com/testing",
+      "kind": "primary_docs",
+      "scope": "Stripe payments API and callable MCP; test/sandbox versus live payments; account and country prerequisites apply",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor-controlled documentation/product domain or vendor-owned GitHub repository; selected by Codex from public web discovery and roster identity hints. Paygent NMI candidates are identity investigation only, not an established match.",
+      "attribution_by": "codex-task15-researcher"
+    },
+    "captured_on": "2026-11-23",
+    "capture_method": "http_content",
+    "snapshot_ref": "snapshots/3824ca837e88d2f01f6f3d86b1460e8214d68cc7f3036ffbba3e4b2405d52ee9.txt",
+    "content_sha256": "3824ca837e88d2f01f6f3d86b1460e8214d68cc7f3036ffbba3e4b2405d52ee9",
+    "line_count": 591
+  },
+  {
+    "spec": {
+      "app_id": 81,
+      "url": "https://docs.stripe.com/get-started/account/activate",
+      "kind": "primary_docs",
+      "scope": "Stripe payments API and callable MCP; test/sandbox versus live payments; account and country prerequisites apply",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor-controlled documentation/product domain or vendor-owned GitHub repository; selected by Codex from public web discovery and roster identity hints. Paygent NMI candidates are identity investigation only, not an established match.",
+      "attribution_by": "codex-task15-researcher"
+    },
+    "captured_on": "2026-11-23",
+    "capture_method": "http_content",
+    "snapshot_ref": "snapshots/58b04eee023939ad3b1a7ce62428f4dfe92bc02c58ea61f7b27d041d73ac34c4.txt",
+    "content_sha256": "58b04eee023939ad3b1a7ce62428f4dfe92bc02c58ea61f7b27d041d73ac34c4",
+    "line_count": 101
+  },
+  {
+    "spec": {
+      "app_id": 81,
+      "url": "https://docs.stripe.com/mcp",
+      "kind": "primary_docs",
+      "scope": "Stripe payments API and callable MCP; test/sandbox versus live payments; account and country prerequisites apply",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor-controlled documentation/product domain or vendor-owned GitHub repository; selected by Codex from public web discovery and roster identity hints. Paygent NMI candidates are identity investigation only, not an established match.",
+      "attribution_by": "codex-task15-researcher"
+    },
+    "captured_on": "2026-11-23",
+    "capture_method": "http_content",
+    "snapshot_ref": "snapshots/84e1c9bd696a8f1e3baaeab0f71a1158d3ad54ac526606a7871e1fc0301b1c27.txt",
+    "content_sha256": "84e1c9bd696a8f1e3baaeab0f71a1158d3ad54ac526606a7871e1fc0301b1c27",
+    "line_count": 193
+  },
+  {
+    "spec": {
+      "app_id": 81,
+      "url": "https://stripe.com/pricing",
+      "kind": "official_product_page",
+      "scope": "Stripe payments API and callable MCP; test/sandbox versus live payments; account and country prerequisites apply",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor-controlled documentation/product domain or vendor-owned GitHub repository; selected by Codex from public web discovery and roster identity hints. Paygent NMI candidates are identity investigation only, not an established match.",
+      "attribution_by": "codex-task15-researcher"
+    },
+    "captured_on": "2026-11-23",
+    "capture_method": "http_content",
+    "snapshot_ref": "snapshots/67eb8fe1164a4d3e49c497294733c8b47b90f467961bc6b74332401d11577eb1.txt",
+    "content_sha256": "67eb8fe1164a4d3e49c497294733c8b47b90f467961bc6b74332401d11577eb1",
+    "line_count": 887
+  },
+  {
+    "spec": {
+      "app_id": 82,
+      "url": "https://plaid.com/docs/api/",
+      "kind": "primary_docs",
+      "scope": "Plaid developer API; Sandbox versus Production including Trial; product and institution entitlements vary",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor-controlled documentation/product domain or vendor-owned GitHub repository; selected by Codex from public web discovery and roster identity hints. Paygent NMI candidates are identity investigation only, not an established match.",
+      "attribution_by": "codex-task15-researcher"
+    },
+    "captured_on": "2026-11-23",
+    "capture_method": "http_content",
+    "snapshot_ref": "snapshots/b613e3e7373639b1eeac393c1a7dc7aa09d7097b8498d28d1894caeec6b1c4a9.txt",
+    "content_sha256": "b613e3e7373639b1eeac393c1a7dc7aa09d7097b8498d28d1894caeec6b1c4a9",
+    "line_count": 107
+  },
+  {
+    "spec": {
+      "app_id": 82,
+      "url": "https://plaid.com/docs/quickstart/",
+      "kind": "primary_docs",
+      "scope": "Plaid developer API; Sandbox versus Production including Trial; product and institution entitlements vary",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor-controlled documentation/product domain or vendor-owned GitHub repository; selected by Codex from public web discovery and roster identity hints. Paygent NMI candidates are identity investigation only, not an established match.",
+      "attribution_by": "codex-task15-researcher"
+    },
+    "captured_on": "2026-11-23",
+    "capture_method": "http_content",
+    "snapshot_ref": "snapshots/d077097c6bd0e1405d44e1c0324635753d672f9262f9cbb7a27af7402a1fd473.txt",
+    "content_sha256": "d077097c6bd0e1405d44e1c0324635753d672f9262f9cbb7a27af7402a1fd473",
+    "line_count": 286
+  },
+  {
+    "spec": {
+      "app_id": 82,
+      "url": "https://plaid.com/docs/sandbox/",
+      "kind": "primary_docs",
+      "scope": "Plaid developer API; Sandbox versus Production including Trial; product and institution entitlements vary",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor-controlled documentation/product domain or vendor-owned GitHub repository; selected by Codex from public web discovery and roster identity hints. Paygent NMI candidates are identity investigation only, not an established match.",
+      "attribution_by": "codex-task15-researcher"
+    },
+    "captured_on": "2026-11-23",
+    "capture_method": "http_content",
+    "snapshot_ref": "snapshots/12c4a11147a478e1c4ae97f9613946cf77806ee2c1f5dadc45914af8124fb293.txt",
+    "content_sha256": "12c4a11147a478e1c4ae97f9613946cf77806ee2c1f5dadc45914af8124fb293",
+    "line_count": 105
+  },
+  {
+    "spec": {
+      "app_id": 82,
+      "url": "https://plaid.com/docs/account/billing/",
+      "kind": "primary_docs",
+      "scope": "Plaid developer API; Sandbox versus Production including Trial; product and institution entitlements vary",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor-controlled documentation/product domain or vendor-owned GitHub repository; selected by Codex from public web discovery and roster identity hints. Paygent NMI candidates are identity investigation only, not an established match.",
+      "attribution_by": "codex-task15-researcher"
+    },
+    "captured_on": "2026-11-23",
+    "capture_method": "http_content",
+    "snapshot_ref": "snapshots/3b17bf2fbdfc8917d0733849b187bfed274fa0e6122b3cb1e763243e7d2953b4.txt",
+    "content_sha256": "3b17bf2fbdfc8917d0733849b187bfed274fa0e6122b3cb1e763243e7d2953b4",
+    "line_count": 215
+  },
+  {
+    "spec": {
+      "app_id": 82,
+      "url": "https://plaid.com/docs/resources/",
+      "kind": "primary_docs",
+      "scope": "Plaid developer API; Sandbox versus Production including Trial; product and institution entitlements vary",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor-controlled documentation/product domain or vendor-owned GitHub repository; selected by Codex from public web discovery and roster identity hints. Paygent NMI candidates are identity investigation only, not an established match.",
+      "attribution_by": "codex-task15-researcher"
+    },
+    "captured_on": "2026-11-23",
+    "capture_method": "http_content",
+    "snapshot_ref": "snapshots/b6691487d581701275a8ba71ec66c12e097be5a33efdee179220b34be1e00285.txt",
+    "content_sha256": "b6691487d581701275a8ba71ec66c12e097be5a33efdee179220b34be1e00285",
+    "line_count": 186
+  },
+  {
+    "spec": {
+      "app_id": 82,
+      "url": "https://plaid.com/docs/launch-checklist/",
+      "kind": "primary_docs",
+      "scope": "Plaid developer API; Sandbox versus Production including Trial; product and institution entitlements vary",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor-controlled documentation/product domain or vendor-owned GitHub repository; selected by Codex from public web discovery and roster identity hints. Paygent NMI candidates are identity investigation only, not an established match.",
+      "attribution_by": "codex-task15-researcher"
+    },
+    "captured_on": "2026-11-23",
+    "capture_method": "http_content",
+    "snapshot_ref": "snapshots/c163c10fcb30230d8027c24375faa10d428edbf0c75a8bdb69c5f02a3f1de399.txt",
+    "content_sha256": "c163c10fcb30230d8027c24375faa10d428edbf0c75a8bdb69c5f02a3f1de399",
+    "line_count": 162
+  },
+  {
+    "spec": {
+      "app_id": 82,
+      "url": "https://raw.githubusercontent.com/plaid/ai-coding-toolkit/main/sandbox/README.md",
+      "kind": "official_repository",
+      "scope": "Plaid developer API; Sandbox versus Production including Trial; product and institution entitlements vary",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor-controlled documentation/product domain or vendor-owned GitHub repository; selected by Codex from public web discovery and roster identity hints. Paygent NMI candidates are identity investigation only, not an established match.",
+      "attribution_by": "codex-task15-researcher"
+    },
+    "captured_on": "2026-11-23",
+    "capture_method": "http_content",
+    "snapshot_ref": "snapshots/b234d49f8a0b1e81e82696a1039b958b2c0f741a010986d04787382054de7adc.txt",
+    "content_sha256": "b234d49f8a0b1e81e82696a1039b958b2c0f741a010986d04787382054de7adc",
+    "line_count": 157
+  },
+  {
+    "spec": {
+      "app_id": 83,
+      "url": "https://raw.githubusercontent.com/binance/binance-spot-api-docs/master/rest-api.md",
+      "kind": "official_repository",
+      "scope": "Binance global Spot API; public market data versus signed account/trading; Spot Testnet distinct from production and regional eligibility unresolved",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor-controlled documentation/product domain or vendor-owned GitHub repository; selected by Codex from public web discovery and roster identity hints. Paygent NMI candidates are identity investigation only, not an established match.",
+      "attribution_by": "codex-task15-researcher"
+    },
+    "captured_on": "2026-11-23",
+    "capture_method": "http_content",
+    "snapshot_ref": "snapshots/b5bd0cf468a9bb71f1411bb1c6b459c916847e5a01ef7576f6fb2df117944fea.txt",
+    "content_sha256": "b5bd0cf468a9bb71f1411bb1c6b459c916847e5a01ef7576f6fb2df117944fea",
+    "line_count": 4446
+  },
+  {
+    "spec": {
+      "app_id": 83,
+      "url": "https://raw.githubusercontent.com/binance/binance-spot-api-docs/master/testnet/general-info.md",
+      "kind": "official_repository",
+      "scope": "Binance global Spot API; public market data versus signed account/trading; Spot Testnet distinct from production and regional eligibility unresolved",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor-controlled documentation/product domain or vendor-owned GitHub repository; selected by Codex from public web discovery and roster identity hints. Paygent NMI candidates are identity investigation only, not an established match.",
+      "attribution_by": "codex-task15-researcher"
+    },
+    "captured_on": "2026-11-23",
+    "capture_method": "http_content",
+    "snapshot_ref": "snapshots/2cb7f1f39b28aa72cf36e8343f2c9630312eafe61e072e7f973ca8acfe618aa7.txt",
+    "content_sha256": "2cb7f1f39b28aa72cf36e8343f2c9630312eafe61e072e7f973ca8acfe618aa7",
+    "line_count": 239
+  },
+  {
+    "spec": {
+      "app_id": 84,
+      "url": "https://www.nmi.com/",
+      "kind": "official_product_page",
+      "scope": "Unresolved Paygent Connect; original hint paygent (NMI-powered); no vendor substitution",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor-controlled documentation/product domain or vendor-owned GitHub repository; selected by Codex from public web discovery and roster identity hints. Paygent NMI candidates are identity investigation only, not an established match.",
+      "attribution_by": "codex-task15-researcher"
+    },
+    "captured_on": "2026-11-23",
+    "capture_method": "http_content",
+    "snapshot_ref": "snapshots/00a7ea08184d1d0ffdf56b7ec28af25b175309fa94e059adeffc17f76cb5620d.txt",
+    "content_sha256": "00a7ea08184d1d0ffdf56b7ec28af25b175309fa94e059adeffc17f76cb5620d",
+    "line_count": 376
+  },
+  {
+    "spec": {
+      "app_id": 84,
+      "url": "https://docs.nmi.com/",
+      "kind": "official_product_page",
+      "scope": "Unresolved Paygent Connect; original hint paygent (NMI-powered); no vendor substitution",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor-controlled documentation/product domain or vendor-owned GitHub repository; selected by Codex from public web discovery and roster identity hints. Paygent NMI candidates are identity investigation only, not an established match.",
+      "attribution_by": "codex-task15-researcher"
+    },
+    "captured_on": "2026-11-23",
+    "capture_method": "http_content",
+    "snapshot_ref": "snapshots/ae008e4877588ca9028065737f7d581f13c65f29159c4c47125c16142bfb51dd.txt",
+    "content_sha256": "ae008e4877588ca9028065737f7d581f13c65f29159c4c47125c16142bfb51dd",
+    "line_count": 23
+  },
+  {
+    "spec": {
+      "app_id": 85,
+      "url": "https://ipayx.ai/docs",
+      "kind": "primary_docs",
+      "scope": "iPayX Protocol on ipayx.ai original domain hint; FX audit API and MCP; public demo versus API credentials and production",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor-controlled documentation/product domain or vendor-owned GitHub repository; selected by Codex from public web discovery and roster identity hints. Paygent NMI candidates are identity investigation only, not an established match.",
+      "attribution_by": "codex-task15-researcher"
+    },
+    "captured_on": "2026-11-23",
+    "capture_method": "http_content",
+    "snapshot_ref": "snapshots/713c5380eaa70f3e7fdfcc82dfc16fc68cc0c1bf0fc06fc3b86bff99c414a1b5.txt",
+    "content_sha256": "713c5380eaa70f3e7fdfcc82dfc16fc68cc0c1bf0fc06fc3b86bff99c414a1b5",
+    "line_count": 1
+  },
+  {
+    "spec": {
+      "app_id": 85,
+      "url": "https://www.ipayx.ai/docs/api",
+      "kind": "primary_docs",
+      "scope": "iPayX Protocol on ipayx.ai original domain hint; FX audit API and MCP; public demo versus API credentials and production",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor-controlled documentation/product domain or vendor-owned GitHub repository; selected by Codex from public web discovery and roster identity hints. Paygent NMI candidates are identity investigation only, not an established match.",
+      "attribution_by": "codex-task15-researcher"
+    },
+    "captured_on": "2026-11-23",
+    "capture_method": "http_content",
+    "snapshot_ref": "snapshots/713c5380eaa70f3e7fdfcc82dfc16fc68cc0c1bf0fc06fc3b86bff99c414a1b5.txt",
+    "content_sha256": "713c5380eaa70f3e7fdfcc82dfc16fc68cc0c1bf0fc06fc3b86bff99c414a1b5",
+    "line_count": 1
+  },
+  {
+    "spec": {
+      "app_id": 85,
+      "url": "https://www.ipayx.ai/",
+      "kind": "official_product_page",
+      "scope": "iPayX Protocol on ipayx.ai original domain hint; FX audit API and MCP; public demo versus API credentials and production",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor-controlled documentation/product domain or vendor-owned GitHub repository; selected by Codex from public web discovery and roster identity hints. Paygent NMI candidates are identity investigation only, not an established match.",
+      "attribution_by": "codex-task15-researcher"
+    },
+    "captured_on": "2026-11-23",
+    "capture_method": "http_content",
+    "snapshot_ref": "snapshots/713c5380eaa70f3e7fdfcc82dfc16fc68cc0c1bf0fc06fc3b86bff99c414a1b5.txt",
+    "content_sha256": "713c5380eaa70f3e7fdfcc82dfc16fc68cc0c1bf0fc06fc3b86bff99c414a1b5",
+    "line_count": 1
+  },
+  {
+    "spec": {
+      "app_id": 85,
+      "url": "https://www.ipayx.ai/docs/mcp",
+      "kind": "primary_docs",
+      "scope": "iPayX Protocol on ipayx.ai original domain hint; FX audit API and MCP; public demo versus API credentials and production",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor-controlled documentation/product domain or vendor-owned GitHub repository; selected by Codex from public web discovery and roster identity hints. Paygent NMI candidates are identity investigation only, not an established match.",
+      "attribution_by": "codex-task15-researcher"
+    },
+    "captured_on": "2026-11-23",
+    "capture_method": "http_content",
+    "snapshot_ref": "snapshots/713c5380eaa70f3e7fdfcc82dfc16fc68cc0c1bf0fc06fc3b86bff99c414a1b5.txt",
+    "content_sha256": "713c5380eaa70f3e7fdfcc82dfc16fc68cc0c1bf0fc06fc3b86bff99c414a1b5",
+    "line_count": 1
+  },
+  {
+    "spec": {
+      "app_id": 85,
+      "url": "https://www.ipayx.ai/api-terms",
+      "kind": "primary_docs",
+      "scope": "iPayX Protocol on ipayx.ai original domain hint; FX audit API and MCP; public demo versus API credentials and production",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor-controlled documentation/product domain or vendor-owned GitHub repository; selected by Codex from public web discovery and roster identity hints. Paygent NMI candidates are identity investigation only, not an established match.",
+      "attribution_by": "codex-task15-researcher"
+    },
+    "captured_on": "2026-11-23",
+    "capture_method": "http_content",
+    "snapshot_ref": "snapshots/713c5380eaa70f3e7fdfcc82dfc16fc68cc0c1bf0fc06fc3b86bff99c414a1b5.txt",
+    "content_sha256": "713c5380eaa70f3e7fdfcc82dfc16fc68cc0c1bf0fc06fc3b86bff99c414a1b5",
+    "line_count": 1
+  },
+  {
+    "spec": {
+      "app_id": 86,
+      "url": "https://static.developer.intuit.com/output_html/qbo/docs/develop/authentication-and-authorization/oauth-2.0.html",
+      "kind": "primary_docs",
+      "scope": "QuickBooks Online Accounting API; developer sandbox versus production app and company; not Desktop",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor-controlled documentation/product domain or vendor-owned GitHub repository; selected by Codex from public web discovery and roster identity hints. Paygent NMI candidates are identity investigation only, not an established match.",
+      "attribution_by": "codex-task15-researcher"
+    },
+    "captured_on": "2026-11-23",
+    "capture_method": "http_content",
+    "snapshot_ref": "snapshots/4a447e3f494d392a37afb0df66c0c3f83b5ebebdc67e2dca67be13b221547c86.txt",
+    "content_sha256": "4a447e3f494d392a37afb0df66c0c3f83b5ebebdc67e2dca67be13b221547c86",
+    "line_count": 836
+  },
+  {
+    "spec": {
+      "app_id": 86,
+      "url": "https://static.developer.intuit.com/output_html/qbo/docs/develop/sandboxes.html",
+      "kind": "primary_docs",
+      "scope": "QuickBooks Online Accounting API; developer sandbox versus production app and company; not Desktop",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor-controlled documentation/product domain or vendor-owned GitHub repository; selected by Codex from public web discovery and roster identity hints. Paygent NMI candidates are identity investigation only, not an established match.",
+      "attribution_by": "codex-task15-researcher"
+    },
+    "captured_on": "2026-11-23",
+    "capture_method": "http_content",
+    "snapshot_ref": "snapshots/54644fd7391b9783b20ec47a472cdf75afada2a424d5f46dc724cafc69d39c39.txt",
+    "content_sha256": "54644fd7391b9783b20ec47a472cdf75afada2a424d5f46dc724cafc69d39c39",
+    "line_count": 9
+  },
+  {
+    "spec": {
+      "app_id": 86,
+      "url": "https://static.developer.intuit.com/output_html/qbo/docs/go-live/publish-app.html",
+      "kind": "primary_docs",
+      "scope": "QuickBooks Online Accounting API; developer sandbox versus production app and company; not Desktop",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor-controlled documentation/product domain or vendor-owned GitHub repository; selected by Codex from public web discovery and roster identity hints. Paygent NMI candidates are identity investigation only, not an established match.",
+      "attribution_by": "codex-task15-researcher"
+    },
+    "captured_on": "2026-11-23",
+    "capture_method": "http_content",
+    "snapshot_ref": "snapshots/822f20d7464862e96f260822587780e31223de0627846c1bc72acf4b570dbd50.txt",
+    "content_sha256": "822f20d7464862e96f260822587780e31223de0627846c1bc72acf4b570dbd50",
+    "line_count": 54
+  },
+  {
+    "spec": {
+      "app_id": 86,
+      "url": "https://static.developer.intuit.com/output_html/qbo/docs/get-started/mcp-connector.html",
+      "kind": "primary_docs",
+      "scope": "QuickBooks Online Accounting API; developer sandbox versus production app and company; not Desktop",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor-controlled documentation/product domain or vendor-owned GitHub repository; selected by Codex from public web discovery and roster identity hints. Paygent NMI candidates are identity investigation only, not an established match.",
+      "attribution_by": "codex-task15-researcher"
+    },
+    "captured_on": "2026-11-23",
+    "capture_method": "http_content",
+    "snapshot_ref": "snapshots/c82a49dcb0ef3c15d54ab2ade3526b2ca718b7a85bbabec6387a0eee8dd05831.txt",
+    "content_sha256": "c82a49dcb0ef3c15d54ab2ade3526b2ca718b7a85bbabec6387a0eee8dd05831",
+    "line_count": 32
+  },
+  {
+    "spec": {
+      "app_id": 87,
+      "url": "https://developer.xero.com/documentation/getting-started-guide/",
+      "kind": "primary_docs",
+      "scope": "Xero Accounting API commercial apps and official MCP; demo organisation versus real organisations; Custom Connections separately scoped",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor-controlled documentation/product domain or vendor-owned GitHub repository; selected by Codex from public web discovery and roster identity hints. Paygent NMI candidates are identity investigation only, not an established match.",
+      "attribution_by": "codex-task15-researcher"
+    },
+    "captured_on": "2026-11-23",
+    "capture_method": "http_content",
+    "snapshot_ref": "snapshots/9e9bcd3c2a466a235ea9fa1dceb2695006ec2c76e435e352735895243a9a8804.txt",
+    "content_sha256": "9e9bcd3c2a466a235ea9fa1dceb2695006ec2c76e435e352735895243a9a8804",
+    "line_count": 1
+  },
+  {
+    "spec": {
+      "app_id": 87,
+      "url": "https://developer.xero.com/documentation/api/accounting/overview",
+      "kind": "primary_docs",
+      "scope": "Xero Accounting API commercial apps and official MCP; demo organisation versus real organisations; Custom Connections separately scoped",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor-controlled documentation/product domain or vendor-owned GitHub repository; selected by Codex from public web discovery and roster identity hints. Paygent NMI candidates are identity investigation only, not an established match.",
+      "attribution_by": "codex-task15-researcher"
+    },
+    "captured_on": "2026-11-23",
+    "capture_method": "http_content",
+    "snapshot_ref": "snapshots/cb4d89a62544d351a8d9d2730cdd50beecd1090dffa251d676a26ff248e9ba69.txt",
+    "content_sha256": "cb4d89a62544d351a8d9d2730cdd50beecd1090dffa251d676a26ff248e9ba69",
+    "line_count": 1
+  },
+  {
+    "spec": {
+      "app_id": 87,
+      "url": "https://developer.xero.com/documentation/guides/oauth2/overview",
+      "kind": "primary_docs",
+      "scope": "Xero Accounting API commercial apps and official MCP; demo organisation versus real organisations; Custom Connections separately scoped",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor-controlled documentation/product domain or vendor-owned GitHub repository; selected by Codex from public web discovery and roster identity hints. Paygent NMI candidates are identity investigation only, not an established match.",
+      "attribution_by": "codex-task15-researcher"
+    },
+    "captured_on": "2026-11-23",
+    "capture_method": "http_content",
+    "snapshot_ref": "snapshots/7ded82bfb0a39ff4badcb96cc4fd0e6608ccae1b7b9d6abcbc5d49e33e65d34d.txt",
+    "content_sha256": "7ded82bfb0a39ff4badcb96cc4fd0e6608ccae1b7b9d6abcbc5d49e33e65d34d",
+    "line_count": 1
+  },
+  {
+    "spec": {
+      "app_id": 87,
+      "url": "https://developer.xero.com/pricing",
+      "kind": "primary_docs",
+      "scope": "Xero Accounting API commercial apps and official MCP; demo organisation versus real organisations; Custom Connections separately scoped",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor-controlled documentation/product domain or vendor-owned GitHub repository; selected by Codex from public web discovery and roster identity hints. Paygent NMI candidates are identity investigation only, not an established match.",
+      "attribution_by": "codex-task15-researcher"
+    },
+    "captured_on": "2026-11-23",
+    "capture_method": "http_content",
+    "snapshot_ref": "snapshots/ee748645cf41b8e9b107ed953bbca51ebb6bdcb5391cd3197d010e6f053ca854.txt",
+    "content_sha256": "ee748645cf41b8e9b107ed953bbca51ebb6bdcb5391cd3197d010e6f053ca854",
+    "line_count": 132
+  },
+  {
+    "spec": {
+      "app_id": 87,
+      "url": "https://developer.xero.com/faq/remote-mcp",
+      "kind": "primary_docs",
+      "scope": "Xero Accounting API commercial apps and official MCP; demo organisation versus real organisations; Custom Connections separately scoped",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor-controlled documentation/product domain or vendor-owned GitHub repository; selected by Codex from public web discovery and roster identity hints. Paygent NMI candidates are identity investigation only, not an established match.",
+      "attribution_by": "codex-task15-researcher"
+    },
+    "captured_on": "2026-11-23",
+    "capture_method": "http_content",
+    "snapshot_ref": "snapshots/a604e0186d419da109219ec97d6cb8da722ec56a444564916fb473d63655017c.txt",
+    "content_sha256": "a604e0186d419da109219ec97d6cb8da722ec56a444564916fb473d63655017c",
+    "line_count": 101
+  },
+  {
+    "spec": {
+      "app_id": 87,
+      "url": "https://developer.xero.com/documentation/guides/remote-mcp/overview",
+      "kind": "primary_docs",
+      "scope": "Xero Accounting API commercial apps and official MCP; demo organisation versus real organisations; Custom Connections separately scoped",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor-controlled documentation/product domain or vendor-owned GitHub repository; selected by Codex from public web discovery and roster identity hints. Paygent NMI candidates are identity investigation only, not an established match.",
+      "attribution_by": "codex-task15-researcher"
+    },
+    "captured_on": "2026-11-23",
+    "capture_method": "http_content",
+    "snapshot_ref": "snapshots/248d1ae9c768330f2f37cc945173305a4370202ac757dbb6826b2d348ccd0cc2.txt",
+    "content_sha256": "248d1ae9c768330f2f37cc945173305a4370202ac757dbb6826b2d348ccd0cc2",
+    "line_count": 1
+  },
+  {
+    "spec": {
+      "app_id": 87,
+      "url": "https://developer.xero.com/faq/custom-integration",
+      "kind": "primary_docs",
+      "scope": "Xero Accounting API commercial apps and official MCP; demo organisation versus real organisations; Custom Connections separately scoped",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor-controlled documentation/product domain or vendor-owned GitHub repository; selected by Codex from public web discovery and roster identity hints. Paygent NMI candidates are identity investigation only, not an established match.",
+      "attribution_by": "codex-task15-researcher"
+    },
+    "captured_on": "2026-11-23",
+    "capture_method": "http_content",
+    "snapshot_ref": "snapshots/16c925af2fd8eae07ca31edaa254b93742d526f0a79b0112e74fd99a621b1d25.txt",
+    "content_sha256": "16c925af2fd8eae07ca31edaa254b93742d526f0a79b0112e74fd99a621b1d25",
+    "line_count": 108
+  },
+  {
+    "spec": {
+      "app_id": 88,
+      "url": "https://developer.brex.com/",
+      "kind": "primary_docs",
+      "scope": "Brex developer APIs; own-account user token versus developer-partner OAuth/staging; production account required for customer path",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor-controlled documentation/product domain or vendor-owned GitHub repository; selected by Codex from public web discovery and roster identity hints. Paygent NMI candidates are identity investigation only, not an established match.",
+      "attribution_by": "codex-task15-researcher"
+    },
+    "captured_on": "2026-11-23",
+    "capture_method": "http_content",
+    "snapshot_ref": "snapshots/53dd86a30e2e131647b3953f05d0e2d2d767ec95b91caf464b8d451a639082b3.txt",
+    "content_sha256": "53dd86a30e2e131647b3953f05d0e2d2d767ec95b91caf464b8d451a639082b3",
+    "line_count": 57
+  },
+  {
+    "spec": {
+      "app_id": 88,
+      "url": "https://developer.brex.com/guides/authentication",
+      "kind": "primary_docs",
+      "scope": "Brex developer APIs; own-account user token versus developer-partner OAuth/staging; production account required for customer path",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor-controlled documentation/product domain or vendor-owned GitHub repository; selected by Codex from public web discovery and roster identity hints. Paygent NMI candidates are identity investigation only, not an established match.",
+      "attribution_by": "codex-task15-researcher"
+    },
+    "captured_on": "2026-11-23",
+    "capture_method": "http_content",
+    "snapshot_ref": "snapshots/499d3e1be0e731e9bd66645d2ee5515f088e62412de139100149edca1b822bf4.txt",
+    "content_sha256": "499d3e1be0e731e9bd66645d2ee5515f088e62412de139100149edca1b822bf4",
+    "line_count": 67
+  },
+  {
+    "spec": {
+      "app_id": 88,
+      "url": "https://developer.brex.com/guides/partner_authentication",
+      "kind": "primary_docs",
+      "scope": "Brex developer APIs; own-account user token versus developer-partner OAuth/staging; production account required for customer path",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor-controlled documentation/product domain or vendor-owned GitHub repository; selected by Codex from public web discovery and roster identity hints. Paygent NMI candidates are identity investigation only, not an established match.",
+      "attribution_by": "codex-task15-researcher"
+    },
+    "captured_on": "2026-11-23",
+    "capture_method": "http_content",
+    "snapshot_ref": "snapshots/e856b8e225bb7da6e409d1401a3e22141dc3bfb9de4c11908356cb2f0c8182c1.txt",
+    "content_sha256": "e856b8e225bb7da6e409d1401a3e22141dc3bfb9de4c11908356cb2f0c8182c1",
+    "line_count": 161
+  },
+  {
+    "spec": {
+      "app_id": 88,
+      "url": "https://developer.brex.com/docs/partner_onboarding",
+      "kind": "primary_docs",
+      "scope": "Brex developer APIs; own-account user token versus developer-partner OAuth/staging; production account required for customer path",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor-controlled documentation/product domain or vendor-owned GitHub repository; selected by Codex from public web discovery and roster identity hints. Paygent NMI candidates are identity investigation only, not an established match.",
+      "attribution_by": "codex-task15-researcher"
+    },
+    "captured_on": "2026-11-23",
+    "capture_method": "http_content",
+    "snapshot_ref": "snapshots/f49da21319416b6ee072d1ad8e8a085510f671cf09177ad6cfd4042341d7da6b.txt",
+    "content_sha256": "f49da21319416b6ee072d1ad8e8a085510f671cf09177ad6cfd4042341d7da6b",
+    "line_count": 30
+  },
+  {
+    "spec": {
+      "app_id": 88,
+      "url": "https://developer.brex.com/changelog",
+      "kind": "primary_docs",
+      "scope": "Brex developer APIs; own-account user token versus developer-partner OAuth/staging; production account required for customer path",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor-controlled documentation/product domain or vendor-owned GitHub repository; selected by Codex from public web discovery and roster identity hints. Paygent NMI candidates are identity investigation only, not an established match.",
+      "attribution_by": "codex-task15-researcher"
+    },
+    "captured_on": "2026-11-23",
+    "capture_method": "http_content",
+    "snapshot_ref": "snapshots/2f3587e1659e546a4bc1237b01fb5ef9128e732e63fe2c5059790f4180c604dc.txt",
+    "content_sha256": "2f3587e1659e546a4bc1237b01fb5ef9128e732e63fe2c5059790f4180c604dc",
+    "line_count": 119
+  },
+  {
+    "spec": {
+      "app_id": 89,
+      "url": "https://docs.ramp.com/",
+      "kind": "primary_docs",
+      "scope": "Ramp Developer API and callable MCP; sandbox versus production business; own-account versus partner integrations",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor-controlled documentation/product domain or vendor-owned GitHub repository; selected by Codex from public web discovery and roster identity hints. Paygent NMI candidates are identity investigation only, not an established match.",
+      "attribution_by": "codex-task15-researcher"
+    },
+    "captured_on": "2026-11-23",
+    "capture_method": "http_content",
+    "snapshot_ref": "snapshots/8e7de29ecc5267fe409ac55bdd6f342086cff9872cda4a1605b04640fc2619b4.txt",
+    "content_sha256": "8e7de29ecc5267fe409ac55bdd6f342086cff9872cda4a1605b04640fc2619b4",
+    "line_count": 16
+  },
+  {
+    "spec": {
+      "app_id": 89,
+      "url": "https://docs.ramp.com/developer-api/v1/authorization",
+      "kind": "primary_docs",
+      "scope": "Ramp Developer API and callable MCP; sandbox versus production business; own-account versus partner integrations",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor-controlled documentation/product domain or vendor-owned GitHub repository; selected by Codex from public web discovery and roster identity hints. Paygent NMI candidates are identity investigation only, not an established match.",
+      "attribution_by": "codex-task15-researcher"
+    },
+    "captured_on": "2026-11-23",
+    "capture_method": "http_content",
+    "snapshot_ref": "snapshots/8e7de29ecc5267fe409ac55bdd6f342086cff9872cda4a1605b04640fc2619b4.txt",
+    "content_sha256": "8e7de29ecc5267fe409ac55bdd6f342086cff9872cda4a1605b04640fc2619b4",
+    "line_count": 16
+  },
+  {
+    "spec": {
+      "app_id": 89,
+      "url": "https://docs.ramp.com/developer-api/v1/ramp-mcp",
+      "kind": "primary_docs",
+      "scope": "Ramp Developer API and callable MCP; sandbox versus production business; own-account versus partner integrations",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor-controlled documentation/product domain or vendor-owned GitHub repository; selected by Codex from public web discovery and roster identity hints. Paygent NMI candidates are identity investigation only, not an established match.",
+      "attribution_by": "codex-task15-researcher"
+    },
+    "captured_on": "2026-11-23",
+    "capture_method": "http_content",
+    "snapshot_ref": "snapshots/8e7de29ecc5267fe409ac55bdd6f342086cff9872cda4a1605b04640fc2619b4.txt",
+    "content_sha256": "8e7de29ecc5267fe409ac55bdd6f342086cff9872cda4a1605b04640fc2619b4",
+    "line_count": 16
+  },
+  {
+    "spec": {
+      "app_id": 89,
+      "url": "https://docs.ramp.com/developer-api/v1/setup",
+      "kind": "primary_docs",
+      "scope": "Ramp Developer API and callable MCP; sandbox versus production business; own-account versus partner integrations",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor-controlled documentation/product domain or vendor-owned GitHub repository; selected by Codex from public web discovery and roster identity hints. Paygent NMI candidates are identity investigation only, not an established match.",
+      "attribution_by": "codex-task15-researcher"
+    },
+    "captured_on": "2026-11-23",
+    "capture_method": "http_content",
+    "snapshot_ref": "snapshots/8e7de29ecc5267fe409ac55bdd6f342086cff9872cda4a1605b04640fc2619b4.txt",
+    "content_sha256": "8e7de29ecc5267fe409ac55bdd6f342086cff9872cda4a1605b04640fc2619b4",
+    "line_count": 16
+  },
+  {
+    "spec": {
+      "app_id": 82,
+      "url": "https://support.plaid.com/hc/en-us/articles/16110110883479-How-are-Sandbox-Production-Trial-plan-and-Limited-Production-different",
+      "kind": "primary_docs",
+      "scope": "Plaid developer API; Sandbox versus Production including Trial; product and institution entitlements vary",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Public vendor documentation or vendor-owned SDK repository; MCP repositories for Binance and iPayX conservatively treated as community implementations without established vendor endorsement.",
+      "attribution_by": "codex-task15-researcher"
+    },
+    "captured_on": "2026-11-23",
+    "capture_method": "http_content",
+    "snapshot_ref": "snapshots/8cc618fc40506f7f67c1051165a2274bbd862db6ed8c97bc37f1eab2a58ca9ce.txt",
+    "content_sha256": "8cc618fc40506f7f67c1051165a2274bbd862db6ed8c97bc37f1eab2a58ca9ce",
+    "line_count": 69
+  },
+  {
+    "spec": {
+      "app_id": 82,
+      "url": "https://plaid.com/docs/resources/mcp/",
+      "kind": "primary_docs",
+      "scope": "Plaid developer API; Sandbox versus Production including Trial; product and institution entitlements vary",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Public vendor documentation or vendor-owned SDK repository; MCP repositories for Binance and iPayX conservatively treated as community implementations without established vendor endorsement.",
+      "attribution_by": "codex-task15-researcher"
+    },
+    "captured_on": "2026-11-23",
+    "capture_method": "http_content",
+    "snapshot_ref": "snapshots/e48c0f544d71ddf33c0277809296569443ca80e5461e490f1193f9e9ad790fc7.txt",
+    "content_sha256": "e48c0f544d71ddf33c0277809296569443ca80e5461e490f1193f9e9ad790fc7",
+    "line_count": 192
+  },
+  {
+    "spec": {
+      "app_id": 83,
+      "url": "https://raw.githubusercontent.com/mujeeb8/Binance-MCP/main/README.md",
+      "kind": "community_repository",
+      "scope": "Binance global Spot API; public market data versus signed account/trading; Spot Testnet distinct from production and regional eligibility unresolved",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Public vendor documentation or vendor-owned SDK repository; MCP repositories for Binance and iPayX conservatively treated as community implementations without established vendor endorsement.",
+      "attribution_by": "codex-task15-researcher"
+    },
+    "captured_on": "2026-11-23",
+    "capture_method": "http_content",
+    "snapshot_ref": "snapshots/4413acb8764ca2a06a86e3d51700bc195b71842c7d3a642755f70dca954e0a64.txt",
+    "content_sha256": "4413acb8764ca2a06a86e3d51700bc195b71842c7d3a642755f70dca954e0a64",
+    "line_count": 117
+  },
+  {
+    "spec": {
+      "app_id": 85,
+      "url": "https://raw.githubusercontent.com/iPAYX-Technologies/mcp-fx-audit/main/README.md",
+      "kind": "community_repository",
+      "scope": "iPayX Protocol on ipayx.ai original domain hint; FX audit API and MCP; public demo versus API credentials and production",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Public vendor documentation or vendor-owned SDK repository; MCP repositories for Binance and iPayX conservatively treated as community implementations without established vendor endorsement.",
+      "attribution_by": "codex-task15-researcher"
+    },
+    "captured_on": "2026-11-23",
+    "capture_method": "http_content",
+    "snapshot_ref": "snapshots/f858d2dd527edc1c0b34fc8e42bfc2295242e7bd1bdd8bb6a91908420b85cd50.txt",
+    "content_sha256": "f858d2dd527edc1c0b34fc8e42bfc2295242e7bd1bdd8bb6a91908420b85cd50",
+    "line_count": 105
+  },
+  {
+    "spec": {
+      "app_id": 86,
+      "url": "https://raw.githubusercontent.com/intuit/QuickBooks-V3-PHP-SDK/master/README.md",
+      "kind": "official_repository",
+      "scope": "QuickBooks Online Accounting API; developer sandbox versus production app and company; not Desktop",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Public vendor documentation or vendor-owned SDK repository; MCP repositories for Binance and iPayX conservatively treated as community implementations without established vendor endorsement.",
+      "attribution_by": "codex-task15-researcher"
+    },
+    "captured_on": "2026-11-23",
+    "capture_method": "http_content",
+    "snapshot_ref": "snapshots/4187c42fca794bb714c8ac720986d61b2b7cd0b96800a59646a1d0a507ef0306.txt",
+    "content_sha256": "4187c42fca794bb714c8ac720986d61b2b7cd0b96800a59646a1d0a507ef0306",
+    "line_count": 17
+  },
+  {
+    "spec": {
+      "app_id": 87,
+      "url": "https://developer.xero.com/faq/getting-started",
+      "kind": "primary_docs",
+      "scope": "Xero Accounting API commercial apps and official MCP; demo organisation versus real organisations; Custom Connections separately scoped",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Public vendor documentation or vendor-owned SDK repository; MCP repositories for Binance and iPayX conservatively treated as community implementations without established vendor endorsement.",
+      "attribution_by": "codex-task15-researcher"
+    },
+    "captured_on": "2026-11-23",
+    "capture_method": "http_content",
+    "snapshot_ref": "snapshots/4f93284069dd2829de486059eb9fbcc018a5164fc35ac1775e543b4610f2f852.txt",
+    "content_sha256": "4f93284069dd2829de486059eb9fbcc018a5164fc35ac1775e543b4610f2f852",
+    "line_count": 75
+  },
+  {
+    "spec": {
+      "app_id": 87,
+      "url": "https://raw.githubusercontent.com/XeroAPI/xero-node/master/README.md",
+      "kind": "official_repository",
+      "scope": "Xero Accounting API commercial apps and official MCP; demo organisation versus real organisations; Custom Connections separately scoped",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Public vendor documentation or vendor-owned SDK repository; MCP repositories for Binance and iPayX conservatively treated as community implementations without established vendor endorsement.",
+      "attribution_by": "codex-task15-researcher"
+    },
+    "captured_on": "2026-11-23",
+    "capture_method": "http_content",
+    "snapshot_ref": "snapshots/84cf7c1b08fe1a1b2552b6642ff53d461c78acbf12099d82fe8f7e7e5d983baa.txt",
+    "content_sha256": "84cf7c1b08fe1a1b2552b6642ff53d461c78acbf12099d82fe8f7e7e5d983baa",
+    "line_count": 376
+  },
+  {
+    "spec": {
+      "app_id": 88,
+      "url": "https://developer.brex.com/docs/mcp.md",
+      "kind": "primary_docs",
+      "scope": "Brex developer APIs; own-account user token versus developer-partner OAuth/staging; production account required for customer path",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Public vendor documentation or vendor-owned SDK repository; MCP repositories for Binance and iPayX conservatively treated as community implementations without established vendor endorsement.",
+      "attribution_by": "codex-task15-researcher"
+    },
+    "captured_on": "2026-11-23",
+    "capture_method": "http_content",
+    "snapshot_ref": "snapshots/7295e7c9f1176fce15b0fdf8686356c5df584635b1dfd1126aa05f048a15762b.txt",
+    "content_sha256": "7295e7c9f1176fce15b0fdf8686356c5df584635b1dfd1126aa05f048a15762b",
+    "line_count": 172
+  },
+  {
+    "spec": {
+      "app_id": 89,
+      "url": "https://docs.ramp.com/llms-guides/authorization.txt",
+      "kind": "primary_docs",
+      "scope": "Ramp Developer API and callable MCP; sandbox versus production business; own-account versus partner integrations",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Public vendor documentation or vendor-owned SDK repository; MCP repositories for Binance and iPayX conservatively treated as community implementations without established vendor endorsement.",
+      "attribution_by": "codex-task15-researcher"
+    },
+    "captured_on": "2026-11-23",
+    "capture_method": "http_content",
+    "snapshot_ref": "snapshots/8a21313c65c0373882828529b9689edb6ba51d896dd0a159d4d065f3918d4673.txt",
+    "content_sha256": "8a21313c65c0373882828529b9689edb6ba51d896dd0a159d4d065f3918d4673",
+    "line_count": 176
+  },
+  {
+    "spec": {
+      "app_id": 89,
+      "url": "https://docs.ramp.com/llms-guides/ramp-mcp.txt",
+      "kind": "primary_docs",
+      "scope": "Ramp Developer API and callable MCP; sandbox versus production business; own-account versus partner integrations",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Public vendor documentation or vendor-owned SDK repository; MCP repositories for Binance and iPayX conservatively treated as community implementations without established vendor endorsement.",
+      "attribution_by": "codex-task15-researcher"
+    },
+    "captured_on": "2026-11-23",
+    "capture_method": "http_content",
+    "snapshot_ref": "snapshots/5d0b992dfd55235d8426043716decae20edc61365839f4cf8079739c67af6365.txt",
+    "content_sha256": "5d0b992dfd55235d8426043716decae20edc61365839f4cf8079739c67af6365",
+    "line_count": 23
+  },
+  {
+    "spec": {
+      "app_id": 89,
+      "url": "https://docs.ramp.com/llms-guides/getting-started.txt",
+      "kind": "primary_docs",
+      "scope": "Ramp Developer API and callable MCP; sandbox versus production business; own-account versus partner integrations",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Public vendor documentation or vendor-owned SDK repository; MCP repositories for Binance and iPayX conservatively treated as community implementations without established vendor endorsement.",
+      "attribution_by": "codex-task15-researcher"
+    },
+    "captured_on": "2026-11-23",
+    "capture_method": "http_content",
+    "snapshot_ref": "snapshots/f4fb593813d205783657ce5908b2c94d41f4729c971320a936ca6db2fddcabd4.txt",
+    "content_sha256": "f4fb593813d205783657ce5908b2c94d41f4729c971320a936ca6db2fddcabd4",
+    "line_count": 52
+  },
+  {
+    "spec": {
+      "app_id": 89,
+      "url": "https://docs.ramp.com/llms-guides/sandbox-access.txt",
+      "kind": "primary_docs",
+      "scope": "Ramp Developer API and callable MCP; sandbox versus production business; own-account versus partner integrations",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Official vendor documentation domain; alternate static export or canonical hostname for previously inaccessible page.",
+      "attribution_by": "codex-task15-researcher"
+    },
+    "captured_on": "2026-11-23",
+    "capture_method": "http_content",
+    "snapshot_ref": "snapshots/9a1414876eb948b2d4c355a971c993476ab2a1ec442e04d8c2d1dc37b1cdce84.txt",
+    "content_sha256": "9a1414876eb948b2d4c355a971c993476ab2a1ec442e04d8c2d1dc37b1cdce84",
+    "line_count": 4
+  }
+]

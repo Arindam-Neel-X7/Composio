@@ -1,0 +1,908 @@
+[
+  {
+    "app_id": 2,
+    "claim_id": "2.api.breadth",
+    "change": "changed",
+    "reason": "Coordinator offline reproduction of unchanged Task04 research-agent first pass; no new research or independent adjudication"
+  },
+  {
+    "app_id": 2,
+    "claim_id": "2.api.group.content",
+    "change": "added",
+    "reason": "Coordinator offline reproduction of unchanged Task04 research-agent first pass; no new research or independent adjudication"
+  },
+  {
+    "app_id": 2,
+    "claim_id": "2.api.group.crm",
+    "change": "added",
+    "reason": "Coordinator offline reproduction of unchanged Task04 research-agent first pass; no new research or independent adjudication"
+  },
+  {
+    "app_id": 2,
+    "claim_id": "2.api.group.marketing",
+    "change": "added",
+    "reason": "Coordinator offline reproduction of unchanged Task04 research-agent first pass; no new research or independent adjudication"
+  },
+  {
+    "app_id": 2,
+    "claim_id": "2.api.public_documentation",
+    "change": "changed",
+    "reason": "Coordinator offline reproduction of unchanged Task04 research-agent first pass; no new research or independent adjudication"
+  },
+  {
+    "app_id": 2,
+    "claim_id": "2.api.rest",
+    "change": "added",
+    "reason": "Coordinator offline reproduction of unchanged Task04 research-agent first pass; no new research or independent adjudication"
+  },
+  {
+    "app_id": 2,
+    "claim_id": "2.auth.client_credentials",
+    "change": "added",
+    "reason": "Coordinator offline reproduction of unchanged Task04 research-agent first pass; no new research or independent adjudication"
+  },
+  {
+    "app_id": 2,
+    "claim_id": "2.auth.developer_key",
+    "change": "added",
+    "reason": "Coordinator offline reproduction of unchanged Task04 research-agent first pass; no new research or independent adjudication"
+  },
+  {
+    "app_id": 2,
+    "claim_id": "2.auth.legacy",
+    "change": "added",
+    "reason": "Coordinator offline reproduction of unchanged Task04 research-agent first pass; no new research or independent adjudication"
+  },
+  {
+    "app_id": 2,
+    "claim_id": "2.auth.oauth",
+    "change": "added",
+    "reason": "Coordinator offline reproduction of unchanged Task04 research-agent first pass; no new research or independent adjudication"
+  },
+  {
+    "app_id": 2,
+    "claim_id": "2.auth.static",
+    "change": "added",
+    "reason": "Coordinator offline reproduction of unchanged Task04 research-agent first pass; no new research or independent adjudication"
+  },
+  {
+    "app_id": 2,
+    "claim_id": "2.buildability",
+    "change": "changed",
+    "reason": "Coordinator offline reproduction of unchanged Task04 research-agent first pass; no new research or independent adjudication"
+  },
+  {
+    "app_id": 2,
+    "claim_id": "2.identity",
+    "change": "changed",
+    "reason": "Coordinator offline reproduction of unchanged Task04 research-agent first pass; no new research or independent adjudication"
+  },
+  {
+    "app_id": 2,
+    "claim_id": "2.mcp",
+    "change": "changed",
+    "reason": "Coordinator offline reproduction of unchanged Task04 research-agent first pass; no new research or independent adjudication"
+  },
+  {
+    "app_id": 2,
+    "claim_id": "2.mcp.remote",
+    "change": "added",
+    "reason": "Coordinator offline reproduction of unchanged Task04 research-agent first pass; no new research or independent adjudication"
+  },
+  {
+    "app_id": 2,
+    "claim_id": "2.mcp.remote.operational",
+    "change": "added",
+    "reason": "Coordinator offline reproduction of unchanged Task04 research-agent first pass; no new research or independent adjudication"
+  },
+  {
+    "app_id": 2,
+    "claim_id": "2.production.admin_approval_required",
+    "change": "changed",
+    "reason": "Coordinator offline reproduction of unchanged Task04 research-agent first pass; no new research or independent adjudication"
+  },
+  {
+    "app_id": 2,
+    "claim_id": "2.production.contact_sales_required",
+    "change": "changed",
+    "reason": "Coordinator offline reproduction of unchanged Task04 research-agent first pass; no new research or independent adjudication"
+  },
+  {
+    "app_id": 2,
+    "claim_id": "2.production.free_access",
+    "change": "changed",
+    "reason": "Coordinator offline reproduction of unchanged Task04 research-agent first pass; no new research or independent adjudication"
+  },
+  {
+    "app_id": 2,
+    "claim_id": "2.production.paid_required",
+    "change": "changed",
+    "reason": "Coordinator offline reproduction of unchanged Task04 research-agent first pass; no new research or independent adjudication"
+  },
+  {
+    "app_id": 2,
+    "claim_id": "2.production.partner_approval_required",
+    "change": "changed",
+    "reason": "Coordinator offline reproduction of unchanged Task04 research-agent first pass; no new research or independent adjudication"
+  },
+  {
+    "app_id": 2,
+    "claim_id": "2.production.sandbox_access",
+    "change": "changed",
+    "reason": "Coordinator offline reproduction of unchanged Task04 research-agent first pass; no new research or independent adjudication"
+  },
+  {
+    "app_id": 2,
+    "claim_id": "2.production.self_serve",
+    "change": "changed",
+    "reason": "Coordinator offline reproduction of unchanged Task04 research-agent first pass; no new research or independent adjudication"
+  },
+  {
+    "app_id": 2,
+    "claim_id": "2.production.trial_access",
+    "change": "changed",
+    "reason": "Coordinator offline reproduction of unchanged Task04 research-agent first pass; no new research or independent adjudication"
+  },
+  {
+    "app_id": 2,
+    "claim_id": "2.purpose",
+    "change": "changed",
+    "reason": "Coordinator offline reproduction of unchanged Task04 research-agent first pass; no new research or independent adjudication"
+  },
+  {
+    "app_id": 2,
+    "claim_id": "2.testing.admin_approval_required",
+    "change": "changed",
+    "reason": "Coordinator offline reproduction of unchanged Task04 research-agent first pass; no new research or independent adjudication"
+  },
+  {
+    "app_id": 2,
+    "claim_id": "2.testing.contact_sales_required",
+    "change": "changed",
+    "reason": "Coordinator offline reproduction of unchanged Task04 research-agent first pass; no new research or independent adjudication"
+  },
+  {
+    "app_id": 2,
+    "claim_id": "2.testing.free_access",
+    "change": "changed",
+    "reason": "Coordinator offline reproduction of unchanged Task04 research-agent first pass; no new research or independent adjudication"
+  },
+  {
+    "app_id": 2,
+    "claim_id": "2.testing.paid_required",
+    "change": "changed",
+    "reason": "Coordinator offline reproduction of unchanged Task04 research-agent first pass; no new research or independent adjudication"
+  },
+  {
+    "app_id": 2,
+    "claim_id": "2.testing.partner_approval_required",
+    "change": "changed",
+    "reason": "Coordinator offline reproduction of unchanged Task04 research-agent first pass; no new research or independent adjudication"
+  },
+  {
+    "app_id": 2,
+    "claim_id": "2.testing.sandbox_access",
+    "change": "changed",
+    "reason": "Coordinator offline reproduction of unchanged Task04 research-agent first pass; no new research or independent adjudication"
+  },
+  {
+    "app_id": 2,
+    "claim_id": "2.testing.self_serve",
+    "change": "changed",
+    "reason": "Coordinator offline reproduction of unchanged Task04 research-agent first pass; no new research or independent adjudication"
+  },
+  {
+    "app_id": 2,
+    "claim_id": "2.testing.trial_access",
+    "change": "changed",
+    "reason": "Coordinator offline reproduction of unchanged Task04 research-agent first pass; no new research or independent adjudication"
+  },
+  {
+    "app_id": 13,
+    "claim_id": "13.api.breadth",
+    "change": "changed",
+    "reason": "Coordinator offline reproduction of unchanged Task04 research-agent first pass; no new research or independent adjudication"
+  },
+  {
+    "app_id": 13,
+    "claim_id": "13.api.group.conversations",
+    "change": "added",
+    "reason": "Coordinator offline reproduction of unchanged Task04 research-agent first pass; no new research or independent adjudication"
+  },
+  {
+    "app_id": 13,
+    "claim_id": "13.api.group.tickets",
+    "change": "added",
+    "reason": "Coordinator offline reproduction of unchanged Task04 research-agent first pass; no new research or independent adjudication"
+  },
+  {
+    "app_id": 13,
+    "claim_id": "13.api.group.time",
+    "change": "added",
+    "reason": "Coordinator offline reproduction of unchanged Task04 research-agent first pass; no new research or independent adjudication"
+  },
+  {
+    "app_id": 13,
+    "claim_id": "13.api.public_documentation",
+    "change": "changed",
+    "reason": "Coordinator offline reproduction of unchanged Task04 research-agent first pass; no new research or independent adjudication"
+  },
+  {
+    "app_id": 13,
+    "claim_id": "13.api.rest",
+    "change": "added",
+    "reason": "Coordinator offline reproduction of unchanged Task04 research-agent first pass; no new research or independent adjudication"
+  },
+  {
+    "app_id": 13,
+    "claim_id": "13.auth.basic",
+    "change": "added",
+    "reason": "Coordinator offline reproduction of unchanged Task04 research-agent first pass; no new research or independent adjudication"
+  },
+  {
+    "app_id": 13,
+    "claim_id": "13.auth.mcp_key",
+    "change": "added",
+    "reason": "Coordinator offline reproduction of unchanged Task04 research-agent first pass; no new research or independent adjudication"
+  },
+  {
+    "app_id": 13,
+    "claim_id": "13.auth.oauth",
+    "change": "added",
+    "reason": "Coordinator offline reproduction of unchanged Task04 research-agent first pass; no new research or independent adjudication"
+  },
+  {
+    "app_id": 13,
+    "claim_id": "13.auth.personal_key",
+    "change": "added",
+    "reason": "Coordinator offline reproduction of unchanged Task04 research-agent first pass; no new research or independent adjudication"
+  },
+  {
+    "app_id": 13,
+    "claim_id": "13.buildability",
+    "change": "changed",
+    "reason": "Coordinator offline reproduction of unchanged Task04 research-agent first pass; no new research or independent adjudication"
+  },
+  {
+    "app_id": 13,
+    "claim_id": "13.identity",
+    "change": "changed",
+    "reason": "Coordinator offline reproduction of unchanged Task04 research-agent first pass; no new research or independent adjudication"
+  },
+  {
+    "app_id": 13,
+    "claim_id": "13.mcp",
+    "change": "changed",
+    "reason": "Coordinator offline reproduction of unchanged Task04 research-agent first pass; no new research or independent adjudication"
+  },
+  {
+    "app_id": 13,
+    "claim_id": "13.mcp.official",
+    "change": "added",
+    "reason": "Coordinator offline reproduction of unchanged Task04 research-agent first pass; no new research or independent adjudication"
+  },
+  {
+    "app_id": 13,
+    "claim_id": "13.mcp.official.operational",
+    "change": "added",
+    "reason": "Coordinator offline reproduction of unchanged Task04 research-agent first pass; no new research or independent adjudication"
+  },
+  {
+    "app_id": 13,
+    "claim_id": "13.production.admin_approval_required",
+    "change": "changed",
+    "reason": "Coordinator offline reproduction of unchanged Task04 research-agent first pass; no new research or independent adjudication"
+  },
+  {
+    "app_id": 13,
+    "claim_id": "13.production.contact_sales_required",
+    "change": "changed",
+    "reason": "Coordinator offline reproduction of unchanged Task04 research-agent first pass; no new research or independent adjudication"
+  },
+  {
+    "app_id": 13,
+    "claim_id": "13.production.free_access",
+    "change": "changed",
+    "reason": "Coordinator offline reproduction of unchanged Task04 research-agent first pass; no new research or independent adjudication"
+  },
+  {
+    "app_id": 13,
+    "claim_id": "13.production.paid_required",
+    "change": "changed",
+    "reason": "Coordinator offline reproduction of unchanged Task04 research-agent first pass; no new research or independent adjudication"
+  },
+  {
+    "app_id": 13,
+    "claim_id": "13.production.partner_approval_required",
+    "change": "changed",
+    "reason": "Coordinator offline reproduction of unchanged Task04 research-agent first pass; no new research or independent adjudication"
+  },
+  {
+    "app_id": 13,
+    "claim_id": "13.production.sandbox_access",
+    "change": "changed",
+    "reason": "Coordinator offline reproduction of unchanged Task04 research-agent first pass; no new research or independent adjudication"
+  },
+  {
+    "app_id": 13,
+    "claim_id": "13.production.self_serve",
+    "change": "changed",
+    "reason": "Coordinator offline reproduction of unchanged Task04 research-agent first pass; no new research or independent adjudication"
+  },
+  {
+    "app_id": 13,
+    "claim_id": "13.production.trial_access",
+    "change": "changed",
+    "reason": "Coordinator offline reproduction of unchanged Task04 research-agent first pass; no new research or independent adjudication"
+  },
+  {
+    "app_id": 13,
+    "claim_id": "13.purpose",
+    "change": "changed",
+    "reason": "Coordinator offline reproduction of unchanged Task04 research-agent first pass; no new research or independent adjudication"
+  },
+  {
+    "app_id": 13,
+    "claim_id": "13.testing.admin_approval_required",
+    "change": "changed",
+    "reason": "Coordinator offline reproduction of unchanged Task04 research-agent first pass; no new research or independent adjudication"
+  },
+  {
+    "app_id": 13,
+    "claim_id": "13.testing.contact_sales_required",
+    "change": "changed",
+    "reason": "Coordinator offline reproduction of unchanged Task04 research-agent first pass; no new research or independent adjudication"
+  },
+  {
+    "app_id": 13,
+    "claim_id": "13.testing.free_access",
+    "change": "changed",
+    "reason": "Coordinator offline reproduction of unchanged Task04 research-agent first pass; no new research or independent adjudication"
+  },
+  {
+    "app_id": 13,
+    "claim_id": "13.testing.paid_required",
+    "change": "changed",
+    "reason": "Coordinator offline reproduction of unchanged Task04 research-agent first pass; no new research or independent adjudication"
+  },
+  {
+    "app_id": 13,
+    "claim_id": "13.testing.partner_approval_required",
+    "change": "changed",
+    "reason": "Coordinator offline reproduction of unchanged Task04 research-agent first pass; no new research or independent adjudication"
+  },
+  {
+    "app_id": 13,
+    "claim_id": "13.testing.sandbox_access",
+    "change": "changed",
+    "reason": "Coordinator offline reproduction of unchanged Task04 research-agent first pass; no new research or independent adjudication"
+  },
+  {
+    "app_id": 13,
+    "claim_id": "13.testing.self_serve",
+    "change": "changed",
+    "reason": "Coordinator offline reproduction of unchanged Task04 research-agent first pass; no new research or independent adjudication"
+  },
+  {
+    "app_id": 13,
+    "claim_id": "13.testing.trial_access",
+    "change": "changed",
+    "reason": "Coordinator offline reproduction of unchanged Task04 research-agent first pass; no new research or independent adjudication"
+  },
+  {
+    "app_id": 31,
+    "claim_id": "31.api.breadth",
+    "change": "changed",
+    "reason": "Coordinator offline reproduction of unchanged Task04 research-agent first pass; no new research or independent adjudication"
+  },
+  {
+    "app_id": 31,
+    "claim_id": "31.api.group.campaigns",
+    "change": "added",
+    "reason": "Coordinator offline reproduction of unchanged Task04 research-agent first pass; no new research or independent adjudication"
+  },
+  {
+    "app_id": 31,
+    "claim_id": "31.api.group.performance",
+    "change": "added",
+    "reason": "Coordinator offline reproduction of unchanged Task04 research-agent first pass; no new research or independent adjudication"
+  },
+  {
+    "app_id": 31,
+    "claim_id": "31.api.grpc",
+    "change": "added",
+    "reason": "Coordinator offline reproduction of unchanged Task04 research-agent first pass; no new research or independent adjudication"
+  },
+  {
+    "app_id": 31,
+    "claim_id": "31.api.public_documentation",
+    "change": "changed",
+    "reason": "Coordinator offline reproduction of unchanged Task04 research-agent first pass; no new research or independent adjudication"
+  },
+  {
+    "app_id": 31,
+    "claim_id": "31.api.rest",
+    "change": "added",
+    "reason": "Coordinator offline reproduction of unchanged Task04 research-agent first pass; no new research or independent adjudication"
+  },
+  {
+    "app_id": 31,
+    "claim_id": "31.api.sdk",
+    "change": "added",
+    "reason": "Coordinator offline reproduction of unchanged Task04 research-agent first pass; no new research or independent adjudication"
+  },
+  {
+    "app_id": 31,
+    "claim_id": "31.auth.developer_token_requirement",
+    "change": "added",
+    "reason": "Coordinator offline reproduction of unchanged Task04 research-agent first pass; no new research or independent adjudication"
+  },
+  {
+    "app_id": 31,
+    "claim_id": "31.auth.oauth_user",
+    "change": "added",
+    "reason": "Coordinator offline reproduction of unchanged Task04 research-agent first pass; no new research or independent adjudication"
+  },
+  {
+    "app_id": 31,
+    "claim_id": "31.auth.service_account",
+    "change": "added",
+    "reason": "Coordinator offline reproduction of unchanged Task04 research-agent first pass; no new research or independent adjudication"
+  },
+  {
+    "app_id": 31,
+    "claim_id": "31.buildability",
+    "change": "changed",
+    "reason": "Coordinator offline reproduction of unchanged Task04 research-agent first pass; no new research or independent adjudication"
+  },
+  {
+    "app_id": 31,
+    "claim_id": "31.identity",
+    "change": "changed",
+    "reason": "Coordinator offline reproduction of unchanged Task04 research-agent first pass; no new research or independent adjudication"
+  },
+  {
+    "app_id": 31,
+    "claim_id": "31.mcp",
+    "change": "changed",
+    "reason": "Coordinator offline reproduction of unchanged Task04 research-agent first pass; no new research or independent adjudication"
+  },
+  {
+    "app_id": 31,
+    "claim_id": "31.mcp.official",
+    "change": "added",
+    "reason": "Coordinator offline reproduction of unchanged Task04 research-agent first pass; no new research or independent adjudication"
+  },
+  {
+    "app_id": 31,
+    "claim_id": "31.mcp.official.operational",
+    "change": "added",
+    "reason": "Coordinator offline reproduction of unchanged Task04 research-agent first pass; no new research or independent adjudication"
+  },
+  {
+    "app_id": 31,
+    "claim_id": "31.production.admin_approval_required",
+    "change": "changed",
+    "reason": "Coordinator offline reproduction of unchanged Task04 research-agent first pass; no new research or independent adjudication"
+  },
+  {
+    "app_id": 31,
+    "claim_id": "31.production.contact_sales_required",
+    "change": "changed",
+    "reason": "Coordinator offline reproduction of unchanged Task04 research-agent first pass; no new research or independent adjudication"
+  },
+  {
+    "app_id": 31,
+    "claim_id": "31.production.free_access",
+    "change": "changed",
+    "reason": "Coordinator offline reproduction of unchanged Task04 research-agent first pass; no new research or independent adjudication"
+  },
+  {
+    "app_id": 31,
+    "claim_id": "31.production.paid_required",
+    "change": "changed",
+    "reason": "Coordinator offline reproduction of unchanged Task04 research-agent first pass; no new research or independent adjudication"
+  },
+  {
+    "app_id": 31,
+    "claim_id": "31.production.partner_approval_required",
+    "change": "changed",
+    "reason": "Coordinator offline reproduction of unchanged Task04 research-agent first pass; no new research or independent adjudication"
+  },
+  {
+    "app_id": 31,
+    "claim_id": "31.production.sandbox_access",
+    "change": "changed",
+    "reason": "Coordinator offline reproduction of unchanged Task04 research-agent first pass; no new research or independent adjudication"
+  },
+  {
+    "app_id": 31,
+    "claim_id": "31.production.self_serve",
+    "change": "changed",
+    "reason": "Coordinator offline reproduction of unchanged Task04 research-agent first pass; no new research or independent adjudication"
+  },
+  {
+    "app_id": 31,
+    "claim_id": "31.production.trial_access",
+    "change": "changed",
+    "reason": "Coordinator offline reproduction of unchanged Task04 research-agent first pass; no new research or independent adjudication"
+  },
+  {
+    "app_id": 31,
+    "claim_id": "31.purpose",
+    "change": "changed",
+    "reason": "Coordinator offline reproduction of unchanged Task04 research-agent first pass; no new research or independent adjudication"
+  },
+  {
+    "app_id": 31,
+    "claim_id": "31.testing.admin_approval_required",
+    "change": "changed",
+    "reason": "Coordinator offline reproduction of unchanged Task04 research-agent first pass; no new research or independent adjudication"
+  },
+  {
+    "app_id": 31,
+    "claim_id": "31.testing.contact_sales_required",
+    "change": "changed",
+    "reason": "Coordinator offline reproduction of unchanged Task04 research-agent first pass; no new research or independent adjudication"
+  },
+  {
+    "app_id": 31,
+    "claim_id": "31.testing.free_access",
+    "change": "changed",
+    "reason": "Coordinator offline reproduction of unchanged Task04 research-agent first pass; no new research or independent adjudication"
+  },
+  {
+    "app_id": 31,
+    "claim_id": "31.testing.paid_required",
+    "change": "changed",
+    "reason": "Coordinator offline reproduction of unchanged Task04 research-agent first pass; no new research or independent adjudication"
+  },
+  {
+    "app_id": 31,
+    "claim_id": "31.testing.partner_approval_required",
+    "change": "changed",
+    "reason": "Coordinator offline reproduction of unchanged Task04 research-agent first pass; no new research or independent adjudication"
+  },
+  {
+    "app_id": 31,
+    "claim_id": "31.testing.sandbox_access",
+    "change": "changed",
+    "reason": "Coordinator offline reproduction of unchanged Task04 research-agent first pass; no new research or independent adjudication"
+  },
+  {
+    "app_id": 31,
+    "claim_id": "31.testing.self_serve",
+    "change": "changed",
+    "reason": "Coordinator offline reproduction of unchanged Task04 research-agent first pass; no new research or independent adjudication"
+  },
+  {
+    "app_id": 31,
+    "claim_id": "31.testing.trial_access",
+    "change": "changed",
+    "reason": "Coordinator offline reproduction of unchanged Task04 research-agent first pass; no new research or independent adjudication"
+  },
+  {
+    "app_id": 58,
+    "claim_id": "58.api.breadth",
+    "change": "changed",
+    "reason": "Coordinator offline reproduction of unchanged Task04 research-agent first pass; no new research or independent adjudication"
+  },
+  {
+    "app_id": 58,
+    "claim_id": "58.api.cli",
+    "change": "added",
+    "reason": "Coordinator offline reproduction of unchanged Task04 research-agent first pass; no new research or independent adjudication"
+  },
+  {
+    "app_id": 58,
+    "claim_id": "58.api.group.username",
+    "change": "added",
+    "reason": "Coordinator offline reproduction of unchanged Task04 research-agent first pass; no new research or independent adjudication"
+  },
+  {
+    "app_id": 58,
+    "claim_id": "58.api.public_documentation",
+    "change": "changed",
+    "reason": "Coordinator offline reproduction of unchanged Task04 research-agent first pass; no new research or independent adjudication"
+  },
+  {
+    "app_id": 58,
+    "claim_id": "58.auth.cli",
+    "change": "added",
+    "reason": "Coordinator offline reproduction of unchanged Task04 research-agent first pass; no new research or independent adjudication"
+  },
+  {
+    "app_id": 58,
+    "claim_id": "58.buildability",
+    "change": "changed",
+    "reason": "Coordinator offline reproduction of unchanged Task04 research-agent first pass; no new research or independent adjudication"
+  },
+  {
+    "app_id": 58,
+    "claim_id": "58.identity",
+    "change": "changed",
+    "reason": "Coordinator offline reproduction of unchanged Task04 research-agent first pass; no new research or independent adjudication"
+  },
+  {
+    "app_id": 58,
+    "claim_id": "58.mcp",
+    "change": "changed",
+    "reason": "Coordinator offline reproduction of unchanged Task04 research-agent first pass; no new research or independent adjudication"
+  },
+  {
+    "app_id": 58,
+    "claim_id": "58.production.admin_approval_required",
+    "change": "changed",
+    "reason": "Coordinator offline reproduction of unchanged Task04 research-agent first pass; no new research or independent adjudication"
+  },
+  {
+    "app_id": 58,
+    "claim_id": "58.production.contact_sales_required",
+    "change": "changed",
+    "reason": "Coordinator offline reproduction of unchanged Task04 research-agent first pass; no new research or independent adjudication"
+  },
+  {
+    "app_id": 58,
+    "claim_id": "58.production.free_access",
+    "change": "changed",
+    "reason": "Coordinator offline reproduction of unchanged Task04 research-agent first pass; no new research or independent adjudication"
+  },
+  {
+    "app_id": 58,
+    "claim_id": "58.production.paid_required",
+    "change": "changed",
+    "reason": "Coordinator offline reproduction of unchanged Task04 research-agent first pass; no new research or independent adjudication"
+  },
+  {
+    "app_id": 58,
+    "claim_id": "58.production.partner_approval_required",
+    "change": "changed",
+    "reason": "Coordinator offline reproduction of unchanged Task04 research-agent first pass; no new research or independent adjudication"
+  },
+  {
+    "app_id": 58,
+    "claim_id": "58.production.sandbox_access",
+    "change": "changed",
+    "reason": "Coordinator offline reproduction of unchanged Task04 research-agent first pass; no new research or independent adjudication"
+  },
+  {
+    "app_id": 58,
+    "claim_id": "58.production.self_serve",
+    "change": "changed",
+    "reason": "Coordinator offline reproduction of unchanged Task04 research-agent first pass; no new research or independent adjudication"
+  },
+  {
+    "app_id": 58,
+    "claim_id": "58.production.trial_access",
+    "change": "changed",
+    "reason": "Coordinator offline reproduction of unchanged Task04 research-agent first pass; no new research or independent adjudication"
+  },
+  {
+    "app_id": 58,
+    "claim_id": "58.purpose",
+    "change": "changed",
+    "reason": "Coordinator offline reproduction of unchanged Task04 research-agent first pass; no new research or independent adjudication"
+  },
+  {
+    "app_id": 58,
+    "claim_id": "58.testing.admin_approval_required",
+    "change": "changed",
+    "reason": "Coordinator offline reproduction of unchanged Task04 research-agent first pass; no new research or independent adjudication"
+  },
+  {
+    "app_id": 58,
+    "claim_id": "58.testing.contact_sales_required",
+    "change": "changed",
+    "reason": "Coordinator offline reproduction of unchanged Task04 research-agent first pass; no new research or independent adjudication"
+  },
+  {
+    "app_id": 58,
+    "claim_id": "58.testing.free_access",
+    "change": "changed",
+    "reason": "Coordinator offline reproduction of unchanged Task04 research-agent first pass; no new research or independent adjudication"
+  },
+  {
+    "app_id": 58,
+    "claim_id": "58.testing.paid_required",
+    "change": "changed",
+    "reason": "Coordinator offline reproduction of unchanged Task04 research-agent first pass; no new research or independent adjudication"
+  },
+  {
+    "app_id": 58,
+    "claim_id": "58.testing.partner_approval_required",
+    "change": "changed",
+    "reason": "Coordinator offline reproduction of unchanged Task04 research-agent first pass; no new research or independent adjudication"
+  },
+  {
+    "app_id": 58,
+    "claim_id": "58.testing.sandbox_access",
+    "change": "changed",
+    "reason": "Coordinator offline reproduction of unchanged Task04 research-agent first pass; no new research or independent adjudication"
+  },
+  {
+    "app_id": 58,
+    "claim_id": "58.testing.self_serve",
+    "change": "changed",
+    "reason": "Coordinator offline reproduction of unchanged Task04 research-agent first pass; no new research or independent adjudication"
+  },
+  {
+    "app_id": 58,
+    "claim_id": "58.testing.trial_access",
+    "change": "changed",
+    "reason": "Coordinator offline reproduction of unchanged Task04 research-agent first pass; no new research or independent adjudication"
+  },
+  {
+    "app_id": 91,
+    "claim_id": "91.api.breadth",
+    "change": "changed",
+    "reason": "Coordinator offline reproduction of unchanged Task04 research-agent first pass; no new research or independent adjudication"
+  },
+  {
+    "app_id": 91,
+    "claim_id": "91.api.group.notebooks",
+    "change": "added",
+    "reason": "Coordinator offline reproduction of unchanged Task04 research-agent first pass; no new research or independent adjudication"
+  },
+  {
+    "app_id": 91,
+    "claim_id": "91.api.group.sources",
+    "change": "added",
+    "reason": "Coordinator offline reproduction of unchanged Task04 research-agent first pass; no new research or independent adjudication"
+  },
+  {
+    "app_id": 91,
+    "claim_id": "91.api.public_documentation",
+    "change": "changed",
+    "reason": "Coordinator offline reproduction of unchanged Task04 research-agent first pass; no new research or independent adjudication"
+  },
+  {
+    "app_id": 91,
+    "claim_id": "91.api.rest",
+    "change": "added",
+    "reason": "Coordinator offline reproduction of unchanged Task04 research-agent first pass; no new research or independent adjudication"
+  },
+  {
+    "app_id": 91,
+    "claim_id": "91.auth.drive_user",
+    "change": "added",
+    "reason": "Coordinator offline reproduction of unchanged Task04 research-agent first pass; no new research or independent adjudication"
+  },
+  {
+    "app_id": 91,
+    "claim_id": "91.auth.user_bearer",
+    "change": "added",
+    "reason": "Coordinator offline reproduction of unchanged Task04 research-agent first pass; no new research or independent adjudication"
+  },
+  {
+    "app_id": 91,
+    "claim_id": "91.buildability",
+    "change": "changed",
+    "reason": "Coordinator offline reproduction of unchanged Task04 research-agent first pass; no new research or independent adjudication"
+  },
+  {
+    "app_id": 91,
+    "claim_id": "91.identity",
+    "change": "changed",
+    "reason": "Coordinator offline reproduction of unchanged Task04 research-agent first pass; no new research or independent adjudication"
+  },
+  {
+    "app_id": 91,
+    "claim_id": "91.mcp",
+    "change": "changed",
+    "reason": "Coordinator offline reproduction of unchanged Task04 research-agent first pass; no new research or independent adjudication"
+  },
+  {
+    "app_id": 91,
+    "claim_id": "91.mcp.personal_community",
+    "change": "added",
+    "reason": "Coordinator offline reproduction of unchanged Task04 research-agent first pass; no new research or independent adjudication"
+  },
+  {
+    "app_id": 91,
+    "claim_id": "91.mcp.personal_community.operational",
+    "change": "added",
+    "reason": "Coordinator offline reproduction of unchanged Task04 research-agent first pass; no new research or independent adjudication"
+  },
+  {
+    "app_id": 91,
+    "claim_id": "91.production.admin_approval_required",
+    "change": "changed",
+    "reason": "Coordinator offline reproduction of unchanged Task04 research-agent first pass; no new research or independent adjudication"
+  },
+  {
+    "app_id": 91,
+    "claim_id": "91.production.contact_sales_required",
+    "change": "changed",
+    "reason": "Coordinator offline reproduction of unchanged Task04 research-agent first pass; no new research or independent adjudication"
+  },
+  {
+    "app_id": 91,
+    "claim_id": "91.production.free_access",
+    "change": "changed",
+    "reason": "Coordinator offline reproduction of unchanged Task04 research-agent first pass; no new research or independent adjudication"
+  },
+  {
+    "app_id": 91,
+    "claim_id": "91.production.paid_required",
+    "change": "changed",
+    "reason": "Coordinator offline reproduction of unchanged Task04 research-agent first pass; no new research or independent adjudication"
+  },
+  {
+    "app_id": 91,
+    "claim_id": "91.production.partner_approval_required",
+    "change": "changed",
+    "reason": "Coordinator offline reproduction of unchanged Task04 research-agent first pass; no new research or independent adjudication"
+  },
+  {
+    "app_id": 91,
+    "claim_id": "91.production.sandbox_access",
+    "change": "changed",
+    "reason": "Coordinator offline reproduction of unchanged Task04 research-agent first pass; no new research or independent adjudication"
+  },
+  {
+    "app_id": 91,
+    "claim_id": "91.production.self_serve",
+    "change": "changed",
+    "reason": "Coordinator offline reproduction of unchanged Task04 research-agent first pass; no new research or independent adjudication"
+  },
+  {
+    "app_id": 91,
+    "claim_id": "91.production.trial_access",
+    "change": "changed",
+    "reason": "Coordinator offline reproduction of unchanged Task04 research-agent first pass; no new research or independent adjudication"
+  },
+  {
+    "app_id": 91,
+    "claim_id": "91.purpose",
+    "change": "changed",
+    "reason": "Coordinator offline reproduction of unchanged Task04 research-agent first pass; no new research or independent adjudication"
+  },
+  {
+    "app_id": 91,
+    "claim_id": "91.testing.admin_approval_required",
+    "change": "changed",
+    "reason": "Coordinator offline reproduction of unchanged Task04 research-agent first pass; no new research or independent adjudication"
+  },
+  {
+    "app_id": 91,
+    "claim_id": "91.testing.contact_sales_required",
+    "change": "changed",
+    "reason": "Coordinator offline reproduction of unchanged Task04 research-agent first pass; no new research or independent adjudication"
+  },
+  {
+    "app_id": 91,
+    "claim_id": "91.testing.free_access",
+    "change": "changed",
+    "reason": "Coordinator offline reproduction of unchanged Task04 research-agent first pass; no new research or independent adjudication"
+  },
+  {
+    "app_id": 91,
+    "claim_id": "91.testing.paid_required",
+    "change": "changed",
+    "reason": "Coordinator offline reproduction of unchanged Task04 research-agent first pass; no new research or independent adjudication"
+  },
+  {
+    "app_id": 91,
+    "claim_id": "91.testing.partner_approval_required",
+    "change": "changed",
+    "reason": "Coordinator offline reproduction of unchanged Task04 research-agent first pass; no new research or independent adjudication"
+  },
+  {
+    "app_id": 91,
+    "claim_id": "91.testing.sandbox_access",
+    "change": "changed",
+    "reason": "Coordinator offline reproduction of unchanged Task04 research-agent first pass; no new research or independent adjudication"
+  },
+  {
+    "app_id": 91,
+    "claim_id": "91.testing.self_serve",
+    "change": "changed",
+    "reason": "Coordinator offline reproduction of unchanged Task04 research-agent first pass; no new research or independent adjudication"
+  },
+  {
+    "app_id": 91,
+    "claim_id": "91.testing.trial_access",
+    "change": "changed",
+    "reason": "Coordinator offline reproduction of unchanged Task04 research-agent first pass; no new research or independent adjudication"
+  }
+]

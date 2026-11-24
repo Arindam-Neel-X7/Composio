@@ -1,0 +1,240 @@
+5 steps for getting started with the Smartsheet API | Smartsheet
+Skip to main content
+Smartsheet
+Open navigation
+Close navigation
+Product
+Product Overview
+Manage projects, automate workflows, and build solutions at scale with Smartsheet.
+Learn more
+Features
+AI
+Automation
+Team collaboration
+Dashboards and reporting
+Account administration
+Integrations
+Digital asset management
+Resource planning
+Portfolio management
+Secure request management
+Intelligent workflows
+No code work apps
+See all features
+Discover our latest product updates and enhancements
+Advanced Work Management
+Scale, connect, and empower your business for the future.
+Explore our offering
+Professional services
+Information about Smartsheet consulting, training, and implementation support.
+Available services
+Trust and security
+A complete summary of Smartsheet security and reliability.
+Trust Center
+Watch a demo
+Start a trial
+Solutions
+Featured
+Projects and Portfolios
+Explore
+Operations Management
+Explore
+Digital and IT Portfolio Management
+Explore
+Client and Partner Delivery
+Explore
+By use case
+Project management
+IT Portfolio management
+Business PMO
+Enterprise PMO
+Marketing management
+Creative operations
+Services delivery
+By Industry
+Government
+Construction
+Life sciences
+Higher education
+Healthcare
+Enterprise
+Small and medium business
+View all solutions
+Template gallery
+Streamline your work with the perfect template for your team.
+See all templates
+Customer stories
+Behind the scenes with organizations around the world using Smartsheet to do incredible things.
+See all stories
+Experience the future of productivity with Smartsheet AI
+A 4x Leader in the 2026 Gartner® Magic Quadrant™ for CWM
+Watch a demo
+Start a trial
+Resources
+Content Center
+Articles and guides about project management, collaboration, automation, and other topics to help you make the most of the Smartsheet platform.
+Explore the Content Center
+Managing work
+Product updates and insights
+Inside Smartsheet
+Help and Learning
+A comprehensive knowledge base, including articles, tutorials, videos, and other resources that cover a range of topics related to using Smartsheet.
+Get started
+Smartsheet University
+Knowledge base
+Training options
+Support
+Professional services
+Partners
+An overview of the Smartsheet Partner Program, including program details and a directory of global partners offering expertise and solutions.
+Learn more
+Find a partner
+Become a partner
+Partner solutions
+ENGAGE
+Join customers, experts, and partners to explore success stories, swap insights, and learn how Smartsheet turns ideas into action.
+Learn more
+Smartsheet events
+Your hub for Smartsheet events, webinars, Q&As, and user groups.
+Community
+Explore user-generated content and stay updated on our product features.
+Watch a demo
+Start a trial
+Pricing
+Contact
+Select language
+Select your language
+EnglishDeutschEspañolFrançaisItalianoPortuguêsPусский日本語
+Log in
+Start a trial
+Watch a demo
+Watch a demo
+Try Smartsheet for free
+Select language
+Select your language
+EnglishDeutschEspañolFrançaisItalianoPortuguêsPусский日本語
+Open search
+Search
+Log in
+Breadcrumb
+Content Center
+Product Insights
+Smartsheet tips
+Article
+5 steps for getting started with the Smartsheet API
+TK
+Taylor Krusen
+January 24, 2019
+(updated August 21, 2025)
+Innovative IT teams that use the Smartsheet API see benefits as soon as their integration is up and running. The API is a powerful tool for developers that helps ensure a combination of secure data management, automation through webhooks, and the ability to scale Smartsheet throughout your company.
+So, do you want to build an integration using the Smartsheet API, but aren’t sure where to start? Follow these five steps, which we’ve detailed below:
+Step 1: Explore Developer Resources
+Step 2: Complete 'Developer Registration' (optional)
+Step 3: Generate an Access Token
+Step 4: Start Building Your Integration
+Step 5: Ask Smartsheet for Support
+1. Explore developer resources
+The Smartsheet Developer Portal is the “home base” for all developer resources. There you’ll find API documentation, information about Smartsheet SDKs, answers to your specific API questions from our user community, and more.
+As tempting as it may be to dive right into building your integration, investing the time up front to review these resources will pay dividends down the road.
+Where to find API documentation
+After you’ve watched the video, visit our API Documentation page. Whether you’re planning to build an integration that calls the Smartsheet API directly, or one that uses a Smartsheet SDK, the API documents contain lots of useful information. Start off by familiarizing yourself with the following sections:
+Overview: A high-level context for working with the Smartsheet API
+Getting Started: Information that you’ll need to lay the groundwork for your integration
+Troubleshooting: Make a plan to work through issues when you get stuck
+Smartsheet SDKs
+Smartsheet software development kits (SDKs) provide a means of accessing the Smartsheet API using the programming language of your choice without having to write all the code from scratch. In addition to the pre-built methods, each SDK also includes retry logic (for rate limit errors) and logging systems.
+Each respective SDK (C#, Java, Node, Python) has documentation and a sample read/write sheet available for reference.
+2. Complete 'developer registration' (optional)
+After you spend some time exploring our Smartsheet Developer Resources, you should be ready to lay the groundwork for creating your integration.
+Create a developer account
+If you’re planning to build a third-party application or if you want to create a sandbox Smartsheet account that you can use for development and testing purposes (without affecting data in your production Smartsheet account), you’ll need to complete the Developer Registration process.
+3. Generate an access token
+Next, to authenticate API requests via Direct API Access, you’ll need an API access token that is owned by the Smartsheet account that you want to access. Access tokens can be generated by the Smartsheet UI: simply login to your Smartsheet account, then follow the instructions here to generate a token.
+If you’re building a third-party application that will implement the OAuth2 Flow to retrieve an access token that can be used to access Smartsheet data on behalf of an end user, then you won’t need to manually generate an access token as described above. Instead, consult the API docs for information about third-party app development.
+If you’re building a third-party application meant for other users, then you’ll need to implement an OAuth2 Flow to retrieve an access token. Automatically(rather than manually) generating an access token ensures that the user has their own respective token in order to access their Smartsheet data. We recommend consulting the API docs section on third-party app development.
+4. Start building your integration
+The process of building your integration will vary depending on whether or not you choose to use an SDK. Both approaches are detailed below:
+Using an SDK
+To use an SDK as the basis for your integration, install the SDK of your choice by following instructions provided for that respective SDK. Then, leverage the API Documentation for code samples and follow these steps:
+Using the code sample panel on the right side of the page, select the tab for the language that you’re interested in.
+Review your respective SDKs readme and read/write sample. All links are available on the Smartsheet Developer Portal.
+Navigate to any API Reference section to see a code sample that demonstrates how to execute the operation using the SDK.
+Not using an SDK
+While you can benefit from using an SDK, it’s by no means mandatory. If you choose to forgo using an SDK in favor of building a custom integration from scratch, leverage the API Documentation as your primary resource. If you get stuck, please don’t hesitate to ask questions on StackOverflow using the smartsheet-api tag. Your question could help someone in the future.
+5. Ask Smartsheet for support
+You might encounter an API or SDK issue that you can’t resolve using our API Troubleshooting guidance, or have a question that’s not addressed by the API docs. Please post your issue or question to StackOverflow, where we (along with thousands of developers worldwide) are standing by, ready to assist you.
+Have feedback about the API or want to suggest new API features? Please reach us at DevRel@smartsheet.com.
+Discover more resources
+There’s a learning curve when using a new API for the first time, but the proper resources and processes can make all the difference.
+We encourage you to make the most of the Smartsheet Developer Portal for resources and guidance to help you accelerate the time it takes for you to get comfortable using the Smartsheet API and help you confidently deploy your solution.
+Subscribe to the Smartsheet IT Newsletter for tips, strategies, and ideas focused on helping IT professionals increase their impact on their business.
+Related Content
+Smartsheet tips
+4 Smartsheet API best practices for rock-solid integrations
+These best practices will help you factor in details that impact the performance, stability, and maintenance of your integrations.
+Oct 8, 2025
+6 min read
+Strategy
+Smartsheet
+Product
+Product
+Overview
+Solutions
+Features
+Integrations
+Pricing & plans
+Advanced Work Management
+Professional services
+Trust Center
+Template Gallery
+Why Smartsheet
+Start a trial
+View pricing and plans
+Resources
+Resources
+Content Center
+Product insights
+Help and Learning
+Smartsheet University
+Training options
+Support
+Community
+Partner program
+Release updates
+Developers & API
+Watch a demo
+Company
+Company
+About us
+Leadership
+Newsroom
+Corporate responsibility
+Customer stories
+Careers
+We're hiring!
+Privacy
+Legal
+Contact us
+Learn
+Learn
+Project management templates
+Smartsheet dashboard gallery
+5 steps for getting started with the Smartsheet API
+3 formulas to look up data in Smartsheet
+Unlock the power of Smartsheet with AI
+Learn more about ENGAGE
+Select your language
+EnglishDeutschEspañolFrançaisItalianoPortuguêsPусский日本語
+Facebook
+X
+LinkedIn
+TikTok
+YouTube
+Instagram
+©2026. All Rights Reserved Smartsheet Inc.
+•
+Machine Translation Disclaimer
+•
+Cookie Preferences
+•
+Your Privacy Choices

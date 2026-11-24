@@ -1,0 +1,979 @@
+{
+  "metadata": {
+    "generated_at": "2026-11-24T06:02:27.820119",
+    "target_dataset": "100 applications (data/apps.json)",
+    "contract_version": "1.1",
+    "sample_manifest_ref": "outputs/task-06/sampling-manifest.json",
+    "sample_size": 20,
+    "sample_app_ids": [
+      4,
+      8,
+      16,
+      19,
+      21,
+      27,
+      31,
+      40,
+      46,
+      50,
+      52,
+      60,
+      64,
+      65,
+      76,
+      77,
+      83,
+      84,
+      97,
+      98
+    ],
+    "tier_provenance": {
+      "first_pass_runs": "task07-first-pass-003 through task16-first-pass-001 (100 apps)",
+      "task17_baseline_audit": "outputs/task-17/ (84.71% baseline accuracy on N=327 claims)",
+      "task18_corrections": "task18-corrections-07 through 16 (50 unsupported claims corrected)",
+      "task18_recheck_audit": "outputs/task-18/ (100.00% recheck accuracy on N=327 claims)",
+      "authoritative_dataset": "Merged 100-app dataset (80 first-pass apps + 20 Task 18 corrected apps)"
+    }
+  },
+  "buildability_summary": {
+    "total_applications": 100,
+    "build_now": {
+      "count": 44,
+      "denominator": 100,
+      "percentage": 44.0,
+      "app_ids": [
+        2,
+        4,
+        5,
+        6,
+        7,
+        11,
+        12,
+        13,
+        14,
+        16,
+        17,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        30,
+        34,
+        35,
+        36,
+        37,
+        40,
+        41,
+        42,
+        43,
+        48,
+        51,
+        52,
+        53,
+        54,
+        55,
+        56,
+        57,
+        58,
+        60,
+        81,
+        87,
+        94,
+        95,
+        98,
+        99,
+        100
+      ]
+    },
+    "conditional": {
+      "count": 50,
+      "denominator": 100,
+      "percentage": 50.0,
+      "app_ids": [
+        1,
+        3,
+        8,
+        9,
+        15,
+        18,
+        19,
+        20,
+        28,
+        29,
+        31,
+        32,
+        33,
+        38,
+        39,
+        45,
+        46,
+        47,
+        49,
+        61,
+        62,
+        63,
+        64,
+        65,
+        66,
+        67,
+        68,
+        69,
+        70,
+        71,
+        72,
+        73,
+        74,
+        75,
+        76,
+        77,
+        78,
+        79,
+        80,
+        82,
+        83,
+        85,
+        86,
+        88,
+        89,
+        91,
+        92,
+        93,
+        96,
+        97
+      ]
+    },
+    "outreach_required": {
+      "count": 4,
+      "denominator": 100,
+      "percentage": 4.0,
+      "app_ids": [
+        10,
+        44,
+        50,
+        59
+      ]
+    },
+    "unknown": {
+      "count": 2,
+      "denominator": 100,
+      "percentage": 2.0,
+      "app_ids": [
+        84,
+        90
+      ]
+    }
+  },
+  "category_summary": {
+    "AI, Research and Media-native": {
+      "total_apps": 10,
+      "build_now": {
+        "count": 5,
+        "denominator": 10,
+        "percentage": 50.0
+      },
+      "conditional": {
+        "count": 5,
+        "denominator": 10,
+        "percentage": 50.0
+      },
+      "outreach_required": {
+        "count": 0,
+        "denominator": 10,
+        "percentage": 0.0
+      },
+      "unknown": {
+        "count": 0,
+        "denominator": 10,
+        "percentage": 0.0
+      }
+    },
+    "CRM and Sales": {
+      "total_apps": 10,
+      "build_now": {
+        "count": 5,
+        "denominator": 10,
+        "percentage": 50.0
+      },
+      "conditional": {
+        "count": 4,
+        "denominator": 10,
+        "percentage": 40.0
+      },
+      "outreach_required": {
+        "count": 1,
+        "denominator": 10,
+        "percentage": 10.0
+      },
+      "unknown": {
+        "count": 0,
+        "denominator": 10,
+        "percentage": 0.0
+      }
+    },
+    "Communications and Messaging": {
+      "total_apps": 10,
+      "build_now": {
+        "count": 8,
+        "denominator": 10,
+        "percentage": 80.0
+      },
+      "conditional": {
+        "count": 2,
+        "denominator": 10,
+        "percentage": 20.0
+      },
+      "outreach_required": {
+        "count": 0,
+        "denominator": 10,
+        "percentage": 0.0
+      },
+      "unknown": {
+        "count": 0,
+        "denominator": 10,
+        "percentage": 0.0
+      }
+    },
+    "Data, SEO and Scraping": {
+      "total_apps": 10,
+      "build_now": {
+        "count": 9,
+        "denominator": 10,
+        "percentage": 90.0
+      },
+      "conditional": {
+        "count": 0,
+        "denominator": 10,
+        "percentage": 0.0
+      },
+      "outreach_required": {
+        "count": 1,
+        "denominator": 10,
+        "percentage": 10.0
+      },
+      "unknown": {
+        "count": 0,
+        "denominator": 10,
+        "percentage": 0.0
+      }
+    },
+    "Developer, Infra and Data platforms": {
+      "total_apps": 10,
+      "build_now": {
+        "count": 0,
+        "denominator": 10,
+        "percentage": 0.0
+      },
+      "conditional": {
+        "count": 10,
+        "denominator": 10,
+        "percentage": 100.0
+      },
+      "outreach_required": {
+        "count": 0,
+        "denominator": 10,
+        "percentage": 0.0
+      },
+      "unknown": {
+        "count": 0,
+        "denominator": 10,
+        "percentage": 0.0
+      }
+    },
+    "Ecommerce": {
+      "total_apps": 10,
+      "build_now": {
+        "count": 4,
+        "denominator": 10,
+        "percentage": 40.0
+      },
+      "conditional": {
+        "count": 4,
+        "denominator": 10,
+        "percentage": 40.0
+      },
+      "outreach_required": {
+        "count": 2,
+        "denominator": 10,
+        "percentage": 20.0
+      },
+      "unknown": {
+        "count": 0,
+        "denominator": 10,
+        "percentage": 0.0
+      }
+    },
+    "Finance and Fintech": {
+      "total_apps": 10,
+      "build_now": {
+        "count": 2,
+        "denominator": 10,
+        "percentage": 20.0
+      },
+      "conditional": {
+        "count": 6,
+        "denominator": 10,
+        "percentage": 60.0
+      },
+      "outreach_required": {
+        "count": 0,
+        "denominator": 10,
+        "percentage": 0.0
+      },
+      "unknown": {
+        "count": 2,
+        "denominator": 10,
+        "percentage": 20.0
+      }
+    },
+    "Marketing, Ads, Email and Social": {
+      "total_apps": 10,
+      "build_now": {
+        "count": 5,
+        "denominator": 10,
+        "percentage": 50.0
+      },
+      "conditional": {
+        "count": 5,
+        "denominator": 10,
+        "percentage": 50.0
+      },
+      "outreach_required": {
+        "count": 0,
+        "denominator": 10,
+        "percentage": 0.0
+      },
+      "unknown": {
+        "count": 0,
+        "denominator": 10,
+        "percentage": 0.0
+      }
+    },
+    "Productivity and Project Management": {
+      "total_apps": 10,
+      "build_now": {
+        "count": 0,
+        "denominator": 10,
+        "percentage": 0.0
+      },
+      "conditional": {
+        "count": 10,
+        "denominator": 10,
+        "percentage": 100.0
+      },
+      "outreach_required": {
+        "count": 0,
+        "denominator": 10,
+        "percentage": 0.0
+      },
+      "unknown": {
+        "count": 0,
+        "denominator": 10,
+        "percentage": 0.0
+      }
+    },
+    "Support and Helpdesk": {
+      "total_apps": 10,
+      "build_now": {
+        "count": 6,
+        "denominator": 10,
+        "percentage": 60.0
+      },
+      "conditional": {
+        "count": 4,
+        "denominator": 10,
+        "percentage": 40.0
+      },
+      "outreach_required": {
+        "count": 0,
+        "denominator": 10,
+        "percentage": 0.0
+      },
+      "unknown": {
+        "count": 0,
+        "denominator": 10,
+        "percentage": 0.0
+      }
+    }
+  },
+  "auth_summary": {
+    "oauth2": {
+      "count": 79,
+      "denominator": 100,
+      "percentage": 79.0
+    },
+    "api_key": {
+      "count": 39,
+      "denominator": 100,
+      "percentage": 39.0
+    },
+    "bearer_token": {
+      "count": 35,
+      "denominator": 100,
+      "percentage": 35.0
+    },
+    "basic": {
+      "count": 15,
+      "denominator": 100,
+      "percentage": 15.0
+    },
+    "none_or_cli": {
+      "count": 5,
+      "denominator": 100,
+      "percentage": 5.0
+    },
+    "unknown": {
+      "count": 0,
+      "denominator": 100,
+      "percentage": 0.0
+    }
+  },
+  "cred_summary": {
+    "testing": {
+      "free_access": {
+        "true": {
+          "count": 46,
+          "denominator": 100,
+          "percentage": 46.0
+        },
+        "false": {
+          "count": 1,
+          "denominator": 100,
+          "percentage": 1.0
+        },
+        "unknown": {
+          "count": 53,
+          "denominator": 100,
+          "percentage": 53.0
+        }
+      },
+      "trial_access": {
+        "true": {
+          "count": 34,
+          "denominator": 100,
+          "percentage": 34.0
+        },
+        "false": {
+          "count": 0,
+          "denominator": 100,
+          "percentage": 0.0
+        },
+        "unknown": {
+          "count": 66,
+          "denominator": 100,
+          "percentage": 66.0
+        }
+      },
+      "sandbox_access": {
+        "true": {
+          "count": 26,
+          "denominator": 100,
+          "percentage": 26.0
+        },
+        "false": {
+          "count": 1,
+          "denominator": 100,
+          "percentage": 1.0
+        },
+        "unknown": {
+          "count": 73,
+          "denominator": 100,
+          "percentage": 73.0
+        }
+      },
+      "paid_required": {
+        "true": {
+          "count": 1,
+          "denominator": 100,
+          "percentage": 1.0
+        },
+        "false": {
+          "count": 27,
+          "denominator": 100,
+          "percentage": 27.0
+        },
+        "unknown": {
+          "count": 72,
+          "denominator": 100,
+          "percentage": 72.0
+        }
+      },
+      "admin_approval_required": {
+        "true": {
+          "count": 5,
+          "denominator": 100,
+          "percentage": 5.0
+        },
+        "false": {
+          "count": 2,
+          "denominator": 100,
+          "percentage": 2.0
+        },
+        "unknown": {
+          "count": 93,
+          "denominator": 100,
+          "percentage": 93.0
+        }
+      },
+      "vendor_approval_required": {
+        "true": {
+          "count": 5,
+          "denominator": 100,
+          "percentage": 5.0
+        },
+        "false": {
+          "count": 7,
+          "denominator": 100,
+          "percentage": 7.0
+        },
+        "unknown": {
+          "count": 88,
+          "denominator": 100,
+          "percentage": 88.0
+        }
+      },
+      "partner_approval_required": {
+        "true": {
+          "count": 4,
+          "denominator": 100,
+          "percentage": 4.0
+        },
+        "false": {
+          "count": 5,
+          "denominator": 100,
+          "percentage": 5.0
+        },
+        "unknown": {
+          "count": 91,
+          "denominator": 100,
+          "percentage": 91.0
+        }
+      },
+      "contact_sales_required": {
+        "true": {
+          "count": 0,
+          "denominator": 100,
+          "percentage": 0.0
+        },
+        "false": {
+          "count": 5,
+          "denominator": 100,
+          "percentage": 5.0
+        },
+        "unknown": {
+          "count": 95,
+          "denominator": 100,
+          "percentage": 95.0
+        }
+      },
+      "self_serve": {
+        "true": {
+          "count": 62,
+          "denominator": 100,
+          "percentage": 62.0
+        },
+        "false": {
+          "count": 4,
+          "denominator": 100,
+          "percentage": 4.0
+        },
+        "unknown": {
+          "count": 34,
+          "denominator": 100,
+          "percentage": 34.0
+        }
+      }
+    },
+    "production": {
+      "free_access": {
+        "true": {
+          "count": 28,
+          "denominator": 100,
+          "percentage": 28.0
+        },
+        "false": {
+          "count": 6,
+          "denominator": 100,
+          "percentage": 6.0
+        },
+        "unknown": {
+          "count": 66,
+          "denominator": 100,
+          "percentage": 66.0
+        }
+      },
+      "trial_access": {
+        "true": {
+          "count": 1,
+          "denominator": 100,
+          "percentage": 1.0
+        },
+        "false": {
+          "count": 0,
+          "denominator": 100,
+          "percentage": 0.0
+        },
+        "unknown": {
+          "count": 99,
+          "denominator": 100,
+          "percentage": 99.0
+        }
+      },
+      "sandbox_access": {
+        "true": {
+          "count": 0,
+          "denominator": 100,
+          "percentage": 0.0
+        },
+        "false": {
+          "count": 6,
+          "denominator": 100,
+          "percentage": 6.0
+        },
+        "unknown": {
+          "count": 94,
+          "denominator": 100,
+          "percentage": 94.0
+        }
+      },
+      "paid_required": {
+        "true": {
+          "count": 36,
+          "denominator": 100,
+          "percentage": 36.0
+        },
+        "false": {
+          "count": 22,
+          "denominator": 100,
+          "percentage": 22.0
+        },
+        "unknown": {
+          "count": 42,
+          "denominator": 100,
+          "percentage": 42.0
+        }
+      },
+      "admin_approval_required": {
+        "true": {
+          "count": 20,
+          "denominator": 100,
+          "percentage": 20.0
+        },
+        "false": {
+          "count": 2,
+          "denominator": 100,
+          "percentage": 2.0
+        },
+        "unknown": {
+          "count": 78,
+          "denominator": 100,
+          "percentage": 78.0
+        }
+      },
+      "vendor_approval_required": {
+        "true": {
+          "count": 17,
+          "denominator": 100,
+          "percentage": 17.0
+        },
+        "false": {
+          "count": 1,
+          "denominator": 100,
+          "percentage": 1.0
+        },
+        "unknown": {
+          "count": 82,
+          "denominator": 100,
+          "percentage": 82.0
+        }
+      },
+      "partner_approval_required": {
+        "true": {
+          "count": 3,
+          "denominator": 100,
+          "percentage": 3.0
+        },
+        "false": {
+          "count": 2,
+          "denominator": 100,
+          "percentage": 2.0
+        },
+        "unknown": {
+          "count": 95,
+          "denominator": 100,
+          "percentage": 95.0
+        }
+      },
+      "contact_sales_required": {
+        "true": {
+          "count": 3,
+          "denominator": 100,
+          "percentage": 3.0
+        },
+        "false": {
+          "count": 6,
+          "denominator": 100,
+          "percentage": 6.0
+        },
+        "unknown": {
+          "count": 91,
+          "denominator": 100,
+          "percentage": 91.0
+        }
+      },
+      "self_serve": {
+        "true": {
+          "count": 49,
+          "denominator": 100,
+          "percentage": 49.0
+        },
+        "false": {
+          "count": 8,
+          "denominator": 100,
+          "percentage": 8.0
+        },
+        "unknown": {
+          "count": 43,
+          "denominator": 100,
+          "percentage": 43.0
+        }
+      }
+    }
+  },
+  "api_summary": {
+    "protocols": {
+      "REST": {
+        "count": 84,
+        "denominator": 100,
+        "percentage": 84.0
+      },
+      "SDK": {
+        "count": 39,
+        "denominator": 100,
+        "percentage": 39.0
+      },
+      "CLI": {
+        "count": 24,
+        "denominator": 100,
+        "percentage": 24.0
+      },
+      "other": {
+        "count": 15,
+        "denominator": 100,
+        "percentage": 15.0
+      },
+      "GraphQL": {
+        "count": 7,
+        "denominator": 100,
+        "percentage": 7.0
+      },
+      "RPC": {
+        "count": 2,
+        "denominator": 100,
+        "percentage": 2.0
+      },
+      "SQL": {
+        "count": 1,
+        "denominator": 100,
+        "percentage": 1.0
+      }
+    },
+    "breadth": {
+      "unknown": {
+        "count": 100,
+        "denominator": 100,
+        "percentage": 100.0
+      }
+    }
+  },
+  "mcp_summary": {
+    "official_mcp_available": {
+      "count": 70,
+      "denominator": 100,
+      "percentage": 70.0
+    },
+    "community_mcp_available": {
+      "count": 19,
+      "denominator": 100,
+      "percentage": 19.0
+    },
+    "total_mcp_available": {
+      "count": 85,
+      "denominator": 100,
+      "percentage": 85.0
+    },
+    "bounded_not_found": {
+      "count": 11,
+      "denominator": 100,
+      "percentage": 11.0
+    },
+    "unknown": {
+      "count": 4,
+      "denominator": 100,
+      "percentage": 4.0
+    },
+    "distribution": {
+      "official_only": {
+        "count": 66,
+        "denominator": 100,
+        "percentage": 66.0
+      },
+      "community_only": {
+        "count": 15,
+        "denominator": 100,
+        "percentage": 15.0
+      },
+      "not_found_bounded": {
+        "count": 11,
+        "denominator": 100,
+        "percentage": 11.0
+      },
+      "unknown": {
+        "count": 4,
+        "denominator": 100,
+        "percentage": 4.0
+      },
+      "official_and_community": {
+        "count": 4,
+        "denominator": 100,
+        "percentage": 4.0
+      }
+    }
+  },
+  "unknowns_inventory": {
+    "identity_unresolved": {
+      "count": 2,
+      "denominator": 100,
+      "percentage": 2.0,
+      "items": [
+        {
+          "app_id": 84,
+          "app": "Paygent Connect",
+          "category": "Finance and Fintech",
+          "reason": "Unresolved identity between NMI white-label gateway, Paygent Co., Ltd., and legacy domain; preserved as unknown per evidence rules."
+        },
+        {
+          "app_id": 90,
+          "app": "PitchBook",
+          "category": "Finance and Fintech",
+          "reason": "All 7 official pitchbook.com capture attempts returned HTTP 403 blocks; silence/inaccessibility leaves identity unknown."
+        }
+      ]
+    },
+    "purpose_unknown": {
+      "count": 2,
+      "denominator": 100,
+      "percentage": 2.0,
+      "items": [
+        {
+          "app_id": 84,
+          "app": "Paygent Connect",
+          "category": "Finance and Fintech"
+        },
+        {
+          "app_id": 90,
+          "app": "PitchBook",
+          "category": "Finance and Fintech"
+        }
+      ]
+    },
+    "api_breadth_unknown": {
+      "count": 5,
+      "denominator": 100,
+      "percentage": 5.0,
+      "items": [
+        {
+          "app_id": 18,
+          "app": "Help Scout",
+          "category": "Support and Helpdesk"
+        },
+        {
+          "app_id": 50,
+          "app": "fanbasis",
+          "category": "Ecommerce"
+        },
+        {
+          "app_id": 84,
+          "app": "Paygent Connect",
+          "category": "Finance and Fintech"
+        },
+        {
+          "app_id": 85,
+          "app": "iPayX",
+          "category": "Finance and Fintech"
+        },
+        {
+          "app_id": 90,
+          "app": "PitchBook",
+          "category": "Finance and Fintech"
+        }
+      ]
+    },
+    "mcp_unknown": {
+      "count": 4,
+      "denominator": 100,
+      "percentage": 4.0,
+      "items": [
+        {
+          "app_id": 18,
+          "app": "Help Scout",
+          "category": "Support and Helpdesk"
+        },
+        {
+          "app_id": 46,
+          "app": "Squarespace",
+          "category": "Ecommerce"
+        },
+        {
+          "app_id": 84,
+          "app": "Paygent Connect",
+          "category": "Finance and Fintech"
+        },
+        {
+          "app_id": 90,
+          "app": "PitchBook",
+          "category": "Finance and Fintech"
+        }
+      ]
+    },
+    "mcp_not_found_in_checked_sources": {
+      "count": 11,
+      "denominator": 100,
+      "percentage": 11.0,
+      "app_ids": [
+        6,
+        9,
+        20,
+        29,
+        38,
+        45,
+        47,
+        58,
+        59,
+        91,
+        98
+      ]
+    },
+    "buildability_unknown": {
+      "count": 2,
+      "denominator": 100,
+      "percentage": 2.0,
+      "items": [
+        {
+          "app_id": 84,
+          "app": "Paygent Connect",
+          "category": "Finance and Fintech",
+          "reason": "Unresolved product identity blocks buildability inference."
+        },
+        {
+          "app_id": 90,
+          "app": "PitchBook",
+          "category": "Finance and Fintech",
+          "reason": "HTTP 403 capture blocks on all official sources prevent buildability inference."
+        }
+      ]
+    }
+  }
+}

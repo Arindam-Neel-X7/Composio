@@ -1,0 +1,610 @@
+{
+  "sources": [
+    {
+      "app_id": 21,
+      "url": "https://docs.slack.dev/apis/web-api/",
+      "kind": "primary_docs",
+      "scope": "Slack Web API, OAuth 2.0/bot and user token auth, free/paid workspace plans, and official hosted MCP server",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor-controlled official documentation or product page",
+      "attribution_by": "task09-research-agent-gemini"
+    },
+    {
+      "app_id": 21,
+      "url": "https://docs.slack.dev/authentication/installing-with-oauth",
+      "kind": "primary_docs",
+      "scope": "Slack Web API, OAuth 2.0/bot and user token auth, free/paid workspace plans, and official hosted MCP server",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor-controlled official documentation or product page",
+      "attribution_by": "task09-research-agent-gemini"
+    },
+    {
+      "app_id": 21,
+      "url": "https://docs.slack.dev/ai/slack-mcp-server",
+      "kind": "primary_docs",
+      "scope": "Slack Web API, OAuth 2.0/bot and user token auth, free/paid workspace plans, and official hosted MCP server",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor-controlled official documentation or product page",
+      "attribution_by": "task09-research-agent-gemini"
+    },
+    {
+      "app_id": 21,
+      "url": "https://docs.slack.dev/reference/methods",
+      "kind": "primary_docs",
+      "scope": "Slack Web API, OAuth 2.0/bot and user token auth, free/paid workspace plans, and official hosted MCP server",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor-controlled official documentation or product page",
+      "attribution_by": "task09-research-agent-gemini"
+    },
+    {
+      "app_id": 21,
+      "url": "https://slack.com/pricing",
+      "kind": "official_product_page",
+      "scope": "Slack Web API, OAuth 2.0/bot and user token auth, free/paid workspace plans, and official hosted MCP server",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor-controlled official documentation or product page",
+      "attribution_by": "task09-research-agent-gemini"
+    },
+    {
+      "app_id": 22,
+      "url": "https://www.twilio.com/docs/usage/api",
+      "kind": "primary_docs",
+      "scope": "Twilio REST APIs, HTTP Basic Account SID/Auth Token and API Key auth, free trial/pay-as-you-go pricing, and official MCP servers",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor-controlled official documentation or product page",
+      "attribution_by": "task09-research-agent-gemini"
+    },
+    {
+      "app_id": 22,
+      "url": "https://www.twilio.com/docs/iam/api-keys",
+      "kind": "primary_docs",
+      "scope": "Twilio REST APIs, HTTP Basic Account SID/Auth Token and API Key auth, free trial/pay-as-you-go pricing, and official MCP servers",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor-controlled official documentation or product page",
+      "attribution_by": "task09-research-agent-gemini"
+    },
+    {
+      "app_id": 22,
+      "url": "https://www.twilio.com/docs/usage/tutorials/how-to-use-your-free-trial-account",
+      "kind": "primary_docs",
+      "scope": "Twilio REST APIs, HTTP Basic Account SID/Auth Token and API Key auth, free trial/pay-as-you-go pricing, and official MCP servers",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor-controlled official documentation or product page",
+      "attribution_by": "task09-research-agent-gemini"
+    },
+    {
+      "app_id": 22,
+      "url": "https://www.twilio.com/en-us/pricing",
+      "kind": "official_product_page",
+      "scope": "Twilio REST APIs, HTTP Basic Account SID/Auth Token and API Key auth, free trial/pay-as-you-go pricing, and official MCP servers",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor-controlled official documentation or product page",
+      "attribution_by": "task09-research-agent-gemini"
+    },
+    {
+      "app_id": 22,
+      "url": "https://github.com/twilio-labs/mcp",
+      "kind": "official_repository",
+      "scope": "Twilio REST APIs, HTTP Basic Account SID/Auth Token and API Key auth, free trial/pay-as-you-go pricing, and official MCP servers",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Official Twilio Labs GitHub repository",
+      "attribution_by": "task09-research-agent-gemini"
+    },
+    {
+      "app_id": 23,
+      "url": "https://www.zoho.com/cliq/help/restapi/v2/",
+      "kind": "primary_docs",
+      "scope": "Zoho Cliq REST API, OAuth 2.0 auth, free/paid workspace plans, and community MCP ecosystem",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor-controlled official documentation or product page",
+      "attribution_by": "task09-research-agent-gemini"
+    },
+    {
+      "app_id": 23,
+      "url": "https://www.zoho.com/cliq/pricing.html",
+      "kind": "official_product_page",
+      "scope": "Zoho Cliq REST API, OAuth 2.0 auth, free/paid workspace plans, and community MCP ecosystem",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor-controlled official documentation or product page",
+      "attribution_by": "task09-research-agent-gemini"
+    },
+    {
+      "app_id": 23,
+      "url": "https://github.com/rohansen856/cliq-mcp",
+      "kind": "community_repository",
+      "scope": "Zoho Cliq REST API, OAuth 2.0 auth, free/paid workspace plans, and community MCP ecosystem",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Community-authored GitHub repository for Zoho Cliq MCP",
+      "attribution_by": "task09-research-agent-gemini"
+    },
+    {
+      "app_id": 24,
+      "url": "https://open.larksuite.com/document/home/index",
+      "kind": "primary_docs",
+      "scope": "Lark (Larksuite) Open Platform REST APIs, app/tenant/user access token auth, free/paid workspace plans, and official MCP server",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor-controlled official documentation or product page",
+      "attribution_by": "task09-research-agent-gemini"
+    },
+    {
+      "app_id": 24,
+      "url": "https://open.larksuite.com/document/server-docs/authentication-management/access-token/tenant_access_token_internal",
+      "kind": "primary_docs",
+      "scope": "Lark (Larksuite) Open Platform REST APIs, app/tenant/user access token auth, free/paid workspace plans, and official MCP server",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor-controlled official documentation or product page",
+      "attribution_by": "task09-research-agent-gemini"
+    },
+    {
+      "app_id": 24,
+      "url": "https://www.larksuite.com/en_us/plans",
+      "kind": "official_product_page",
+      "scope": "Lark (Larksuite) Open Platform REST APIs, app/tenant/user access token auth, free/paid workspace plans, and official MCP server",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor-controlled official documentation or product page",
+      "attribution_by": "task09-research-agent-gemini"
+    },
+    {
+      "app_id": 24,
+      "url": "https://github.com/larksuite/lark-openapi-mcp",
+      "kind": "official_repository",
+      "scope": "Lark (Larksuite) Open Platform REST APIs, app/tenant/user access token auth, free/paid workspace plans, and official MCP server",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Official Larksuite GitHub repository for OpenAPI MCP",
+      "attribution_by": "task09-research-agent-gemini"
+    },
+    {
+      "app_id": 25,
+      "url": "https://pumble.com/help/integrations/add-pumble-apps/api-keys/",
+      "kind": "primary_docs",
+      "scope": "Pumble REST API/Addon and SDK, API key/webhook/app token auth, free/paid workspace plans, and community MCP ecosystem",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor-controlled official documentation or product page",
+      "attribution_by": "task09-research-agent-gemini"
+    },
+    {
+      "app_id": 25,
+      "url": "https://pumble.com/help/integrations/add-pumble-apps/incoming-webhooks/",
+      "kind": "primary_docs",
+      "scope": "Pumble REST API/Addon and SDK, API key/webhook/app token auth, free/paid workspace plans, and community MCP ecosystem",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor-controlled official documentation or product page",
+      "attribution_by": "task09-research-agent-gemini"
+    },
+    {
+      "app_id": 25,
+      "url": "https://github.com/infralayers/pumble-mcp",
+      "kind": "community_repository",
+      "scope": "Pumble REST API/Addon and SDK, API key/webhook/app token auth, free/paid workspace plans, and community MCP ecosystem",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Community-authored GitHub repository for Pumble MCP",
+      "attribution_by": "task09-research-agent-gemini"
+    },
+    {
+      "app_id": 26,
+      "url": "https://discord.com/developers/docs/intro",
+      "kind": "primary_docs",
+      "scope": "Discord HTTP REST API and Gateway, Bot token and OAuth 2.0 auth, free developer portal/app access, and community MCP ecosystem",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor-controlled official documentation or product page",
+      "attribution_by": "task09-research-agent-gemini"
+    },
+    {
+      "app_id": 26,
+      "url": "https://discord.com/developers/docs/reference",
+      "kind": "primary_docs",
+      "scope": "Discord HTTP REST API and Gateway, Bot token and OAuth 2.0 auth, free developer portal/app access, and community MCP ecosystem",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor-controlled official documentation or product page",
+      "attribution_by": "task09-research-agent-gemini"
+    },
+    {
+      "app_id": 26,
+      "url": "https://discord.com/developers/docs/topics/oauth2",
+      "kind": "primary_docs",
+      "scope": "Discord HTTP REST API and Gateway, Bot token and OAuth 2.0 auth, free developer portal/app access, and community MCP ecosystem",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor-controlled official documentation or product page",
+      "attribution_by": "task09-research-agent-gemini"
+    },
+    {
+      "app_id": 26,
+      "url": "https://discord.com/developers/docs/resources/message",
+      "kind": "primary_docs",
+      "scope": "Discord HTTP REST API and Gateway, Bot token and OAuth 2.0 auth, free developer portal/app access, and community MCP ecosystem",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor-controlled official documentation or product page",
+      "attribution_by": "task09-research-agent-gemini"
+    },
+    {
+      "app_id": 26,
+      "url": "https://github.com/hanweg/mcp-discord",
+      "kind": "community_repository",
+      "scope": "Discord HTTP REST API and Gateway, Bot token and OAuth 2.0 auth, free developer portal/app access, and community MCP ecosystem",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Community-authored GitHub repository for Discord MCP",
+      "attribution_by": "task09-research-agent-gemini"
+    },
+    {
+      "app_id": 27,
+      "url": "https://core.telegram.org/bots",
+      "kind": "primary_docs",
+      "scope": "Telegram Bot API and MTProto API, BotFather token and api_id/api_hash auth, free API access, and community MCP ecosystem",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor-controlled official documentation or product page",
+      "attribution_by": "task09-research-agent-gemini"
+    },
+    {
+      "app_id": 27,
+      "url": "https://core.telegram.org/bots/api",
+      "kind": "primary_docs",
+      "scope": "Telegram Bot API and MTProto API, BotFather token and api_id/api_hash auth, free API access, and community MCP ecosystem",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor-controlled official documentation or product page",
+      "attribution_by": "task09-research-agent-gemini"
+    },
+    {
+      "app_id": 27,
+      "url": "https://core.telegram.org/api",
+      "kind": "primary_docs",
+      "scope": "Telegram Bot API and MTProto API, BotFather token and api_id/api_hash auth, free API access, and community MCP ecosystem",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor-controlled official documentation or product page",
+      "attribution_by": "task09-research-agent-gemini"
+    },
+    {
+      "app_id": 27,
+      "url": "https://github.com/sparfenyuk/mcp-telegram",
+      "kind": "community_repository",
+      "scope": "Telegram Bot API and MTProto API, BotFather token and api_id/api_hash auth, free API access, and community MCP ecosystem",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Community-authored GitHub repository for Telegram MTProto MCP",
+      "attribution_by": "task09-research-agent-gemini"
+    },
+    {
+      "app_id": 27,
+      "url": "https://github.com/node2flow-th/telegram-bot-mcp-community",
+      "kind": "community_repository",
+      "scope": "Telegram Bot API and MTProto API, BotFather token and api_id/api_hash auth, free API access, and community MCP ecosystem",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Community-authored GitHub repository for Telegram Bot API MCP",
+      "attribution_by": "task09-research-agent-gemini"
+    },
+    {
+      "app_id": 28,
+      "url": "https://developers.facebook.com/docs/whatsapp/cloud-api/",
+      "kind": "primary_docs",
+      "scope": "WhatsApp Business Cloud API, Meta Graph API access token/OAuth auth, sandbox/per-message pricing, and official/community MCP ecosystem",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor-controlled official documentation or product page",
+      "attribution_by": "task09-research-agent-gemini"
+    },
+    {
+      "app_id": 28,
+      "url": "https://developers.facebook.com/docs/whatsapp/cloud-api/get-started",
+      "kind": "primary_docs",
+      "scope": "WhatsApp Business Cloud API, Meta Graph API access token/OAuth auth, sandbox/per-message pricing, and official/community MCP ecosystem",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor-controlled official documentation or product page",
+      "attribution_by": "task09-research-agent-gemini"
+    },
+    {
+      "app_id": 28,
+      "url": "https://developers.facebook.com/docs/whatsapp/pricing",
+      "kind": "primary_docs",
+      "scope": "WhatsApp Business Cloud API, Meta Graph API access token/OAuth auth, sandbox/per-message pricing, and official/community MCP ecosystem",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor-controlled official documentation or product page",
+      "attribution_by": "task09-research-agent-gemini"
+    },
+    {
+      "app_id": 28,
+      "url": "https://business.whatsapp.com/products/platform-pricing",
+      "kind": "official_product_page",
+      "scope": "WhatsApp Business Cloud API, Meta Graph API access token/OAuth auth, sandbox/per-message pricing, and official/community MCP ecosystem",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor-controlled official documentation or product page",
+      "attribution_by": "task09-research-agent-gemini"
+    },
+    {
+      "app_id": 29,
+      "url": "https://developer.aircall.io/api-references/",
+      "kind": "primary_docs",
+      "scope": "Aircall Public REST API, HTTP Basic API key and OAuth 2.0 auth, paid plans/partner onboarding, and MCP ecosystem",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor-controlled official documentation or product page",
+      "attribution_by": "task09-research-agent-gemini"
+    },
+    {
+      "app_id": 29,
+      "url": "https://developer.aircall.io/tutorials/oauth/",
+      "kind": "primary_docs",
+      "scope": "Aircall Public REST API, HTTP Basic API key and OAuth 2.0 auth, paid plans/partner onboarding, and MCP ecosystem",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor-controlled official documentation or product page",
+      "attribution_by": "task09-research-agent-gemini"
+    },
+    {
+      "app_id": 29,
+      "url": "https://aircall.io/pricing/",
+      "kind": "official_product_page",
+      "scope": "Aircall Public REST API, HTTP Basic API key and OAuth 2.0 auth, paid plans/partner onboarding, and MCP ecosystem",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor-controlled official documentation or product page",
+      "attribution_by": "task09-research-agent-gemini"
+    },
+    {
+      "app_id": 29,
+      "url": "https://developer.aircall.io/",
+      "kind": "primary_docs",
+      "scope": "Aircall Public REST API, HTTP Basic API key and OAuth 2.0 auth, paid plans/partner onboarding, and MCP ecosystem",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor-controlled official documentation or product page",
+      "attribution_by": "task09-research-agent-gemini"
+    },
+    {
+      "app_id": 30,
+      "url": "https://developer.vonage.com/en/getting-started/concepts/authentication",
+      "kind": "primary_docs",
+      "scope": "Vonage Communications APIs, API key/secret and JWT auth, free credit/pay-per-use pricing, and official MCP servers",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor-controlled official documentation or product page",
+      "attribution_by": "task09-research-agent-gemini"
+    },
+    {
+      "app_id": 30,
+      "url": "https://developer.vonage.com/en/api",
+      "kind": "primary_docs",
+      "scope": "Vonage Communications APIs, API key/secret and JWT auth, free credit/pay-per-use pricing, and official MCP servers",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor-controlled official documentation or product page",
+      "attribution_by": "task09-research-agent-gemini"
+    },
+    {
+      "app_id": 30,
+      "url": "https://www.vonage.com/communications-apis/pricing/",
+      "kind": "official_product_page",
+      "scope": "Vonage Communications APIs, API key/secret and JWT auth, free credit/pay-per-use pricing, and official MCP servers",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor-controlled official documentation or product page",
+      "attribution_by": "task09-research-agent-gemini"
+    },
+    {
+      "app_id": 30,
+      "url": "https://github.com/Vonage-Community/vonage-mcp-server-api-bindings",
+      "kind": "official_repository",
+      "scope": "Vonage Communications APIs, API key/secret and JWT auth, free credit/pay-per-use pricing, and official MCP servers",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Official Vonage Community GitHub repository for Vonage MCP Server API Bindings",
+      "attribution_by": "task09-research-agent-gemini"
+    },
+    {
+      "app_id": 24,
+      "url": "https://github.com/larksuite/oapi-sdk-python",
+      "kind": "official_repository",
+      "scope": "Lark (Larksuite) Open Platform REST APIs, app/tenant/user access token auth, free/paid workspace plans, and official MCP server",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Official Larksuite Python OpenAPI SDK repository",
+      "attribution_by": "task09-research-agent-gemini"
+    },
+    {
+      "app_id": 24,
+      "url": "https://github.com/larksuite/node-sdk",
+      "kind": "official_repository",
+      "scope": "Lark (Larksuite) Open Platform REST APIs, app/tenant/user access token auth, free/paid workspace plans, and official MCP server",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Official Larksuite Node.js OpenAPI SDK repository",
+      "attribution_by": "task09-research-agent-gemini"
+    },
+    {
+      "app_id": 25,
+      "url": "https://github.com/CAKE-com/pumble-node-sdk",
+      "kind": "official_repository",
+      "scope": "Pumble REST API/Addon and SDK, API key/webhook/app token auth, free/paid workspace plans, and community MCP ecosystem",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Official CAKE.com Pumble Node SDK repository",
+      "attribution_by": "task09-research-agent-gemini"
+    },
+    {
+      "app_id": 25,
+      "url": "https://pumble.com/",
+      "kind": "official_product_page",
+      "scope": "Pumble REST API/Addon and SDK, API key/webhook/app token auth, free/paid workspace plans, and community MCP ecosystem",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor-controlled official documentation or product page",
+      "attribution_by": "task09-research-agent-gemini"
+    },
+    {
+      "app_id": 25,
+      "url": "https://pumble.com/help/",
+      "kind": "primary_docs",
+      "scope": "Pumble REST API/Addon and SDK, API key/webhook/app token auth, free/paid workspace plans, and community MCP ecosystem",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor-controlled official documentation or product page",
+      "attribution_by": "task09-research-agent-gemini"
+    },
+    {
+      "app_id": 28,
+      "url": "https://developers.facebook.com/documentation/business-messaging/whatsapp/llms.txt",
+      "kind": "primary_docs",
+      "scope": "WhatsApp Business Cloud API, Meta Graph API access token/OAuth auth, sandbox/per-message pricing, and official/community MCP ecosystem",
+      "environments": [],
+      "attribution_basis": "Vendor-controlled official documentation or product page",
+      "attribution_by": "task09-research-agent-gemini"
+    },
+    {
+      "app_id": 28,
+      "url": "https://developers.facebook.com/documentation/business-messaging/whatsapp/access-tokens",
+      "kind": "primary_docs",
+      "scope": "WhatsApp Business Cloud API, Meta Graph API access token/OAuth auth, sandbox/per-message pricing, and official/community MCP ecosystem",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor-controlled official documentation or product page",
+      "attribution_by": "task09-research-agent-gemini"
+    },
+    {
+      "app_id": 29,
+      "url": "https://developer.aircall.io/llms.txt",
+      "kind": "primary_docs",
+      "scope": "Aircall Public REST API, HTTP Basic API key and OAuth 2.0 auth, paid plans/partner onboarding, and MCP ecosystem",
+      "environments": [],
+      "attribution_basis": "Vendor-controlled official documentation or product page",
+      "attribution_by": "task09-research-agent-gemini"
+    },
+    {
+      "app_id": 30,
+      "url": "https://github.com/Vonage/vonage-kiro-power",
+      "kind": "official_repository",
+      "scope": "Vonage Communications APIs, API key/secret and JWT auth, free credit/pay-per-use pricing, and official MCP servers",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Official Vonage GitHub repository documenting Vonage MCP servers",
+      "attribution_by": "task09-research-agent-gemini"
+    }
+  ]
+}

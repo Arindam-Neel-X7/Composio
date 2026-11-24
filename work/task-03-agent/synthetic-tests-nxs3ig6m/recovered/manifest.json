@@ -1,0 +1,57 @@
+{
+  "run_id": "recovered",
+  "parent_run_id": "fetch-failed",
+  "status": "complete",
+  "synthetic": true,
+  "selected_app_ids": [
+    2
+  ],
+  "created_on": "2026-11-23",
+  "producer": {
+    "id": "pipeline-collector",
+    "type": "script"
+  },
+  "tool": {
+    "name": "research_pipeline",
+    "version": "0.2.0",
+    "python": "3.11.9",
+    "source_sha256": "263c88230b585de37de6afabd13e88033da9496eef7d08e89e7057dddd42b09d"
+  },
+  "config": {
+    "timeout": 10,
+    "retries": 1,
+    "max_bytes": 2000000,
+    "replay": false,
+    "refresh": false,
+    "extractor": null,
+    "extractor_label": null
+  },
+  "contracts": {
+    "roster": {
+      "path": "contracts/roster.json",
+      "sha256": "6e3aada149102c2e5539c126aa556c1ceaca3d9d25ca6e0a8f56b3a569f81c19"
+    },
+    "schema": {
+      "path": "contracts/schema.json",
+      "sha256": "40e5552a4c838293e5f440e4abbc38b0e48eefa1f626e2ee9c61a3ee1a8d49c3"
+    },
+    "rules": {
+      "path": "contracts/rules.md",
+      "sha256": "c1f94b3142ed47740d0d1a90879ca0e962ada77542eddd39edc15e36ed93c733"
+    }
+  },
+  "source_specs": [
+    {
+      "app_id": 2,
+      "url": "https://synthetic.example/docs",
+      "kind": "primary_docs",
+      "scope": "SYNTHETIC testing edition v1; no real app facts",
+      "environments": [
+        "testing"
+      ],
+      "attribution_basis": "Synthetic fixture only; deliberately not vendor documentation or real HubSpot identity evidence",
+      "attribution_by": "synthetic-test-author",
+      "fixture": "tests/fixtures/vendor.html"
+    }
+  ]
+}

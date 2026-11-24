@@ -1,0 +1,302 @@
+GitHub - tkhattar14/whatsapp-business-mcp: MCP server for WhatsApp Business Cloud API. 50+ tools for messaging, templates, media, analytics, flows and webhooks. · GitHub
+Skip to content
+Navigation Menu
+Sign in
+Products
+Platform
+GitHubRepository hosting, code review, and collaboration
+CopilotAI coding agent for tasks, projects, and automated work
+Build & Ship
+ActionsCI/CD and automation
+Code QualityQuality analysis, fixes, and enforcement
+CodespacesCloud development environments
+Secure
+Code SecurityVulnerability detection and remediation
+Secret ProtectionSecret scanning and leak prevention
+All Features
+Developers
+Learn
+Documentation
+Training
+Certifications
+Build
+Build with Copilot
+Customize Copilot
+Integrations
+Explore
+Trending repos
+GitHub Sponsors
+Developer articles
+Changelog
+ChangelogYour source for the latest features, improvements, and fixes across GitHub products, all in one place.
+Businesses
+By Stage
+Enterprises
+Team
+Startups
+Nonprofits
+By Industry
+Healthcare
+Financial services
+Manufacturing
+Government
+See all industries
+Evaluate GitHub
+Why GitHub
+Customer Stories
+Business insights
+Trust Center
+Add-ons
+GitHub Advanced SecurityEnterprise-grade code security
+Copilot for businessEnterprise-grade AI features
+Premium SupportEnterprise-grade 24/7 support
+Resources
+Learn & Connect
+Documentation
+Resource center
+Blog
+Events & webinars
+Community Forum
+Customer Stories
+Integrations
+Support
+Customer support
+Training
+GitHub Status
+Company
+About
+Partners
+Changelog
+GitHub Universe
+GitHub UniverseThe event for developers, by developers — talks, workshops, and what’s next for GitHub.
+Pricing
+Search/
+Sign in
+Sign up
+Appearance settings
+You signed in with another tab or window. Reload to refresh your session.
+You signed out in another tab or window. Reload to refresh your session.
+You switched accounts on another tab or window. Reload to refresh your session.
+Dismiss alert
+tkhattar14
+whatsapp-business-mcp
+Repository navigation
+Code
+Issues1 (1)
+Pull requests1 (1)
+Actions
+Projects
+Security and quality
+Insights
+More items
+whatsapp-business-mcp
+Public
+NotificationsYou must be signed in to change notification settings
+Fork5 (5)
+Star5 (5)You must be signed in to star a repository
+About
+MCP server for WhatsApp Business Cloud API. 50+ tools for messaging, templates, media, analytics, flows and webhooks.
+Resources
+Readme
+MIT license
+Security policy
+Security policy
+Activity
+Stars
+5 stars
+Watchers
+0 watching
+Forks
+5 forks
+Report repository
+main
+BranchesTags
+Go to file
+Code
+Open more actions menu
+Latest commit
+History
+1 Commit
+1 Commit
+Folders and files
+NameName
+Last commit message
+Last commit date
+mcp_server
+mcp_server
+.env.example
+.env.example
+.gitignore
+.gitignore
+LICENSE
+LICENSE
+README.md
+README.md
+SECURITY.md
+SECURITY.md
+comprehensive_tools.py
+comprehensive_tools.py
+comprehensive_tools_extended.py
+comprehensive_tools_extended.py
+main.py
+main.py
+main_http.py
+main_http.py
+pyproject.toml
+pyproject.toml
+requirements.txt
+requirements.txt
+View all files
+Repository files navigation
+README
+MIT license
+Security
+More items
+WhatsApp Business MCP Server
+A security-hardened Model Context Protocol (MCP) server for the official WhatsApp Business Cloud API. Connect AI assistants like Claude, Cursor, or any MCP-compatible client to WhatsApp Business.
+Features
+50+ tools across 8 modules — messaging, templates, media, analytics, flows, webhooks, business profile, account management
+Security-first — API key auth, rate limiting, input validation, webhook signature verification, error sanitization, path traversal protection
+Official Meta API only — all calls go to graph.facebook.com, no unofficial/third-party APIs
+Two transport modes — stdio (for MCP clients like Claude Desktop) and HTTP (for REST API access)
+Production-ready — CORS controls, security headers, configurable via environment variables
+Tools Overview
+Module
+Tools
+Description
+Messaging
+Send text, media, interactive, location, contact, reaction, reply
+All WhatsApp message types
+Templates
+Create, list, send, delete, get status
+Full template lifecycle management
+Media
+Upload, download, delete, get info
+Image, video, audio, document handling
+Analytics
+Conversation analytics, quality rating, messaging limits
+Business insights
+Flows
+Create, list, send flow messages
+WhatsApp interactive experiences
+Webhooks
+Subscribe, unsubscribe, manage webhook fields
+Event management
+Business Profile
+Get/update profile, phone numbers
+Business identity management
+Business Account
+WABA management, phone operations
+Account administration
+Quick Start
+1. Clone and install
+git clone https://github.com/tkhattar14/whatsapp-business-mcp.git
+cd whatsapp-business-mcp
+python -m venv venv
+source venv/bin/activate # Windows: venv\Scripts\activate
+pip install -r requirements.txt
+2. Configure
+cp .env.example .env
+# Edit .env with your Meta WhatsApp Business API credentials
+# Get them from: https://developers.facebook.com/
+3. Run (stdio mode — for MCP clients)
+source .env && python main.py
+4. Run (HTTP mode — for REST API)
+source .env && python main_http.py
+MCP Client Configuration
+Claude Desktop / Cursor
+{
+"mcpServers": {
+"whatsapp": {
+"command": "python",
+"args": ["/path/to/whatsapp-business-mcp/main.py"],
+"env": {
+"META_ACCESS_TOKEN": "your_token",
+"META_PHONE_NUMBER_ID": "your_phone_id"
+}
+}
+}
+}
+mcporter (OpenClaw)
+mcporter add whatsapp-business --stdio "python /path/to/main.py"
+Environment Variables
+Variable
+Required
+Description
+META_ACCESS_TOKEN
+Yes
+Meta API bearer token
+META_PHONE_NUMBER_ID
+Yes
+WhatsApp sender phone number ID
+META_BUSINESS_ACCOUNT_ID
+Recommended
+Business account ID
+WABA_ID
+Recommended
+WhatsApp Business Account ID
+META_APP_ID
+Optional
+App ID for webhook management
+META_APP_SECRET
+Recommended
+App secret for webhook signature verification
+MCP_API_KEY
+Recommended
+API key for HTTP endpoint auth
+ALLOWED_ORIGINS
+Optional
+Comma-separated CORS origins
+MEDIA_UPLOAD_DIR
+Optional
+Allowed media upload directory (default: /tmp/whatsapp-media/)
+WHATSAPP_API_VERSION
+Optional
+Graph API version (default: v22.0)
+Security
+This server is security-hardened with:
+API key authentication on HTTP endpoints (X-API-Key header)
+Rate limiting (10 req/sec per IP, in-memory token bucket)
+Webhook signature verification (HMAC-SHA256 via META_APP_SECRET)
+Input validation — phone number format, message length limits
+Error sanitization — tokens and sensitive URLs stripped from error responses
+Path traversal protection — media uploads restricted to allowed directory
+Security headers — X-Content-Type-Options, X-Frame-Options, Cache-Control
+No wildcard CORS — explicit origin allowlist only
+See SECURITY.md for full details.
+API Version
+Uses WhatsApp Cloud API v22.0 (latest stable, March 2026). Configurable via WHATSAPP_API_VERSION env var.
+License
+MIT — see LICENSE.
+About
+MCP server for WhatsApp Business Cloud API. 50+ tools for messaging, templates, media, analytics, flows and webhooks.
+Resources
+Readme
+MIT license
+Security policy
+Security policy
+Activity
+Stars
+5 stars
+Watchers
+0 watching
+Forks
+5 forks
+Report repository
+Releases
+Packages
+Contributors
+Languages
+Footer
+© 2026 GitHub, Inc.
+Footer navigation
+Terms
+Privacy
+Security
+Status
+Community
+Docs
+Contact
+Manage cookies
+Do not share my personal information
+You can’t perform that action at this time.

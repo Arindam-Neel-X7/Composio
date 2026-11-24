@@ -1,0 +1,362 @@
+The REST interface overview | Google Ads API | Google for Developers
+Skip to main content
+Google
+Ads API
+/
+English
+Deutsch
+Español
+Español – América Latina
+Français
+Indonesia
+Italiano
+Polski
+Português – Brasil
+Tiếng Việt
+Türkçe
+Русский
+עברית
+العربيّة
+فارسی
+हिंदी
+বাংলা
+ภาษาไทย
+中文 – 简体
+中文 – 繁體
+日本語
+한국어
+Sign in
+Home
+Guides
+Reference
+Libraries and samples
+Policies
+Support
+Google
+Ads API
+Home
+Guides
+Reference
+Libraries and samples
+Policies
+Support
+Client libraries
+Overview
+Java
+Overview
+Basic usage
+Authentication and authorization
+Configuration
+Logging
+Field masks
+Resource names
+Bill of Materials
+Advanced usage
+Long-running operations (LROs)
+Configure a proxy
+Building from source
+.NET
+Overview
+Basic usage
+Authentication and authorization
+Configuration
+Logging
+Custom gRPC interceptors
+Field masks
+Resource names
+Protocol buffers
+Performance
+PHP
+Overview
+Basic usage
+Authentication
+Configuration
+Logging
+Response metadata
+Running in a Docker container
+Transport
+Protobuf
+Proxy
+Field masks
+Resource names
+Performance
+Timeout
+Demo apps
+GAPIC
+Python
+Overview
+Installation
+Configuration
+Authentication
+Streaming iterators
+IDE code completion
+Proxy
+Enums, types and services
+Field masks
+Logging
+Optional request fields
+Resource names
+Empty message fields
+Protobuf messages
+Timeouts
+Dependencies
+Ruby
+Overview
+Basic usage
+Authentication and authorization
+Configuration
+Logging
+Timeouts
+Field masks
+Resource names
+Lookup util
+Factories
+Perl
+Overview
+Basic usage
+Authentication and authorization
+Configuration
+Logging
+Running in a Docker container
+Proxy
+Field masks
+Resource names
+Performance
+Code samples
+Overview
+Account Management
+Create customer
+Get account hierarchy
+Get change details
+Get change summary
+Invite user with access role
+Link manager to client
+List accessible customers
+Update user access
+Verify advertiser identity
+Advanced Operations
+Add ad customizer
+Add ad group bid modifier
+Add app campaign
+Add bidding data exclusion
+Add bidding seasonality adjustment
+Add display upload ad
+Add dynamic page feed asset
+Add dynamic search ads
+Add Performance Max campaign
+Add smart campaign
+Create and attach shared keyword set
+Find and remove criteria from shared set
+Get ad group bid modifiers
+Use cross account bidding strategy
+Use portfolio bidding strategy
+Assets
+Add call
+Add hotel callout
+Add lead form asset
+Add prices
+Add sitelinks
+Authentication
+Generate user credentials
+Basic Operations
+Add ad groups
+Add campaigns
+Get campaigns
+Get responsive search ads
+Pause ad
+Remove campaign
+Search for Google Ads fields
+Update ad group
+Update campaign
+Update responsive search ad
+Billing
+Add account budget proposal
+Add billing setup
+Get invoices
+Campaign Management
+Add campaign labels
+Add complete campaigns using batch job
+Create experiment
+Get all disapproved ads
+Set ad parameters
+Update campaign criterion bid modifier
+Validate ad
+Error Handling
+Handle keyword policy violations
+Handle partial failure
+Handle rate exceeded error
+Handle responsive search ad policy violations
+Incentives
+Apply incentive
+Fetch incentives
+Misc
+Add ad group image asset
+Campaign report to CSV
+Set custom client timeouts
+Upload image asset
+Planning
+Forecast reach
+Generate forecast metrics
+Generate historical metrics
+Generate keyword ideas
+Get ad group criterion CPC bid simulations
+Recommendations
+Detect and apply recommendations
+Dismiss recommendation
+Remarketing
+Add conversion action
+Add conversion based user list
+Add custom audience
+Add customer match user list
+Add dynamic remarketing asset
+Add flexible rule user list
+Add logical user list
+Add merchant center dynamic remarketing campaign
+Set up advanced remarketing
+Set up remarketing
+Update audience target restriction
+Upload call conversion
+Upload conversion adjustment
+Upload enhanced conversions for leads
+Upload enhanced conversions for web
+Upload offline conversion
+Upload store sales transactions
+Reporting
+Parallel report download
+Shopping Ads
+Add listing scope
+Add Performance Max product listing group tree
+Add Performance Max retail campaign
+Add Shopping product ad
+Add Shopping product listing group tree
+Get product category constants
+Targeting
+Add campaign targeting criteria
+Add customer negative criteria
+Add demographic targeting criteria
+Get geo target constants by names
+Travel
+Add hotel ad
+Add hotel ad group bid modifiers
+Add hotel listing group tree
+Add Performance Max for travel goals campaign
+Add things to do ad
+The REST interface
+Overview
+Authorization and HTTP headers
+Design
+REST interface design
+Resource names
+Service methods
+JSON mappings
+Common methods
+Overview
+Search & SearchStream
+Mutate
+Other methods
+Common errors
+Examples
+Try it!
+You are viewing documentation for the API's REST interface. Most of our official client libraries use gRPC.
+Home
+Products
+Google Ads API
+Libraries and samples
+Send feedback
+The REST interface overview
+Stay organized with collections
+Save and categorize content based on your preferences.
+Page Summary
+outlined_flag
+We strongly recommend using the official client libraries, which are implemented using gRPC except for the Perl library.
+The Google Ads API supports calls via either gRPC or REST interfaces, both utilizing a resource-oriented design.
+Official client libraries are recommended for their idiomatic, type-safe code and handling of low-level communication details.
+This guide specifically details how to call the REST interface directly without using a Google-supported client library.
+Key Point: We strongly recommend using our official client
+libraries wherever you can. All Google provided client
+libraries are implemented using gRPC, except for the Perl
+library, which uses the REST
+interface. Unless you are specifically looking for details about REST, consult
+the reference documentation for details that cover both our
+official client libraries and the REST transport layer.Note: If you are new to the Google Ads API, we recommend reading the Getting
+Started guide first, which covers how to
+set up your account and make your first API call. Make sure to follow the curl
+tab.
+The Google Ads API can be called either using gRPC or REST. Both
+interfaces expose a resource-oriented design
+shared with other Google Cloud APIs.
+We recommend using Google's official client libraries
+wherever possible. They provide idiomatic, type-safe code in each supported
+language and handle many low-level details of communication with the API (like
+timeout settings, result set pagination, and
+authentication). Our client libraries also include an
+extensive set of code examples and utilities that assist with
+common tasks, such as constructing
+resource names and handling
+field masks.
+This guide presents details specific to REST and explains what you need to know
+to call the REST interface directly, without the use of a Google-supported
+client library. This guide may be useful if you are writing your own custom code
+to use REST directly or using a third-party HTTP client library.
+Next
+Authorization and HTTP headers
+arrow_forward
+Send feedback
+Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates.
+Last updated 2026-11-13 UTC.
+Need to tell us more?
+[[["Easy to understand","easyToUnderstand","thumb-up"],["Solved my problem","solvedMyProblem","thumb-up"],["Other","otherUp","thumb-up"]],[["Missing the information I need","missingTheInformationINeed","thumb-down"],["Too complicated / too many steps","tooComplicatedTooManySteps","thumb-down"],["Out of date","outOfDate","thumb-down"],["Samples / code issue","samplesCodeIssue","thumb-down"],["Other","otherDown","thumb-down"]],["Last updated 2026-11-13 UTC."],[],["The Google Ads API utilizes gRPC or REST interfaces, sharing a resource-oriented design. Using Google's client libraries is highly recommended for type-safe code, handling communication details like timeouts, pagination, and authentication. The official client libraries use gRPC, except for the Perl library, which uses REST. This guide details using REST directly without client libraries, useful for custom code or third-party HTTP clients. It focuses on information outside of what the official client libraries cover.\n"]]
+Engage
+Google AI Forum
+Google Developer Program
+Google Developer Groups
+Google Developer Experts
+Accelerators
+Google Cloud & NVIDIA
+Connect
+Blog
+Bluesky
+Instagram
+LinkedIn
+X (Twitter)
+YouTube
+Build
+Android
+Chrome
+Firebase
+Google AI Studio
+Google Antigravity
+Google Cloud
+Google Play
+View all
+Android
+Chrome
+Firebase
+Google Cloud Platform
+Google AI
+All products
+Terms
+Privacy
+Manage cookies
+English
+Deutsch
+Español
+Español – América Latina
+Français
+Indonesia
+Italiano
+Polski
+Português – Brasil
+Tiếng Việt
+Türkçe
+Русский
+עברית
+العربيّة
+فارسی
+हिंदी
+বাংলা
+ภาษาไทย
+中文 – 简体
+中文 – 繁體
+日本語
+한국어

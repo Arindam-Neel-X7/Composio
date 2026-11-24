@@ -1,0 +1,193 @@
+Authenticate with an API token
+For AI agents: the docs index is at https://developer.monday.com/api-reference/llms.txt. The index for every project on this site is at https://developer.monday.com/llms.txt. Append .md to any documentation page URL to get its markdown version.
+Jump to Content
+HomeGuidesAPI ReferenceChangelogBuild with AIPlaygroundApps DocsCommunityNeed Help?
+Guides
+Apps DocsCommunityNeed Help?
+HomeGuidesAPI ReferenceChangelogBuild with AIPlayground
+Authenticate with an API token
+About the monday API
+The basics
+Authentication
+Versioning
+Rate limits
+Idempotency
+Error handling
+Release notes
+Migrating the User entity: 2026-04 → 2026-10
+Migrating to version 2025-04
+Platform MCP overview
+Compatible MCP clients
+Integrate with the monday MCP server
+Authenticate with an API token
+Control MCP access with your own OAuth app
+Integrating monday MCP with Copilot Studio using a Custom App
+Integrating monday MCP with Claude using a Custom App
+Make your MCP integration publicly available
+Dynamic connectors
+Enterprise managed auth
+Set up enterprise-managed authorization for Claude
+Set up enterprise managed auth with Okta
+claude-ema-advanced-tab
+claude-ema-setup-modal
+copilot-studio-add-mcp-server
+Platform MCP tools
+Create Board (Platform MCP)
+Get Board Info (Platform MCP)
+Get Board Items (Platform MCP)
+Get Board Activity (Platform MCP)
+Board Insights (Platform MCP)
+Create Group (Platform MCP)
+Create Column (Platform MCP)
+Get Column Type Info (Platform MCP)
+Create Item (Platform MCP)
+Change Item Column Values (Platform MCP)
+Create Workspace (Platform MCP)
+Update Workspace (Platform MCP)
+List Workspaces (Platform MCP)
+Workspace Info (Platform MCP)
+Create Folder (Platform MCP)
+Update Folder (Platform MCP)
+Move Object (Platform MCP)
+Create Doc (Platform MCP)
+Update Doc (Platform MCP)
+Read Docs (Platform MCP)
+Create Dashboard (Platform MCP)
+Create Widget (Platform MCP)
+All Widgets Schema (Platform MCP)
+Create View (Platform MCP)
+Create Table View (Platform MCP)
+Update View (Platform MCP)
+Update Table View (Platform MCP)
+Create Form (Platform MCP)
+Get Form (Platform MCP)
+Update Form (Platform MCP)
+Form Questions Editor (Platform MCP)
+Create Form Submission (Platform MCP)
+Get User Context (Platform MCP)
+List Users and Teams (Platform MCP)
+Create Update (Platform MCP)
+Get Updates (Platform MCP)
+Create Notification (Platform MCP)
+Search (Platform MCP)
+Get Assets (Platform MCP)
+Get Asset Upload URL (Platform MCP)
+Finalize Asset Upload (Platform MCP)
+List Automations (Platform MCP)
+Manage Automations (Platform MCP)
+Create Automation (Platform MCP)
+Plan Workflow (Platform MCP)
+Create Workflow (Platform MCP)
+Update Workflow (Platform MCP)
+Publish Workflow (Platform MCP)
+Manage Agent (Platform MCP)
+Manage Agent Triggers (Platform MCP)
+Manage Agent Skills (Platform MCP)
+Manage Agent Knowledge (Platform MCP)
+Agent Catalog (Platform MCP)
+Get Notetaker Meetings (Platform MCP)
+Get Sprints Boards (Platform MCP)
+Get Sprints Metadata (Platform MCP)
+Get Sprint Summary (Platform MCP)
+Execute API Query (Platform MCP)
+Get GraphQL Schema (Platform MCP)
+Get Type Details (Platform MCP)
+Show Table (Platform MCP UI)
+Show Chart (Platform MCP UI)
+Show Battery (Platform MCP UI)
+Show Assign (Platform MCP UI)
+Platform MCP security
+Guides
+GraphQL overview
+Making your first request
+Querying board items
+Working with multi-level boards
+Changing column values
+Searching across your account
+Optimizing API usage
+Aggregating Board Data
+Validation Rules
+Importing items in bulk
+Connect a custom agent
+Working with the dependency column
+AI Skills
+Build on monday.com with AI
+Build an external agent
+Agent API key capabilities
+mcli - monday.com GraphQL CLI
+Portfolio Agent Skills
+Skill: Archive / Delete a Project
+Skill: Update Project Status
+Skill: List All Projects in a Portfolio
+Skill: Get Tasks Assigned to a Person Across Projects
+Skill: Get Project Status / Health
+Skill: Duplicate a Project
+Skill: Create a New Portfolio
+Skill: Connect a Project to a Portfolio
+Build monday agents with Make
+Connect to the Platform Agent over A2A
+Tools
+Developer Sandbox Account
+The Developer Center
+API analytics dashboard
+API playground
+Postman collection
+External APIs
+Developer AI assistant
+Apps MCP
+SDKs
+JavaScript SDK
+Python SDK
+Resources
+Get help
+Youtube
+monday.com help center
+API coverage gaps
+Models API
+Models API
+Getting started with the Models API
+Models API supported models
+Powered by
+Authenticate with an API token
+Connect to the monday.com hosted MCP server with a personal API token for personal use, prototyping, and testing
+If you're using one of the compatible MCP clients, you don't need a token — add the server URL and authenticate via OAuth when prompted. Use a personal API token when your client isn't a compatible MCP client or doesn't support the MCP OAuth flow — for example, custom scripts, homegrown agents, or tools that only support static Bearer tokens.
+For personal use, prototyping, and testing, this is the fastest way to connect. No app or registration is needed.
+Get your token
+Log in to your monday.com account
+Click your profile picture in the top-right corner and select Developers
+Click My access tokens in the left menu
+Copy your personal access token
+Configure your MCP client
+Pass the token as a Bearer token in the Authorization header of your MCP requests:
+Authorization: Bearer YOUR_API_TOKEN
+For MCP clients that support custom headers, the configuration looks like this:
+JSON
+{
+"mcpServers": {
+"monday-mcp": {
+"url": "https://mcp.monday.com/mcp",
+"headers": {
+"Authorization": "Bearer YOUR_API_TOKEN"
+}
+}
+}
+}
+Personal tokens mirror your UI permissions, so the MCP server can access everything your user can — and nothing more. This is ideal for individual development, but not for integrations used by other people.
+⚠️
+Warning
+Never share your API token or commit it to version control. Rotate tokens regularly, and revoke them when they're no longer needed.
+Related resources:
+Integrate with the monday MCP server
+Control MCP access with your own OAuth app
+Make your integration publicly available (DCR)
+Dynamic connectors
+Authentication
+Updated about 2 months ago
+Integrate with the monday MCP server
+Control MCP access with your own OAuth app
+Did this page help you?
+Yes
+No
+Copy Page
+Get your token
+Configure your MCP client

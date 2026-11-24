@@ -1,0 +1,214 @@
+{
+  "manifest_id": "composio-20app-sample-v1",
+  "manifest_path": "outputs\\task-06\\sampling-manifest.json",
+  "target_run_id": null,
+  "roster_ref": "data/apps.json",
+  "roster_sha256": "6e3aada149102c2e5539c126aa556c1ceaca3d9d25ca6e0a8f56b3a569f81c19",
+  "selection_date": "2026-11-23",
+  "method": {
+    "algorithm": "stratified-sha256-v1",
+    "version": "1.0",
+    "description": "Group 100 roster apps by category (sorted alphabetically). For each app, compute SHA-256 of UTF-8 '{seed}:{category}:{app_id}', sort ascending by (hex_digest, app_id), and select the first per_category apps without replacement.",
+    "pipeline_version": "0.2.0"
+  },
+  "seed": "composio-eval-2026-11-23-v1",
+  "per_category": 2,
+  "total_selected": 20,
+  "category_counts": {
+    "AI, Research and Media-native": 2,
+    "CRM and Sales": 2,
+    "Communications and Messaging": 2,
+    "Data, SEO and Scraping": 2,
+    "Developer, Infra and Data platforms": 2,
+    "Ecommerce": 2,
+    "Finance and Fintech": 2,
+    "Marketing, Ads, Email and Social": 2,
+    "Productivity and Project Management": 2,
+    "Support and Helpdesk": 2
+  },
+  "selected_ids": [
+    98,
+    97,
+    4,
+    8,
+    27,
+    21,
+    60,
+    52,
+    65,
+    64,
+    46,
+    50,
+    84,
+    83,
+    40,
+    31,
+    77,
+    76,
+    19,
+    16
+  ],
+  "selected_apps": [
+    {
+      "id": 98,
+      "app": "Mermaid CLI",
+      "category": "AI, Research and Media-native",
+      "rank_hash": "007cb09e14265ca756f13496fba1e587db70380aaa1959090b1b53f9d594a5a0",
+      "in_task04_pilot": false
+    },
+    {
+      "id": 97,
+      "app": "higgsfield",
+      "category": "AI, Research and Media-native",
+      "rank_hash": "1363d4ebf8c0c542677a069a0d8c1b06242f2c0fc8efd81e2947bc98044428e9",
+      "in_task04_pilot": false
+    },
+    {
+      "id": 4,
+      "app": "Attio",
+      "category": "CRM and Sales",
+      "rank_hash": "1e5c0bb00094e8fd4f9f386eec7a3bbd0aecaa83559e0c521cea83a7e640bfbd",
+      "in_task04_pilot": false
+    },
+    {
+      "id": 8,
+      "app": "Close",
+      "category": "CRM and Sales",
+      "rank_hash": "27ae11d1d6f76d047d9e3a8f60b1d77faa6c674a62c01db5ac04905903e2e9a8",
+      "in_task04_pilot": false
+    },
+    {
+      "id": 27,
+      "app": "Telegram",
+      "category": "Communications and Messaging",
+      "rank_hash": "322fedfca3abaec6241bfc7ec72a927638475725c51ede4fdeeeaf88ec13031b",
+      "in_task04_pilot": false
+    },
+    {
+      "id": 21,
+      "app": "Slack",
+      "category": "Communications and Messaging",
+      "rank_hash": "34b5183712cc7cdc67868ce5d9b215233b66d259225ab2a8b2204921425e1a02",
+      "in_task04_pilot": false
+    },
+    {
+      "id": 60,
+      "app": "Clay",
+      "category": "Data, SEO and Scraping",
+      "rank_hash": "093de605964c422a400dc2a63fc5ef8e624d049d82cfb3783972e7084ce94dc2",
+      "in_task04_pilot": false
+    },
+    {
+      "id": 52,
+      "app": "SE Ranking",
+      "category": "Data, SEO and Scraping",
+      "rank_hash": "296fb1fce969472efff199e4fec62814d2fbae97df941e26614d83eb2d46338a",
+      "in_task04_pilot": false
+    },
+    {
+      "id": 65,
+      "app": "Supabase",
+      "category": "Developer, Infra and Data platforms",
+      "rank_hash": "083b80f0ca23deb9ec2595e70a78f5ce78f194574fd089bd0c927f16d417df19",
+      "in_task04_pilot": false
+    },
+    {
+      "id": 64,
+      "app": "Cloudflare",
+      "category": "Developer, Infra and Data platforms",
+      "rank_hash": "6233352af3ab7ced3d54c4367e9a0cc6d8a6762371084e0fb05c4d8b1e80ca7f",
+      "in_task04_pilot": false
+    },
+    {
+      "id": 46,
+      "app": "Squarespace",
+      "category": "Ecommerce",
+      "rank_hash": "0be38f981c97bc7f2d887f24886f2bde6bdf4cec992170dfc2f819b171cae6a2",
+      "in_task04_pilot": false
+    },
+    {
+      "id": 50,
+      "app": "fanbasis",
+      "category": "Ecommerce",
+      "rank_hash": "0c2cf607bbcaf2d95d3af8d8c01121a5efcb047762c8c05067126b60974d3daa",
+      "in_task04_pilot": false
+    },
+    {
+      "id": 84,
+      "app": "Paygent Connect",
+      "category": "Finance and Fintech",
+      "rank_hash": "029966c857251240fdaa39cf333b3319832ab38781aedd9566fe4773855e6763",
+      "in_task04_pilot": false
+    },
+    {
+      "id": 83,
+      "app": "Binance",
+      "category": "Finance and Fintech",
+      "rank_hash": "0df0153bfbbf582810efe127b2560883533f96cde3ffb6efa2473d24d1515367",
+      "in_task04_pilot": false
+    },
+    {
+      "id": 40,
+      "app": "SendGrid",
+      "category": "Marketing, Ads, Email and Social",
+      "rank_hash": "1e480239a68da4ceb6a8f84718f96aa6989d38fc12a7fc041d37c385d3aae10e",
+      "in_task04_pilot": false
+    },
+    {
+      "id": 31,
+      "app": "Google Ads",
+      "category": "Marketing, Ads, Email and Social",
+      "rank_hash": "1f7b2a9c493344fb1ef8a7d765e324caa7c16853d35c094935cc9078af03c0a7",
+      "in_task04_pilot": true
+    },
+    {
+      "id": 77,
+      "app": "ClickUp",
+      "category": "Productivity and Project Management",
+      "rank_hash": "10e015b7d2c3693f904c80af2f8a95580ff556872fc38d10639911fd00727473",
+      "in_task04_pilot": false
+    },
+    {
+      "id": 76,
+      "app": "Monday.com",
+      "category": "Productivity and Project Management",
+      "rank_hash": "2c5070899e56979cb6e98fdfccda0e0d5ade1982b71d05eaec1513cf213c5baa",
+      "in_task04_pilot": false
+    },
+    {
+      "id": 19,
+      "app": "Gorgias",
+      "category": "Support and Helpdesk",
+      "rank_hash": "24380e353111ba2090d9b710ee79b3f847d3cb2f60518e38268e88a155beabe2",
+      "in_task04_pilot": false
+    },
+    {
+      "id": 16,
+      "app": "LiveAgent",
+      "category": "Support and Helpdesk",
+      "rank_hash": "24b30f0c3646bc28610b94d2587b7e8a772d71bc9afee386a5d322beca084a7c",
+      "in_task04_pilot": false
+    }
+  ],
+  "pilot_overlap_disclosure": {
+    "pilot_ids": [
+      2,
+      13,
+      31,
+      58,
+      91
+    ],
+    "overlapping_ids": [
+      31
+    ],
+    "note": "Seed was not re-rolled to avoid or force pilot overlap; pilot reviews remain preserved separately from this 20-app evaluation sample."
+  },
+  "reviewer_assignments": {
+    "reviewer_type": "ai",
+    "independent_from_research_producer": true,
+    "human_review_performed": false,
+    "note": "Assigned to an independent AI verification agent in Task 17; human verification remains optional and requires explicit actual-human attestation."
+  },
+  "rubric_ref": "outputs/task-06/evaluation-rubric.md",
+  "frozen": true
+}

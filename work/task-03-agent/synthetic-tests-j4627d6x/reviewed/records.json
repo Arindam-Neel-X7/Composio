@@ -1,0 +1,664 @@
+[
+  {
+    "schema_version": "1.1",
+    "run": {
+      "run_id": "reviewed",
+      "parent_run_id": "extracted",
+      "created_on": "2026-11-24",
+      "producer": {
+        "id": "pipeline-collector",
+        "type": "script"
+      },
+      "correction_refs": [],
+      "sampling_manifest_ref": null
+    },
+    "identity": {
+      "id": 2,
+      "app": "HubSpot",
+      "category": "CRM and Sales",
+      "roster_ref": "data/apps.json",
+      "resolution": {
+        "claim_id": "2.identity",
+        "status": "observed",
+        "value": "Synthetic stand-in identity only",
+        "context": "SYNTHETIC testing edition v1; no real app facts",
+        "evidence": [
+          {
+            "source_url": "https://synthetic.example/docs",
+            "source_kind": "primary_docs",
+            "locator": "lines:3",
+            "observation": "quote: Example Service is a synthetic product for workflow tests only.",
+            "captured_on": "2026-11-24",
+            "capture_method": "local_snapshot",
+            "content_sha256": "261d1ad11cfee94b7db701fed9c8cd7b52313735b964173b4a5c27e59ac4b791",
+            "snapshot_ref": "snapshots/261d1ad11cfee94b7db701fed9c8cd7b52313735b964173b4a5c27e59ac4b791.txt",
+            "hash_unavailable_reason": null,
+            "document_version": null,
+            "document_date": null
+          }
+        ],
+        "supporting_claim_refs": [],
+        "rationale": "Synthetic fixture extraction; not an app finding"
+      }
+    },
+    "purpose": {
+      "claim_id": "2.purpose",
+      "status": "observed",
+      "value": "Synthetic workflow test product",
+      "context": "SYNTHETIC testing edition v1; no real app facts",
+      "evidence": [
+        {
+          "source_url": "https://synthetic.example/docs",
+          "source_kind": "primary_docs",
+          "locator": "lines:3",
+          "observation": "quote: Example Service is a synthetic product for workflow tests only.",
+          "captured_on": "2026-11-24",
+          "capture_method": "local_snapshot",
+          "content_sha256": "261d1ad11cfee94b7db701fed9c8cd7b52313735b964173b4a5c27e59ac4b791",
+          "snapshot_ref": "snapshots/261d1ad11cfee94b7db701fed9c8cd7b52313735b964173b4a5c27e59ac4b791.txt",
+          "hash_unavailable_reason": null,
+          "document_version": null,
+          "document_date": null
+        }
+      ],
+      "supporting_claim_refs": [],
+      "rationale": "Synthetic fixture extraction; not an app finding"
+    },
+    "auth": {
+      "coverage_status": "partial",
+      "notes": "Synthetic methods only; not exhaustive",
+      "items": [
+        {
+          "claim_id": "2.auth.oauth2",
+          "status": "observed",
+          "value": {
+            "method": "OAuth2",
+            "context": "SYNTHETIC testing edition v1; no real app facts",
+            "scopes": [],
+            "details": "Authorization code; scopes not captured"
+          },
+          "context": "SYNTHETIC testing edition v1; no real app facts",
+          "evidence": [
+            {
+              "source_url": "https://synthetic.example/docs",
+              "source_kind": "primary_docs",
+              "locator": "lines:5",
+              "observation": "quote: OAuth2 authorization code credentials authorize test-workspace access.",
+              "captured_on": "2026-11-24",
+              "capture_method": "local_snapshot",
+              "content_sha256": "261d1ad11cfee94b7db701fed9c8cd7b52313735b964173b4a5c27e59ac4b791",
+              "snapshot_ref": "snapshots/261d1ad11cfee94b7db701fed9c8cd7b52313735b964173b4a5c27e59ac4b791.txt",
+              "hash_unavailable_reason": null,
+              "document_version": null,
+              "document_date": null
+            }
+          ],
+          "supporting_claim_refs": [],
+          "rationale": "Synthetic fixture extraction; not an app finding"
+        },
+        {
+          "claim_id": "2.auth.key",
+          "status": "observed",
+          "value": {
+            "method": "API_key",
+            "context": "SYNTHETIC testing edition v1; no real app facts",
+            "scopes": [],
+            "details": "Test-workspace API key"
+          },
+          "context": "SYNTHETIC testing edition v1; no real app facts",
+          "evidence": [
+            {
+              "source_url": "https://synthetic.example/docs",
+              "source_kind": "primary_docs",
+              "locator": "lines:6",
+              "observation": "quote: API key credentials authorize test-workspace access.",
+              "captured_on": "2026-11-24",
+              "capture_method": "local_snapshot",
+              "content_sha256": "261d1ad11cfee94b7db701fed9c8cd7b52313735b964173b4a5c27e59ac4b791",
+              "snapshot_ref": "snapshots/261d1ad11cfee94b7db701fed9c8cd7b52313735b964173b4a5c27e59ac4b791.txt",
+              "hash_unavailable_reason": null,
+              "document_version": null,
+              "document_date": null
+            }
+          ],
+          "supporting_claim_refs": [],
+          "rationale": "Synthetic fixture extraction; not an app finding"
+        }
+      ]
+    },
+    "credential_eligibility": {
+      "testing": {
+        "context": "testing credential eligibility",
+        "free_access": {
+          "claim_id": "2.testing.free_access",
+          "status": "observed",
+          "value": true,
+          "context": "SYNTHETIC testing edition v1; no real app facts",
+          "evidence": [
+            {
+              "source_url": "https://synthetic.example/docs",
+              "source_kind": "primary_docs",
+              "locator": "lines:10",
+              "observation": "quote: Free sandbox credentials can be generated without vendor approval in testing.",
+              "captured_on": "2026-11-24",
+              "capture_method": "local_snapshot",
+              "content_sha256": "261d1ad11cfee94b7db701fed9c8cd7b52313735b964173b4a5c27e59ac4b791",
+              "snapshot_ref": "snapshots/261d1ad11cfee94b7db701fed9c8cd7b52313735b964173b4a5c27e59ac4b791.txt",
+              "hash_unavailable_reason": null,
+              "document_version": null,
+              "document_date": null
+            }
+          ],
+          "supporting_claim_refs": [],
+          "rationale": "Synthetic fixture extraction; not an app finding"
+        },
+        "trial_access": {
+          "claim_id": "2.testing.trial_access",
+          "status": "not_researched",
+          "value": null,
+          "context": "testing credentials; edition/version not researched",
+          "evidence": [],
+          "supporting_claim_refs": [],
+          "rationale": "No substantive research yet"
+        },
+        "sandbox_access": {
+          "claim_id": "2.testing.sandbox_access",
+          "status": "observed",
+          "value": true,
+          "context": "SYNTHETIC testing edition v1; no real app facts",
+          "evidence": [
+            {
+              "source_url": "https://synthetic.example/docs",
+              "source_kind": "primary_docs",
+              "locator": "lines:10",
+              "observation": "quote: Free sandbox credentials can be generated without vendor approval in testing.",
+              "captured_on": "2026-11-24",
+              "capture_method": "local_snapshot",
+              "content_sha256": "261d1ad11cfee94b7db701fed9c8cd7b52313735b964173b4a5c27e59ac4b791",
+              "snapshot_ref": "snapshots/261d1ad11cfee94b7db701fed9c8cd7b52313735b964173b4a5c27e59ac4b791.txt",
+              "hash_unavailable_reason": null,
+              "document_version": null,
+              "document_date": null
+            }
+          ],
+          "supporting_claim_refs": [],
+          "rationale": "Synthetic fixture extraction; not an app finding"
+        },
+        "paid_required": {
+          "claim_id": "2.testing.paid_required",
+          "status": "not_researched",
+          "value": null,
+          "context": "testing credentials; edition/version not researched",
+          "evidence": [],
+          "supporting_claim_refs": [],
+          "rationale": "No substantive research yet"
+        },
+        "admin_approval_required": {
+          "claim_id": "2.testing.admin_approval_required",
+          "status": "not_researched",
+          "value": null,
+          "context": "testing credentials; edition/version not researched",
+          "evidence": [],
+          "supporting_claim_refs": [],
+          "rationale": "No substantive research yet"
+        },
+        "vendor_approval_required": {
+          "claim_id": "2.testing.vendor_approval_required",
+          "status": "not_researched",
+          "value": null,
+          "context": "testing credentials; edition/version not researched",
+          "evidence": [],
+          "supporting_claim_refs": [],
+          "rationale": "No substantive research yet"
+        },
+        "partner_approval_required": {
+          "claim_id": "2.testing.partner_approval_required",
+          "status": "not_researched",
+          "value": null,
+          "context": "testing credentials; edition/version not researched",
+          "evidence": [],
+          "supporting_claim_refs": [],
+          "rationale": "No substantive research yet"
+        },
+        "contact_sales_required": {
+          "claim_id": "2.testing.contact_sales_required",
+          "status": "not_researched",
+          "value": null,
+          "context": "testing credentials; edition/version not researched",
+          "evidence": [],
+          "supporting_claim_refs": [],
+          "rationale": "No substantive research yet"
+        },
+        "self_serve": {
+          "claim_id": "2.testing.self_serve",
+          "status": "observed",
+          "value": true,
+          "context": "SYNTHETIC testing edition v1; no real app facts",
+          "evidence": [
+            {
+              "source_url": "https://synthetic.example/docs",
+              "source_kind": "primary_docs",
+              "locator": "lines:10",
+              "observation": "quote: Free sandbox credentials can be generated without vendor approval in testing.",
+              "captured_on": "2026-11-24",
+              "capture_method": "local_snapshot",
+              "content_sha256": "261d1ad11cfee94b7db701fed9c8cd7b52313735b964173b4a5c27e59ac4b791",
+              "snapshot_ref": "snapshots/261d1ad11cfee94b7db701fed9c8cd7b52313735b964173b4a5c27e59ac4b791.txt",
+              "hash_unavailable_reason": null,
+              "document_version": null,
+              "document_date": null
+            }
+          ],
+          "supporting_claim_refs": [],
+          "rationale": "Synthetic fixture extraction; not an app finding"
+        }
+      },
+      "production": {
+        "context": "production credential eligibility",
+        "free_access": {
+          "claim_id": "2.production.free_access",
+          "status": "not_researched",
+          "value": null,
+          "context": "production credentials; edition/version not researched",
+          "evidence": [],
+          "supporting_claim_refs": [],
+          "rationale": "No substantive research yet"
+        },
+        "trial_access": {
+          "claim_id": "2.production.trial_access",
+          "status": "not_researched",
+          "value": null,
+          "context": "production credentials; edition/version not researched",
+          "evidence": [],
+          "supporting_claim_refs": [],
+          "rationale": "No substantive research yet"
+        },
+        "sandbox_access": {
+          "claim_id": "2.production.sandbox_access",
+          "status": "not_researched",
+          "value": null,
+          "context": "production credentials; edition/version not researched",
+          "evidence": [],
+          "supporting_claim_refs": [],
+          "rationale": "No substantive research yet"
+        },
+        "paid_required": {
+          "claim_id": "2.production.paid_required",
+          "status": "not_researched",
+          "value": null,
+          "context": "production credentials; edition/version not researched",
+          "evidence": [],
+          "supporting_claim_refs": [],
+          "rationale": "No substantive research yet"
+        },
+        "admin_approval_required": {
+          "claim_id": "2.production.admin_approval_required",
+          "status": "not_researched",
+          "value": null,
+          "context": "production credentials; edition/version not researched",
+          "evidence": [],
+          "supporting_claim_refs": [],
+          "rationale": "No substantive research yet"
+        },
+        "vendor_approval_required": {
+          "claim_id": "2.production.vendor_approval_required",
+          "status": "not_researched",
+          "value": null,
+          "context": "production credentials; edition/version not researched",
+          "evidence": [],
+          "supporting_claim_refs": [],
+          "rationale": "No substantive research yet"
+        },
+        "partner_approval_required": {
+          "claim_id": "2.production.partner_approval_required",
+          "status": "not_researched",
+          "value": null,
+          "context": "production credentials; edition/version not researched",
+          "evidence": [],
+          "supporting_claim_refs": [],
+          "rationale": "No substantive research yet"
+        },
+        "contact_sales_required": {
+          "claim_id": "2.production.contact_sales_required",
+          "status": "not_researched",
+          "value": null,
+          "context": "production credentials; edition/version not researched",
+          "evidence": [],
+          "supporting_claim_refs": [],
+          "rationale": "No substantive research yet"
+        },
+        "self_serve": {
+          "claim_id": "2.production.self_serve",
+          "status": "not_researched",
+          "value": null,
+          "context": "production credentials; edition/version not researched",
+          "evidence": [],
+          "supporting_claim_refs": [],
+          "rationale": "No substantive research yet"
+        }
+      }
+    },
+    "api_surface": {
+      "protocols": {
+        "coverage_status": "partial",
+        "notes": "Synthetic REST example",
+        "items": [
+          {
+            "claim_id": "2.api.rest",
+            "status": "observed",
+            "value": "REST",
+            "context": "SYNTHETIC testing edition v1; no real app facts",
+            "evidence": [
+              {
+                "source_url": "https://synthetic.example/docs",
+                "source_kind": "primary_docs",
+                "locator": "lines:8",
+                "observation": "quote: A REST API exposes the Contacts resource group in a testing environment.",
+                "captured_on": "2026-11-24",
+                "capture_method": "local_snapshot",
+                "content_sha256": "261d1ad11cfee94b7db701fed9c8cd7b52313735b964173b4a5c27e59ac4b791",
+                "snapshot_ref": "snapshots/261d1ad11cfee94b7db701fed9c8cd7b52313735b964173b4a5c27e59ac4b791.txt",
+                "hash_unavailable_reason": null,
+                "document_version": null,
+                "document_date": null
+              }
+            ],
+            "supporting_claim_refs": [],
+            "rationale": "Synthetic fixture extraction; not an app finding"
+          }
+        ]
+      },
+      "public_documentation": {
+        "claim_id": "2.api.public_documentation",
+        "status": "not_researched",
+        "value": null,
+        "context": "Product edition/API version not yet researched",
+        "evidence": [],
+        "supporting_claim_refs": [],
+        "rationale": "No substantive research yet"
+      },
+      "resource_groups": {
+        "coverage_status": "partial",
+        "notes": "One captured group, not complete inventory",
+        "items": [
+          {
+            "claim_id": "2.api.contacts",
+            "status": "observed",
+            "value": "Contacts",
+            "context": "SYNTHETIC testing edition v1; no real app facts",
+            "evidence": [
+              {
+                "source_url": "https://synthetic.example/docs",
+                "source_kind": "primary_docs",
+                "locator": "lines:8",
+                "observation": "quote: A REST API exposes the Contacts resource group in a testing environment.",
+                "captured_on": "2026-11-24",
+                "capture_method": "local_snapshot",
+                "content_sha256": "261d1ad11cfee94b7db701fed9c8cd7b52313735b964173b4a5c27e59ac4b791",
+                "snapshot_ref": "snapshots/261d1ad11cfee94b7db701fed9c8cd7b52313735b964173b4a5c27e59ac4b791.txt",
+                "hash_unavailable_reason": null,
+                "document_version": null,
+                "document_date": null
+              }
+            ],
+            "supporting_claim_refs": [],
+            "rationale": "Synthetic fixture extraction; not an app finding"
+          }
+        ]
+      },
+      "breadth": {
+        "claim_id": "2.api.breadth",
+        "status": "inferred",
+        "value": "narrow",
+        "context": "SYNTHETIC testing edition v1; no real app facts",
+        "evidence": [
+          {
+            "source_url": "https://synthetic.example/docs",
+            "source_kind": "primary_docs",
+            "locator": "lines:8",
+            "observation": "quote: A REST API exposes the Contacts resource group in a testing environment.",
+            "captured_on": "2026-11-24",
+            "capture_method": "local_snapshot",
+            "content_sha256": "261d1ad11cfee94b7db701fed9c8cd7b52313735b964173b4a5c27e59ac4b791",
+            "snapshot_ref": "snapshots/261d1ad11cfee94b7db701fed9c8cd7b52313735b964173b4a5c27e59ac4b791.txt",
+            "hash_unavailable_reason": null,
+            "document_version": null,
+            "document_date": null
+          }
+        ],
+        "supporting_claim_refs": [
+          "2.api.contacts"
+        ],
+        "rationale": "One focused group in the synthetic evidence; no endpoint count claimed"
+      }
+    },
+    "mcp": {
+      "discovery": {
+        "claim_id": "2.mcp",
+        "status": "observed",
+        "value": "found",
+        "context": "SYNTHETIC testing edition v1; no real app facts",
+        "evidence": [
+          {
+            "source_url": "https://synthetic.example/docs",
+            "source_kind": "primary_docs",
+            "locator": "lines:12",
+            "observation": "quote: The official callable MCP server for this synthetic product is https://synthetic.example/mcp with repository https://synthetic.example/repository.",
+            "captured_on": "2026-11-24",
+            "capture_method": "local_snapshot",
+            "content_sha256": "261d1ad11cfee94b7db701fed9c8cd7b52313735b964173b4a5c27e59ac4b791",
+            "snapshot_ref": "snapshots/261d1ad11cfee94b7db701fed9c8cd7b52313735b964173b4a5c27e59ac4b791.txt",
+            "hash_unavailable_reason": null,
+            "document_version": null,
+            "document_date": null
+          }
+        ],
+        "supporting_claim_refs": [],
+        "rationale": "Synthetic fixture extraction; not an app finding"
+      },
+      "entries": [
+        {
+          "claim_id": "2.mcp.server",
+          "status": "observed",
+          "value": {
+            "origin": "official",
+            "name": "Synthetic callable server",
+            "source_url": "https://synthetic.example/docs",
+            "repository_url": "https://synthetic.example/repository",
+            "server_url": "https://synthetic.example/mcp",
+            "scope": "Callable MCP server for synthetic workflow tools",
+            "operational_check": {
+              "claim_id": "2.mcp.operational",
+              "status": "not_researched",
+              "value": null,
+              "context": "SYNTHETIC testing edition v1; no real app facts",
+              "evidence": [],
+              "supporting_claim_refs": [],
+              "rationale": "No substantive research yet"
+            }
+          },
+          "context": "SYNTHETIC testing edition v1; no real app facts",
+          "evidence": [
+            {
+              "source_url": "https://synthetic.example/docs",
+              "source_kind": "primary_docs",
+              "locator": "lines:12",
+              "observation": "quote: The official callable MCP server for this synthetic product is https://synthetic.example/mcp with repository https://synthetic.example/repository.",
+              "captured_on": "2026-11-24",
+              "capture_method": "local_snapshot",
+              "content_sha256": "261d1ad11cfee94b7db701fed9c8cd7b52313735b964173b4a5c27e59ac4b791",
+              "snapshot_ref": "snapshots/261d1ad11cfee94b7db701fed9c8cd7b52313735b964173b4a5c27e59ac4b791.txt",
+              "hash_unavailable_reason": null,
+              "document_version": null,
+              "document_date": null
+            }
+          ],
+          "supporting_claim_refs": [],
+          "rationale": "Synthetic fixture extraction; not an app finding"
+        }
+      ]
+    },
+    "buildability": {
+      "claim_id": "2.buildability",
+      "status": "inferred",
+      "value": {
+        "verdict": "conditional",
+        "scope": "SYNTHETIC testing edition v1; no real app facts",
+        "blockers": [
+          "Real product research and production eligibility still required"
+        ],
+        "next_steps": [
+          "Research actual primary documentation in the later pilot"
+        ]
+      },
+      "context": "SYNTHETIC testing edition v1; no real app facts",
+      "evidence": [
+        {
+          "source_url": "https://synthetic.example/docs",
+          "source_kind": "primary_docs",
+          "locator": "lines:8",
+          "observation": "quote: A REST API exposes the Contacts resource group in a testing environment.",
+          "captured_on": "2026-11-24",
+          "capture_method": "local_snapshot",
+          "content_sha256": "261d1ad11cfee94b7db701fed9c8cd7b52313735b964173b4a5c27e59ac4b791",
+          "snapshot_ref": "snapshots/261d1ad11cfee94b7db701fed9c8cd7b52313735b964173b4a5c27e59ac4b791.txt",
+          "hash_unavailable_reason": null,
+          "document_version": null,
+          "document_date": null
+        }
+      ],
+      "supporting_claim_refs": [
+        "2.identity",
+        "2.api.rest"
+      ],
+      "rationale": "Synthetic interface exists in fixture; this is not production feasibility evidence"
+    },
+    "conflicts": [],
+    "fetches": [
+      {
+        "source_url": "https://synthetic.example/docs",
+        "attempted_on": "2026-11-24",
+        "status": "fetched",
+        "http_status": 200,
+        "resolved_url": "https://synthetic.example/docs",
+        "error": null,
+        "content_sha256": "261d1ad11cfee94b7db701fed9c8cd7b52313735b964173b4a5c27e59ac4b791"
+      }
+    ],
+    "review": {
+      "status": "completed",
+      "reviewer": {
+        "id": "independent-synthetic-reviewer",
+        "type": "ai"
+      },
+      "reviewed_on": "2026-11-24",
+      "adjudications": [
+        {
+          "claim_id": "2.purpose",
+          "judgment": "correct",
+          "reason": "Synthetic adjudication; no real accuracy measured",
+          "evidence": [
+            {
+              "source_url": "https://synthetic.example/docs",
+              "source_kind": "primary_docs",
+              "locator": "lines:3",
+              "observation": "quote: Example Service is a synthetic product for workflow tests only.",
+              "captured_on": "2026-11-24",
+              "capture_method": "local_snapshot",
+              "content_sha256": "261d1ad11cfee94b7db701fed9c8cd7b52313735b964173b4a5c27e59ac4b791",
+              "snapshot_ref": "snapshots/261d1ad11cfee94b7db701fed9c8cd7b52313735b964173b4a5c27e59ac4b791.txt",
+              "hash_unavailable_reason": null,
+              "document_version": null,
+              "document_date": null
+            }
+          ],
+          "original_run_id": "extracted"
+        },
+        {
+          "claim_id": "2.auth.oauth2",
+          "judgment": "incorrect",
+          "reason": "Synthetic adjudication; no real accuracy measured",
+          "evidence": [
+            {
+              "source_url": "https://synthetic.example/docs",
+              "source_kind": "primary_docs",
+              "locator": "lines:3",
+              "observation": "quote: Example Service is a synthetic product for workflow tests only.",
+              "captured_on": "2026-11-24",
+              "capture_method": "local_snapshot",
+              "content_sha256": "261d1ad11cfee94b7db701fed9c8cd7b52313735b964173b4a5c27e59ac4b791",
+              "snapshot_ref": "snapshots/261d1ad11cfee94b7db701fed9c8cd7b52313735b964173b4a5c27e59ac4b791.txt",
+              "hash_unavailable_reason": null,
+              "document_version": null,
+              "document_date": null
+            }
+          ],
+          "original_run_id": "extracted"
+        },
+        {
+          "claim_id": "2.auth.key",
+          "judgment": "unsupported",
+          "reason": "Synthetic adjudication; no real accuracy measured",
+          "evidence": [
+            {
+              "source_url": "https://synthetic.example/docs",
+              "source_kind": "primary_docs",
+              "locator": "lines:3",
+              "observation": "quote: Example Service is a synthetic product for workflow tests only.",
+              "captured_on": "2026-11-24",
+              "capture_method": "local_snapshot",
+              "content_sha256": "261d1ad11cfee94b7db701fed9c8cd7b52313735b964173b4a5c27e59ac4b791",
+              "snapshot_ref": "snapshots/261d1ad11cfee94b7db701fed9c8cd7b52313735b964173b4a5c27e59ac4b791.txt",
+              "hash_unavailable_reason": null,
+              "document_version": null,
+              "document_date": null
+            }
+          ],
+          "original_run_id": "extracted"
+        },
+        {
+          "claim_id": "2.testing.free_access",
+          "judgment": "unresolved",
+          "reason": "Synthetic adjudication; no real accuracy measured",
+          "evidence": [
+            {
+              "source_url": "https://synthetic.example/docs",
+              "source_kind": "primary_docs",
+              "locator": "lines:3",
+              "observation": "quote: Example Service is a synthetic product for workflow tests only.",
+              "captured_on": "2026-11-24",
+              "capture_method": "local_snapshot",
+              "content_sha256": "261d1ad11cfee94b7db701fed9c8cd7b52313735b964173b4a5c27e59ac4b791",
+              "snapshot_ref": "snapshots/261d1ad11cfee94b7db701fed9c8cd7b52313735b964173b4a5c27e59ac4b791.txt",
+              "hash_unavailable_reason": null,
+              "document_version": null,
+              "document_date": null
+            }
+          ],
+          "original_run_id": "extracted"
+        },
+        {
+          "claim_id": "2.testing.sandbox_access",
+          "judgment": "not_applicable",
+          "reason": "Synthetic adjudication; no real accuracy measured",
+          "evidence": [
+            {
+              "source_url": "https://synthetic.example/docs",
+              "source_kind": "primary_docs",
+              "locator": "lines:3",
+              "observation": "quote: Example Service is a synthetic product for workflow tests only.",
+              "captured_on": "2026-11-24",
+              "capture_method": "local_snapshot",
+              "content_sha256": "261d1ad11cfee94b7db701fed9c8cd7b52313735b964173b4a5c27e59ac4b791",
+              "snapshot_ref": "snapshots/261d1ad11cfee94b7db701fed9c8cd7b52313735b964173b4a5c27e59ac4b791.txt",
+              "hash_unavailable_reason": null,
+              "document_version": null,
+              "document_date": null
+            }
+          ],
+          "original_run_id": "extracted"
+        }
+      ]
+    }
+  }
+]

@@ -1,0 +1,655 @@
+API structure | Google Ads API | Google for Developers
+Skip to main content
+Google
+Ads API
+/
+English
+Deutsch
+Español
+Español – América Latina
+Français
+Indonesia
+Italiano
+Polski
+Português – Brasil
+Tiếng Việt
+Türkçe
+Русский
+עברית
+العربيّة
+فارسی
+हिंदी
+বাংলা
+ภาษาไทย
+中文 – 简体
+中文 – 繁體
+日本語
+한국어
+Sign in
+Guides
+Reference
+Libraries and samples
+Policies
+Support
+Google
+Ads API
+Guides
+Reference
+Libraries and samples
+Policies
+Support
+Google Ads API overview
+Release notes
+Feature deprecations
+Get started
+Introduction
+Quickstart
+Handle errors
+Common errors
+Next steps
+Developer toolkit
+Google Ads MCP server
+Google Ads API AI agent skills
+Google Ads API Developer Assistant
+Overview
+Install and use
+Google Ads API Explorer
+Google Ads Query Builder
+Google Ads Query Validator
+Authentication and authorization
+Overview
+Access model overview
+Service account workflow
+User authentication workflow
+Overview
+Single-user authentication workflow
+Multi-user authentication workflow
+Security requirements
+OAuth 2.0 internals
+Set up a Google API Console project for authorization
+Credential management
+Multi-party approvals
+Basic concepts
+Overview
+Account types
+API structure
+Versioning
+Changing objects
+Retrieving objects
+Resource metadata
+Call structure
+Mutates
+Overview
+Resource mutates
+Bulk mutates
+Best practices
+Google Ads management
+Manage accounts
+Overview
+Create an account
+Link to manager accounts
+List accessible accounts
+Get account hierarchy
+Manage user access
+Manage user access invitations
+Link product accounts
+Link YouTube
+Change status
+Change event
+Advertiser identity verification
+Manage assets
+Overview
+Creation and usage
+Location assets
+Automated assets
+Asset automation settings
+Business message assets
+Upload videos
+Reporting
+Create assets with generative AI (closed beta)
+Asset generation (closed beta)
+Asset generation errors (closed beta)
+Asset generation code examples (closed beta)
+Manage billing
+Billing overview
+Billing setup
+Account budget
+Invoice
+Incentives (allowlisted)
+Create and manage campaigns
+Explore campaign types
+Overview
+Create campaigns
+Create ad groups
+Ad management
+Overview
+Ad types
+Upgraded URLs
+URL tracking and templates
+Upgraded URL fields
+Supported entities
+ValueTrack parameters for Upgraded URLs
+URL and tracking fields in reports
+Serving URL expansion rules
+Dynamic Search Ads
+Overview
+Create DSAs
+DSA page feeds
+Reporting
+Hotel Ads
+Overview
+Create campaign
+Create ad group
+Create ad
+Create listing groups
+Bidding
+Overview
+Assign strategy
+Set bids
+Adjust bids
+Reporting
+Travel Feeds for Search Ads
+Things to do ads
+Overview
+Create campaign
+Create ad group
+Create ad
+Create listing groups
+Reporting
+Responsive display ads
+Overview
+Create ads
+Retrieve ads
+Responsive search ads
+Overview
+Create ads
+Mutate ads
+Ad customization
+Retrieve ads
+Shopping Ads
+Overview
+Link Merchant Center
+Create campaign
+Create ad group
+Create ad
+Create listing groups
+Reporting
+Uploaded display ads
+Overview
+Create uploaded display ads
+Uploaded HTML5 ads
+Budgets
+Overview
+Create budget
+Share budget
+Assign budget
+Remove budget
+Track performance
+Restrictions & errors
+Bidding
+Overview
+Strategy types
+Strategy status
+Portfolio and standard bidding strategies
+Cross-account bidding strategies
+Ad group level target overrides
+Set bids manually
+Manage bid modifiers
+Create seasonality adjustments
+Create data exclusions
+Campaign Drafts
+Targeting
+Overview
+Criteria
+Shared sets
+Bid modifiers
+Location targeting
+Targeting settings
+Performance Max campaigns
+Overview
+Get started
+Business goals
+Online sales or lead generation
+Online sales with a product feed
+Travel goals
+Pay-per-lead goals
+Concepts
+Campaign setup
+Create a budget
+Create a campaign
+Conversion goals
+Create campaign criteria
+ValueTrack parameters
+Asset group setup
+Assets
+Asset requirements
+Asset groups
+Asset group signals
+Listing groups
+Reporting
+Overview
+Campaign Reporting
+Asset Group Reporting
+Asset Reporting
+Retail Campaign Reporting
+Campaign Criterion Reporting
+Upgrade to Performance Max
+Overview
+Check upgrade eligibility
+Create a campaign based on an existing campaign
+Enhance a campaign
+Compare performance with an existing campaign
+Complete the upgrade
+Best practices
+Structure requests
+Batch processing
+Optimizations
+Troubleshooting
+Common errors when working with Performance Max
+Resources and examples
+Code examples
+Add performance max campaign
+Add performance max retail campaign
+Add performance max product listing group tree
+Add performance max for travel goals campaign
+App campaigns
+Overview
+Create campaign
+Create ad group & ad
+Code example
+Reporting
+Demand Gen campaigns
+Overview
+Create campaign
+Audience targeting
+Campaigns with product feeds
+Channel controls
+Reporting & optimization
+Local Services campaigns
+Smart campaigns
+Overview
+Convert smart campaigns to PMax campaigns
+Get suggestions
+Create budget
+Create campaign and campaign setting
+Create campaign criteria
+Create ad group and ad group ad
+Send mutate request
+Reporting
+Search campaigns
+Get started with Search campaigns
+AI Max for Search campaigns
+Get started with AI Max for Search campaigns
+Reporting for AI Max for Search campaigns
+Vertical ads controls and inventory filtering
+Video campaigns
+Manage conversions
+Overview
+Conversion action categories
+Get started with conversions
+Manage offline conversions
+Manage online conversions
+Manage call conversions
+Manage store sales conversions
+Modify uploaded conversions
+Upload conversion adjustments
+Conversion value rules
+Custom conversion variables
+Conversion goals
+Overview
+Customer goals
+Campaign goals
+Lifecycle goals
+Monitor Upload Health
+Reporting
+Troubleshooting
+Manage audiences
+Overview
+Audiences
+Get started with audience segments
+Visitors to your website
+Visitors to specific pages
+Visitors who took specific actions
+Multiple user lists
+Customer match
+Get started
+Manage
+Troubleshoot
+Custom audiences
+Lookalike segments
+Sample scenario
+Overview
+Creating the rule item groups
+Creating the user list
+Dynamic Remarketing
+Overview
+Prerequisites
+Asset-based Dynamic Remarketing
+Merchant center-based Dynamic Remarketing
+Batch processing
+Overview
+Usage flow
+Using temporary IDs
+Listing group filters
+Best practices & limitations
+Optimize your ads
+Optimization & recommendations
+Keyword planning
+Overview
+Generate keyword ideas
+Generate ad group themes
+Generate historical metrics
+Generate forecast metrics
+Experiments
+Overview
+System-managed experiments
+Intra-campaign experiments
+Asset optimization experiments
+Campaign Mix experiments
+Reporting
+Lift reporting
+Pull geo data
+Asynchronous errors
+Reach forecasting
+Overview
+Concepts
+Authenticate
+Specify a media plan
+Generate a curve
+Bid simulations
+Overview
+Prerequisites
+Retrieve bid simulations
+Report and monitor performance
+Reporting
+Overview
+Use case
+Criteria metrics
+Track ad placement and performance
+Segmentation
+Zero metrics
+Labels
+Streaming
+Paging
+Reports in the UI
+Mapping valuetrack parameters with report fields
+Query language
+Overview
+Query grammar
+Query structure
+Date ranges
+Case sensitivity
+Ordering and limiting results
+Interactive query builder
+Query Validator
+Query Cookbook
+Audience and creator insights
+Overview
+Audience insights
+YouTube creator insights
+YouTube benchmarks
+Develop applications
+Test and troubleshoot your application
+Best practices
+Overview
+API limits and quotas
+System limits
+Troubleshooting
+Testing
+Test accounts
+Error debugging
+Error types
+Understand API errors
+Common errors
+Partial failures
+Warnings
+Policy exemption request
+Overview
+Ads
+Keywords
+Productionize your application
+Overview
+Secure credentials
+Access levels
+Logging
+Monitoring
+Manage data efficiently
+Rate limits
+Shared aliases
+Stay updated
+Home
+Products
+Google Ads API
+Send feedback
+API structure
+Stay organized with collections
+Save and categorize content based on your preferences.
+Page Summary
+outlined_flag
+The Google Ads API consists of resources, which represent entities, and services, which retrieve and manipulate them.
+A Google Ads account is organized hierarchically, starting with the customer at the top level, followed by campaigns, ad groups, and ad group ads.
+Every object in Google Ads is identified by an ID, and resources also have a unique resource_name string.
+Services allow you to modify objects using mutate requests, retrieve objects and performance statistics with GoogleAdsService, and retrieve metadata with GoogleAdsFieldService.
+This guide introduces the primary components that make up the Google Ads API. The
+Google Ads API consists of resources and services. A resource represents a Google Ads
+entity, while services retrieve and manipulate Google Ads entities.
+Object hierarchy
+A Google Ads account can be viewed as a hierarchy of objects.
+The top-level resource of an account is the
+customer.
+Each customer contains one or more active
+campaigns.
+Each campaign contains one or more ad groups, used
+to group your ads into logical collections.
+An ad group ad represents an ad that you're
+running in an ad group. Except for App campaigns, which can have only one ad
+group ad per ad group, each ad group contains one or more ad group ads.
+Performance Max campaigns use a different
+structure from other campaign types: instead of ad groups and ad group ads, a
+Performance Max campaign contains asset groups. You
+link creative assets to an asset group using
+AssetGroupAsset and attach audience or search
+theme signals using AssetGroupSignal.
+You can attach one or more AdGroupCriterion
+or CampaignCriterion resources to an ad
+group or campaign. These represent criteria that define how ads get triggered.
+There are many criterion types,
+such as keywords, age ranges, and locations. Criteria defined at the campaign
+level affect all other resources within the campaign. You can also specify
+budgets as well as start and end dates and times for campaigns, or for
+individual ads using AdGroupAd.start_date_time and AdGroupAd.end_date_time.
+Finally, you can attach assets at the account, campaign, ad group, or asset
+group level. Assets let you provide extra information to your ads, like phone
+numbers, street addresses, or promotions. See Assets
+overview.
+Resources
+Resources represent the entities within your Google Ads account.
+Campaign and AdGroup are
+two examples of resources.
+Object IDs
+Every object in Google Ads is identified by its own ID. Some of these IDs are
+globally unique across all Google Ads accounts, while others are unique only within
+a confined scope.
+Object ID
+Scope of uniqueness
+Globally unique?
+Budget ID
+Global
+Yes
+Campaign ID
+Global
+Yes
+AdGroup ID
+Global
+Yes
+Ad ID
+Ad group
+No, but (AdGroupId, AdId) pair is globally unique. Sharing an AdId across multiple ad groups is prohibited.
+AdGroupCriterion ID
+Ad group
+No, but (AdGroupId, CriterionId) pair is globally unique
+CampaignCriterion ID
+Campaign
+No, but (CampaignId, CriterionId) pair is globally unique
+Label ID
+Customer
+No, but (CustomerId, LabelId) pair is globally unique
+UserList ID
+Global
+Yes
+Asset ID
+Global
+Yes
+These ID rules can be useful when designing local storage for your Google Ads
+objects.
+Some objects can be used for multiple entity types. In such cases, the object
+contains a type field that describes its contents. For example,
+AdGroupAd can refer to an object such as a
+responsive search ad, hotel ad, or Demand Gen ad. This value can be accessed
+through the AdGroupAd.ad.type field, and returns a
+value in the AdType enum. Note that
+mutability can vary by version (for example, VideoResponsiveAdInfo on Ad is
+mutable in v24 and later).
+Resource names
+Each resource is uniquely identified by a resource_name string that
+concatenates the resource and its parents into a path. For example, campaign
+resource names have the form:
+customers/customer_id/campaigns/campaign_id
+So for a campaign with ID 987654 in the Google Ads account with customer ID
+1234567, the resource_name would be:
+customers/1234567/campaigns/987654
+Services
+Services let you retrieve and modify your Google Ads entities. There are three types
+of services: modification, object and stat retrieval, and metadata retrieval
+services.
+Modify (mutate) objects
+Resource-specific services modify instances of an associated resource type using
+a mutate request. You can also use
+GoogleAdsService.Mutate to perform atomic
+mutations across multiple resource types in a single request (such as creating a
+campaign budget, campaign, and ad group together).
+Key Point: Retrieve objects and performance data using
+GoogleAdsService with a Google Ads Query Language query.
+Examples of resource-specific services:
+CustomerService for modifying
+customers.
+CampaignService for modifying
+campaigns.
+AdGroupService for modifying
+ad groups.
+Each mutate request must include corresponding operation objects. For
+example, the CampaignService.MutateCampaigns method expects one or more
+instances of CampaignOperation. See
+Change objects for a detailed discussion of
+operations.
+Concurrent mutates
+A Google Ads object cannot be modified concurrently by more than one source. This
+could cause errors to arise if you have multiple users updating the same object
+with your app, or if you're mutating Google Ads objects in parallel using multiple
+threads. This includes updating the object from multiple threads in the same
+application, or from different applications (for example, your app and a
+simultaneous Google Ads UI session).
+The API does not provide a way to lock an object before updating; if two sources
+try to simultaneously mutate an object, the API raises a
+DatabaseError.CONCURRENT_MODIFICATION error.
+Asynchronous versus synchronous mutates
+The Google Ads API mutate methods are synchronous. API calls return a response only
+after the objects are mutated, requiring you to wait for a response to each
+request. While this approach is relatively straightforward to code, it could
+negatively impact load balancing and waste resources if processes are forced to
+wait for calls to complete.
+An alternate approach is to mutate objects asynchronously using
+BatchJobService, which performs batches of
+operations on multiple services without waiting for their completion. Once a
+batch job is submitted, Google Ads API servers execute operations asynchronously,
+freeing processes to perform other operations. You can periodically check the
+job status for completion.
+See the Batch processing guide for more on
+asynchronous processing.
+Mutate validation
+Most mutate requests can be validated without actually executing the call
+against real data. You can test the request for missing parameters and incorrect
+field values without actually executing the operation.
+To use this feature, set the request's optional validate_only boolean field to
+true. The request is fully validated as if it were going to be executed, but
+the final execution is skipped. If no errors are found, the response is returned
+with no mutated results populated (results is empty). If validation fails, the
+request fails with a GoogleAdsFailure RPC
+error by default (partial_failure = false), or returns a normal response with
+operation-specific errors in partial_failure_error when
+partial_failure = true.
+validate_only is particularly useful in testing ads for common policy
+violations. Ads are automatically rejected if they violate policies such as
+having specific words, punctuation, capitalization, or length. A single bad ad
+could cause an entire batch to fail. Testing a new ad within a validate_only
+request can reveal any such violations. Refer to the code example for handling
+policy violation errors to see
+this in action.
+Get objects and performance stats
+GoogleAdsService is the single, unified
+service for retrieving objects and performance statistics.
+All Search and
+SearchStream requests for
+GoogleAdsService require a query that
+specifies the resource to query, the resource attributes and performance metrics
+to retrieve, the predicates to use for filtering the request, and the segments
+to use to further break down performance statistics. For more information about
+query format, see the Google Ads Query Language guide.
+Retrieve metadata
+GoogleAdsFieldService retrieves
+metadata about resources in the Google Ads API, such as the available attributes for a
+resource and its data type. See the Resource metadata
+guide for details on querying this service.
+This service provides information needed in constructing a query to
+GoogleAdsService. For convenience, the
+information returned by
+GoogleAdsFieldService is also available
+in the fields reference documentation.
+Previous
+arrow_back
+Account types
+Next
+Versioning
+arrow_forward
+Send feedback
+Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates.
+Last updated 2026-11-20 UTC.
+Blog
+Visit our blog for important announcements.
+Client Libraries
+Use our officially supported client libraries.
+YouTube
+Watch developer videos and release highlights.
+Discord
+Join the Google Ads Discord server.
+Android
+Chrome
+Firebase
+Google Cloud Platform
+Google AI
+All products
+Terms
+Privacy
+Manage cookies
+English
+Deutsch
+Español
+Español – América Latina
+Français
+Indonesia
+Italiano
+Polski
+Português – Brasil
+Tiếng Việt
+Türkçe
+Русский
+עברית
+العربيّة
+فارسی
+हिंदी
+বাংলা
+ภาษาไทย
+中文 – 简体
+中文 – 繁體
+日本語
+한국어

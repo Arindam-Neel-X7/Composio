@@ -1,0 +1,52 @@
+{
+  "sources": [
+    {
+      "app_id": 86,
+      "url": "https://static.developer.intuit.com/output_html/qbo/docs/api/accounting/all-entities.html",
+      "kind": "primary_docs",
+      "scope": "QuickBooks Online Accounting API; developer sandbox versus production app and company; not Desktop",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Official vendor documentation domain; alternate static export or canonical hostname for previously inaccessible page.",
+      "attribution_by": "codex-task15-researcher"
+    },
+    {
+      "app_id": 89,
+      "url": "https://docs.ramp.com/llms-guides/sandbox-access.txt",
+      "kind": "primary_docs",
+      "scope": "Ramp Developer API and callable MCP; sandbox versus production business; own-account versus partner integrations",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Official vendor documentation domain; alternate static export or canonical hostname for previously inaccessible page.",
+      "attribution_by": "codex-task15-researcher"
+    },
+    {
+      "app_id": 90,
+      "url": "https://www.pitchbook.com/help/PitchBook-api",
+      "kind": "official_product_page",
+      "scope": "PitchBook research/data API and PitchBook Data MCP; commercial integration scope, distinct from Lens portfolio monitoring",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Official vendor documentation domain; alternate static export or canonical hostname for previously inaccessible page.",
+      "attribution_by": "codex-task15-researcher"
+    },
+    {
+      "app_id": 90,
+      "url": "https://www.pitchbook.com/products/pitchbooks-ai-capabilities",
+      "kind": "official_product_page",
+      "scope": "PitchBook research/data API and PitchBook Data MCP; commercial integration scope, distinct from Lens portfolio monitoring",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Official vendor documentation domain; alternate static export or canonical hostname for previously inaccessible page.",
+      "attribution_by": "codex-task15-researcher"
+    }
+  ]
+}

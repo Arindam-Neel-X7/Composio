@@ -1,0 +1,50 @@
+> ## Documentation Index
+> Fetch the complete documentation index at: https://docs.waterfall.io/llms.txt
+> Use this file to discover all available pages before exploring further.
+# Evaluate Waterfall
+> Compare Waterfall on your own inputs: useful results, accurate matches, freshness, and actual cost. Get help planning the test and building your data pipeline.
+Evaluate Waterfall on the job you need the data to do. A useful result matches the right person or company and includes the fields you need for your next step.
+We've spent five years benchmarking data vendors and refining our methodology. We also offer [benchmarking as a service](https://docs.waterfall.io/v1/book-demo.md) if you'd like us to run the evaluation.
+## 1. Define a useful result
+Choose a workflow and its [API](https://docs.waterfall.io/v1/introduction.md):
+* **Replace a provider:** compare what you keep, gain, or lose across your usual records.
+* **Fill gaps:** test records your current provider leaves unresolved. This measures additional coverage, not the match rate across your whole database.
+* **Build a new workflow:** check whether the fields support the action you want to take.
+For signup routing, that might mean the right person, company, and role. For prospecting, it means someone at the target account who fits your role filters and has the contact details you need. Set required fields, an acceptable error rate, a completion-time target, and a spending limit before testing.
+## 2. Use a representative sample
+Use authorized inputs from your real workflow, including common and difficult records. Cover your target countries, roles, and company sizes. Review professional and personal emails separately, along with different identifiers and previously unresolved records.
+Compare providers using the same inputs and criteria. Record settings and dates, and report unsupported inputs separately. Looking up known people and discovering people through search are different tests; use the path you plan to build.
+## 3. Review identity before counting fields
+Check identity first. A complete profile for the wrong person is still a wrong match, even if its email is deliverable.
+| Outcome | Meaning |
+| - | - |
+| Correct and useful | Right entity; required fields meet your criteria. |
+| Correct but incomplete | Right entity; a required field is missing or unsuitable. |
+| Incorrect match | A different person or company. |
+| No result | Completed request with no matching record. |
+| Unresolved | Not enough evidence to judge. |
+| Technical failure | Request did not complete successfully. |
+Keep recent, independent evidence and its review date. Your CRM or current provider can be outdated too; disagreement alone does not show which result is wrong.
+## 4. Measure the fields you will use
+For **one-person or one-company lookups**, divide inputs with a correct, useful result by all attempted inputs. For field coverage, divide inputs with the right entity and a usable value for that field by all attempted inputs. Count each input once.
+For **search**, measure the share of returned records that meet your criteria. For account prospecting, also measure target accounts with at least one useful contact divided by all target accounts. Keep contact and account counts separate. Show counts alongside percentages and split results by input type and segment.
+Freshness depends on the fact: the employer may be right while the title is outdated. A working mailbox does not prove current employment. Request timestamps describe processing, not when each fact was verified. Compare verification status meanings across providers, not just labels.
+## 5. Measure cost per useful result
+Read completed results' `output.usage` and record actual charges, including optional phone enrichment or separate verification. Count each job's cost once, regardless of retrievals. Compare the same required outputs across providers. Use a consistent result unit: resolved inputs for lookups or useful contacts for prospecting.
+```text theme={null}
+Cost per useful result = total evaluation cost / correct and useful results
+```
+With zero useful results, report the spend and zero results. See [Usage Tracking](https://docs.waterfall.io/v1/inline-usage.md).
+For a second provider filling gaps:
+```text theme={null}
+Incremental coverage = newly resolved input records meeting your criteria / previously unresolved input records
+```
+Report this second pass's cost separately. Use unique input records and count each once; duplicates are not additional coverage.
+## 6. Check the whole workflow
+Start small. Measure time to a usable result, including asynchronous completion and retrieval; a successful launch is not a completed lookup. Check slow jobs, record matching, empty results, and failures.
+For agents, check endpoint selection and accurate answers, including when the data is insufficient. Keep some examples aside to check prompt or integration changes.
+## Share a reviewable result
+Save dates, sample size and segments, settings, criteria, outcome counts, completion times, and cost. State which workflow and inputs the results cover.
+## Can Waterfall help structure an evaluation?
+Yes. We help structure tests, review results, and build custom data pipelines. Bring your workflow, inputs, required fields, and the gaps you want to solve. [Talk to our team](mailto:support@waterfall.io) about a test plan, API access, and pricing, or start with the [Quickstart](https://docs.waterfall.io/v1/quickstart.md).
+This documentation is built and hosted on [Mintlify](https://mintlify.com), a developer documentation platform.

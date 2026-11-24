@@ -1,0 +1,43 @@
+Register Client with Zoho | Zoho CRM API | V8
+Register your Application
+Before you get started with authorization and make any calls using the Zoho CRM APIs, you need to register your application with Zoho CRM.
+To register,
+Go to Zoho Developer Console and click on GET STARTED.
+Choose a client type and click CREATE NOW:
+Types of Clients
+Client-based Applications
+Applications that run exclusively on a browser and are independent of web servers.
+Server-based Applications
+Applications that are intended for use by multiple Zoho accounts. This app could be solving a special use case for all Zoho accounts and should have both a dedicated backend server and web UI to handle the authorization process and the app's logic. The app redirects users to Zoho for the authorization process using a web browser. Users grant permission for the app to access their Zoho data on their behalf. The app will consume data for its intended purposes on behalf of the user who authorized the app.
+Mobile-based Applications
+Applications that are built to run on smart phones and tablets.
+Non-browser Mobile Applications
+Applications that run on devices without browsers such as smart TVs and printers.
+Self Client
+Applications that does not have a redirect URL or a web UI, operating solely in the backend without requiring user interaction. A self-client is commonly employed when both the application and Zoho services are managed by the same person, aiming to establish secure communication between them.
+For more details, refer to OAuth Overview.
+For more details on self client and server-based client refer to our Kaizen post: Kaizen #133 - Deciding on the type of applications: Self-client or Server-based?
+Note
+If you don't have a domain name and a redirect URL, you can use dummy values in their place and register your client.
+Enter mandatory entries for corresponding client type and click on CREATE.
+Mandatory Entries for Different Client Types
+The following are the mandatory entries for different client types.
+Client TypeClient NameHomepage URLRedirect URIsJS Domains
+Java ScriptYYYY
+Web-basedYYYNA
+MobileYYYNA
+Self ClientNNNNA
+DeviceYYNNA
+Server-based applications
+Client-based applications
+Self client
+You will receive the client credentials such as Client ID and Client Secret in the Client Secret tab.
+Possible Errors
+Enter a valid client name
+Resolution: The client name has a special character. The client name must not contain any special characters except "_" and "&".
+Enter a valid JavaScript Domain URI
+Resolution: The JavaScript domain is incorrect. Specify valid JavaScript domains, separated by commas, and they must start with 'http'.
+Enter a valid redirect URI
+Resolution: The redirect URI is incorrect. Specify a valid redirect URI in the format "https://www.your-domain.com/callback".
+Enter a valid homepage URL
+Resolution: The homepage URL is invalid. Specify a valid homepage URL in the format "https://www.yourdomain.com".

@@ -1,0 +1,119 @@
+Changelog
+Skip to content
+API
+Guides
+Examples
+No-Code Options
+Support
+Changelog
+SearchCtrl+K
+Login
+Changelog
+Copy
+Copy for LLM
+Copy page as Markdown for LLMs
+View as Markdown
+Open this page as Markdown
+Open in ChatGPT
+Get insights from ChatGPT
+Open in Claude
+Get insights from Claude
+This changelog tracks changes to the Brex API and is updated periodically. Updates to the API are on a rolling basis and not on any defined schedule.
+November 2026
+Team API: Added List roles (GET /v2/roles) and the roles and roles.readonly OAuth scopes. The endpoint lists the custom roles defined for the account.
+Team API: Added display_name to custom field objects returned when load_custom_fields is set.
+Team API: Added role_name to Invite user. Set it to the role's dashboard name, including a custom role's display_name from List roles. When it is omitted, the user is invited as an employee and receives physical and virtual card access by default.
+Team API: Added role_name to Update user. It replaces the user's current role. Their card access is unchanged.
+Team API: Added role_name to user objects returned by the user endpoints. It is the user's role as shown in the Brex dashboard.
+Accounting API: added the new REIMBURSEMENT_PURCHASE_DATE_TOO_OLD enum value to the error_code response property
+Accounting API (Alpha): Published amortization templates, VAT tax codes and tax groups, and Update accounting records. These endpoints are in alpha.
+October 2026
+Expenses API: Added the load_expense_addenda query parameter to the expense endpoints and an addenda array on expense objects, with structured purchase data such as lodging, trip leg, train, and attendee details. Clarified that amounts are keyed by lowercase currency code and that clients should skip addenda with an unrecognized type.
+Expenses API: Added HELD to ExpensePaymentStatus for bill payments on hold until the vendor's new payment method is approved. Added the optional display_name field to custom field objects.
+Payments API: Added imad and omad to transfer objects returned by List transfers, Get transfer, and Create transfer. They are populated for domestic and international wires when available.
+September 2026
+Team API: Added Create user (POST /v2/users/create) to create an inactive employee without sending an invitation.
+Team API: Added update and delete endpoints for departments, locations, and titles.
+Team API: Added List cost centers and Get cost center, including the cost_centers and cost_centers.readonly OAuth scopes.
+Team API: Expanded the statuses accepted by Update user to support archiving and restoring inactive users and deleting invited or inactive users.
+Team API: Added filter query parameters to List users: name, email[], status[], manager_id[], department_id[], location_id[], title_id[], cost_center_id[], legal_entity_id[], and custom_field[]. The legacy singular email and remote_display_id parameters cannot be combined with these filters.
+Team API: Added cost_center_id and legal_entity_id to user objects returned by the List users, Get current user, and Get user endpoints, and as optional fields on Invite user and Update user.
+Team API: Added the load_custom_fields query parameter to List users, Get current user, and Get user, along with a custom_fields array on the user object. This replaces the expand[] query parameter on List users.
+Team API: Removed the Get limit for the user endpoint (GET /v2/users/{id}/limit).
+Team API: Removed the deprecated POST /v2/users/{id}/limit endpoint (setUserLimit); it is no longer supported.
+August 2026
+Travel API: Removed the deprecated INVITED value from the Trip.Status enum; this status is no longer used.
+Travel API: Added policy to booking objects, exposing whether a booking was out of policy and which travel policy rules it violated. This mirrors the policy information available in the booking export.
+Expenses API: Added cost_center_id and the expandable cost_center object to expense objects, and cost_center as an expand option on the expenses endpoints.
+Transactions API: Documented that List primary card transactions may reflect a small lag, and recommended using a lookback window of at least one day when syncing transactions so delayed transactions are not missed.
+July 2026
+Travel API: Added the load_custom_fields query parameter to the list trips, get trip, list bookings, and get booking endpoints, along with a custom_fields array on trip and booking objects.
+Transactions API: Documented the recommended use of an overlapping lookback window on posted_at_start when polling the card and cash transaction endpoints, so that transactions are not missed when a request fails or a transaction posts late.
+June 2026
+Expenses API: Added compliance_status[] and derived_compliance_status[] filters to the List expenses endpoints, allowing expenses that are missing required documentation to be listed.
+April 2026
+MCP Server (Beta): Launched the Brex MCP server. Connect AI assistants like Claude, ChatGPT, Cursor, and Codex to your Brex account. Query expenses, look up users, check card statuses, and more through natural language. Supports OAuth and API key authentication.
+Team API: Added created_at and partner to the card object. card_name is now nullable and is no longer a required property.
+Expenses API: Added card_transaction_reference_id to expense objects, providing a reference identifier for the underlying card transaction.
+Expenses API: Added booking_id field to expense objects, providing the booking ID for trip expenses.
+Expenses API: Added spending_entity and policy as expand options on the List Expenses endpoints.
+Onboarding API: Updated accepted EIN document types to include CP-575 fax sheet.
+March 2026
+Onboarding API: Added new endpoint POST /v1/referrals/{id}/process_ein_document for processing delayed EIN documents after upload.
+Fields API: Added TRAVEL field type to field definitions.
+Webhooks API: Added ACCOUNTING_RECORD_READY_FOR_EXPORT webhook event with schema and documentation.
+Transactions API: Added card_transaction_operation_reference_id field to card transaction objects.
+Team API: Updated secure endpoint URLs to new api.brex.com hostnames.
+February 2026
+Expenses API: Reduced maximum limit parameter from 1000 to 100 for the List Expenses endpoints.
+Updated the API documentation look and feel.
+January 2026
+Accounting API (GA): The core Accounting API is generally available. It covers accounting integrations and accounting records: create, get, list, disconnect, and reactivate an integration, and query, get, and report export results for accounting records.
+Added support for new API hostnames (api.brex.com); the former hostnames will continue to work for the forseeable future.
+December 2025
+Expenses API: Added dashboard_url field to expense objects, providing a direct link to view expenses in the Brex dashboard.
+November 2025
+Accounting API (Alpha): Published the Accounting API reference so ERP partners or customers can discover and integrate with accounting data endpoints.
+Fields API (Beta): Field definition now exposes an optional integration_id and a new ERP field type. This allows API caller to associate an ERP field with specific integration.
+Webhooks API: Expanded WebhookEventType to include ACCOUNTING_RECORD_READY_FOR_EXPORT event type (Alpha).
+May 2025
+Cards API: Updated spend controls documentation with improved nullable property definitions.
+Fields API (alpha): Added official Fields API documentation with comprehensive endpoint specifications, including field creation, updates, and retrieval operations.
+Expenses API: Deprecated Card Expenses API endpoints in favor of consolidated Expenses API endpoints.
+April 2025
+Expenses API: Added documentation for new payment_posted_at_start and payment_posted_at_end filters in the List expenses endpoints, allowing filtering expenses by when payments were posted.
+March 2025
+Expenses API: Updated documentation with latest field additions, including improved custom fields documentation.
+Expenses API: Published new endpoints and added spending_entity documentation to provide better visibility into expense attribution.
+January 2025
+Budgets API: Updated spend limit creation to support legal_entity_id and department_id parameters, allowing expenses to be attributed to specific entities and departments.
+Team API: Added new endpoint to get a legal entity by ID (GET /v2/legal_entities/{id}).
+Repository: Updated CODEOWNERS file to reflect team-specific ownership of different API sections.
+December 2024
+Team API: The Get card number endpoint response object now includes the cardholder name (holder_name).
+Expenses API: The List expenses endpoint request now allows for filtering on the updated_at timestamp of expenses.
+October 2024
+Payments API: New endpoints introduced to create incoming transfers, list bank connections, manage transfers, and manage vendor information.
+Budgets API: Introduced new spend limit and budgets concepts as a new set of API endpoints (v2). The old Spend Limits (v1) API is considered deprecated.
+September 2024
+Team API: The Get card endpoint response object now returns a (has_been_transferred) boolean for a given card.
+Team API: The Create card endpoint response object now accepts an expense policy ID (policy_id) boolean for a given card.
+Expenses API: The Expense object now returns an optional address (has_been_transferred), a payment posted date and a trip ID if relevant to the expense.
+July 2024
+Webhooks: Updated IP whitelist.
+February 2022
+Transactions API: The List cash accounts endpoint response object now includes a primary boolean field indicating whether the cash account is the primary cash account for the Brex account. Every Brex user must have one primary cash account.
+All APIs: Added a new header for tracing with a generic name X-Brex-Trace-Id. Although the previous header X-Datadog-Trace-Id is still in use as of now, we recommend to start using X-Brex-Trace-Id as it is vendor-agnostic and will unlikely change overtime.
+Payments API: Added cancellation_reason into the Transfer response.
+January 2022
+Webhooks API: Added beta support for webhooks. View the webhooks guide for how to get started and the webhooks API reference for supported events and how to use them.
+Team API: Added a monthly_available object to the responses for both the GET and SET methods for user limits
+December 2021
+Payments API: Added the ability to do book transfers between Brex Cash accounts. See counterparty -> type -> BOOK_TRANSFER in the request body for the Create Transfer endpoint
+November 2021
+Transactions API: Added endpoints to read cash transactions and read primary card transactions
+October 2021
+Payments API: Added the ability to filter vendors by name (via encoded query param) for the lists vendors endpoint
+Was this helpful?
+Copyright © Brex LLC 2019–2026. All rights reserved.
+Ask AI

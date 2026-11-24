@@ -1,0 +1,28 @@
+{
+  "sources": [
+    {
+      "app_id": 62,
+      "url": "https://vercel.com/docs/limits/fair-use-guidelines",
+      "kind": "primary_docs",
+      "scope": "Vercel REST API and official Vercel MCP server; hosted account/team resources, Hobby versus paid restrictions; testing and production assessed separately",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor-controlled documentation/product domain or vendor-owned GitHub repository; content inspected after capture",
+      "attribution_by": "task13-codex-research-worker"
+    },
+    {
+      "app_id": 68,
+      "url": "https://www.mongodb.com/docs/atlas/api/api-resources/",
+      "kind": "primary_docs",
+      "scope": "MongoDB Atlas Administration API v2 and official MongoDB MCP Atlas management tools; service accounts/API keys distinct from database connection credentials; free/testing versus production separated",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor-controlled documentation/product domain or vendor-owned GitHub repository; content inspected after capture",
+      "attribution_by": "task13-codex-research-worker"
+    }
+  ]
+}

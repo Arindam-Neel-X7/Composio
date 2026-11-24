@@ -1,0 +1,972 @@
+Squarespace Developer Platform: APIs, Apps, and Docs
+Commerce APIs
+MCP
+Reseller APIs
+Templates
+Custom Code
+Upcoming Changes
+Getting Started
+OverviewAuthentication and permissionsOAuthMaking requestsRetrieve basic site information
+Using Commerce APIs
+Webhooks
+Contacts
+OverviewList contactsgetCreate contactpostQuery contactspostGet contactgetUpdate contactpatchDelete contactdeleteGet address bookgetCreate address book entrypostGet address book entrygetReplace address book entryputDelete address book entrydelete
+Analytics
+Discounts
+Products
+Websites
+Inventory
+Orders
+Transactions
+Profiles
+WebhookSubscriptions
+Schemas
+Menu
+Commerce API
+Commerce API
+Contacts
+Download schema
+Manage customer contacts and address book entries for a website: create, read, update, delete, and query contacts; maintain addresses for shipping and fulfillment.
+List contacts
+GET
+https://api.squarespace.com
+/v1/contacts
+Returns a paginated list of contacts for the website. Requires OAuth website scope website.contacts.read or website.contacts, or API key scope CONTACT_READONLY or CONTACT, or OAuth website scope website.profiles.read or website.profiles (OAuth only).
+List contacts › query Parameters
+pageSize
+​integer · int32 · min: 0 · max: 1000
+number of contacts to retrieve per request
+Default: 50
+cursor
+​string
+where next page of results begins. should be {pagination.nextPageCursor} from previous response.
+List contacts › Headers
+Authorization
+​string · required
+API key or OAuth access token
+Default: Bearer YOUR_API_KEY_OR_OAUTH_TOKEN
+User-Agent
+​string · required
+User Agent
+Default: YOUR_CUSTOM_APP_DESCRIPTION
+List contacts › Responses
+200400403429
+A paginated list of contacts.
+PaginatedGetContactsResponse
+contacts
+​Contact[]
+paginated list of contacts retrieved
+pagination
+​object
+GET/v1/contacts
+curl https://api.squarespace.com/v1/contacts \
+--header 'User-Agent: YOUR_CUSTOM_APP_DESCRIPTION' \
+--header 'Authorization: Bearer <token>'
+cURLJavaScriptPythonJavaGoC#KotlinObjective-CPHPRubySwift
+Example Responses
+200400403429
+{
+"contacts": [
+{
+"createdOn": "2024-08-25T15:00:00Z",
+"defaultShippingAddress": {
+"address": {
+"city": "Springfield",
+"countryCode": "US",
+"firstName": "John",
+"lastName": "Doe",
+"line1": "100 Main St",
+"line2": "Apt 1A",
+"phoneNumber": "215-555-4321",
+"postalCode": "10900",
+"region": "IL"
+},
+"defaultShipping": true,
+"id": "5f8d0d55b54764421b7156aa"
+},
+"firstName": "firstName",
+"id": "64a7e3d2c8f1b95e30a14d2b",
+"lastName": "lastName",
+"locale": "en-US",
+"primaryEmail": {
+"acceptsMarketing": {
+"acceptsMarketing": true,
+"joinedOn": "2024-08-25T15:00:00Z",
+"leftOn": "2024-08-25T15:00:00Z"
+},
+"createdOn": "2024-08-25T15:00:00Z",
+"email": "[email protected]"
+}
+}
+],
+"pagination": {
+"hasNextPage": true,
+"nextPageCursor": "ewogICJhIiA6ICI2OWNhOWExZjgxNGMwYTY0MmIwMTIzYzkiLAogICJiIiA6ICJJRCIKfQ",
+"nextPageUrl": "/v1/contacts?cursor=ewogICJhIiA6ICI2OWNhOWExZjgxNGMwYTY0MmIwMTIzYzkiLAogICJiIiA6ICJJRCIKfQ"
+}
+}
+json
+application/json
+Create contact
+POST
+https://api.squarespace.com
+/v1/contacts
+Creates a new contact. Requires OAuth website scope website.contacts, or API key scope CONTACT, or OAuth website scope website.profiles (OAuth only).
+Create contact › Headers
+Authorization
+​string · required
+API key or OAuth access token
+Default: Bearer YOUR_API_KEY_OR_OAUTH_TOKEN
+User-Agent
+​string · required
+User Agent
+Default: YOUR_CUSTOM_APP_DESCRIPTION
+Create contact › Request Body
+CreateContactRequest
+firstName
+​string · required
+Contact's first name
+Example: john
+lastName
+​string · required
+Contact's last name
+Example: doe
+locale
+​string · required
+Contact's locale
+Example: en-US
+primaryEmail
+​CreateEmail · required
+Primary email supplied when creating a contact.
+Create contact › Responses
+201400403409429
+The created contact.
+CreateContactResponse
+contact
+​Contact
+A contact.
+POST/v1/contacts
+curl https://api.squarespace.com/v1/contacts \
+--request POST \
+--header 'Content-Type: application/json' \
+--header 'User-Agent: YOUR_CUSTOM_APP_DESCRIPTION' \
+--header 'Authorization: Bearer <token>' \
+--data '{
+"firstName": "john",
+"lastName": "doe",
+"locale": "en-US",
+"primaryEmail": {
+"acceptsMarketing": false,
+"email": "[email protected]"
+}
+}'
+cURLJavaScriptPythonJavaGoC#KotlinObjective-CPHPRubySwift
+Example Request Body
+{
+"firstName": "john",
+"lastName": "doe",
+"locale": "en-US",
+"primaryEmail": {
+"acceptsMarketing": false,
+"email": "[email protected]"
+}
+}
+json
+Example Responses
+201400403409429
+{
+"contact": {
+"createdOn": "2024-08-25T15:00:00Z",
+"defaultShippingAddress": {
+"address": {
+"city": "Springfield",
+"countryCode": "US",
+"firstName": "John",
+"lastName": "Doe",
+"line1": "100 Main St",
+"line2": "Apt 1A",
+"phoneNumber": "215-555-4321",
+"postalCode": "10900",
+"region": "IL"
+},
+"defaultShipping": true,
+"id": "5f8d0d55b54764421b7156aa"
+},
+"firstName": "firstName",
+"id": "64a7e3d2c8f1b95e30a14d2b",
+"lastName": "lastName",
+"locale": "en-US",
+"primaryEmail": {
+"acceptsMarketing": {
+"acceptsMarketing": true,
+"joinedOn": "2024-08-25T15:00:00Z",
+"leftOn": "2024-08-25T15:00:00Z"
+},
+"createdOn": "2024-08-25T15:00:00Z",
+"email": "[email protected]"
+}
+}
+}
+json
+application/json
+Query contacts
+POST
+https://api.squarespace.com
+/v1/contacts/query
+Returns a paginated list of contacts matching filters and sort options in the request body. Requires OAuth website scope website.contacts.read or website.contacts, or API key scope CONTACT_READONLY or CONTACT, or OAuth website scope website.profiles.read or website.profiles (OAuth only).
+Query contacts › Headers
+Authorization
+​string · required
+API key or OAuth access token
+Default: Bearer YOUR_API_KEY_OR_OAUTH_TOKEN
+User-Agent
+​string · required
+User Agent
+Default: YOUR_CUSTOM_APP_DESCRIPTION
+Query contacts › Request Body
+QueryContactsRequest
+acceptsMarketingWithDate
+​AcceptsMarketingWithDate
+Contact's marketing settings with joined on date
+cursor
+​string
+The cursor for the next page of results. Use the value of pagination.nextPageCursor from the previous response.
+donationAmount
+​IntegerFilter
+Object for filtering by a min and max integer
+donationCount
+​IntegerFilter
+Object for filtering by a min and max integer
+firstDonationOn
+​DateFilter
+Object for filtering by before and after dates
+firstOrderOn
+​DateFilter
+Object for filtering by before and after dates
+lastDonationOn
+​DateFilter
+Object for filtering by before and after dates
+lastOrderOn
+​DateFilter
+Object for filtering by before and after dates
+orderAmount
+​IntegerFilter
+Object for filtering by a min and max integer
+orderCount
+​IntegerFilter
+Object for filtering by a min and max integer
+pageSize
+​integer · int32 · min: 1 · max: 1000
+The number of contacts to return per request.
+Default: 50
+searchString
+​string
+Search string for Name and Email address
+sortDirection
+​string · enum
+Direction to sort results, ASCENDING or DESCENDING
+Enum values:
+ASCENDING
+DESCENDING
+sortField
+​string · enum
+Field to sort results by
+Enum values:
+ID
+CREATED_ON
+EMAIL
+ACCEPTS_MARKETING_JOINED_ON
+FIRST_NAME
+LAST_NAME
+ORDER_COUNT
+LAST_ORDER_ON
+show 4 more
+Query contacts › Responses
+200400403429
+A paginated list of contacts matching the query.
+PaginatedQueryContactsResponse
+contacts
+​Contact[]
+paginated list of contacts retrieved
+pagination
+​object
+POST/v1/contacts/query
+curl https://api.squarespace.com/v1/contacts/query \
+--request POST \
+--header 'Content-Type: application/json' \
+--header 'User-Agent: YOUR_CUSTOM_APP_DESCRIPTION' \
+--header 'Authorization: Bearer <token>' \
+--data '{
+"acceptsMarketingWithDate": {
+"acceptsMarketing": true,
+"joinedOn": {
+"before": "2025-11-21T10:00:00Z",
+"after": "2020-11-26T14:30:00Z"
+}
+},
+"searchString": "jane",
+"firstOrderOn": {
+"before": "2025-11-21T10:00:00Z",
+"after": "2025-11-26T14:30:00Z"
+},
+"lastOrderOn": {
+"before": "2025-11-21T10:00:00Z",
+"after": "2025-11-26T14:30:00Z"
+},
+"orderCount": {
+"min": 1,
+"max": 10
+},
+"firstDonationOn": {
+"before": "2025-11-21T10:00:00Z",
+"after": "2025-11-26T14:30:00Z"
+},
+"lastDonationOn": {
+"before": "2025-11-21T10:00:00Z",
+"after": "2025-11-26T14:30:00Z"
+},
+"donationCount": {
+"min": 1,
+"max": 10
+},
+"pageSize": 50,
+"cursor": "abc",
+"sortField": "createdOn",
+"sortDirection": "ASCENDING"
+}'
+cURLJavaScriptPythonJavaGoC#KotlinObjective-CPHPRubySwift
+Example Request Body
+{
+"acceptsMarketingWithDate": {
+"acceptsMarketing": true,
+"joinedOn": {
+"before": "2025-11-21T10:00:00Z",
+"after": "2020-11-26T14:30:00Z"
+}
+},
+"searchString": "jane",
+"firstOrderOn": {
+"before": "2025-11-21T10:00:00Z",
+"after": "2025-11-26T14:30:00Z"
+},
+"lastOrderOn": {
+"before": "2025-11-21T10:00:00Z",
+"after": "2025-11-26T14:30:00Z"
+},
+"orderCount": {
+"min": 1,
+"max": 10
+},
+"firstDonationOn": {
+"before": "2025-11-21T10:00:00Z",
+"after": "2025-11-26T14:30:00Z"
+},
+"lastDonationOn": {
+"before": "2025-11-21T10:00:00Z",
+"after": "2025-11-26T14:30:00Z"
+},
+"donationCount": {
+"min": 1,
+"max": 10
+},
+"pageSize": 50,
+"cursor": "abc",
+"sortField": "createdOn",
+"sortDirection": "ASCENDING"
+}
+json
+Example Responses
+200400403429
+{
+"contacts": [
+{
+"createdOn": "2024-08-25T15:00:00Z",
+"defaultShippingAddress": {
+"address": {
+"city": "Springfield",
+"countryCode": "US",
+"firstName": "John",
+"lastName": "Doe",
+"line1": "100 Main St",
+"line2": "Apt 1A",
+"phoneNumber": "215-555-4321",
+"postalCode": "10900",
+"region": "IL"
+},
+"defaultShipping": true,
+"id": "5f8d0d55b54764421b7156aa"
+},
+"firstName": "firstName",
+"id": "64a7e3d2c8f1b95e30a14d2b",
+"lastName": "lastName",
+"locale": "en-US",
+"primaryEmail": {
+"acceptsMarketing": {
+"acceptsMarketing": true,
+"joinedOn": "2024-08-25T15:00:00Z",
+"leftOn": "2024-08-25T15:00:00Z"
+},
+"createdOn": "2024-08-25T15:00:00Z",
+"email": "[email protected]"
+}
+}
+],
+"pagination": {
+"hasNextPage": true,
+"nextPageCursor": "ewogICJhIiA6ICI2OWNhOWExZjgxNGMwYTY0MmIwMTIzYzkiLAogICJiIiA6ICJJRCIKfQ",
+"nextPageUrl": "/v1/contacts?cursor=ewogICJhIiA6ICI2OWNhOWExZjgxNGMwYTY0MmIwMTIzYzkiLAogICJiIiA6ICJJRCIKfQ"
+}
+}
+json
+application/json
+Get contact
+GET
+https://api.squarespace.com
+/v1/contacts/{contactId}
+Returns the contact for the given contact ID. Requires OAuth website scope website.contacts.read or website.contacts, or API key scope CONTACT_READONLY or CONTACT, or OAuth website scope website.profiles.read or website.profiles (OAuth only).
+Get contact › path Parameters
+contactId
+​string · required
+The contact's ID.
+Get contact › Headers
+Authorization
+​string · required
+API key or OAuth access token
+Default: Bearer YOUR_API_KEY_OR_OAUTH_TOKEN
+User-Agent
+​string · required
+User Agent
+Default: YOUR_CUSTOM_APP_DESCRIPTION
+Get contact › Responses
+200403404429
+The requested contact.
+GetContactResponse
+contact
+​Contact
+A contact.
+GET/v1/contacts/{contactId}
+curl https://api.squarespace.com/v1/contacts/:contactId \
+--header 'User-Agent: YOUR_CUSTOM_APP_DESCRIPTION' \
+--header 'Authorization: Bearer <token>'
+cURLJavaScriptPythonJavaGoC#KotlinObjective-CPHPRubySwift
+Example Responses
+200403404429
+{
+"contact": {
+"createdOn": "2024-08-25T15:00:00Z",
+"defaultShippingAddress": {
+"address": {
+"city": "Springfield",
+"countryCode": "US",
+"firstName": "John",
+"lastName": "Doe",
+"line1": "100 Main St",
+"line2": "Apt 1A",
+"phoneNumber": "215-555-4321",
+"postalCode": "10900",
+"region": "IL"
+},
+"defaultShipping": true,
+"id": "5f8d0d55b54764421b7156aa"
+},
+"firstName": "firstName",
+"id": "64a7e3d2c8f1b95e30a14d2b",
+"lastName": "lastName",
+"locale": "en-US",
+"primaryEmail": {
+"acceptsMarketing": {
+"acceptsMarketing": true,
+"joinedOn": "2024-08-25T15:00:00Z",
+"leftOn": "2024-08-25T15:00:00Z"
+},
+"createdOn": "2024-08-25T15:00:00Z",
+"email": "[email protected]"
+}
+}
+}
+json
+application/json
+Update contact
+PATCH
+https://api.squarespace.com
+/v1/contacts/{contactId}
+Updates a contact using JSON merge patch. Requires OAuth website scope website.contacts, or API key scope CONTACT, or OAuth website scope website.profiles (OAuth only).
+Update contact › path Parameters
+contactId
+​string · required
+The contact's ID.
+Update contact › Headers
+Authorization
+​string · required
+API key or OAuth access token
+Default: Bearer YOUR_API_KEY_OR_OAUTH_TOKEN
+User-Agent
+​string · required
+User Agent
+Default: YOUR_CUSTOM_APP_DESCRIPTION
+Update contact › Request Body
+Fields to update on an existing contact.
+PatchContactRequest
+firstName
+​string
+The contact's first name.
+Example: John
+lastName
+​string
+The contact's last name.
+Example: Smith
+locale
+​string
+The contact's locale.
+Example: en-US
+primaryEmail
+​PatchEmail
+Primary email fields for an update request.
+Example: {"email":"[email protected]","acceptsMarketing":true}
+Update contact › Responses
+200400403404409429
+The updated contact.
+PatchContactResponse
+contact
+​Contact
+A contact.
+PATCH/v1/contacts/{contactId}
+curl https://api.squarespace.com/v1/contacts/:contactId \
+--request PATCH \
+--header 'Content-Type: application/merge-patch+json' \
+--header 'User-Agent: YOUR_CUSTOM_APP_DESCRIPTION' \
+--header 'Authorization: Bearer <token>' \
+--data '{
+"firstName": "John",
+"lastName": "Smith",
+"locale": "en-US",
+"primaryEmail": {
+"email": "[email protected]",
+"acceptsMarketing": true
+}
+}'
+cURLJavaScriptPythonJavaGoC#KotlinObjective-CPHPRubySwift
+Example Request Body
+{
+"firstName": "John",
+"lastName": "Smith",
+"locale": "en-US",
+"primaryEmail": {
+"email": "[email protected]",
+"acceptsMarketing": true
+}
+}
+json
+Example Responses
+200400403404409429
+{
+"contact": {
+"createdOn": "2024-08-25T15:00:00Z",
+"defaultShippingAddress": {
+"address": {
+"city": "Springfield",
+"countryCode": "US",
+"firstName": "John",
+"lastName": "Doe",
+"line1": "100 Main St",
+"line2": "Apt 1A",
+"phoneNumber": "215-555-4321",
+"postalCode": "10900",
+"region": "IL"
+},
+"defaultShipping": true,
+"id": "5f8d0d55b54764421b7156aa"
+},
+"firstName": "firstName",
+"id": "64a7e3d2c8f1b95e30a14d2b",
+"lastName": "lastName",
+"locale": "en-US",
+"primaryEmail": {
+"acceptsMarketing": {
+"acceptsMarketing": true,
+"joinedOn": "2024-08-25T15:00:00Z",
+"leftOn": "2024-08-25T15:00:00Z"
+},
+"createdOn": "2024-08-25T15:00:00Z",
+"email": "[email protected]"
+}
+}
+}
+json
+application/json
+Delete contact
+DELETE
+https://api.squarespace.com
+/v1/contacts/{contactId}
+Deletes the contact for the given contact ID. Requires OAuth website scope website.contacts, or API key scope CONTACT, or OAuth website scope website.profiles (OAuth only).
+Delete contact › path Parameters
+contactId
+​string · required
+The contact's ID.
+Delete contact › Headers
+Authorization
+​string · required
+API key or OAuth access token
+Default: Bearer YOUR_API_KEY_OR_OAUTH_TOKEN
+User-Agent
+​string · required
+User Agent
+Default: YOUR_CUSTOM_APP_DESCRIPTION
+Delete contact › Responses
+204403404429
+No content.
+No data returned
+DELETE/v1/contacts/{contactId}
+curl https://api.squarespace.com/v1/contacts/:contactId \
+--request DELETE \
+--header 'User-Agent: YOUR_CUSTOM_APP_DESCRIPTION' \
+--header 'Authorization: Bearer <token>'
+cURLJavaScriptPythonJavaGoC#KotlinObjective-CPHPRubySwift
+Example Responses
+204403404429
+No example specified for this content type
+Get address book
+GET
+https://api.squarespace.com
+/v1/contacts/{contactId}/address-book
+Returns paginated addresses for the contact. When there is at least one entry, exactly one is the default shipping address (defaultShippingAddressId and each entry's defaultShipping reflect this). The default shipping address (when present) is always included on the first page of results. Requires OAuth website scope website.contacts.read or website.contacts, or API key scope CONTACT_READONLY or CONTACT, or OAuth website scope website.profiles.read or website.profiles (OAuth only).
+Get address book › path Parameters
+contactId
+​string · required
+The contact's ID.
+Get address book › query Parameters
+pageSize
+​integer · int32 · min: 0 · max: 1000
+number of contacts to retrieve per request
+Default: 50
+cursor
+​string
+where next page of results begins. should be {pagination.nextPageCursor} from previous response.
+Get address book › Headers
+Authorization
+​string · required
+API key or OAuth access token
+Default: Bearer YOUR_API_KEY_OR_OAUTH_TOKEN
+User-Agent
+​string · required
+User Agent
+Default: YOUR_CUSTOM_APP_DESCRIPTION
+Get address book › Responses
+200403404429
+Paginated list of the contact's addresses. When there is at least one entry, the first page always includes the default shipping address, and defaultShippingAddressId identifies it. On later pages, addressBookEntries is the next slice only; defaultShippingAddressId is present only when the default shipping entry appears in that slice.
+GetAddressBookResponse
+addressBook
+​AddressBook
+Address settings for a contact. When there is at least one address book entry, exactly one is the default shipping address; default shipping address is always returned on the first page of paginated results).
+pagination
+​PaginationDetails
+GET/v1/contacts/{contactId}/address-book
+curl https://api.squarespace.com/v1/contacts/:contactId/address-book \
+--header 'User-Agent: YOUR_CUSTOM_APP_DESCRIPTION' \
+--header 'Authorization: Bearer <token>'
+cURLJavaScriptPythonJavaGoC#KotlinObjective-CPHPRubySwift
+Example Responses
+200403404429
+{
+"addressBook": {
+"addressBookEntries": [
+{
+"address": {
+"city": "Springfield",
+"countryCode": "US",
+"firstName": "John",
+"lastName": "Doe",
+"line1": "100 Main St",
+"line2": "Apt 1A",
+"phoneNumber": "215-555-4321",
+"postalCode": "10900",
+"region": "IL"
+},
+"defaultShipping": true,
+"id": "5f8d0d55b54764421b7156aa"
+}
+],
+"defaultShippingAddressId": "defaultShippingAddressId"
+},
+"pagination": {
+"hasNextPage": true,
+"nextPageCursor": "nextPageCursor",
+"nextPageUrl": "nextPageUrl"
+}
+}
+json
+application/json
+Create address book entry
+POST
+https://api.squarespace.com
+/v1/contacts/{contactId}/address-book
+Creates a new address book entry for the contact. If this is the contact's only address book entry after creation, it becomes the default shipping address even when defaultShipping is false. Requires OAuth website scope website.contacts, or API key scope CONTACT, or OAuth website scope website.profiles (OAuth only).
+Create address book entry › path Parameters
+contactId
+​string · required
+The contact's ID.
+Create address book entry › Headers
+Authorization
+​string · required
+API key or OAuth access token
+Default: Bearer YOUR_API_KEY_OR_OAUTH_TOKEN
+User-Agent
+​string · required
+User Agent
+Default: YOUR_CUSTOM_APP_DESCRIPTION
+Create address book entry › Request Body
+CreateAddressBookEntryRequest
+address
+​ContactAddress · required
+Address properties for a contact.
+defaultShipping
+​boolean
+Whether this entry should be the default shipping address. If this is the only address book entry for the contact after creation, it becomes the default even when set to false.
+Create address book entry › Responses
+201400403404429
+The created address book entry.
+CreateAddressBookEntryResponse
+addressBookEntry
+​AddressBookEntry
+An address book entry for a contact.
+POST/v1/contacts/{contactId}/address-book
+curl https://api.squarespace.com/v1/contacts/:contactId/address-book \
+--request POST \
+--header 'Content-Type: application/json' \
+--header 'User-Agent: YOUR_CUSTOM_APP_DESCRIPTION' \
+--header 'Authorization: Bearer <token>' \
+--data '{
+"address": {
+"city": "Springfield",
+"countryCode": "US",
+"firstName": "John",
+"lastName": "Doe",
+"line1": "100 Main St",
+"line2": "Apt 1A",
+"phoneNumber": "215-555-4321",
+"postalCode": "10900",
+"region": "IL"
+},
+"defaultShipping": true
+}'
+cURLJavaScriptPythonJavaGoC#KotlinObjective-CPHPRubySwift
+Example Request Body
+{
+"address": {
+"city": "Springfield",
+"countryCode": "US",
+"firstName": "John",
+"lastName": "Doe",
+"line1": "100 Main St",
+"line2": "Apt 1A",
+"phoneNumber": "215-555-4321",
+"postalCode": "10900",
+"region": "IL"
+},
+"defaultShipping": true
+}
+json
+Example Responses
+201400403404429
+{
+"addressBookEntry": {
+"address": {
+"city": "Springfield",
+"countryCode": "US",
+"firstName": "John",
+"lastName": "Doe",
+"line1": "100 Main St",
+"line2": "Apt 1A",
+"phoneNumber": "215-555-4321",
+"postalCode": "10900",
+"region": "IL"
+},
+"defaultShipping": true,
+"id": "5f8d0d55b54764421b7156aa"
+}
+}
+json
+application/json
+Get address book entry
+GET
+https://api.squarespace.com
+/v1/contacts/{contactId}/address-book/{addressBookEntryId}
+Returns a single address book entry for the contact. Requires OAuth website scope website.contacts.read or website.contacts, or API key scope CONTACT_READONLY or CONTACT, or OAuth website scope website.profiles.read or website.profiles (OAuth only).
+Get address book entry › path Parameters
+contactId
+​string · required
+The contact's ID.
+addressBookEntryId
+​string · required
+The address book entry's ID.
+Get address book entry › Headers
+Authorization
+​string · required
+API key or OAuth access token
+Default: Bearer YOUR_API_KEY_OR_OAUTH_TOKEN
+User-Agent
+​string · required
+User Agent
+Default: YOUR_CUSTOM_APP_DESCRIPTION
+Get address book entry › Responses
+200403404429
+The requested address book entry.
+GetAddressBookEntryResponse
+addressBookEntry
+​AddressBookEntry
+An address book entry for a contact.
+GET/v1/contacts/{contactId}/address-book/{addressBookEntryId}
+curl https://api.squarespace.com/v1/contacts/:contactId/address-book/:addressBookEntryId \
+--header 'User-Agent: YOUR_CUSTOM_APP_DESCRIPTION' \
+--header 'Authorization: Bearer <token>'
+cURLJavaScriptPythonJavaGoC#KotlinObjective-CPHPRubySwift
+Example Responses
+200403404429
+{
+"addressBookEntry": {
+"address": {
+"city": "Springfield",
+"countryCode": "US",
+"firstName": "John",
+"lastName": "Doe",
+"line1": "100 Main St",
+"line2": "Apt 1A",
+"phoneNumber": "215-555-4321",
+"postalCode": "10900",
+"region": "IL"
+},
+"defaultShipping": true,
+"id": "5f8d0d55b54764421b7156aa"
+}
+}
+json
+application/json
+Replace address book entry
+PUT
+https://api.squarespace.com
+/v1/contacts/{contactId}/address-book/{addressBookEntryId}
+Replaces an address book entry for the contact with a full JSON body. When updating the entry that is currently the default, setting "defaultShipping" from true to false has no effect. Requires OAuth website scope website.contacts, or API key scope CONTACT, or OAuth website scope website.profiles (OAuth only).
+Replace address book entry › path Parameters
+contactId
+​string · required
+The contact's ID.
+addressBookEntryId
+​string · required
+The address book entry's ID.
+Replace address book entry › Headers
+Authorization
+​string · required
+API key or OAuth access token
+Default: Bearer YOUR_API_KEY_OR_OAUTH_TOKEN
+User-Agent
+​string · required
+User Agent
+Default: YOUR_CUSTOM_APP_DESCRIPTION
+Replace address book entry › Request Body
+UpdateAddressBookEntryRequest
+address
+​ContactAddress · required
+Address properties for a contact.
+defaultShipping
+​boolean
+Whether this entry should be the default shipping address. When updating the entry that is currently the default, changing this value from true to false has no effect.
+Replace address book entry › Responses
+200400403404429
+The updated address book entry.
+UpdateAddressBookEntryResponse
+addressBookEntry
+​AddressBookEntry
+An address book entry for a contact.
+PUT/v1/contacts/{contactId}/address-book/{addressBookEntryId}
+curl https://api.squarespace.com/v1/contacts/:contactId/address-book/:addressBookEntryId \
+--request PUT \
+--header 'Content-Type: application/json' \
+--header 'User-Agent: YOUR_CUSTOM_APP_DESCRIPTION' \
+--header 'Authorization: Bearer <token>' \
+--data '{
+"address": {
+"city": "Springfield",
+"countryCode": "US",
+"firstName": "John",
+"lastName": "Doe",
+"line1": "100 Main St",
+"line2": "Apt 1A",
+"phoneNumber": "215-555-4321",
+"postalCode": "10900",
+"region": "IL"
+},
+"defaultShipping": true
+}'
+cURLJavaScriptPythonJavaGoC#KotlinObjective-CPHPRubySwift
+Example Request Body
+{
+"address": {
+"city": "Springfield",
+"countryCode": "US",
+"firstName": "John",
+"lastName": "Doe",
+"line1": "100 Main St",
+"line2": "Apt 1A",
+"phoneNumber": "215-555-4321",
+"postalCode": "10900",
+"region": "IL"
+},
+"defaultShipping": true
+}
+json
+Example Responses
+200400403404429
+{
+"addressBookEntry": {
+"address": {
+"city": "Springfield",
+"countryCode": "US",
+"firstName": "John",
+"lastName": "Doe",
+"line1": "100 Main St",
+"line2": "Apt 1A",
+"phoneNumber": "215-555-4321",
+"postalCode": "10900",
+"region": "IL"
+},
+"defaultShipping": true,
+"id": "5f8d0d55b54764421b7156aa"
+}
+}
+json
+application/json
+Delete address book entry
+DELETE
+https://api.squarespace.com
+/v1/contacts/{contactId}/address-book/{addressBookEntryId}
+Deletes the address book entry for the contact. If the deleted entry was the default shipping address, another entry is assigned as the default. Requires OAuth website scope website.contacts, or API key scope CONTACT, or OAuth website scope website.profiles (OAuth only).
+Delete address book entry › path Parameters
+contactId
+​string · required
+The contact's ID.
+addressBookEntryId
+​string · required
+The address book entry's ID.
+Delete address book entry › Headers
+Authorization
+​string · required
+API key or OAuth access token
+Default: Bearer YOUR_API_KEY_OR_OAUTH_TOKEN
+User-Agent
+​string · required
+User Agent
+Default: YOUR_CUSTOM_APP_DESCRIPTION
+Delete address book entry › Responses
+204403404429
+No content.
+No data returned
+DELETE/v1/contacts/{contactId}/address-book/{addressBookEntryId}
+curl https://api.squarespace.com/v1/contacts/:contactId/address-book/:addressBookEntryId \
+--request DELETE \
+--header 'User-Agent: YOUR_CUSTOM_APP_DESCRIPTION' \
+--header 'Authorization: Bearer <token>'
+cURLJavaScriptPythonJavaGoC#KotlinObjective-CPHPRubySwift
+Example Responses
+204403404429
+No example specified for this content type
+Extension uninstallAnalytics

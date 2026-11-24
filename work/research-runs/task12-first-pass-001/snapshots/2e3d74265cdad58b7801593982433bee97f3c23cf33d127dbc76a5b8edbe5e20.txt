@@ -1,0 +1,33 @@
+> ## Documentation Index
+> Fetch the complete documentation index at: https://developers.clay.com/llms.txt
+> Use this file to discover all available pages before exploring further.
+# Give an agent access to a Clay function
+> Let an agent call Clay-managed or custom functions from its normal workflow.
+Use this pattern when you want Claude Code, Codex, or Cursor to call a Clay function for structured GTM data.
+## 1. Install the Clay plugin
+The Clay plugin gives agents Clay's skills and the `clay` CLI.
+> [card] [Quickstart](https://developers.clay.com/quickstart.md#agent-plugin)
+>
+> Install the plugin and sign in.
+## 2. Choose a function
+Use a Clay-managed function for common jobs like finding emails or enriching companies. Use a custom function when your team already has Clay logic it wants agents to call.
+> [card] [Routines](https://developers.clay.com/routines.md)
+>
+> Compare Clay-managed functions, custom functions, and Workflows.
+## 3. Expose the function
+For custom functions:
+1. Open [Functions](https://app.clay.com/functions).
+2. Select the function.
+3. Open **Details**.
+4. Enable **API** so the plugin CLI can run it.
+5. Enable **MCP** only if a separate MCP client (not the plugin) should call it.
+Publishing alone does not enable MCP access. Both listing and running a function by id require it. See [function access settings](https://developers.clay.com/routines/custom-functions.md#expose-a-function) and [MCP troubleshooting](https://developers.clay.com/routines/custom-functions.md#access-a-published-function-through-mcp).
+## 4. Let the agent call it
+After setup, the agent discovers and runs the function through the plugin's routines skill. Keep the input schema tight and the output predictable.
+Good functions for agents:
+* Find a person's work email.
+* Enrich a company by domain.
+* Score an inbound lead.
+* Summarize account research.
+* Route a lead to the right owner or motion.
+This documentation is built and hosted on [Mintlify](https://mintlify.com), a developer documentation platform.

@@ -1,0 +1,344 @@
+{
+  "task": "01",
+  "title": "Intake audit",
+  "audited_on": "2026-11-23",
+  "status": "complete_with_downstream_blockers",
+  "workspace": "C:\\Users\\User\\Documents\\Codex\\2026-11-23\\referenced-chatgpt-conversation-this-is-an",
+  "scope": {
+    "only_intake_audit": true,
+    "research_or_fetch_executed": false,
+    "publication_attempted": false,
+    "packages_installed": false,
+    "files_changed": [
+      "work/intake-audit.md",
+      "work/intake-audit.json"
+    ]
+  },
+  "sources": {
+    "original_assignment": {
+      "conversation_id": "6b040c23-d88c-83ee-859a-e3991822cd40",
+      "method": "Read original user assignment via read_thread; normalize Markdown links and whitespace in app names.",
+      "all_turns_available": true
+    },
+    "files": [
+      "research_agent.py",
+      "verify_sample.py",
+      "build_html.py",
+      "README.md",
+      "artifacts/research_results.json",
+      "artifacts/research_results.csv",
+      "artifacts/verification_ledger.json",
+      "index.html",
+      "dist/index.html",
+      ".openai/hosting.json",
+      "outputs/research_agent.py",
+      "outputs/verify_sample.py",
+      "outputs/build_html.py",
+      "outputs/README.md",
+      "outputs/index.html",
+      "outputs/artifacts/research_results.json",
+      "outputs/artifacts/research_results.csv",
+      "outputs/artifacts/verification_ledger.json"
+    ],
+    "method": "Read-only source inspection, JSON/CSV parsing, roster comparison and SHA-256 copy comparison; no original pipeline scripts run."
+  },
+  "roster": {
+    "source_records": 100,
+    "source_unique_apps": 100,
+    "json_records": 100,
+    "json_unique_apps": 100,
+    "csv_records": 100,
+    "unique_ids": 100,
+    "id_range": [
+      1,
+      100
+    ],
+    "missing_ids": [],
+    "extra_ids": [],
+    "duplicate_ids": [],
+    "duplicate_app_names": [],
+    "original_assignment_apps": 100,
+    "original_name_matches": 100,
+    "name_or_order_mismatches": [],
+    "source_json_identity_mismatches": [],
+    "csv_identity_mismatches": [],
+    "categories": [
+      {
+        "category": "CRM and Sales",
+        "count": 10,
+        "id_min": 1,
+        "id_max": 10
+      },
+      {
+        "category": "Support and Helpdesk",
+        "count": 10,
+        "id_min": 11,
+        "id_max": 20
+      },
+      {
+        "category": "Communications and Messaging",
+        "count": 10,
+        "id_min": 21,
+        "id_max": 30
+      },
+      {
+        "category": "Marketing, Ads, Email and Social",
+        "count": 10,
+        "id_min": 31,
+        "id_max": 40
+      },
+      {
+        "category": "Ecommerce",
+        "count": 10,
+        "id_min": 41,
+        "id_max": 50
+      },
+      {
+        "category": "Data, SEO and Scraping",
+        "count": 10,
+        "id_min": 51,
+        "id_max": 60
+      },
+      {
+        "category": "Developer, Infra and Data platforms",
+        "count": 10,
+        "id_min": 61,
+        "id_max": 70
+      },
+      {
+        "category": "Productivity and Project Management",
+        "count": 10,
+        "id_min": 71,
+        "id_max": 80
+      },
+      {
+        "category": "Finance and Fintech",
+        "count": 10,
+        "id_min": 81,
+        "id_max": 90
+      },
+      {
+        "category": "AI, Research and Media-native",
+        "count": 10,
+        "id_min": 91,
+        "id_max": 100
+      }
+    ],
+    "category_names_and_id_blocks_match_original": true
+  },
+  "fields": [
+    {
+      "field": "id, app, category",
+      "classification": "assignment_supported",
+      "records": 100,
+      "detail": "Identity and category membership match the original assignment; this establishes intake integrity only."
+    },
+    {
+      "field": "what_it_does",
+      "classification": "placeholder",
+      "records": 100,
+      "detail": "Every value is 'Needs one-line product description; kept as a separate human-editable field.'"
+    },
+    {
+      "field": "auth",
+      "classification": "hardcoded_hypothesis",
+      "records": 100,
+      "detail": "OAUTH membership takes precedence over APIKEY membership, otherwise default Token / app credentials; no document extraction; cannot faithfully represent multiple auth methods.",
+      "stored_value_counts": {
+        "OAuth2": 43,
+        "API key / token": 27,
+        "Token / app credentials": 30
+      }
+    },
+    {
+      "field": "access",
+      "classification": "hardcoded_hypothesis",
+      "records": 100,
+      "detail": "GATED membership assigns a combined likely partner/plan/admin gate; default self-serve is also a hypothesis; no free/trial/production requirements established.",
+      "stored_value_counts": {
+        "partner / plan / admin gate likely": 20,
+        "self-serve path likely; verify plan limits": 80
+      }
+    },
+    {
+      "field": "api_surface",
+      "classification": "placeholder_with_hardcoded_mcp_suffix",
+      "records": 100,
+      "detail": "Generic candidate text; no REST/GraphQL classification, endpoint breadth or operation evidence."
+    },
+    {
+      "field": "mcp",
+      "classification": "hardcoded_hypothesis",
+      "records": 100,
+      "detail": "Fixed set yields 12 true and 88 false; neither proves availability or absence; official/community status, server URLs and tool tests absent.",
+      "stored_value_counts": {
+        "true": 12,
+        "false": 88
+      }
+    },
+    {
+      "field": "buildability",
+      "classification": "hardcoded_hypothesis",
+      "records": 100,
+      "detail": "GATED membership alone determines verdict; 80 toolkit candidate, 20 toolkit candidate with access blocker; no app-specific supported blocker."
+    },
+    {
+      "field": "evidence_url",
+      "classification": "candidate_source_only",
+      "records": 100,
+      "detail": "One static URL per app; no claim-to-source mapping, supporting section, quote/paraphrase or content snapshot. URLs differ from some original hints and need identity validation."
+    },
+    {
+      "field": "evidence_status, checked_at, http_status, resolved_url",
+      "classification": "recorded_fetch_telemetry_only",
+      "records": 100,
+      "detail": "Stored fetch outcomes support a statement about that saved run, not factual claims about app APIs or current network availability."
+    },
+    {
+      "field": "notes",
+      "classification": "boilerplate",
+      "records": 100,
+      "detail": "Common warning about automated classification; no app-specific research."
+    }
+  ],
+  "evidence": {
+    "externally_documented_app_claims_supported_by_saved_content": 0,
+    "records_with_substantive_claim_evidence": 0,
+    "source_urls_are_not_claim_evidence": true,
+    "fetch_run": {
+      "checked_at": "2026-11-23",
+      "unreachable_candidate_records": 100,
+      "null_http_status_records": 100,
+      "recorded_error": "<urlopen error [Errno 11001] getaddrinfo failed>",
+      "records_with_this_error": 100,
+      "interpretation": "Saved name-resolution failures. Root cause and current connectivity not established; no claim accuracy measurement."
+    }
+  },
+  "verification": {
+    "ledger_sample_size": 12,
+    "sample_ids": [
+      2,
+      21,
+      27,
+      35,
+      41,
+      55,
+      56,
+      61,
+      71,
+      74,
+      81,
+      92
+    ],
+    "sample_apps": [
+      {
+        "id": 2,
+        "app": "HubSpot"
+      },
+      {
+        "id": 21,
+        "app": "Slack"
+      },
+      {
+        "id": 27,
+        "app": "Telegram"
+      },
+      {
+        "id": 35,
+        "app": "Mailchimp"
+      },
+      {
+        "id": 41,
+        "app": "Shopify"
+      },
+      {
+        "id": 55,
+        "app": "Apify"
+      },
+      {
+        "id": 56,
+        "app": "Firecrawl"
+      },
+      {
+        "id": 61,
+        "app": "GitHub"
+      },
+      {
+        "id": 71,
+        "app": "Notion"
+      },
+      {
+        "id": 74,
+        "app": "Jira"
+      },
+      {
+        "id": 81,
+        "app": "Stripe"
+      },
+      {
+        "id": 92,
+        "app": "Otter AI"
+      }
+    ],
+    "pending": 12,
+    "completed": 0,
+    "categories_covered": 9,
+    "missing_categories": [
+      "Support and Helpdesk"
+    ],
+    "sample_method": "Fixed ID list; labeled stratified in README/HTML, but no sampling procedure or full category coverage.",
+    "human_checks_evidenced": 0,
+    "agent_or_browser_claim_checks_evidenced": 0,
+    "accuracy": null,
+    "first_pass_accuracy": null,
+    "corrected_accuracy": null,
+    "accuracy_improvement": null,
+    "reason": "No adjudicated claims or denominator; no before/after evaluation artifacts."
+  },
+  "publication": {
+    "basis": "Local files only; no external GitHub or hosting checks performed.",
+    "local_html": [
+      "index.html",
+      "dist/index.html",
+      "outputs/index.html"
+    ],
+    "html_copies_byte_identical": true,
+    "output_source_archive_exists": true,
+    "archive_contents_audited": false,
+    "hosting_config": {
+      "path": ".openai/hosting.json",
+      "project_id": "appgprj_6b040e5b3768819193392c23590d7d81",
+      "static_directory": "dist"
+    },
+    "workspace_root_git_entry_present": false,
+    "source_repository_url_found_in_inspected_deliverables": false,
+    "live_case_study_url_found_in_inspected_deliverables": false,
+    "deployment_receipt_found": false,
+    "github_repository_outcome": "unknown_from_files",
+    "live_publication_outcome": "unknown_from_files",
+    "interpretation": "Hosting configuration and local dist output do not establish registration, publication success, failure or live reachability."
+  },
+  "copy_integrity": {
+    "root_outputs_matching_pairs": 7,
+    "pairs": [
+      "research_agent.py",
+      "verify_sample.py",
+      "build_html.py",
+      "README.md",
+      "artifacts/research_results.json",
+      "artifacts/research_results.csv",
+      "artifacts/verification_ledger.json"
+    ],
+    "method": "SHA-256",
+    "html_matching_copies": 3
+  },
+  "blockers": [
+    "No substantive per-field documentary evidence or content retrieval/extraction in the implemented pipeline.",
+    "All 100 product descriptions and API breadth entries remain placeholders; all substantive classifications remain hypotheses.",
+    "App identity needs validation where candidate URLs replace ambiguous original hints, especially Paygent Connect (original NMI-powered hint versus paygentglobal.com candidate).",
+    "All 12 checks pending; no defensible accuracy denominator, first-pass/corrected comparison or independent human review; Support and Helpdesk absent from sample.",
+    "research_agent.py overwrites research outputs; verify_sample.py overwrites ledger with pending entries; no persisted correction history or enforced evidence promotion.",
+    "No saved source repository URL, live case-study URL or deployment receipt establishes publication."
+  ],
+  "conclusion": "Task 01 intake passes roster integrity. Assignment research, verification and publication remain unsubstantiated by the saved artifacts."
+}

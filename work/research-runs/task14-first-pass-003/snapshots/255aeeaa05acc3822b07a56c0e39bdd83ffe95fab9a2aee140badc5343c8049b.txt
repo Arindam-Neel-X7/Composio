@@ -1,0 +1,212 @@
+MCP Server Setup Instructions
+For AI agents: the docs index is at https://developer.clickup.com/llms.txt. Append .md to any documentation page URL to get its markdown version.
+Jump to Content
+HomeGuidesAPI Docs
+Guides
+Jump to Content
+HomeGuidesAPI Docs
+MCP Server Setup Instructions
+Getting Started
+Authentication
+Try the API in your web browser
+General
+ClickUp API v2 and v3 Terminology
+Rate Limits
+API availability by Plan
+Date formatting
+OpenAPI Specification
+MCP
+ClickUp's MCP Server
+MCP Server Setup Instructions
+Supported Tools
+Tasks
+Tasks
+Attachments
+Move a task to a new List
+Custom Task Types
+Custom Fields
+Custom Fields
+Filter tasks using Custom Fields
+Range operator with Custom Fields
+Views
+Views
+Filter Views
+Communication
+Comments
+Chat
+Comment formatting
+Task comments pagination
+Docs
+Docs API limitation
+Webhooks
+Webhooks
+Webhook signature
+Webhook health status
+Space webhook payloads
+Folder webhook payloads
+List webhook payloads
+Task webhook payloads
+Automation Call webhook payload
+Goal and Target webhook payloads
+Automation Call webhook Legacy payload
+FAQ
+Frequently asked questions
+Common Errors
+MCP Server Setup Instructions
+Learn how to setup your AI assistant with ClickUp's MCP server.
+Setup instructions
+Below are the setup instructions for some of the most popular AI assistants.
+Claude
+Set up Claude to use the ClickUp MCP server!
+Pro, Team, Enterprise
+If you're on the Pro, Team, or Enterprise plan:
+In a browser or the desktop app, navigate to Settings in the sidebar.
+Scroll to Connectors at the bottom and click Add.
+In the prompt, enter the following:
+Name: ClickUp
+Remote MCP Server URL: https://mcp.clickup.com/mcp
+Free
+If you're on the Free plan of Claude, you'll set up the MCP server from the Claude desktop app:
+Go to your Claude desktop settings page.
+Click on Developer section.
+Click on edit config then open the claude_desktop_config.json with your editor of choice.
+Add the following and restart the Claude desktop app:
+JSON
+{
+"mcpServers": {
+"clickup": {
+"command": "npx",
+"args": ["-y", "mcp-remote", "https://mcp.clickup.com/mcp"]
+}
+}
+}
+Claude Code
+Use the follow command: claude mcp add --transport http clickup https://mcp.clickup.com/mcp
+Once you've opened a Claude Code session, run /mcp to go through the authentication flow.
+Cursor
+Install here, or from Cursor's MCP directory page.
+Manual installation
+To manually set up Cursor for the ClickUp MCP server, add the following to your mcp.json file:
+JSON
+{
+"mcpServers": {
+"clickup": {
+"url": "https://mcp.clickup.com/mcp"
+}
+}
+}
+Devin
+Set up Devin to use the ClickUp MCP Server.
+Manual installation
+Open your Devin settings.
+Navigate to the MCP Marketplace.
+Click the button to Add your own MCP.
+Enter a name for the server (e.g., "ClickUp").
+Set the Transport Type to HTTP.
+Enter a short description.
+Paste the following link into the Server URL field: https://mcp.clickup.com/mcp
+For Authentication, select OAuth.
+Enable the server.
+The first time you use the integration, Devin will attempt to connect and ask for authorization. Click the link provided to authorize your ClickUp workspace.
+Microsoft Copilot Studio
+Set up Microsoft Copilot Studio to use the ClickUp MCP Server.
+Manual installation
+Open Microsoft Copilot Studio and navigate to your Agent.
+Scroll down to the Tools section.
+Click Add Tool.
+Then click New tool
+Select Model Context Protocol.
+Enter a Name for the tool, such as ClickUp
+Enter a short Description for the tool.
+Paste the Server URL: https://mcp.clickup.com/mcp
+For Authentication, select OAuth.
+Ensure the configuration is set to Dynamic Discovery (DCR).
+Click Create to finish setting up the tool.
+VS Code
+Set up VS Code to use the ClickUp MCP server!
+Manual installation
+To manually set up VS Code for the ClickUp MCP server, open a terminal and run the following command:
+code --add-mcp '{"type":"http","name":"clickup","url":"https://mcp.clickup.com/mcp"}'
+Then, from inside VS Code, go to your extensions section.
+You will find ClickUp MCP at the bottom of the list of MCP servers.
+Click the settings cogwheel on the ClickUp MCP and click Start Server.
+Follow the links to finish the authentication flow.
+Windsurf
+To set up Windsurf for the ClickUp MCP server:
+Press Ctrl + , on Windows or Cmd + , on Mac to open your Windsurf settings.
+Under Scroll to Cascade, click MCP servers.
+Click Add Server, then select Add custom server.
+Copy the following JSON to your Windsurf MCP config file:
+JSON
+{
+"mcpServers": {
+"clickup": {
+"serverUrl": "https://mcp.clickup.com/mcp"
+}
+}
+}
+ChatGPT
+🔓
+Note: In Team, Enterprise, and Edu workspaces, only owners and admins have permission to configure MCP servers.
+Use the ClickUp MCP app in ChatGPT. Learn more
+To connect the ClickUp app from ChatGPT:
+Navigate to Apps.
+Search for ClickUp, or browse the Productivity category.
+Select ClickUp, then click Connect.
+Click Connect ClickUp.
+Sign into your ClickUp account, and select the Workspace(s) you want to use with ChatGPT.
+🔁
+Note: You can update the available Workspaces or ClickUp account you want to use at any time by reconnecting the app.
+Click Connect Workspace.
+Click Start Chat to use ClickUp with ChatGPT.
+Reconnect or disconnect ClickUp in ChatGPT
+To reconnect or disconnect ClickUp and ChatGPT:
+From Apps, search or browse for the ClickUp app.
+Click the settings cog icon.
+Click the ellipsis icon, then Reconnect to reconnect ClickUp and ChatGPT.
+Click Disconnect to remove the app.
+Antigravity
+To set up Antigravity to use the ClickUp MCP Server, you can review the Antigravity Docs from Google here .
+Following the instructions under Connecting Custom MCP Servers, add the following to your mcp_config.json file:
+JSON
+{
+"mcpServers": {
+"clickup": {
+"serverUrl": "https://mcp.clickup.com/mcp"
+}
+}
+}
+Other clients
+You can configure most other clients to use ClickUp's MCP server with the following settings:
+Command: npx
+Arguments: -y mcp-remote https://mcp.clickup.com/mcp
+Environment: None
+Updated 3 months ago
+ClickUp's MCP Server
+Supported Tools
+Did this page help you?
+Yes
+No
+Copy Page
+Setup instructions
+Claude
+Pro, Team, Enterprise
+Free
+Claude Code
+Cursor
+Manual installation
+Devin
+Manual installation
+Microsoft Copilot Studio
+Manual installation
+VS Code
+Manual installation
+Windsurf
+ChatGPT
+Reconnect or disconnect ClickUp in ChatGPT
+Antigravity
+Other clients
+© 2026 ClickUp
+Security
+Your Privacy
+Terms

@@ -1,0 +1,943 @@
+GitHub - jezweb/twenty-mcp · GitHub
+Skip to content
+Navigation Menu
+Sign in
+Products
+Platform
+GitHubRepository hosting, code review, and collaboration
+CopilotAI coding agent for tasks, projects, and automated work
+Build & Ship
+ActionsCI/CD and automation
+Code QualityQuality analysis, fixes, and enforcement
+CodespacesCloud development environments
+Secure
+Code SecurityVulnerability detection and remediation
+Secret ProtectionSecret scanning and leak prevention
+All Features
+Developers
+Learn
+Documentation
+Training
+Certifications
+Build
+Build with Copilot
+Customize Copilot
+Integrations
+Explore
+Trending repos
+GitHub Sponsors
+Developer articles
+Changelog
+ChangelogYour source for the latest features, improvements, and fixes across GitHub products, all in one place.
+Businesses
+By Stage
+Enterprises
+Team
+Startups
+Nonprofits
+By Industry
+Healthcare
+Financial services
+Manufacturing
+Government
+See all industries
+Evaluate GitHub
+Why GitHub
+Customer Stories
+Business insights
+Trust Center
+Add-ons
+GitHub Advanced SecurityEnterprise-grade code security
+Copilot for businessEnterprise-grade AI features
+Premium SupportEnterprise-grade 24/7 support
+Resources
+Learn & Connect
+Documentation
+Resource center
+Blog
+Events & webinars
+Community Forum
+Customer Stories
+Integrations
+Support
+Customer support
+Training
+GitHub Status
+Company
+About
+Partners
+Changelog
+GitHub Universe
+GitHub UniverseThe event for developers, by developers — talks, workshops, and what’s next for GitHub.
+Pricing
+Search/
+Sign in
+Sign up
+Appearance settings
+You signed in with another tab or window. Reload to refresh your session.
+You signed out in another tab or window. Reload to refresh your session.
+You switched accounts on another tab or window. Reload to refresh your session.
+Dismiss alert
+jezweb
+twenty-mcp
+Repository navigation
+Code
+Issues13 (13)
+Pull requests4 (4)
+Actions
+Projects
+Security and quality
+Insights
+More items
+twenty-mcp
+Public
+NotificationsYou must be signed in to change notification settings
+Fork29 (29)
+Star53 (53)You must be signed in to star a repository
+About
+No description, website, or topics provided.
+Resources
+Readme
+MIT license
+Contributing
+Contributing
+Activity
+Stars
+53 stars
+Watchers
+0 watching
+Forks
+29 forks
+Report repository
+main
+BranchesTags
+Go to file
+Code
+Open more actions menu
+Latest commit
+History
+18 Commits
+18 Commits
+Folders and files
+NameName
+Last commit message
+Last commit date
+.github/workflows
+.github/workflows
+.smithery
+.smithery
+docker-mcp
+docker-mcp
+docs
+docs
+examples
+examples
+src
+src
+test-results
+test-results
+tests
+tests
+.dockerignore
+.dockerignore
+.env.auth-test
+.env.auth-test
+.env.example
+.env.example
+.eslintrc.json
+.eslintrc.json
+.gitignore
+.gitignore
+CHANGELOG.md
+CHANGELOG.md
+CONTRIBUTING.md
+CONTRIBUTING.md
+Dockerfile
+Dockerfile
+IMPLEMENTATION_PLAN.md
+IMPLEMENTATION_PLAN.md
+LICENSE
+LICENSE
+MCP_SETUP.md
+MCP_SETUP.md
+OAUTH.md
+OAUTH.md
+README.md
+README.md
+SMITHERY.md
+SMITHERY.md
+TESTING.md
+TESTING.md
+TOOLS.md
+TOOLS.md
+WINDOWS_INSTALL.md
+WINDOWS_INSTALL.md
+install.sh
+install.sh
+oauth-setup-helper.md
+oauth-setup-helper.md
+package-lock.json
+package-lock.json
+package.json
+package.json
+smithery.yaml
+smithery.yaml
+test-auth-flow.js
+test-auth-flow.js
+test-auth-phase2.js
+test-auth-phase2.js
+test-graphql.js
+test-graphql.js
+test-http-server.js
+test-http-server.js
+test-mcp-client.js
+test-mcp-client.js
+test-metadata.js
+test-metadata.js
+test-relationship-tools.js
+test-relationship-tools.js
+test-tools-list.js
+test-tools-list.js
+tsconfig.json
+tsconfig.json
+validate-config.js
+validate-config.js
+View all files
+Repository files navigation
+README
+Contributing
+MIT license
+More items
+Twenty MCP Server
+A Model Context Protocol (MCP) server that provides seamless integration with the Twenty CRM API, enabling LLM agents to interact with your CRM data through well-defined, typed tools.
+📋 Table of Contents
+Overview
+Prerequisites
+Quick Start
+Installation
+Configuration
+OAuth Authentication
+Verification
+IDE Integration
+Usage
+Troubleshooting
+Additional Resources
+Overview
+This MCP server transforms your Twenty CRM instance into a powerful tool accessible by Claude and other MCP-compatible AI assistants. It provides comprehensive access to contacts, companies, tasks, and notes with full TypeScript support and robust error handling.
+Key Features
+🤝 Contact Management: Create, retrieve, update, and search contacts
+🏢 Company Management: Full company lifecycle management
+💼 Opportunity Tracking: Complete sales pipeline management
+📝 Activity Management: Unified timeline view with filtering
+✅ Task Management: Create and manage tasks
+🔗 Relationship Management: Link entities and analyze connections
+🔍 Metadata Discovery: Explore CRM schema and field definitions
+🔐 OAuth 2.1 Authentication: Secure user-specific API key management
+🔒 Full TypeScript Support: Type-safe operations with validation
+Total: 29 MCP Tools providing comprehensive CRM automation capabilities. See full tool list →
+Understanding MCP Servers
+MCP (Model Context Protocol) servers are tools that extend AI assistants like Claude with new capabilities. Once configured, this server allows Claude to:
+🔍 Read your CRM data (contacts, companies, opportunities)
+✍️ Create new records directly from conversations
+🔄 Update existing information
+🤖 Automate CRM workflows through natural language
+Think of it as giving Claude direct access to your Twenty CRM, turning it into a powerful CRM assistant.
+Prerequisites
+Before installing, ensure you have:
+✅ Node.js 18 or higher - Download from nodejs.org
+✅ npm (included with Node.js)
+✅ Git for cloning the repository
+✅ Twenty CRM instance with API access
+✅ Text editor for configuration files
+Checking Prerequisites
+# Check Node.js version (should be 18+)
+node --version
+# Check npm is installed
+npm --version
+# Check git is installed
+git --version
+⚠️ Windows Users: The quick install script requires Git Bash or WSL. See Windows Installation Guide for alternatives.
+🚀 Quick Start
+Option 1: Instant Trial (No Installation Required) ⚡
+# Try instantly with npx - no installation needed!
+npx twenty-mcp-server setup
+# Test your configuration
+npx twenty-mcp-server test
+# Start the server
+npx twenty-mcp-server start
+Perfect for trying Twenty MCP Server before committing to installation!
+Option 2: Global Installation (Best for Regular Use)
+# Install globally with npm
+npm install -g twenty-mcp-server
+# Run the interactive setup wizard
+twenty-mcp setup
+# Start the server
+twenty-mcp start
+That's it! The CLI will guide you through everything else.
+Option 3: Git Clone (For Developers)
+For experienced users who want to clone and modify the source:
+# Clone, install, configure, and run
+git clone https://github.com/jezweb/twenty-mcp.git && \
+cd twenty-mcp && \
+chmod +x install.sh && \
+./install.sh && \
+cp .env.example .env && \
+echo "Now edit .env with your API key and base URL" && \
+nano .env
+Then configure your IDE using the absolute path shown by the installer.
+Installation
+🗺️ Installation Overview
+┌─────────────────┐ ┌──────────────┐ ┌──────────────┐ ┌─────────────┐
+│ 1. Install │ --> │ 2. Configure │ --> │ 3. Verify │ --> │ 4. Connect │
+│ - Clone repo │ │ - API key │ │ - Validate│ │ - IDE │
+│ - Build │ │ - Base URL│ │ - Test │ │ - Use! │
+└─────────────────┘ └──────────────┘ └──────────────┘ └─────────────┘
+(~3 min) (~2 min) (~1 min) (~2 min)
+Choose Your Installation Method
+Method
+When to Use
+Time
+Platform
+🐳 Docker MCP
+Docker Desktop users with MCP Toolkit
+~1 minute
+All platforms
+⚡ npx Instant Trial
+Try before installing - no commitment!
+~30 seconds
+All platforms
+🌟 npm Global Install
+Regular use and best performance
+~1 minute
+All platforms
+🎯 Git Clone + Install
+Developers who want to modify code
+~3 minutes
+Linux/macOS/Git Bash
+🔧 Manual Git Setup
+Windows Command Prompt or custom needs
+~5 minutes
+All platforms
+Option 0: Docker MCP (Docker Desktop Users)
+If you have Docker Desktop with MCP Toolkit enabled:
+Open Docker Desktop
+Go to MCP Catalog
+Search for "Twenty CRM"
+Click Install and configure your API key
+Or use the Docker CLI:
+docker mcp install twenty-mcp
+Learn more at hub.docker.com/mcp
+Option 1: npx Instant Trial (Try Before Installing)
+Experience Twenty MCP Server instantly without any installation:
+# Try it right now - no installation required!
+npx twenty-mcp-server setup
+# Configuration is saved globally for future npx runs
+npx twenty-mcp-server test
+# Start using it immediately
+npx twenty-mcp-server start
+Benefits:
+✅ Zero installation - try instantly
+✅ Always runs the latest version
+✅ Configuration persists between runs
+✅ Perfect for testing and evaluation
+✅ No global installation clutter
+Ready to install permanently? Simply run: npm install -g twenty-mcp-server
+Option 2: npm Global Install (Best for Regular Use)
+For users who want Twenty MCP Server permanently installed:
+# Install globally
+npm install -g twenty-mcp-server
+# Verify installation
+twenty-mcp --version
+# Run setup wizard
+twenty-mcp setup
+Benefits:
+✅ Works on all platforms (Windows, macOS, Linux)
+✅ Automatic PATH configuration
+✅ Interactive setup wizard guides you through everything
+✅ No manual file management or path configuration
+✅ Easy updates with npm update -g twenty-mcp-server
+✅ Built-in CLI commands for management and testing
+✅ Professional configuration management
+What the setup wizard configures:
+🔧 Twenty CRM API connection
+🔐 OAuth 2.1 authentication (optional)
+🛡️ IP address protection (optional)
+⚙️ Server preferences and defaults
+📁 Cross-platform configuration storage
+Option 3: Git Clone Installation
+For developers who want to modify the source code:
+# Step 1: Clone the repository
+git clone https://github.com/jezweb/twenty-mcp.git
+cd twenty-mcp
+# Step 2: Make install script executable (Linux/macOS only)
+chmod +x install.sh
+# Step 3: Run the installation
+./install.sh
+The install script will:
+✅ Check Node.js version (18+ required)
+✅ Install all dependencies
+✅ Build the TypeScript project
+✅ Run tests (if API key is configured)
+✅ Show your absolute path for IDE configuration
+✅ Provide next steps
+📝 Note: Save the absolute path shown by the installer - you'll need it for IDE configuration!
+Option 4: Manual Installation
+Perfect for Windows Command Prompt users or those who prefer manual control:
+# Step 1: Clone the repository
+git clone https://github.com/jezweb/twenty-mcp.git
+cd twenty-mcp
+# Step 2: Install dependencies
+npm install
+# Step 3: Build the TypeScript project
+npm run build
+# Step 4: Verify the build succeeded
+# Linux/macOS:
+ls -la dist/index.js
+# Windows:
+dir dist\index.js
+✅ If you see dist/index.js, the build succeeded!
+📍 Finding Your Installation Path (IMPORTANT!)
+🚨 Critical: You MUST use the absolute path to dist/index.js for IDE configuration. Relative paths will NOT work!
+🐧 Linux/macOS
+# Get your absolute path
+pwd
+# Example output: /home/username/twenty-mcp
+# Your MCP server path will be:
+# /home/username/twenty-mcp/dist/index.js
+🪟 Windows
+# Command Prompt
+cd
+# Example output: C:\Users\username\twenty-mcp
+# Your path: C:\Users\username\twenty-mcp\dist\index.js
+# PowerShell
+Get-Location
+# Example output: C:\Users\username\twenty-mcp
+# Your path: C:\Users\username\twenty-mcp\dist\index.js
+# Git Bash
+pwd
+# Example output: /c/Users/username/twenty-mcp
+# Your path: C:/Users/username/twenty-mcp/dist/index.js
+⚠️ Warning: If your path contains spaces (e.g., "Program Files"), use quotes in your IDE configuration!
+Your MCP server path will be: [absolute-path]/dist/index.js
+🧪 Installation Quick Check
+Before proceeding to configuration, verify your installation:
+# 1. Check Node modules installed
+test -d node_modules && echo "✅ Dependencies installed" || echo "❌ Run: npm install"
+# 2. Check build completed
+test -f dist/index.js && echo "✅ Build successful" || echo "❌ Run: npm run build"
+# 3. Check your path
+echo "📍 Your MCP path: $(pwd)/dist/index.js"
+Windows Installation Guide
+🪟 Windows Users: See our detailed Windows Installation Guide for step-by-step instructions with Command Prompt, PowerShell, and Git Bash options.
+Configuration
+Step 1: Get Your Twenty CRM API Key
+Log into your Twenty CRM instance
+For Twenty Cloud: https://app.twenty.com
+For self-hosted: Your instance URL
+Navigate to Settings
+Click on your profile avatar (top right)
+Select "Settings" from the dropdown
+Find API & Webhooks
+Look in the "Developers" section
+Click on "API & Webhooks"
+Generate Your API Key
+Click "Generate API Key" button
+Important: Copy the key immediately - it won't be shown again!
+Store it securely (password manager recommended)
+Step 2: Configure Environment Variables
+Option A: Using .env File (Recommended)
+# Copy the example configuration
+cp .env.example .env
+# Edit with your favorite editor
+nano .env # or vim, code, notepad, etc.
+Add your configuration to the .env file:
+# Your Twenty CRM API Key (from Step 1)
+TWENTY_API_KEY=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9...
+# Your Twenty instance URL (no trailing slash!)
+TWENTY_BASE_URL=https://api.twenty.com
+Common Base URLs:
+Twenty Cloud: https://api.twenty.com
+Self-hosted: https://your-company.twenty.com
+Local development: http://localhost:3000
+Option B: Using Export Commands
+# Linux/macOS
+export TWENTY_API_KEY="your-api-key-here"
+export TWENTY_BASE_URL="https://api.twenty.com"
+# Windows (Command Prompt)
+set TWENTY_API_KEY=your-api-key-here
+set TWENTY_BASE_URL=https://api.twenty.com
+# Windows (PowerShell)
+$env:TWENTY_API_KEY="your-api-key-here"
+$env:TWENTY_BASE_URL="https://api.twenty.com"
+Step 3: Load Your Configuration
+📌 Important: Environment variables must be loaded in your current shell session!
+Understanding .env Files
+.env files store configuration but don't automatically load into your shell:
+Linux/macOS: Must use source .env to load variables
+Windows: The npm scripts automatically read .env files
+IDE Configuration: Usually reads .env files directly
+If using a .env file:
+# Linux/macOS - Load variables into current session
+source .env
+# Verify they're loaded
+echo $TWENTY_API_KEY # Should show your key
+# Windows - npm scripts read .env automatically
+# No manual loading needed for npm commands
+OAuth Authentication
+The Twenty MCP Server supports OAuth 2.1 authentication following the MCP Authentication Specification. This enables secure, user-specific API key management and multi-user deployments.
+🔐 OAuth Features
+🔒 Secure API Key Storage: User API keys encrypted with AES-256-GCM
+👤 User-Specific Access: Each user manages their own Twenty CRM connection
+🔄 Backward Compatible: Works alongside traditional API key configuration
+🛡️ Clerk Integration: Production-ready authentication provider
+📋 Discovery Endpoints: Full MCP OAuth specification compliance
+🚀 Quick OAuth Setup
+Run the interactive OAuth setup CLI:
+npm run setup:oauth
+This will guide you through:
+Enabling OAuth authentication
+Configuring Clerk credentials
+Setting up encryption secrets
+Testing the integration
+📚 OAuth Documentation
+For detailed OAuth implementation guide, see OAUTH.md:
+Complete OAuth 2.1 Flow: Step-by-step implementation
+Security Best Practices: Encryption, token validation, CORS
+Client Integration Examples: JavaScript, Python, curl
+Production Deployment: Environment setup and troubleshooting
+🧪 OAuth Testing
+Test your OAuth setup:
+# Run comprehensive OAuth test suite
+npm run test:oauth
+# Test specific OAuth endpoints
+curl http://localhost:3000/.well-known/oauth-protected-resource
+curl http://localhost:3000/.well-known/oauth-authorization-server
+⚙️ OAuth vs API Key Configuration
+Feature
+API Key Mode
+OAuth Mode
+Setup Complexity
+Simple
+Moderate
+Security
+Shared key
+User-specific encrypted keys
+Multi-user
+❌ Single user
+✅ Multiple users
+Authentication
+Query parameter
+Bearer token
+Key Storage
+Environment variables
+Encrypted in Clerk
+Backward Compatibility
+✅ Full
+✅ Full (when auth disabled)
+Choose API Key mode for:
+Single-user deployments
+Simple integrations
+Quick prototyping
+Choose OAuth mode for:
+Multi-user applications
+Production deployments
+Enhanced security requirements
+Verification
+Before configuring your IDE, verify everything is working:
+1. Run Configuration Validator
+npm run validate
+Expected output when everything is configured:
+==================================================
+Twenty MCP Server Configuration Validator
+==================================================
+[INFO] Checking environment variables...
+[SUCCESS] TWENTY_API_KEY is set
+[SUCCESS] API key appears to be in JWT format
+[SUCCESS] TWENTY_BASE_URL is set: https://api.twenty.com
+[SUCCESS] Base URL is valid
+[INFO] Checking configuration files...
+[SUCCESS] .env file exists
+[INFO] Checking project build...
+[SUCCESS] Project is built (dist/index.js exists)
+[SUCCESS] Dependencies are installed
+[INFO] Testing API connection...
+[SUCCESS] API connection successful!
+[INFO] Connected as: John Doe
+==================================================
+[SUCCESS] Configuration is valid! 🎉
+2. Test Your Configuration
+# Make sure environment is loaded
+source .env # Linux/macOS only
+# Run basic tests
+npm test
+3. Optional: Start HTTP Server
+npm start
+You should see: Server running on http://localhost:3000
+IDE Integration
+📋 Before You Begin - Checklist
+Installation complete (dist/index.js exists)
+Configuration valid (npm run validate passes)
+Absolute path noted (from installation step)
+API key and base URL ready
+🖥️ Claude Desktop
+Configure Claude Desktop to use your Twenty MCP server:
+1. Find Your Configuration File
+Platform
+Location
+macOS
+~/Library/Application Support/Claude/claude_desktop_config.json
+Windows
+%APPDATA%\Claude\claude_desktop_config.json
+Linux
+~/.config/Claude/claude_desktop_config.json
+2. Edit Configuration
+If you installed via npm or use npx:
+{
+"mcpServers": {
+"twenty-crm": {
+"command": "twenty-mcp",
+"args": ["start", "--stdio"],
+"env": {}
+}
+}
+}
+Note for npx users: Your configuration is automatically saved globally, so Claude Desktop will work seamlessly even when using npx!
+If you cloned from Git:
+{
+"mcpServers": {
+"twenty-crm": {
+"command": "node",
+"args": ["REPLACE_WITH_YOUR_ABSOLUTE_PATH/dist/index.js"],
+"env": {
+"TWENTY_API_KEY": "REPLACE_WITH_YOUR_API_KEY",
+"TWENTY_BASE_URL": "REPLACE_WITH_YOUR_BASE_URL"
+}
+}
+}
+}
+⚠️ Common Mistakes to Avoid:
+Using relative paths (e.g., ./dist/index.js) - won't work!
+Forgetting to restart Claude Desktop after changes
+Missing quotes around paths with spaces
+Using wrong slashes on Windows (use / or \\)
+3. Real Examples
+npm Installation or npx Usage (All Platforms):
+{
+"mcpServers": {
+"twenty-crm": {
+"command": "twenty-mcp",
+"args": ["start", "--stdio"],
+"env": {}
+}
+}
+}
+💡 npx users: This same configuration works whether you use npx twenty-mcp-server or install globally!
+Git Installation Examples:
+macOS Example:
+{
+"mcpServers": {
+"twenty-crm": {
+"command": "node",
+"args": ["/Users/johndoe/projects/twenty-mcp/dist/index.js"],
+"env": {
+"TWENTY_API_KEY": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9...",
+"TWENTY_BASE_URL": "https://api.twenty.com"
+}
+}
+}
+}
+Windows Example:
+{
+"mcpServers": {
+"twenty-crm": {
+"command": "node",
+"args": ["C:\\Users\\johndoe\\projects\\twenty-mcp\\dist\\index.js"],
+"env": {
+"TWENTY_API_KEY": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9...",
+"TWENTY_BASE_URL": "https://api.twenty.com"
+}
+}
+}
+}
+4. Verify Connection
+Restart Claude Desktop (required!)
+Ask Claude: "What MCP tools do you have available?"
+Test with: "Show me my contacts from Twenty CRM"
+💻 Other IDE Integrations
+Cursor IDE
+Open Cursor Settings (Cmd/Ctrl + ,)
+Navigate to Extensions → MCP Servers
+Add configuration:
+{
+"name": "twenty-crm",
+"command": "node",
+"args": ["/absolute/path/to/twenty-mcp/dist/index.js"],
+"env": {
+"TWENTY_API_KEY": "your-api-key",
+"TWENTY_BASE_URL": "https://your-instance.com"
+}
+}
+Restart Cursor
+Smithery
+Full Smithery Guide →
+Quick setup:
+Install Smithery: npm install -g @smithery/cli
+Run: smithery dev in the twenty-mcp directory
+Configure credentials when prompted
+Or use the deployed version:
+Visit smithery.ai
+Search for "Twenty MCP"
+Click "Use this server"
+Cline (VS Code)
+Install Cline extension from VS Code marketplace
+Add to VS Code settings.json:
+{
+"cline.mcpServers": {
+"twenty-crm": {
+"command": "node",
+"args": ["/path/to/twenty-mcp/dist/index.js"],
+"env": {
+"TWENTY_API_KEY": "your-api-key",
+"TWENTY_BASE_URL": "https://your-instance.com"
+}
+}
+}
+}
+HTTP Server Mode
+For web integrations, run as HTTP server:
+npm start
+# Server available at http://localhost:3000/mcp
+Configure via query parameters:
+http://localhost:3000/mcp?apiKey=your-key&baseUrl=https://your-instance.com
+CLI Commands
+Twenty MCP Server includes a powerful CLI for easy management:
+Setup and Configuration
+# Interactive setup wizard (recommended for first-time setup)
+twenty-mcp setup
+# Setup with OAuth authentication
+twenty-mcp setup --oauth
+# Setup with IP protection
+twenty-mcp setup --ip-protection
+# Import existing .env configuration
+twenty-mcp setup --import
+# Reset to default configuration
+twenty-mcp setup --reset
+Server Management
+# Start the server (HTTP mode, default port 3000)
+twenty-mcp start
+# Start with custom port
+twenty-mcp start --port 8080
+# Start in stdio mode (for direct MCP protocol communication)
+twenty-mcp start --stdio
+# Start with verbose logging
+twenty-mcp start --verbose
+Testing and Diagnostics
+# Test configuration and connection
+twenty-mcp test
+# Run full test suite including API tests
+twenty-mcp test --full
+# Test OAuth authentication endpoints
+twenty-mcp test --oauth
+# Run smoke tests only (no API calls)
+twenty-mcp test --smoke
+Status and Information
+# Show server status and configuration
+twenty-mcp status
+# Show detailed status information
+twenty-mcp status --verbose
+# Output status in JSON format
+twenty-mcp status --json
+# Show help for all commands
+twenty-mcp help
+# Show version
+twenty-mcp --version
+AI Assistant Usage
+Basic Commands
+Once configured in your IDE, you can ask your AI assistant to:
+"Show me all contacts in Twenty CRM"
+"Create a new company called Acme Corp"
+"Find all opportunities in the proposal stage"
+"Add a task to follow up with John Doe"
+"Show me all activities from last week"
+Example Conversations
+You: "Create a new contact for Jane Smith at jane@example.com"
+Claude: I'll create a new contact for Jane Smith in your Twenty CRM...
+You: "Find all opportunities worth over $10,000"
+Claude: Let me search for high-value opportunities in your CRM...
+You: "Show me companies without any contacts"
+Claude: I'll find orphaned company records in your system...
+See full tool documentation →
+Troubleshooting
+🔧 Quick Diagnostic
+First, run the configuration validator:
+npm run validate
+This will identify most common issues and suggest fixes.
+🚫 Common Issues & Solutions
+Installation Issues
+Error: "Node.js version 18+ is required"
+Solution: Update Node.js
+# Check current version
+node --version
+# Install Node.js 18+ from https://nodejs.org
+# Or use nvm:
+nvm install 18
+nvm use 18
+Error: "Cannot find module 'dist/index.js'"
+Solution: Build the project
+npm run build
+# Verify build succeeded
+ls -la dist/index.js
+Error: "Permission denied" running install.sh
+Solution: Make script executable
+chmod +x install.sh
+./install.sh
+Configuration Issues
+Error: "TWENTY_API_KEY environment variable is required"
+Solution: Set your environment variables
+# Option 1: Load from .env file
+source .env
+# Option 2: Export directly
+export TWENTY_API_KEY="your-key-here"
+export TWENTY_BASE_URL="https://your-instance.com"
+Error: "401 Unauthorized" or "Authentication failed"
+Solution:
+Verify API key is correct (no extra spaces)
+Check key hasn't expired
+Regenerate key in Twenty CRM Settings
+Ensure you're using the correct base URL
+Error: "Network error" or "fetch failed"
+Solution:
+Check base URL is correct (no trailing slash!)
+Verify Twenty instance is accessible
+Check firewall/proxy settings
+Test with curl:
+curl -H "Authorization: Bearer YOUR_API_KEY" \
+https://your-instance.com/graphql
+IDE Integration Issues
+Claude Desktop doesn't see the MCP server
+Solution:
+Verify absolute path is correct:
+# Get the correct path
+cd twenty-mcp && pwd
+Check config file location is correct for your OS
+Ensure JSON syntax is valid (no trailing commas!)
+Restart Claude Desktop (required!)
+Check Claude's developer console for errors
+Windows path issues
+Solution: Use proper Windows paths
+// Correct Windows paths:
+"args": ["C:\\Users\\name\\twenty-mcp\\dist\\index.js"]
+// or
+"args": ["C:/Users/name/twenty-mcp/dist/index.js"]
+// Incorrect:
+"args": ["~/twenty-mcp/dist/index.js"] // Won't work on Windows
+🔍 Advanced Debugging
+Enable debug logging for more details:
+# Enable all debug output
+DEBUG=twenty-mcp:* npm start
+# Test specific GraphQL queries
+node test-graphql.js
+🆘 Getting Help
+If you're still stuck:
+Check existing issues: GitHub Issues
+Read test documentation: TESTING.md
+Create a new issue with:
+Your OS and Node.js version
+Complete error message
+Output from npm run validate
+Steps to reproduce
+Additional Resources
+📚 Documentation
+Full Tool Reference - Detailed documentation of all 29 tools
+Testing Guide - How to run and write tests
+Contributing Guide - How to contribute to the project
+🏗️ Architecture
+The Twenty MCP Server is built with:
+TypeScript for type safety
+GraphQL for Twenty API communication
+MCP SDK for protocol implementation
+Zod for runtime validation
+See architecture details →
+🤝 Contributing
+We welcome contributions! Please see our Contributing Guide for details on:
+Setting up development environment
+Running tests
+Submitting pull requests
+Code style guidelines
+📄 License
+MIT License - see LICENSE file for details.
+🙏 Acknowledgments
+Twenty CRM for the open-source CRM platform
+Model Context Protocol for the integration standard
+Anthropic for Claude and the MCP framework
+Architecture Details
+Project Structure
+twenty-mcp-server/
+├── src/
+│ ├── client/
+│ │ └── twenty-client.ts # GraphQL client for Twenty API
+│ ├── tools/
+│ │ └── index.ts # MCP tool implementations
+│ ├── types/
+│ │ └── twenty.ts # TypeScript interfaces
+│ └── index.ts # Main server entry point
+├── tests/ # Test suites
+├── dist/ # Compiled JavaScript (after build)
+├── package.json
+├── tsconfig.json
+└── README.md
+Key Components
+TwentyClient: GraphQL client that handles API communication with Twenty CRM
+MCP Tools: 29 tools that provide comprehensive CRM functionality to AI assistants
+Type System: Comprehensive TypeScript definitions for Twenty's data structures
+Schema Transformation: Converts flat tool inputs to Twenty's nested GraphQL schema
+Development Commands
+# Install dependencies
+npm install
+# Run in development mode with hot reload
+npm run dev
+# Run development HTTP server
+npm run dev:http
+# Build for production
+npm run build
+# Run linting
+npm run lint
+# Type checking
+npm run typecheck
+# Run all tests
+npm test
+# Run specific test suites
+npm run test:smoke # Quick tests (no API)
+npm run test:full # Comprehensive tests
+About
+No description, website, or topics provided.
+Resources
+Readme
+MIT license
+Contributing
+Contributing
+Activity
+Stars
+53 stars
+Watchers
+0 watching
+Forks
+29 forks
+Report repository
+Releases
+Packages
+Contributors
+Languages
+Footer
+© 2026 GitHub, Inc.
+Footer navigation
+Terms
+Privacy
+Security
+Status
+Community
+Docs
+Contact
+Manage cookies
+Do not share my personal information
+You can’t perform that action at this time.

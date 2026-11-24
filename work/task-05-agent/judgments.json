@@ -1,0 +1,2466 @@
+{
+  "records": {
+    "2": [
+      {
+        "claim_id": "2.purpose",
+        "original_run_id": "pilot-first-pass-001",
+        "judgment": "correct",
+        "reason": "Independent AI review verified documentary observation against captured primary documentation; all material details hold for the declared scope.",
+        "evidence": [
+          {
+            "source_url": "https://developers.hubspot.com/docs/apps/developer-platform/build-apps/integrate-with-the-remote-hubspot-mcp-server",
+            "source_kind": "primary_docs",
+            "locator": "lines:77-80",
+            "observation": "paraphrase: The CRM integration surface lets applications and agents access account CRM data.",
+            "captured_on": "2026-11-23",
+            "capture_method": "http_content",
+            "content_sha256": "14840c27104d17fd89f2ad53ec53085c313996743776c0de45d19a67a9317b7a",
+            "snapshot_ref": "snapshots/14840c27104d17fd89f2ad53ec53085c313996743776c0de45d19a67a9317b7a.txt",
+            "hash_unavailable_reason": null,
+            "document_version": null,
+            "document_date": null
+          }
+        ]
+      },
+      {
+        "claim_id": "2.auth.oauth",
+        "original_run_id": "pilot-first-pass-001",
+        "judgment": "correct",
+        "reason": "Independent AI review verified documentary observation against captured primary documentation; all material details hold for the declared scope.",
+        "evidence": [
+          {
+            "source_url": "https://developers.hubspot.com/docs/apps/developer-platform/build-apps/authentication/overview",
+            "source_kind": "primary_docs",
+            "locator": "lines:81-91",
+            "observation": "paraphrase: Multi-account apps require OAuth; API requests send the installed account access token as Bearer.",
+            "captured_on": "2026-11-23",
+            "capture_method": "http_content",
+            "content_sha256": "60ec5450f10f883744679a09ae17ecc45bd9604c28b59bbb8aabd937da9344e6",
+            "snapshot_ref": "snapshots/60ec5450f10f883744679a09ae17ecc45bd9604c28b59bbb8aabd937da9344e6.txt",
+            "hash_unavailable_reason": null,
+            "document_version": null,
+            "document_date": null
+          }
+        ]
+      },
+      {
+        "claim_id": "2.auth.static",
+        "original_run_id": "pilot-first-pass-001",
+        "judgment": "correct",
+        "reason": "Independent AI review verified documentary observation against captured primary documentation; all material details hold for the declared scope.",
+        "evidence": [
+          {
+            "source_url": "https://developers.hubspot.com/docs/apps/developer-platform/build-apps/authentication/overview",
+            "source_kind": "primary_docs",
+            "locator": "lines:93-98",
+            "observation": "paraphrase: Single-account private distribution uses a static access token in a Bearer header.",
+            "captured_on": "2026-11-23",
+            "capture_method": "http_content",
+            "content_sha256": "60ec5450f10f883744679a09ae17ecc45bd9604c28b59bbb8aabd937da9344e6",
+            "snapshot_ref": "snapshots/60ec5450f10f883744679a09ae17ecc45bd9604c28b59bbb8aabd937da9344e6.txt",
+            "hash_unavailable_reason": null,
+            "document_version": null,
+            "document_date": null
+          }
+        ]
+      },
+      {
+        "claim_id": "2.auth.legacy",
+        "original_run_id": "pilot-first-pass-001",
+        "judgment": "correct",
+        "reason": "Independent AI review verified documentary observation against captured primary documentation; all material details hold for the declared scope.",
+        "evidence": [
+          {
+            "source_url": "https://developers.hubspot.com/docs/apps/legacy-apps/private-apps/overview",
+            "source_kind": "primary_docs",
+            "locator": "lines:55-59",
+            "observation": "paraphrase: Existing legacy private apps remain supported; new creation ended October 26, 2026, and access requires super admin.",
+            "captured_on": "2026-11-23",
+            "capture_method": "http_content",
+            "content_sha256": "745a044246324b19c9dacda5b37fdcaea45a9e43a2b20d169f01b26b1a019862",
+            "snapshot_ref": "snapshots/745a044246324b19c9dacda5b37fdcaea45a9e43a2b20d169f01b26b1a019862.txt",
+            "hash_unavailable_reason": null,
+            "document_version": null,
+            "document_date": null
+          },
+          {
+            "source_url": "https://developers.hubspot.com/docs/apps/legacy-apps/private-apps/overview",
+            "source_kind": "primary_docs",
+            "locator": "lines:63-69",
+            "observation": "paraphrase: Legacy private app API calls use the access token as Bearer.",
+            "captured_on": "2026-11-23",
+            "capture_method": "http_content",
+            "content_sha256": "745a044246324b19c9dacda5b37fdcaea45a9e43a2b20d169f01b26b1a019862",
+            "snapshot_ref": "snapshots/745a044246324b19c9dacda5b37fdcaea45a9e43a2b20d169f01b26b1a019862.txt",
+            "hash_unavailable_reason": null,
+            "document_version": null,
+            "document_date": null
+          }
+        ]
+      },
+      {
+        "claim_id": "2.auth.developer_key",
+        "original_run_id": "pilot-first-pass-001",
+        "judgment": "correct",
+        "reason": "Independent AI review verified documentary observation against captured primary documentation; all material details hold for the declared scope.",
+        "evidence": [
+          {
+            "source_url": "https://developers.hubspot.com/docs/apps/developer-platform/build-apps/authentication/overview",
+            "source_kind": "primary_docs",
+            "locator": "lines:100-104",
+            "observation": "paraphrase: Selected developer endpoints use a developer API key in the hapikey query parameter.",
+            "captured_on": "2026-11-23",
+            "capture_method": "http_content",
+            "content_sha256": "60ec5450f10f883744679a09ae17ecc45bd9604c28b59bbb8aabd937da9344e6",
+            "snapshot_ref": "snapshots/60ec5450f10f883744679a09ae17ecc45bd9604c28b59bbb8aabd937da9344e6.txt",
+            "hash_unavailable_reason": null,
+            "document_version": null,
+            "document_date": null
+          }
+        ]
+      },
+      {
+        "claim_id": "2.auth.client_credentials",
+        "original_run_id": "pilot-first-pass-001",
+        "judgment": "correct",
+        "reason": "Independent AI review verified documentary observation against captured primary documentation; all material details hold for the declared scope.",
+        "evidence": [
+          {
+            "source_url": "https://developers.hubspot.com/docs/apps/developer-platform/build-apps/authentication/overview",
+            "source_kind": "primary_docs",
+            "locator": "lines:105-114",
+            "observation": "paraphrase: App-global webhooks journal operations use expiring OAuth 2.0 client-credentials tokens.",
+            "captured_on": "2026-11-23",
+            "capture_method": "http_content",
+            "content_sha256": "60ec5450f10f883744679a09ae17ecc45bd9604c28b59bbb8aabd937da9344e6",
+            "snapshot_ref": "snapshots/60ec5450f10f883744679a09ae17ecc45bd9604c28b59bbb8aabd937da9344e6.txt",
+            "hash_unavailable_reason": null,
+            "document_version": null,
+            "document_date": null
+          }
+        ]
+      },
+      {
+        "claim_id": "2.testing.free_access",
+        "original_run_id": "pilot-first-pass-001",
+        "judgment": "correct",
+        "reason": "Independent AI review verified documentary observation against captured primary documentation; all material details hold for the declared scope.",
+        "evidence": [
+          {
+            "source_url": "https://developers.hubspot.com/developer-platform-basics",
+            "source_kind": "official_product_page",
+            "locator": "lines:251-259",
+            "observation": "paraphrase: Developers can use a free account, sample-data test accounts and public APIs for development.",
+            "captured_on": "2026-11-23",
+            "capture_method": "http_content",
+            "content_sha256": "b18b10c56e9402a64f5a581ed357c8186ffdb67ce748b5a19c3af16bad322802",
+            "snapshot_ref": "snapshots/b18b10c56e9402a64f5a581ed357c8186ffdb67ce748b5a19c3af16bad322802.txt",
+            "hash_unavailable_reason": null,
+            "document_version": null,
+            "document_date": null
+          }
+        ]
+      },
+      {
+        "claim_id": "2.testing.sandbox_access",
+        "original_run_id": "pilot-first-pass-001",
+        "judgment": "correct",
+        "reason": "Independent AI review verified documentary observation against captured primary documentation; all material details hold for the declared scope.",
+        "evidence": [
+          {
+            "source_url": "https://developers.hubspot.com/developer-platform-basics",
+            "source_kind": "official_product_page",
+            "locator": "lines:251-259",
+            "observation": "paraphrase: Developers can use a free account, sample-data test accounts and public APIs for development.",
+            "captured_on": "2026-11-23",
+            "capture_method": "http_content",
+            "content_sha256": "b18b10c56e9402a64f5a581ed357c8186ffdb67ce748b5a19c3af16bad322802",
+            "snapshot_ref": "snapshots/b18b10c56e9402a64f5a581ed357c8186ffdb67ce748b5a19c3af16bad322802.txt",
+            "hash_unavailable_reason": null,
+            "document_version": null,
+            "document_date": null
+          }
+        ]
+      },
+      {
+        "claim_id": "2.testing.paid_required",
+        "original_run_id": "pilot-first-pass-001",
+        "judgment": "correct",
+        "reason": "Independent AI review verified documentary observation against captured primary documentation; all material details hold for the declared scope.",
+        "evidence": [
+          {
+            "source_url": "https://developers.hubspot.com/developer-platform-basics",
+            "source_kind": "official_product_page",
+            "locator": "lines:251-259",
+            "observation": "paraphrase: Developers can use a free account, sample-data test accounts and public APIs for development.",
+            "captured_on": "2026-11-23",
+            "capture_method": "http_content",
+            "content_sha256": "b18b10c56e9402a64f5a581ed357c8186ffdb67ce748b5a19c3af16bad322802",
+            "snapshot_ref": "snapshots/b18b10c56e9402a64f5a581ed357c8186ffdb67ce748b5a19c3af16bad322802.txt",
+            "hash_unavailable_reason": null,
+            "document_version": null,
+            "document_date": null
+          }
+        ]
+      },
+      {
+        "claim_id": "2.testing.self_serve",
+        "original_run_id": "pilot-first-pass-001",
+        "judgment": "correct",
+        "reason": "Independent AI review verified inference against captured primary documentation; all material details hold for the declared scope.",
+        "evidence": [
+          {
+            "source_url": "https://developers.hubspot.com/developer-platform-basics",
+            "source_kind": "official_product_page",
+            "locator": "lines:251-259",
+            "observation": "paraphrase: Developers can use a free account, sample-data test accounts and public APIs for development.",
+            "captured_on": "2026-11-23",
+            "capture_method": "http_content",
+            "content_sha256": "b18b10c56e9402a64f5a581ed357c8186ffdb67ce748b5a19c3af16bad322802",
+            "snapshot_ref": "snapshots/b18b10c56e9402a64f5a581ed357c8186ffdb67ce748b5a19c3af16bad322802.txt",
+            "hash_unavailable_reason": null,
+            "document_version": null,
+            "document_date": null
+          },
+          {
+            "source_url": "https://developers.hubspot.com/developer-platform-basics",
+            "source_kind": "official_product_page",
+            "locator": "lines:76-87",
+            "observation": "paraphrase: Free signup, guided CLI authentication and project creation form the developer onboarding path.",
+            "captured_on": "2026-11-23",
+            "capture_method": "http_content",
+            "content_sha256": "b18b10c56e9402a64f5a581ed357c8186ffdb67ce748b5a19c3af16bad322802",
+            "snapshot_ref": "snapshots/b18b10c56e9402a64f5a581ed357c8186ffdb67ce748b5a19c3af16bad322802.txt",
+            "hash_unavailable_reason": null,
+            "document_version": null,
+            "document_date": null
+          }
+        ]
+      },
+      {
+        "claim_id": "2.production.free_access",
+        "original_run_id": "pilot-first-pass-001",
+        "judgment": "correct",
+        "reason": "Verified for the explicitly scoped existing legacy private-app path: legacy-apps/private-apps/overview lines 130-134 list Free and Starter rate limits, and lines 55-56 confirm existing legacy apps remain supported even though new creation ended 2026-10-26. Caveat: claim.context uses the broad app-wide string rather than a legacy-only scope.",
+        "evidence": [
+          {
+            "source_url": "https://developers.hubspot.com/docs/apps/legacy-apps/private-apps/overview",
+            "source_kind": "primary_docs",
+            "locator": "lines:130-134",
+            "observation": "paraphrase: Legacy private-app rate limits explicitly include Free and Starter accounts.",
+            "captured_on": "2026-11-23",
+            "capture_method": "http_content",
+            "content_sha256": "745a044246324b19c9dacda5b37fdcaea45a9e43a2b20d169f01b26b1a019862",
+            "snapshot_ref": "snapshots/745a044246324b19c9dacda5b37fdcaea45a9e43a2b20d169f01b26b1a019862.txt",
+            "hash_unavailable_reason": null,
+            "document_version": null,
+            "document_date": null
+          }
+        ]
+      },
+      {
+        "claim_id": "2.production.paid_required",
+        "original_run_id": "pilot-first-pass-001",
+        "judgment": "correct",
+        "reason": "Verified for the explicitly scoped existing legacy private-app path using Free-tier features only (legacy-apps/private-apps/overview lines 130-134). Caveat: does not establish paid_required=false for new current developer-platform production onboarding.",
+        "evidence": [
+          {
+            "source_url": "https://developers.hubspot.com/docs/apps/legacy-apps/private-apps/overview",
+            "source_kind": "primary_docs",
+            "locator": "lines:130-134",
+            "observation": "paraphrase: Legacy private-app rate limits include the Free tier.",
+            "captured_on": "2026-11-23",
+            "capture_method": "http_content",
+            "content_sha256": "745a044246324b19c9dacda5b37fdcaea45a9e43a2b20d169f01b26b1a019862",
+            "snapshot_ref": "snapshots/745a044246324b19c9dacda5b37fdcaea45a9e43a2b20d169f01b26b1a019862.txt",
+            "hash_unavailable_reason": null,
+            "document_version": null,
+            "document_date": null
+          }
+        ]
+      },
+      {
+        "claim_id": "2.production.admin_approval_required",
+        "original_run_id": "pilot-first-pass-001",
+        "judgment": "correct",
+        "reason": "Verified for the explicitly scoped existing legacy private-app path: legacy-apps/private-apps/overview line 59 explicitly states 'You must be a super admin to access private apps in your HubSpot account.'",
+        "evidence": [
+          {
+            "source_url": "https://developers.hubspot.com/docs/apps/legacy-apps/private-apps/overview",
+            "source_kind": "primary_docs",
+            "locator": "lines:55-59",
+            "observation": "paraphrase: Existing legacy private apps remain supported; new creation ended October 26, 2026, and access requires super admin.",
+            "captured_on": "2026-11-23",
+            "capture_method": "http_content",
+            "content_sha256": "745a044246324b19c9dacda5b37fdcaea45a9e43a2b20d169f01b26b1a019862",
+            "snapshot_ref": "snapshots/745a044246324b19c9dacda5b37fdcaea45a9e43a2b20d169f01b26b1a019862.txt",
+            "hash_unavailable_reason": null,
+            "document_version": null,
+            "document_date": null
+          }
+        ]
+      },
+      {
+        "claim_id": "2.api.rest",
+        "original_run_id": "pilot-first-pass-001",
+        "judgment": "correct",
+        "reason": "Independent AI review verified documentary observation against captured primary documentation; all material details hold for the declared scope.",
+        "evidence": [
+          {
+            "source_url": "https://developers.hubspot.com/developer-platform-basics",
+            "source_kind": "official_product_page",
+            "locator": "lines:265-267",
+            "observation": "paraphrase: Backend integrations can call RESTful HubSpot APIs.",
+            "captured_on": "2026-11-23",
+            "capture_method": "http_content",
+            "content_sha256": "b18b10c56e9402a64f5a581ed357c8186ffdb67ce748b5a19c3af16bad322802",
+            "snapshot_ref": "snapshots/b18b10c56e9402a64f5a581ed357c8186ffdb67ce748b5a19c3af16bad322802.txt",
+            "hash_unavailable_reason": null,
+            "document_version": null,
+            "document_date": null
+          }
+        ]
+      },
+      {
+        "claim_id": "2.api.public_documentation",
+        "original_run_id": "pilot-first-pass-001",
+        "judgment": "correct",
+        "reason": "Independent AI review verified documentary observation against captured primary documentation; all material details hold for the declared scope.",
+        "evidence": [
+          {
+            "source_url": "https://developers.hubspot.com/docs/api-reference/latest/overview",
+            "source_kind": "primary_docs",
+            "locator": "lines:118-124",
+            "observation": "paraphrase: Public reference documents date-versioned API paths and a contacts GET request.",
+            "captured_on": "2026-11-23",
+            "capture_method": "http_content",
+            "content_sha256": "197e437888bccd01b07eec8230a384cc05ed9efa9ddfcb83b064dc42f3d9b175",
+            "snapshot_ref": "snapshots/197e437888bccd01b07eec8230a384cc05ed9efa9ddfcb83b064dc42f3d9b175.txt",
+            "hash_unavailable_reason": null,
+            "document_version": null,
+            "document_date": null
+          }
+        ]
+      },
+      {
+        "claim_id": "2.api.group.crm",
+        "original_run_id": "pilot-first-pass-001",
+        "judgment": "correct",
+        "reason": "Independent AI review verified documentary observation against captured primary documentation; all material details hold for the declared scope.",
+        "evidence": [
+          {
+            "source_url": "https://developers.hubspot.com/docs/api-reference/latest/overview",
+            "source_kind": "primary_docs",
+            "locator": "lines:64-81",
+            "observation": "paraphrase: Reference lists CRM objects, associations, owners, pipelines and properties.",
+            "captured_on": "2026-11-23",
+            "capture_method": "http_content",
+            "content_sha256": "197e437888bccd01b07eec8230a384cc05ed9efa9ddfcb83b064dc42f3d9b175",
+            "snapshot_ref": "snapshots/197e437888bccd01b07eec8230a384cc05ed9efa9ddfcb83b064dc42f3d9b175.txt",
+            "hash_unavailable_reason": null,
+            "document_version": null,
+            "document_date": null
+          }
+        ]
+      },
+      {
+        "claim_id": "2.api.group.marketing",
+        "original_run_id": "pilot-first-pass-001",
+        "judgment": "correct",
+        "reason": "Independent AI review verified documentary observation against captured primary documentation; all material details hold for the declared scope.",
+        "evidence": [
+          {
+            "source_url": "https://developers.hubspot.com/docs/api-reference/latest/overview",
+            "source_kind": "primary_docs",
+            "locator": "lines:93-100",
+            "observation": "paraphrase: Reference lists campaigns, forms and marketing-email APIs.",
+            "captured_on": "2026-11-23",
+            "capture_method": "http_content",
+            "content_sha256": "197e437888bccd01b07eec8230a384cc05ed9efa9ddfcb83b064dc42f3d9b175",
+            "snapshot_ref": "snapshots/197e437888bccd01b07eec8230a384cc05ed9efa9ddfcb83b064dc42f3d9b175.txt",
+            "hash_unavailable_reason": null,
+            "document_version": null,
+            "document_date": null
+          }
+        ]
+      },
+      {
+        "claim_id": "2.api.group.content",
+        "original_run_id": "pilot-first-pass-001",
+        "judgment": "correct",
+        "reason": "Verified: api-reference/latest/overview lines 43-52 (inside cited lines 38-52) list CMS, Blogs, Content audit, Domains, HubDB, Media Bridge, Pages, Site Search, Source code, and URL mapping. Minor locator note: lines 38-42 cover OAuth tokens and Automation before the CMS heading at line 43.",
+        "evidence": [
+          {
+            "source_url": "https://developers.hubspot.com/docs/api-reference/latest/overview",
+            "source_kind": "primary_docs",
+            "locator": "lines:38-52",
+            "observation": "paraphrase: Reference lists CMS blogs, pages, HubDB and source code.",
+            "captured_on": "2026-11-23",
+            "capture_method": "http_content",
+            "content_sha256": "197e437888bccd01b07eec8230a384cc05ed9efa9ddfcb83b064dc42f3d9b175",
+            "snapshot_ref": "snapshots/197e437888bccd01b07eec8230a384cc05ed9efa9ddfcb83b064dc42f3d9b175.txt",
+            "hash_unavailable_reason": null,
+            "document_version": null,
+            "document_date": null
+          }
+        ]
+      },
+      {
+        "claim_id": "2.api.breadth",
+        "original_run_id": "pilot-first-pass-001",
+        "judgment": "correct",
+        "reason": "Independent AI review verified inference against captured primary documentation; all material details hold for the declared scope.",
+        "evidence": [
+          {
+            "source_url": "https://developers.hubspot.com/docs/api-reference/latest/overview",
+            "source_kind": "primary_docs",
+            "locator": "lines:64-81",
+            "observation": "paraphrase: Reference lists CRM objects, associations, owners, pipelines and properties.",
+            "captured_on": "2026-11-23",
+            "capture_method": "http_content",
+            "content_sha256": "197e437888bccd01b07eec8230a384cc05ed9efa9ddfcb83b064dc42f3d9b175",
+            "snapshot_ref": "snapshots/197e437888bccd01b07eec8230a384cc05ed9efa9ddfcb83b064dc42f3d9b175.txt",
+            "hash_unavailable_reason": null,
+            "document_version": null,
+            "document_date": null
+          },
+          {
+            "source_url": "https://developers.hubspot.com/docs/api-reference/latest/overview",
+            "source_kind": "primary_docs",
+            "locator": "lines:93-100",
+            "observation": "paraphrase: Reference lists campaigns, forms and marketing-email APIs.",
+            "captured_on": "2026-11-23",
+            "capture_method": "http_content",
+            "content_sha256": "197e437888bccd01b07eec8230a384cc05ed9efa9ddfcb83b064dc42f3d9b175",
+            "snapshot_ref": "snapshots/197e437888bccd01b07eec8230a384cc05ed9efa9ddfcb83b064dc42f3d9b175.txt",
+            "hash_unavailable_reason": null,
+            "document_version": null,
+            "document_date": null
+          },
+          {
+            "source_url": "https://developers.hubspot.com/docs/api-reference/latest/overview",
+            "source_kind": "primary_docs",
+            "locator": "lines:38-52",
+            "observation": "paraphrase: Reference lists CMS blogs, pages, HubDB and source code.",
+            "captured_on": "2026-11-23",
+            "capture_method": "http_content",
+            "content_sha256": "197e437888bccd01b07eec8230a384cc05ed9efa9ddfcb83b064dc42f3d9b175",
+            "snapshot_ref": "snapshots/197e437888bccd01b07eec8230a384cc05ed9efa9ddfcb83b064dc42f3d9b175.txt",
+            "hash_unavailable_reason": null,
+            "document_version": null,
+            "document_date": null
+          }
+        ]
+      },
+      {
+        "claim_id": "2.mcp",
+        "original_run_id": "pilot-first-pass-001",
+        "judgment": "correct",
+        "reason": "Independent AI review verified documentary observation against captured primary documentation; all material details hold for the declared scope.",
+        "evidence": [
+          {
+            "source_url": "https://developers.hubspot.com/docs/apps/developer-platform/build-apps/integrate-with-the-remote-hubspot-mcp-server",
+            "source_kind": "primary_docs",
+            "locator": "lines:77-87",
+            "observation": "paraphrase: HubSpot documents its remote CRM MCP server, https://mcp.hubspot.com, and OAuth with required PKCE.",
+            "captured_on": "2026-11-23",
+            "capture_method": "http_content",
+            "content_sha256": "14840c27104d17fd89f2ad53ec53085c313996743776c0de45d19a67a9317b7a",
+            "snapshot_ref": "snapshots/14840c27104d17fd89f2ad53ec53085c313996743776c0de45d19a67a9317b7a.txt",
+            "hash_unavailable_reason": null,
+            "document_version": null,
+            "document_date": null
+          },
+          {
+            "source_url": "https://developers.hubspot.com/docs/apps/developer-platform/build-apps/integrate-with-the-remote-hubspot-mcp-server",
+            "source_kind": "primary_docs",
+            "locator": "lines:119-127",
+            "observation": "paraphrase: MCP actions respect user permissions; available tools vary with plan and account configuration.",
+            "captured_on": "2026-11-23",
+            "capture_method": "http_content",
+            "content_sha256": "14840c27104d17fd89f2ad53ec53085c313996743776c0de45d19a67a9317b7a",
+            "snapshot_ref": "snapshots/14840c27104d17fd89f2ad53ec53085c313996743776c0de45d19a67a9317b7a.txt",
+            "hash_unavailable_reason": null,
+            "document_version": null,
+            "document_date": null
+          }
+        ]
+      },
+      {
+        "claim_id": "2.mcp.remote",
+        "original_run_id": "pilot-first-pass-001",
+        "judgment": "correct",
+        "reason": "Independent AI review verified documentary observation against captured primary documentation; all material details hold for the declared scope.",
+        "evidence": [
+          {
+            "source_url": "https://developers.hubspot.com/docs/apps/developer-platform/build-apps/integrate-with-the-remote-hubspot-mcp-server",
+            "source_kind": "primary_docs",
+            "locator": "lines:77-87",
+            "observation": "paraphrase: HubSpot documents its remote CRM MCP server, https://mcp.hubspot.com, and OAuth with required PKCE.",
+            "captured_on": "2026-11-23",
+            "capture_method": "http_content",
+            "content_sha256": "14840c27104d17fd89f2ad53ec53085c313996743776c0de45d19a67a9317b7a",
+            "snapshot_ref": "snapshots/14840c27104d17fd89f2ad53ec53085c313996743776c0de45d19a67a9317b7a.txt",
+            "hash_unavailable_reason": null,
+            "document_version": null,
+            "document_date": null
+          },
+          {
+            "source_url": "https://developers.hubspot.com/docs/apps/developer-platform/build-apps/integrate-with-the-remote-hubspot-mcp-server",
+            "source_kind": "primary_docs",
+            "locator": "lines:119-127",
+            "observation": "paraphrase: MCP actions respect user permissions; available tools vary with plan and account configuration.",
+            "captured_on": "2026-11-23",
+            "capture_method": "http_content",
+            "content_sha256": "14840c27104d17fd89f2ad53ec53085c313996743776c0de45d19a67a9317b7a",
+            "snapshot_ref": "snapshots/14840c27104d17fd89f2ad53ec53085c313996743776c0de45d19a67a9317b7a.txt",
+            "hash_unavailable_reason": null,
+            "document_version": null,
+            "document_date": null
+          }
+        ]
+      },
+      {
+        "claim_id": "2.buildability",
+        "original_run_id": "pilot-first-pass-001",
+        "judgment": "correct",
+        "reason": "Independent AI review verified inference against captured primary documentation; all material details hold for the declared scope.",
+        "evidence": [
+          {
+            "source_url": "https://developers.hubspot.com/developer-platform-basics",
+            "source_kind": "official_product_page",
+            "locator": "lines:251-259",
+            "observation": "paraphrase: Developers can use a free account, sample-data test accounts and public APIs for development.",
+            "captured_on": "2026-11-23",
+            "capture_method": "http_content",
+            "content_sha256": "b18b10c56e9402a64f5a581ed357c8186ffdb67ce748b5a19c3af16bad322802",
+            "snapshot_ref": "snapshots/b18b10c56e9402a64f5a581ed357c8186ffdb67ce748b5a19c3af16bad322802.txt",
+            "hash_unavailable_reason": null,
+            "document_version": null,
+            "document_date": null
+          },
+          {
+            "source_url": "https://developers.hubspot.com/docs/apps/developer-platform/build-apps/authentication/overview",
+            "source_kind": "primary_docs",
+            "locator": "lines:81-91",
+            "observation": "paraphrase: Multi-account apps require OAuth; API requests send the installed account access token as Bearer.",
+            "captured_on": "2026-11-23",
+            "capture_method": "http_content",
+            "content_sha256": "60ec5450f10f883744679a09ae17ecc45bd9604c28b59bbb8aabd937da9344e6",
+            "snapshot_ref": "snapshots/60ec5450f10f883744679a09ae17ecc45bd9604c28b59bbb8aabd937da9344e6.txt",
+            "hash_unavailable_reason": null,
+            "document_version": null,
+            "document_date": null
+          },
+          {
+            "source_url": "https://developers.hubspot.com/docs/apps/developer-platform/build-apps/authentication/overview",
+            "source_kind": "primary_docs",
+            "locator": "lines:93-98",
+            "observation": "paraphrase: Single-account private distribution uses a static access token in a Bearer header.",
+            "captured_on": "2026-11-23",
+            "capture_method": "http_content",
+            "content_sha256": "60ec5450f10f883744679a09ae17ecc45bd9604c28b59bbb8aabd937da9344e6",
+            "snapshot_ref": "snapshots/60ec5450f10f883744679a09ae17ecc45bd9604c28b59bbb8aabd937da9344e6.txt",
+            "hash_unavailable_reason": null,
+            "document_version": null,
+            "document_date": null
+          },
+          {
+            "source_url": "https://developers.hubspot.com/docs/apps/developer-platform/build-apps/integrate-with-the-remote-hubspot-mcp-server",
+            "source_kind": "primary_docs",
+            "locator": "lines:119-127",
+            "observation": "paraphrase: MCP actions respect user permissions; available tools vary with plan and account configuration.",
+            "captured_on": "2026-11-23",
+            "capture_method": "http_content",
+            "content_sha256": "14840c27104d17fd89f2ad53ec53085c313996743776c0de45d19a67a9317b7a",
+            "snapshot_ref": "snapshots/14840c27104d17fd89f2ad53ec53085c313996743776c0de45d19a67a9317b7a.txt",
+            "hash_unavailable_reason": null,
+            "document_version": null,
+            "document_date": null
+          }
+        ]
+      }
+    ],
+    "13": [
+      {
+        "claim_id": "13.purpose",
+        "original_run_id": "pilot-first-pass-001",
+        "judgment": "correct",
+        "reason": "Independent AI review verified documentary observation against captured primary documentation; all material details hold for the declared scope.",
+        "evidence": [
+          {
+            "source_url": "https://developers.freshworks.com/docs/app-sdk/v3.0/support_ticket/rest-apis/",
+            "source_kind": "primary_docs",
+            "locator": "lines:35-42",
+            "observation": "paraphrase: The support-ticket module documents ticket creation, retrieval, search and updates.",
+            "captured_on": "2026-11-23",
+            "capture_method": "http_content",
+            "content_sha256": "cb68a81b9dbad982918fc9f07012b208fc11e909a36c0386a4c25ac33bc35062",
+            "snapshot_ref": "snapshots/cb68a81b9dbad982918fc9f07012b208fc11e909a36c0386a4c25ac33bc35062.txt",
+            "hash_unavailable_reason": null,
+            "document_version": null,
+            "document_date": null
+          },
+          {
+            "source_url": "https://developers.freshworks.com/docs/app-sdk/v3.0/support_ticket/rest-apis/",
+            "source_kind": "primary_docs",
+            "locator": "lines:88-92",
+            "observation": "paraphrase: Conversation endpoints support ticket replies and notes.",
+            "captured_on": "2026-11-23",
+            "capture_method": "http_content",
+            "content_sha256": "cb68a81b9dbad982918fc9f07012b208fc11e909a36c0386a4c25ac33bc35062",
+            "snapshot_ref": "snapshots/cb68a81b9dbad982918fc9f07012b208fc11e909a36c0386a4c25ac33bc35062.txt",
+            "hash_unavailable_reason": null,
+            "document_version": null,
+            "document_date": null
+          }
+        ]
+      },
+      {
+        "claim_id": "13.auth.personal_key",
+        "original_run_id": "pilot-first-pass-001",
+        "judgment": "correct",
+        "reason": "Independent AI review verified documentary observation against captured primary documentation; all material details hold for the declared scope.",
+        "evidence": [
+          {
+            "source_url": "https://support.freshdesk.com/support/solutions/articles/215517-how-to-find-your-api-key",
+            "source_kind": "primary_docs",
+            "locator": "lines:95-101",
+            "observation": "paraphrase: Verified agents retrieve a personal API key from Profile Settings; API actions follow the agent role.",
+            "captured_on": "2026-11-23",
+            "capture_method": "http_content",
+            "content_sha256": "8992754847e4774df777d046d608371e489fbc710b44cbcd42db9682562b5a2a",
+            "snapshot_ref": "snapshots/8992754847e4774df777d046d608371e489fbc710b44cbcd42db9682562b5a2a.txt",
+            "hash_unavailable_reason": null,
+            "document_version": null,
+            "document_date": null
+          }
+        ]
+      },
+      {
+        "claim_id": "13.auth.basic",
+        "original_run_id": "pilot-first-pass-001",
+        "judgment": "correct",
+        "reason": "Independent AI review verified documentary observation against captured primary documentation; all material details hold for the declared scope.",
+        "evidence": [
+          {
+            "source_url": "https://developers.freshworks.com/docs/app-sdk/v3.0/support_ticket/oauth-implementation-in-apps/",
+            "source_kind": "primary_docs",
+            "locator": "lines:35-39",
+            "observation": "paraphrase: Freshdesk lists Basic access using API keys and OAuth token authorization as alternatives.",
+            "captured_on": "2026-11-23",
+            "capture_method": "http_content",
+            "content_sha256": "07d6e7c9d1e04107d199da1bd5dd8c3db5d68ec46ff42b214b67e99d6e083b49",
+            "snapshot_ref": "snapshots/07d6e7c9d1e04107d199da1bd5dd8c3db5d68ec46ff42b214b67e99d6e083b49.txt",
+            "hash_unavailable_reason": null,
+            "document_version": null,
+            "document_date": null
+          }
+        ]
+      },
+      {
+        "claim_id": "13.auth.oauth",
+        "original_run_id": "pilot-first-pass-001",
+        "judgment": "correct",
+        "reason": "Independent AI review verified documentary observation against captured primary documentation; all material details hold for the declared scope.",
+        "evidence": [
+          {
+            "source_url": "https://developers.freshworks.com/docs/app-sdk/v3.0/support_ticket/oauth-implementation-in-apps/",
+            "source_kind": "primary_docs",
+            "locator": "lines:38-47",
+            "observation": "paraphrase: FDK Freshworks/custom apps can obtain OAuth access tokens to make authorized REST calls.",
+            "captured_on": "2026-11-23",
+            "capture_method": "http_content",
+            "content_sha256": "07d6e7c9d1e04107d199da1bd5dd8c3db5d68ec46ff42b214b67e99d6e083b49",
+            "snapshot_ref": "snapshots/07d6e7c9d1e04107d199da1bd5dd8c3db5d68ec46ff42b214b67e99d6e083b49.txt",
+            "hash_unavailable_reason": null,
+            "document_version": null,
+            "document_date": null
+          }
+        ]
+      },
+      {
+        "claim_id": "13.auth.mcp_key",
+        "original_run_id": "pilot-first-pass-001",
+        "judgment": "correct",
+        "reason": "Independent AI review verified documentary observation against captured primary documentation; all material details hold for the declared scope.",
+        "evidence": [
+          {
+            "source_url": "https://support.freshdesk.com/support/solutions/articles/50000012670",
+            "source_kind": "primary_docs",
+            "locator": "lines:70-72",
+            "observation": "paraphrase: Freshdesk documents an official MCP bridge and API-key-only MCP authentication.",
+            "captured_on": "2026-11-23",
+            "capture_method": "http_content",
+            "content_sha256": "45c76d163aa76bbf4818305fa78fb97cf556321f04c338d0d12627b390a65157",
+            "snapshot_ref": "snapshots/45c76d163aa76bbf4818305fa78fb97cf556321f04c338d0d12627b390a65157.txt",
+            "hash_unavailable_reason": null,
+            "document_version": null,
+            "document_date": null
+          }
+        ]
+      },
+      {
+        "claim_id": "13.testing.free_access",
+        "original_run_id": "pilot-first-pass-001",
+        "judgment": "correct",
+        "reason": "Independent AI review verified inference against captured primary documentation; all material details hold for the declared scope.",
+        "evidence": [
+          {
+            "source_url": "https://support.freshdesk.com/support/solutions/articles/50000011778",
+            "source_kind": "primary_docs",
+            "locator": "lines:114-121",
+            "observation": "paraphrase: New accounts begin with a free 14-day full-feature trial, followed by paid plans or a separate Free Program.",
+            "captured_on": "2026-11-23",
+            "capture_method": "http_content",
+            "content_sha256": "2bc4b4baa653da6b55f71691057e8d26e460019c61858a60790b1e8faae31a3d",
+            "snapshot_ref": "snapshots/2bc4b4baa653da6b55f71691057e8d26e460019c61858a60790b1e8faae31a3d.txt",
+            "hash_unavailable_reason": null,
+            "document_version": null,
+            "document_date": null
+          }
+        ]
+      },
+      {
+        "claim_id": "13.testing.trial_access",
+        "original_run_id": "pilot-first-pass-001",
+        "judgment": "correct",
+        "reason": "Independent AI review verified inference against captured primary documentation; all material details hold for the declared scope.",
+        "evidence": [
+          {
+            "source_url": "https://support.freshdesk.com/support/solutions/articles/50000011778",
+            "source_kind": "primary_docs",
+            "locator": "lines:114-121",
+            "observation": "paraphrase: New accounts begin with a free 14-day full-feature trial, followed by paid plans or a separate Free Program.",
+            "captured_on": "2026-11-23",
+            "capture_method": "http_content",
+            "content_sha256": "2bc4b4baa653da6b55f71691057e8d26e460019c61858a60790b1e8faae31a3d",
+            "snapshot_ref": "snapshots/2bc4b4baa653da6b55f71691057e8d26e460019c61858a60790b1e8faae31a3d.txt",
+            "hash_unavailable_reason": null,
+            "document_version": null,
+            "document_date": null
+          }
+        ]
+      },
+      {
+        "claim_id": "13.testing.paid_required",
+        "original_run_id": "pilot-first-pass-001",
+        "judgment": "correct",
+        "reason": "Independent AI review verified inference against captured primary documentation; all material details hold for the declared scope.",
+        "evidence": [
+          {
+            "source_url": "https://support.freshdesk.com/support/solutions/articles/50000011778",
+            "source_kind": "primary_docs",
+            "locator": "lines:114-121",
+            "observation": "paraphrase: New accounts begin with a free 14-day full-feature trial, followed by paid plans or a separate Free Program.",
+            "captured_on": "2026-11-23",
+            "capture_method": "http_content",
+            "content_sha256": "2bc4b4baa653da6b55f71691057e8d26e460019c61858a60790b1e8faae31a3d",
+            "snapshot_ref": "snapshots/2bc4b4baa653da6b55f71691057e8d26e460019c61858a60790b1e8faae31a3d.txt",
+            "hash_unavailable_reason": null,
+            "document_version": null,
+            "document_date": null
+          }
+        ]
+      },
+      {
+        "claim_id": "13.testing.self_serve",
+        "original_run_id": "pilot-first-pass-001",
+        "judgment": "correct",
+        "reason": "Independent AI review verified inference against captured primary documentation; all material details hold for the declared scope.",
+        "evidence": [
+          {
+            "source_url": "https://support.freshdesk.com/support/solutions/articles/50000011778",
+            "source_kind": "primary_docs",
+            "locator": "lines:114-121",
+            "observation": "paraphrase: New accounts begin with a free 14-day full-feature trial, followed by paid plans or a separate Free Program.",
+            "captured_on": "2026-11-23",
+            "capture_method": "http_content",
+            "content_sha256": "2bc4b4baa653da6b55f71691057e8d26e460019c61858a60790b1e8faae31a3d",
+            "snapshot_ref": "snapshots/2bc4b4baa653da6b55f71691057e8d26e460019c61858a60790b1e8faae31a3d.txt",
+            "hash_unavailable_reason": null,
+            "document_version": null,
+            "document_date": null
+          },
+          {
+            "source_url": "https://support.freshdesk.com/support/solutions/articles/215517-how-to-find-your-api-key",
+            "source_kind": "primary_docs",
+            "locator": "lines:95-101",
+            "observation": "paraphrase: Verified agents retrieve a personal API key from Profile Settings; API actions follow the agent role.",
+            "captured_on": "2026-11-23",
+            "capture_method": "http_content",
+            "content_sha256": "8992754847e4774df777d046d608371e489fbc710b44cbcd42db9682562b5a2a",
+            "snapshot_ref": "snapshots/8992754847e4774df777d046d608371e489fbc710b44cbcd42db9682562b5a2a.txt",
+            "hash_unavailable_reason": null,
+            "document_version": null,
+            "document_date": null
+          }
+        ]
+      },
+      {
+        "claim_id": "13.production.admin_approval_required",
+        "original_run_id": "pilot-first-pass-001",
+        "judgment": "correct",
+        "reason": "Independent AI review verified documentary observation against captured primary documentation; all material details hold for the declared scope.",
+        "evidence": [
+          {
+            "source_url": "https://support.freshdesk.com/support/solutions/articles/50000011778",
+            "source_kind": "primary_docs",
+            "locator": "lines:133-145",
+            "observation": "paraphrase: Purchasing and activating a paid plan is performed as Account Admin.",
+            "captured_on": "2026-11-23",
+            "capture_method": "http_content",
+            "content_sha256": "2bc4b4baa653da6b55f71691057e8d26e460019c61858a60790b1e8faae31a3d",
+            "snapshot_ref": "snapshots/2bc4b4baa653da6b55f71691057e8d26e460019c61858a60790b1e8faae31a3d.txt",
+            "hash_unavailable_reason": null,
+            "document_version": null,
+            "document_date": null
+          }
+        ]
+      },
+      {
+        "claim_id": "13.production.self_serve",
+        "original_run_id": "pilot-first-pass-001",
+        "judgment": "correct",
+        "reason": "Independent AI review verified inference against captured primary documentation; all material details hold for the declared scope.",
+        "evidence": [
+          {
+            "source_url": "https://support.freshdesk.com/support/solutions/articles/215517-how-to-find-your-api-key",
+            "source_kind": "primary_docs",
+            "locator": "lines:95-101",
+            "observation": "paraphrase: Verified agents retrieve a personal API key from Profile Settings; API actions follow the agent role.",
+            "captured_on": "2026-11-23",
+            "capture_method": "http_content",
+            "content_sha256": "8992754847e4774df777d046d608371e489fbc710b44cbcd42db9682562b5a2a",
+            "snapshot_ref": "snapshots/8992754847e4774df777d046d608371e489fbc710b44cbcd42db9682562b5a2a.txt",
+            "hash_unavailable_reason": null,
+            "document_version": null,
+            "document_date": null
+          },
+          {
+            "source_url": "https://support.freshdesk.com/support/solutions/articles/50000011778",
+            "source_kind": "primary_docs",
+            "locator": "lines:133-145",
+            "observation": "paraphrase: An Account Admin can choose a plan, pay and activate the subscription in-product.",
+            "captured_on": "2026-11-23",
+            "capture_method": "http_content",
+            "content_sha256": "2bc4b4baa653da6b55f71691057e8d26e460019c61858a60790b1e8faae31a3d",
+            "snapshot_ref": "snapshots/2bc4b4baa653da6b55f71691057e8d26e460019c61858a60790b1e8faae31a3d.txt",
+            "hash_unavailable_reason": null,
+            "document_version": null,
+            "document_date": null
+          }
+        ]
+      },
+      {
+        "claim_id": "13.api.rest",
+        "original_run_id": "pilot-first-pass-001",
+        "judgment": "correct",
+        "reason": "Independent AI review verified documentary observation against captured primary documentation; all material details hold for the declared scope.",
+        "evidence": [
+          {
+            "source_url": "https://developers.freshworks.com/docs/app-sdk/v3.0/support_ticket/oauth-implementation-in-apps/",
+            "source_kind": "primary_docs",
+            "locator": "lines:35-39",
+            "observation": "paraphrase: The documentation identifies Freshdesk resources, REST APIs, Basic/API-key access and OAuth authorization.",
+            "captured_on": "2026-11-23",
+            "capture_method": "http_content",
+            "content_sha256": "07d6e7c9d1e04107d199da1bd5dd8c3db5d68ec46ff42b214b67e99d6e083b49",
+            "snapshot_ref": "snapshots/07d6e7c9d1e04107d199da1bd5dd8c3db5d68ec46ff42b214b67e99d6e083b49.txt",
+            "hash_unavailable_reason": null,
+            "document_version": null,
+            "document_date": null
+          }
+        ]
+      },
+      {
+        "claim_id": "13.api.public_documentation",
+        "original_run_id": "pilot-first-pass-001",
+        "judgment": "correct",
+        "reason": "Independent AI review verified documentary observation against captured primary documentation; all material details hold for the declared scope.",
+        "evidence": [
+          {
+            "source_url": "https://developers.freshworks.com/docs/app-sdk/v3.0/support_ticket/rest-apis/",
+            "source_kind": "primary_docs",
+            "locator": "lines:34-42",
+            "observation": "paraphrase: Public REST documentation lists /api/v2 ticket methods.",
+            "captured_on": "2026-11-23",
+            "capture_method": "http_content",
+            "content_sha256": "cb68a81b9dbad982918fc9f07012b208fc11e909a36c0386a4c25ac33bc35062",
+            "snapshot_ref": "snapshots/cb68a81b9dbad982918fc9f07012b208fc11e909a36c0386a4c25ac33bc35062.txt",
+            "hash_unavailable_reason": null,
+            "document_version": null,
+            "document_date": null
+          }
+        ]
+      },
+      {
+        "claim_id": "13.api.group.tickets",
+        "original_run_id": "pilot-first-pass-001",
+        "judgment": "correct",
+        "reason": "Independent AI review verified documentary observation against captured primary documentation; all material details hold for the declared scope.",
+        "evidence": [
+          {
+            "source_url": "https://developers.freshworks.com/docs/app-sdk/v3.0/support_ticket/rest-apis/",
+            "source_kind": "primary_docs",
+            "locator": "lines:36-54",
+            "observation": "paraphrase: Ticket endpoints create, get, search, update, merge, delete and restore tickets.",
+            "captured_on": "2026-11-23",
+            "capture_method": "http_content",
+            "content_sha256": "cb68a81b9dbad982918fc9f07012b208fc11e909a36c0386a4c25ac33bc35062",
+            "snapshot_ref": "snapshots/cb68a81b9dbad982918fc9f07012b208fc11e909a36c0386a4c25ac33bc35062.txt",
+            "hash_unavailable_reason": null,
+            "document_version": null,
+            "document_date": null
+          }
+        ]
+      },
+      {
+        "claim_id": "13.api.group.conversations",
+        "original_run_id": "pilot-first-pass-001",
+        "judgment": "correct",
+        "reason": "Independent AI review verified documentary observation against captured primary documentation; all material details hold for the declared scope.",
+        "evidence": [
+          {
+            "source_url": "https://developers.freshworks.com/docs/app-sdk/v3.0/support_ticket/rest-apis/",
+            "source_kind": "primary_docs",
+            "locator": "lines:88-92",
+            "observation": "paraphrase: Conversation APIs support replies, notes, updates and deletion.",
+            "captured_on": "2026-11-23",
+            "capture_method": "http_content",
+            "content_sha256": "cb68a81b9dbad982918fc9f07012b208fc11e909a36c0386a4c25ac33bc35062",
+            "snapshot_ref": "snapshots/cb68a81b9dbad982918fc9f07012b208fc11e909a36c0386a4c25ac33bc35062.txt",
+            "hash_unavailable_reason": null,
+            "document_version": null,
+            "document_date": null
+          }
+        ]
+      },
+      {
+        "claim_id": "13.api.group.time",
+        "original_run_id": "pilot-first-pass-001",
+        "judgment": "correct",
+        "reason": "Independent AI review verified documentary observation against captured primary documentation; all material details hold for the declared scope.",
+        "evidence": [
+          {
+            "source_url": "https://developers.freshworks.com/docs/app-sdk/v3.0/support_ticket/rest-apis/",
+            "source_kind": "primary_docs",
+            "locator": "lines:102-106",
+            "observation": "paraphrase: Time-entry methods create, get, update, toggle and delete tracking records.",
+            "captured_on": "2026-11-23",
+            "capture_method": "http_content",
+            "content_sha256": "cb68a81b9dbad982918fc9f07012b208fc11e909a36c0386a4c25ac33bc35062",
+            "snapshot_ref": "snapshots/cb68a81b9dbad982918fc9f07012b208fc11e909a36c0386a4c25ac33bc35062.txt",
+            "hash_unavailable_reason": null,
+            "document_version": null,
+            "document_date": null
+          }
+        ]
+      },
+      {
+        "claim_id": "13.api.breadth",
+        "original_run_id": "pilot-first-pass-001",
+        "judgment": "correct",
+        "reason": "Independent AI review verified inference against captured primary documentation; all material details hold for the declared scope.",
+        "evidence": [
+          {
+            "source_url": "https://developers.freshworks.com/docs/app-sdk/v3.0/support_ticket/rest-apis/",
+            "source_kind": "primary_docs",
+            "locator": "lines:36-54",
+            "observation": "paraphrase: Ticket endpoints create, get, search, update, merge, delete and restore tickets.",
+            "captured_on": "2026-11-23",
+            "capture_method": "http_content",
+            "content_sha256": "cb68a81b9dbad982918fc9f07012b208fc11e909a36c0386a4c25ac33bc35062",
+            "snapshot_ref": "snapshots/cb68a81b9dbad982918fc9f07012b208fc11e909a36c0386a4c25ac33bc35062.txt",
+            "hash_unavailable_reason": null,
+            "document_version": null,
+            "document_date": null
+          },
+          {
+            "source_url": "https://developers.freshworks.com/docs/app-sdk/v3.0/support_ticket/rest-apis/",
+            "source_kind": "primary_docs",
+            "locator": "lines:88-92",
+            "observation": "paraphrase: Conversation APIs support replies, notes, updates and deletion.",
+            "captured_on": "2026-11-23",
+            "capture_method": "http_content",
+            "content_sha256": "cb68a81b9dbad982918fc9f07012b208fc11e909a36c0386a4c25ac33bc35062",
+            "snapshot_ref": "snapshots/cb68a81b9dbad982918fc9f07012b208fc11e909a36c0386a4c25ac33bc35062.txt",
+            "hash_unavailable_reason": null,
+            "document_version": null,
+            "document_date": null
+          },
+          {
+            "source_url": "https://developers.freshworks.com/docs/app-sdk/v3.0/support_ticket/rest-apis/",
+            "source_kind": "primary_docs",
+            "locator": "lines:102-106",
+            "observation": "paraphrase: Time-entry methods create, get, update, toggle and delete tracking records.",
+            "captured_on": "2026-11-23",
+            "capture_method": "http_content",
+            "content_sha256": "cb68a81b9dbad982918fc9f07012b208fc11e909a36c0386a4c25ac33bc35062",
+            "snapshot_ref": "snapshots/cb68a81b9dbad982918fc9f07012b208fc11e909a36c0386a4c25ac33bc35062.txt",
+            "hash_unavailable_reason": null,
+            "document_version": null,
+            "document_date": null
+          }
+        ]
+      },
+      {
+        "claim_id": "13.mcp",
+        "original_run_id": "pilot-first-pass-001",
+        "judgment": "correct",
+        "reason": "Independent AI review verified documentary observation against captured primary documentation; all material details hold for the declared scope.",
+        "evidence": [
+          {
+            "source_url": "https://support.freshdesk.com/support/solutions/articles/50000012670",
+            "source_kind": "primary_docs",
+            "locator": "lines:70-72",
+            "observation": "paraphrase: Freshdesk describes its own MCP server and API-key authentication.",
+            "captured_on": "2026-11-23",
+            "capture_method": "http_content",
+            "content_sha256": "45c76d163aa76bbf4818305fa78fb97cf556321f04c338d0d12627b390a65157",
+            "snapshot_ref": "snapshots/45c76d163aa76bbf4818305fa78fb97cf556321f04c338d0d12627b390a65157.txt",
+            "hash_unavailable_reason": null,
+            "document_version": null,
+            "document_date": null
+          },
+          {
+            "source_url": "https://support.freshdesk.com/support/solutions/articles/50000012670",
+            "source_kind": "primary_docs",
+            "locator": "lines:88-110",
+            "observation": "paraphrase: Supported GA products and Growth/Pro/Enterprise action allowances are listed.",
+            "captured_on": "2026-11-23",
+            "capture_method": "http_content",
+            "content_sha256": "45c76d163aa76bbf4818305fa78fb97cf556321f04c338d0d12627b390a65157",
+            "snapshot_ref": "snapshots/45c76d163aa76bbf4818305fa78fb97cf556321f04c338d0d12627b390a65157.txt",
+            "hash_unavailable_reason": null,
+            "document_version": null,
+            "document_date": null
+          },
+          {
+            "source_url": "https://support.freshdesk.com/support/solutions/articles/50000012670",
+            "source_kind": "primary_docs",
+            "locator": "lines:128-132",
+            "observation": "paraphrase: The per-tenant MCP endpoint template is https://<subdomain>.freshdesk.com/mcp.",
+            "captured_on": "2026-11-23",
+            "capture_method": "http_content",
+            "content_sha256": "45c76d163aa76bbf4818305fa78fb97cf556321f04c338d0d12627b390a65157",
+            "snapshot_ref": "snapshots/45c76d163aa76bbf4818305fa78fb97cf556321f04c338d0d12627b390a65157.txt",
+            "hash_unavailable_reason": null,
+            "document_version": null,
+            "document_date": null
+          }
+        ]
+      },
+      {
+        "claim_id": "13.mcp.official",
+        "original_run_id": "pilot-first-pass-001",
+        "judgment": "correct",
+        "reason": "Independent AI review verified documentary observation against captured primary documentation; all material details hold for the declared scope.",
+        "evidence": [
+          {
+            "source_url": "https://support.freshdesk.com/support/solutions/articles/50000012670",
+            "source_kind": "primary_docs",
+            "locator": "lines:70-72",
+            "observation": "paraphrase: Freshdesk describes its own MCP server and API-key authentication.",
+            "captured_on": "2026-11-23",
+            "capture_method": "http_content",
+            "content_sha256": "45c76d163aa76bbf4818305fa78fb97cf556321f04c338d0d12627b390a65157",
+            "snapshot_ref": "snapshots/45c76d163aa76bbf4818305fa78fb97cf556321f04c338d0d12627b390a65157.txt",
+            "hash_unavailable_reason": null,
+            "document_version": null,
+            "document_date": null
+          },
+          {
+            "source_url": "https://support.freshdesk.com/support/solutions/articles/50000012670",
+            "source_kind": "primary_docs",
+            "locator": "lines:88-110",
+            "observation": "paraphrase: Supported GA products and Growth/Pro/Enterprise action allowances are listed.",
+            "captured_on": "2026-11-23",
+            "capture_method": "http_content",
+            "content_sha256": "45c76d163aa76bbf4818305fa78fb97cf556321f04c338d0d12627b390a65157",
+            "snapshot_ref": "snapshots/45c76d163aa76bbf4818305fa78fb97cf556321f04c338d0d12627b390a65157.txt",
+            "hash_unavailable_reason": null,
+            "document_version": null,
+            "document_date": null
+          },
+          {
+            "source_url": "https://support.freshdesk.com/support/solutions/articles/50000012670",
+            "source_kind": "primary_docs",
+            "locator": "lines:128-132",
+            "observation": "paraphrase: The per-tenant MCP endpoint template is https://<subdomain>.freshdesk.com/mcp.",
+            "captured_on": "2026-11-23",
+            "capture_method": "http_content",
+            "content_sha256": "45c76d163aa76bbf4818305fa78fb97cf556321f04c338d0d12627b390a65157",
+            "snapshot_ref": "snapshots/45c76d163aa76bbf4818305fa78fb97cf556321f04c338d0d12627b390a65157.txt",
+            "hash_unavailable_reason": null,
+            "document_version": null,
+            "document_date": null
+          }
+        ]
+      },
+      {
+        "claim_id": "13.buildability",
+        "original_run_id": "pilot-first-pass-001",
+        "judgment": "correct",
+        "reason": "Independent AI review verified inference against captured primary documentation; all material details hold for the declared scope.",
+        "evidence": [
+          {
+            "source_url": "https://support.freshdesk.com/support/solutions/articles/215517-how-to-find-your-api-key",
+            "source_kind": "primary_docs",
+            "locator": "lines:95-101",
+            "observation": "paraphrase: Verified agents retrieve a personal API key from Profile Settings; API actions follow the agent role.",
+            "captured_on": "2026-11-23",
+            "capture_method": "http_content",
+            "content_sha256": "8992754847e4774df777d046d608371e489fbc710b44cbcd42db9682562b5a2a",
+            "snapshot_ref": "snapshots/8992754847e4774df777d046d608371e489fbc710b44cbcd42db9682562b5a2a.txt",
+            "hash_unavailable_reason": null,
+            "document_version": null,
+            "document_date": null
+          },
+          {
+            "source_url": "https://support.freshdesk.com/support/solutions/articles/50000011778",
+            "source_kind": "primary_docs",
+            "locator": "lines:114-121",
+            "observation": "paraphrase: New accounts begin with a free 14-day full-feature trial, followed by paid plans or a separate Free Program.",
+            "captured_on": "2026-11-23",
+            "capture_method": "http_content",
+            "content_sha256": "2bc4b4baa653da6b55f71691057e8d26e460019c61858a60790b1e8faae31a3d",
+            "snapshot_ref": "snapshots/2bc4b4baa653da6b55f71691057e8d26e460019c61858a60790b1e8faae31a3d.txt",
+            "hash_unavailable_reason": null,
+            "document_version": null,
+            "document_date": null
+          },
+          {
+            "source_url": "https://developers.freshworks.com/docs/app-sdk/v3.0/support_ticket/oauth-implementation-in-apps/",
+            "source_kind": "primary_docs",
+            "locator": "lines:35-39",
+            "observation": "paraphrase: Freshdesk lists Basic access using API keys and OAuth token authorization as alternatives.",
+            "captured_on": "2026-11-23",
+            "capture_method": "http_content",
+            "content_sha256": "07d6e7c9d1e04107d199da1bd5dd8c3db5d68ec46ff42b214b67e99d6e083b49",
+            "snapshot_ref": "snapshots/07d6e7c9d1e04107d199da1bd5dd8c3db5d68ec46ff42b214b67e99d6e083b49.txt",
+            "hash_unavailable_reason": null,
+            "document_version": null,
+            "document_date": null
+          }
+        ]
+      }
+    ],
+    "31": [
+      {
+        "claim_id": "31.purpose",
+        "original_run_id": "pilot-first-pass-001",
+        "judgment": "correct",
+        "reason": "Independent AI review verified documentary observation against captured primary documentation; all material details hold for the declared scope.",
+        "evidence": [
+          {
+            "source_url": "https://developers.google.com/google-ads/api/docs/concepts/api-structure",
+            "source_kind": "primary_docs",
+            "locator": "lines:429-435",
+            "observation": "paraphrase: Google Ads services modify resources and retrieve objects and performance statistics.",
+            "captured_on": "2026-11-23",
+            "capture_method": "http_content",
+            "content_sha256": "eb67307fd7612a7d6b6f58a394edf5729ded03d152253018eab4a590dea7215f",
+            "snapshot_ref": "snapshots/eb67307fd7612a7d6b6f58a394edf5729ded03d152253018eab4a590dea7215f.txt",
+            "hash_unavailable_reason": null,
+            "document_version": null,
+            "document_date": null
+          }
+        ]
+      },
+      {
+        "claim_id": "31.auth.oauth_user",
+        "original_run_id": "pilot-first-pass-001",
+        "judgment": "correct",
+        "reason": "Independent AI review verified documentary observation against captured primary documentation; all material details hold for the declared scope.",
+        "evidence": [
+          {
+            "source_url": "https://developers.google.com/google-ads/api/docs/oauth/overview",
+            "source_kind": "primary_docs",
+            "locator": "lines:421-429",
+            "observation": "paraphrase: OAuth credentials must belong to the API-enabled project; Google Ads uses OAuth 2.0 to access user accounts.",
+            "captured_on": "2026-11-23",
+            "capture_method": "http_content",
+            "content_sha256": "4dddc5e4f3721859e57c4356517166d8ad537de9b7e3f1ac36f20bb2ec6eeecf",
+            "snapshot_ref": "snapshots/4dddc5e4f3721859e57c4356517166d8ad537de9b7e3f1ac36f20bb2ec6eeecf.txt",
+            "hash_unavailable_reason": null,
+            "document_version": null,
+            "document_date": null
+          }
+        ]
+      },
+      {
+        "claim_id": "31.auth.service_account",
+        "original_run_id": "pilot-first-pass-001",
+        "judgment": "correct",
+        "reason": "Independent AI review verified documentary observation against captured primary documentation; all material details hold for the declared scope.",
+        "evidence": [
+          {
+            "source_url": "https://developers.google.com/google-ads/api/docs/oauth/overview",
+            "source_kind": "primary_docs",
+            "locator": "lines:435-447",
+            "observation": "paraphrase: The OAuth overview identifies both authorized user and service-account workflows.",
+            "captured_on": "2026-11-23",
+            "capture_method": "http_content",
+            "content_sha256": "4dddc5e4f3721859e57c4356517166d8ad537de9b7e3f1ac36f20bb2ec6eeecf",
+            "snapshot_ref": "snapshots/4dddc5e4f3721859e57c4356517166d8ad537de9b7e3f1ac36f20bb2ec6eeecf.txt",
+            "hash_unavailable_reason": null,
+            "document_version": null,
+            "document_date": null
+          }
+        ]
+      },
+      {
+        "claim_id": "31.testing.sandbox_access",
+        "original_run_id": "pilot-first-pass-001",
+        "judgment": "correct",
+        "reason": "Independent AI review verified documentary observation against captured primary documentation; all material details hold for the declared scope.",
+        "evidence": [
+          {
+            "source_url": "https://developers.google.com/google-ads/api/docs/api-policy/access-levels",
+            "source_kind": "primary_docs",
+            "locator": "lines:113-122",
+            "observation": "paraphrase: Enabling the Ads API automatically grants a Cloud project Test access for test accounts.",
+            "captured_on": "2026-11-23",
+            "capture_method": "http_content",
+            "content_sha256": "9ad2996ee07d4f26bb7bf5ee0627233fe1e5019cf7585fe323adebc746f40669",
+            "snapshot_ref": "snapshots/9ad2996ee07d4f26bb7bf5ee0627233fe1e5019cf7585fe323adebc746f40669.txt",
+            "hash_unavailable_reason": null,
+            "document_version": null,
+            "document_date": null
+          },
+          {
+            "source_url": "https://developers.google.com/google-ads/api/docs/best-practices/testing",
+            "source_kind": "primary_docs",
+            "locator": "lines:442-446",
+            "observation": "paraphrase: Test accounts are available for development, with feature limitations.",
+            "captured_on": "2026-11-23",
+            "capture_method": "http_content",
+            "content_sha256": "54c7f6b803c8aa1fd84e690c351a2611abb737ec3a5dfb786530cbc922a14d16",
+            "snapshot_ref": "snapshots/54c7f6b803c8aa1fd84e690c351a2611abb737ec3a5dfb786530cbc922a14d16.txt",
+            "hash_unavailable_reason": null,
+            "document_version": null,
+            "document_date": null
+          }
+        ]
+      },
+      {
+        "claim_id": "31.testing.self_serve",
+        "original_run_id": "pilot-first-pass-001",
+        "judgment": "correct",
+        "reason": "Independent AI review verified documentary observation against captured primary documentation; all material details hold for the declared scope.",
+        "evidence": [
+          {
+            "source_url": "https://developers.google.com/google-ads/api/docs/api-policy/access-levels",
+            "source_kind": "primary_docs",
+            "locator": "lines:113-122",
+            "observation": "paraphrase: Enabling the Ads API automatically grants a Cloud project Test access for test accounts.",
+            "captured_on": "2026-11-23",
+            "capture_method": "http_content",
+            "content_sha256": "9ad2996ee07d4f26bb7bf5ee0627233fe1e5019cf7585fe323adebc746f40669",
+            "snapshot_ref": "snapshots/9ad2996ee07d4f26bb7bf5ee0627233fe1e5019cf7585fe323adebc746f40669.txt",
+            "hash_unavailable_reason": null,
+            "document_version": null,
+            "document_date": null
+          }
+        ]
+      },
+      {
+        "claim_id": "31.production.admin_approval_required",
+        "original_run_id": "pilot-first-pass-001",
+        "judgment": "unsupported",
+        "reason": "Unsupported inference: best-practices/testing lines 481-487 describe adding a test user/service account to test accounts (and explicitly warn 'Don't give this user or service account access to any production accounts'), while oauth/overview lines 438-441 only state that the authorized user or service account must have access to the target Google Ads accounts. Neither cited passage documents that admin approval is required for production credentials.",
+        "evidence": [
+          {
+            "source_url": "https://developers.google.com/google-ads/api/docs/best-practices/testing",
+            "source_kind": "primary_docs",
+            "locator": "lines:481-487",
+            "observation": "quote: user or service account access to any production accounts.",
+            "captured_on": "2026-11-23",
+            "capture_method": "http_content",
+            "content_sha256": "54c7f6b803c8aa1fd84e690c351a2611abb737ec3a5dfb786530cbc922a14d16",
+            "snapshot_ref": "snapshots/54c7f6b803c8aa1fd84e690c351a2611abb737ec3a5dfb786530cbc922a14d16.txt",
+            "hash_unavailable_reason": null,
+            "document_version": null,
+            "document_date": null
+          },
+          {
+            "source_url": "https://developers.google.com/google-ads/api/docs/oauth/overview",
+            "source_kind": "primary_docs",
+            "locator": "lines:438-441",
+            "observation": "quote: Make sure your authorized user or your service account has access to",
+            "captured_on": "2026-11-23",
+            "capture_method": "http_content",
+            "content_sha256": "4dddc5e4f3721859e57c4356517166d8ad537de9b7e3f1ac36f20bb2ec6eeecf",
+            "snapshot_ref": "snapshots/4dddc5e4f3721859e57c4356517166d8ad537de9b7e3f1ac36f20bb2ec6eeecf.txt",
+            "hash_unavailable_reason": null,
+            "document_version": null,
+            "document_date": null
+          }
+        ]
+      },
+      {
+        "claim_id": "31.production.partner_approval_required",
+        "original_run_id": "pilot-first-pass-001",
+        "judgment": "unsupported",
+        "reason": "Unsupported taxonomy mapping: access-levels lines 123-169 document Google vendor API-access approval (Explorer/Basic/Standard application in Google Cloud Console, which may be automatically approved), not partner approval or a partner program. The researcher's rationale itself acknowledges this is 'not a commercial partnership contract'; asserting partner_approval_required=true as observed is unsubstantiated by the cited text and reflects a schema gap (no vendor_approval_required field).",
+        "evidence": [
+          {
+            "source_url": "https://developers.google.com/google-ads/api/docs/api-policy/access-levels",
+            "source_kind": "primary_docs",
+            "locator": "lines:161-169",
+            "observation": "quote: Google may automatically upgrade your project's API access level to Explorer",
+            "captured_on": "2026-11-23",
+            "capture_method": "http_content",
+            "content_sha256": "9ad2996ee07d4f26bb7bf5ee0627233fe1e5019cf7585fe323adebc746f40669",
+            "snapshot_ref": "snapshots/9ad2996ee07d4f26bb7bf5ee0627233fe1e5019cf7585fe323adebc746f40669.txt",
+            "hash_unavailable_reason": null,
+            "document_version": null,
+            "document_date": null
+          }
+        ]
+      },
+      {
+        "claim_id": "31.production.self_serve",
+        "original_run_id": "pilot-first-pass-001",
+        "judgment": "correct",
+        "reason": "Independent AI review verified inference against captured primary documentation; all material details hold for the declared scope.",
+        "evidence": [
+          {
+            "source_url": "https://developers.google.com/google-ads/api/docs/api-policy/access-levels",
+            "source_kind": "primary_docs",
+            "locator": "lines:123-169",
+            "observation": "paraphrase: Production calls require Explorer or higher; Explorer application is submitted in Cloud Console and may be automatically approved.",
+            "captured_on": "2026-11-23",
+            "capture_method": "http_content",
+            "content_sha256": "9ad2996ee07d4f26bb7bf5ee0627233fe1e5019cf7585fe323adebc746f40669",
+            "snapshot_ref": "snapshots/9ad2996ee07d4f26bb7bf5ee0627233fe1e5019cf7585fe323adebc746f40669.txt",
+            "hash_unavailable_reason": null,
+            "document_version": null,
+            "document_date": null
+          }
+        ]
+      },
+      {
+        "claim_id": "31.api.rest",
+        "original_run_id": "pilot-first-pass-001",
+        "judgment": "correct",
+        "reason": "Independent AI review verified documentary observation against captured primary documentation; all material details hold for the declared scope.",
+        "evidence": [
+          {
+            "source_url": "https://developers.google.com/google-ads/api/rest/overview",
+            "source_kind": "primary_docs",
+            "locator": "lines:285-300",
+            "observation": "paraphrase: The API supports REST and gRPC; official libraries are recommended.",
+            "captured_on": "2026-11-23",
+            "capture_method": "http_content",
+            "content_sha256": "27ff9528dd6b2bc86582379874bb208ca7d5454903e3cd73618b890bcea150b1",
+            "snapshot_ref": "snapshots/27ff9528dd6b2bc86582379874bb208ca7d5454903e3cd73618b890bcea150b1.txt",
+            "hash_unavailable_reason": null,
+            "document_version": null,
+            "document_date": null
+          }
+        ]
+      },
+      {
+        "claim_id": "31.api.grpc",
+        "original_run_id": "pilot-first-pass-001",
+        "judgment": "correct",
+        "reason": "Independent AI review verified documentary observation against captured primary documentation; all material details hold for the declared scope.",
+        "evidence": [
+          {
+            "source_url": "https://developers.google.com/google-ads/api/rest/overview",
+            "source_kind": "primary_docs",
+            "locator": "lines:285-287",
+            "observation": "paraphrase: Google Ads supports gRPC as well as REST.",
+            "captured_on": "2026-11-23",
+            "capture_method": "http_content",
+            "content_sha256": "27ff9528dd6b2bc86582379874bb208ca7d5454903e3cd73618b890bcea150b1",
+            "snapshot_ref": "snapshots/27ff9528dd6b2bc86582379874bb208ca7d5454903e3cd73618b890bcea150b1.txt",
+            "hash_unavailable_reason": null,
+            "document_version": null,
+            "document_date": null
+          }
+        ]
+      },
+      {
+        "claim_id": "31.api.sdk",
+        "original_run_id": "pilot-first-pass-001",
+        "judgment": "correct",
+        "reason": "Independent AI review verified documentary observation against captured primary documentation; all material details hold for the declared scope.",
+        "evidence": [
+          {
+            "source_url": "https://developers.google.com/google-ads/api/rest/overview",
+            "source_kind": "primary_docs",
+            "locator": "lines:288-296",
+            "observation": "paraphrase: Google supplies official client libraries for calling the API.",
+            "captured_on": "2026-11-23",
+            "capture_method": "http_content",
+            "content_sha256": "27ff9528dd6b2bc86582379874bb208ca7d5454903e3cd73618b890bcea150b1",
+            "snapshot_ref": "snapshots/27ff9528dd6b2bc86582379874bb208ca7d5454903e3cd73618b890bcea150b1.txt",
+            "hash_unavailable_reason": null,
+            "document_version": null,
+            "document_date": null
+          }
+        ]
+      },
+      {
+        "claim_id": "31.api.public_documentation",
+        "original_run_id": "pilot-first-pass-001",
+        "judgment": "correct",
+        "reason": "Independent AI review verified documentary observation against captured primary documentation; all material details hold for the declared scope.",
+        "evidence": [
+          {
+            "source_url": "https://developers.google.com/google-ads/api/rest/overview",
+            "source_kind": "primary_docs",
+            "locator": "lines:285-300",
+            "observation": "paraphrase: Public guide explains direct REST access and official client libraries.",
+            "captured_on": "2026-11-23",
+            "capture_method": "http_content",
+            "content_sha256": "27ff9528dd6b2bc86582379874bb208ca7d5454903e3cd73618b890bcea150b1",
+            "snapshot_ref": "snapshots/27ff9528dd6b2bc86582379874bb208ca7d5454903e3cd73618b890bcea150b1.txt",
+            "hash_unavailable_reason": null,
+            "document_version": null,
+            "document_date": null
+          }
+        ]
+      },
+      {
+        "claim_id": "31.api.group.campaigns",
+        "original_run_id": "pilot-first-pass-001",
+        "judgment": "correct",
+        "reason": "Independent AI review verified documentary observation against captured primary documentation; all material details hold for the declared scope.",
+        "evidence": [
+          {
+            "source_url": "https://developers.google.com/google-ads/api/docs/concepts/api-structure",
+            "source_kind": "primary_docs",
+            "locator": "lines:434-455",
+            "observation": "paraphrase: Customer accounts contain campaigns and ad groups, with ads and criteria.",
+            "captured_on": "2026-11-23",
+            "capture_method": "http_content",
+            "content_sha256": "eb67307fd7612a7d6b6f58a394edf5729ded03d152253018eab4a590dea7215f",
+            "snapshot_ref": "snapshots/eb67307fd7612a7d6b6f58a394edf5729ded03d152253018eab4a590dea7215f.txt",
+            "hash_unavailable_reason": null,
+            "document_version": null,
+            "document_date": null
+          }
+        ]
+      },
+      {
+        "claim_id": "31.api.group.performance",
+        "original_run_id": "pilot-first-pass-001",
+        "judgment": "correct",
+        "reason": "Independent AI review verified documentary observation against captured primary documentation; all material details hold for the declared scope.",
+        "evidence": [
+          {
+            "source_url": "https://developers.google.com/google-ads/api/docs/concepts/api-structure",
+            "source_kind": "primary_docs",
+            "locator": "lines:429-435",
+            "observation": "paraphrase: GoogleAdsService retrieves objects/performance; metadata retrieval is also documented.",
+            "captured_on": "2026-11-23",
+            "capture_method": "http_content",
+            "content_sha256": "eb67307fd7612a7d6b6f58a394edf5729ded03d152253018eab4a590dea7215f",
+            "snapshot_ref": "snapshots/eb67307fd7612a7d6b6f58a394edf5729ded03d152253018eab4a590dea7215f.txt",
+            "hash_unavailable_reason": null,
+            "document_version": null,
+            "document_date": null
+          }
+        ]
+      },
+      {
+        "claim_id": "31.api.breadth",
+        "original_run_id": "pilot-first-pass-001",
+        "judgment": "correct",
+        "reason": "Independent AI review verified inference against captured primary documentation; all material details hold for the declared scope.",
+        "evidence": [
+          {
+            "source_url": "https://developers.google.com/google-ads/api/docs/concepts/api-structure",
+            "source_kind": "primary_docs",
+            "locator": "lines:434-455",
+            "observation": "paraphrase: Customer accounts contain campaigns and ad groups, with ads and criteria.",
+            "captured_on": "2026-11-23",
+            "capture_method": "http_content",
+            "content_sha256": "eb67307fd7612a7d6b6f58a394edf5729ded03d152253018eab4a590dea7215f",
+            "snapshot_ref": "snapshots/eb67307fd7612a7d6b6f58a394edf5729ded03d152253018eab4a590dea7215f.txt",
+            "hash_unavailable_reason": null,
+            "document_version": null,
+            "document_date": null
+          },
+          {
+            "source_url": "https://developers.google.com/google-ads/api/docs/concepts/api-structure",
+            "source_kind": "primary_docs",
+            "locator": "lines:429-435",
+            "observation": "paraphrase: GoogleAdsService retrieves objects/performance; metadata retrieval is also documented.",
+            "captured_on": "2026-11-23",
+            "capture_method": "http_content",
+            "content_sha256": "eb67307fd7612a7d6b6f58a394edf5729ded03d152253018eab4a590dea7215f",
+            "snapshot_ref": "snapshots/eb67307fd7612a7d6b6f58a394edf5729ded03d152253018eab4a590dea7215f.txt",
+            "hash_unavailable_reason": null,
+            "document_version": null,
+            "document_date": null
+          }
+        ]
+      },
+      {
+        "claim_id": "31.mcp",
+        "original_run_id": "pilot-first-pass-001",
+        "judgment": "correct",
+        "reason": "Independent AI review verified documentary observation against captured primary documentation; all material details hold for the declared scope.",
+        "evidence": [
+          {
+            "source_url": "https://developers.google.com/google-ads/api/docs/developer-toolkit/mcp-server",
+            "source_kind": "primary_docs",
+            "locator": "lines:425-456",
+            "observation": "paraphrase: Google documents an Ads MCP server with callable tools, stdio/HTTP transport and read plus selected mutations.",
+            "captured_on": "2026-11-23",
+            "capture_method": "http_content",
+            "content_sha256": "5e5dcc003f4a96e22fda7e107da371878f8eac641f43b8acc9699576d6828356",
+            "snapshot_ref": "snapshots/5e5dcc003f4a96e22fda7e107da371878f8eac641f43b8acc9699576d6828356.txt",
+            "hash_unavailable_reason": null,
+            "document_version": null,
+            "document_date": null
+          },
+          {
+            "source_url": "https://developers.google.com/google-ads/api/docs/developer-toolkit/mcp-server",
+            "source_kind": "primary_docs",
+            "locator": "lines:480-505",
+            "observation": "paraphrase: MCP setup uses API-enabled Cloud-project access, OAuth/ADC, and the adwords scope.",
+            "captured_on": "2026-11-23",
+            "capture_method": "http_content",
+            "content_sha256": "5e5dcc003f4a96e22fda7e107da371878f8eac641f43b8acc9699576d6828356",
+            "snapshot_ref": "snapshots/5e5dcc003f4a96e22fda7e107da371878f8eac641f43b8acc9699576d6828356.txt",
+            "hash_unavailable_reason": null,
+            "document_version": null,
+            "document_date": null
+          }
+        ]
+      },
+      {
+        "claim_id": "31.mcp.official",
+        "original_run_id": "pilot-first-pass-001",
+        "judgment": "correct",
+        "reason": "Independent AI review verified documentary observation against captured primary documentation; all material details hold for the declared scope.",
+        "evidence": [
+          {
+            "source_url": "https://developers.google.com/google-ads/api/docs/developer-toolkit/mcp-server",
+            "source_kind": "primary_docs",
+            "locator": "lines:425-456",
+            "observation": "paraphrase: Google documents an Ads MCP server with callable tools, stdio/HTTP transport and read plus selected mutations.",
+            "captured_on": "2026-11-23",
+            "capture_method": "http_content",
+            "content_sha256": "5e5dcc003f4a96e22fda7e107da371878f8eac641f43b8acc9699576d6828356",
+            "snapshot_ref": "snapshots/5e5dcc003f4a96e22fda7e107da371878f8eac641f43b8acc9699576d6828356.txt",
+            "hash_unavailable_reason": null,
+            "document_version": null,
+            "document_date": null
+          },
+          {
+            "source_url": "https://developers.google.com/google-ads/api/docs/developer-toolkit/mcp-server",
+            "source_kind": "primary_docs",
+            "locator": "lines:480-505",
+            "observation": "paraphrase: MCP setup uses API-enabled Cloud-project access, OAuth/ADC, and the adwords scope.",
+            "captured_on": "2026-11-23",
+            "capture_method": "http_content",
+            "content_sha256": "5e5dcc003f4a96e22fda7e107da371878f8eac641f43b8acc9699576d6828356",
+            "snapshot_ref": "snapshots/5e5dcc003f4a96e22fda7e107da371878f8eac641f43b8acc9699576d6828356.txt",
+            "hash_unavailable_reason": null,
+            "document_version": null,
+            "document_date": null
+          }
+        ]
+      },
+      {
+        "claim_id": "31.buildability",
+        "original_run_id": "pilot-first-pass-001",
+        "judgment": "correct",
+        "reason": "Verified: all material details of the conditional verdict, scope, blockers ('Production project needs Explorer or higher approval and target-account access', 'Test accounts cannot establish realistic performance-report behavior'), and next steps are directly supported by the four attached primary-doc passages. Note: supporting_claim_refs includes 31.production.partner_approval_required, which requires taxonomy cleanup in Task 06.",
+        "evidence": [
+          {
+            "source_url": "https://developers.google.com/google-ads/api/docs/oauth/overview",
+            "source_kind": "primary_docs",
+            "locator": "lines:421-429",
+            "observation": "paraphrase: OAuth credentials must belong to the API-enabled project; Google Ads uses OAuth 2.0 to access user accounts.",
+            "captured_on": "2026-11-23",
+            "capture_method": "http_content",
+            "content_sha256": "4dddc5e4f3721859e57c4356517166d8ad537de9b7e3f1ac36f20bb2ec6eeecf",
+            "snapshot_ref": "snapshots/4dddc5e4f3721859e57c4356517166d8ad537de9b7e3f1ac36f20bb2ec6eeecf.txt",
+            "hash_unavailable_reason": null,
+            "document_version": null,
+            "document_date": null
+          },
+          {
+            "source_url": "https://developers.google.com/google-ads/api/docs/api-policy/access-levels",
+            "source_kind": "primary_docs",
+            "locator": "lines:113-122",
+            "observation": "paraphrase: Enabling the Ads API automatically grants a Cloud project Test access for test accounts.",
+            "captured_on": "2026-11-23",
+            "capture_method": "http_content",
+            "content_sha256": "9ad2996ee07d4f26bb7bf5ee0627233fe1e5019cf7585fe323adebc746f40669",
+            "snapshot_ref": "snapshots/9ad2996ee07d4f26bb7bf5ee0627233fe1e5019cf7585fe323adebc746f40669.txt",
+            "hash_unavailable_reason": null,
+            "document_version": null,
+            "document_date": null
+          },
+          {
+            "source_url": "https://developers.google.com/google-ads/api/docs/api-policy/access-levels",
+            "source_kind": "primary_docs",
+            "locator": "lines:123-169",
+            "observation": "paraphrase: Production calls require Explorer or higher; Explorer application is submitted in Cloud Console and may be automatically approved.",
+            "captured_on": "2026-11-23",
+            "capture_method": "http_content",
+            "content_sha256": "9ad2996ee07d4f26bb7bf5ee0627233fe1e5019cf7585fe323adebc746f40669",
+            "snapshot_ref": "snapshots/9ad2996ee07d4f26bb7bf5ee0627233fe1e5019cf7585fe323adebc746f40669.txt",
+            "hash_unavailable_reason": null,
+            "document_version": null,
+            "document_date": null
+          },
+          {
+            "source_url": "https://developers.google.com/google-ads/api/docs/best-practices/testing",
+            "source_kind": "primary_docs",
+            "locator": "lines:445-468",
+            "observation": "paraphrase: Test accounts omit features; production accounts provide real performance metrics.",
+            "captured_on": "2026-11-23",
+            "capture_method": "http_content",
+            "content_sha256": "54c7f6b803c8aa1fd84e690c351a2611abb737ec3a5dfb786530cbc922a14d16",
+            "snapshot_ref": "snapshots/54c7f6b803c8aa1fd84e690c351a2611abb737ec3a5dfb786530cbc922a14d16.txt",
+            "hash_unavailable_reason": null,
+            "document_version": null,
+            "document_date": null
+          }
+        ]
+      }
+    ],
+    "58": [
+      {
+        "claim_id": "58.purpose",
+        "original_run_id": "pilot-first-pass-001",
+        "judgment": "correct",
+        "reason": "Independent AI review verified documentary observation against captured primary documentation; all material details hold for the declared scope.",
+        "evidence": [
+          {
+            "source_url": "https://github.com/sherlock-project/sherlock",
+            "source_kind": "official_repository",
+            "locator": "lines:188-200",
+            "observation": "paraphrase: The CLI accepts one or more usernames and records discovered accounts.",
+            "captured_on": "2026-11-23",
+            "capture_method": "http_content",
+            "content_sha256": "2af06d5f18e66cdbc67a3700f0a59e416807cb1bfb0e6a321d1d8e2831d9e3dd",
+            "snapshot_ref": "snapshots/2af06d5f18e66cdbc67a3700f0a59e416807cb1bfb0e6a321d1d8e2831d9e3dd.txt",
+            "hash_unavailable_reason": null,
+            "document_version": null,
+            "document_date": null
+          }
+        ]
+      },
+      {
+        "claim_id": "58.auth.cli",
+        "original_run_id": "pilot-first-pass-001",
+        "judgment": "correct",
+        "reason": "Independent AI review verified inference against captured primary documentation; all material details hold for the declared scope.",
+        "evidence": [
+          {
+            "source_url": "https://github.com/sherlock-project/sherlock",
+            "source_kind": "official_repository",
+            "locator": "lines:188-200",
+            "observation": "paraphrase: Documented CLI examples take usernames as arguments and write per-user results.",
+            "captured_on": "2026-11-23",
+            "capture_method": "http_content",
+            "content_sha256": "2af06d5f18e66cdbc67a3700f0a59e416807cb1bfb0e6a321d1d8e2831d9e3dd",
+            "snapshot_ref": "snapshots/2af06d5f18e66cdbc67a3700f0a59e416807cb1bfb0e6a321d1d8e2831d9e3dd.txt",
+            "hash_unavailable_reason": null,
+            "document_version": null,
+            "document_date": null
+          },
+          {
+            "source_url": "https://sherlockproject.xyz/installation",
+            "source_kind": "primary_docs",
+            "locator": "lines:32-38",
+            "observation": "paraphrase: Official package installation is followed directly by CLI use.",
+            "captured_on": "2026-11-23",
+            "capture_method": "http_content",
+            "content_sha256": "ef65ba8b650097d9d7403141066f76808d08749277a867d42dac1be28c64aa28",
+            "snapshot_ref": "snapshots/ef65ba8b650097d9d7403141066f76808d08749277a867d42dac1be28c64aa28.txt",
+            "hash_unavailable_reason": null,
+            "document_version": null,
+            "document_date": null
+          }
+        ]
+      },
+      {
+        "claim_id": "58.testing.free_access",
+        "original_run_id": "pilot-first-pass-001",
+        "judgment": "correct",
+        "reason": "Independent AI review verified documentary observation against captured primary documentation; all material details hold for the declared scope.",
+        "evidence": [
+          {
+            "source_url": "https://raw.githubusercontent.com/sherlock-project/sherlock/master/LICENSE",
+            "source_kind": "official_repository",
+            "locator": "lines:1-10",
+            "observation": "paraphrase: The MIT license permits use, modification and distribution without a license charge, subject to preserving notices.",
+            "captured_on": "2026-11-23",
+            "capture_method": "http_content",
+            "content_sha256": "0f10be9fc2d9398acedc33260ec0ee8a0267eff541a697ec8ba22a1dd9c5deee",
+            "snapshot_ref": "snapshots/0f10be9fc2d9398acedc33260ec0ee8a0267eff541a697ec8ba22a1dd9c5deee.txt",
+            "hash_unavailable_reason": null,
+            "document_version": null,
+            "document_date": null
+          }
+        ]
+      },
+      {
+        "claim_id": "58.testing.paid_required",
+        "original_run_id": "pilot-first-pass-001",
+        "judgment": "correct",
+        "reason": "Independent AI review verified documentary observation against captured primary documentation; all material details hold for the declared scope.",
+        "evidence": [
+          {
+            "source_url": "https://raw.githubusercontent.com/sherlock-project/sherlock/master/LICENSE",
+            "source_kind": "official_repository",
+            "locator": "lines:1-10",
+            "observation": "paraphrase: The MIT license permits use, modification and distribution without a license charge, subject to preserving notices.",
+            "captured_on": "2026-11-23",
+            "capture_method": "http_content",
+            "content_sha256": "0f10be9fc2d9398acedc33260ec0ee8a0267eff541a697ec8ba22a1dd9c5deee",
+            "snapshot_ref": "snapshots/0f10be9fc2d9398acedc33260ec0ee8a0267eff541a697ec8ba22a1dd9c5deee.txt",
+            "hash_unavailable_reason": null,
+            "document_version": null,
+            "document_date": null
+          }
+        ]
+      },
+      {
+        "claim_id": "58.testing.self_serve",
+        "original_run_id": "pilot-first-pass-001",
+        "judgment": "correct",
+        "reason": "Independent AI review verified inference against captured primary documentation; all material details hold for the declared scope.",
+        "evidence": [
+          {
+            "source_url": "https://sherlockproject.xyz/installation",
+            "source_kind": "primary_docs",
+            "locator": "lines:32-38",
+            "observation": "paraphrase: The project provides direct pipx/pip install instructions and immediate CLI use.",
+            "captured_on": "2026-11-23",
+            "capture_method": "http_content",
+            "content_sha256": "ef65ba8b650097d9d7403141066f76808d08749277a867d42dac1be28c64aa28",
+            "snapshot_ref": "snapshots/ef65ba8b650097d9d7403141066f76808d08749277a867d42dac1be28c64aa28.txt",
+            "hash_unavailable_reason": null,
+            "document_version": null,
+            "document_date": null
+          }
+        ]
+      },
+      {
+        "claim_id": "58.production.free_access",
+        "original_run_id": "pilot-first-pass-001",
+        "judgment": "correct",
+        "reason": "Independent AI review verified documentary observation against captured primary documentation; all material details hold for the declared scope.",
+        "evidence": [
+          {
+            "source_url": "https://raw.githubusercontent.com/sherlock-project/sherlock/master/LICENSE",
+            "source_kind": "official_repository",
+            "locator": "lines:1-10",
+            "observation": "paraphrase: The MIT license permits use, modification and distribution without a license charge, subject to preserving notices.",
+            "captured_on": "2026-11-23",
+            "capture_method": "http_content",
+            "content_sha256": "0f10be9fc2d9398acedc33260ec0ee8a0267eff541a697ec8ba22a1dd9c5deee",
+            "snapshot_ref": "snapshots/0f10be9fc2d9398acedc33260ec0ee8a0267eff541a697ec8ba22a1dd9c5deee.txt",
+            "hash_unavailable_reason": null,
+            "document_version": null,
+            "document_date": null
+          }
+        ]
+      },
+      {
+        "claim_id": "58.production.paid_required",
+        "original_run_id": "pilot-first-pass-001",
+        "judgment": "correct",
+        "reason": "Independent AI review verified documentary observation against captured primary documentation; all material details hold for the declared scope.",
+        "evidence": [
+          {
+            "source_url": "https://raw.githubusercontent.com/sherlock-project/sherlock/master/LICENSE",
+            "source_kind": "official_repository",
+            "locator": "lines:1-10",
+            "observation": "paraphrase: The MIT license permits use, modification and distribution without a license charge, subject to preserving notices.",
+            "captured_on": "2026-11-23",
+            "capture_method": "http_content",
+            "content_sha256": "0f10be9fc2d9398acedc33260ec0ee8a0267eff541a697ec8ba22a1dd9c5deee",
+            "snapshot_ref": "snapshots/0f10be9fc2d9398acedc33260ec0ee8a0267eff541a697ec8ba22a1dd9c5deee.txt",
+            "hash_unavailable_reason": null,
+            "document_version": null,
+            "document_date": null
+          }
+        ]
+      },
+      {
+        "claim_id": "58.production.self_serve",
+        "original_run_id": "pilot-first-pass-001",
+        "judgment": "correct",
+        "reason": "Independent AI review verified inference against captured primary documentation; all material details hold for the declared scope.",
+        "evidence": [
+          {
+            "source_url": "https://sherlockproject.xyz/installation",
+            "source_kind": "primary_docs",
+            "locator": "lines:32-38",
+            "observation": "paraphrase: The project provides direct pipx/pip install instructions and immediate CLI use.",
+            "captured_on": "2026-11-23",
+            "capture_method": "http_content",
+            "content_sha256": "ef65ba8b650097d9d7403141066f76808d08749277a867d42dac1be28c64aa28",
+            "snapshot_ref": "snapshots/ef65ba8b650097d9d7403141066f76808d08749277a867d42dac1be28c64aa28.txt",
+            "hash_unavailable_reason": null,
+            "document_version": null,
+            "document_date": null
+          }
+        ]
+      },
+      {
+        "claim_id": "58.api.cli",
+        "original_run_id": "pilot-first-pass-001",
+        "judgment": "correct",
+        "reason": "Independent AI review verified documentary observation against captured primary documentation; all material details hold for the declared scope.",
+        "evidence": [
+          {
+            "source_url": "https://github.com/sherlock-project/sherlock",
+            "source_kind": "official_repository",
+            "locator": "lines:188-200",
+            "observation": "paraphrase: Documented CLI examples take usernames as arguments and write per-user results.",
+            "captured_on": "2026-11-23",
+            "capture_method": "http_content",
+            "content_sha256": "2af06d5f18e66cdbc67a3700f0a59e416807cb1bfb0e6a321d1d8e2831d9e3dd",
+            "snapshot_ref": "snapshots/2af06d5f18e66cdbc67a3700f0a59e416807cb1bfb0e6a321d1d8e2831d9e3dd.txt",
+            "hash_unavailable_reason": null,
+            "document_version": null,
+            "document_date": null
+          }
+        ]
+      },
+      {
+        "claim_id": "58.api.public_documentation",
+        "original_run_id": "pilot-first-pass-001",
+        "judgment": "correct",
+        "reason": "Independent AI review verified documentary observation against captured primary documentation; all material details hold for the declared scope.",
+        "evidence": [
+          {
+            "source_url": "https://sherlockproject.xyz/usage",
+            "source_kind": "primary_docs",
+            "locator": "lines:23-38",
+            "observation": "paraphrase: Public usage documentation shows single/multiple username invocations and CLI options.",
+            "captured_on": "2026-11-23",
+            "capture_method": "http_content",
+            "content_sha256": "75aed623804d6e458c151998fab29bf6b3e84f6c631840ec815c096ebae77101",
+            "snapshot_ref": "snapshots/75aed623804d6e458c151998fab29bf6b3e84f6c631840ec815c096ebae77101.txt",
+            "hash_unavailable_reason": null,
+            "document_version": null,
+            "document_date": null
+          }
+        ]
+      },
+      {
+        "claim_id": "58.api.group.username",
+        "original_run_id": "pilot-first-pass-001",
+        "judgment": "correct",
+        "reason": "Independent AI review verified documentary observation against captured primary documentation; all material details hold for the declared scope.",
+        "evidence": [
+          {
+            "source_url": "https://github.com/sherlock-project/sherlock",
+            "source_kind": "official_repository",
+            "locator": "lines:188-212",
+            "observation": "paraphrase: CLI accepts usernames and supports file/CSV/XLSX results and selected-site checks.",
+            "captured_on": "2026-11-23",
+            "capture_method": "http_content",
+            "content_sha256": "2af06d5f18e66cdbc67a3700f0a59e416807cb1bfb0e6a321d1d8e2831d9e3dd",
+            "snapshot_ref": "snapshots/2af06d5f18e66cdbc67a3700f0a59e416807cb1bfb0e6a321d1d8e2831d9e3dd.txt",
+            "hash_unavailable_reason": null,
+            "document_version": null,
+            "document_date": null
+          }
+        ]
+      },
+      {
+        "claim_id": "58.api.breadth",
+        "original_run_id": "pilot-first-pass-001",
+        "judgment": "correct",
+        "reason": "Independent AI review verified inference against captured primary documentation; all material details hold for the declared scope.",
+        "evidence": [
+          {
+            "source_url": "https://github.com/sherlock-project/sherlock",
+            "source_kind": "official_repository",
+            "locator": "lines:188-212",
+            "observation": "paraphrase: CLI accepts usernames and supports file/CSV/XLSX results and selected-site checks.",
+            "captured_on": "2026-11-23",
+            "capture_method": "http_content",
+            "content_sha256": "2af06d5f18e66cdbc67a3700f0a59e416807cb1bfb0e6a321d1d8e2831d9e3dd",
+            "snapshot_ref": "snapshots/2af06d5f18e66cdbc67a3700f0a59e416807cb1bfb0e6a321d1d8e2831d9e3dd.txt",
+            "hash_unavailable_reason": null,
+            "document_version": null,
+            "document_date": null
+          }
+        ]
+      },
+      {
+        "claim_id": "58.buildability",
+        "original_run_id": "pilot-first-pass-001",
+        "judgment": "correct",
+        "reason": "Independent AI review verified inference against captured primary documentation; all material details hold for the declared scope.",
+        "evidence": [
+          {
+            "source_url": "https://github.com/sherlock-project/sherlock",
+            "source_kind": "official_repository",
+            "locator": "lines:188-200",
+            "observation": "paraphrase: Documented CLI examples take usernames as arguments and write per-user results.",
+            "captured_on": "2026-11-23",
+            "capture_method": "http_content",
+            "content_sha256": "2af06d5f18e66cdbc67a3700f0a59e416807cb1bfb0e6a321d1d8e2831d9e3dd",
+            "snapshot_ref": "snapshots/2af06d5f18e66cdbc67a3700f0a59e416807cb1bfb0e6a321d1d8e2831d9e3dd.txt",
+            "hash_unavailable_reason": null,
+            "document_version": null,
+            "document_date": null
+          },
+          {
+            "source_url": "https://raw.githubusercontent.com/sherlock-project/sherlock/master/LICENSE",
+            "source_kind": "official_repository",
+            "locator": "lines:1-10",
+            "observation": "paraphrase: The MIT license permits use, modification and distribution without a license charge, subject to preserving notices.",
+            "captured_on": "2026-11-23",
+            "capture_method": "http_content",
+            "content_sha256": "0f10be9fc2d9398acedc33260ec0ee8a0267eff541a697ec8ba22a1dd9c5deee",
+            "snapshot_ref": "snapshots/0f10be9fc2d9398acedc33260ec0ee8a0267eff541a697ec8ba22a1dd9c5deee.txt",
+            "hash_unavailable_reason": null,
+            "document_version": null,
+            "document_date": null
+          }
+        ]
+      }
+    ],
+    "91": [
+      {
+        "claim_id": "91.purpose",
+        "original_run_id": "pilot-first-pass-001",
+        "judgment": "unsupported",
+        "reason": "Unsupported material detail in attached evidence: the claim asserts 'programmatic notebook and source management', but its sole attached citation (api-notebooks lines 148-155) only documents notebook management (create, retrieve, list, delete, share) and does not mention source management. Source management is documented in api-notebooks-sources lines 148-156 (captured in this run) but was omitted from 91.purpose's own evidence array.",
+        "evidence": [
+          {
+            "source_url": "https://docs.cloud.google.com/gemini/enterprise/notebooklm-enterprise/docs/api-notebooks",
+            "source_kind": "primary_docs",
+            "locator": "lines:148-155",
+            "observation": "quote: This page describes the APIs that let you",
+            "captured_on": "2026-11-23",
+            "capture_method": "http_content",
+            "content_sha256": "45a6e891559e7fe1f723f84fbc58e1befc7905c4640c0567e6414fea04f1859e",
+            "snapshot_ref": "snapshots/45a6e891559e7fe1f723f84fbc58e1befc7905c4640c0567e6414fea04f1859e.txt",
+            "hash_unavailable_reason": null,
+            "document_version": null,
+            "document_date": null
+          },
+          {
+            "source_url": "https://docs.cloud.google.com/gemini/enterprise/notebooklm-enterprise/docs/api-notebooks-sources",
+            "source_kind": "primary_docs",
+            "locator": "lines:148-156",
+            "observation": "quote: This page describes how to perform the following tasks:",
+            "captured_on": "2026-11-23",
+            "capture_method": "http_content",
+            "content_sha256": "3032f20bf7e34036f8433a878f4f4f7c928072d67d844e43845f0d8511e68490",
+            "snapshot_ref": "snapshots/3032f20bf7e34036f8433a878f4f4f7c928072d67d844e43845f0d8511e68490.txt",
+            "hash_unavailable_reason": null,
+            "document_version": null,
+            "document_date": null
+          }
+        ]
+      },
+      {
+        "claim_id": "91.auth.user_bearer",
+        "original_run_id": "pilot-first-pass-001",
+        "judgment": "correct",
+        "reason": "Independent AI review verified documentary observation against captured primary documentation; all material details hold for the declared scope.",
+        "evidence": [
+          {
+            "source_url": "https://docs.cloud.google.com/gemini/enterprise/notebooklm-enterprise/docs/api-notebooks",
+            "source_kind": "primary_docs",
+            "locator": "lines:157-172",
+            "observation": "paraphrase: Notebook APIs require a licensed user, Cloud NotebookLM User role and a user access token generated after gcloud login.",
+            "captured_on": "2026-11-23",
+            "capture_method": "http_content",
+            "content_sha256": "45a6e891559e7fe1f723f84fbc58e1befc7905c4640c0567e6414fea04f1859e",
+            "snapshot_ref": "snapshots/45a6e891559e7fe1f723f84fbc58e1befc7905c4640c0567e6414fea04f1859e.txt",
+            "hash_unavailable_reason": null,
+            "document_version": null,
+            "document_date": null
+          },
+          {
+            "source_url": "https://docs.cloud.google.com/gemini/enterprise/notebooklm-enterprise/docs/api-notebooks",
+            "source_kind": "primary_docs",
+            "locator": "lines:199-203",
+            "observation": "paraphrase: REST calls send Authorization:Bearer with the user access token.",
+            "captured_on": "2026-11-23",
+            "capture_method": "http_content",
+            "content_sha256": "45a6e891559e7fe1f723f84fbc58e1befc7905c4640c0567e6414fea04f1859e",
+            "snapshot_ref": "snapshots/45a6e891559e7fe1f723f84fbc58e1befc7905c4640c0567e6414fea04f1859e.txt",
+            "hash_unavailable_reason": null,
+            "document_version": null,
+            "document_date": null
+          }
+        ]
+      },
+      {
+        "claim_id": "91.auth.drive_user",
+        "original_run_id": "pilot-first-pass-001",
+        "judgment": "correct",
+        "reason": "Independent AI review verified documentary observation against captured primary documentation; all material details hold for the declared scope.",
+        "evidence": [
+          {
+            "source_url": "https://docs.cloud.google.com/gemini/enterprise/notebooklm-enterprise/docs/api-notebooks-sources",
+            "source_kind": "primary_docs",
+            "locator": "lines:157-163",
+            "observation": "paraphrase: Google Docs/Slides ingestion requires user credentials with Drive access via gcloud login --enable-gdrive-access.",
+            "captured_on": "2026-11-23",
+            "capture_method": "http_content",
+            "content_sha256": "3032f20bf7e34036f8433a878f4f4f7c928072d67d844e43845f0d8511e68490",
+            "snapshot_ref": "snapshots/3032f20bf7e34036f8433a878f4f4f7c928072d67d844e43845f0d8511e68490.txt",
+            "hash_unavailable_reason": null,
+            "document_version": null,
+            "document_date": null
+          }
+        ]
+      },
+      {
+        "claim_id": "91.testing.free_access",
+        "original_run_id": "pilot-first-pass-001",
+        "judgment": "correct",
+        "reason": "Independent AI review verified inference against captured primary documentation; all material details hold for the declared scope.",
+        "evidence": [
+          {
+            "source_url": "https://docs.cloud.google.com/gemini/enterprise/notebooklm-enterprise/docs/set-up-licensing",
+            "source_kind": "primary_docs",
+            "locator": "lines:168-180",
+            "observation": "paraphrase: Subscriptions include a full-feature 14-day free-trial tier; trial users also need the Cloud NotebookLM User role.",
+            "captured_on": "2026-11-23",
+            "capture_method": "http_content",
+            "content_sha256": "d0e343a24d857acc39256da6647afd82be4d50fdffa4bb7fbd321ecd452f5f9b",
+            "snapshot_ref": "snapshots/d0e343a24d857acc39256da6647afd82be4d50fdffa4bb7fbd321ecd452f5f9b.txt",
+            "hash_unavailable_reason": null,
+            "document_version": null,
+            "document_date": null
+          },
+          {
+            "source_url": "https://docs.cloud.google.com/gemini/enterprise/notebooklm-enterprise/docs/api-notebooks",
+            "source_kind": "primary_docs",
+            "locator": "lines:157-172",
+            "observation": "paraphrase: Notebook APIs require a licensed user, Cloud NotebookLM User role and a user access token generated after gcloud login.",
+            "captured_on": "2026-11-23",
+            "capture_method": "http_content",
+            "content_sha256": "45a6e891559e7fe1f723f84fbc58e1befc7905c4640c0567e6414fea04f1859e",
+            "snapshot_ref": "snapshots/45a6e891559e7fe1f723f84fbc58e1befc7905c4640c0567e6414fea04f1859e.txt",
+            "hash_unavailable_reason": null,
+            "document_version": null,
+            "document_date": null
+          }
+        ]
+      },
+      {
+        "claim_id": "91.testing.trial_access",
+        "original_run_id": "pilot-first-pass-001",
+        "judgment": "correct",
+        "reason": "Independent AI review verified inference against captured primary documentation; all material details hold for the declared scope.",
+        "evidence": [
+          {
+            "source_url": "https://docs.cloud.google.com/gemini/enterprise/notebooklm-enterprise/docs/set-up-licensing",
+            "source_kind": "primary_docs",
+            "locator": "lines:168-180",
+            "observation": "paraphrase: Subscriptions include a full-feature 14-day free-trial tier; trial users also need the Cloud NotebookLM User role.",
+            "captured_on": "2026-11-23",
+            "capture_method": "http_content",
+            "content_sha256": "d0e343a24d857acc39256da6647afd82be4d50fdffa4bb7fbd321ecd452f5f9b",
+            "snapshot_ref": "snapshots/d0e343a24d857acc39256da6647afd82be4d50fdffa4bb7fbd321ecd452f5f9b.txt",
+            "hash_unavailable_reason": null,
+            "document_version": null,
+            "document_date": null
+          },
+          {
+            "source_url": "https://docs.cloud.google.com/gemini/enterprise/notebooklm-enterprise/docs/api-notebooks",
+            "source_kind": "primary_docs",
+            "locator": "lines:157-172",
+            "observation": "paraphrase: Notebook APIs require a licensed user, Cloud NotebookLM User role and a user access token generated after gcloud login.",
+            "captured_on": "2026-11-23",
+            "capture_method": "http_content",
+            "content_sha256": "45a6e891559e7fe1f723f84fbc58e1befc7905c4640c0567e6414fea04f1859e",
+            "snapshot_ref": "snapshots/45a6e891559e7fe1f723f84fbc58e1befc7905c4640c0567e6414fea04f1859e.txt",
+            "hash_unavailable_reason": null,
+            "document_version": null,
+            "document_date": null
+          }
+        ]
+      },
+      {
+        "claim_id": "91.testing.paid_required",
+        "original_run_id": "pilot-first-pass-001",
+        "judgment": "correct",
+        "reason": "Independent AI review verified inference against captured primary documentation; all material details hold for the declared scope.",
+        "evidence": [
+          {
+            "source_url": "https://docs.cloud.google.com/gemini/enterprise/notebooklm-enterprise/docs/set-up-licensing",
+            "source_kind": "primary_docs",
+            "locator": "lines:168-180",
+            "observation": "paraphrase: Subscriptions include a full-feature 14-day free-trial tier; trial users also need the Cloud NotebookLM User role.",
+            "captured_on": "2026-11-23",
+            "capture_method": "http_content",
+            "content_sha256": "d0e343a24d857acc39256da6647afd82be4d50fdffa4bb7fbd321ecd452f5f9b",
+            "snapshot_ref": "snapshots/d0e343a24d857acc39256da6647afd82be4d50fdffa4bb7fbd321ecd452f5f9b.txt",
+            "hash_unavailable_reason": null,
+            "document_version": null,
+            "document_date": null
+          },
+          {
+            "source_url": "https://docs.cloud.google.com/gemini/enterprise/notebooklm-enterprise/docs/api-notebooks",
+            "source_kind": "primary_docs",
+            "locator": "lines:157-172",
+            "observation": "paraphrase: Notebook APIs require a licensed user, Cloud NotebookLM User role and a user access token generated after gcloud login.",
+            "captured_on": "2026-11-23",
+            "capture_method": "http_content",
+            "content_sha256": "45a6e891559e7fe1f723f84fbc58e1befc7905c4640c0567e6414fea04f1859e",
+            "snapshot_ref": "snapshots/45a6e891559e7fe1f723f84fbc58e1befc7905c4640c0567e6414fea04f1859e.txt",
+            "hash_unavailable_reason": null,
+            "document_version": null,
+            "document_date": null
+          }
+        ]
+      },
+      {
+        "claim_id": "91.testing.admin_approval_required",
+        "original_run_id": "pilot-first-pass-001",
+        "judgment": "correct",
+        "reason": "Independent AI review verified documentary observation against captured primary documentation; all material details hold for the declared scope.",
+        "evidence": [
+          {
+            "source_url": "https://docs.cloud.google.com/gemini/enterprise/notebooklm-enterprise/docs/set-up-licensing",
+            "source_kind": "primary_docs",
+            "locator": "lines:175-183",
+            "observation": "paraphrase: Subscription setup requires Cloud NotebookLM Admin and Gemini Enterprise Admin roles.",
+            "captured_on": "2026-11-23",
+            "capture_method": "http_content",
+            "content_sha256": "d0e343a24d857acc39256da6647afd82be4d50fdffa4bb7fbd321ecd452f5f9b",
+            "snapshot_ref": "snapshots/d0e343a24d857acc39256da6647afd82be4d50fdffa4bb7fbd321ecd452f5f9b.txt",
+            "hash_unavailable_reason": null,
+            "document_version": null,
+            "document_date": null
+          }
+        ]
+      },
+      {
+        "claim_id": "91.testing.self_serve",
+        "original_run_id": "pilot-first-pass-001",
+        "judgment": "correct",
+        "reason": "Independent AI review verified inference against captured primary documentation; all material details hold for the declared scope.",
+        "evidence": [
+          {
+            "source_url": "https://docs.cloud.google.com/gemini/enterprise/notebooklm-enterprise/docs/set-up-licensing",
+            "source_kind": "primary_docs",
+            "locator": "lines:190-212",
+            "observation": "paraphrase: An authorized administrator can add the chosen subscription tier in Google Cloud Console.",
+            "captured_on": "2026-11-23",
+            "capture_method": "http_content",
+            "content_sha256": "d0e343a24d857acc39256da6647afd82be4d50fdffa4bb7fbd321ecd452f5f9b",
+            "snapshot_ref": "snapshots/d0e343a24d857acc39256da6647afd82be4d50fdffa4bb7fbd321ecd452f5f9b.txt",
+            "hash_unavailable_reason": null,
+            "document_version": null,
+            "document_date": null
+          }
+        ]
+      },
+      {
+        "claim_id": "91.production.paid_required",
+        "original_run_id": "pilot-first-pass-001",
+        "judgment": "correct",
+        "reason": "Independent AI review verified documentary observation against captured primary documentation; all material details hold for the declared scope.",
+        "evidence": [
+          {
+            "source_url": "https://docs.cloud.google.com/gemini/enterprise/notebooklm-enterprise/docs/set-up-licensing",
+            "source_kind": "primary_docs",
+            "locator": "lines:160-173",
+            "observation": "paraphrase: Paid monthly/yearly subscriptions have at least 15 licenses; a trial is a separate tier.",
+            "captured_on": "2026-11-23",
+            "capture_method": "http_content",
+            "content_sha256": "d0e343a24d857acc39256da6647afd82be4d50fdffa4bb7fbd321ecd452f5f9b",
+            "snapshot_ref": "snapshots/d0e343a24d857acc39256da6647afd82be4d50fdffa4bb7fbd321ecd452f5f9b.txt",
+            "hash_unavailable_reason": null,
+            "document_version": null,
+            "document_date": null
+          }
+        ]
+      },
+      {
+        "claim_id": "91.production.admin_approval_required",
+        "original_run_id": "pilot-first-pass-001",
+        "judgment": "correct",
+        "reason": "Independent AI review verified documentary observation against captured primary documentation; all material details hold for the declared scope.",
+        "evidence": [
+          {
+            "source_url": "https://docs.cloud.google.com/gemini/enterprise/notebooklm-enterprise/docs/set-up-licensing",
+            "source_kind": "primary_docs",
+            "locator": "lines:175-183",
+            "observation": "paraphrase: Subscription setup requires Cloud NotebookLM Admin and Gemini Enterprise Admin roles.",
+            "captured_on": "2026-11-23",
+            "capture_method": "http_content",
+            "content_sha256": "d0e343a24d857acc39256da6647afd82be4d50fdffa4bb7fbd321ecd452f5f9b",
+            "snapshot_ref": "snapshots/d0e343a24d857acc39256da6647afd82be4d50fdffa4bb7fbd321ecd452f5f9b.txt",
+            "hash_unavailable_reason": null,
+            "document_version": null,
+            "document_date": null
+          }
+        ]
+      },
+      {
+        "claim_id": "91.production.self_serve",
+        "original_run_id": "pilot-first-pass-001",
+        "judgment": "correct",
+        "reason": "Independent AI review verified inference against captured primary documentation; all material details hold for the declared scope.",
+        "evidence": [
+          {
+            "source_url": "https://docs.cloud.google.com/gemini/enterprise/notebooklm-enterprise/docs/set-up-licensing",
+            "source_kind": "primary_docs",
+            "locator": "lines:190-212",
+            "observation": "paraphrase: An authorized administrator can add the chosen subscription tier in Google Cloud Console.",
+            "captured_on": "2026-11-23",
+            "capture_method": "http_content",
+            "content_sha256": "d0e343a24d857acc39256da6647afd82be4d50fdffa4bb7fbd321ecd452f5f9b",
+            "snapshot_ref": "snapshots/d0e343a24d857acc39256da6647afd82be4d50fdffa4bb7fbd321ecd452f5f9b.txt",
+            "hash_unavailable_reason": null,
+            "document_version": null,
+            "document_date": null
+          }
+        ]
+      },
+      {
+        "claim_id": "91.api.rest",
+        "original_run_id": "pilot-first-pass-001",
+        "judgment": "correct",
+        "reason": "Independent AI review verified documentary observation against captured primary documentation; all material details hold for the declared scope.",
+        "evidence": [
+          {
+            "source_url": "https://docs.cloud.google.com/gemini/enterprise/notebooklm-enterprise/docs/api-notebooks",
+            "source_kind": "primary_docs",
+            "locator": "lines:195-206",
+            "observation": "paraphrase: The API guide documents notebook creation via a v1alpha REST POST.",
+            "captured_on": "2026-11-23",
+            "capture_method": "http_content",
+            "content_sha256": "45a6e891559e7fe1f723f84fbc58e1befc7905c4640c0567e6414fea04f1859e",
+            "snapshot_ref": "snapshots/45a6e891559e7fe1f723f84fbc58e1befc7905c4640c0567e6414fea04f1859e.txt",
+            "hash_unavailable_reason": null,
+            "document_version": null,
+            "document_date": null
+          }
+        ]
+      },
+      {
+        "claim_id": "91.api.public_documentation",
+        "original_run_id": "pilot-first-pass-001",
+        "judgment": "correct",
+        "reason": "Independent AI review verified documentary observation against captured primary documentation; all material details hold for the declared scope.",
+        "evidence": [
+          {
+            "source_url": "https://docs.cloud.google.com/gemini/enterprise/notebooklm-enterprise/docs/api-notebooks",
+            "source_kind": "primary_docs",
+            "locator": "lines:137-155",
+            "observation": "paraphrase: Public Preview documentation describes notebook methods.",
+            "captured_on": "2026-11-23",
+            "capture_method": "http_content",
+            "content_sha256": "45a6e891559e7fe1f723f84fbc58e1befc7905c4640c0567e6414fea04f1859e",
+            "snapshot_ref": "snapshots/45a6e891559e7fe1f723f84fbc58e1befc7905c4640c0567e6414fea04f1859e.txt",
+            "hash_unavailable_reason": null,
+            "document_version": null,
+            "document_date": null
+          }
+        ]
+      },
+      {
+        "claim_id": "91.api.group.notebooks",
+        "original_run_id": "pilot-first-pass-001",
+        "judgment": "correct",
+        "reason": "Independent AI review verified documentary observation against captured primary documentation; all material details hold for the declared scope.",
+        "evidence": [
+          {
+            "source_url": "https://docs.cloud.google.com/gemini/enterprise/notebooklm-enterprise/docs/api-notebooks",
+            "source_kind": "primary_docs",
+            "locator": "lines:148-155",
+            "observation": "paraphrase: Documented notebook management covers create, get, recent list, delete and share.",
+            "captured_on": "2026-11-23",
+            "capture_method": "http_content",
+            "content_sha256": "45a6e891559e7fe1f723f84fbc58e1befc7905c4640c0567e6414fea04f1859e",
+            "snapshot_ref": "snapshots/45a6e891559e7fe1f723f84fbc58e1befc7905c4640c0567e6414fea04f1859e.txt",
+            "hash_unavailable_reason": null,
+            "document_version": null,
+            "document_date": null
+          }
+        ]
+      },
+      {
+        "claim_id": "91.api.group.sources",
+        "original_run_id": "pilot-first-pass-001",
+        "judgment": "correct",
+        "reason": "Independent AI review verified documentary observation against captured primary documentation; all material details hold for the declared scope.",
+        "evidence": [
+          {
+            "source_url": "https://docs.cloud.google.com/gemini/enterprise/notebooklm-enterprise/docs/api-notebooks-sources",
+            "source_kind": "primary_docs",
+            "locator": "lines:148-156",
+            "observation": "paraphrase: Source methods support batch additions, file upload, retrieval and deletion.",
+            "captured_on": "2026-11-23",
+            "capture_method": "http_content",
+            "content_sha256": "3032f20bf7e34036f8433a878f4f4f7c928072d67d844e43845f0d8511e68490",
+            "snapshot_ref": "snapshots/3032f20bf7e34036f8433a878f4f4f7c928072d67d844e43845f0d8511e68490.txt",
+            "hash_unavailable_reason": null,
+            "document_version": null,
+            "document_date": null
+          }
+        ]
+      },
+      {
+        "claim_id": "91.api.breadth",
+        "original_run_id": "pilot-first-pass-001",
+        "judgment": "correct",
+        "reason": "Independent AI review verified inference against captured primary documentation; all material details hold for the declared scope.",
+        "evidence": [
+          {
+            "source_url": "https://docs.cloud.google.com/gemini/enterprise/notebooklm-enterprise/docs/api-notebooks",
+            "source_kind": "primary_docs",
+            "locator": "lines:148-155",
+            "observation": "paraphrase: Documented notebook management covers create, get, recent list, delete and share.",
+            "captured_on": "2026-11-23",
+            "capture_method": "http_content",
+            "content_sha256": "45a6e891559e7fe1f723f84fbc58e1befc7905c4640c0567e6414fea04f1859e",
+            "snapshot_ref": "snapshots/45a6e891559e7fe1f723f84fbc58e1befc7905c4640c0567e6414fea04f1859e.txt",
+            "hash_unavailable_reason": null,
+            "document_version": null,
+            "document_date": null
+          },
+          {
+            "source_url": "https://docs.cloud.google.com/gemini/enterprise/notebooklm-enterprise/docs/api-notebooks-sources",
+            "source_kind": "primary_docs",
+            "locator": "lines:148-156",
+            "observation": "paraphrase: Source methods support batch additions, file upload, retrieval and deletion.",
+            "captured_on": "2026-11-23",
+            "capture_method": "http_content",
+            "content_sha256": "3032f20bf7e34036f8433a878f4f4f7c928072d67d844e43845f0d8511e68490",
+            "snapshot_ref": "snapshots/3032f20bf7e34036f8433a878f4f4f7c928072d67d844e43845f0d8511e68490.txt",
+            "hash_unavailable_reason": null,
+            "document_version": null,
+            "document_date": null
+          }
+        ]
+      },
+      {
+        "claim_id": "91.mcp",
+        "original_run_id": "pilot-first-pass-001",
+        "judgment": "unsupported",
+        "reason": "Unsupported on two grounds: (1) edition/scope mismatch — asserts app-level mcp.discovery='found' on a NotebookLM Enterprise API record based solely on a community repo for personal notebooklm.google.com internal APIs/cookies that explicitly states 'May work with NotebookLM Enterprise accounts but has not been tested' (line 157); (2) locator truncation — ev[0] cites lines:151-165, which stops at the table header ('Tool / Description') and omits the actual tool rows beginning at line 166.",
+        "evidence": [
+          {
+            "source_url": "https://github.com/Morfeu333/notebooklm-mcp",
+            "source_kind": "community_repository",
+            "locator": "lines:155-167",
+            "observation": "quote: May work with NotebookLM Enterprise accounts but has not been tested.",
+            "captured_on": "2026-11-23",
+            "capture_method": "http_content",
+            "content_sha256": "e1dff21532ffbd8f44178daa0bdbdeff135f7cde4fb29c51ae7a5c1500ae1e5c",
+            "snapshot_ref": "snapshots/e1dff21532ffbd8f44178daa0bdbdeff135f7cde4fb29c51ae7a5c1500ae1e5c.txt",
+            "hash_unavailable_reason": null,
+            "document_version": null,
+            "document_date": null
+          },
+          {
+            "source_url": "https://github.com/Morfeu333/notebooklm-mcp",
+            "source_kind": "community_repository",
+            "locator": "lines:220-224",
+            "observation": "quote: Use at your own risk for personal/experimental purposes.",
+            "captured_on": "2026-11-23",
+            "capture_method": "http_content",
+            "content_sha256": "e1dff21532ffbd8f44178daa0bdbdeff135f7cde4fb29c51ae7a5c1500ae1e5c",
+            "snapshot_ref": "snapshots/e1dff21532ffbd8f44178daa0bdbdeff135f7cde4fb29c51ae7a5c1500ae1e5c.txt",
+            "hash_unavailable_reason": null,
+            "document_version": null,
+            "document_date": null
+          }
+        ]
+      },
+      {
+        "claim_id": "91.mcp.personal_community",
+        "original_run_id": "pilot-first-pass-001",
+        "judgment": "unsupported",
+        "reason": "Unsupported due to locator truncation: although the entry's value.scope accurately distinguishes personal notebooklm.google.com internal APIs from Enterprise REST, ev[0] cites lines:151-165 with the paraphrase 'and lists notebook tools', but lines 151-165 end at the table header ('Tool / Description') and exclude the actual callable tool rows beginning at line 166 ('notebook_list', 'notebook_create', etc.).",
+        "evidence": [
+          {
+            "source_url": "https://github.com/Morfeu333/notebooklm-mcp",
+            "source_kind": "community_repository",
+            "locator": "lines:163-171",
+            "observation": "quote: notebook_list",
+            "captured_on": "2026-11-23",
+            "capture_method": "http_content",
+            "content_sha256": "e1dff21532ffbd8f44178daa0bdbdeff135f7cde4fb29c51ae7a5c1500ae1e5c",
+            "snapshot_ref": "snapshots/e1dff21532ffbd8f44178daa0bdbdeff135f7cde4fb29c51ae7a5c1500ae1e5c.txt",
+            "hash_unavailable_reason": null,
+            "document_version": null,
+            "document_date": null
+          }
+        ]
+      },
+      {
+        "claim_id": "91.buildability",
+        "original_run_id": "pilot-first-pass-001",
+        "judgment": "correct",
+        "reason": "Independent AI review verified inference against captured primary documentation; all material details hold for the declared scope.",
+        "evidence": [
+          {
+            "source_url": "https://docs.cloud.google.com/gemini/enterprise/notebooklm-enterprise/docs/api-notebooks",
+            "source_kind": "primary_docs",
+            "locator": "lines:157-172",
+            "observation": "paraphrase: Notebook APIs require a licensed user, Cloud NotebookLM User role and a user access token generated after gcloud login.",
+            "captured_on": "2026-11-23",
+            "capture_method": "http_content",
+            "content_sha256": "45a6e891559e7fe1f723f84fbc58e1befc7905c4640c0567e6414fea04f1859e",
+            "snapshot_ref": "snapshots/45a6e891559e7fe1f723f84fbc58e1befc7905c4640c0567e6414fea04f1859e.txt",
+            "hash_unavailable_reason": null,
+            "document_version": null,
+            "document_date": null
+          },
+          {
+            "source_url": "https://docs.cloud.google.com/gemini/enterprise/notebooklm-enterprise/docs/set-up-licensing",
+            "source_kind": "primary_docs",
+            "locator": "lines:160-173",
+            "observation": "paraphrase: Paid monthly/yearly subscriptions have at least 15 licenses; a trial is a separate tier.",
+            "captured_on": "2026-11-23",
+            "capture_method": "http_content",
+            "content_sha256": "d0e343a24d857acc39256da6647afd82be4d50fdffa4bb7fbd321ecd452f5f9b",
+            "snapshot_ref": "snapshots/d0e343a24d857acc39256da6647afd82be4d50fdffa4bb7fbd321ecd452f5f9b.txt",
+            "hash_unavailable_reason": null,
+            "document_version": null,
+            "document_date": null
+          },
+          {
+            "source_url": "https://docs.cloud.google.com/gemini/enterprise/notebooklm-enterprise/docs/set-up-notebooklm",
+            "source_kind": "primary_docs",
+            "locator": "lines:259-287",
+            "observation": "paraphrase: Setup requires a project, enabled billing and the Discovery Engine API.",
+            "captured_on": "2026-11-23",
+            "capture_method": "http_content",
+            "content_sha256": "7a39c4a868c92d33af078f6185dfc6705c5bea2b5e689aa3346f080c856baef1",
+            "snapshot_ref": "snapshots/7a39c4a868c92d33af078f6185dfc6705c5bea2b5e689aa3346f080c856baef1.txt",
+            "hash_unavailable_reason": null,
+            "document_version": null,
+            "document_date": null
+          },
+          {
+            "source_url": "https://docs.cloud.google.com/gemini/enterprise/notebooklm-enterprise/docs/api-notebooks",
+            "source_kind": "primary_docs",
+            "locator": "lines:140-147",
+            "observation": "paraphrase: Notebook API is a Preview feature governed by pre-GA terms.",
+            "captured_on": "2026-11-23",
+            "capture_method": "http_content",
+            "content_sha256": "45a6e891559e7fe1f723f84fbc58e1befc7905c4640c0567e6414fea04f1859e",
+            "snapshot_ref": "snapshots/45a6e891559e7fe1f723f84fbc58e1befc7905c4640c0567e6414fea04f1859e.txt",
+            "hash_unavailable_reason": null,
+            "document_version": null,
+            "document_date": null
+          }
+        ]
+      }
+    ]
+  }
+}

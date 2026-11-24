@@ -1,0 +1,535 @@
+Add and manage data sources in a notebook (API) | Gemini Notebook Enterprise | Google Cloud Documentation
+Skip to main content
+Documentation
+close
+Get Started
+Get Started with Google Cloud
+Product List
+Cloud Customer Care
+Featured Products
+Agent Platform
+Apigee API Management
+BigQuery
+Compute Engine
+Cloud CDN
+Cloud Run
+Cloud Storage
+Cloud SQL
+Gemini Enterprise
+Google Kubernetes Engine
+Looker
+Cross-product Tools
+Access and resources management
+Costs and usage management
+Infrastructure as code
+SDK, languages, frameworks, and tools
+Technology Areas
+AI and ML
+Application development
+Application hosting
+Compute
+Data analytics and pipelines
+Databases
+Distributed, hybrid, and multicloud
+Industry solutions
+Migration
+Networking
+Observability and monitoring
+Security
+Storage
+/
+Console
+English
+Deutsch
+Español
+Español – América Latina
+Français
+Indonesia
+Italiano
+Português
+Português – Brasil
+עברית
+中文 – 简体
+中文 – 繁體
+日本語
+한국어
+Sign in
+Gemini Enterprise
+Gemini Notebook Enterprise
+Start free
+Overview
+Administrator guide
+App user guide
+Developer guide
+Gemini Notebook for business
+AlphaEvolve
+Reference
+Resources
+Documentation
+More
+Overview
+Administrator guide
+App user guide
+Developer guide
+Gemini Notebook for business
+AlphaEvolve
+Reference
+Resources
+Console
+Gemini Notebook for business
+Overview
+Set up Gemini Notebook for business
+Get licenses for Gemini Notebook for business
+Work with notebooks and their sources
+Create and manage notebooks (API)
+Add and manage data sources in a notebook (API)
+Create an audio overview of your notebook (API)
+Customer-managed encryption keys
+Enable Model Armor
+Protect sensitive data in Gemini Notebook for business sources
+Configure usage audit logging
+Share notebooks
+FAQs about Gemini Notebook for business
+Standalone API
+Generate podcasts (API method)
+Get Started
+Get Started with Google Cloud
+Product List
+Cloud Customer Care
+Featured Products
+Agent Platform
+Apigee API Management
+BigQuery
+Compute Engine
+Cloud CDN
+Cloud Run
+Cloud Storage
+Cloud SQL
+Gemini Enterprise
+Google Kubernetes Engine
+Looker
+Cross-product Tools
+Access and resources management
+Costs and usage management
+Infrastructure as code
+SDK, languages, frameworks, and tools
+Technology Areas
+AI and ML
+Application development
+Application hosting
+Compute
+Data analytics and pipelines
+Databases
+Distributed, hybrid, and multicloud
+Industry solutions
+Migration
+Networking
+Observability and monitoring
+Security
+Storage
+Home
+Documentation
+AI and ML
+Gemini Enterprise
+Gemini Notebook Enterprise
+Gemini Notebook for business
+Send feedback
+Add and manage data sources in a notebook (API)
+Stay organized with collections
+Save and categorize content based on your preferences.
+Preview
+This feature is
+subject to the "Pre-GA Offerings Terms" in the General Service Terms section of the
+Service Specific
+Terms.
+Pre-GA features are available "as is" and might have limited support.
+For more information, see the
+launch stage descriptions.
+After you have created your notebook, you can add various content types to it as
+data sources. You can do so in batches or as single files. Some of the sources
+include Google Docs, Google Slides, raw text, web content, and YouTube
+videos.
+This page describes how to perform the following tasks:
+Add data sources in a batch
+Upload a file as a source
+Retrieve a source
+Delete data sources from a notebook
+Before you begin
+If you plan to add Google Docs or Google Slides as your data source,
+you must authorize access to Google Drive using Google user credentials. To
+do so, run the following
+gcloud auth login
+command and follow the instructions in the CLI.
+gcloud auth login --enable-gdrive-access
+Use the US multi-regional endpoint
+If your Gemini Notebook Enterprise subscription is in the US
+multi-region, you can send the requests on this page to the US multi-regional
+endpoint, discoveryengine.us.rep.googleapis.com. A multi-regional endpoint
+processes your requests and terminates TLS within the multi-region, so your
+request data stays in the US while it's in transit. Using this endpoint doesn't
+change where your notebooks are stored. For more information, see
+Regional and multi-regional API endpoints
+overview in the Google Cloud
+security guide.
+To use the US multi-regional endpoint, make the following changes to each
+request URL on this page:
+Replace the
+ENDPOINT_LOCATION-discoveryengine.googleapis.com
+host with discoveryengine.us.rep.googleapis.com.
+Set LOCATION to us.
+The rest of each request stays the same. To learn how you choose your
+subscription's multi-region, see
+Get a subscription.
+For the list of regional and multi-regional service endpoints, see
+Regional and multi-regional service endpoints
+in the Virtual Private Cloud guide.
+Add data sources in a batch
+To add sources to a notebook, call the
+notebooks.sources.batchCreate
+method.
+REST
+curl -X POST \
+-H "Authorization:Bearer $(gcloud auth print-access-token)" \
+-H "Content-Type: application/json" \
+"https://ENDPOINT_LOCATION-discoveryengine.googleapis.com/v1alpha/projects/PROJECT_NUMBER/locations/LOCATION/notebooks/NOTEBOOK_ID/sources:batchCreate" \
+-d '{
+"userContents": [
+{
+USER_CONTENT
+}
+]
+}'
+Replace the following:
+ENDPOINT_LOCATION: the multi-region for your API request. Specify one of the following
+values:
+us for the US multi-region
+eu for the EU multi-region
+global for the Global location
+For more information, see
+Specify a multi-region
+for your data store.
+PROJECT_NUMBER: the number of your Google Cloud project.
+LOCATION:
+the geographic location of your data store, such as global.
+For more information, see Locations.
+NOTEBOOK_ID: The unique identifier of the notebook.
+USER_CONTENT: The data source content.
+You can add only one of the following data sources as your content:
+For Google Drive content consisting of Google Docs or Google Slides,
+add:
+"googleDriveContent": {
+"documentId": "DOCUMENT_ID_GOOGLE",
+"mimeType": "MIME_TYPE",
+"sourceName": "DISPLAY_NAME_GOOGLE"
+}
+Replace the following:
+DOCUMENT_ID_GOOGLE: the ID of the file that's
+in the Google Drive. This ID appears in the URL of the file. To get the
+document ID of a file, open the file. Its URL has the pattern:
+https://docs.google.com/FILE_TYPE/d/DOCUMENT_ID_GOOGLE/edit?resourcekey=RESOURCE_KEY.
+MIME_TYPE: the mime type of the selected
+document. Use application/vnd.google-apps.document for
+Google Docs or application/vnd.google-apps.presentation
+for Google Slides.
+DISPLAY_NAME_GOOGLE: the display name of the
+data source.
+For raw text input, add:
+"textContent": {
+"sourceName": "DISPLAY_NAME_TEXT",
+"content": "TEXT_CONTENT"
+}
+Replace the following:
+DISPLAY_NAME_TEXT: the display name of the
+data source.
+TEXT_CONTENT: the raw text content that you want
+to upload as a data source.
+For web content, add:
+"webContent": {
+"url": "URL_WEBCONTENT",
+"sourceName": "DISPLAY_NAME_WEB"
+}
+Replace the following:
+URL_WEBCONTENT: the URL of the content that you
+want to upload as a data source.
+DISPLAY_NAME_WEB: the display name of the
+data source.
+For video content, add:
+"videoContent": {
+"youtubeUrl": "URL_YOUTUBE"
+}
+Replace URL_YOUTUBE with the URL of the YouTube
+video that you want to upload as a data source.
+If the request is successful, you should get an instance of the
+source
+object as a response, similar to the following JSON. Note the
+SOURCE_ID and
+SOURCE_RESOURCE_NAME, which are required to perform
+other tasks, such as retrieving or deleting the data source.
+{
+"sources": [
+{
+"sourceId": {
+"id": "SOURCE_ID"
+},
+"title": "DISPLAY_NAME",
+"metadata": {
+"xyz": "abc"
+},
+"settings": {
+"status": "SOURCE_STATUS_COMPLETE"
+},
+"name": "SOURCE_RESOURCE_NAME"
+}
+]
+}
+Upload a file as a source
+In addition to adding data sources in batches, you can upload single files
+that can be used as data sources in your notebook.
+To upload a single file, call the
+notebooks.sources.uploadFile method.
+REST
+curl -X POST --data-binary "@PATH/TO/FILE" \
+-H "Authorization:Bearer $(gcloud auth print-access-token)" \
+-H "X-Goog-Upload-File-Name: FILE_DISPLAY_NAME" \
+-H "X-Goog-Upload-Protocol: raw" \
+-H "Content-Type: CONTENT_TYPE" \
+"https://ENDPOINT_LOCATION-discoveryengine.googleapis.com/upload/v1alpha/projects/PROJECT_NUMBER/locations/LOCATION/notebooks/NOTEBOOK_ID/sources:uploadFile" \
+Replace the following:
+PATH/TO/FILE: the path to the file that you want
+to upload.
+FILE_DISPLAY_NAME: a string that denotes the
+display name of the file in the notebook.
+CONTENT_TYPE: the type of content that you want to
+upload. For a list of supported content types, see
+Supported content types.
+ENDPOINT_LOCATION: the multi-region for your API request. Specify one of the following
+values:
+us for the US multi-region
+eu for the EU multi-region
+global for the Global location
+For more information, see
+Specify a multi-region
+for your data store.
+PROJECT_NUMBER: the number of your Google Cloud project.
+LOCATION:
+the geographic location of your data store, such as global.
+For more information, see Locations.
+NOTEBOOK_ID: the unique identifier of the notebook.
+If the request is successful, you should get a JSON response similar to the
+following.
+{
+"sourceId": {
+"id": "SOURCE_ID"
+}
+}
+Supported content types
+The file that you upload as a source must be supported.
+The following document content types are supported:
+File extension
+Content type
+.pdf
+application/pdf
+.txt
+text/plain
+.md
+text/markdown
+.docx
+application/vnd.openxmlformats-officedocument.wordprocessingml.document
+.pptx
+application/vnd.openxmlformats-officedocument.presentationml.presentation
+.xlsx
+application/vnd.openxmlformats-officedocument.spreadsheetml.sheet
+The following audio content types are supported:
+File extension
+Content type
+.3g2
+audio/3gpp2
+.3gp
+audio/3gpp
+.aac
+audio/aac
+.aif
+audio/aiff
+.aifc
+audio/aiff
+.aiff
+audio/aiff
+.amr
+audio/amr
+.au
+audio/basic
+.avi
+video/x-msvideo
+.cda
+application/x-cdf
+.m4a
+audio/m4a
+.mid
+audio/midi
+.midi
+audio/midi
+.mp3
+audio/mpeg
+.mp4
+video/mp4
+.mpeg
+audio/mpeg
+.ogg
+audio/ogg
+.opus
+audio/ogg
+.ra
+audio/vnd.rn-realaudio
+.ram
+audio/vnd.rn-realaudio
+.snd
+audio/basic
+.wav
+audio/wav
+.weba
+audio/webm
+.wma
+audio/x-ms-wma
+The following image content types are supported:
+File extension
+Content type
+.png
+image/png
+.jpg
+image/jpg
+.jpeg
+image/jpeg
+Retrieve a source
+To retrieve a specific source that's added to a notebook, use the
+notebooks.sources.get
+method.
+REST
+curl -X GET \
+-H "Authorization:Bearer $(gcloud auth print-access-token)" \
+-H "Content-Type: application/json" \
+"https://ENDPOINT_LOCATION-discoveryengine.googleapis.com/v1alpha/projects/PROJECT_NUMBER/locations/LOCATION/notebooks/NOTEBOOK_ID/sources/SOURCE_ID"
+Replace the following:
+ENDPOINT_LOCATION: the multi-region for your API request. Specify one of the following
+values:
+us for the US multi-region
+eu for the EU multi-region
+global for the Global location
+For more information, see
+Specify a multi-region
+for your data store.
+PROJECT_NUMBER: the number of your Google Cloud project.
+LOCATION:
+the geographic location of your data store, such as global.
+For more information, see Locations.
+NOTEBOOK_ID: the unique identifier
+that you received when you created the notebook. For more information, see
+Create a notebook.
+SOURCE_ID: the source's identifier
+that you received when you added the source to your notebook.
+If the request is successful, you should get a JSON response similar to the following.
+{
+"sources": [
+{
+"sourceId": {
+"id": "SOURCE_ID"
+},
+"title": "DISPLAY_NAME",
+"metadata": {
+"wordCount": 148,
+"tokenCount": 160
+},
+"settings": {
+"status": "SOURCE_STATUS_COMPLETE"
+},
+"name": "SOURCE_RESOURCE_NAME"
+}
+]
+}
+Delete data sources from a notebook
+To delete data sources in bulk from a notebook, use the
+notebooks.sources.batchDelete
+method.
+REST
+curl -X POST \
+-H "Authorization:Bearer $(gcloud auth print-access-token)" \
+-H "Content-Type: application/json" \
+"https://ENDPOINT_LOCATION-discoveryengine.googleapis.com/v1alpha/projects/PROJECT_NUMBER/locations/LOCATION/notebooks/NOTEBOOK_ID/sources:batchDelete" \
+-d '{
+"names": [
+"SOURCE_RESOURCE_NAME_1",
+"SOURCE_RESOURCE_NAME_2"
+]
+}'
+Replace the following:
+ENDPOINT_LOCATION: the multi-region for your API request. Specify one of the following
+values:
+us for the US multi-region
+eu for the EU multi-region
+global for the Global location
+For more information, see
+Specify a multi-region
+for your data store.
+PROJECT_NUMBER: the number of your Google Cloud project.
+LOCATION:
+the geographic location of your data store, such as global.
+For more information, see Locations.
+NOTEBOOK_ID: The unique identifier of the notebook.
+SOURCE_RESOURCE_NAME: the complete resource name
+of the data source to be deleted. This field has the pattern:
+projects/PROJECT_NUMBER/locations/LOCATION/notebooks/NOTEBOOK_ID/source/SOURCE_ID.
+If the request is successful, you should receive an empty JSON object.
+What's next
+Create an audio overview of your notebook
+programmatically.
+Send feedback
+Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates.
+Last updated 2026-11-10 UTC.
+Products and pricing
+See all products
+Google Cloud pricing
+Google Cloud Marketplace
+Contact sales
+Support
+Community forums
+Support
+Release Notes
+System status
+Resources
+GitHub
+Getting Started with Google Cloud
+Code samples
+Cloud Architecture Center
+Training and Certification
+Builders Hub
+Engage
+Blog
+Events
+X (Twitter)
+Google Cloud on YouTube
+Google Cloud Tech on YouTube
+Android
+Chrome
+Firebase
+Google AI
+About Google
+Privacy
+Site terms
+Google Cloud terms
+Manage cookies
+Our third decade of climate action: join us
+Sign up for the Google Cloud newsletter
+Subscribe
+English
+Deutsch
+Español
+Español – América Latina
+Français
+Indonesia
+Italiano
+Português
+Português – Brasil
+עברית
+中文 – 简体
+中文 – 繁體
+日本語
+한국어

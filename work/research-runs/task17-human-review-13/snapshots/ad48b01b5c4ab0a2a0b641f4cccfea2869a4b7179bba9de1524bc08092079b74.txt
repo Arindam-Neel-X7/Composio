@@ -1,0 +1,521 @@
+MongoDB MCP Server Tools - MongoDB MCP Server - MongoDB Docs
+For AI agents: a documentation index is available at https://www.mongodb.com/docs/llms.txt — markdown versions of all pages are available by appending .md to any URL path.
+Products
+Platform
+AtlasBuild with the intelligent data platform
+Platform Services
+DatabasePower critical apps with real-time dataSearchDeliver fast, relevant search at scaleVector SearchBuild AI apps with accurate contextVoyage AIEmbed meaning and rerank resultsAtlas Agent EngineBuild, deploy, and govern agents in production
+Self Managed
+Enterprise AdvancedManage your apps on your infrastructureCommunity EditionDevelop locally with MongoDB, at no cost
+Tools
+CompassWork with MongoDB data in a GUIIntegrationsIntegrations with third-party servicesRelational MigratorMigrate to MongoDB with confidence
+View All ProductsExplore our full product suitearrow-right
+MongoDB 9.0The best version of MongoDB ever builtarrow-right
+Build with MongoDB Atlas
+Get started for free in minutes
+Sign Up
+Explore Atlas Deployment Options
+Develop with self-managed MongoDB
+Learn more
+Try Community Edition
+Explore the latest version of MongoDB
+Download
+Resources
+DocumentationLearn how to build with MongoDB and get started todaySkills and CertificationsDevelop in-demand skills and earn MongoDB certificationsBooksRead books and e-books about MongoDB
+MongoDB for EducatorsTake advantage of educator resourcesMongoDB for StudentsTake advantage of student benefitsCommunityJoin a community of developersEvents and WebinarsFind an event or webinar near you
+Resources HubGet help building the next big thing with MongoDBarrow-right
+Solutions
+Use cases
+Artificial IntelligenceModernizationPaymentsServerless DevelopmentGamingIntelligent SearchEdge and Mobile
+Industries
+Financial ServicesTelecommunicationsHealthcareRetailPublic SectorManufacturing
+Solutions LibraryOrganized and tailored solutions to kick-start projectsarrow-right
+MongoDB AMP
+Modernize applications up to 3x faster
+Learn morearrow-right
+Startups and AI Innovators
+For world-changing ideas and AI pioneers
+Learn morearrow-right
+Customer Case Studies
+Hear directly from our users
+See storiesarrow-right
+Company
+CareersStart your next adventureBlogRead articles and announcementsNewsroomRead press releases and news stories
+PartnersLearn about our partner ecosystemLeadershipMeet our executive teamCompanyLearn more about who we are
+Contact Us
+Reach out to MongoDB
+Connect with an expertarrow-right
+Investors
+Visit our investor portal
+Learn morearrow-right
+Pricing
+Eng
+SupportSign In
+menu-vertical
+Get Started
+Products
+Platform
+AtlasBuild with the intelligent data platform
+Platform Services
+DatabasePower critical apps with real-time dataSearchDeliver fast, relevant search at scaleVector SearchBuild AI apps with accurate contextVoyage AIEmbed meaning and rerank resultsAtlas Agent EngineBuild, deploy, and govern agents in production
+Self Managed
+Enterprise AdvancedManage your apps on your infrastructureCommunity EditionDevelop locally with MongoDB, at no cost
+Tools
+CompassWork with MongoDB data in a GUIIntegrationsIntegrations with third-party servicesRelational MigratorMigrate to MongoDB with confidence
+View All ProductsExplore our full product suitearrow-right
+MongoDB 9.0The best version of MongoDB ever builtarrow-right
+Build with MongoDB Atlas
+Get started for free in minutes
+Sign Up
+Explore Atlas Deployment Options
+Develop with self-managed MongoDB
+Learn more
+Try Community Edition
+Explore the latest version of MongoDB
+Download
+Resources
+DocumentationLearn how to build with MongoDB and get started todaySkills and CertificationsDevelop in-demand skills and earn MongoDB certificationsBooksRead books and e-books about MongoDB
+MongoDB for EducatorsTake advantage of educator resourcesMongoDB for StudentsTake advantage of student benefitsCommunityJoin a community of developersEvents and WebinarsFind an event or webinar near you
+Resources HubGet help building the next big thing with MongoDBarrow-right
+Solutions
+Use cases
+Artificial IntelligenceModernizationPaymentsServerless DevelopmentGamingIntelligent SearchEdge and Mobile
+Industries
+Financial ServicesTelecommunicationsHealthcareRetailPublic SectorManufacturing
+Solutions LibraryOrganized and tailored solutions to kick-start projectsarrow-right
+MongoDB AMP
+Modernize applications up to 3x faster
+Learn morearrow-right
+Startups and AI Innovators
+For world-changing ideas and AI pioneers
+Learn morearrow-right
+Customer Case Studies
+Hear directly from our users
+See storiesarrow-right
+Company
+CareersStart your next adventureBlogRead articles and announcementsNewsroomRead press releases and news stories
+PartnersLearn about our partner ecosystemLeadershipMeet our executive teamCompanyLearn more about who we are
+Contact Us
+Reach out to MongoDB
+Connect with an expertarrow-right
+Investors
+Visit our investor portal
+Learn morearrow-right
+Pricing
+Eng
+SupportSign In
+menu-vertical
+Get Started
+Docs Menu
+Ask MongoDB AI
+/Docs Home
+/Tools
+/MongoDB MCP Server
+MongoDB MCP Server Tools
+Copy page
+The MongoDB MCP Server allows you to interact with MongoDB clusters using natural language queries from AI clients that support MCP. This page describes the MCP Server tools.
+Overview
+The MongoDB MCP Server provides the following tool categories:
+Atlas tools, which perform operations on Atlas system resources, like organizations, projects, clusters, database user accounts, and retrieving performance recommendations.
+Local Atlas deployment tools, which allow you to list, connect to, create, and delete local Atlas deployments.
+Database tools, which perform operations such as inserting, updating, and deleting documents, and running queries and aggregation pipelines.
+Assistant tools, which search the MongoDB Assistant knowledge base for official documentation and curated guidance.
+Not all Atlas tools and Database tools are available on both the MongoDB Atlas Managed MCP Server and Local MCP for MongoDB MCP Server. The Atlas Managed and Local columns in each of these table indicate if an MCP deployment type supports a given tool.
+For detailed examples of how the MongoDB MCP Server uses these tools and sample outputs, see MongoDB MCP Server Usage Examples.
+MCP Server Atlas Tools
+The Atlas tools are only available if you have set up Atlas API credentials as described in Get Started with the MongoDB MCP Server.
+The following table describes the Atlas tools. The Atlas Managed and Local columns indicate whether each tool is available on the MongoDB Atlas Managed MCP Server and Local MCP for MongoDB MCP Server, respectively.
+Atlas Tool Name
+Description
+Atlas Managed
+Local
+atlas-list-orgs
+Returns a list of Atlas organizations.
+atlas-list-projects
+Returns a list of Atlas projects.
+atlas-create-project
+Creates a new Atlas project.
+atlas-list-clusters
+Returns list of Atlas clusters.
+atlas-inspect-cluster
+Returns information about a specific Atlas cluster.
+atlas-create-free-cluster
+Creates a free Atlas cluster.
+atlas-connect-cluster
+Connects to an Atlas cluster using the configured service account.
+If you configured the MCP server without specifying a connection string, this tool creates a temporary database user with a random password to establish the connection. For details, see Tool Details.
+atlas-get-regions
+Returns the supported Atlas regions for a cloud provider (AWS, AZURE, or GCP), including each region's code and human-readable location. Use this tool to resolve region names or codes before creating or upgrading a cluster.
+atlas-upgrade-cluster
+Supports the following Atlas cluster upgrades:
+Free to Flex
+Free to M10
+Flex to M10
+You can optionally specify the target region and provider.
+For a dedicated cluster, you can scale the cluster to a different M10–M80 instance size and update its compute autoscaling settings. Specify at least one of the following options:
+The new instance size
+Whether to enable compute autoscaling
+The minimum or maximum instance size for autoscaling
+Scaling applies to electable and read-only nodes. This tool doesn't scale analytics nodes, multi-shard clusters, or clusters whose regions use different instance sizes.
+atlas-create-cluster
+Creates a dedicated Atlas cluster with M10–M80 instance sizes. Supports replica set and single-shard cluster types in one to three regions.
+clusterType defaults to REPLICASET. SHARDED clusters are single-shard only and require M30 or higher.
+regions accepts up to three Atlas regions in priority order. The first region has the highest priority and holds the primary node.
+encryptionAtRestProvider selects a customer-managed key provider for Encryption at Rest. The key provider must already have a valid Encryption at Rest configuration in the project.
+Compute autoscaling is enabled by default. Disk autoscaling is always enabled.
+The tool returns immediately. Use atlas-inspect-cluster to poll until the cluster state reaches IDLE.
+atlas-pause-resume-cluster
+Pauses or resumes a dedicated (M10+) Atlas cluster. Free and Flex clusters cannot be paused.
+Pause: Makes the cluster unavailable for connections and stops compute costs. The cluster must be in the IDLE state.
+Resume: Restarts a paused cluster. Use atlas-inspect-cluster to poll until the cluster state reaches IDLE.
+atlas-inspect-access-list
+Returns information about the IP and CIDR ranges that can access an Atlas cluster.
+atlas-create-access-list
+Configures the IP and CIDR access list for an Atlas cluster.
+atlas-list-db-users
+Returns a list of Atlas database users.
+atlas-create-db-user
+Creates an Atlas database user.
+atlas-list-alerts
+Returns a list of triggered alerts for an Atlas project. These are alerts Atlas has raised, not the alert configurations that define them. Defaults to OPEN alerts. You can set the status to TRACKING or CLOSED to see those respective alerts.
+atlas-get-performance-advisor
+Returns Performance Advisor recommendations for an Atlas cluster. Supports operations for suggested indexes, drop index suggestions, slow query logs, and schema suggestions. Requires Project Read Only access or higher.
+To learn more, see Performance Advisor Tool.
+atlas-load-sample-dataset
+Loads a sample dataset into an Atlas cluster.
+remote-atlas-connect
+Connects to an Atlas cluster on the Remote MCP Server.
+atlas-streams-discover
+Returns information about an Atlas Stream Processing workspace, processor, public connection, or privatelink networking connection.
+On the Remote MCP Server, the Atlas Stream Processing tools are exposed through the atlas-streams-* tools.
+atlas-streams-build
+Creates an Atlas Stream Processing workspace, processor, public connection, or privatelink networking connection.
+atlas-streams-manage
+Manages an Atlas Stream Processing workspace, processor, or public connection. The MongoDB MCP Server can:
+Start, stop, or update a processor.
+Update a workspace.
+Update a public connection.
+Accept or reject a privatelink networking connection.
+atlas-streams-teardown
+Deletes an Atlas Stream Processing workspace, processor, public connection, or privatelink networking connection.
+MCP Server Local Atlas Tools
+You can use the Local MCP with local Atlas deployments. To do so, you must install Docker. For an introduction to local Atlas deployments, see Create a Local Atlas Deployment.
+The following table describes the local Atlas tools. These tools are only available to the Local MCP for MongoDB MCP Server.
+MCP Server Local Atlas Tool Name
+Description
+atlas-local-list-deployments
+Lists local Atlas deployments.
+atlas-local-create-deployment
+Creates a local Atlas deployment. To run this tool, you must disable read only mode.
+atlas-local-connect-deployment
+Connects to a local Atlas deployment.
+atlas-local-delete-deployment
+Deletes a local Atlas deployment. To run this tool, you must disable read only mode.
+For examples that run the local Atlas tools, see Local Atlas Deployments.
+MCP Server Database Tools
+The following table describes the database tools. The Atlas Managed and Local columns indicate whether each tool is available on the MongoDB Atlas Managed MCP Server and Local MCP for MongoDB MCP Server, respectively.
+Database Tool Name
+Description
+Atlas Managed
+Local
+connect
+Connects to a MongoDB cluster.
+disconnect
+Closes a MongoDB connection and revokes its connection ID.
+list-connections
+Returns a list of the active MongoDB connections and their connection IDs. Use this tool to find the connection ID of an established connection.
+find
+Runs a MongoDB database query.
+aggregate
+Runs a MongoDB aggregation pipeline.
+aggregate-db
+Runs a MongoDB aggregation pipeline at the database level.
+count
+Returns the number of documents in a collection.
+explain
+Returns statistics describing the execution of the winning plan chosen by the query optimizer for the evaluated method.
+insert-many
+Adds documents to a collection.
+create-index
+Creates an index on a collection. This tool supports creating vector search indexes and lexical search indexes.
+drop-index
+Drop an index for the provided database and collection. This tool supports dropping vector search indexes and lexical search indexes.
+update-many
+Modifies multiple documents in a collection.
+rename-collection
+Changes the name of a collection.
+create-collection
+Creates a new collection.
+delete-many
+Removes documents from a collection.
+drop-collection
+Deletes a collection from a database.
+drop-database
+Deletes a database.
+list-databases
+Returns a list of all databases available through the current connection.
+list-collections
+Returns a list of collections in a database.
+collection-indexes
+Returns information about collection indexes, including vector search indexes and lexical search indexes.
+collection-schema
+Returns collection schema information.
+collection-storage-size
+Returns collection size in megabytes.
+db-stats
+Returns database statistics.
+export
+Saves the results of a query or aggregation pipeline in JSON format to a file on the computer that runs the MCP Server. The results are also available through the exported-data resource in the AI client application.
+mongodb-logs
+Returns the most recent logged mongod events.
+MCP Server Assistant Tools
+The assistant tools give your AI client access to the MongoDB Assistant knowledge base, which includes official MongoDB documentation, curated expert guidance, and other resources provided by MongoDB. These tools enable your AI client to retrieve accurate, version-specific MongoDB information rather than relying on its training data alone.
+The following table describes the assistant tools:
+MCP Server Assistant Tool Name
+Description
+list-knowledge-sources
+Lists available data sources in the MongoDB Assistant knowledge base. Use this to explore available data sources or to find search filter parameters to use in search-knowledge.
+search-knowledge
+Searches for information in the MongoDB Assistant knowledge base. The knowledge base includes official documentation, curated expert guidance, and other resources provided by MongoDB. Supports filtering by data source and version.
+Tool Details
+For additional information about specific MCP tools, see the following sections.
+Vector Search Support
+The MongoDB MCP Server supports MongoDB Vector Search. You can create and manage vector search indexes, generate embeddings, and run semantic search queries through natural language prompts. The following table summarizes key features.
+Use Case
+Example Prompts
+Relevant Tools
+Manage indexes
+Create a vector search index on the sample_db database and products collection
+Show me all vector search indexes on the products collection
+Drop the vector search index named vector_index
+create-index
+collection-indexes
+drop-index
+IMPORTANT: To update a vector search index, drop the existing
+index and create a new one.
+Insert documents with automatic embeddings
+Insert these documents into the products collection and embed their descriptions
+insert-many
+Vector search queries
+Search for documents semantically similar to this description
+Find me related products filtered by price range
+aggregate
+Use the following resources to learn more:
+For descriptions of the database tools used for vector search, such as create-index, collection-indexes, drop-index, insert-many, and aggregate, see the MCP Server Database Tools table.
+For detailed usage examples and sample outputs, see Vector Search.
+To configure the MCP Server for vector search, see voyageApiKey.
+To learn more about vector search, see MongoDB Vector Search Overview.
+Lexical Search Support
+The MongoDB MCP Server supports MongoDB Search. You can create and manage lexical search indexes and run full-text search queries through natural language prompts. This includes queries that use the $search aggregation stage to return relevant documents and the $searchMeta aggregation stage to return metadata about the results, such as a count of the relevant documents. The following table summarizes key features.
+Use Case
+Example Prompts
+Relevant Tools
+Manage indexes
+Create a lexical search index on the sample_db database and products collection for the description field
+Show me all lexical search indexes on the products collection
+Drop the lexical search index named search_index
+create-index
+collection-indexes
+drop-index
+IMPORTANT: To update a lexical search index, drop the existing
+index and create a new one.
+Lexical search queries
+Find products most relevant to "wireless headphones"
+Which documents mention "bluetooth"? Include documents where "bluetooth" may be misspelled
+Find products that use "wireless" in the description, and treat "bluetooth" as a synonym to "wireless"
+aggregate
+Use the following resources to learn more:
+For descriptions of the database tools used for lexical search, such as create-index, collection-indexes, drop-index, and aggregate, see the MCP Server Database Tools table.
+For detailed usage examples and sample outputs, see Lexical Search.
+To learn more about how MongoDB performs lexical searches, see MongoDB Search Overview.
+Atlas Stream Processing Support
+You can use the MongoDB MCP Server to interact with your Atlas Stream Processing resources. Atlas Stream Processing enables you to continuously read, write, and transform streams of data using the same aggregation operations used by Atlas databases. You incur charges for all running processors.
+The Atlas Stream Processing tools (atlas-streams-discover, atlas-streams-build, atlas-streams-manage, and atlas-streams-teardown) are available on both the Local and Atlas Managed MCP Servers. For tool descriptions, see the MCP Server Atlas Tools table.
+For more information, see Atlas Stream Processing.
+Generate Embeddings Automatically
+The MongoDB MCP Server supports two independent mechanisms for generating vector embeddings:
+MCP Server embedding generation: The MCP Server generates embeddings client-side using Voyage AI before sending documents to MongoDB. This requires a Voyage AI API key.
+MongoDB automated embedding: MongoDB automatically generates embeddings server-side when documents are inserted or updated. To learn more, see MongoDB Automated Embedding.
+These mechanisms work independently and can be used together or separately depending on your use case.
+MCP Server embedding generation requires a Voyage AI API key configured on the local MCP Server and is therefore available only on the local MCP Server. MongoDB automated embedding generates embeddings within MongoDB and does not depend on MCP Server configuration.
+MCP Server Embedding Generation
+If you configure the MCP Server with a Voyage AI API key, the server can automatically generate embeddings in the following ways:
+Generate embeddings for documents: Embeds text fields in documents when using the insert-many tool.
+Generates embeddings for queries: Embeds the search query when running vector search queries with the aggregate tool. Specifically, the server generates embeddings for the queryVector parameter in $vectorSearch aggregation queries.
+The MCP Server supports the following Voyage AI embedding models:
+voyage-3-large
+voyage-3.5
+voyage-3.5-lite
+voyage-code-3
+To learn more about Voyage AI models, see the Voyage AI documentation.
+Note
+By default, the MongoDB MCP Server validates that fields with vector search indexes contain valid vector embeddings to prevent breaking vector search indexes. To disable this behavior, set the disableEmbeddingsValidation option to true. To learn more, see voyageApiKey.
+MongoDB Automated Embedding
+Important
+Automated embedding in vector search indexes is available as a preview feature only for MongoDB Community Edition v8.2 and later. The feature and the corresponding documentation might change at anytime during the Preview period.
+MongoDB can also automatically generate embeddings server-side when documents are inserted or updated. This approach does not require a Voyage AI API key in your MCP configuration because embedding generation happens within MongoDB.
+The MongoDB MCP Server supports managing vector search indexes with automated embedding, which automatically generate embeddings for your documents. You can create, drop, and inspect vector search indexes with automated embedding through natural language prompts. The following table summarizes key features.
+To learn more, see Automated Embedding.
+Use Case
+Relevant Tools
+Example Prompts
+Manage indexes
+create-index
+collection-indexes
+drop-index
+"Create an auto embed vector search index on 'plot' field in 'mflix.movies' namespace using voyage-4-large model."
+Insert data with embeddings
+insert-many
+"Insert these documents with the following fields and automatically generate embeddings..."
+Query with embeddings
+aggregate
+"Run a vector search query on mflix.movies with the auto embed index on the 'plot' field."
+Considerations
+The MongoDB MCP Server supports pre-filtering vector search queries. To learn more, see Pre-Filter.
+The MCP server does not support the quantization field for vector search indexes.
+Performance Advisor Tool
+The atlas-get-performance-advisor tool allows you to access Performance Advisor recommendations through natural language queries. This tool helps you identify performance optimization opportunities by analyzing slow queries and suggesting improvements.
+When performing slow query analysis, the MongoDB MCP Server retrieves a sample of slow queries, capped at 50 queries. The sample includes up to 50 most recent slow queries that match any specified conditions in your prompt to ensure optimal performance and response times.
+Note
+This tool requires Project Read Only access or higher and an M10+ cluster.
+Project Read Only refers to the Atlas Project-level role assigned to your service account, not a database role.
+Use Case
+Example Prompts
+Performance Advisor Operation
+Analyze Slow Queries
+Show me my slow queries
+What is slowing down my cluster?
+Show me queries that are longer than 5 seconds
+Show me slow writes in the website.users namespace
+slowQueryLogs
+Index Suggestions
+Are there any indexes I should create to improve performance?
+What indexes do you recommend I drop?
+suggestedIndexes dropIndexSuggestions
+Schema Advice
+Show schema recommendations for my cluster
+Help me optimize my database schema
+schemaAdvice
+For detailed usage examples and sample outputs, see Performance Optimization.
+Connecting without Atlas Connection String
+This section describes the local MCP Server atlas-connect-cluster flow. If you configure the local MCP Server without specifying a connection string to an Atlas cluster, the atlas-connect-cluster tool uses the configured Atlas API service account credentials to create a temporary database user and establish a connection to the cluster.
+The Remote MCP Server uses a different tool, remote-atlas-connect, which follows its own connection and session model and returns a connection handle for subsequent database operations.
+The temporary database user has the following characteristics:
+Randomly generated username and password.
+By default, expires after 4 hours.
+Role assigned based on how you configured the MCP Server:
+readAnyDatabase if you enabled read-only mode or disabled the create, delete, and update tool categories.
+readWriteAnyDatabase if the server has full permissions.
+Note
+The MongoDB MCP Server stores user credentials in memory only and never returns or exposes the credentials in the LLM context.
+Read and Write Concern
+Both the MongoDB Atlas Managed MCP Server and Local MCP for MongoDB MCP Server use a secondaryPreferred read preference and majority write concern for MongoDB database read and write operations, respectively. You can't change or override these settings.
+Learn More
+To disable specific tools and restrict the MCP Server to read-only mode, see Local MCP Server Configuration.
+To see some MCP Server example natural language prompts, see MongoDB MCP Server Usage Examples.
+Back
+Prerequisites
+Next
+Usage Examples
+Rate this page
+On this page
+Overview
+MCP Server Atlas Tools
+MCP Server Local Atlas Tools
+MCP Server Database Tools
+MCP Server Assistant Tools
+Tool Details
+Vector Search Support
+Lexical Search Support
+Atlas Stream Processing Support
+Generate Embeddings Automatically
+Performance Advisor Tool
+Connecting without Atlas Connection String
+Read and Write Concern
+Learn More
+On this page
+Overview
+MCP Server Atlas Tools
+MCP Server Local Atlas Tools
+MCP Server Database Tools
+MCP Server Assistant Tools
+Tool Details
+Vector Search Support
+Lexical Search Support
+Atlas Stream Processing Support
+Generate Embeddings Automatically
+Performance Advisor Tool
+Connecting without Atlas Connection String
+Read and Write Concern
+Learn More
+Documentation
+DatabaseAtlas Agent EngineVoyage AI Models
+Back to Tools
+MongoDB MCP Server
+Home
+Overview
+Get Started
+Prerequisites
+Tools
+Usage Examples
+Local MCP
+Atlas Managed MCP
+Documentation
+DatabaseAtlas Agent EngineVoyage AI Models
+Get Started
+Deployment
+Development
+Management
+Client Libraries
+Tools
+Atlas Architecture Center
+Back to Tools
+MongoDB MCP Server
+Home
+Overview
+Get Started
+Prerequisites
+Tools
+Usage Examples
+Local MCP
+Atlas Managed MCP
+English
+English
+Português
+Español
+한국어
+日本語
+简体中文
+© 2026 MongoDB, Inc.
+About
+Careers
+Investor Relations
+Legal
+Privacy Policy
+GitHub
+Security Information
+Trust Center
+Follow Us
+Support
+Contact Us
+Customer Portal
+Atlas Status
+Product Updates
+Customer Support
+Manage Cookies
+Your Privacy Choices
+Build
+MongoDB Atlas
+Enterprise Advanced
+Community Edition
+Voyage AI
+Data Basics
+Vector Databases
+NoSQL Databases
+Document Databases
+RAG Database
+ACID Transactions
+MERN Stack
+Agent Memory
+MEAN Stack
+© 2026 MongoDB, Inc.

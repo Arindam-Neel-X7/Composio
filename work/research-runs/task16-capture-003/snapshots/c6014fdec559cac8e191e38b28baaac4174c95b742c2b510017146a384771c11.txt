@@ -1,0 +1,266 @@
+---
+title: "Reducto API Reference for Coding Agents"
+description: "Compact reference for AI coding agents integrating Reducto"
+---
+> Documentation Index
+> Fetch the complete documentation index at: https://docs.reducto.ai/llms.txt
+> Use this file to discover all available pages before exploring further.
+# Reducto API Reference for Coding Agents
+A compact reference for AI coding agents. Every Parse example uses [r-1](/parse/r-1). Keep it that way: set `settings.model` to `"r-1"` and add no other parse options unless the task needs them.
+## Fastest path
+| Situation | Use | First call |
+|---|---|---|
+| Local file or folder in an agent workspace | [CLI](/cli) | `reducto parse ./document.pdf` |
+| Agent calls Reducto as tools | [MCP server](/mcp-server) | `parse_document(document_url="https://cdn.reducto.ai/samples/fidelity-example.pdf")` |
+| Python app | Python SDK | `client.parse.run(input=url, settings={"model": "r-1"})` |
+| Node.js app | Node.js SDK | `await client.parse.run({ input: url, settings: { model: "r-1" } })` |
+| No SDK | REST | `POST https://platform.reducto.ai/parse` |
+## Authentication
+Create an API key in [Studio](https://studio.reducto.ai/) under **API Keys** and export it:
+```bash
+export REDUCTO_API_KEY="your_api_key_here"
+```
+The Python, Node.js, and Go SDKs read `REDUCTO_API_KEY` from the environment.
+## Which endpoint
+| I want to... | Endpoint | Key input |
+|---|---|---|
+| Get all text, tables, and figures as chunks with bounding boxes | `/parse` | `settings.model: "r-1"` |
+| Pull specific fields into JSON | `/extract` | `instructions.schema` |
+| Split a document into named sections by page | `/split` | `split_description` |
+| Classify a document's type | `/classify` | `classification_schema` |
+| Fill PDF or DOCX forms | `/edit` | `document_url`, `edit_instructions` |
+| Upload a local file | `/upload` | multipart `file` |
+| Run in the background | `/parse_async`, `/extract_async`, `/split_async`, `/classify_async`, `/edit_async` | `webhook` |
+| Get a job's status or result | `GET /job/{job_id}` | - |
+Supported inputs: PDF, images, DOCX, PPTX, XLSX, CSV, and [30+ other formats](/upload/overview). Upload up to 100MB directly or 5GB with a [presigned URL](/upload/large-files).
+## Quick start (Python)
+```python
+from pathlib import Path
+import requests
+from reducto import Reducto
+client = Reducto()
+upload = client.upload(file=Path("document.pdf"))
+parse = client.parse.run(input=upload.file_id, settings={"model": "r-1"})
+chunks = (
+requests.get(parse.result.url).json()
+if parse.result.type == "url"
+else parse.result.chunks
+)
+extract = client.extract.run(
+input=upload.file_id,
+instructions={"schema": {
+"type": "object",
+"properties": {"total": {"type": "number", "description": "Invoice total"}},
+}},
+parsing={"settings": {"model": "r-1"}},
+)
+print(extract.result[0])
+split = client.split.run(
+input=upload.file_id,
+split_description=[{"name": "Summary", "description": "Executive summary pages"}],
+parsing={"settings": {"model": "r-1"}},
+)
+```
+Edit takes `document_url`, not `input`.
+## Parse parameters
+`POST /parse`. Only `input` and `settings.model` are needed.
+| Parameter | Default | Description |
+|---|---|---|
+| `input` | required | `reducto://` file ID, URL, presigned URL, or `jobid://` |
+| `settings.model` | account default | Set to `"r-1"`. |
+| `retrieval.chunking.chunk_mode` | `"disabled"` | `disabled` (one chunk), `variable` (best for RAG), `section`, `page`, `block`, `page_sections` |
+| `retrieval.chunking.chunk_size` | `null` | Target characters per chunk |
+| `retrieval.filter_blocks` | `[]` | Block types to drop from `content` and `embed`, such as `"Header"`, `"Footer"`, `"Page Number"` |
+| `formatting.table_output_format` | `"dynamic"` | `dynamic`, `html`, `md`, `json`, `csv` |
+| `formatting.add_page_markers` | `false` | Add page markers to the output |
+| `formatting.merge_tables` | `false` | Merge consecutive tables with the same columns |
+| `settings.page_range` | `null` | `{"start": 1, "end": 10}`, 1-indexed |
+| `settings.return_images` | `[]` | `"figure"`, `"table"`, `"page"` |
+| `settings.document_password` | `null` | Password for encrypted files |
+| `settings.persist_results` | `false` | Keep results past 24 hours |
+| `settings.force_url_result` | `false` | Always return a URL result |
+| `settings.timeout` | `null` | Timeout in seconds |
+Optional add-ons:
+| Parameter | Description |
+|---|---|
+| `settings.return_citations` | Word-level boxes in `block.extra.word_citations`, and cell boxes for tables in `extra.cell_citations`. Not with `merge_tables`. |
+| `enhance.advanced_chart_agent` | Structured series data for charts. Adds latency. |
+| `enhance.agentic` with `prompt` | LLM enrichment. Not recommended: adds latency and can lower accuracy. |
+Starting December 7, 2026, Parse defaults to r-1. To keep legacy Parse, set `settings.model` to `"legacy"`. Do not use `settings.ocr_system`, `settings.extraction_mode`, `enhance.summarize_figures`, `enhance.intelligent_ordering`, or agentic entries without a prompt. They only apply to [legacy Parse](/configs/parse/legacy).
+### Parse response shape
+```json
+{
+"job_id": "uuid",
+"result": {
+"type": "full",
+"chunks": [{
+"content": "# Heading\n\nText...",
+"embed": "Heading. Text...",
+"blocks": [{
+"type": "Title",
+"content": "Heading",
+"bbox": {"left": 0.1, "top": 0.05, "width": 0.3, "height": 0.04, "page": 1},
+"confidence": "high"
+}]
+}]
+},
+"usage": {"num_pages": 3, "credits": 4.0},
+"studio_link": "https://studio.reducto.ai/job/..."
+}
+```
+When `result.type` is `"url"`, fetch the chunks from `result.url`. They are plain dicts.
+## Extract Parameters
+`POST /extract`. Pull specific fields from documents into structured JSON using a schema.
+Extract runs Parse internally. If a value doesn't appear in the Parse output, Extract cannot extract it.
+| Parameter | Type | Default | Description |
+|-----------|------|---------|-------------|
+| `input` | string \| string[] | **required** | File ID, URL, `jobid://...`, or array of job IDs to combine |
+| `instructions.schema` | object | `{}` | JSON Schema defining fields to extract. Field names and descriptions directly influence accuracy. |
+| `instructions.system_prompt` | string | `"Be precise and thorough."` | Document-level context for the LLM |
+| `settings.array_extract` | bool | `false` | **Deprecated.** Use `settings.deep_extract` instead. |
+| `settings.deep_extract` | bool | `false` | Agentic mode that iteratively refines output for near-perfect accuracy. Preferred for complex or long (array-heavy) extractions. Higher cost/latency. |
+| `settings.citations.enabled` | bool | `false` | Return source page, bbox, and text for each value. **Mutually exclusive with chunking.** |
+| `settings.citations.numerical_confidence` | bool | `true` | Include 0-1 confidence scores (vs "high"/"low") |
+| `settings.include_images` | bool | `false` | Include page images in extraction context |
+| `settings.optimize_for_latency` | bool | `false` | Higher priority processing at 2x cost |
+| `parsing` | object | `{}` | Parse options. Set `parsing.settings.model` to `"r-1"`. Ignored if input is `jobid://`. |
+### Extract Response Shape
+```json
+{
+"result": [
+{
+"invoice_number": "INV-2024-001",
+"total": 1250.00,
+"line_items": [{"description": "Widget", "amount": 500.00}]
+}
+],
+"job_id": "uuid",
+"usage": {"num_fields": 4, "num_pages": 2, "credits": 10.0},
+"studio_link": "https://studio.reducto.ai/job/..."
+}
+```
+With `citations.enabled: true`, each value is wrapped:
+```json
+{
+"result": {
+"total": {
+"value": 1250.00,
+"citations": [
+{
+"type": "Table",
+"content": "Total: $1,250.00",
+"bbox": {"left": 0.04, "top": 0.26, "width": 0.45, "height": 0.50, "page": 2},
+"confidence": "high"
+}
+]
+}
+}
+}
+```
+---
+## Split Parameters
+`POST /split`. Divide documents into named sections by page number.
+Split runs Parse internally, then uses an LLM to classify pages against your section descriptions.
+| Parameter | Type | Default | Description |
+|-----------|------|---------|-------------|
+| `input` | string | **required** | File ID, URL, or `jobid://...` |
+| `split_description` | array | **required** | List of `{"name": "...", "description": "..."}` section definitions |
+| `split_rules` | string | `"Split the document into the applicable sections..."` | Natural language rules for splitting behavior |
+| `settings.table_cutoff` | `"truncate"` \| `"preserve"` | `"truncate"` | `truncate`: first rows only (faster). `preserve`: all content. |
+| `parsing` | object | `{}` | Parse options. Set `parsing.settings.model` to `"r-1"`. Ignored if input is `jobid://`. |
+### Split Response Shape
+```json
+{
+"result": {
+"splits": [
+{"name": "Executive Summary", "pages": [1, 2]},
+{"name": "Financial Statements", "pages": [3, 4, 5, 6]},
+{"name": "Risk Factors", "pages": [7, 8, 9]}
+]
+},
+"job_id": "uuid",
+"usage": {"num_pages": 9, "credits": 6.0}
+}
+```
+---
+## Edit Parameters
+`POST /edit`. Fill PDF forms and modify DOCX documents.
+**Note:** Edit uses `document_url` as its input parameter, not `input` like other endpoints.
+| Parameter | Type | Default | Description |
+|-----------|------|---------|-------------|
+| `document_url` | string | **required** | File ID or URL of the document to edit (this is `document_url`, not `input`) |
+| `edit_instructions` | string | **required** | Natural language instructions. Be explicit: `"Fill Name: John Doe, Date: 2024-01-15"` |
+| `edit_options.color` | string | `"#FF0000"` | Highlight color for edits (DOCX only) |
+| `edit_options.enable_overflow_pages` | bool | `false` | Create appendix pages for text exceeding field capacity (PDF only) |
+| `form_schema` | array \| null | `null` | Pre-defined field locations for repeatable form filling. Skips detection. |
+### Edit Response Shape
+```json
+{
+"document_url": "https://storage.reducto.ai/filled-form.pdf?...",
+"form_schema": [
+{
+"bbox": {"left": 0.1, "top": 0.2, "width": 0.4, "height": 0.03, "page": 1},
+"description": "Name field",
+"type": "text",
+"value": "John Doe",
+"filled": true
+}
+],
+"usage": {"num_pages": 2, "credits": 8},
+"warnings": null
+}
+```
+The `document_url` is a presigned URL valid for 24 hours. Save the returned `form_schema` to reuse for the same form type (skips field detection). Each field's `value` is the value Edit wrote and `filled` is `true` if Edit wrote it. Set `value` to `null` before reuse, or the old value becomes a fixed value. `warnings` lists problems such as "no form fields were filled", or is `null`.
+---
+## Classify Parameters
+`POST /classify`. Categorize a document before processing.
+| Parameter | Type | Default | Description |
+|-----------|------|---------|-------------|
+| `input` | string | **required** | File ID or URL |
+| `classification_schema` | array | **required** | List of `{"category": "...", "criteria": ["...", "..."]}` |
+| `page_range` | object \| null | `null` | Pages to use for classification context. Defaults to first 5 pages. Max 10 pages. |
+| `document_metadata` | string \| null | `null` | Optional metadata to include in classification prompt |
+### Classify Response Shape
+```json
+{
+"result": {
+"category": "invoice"
+},
+"job_id": "uuid",
+"duration": 1.23
+}
+```
+---
+## Async Processing
+Parse, Extract, Split, Classify, and Edit have async variants (`/parse_async`, `/extract_async`, `/split_async`, `/classify_async`, `/edit_async`). Async endpoints return a `job_id` immediately and process in the background. Poll `GET /job/{job_id}` for the result.
+```python
+# Submit async job
+job = client.parse.run_job(input=upload.file_id, settings={"model": "r-1"})
+print(job.job_id)
+# Poll for results
+import time
+while True:
+result = client.job.get(job.job_id)
+if result.status in ("Completed", "Failed"):
+break
+time.sleep(2)
+```
+Configure webhooks for push-based delivery instead of polling.
+---
+## Error Codes
+| HTTP Status | Meaning | Common cause |
+|-------------|---------|--------------|
+| 401 | Unauthorized | Missing or invalid `REDUCTO_API_KEY` |
+| 422 | Validation error | Invalid parameters, schema too large, or constraint violation |
+| 429 | Rate limited | Too many concurrent requests. Retry with backoff. |
+| 500 | Server error | Transient issue. Retry with backoff. |
+---
+## Useful Links
+- [API Reference](/api-reference/api/sections/parse/operations/parse): Full OpenAPI spec with request/response details
+- [Parse Configuration](/configs/overview): All configuration options
+- [Cookbooks](/cookbooks/overview): End-to-end tutorials (invoice extraction, form filling, RAG)
+- [Error Codes](/reference/error-codes): Complete error catalog
+- [Checking API Health & Usage](/reference/checking-api-health): Hosted API availability, usage data, and throttling signals
+- [Rate Limits](/reference/rate-limits): Request limits and quotas
+- [Credit Usage](/reference/credit-usage): How credits are calculated
+Source: https://docs.reducto.ai/agent-guide/index.mdx

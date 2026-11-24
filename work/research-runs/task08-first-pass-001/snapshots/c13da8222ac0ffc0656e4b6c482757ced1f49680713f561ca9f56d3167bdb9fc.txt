@@ -1,0 +1,92 @@
+---
+updatedAt: 2025-09-16T01:15:05.000Z
+agentTools:
+projectIndex: https://developers.gorgias.com/llms.txt
+---
+# OAuth2 authentication for creating apps with Gorgias
+## Introduction
+In order to be able to have an approved public app with Gorgias, it is required that the app is using OAuth2 for authentication.
+You can obtain the OAuth2 token by following these steps and requirements:
+<ol>
+<li> Creating an app on the partners’ account</li>
+<li> Obtaining the client_id and client_secret</li>
+<li> Redirect authorization</li>
+<li> Post request to obtain the access token (has a 24 hours expiration time)</li>
+<li> Refresh token used to obtain the next token (does not have expiration time)</li>
+</ol>
+## Partners account and retrieving client\_id and client\_secret
+Once the application is created you will be able to retrieve the client\_id and client\_secret parameters. \*note that the client\_id and client\_secret are application-bound parameters, and if you are to create more than one application, you would have different parameter values per application.
+<Image title="partner ss.png" alt={2618} align="center" src="https://files.readme.io/6e81a04-partner_ss.png">
+partners page screenshot for the client\_id and client\_secret
+</Image>
+## Authorization redirection
+Once the application is approved it will appear on the applications page in the helpdesk, and on that page, the connect app button will be available. The Gorgias users will click on the button to initiate the app installation and they will be redirected to the app URL which was specified on the app submission form in the partners’ account. After you have received that request, the app should send an authorization redirect to the following URL: https\://`{subdomain}`.gorgias.com/oauth/authorize
+<strong>The app authorization is received through redirects. </strong>
+Each Gorgias account has its own endpoint, which is defined by the subdomain. On these endpoints are sent all API requests, including the authorization requests.
+The parameters which are required to be sent in this redirect are:
+<ul>
+<li> response_type=code</li>
+<li> client_id=`{your_app_client_id}`</li>
+<li> redirect_uri=(app’s backend endpoint where to redirect once the app is authorized in order to obtain the tokes)</li>
+<li>scope={<a href="https://developers.gorgias.com/docs/oauth2-scopes">scopes</a>}</li>
+</ul>
+Additional parameters:
+<ul>
+<li> state=(random string, protecting against CSRF attacks)</li>
+<li> nonce=(random string, binds it with the token, so we identify the original request that issued it)</li>
+</ul>
+You can send multiple scopes in the requests, depending on the requirements of your app.
+> 📘 Example for the redirect URL:
+>
+> https\://`{subdomain}`.gorgias.com/oauth/authorize?response\_type=code\&client\_id=6218fa8cfexxxxxxc5929712\&state=randomString1234Test\&scope=customers%3Aread%20tickets%3Aread%20integrations%3Aread\&redirect\_uri=`{apps_redirect_uri}`
+<Image title="authorization ss.png" alt={802} align="center" src="https://files.readme.io/8c44cf6-authorization_ss.png">
+Authorization page screenshot
+</Image>
+## Post request to obtain the access token
+When the user accepts the authorization for the app, they will be redirected to the redirect\_uri that was set in the previous redirect. In this redirect, the code parameter will be sent as well as the state parameter you provided. The code parameter would be required for the POST request in order to obtain the access token.
+```http
+curl -u <client_id>:<client_secret> POST https://`{subdomain}`.gorgias.com/oauth/token
+Content-type: application/x-www-form-urlencoded
+grant_type:authorization_code
+redirect_uri:(the same redirect URL you used during the authorization step)
+code=`{received_in_redirect}`
+```
+After this request, you will receive a JSON response containing the access\_token as well as the refresh token. Bear in mind that this access token you receive has a 24 hours expiration time.
+<h4>access_token JSON response example</h4>
+```json
+{
+"access_token":"eyJhbGciOiJSUzI1NiIsInR5cCI6",
+"expires_in":86400,
+"id_token":".3MiOiJodHRwczovL2FjbWUtY21pbi5uZ3Jvay5pbyIsImF1ZCI6WyI2MDkyNWY4ZmU5MGRlZDVlMjY1YWNkZjEiXSwiaWF0IjoxNjIwODQ3MDA5LCJleHAiOjE2MjA5MzM0MDksImF1dGhfdGltZSI6MTYyMDg0Njk1OCwibm9uY2UiOiIwMzI3dFJlaGxlZXBYOWdjZ0E3TzExMSIsImF0X2hhc2giOiJzX3RUVFA3OU9yNUJzOHJnMndUZFVRIiwic3ViIjoxMCwibmFtZSI6IkNvc21pbiBQb2llYW5hIiwiZW1haWwiOiJjb3NtaW5AYWNtZS5nb3JnaWFzLmlvIn0.v7Hl0iULirBC5UpxeoHpPFuEMLcZKz6IrR8xrLFIcLdT6LB-20u1UPei2ZlpO4ZoyojIglJNKYc1oPYHk1FExa9CKSJGw-dsQVumqNXP7Xk4AwN9PYYIOhyJHA37eRqsbGiLWzMDS4QknZ-OPnrgMFUSSDF1bhyQRqrXiVLOGmESOMJNUd5xKiaQ3a9t7tWdu3IB7Y8sx9UwYC8VOqZSzE3Zihn0Ydg6_xQ9u9ocLKK7bIar7r3aYADUVwBkAzB7J59QN0RZxVnEAtDQZFqViEK0gImWaWpDOMQBPRNpkm3VFZCQYY50qJAA9Pb53XRdvkCyC6R06vYiawgkNUjd4g",
+"refresh_token":"Bn8nh9P76uDYZb6wADnV93CyuiqaKaaI00mXQpWFWjfbBR06",
+"scope":"openid email profile offline write:all",
+"token_type":"Bearer"
+}
+```
+## Refresh token used to obtain the next token
+With the refresh\_token parameter you have received in the first POST request to obtain the access\_token, you can send another request, to obtain another access\_token.
+```http
+Refresh token request
+POST https://`{subdomain}`.gorgias.com/oauth/token
+Content-type: application/x-www-form-urlencoded
+grant_type:refresh_token
+refresh_token:(refresh token you received in the response for obtaining the access_token)
+```
+<h4>The JSON response containing the new access token will look like this:</h4>
+```json
+{
+"access_token":"eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6IjB6NWZwe",
+"expires_in":86400,
+"scope":"openid email profile offline write:all",
+"token_type":"Bearer"
+}
+```
+> 🚧
+>
+> In case the application is deactivated on the helpdesk, in order to obtain the access token again, the entire process for obtaining an access token needs to be repeated.
+## Testing the OAuth2 flow before application is submitted
+In order to test the OAuth2 flow before the application is submitted, you can access it through the partner portal, and on my apps page you can choose the preview option when selecting the additional options of the application, or you can use the following URL to start the installation process: https\://`{subdomain}`.gorgias.com/app/settings/integrations/app/`{your_app_client_id}`\
+You can use your sandbox subdomain and your app client id values in order to generate the testing URL.
+<Image title="image (2).png" alt={3360} align="center" src="https://files.readme.io/1cd0ab9-image_2.png">
+app preview selection
+</Image>

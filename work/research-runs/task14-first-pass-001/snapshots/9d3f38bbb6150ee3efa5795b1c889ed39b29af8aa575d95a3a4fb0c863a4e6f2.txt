@@ -1,0 +1,118 @@
+Smartsheet API introduction
+Skip to content
+APIs
+Smartsheet APIBrandfolder APIResource Management API
+AI & MCP
+SearchCtrl+K
+Smartsheet API
+Introduction
+Get started
+Guides
+Event types
+Webhook event types
+Error codes
+Changelog
+OpenAPI Reference
+Alternate Email addresses
+Attachments
+Automation Rules
+Cell Images
+Cells
+Columns
+Comments
+Contacts
+Cross-sheet References
+Dashboards
+Discussions
+Events
+Favorites
+Folders
+Governance
+Group Members
+Groups
+Home
+Imports
+Proofs
+Reports
+Rows
+Search
+Send via Email
+Server Info
+Sharing
+Sheet Summary
+Sheets
+Tokens
+Update Requests
+Users
+Webhooks
+Workspaces
+Schemas
+Last updated 3 months ago
+Smartsheet API introduction
+Copy
+Copy for LLM
+Copy page as Markdown for LLMs
+View as Markdown
+Open this page as Markdown
+Open in ChatGPT
+Get insights from ChatGPT
+Open in Claude
+Get insights from Claude
+Connect to Cursor
+Install MCP server on Cursor
+Connect to VS Code
+Install MCP server on VS Code
+The Smartsheet API enables you to programmatically access and manage your organization's Smartsheet resources. The API Reference includes object schemas, operation specifications, and code snippets for Sheets, Folders, Users, and more.
+Required plan: Business, Enterprise, or Advanced Work Management
+Developer Agreement: The Developer Agreement governs the use of the Smartsheet API and Smartsheet software development kits (SDKs)
+🚀 What's new!
+Smartsheet MCP server: Connect Smartsheet to AI clients like Claude, Cursor, and Codex, and use 30+ tools to manage your sheets, rows, columns, and more through natural-language prompts. Get the details here.
+Report CRUD endpoints: Manage the entire lifecycle of a report with the new endpoints. Explore creating a row report here.
+Asset path endpoints: Get locations of sheets, reports, dashboards, and folders, for context and to explore related assets. Learn more here.
+Try the API
+You can call operations from within the site via our Try it request editor.
+It's just that easy to start using the API!
+Go to the Get started article (next) for a quickstart video and guidance on making your first API call.
+Base URL
+Smartsheet: https://api.smartsheet.com/2.0
+Important: Smartsheet Gov and Smartsheet Regions Europe use the respective base URLs:
+Smartsheet Gov: https://api.smartsheetgov.com/2.0
+Smartsheet Regions Europe: https://api.smartsheet.eu/2.0
+Smartsheet Regions Australia: https://api.smartsheet.au/2.0
+Client SDKs
+Smartsheet provides client libraries that make it easy to call the API from your preferred language. The SDKs handle authentication, request formatting, and response parsing so you can focus on building your integration. You'll find SDK code examples alongside REST snippets throughout the API documentation.
+LanguageReference DocsProject Repository
+JavaScript / Node.js-smartsheet-javascript-sdk
+Pythondocssmartsheet-python-sdk
+Javadocssmartsheet-java-sdk
+C#docssmartsheet-csharp-sdk
+Ready to start using the API?
+What's next?
+Get started calling operations via our Try it request editor.
+Basics explains the fundamentals of using the Smartsheet API
+OpenAPI Reference: skip ahead to learn about resource endpoints and objects, including Sheets, Cells, Folders, and more
+Client SDKs: use our JavaScript, Python, Java, or C# libraries for a streamlined integration experience
+Was this helpful?
+Get started
+Next page
+On this page
+🚀 What's new!Try the APIBase URLClient SDKsWhat's next?
+Logo
+Help Center
+Articles
+Functions List
+Other Resources
+Community
+Smartsheet University
+Content Center
+Product updates & insights
+Support Packages
+Company
+About us
+Newsroom
+Privacy
+Legal
+Contact Support
+Smartsheet Status
+©2025. All Rights Reserved Smartsheet Inc.
+Ask AI

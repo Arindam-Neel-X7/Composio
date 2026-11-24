@@ -1,0 +1,237 @@
+Incoming Webhooks for Pumble - Pumble Help
+Pumble
+Team communication and collaboration
+Clockify
+Time and cost tracking
+Plaky
+Project and task management
+Powered by
+Help
+Changelog
+Guides
+FAQ
+Status
+Contact
+Book a demo
+Contact
+Integrations
+Tutorials
+Set Up Pumble
+Manage users
+CAKE.com Integrations
+How to Use Pumble
+Integrations
+Communication & Scheduling Integrations
+Automation & Workflow Integrations
+Content & Information Feeds
+Overview
+Getting started
+Introduction to Pumble
+Onboarding for New Users
+Pumble Apps
+Overview of Roles & Permissions
+Using Pumble
+Create and Manage Channels
+Direct Messages
+Format and Style Messages
+Sharing Files
+Search & Navigation
+Calls and Meetings
+Profile
+Account Management
+Profile Settings & Preferences
+Personal Notifications
+Administration
+Workspace Settings
+Manage Team Members
+Billing
+Pumble Help Center
+Integrations
+Incoming Webhooks for Pumble
+In this article
+Creating an incoming webhook
+Using incoming webhook to send a message
+Error handling
+Incoming Webhooks for Pumble
+5 min read
+jovana
+With the incoming webhooks, you can easily post messages from other apps into Pumble. When you create an incoming webhook, you receive a unique URL by which you can send a JSON payload with the message text.
+Creating an incoming webhook #
+To create a new incoming webhook:
+Click on your Workspace name at the top left corner
+Navigate to the Workspace settings
+Select General settings from the dropdown
+Click on the Incoming Webhooks section in the sidebar
+Click on the New Webhook button at the top right corner
+Choose the channel where your webhook will post messages
+Click on the Add incoming Webhook button to complete the process
+When you create your webhook, the editor opens up automatically. There, you’ll be able to customize its name, change the channel, add a descriptive label, customize the icon, and most importantly, copy or regenerate your unique URL.
+Info
+The rate limit on incoming webhooks on Pumble is 1 second per webhook.
+Info
+The maximum number of characters in a webhook is 10000.
+Using incoming webhook to send a message #
+To send a message using the incoming webhooks you just created, simply make an HTTP POST request to the unique URL you copied from the webhook editor.
+The request payload should contain the text property and that text will be posted into a specified channel. Currently supported content types are:
+application/json
+application/x-www-form-urlencoded
+Here is a sample curl request for posting to a channel using an incoming webhook using the application/x-www-form-urlencoded content type:
+Copy
+curl -X POST \ --location "https://api.pumble.com/workspaces/WORKSPACE-ID/incomingWebhooks/postMessage/WEBHOOK-CODE" \ --data-urlencode "payload={ \"text\": \"This is posted to general and comes from a bot named MyNewWebhook.\" }"
+Here is a sample JSON curl request for posting to a channel using an incoming webhook:
+Copy
+curl -X POST \ --location
+"https://api.pumble.com/workspaces/WORKSPACE-ID/incomingWebhooks/postMessage/WEBHOOK-CODE" \
+-H "Content-Type: application/json" \
+-d '{"text":"This is posted to general and comes from a bot named MyNewWebhook."}'
+Info
+You can use rich text formatting for webhook messages. Here are some payload examples:
+User mention:
+Copy
+{
+"text": "User mention: <<@{{userId}}>>, channel mention: <<#{{channelId}}>>, user group mention: <<&{{userGroupId}}>> and @here @channel"
+}
+Attachment:
+Copy
+{
+"attachments": [
+{
+"pretext": "Pretext of Pumble webhooks article",
+"title": "Pumble webhooks",
+"title_link": "https://pumble.com/help/integrations/add-pumble-apps/incoming-webhooks-for-pumble",
+"text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+"author_name": "Pumble",
+"author_link": "https://pumble.com",
+"footer": "Lorem ipsum v1.0.0",
+"footer_icon": "https://files.pumble.com/avatars/default/pumble-logo",
+"color": "green", // or hex RGB
+"ts": 1759479334
+}
+]
+}
+This attachment example will send a message that looks like this:
+Hyperlinks:
+Copy
+{
+"text": "[Markdown Hyperlink](https://pumble.com) | <a href=\"https://pumble.com\">Html hyperlink</a> | <https://pumble.com|Hyperlink>"
+}
+Emojis:
+Copy
+{
+"text": "Emojis :raised_hands: :heart:"
+}
+Code block:
+Copy
+{
+"text": "`Inline code` and ```Code block\n hello \nEnd of code block```"
+}
+Here’s an example message that incorporates different types of rich text formatting:
+Copy
+{
+"text": "Hello team! :wave: :tada:\n\n**Quick Update**:\n- Feature deployed successfully! :rocket:\n- Bugs resolved: `5`\n\n*Styling Reference:*\n- Markdown **bold**, *italic*\n- HTML <b>bold</b>, <i>italic</i>, <code>inline code</code>\n\n🔗 Useful Links:\n- [Pumble Website](https://pumble.com)\n- <a href=\"https://pumble.com\">Pumble via HTML</a>\n- <https://pumble.com|Pumble custom hyperlink> \n\n:busts_in_silhouette: Mentions:\n- Channel: <<#{{68e3a383ce5f2c8d95ff46a6}}>> \nNotifications: @here @channel \n\n:computer: Code snippet:```function greet() {\n console.log(\"Hello, Pumble!\");\n}```"
+}
+This webhook message would look like this:
+Error handling #
+If everything is set up correctly, you’ll receive an HTTP 200 status to indicate that your incoming webhook was successful. This might not always be the case, and this action can fail for numerous reasons.
+Use the following table to troubleshoot common webhook errors.
+Error codeError messageCause
+400440Channel is archived.The channel where the webhook is sending messages is archived.
+400700Incoming webhook is disabled.The webhook was disabled by the Workspace Admin.
+400702Incoming webhook is deleted.The webhook was deleted by the Workspace Admin.
+400703Invalid payload format.The request payload is not in a supported format.
+403200You cannot perform this operation.You don’t have permission to post in the specified channel.
+404100Not found.The unique URL was not found and most likely regenerated by a Workspace Admin.
+Related Articles #
+Guide to Pumble Integrations
+Related Articles
+Connect Zoom to Pumble with Zapier and Webhooks
+Changelog
+Receive GitLab Notifications on Pumble via Webhooks
+Was this article helpful?
+Submit
+Cancel
+Thank you! If you’d like a member of our support team to respond to you, please drop us a note at support@pumble.com
+In this article
+Creating an incoming webhook
+Using incoming webhook to send a message
+Error handling
+Communication and collaboration software for businesses
+Book a demo
+Log in
+Sign up
+Product
+Overview
+Apps
+Integrations
+What's new
+Roadmap
+API
+Plans
+Free
+Pro
+Business
+Enterprise
+See pricing
+Features
+Channels
+Messages
+Threads
+Notifications
+History
+Files
+Guests
+Permissions
+Video Calls
+Voice Calls
+Screen Sharing
+Meeting Links
+All features
+Resources
+Knowledge hub
+Pumble Guides
+Tutorials
+Blog
+Compare
+vs. Slack
+vs. MS Teams
+vs. Discord
+vs. Zoom
+More comparisons
+Use cases
+Remote
+Startups
+Marketing
+Education
+More use cases
+Support
+Help Center
+Contact
+Feedback
+System status
+support@pumble.com
++1-833-986-2486
+Download apps
+Productivity software suite
+Our other products
+Time Tracking
+Project Management
+Platform
+Suite
+Bundle
+Marketplace
+Updates
+Company
+About us
+Affiliate
+Brand
+© Pumble by CAKE.com Inc.
+Cookies
+Terms
+Privacy
+Security
+Sitemap
+English
+Español
+Français
+Português
+Deutsch

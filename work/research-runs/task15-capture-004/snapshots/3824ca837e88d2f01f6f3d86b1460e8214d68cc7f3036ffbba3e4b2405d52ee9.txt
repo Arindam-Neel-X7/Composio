@@ -1,0 +1,591 @@
+Test card numbers | Stripe Documentation
+Skip to content
+Testing
+Create account or Sign in
+The Stripe Docs logo
+Search/Ask AI
+Create accountSign in
+Get started
+Payments
+Revenue
+Risk
+Data
+Money management
+Stablecoins
+Embedded Finance
+Developer resources
+More
+APIs & SDKsHelp
+Overview
+Versioning
+Changelog
+Upgrade your integrationHow API versioning works
+Essentials
+SDKs
+API
+Events
+Testing
+Testing
+Testing use cases
+Sandboxes
+Test Apple Pay and Google Pay rendering
+Stripe CLI
+Tools
+Stripe Dashboard
+Stripe Projects
+Provisioning
+Workbench
+Developers Dashboard
+Stripe for Visual Studio Code
+Terraform
+Stripe Discord server
+Features
+Workflows
+Batch Jobs
+Stripe health alertsFile uploads
+AI tools
+Agent pluginsModel Context ProtocolAgent skills
+Stripe Directory
+Extend Stripe
+Overview
+Build Stripe apps
+Use apps from Stripe
+Build extensions
+Custom objects
+Security and privacy
+Security
+Activity logsStripebot web crawler
+Privacy
+Partners
+Partner ecosystem
+Partner certification
+India
+English (United Kingdom)
+Home/
+Developer resources/
+Testing
+Testing
+Simulate payments to test your integration.
+Ask about this page
+Copy for LLM
+View as Markdown
+Set up agent
+Test your integration in a sandbox by simulating transactions with test values – these transactions don’t move funds.
+You can access your sandboxes using the account picker in the Dashboard.
+Test cards act as “fake” credit cards, and allow you to simulate the following scenarios:
+Successful payments by card brand or country
+Card errors due to declines, fraud or invalid data
+Disputes, including early fraud warnings, and refunds
+Authentication with 3D Secure and PINs
+You can also test non-card payments in a sandbox. Non-card payments are payment methods that aren’t credit or debit cards. Stripe supports various non-card payment options, such as digital wallets and bank transfers. Each payment method has its own special values.
+If you’re testing a subscription integration, see Test your Billing integration.
+Don’t use testing environments to load test your integration because you might hit rate limits. To load test your integration, see load testing.
+How to use test cards
+When you work with a test card, use test API keys in all API calls. This is true whether you’re serving a payment form to test interactively or writing test code.
+Card-level state from one test can affect later tests that use the same card. When a test depends on card-level state, use a different test card for each independent end-to-end scenario.
+Don't use real card details
+Don’t use real card details. The Stripe Services Agreement prohibits testing in live mode using real payment method details. Use your test API keys and the card numbers below.
+Testing interactively
+When testing interactively, use a card number, such as 4242 4242 4242 4242. Enter the card number in the Dashboard or in any payment form.
+Use a valid future date, such as 12/34.
+Use any three-digit CVC (four digits for American Express cards).
+Use any value you like for other form fields.
+Test code
+When writing test code, use a PaymentMethod such as pm_card_visa instead of a card number. We don’t recommend using card numbers directly in API calls or server-side code, even in testing environments. If you use them, your code might not be PCI-compliant when you go live. By default, a PaymentMethod isn’t attached to a Customer.
+Command Line
+Select a language
+cURL
+Stripe CLI
+Ruby
+Python
+PHP
+Java
+Node.js
+Go
+.NET
+No results
+curl https://api.stripe.com/v1/payment_intents \
+-u "sk_test_...:" \
+-d amount=500 \
+-d currency=gbp \
+-d payment_method=pm_card_visa
+When you’re ready to take your integration live, replace your test publishable and secret API keys with live ones.
+You can’t process live payments if your integration is still using your test API keys. Store live API keys in a secrets vault or environment variables. Don’t store keys in source code or configuration files checked into version control. To learn how to use live keys safely, see Best practices for managing secret API keys.
+Simulate a payment by card brand
+To simulate a successful payment for a specific card brand, use test cards from the following list.
+Cross-border fees are assessed based on the country of the card issuer. Cards where the issuer country isn’t the US (such as JCB and UnionPay) might be subject to a cross-border fee, even in testing environments.
+Card numbers
+PaymentMethods
+Tokens
+BrandNumberCVCDate
+Visa4242424242424242Any 3 digitsAny future date
+Visa (debit)4000056655665556Any 3 digitsAny future date
+Mastercard5555555555554444Any 3 digitsAny future date
+Mastercard (2-series)2223003122003222Any 3 digitsAny future date
+Mastercard (debit)5200828282828210Any 3 digitsAny future date
+Mastercard (prepaid)5105105105105100Any 3 digitsAny future date
+American Express378282246310005Any 4 digitsAny future date
+American Express371449635398431Any 4 digitsAny future date
+Discover6011111111111117Any 3 digitsAny future date
+Discover6011000990139424Any 3 digitsAny future date
+Discover (debit)6011981111111113Any 3 digitsAny future date
+Diners Club3056930009020004Any 3 digitsAny future date
+Diners Club (14-digit card)36227206271667Any 3 digitsAny future date
+BCcard and DinaCard6555900000604105Any 3 digitsAny future date
+JCB3566002020360505Any 3 digitsAny future date
+UnionPay6200000000000005Any 3 digitsAny future date
+UnionPay (debit)6200000000000047Any 3 digitsAny future date
+UnionPay (19-digit card)6205500000000000004Any 3 digitsAny future date
+Most Cartes Bancaires and eftpos cards are co-branded with either Visa or Mastercard. The test cards in the following table simulate successful payments with co-branded cards.
+Card numbers
+PaymentMethods
+Tokens
+Brand/Co-brandNumberCVCDate
+Cartes Bancaires/Visa4000002500001001Any 3 digitsAny future date
+Cartes Bancaires/Mastercard5555552500001001Any 3 digitsAny future date
+eftpos Australia/Visa4000050360000001Any 3 digitsAny future date
+eftpos Australia/Mastercard5555050360000080Any 3 digitsAny future date
+Simulate a payment by country
+To simulate successful payments from specific countries, use test cards from the following sections.
+Security tip
+Strong Customer Authentication regulations require 3D Secure authentication for online payments within the European Economic Area. The test cards in the Europe and Middle East section simulate a payment that succeeds without authentication. We also recommend testing authentication scenarios using 3D Secure test cards.
+Card numbers
+PaymentMethods
+Tokens
+CountryNumberBrand
+AMERICAS
+United States (US)4242424242424242Visa
+Argentina (AR)4000000320000021Visa
+Brazil (BR)4000000760000002Visa
+Canada (CA)4000001240000000Visa
+Chile (CL)4000001520000001Visa
+Colombia (CO)4000001700000003Visa
+Costa Rica (CR)4000001880000005Visa
+Ecuador (EC)4000002180000000Visa
+Mexico (MX)4000004840008001Visa
+Mexico (MX)5062210000000009Carnet
+Panama (PA)4000005910000000Visa
+Paraguay (PY)4000006000000066Visa
+Peru (PE)4000006040000068Visa
+Uruguay (UY)4000008580000003Visa
+EUROPE and MIDDLE EAST
+United Arab Emirates (AE)4000007840000001Visa
+United Arab Emirates (AE)5200007840000022Mastercard
+Austria (AT)4000000400000008Visa
+Belgium (BE)4000000560000004Visa
+Bulgaria (BG)4000001000000000Visa
+Belarus (BY)4000001120000005Visa
+Croatia (HR)4000001910000009Visa
+Cyprus (CY)4000001960000008Visa
+Czech Republic (CZ)4000002030000002Visa
+Denmark (DK)4000002080000001Visa
+Estonia (EE)4000002330000009Visa
+Finland (FI)4000002460000001Visa
+France (FR)4000002500000003Visa
+Germany (DE)4000002760000016Visa
+Gibraltar (GI)4000002920000005Visa
+Greece (GR)4000003000000030Visa
+Hungary (HU)4000003480000005Visa
+Ireland (IE)4000003720000005Visa
+Italy (IT)4000003800000008Visa
+Latvia (LV)4000004280000005Visa
+Liechtenstein (LI)4000004380000004Visa
+Lithuania (LT)4000004400000000Visa
+Luxembourg (LU)4000004420000006Visa
+Malta (MT)4000004700000007Visa
+Netherlands (NL)4000005280000002Visa
+Norway (NO)4000005780000007Visa
+Poland (PL)4000006160000005Visa
+Portugal (PT)4000006200000007Visa
+Romania (RO)4000006420000001Visa
+Saudi Arabia (SA)4000006820000007Visa
+Slovenia (SI)4000007050000006Visa
+Slovakia (SK)4000007030000001Visa
+Spain (ES)4000007240000007Visa
+Sweden (SE)4000007520000008Visa
+Switzerland (CH)4000007560000009Visa
+United Kingdom (GB)4000008260000000Visa
+United Kingdom (GB)4000058260000005Visa (debit)
+United Kingdom (GB)5555558265554449Mastercard
+ASIA PACIFIC
+Regional considerations
+India
+To test subscriptions that require mandates and pre-debit notifications, see India off-session payments.
+Australia (AU)4000000360000006Visa
+China (CN)4000001560000002Visa
+Hong Kong (HK)4000003440000004Visa
+India (IN)4000003560000008Visa
+Japan (JP)4000003920000003Visa
+Japan (JP)3530111333300000JCB
+Malaysia (MY)4000004580000002Visa
+New Zealand (NZ)4000005540000008Visa
+Singapore (SG)4000007020000003Visa
+Taiwan (TW)4000001580000008Visa
+Thailand (TH)4000007640000003Visa (credit)
+Thailand (TH)4000057640000008Visa (debit)
+Simulate customer location with email
+When testing Checkout Sessions, Payment Links or pricing tables, you can simulate a customer’s geographic location by using a location-formatted email address. Add a +location_XX suffix to the local part of any email address, where XX is a valid two-letter ISO 3166-1 alpha-2 country code.
+For example, to simulate a customer located in the United States, pass test+location_US@example.com as the customer_email parameter when creating a Checkout Session and as the prefilled_email URL parameter when creating a Payment Link.
+When you visit the resulting Checkout Session URL, you see the same currency and payment methods that a customer in the specified country would see. Learn more about testing with location-formatted emails.
+Simulate an HSA or FSA card payment
+Use these test card numbers to simulate FSA or HSA transactions in your integration. These accounts are commonly used for medical expenses, and testing with them helps you verify that your application handles healthcare-related transactions correctly.
+Card numbers
+PaymentMethods
+Brand/TypeNumberCVCDate
+Visa FSA4000051230000072Any 3 digitsAny future date
+Visa HSA4000051230000072Any 3 digitsAny future date
+Mastercard FSA5200828282828897Any 3 digitsAny future date
+Simulate a declined payment
+To test your integration’s error-handling logic by simulating payments that the issuer declines for various reasons, use test cards from this section. These cards return a card error with the listed error code and decline code.
+Provide a CVC when you test CVC behaviour. Stripe skips the CVC check if you omit it, so the check can’t fail. To simulate an incorrect CVC, use the “Incorrect CVC decline” test card listed in the following table and provide any three-digit CVC.
+Card numbers
+PaymentMethods
+Tokens
+DescriptionNumberError codeDecline code
+Generic decline4000000000000002card_declinedgeneric_decline
+Insufficient funds decline4000000000009995card_declinedinsufficient_funds
+Lost card decline4000000000009987card_declinedlost_card
+Stolen card decline4000000000009979card_declinedstolen_card
+Expired card decline4000000000000069expired_cardn/a
+Incorrect CVC decline4000000000000127incorrect_cvcn/a
+Processing error decline4000000000000119processing_errorn/a
+Incorrect number decline4242424242424241incorrect_numbern/a
+Exceeding velocity limit decline4000000000006975card_declinedcard_velocity_exceeded
+You can’t attach cards that simulate issuer declines to a Customer object. To simulate a declined payment with an attached card, use the “Decline after attaching” test card listed in the following table.
+DescriptionNumberDetails
+Decline after attaching4000000000000341Attaching this card to a Customer object succeeds, but attempts to charge the customer fail.
+Fraud prevention
+Stripe’s fraud prevention system, Radar, can block payments when they have a high risk level or fail verification checks. You can use the cards in this section to test your Radar settings. You can also use them to test how your integration responds to blocked payments.
+Each card simulates specific risk factors. Your Radar settings determine which risk factors cause it to block a payment. Blocked payments result in card errors with an error code of fraud.
+To trigger a failed CVC check, include a CVC (any three-digit number). To trigger a failed postal code check, include any valid postal code. If you omit these fields, Radar skips those checks, so they can’t fail.
+Card numbers
+PaymentMethods
+Tokens
+DescriptionNumberDetails
+Always blocked
+4100000000000019
+The charge has a risk level of “highest”
+Radar always blocks it.
+Highest risk
+4000000000004954
+The charge has a risk level of “highest”
+Radar might block it depending on your settings.
+Elevated risk
+4000000000009235
+The charge has a risk level of “elevated”
+Radar might queue it for review.
+High fraud dispute score
+4000008400000407
+This charge has a high fraud dispute score.
+Radar might block it depending on your settings.
+High early fraud warning score
+4000008400000159
+This charge has a high early fraud warning score.
+Radar might block it depending on your settings.
+Dynamic risk thresholds
+4000008400001017
+This charge triggers the Radar Dynamic risk thresholds control, when enabled.
+Radar blocks the transaction if you enable the Dynamic risk thresholds.
+Free trial abuse
+4001858821843804
+This charge triggers the Radar free trial abuse risk control, when enabled.
+Radar blocks the transaction if you enable the free trial abuse risk control.
+Adaptive 3DS
+4000008405600003
+This charge triggers the Radar Adaptive 3DS risk control, when enabled.
+If you enable Adaptive 3DS, Radar requests 3DS authentication when using this test card.
+CVC check fails
+4000000000000101
+If you provide a CVC number, the CVC check fails.
+Radar might block it depending on your settings.
+Postal code check fails
+4000000000000036
+If you provide a postal code, the postal code check fails.
+Radar might block it depending on your settings.
+CVC check fails with elevated risk
+4000058400307872
+If you provide a CVC number, the CVC check fails with a risk level of “elevated”
+Radar might block it depending on your settings.
+Postal code check fails with elevated risk
+4000058400306072
+If you provide a postcode, the postcode check fails with a risk level of “elevated”
+Radar might block it depending on your settings.
+Line1 check fails
+4000000000000028
+The address line 1 check fails.
+The payment succeeds unless you block it with a custom Radar rule.
+Address checks fail
+4000000000000010
+The address postal code check and address line 1 check both fail.
+Radar might block it depending on your settings.
+Address unavailable
+4000000000000044
+The address postal code check and address line 1 check are both unavailable.
+The payment succeeds unless you block it with a custom Radar rule.
+Trigger an error with invalid data
+To test errors resulting from invalid data, provide invalid details. You don’t need a special test card for this. Any invalid value works. For instance:
+invalid_expiry_month: Use an invalid month, such as 13.
+invalid_expiry_year: Use a year of 1970 or earlier.
+invalid_cvc: Use a two-digit number, such as 99.
+incorrect_number: Use a card number that fails the Luhn check, such as 4242424242424241.
+Disputes and early fraud warnings
+To simulate a disputed transaction or early fraud warning, use the test cards in this section. Then, to simulate winning or losing a dispute, provide winning or losing evidence.
+Card numbers
+PaymentMethods
+Tokens
+DescriptionNumberDetails
+Fraudulent (asynchronous)4061219946393810Use this card for most test cases. With default account settings, the payment succeeds, and Stripe creates a fraudulent dispute shortly afterwards, rather than during the payment request. This sequence more closely reflects live-mode behaviour. This type of dispute is protected after 3D Secure authentication.
+Fraudulent (synchronous)4000000000000259With default account settings, payment succeeds, and Stripe creates a fraudulent dispute during the payment request. This type of dispute is protected after 3D Secure authentication.
+Discover fraudulent6026507838377928With default account settings, charge succeeds, but is disputed as fraudulent.
+Not received4000000000002685With default account settings, charge succeeds, only to be disputed as product not received. This type of dispute isn’t protected after 3D Secure authentication.
+Enquiry4000000000001976With default account settings, charge succeeds, only to be disputed as an enquiry.
+Early fraud warning4000000000005423With default account settings, charge succeeds, only to receive an early fraud warning.
+Multiple disputes4000000404000079With default account settings, charge succeeds, only to be disputed multiple times.
+Visa Compelling Evidence 3.04000000404000038With default account settings, charge succeeds, only to be disputed as a Visa Compelling Evidence 3.0 eligible dispute.
+Visa compliance4000008400000779With default account settings, charge succeeds, only to be disputed as a Visa compliance dispute.
+Mastercard compliance5105008400000002With default account settings, charge succeeds, only to be disputed as a Mastercard compliance dispute.
+Smart disputes4000000001000043With default account settings, charge succeeds, only to be disputed as a Smart Disputes eligible dispute.
+Partially refunded dispute (asynchronous)4000008400000795The payment succeeds without automatically creating a refund or dispute. If you partially refund the payment, Stripe asynchronously creates a fraudulent dispute for the amount that isn’t refunded. For example, refunding 3 GBP of a 10 GBP payment creates a 7 GBP dispute. Fully refunding the payment doesn’t trigger a dispute.
+Evidence
+To simulate winning or losing the dispute, respond with one of the evidence values from the table below.
+If you respond using the API, pass the value from the table as uncategorised_text.
+If you respond in the Dashboard or in Connect embedded components, enter the value from the table in the Additional information field. Then, click Submit evidence.
+EvidenceDescription
+winning_evidenceCloses the dispute as won and credits your account for the amount of the charge and related fees.
+losing_evidenceCloses the dispute as lost without crediting your account. For enquiries, this closes the enquiry without escalation.
+escalate_inquiry_evidenceEscalates the enquiry to a chargeback. This transitions the enquiry to a full dispute and debits your account for the amount of the dispute and related fees.
+Dispute prevention
+Dispute prevention helps resolve or block disputes before they become chargebacks. To simulate prevented disputes in a sandbox, use the test cards in this section. If your account has Dispute Resolution or Dispute Deflection enabled, the dispute on the transaction is either blocked or resolved. Otherwise, the transaction is successfully disputed.
+Card numbers
+PaymentMethods
+Tokens
+DescriptionNumberDetails
+Visa Rapid Dispute Resolution4000000404004816Charge succeeds, then Visa RDR prevents the dispute if the account is enrolled in Dispute Resolution. Otherwise, creates a dispute.
+Verifi CE3 block4000000404005649Charge succeeds, then Compelling Evidence 3.0 blocks the dispute if the account is enrolled in Dispute Deflection. Otherwise, creates a dispute.
+Ethoca alert5105000300000018Charge succeeds, then Ethoca Alerts prevents the dispute if the account is enrolled in Dispute Resolution. Otherwise, creates a dispute.
+Simulate an asynchronous refund
+In live mode, refunds are asynchronous: a refund can appear to succeed and later fail, or can appear as pending at first and later succeed. To simulate refunds with those behaviours, use the test cards in this section. With all other test cards, refunds succeed immediately and don’t change status after that.
+Card numbers
+PaymentMethods
+Tokens
+DescriptionNumberDetails
+Asynchronous success4000000000007726The charge succeeds. If you initiate a refund, its status begins as pending. Some time later, its status transitions to succeeded and sends a refund.updated event.
+Asynchronous failure4000000000005126The charge succeeds. If you initiate a refund, its status begins as succeeded. After a few minutes, its status transitions to failed and sends a refund.failed event.
+You can cancel a card refund only by using the Dashboard. In live mode, you can cancel a card refund within a short but nonspecific period of time. Testing environments simulate that period by allowing you to cancel a card refund within 30 minutes.
+Send funds to your available balance
+To send the funds from a test transaction directly to your available balance, use the test cards in this section. Other test cards send funds from a successful payment to your pending balance.
+Card numbers
+PaymentMethods
+Tokens
+DescriptionNumberDetails
+Bypass pending balance4000000000000077The US charge succeeds. Funds are added directly to your available balance, bypassing your pending balance.
+Bypass pending balance4000003720000278The international charge succeeds. Funds are added directly to your available balance, bypassing your pending balance.
+Test 3D Secure authentication
+3D Secure requires an additional layer of authentication for credit card transactions. The test cards in this section allow you to simulate triggering authentication in different payment flows.
+Only cards in this section effectively test your 3D Secure integration by simulating defined 3DS behaviour, such as a challenge flow or an unsupported card. Other Stripe testing cards might still trigger 3DS, but Stripe returns attempt_acknowledged to bypass the additional steps because 3DS testing isn’t the objective for those cards.
+Dashboard not supported
+3D Secure redirects won’t occur for payments created directly in the Stripe Dashboard. Instead, use your integration’s own front end or an API call.
+Authentication and setup
+To simulate payment flows that include authentication, use the test cards in this section. Some of these cards can also be set up for future payments or have already been.
+Card numbers
+PaymentMethods
+DescriptionNumberDetails
+Authenticate unless set up4000002500003155This card requires authentication for off-session payments unless you set it up for future payments. After you set it up, off-session payments no longer require authentication. However, on-session payments with this card always require authentication.
+Always authenticate4000002760003184This card requires authentication on all transactions, regardless of how the card is set up.
+Already set up4000003800000446This card is already set up for off-session use. It requires authentication for one-time and other on-session payments. However, all off-session payments succeed as if the card has been previously set up.
+Insufficient funds4000008260003178This card requires authentication for one-time payments. All payments are declined with an insufficient_funds failure code even after being successfully authenticated or previously set up.
+Support and availability
+Stripe requests authentication when required by regulation or when triggered by your Radar rules or custom code. Even if authentication is requested, it can’t always be performed – for instance, the customer’s card might not be enrolled or an error might occur. Use the test cards in this section to simulate various combinations of these factors.
+All 3DS references indicate 3D Secure 2.
+Card numbers
+PaymentMethods
+Tokens
+3D Secure usageOutcomeNumberDetails
+3DS RequiredOK40000000000032203D Secure authentication must be completed for the payment to be successful. By default, your Radar rules request 3D Secure authentication for this card. Ireland-issued (IE).
+3DS RequiredOK40000084000000273D Secure authentication must be completed for the payment to be successful. By default, your Radar rules request 3D Secure authentication for this card. US-issued (US).
+3DS RequiredDeclined40000084000016293D Secure authentication is required, but payments are declined with a card_declined failure code after authentication. By default, your Radar rules request 3D Secure authentication for this card.
+3DS RequiredError40000084000012803D Secure authentication is required, but the 3D Secure lookup request fails with a processing error. Payments are declined with a card_declined failure code. By default, your Radar rules request 3D Secure authentication for this card.
+3DS SupportedOK40000000000030553D Secure authentication might still be performed, but isn’t required. By default, your Radar rules don’t request 3D Secure authentication for this card.
+3DS SupportedError40000000000030973D Secure authentication might still be performed, but isn’t required. However, attempts to perform 3D Secure result in a processing error. By default, your Radar rules don’t request 3D Secure authentication for this card.
+3DS SupportedUnenrolled42424242424242423D Secure is supported for this card, but this card isn’t enrolled in 3D Secure. Even if your Radar rules request 3D Secure, the customer won’t be prompted to authenticate. By default, your Radar rules don’t request 3D Secure authentication for this card.
+3DS Not supported3782822463100053D Secure isn’t supported on this card and can’t be invoked. The PaymentIntent or SetupIntent proceeds without performing authentication.
+3DS Frictionless flowOK40000000322000003D Secure authentication is required on all transactions, regardless of how the card is set up. The authentication proceeds through a frictionless flow, and succeeds.
+3D Secure mobile challenge flows
+In a mobile payment, several challenge flows for authentication – where the customer has to interact with prompts in the UI – are available. Use the test cards in this section to trigger a specific challenge flow for test purposes. These cards aren’t useful in browser-based payment forms or in API calls. In those environments, they work but don’t trigger any special behaviour. Because they’re not useful in API calls, we don’t provide any PaymentMethod or Token values to test with.
+Challenge flowNumberDetails
+Out of band40005826000000943D Secure 2 authentication must be completed on all transactions. Triggers the challenge flow with Out of Band UI.
+One time passcode40005826000000453D Secure 2 authentication must be completed on all transactions. Triggers the challenge flow with One Time Passcode UI.
+Single select40005826000001023D Secure 2 authentication must be completed on all transactions. Triggers the challenge flow with single-select UI.
+Multi select40005826000001103D Secure 2 authentication must be completed on all transactions. Triggers the challenge flow with multi-select UI.
+Simulate a captcha challenge
+To prevent fraud, Stripe might display a captcha challenge to the user on the payment page. Use the following test cards to simulate this flow.
+DescriptionNumberDetails
+Captcha challenge4000000000001208The charge succeeds if the user correctly answers the captcha challenge.
+Captcha challenge4000000000003725The charge succeeds if the user correctly answers the captcha challenge.
+Simulate an in-person payment with a PIN
+Use the test cards in this section to simulate successful in-person payments where a PIN is involved. For additional testing options, including a simulated reader and physical test cards, see Test Stripe Terminal.
+Card numbers
+PaymentMethods
+DescriptionNumberDetails
+Offline PIN4001007020000002This card simulates a payment where the cardholder is prompted for and enters an offline PIN. The resulting charge has cardholder_verification_method set to offline_pin.
+Offline PIN retry4000008260000075Simulates an SCA-triggered retry flow where a cardholder’s initial contactless charge fails and the reader then prompts the user to insert their card and enter their offline PIN. The resulting charge has cardholder_verification_method set to offline_pin.
+Online PIN4001000360000005This card simulates a payment where the cardholder is prompted for and enters an online PIN. The resulting charge has cardholder_verification_method set to online_pin.
+Online PIN retry4000002760000008Simulates an SCA-triggered retry flow where a cardholder’s initial contactless charge fails and the reader then prompts the user to insert their card and enter their online PIN. The resulting charge has cardholder_verification_method set to online_pin.
+Test a webhook or event destination
+To test your webhook endpoint or event destination, choose one of these two options:
+Perform actions in a sandbox that trigger real events to your event destination. For example, to trigger the charge.succeeded event, you can use a test card that produces a successful charge.
+Trigger events using the Stripe CLI or using Stripe for Visual Studio Code.
+Rate limits
+If requests in your test environment return 429 errors, reduce your request frequency. The rate limiter is stricter in test environments than in live mode. For an alternative, see Load testing.
+Test a non-card payment method
+When you use a test non-card payment method, use test API keys in all API calls. This is true whether you’re serving a payment form you can test interactively or writing test code.
+Different payment methods have different test procedures:
+ACH Direct Debit
+SEPA Direct Debit
+BACS Direct Debit
+AU BECS Direct Debit
+Others
+Learn how to test scenarios with instant verifications using Financial Connections.
+Send transaction emails in a sandbox
+After you collect the bank account details and accept a mandate, send the mandate confirmation and microdeposit verification emails in a sandbox.
+If your domain is {domain} and your username is {username}, use the following email format to send test transaction emails: {username}+test_email@{domain}.
+For example, if your domain is example.com and your username is info, use the format info+test_email@example.com for testing ACH Direct Debit payments. This format ensures that emails route correctly. If you don’t include the +test_email suffix, Stripe won’t send the email.
+Common mistake
+You must set up your Stripe account before you can trigger these emails while testing.
+Test account numbers
+Stripe provides several test account numbers and corresponding tokens you can use to make sure your integration for manually-entered bank accounts is ready for production.
+Account numberTokenRouting numberBehavior
+000123456789pm_usBankAccount_success110000000The payment succeeds.
+000111111113pm_usBankAccount_accountClosed110000000The payment fails because the account is closed.
+000000004954pm_usBankAccount_riskLevelHighest110000000The payment is blocked by Radar due to a high risk of fraud.
+000111111116pm_usBankAccount_noAccount110000000The payment fails because no account is found.
+000222222227pm_usBankAccount_insufficientFunds110000000The payment fails due to insufficient funds.
+000333333335pm_usBankAccount_debitNotAuthorized110000000The payment fails because debits aren’t authorized.
+000444444440pm_usBankAccount_invalidCurrency110000000The payment fails due to invalid currency.
+000666666661pm_usBankAccount_failMicrodeposits110000000The payment fails to send microdeposits.
+000555555559pm_usBankAccount_dispute110000000The payment triggers a dispute.
+000000000009pm_usBankAccount_processing110000000The payment stays in processing indefinitely. Useful for testing PaymentIntent cancellation.
+000777777771pm_usBankAccount_weeklyLimitExceeded110000000The payment fails due to payment amount causing the account to exceed its weekly payment volume limit.
+000888888885110000000The payment fails because of a deactivated tokenised account number.
+Before test transactions can complete, you need to verify all test accounts that automatically succeed or fail the payment. To do so, use the test microdeposit amounts or descriptor codes in the following table.
+Test microdeposit amounts and descriptor codes
+To mimic different scenarios, use these microdeposit amounts or 0.01 descriptor code values.
+Microdeposit values0.01 descriptor code valuesScenario
+32 and 45SM11AASimulates verifying the account.
+10 and 11SM33CCSimulates exceeding the number of allowed verification attempts.
+40 and 41SM44DDSimulates a microdeposit timeout.
+Test settlement behaviour
+Test transactions settle instantly and are added to your available test balance. This behaviour differs from live mode, where transactions can take multiple days to settle in your available balance.
+Test asynchronous payment methods
+Asynchronous, or “delayed notification”, payment methods don’t immediately confirm whether a payment succeeds or fails. After your customer submits payment details, the PaymentIntent can enter a processing state. The final outcome, such as succeeded or requires_payment_method, arrives later, from a few minutes in a sandbox to several working days in live mode.
+This behaviour differs from most card payments, which usually receive an immediate authorisation response from the issuer.
+Don’t rely on a client-side callback or redirect to determine the final status for these payment methods. Always use webhooks to drive fulfilment.
+Understand the PaymentIntent lifecycle
+Payment methods that don’t require further action from your customer to authorise the payment, such as bank debits, move through these states after your customer submits payment:
+StepStateDescription
+1processingYour customer submitted the payment, and the outcome isn’t yet known.
+2asucceededThe payment is confirmed.
+2brequires_payment_methodThe payment failed, for example because of insufficient funds or a closed account.
+Payment methods that require further action from your customer to authorise the payment, such as voucher-based methods including Multibanco, Boleto, OXXO, and Konbini, add an earlier state before processing:
+StepStateDescription
+1requires_actionStripe issued a voucher or payment code and is waiting for your customer to pay out of band.
+2processingStripe is waiting for the final outcome, and your customer can no longer complete the voucher payment through the original flow.
+3asucceededYour customer paid the voucher.
+3brequires_payment_methodThe voucher expired or the payment failed.
+Handle webhook events
+Register a webhook handler, or use the Stripe CLI to listen locally with stripe listen --forward-to localhost:4242/webhook, and handle these events:
+EventDescriptionRecommended action
+payment_intent.processingYour customer successfully submitted payment and the result is pending. This is most common for bank debits.Send a “payment pending” confirmation email and hold order fulfilment.
+payment_intent.succeededThe payment is confirmed.Fulfil the order.
+payment_intent.payment_failedThe payment failed, such as for insufficient funds, an expired voucher, or a closed account.Notify your customer and request a new payment method.
+payment_intent.requires_actionStripe issued a voucher or out-of-band action and is waiting for your customer. This applies to Multibanco, Boleto, OXXO and Konbini.Send your customer the voucher or payment instructions.
+payment_intent.canceledThe PaymentIntent was cancelled before your customer completed payment.Notify your customer. Don’t fulfil the order.
+For Checkout-based integrations, these corresponding session-level events also trigger:
+checkout.session.async_payment_succeeded
+checkout.session.async_payment_failed
+Review expected webhook sequence by payment method
+The test values for each method are in the Test a non-card payment method section. Use the following tables to understand which webhook sequence to expect when you use those test values.
+Review bank debit webhook sequence
+All bank debit methods follow the processing to succeeded or payment_failed pattern. In a sandbox, transitions happen after about 3 minutes for account numbers that simulate a delay. These use a 9 prefix or suffix. See the test values for each method in the referenced section.
+MethodTest valuesExpected webhooks for successExpected webhooks for failure
+SEPA Direct DebitSee SEPA Direct Debitpayment_intent.processing, then payment_intent.succeededpayment_intent.processing, then payment_intent.payment_failed
+ACH Direct DebitSee ACH Direct Debitpayment_intent.processing, then payment_intent.succeededpayment_intent.processing, then payment_intent.payment_failed
+BACS Direct DebitSee Bacs Direct Debitpayment_intent.processing, then payment_intent.succeededpayment_intent.processing, then payment_intent.payment_failed
+AU BECS Direct DebitSee BECS Direct Debitpayment_intent.processing, then payment_intent.succeededpayment_intent.processing, then payment_intent.payment_failed
+Review voucher-based webhook sequence
+Voucher methods issue a payment code that your customer pays out of band. The PaymentIntent enters requires_action immediately after confirmation. The delayed outcome arrives when your customer pays or when the voucher expires.
+For Multibanco, Boleto, OXXO, and Konbini, use the email address patterns in their respective test sections to control whether the simulated voucher is paid, expires, or never resolves.
+MethodExpected webhooks for successExpected webhooks for failure or expiry
+Multibancopayment_intent.requires_action, then payment_intent.processing, then payment_intent.succeededpayment_intent.requires_action, then payment_intent.processing, then payment_intent.payment_failed
+Boleto, OXXO, and Konbinipayment_intent.requires_action, then payment_intent.succeededpayment_intent.requires_action, then payment_intent.payment_failed
+Review redirect and delayed notification method
+Some payment methods redirect your customer for authentication. Depending on the payment method and configuration, Stripe might confirm the final outcome immediately after the redirect or deliver it asynchronously.
+Expected webhook events for a successful payment:
+payment_intent.processing
+payment_intent.succeeded
+BLIK can also fail asynchronously in two ways. Use the email patterns in the BLIK test section to simulate them:
+Delayed bank decline: The bank declines the payment after your customer approves it, and payment_intent.payment_failed triggers after a delay.
+Timeout: Your customer doesn’t respond in time, and payment_intent.payment_failed triggers after the timeout window.
+BLIK can also fail immediately, such as when a code is expired or invalid. These synchronous failures don’t involve a delayed webhook.
+Test asynchronous flow end to end
+Use these tips to test your integration.
+Use the Stripe CLI to receive webhooks locally:
+Command Line
+stripe listen --forward-to localhost:4242/webhook
+Trigger specific events manually to test your handler in isolation without running a full payment flow:
+Command Line
+stripe trigger payment_intent.processing
+stripe trigger payment_intent.succeeded
+stripe trigger payment_intent.payment_failed
+Handle processing in your return URL UI. When Stripe redirects your customer back to your site, paymentIntent.status might be processing, not succeeded. Show a payment pending state instead of an error.
+Don’t fulfil physical goods on processing. Wait for payment_intent.succeeded. For digital goods, you might choose to grant access speculatively on processing, but your webhook handler must revoke access if payment_intent.payment_failed arrives later.
+Test expiry and timeout paths. Use the expire_immediately or fill_never email patterns, where available, to verify that your integration handles unpaid vouchers correctly.
+If you use the mobile PaymentSheet, enable allowsDelayedPaymentMethods to show delayed notification methods. The final payment status isn’t known when the sheet completes. Tell your customers their order is confirmed, and fulfil only after payment_intent.succeeded arrives.
+Review asynchronous payment methods
+The following table summarises the PaymentIntent state each method enters immediately after confirmation, and the webhook events your server should expect after the delayed outcome arrives.
+MethodCategoryState after confirmDelayed success eventDelayed failure event
+SEPA Direct DebitBank debitprocessingpayment_intent.succeededpayment_intent.payment_failed
+ACH Direct DebitBank debitprocessingpayment_intent.succeededpayment_intent.payment_failed
+BACS Direct DebitBank debitprocessingpayment_intent.succeededpayment_intent.payment_failed
+AU BECS Direct DebitBank debitprocessingpayment_intent.succeededpayment_intent.payment_failed
+MultibancoVoucherrequires_actionpayment_intent.succeededpayment_intent.payment_failed
+BoletoVoucherrequires_actionpayment_intent.succeededpayment_intent.payment_failed
+OXXOVoucherrequires_actionpayment_intent.succeededpayment_intent.payment_failed
+KonbiniVoucherrequires_actionpayment_intent.succeededpayment_intent.payment_failed
+Pay by BankRedirect and delayed notificationrequires_action, then usually succeeded or requires_payment_method after the redirectpayment_intent.succeededpayment_intent.payment_failed
+BLIKRedirect and delayed notification or timeoutvariespayment_intent.succeededpayment_intent.payment_failed
+Test Link
+Caution
+Don’t store real user data in sandbox Link accounts. Treat them as if they’re publicly available, because these test accounts are associated with your publishable key.
+Link supports credit cards, debit cards and qualified US bank account purchases.
+You can create sandbox accounts for Link using any valid email address. The following table shows the fixed one-time passcode values that Stripe accepts for authenticating sandbox accounts:
+ValueOutcome
+Any other 6 digits not listed belowSuccess
+000001Error, code invalid
+000002Error, code expired
+000003Error, max attempts exceeded
+Multiple funding sources
+Stripe automatically supports additional funding sources without changes to your integration. They use the same transaction settlement time and processing behaviour as card and bank account payments.
+Test a redirect-based flow
+To test your integration’s redirect-handling logic by simulating a payment that uses a redirect flow (for example, iDEAL), use a supported payment method that requires redirects.
+To create a test PaymentIntent that either succeeds or fails:
+Go to the payment methods settings in the Dashboard and enable a supported payment method by clicking Turn on in your testing environment.
+Collect payment details.
+Submit the payment to Stripe.
+Authorise or fail the test payment.
+Make sure that the page (corresponding to return_url) on your website provides the status of the payment.
+See also
+Testing your Connect integration
+Testing your Billing integration
+Testing your Terminal integration
+Load testing
+Testing use cases
+Was this page helpful?
+YesNo
+Need help? Contact Support.
+Chat with Stripe developers on Discord.
+Check out our changelog.
+Questions? Contact Sales.
+LLM? Read llms.txt.
+Powered by Markdoc
+On this page

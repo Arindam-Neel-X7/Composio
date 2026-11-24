@@ -1,0 +1,272 @@
+{
+  "schema_version": "1.1",
+  "run": {
+    "run_id": "format-example-2026-11-23-01",
+    "parent_run_id": null,
+    "created_on": "2026-11-23",
+    "producer": {
+      "id": "pipeline-agent-task02",
+      "type": "ai"
+    },
+    "correction_refs": [],
+    "sampling_manifest_ref": null
+  },
+  "identity": {
+    "id": 84,
+    "app": "Paygent Connect",
+    "category": "Finance and Fintech",
+    "roster_ref": "data/apps.json",
+    "resolution": {
+      "claim_id": "84.identity",
+      "status": "unknown",
+      "value": null,
+      "context": "Assignment product; exact edition, region and API version not researched.",
+      "evidence": [],
+      "supporting_claim_refs": [],
+      "rationale": "Assignment hint: paygent (NMI-powered). Legacy paygentglobal.com candidate is unverified. Product identity remains unresolved; no domain is endorsed."
+    }
+  },
+  "purpose": {
+    "claim_id": "84.purpose",
+    "status": "not_researched",
+    "value": null,
+    "context": "Assignment product; exact edition, region and API version not researched.",
+    "evidence": [],
+    "supporting_claim_refs": [],
+    "rationale": "Task 02 defines the format only; no documentary research or adjudication has been performed."
+  },
+  "auth": {
+    "coverage_status": "not_researched",
+    "items": [],
+    "notes": "No source content reviewed; an empty collection does not establish absence."
+  },
+  "credential_eligibility": {
+    "testing": {
+      "context": "Testing access only; includes trial/sandbox eligibility.",
+      "free_access": {
+        "claim_id": "84.testing.free_access",
+        "status": "not_researched",
+        "value": null,
+        "context": "testing credentials; exact product unresolved.",
+        "evidence": [],
+        "supporting_claim_refs": [],
+        "rationale": "Task 02 defines the format only; no documentary research or adjudication has been performed."
+      },
+      "trial_access": {
+        "claim_id": "84.testing.trial_access",
+        "status": "not_researched",
+        "value": null,
+        "context": "testing credentials; exact product unresolved.",
+        "evidence": [],
+        "supporting_claim_refs": [],
+        "rationale": "Task 02 defines the format only; no documentary research or adjudication has been performed."
+      },
+      "sandbox_access": {
+        "claim_id": "84.testing.sandbox_access",
+        "status": "not_researched",
+        "value": null,
+        "context": "testing credentials; exact product unresolved.",
+        "evidence": [],
+        "supporting_claim_refs": [],
+        "rationale": "Task 02 defines the format only; no documentary research or adjudication has been performed."
+      },
+      "paid_required": {
+        "claim_id": "84.testing.paid_required",
+        "status": "not_researched",
+        "value": null,
+        "context": "testing credentials; exact product unresolved.",
+        "evidence": [],
+        "supporting_claim_refs": [],
+        "rationale": "Task 02 defines the format only; no documentary research or adjudication has been performed."
+      },
+      "admin_approval_required": {
+        "claim_id": "84.testing.admin_approval_required",
+        "status": "not_researched",
+        "value": null,
+        "context": "testing credentials; exact product unresolved.",
+        "evidence": [],
+        "supporting_claim_refs": [],
+        "rationale": "Task 02 defines the format only; no documentary research or adjudication has been performed."
+      },
+      "vendor_approval_required": {
+        "claim_id": "84.testing.vendor_approval_required",
+        "status": "not_researched",
+        "value": null,
+        "context": "testing credentials; exact product unresolved.",
+        "evidence": [],
+        "supporting_claim_refs": [],
+        "rationale": "Task 06 v1.1 adds vendor API-access review distinct from commercial partner approval."
+      },
+      "partner_approval_required": {
+        "claim_id": "84.testing.partner_approval_required",
+        "status": "not_researched",
+        "value": null,
+        "context": "testing credentials; exact product unresolved.",
+        "evidence": [],
+        "supporting_claim_refs": [],
+        "rationale": "Task 02 defines the format only; no documentary research or adjudication has been performed."
+      },
+      "contact_sales_required": {
+        "claim_id": "84.testing.contact_sales_required",
+        "status": "not_researched",
+        "value": null,
+        "context": "testing credentials; exact product unresolved.",
+        "evidence": [],
+        "supporting_claim_refs": [],
+        "rationale": "Task 02 defines the format only; no documentary research or adjudication has been performed."
+      },
+      "self_serve": {
+        "claim_id": "84.testing.self_serve",
+        "status": "not_researched",
+        "value": null,
+        "context": "testing credentials; exact product unresolved.",
+        "evidence": [],
+        "supporting_claim_refs": [],
+        "rationale": "Task 02 defines the format only; no documentary research or adjudication has been performed."
+      }
+    },
+    "production": {
+      "context": "Production use only; testing access does not establish production approval.",
+      "free_access": {
+        "claim_id": "84.production.free_access",
+        "status": "not_researched",
+        "value": null,
+        "context": "production credentials; exact product unresolved.",
+        "evidence": [],
+        "supporting_claim_refs": [],
+        "rationale": "Task 02 defines the format only; no documentary research or adjudication has been performed."
+      },
+      "trial_access": {
+        "claim_id": "84.production.trial_access",
+        "status": "not_researched",
+        "value": null,
+        "context": "production credentials; exact product unresolved.",
+        "evidence": [],
+        "supporting_claim_refs": [],
+        "rationale": "Task 02 defines the format only; no documentary research or adjudication has been performed."
+      },
+      "sandbox_access": {
+        "claim_id": "84.production.sandbox_access",
+        "status": "not_researched",
+        "value": null,
+        "context": "production credentials; exact product unresolved.",
+        "evidence": [],
+        "supporting_claim_refs": [],
+        "rationale": "Task 02 defines the format only; no documentary research or adjudication has been performed."
+      },
+      "paid_required": {
+        "claim_id": "84.production.paid_required",
+        "status": "not_researched",
+        "value": null,
+        "context": "production credentials; exact product unresolved.",
+        "evidence": [],
+        "supporting_claim_refs": [],
+        "rationale": "Task 02 defines the format only; no documentary research or adjudication has been performed."
+      },
+      "admin_approval_required": {
+        "claim_id": "84.production.admin_approval_required",
+        "status": "not_researched",
+        "value": null,
+        "context": "production credentials; exact product unresolved.",
+        "evidence": [],
+        "supporting_claim_refs": [],
+        "rationale": "Task 02 defines the format only; no documentary research or adjudication has been performed."
+      },
+      "vendor_approval_required": {
+        "claim_id": "84.production.vendor_approval_required",
+        "status": "not_researched",
+        "value": null,
+        "context": "production credentials; exact product unresolved.",
+        "evidence": [],
+        "supporting_claim_refs": [],
+        "rationale": "Task 06 v1.1 adds vendor API-access review distinct from commercial partner approval."
+      },
+      "partner_approval_required": {
+        "claim_id": "84.production.partner_approval_required",
+        "status": "not_researched",
+        "value": null,
+        "context": "production credentials; exact product unresolved.",
+        "evidence": [],
+        "supporting_claim_refs": [],
+        "rationale": "Task 02 defines the format only; no documentary research or adjudication has been performed."
+      },
+      "contact_sales_required": {
+        "claim_id": "84.production.contact_sales_required",
+        "status": "not_researched",
+        "value": null,
+        "context": "production credentials; exact product unresolved.",
+        "evidence": [],
+        "supporting_claim_refs": [],
+        "rationale": "Task 02 defines the format only; no documentary research or adjudication has been performed."
+      },
+      "self_serve": {
+        "claim_id": "84.production.self_serve",
+        "status": "not_researched",
+        "value": null,
+        "context": "production credentials; exact product unresolved.",
+        "evidence": [],
+        "supporting_claim_refs": [],
+        "rationale": "Task 02 defines the format only; no documentary research or adjudication has been performed."
+      }
+    }
+  },
+  "api_surface": {
+    "protocols": {
+      "coverage_status": "not_researched",
+      "items": [],
+      "notes": "No source content reviewed; an empty collection does not establish absence."
+    },
+    "public_documentation": {
+      "claim_id": "84.api.public_documentation",
+      "status": "not_researched",
+      "value": null,
+      "context": "Assignment product; exact edition, region and API version not researched.",
+      "evidence": [],
+      "supporting_claim_refs": [],
+      "rationale": "Task 02 defines the format only; no documentary research or adjudication has been performed."
+    },
+    "resource_groups": {
+      "coverage_status": "not_researched",
+      "items": [],
+      "notes": "No source content reviewed; an empty collection does not establish absence."
+    },
+    "breadth": {
+      "claim_id": "84.api.breadth",
+      "status": "not_researched",
+      "value": null,
+      "context": "Assignment product; exact edition, region and API version not researched.",
+      "evidence": [],
+      "supporting_claim_refs": [],
+      "rationale": "Task 02 defines the format only; no documentary research or adjudication has been performed."
+    }
+  },
+  "mcp": {
+    "discovery": {
+      "claim_id": "84.mcp",
+      "status": "not_researched",
+      "value": null,
+      "context": "Assignment product; exact edition, region and API version not researched.",
+      "evidence": [],
+      "supporting_claim_refs": [],
+      "rationale": "Task 02 defines the format only; no documentary research or adjudication has been performed."
+    },
+    "entries": []
+  },
+  "buildability": {
+    "claim_id": "84.buildability",
+    "status": "not_researched",
+    "value": null,
+    "context": "Assignment product; exact edition, region and API version not researched.",
+    "evidence": [],
+    "supporting_claim_refs": [],
+    "rationale": "Task 02 defines the format only; no documentary research or adjudication has been performed."
+  },
+  "conflicts": [],
+  "fetches": [],
+  "review": {
+    "status": "pending",
+    "reviewer": null,
+    "reviewed_on": null,
+    "adjudications": []
+  }
+}

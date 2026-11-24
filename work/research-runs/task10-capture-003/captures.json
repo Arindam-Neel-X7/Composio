@@ -1,0 +1,1010 @@
+[
+  {
+    "spec": {
+      "app_id": 31,
+      "url": "https://developers.google.com/google-ads/api/docs/start",
+      "kind": "primary_docs",
+      "scope": "Google Ads API (gRPC/REST) and official Google Ads MCP server; Cloud-project access tiers and OAuth 2.0; test accounts versus production access",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Official Google Ads API developer documentation",
+      "attribution_by": "task10-research-agent-gemini"
+    },
+    "captured_on": "2026-11-23",
+    "capture_method": "http_content",
+    "snapshot_ref": "snapshots/bcff89cbf3333e4cf41a316a768e06b519a84850f8a27e9fb9c856131346f53d.txt",
+    "content_sha256": "bcff89cbf3333e4cf41a316a768e06b519a84850f8a27e9fb9c856131346f53d",
+    "line_count": 586
+  },
+  {
+    "spec": {
+      "app_id": 31,
+      "url": "https://developers.google.com/google-ads/api/docs/oauth/overview",
+      "kind": "primary_docs",
+      "scope": "Google Ads API (gRPC/REST) and official Google Ads MCP server; Cloud-project access tiers and OAuth 2.0; test accounts versus production access",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Official Google Ads API OAuth documentation",
+      "attribution_by": "task10-research-agent-gemini"
+    },
+    "captured_on": "2026-11-23",
+    "capture_method": "http_content",
+    "snapshot_ref": "snapshots/138e9d355caef5a98b6acd1b43f20e8aaa5c0ce0c3819c143afe956a0ce21240.txt",
+    "content_sha256": "138e9d355caef5a98b6acd1b43f20e8aaa5c0ce0c3819c143afe956a0ce21240",
+    "line_count": 526
+  },
+  {
+    "spec": {
+      "app_id": 31,
+      "url": "https://developers.google.com/google-ads/api/docs/api-policy/access-levels",
+      "kind": "primary_docs",
+      "scope": "Google Ads API (gRPC/REST) and official Google Ads MCP server; Cloud-project access tiers and OAuth 2.0; test accounts versus production access",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Official Google Ads API access levels policy documentation",
+      "attribution_by": "task10-research-agent-gemini"
+    },
+    "captured_on": "2026-11-23",
+    "capture_method": "http_content",
+    "snapshot_ref": "snapshots/0cb2e1995788c0eabc5f871aa285acf54e14435531aaf8064c6d3e3e14798a4d.txt",
+    "content_sha256": "0cb2e1995788c0eabc5f871aa285acf54e14435531aaf8064c6d3e3e14798a4d",
+    "line_count": 293
+  },
+  {
+    "spec": {
+      "app_id": 31,
+      "url": "https://developers.google.com/google-ads/api/docs/best-practices/testing",
+      "kind": "primary_docs",
+      "scope": "Google Ads API (gRPC/REST) and official Google Ads MCP server; Cloud-project access tiers and OAuth 2.0; test accounts versus production access",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Official Google Ads API testing documentation",
+      "attribution_by": "task10-research-agent-gemini"
+    },
+    "captured_on": "2026-11-23",
+    "capture_method": "http_content",
+    "snapshot_ref": "snapshots/ad3624a738d72ba695d7be48ae7a8f5c31a14cab52f33786093c8d9f2a2ae3d1.txt",
+    "content_sha256": "ad3624a738d72ba695d7be48ae7a8f5c31a14cab52f33786093c8d9f2a2ae3d1",
+    "line_count": 560
+  },
+  {
+    "spec": {
+      "app_id": 31,
+      "url": "https://developers.google.com/google-ads/api/docs/concepts/api-structure",
+      "kind": "primary_docs",
+      "scope": "Google Ads API (gRPC/REST) and official Google Ads MCP server; Cloud-project access tiers and OAuth 2.0; test accounts versus production access",
+      "environments": [],
+      "attribution_basis": "Official Google Ads API architecture documentation",
+      "attribution_by": "task10-research-agent-gemini"
+    },
+    "captured_on": "2026-11-23",
+    "capture_method": "http_content",
+    "snapshot_ref": "snapshots/3e43e29c3e66bec439aae19f0f1bc9e4a639002247121b5b75d2e459a99e6737.txt",
+    "content_sha256": "3e43e29c3e66bec439aae19f0f1bc9e4a639002247121b5b75d2e459a99e6737",
+    "line_count": 655
+  },
+  {
+    "spec": {
+      "app_id": 31,
+      "url": "https://developers.google.com/google-ads/api/docs/developer-toolkit/mcp-server",
+      "kind": "primary_docs",
+      "scope": "Google Ads API (gRPC/REST) and official Google Ads MCP server; Cloud-project access tiers and OAuth 2.0; test accounts versus production access",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Official Google Ads API MCP server documentation",
+      "attribution_by": "task10-research-agent-gemini"
+    },
+    "captured_on": "2026-11-23",
+    "capture_method": "http_content",
+    "snapshot_ref": "snapshots/edf5eafb91540f78da1f6f77ac31cdf6cea47743e1bfe1c612b005fa70e24fd4.txt",
+    "content_sha256": "edf5eafb91540f78da1f6f77ac31cdf6cea47743e1bfe1c612b005fa70e24fd4",
+    "line_count": 944
+  },
+  {
+    "spec": {
+      "app_id": 31,
+      "url": "https://raw.githubusercontent.com/googleads/google-ads-mcp/main/README.md",
+      "kind": "official_repository",
+      "scope": "Google Ads API (gRPC/REST) and official Google Ads MCP server; Cloud-project access tiers and OAuth 2.0; test accounts versus production access",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Official googleads GitHub organization repository README",
+      "attribution_by": "task10-research-agent-gemini"
+    },
+    "captured_on": "2026-11-23",
+    "capture_method": "http_content",
+    "snapshot_ref": "snapshots/92edc49a048c4ada80b6f3bae15c8f3e5a9418aceac4b5cc50f1b8309a2db513.txt",
+    "content_sha256": "92edc49a048c4ada80b6f3bae15c8f3e5a9418aceac4b5cc50f1b8309a2db513",
+    "line_count": 285
+  },
+  {
+    "spec": {
+      "app_id": 32,
+      "url": "https://developers.facebook.com/docs/marketing-apis/",
+      "kind": "primary_docs",
+      "scope": "Meta Marketing API (Graph API) for Facebook/Instagram Ads; OAuth 2.0 access tokens and App Review tiers; test/development versus production access",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Official Meta for Developers Marketing API landing documentation",
+      "attribution_by": "task10-research-agent-gemini"
+    },
+    "captured_on": "2026-11-23",
+    "capture_method": "http_content",
+    "snapshot_ref": "snapshots/7c30e2d5a4062cc9a2d8719740ae9878d213fed3d6c82970c21dc8a55469878a.txt",
+    "content_sha256": "7c30e2d5a4062cc9a2d8719740ae9878d213fed3d6c82970c21dc8a55469878a",
+    "line_count": 1263
+  },
+  {
+    "spec": {
+      "app_id": 32,
+      "url": "https://developers.facebook.com/docs/marketing-api/overview",
+      "kind": "primary_docs",
+      "scope": "Meta Marketing API (Graph API) for Facebook/Instagram Ads; OAuth 2.0 access tokens and App Review tiers; test/development versus production access",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Official Meta Marketing API overview documentation",
+      "attribution_by": "task10-research-agent-gemini"
+    },
+    "captured_on": "2026-11-23",
+    "capture_method": "http_content",
+    "snapshot_ref": "snapshots/aecdb64521a9081632b4c931b3e03e762e86cbb7b848062538f4dd9af9ec1799.txt",
+    "content_sha256": "aecdb64521a9081632b4c931b3e03e762e86cbb7b848062538f4dd9af9ec1799",
+    "line_count": 29
+  },
+  {
+    "spec": {
+      "app_id": 32,
+      "url": "https://developers.facebook.com/docs/marketing-api/overview/authorization",
+      "kind": "primary_docs",
+      "scope": "Meta Marketing API (Graph API) for Facebook/Instagram Ads; OAuth 2.0 access tokens and App Review tiers; test/development versus production access",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Official Meta Marketing API authorization documentation",
+      "attribution_by": "task10-research-agent-gemini"
+    },
+    "captured_on": "2026-11-23",
+    "capture_method": "http_content",
+    "snapshot_ref": "snapshots/ade0da1a478d57b500a12e596d828a39a859a4f4e9fedf2b06124fc18c96185d.txt",
+    "content_sha256": "ade0da1a478d57b500a12e596d828a39a859a4f4e9fedf2b06124fc18c96185d",
+    "line_count": 59
+  },
+  {
+    "spec": {
+      "app_id": 32,
+      "url": "https://developers.facebook.com/docs/marketing-api/access",
+      "kind": "primary_docs",
+      "scope": "Meta Marketing API (Graph API) for Facebook/Instagram Ads; OAuth 2.0 access tokens and App Review tiers; test/development versus production access",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Official Meta Marketing API access levels documentation",
+      "attribution_by": "task10-research-agent-gemini"
+    },
+    "captured_on": "2026-11-23",
+    "capture_method": "http_content",
+    "snapshot_ref": "snapshots/ade0da1a478d57b500a12e596d828a39a859a4f4e9fedf2b06124fc18c96185d.txt",
+    "content_sha256": "ade0da1a478d57b500a12e596d828a39a859a4f4e9fedf2b06124fc18c96185d",
+    "line_count": 59
+  },
+  {
+    "spec": {
+      "app_id": 32,
+      "url": "https://raw.githubusercontent.com/facebook/facebook-python-business-sdk/main/README.md",
+      "kind": "official_repository",
+      "scope": "Meta Marketing API (Graph API) for Facebook/Instagram Ads; OAuth 2.0 access tokens and App Review tiers; test/development versus production access",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Official Meta (facebook) GitHub Business SDK repository README",
+      "attribution_by": "task10-research-agent-gemini"
+    },
+    "captured_on": "2026-11-23",
+    "capture_method": "http_content",
+    "snapshot_ref": "snapshots/1f8d5de1738db861670ded52427a34ba0adb118e015b3fed3e3fc1cb0f5cdef9.txt",
+    "content_sha256": "1f8d5de1738db861670ded52427a34ba0adb118e015b3fed3e3fc1cb0f5cdef9",
+    "line_count": 389
+  },
+  {
+    "spec": {
+      "app_id": 32,
+      "url": "https://raw.githubusercontent.com/pipeboard-co/meta-ads-mcp/main/README.md",
+      "kind": "community_repository",
+      "scope": "Meta Marketing API (Graph API) for Facebook/Instagram Ads; OAuth 2.0 access tokens and App Review tiers; test/development versus production access",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Community Meta Ads MCP repository README (establishes community implementation only)",
+      "attribution_by": "task10-research-agent-gemini"
+    },
+    "captured_on": "2026-11-23",
+    "capture_method": "http_content",
+    "snapshot_ref": "snapshots/55ef89177665409b7c23064171cce2ad762d1d9177f77115a6014f6f9a2eaf93.txt",
+    "content_sha256": "55ef89177665409b7c23064171cce2ad762d1d9177f77115a6014f6f9a2eaf93",
+    "line_count": 430
+  },
+  {
+    "spec": {
+      "app_id": 33,
+      "url": "https://learn.microsoft.com/en-us/linkedin/marketing/",
+      "kind": "primary_docs",
+      "scope": "LinkedIn Marketing API / Advertising API; OAuth 2.0 and Development vs Standard access tiers; testing versus production ad accounts",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Official LinkedIn Marketing API documentation hosted on Microsoft Learn",
+      "attribution_by": "task10-research-agent-gemini"
+    },
+    "captured_on": "2026-11-23",
+    "capture_method": "http_content",
+    "snapshot_ref": "snapshots/4b5ecfe6c93b3bba2866062507cb9264a2575ba3621da905675d614189e887f1.txt",
+    "content_sha256": "4b5ecfe6c93b3bba2866062507cb9264a2575ba3621da905675d614189e887f1",
+    "line_count": 115
+  },
+  {
+    "spec": {
+      "app_id": 33,
+      "url": "https://learn.microsoft.com/en-us/linkedin/marketing/getting-started",
+      "kind": "primary_docs",
+      "scope": "LinkedIn Marketing API / Advertising API; OAuth 2.0 and Development vs Standard access tiers; testing versus production ad accounts",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Official LinkedIn Marketing API getting-started documentation on Microsoft Learn",
+      "attribution_by": "task10-research-agent-gemini"
+    },
+    "captured_on": "2026-11-23",
+    "capture_method": "http_content",
+    "snapshot_ref": "snapshots/0344e90b247c463ce01166bcca7f6c8591e8ce6a93eafda9bfeb824de75240ae.txt",
+    "content_sha256": "0344e90b247c463ce01166bcca7f6c8591e8ce6a93eafda9bfeb824de75240ae",
+    "line_count": 170
+  },
+  {
+    "spec": {
+      "app_id": 33,
+      "url": "https://learn.microsoft.com/en-us/linkedin/marketing/quick-start",
+      "kind": "primary_docs",
+      "scope": "LinkedIn Marketing API / Advertising API; OAuth 2.0 and Development vs Standard access tiers; testing versus production ad accounts",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Official LinkedIn Marketing API quick-start and access tiers documentation on Microsoft Learn",
+      "attribution_by": "task10-research-agent-gemini"
+    },
+    "captured_on": "2026-11-23",
+    "capture_method": "http_content",
+    "snapshot_ref": "snapshots/75eabc8fb6a392506ece9c7e52addf920488ba3c8909028a09fd7d6c610c3f94.txt",
+    "content_sha256": "75eabc8fb6a392506ece9c7e52addf920488ba3c8909028a09fd7d6c610c3f94",
+    "line_count": 155
+  },
+  {
+    "spec": {
+      "app_id": 33,
+      "url": "https://learn.microsoft.com/en-us/linkedin/shared/authentication/authentication",
+      "kind": "primary_docs",
+      "scope": "LinkedIn Marketing API / Advertising API; OAuth 2.0 and Development vs Standard access tiers; testing versus production ad accounts",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Official LinkedIn OAuth 2.0 authentication documentation on Microsoft Learn",
+      "attribution_by": "task10-research-agent-gemini"
+    },
+    "captured_on": "2026-11-23",
+    "capture_method": "http_content",
+    "snapshot_ref": "snapshots/74ca3924e3cdb2580866a2468081e0b550e9f5e64aec2a9b9410ff59535d94cb.txt",
+    "content_sha256": "74ca3924e3cdb2580866a2468081e0b550e9f5e64aec2a9b9410ff59535d94cb",
+    "line_count": 85
+  },
+  {
+    "spec": {
+      "app_id": 33,
+      "url": "https://learn.microsoft.com/en-us/linkedin/marketing/integrations/ads/account-structure/create-and-manage-campaigns",
+      "kind": "primary_docs",
+      "scope": "LinkedIn Marketing API / Advertising API; OAuth 2.0 and Development vs Standard access tiers; testing versus production ad accounts",
+      "environments": [],
+      "attribution_basis": "Official LinkedIn Campaign Management API documentation on Microsoft Learn",
+      "attribution_by": "task10-research-agent-gemini"
+    },
+    "captured_on": "2026-11-23",
+    "capture_method": "http_content",
+    "snapshot_ref": "snapshots/543eeac7e28a79608bec60d5f7c30853f7323a6c837536776237d89f83365ca5.txt",
+    "content_sha256": "543eeac7e28a79608bec60d5f7c30853f7323a6c837536776237d89f83365ca5",
+    "line_count": 2287
+  },
+  {
+    "spec": {
+      "app_id": 33,
+      "url": "https://raw.githubusercontent.com/amekala/ads-mcp/main/README.md",
+      "kind": "community_repository",
+      "scope": "LinkedIn Marketing API / Advertising API; OAuth 2.0 and Development vs Standard access tiers; testing versus production ad accounts",
+      "environments": [],
+      "attribution_basis": "Community multi-platform ads MCP repository README (establishes community implementation only)",
+      "attribution_by": "task10-research-agent-gemini"
+    },
+    "captured_on": "2026-11-23",
+    "capture_method": "http_content",
+    "snapshot_ref": "snapshots/f50bea823d2fd35bbd1ebc3b6939203539891b5b7ce21537d2afba0b9666964c.txt",
+    "content_sha256": "f50bea823d2fd35bbd1ebc3b6939203539891b5b7ce21537d2afba0b9666964c",
+    "line_count": 234
+  },
+  {
+    "spec": {
+      "app_id": 34,
+      "url": "https://marketplace.gohighlevel.com/docs/",
+      "kind": "primary_docs",
+      "scope": "GoHighLevel (HighLevel) API v2 and official MCP server; OAuth 2.0 and Private Integration Tokens; paid subscription plans and agency/sub-account scopes",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Official GoHighLevel Developer Marketplace API v2 documentation",
+      "attribution_by": "task10-research-agent-gemini"
+    },
+    "captured_on": "2026-11-23",
+    "capture_method": "http_content",
+    "snapshot_ref": "snapshots/c6170e3b5c11ec26bb7927edd502c3d8c0f4ad78b64d00ca741c3a096f29e40a.txt",
+    "content_sha256": "c6170e3b5c11ec26bb7927edd502c3d8c0f4ad78b64d00ca741c3a096f29e40a",
+    "line_count": 51
+  },
+  {
+    "spec": {
+      "app_id": 34,
+      "url": "https://marketplace.gohighlevel.com/docs/Authorization/OAuth2.0/",
+      "kind": "primary_docs",
+      "scope": "GoHighLevel (HighLevel) API v2 and official MCP server; OAuth 2.0 and Private Integration Tokens; paid subscription plans and agency/sub-account scopes",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Official GoHighLevel OAuth 2.0 authorization documentation",
+      "attribution_by": "task10-research-agent-gemini"
+    },
+    "captured_on": "2026-11-23",
+    "capture_method": "http_content",
+    "snapshot_ref": "snapshots/54b21df29a506beca25ed582bb784e53b82c2182484742da839820bb0f2f17d2.txt",
+    "content_sha256": "54b21df29a506beca25ed582bb784e53b82c2182484742da839820bb0f2f17d2",
+    "line_count": 294
+  },
+  {
+    "spec": {
+      "app_id": 34,
+      "url": "https://marketplace.gohighlevel.com/docs/Authorization/PrivateIntegrationsToken/",
+      "kind": "primary_docs",
+      "scope": "GoHighLevel (HighLevel) API v2 and official MCP server; OAuth 2.0 and Private Integration Tokens; paid subscription plans and agency/sub-account scopes",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Official GoHighLevel Private Integration Token documentation",
+      "attribution_by": "task10-research-agent-gemini"
+    },
+    "captured_on": "2026-11-23",
+    "capture_method": "http_content",
+    "snapshot_ref": "snapshots/6b45d51a566159acf50ae9634943d068cac6c2c120f46e57ef19a1087b3e086f.txt",
+    "content_sha256": "6b45d51a566159acf50ae9634943d068cac6c2c120f46e57ef19a1087b3e086f",
+    "line_count": 175
+  },
+  {
+    "spec": {
+      "app_id": 34,
+      "url": "https://marketplace.gohighlevel.com/docs/other/mcp/",
+      "kind": "primary_docs",
+      "scope": "GoHighLevel (HighLevel) API v2 and official MCP server; OAuth 2.0 and Private Integration Tokens; paid subscription plans and agency/sub-account scopes",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Official GoHighLevel MCP server documentation",
+      "attribution_by": "task10-research-agent-gemini"
+    },
+    "captured_on": "2026-11-23",
+    "capture_method": "http_content",
+    "snapshot_ref": "snapshots/b1d2d20423eac9bf7a2a1928d7180e63bea8b51fb8efd8c2e68d6a75ac123c69.txt",
+    "content_sha256": "b1d2d20423eac9bf7a2a1928d7180e63bea8b51fb8efd8c2e68d6a75ac123c69",
+    "line_count": 363
+  },
+  {
+    "spec": {
+      "app_id": 34,
+      "url": "https://www.gohighlevel.com/pricing",
+      "kind": "official_product_page",
+      "scope": "GoHighLevel (HighLevel) API v2 and official MCP server; OAuth 2.0 and Private Integration Tokens; paid subscription plans and agency/sub-account scopes",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Official GoHighLevel pricing page",
+      "attribution_by": "task10-research-agent-gemini"
+    },
+    "captured_on": "2026-11-23",
+    "capture_method": "http_content",
+    "snapshot_ref": "snapshots/fcaf36b8fa6d30109757b5fe17096cc2942e53df9747a58f1e5ebed106b448d7.txt",
+    "content_sha256": "fcaf36b8fa6d30109757b5fe17096cc2942e53df9747a58f1e5ebed106b448d7",
+    "line_count": 215
+  },
+  {
+    "spec": {
+      "app_id": 35,
+      "url": "https://mailchimp.com/developer/marketing/api/",
+      "kind": "primary_docs",
+      "scope": "Mailchimp Marketing API v3.0 (distinct from Transactional/Mandrill API); API key and OAuth 2.0 auth; Free vs paid Marketing plans",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Official Mailchimp Marketing API v3.0 reference",
+      "attribution_by": "task10-research-agent-gemini"
+    },
+    "captured_on": "2026-11-23",
+    "capture_method": "http_content",
+    "snapshot_ref": "snapshots/9da5ea9dfcfee09e817fb2e152d6ab596540d4e6aec7738fd0136fb747741e0d.txt",
+    "content_sha256": "9da5ea9dfcfee09e817fb2e152d6ab596540d4e6aec7738fd0136fb747741e0d",
+    "line_count": 492
+  },
+  {
+    "spec": {
+      "app_id": 35,
+      "url": "https://mailchimp.com/developer/marketing/guides/quick-start/",
+      "kind": "primary_docs",
+      "scope": "Mailchimp Marketing API v3.0 (distinct from Transactional/Mandrill API); API key and OAuth 2.0 auth; Free vs paid Marketing plans",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Official Mailchimp Marketing API quick-start guide",
+      "attribution_by": "task10-research-agent-gemini"
+    },
+    "captured_on": "2026-11-23",
+    "capture_method": "http_content",
+    "snapshot_ref": "snapshots/5bfc418998fd6e4c4d83a2c8bcfd33f3e4741d8da1bdb39e57d1f3bd0d2ea09e.txt",
+    "content_sha256": "5bfc418998fd6e4c4d83a2c8bcfd33f3e4741d8da1bdb39e57d1f3bd0d2ea09e",
+    "line_count": 93
+  },
+  {
+    "spec": {
+      "app_id": 35,
+      "url": "https://mailchimp.com/developer/marketing/guides/access-user-data-oauth-2/",
+      "kind": "primary_docs",
+      "scope": "Mailchimp Marketing API v3.0 (distinct from Transactional/Mandrill API); API key and OAuth 2.0 auth; Free vs paid Marketing plans",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Official Mailchimp Marketing API OAuth 2.0 documentation",
+      "attribution_by": "task10-research-agent-gemini"
+    },
+    "captured_on": "2026-11-23",
+    "capture_method": "http_content",
+    "snapshot_ref": "snapshots/46b0a895cbe86c0d18af2b6ab000ddc98aeac7f37a9c70218bb118e4d1a289df.txt",
+    "content_sha256": "46b0a895cbe86c0d18af2b6ab000ddc98aeac7f37a9c70218bb118e4d1a289df",
+    "line_count": 206
+  },
+  {
+    "spec": {
+      "app_id": 35,
+      "url": "https://mailchimp.com/pricing/marketing/",
+      "kind": "official_product_page",
+      "scope": "Mailchimp Marketing API v3.0 (distinct from Transactional/Mandrill API); API key and OAuth 2.0 auth; Free vs paid Marketing plans",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Official Mailchimp Marketing plans and pricing page",
+      "attribution_by": "task10-research-agent-gemini"
+    },
+    "captured_on": "2026-11-23",
+    "capture_method": "http_content",
+    "snapshot_ref": "snapshots/2622b84163185a137906b31d0351dc8f990d7fc77dc6a99818856b9befb4e6f8.txt",
+    "content_sha256": "2622b84163185a137906b31d0351dc8f990d7fc77dc6a99818856b9befb4e6f8",
+    "line_count": 851
+  },
+  {
+    "spec": {
+      "app_id": 36,
+      "url": "https://developers.klaviyo.com/en/reference/api_overview",
+      "kind": "primary_docs",
+      "scope": "Klaviyo REST API and official Klaviyo MCP server; Private API keys, Public site IDs, and OAuth 2.0; Free vs paid platform plans",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Official Klaviyo API overview documentation",
+      "attribution_by": "task10-research-agent-gemini"
+    },
+    "captured_on": "2026-11-23",
+    "capture_method": "http_content",
+    "snapshot_ref": "snapshots/4f7b43f643a74fd6ec4e3b729f8b4c48743edadf6e9dc35b490f38f177578683.txt",
+    "content_sha256": "4f7b43f643a74fd6ec4e3b729f8b4c48743edadf6e9dc35b490f38f177578683",
+    "line_count": 912
+  },
+  {
+    "spec": {
+      "app_id": 36,
+      "url": "https://developers.klaviyo.com/en/docs/set_up_oauth",
+      "kind": "primary_docs",
+      "scope": "Klaviyo REST API and official Klaviyo MCP server; Private API keys, Public site IDs, and OAuth 2.0; Free vs paid platform plans",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Official Klaviyo OAuth setup documentation",
+      "attribution_by": "task10-research-agent-gemini"
+    },
+    "captured_on": "2026-11-23",
+    "capture_method": "http_content",
+    "snapshot_ref": "snapshots/fdb2a8fb468f00c6e51588bcc615bec404548e1775cedd6fcc233dc887f7f5f3.txt",
+    "content_sha256": "fdb2a8fb468f00c6e51588bcc615bec404548e1775cedd6fcc233dc887f7f5f3",
+    "line_count": 592
+  },
+  {
+    "spec": {
+      "app_id": 36,
+      "url": "https://developers.klaviyo.com/en/docs/klaviyo_mcp_server",
+      "kind": "primary_docs",
+      "scope": "Klaviyo REST API and official Klaviyo MCP server; Private API keys, Public site IDs, and OAuth 2.0; Free vs paid platform plans",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Official Klaviyo MCP server documentation",
+      "attribution_by": "task10-research-agent-gemini"
+    },
+    "captured_on": "2026-11-23",
+    "capture_method": "http_content",
+    "snapshot_ref": "snapshots/683c752597a4c619c89a1d9b32a10ae38fcc3097bc38faa6e46884d0482a16e6.txt",
+    "content_sha256": "683c752597a4c619c89a1d9b32a10ae38fcc3097bc38faa6e46884d0482a16e6",
+    "line_count": 212
+  },
+  {
+    "spec": {
+      "app_id": 36,
+      "url": "https://www.klaviyo.com/pricing",
+      "kind": "official_product_page",
+      "scope": "Klaviyo REST API and official Klaviyo MCP server; Private API keys, Public site IDs, and OAuth 2.0; Free vs paid platform plans",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Official Klaviyo pricing page",
+      "attribution_by": "task10-research-agent-gemini"
+    },
+    "captured_on": "2026-11-23",
+    "capture_method": "http_content",
+    "snapshot_ref": "snapshots/92a9712564eb09b4854cab7727ab434eba4b162238121768da9bd1c1a326e64d.txt",
+    "content_sha256": "92a9712564eb09b4854cab7727ab434eba4b162238121768da9bd1c1a326e64d",
+    "line_count": 462
+  },
+  {
+    "spec": {
+      "app_id": 37,
+      "url": "https://developer.systeme.io/reference",
+      "kind": "primary_docs",
+      "scope": "systeme.io Public API and official MCP server; API key and MCP key auth; Free vs paid subscription plans",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Official systeme.io Public API reference",
+      "attribution_by": "task10-research-agent-gemini"
+    },
+    "captured_on": "2026-11-23",
+    "capture_method": "http_content",
+    "snapshot_ref": "snapshots/319187ededb22374bfec657305bec5af3f51a1244c8bf195f72a24536c74b25a.txt",
+    "content_sha256": "319187ededb22374bfec657305bec5af3f51a1244c8bf195f72a24536c74b25a",
+    "line_count": 301
+  },
+  {
+    "spec": {
+      "app_id": 37,
+      "url": "https://systeme.io/pricing",
+      "kind": "official_product_page",
+      "scope": "systeme.io Public API and official MCP server; API key and MCP key auth; Free vs paid subscription plans",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Official systeme.io pricing page",
+      "attribution_by": "task10-research-agent-gemini"
+    },
+    "captured_on": "2026-11-23",
+    "capture_method": "http_content",
+    "snapshot_ref": "snapshots/7c54bced66e658602f9cac4a22afe7fc524ae75c21fa3f3b890270838074c5bb.txt",
+    "content_sha256": "7c54bced66e658602f9cac4a22afe7fc524ae75c21fa3f3b890270838074c5bb",
+    "line_count": 453
+  },
+  {
+    "spec": {
+      "app_id": 37,
+      "url": "https://systeme.io/",
+      "kind": "official_product_page",
+      "scope": "systeme.io Public API and official MCP server; API key and MCP key auth; Free vs paid subscription plans",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Official systeme.io product homepage",
+      "attribution_by": "task10-research-agent-gemini"
+    },
+    "captured_on": "2026-11-23",
+    "capture_method": "http_content",
+    "snapshot_ref": "snapshots/2e89fa5c012e337c984f149286b4bd849442e47f61bd7068e88f164ddd3d7ae5.txt",
+    "content_sha256": "2e89fa5c012e337c984f149286b4bd849442e47f61bd7068e88f164ddd3d7ae5",
+    "line_count": 97
+  },
+  {
+    "spec": {
+      "app_id": 38,
+      "url": "https://developers.pinterest.com/docs/api/v5/",
+      "kind": "primary_docs",
+      "scope": "Pinterest API v5; OAuth 2.0 and Trial vs Standard access tiers; sandbox/trial testing versus production access",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Official Pinterest API v5 reference",
+      "attribution_by": "task10-research-agent-gemini"
+    },
+    "captured_on": "2026-11-23",
+    "capture_method": "http_content",
+    "snapshot_ref": "snapshots/ef176cdc2206cd167a16f2a37525562ee0d2a5d7b30b958d6fc82dccc88a7695.txt",
+    "content_sha256": "ef176cdc2206cd167a16f2a37525562ee0d2a5d7b30b958d6fc82dccc88a7695",
+    "line_count": 9
+  },
+  {
+    "spec": {
+      "app_id": 38,
+      "url": "https://developers.pinterest.com/docs/getting-started/set-up-authentication-and-authorization/",
+      "kind": "primary_docs",
+      "scope": "Pinterest API v5; OAuth 2.0 and Trial vs Standard access tiers; sandbox/trial testing versus production access",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Official Pinterest API v5 OAuth documentation",
+      "attribution_by": "task10-research-agent-gemini"
+    },
+    "captured_on": "2026-11-23",
+    "capture_method": "http_content",
+    "snapshot_ref": "snapshots/ddb7693a8b8ed5c8c588274363e2a6e8f316808a6945f6ae70ed3e65d44d9c95.txt",
+    "content_sha256": "ddb7693a8b8ed5c8c588274363e2a6e8f316808a6945f6ae70ed3e65d44d9c95",
+    "line_count": 487
+  },
+  {
+    "spec": {
+      "app_id": 38,
+      "url": "https://developers.pinterest.com/docs/getting-started/getting-access/",
+      "kind": "primary_docs",
+      "scope": "Pinterest API v5; OAuth 2.0 and Trial vs Standard access tiers; sandbox/trial testing versus production access",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Official Pinterest API v5 access tiers (Trial vs Standard) documentation",
+      "attribution_by": "task10-research-agent-gemini"
+    },
+    "captured_on": "2026-11-23",
+    "capture_method": "http_content",
+    "snapshot_ref": "snapshots/faabb298041ce1ebd07fe48b7265e59082d0760d6bc954430c8573c7fcb81a0e.txt",
+    "content_sha256": "faabb298041ce1ebd07fe48b7265e59082d0760d6bc954430c8573c7fcb81a0e",
+    "line_count": 47
+  },
+  {
+    "spec": {
+      "app_id": 39,
+      "url": "https://developers.facebook.com/docs/threads/",
+      "kind": "primary_docs",
+      "scope": "Meta Threads API (graph.threads.net); OAuth 2.0 user access tokens and App Review; Development/tester mode versus Live production access",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Official Meta Threads API overview documentation",
+      "attribution_by": "task10-research-agent-gemini"
+    },
+    "captured_on": "2026-11-23",
+    "capture_method": "http_content",
+    "snapshot_ref": "snapshots/6229f1caa655d6a08a87022bbe6acf8598d929251b65b42dae231ca7cd4f092d.txt",
+    "content_sha256": "6229f1caa655d6a08a87022bbe6acf8598d929251b65b42dae231ca7cd4f092d",
+    "line_count": 28
+  },
+  {
+    "spec": {
+      "app_id": 39,
+      "url": "https://developers.facebook.com/docs/threads/get-started",
+      "kind": "primary_docs",
+      "scope": "Meta Threads API (graph.threads.net); OAuth 2.0 user access tokens and App Review; Development/tester mode versus Live production access",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Official Meta Threads API getting-started documentation",
+      "attribution_by": "task10-research-agent-gemini"
+    },
+    "captured_on": "2026-11-23",
+    "capture_method": "http_content",
+    "snapshot_ref": "snapshots/8f225322f940b902973a21764e15fe5597b40c53b146da3152aff399984a30b9.txt",
+    "content_sha256": "8f225322f940b902973a21764e15fe5597b40c53b146da3152aff399984a30b9",
+    "line_count": 42
+  },
+  {
+    "spec": {
+      "app_id": 39,
+      "url": "https://developers.facebook.com/docs/threads/get-started/get-access-tokens-and-permissions",
+      "kind": "primary_docs",
+      "scope": "Meta Threads API (graph.threads.net); OAuth 2.0 user access tokens and App Review; Development/tester mode versus Live production access",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Official Meta Threads API OAuth and permissions documentation",
+      "attribution_by": "task10-research-agent-gemini"
+    },
+    "captured_on": "2026-11-23",
+    "capture_method": "http_content",
+    "snapshot_ref": "snapshots/74cbbbfac4e3680daf2106f971137c620c84923ac07e6136aea22145804cd5e7.txt",
+    "content_sha256": "74cbbbfac4e3680daf2106f971137c620c84923ac07e6136aea22145804cd5e7",
+    "line_count": 102
+  },
+  {
+    "spec": {
+      "app_id": 39,
+      "url": "https://raw.githubusercontent.com/fbsamples/threads_api/main/README.md",
+      "kind": "official_repository",
+      "scope": "Meta Threads API (graph.threads.net); OAuth 2.0 user access tokens and App Review; Development/tester mode versus Live production access",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Official Meta fbsamples Threads API reference repository README",
+      "attribution_by": "task10-research-agent-gemini"
+    },
+    "captured_on": "2026-11-23",
+    "capture_method": "http_content",
+    "snapshot_ref": "snapshots/027cdd93f4b0f00fc1926bca9788e76b9957114c6b76ef51e71fc58197972bc3.txt",
+    "content_sha256": "027cdd93f4b0f00fc1926bca9788e76b9957114c6b76ef51e71fc58197972bc3",
+    "line_count": 55
+  },
+  {
+    "spec": {
+      "app_id": 39,
+      "url": "https://raw.githubusercontent.com/quinnjr/threads-mcp/main/README.md",
+      "kind": "community_repository",
+      "scope": "Meta Threads API (graph.threads.net); OAuth 2.0 user access tokens and App Review; Development/tester mode versus Live production access",
+      "environments": [],
+      "attribution_basis": "Community Threads MCP repository README (establishes community implementation only)",
+      "attribution_by": "task10-research-agent-gemini"
+    },
+    "captured_on": "2026-11-23",
+    "capture_method": "http_content",
+    "snapshot_ref": "snapshots/ac200409519c3b8980e61847356bc6402a88f6cc0f661c20a4181e2d4bd54e8f.txt",
+    "content_sha256": "ac200409519c3b8980e61847356bc6402a88f6cc0f661c20a4181e2d4bd54e8f",
+    "line_count": 288
+  },
+  {
+    "spec": {
+      "app_id": 40,
+      "url": "https://www.twilio.com/docs/sendgrid/api-reference",
+      "kind": "primary_docs",
+      "scope": "Twilio SendGrid Web API v3; API key Bearer auth; Free/Trial vs paid Email API plans; community MCP ecosystem",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Official Twilio SendGrid Web API v3 reference",
+      "attribution_by": "task10-research-agent-gemini"
+    },
+    "captured_on": "2026-11-23",
+    "capture_method": "http_content",
+    "snapshot_ref": "snapshots/5eb878790397319088f3231af233a6514e46582d2bb0475bfee1361e26376c18.txt",
+    "content_sha256": "5eb878790397319088f3231af233a6514e46582d2bb0475bfee1361e26376c18",
+    "line_count": 222
+  },
+  {
+    "spec": {
+      "app_id": 40,
+      "url": "https://www.twilio.com/docs/sendgrid/for-developers/sending-email/authentication",
+      "kind": "primary_docs",
+      "scope": "Twilio SendGrid Web API v3; API key Bearer auth; Free/Trial vs paid Email API plans; community MCP ecosystem",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Official Twilio SendGrid API authentication documentation",
+      "attribution_by": "task10-research-agent-gemini"
+    },
+    "captured_on": "2026-11-23",
+    "capture_method": "http_content",
+    "snapshot_ref": "snapshots/a0c8dad17a5ae0a7ab42dfa20a4f754d3ccb998a954b8412c6c6fa7e7896855f.txt",
+    "content_sha256": "a0c8dad17a5ae0a7ab42dfa20a4f754d3ccb998a954b8412c6c6fa7e7896855f",
+    "line_count": 119
+  },
+  {
+    "spec": {
+      "app_id": 40,
+      "url": "https://www.twilio.com/docs/sendgrid/ui/account-and-settings/api-keys",
+      "kind": "primary_docs",
+      "scope": "Twilio SendGrid Web API v3; API key Bearer auth; Free/Trial vs paid Email API plans; community MCP ecosystem",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Official Twilio SendGrid API Keys management documentation",
+      "attribution_by": "task10-research-agent-gemini"
+    },
+    "captured_on": "2026-11-23",
+    "capture_method": "http_content",
+    "snapshot_ref": "snapshots/a82d0986b0da0ce350a3823f4c80db02b6df590504cc34dc46f985a814f3dc88.txt",
+    "content_sha256": "a82d0986b0da0ce350a3823f4c80db02b6df590504cc34dc46f985a814f3dc88",
+    "line_count": 314
+  },
+  {
+    "spec": {
+      "app_id": 40,
+      "url": "https://www.twilio.com/en-us/pricing/email-api",
+      "kind": "official_product_page",
+      "scope": "Twilio SendGrid Web API v3; API key Bearer auth; Free/Trial vs paid Email API plans; community MCP ecosystem",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Official Twilio SendGrid Email API pricing page",
+      "attribution_by": "task10-research-agent-gemini"
+    },
+    "captured_on": "2026-11-23",
+    "capture_method": "http_content",
+    "snapshot_ref": "snapshots/59665bd89c39c5ef58aed0e55aaa102eaec721dd00cd07d235b0c76284ef0983.txt",
+    "content_sha256": "59665bd89c39c5ef58aed0e55aaa102eaec721dd00cd07d235b0c76284ef0983",
+    "line_count": 1097
+  },
+  {
+    "spec": {
+      "app_id": 40,
+      "url": "https://raw.githubusercontent.com/Garoth/sendgrid-mcp/main/README.md",
+      "kind": "community_repository",
+      "scope": "Twilio SendGrid Web API v3; API key Bearer auth; Free/Trial vs paid Email API plans; community MCP ecosystem",
+      "environments": [],
+      "attribution_basis": "Community SendGrid MCP repository README (establishes community implementation only)",
+      "attribution_by": "task10-research-agent-gemini"
+    },
+    "captured_on": "2026-11-23",
+    "capture_method": "http_content",
+    "snapshot_ref": "snapshots/ca561955f376acda00af021d6edb185be346a8bb310d64d5fd8bc2aea9203278.txt",
+    "content_sha256": "ca561955f376acda00af021d6edb185be346a8bb310d64d5fd8bc2aea9203278",
+    "line_count": 240
+  },
+  {
+    "spec": {
+      "app_id": 32,
+      "url": "https://developers.facebook.com/documentation/ads-commerce/llms.txt",
+      "kind": "primary_docs",
+      "scope": "Meta Marketing API (Graph API) for Facebook/Instagram Ads; OAuth 2.0 access tokens and App Review tiers; test/development versus production access",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Official Meta Ads and Commerce documentation index (llms.txt)",
+      "attribution_by": "task10-research-agent-gemini"
+    },
+    "captured_on": "2026-11-23",
+    "capture_method": "http_content",
+    "snapshot_ref": "snapshots/8baed1a88586837d6157708db9ef6bad7e2c90a213d33f4f782d72fc272f9196.txt",
+    "content_sha256": "8baed1a88586837d6157708db9ef6bad7e2c90a213d33f4f782d72fc272f9196",
+    "line_count": 725
+  },
+  {
+    "spec": {
+      "app_id": 35,
+      "url": "https://raw.githubusercontent.com/AlexlaGuardia/mcp-mailchimp/main/README.md",
+      "kind": "community_repository",
+      "scope": "Mailchimp Marketing API v3.0 (distinct from Transactional/Mandrill API); API key and OAuth 2.0 auth; Free vs paid Marketing plans",
+      "environments": [],
+      "attribution_basis": "Community Mailchimp Marketing API MCP repository README (establishes community implementation only)",
+      "attribution_by": "task10-research-agent-gemini"
+    },
+    "captured_on": "2026-11-23",
+    "capture_method": "http_content",
+    "snapshot_ref": "snapshots/d9f0788095909d056c8a585785a2a588297ce1568446677e4ded548d1274d77f.txt",
+    "content_sha256": "d9f0788095909d056c8a585785a2a588297ce1568446677e4ded548d1274d77f",
+    "line_count": 214
+  },
+  {
+    "spec": {
+      "app_id": 38,
+      "url": "https://raw.githubusercontent.com/pinterest/api-description/main/README.md",
+      "kind": "official_repository",
+      "scope": "Pinterest API v5; OAuth 2.0 and Trial vs Standard access tiers; sandbox/trial testing versus production access",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Official Pinterest GitHub OpenAPI description repository README",
+      "attribution_by": "task10-research-agent-gemini"
+    },
+    "captured_on": "2026-11-23",
+    "capture_method": "http_content",
+    "snapshot_ref": "snapshots/eaaa3c13bf9fc8865e4be2a637cf690ee8a3c06112054f3e54ee84814f7dde74.txt",
+    "content_sha256": "eaaa3c13bf9fc8865e4be2a637cf690ee8a3c06112054f3e54ee84814f7dde74",
+    "line_count": 25
+  },
+  {
+    "spec": {
+      "app_id": 38,
+      "url": "https://developers.pinterest.com/docs/getting-started/access-tiers/",
+      "kind": "primary_docs",
+      "scope": "Pinterest API v5; OAuth 2.0 and Trial vs Standard access tiers; sandbox/trial testing versus production access",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Official Pinterest API v5 access tiers documentation",
+      "attribution_by": "task10-research-agent-gemini"
+    },
+    "captured_on": "2026-11-23",
+    "capture_method": "http_content",
+    "snapshot_ref": "snapshots/fcb940ca703fc4c9500df0c7921a905a17c59704f38835846a1fb8cf6eec0638.txt",
+    "content_sha256": "fcb940ca703fc4c9500df0c7921a905a17c59704f38835846a1fb8cf6eec0638",
+    "line_count": 82
+  },
+  {
+    "spec": {
+      "app_id": 39,
+      "url": "https://developers.facebook.com/docs/threads/posts",
+      "kind": "primary_docs",
+      "scope": "Meta Threads API (graph.threads.net); OAuth 2.0 user access tokens and App Review; Development/tester mode versus Live production access",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Official Meta Threads API posts documentation",
+      "attribution_by": "task10-research-agent-gemini"
+    },
+    "captured_on": "2026-11-23",
+    "capture_method": "http_content",
+    "snapshot_ref": "snapshots/54470df203e39c6c24bf1991bd921b1cfd6425bf46d23aceb6db3aae39b5fb1c.txt",
+    "content_sha256": "54470df203e39c6c24bf1991bd921b1cfd6425bf46d23aceb6db3aae39b5fb1c",
+    "line_count": 315
+  },
+  {
+    "spec": {
+      "app_id": 39,
+      "url": "https://developers.facebook.com/docs/threads/insights",
+      "kind": "primary_docs",
+      "scope": "Meta Threads API (graph.threads.net); OAuth 2.0 user access tokens and App Review; Development/tester mode versus Live production access",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Official Meta Threads API insights documentation",
+      "attribution_by": "task10-research-agent-gemini"
+    },
+    "captured_on": "2026-11-23",
+    "capture_method": "http_content",
+    "snapshot_ref": "snapshots/d59a1afb0ac77a60fe0ceca00b70df5655de36cfc82ffacb7b89ce7790531bfe.txt",
+    "content_sha256": "d59a1afb0ac77a60fe0ceca00b70df5655de36cfc82ffacb7b89ce7790531bfe",
+    "line_count": 154
+  }
+]

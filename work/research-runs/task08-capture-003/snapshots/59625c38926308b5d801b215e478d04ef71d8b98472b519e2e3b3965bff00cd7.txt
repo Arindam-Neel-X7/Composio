@@ -1,0 +1,105 @@
+MCP Integration for agents
+My tickets
+Submit ticket
+Login
+MCP Integration for agents
+Home
+>
+Technical Support
+>
+Features and functions
+>
+AI
+>
+AI features
+>
+MCP Integration for agents
+LiveAgent exposes a built-in MCP server (Model Context Protocol) that lets you connect external AI tools, such as ChatGPT, Claude Desktop, Cursor, claude.ai, FlowHunt, or any other MCP-compatible client, directly with your LiveAgent account. Once connected, your own AI tools/agents can read ticket data and perform actions on your behalf, using your agent identity and permissions.
+There are two ways to authenticate your MCP client - OAuth 2.1 (recommended), where the AI tool discovers the authorization server automatically and redirects you to a consent screen, or Bearer token, where you generate an MCP access token in your profile and paste it into the AI tool's configuration manually.
+In this article
+Finding MCP Integration in your profile
+Connecting with OAuth
+How it works
+Managing authorized apps
+Connecting with a bearer token
+Generating an access token
+Managing access tokens
+Permissions and vailable tools
+Finding MCP Integration in your profile
+Click your avatar in the top-right corner of the LiveAgent panel and select Edit profile.
+In the left-hand menu, navigate to the MCP Integration section.
+This screen shows your connection details and access tokens. Use these values to configure any MCP-compatible client:
+SettingValue
+MCP server URLhttps://<your-liveagent-domain>/api/mcp
+Transport protocolStreamable HTTP
+AuthenticationOAuth 2.1 (Authorization Code + PKCE) or Bearer token
+Connecting with OAuth
+OAuth authentication lets AI tools connect to your LiveAgent MCP server without you having to generate, copy, and paste a token. The tool handles the entire authentication flow automatically using standard OAuth 2.1 with PKCE.
+How it works
+In your AI tool (for example Claude app), add a new MCP server/connector/plugin using your LiveAgent MCP server URL.
+The AI tool calls that URL, receives a discovery hint, and fetches LiveAgent's OAuth server metadata automatically.
+You are redirected to the LiveAgent login page (if not already logged in) and then to a consent screen asking you to approve the connection.
+After you approve, the tool receives an access token and is ready to use.
+Note: Your consent decision is remembered. If you remove and reconnect the same tool later, the consent screen is skipped and completes silently.
+Managing authorized apps
+The MCP Integration screen in your profile lists all OAuth clients you have approved under Authorized apps. You can revoke any authorized app. The tool will lose access immediately and will need to go through the OAuth flow again to reconnect.
+Tip: Administrators or users with a custom role with the permission to manage agents can view and revoke authorized apps for other agents in the account.
+Connecting with a bearer token
+If your AI tool does not support OAuth authentication, you can use a bearer token to connect it. Bearer tokens are MCP access tokens you generate in your profile and paste directly into your MCP client. Bearer tokens are also used by scripts that require manual configuration.
+Generating an access token
+On the MCP Integration screen in your profile and click Generate token.
+Copy the access token.
+Paste the access token into your MCP client as the Bearer token value.
+Important: Store the access token securely as soon as you generate it. If you lose it, you will need to revoke the existing token and generate a new one.
+You can generate up to 10 active access tokens per account. Having multiple tokens is useful if you connect the same account to more than one tool or device.
+Managing access tokens
+The access token list on the MCP Integration screen shows each token's masked identifier and expiration date. Each can be revoked independently without affecting the others. Upon revoking a token, the corresponding MCP client/AI tool will lose access immediately.
+Note: Access tokens expire automatically after two years from the date they were generated, regardless of how frequently they are used. Plan to rotate access tokens before they expire to avoid interruption.
+Permissions and available tools
+Regardless of whether you connect via OAuth or bearer token, your AI tool has access to the full set of LiveAgent MCP tools. See the MCP tools reference for the complete list of tools and their detailed description.
+All actions are performed under your agent identity and are subject to your role's permissions, exactly as if you had performed them in the LiveAgent panel. They appear in the ticket's activity history under your name.
+Note: Unlike LiveAgent AI agents, which restrict the tool set per AI agent configuration, personal MCP integration gives access to all tools. Your role's permissions still apply - actions your role is not permitted to perform will be rejected.
+Note: Actions performed through an MCP connection count toward a common AI budget shared by all users, which limits the number of tool calls. See the AI budgets article for details on how AI budgets work.
+Related articles
+MCP Tools Reference
+AI Agents Feature Overview
+Updated: Oct 30 (24 days ago)
+Other Articles
+AI Ticket summary feature overview
+AI Message translation feature overview
+MCP tools reference
+System outage!
+We are currently experiencing an unexpected outage which resulted in disabling some services for our customers. Our infrastructure administrators are actively working to identify the root cause of the issue and restore full functionality as soon as possible. We will continue to provide updates on our
+status page.
+Understood, continue...
+×
+Contact Us
+Choose your preferred channel...
+Close
+Contact form
+Leave us a message...
+Chat with an Agent
+I prefer humans...
+Chat with a Bot
+Give our chatbot a chance...
+LiveAgent is an integrated customer support software, ticketing system, live chat, social helpdesk and voice helpdesk. You name it, it's there. Based in cloud and accessible from everywhere, with SSL safety.
+LiveAgent
+Pricing
+Testimonials
+Use Cases
+Integrations and Plugins
+Free Trial
+Most Popular Articles
+How to make REST calls in PHP
+Enable External Forwarding in Microsoft 365
+Complete API reference
+Facebook application setup and Facebook page integration for standalone installations
+Email accounts configuration introduction
+How to submit Facebook application for review
+Microphone permissions for browser calls
+Facebook integration error - the user is enrolled in a blocking, logged-in checkpoint
+Creating, Managing & Integrating Chat Buttons
+LiveAgent Domain parking guide
+Socials
+Helpdesk software by LiveAgent © 2004-2026 Quality Unit, LLC. All rights reserved.
+Help desk software by LiveAgent

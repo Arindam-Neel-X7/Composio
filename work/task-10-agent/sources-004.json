@@ -1,0 +1,13 @@
+{
+  "sources": [
+    {
+      "app_id": 37,
+      "url": "https://developer.systeme.io/docs/mcp-server.md",
+      "kind": "primary_docs",
+      "scope": "systeme.io Public API and official MCP server; API key and MCP key auth; Free vs paid subscription plans",
+      "environments": ["testing", "production"],
+      "attribution_basis": "Official systeme.io MCP Server developer documentation",
+      "attribution_by": "task10-research-agent-gemini"
+    }
+  ]
+}

@@ -1,0 +1,209 @@
+# Composio assignment: sequential execution board
+
+Status: Tasks 01–09 completed and accepted (AI review only; no human review). Task 09 (Research batch 3: Communications and Messaging, IDs 21–30) passed independent read-only AI review after claim-grounding remediation in `work/research-runs/task09-first-pass-004` (see `outputs/task-09-review.md` and `outputs/task-09/`: 54 captured sources, 192 eligible assertions, 417 verified evidence refs, `accuracy: null`). Task 10 and all later tasks remain queued; none has started.
+
+The coordinator reviews each handoff before dispatching the next task. Each agent receives a bounded file scope, inputs, outputs and acceptance checks. The current checkpoint covers Task 09 approval; Task 10 (Marketing, Ads, Email and Social, IDs 31–40) is next.
+
+## Rules
+
+- Existing results are preliminary hypotheses, not completed research.
+- Every task returns files, evidence, checks and unresolved issues.
+- An unknown can be a valid research result; an inaccessible page is not proof that the product has no API.
+- No fabricated human review, accuracy improvement or publication.
+- Future owners below are queued role assignments, not claims that agents are already running.
+- Respect user-requested review checkpoints: share the completed task's reviewed results before starting the next task.
+
+## Tasks
+
+### 01. Audit the existing work
+
+- Owner: Intake agent (Erdos)
+- Status: completed; reviewed and accepted (see task-01-review.md)
+- Prerequisite: none
+- Output: work/intake-audit.md and .json
+- Acceptance: Confirm the exact 100-app input; list placeholder fields and missing deliverables.
+
+### 02. Define the research record and evidence rules
+
+- Owner: Pipeline agent (Darwin), reviewed by coordinator
+- Status: completed; reviewed and accepted (see task-02-review.md)
+- Prerequisite: 01
+- Output: data/apps.json; schemas/record.json; evidence rules
+- Acceptance: Multiple auth methods allowed; sandbox vs production access separated; each material claim has a source or an explicit unknown.
+
+### 03. Implement source retrieval and extraction
+
+- Owner: Pipeline agent (Darwin), reviewed by coordinator
+- Status: completed; reviewed and accepted (see task-03-review.md)
+- Prerequisite: 02
+- Output: Runnable research command, cache, run log and recovery handling
+- Acceptance: Retrieve and read source content; keep source URL, timestamp and claim support; distinguish retrieval errors from product gates; do not use app-name lookup lists as findings.
+
+### 04. Run a five-app pilot
+
+- Owner: Research agent (Mendel), reviewed by coordinator
+- Status: completed first pass; reviewed and accepted with disclosed issues (see task-04-review.md)
+- Prerequisite: 03
+- Output: Pilot records for IDs 2, 13, 31, 58, 91
+- Acceptance: Research HubSpot, Freshdesk, Google Ads, Sherlock and NotebookLM using primary sources; preserve the original first pass.
+
+### 05. Review the pilot independently
+
+- Owner: Verification agent (`gemini-task05-independent`, AI)
+- Status: completed; reviewed and accepted (PASS; AI review — see `outputs/task-05-review.md`, `outputs/task-05/verification-report.md`, and `work/task-04-runs/task05-review-002`)
+- Prerequisite: 04
+- Output: `work/task-04-runs/task05-review-002`; `work/task-05-agent/judgments.json`; `outputs/task-05/verification-report.md`
+- Acceptance: Reopen primary sources, check each substantive field and identify unsupported claims; label the reviewer as AI.
+
+### 06. Repair the pipeline and freeze the evaluation method
+
+- Owner: Pipeline agent + coordinator
+- Status: completed; reviewed and accepted (PASS after doc remediation — see `outputs/task-06-review.md`, `outputs/task-06/completion-report.md`, `outputs/task-06/sampling-manifest.json`, and `outputs/task-06/evaluation-rubric.md`)
+- Prerequisite: 05
+- Output: `research_pipeline.py` (v0.2.0); `schemas/record.json` & `docs/evidence-rules.md` (v1.1); 23 passing tests; frozen 20-app sample manifest and rubric
+- Acceptance: Address pilot failures; define the denominator and treatment of unknowns; select two apps per category reproducibly before the full run.
+
+### 07. Research batch 1: CRM and Sales
+
+- Owner: Research agent (`task07-research-agent-gemini`); independent AI auditor (`20c35940-52d8-4433-9470-263d3ef2478a`)
+- Status: completed; reviewed and accepted (PASS after remediation in `task07-first-pass-003` — see `outputs/task-07-review.md`; AI review only, no human review; formal blind scoring deferred to Task 17)
+- Prerequisite: 06
+- Output: `work/research-runs/task07-first-pass-003`; `outputs/task-07/` (`records.json`, `source-index.md`, `findings-matrix.md`, `batch-report.md`, `exceptions-for-reviewer.md`, `metrics.json`); `outputs/task-07-review.md`
+- Acceptance: All ten identities covered; category and one-line purpose, auth, credential access, API type/breadth, MCP and buildability filled with supported findings or explicit unknowns. Reviewer checks evidence links and consequential claims before next batch.
+
+### 08. Research batch 2: Support and Helpdesk
+
+- Owner: Research agent (`task08-research-agent-gemini`); independent AI auditor (`427f6350-a54b-4baf-a55b-7ec71f328212`)
+- Status: completed; reviewed and accepted (PASS after remediation in `task08-first-pass-003` — see `outputs/task-08-review.md`; AI review only, no human review; formal blind scoring deferred to Task 17)
+- Prerequisite: 07
+- Output: `work/research-runs/task08-first-pass-003`; `outputs/task-08/` (`records.json`, `source-index.md`, `findings-matrix.md`, `batch-report.md`, `exceptions-for-reviewer.md`, `metrics.json`); `outputs/task-08-review.md`
+- Acceptance: All ten identities covered; category and one-line purpose, auth, credential access, API type/breadth, MCP and buildability filled with supported findings or explicit unknowns. Reviewer checks evidence links and consequential claims before next batch.
+
+### 09. Research batch 3: Communications and Messaging
+
+- Owner: Research agent (`task09-research-agent-gemini`); independent AI auditor (`6545c1d5-1dbf-4871-953d-99def292ba15`)
+- Status: completed; reviewed and accepted (PASS after remediation in `task09-first-pass-004` — see `outputs/task-09-review.md`; AI review only, no human review; formal blind scoring deferred to Task 17)
+- Prerequisite: 08
+- Output: `work/research-runs/task09-first-pass-004`; `outputs/task-09/` (`records.json`, `source-index.md`, `findings-matrix.md`, `batch-report.md`, `exceptions-for-reviewer.md`, `metrics.json`); `outputs/task-09-review.md`
+- Acceptance: All ten identities covered; category and one-line purpose, auth, credential access, API type/breadth, MCP and buildability filled with supported findings or explicit unknowns. Reviewer checks evidence links and consequential claims before next batch.
+
+### 10. Research batch 4: Marketing, Ads, Email and Social
+
+- Owner: Research agent; verification agent accepts batch
+- Status: queued
+- Prerequisite: 09
+- Output: Ten records, IDs 31–40; field citations; batch exceptions
+- Acceptance: All ten identities covered; category and one-line purpose, auth, credential access, API type/breadth, MCP and buildability filled with supported findings or explicit unknowns. Reviewer checks evidence links and consequential claims before next batch.
+
+### 11. Research batch 5: Ecommerce
+
+- Owner: Research agent; verification agent accepts batch
+- Status: queued
+- Prerequisite: 10
+- Output: Ten records, IDs 41–50; field citations; batch exceptions
+- Acceptance: All ten identities covered; category and one-line purpose, auth, credential access, API type/breadth, MCP and buildability filled with supported findings or explicit unknowns. Reviewer checks evidence links and consequential claims before next batch.
+
+### 12. Research batch 6: Data, SEO and Scraping
+
+- Owner: Research agent; verification agent accepts batch
+- Status: queued
+- Prerequisite: 11
+- Output: Ten records, IDs 51–60; field citations; batch exceptions
+- Acceptance: All ten identities covered; category and one-line purpose, auth, credential access, API type/breadth, MCP and buildability filled with supported findings or explicit unknowns. Reviewer checks evidence links and consequential claims before next batch.
+
+### 13. Research batch 7: Developer, Infra and Data platforms
+
+- Owner: Research agent; verification agent accepts batch
+- Status: queued
+- Prerequisite: 12
+- Output: Ten records, IDs 61–70; field citations; batch exceptions
+- Acceptance: All ten identities covered; category and one-line purpose, auth, credential access, API type/breadth, MCP and buildability filled with supported findings or explicit unknowns. Reviewer checks evidence links and consequential claims before next batch.
+
+### 14. Research batch 8: Productivity and Project Management
+
+- Owner: Research agent; verification agent accepts batch
+- Status: queued
+- Prerequisite: 13
+- Output: Ten records, IDs 71–80; field citations; batch exceptions
+- Acceptance: All ten identities covered; category and one-line purpose, auth, credential access, API type/breadth, MCP and buildability filled with supported findings or explicit unknowns. Reviewer checks evidence links and consequential claims before next batch.
+
+### 15. Research batch 9: Finance and Fintech
+
+- Owner: Research agent; verification agent accepts batch
+- Status: queued
+- Prerequisite: 14
+- Output: Ten records, IDs 81–90; field citations; batch exceptions
+- Acceptance: All ten identities covered; category and one-line purpose, auth, credential access, API type/breadth, MCP and buildability filled with supported findings or explicit unknowns. Reviewer checks evidence links and consequential claims before next batch.
+
+### 16. Research batch 10: AI, Research and Media-native
+
+- Owner: Research agent; verification agent accepts batch
+- Status: queued
+- Prerequisite: 15
+- Output: Ten records, IDs 91–100; field citations; batch exceptions
+- Acceptance: All ten identities covered; category and one-line purpose, auth, credential access, API type/breadth, MCP and buildability filled with supported findings or explicit unknowns. Reviewer checks evidence links and consequential claims before next batch.
+
+### 17. Audit the frozen 20-app sample
+
+- Owner: Independent verification agent
+- Status: queued
+- Prerequisite: 16
+- Output: Blind review, gold judgments and first-pass scores
+- Acceptance: Use two apps from each category; inspect primary sources independently; report correct, incorrect, unsupported and unknown claims with denominators. This is AI verification, not human verification.
+
+### 18. Correct errors and remeasure
+
+- Owner: Research agent + verification agent
+- Status: queued
+- Prerequisite: 17
+- Output: Correction log, final scores and remaining unknowns
+- Acceptance: Preserve before/after versions, use the same rubric, disclose that the corrected sample is no longer an unbiased held-out estimate. Prepare a human checklist; only a real person can sign human checks.
+
+### 19. Calculate patterns and build priorities
+
+- Owner: Analysis agent
+- Status: queued
+- Prerequisite: 18
+- Output: Reproducible aggregates and recommendations
+- Acceptance: Every percentage has a denominator; unknowns visible; prioritize build-now, conditional and outreach queues from evidence.
+
+### 20. Build the self-contained case study
+
+- Owner: Case-study agent
+- Status: queued
+- Prerequisite: 19
+- Output: Single HTML with searchable matrix and evidence/verification sections
+- Acceptance: Two-minute overview, supported headline findings, process, run instructions, misses and limitations; no invented accuracy or human claims.
+
+### 21. Test reproduction and page presentation
+
+- Owner: QA agent
+- Status: queued
+- Prerequisite: 20
+- Output: Run report and page QA evidence
+- Acceptance: Fresh offline replay works; live-research prerequisites documented; outputs agree with the page; inspect desktop/mobile and links where available.
+
+### 22. Publish the source repository
+
+- Owner: Publisher agent + coordinator
+- Status: queued
+- Prerequisite: 21
+- Output: Dedicated GitHub repository with runnable README
+- Acceptance: Use connected GitHub capabilities; create a dedicated repository through supported access; preserve unrelated repositories; verify source and instructions at returned URL. Record an actual blocker if creation authority is missing.
+
+### 23. Deploy the case study
+
+- Owner: Publisher agent + coordinator
+- Status: queued
+- Prerequisite: 22
+- Output: Verified live page URL and deployment record
+- Acceptance: Reuse registered Site appgprj_6b040e5b3768819193392c23590d7d81 if using Sites; confirm deployed version and intended reviewer access; never treat expected_url as a completed deployment.
+
+### 24. Review and hand off
+
+- Owner: Coordinator
+- Status: queued
+- Prerequisite: 23
+- Output: Submission links, source bundle, final limitations
+- Acceptance: Reconcile counts, evidence, measured scores, GitHub URL and live URL; identify any remaining external blocker explicitly.
+

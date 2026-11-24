@@ -1,0 +1,1442 @@
+Website Audit - SE Ranking API Documentation
+BLACK FRIDAY | Extra 20% off SE Ranking annual plans and add-ons until Dec 4
+SE Ranking
+Grow your visibility with AI SEO
+SE Visible
+Analyze AI visibility strategically
+Planable
+Manage your socials as a team
+API
+Solutions
+By business type Migrate to SE Ranking
+See product tour
+Agencies
+Enterprises
+Growing business
+Tools
+Core SEO tools AI Search tools Other SEO tools Agency Pack Content Marketing Local Marketing Software Integrations
+See product tour
+Rank Tracker
+Keyword Research
+On-Page SEO Checker
+Website Audit
+Competitor Analysis Tool
+Backlink Checker
+AI Search Toolkit
+AI Overviews Tracker
+AI Mode Tracker
+ChatGPT Tracker
+Gemini Tracker
+ChatGPT ads tracker
+AI Mode ads tracker
+SERP Tracker
+Insights
+Keyword Grouper
+SEO Dashboard
+Agency Pack
+SEO Report Generator
+Lead Generator
+White Label
+Content Marketing Tool
+Content Editor
+AI Writer
+Resources
+Education Customer Hub Agency Catalog
+See product tour
+Blog
+Webinars
+Podcast
+Academy
+Help center
+What’s new
+Case studies
+Pricing
+Platform plans
+API Plans
+API & MCP
+API MCP Our data API Pricing
+See product tour
+API
+Keyword Research API
+Backlinks API
+Domain Analysis API
+Rank Tracker API
+Website Traffic API
+Website Audit API
+AI Visibility API
+MCP
+SEO Skills for Claude
+Marketing Skills for Claude
+Content Skills for Claude
+Products
+SE Ranking
+Grow your visibility with AI SEO
+SE Visible
+Analyze AI visibility strategically
+Planable
+Manage your socials as a team
+See product tour
+Start free trial
+en
+enEnglish
+deDeutsch
+frFrançais
+esEspañol
+nlNederlands
+itItaliano
+ptPortuguês
+uaУкраїнська
+ruРусский
+あ日本語
+Sign in
+See product tour
+Start free trial
+Back
+API
+Introduction
+Getting API access
+API credit system
+API rate limits
+Integrations
+Data Studio
+MCP
+n8n
+Make.com
+Usage guidelines for commercial purposes
+Data
+Overview
+Getting started
+Authentication
+Making requests
+Postman collection
+Unit costs
+Plans and pricing
+Quickstarts
+Find keyword opportunities
+Assess AI search visibility
+Retrieve URLs with SEO issues
+Use Website Audit API for SEO growth
+Generate reports with SEOIntel
+Build authority with link building
+Analyze domain traffic & competitors
+Backlinks
+Get backlink summary
+Get backlink metrics
+List all backlinks
+Fetch backlinks in batches
+Get total backlinks count
+Export backlinks data
+List new/lost backlinks
+Get daily new/lost backlinks
+Get cumulative backlinks
+Get backlink anchor texts
+List referring domains
+Get referring domains count
+List new/lost referring domains
+Get daily new/lost referring domains
+List referring IPs
+Get total referring IPs count
+Get total referring subnets count
+List pages with backlinks
+Get page/domain authority
+Get domain authority
+Get domain authority distribution
+Get domain authority history
+Get page authority
+Get page authority history
+Domain Analysis
+Get domain overview by region
+Get worldwide domain overview
+Get worldwide URL overview
+Get traffic/keyword history
+Get keyword rankings
+Get domain pages
+Get domain subdomains
+Get paid ads by keyword
+Get paid ads for domain
+Get domain competitors
+Analyze keyword overlap/gaps
+Keyword Research
+Get Keywords metrics
+Get similar keywords
+Get related keywords
+Get question keywords
+Get longtail keywords
+AI Search
+Get AI search overview
+Get AI search leaderboard
+Discover brand by URL
+Get prompts by brand
+Get prompts by target
+Filtering results
+Website Audit
+Create audit
+List audits
+Get audit status
+Get audit report
+Get all crawled pages
+Get audit pages by issue
+Get all issues by URL
+Get all found links
+Get audit by date
+Update audit title
+Delete audit
+Recheck audit
+Account System
+Get subscription details
+Reference
+Glossary
+Regional codes
+SERP features
+Site Audit issue codes
+Error handling
+Project
+Overview
+Getting started
+API access and keys
+Making requests
+Rate limits
+Error handling
+Project Management
+List projects
+List project search engines
+Add search engine to project
+Change search engine in project
+Delete search engine from project
+List website keywords
+Get project summary statistics
+Get keyword statistics
+Get total number of ads chart
+Get historical dates
+Add keywords to project
+Add project
+Change project settings
+Delete project
+Delete keywords
+Set manual keyword position
+Run position check
+Project Groups
+Add project group
+Rename project group
+Delete project group
+List project groups
+Move projects to project group
+Keyword Groups
+Add keyword group
+Move keywords to another group
+Rename keyword group
+Delete keyword group
+List keyword groups
+Competitors
+Add competitor
+List competitors
+Get competitor keyword positions
+Delete competitor
+Get TOP 10 results
+Get TOP 100 results
+Get all competitors
+URL Tags
+List tags
+Add tag
+Update tag assignment
+Delete tag
+Analytics Traffic
+Get Google Search Console data
+Calculate SEO potential
+Account Management
+Get user profile
+List sub-accounts
+Create sub-account
+Get sub-account details
+Delete sub-account
+Update sub-account
+List shared projects
+List owned projects
+Share project with sub-account
+General Data
+List search engines
+List languages for Google
+List regions to get search volume
+Get keyword search volume
+Marketing Plan
+List plan items
+Add task
+Update task
+Delete task
+Set task status
+Website Audit
+Create audit
+List audits
+Get audit status
+Get audit report
+Get all crawled pages
+Get audit pages by issue
+Get all issues for URL
+Get all links
+Get audit history
+Update audit title
+Delete audit
+Recheck audit
+Backlink Checker
+List backlinks
+Add backlink
+Import backlinks list
+Update backlink import settings
+Start backlink import from Google Search Console
+Get backlink import status from Google Search Console
+Delete backlinks
+Recheck backlinks
+Get backlink statistics
+List disavowed backlinks
+Add disavowed backlinks
+Delete disavowed backlink
+List backlink groups
+Create backlink group
+Delete backlink group
+Rename backlink group
+Move backlinks to group
+AI Results Tracker
+Get site brand
+Save site brand
+List LLM engines
+Get LLM engine
+Create LLM engine
+Update LLM engine
+Delete LLM engine
+Get LLM status
+Get LLM statistics
+List prompts
+Add prompts
+Delete prompts
+Get prompt answer
+Get prompt rankings
+AIRT Sources
+Get sources summary
+List source domains
+List source pages
+Get sources recommendations
+AIRT Competitors
+Get competitors breakdown
+Get competitors check dates
+Get source metrics
+AIRT Groups
+List prompt groups
+Create prompt group
+Rename prompt group
+Delete prompt group
+Change group order
+Delete all prompts in group
+Move prompts to group
+Move all prompts from one group to another
+Local Marketing
+Overview
+Getting started
+Usage and limits
+Pagination
+Errors
+Locations
+List locations
+Get location details
+Location overview
+Get location overview
+Local Rankings
+Get Local Rankings keyword list
+Get Local Rankings positions
+Get rankings indexed percent
+Local Marketing Audit
+Get latest audit report
+Get audit report history
+Google Business Profile
+Get Google Business Profile metrics
+Get Google Business Profile keyword report
+Get Google Business Profile searches trend
+Business Listings
+List business listings
+Get business listings overview
+Reviews
+List reviews
+Get reviews overview
+SE VisibleBeta
+Overview
+Getting started
+Base URL
+Authentication
+Resource model
+Making requests
+Pagination
+Filtering and array parameters
+Date ranges and compare mode
+Usage and limits
+Errors
+Support
+Projects
+List projects
+Create project
+Get project details
+Update tracking settings
+Delete a project
+Locations
+List project locations
+Add a location
+Update a location
+Delete a location
+Geo autocomplete
+List countries
+Search cities and regions
+Engines
+List project engines
+Add an engine
+Replace the engine set
+Remove an engine
+Brands
+List tracked brands
+Create competitor brand
+List mentioned brands
+Get aggregated brand metrics
+Update brand
+Delete brand
+Add aliases to brand
+Topics
+Create topics
+Update a topic title
+Delete a topic
+Prompts
+List prompts or topics
+Delete prompts
+Create prompts for a topic
+Move prompts to a topic
+Change prompt locations
+Get prompt details
+Get prompt result list
+Get prompt result details
+Sources
+Get project sources
+Get aggregated source metrics
+Reference
+AI models
+Sentiment
+Project status
+Country codes
+Language codes
+Source type
+URL category types
+Brand match mode
+Prompt list grouping
+Brand metrics dimensions and metrics
+Sort fields
+Date ranges and compare mode
+Array parameters
+Pagination
+Error codes
+Authentication
+Subscription
+Get subscription details
+API
+Data API / Website Audit
+Website Audit
+Website Audit API provides programmatic access to technical SEO audits. Results are retrieved on demand.
+Using the API, you can:
+Create website audits using standard HTML crawling or JavaScript-rendered crawling
+Track audit execution by checking audit status, progress, and crawl statistics in real time
+Retrieve audit results, including health scores and categorized issues
+Analyze pages and audit issues, including page-level technical metrics and URLs affected by specific issues
+Analyze link data, including internal and external links discovered during the crawl
+Manage audits by listing, filtering, renaming, deleting, and accessing historical audit snapshots
+Create audit
+There are two endpoints for launching a new website audit. Use the Standard endpoint for most websites, and the Advanced endpoint for sites that rely heavily on JavaScript to render content, such as Single-Page Applications (SPAs).
+Create standard audit
+POST https://api.seranking.com/v1/site-audit/audits/standard
+Cost: 2 credits per crawled page
+Launches a standard audit that crawls the HTML of a website. This is suitable for most static and server-side rendered sites.
+Create advanced audit
+POST https://api.seranking.com/v1/site-audit/audits/advanced
+Cost: 20 credits per crawled page
+Launches an advanced audit that renders JavaScript before analyzing the page. Use this for single-page applications (SPAs) or any site where content is loaded dynamically.
+Request parameters
+ParameterTypeRequiredDefaultDescription
+domainStringYesN/ADomain to be audited (e.g., domain.com).
+titleStringNodomainCustom title for the audit report. Maximum 300 characters.
+settingsObjectNoN/AObject containing specific audit settings. Only include parameters you want to override. See the Audit settings table below.
+Settings
+The settings object allows for detailed customization of the website crawl. All parameters are optional.
+Crawl Sources
+NameDescriptionPossible ValuesDefault Value
+source_siteScan all pages by following internal links from the homepage. If 0, scans only from sitemap or a provided list.0 (no), 1 (yes)1
+source_sitemapScan the sitemap.xml file.0 (no), 1 (yes)1
+source_subdomainScan subdomains. If 0, subdomain links are treated as external.0 (no), 1 (yes)0
+source_fileUse a custom list of pages for the audit.1 (yes), 0 (no)0
+Crawl Behavior
+NameDescriptionPossible ValuesDefault Value
+check_robotsFollow the directives in the robots.txt file.0 (no), 1 (yes)1
+ignore_noindexIgnore pages with a noindex tag.0 (no), 1 (yes)0
+ignore_nofollowIgnore links with a nofollow attribute.0 (no), 1 (yes)0
+ignore_paramsIgnore URL parameters.0 (none), 1 (all), 2 (custom list)0
+custom_paramsA comma-separated list of URL parameters to ignore when ignore_params is set to 2.Comma-separated stringutm_source, utm_medium, utm_term, utm_content, utm_campaign, cid, PHPSESSID
+user_agentThe User-Agent header to use for the crawl.0: SE Ranking bot (Default) 1: Googlebot 2: Googlebot Image 3: Bingbot 4: Yahoo! Slurp 5: YandexBot 6: BaiduSpider 7: Chrome on Windows 8: Chrome on macOS 9: Chrome on iOS 10: Firefox on Windows 11: Firefox on Linux 12: Safari on macOS 13: Opera on Windows0
+loginLogin for Basic HTTP Authentication.Stringnull
+passwordPassword for Basic HTTP Authentication.Stringnull
+Crawl Limits
+NameDescriptionPossible ValuesDefault Value
+max_pagesMaximum number of pages to crawl.1-300,0001000
+max_depthMaximum crawl depth.1-10010
+max_reqMaximum number of requests per second.1-500500
+max_redirectsMaximum number of redirects to follow.1-505
+max_sizeMaximum page size in kilobytes.1 – 100,0003000
+On-Page Thresholds
+NameDescriptionPossible ValuesDefault Value
+min_title_lenMinimum length for the <title> tag.1-10,00020
+max_title_lenMaximum length for the <title> tag.1-10,00065
+min_description_lenMinimum length for the meta description.1-10,0001
+max_description_lenMaximum length for the meta description.1-10,000158
+min_wordsMinimum word count per page.1-10,000250
+max_h1_lenMaximum length for <h1> tags.1-10,000100
+max_h2_lenMaximum length for <h2> tags.1-10,000100
+URL Filtering
+NameDescriptionPossible ValuesDefault Value
+allowOnly crawl URLs that start with this path.Stringnull
+disallowDo not crawl URLs that start with this path.Stringnull
+hideHide URLs and resources that start with this path from the report.Stringnull
+Reporting
+NameDescriptionPossible ValuesDefault Value
+send_reportSend an email report when the audit completes.0 (no), 1 (yes)1
+report_emailsComma-separated list of email addresses to receive the audit report. If empty, the report is sent to the account owner.String“”
+Response Parameters
+If successful, the server returns a JSON object containing the unique ID for the newly created audit.
+ParameterData TypeDescriptionExample
+idintegerThe unique identifier for the audit report.700237036
+Request examples
+To launch a standard audit:
+Copy
+curl --location 'https://api.seranking.com/v1/site-audit/audits/standard' \
+--header 'Content-Type: application/json' \
+--header 'Authorization: Token YOUR_API_KEY' \
+--data '{
+"domain": "example.com",
+"title": "Full Audit - example.com",
+"settings": {
+"source_site": 1,
+"source_sitemap": 1,
+"source_subdomain": 1,
+"source_file": 0,
+"check_robots": 1,
+"ignore_noindex": 1,
+"ignore_nofollow": 1,
+"ignore_params": 2,
+"custom_params": "utm_source, utm_medium, utm_term, utm_content, utm_campaign, cid, PHPSESSID, fbclid, gclid",
+"user_agent": 0,
+"login": "",
+"password": "",
+"max_pages": 10000,
+"max_depth": 15,
+"max_req": 300,
+"max_redirects": 10,
+"max_size": 5000,
+"min_title_len": 30,
+"max_title_len": 60,
+"min_description_len": 50,
+"max_description_len": 160,
+"min_words": 300,
+"max_h1_len": 70,
+"max_h2_len": 80,
+"allow": "/blog\n/products",
+"disallow": "/admin\n/staging",
+"hide": "/cdn-cgi\n/wp-json",
+"send_report": 1,
+"report_emails": "[email protected], [email protected]"
+}
+}'
+To launch an advanced audit:
+Copy
+curl --location 'https://api.seranking.com/v1/site-audit/audits/advanced' \
+--header 'Content-Type: application/json' \
+--header 'Authorization: Token YOUR_API_KEY' \
+--data '{
+"domain": "example.com",
+"title": "Full Audit - example.com",
+"settings": {
+"source_site": 1,
+"source_sitemap": 1,
+"source_subdomain": 1,
+"source_file": 0,
+"check_robots": 1,
+"ignore_noindex": 1,
+"ignore_nofollow": 1,
+"ignore_params": 2,
+"custom_params": "utm_source, utm_medium, utm_term, utm_content, utm_campaign, cid, PHPSESSID, fbclid, gclid",
+"user_agent": 0,
+"login": "",
+"password": "",
+"max_pages": 10000,
+"max_depth": 15,
+"max_req": 300,
+"max_redirects": 10,
+"max_size": 5000,
+"min_title_len": 30,
+"max_title_len": 60,
+"min_description_len": 50,
+"max_description_len": 160,
+"min_words": 300,
+"max_h1_len": 70,
+"max_h2_len": 80,
+"allow": "/blog\n/products",
+"disallow": "/admin\n/staging",
+"hide": "/cdn-cgi\n/wp-json",
+"send_report": 1,
+"report_emails": "[email protected], [email protected]"
+}
+}'
+Response parameters
+If successful, the server returns a JSON object containing the unique ID for the newly created audit.
+ParameterTypeDescription
+idIntegerUnique identifier of the audit report (e.g., 700237036).
+Response example
+Copy
+{
+"id": 700237036
+}
+List audits
+GET https://api.seranking.com/v1/site-audit/audits
+Cost: 0 credits
+Retrieves a list of all website audits associated with your account, providing key details and statistics for each.
+Request parameters
+ParameterTypeRequiredDefaultDescription
+limitIntegerNo100Number of audits to return in the list.
+offsetIntegerNo0Starting position (offset) for the list of audits.
+searchStringNoN/AFilters the list by a search term matching the audit’s title or URL.
+date_startStringNoN/AStart date for filtering audits (YYYY-MM-DD).
+date_endStringNoN/AEnd date for filtering audits (YYYY-MM-DD).
+Request example
+Copy
+curl --location 'https://api.seranking.com/v1/site-audit/audits?limit=4&offset=0&search=booking.com&date_start=2025-07-01&date_end=2025-07-31' \
+--header 'Authorization: Token YOUR_API_KEY'
+Response parameters
+If successful, the server returns a JSON object containing the total count of audits and an array of audit objects.
+ParameterTypeDescription
+totalIntegerTotal number of audits matching the filter criteria.
+itemsArrayArray of objects, each representing a website audit.
+Each object in the items array has the following structure:
+ParameterTypeDescription
+idIntegerUnique identifier for the audit report (e.g., 700138456).
+urlStringURL of the audited website (e.g., http://booking.com).
+titleStringTitle of the audit report (e.g., booking.com).
+last_updateStringDate the audit was last updated in YYYY-MM-DD format (e.g., 2025-07-08).
+statusStringCurrent status of the audit (e.g., finished, processing).
+statsObjectObject containing the latest statistics for the audit (score, errors, warnings, notices, crawled).
+prev_statsObjectObject containing statistics from the previous audit run. Can be null if no prior data exists.
+Response example
+A successful request returns a JSON object containing the unique ID of the created audit.
+Copy
+{
+"items": [
+{
+"id": 700138456,
+"group_id": 0,
+"url": "http://booking.com",
+"title": "booking.com",
+"has_project": true,
+"site_id": 10113599,
+"last_update": "2025-07-08",
+"status": "finished",
+"error": null,
+"error_params": null,
+"stats": {
+"score": 69,
+"errors": 2303,
+"warnings": 3710,
+"notices": 10875,
+"crawled": 1830
+},
+"prev_stats": null,
+"version": "2.0",
+"owner_account_id": 4242308,
+"is_new": 1
+}
+],
+"total": 1
+}
+Get audit status
+GET https://api.seranking.com/v1/site-audit/audits/status
+Cost: 0 credits
+Checks the real-time status of a specific website audit, whether it’s queued, currently processing, or already finished. This is useful for monitoring the progress of a crawl before fetching the full report.
+Request parameters
+ParameterTypeRequiredDefaultDescription
+audit_idIntegerYesN/AUnique identifier of the audit to check.
+Request example
+Copy
+curl --location 'https://api.seranking.com/v1/site-audit/audits/status?audit_id=700183831' \
+--header 'Authorization: Token YOUR_API_KEY'
+Response parameters
+If successful, the server returns a JSON object containing the current status and key metrics of the audit.
+ParameterTypeDescription
+statusStringCurrent status of the audit. Possible values: queued, processing, finished, cancelled, expired.
+total_pagesIntegerNumber of pages crawled so far.
+total_errorsIntegerCurrent count of critical issues found.
+total_warningsIntegerCurrent count of warnings found.
+total_passedIntegerCurrent count of checks that have passed.
+start_timeStringTimestamp for when the audit began.
+audit_timeStringTimestamp for when the audit was completed. This will be present if the status is finished.
+Response example
+Copy
+{
+"total_pages": 1009,
+"total_warnings": 979,
+"total_errors": 346,
+"total_passed": 77,
+"status": "finished",
+"start_time": "2025-07-29 11:06:23",
+"audit_time": "2025-07-29 11:19:33"
+}
+Get audit report
+GET https://api.seranking.com/v1/site-audit/audits/report
+Cost: 0 credits
+Retrieves the full, detailed report for a completed website audit. The report includes the site’s overall health score, domain properties, and a section-by-section breakdown of all checks performed, categorized by issue type (errors, warnings, notices).
+Request parameters
+ParameterTypeRequiredDefaultDescription
+audit_idIntegerYesN/AUnique identifier of the audit for which to retrieve the report.
+Request example
+Copy
+curl --location 'https://api.seranking.com/v1/site-audit/audits/report?audit_id=700183831' \
+--header 'Authorization: Token YOUR_API_KEY'
+Response parameters
+If successful, the server returns a JSON object containing the complete audit report.
+ParameterTypeDescription
+is_finishedBooleanIndicates if the audit has completed. The report is only available if this is true.
+score_percentIntegerOverall health score of the website, from 0 to 100.
+total_pagesIntegerTotal number of pages crawled during the audit.
+total_errorsIntegerTotal count of critical issues found.
+total_warningsIntegerTotal count of warnings found.
+total_noticesIntegerTotal count of minor issues or notices.
+total_passedIntegerTotal count of checks that passed successfully.
+audit_timeStringTimestamp for when the audit was completed.
+domain_propsObjectObject containing general data about the audited domain. See details below.
+sectionsArrayArray of objects, where each object represents a category of audit checks (e.g., Security, Content).
+domain_props object
+ParameterTypeDescription
+expdateStringExpiration date of the domain registration.
+backlinksStringTotal number of backlinks pointing to the domain.
+index_googleStringNumber of pages indexed in Google.
+sections array
+Each object in the sections array contains a uid (unique ID), a name for the category, and a props object. The props object lists all the individual checks for that category. Each check includes:
+code: A unique identifier for the check (e.g., no_https).
+status: The result of the check (error, warning, notice, passed).
+name: A human-readable name for the check.
+value: The number of pages affected by this issue.
+Response example
+Copy
+{
+"total_pages": 1009,
+"total_warnings": 979,
+"total_errors": 346,
+"total_passed": 77,
+"total_notices": 3915,
+"is_finished": true,
+"domain_props": {
+"dt": 44,
+"domain": "www.vitality.co.uk",
+"domains": "3401",
+"expdate": "2025-08-30",
+"updated": "2025-07-29 12:07:28",
+"backlinks": "212249",
+"index_bing": 15500,
+"all_checked": true,
+"index_yahoo": 15500,
+"index_google": "1380"
+},
+"sections": [
+{
+"uid": "security_v2",
+"name": "Security",
+"props": {
+"no_https": {
+"code": "no_https",
+"status": "error",
+"name": "No HTTPS encryption",
+"value": 0
+},
+"mixed_content": {
+"code": "mixed_content",
+"status": "error",
+"name": "Mixed content",
+"value": 0
+}
+}
+},
+{
+"uid": "crawling_v2",
+"name": "Crawling & Indexing",
+"props": {
+"http4xx": {
+"code": "http4xx",
+"status": "error",
+"name": "4XX HTTP Status Codes",
+"value": 28
+},
+"blocked_by_noindex": {
+"code": "blocked_by_noindex",
+"status": "notice",
+"name": "Blocked by noindex",
+"value": 34
+}
+}
+}
+],
+"score_percent": 80,
+"audit_time": "2025-07-29 11:19:33",
+"version": "2.0"
+}
+Get all crawled pages
+GET https://api.seranking.com/v1/site-audit/audits/pages
+Cost: 0 credits
+Returns a paginated list of all URLs found during an audit, providing a complete sitemap as discovered by the crawler. This includes pages with and without detected issues.
+Request parameters
+ParameterTypeRequiredDefaultDescription
+audit_idIntegerYesN/AUnique identifier of the audit report.
+limitIntegerNo100Number of pages to return in the list.
+offsetIntegerNo0Starting position for the list of pages.
+Request example
+Copy
+curl --location 'https://api.seranking.com/v1/site-audit/audits/pages?audit_id=700183831&limit=2&offset=0' \
+--header 'Authorization: Token YOUR_API_KEY'
+Response parameters
+If successful, the server returns a JSON object containing the total count of crawled pages and an array of page objects.
+ParameterTypeDescription
+itemsArrayArray of objects, each representing a crawled page with its detailed metrics.
+totalIntegerTotal number of pages crawled in the audit.
+Each object in the items array has the following structure:
+ParameterTypeDescription
+idStringUnique internal identifier for the page (e.g., 50958380).
+urlStringFull URL of the crawled page (e.g., https://www.vitality.co.uk/).
+statusStringHTTP status code returned by the page (e.g., 200).
+depthStringCrawl depth of the page, i.e., distance from the start page (e.g., 1).
+load_msStringTime it took for the page to load, in milliseconds (e.g., 1373).
+titleStringContent of the <title> tag (e.g., Vitality Insurance).
+descriptionStringContent of the meta description tag (e.g., Vitality is a leading UK insurer...).
+h1StringContent of the first <h1> tag (e.g., Live longer with Vitality insurance).
+words_countStringTotal number of words found on the page (e.g., 1621).
+issuesStringTotal count of issues found on the page (e.g., 2).
+errorsStringTotal count of critical errors on the page (e.g., 0).
+warningsStringTotal count of warnings on the page (e.g., 0).
+noticesStringTotal count of notices on the page (e.g., 2).
+inlinksStringNumber of internal links pointing to this page (e.g., 922).
+outlinks_internalStringNumber of internal links found on this page (e.g., 83).
+outlinks_externalStringNumber of external links found on this page (e.g., 12).
+canonical_urlStringCanonical URL specified for the page (e.g., https://www.vitality.co.uk/).
+indexable_statusStringIndexability status of the page (e.g., ok).
+Response example
+A successful request returns a JSON object containing a list of page objects with their associated data.
+Copy
+{
+"total": 1009,
+"items": [
+{
+"id": "50958380",
+"url": "[https://www.vitality.co.uk/](https://www.vitality.co.uk/)",
+"url_len": "27",
+"type": "doc",
+"url_protocol": "https",
+"sitemap": "0",
+"status": "200",
+"size": "156676",
+"depth": "1",
+"noindex": "0",
+"first_ms": "35",
+"load_ms": "1373",
+"robots": "index, follow",
+"nofollow": "0",
+"xrobots": null,
+"title_len": "53",
+"description_len": "139",
+"chars": "153843",
+"h1_len": "35",
+"h2_len": "16",
+"html_ratio": "40",
+"blocked_robots": "0",
+"img": "21",
+"hreflang": null,
+"hreflang_link": null,
+"refresh_time": null,
+"meta_refresh": "0",
+"redirect_url": null,
+"canonical_url": "[https://www.vitality.co.uk/](https://www.vitality.co.uk/)",
+"single_h1": "1",
+"single_h2": "0",
+"h3_count": "9",
+"h4_count": "33",
+"h5_count": "0",
+"h6_count": "0",
+"words_count": "1621",
+"total_links": "230",
+"mixed_count": null,
+"mixed": null,
+"last_modified": null,
+"content_hash": "9d657683ebd385ba700d4301f1ef854f",
+"title": "Vitality Insurance | Award-Winning Insurance Provider",
+"description": "Vitality is a leading UK insurer offering health and life insurance. Get your quote today and unlock discounts and rewards from top brands.",
+"h1": "Live longer with Vitality insurance",
+"h2": "Health insurance",
+"issues": "2",
+"errors": "0",
+"warnings": "0",
+"notices": "2",
+"refpages": "921",
+"inlinks": "922",
+"inlinks_nofollow": "0",
+"inlinks_follow": "922",
+"redirect_links": "4",
+"redirect_count": "5",
+"img_size": "700322",
+"css_size": "443163",
+"js_size": "543728",
+"outlinks_external": "12",
+"outlinks_internal": "83",
+"title_duplicate": "0",
+"description_duplicate": "0",
+"h1_duplicate": "0",
+"amp": "0",
+"indexable": "1",
+"indexable_status": "ok",
+"traffic_forecast": "10716",
+"num_keywords": "48369",
+"recheck_status": null,
+"time_check": "2025-07-29 11:06:30"
+},
+{
+"id": "50958398",
+"url": "[https://www.vitality.co.uk/health-insurance/](https://www.vitality.co.uk/health-insurance/)",
+"url_len": "44",
+"type": "doc",
+"url_protocol": "https",
+"sitemap": "1",
+"status": "200",
+"size": "181179",
+"depth": "2",
+"noindex": "0",
+"first_ms": "0",
+"load_ms": "496",
+"robots": "index, follow",
+"nofollow": "0",
+"xrobots": null,
+"title_len": "52",
+"description_len": "121",
+"chars": "178088",
+"h1_len": "26",
+"h2_len": "33",
+"html_ratio": "42",
+"blocked_robots": "0",
+"img": "27",
+"hreflang": null,
+"hreflang_link": null,
+"refresh_time": null,
+"meta_refresh": "0",
+"redirect_url": null,
+"canonical_url": "[https://www.vitality.co.uk/health-insurance/](https://www.vitality.co.uk/health-insurance/)",
+"single_h1": "1",
+"single_h2": "0",
+"h3_count": "20",
+"h4_count": "39",
+"h5_count": "0",
+"h6_count": "0",
+"words_count": "3032",
+"total_links": "239",
+"mixed_count": null,
+"mixed": null,
+"last_modified": null,
+"content_hash": "5b6d17dbcb03b2405450db10f86dd43a",
+"title": "Health Insurance in the UK | Get Private Health Care",
+"description": "Get top-rated health insurance in the UK, with real benefits and incentives from your healthcare plan. Get a quote today.",
+"h1": "Health insurance in the UK",
+"h2": "What is private health insurance?",
+"issues": "3",
+"errors": "0",
+"warnings": "1",
+"notices": "2",
+"refpages": "896",
+"inlinks": "898",
+"inlinks_nofollow": "0",
+"inlinks_follow": "898",
+"redirect_links": "0",
+"redirect_count": "4",
+"img_size": "2316745",
+"css_size": "443163",
+"js_size": "543728",
+"outlinks_external": "12",
+"outlinks_internal": "86",
+"title_duplicate": "0",
+"description_duplicate": "0",
+"h1_duplicate": "0",
+"amp": "0",
+"indexable": "1",
+"indexable_status": "ok",
+"traffic_forecast": "4928",
+"num_keywords": "13021",
+"recheck_status": null,
+"time_check": "2025-07-29 11:06:45"
+}
+]
+}
+Get audit pages by issue
+GET https://api.seranking.com/v1/site-audit/audits/issue-pages
+Cost: 0 credits
+Retrieves a paginated list of all URLs affected by a specific issue within a given audit. You can identify the code for an issue by first fetching the main audit report.
+Request parameters
+ParameterTypeRequiredDefaultDescription
+audit_idIntegerYesN/AUnique identifier of the audit report.
+codeStringYesN/AUnique code for the issue (e.g., title_duplicate). Audit Issue Codes for the full list of valid codes.
+limitIntegerNo100Number of URLs to return in the list.
+offsetIntegerNo0Starting position (offset) for the list of URLs.
+Request example
+Copy
+curl --location 'https://api.seranking.com/v1/site-audit/audits/issue-pages?code=title_duplicate&audit_id=700183831&limit=10&offset=0' \
+--header 'Authorization: Token YOUR_API_KEY'
+Response parameters
+If successful, the server returns a JSON object containing the total count of affected URLs and an array of the URLs themselves.
+ParameterTypeDescription
+total_urlsIntegerTotal number of URLs affected by this specific issue.
+urlsArrayArray of strings, where each string is a URL affected by the issue.
+urls_typeStringType of urls array returned. For this endpoint, it is simple_urls_array, meaning a plain array of URL strings.
+Response example
+A successful request returns a JSON object containing the unique ID of the created audit.
+Copy
+{
+"total_urls": 143,
+"urls": [
+"https://www.vitality.co.uk/life-insurance/accident-and-fracture-cover/",
+"https://www.vitality.co.uk/business/health-insurance/callback/",
+"https://www.vitality.co.uk/media/vitality-employee-challenges-programme-goes-live/",
+"https://www.vitality.co.uk/media/bbq-blunders-the-bbq-foods-fooling-brits/",
+"https://www.vitality.co.uk/media/vitality-launches-cpd-accredited-sustainability-webinar-series-for-advisers/",
+"https://www.vitality.co.uk/media/vitality-welcomes-new-partners-to-the-programme/",
+"https://www.vitality.co.uk/media/sneezing-season-slams-first-time-sufferers/",
+"https://www.vitality.co.uk/media/vitality-calls-for-greater-focus-on-burnout/",
+"https://www.vitality.co.uk/media/vitality-research-reveals-gaps-in-employee-awareness-of-sick-leave-policies/",
+"https://www.vitality.co.uk/media/vitality-parkrun-celebrate-record-breaking/"
+],
+"urls_type": "simple_urls_array"
+}
+Get all issues by URL
+GET https://api.seranking.com/v1/site-audit/audits/issues
+Cost: 0 credits
+Retrieves a detailed list of all issues (errors, warnings, and notices) found on a single, specific page within an audit. The response also includes the full page_data object for the complete context.
+Request parameters
+ParameterTypeRequiredDefaultDescription
+audit_idIntegerYesN/AUnique identifier of the audit.
+url_idIntegerConditionalN/AUnique identifier of the page obtained from the Get all crawled pages endpoint. Required if url is not provided.
+urlStringConditionalN/AFull page URL. Required if url_id is not provided.
+Request example
+Copy
+curl --location 'https://api.seranking.com/v1/site-audit/audits/issues?audit_id=700183831&url_id=50958380' \
+--header 'Authorization: Token YOUR_API_KEY'
+Response parameters
+If successful, the server returns a JSON object containing the page’s URL, its full data object, and an array of all issues found on that page.
+ParameterTypeDescription
+urlStringFull URL of the page being queried.
+page_dataObjectSnapshot of all metrics and metadata collected for the page during the crawl.
+issuesArrayArray of objects, where each object is a specific issue (error, warning, or notice) found on the page.
+page_data object
+The object provides a full report card of the page’s characteristics. Key fields include:
+On-page SEO: title, description, h1, words, robots, canonical
+Technical metrics: js_size, css_size, img_size, cache, encoding
+Link data: inlinks, total_links, redirect_links
+Issue summary: issues_count, errors_count, warnings_count, notices_count
+issues array
+Each object in the issues array represents a specific problem and has the following structure:
+ParameterTypeDescription
+codeStringUnique, machine-readable identifier for the issue type (e.g., css_big).
+typeStringSeverity of the issue (e.g., error, warning, notice).
+groupStringCategory the issue belongs to (e.g., links_v2, css).
+snippetObjectConcrete, actionable details about the issue: {...}
+The snippet value provides the specific evidence, such as a list of redirecting URLs or an oversized CSS file with its size.
+Response example
+A successful request returns a JSON object containing the page’s data and a list of its issues.
+Copy
+{
+"url": "[https://www.vitality.co.uk/](https://www.vitality.co.uk/)",
+"page_data": {
+"h1": "Live longer with Vitality insurance",
+"h2": "Health insurance",
+"js": 6,
+"css": 1,
+"doc": 83,
+"img": 21,
+"lang": "en",
+"cache": "no-cache, no-store",
+"chars": 153843,
+"title": "Vitality Insurance | Award-Winning Insurance Provider",
+"words": 1621,
+"ext_js": 4,
+"h1_len": 35,
+"h2_len": 16,
+"robots": "index, follow",
+"ext_doc": 12,
+"h1_hash": "4c57f3fc38a26dcc202c11b8975f590e",
+"inlinks": 922,
+"js_size": 543728,
+"css_size": 443163,
+"encoding": "gzip",
+"h1_count": 1,
+"h2_count": 14,
+"h3_count": 9,
+"h4_count": 33,
+"img_size": 700322,
+"refpages": 921,
+"canonical": "[https://www.vitality.co.uk/](https://www.vitality.co.uk/)",
+"title_len": 53,
+"html_ratio": 40,
+"time_check": "2025-07-29 11:06:30",
+"title_hash": "c33af508bc32002acac1e3a12606c626",
+"description": "Vitality is a leading UK insurer offering health and life insurance. Get your quote today and unlock discounts and rewards from top brands.",
+"total_links": 230,
+"errors_count": 0,
+"issues_count": 2,
+"num_keywords": 48369,
+"notices_count": 2,
+"redirect_count": 5,
+"redirect_links": 4,
+"warnings_count": 0,
+"description_len": 139,
+"description_hash": "3bb8e0f3905c4b7203a8b7cae91f890b",
+"traffic_forecast": 10716
+},
+"issues": [
+{
+"code": "extlinks3xx",
+"type": "notice",
+"group": "links_v2",
+"snippet": {
+"type": "urls",
+"value": [
+{
+"status": "302",
+"url": "[https://members.vitality.co.uk/my-points/confirm-an-activity](https://members.vitality.co.uk/my-points/confirm-an-activity)"
+},
+{
+"status": "302",
+"url": "[https://members.vitality.co.uk/](https://members.vitality.co.uk/)"
+}
+]
+}
+},
+{
+"code": "css_big",
+"type": "notice",
+"group": "css",
+"snippet": {
+"type": "urls",
+"value": [
+{
+"status": "200",
+"url": "[https://www.vitality.co.uk/dist/vds/css/presales.css?v=2025.6.30121236](https://www.vitality.co.uk/dist/vds/css/presales.css?v=2025.6.30121236)",
+"size": "443163"
+}
+]
+}
+}
+]
+}
+Get all found links
+GET https://api.seranking.com/v1/site-audit/audits/links
+Cost: 0 credits
+Returns a paginated list of every hyperlink (e.g., in <a> tags, canonicals) discovered across the entire site during the audit. It allows for a complete analysis of all internal and outbound links.
+Request parameters
+ParameterTypeRequiredDefaultDescription
+audit_idIntegerYesN/AUnique identifier of the audit.
+page_typeStringNoallFilters links by type. Possible values: internal, external, all.
+filterArrayNoN/AArray of filter objects to build complex queries. Allows for filtering on link properties like HTTP status. See details below.
+limitIntegerNoN/ANumber of links to return in the list.
+offsetIntegerNoN/AStarting position for the list of links.
+Advanced filtering
+To build complex queries, you can add an array of filter parameters to the URL query string. This allows you to chain multiple conditions together using logical operators.
+Each filter consists of three parts, formatted with an index in brackets (e.g., filter[0], filter[1]):
+filter[index][param]: (Required) The field you want to filter on.
+filter[index][value]: (Required) The value to match.
+filter[index][type]: The logical operator (and or or) to connect this condition to the previous one. This is required for the second condition onwards (i.e., for filter[1], filter[2], etc.).
+Available filterable parameters (param):
+status
+type
+source_noindex
+nofollow
+anchor_type
+Example 1: OR logic
+To find all internal links that have a status code of either 301 OR 302.
+Copy
+curl --location 'https://api.seranking.com/v1/site-audit/audits/links?audit_id=700183831&page_type=internal&limit=10&filter[0][param]=status&filter[0][value]=301&filter[1][param]=status&filter[1][value]=302&filter[1][type]=or' \
+--header 'Authorization: Token YOUR_API_KEY'
+filter[0] sets the base condition (status = 301).
+filter[1][type]=or explicitly connects the next condition (status = 302) with an OR.
+Example 2: AND logic
+To find all broken (404) image links (anchor_type = image).
+Copy
+curl --location 'https://api.seranking.com/v1/site-audit/audits/links?audit_id=700183831&page_type=internal&limit=10&filter[0][param]=status&filter[0][value]=404&filter[1][param]=anchor_type&filter[1][value]=image&filter[1][type]=and' \
+--header 'Authorization: Token YOUR_API_KEY'
+filter[0] sets the base condition (status = 404).
+filter[1][type]=and must be included to connect the second condition (anchor_type = image) with an AND. Omitting it would result in an error.
+Request example
+Copy
+curl --location 'https://api.seranking.com/v1/site-audit/audits/links?audit_id=700183831&page_type=all&limit=4&offset=0' \
+--header 'Authorization: Token YOUR_API_KEY'
+Response parameters
+If successful, the server returns a JSON object containing the total count of links and an array of link objects.
+ParameterTypeDescription
+totalIntegerTotal number of links matching the filter criteria.
+itemsArrayArray of objects, each representing a discovered link.
+Each object in the items array has the following structure:
+ParameterTypeDescription
+urlStringDestination URL of the link (e.g., https://www.vitality.co.uk/).
+idStringUnique identifier for this specific link instance (e.g., 1153787496).
+statusStringHTTP status code of the destination URL (e.g., 200).
+typeStringType of the link (e.g., hyperlink, canonical).
+source_urlStringURL of the page where the link was discovered (e.g., https://www.vitality.co.uk/advisers/).
+source_noindexStringIndicates if the source page has a noindex directive (“1” for yes, “0” for no).
+nofollowStringIndicates if the link has a rel=”nofollow” attribute (“1” for yes, “0” for no).
+anchorStringVisible, clickable text of the link (e.g., Personal).
+anchor typeStringType of the anchor element (e.g., text, image).
+Response example
+A successful request returns a JSON object containing a list of all discovered links.
+Copy
+{
+"total": 103624,
+"items": [
+{
+"url": "[https://www.vitality.co.uk/](https://www.vitality.co.uk/)",
+"id": "1153787496",
+"status": "200",
+"type": "hyperlink",
+"source_url": "[https://www.vitality.co.uk/advisers/](https://www.vitality.co.uk/advisers/)",
+"source_noindex": "1",
+"nofollow": "0",
+"alt": "",
+"anchor_type": "text",
+"anchor": "Personal",
+"title": ""
+},
+{
+"url": "[https://www.vitality.co.uk/](https://www.vitality.co.uk/)",
+"id": "1153787624",
+"status": "200",
+"type": "hyperlink",
+"source_url": "[https://www.vitality.co.uk/business/](https://www.vitality.co.uk/business/)",
+"source_noindex": "0",
+"nofollow": "0",
+"alt": "",
+"anchor_type": "text",
+"anchor": "Personal",
+"title": ""
+},
+{
+"url": "[https://www.vitality.co.uk/](https://www.vitality.co.uk/)",
+"id": "1153787774",
+"status": "200",
+"type": "hyperlink",
+"source_url": "[https://www.vitality.co.uk/community/](https://www.vitality.co.uk/community/)",
+"source_noindex": "0",
+"nofollow": "0",
+"alt": "",
+"anchor_type": "text",
+"anchor": "Personal",
+"title": ""
+},
+{
+"url": "[https://www.vitality.co.uk/](https://www.vitality.co.uk/)",
+"id": "1153787908",
+"status": "200",
+"type": "hyperlink",
+"source_url": "[https://www.vitality.co.uk/healthcare-providers/](https://www.vitality.co.uk/healthcare-providers/)",
+"source_noindex": "0",
+"nofollow": "0",
+"alt": "",
+"anchor_type": "text",
+"anchor": "Personal",
+"title": ""
+}
+]
+}
+Get audit history by date
+GET https://api.seranking.com/v1/site-audit/audits/history
+Cost: 0 credits
+Retrieves a historical snapshot of a specific audit run, providing the full context of that audit, including the settings used, domain data at the time, and a summary of all issues found.
+Request parameters
+ParameterTypeRequiredDefaultDescription
+audit_idIntegerYesN/AUnique identifier of the audit.
+dateStringYesN/ASpecific date of the historical audit to retrieve (YYYY-MM-DD).
+Request example
+Copy
+curl --location 'https://api.seranking.com/v1/site-audit/audits/history?audit_id=700183831&date=2025-07-29' \
+--header 'Authorization: Token YOUR_API_KEY'
+Response parameters
+If successful, the server returns a JSON object containing the complete historical data for the specified audit run.
+ParameterTypeDescription
+audit_timeStringExact timestamp when the historical audit was completed.
+domain_dataObjectObject containing general data about the domain at the time of the audit (e.g., backlinks, indexed pages).
+settingsObjectObject detailing all the configuration settings that were used for this specific audit run.
+pages_dataObjectObject where each key is an issue code (e.g., title_duplicate) and the value is the number of pages affected by that issue.
+totalsObjectObject summarizing the final counts for the audit (total_pages, total_warnings, total_errors).
+Response example
+A successful request returns a JSON object containing the unique ID of the created audit.
+Copy
+{
+"audit_time": "2025-07-29 11:19:33",
+"domain_data": {
+"dt": 44,
+"domain": "www.vitality.co.uk",
+"backlinks": "212249",
+"index_google": "1380"
+},
+"settings": {
+"source_site": 1,
+"source_sitemap": 1,
+"max_pages": 1000,
+"max_depth": 10
+},
+"pages_data": {
+"css3xx": 1,
+"css_big": 880,
+"h1_long": 19,
+"http4xx": 28,
+"title_duplicate": 143,
+"description_duplicate": 169
+},
+"totals": {
+"total_pages": 1009,
+"total_warnings": 979,
+"total_errors": 346,
+"total_passed": 77
+},
+"version": "2.0"
+}
+Update audit title
+PATCH https://api.seranking.com/v1/site-audit/audits
+Cost: 0 credits
+Changes the title of an existing website audit report.
+Request parameters
+Query parameter:
+ParameterTypeRequiredDefaultDescription
+audit_idIntegerYesN/AUnique identifier of the audit to update.
+Body parameter:
+ParameterTypeRequiredDefaultDescription
+titleStringYesN/ANew title for the audit report. Maximum 300 characters.
+Request example
+Copy
+curl --location --request PATCH 'https://api.seranking.com/v1/site-audit/audits?audit_id=89263' \
+--header 'Content-Type: application/json' \
+--header 'Authorization: Token YOUR_API_KEY' \
+--data '{
+"title": "New Title for Ananda Ioga Audit"
+}'
+Response parameters
+If successful, the server returns HTTP 200 OK with an empty response body.
+Response example
+Copy
+[]
+Delete audit
+DELETE https://api.seranking.com/v1/site-audit/audits
+Cost: 0 credits
+Permanently deletes a specified website audit report and all of its associated data. This action can’t be undone.
+Request parameters
+ParameterTypeRequiredDefaultDescription
+audit_idIntegerYesN/AUnique identifier of the audit to delete.
+Request example
+Copy
+curl --location --request DELETE 'https://api.seranking.com/v1/site-audit/audits?audit_id=89263' \
+--header 'Authorization: Token YOUR_API_KEY'
+Response parameters
+If successful, the server returns HTTP 200 OK with an empty response body.
+Response example
+Copy
+[]
+Recheck audit
+There are two endpoints for initiating a new crawl of a previously completed audit, using the same settings as the original run. This is useful for tracking changes and confirming that issues have been resolved.
+Recheck standard audit
+POST https://api.seranking.com/v1/site-audit/audits/recheck/standard
+Cost: 2 credits per crawled page
+Launches a new standard crawl for an existing audit.
+Recheck advanced audit
+POST https://api.seranking.com/v1/site-audit/audits/recheck/advanced
+Cost: 20 credits per crawled page
+Launches a new advanced crawl with JavaScript rendering for an existing audit.
+Request parameters
+ParameterTypeRequiredDefaultDescription
+audit_idStringYesN/AUnique identifier of the audit to recheck, passed as a query parameter.
+Request examples
+To launch a standard recheck:
+Copy
+curl --location --request POST 'https://api.seranking.com/v1/site-audit/audits/recheck/standard?audit_id=700237033' \
+--header 'Authorization: Token YOUR_API_KEY'
+To launch an advanced recheck:
+Copy
+curl --location --request POST 'https://api.seranking.com/v1/site-audit/audits/recheck/advanced?audit_id=700237033' \
+--header 'Authorization: Token YOUR_API_KEY'
+Response parameters
+If successful, the server returns HTTP 200 OK with an empty response body.
+Response example
+Copy
+[]
+Learn how SE Ranking’s API can boost your SEO!
+Hi! Meet our product experts!
+One of them will walk you through the API and show you how to get the most out of it.
+Enjoy a tailored demo on integrating rich, structured SEO data into your stack.
+Pin down every tech detail live—auth, endpoints, rate limits, data formats.
+Compare usage tiers and pricing so you can unlock maximum data value.
+Request a free demo to see our tools and integrations in action
+By clicking this button, you agree to SE Ranking’s
+Terms of Service and Privacy Statement.
+column
+Core SEO Tools
+Rank Tracker
+Website Audit
+On-Page SEO Checker
+SERP Tracker
+Backlink Checker
+Keyword Grouper
+Keyword Tool
+Website Competitor Analysis Tool
+AI Overviews Tracker
+All features
+Performance & Reporting Tools
+Webpage Monitor
+SEO Report Generator
+SEO Dashboard
+column
+Add-ons
+Local Marketing Software
+Content Marketing Tool
+Agency Pack
+White Label
+Additional Services
+SEO API
+Free SEO tools
+SEO Task Manager
+Support & Partnership
+Contact
+Help
+Affiliate
+Educational Partnership Program
+column
+Company & Resources
+SEO Blog
+About
+Stand with Ukraine
+Careers
+What’s New
+Testimonials
+Webinars
+Academy
+Competitors
+FAQ
+Legal & Technical
+Privacy Statement
+Cookie Policy
+Legal Information
+Open Source Attributions
+Download
+enEnglish
+enEnglish
+deDeutsch
+frFrançais
+esEspañol
+nlNederlands
+itItaliano
+ptPortuguês
+uaУкраїнська
+ruРусский
+あ日本語
+© 2013 - 2026 SER Acquisition Inc. All Rights Reserved

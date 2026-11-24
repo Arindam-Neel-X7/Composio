@@ -1,0 +1,53 @@
+{
+  "js_syntax_ok": true,
+  "js_syntax_stderr": "",
+  "js_runtime_ok": true,
+  "js_runtime_report": {
+    "totalApps": 100,
+    "categoriesPopulated": 10,
+    "searchHubSpot": 1,
+    "searchPaygent": 1,
+    "queues": {
+      "build_now": 44,
+      "conditional": 50,
+      "outreach_required": 4,
+      "unknown": 2
+    },
+    "sampleOnly": 20,
+    "auth": {
+      "OAuth2": 79,
+      "API_key": 39,
+      "Bearer_token": 35,
+      "Basic": 15,
+      "none": 5,
+      "other": 8,
+      "JWT": 2,
+      "session_cookie": 1
+    },
+    "mcp": {
+      "official_only": 66,
+      "community_only": 15,
+      "official_and_community": 4,
+      "not_found_bounded": 11,
+      "unknown": 4
+    },
+    "sortNameFirst": "Ahrefs",
+    "sortNameLast": "Zoho CRM",
+    "drawerOk": 100,
+    "drawerErrors": [],
+    "escTest": true
+  },
+  "css_responsive_a11y": {
+    "viewport_meta_present": true,
+    "media_queries": [
+      "@media (max-width: 768px)"
+    ],
+    "table_horizontal_scroll": true,
+    "hide_sm_defined": true,
+    "drawer_mobile_width": true,
+    "dark_theme_vars": true,
+    "sticky_topnav": true,
+    "aria_modal_drawer": true,
+    "aria_labels_count": 7
+  }
+}

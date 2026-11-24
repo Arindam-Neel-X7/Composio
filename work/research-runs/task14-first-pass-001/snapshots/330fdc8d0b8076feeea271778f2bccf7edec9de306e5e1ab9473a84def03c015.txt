@@ -1,0 +1,231 @@
+Notion API quickstart
+Documentation Index
+Fetch the complete documentation index at: /llms.txt
+Use this file to discover all available pages before exploring further.
+Skip to main content
+Assistant
+Responses are generated using AI and may contain mistakes.
+Notion Docs home page
+Search...
+⌘KAsk Assistant⌘I
+Log in
+Developer portal
+Developer portal
+Search...
+Navigation
+Notion API
+Quickstart
+Guides
+API Reference
+CLI Reference
+Workers
+Admin API
+Changelog
+Examples
+Notion API
+Quickstart
+Connections and tokens
+Authorization
+Developer tools
+Notion MCP
+Overview
+Connect to Notion MCP
+Supported tools
+Skills via MCP
+Enterprise-managed authorization
+Security best practices
+Agent APIs
+Notion Agent APIs
+Agent Skills API
+API versions
+Upgrading to 2026-03-11
+Upgrading to 2025-09-03
+Data APIs
+Working with page content
+Read page properties
+Working with databases
+Working with views
+Working with comments
+Working with markdown content
+Working with files and media
+Resources
+Example code
+Postman workspace
+Historical changelog
+Compliance
+Overview
+Event reference
+Link previews
+Introduction
+On this page
+Back to top
+Step 1: Get a personal access token
+Step 2: Create a page
+Check the result
+Next steps
+Notion API
+Quickstart
+Copy pageCopy page
+Create a page in your Notion workspace with a personal access token and a single API request.
+Copy pageCopy page
+Build tools and automations that create pages, organize data, and share feedback in Notion. This guide walks you through creating your first page with the API. You need a Notion account and a terminal.
+Step 1: Get a personal access token
+A personal access token (PAT) lets you authenticate API requests as yourself without setting up a connection or completing an OAuth flow.
+1
+Open Personal access tokens in the Developer portal.
+2
+Select New token.
+3
+Enter a name, select the Notion API capability, and then select Create token. If a workspace picker appears, select a workspace first.
+4
+Copy the token and save it somewhere secure. You won’t be able to see it again.
+Don’t see the option to create a token?On Business and Enterprise plans, PAT creation is restricted by default. Ask a workspace owner to enable it in Settings → Connections.See Who can create PATs.
+Set the token as an environment variable so you can use it in the examples below. Set it again if you open a new terminal. Keep the token out of browser code and public repositories.
+macOS / Linux
+Windows (PowerShell)
+export NOTION_API_KEY=ntn_...
+$env:NOTION_API_KEY = "ntn_..."
+Step 2: Create a page
+Make a POST request to the Create a page endpoint with markdown content. The API creates a private page in your workspace, using the # heading as the page title automatically.
+curl
+HTTP
+JavaScript
+curl -X POST https://api.notion.com/v1/pages \
+-H "Authorization: Bearer $NOTION_API_KEY" \
+-H "Notion-Version: 2026-03-11" \
+-H "Content-Type: application/json" \
+-d '{
+"icon": { "emoji": "🚀" },
+"markdown": "# Hello from the API\n\n## Welcome\n\nThis page was created with the Notion API. You just made your first request!\n\n- Read the [API reference](https://developers.notion.com/reference/intro)\n- Explore [examples](https://developers.notion.com/page/examples)"
+}'
+POST https://api.notion.com/v1/pages
+Authorization: Bearer {PERSONAL_ACCESS_TOKEN}
+Content-Type: application/json
+Notion-Version: 2026-03-11
+{
+"icon": { "emoji": "🚀" },
+"markdown": "# Hello from the API\n\n## Welcome\n\nThis page was created with the Notion API. You just made your first request!\n\n- Read the [API reference](https://developers.notion.com/reference/intro)\n- Explore [examples](https://developers.notion.com/page/examples)"
+}
+// Save as quickstart.mjs after running: npm install @notionhq/client
+import { Client } from "@notionhq/client";
+const notion = new Client({
+auth: process.env.NOTION_API_KEY,
+notionVersion: "2026-03-11",
+});
+async function main() {
+const page = await notion.pages.create({
+icon: { emoji: "🚀" },
+markdown: [
+"# Hello from the API",
+"",
+"## Welcome",
+"",
+"This page was created with the Notion API. You just made your first request!",
+"",
+"- Read the [API reference](https://developers.notion.com/reference/intro)",
+"- Explore [examples](https://developers.notion.com/page/examples)",
+].join("\n"),
+});
+console.log("Created page:", page.url);
+}
+main();
+The markdown field accepts enhanced markdown — headings, lists, code blocks, links, and more. The API converts it to Notion blocks for you.
+Under the hood: markdown → blocks
+Notion pages are made up of blocks — headings, paragraphs, lists, and more. When you send markdown, the API converts it into this block structure automatically.You can also build this structure directly using the children field. Here’s what the same page looks like expressed as blocks:
+{
+"icon": { "emoji": "🚀" },
+"properties": {
+"title": [{ "text": { "content": "Hello from the API" } }]
+},
+"children": [
+{
+"object": "block",
+"type": "heading_2",
+"heading_2": {
+"rich_text": [{ "text": { "content": "Welcome" } }]
+}
+},
+{
+"object": "block",
+"type": "paragraph",
+"paragraph": {
+"rich_text": [
+{
+"text": {
+"content": "This page was created with the Notion API. You just made your first request!"
+}
+}
+]
+}
+}
+]
+}
+The block model gives you precise control over every element — formatting, colors, toggles, and block types that markdown can’t express. Use markdown when you want simplicity, and children when you need that control.See Working with page content to learn more about the block model.
+Check the result
+A successful response returns a page object:
+Response
+{
+"object": "page",
+"id": "a1b2c3d4-e5f6-7890-abcd-ef1234567890",
+"created_time": "2025-01-15T09:30:00.000Z",
+"last_edited_time": "2025-01-15T09:30:00.000Z",
+"icon": {
+"type": "emoji",
+"emoji": "🚀"
+},
+"parent": {
+"type": "workspace",
+"workspace": true
+},
+"properties": {
+"title": {
+"id": "title",
+"type": "title",
+"title": [{ "plain_text": "Hello from the API" }]
+}
+},
+"url": "https://www.notion.com/Hello-from-the-API-a1b2c3d4e5f67890abcdef1234567890",
+"public_url": null
+}
+To see your new page:
+From the response: Copy the url value and open it in your browser.
+From Notion: Look in Private in your sidebar for 🚀 Hello from the API.
+Open the page and you should see your heading, paragraph, and bullet list inside.
+Getting an error?
+Error responses return a JSON object with a code and message:
+{
+"object": "error",
+"status": 401,
+"code": "unauthorized",
+"message": "API token is invalid."
+}
+ErrorFix
+unauthorizedDouble-check that your token is correct and hasn’t expired.
+validation_errorCheck the request body against the Create a page reference.
+For the full list of error codes, see Status codes.
+Next steps
+Now that you’ve made your first request, explore what else you can build.
+Pages
+Create, update, and retrieve page content.
+Databases
+Create a database and find its data sources.
+Views
+Create and configure database views programmatically.
+Data sources
+Manage data sources, properties, entries, and schemas.
+File uploads
+Upload and attach files to pages and databases.
+Comments
+Handle page and inline comments.
+Content queries
+Find pages and data sources by title.
+Users
+Read user profiles available to your connection.
+For a team automation or an app others can install, compare connections and tokens.
+API reference
+Browse every endpoint, request parameter, and response field.
+JavaScript SDK
+Official client library for Node.js.
+Connections and tokens
+Next
+xslack

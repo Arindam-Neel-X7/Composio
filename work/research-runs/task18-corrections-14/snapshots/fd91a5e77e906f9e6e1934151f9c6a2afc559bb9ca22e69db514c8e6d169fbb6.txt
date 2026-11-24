@@ -1,0 +1,100 @@
+Managing API call limits in Airtable | Airtable Help Center
+Contact support
+Sign up for free
+All Collections›Integrating with Airtable›API
+Managing API call limits in Airtable
+Last updated 1 month ago
+Plan availability
+All plan types
+Permissions
+Rate limits apply to all plans (via the workspace or workspaces under that plan)
+Monthly limits apply to Free and Team plans only
+Platform(s)
+Web/Browser, Mac app, and Windows app
+Related reading
+Getting started with Airtable's Web API
+Create records
+Update multiple records
+Delete multiple records
+What is an Airtable API call?
+An API call is a request sent from an application to Airtable's servers, asking it to perform a specific action—like retrieving records from a base, creating a new record, or updating existing data. When Airtable receives the request, it processes it and sends back a response containing either the requested data or confirmation that the action was completed.
+Airtable's Web API is RESTful, meaning it uses standard web protocols and returns data in JSON format. Every API call targets a specific base and table using a URL structure like:
+https://api.airtable.com/v0/{baseId}/{tableId}
+Common examples of API calls in Airtable include:
+List records — Retrieve records from a table, returned in pages of up to 100 at a time
+Create records — Add new records to a table from an external form, app, or automation
+Update records — Modify field values in existing records
+Delete records — Remove records from a table programmatically
+Get base schema — Retrieve information about a base's structure, including its tables and fields
+What's included in an API call?
+Each API call typically contains:
+The endpoint URL specifying the base and table you're accessing
+The HTTP method
+Authentication via a personal access token in the request header
+Optional parameters like filters, sort order, or field selections
+A request body (for create and update operations) containing the record data in JSON format
+Understanding rate limits
+Airtable API allows you to integrate data in Airtable with any external system. The API closely follows REST semantics, uses JSON to encode objects, and relies on standard HTTP codes to signal operation outcomes.
+Airtable enforces a rate limit of 5 requests per second (per base) to ensure optimal user performance across all pricing tiers. Additionally, there is a limit of 50 requests per second for all traffic using personal access tokens from a given user or service account. If you exceed this rate, you will receive a 429 status code and must wait 30 seconds before subsequent requests will succeed. API integrations should pause and wait before retrying the API request—behavior handled automatically by the official JavaScript client—with back-off and retry logic.
+For other implementations, you may employ the following strategies to manage your API usage effectively and stay within this rate limit.
+Web API requests are subject to a timeout that is separate from rate limits. A request that takes too long to process, often a complex filterByFormula or a large page size, can time out and return an error even when you're within your rate limit. If you hit timeouts, reduce the page size, simplify the formula, or narrow the query.
+Monthly call limits for Free and Team plans
+Free plan: 1000 API calls per month
+Team plan: 100000 API calls per month
+Monthly calls for Free and Team plans are also limited to 5 requests per second rate limit.
+Detailed API usage analytics are only available for Free plans. Because Team, Business, and Enterprise Scale plans have high or unlimited API call allowances, granular usage tracking is not provided for these plan types.
+Where can I find API usage analytics on Free plan workspaces?
+You must be a workspace owner to access a particular workspace’s settings page.
+Open your Airtable home screen.
+Choose a workspace that you own from the sidebar on the left side of the screen.
+Click the … icon and click Workspace settings.
+In the “Summary” section you’ll see a total count of “Public API calls” made across the workspace for the current month.
+If you’d like to view the API usage for individual bases, then click the Usage tab and scroll through the “Bases” section to find each base’s API call usage this month, if there is any.
+Additionally, you can scroll until you find the “Public API Usage” section to see specific public API usage information.
+What happens if I exceed limits on the Free plan?
+API call limits are fixed per workspace plan and cannot be adjusted on a per-account basis. We're unable to grant additional API calls beyond your plan's monthly allowance or make exceptions to these limits. If you find you're consistently reaching your limit, we'd recommend upgrading to a plan with a higher allocation to better fit your needs.
+The 30-day grace period is only available once. If you exceed call limits in the future, a new grace period is unavailable.
+If you exceed your Free plan's call limit, a 30-day grace period is initiated, allowing you to continue using the API for that period. After the grace period ends, any API calls over the limit will be blocked until the month resets. API limits reset on the first day of each calendar month.
+What happens if I exceed limits on the Team plan?
+If you exceed your Team plan's call limit, any API calls will slow down to 2 requests per second until the month resets. API limits reset on the first day of each calendar month.
+If you use a third-party integration with Airtable that performs API requests on your behalf, it is the third party's responsibility to handle rate limits appropriately. We suggest contacting the third-party support team for further details if you encounter rate limit errors.
+Airtable may also update the enforced API rate limits or implement additional limitations, including changes based on pricing plans.
+Rate limit management strategies
+Batching overview - Airtable's API supports batching, allowing you to process multiple records per request instead of one at a time. Batching can handle up to 10 records per request, enabling you to update up to 50 records per second. To learn more about batching in Airtable, review our API documentation:
+Create records
+Update multiple records
+Delete multiple records
+Using the performUpsert parameter - The performUpsert parameter endpoint allows users to find, create, and update records in a single call, reducing the number of necessary API requests.
+Avoiding duplicate actions - Avoid updating all records, including duplicates, as this can lead to unnecessary processing and transmission of unchanged records.
+Using Sync API - The Sync API feature allows users to sync CSV data with up to 10,000 rows per request instead of 10 records per request using the regular create or update records JSON endpoints—which can significantly reduce the number of necessary API requests.
+Caching - One approach for managing Airtable’s rate limit is using a caching mechanism to handle a high volume of read and list requests. Some developers choose to host a server running an API proxy that fetches and caches Airtable data. This approach can spread your requests over a longer period, helping you avoid hitting the API limits.
+Managing API usage is crucial to ensure smooth and uninterrupted interactions with your Airtable data. By implementing the above-mentioned strategies, you can stay within the rate limit and optimize your API operations.
+FAQs
+What are the API call limits for each plan?
+Airtable's API call limits vary by plan:
+Free: 1,000 API calls per workspace per month. Once exceeded, a 30-day grace period begins.
+Team: 100,000 API calls per workspace per month. Once the limit is reached, API calls are throttled to 2 requests per second.
+Business / Enterprise Scale: No monthly call cap; rate limiting applies per base.
+Why am I getting a 429 error even though my request rate is very low?
+A 429 has two possible causes:
+Monthly call cap: Applies to Free (1,000 calls/workspace/month) and Team (100,000/month) plans. If you're well under 5 requests/second but still seeing 429s, you've most likely reached your monthly cap. Check your usage on a Free-plan workspace via Workspace settings → Usage. Note that all Web API calls — including metadata/schema calls like GET /v0/meta/bases/{baseId}/tables — count toward these same limits; there is no separate, looser metadata allowance.
+Per-base rate limit: 5 requests/second per base, or 50/second per personal access token, which is unlikely if you're only sending a few requests per minute.
+Why am I receiving a 429 error on every API request, but my workspace usage shows very few calls?
+The most common reason is that you're checking the wrong workspace. API call limits are counted per workspace (Free = 1,000 calls/month), and your integration is hitting whichever workspace contains the base it's actually calling — which may not be the workspace you opened. If one workspace shows near-zero usage but you're still 429ing on every request, another workspace likely holds the base being called and is over its monthly cap. To find it: identify the base your app/integration (Zite, Make, a script, etc.) connects to, open the Usage tab of that base's workspace (Workspace settings → Usage), and check the "Public API calls" figure. If that workspace is over its monthly limit, every request will return 429 until the workspace is upgraded or the monthly counter resets.
+Receiving a 429 error on every request, continuing even with no activity, points to the monthly cap on the relevant workspace — not the per-second rate limit.
+Once you've confirmed (in the correct workspace's Usage tab) that the workspace is over its monthly API allowance, the options are: wait for the monthly reset (the counter resets at the start of the next calendar month), or upgrade the workspace to a plan with a higher allowance — Team includes 100,000 calls/month, and Business and Enterprise Scale include unlimited calls. Note the monthly cap is fixed per workspace and can't be raised on a per-account basis, and any one-time grace period is available only once. To avoid recurring overages, reduce unnecessary calls (cache results, batch requests, and avoid frequent polling — for example, repeated login/credential-validation calls from an app each count as API calls).
+Do third-party integrations count against my API quota?
+Yes. Requests made by third-party integrations and tools that connect through your Airtable account consume the same monthly Public API quota as your own API calls. If you're approaching your limit, review which connected integrations are making requests on your behalf.
+What happens if I downgrade from Team to Free mid-month after using more than 1,000 API calls?
+API calls are counted per workspace for each calendar month (UTC), no matter which plan the workspace was on when the calls were made. A downgrade takes effect at the end of your current billing cycle, which can fall partway through a calendar month. From that date, every API call the workspace made earlier in the month, including calls made on the Team plan, counts toward the Free plan's limit of 1,000 calls per month.
+If the workspace is already over 1,000 calls for the month when it moves to the Free plan, there are a couple of different possibilities of how Airtable will handle the exceeded limitation:
+If the workspace hasn't used its one-time grace period, a 30-day grace period begins and we'll email you. API access continues during the grace period, so integrations that use bases in the workspace keep running.
+If the workspace has already used its grace period, API requests to bases in the workspace return a 429 error until the monthly count resets on the first day of the next calendar month (UTC). Integrations that rely on those bases stop working until then. If you upgrade the workspace again, access comes back within a few minutes.
+Airtable updates API usage and checks it against plan limits once a day, so the grace period or block may start a day or two after the downgrade takes effect.
+To avoid interruptions, check which integrations are making API calls in the workspace before you downgrade (you can see current usage on the workspace settings page), and reduce or pause them if the workspace is likely to go over the Free plan's limit. Learn more in our Upgrading and downgrading your Airtable workspace plan article.
+Related Articles
+Getting started with Airtable's Web API
+Airtable Web API - Using filterByFormula or sort parameters
+Service accounts overview
+Airtable API: Common troubleshooting
+Airtable API Deprecation Guidelines

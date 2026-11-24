@@ -1,0 +1,360 @@
+Introduction | Management API Reference | Supabase Docs
+Skip to content
+DOCS
+Start
+Products
+Build
+Manage
+Reference
+Resources
+DOCS
+Search
+CtrlK Ask AI Main menu
+Open menu
+Main menu
+StartProductsBuildManageReferenceResources
+Reference
+Client Library Reference
+JavaScriptFlutterSwiftPythonC#Kotlin
+Community
+Server SDK
+New
+Middleware SDK
+New
+TanStack DB
+Experimental
+CLI CommandsManagement APILibrary
+Management API
+Introduction
+Advisors
+Get performance advisors
+Get security advisors
+Run project advisors
+Analytics
+Create log drain
+Delete log drain
+Get project function combined stats
+Get project logs
+Get project logs all
+Get project usage api count
+Get project usage request count
+List log drains
+Scrape project metrics
+Update log drain
+Auth
+Create a sso provider
+Create legacy signing key
+Create project signing key
+Create project tpa integration
+Delete a sso provider
+Delete project tpa integration
+Get a sso provider
+Get auth service config
+Get legacy signing key
+Get project signing key
+Get project signing keys
+Get project tpa integration
+List all sso provider
+List project tpa integrations
+Remove project signing key
+Update a sso provider
+Update auth service config
+Update project signing key
+Billing
+Apply project addon
+List project addons
+Remove project addon
+Compute
+Create compute instance upload
+Delete a compute instance
+Deploy a compute instance
+Get a compute instance
+List all compute instances
+Database
+Accept invite external jit access
+Apply a migration
+Authorize jit access
+Create login role
+Delete invite external jit access
+Delete jit access
+Delete login roles
+Disable readonly mode temporarily
+Enable database webhook
+Generate typescript types
+Get a migration
+Get a snippet
+Get backup schedule
+Get database metadata
+Get database openapi
+Get jit access
+Get jit access config
+Get pooler config
+Get postgres config
+Get project pgbouncer config
+Get readonly mode status
+Get ssl enforcement config
+Invite external jit access
+List all backups
+List all snippets
+List jit access
+List migration history
+Patch a migration
+Patch postgres config
+Read only query
+Remove a read replica
+Restore pitr backup
+Rollback migrations
+Run a query
+Setup a read replica
+Update backup schedule
+Update database password
+Update jit access
+Update jit access config
+Update pooler config
+Update postgres config
+Update ssl enforcement config
+Upsert a migration
+Domains
+Activate custom hostname
+Activate vanity subdomain config
+Check vanity subdomain availability
+Deactivate vanity subdomain config
+Get hostname config
+Get vanity subdomain config
+Update hostname config
+Verify dns config
+Edge Functions
+Bulk update functions
+Create a function
+Delete a function
+Deploy a function
+Get a function
+Get a function body
+List all functions
+Update a function
+Environments
+Count action runs
+Create a branch
+Create a branch
+Delete a branch
+Diff a branch
+Disable preview branching
+Get a branch
+Get a branch config
+Get action run
+Get action run logs
+List action runs
+List all branches
+Merge a branch
+Push a branch
+Reset a branch
+Restore a branch
+Update a branch config
+Update action run status
+OAuth
+Authorize user
+Exchange oauth token
+Oauth authorize project claim
+Revoke token
+Organization webhooks
+Create endpoint
+Delete all endpoints
+Delete endpoint
+Get delivery
+Get endpoint
+List deliveries
+List endpoints
+Retry delivery
+Send test event
+Update endpoint
+Organizations
+Assign organization member role
+Create an organization
+Get an organization
+Get organization entitlements
+List all organizations
+List organization github connections
+List organization members
+List organization members
+List organization projects
+List organization roles
+Remove organization members
+Organizations Members Invitations
+Create organization invitations
+Delete organization invitations
+Profile
+Get profile
+Project webhooks
+Create endpoint
+Delete all endpoints
+Delete endpoint
+Get delivery
+Get endpoint
+List deliveries
+List endpoints
+Retry delivery
+Send test event
+Update endpoint
+Projects
+Cancel a project restoration
+Create a project
+Create notebook
+Create private link association
+Delete a project
+Delete network bans
+Delete notebook
+Delete private link association
+Delete private link association for database
+Download project backup
+Get all projects for organization
+Get available regions
+Get database disk
+Get disk utilization
+Get network restrictions
+Get notebook
+Get postgres upgrade eligibility
+Get postgres upgrade status
+Get project
+Get project config
+Get project disk autoscale config
+Get services health
+List all network bans
+List all network bans enriched
+List all projects
+List available restore versions
+List notebooks
+List private link associations
+Modify database disk
+Patch network restrictions
+Pause a project
+Preview a project transfer
+Restart a project
+Restore a project
+Review network restrictions
+Transfer a project
+Update a project
+Update network restrictions
+Update notebook
+Upgrade postgres version
+Realtime
+Get realtime config
+Shutdown realtime
+Update realtime config
+Rest
+Get postgrest service config
+Update postgrest service config
+Secrets
+Bulk create secrets
+Bulk delete secrets
+Create project api key
+Delete project api key
+Get pgsodium config
+Get project api key
+Get project api keys
+Get project legacy api keys
+List all secrets
+Update pgsodium config
+Update project api key
+Update project legacy api keys
+Storage
+Get storage config
+List all buckets
+Update storage config
+DOCS
+Start
+Products
+Build
+Manage
+Reference
+Resources
+DOCS
+Search
+CtrlK Ask AI Main menu
+Open menu
+Management API
+Manage your Supabase organizations and projects programmatically.
+Authentication
+All API requests require an access token to be included in the Authorization header: Authorization Bearer <access_token>.
+There are two ways to generate an access token:
+Personal access token (PAT):
+PATs are tokens with a custom expiry that you manually generate to access the Management API. They are useful for automating workflows or developing against the Management API. A scoped PAT can only reach the organizations, projects, and permissions you choose when creating it. A classic PAT, shown as Legacy in the dashboard, carries the same privileges as your user account. Prefer scoped PATs, and keep every token secret.
+To generate or manage your personal access tokens, visit your account page. See Personal access tokens for the permission each endpoint requires.
+OAuth2:
+OAuth2 allows your application to generate tokens on behalf of a Supabase user, providing secure and limited access to their account without requiring their credentials. Use this if you're building a third-party app that needs to create or manage Supabase projects on behalf of your users. Tokens generated via OAuth2 are short-lived and tied to specific scopes to ensure your app can only perform actions that are explicitly approved by the user.
+See Build a Supabase Integration to set up OAuth2 for your application.
+1
+curl https://api.supabase.com/v1/projects \
+2
+-H "Authorization: Bearer sbp_bdd0••••••••••••••••••••••••••••••••4f23"
+All API requests must be authenticated and made over HTTPS.
+Rate limits
+Rate limits are applied to prevent abuse and ensure fair usage of the Management API. Rate limits are based on a per-user, per-scope model, meaning each user gets independent rate limits for each project and organization they interact with.
+Standard rate limit
+LimitDurationScope
+120 requests1 minutePer user, per project or organization, per endpoint
+When you exceed this rate limit, all further API calls return a 429 Too Many Requests response for the remainder of the minute. Once the time window expires, your request quota resets and you can make requests again.
+Rate limit scope
+Rate limits are applied with per-user, per-scope, per-endpoint isolation:
+Project scope: rate limits apply independently to each project.
+Organization scope: rate limits apply independently to each organization.
+User scope: requests that don't include a project or organization, such as GET /v1/projects and GET /v1/organizations, are counted against the user.
+Endpoint: within each scope, every endpoint has its own limit.
+For example, you can make 120 requests to Project A and 120 requests to Project B within the same minute, as they are tracked separately. Within one organization, calling GET /v1/organizations/{slug}/members 120 times doesn't affect calls to GET /v1/organizations/{slug} or POST /v1/projects for that organization.
+POST /v1/projects is organization-scoped, using the organization_slug in the request body.
+How rate limits are tracked
+Your requests are identified and tracked using one of the following identifiers, in this order of priority:
+OAuth App ID: If your request is authenticated via an OAuth application
+User ID: If your request is authenticated with a personal access token
+IP Address: If your request is unauthenticated (extracted from request headers)
+Each identifier is combined with the scope (project or organization) and the endpoint to create a unique tracking key. This ensures that rate limits are isolated per user and per scope, preventing one project or organization from affecting another.
+Who the limit applies to
+Personal access tokens: the limit applies to the user, so all tokens created by the same user share it.
+OAuth apps: the limit applies to the app, shared by everyone calling through it.
+Rate limit response headers
+Every API response includes rate limit information following official HTTP specification headers:
+X-RateLimit-Limit - The maximum number of requests allowed in the current time window
+X-RateLimit-Remaining - The number of requests remaining before you hit the rate limit
+X-RateLimit-Reset - The number of seconds remaining until your rate limit resets
+You can use these headers to monitor your usage and implement proactive rate limit handling before receiving a 429 response.
+Endpoint exceptions
+Some endpoints have stricter rate limits than the standard 120 requests per minute to prevent abuse of resource-intensive operations:
+EndpointLimitDurationReason
+GET /v1/projects/:ref/endpoints/logs.all30 requests1 minuteAnalytics log queries are computationally expensive
+GET /v1/projects/:ref/endpoints/usage.api-counts30 requests1 minuteAnalytics aggregation is computationally expensive
+GET /v1/projects/:ref/endpoints/usage.api-requests-count30 requests1 minuteAnalytics aggregation is computationally expensive
+GET /v1/projects/:ref/database/context10 requests1 minuteDatabase context operations are resource-intensive
+GET /v1/projects/:ref/database/context1 request1 secondBurst limit to prevent rapid successive requests
+POST /v1/projects/:ref/config/custom-hostname/initialize10 requests1 minuteThese operations are expensive
+POST /v1/projects/:ref/config/custom-hostname/reverify10 requests1 minuteThese operations are expensive
+DELETE /v1/projects/:ref/config/custom-hostname10 requests1 minuteThese operations are expensive
+GET /v1/projects/:ref/config/vanity-subdomain10 requests1 minuteThese operations are expensive
+Some endpoints have the standard 120 requests per minute but with different timeout durations:
+EndpointLimitDurationReason
+POST /v1/projects/:ref/database/migrations120 requests3 minutesDatabase migrations may require more processing time
+Best practices
+Monitor rate limit headers: Check the X-RateLimit-Remaining header to see how many requests you have left. When it approaches 0, slow down your requests to avoid hitting the limit.
+Implement exponential backoff: When you receive a 429 response, wait before retrying. You can use the X-RateLimit-Reset header (seconds) to determine exactly how long to wait.
+Batch operations: Where possible, combine multiple operations into fewer API calls to reduce your request count.
+Be mindful of expensive endpoints: Analytics, database context, and domain endpoints have stricter limits, so use them sparingly.
+The Management API is subject to our fair-use policy. All resources created via the API are subject to the pricing detailed on our Pricing pages.
+Additional links
+OpenAPI Docs
+OpenAPI Spec
+Report bugs and issues
+Is this helpful?
+No Yes
+Additional links
+OpenAPI Docs
+OpenAPI Spec
+Report bugs and issues
+Need some help?
+Contact support
+Latest product updates?
+See Changelog
+Something's not right?
+Check system status
+© Supabase Inc—Do Not Sell or Share My Personal InformationContributingAuthor StyleguideOpen SourceSupaSquad
+Twitter
+GitHub
+Discord
+Youtube

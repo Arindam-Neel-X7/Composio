@@ -1,0 +1,81 @@
+Security | Platform | Apify Documentation
+Skip to main content
+Get started
+Get startedActorsStorageProxyAccountIntegrationsSecurity
+Academy
+API
+API reference
+Client for JavaScript
+Client for Python
+Client for Go
+Client for PHP
+Client for Java
+Client for .NET
+Client for Rust
+SDK
+SDK for JavaScript
+SDK for Python
+CLI
+Installation
+Quick start
+Command reference
+For AI agents
+Overview
+Architecture
+Shared responsibility
+Vulnerability disclosure
+On this page
+Security
+Copy for LLM
+Apify runs customer code and handles scraped data at scale. Platform security is built around strict tenant isolation, protection of your secrets and data, and a hardened software supply chain.
+Platform architecture - how the platform is built and what happens during an Actor run
+Shared responsibility model - which security duties are Apify's and which are yours
+Vulnerability disclosure policy - scope, safe harbor, and how to report an issue to security@apify.com
+Apify's compliance posture and audit reports are covered below.
+SOC 2 Type II compliance
+The Apify platform is SOC 2 Type II compliant. An independent audit verified that Apify's information security practices, policies, procedures, and operations comply with SOC 2 standards for security, availability, and confidentiality of customer data.
+Read the SOC 2 compliance announcement, or visit the Trust Center to request the SOC 2 Type II report.
+Trust Center
+To learn more about Apify's security practices, data protection measures, and compliance certifications, visit the Trust Center. The Trust Center includes:
+Security certifications and compliance reports
+Data protection controls
+Data subprocessors
+AI chatbot for security questions
+Security whitepaper
+For how the Apify platform is built and operated to protect your data, read the Apify Security Whitepaper.
+Next steps
+Access rights - who can see and run what in your account.
+Actor permissions - the permission levels an Actor runs with.
+Two-factor authentication - protect your account sign-in.
+Edit this page
+SOC 2 Type II compliance
+Trust Center
+Security whitepaper
+Next steps
+Reference
+API Reference
+SDK for JavaScript
+SDK for Python
+Client for JavaScript
+Client for Python
+CLI
+Glossary
+Open source
+Crawlee
+Fingerprint Suite
+impit
+MCP CLI
+Actor whitepaper
+proxy-chain
+Security
+Trust Center
+Community
+Discord
+X
+YouTube
+GitHub
+For AI
+llms.txt
+llms-full.txt
+OpenAPI (JSON)
+OpenAPI (YAML)

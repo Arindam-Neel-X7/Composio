@@ -1,0 +1,94 @@
+---
+title: "Account & Settings"
+description: "Manage API keys, usage, billing, and organization settings in Reducto Studio"
+---
+> Documentation Index
+> Fetch the complete documentation index at: https://docs.reducto.ai/llms.txt
+> Use this file to discover all available pages before exploring further.
+# Account & Settings
+Your Reducto account is managed through [Studio](https://studio.reducto.ai). The main sidebar provides access to Home, Usage, API Keys, Webhooks, and Billing. The sidebar footer contains Documentation, Support, Give Feedback, and Settings. This page covers common account management tasks.
+---
+## API Keys
+<img src="/images/studio-api-keys.png" />
+API keys authenticate your requests to Reducto. Navigate to **API Keys** in the sidebar to manage them.
+> **Note:** All roles can create API keys. Only **Owners** and **Admins** can edit or delete keys. See [Roles & Permissions](/studio-roles-permissions) for details.
+To create a new API key:
+1. Click **Create API Key**
+2. Give it a descriptive name (e.g., "production", "staging", "local-dev")
+3. Copy the key immediately, you won't be able to see it again
+The table shows each key's name, prefix, creator, creation date, and expiration. Deleting a key immediately revokes access, and any requests using that key will fail.
+Organization Owners and Admins are notified by email a week and a day before an API key expires. Rotate keys ahead of their expiration to avoid service disruptions.
+> **Note:** For security, create separate API keys for different environments (development, staging, production). If a key is compromised, you can revoke it without affecting other environments.
+---
+## Usage
+The Usage page tracks your Reducto consumption. Navigate to **Usage** in the sidebar to view your dashboard.
+<img src="/images/studio-usage-dashboard.png" />
+### Usage chart
+The chart shows usage over time, broken down by product (Parse, Extract, Split, Edit, Classify). The unit on the y axis depends on your pricing model (see the [Pricing Migration Guide](/reference/pricing-migration#which-pricing-model-am-i-on)):
+- **Pages**: accounts on per-product pricing. The chart shows billable pages, the count Reducto uses for pricing.
+- **Credits**: accounts on credit-based pricing. The chart shows credits consumed.
+Use the filters to:
+- **Group by**: Switch the breakdown. Accounts on per-product pricing can group by Product or API key. Accounts on credit-based pricing can also group by Feature or File type.
+- **Product / API key**: Filter to specific products or API keys. Accounts on credit-based pricing can also filter by Feature and File type.
+- **Time range**: View the last 7, 30, or 90 days, or pick a custom range
+- **Granularity**: Toggle between Day, Week, and Month views
+Click **Download** to export your usage data. You can also export usage data programmatically via the [Usage Export API](/reference/usage-export-api).
+### Request logs
+Below the chart, the Request Logs table shows individual API requests. Each entry includes:
+- Job ID
+- Date and time
+- Type (Parse, Extract, Split, Edit, Classify)
+- Page count processed
+- Status
+Studio shows jobs from the last 12 hours. Click **Refresh** to load the latest entries. Use the region dropdown to filter by data center (US, EU, etc.).
+Click the **...** menu on any request to see the full job details, including the exact configuration used. Click **Preview** to recreate that pipeline in a new Studio instance.
+<img src="/images/studio-request-log.png" />
+---
+## Billing
+Navigate to **Billing** in the sidebar to see your current plan, usage alerts, and billing history.
+> **Note:** The billing page is only visible for account owners and organizations on a subscription plan.
+From the Billing page you can:
+- **View invoices**: See past and upcoming charges under Billing history
+- **Update payment methods**: Click **Add payment method**
+- **Manage subscription**: Click **Manage plan** to open the Stripe customer portal
+- **Download receipts**: Click **View invoices in Stripe**
+### Subscription changes
+Monthly and yearly plans are available. To change your plan, use **Manage plan** or contact [support@reducto.ai](mailto:support@reducto.ai).
+### Usage alerts
+Configure usage alerts from the Billing page to get an email when your current invoice crosses a threshold you set. Click **Create alert** to open the dialog.
+<img src="/images/studio-usage-alerts.png" />
+Each alert has:
+- **Threshold**: The invoice amount (in USD) that triggers the alert
+- **Recipients**: The organization members who receive the email
+- **Label**: An optional name for the alert (e.g., "Budget warning")
+Reducto compares your current invoice to the threshold every hour. Recipients are emailed once per period when usage crosses the threshold. Editing the threshold re-arms the alert.
+---
+## Organization Settings
+The **Settings** page lets you manage your profile and organization.
+### Account settings
+On the **Account** tab, you can:
+- Edit your name and email
+- Change your profile picture
+- Set a password or enable two-factor authentication (2FA)
+- Choose a theme (Light or Dark)
+- Manage cookie preferences
+### Organization management
+If you're an organization Owner or Admin, you can:
+- Invite team members
+- Manage member roles and permissions
+See [Roles & Permissions](/studio-roles-permissions) for a full breakdown of what each role can do.
+---
+## Webhooks
+Configure webhooks to receive notifications when jobs complete. Navigate to **Webhooks** in the sidebar.
+Webhooks let you:
+- Get notified when async jobs finish
+- Trigger downstream workflows automatically
+- Avoid polling the API for job status
+See [Webhook Configuration](/recipes/svix-webhooks) for setup details.
+---
+## Related
+- [API Quickstart](/quickstart): Set up your API key and make your first request.
+- [Credit Usage](/reference/credit-usage): How credits are calculated and billed.
+- [Webhook Setup](/recipes/svix-webhooks): Configure webhooks for async job notifications.
+- [Security Policies](/security/policies): Data handling, retention, and compliance information.
+Source: https://docs.reducto.ai/studio-account/index.mdx

@@ -1,0 +1,1988 @@
+[
+  {
+    "app_id": 61,
+    "claim_id": "61.api.breadth",
+    "change": "changed",
+    "reason": "Initial Task13 explicit extraction by Codex GPT-6 research worker; inspected captured primary sources; no independent review, operations, synthetic findings or human checks"
+  },
+  {
+    "app_id": 61,
+    "claim_id": "61.api.group.actions",
+    "change": "added",
+    "reason": "Initial Task13 explicit extraction by Codex GPT-6 research worker; inspected captured primary sources; no independent review, operations, synthetic findings or human checks"
+  },
+  {
+    "app_id": 61,
+    "claim_id": "61.api.group.issues",
+    "change": "added",
+    "reason": "Initial Task13 explicit extraction by Codex GPT-6 research worker; inspected captured primary sources; no independent review, operations, synthetic findings or human checks"
+  },
+  {
+    "app_id": 61,
+    "claim_id": "61.api.group.repositories",
+    "change": "added",
+    "reason": "Initial Task13 explicit extraction by Codex GPT-6 research worker; inspected captured primary sources; no independent review, operations, synthetic findings or human checks"
+  },
+  {
+    "app_id": 61,
+    "claim_id": "61.api.protocol.rest",
+    "change": "added",
+    "reason": "Initial Task13 explicit extraction by Codex GPT-6 research worker; inspected captured primary sources; no independent review, operations, synthetic findings or human checks"
+  },
+  {
+    "app_id": 61,
+    "claim_id": "61.api.public_documentation",
+    "change": "changed",
+    "reason": "Initial Task13 explicit extraction by Codex GPT-6 research worker; inspected captured primary sources; no independent review, operations, synthetic findings or human checks"
+  },
+  {
+    "app_id": 61,
+    "claim_id": "61.auth.app_basic",
+    "change": "added",
+    "reason": "Initial Task13 explicit extraction by Codex GPT-6 research worker; inspected captured primary sources; no independent review, operations, synthetic findings or human checks"
+  },
+  {
+    "app_id": 61,
+    "claim_id": "61.auth.oauth",
+    "change": "added",
+    "reason": "Initial Task13 explicit extraction by Codex GPT-6 research worker; inspected captured primary sources; no independent review, operations, synthetic findings or human checks"
+  },
+  {
+    "app_id": 61,
+    "claim_id": "61.auth.pat",
+    "change": "added",
+    "reason": "Initial Task13 explicit extraction by Codex GPT-6 research worker; inspected captured primary sources; no independent review, operations, synthetic findings or human checks"
+  },
+  {
+    "app_id": 61,
+    "claim_id": "61.buildability",
+    "change": "changed",
+    "reason": "Initial Task13 explicit extraction by Codex GPT-6 research worker; inspected captured primary sources; no independent review, operations, synthetic findings or human checks"
+  },
+  {
+    "app_id": 61,
+    "claim_id": "61.identity",
+    "change": "changed",
+    "reason": "Initial Task13 explicit extraction by Codex GPT-6 research worker; inspected captured primary sources; no independent review, operations, synthetic findings or human checks"
+  },
+  {
+    "app_id": 61,
+    "claim_id": "61.mcp",
+    "change": "removed",
+    "reason": "Initial Task13 explicit extraction by Codex GPT-6 research worker; inspected captured primary sources; no independent review, operations, synthetic findings or human checks"
+  },
+  {
+    "app_id": 61,
+    "claim_id": "61.mcp.discovery",
+    "change": "added",
+    "reason": "Initial Task13 explicit extraction by Codex GPT-6 research worker; inspected captured primary sources; no independent review, operations, synthetic findings or human checks"
+  },
+  {
+    "app_id": 61,
+    "claim_id": "61.mcp.server",
+    "change": "added",
+    "reason": "Initial Task13 explicit extraction by Codex GPT-6 research worker; inspected captured primary sources; no independent review, operations, synthetic findings or human checks"
+  },
+  {
+    "app_id": 61,
+    "claim_id": "61.mcp.server.operational",
+    "change": "added",
+    "reason": "Initial Task13 explicit extraction by Codex GPT-6 research worker; inspected captured primary sources; no independent review, operations, synthetic findings or human checks"
+  },
+  {
+    "app_id": 61,
+    "claim_id": "61.production.admin_approval_required",
+    "change": "changed",
+    "reason": "Initial Task13 explicit extraction by Codex GPT-6 research worker; inspected captured primary sources; no independent review, operations, synthetic findings or human checks"
+  },
+  {
+    "app_id": 61,
+    "claim_id": "61.production.contact_sales_required",
+    "change": "changed",
+    "reason": "Initial Task13 explicit extraction by Codex GPT-6 research worker; inspected captured primary sources; no independent review, operations, synthetic findings or human checks"
+  },
+  {
+    "app_id": 61,
+    "claim_id": "61.production.free_access",
+    "change": "changed",
+    "reason": "Initial Task13 explicit extraction by Codex GPT-6 research worker; inspected captured primary sources; no independent review, operations, synthetic findings or human checks"
+  },
+  {
+    "app_id": 61,
+    "claim_id": "61.production.paid_required",
+    "change": "changed",
+    "reason": "Initial Task13 explicit extraction by Codex GPT-6 research worker; inspected captured primary sources; no independent review, operations, synthetic findings or human checks"
+  },
+  {
+    "app_id": 61,
+    "claim_id": "61.production.partner_approval_required",
+    "change": "changed",
+    "reason": "Initial Task13 explicit extraction by Codex GPT-6 research worker; inspected captured primary sources; no independent review, operations, synthetic findings or human checks"
+  },
+  {
+    "app_id": 61,
+    "claim_id": "61.production.sandbox_access",
+    "change": "changed",
+    "reason": "Initial Task13 explicit extraction by Codex GPT-6 research worker; inspected captured primary sources; no independent review, operations, synthetic findings or human checks"
+  },
+  {
+    "app_id": 61,
+    "claim_id": "61.production.self_serve",
+    "change": "changed",
+    "reason": "Initial Task13 explicit extraction by Codex GPT-6 research worker; inspected captured primary sources; no independent review, operations, synthetic findings or human checks"
+  },
+  {
+    "app_id": 61,
+    "claim_id": "61.production.trial_access",
+    "change": "changed",
+    "reason": "Initial Task13 explicit extraction by Codex GPT-6 research worker; inspected captured primary sources; no independent review, operations, synthetic findings or human checks"
+  },
+  {
+    "app_id": 61,
+    "claim_id": "61.production.vendor_approval_required",
+    "change": "changed",
+    "reason": "Initial Task13 explicit extraction by Codex GPT-6 research worker; inspected captured primary sources; no independent review, operations, synthetic findings or human checks"
+  },
+  {
+    "app_id": 61,
+    "claim_id": "61.purpose",
+    "change": "changed",
+    "reason": "Initial Task13 explicit extraction by Codex GPT-6 research worker; inspected captured primary sources; no independent review, operations, synthetic findings or human checks"
+  },
+  {
+    "app_id": 61,
+    "claim_id": "61.testing.admin_approval_required",
+    "change": "changed",
+    "reason": "Initial Task13 explicit extraction by Codex GPT-6 research worker; inspected captured primary sources; no independent review, operations, synthetic findings or human checks"
+  },
+  {
+    "app_id": 61,
+    "claim_id": "61.testing.contact_sales_required",
+    "change": "changed",
+    "reason": "Initial Task13 explicit extraction by Codex GPT-6 research worker; inspected captured primary sources; no independent review, operations, synthetic findings or human checks"
+  },
+  {
+    "app_id": 61,
+    "claim_id": "61.testing.free_access",
+    "change": "changed",
+    "reason": "Initial Task13 explicit extraction by Codex GPT-6 research worker; inspected captured primary sources; no independent review, operations, synthetic findings or human checks"
+  },
+  {
+    "app_id": 61,
+    "claim_id": "61.testing.paid_required",
+    "change": "changed",
+    "reason": "Initial Task13 explicit extraction by Codex GPT-6 research worker; inspected captured primary sources; no independent review, operations, synthetic findings or human checks"
+  },
+  {
+    "app_id": 61,
+    "claim_id": "61.testing.partner_approval_required",
+    "change": "changed",
+    "reason": "Initial Task13 explicit extraction by Codex GPT-6 research worker; inspected captured primary sources; no independent review, operations, synthetic findings or human checks"
+  },
+  {
+    "app_id": 61,
+    "claim_id": "61.testing.sandbox_access",
+    "change": "changed",
+    "reason": "Initial Task13 explicit extraction by Codex GPT-6 research worker; inspected captured primary sources; no independent review, operations, synthetic findings or human checks"
+  },
+  {
+    "app_id": 61,
+    "claim_id": "61.testing.self_serve",
+    "change": "changed",
+    "reason": "Initial Task13 explicit extraction by Codex GPT-6 research worker; inspected captured primary sources; no independent review, operations, synthetic findings or human checks"
+  },
+  {
+    "app_id": 61,
+    "claim_id": "61.testing.trial_access",
+    "change": "changed",
+    "reason": "Initial Task13 explicit extraction by Codex GPT-6 research worker; inspected captured primary sources; no independent review, operations, synthetic findings or human checks"
+  },
+  {
+    "app_id": 61,
+    "claim_id": "61.testing.vendor_approval_required",
+    "change": "changed",
+    "reason": "Initial Task13 explicit extraction by Codex GPT-6 research worker; inspected captured primary sources; no independent review, operations, synthetic findings or human checks"
+  },
+  {
+    "app_id": 62,
+    "claim_id": "62.api.breadth",
+    "change": "changed",
+    "reason": "Initial Task13 explicit extraction by Codex GPT-6 research worker; inspected captured primary sources; no independent review, operations, synthetic findings or human checks"
+  },
+  {
+    "app_id": 62,
+    "claim_id": "62.api.group.access",
+    "change": "added",
+    "reason": "Initial Task13 explicit extraction by Codex GPT-6 research worker; inspected captured primary sources; no independent review, operations, synthetic findings or human checks"
+  },
+  {
+    "app_id": 62,
+    "claim_id": "62.api.group.deployments",
+    "change": "added",
+    "reason": "Initial Task13 explicit extraction by Codex GPT-6 research worker; inspected captured primary sources; no independent review, operations, synthetic findings or human checks"
+  },
+  {
+    "app_id": 62,
+    "claim_id": "62.api.group.dns",
+    "change": "added",
+    "reason": "Initial Task13 explicit extraction by Codex GPT-6 research worker; inspected captured primary sources; no independent review, operations, synthetic findings or human checks"
+  },
+  {
+    "app_id": 62,
+    "claim_id": "62.api.protocol.rest",
+    "change": "added",
+    "reason": "Initial Task13 explicit extraction by Codex GPT-6 research worker; inspected captured primary sources; no independent review, operations, synthetic findings or human checks"
+  },
+  {
+    "app_id": 62,
+    "claim_id": "62.api.public_documentation",
+    "change": "changed",
+    "reason": "Initial Task13 explicit extraction by Codex GPT-6 research worker; inspected captured primary sources; no independent review, operations, synthetic findings or human checks"
+  },
+  {
+    "app_id": 62,
+    "claim_id": "62.auth.mcp_oauth",
+    "change": "added",
+    "reason": "Initial Task13 explicit extraction by Codex GPT-6 research worker; inspected captured primary sources; no independent review, operations, synthetic findings or human checks"
+  },
+  {
+    "app_id": 62,
+    "claim_id": "62.auth.rest_bearer",
+    "change": "added",
+    "reason": "Initial Task13 explicit extraction by Codex GPT-6 research worker; inspected captured primary sources; no independent review, operations, synthetic findings or human checks"
+  },
+  {
+    "app_id": 62,
+    "claim_id": "62.buildability",
+    "change": "changed",
+    "reason": "Initial Task13 explicit extraction by Codex GPT-6 research worker; inspected captured primary sources; no independent review, operations, synthetic findings or human checks"
+  },
+  {
+    "app_id": 62,
+    "claim_id": "62.identity",
+    "change": "changed",
+    "reason": "Initial Task13 explicit extraction by Codex GPT-6 research worker; inspected captured primary sources; no independent review, operations, synthetic findings or human checks"
+  },
+  {
+    "app_id": 62,
+    "claim_id": "62.mcp",
+    "change": "removed",
+    "reason": "Initial Task13 explicit extraction by Codex GPT-6 research worker; inspected captured primary sources; no independent review, operations, synthetic findings or human checks"
+  },
+  {
+    "app_id": 62,
+    "claim_id": "62.mcp.discovery",
+    "change": "added",
+    "reason": "Initial Task13 explicit extraction by Codex GPT-6 research worker; inspected captured primary sources; no independent review, operations, synthetic findings or human checks"
+  },
+  {
+    "app_id": 62,
+    "claim_id": "62.mcp.server",
+    "change": "added",
+    "reason": "Initial Task13 explicit extraction by Codex GPT-6 research worker; inspected captured primary sources; no independent review, operations, synthetic findings or human checks"
+  },
+  {
+    "app_id": 62,
+    "claim_id": "62.mcp.server.operational",
+    "change": "added",
+    "reason": "Initial Task13 explicit extraction by Codex GPT-6 research worker; inspected captured primary sources; no independent review, operations, synthetic findings or human checks"
+  },
+  {
+    "app_id": 62,
+    "claim_id": "62.production.admin_approval_required",
+    "change": "changed",
+    "reason": "Initial Task13 explicit extraction by Codex GPT-6 research worker; inspected captured primary sources; no independent review, operations, synthetic findings or human checks"
+  },
+  {
+    "app_id": 62,
+    "claim_id": "62.production.contact_sales_required",
+    "change": "changed",
+    "reason": "Initial Task13 explicit extraction by Codex GPT-6 research worker; inspected captured primary sources; no independent review, operations, synthetic findings or human checks"
+  },
+  {
+    "app_id": 62,
+    "claim_id": "62.production.free_access",
+    "change": "changed",
+    "reason": "Initial Task13 explicit extraction by Codex GPT-6 research worker; inspected captured primary sources; no independent review, operations, synthetic findings or human checks"
+  },
+  {
+    "app_id": 62,
+    "claim_id": "62.production.paid_required",
+    "change": "changed",
+    "reason": "Initial Task13 explicit extraction by Codex GPT-6 research worker; inspected captured primary sources; no independent review, operations, synthetic findings or human checks"
+  },
+  {
+    "app_id": 62,
+    "claim_id": "62.production.partner_approval_required",
+    "change": "changed",
+    "reason": "Initial Task13 explicit extraction by Codex GPT-6 research worker; inspected captured primary sources; no independent review, operations, synthetic findings or human checks"
+  },
+  {
+    "app_id": 62,
+    "claim_id": "62.production.sandbox_access",
+    "change": "changed",
+    "reason": "Initial Task13 explicit extraction by Codex GPT-6 research worker; inspected captured primary sources; no independent review, operations, synthetic findings or human checks"
+  },
+  {
+    "app_id": 62,
+    "claim_id": "62.production.self_serve",
+    "change": "changed",
+    "reason": "Initial Task13 explicit extraction by Codex GPT-6 research worker; inspected captured primary sources; no independent review, operations, synthetic findings or human checks"
+  },
+  {
+    "app_id": 62,
+    "claim_id": "62.production.trial_access",
+    "change": "changed",
+    "reason": "Initial Task13 explicit extraction by Codex GPT-6 research worker; inspected captured primary sources; no independent review, operations, synthetic findings or human checks"
+  },
+  {
+    "app_id": 62,
+    "claim_id": "62.production.vendor_approval_required",
+    "change": "changed",
+    "reason": "Initial Task13 explicit extraction by Codex GPT-6 research worker; inspected captured primary sources; no independent review, operations, synthetic findings or human checks"
+  },
+  {
+    "app_id": 62,
+    "claim_id": "62.purpose",
+    "change": "changed",
+    "reason": "Initial Task13 explicit extraction by Codex GPT-6 research worker; inspected captured primary sources; no independent review, operations, synthetic findings or human checks"
+  },
+  {
+    "app_id": 62,
+    "claim_id": "62.testing.admin_approval_required",
+    "change": "changed",
+    "reason": "Initial Task13 explicit extraction by Codex GPT-6 research worker; inspected captured primary sources; no independent review, operations, synthetic findings or human checks"
+  },
+  {
+    "app_id": 62,
+    "claim_id": "62.testing.contact_sales_required",
+    "change": "changed",
+    "reason": "Initial Task13 explicit extraction by Codex GPT-6 research worker; inspected captured primary sources; no independent review, operations, synthetic findings or human checks"
+  },
+  {
+    "app_id": 62,
+    "claim_id": "62.testing.free_access",
+    "change": "changed",
+    "reason": "Initial Task13 explicit extraction by Codex GPT-6 research worker; inspected captured primary sources; no independent review, operations, synthetic findings or human checks"
+  },
+  {
+    "app_id": 62,
+    "claim_id": "62.testing.paid_required",
+    "change": "changed",
+    "reason": "Initial Task13 explicit extraction by Codex GPT-6 research worker; inspected captured primary sources; no independent review, operations, synthetic findings or human checks"
+  },
+  {
+    "app_id": 62,
+    "claim_id": "62.testing.partner_approval_required",
+    "change": "changed",
+    "reason": "Initial Task13 explicit extraction by Codex GPT-6 research worker; inspected captured primary sources; no independent review, operations, synthetic findings or human checks"
+  },
+  {
+    "app_id": 62,
+    "claim_id": "62.testing.sandbox_access",
+    "change": "changed",
+    "reason": "Initial Task13 explicit extraction by Codex GPT-6 research worker; inspected captured primary sources; no independent review, operations, synthetic findings or human checks"
+  },
+  {
+    "app_id": 62,
+    "claim_id": "62.testing.self_serve",
+    "change": "changed",
+    "reason": "Initial Task13 explicit extraction by Codex GPT-6 research worker; inspected captured primary sources; no independent review, operations, synthetic findings or human checks"
+  },
+  {
+    "app_id": 62,
+    "claim_id": "62.testing.trial_access",
+    "change": "changed",
+    "reason": "Initial Task13 explicit extraction by Codex GPT-6 research worker; inspected captured primary sources; no independent review, operations, synthetic findings or human checks"
+  },
+  {
+    "app_id": 62,
+    "claim_id": "62.testing.vendor_approval_required",
+    "change": "changed",
+    "reason": "Initial Task13 explicit extraction by Codex GPT-6 research worker; inspected captured primary sources; no independent review, operations, synthetic findings or human checks"
+  },
+  {
+    "app_id": 63,
+    "claim_id": "63.api.breadth",
+    "change": "changed",
+    "reason": "Initial Task13 explicit extraction by Codex GPT-6 research worker; inspected captured primary sources; no independent review, operations, synthetic findings or human checks"
+  },
+  {
+    "app_id": 63,
+    "claim_id": "63.api.group.deployments",
+    "change": "added",
+    "reason": "Initial Task13 explicit extraction by Codex GPT-6 research worker; inspected captured primary sources; no independent review, operations, synthetic findings or human checks"
+  },
+  {
+    "app_id": 63,
+    "claim_id": "63.api.group.forms_dns",
+    "change": "added",
+    "reason": "Initial Task13 explicit extraction by Codex GPT-6 research worker; inspected captured primary sources; no independent review, operations, synthetic findings or human checks"
+  },
+  {
+    "app_id": 63,
+    "claim_id": "63.api.protocol.rest",
+    "change": "added",
+    "reason": "Initial Task13 explicit extraction by Codex GPT-6 research worker; inspected captured primary sources; no independent review, operations, synthetic findings or human checks"
+  },
+  {
+    "app_id": 63,
+    "claim_id": "63.api.public_documentation",
+    "change": "changed",
+    "reason": "Initial Task13 explicit extraction by Codex GPT-6 research worker; inspected captured primary sources; no independent review, operations, synthetic findings or human checks"
+  },
+  {
+    "app_id": 63,
+    "claim_id": "63.auth.oauth",
+    "change": "added",
+    "reason": "Initial Task13 explicit extraction by Codex GPT-6 research worker; inspected captured primary sources; no independent review, operations, synthetic findings or human checks"
+  },
+  {
+    "app_id": 63,
+    "claim_id": "63.auth.pat",
+    "change": "added",
+    "reason": "Initial Task13 explicit extraction by Codex GPT-6 research worker; inspected captured primary sources; no independent review, operations, synthetic findings or human checks"
+  },
+  {
+    "app_id": 63,
+    "claim_id": "63.buildability",
+    "change": "changed",
+    "reason": "Initial Task13 explicit extraction by Codex GPT-6 research worker; inspected captured primary sources; no independent review, operations, synthetic findings or human checks"
+  },
+  {
+    "app_id": 63,
+    "claim_id": "63.identity",
+    "change": "changed",
+    "reason": "Initial Task13 explicit extraction by Codex GPT-6 research worker; inspected captured primary sources; no independent review, operations, synthetic findings or human checks"
+  },
+  {
+    "app_id": 63,
+    "claim_id": "63.mcp",
+    "change": "removed",
+    "reason": "Initial Task13 explicit extraction by Codex GPT-6 research worker; inspected captured primary sources; no independent review, operations, synthetic findings or human checks"
+  },
+  {
+    "app_id": 63,
+    "claim_id": "63.mcp.discovery",
+    "change": "added",
+    "reason": "Initial Task13 explicit extraction by Codex GPT-6 research worker; inspected captured primary sources; no independent review, operations, synthetic findings or human checks"
+  },
+  {
+    "app_id": 63,
+    "claim_id": "63.mcp.server",
+    "change": "added",
+    "reason": "Initial Task13 explicit extraction by Codex GPT-6 research worker; inspected captured primary sources; no independent review, operations, synthetic findings or human checks"
+  },
+  {
+    "app_id": 63,
+    "claim_id": "63.mcp.server.operational",
+    "change": "added",
+    "reason": "Initial Task13 explicit extraction by Codex GPT-6 research worker; inspected captured primary sources; no independent review, operations, synthetic findings or human checks"
+  },
+  {
+    "app_id": 63,
+    "claim_id": "63.production.admin_approval_required",
+    "change": "changed",
+    "reason": "Initial Task13 explicit extraction by Codex GPT-6 research worker; inspected captured primary sources; no independent review, operations, synthetic findings or human checks"
+  },
+  {
+    "app_id": 63,
+    "claim_id": "63.production.contact_sales_required",
+    "change": "changed",
+    "reason": "Initial Task13 explicit extraction by Codex GPT-6 research worker; inspected captured primary sources; no independent review, operations, synthetic findings or human checks"
+  },
+  {
+    "app_id": 63,
+    "claim_id": "63.production.free_access",
+    "change": "changed",
+    "reason": "Initial Task13 explicit extraction by Codex GPT-6 research worker; inspected captured primary sources; no independent review, operations, synthetic findings or human checks"
+  },
+  {
+    "app_id": 63,
+    "claim_id": "63.production.paid_required",
+    "change": "changed",
+    "reason": "Initial Task13 explicit extraction by Codex GPT-6 research worker; inspected captured primary sources; no independent review, operations, synthetic findings or human checks"
+  },
+  {
+    "app_id": 63,
+    "claim_id": "63.production.partner_approval_required",
+    "change": "changed",
+    "reason": "Initial Task13 explicit extraction by Codex GPT-6 research worker; inspected captured primary sources; no independent review, operations, synthetic findings or human checks"
+  },
+  {
+    "app_id": 63,
+    "claim_id": "63.production.sandbox_access",
+    "change": "changed",
+    "reason": "Initial Task13 explicit extraction by Codex GPT-6 research worker; inspected captured primary sources; no independent review, operations, synthetic findings or human checks"
+  },
+  {
+    "app_id": 63,
+    "claim_id": "63.production.self_serve",
+    "change": "changed",
+    "reason": "Initial Task13 explicit extraction by Codex GPT-6 research worker; inspected captured primary sources; no independent review, operations, synthetic findings or human checks"
+  },
+  {
+    "app_id": 63,
+    "claim_id": "63.production.trial_access",
+    "change": "changed",
+    "reason": "Initial Task13 explicit extraction by Codex GPT-6 research worker; inspected captured primary sources; no independent review, operations, synthetic findings or human checks"
+  },
+  {
+    "app_id": 63,
+    "claim_id": "63.production.vendor_approval_required",
+    "change": "changed",
+    "reason": "Initial Task13 explicit extraction by Codex GPT-6 research worker; inspected captured primary sources; no independent review, operations, synthetic findings or human checks"
+  },
+  {
+    "app_id": 63,
+    "claim_id": "63.purpose",
+    "change": "changed",
+    "reason": "Initial Task13 explicit extraction by Codex GPT-6 research worker; inspected captured primary sources; no independent review, operations, synthetic findings or human checks"
+  },
+  {
+    "app_id": 63,
+    "claim_id": "63.testing.admin_approval_required",
+    "change": "changed",
+    "reason": "Initial Task13 explicit extraction by Codex GPT-6 research worker; inspected captured primary sources; no independent review, operations, synthetic findings or human checks"
+  },
+  {
+    "app_id": 63,
+    "claim_id": "63.testing.contact_sales_required",
+    "change": "changed",
+    "reason": "Initial Task13 explicit extraction by Codex GPT-6 research worker; inspected captured primary sources; no independent review, operations, synthetic findings or human checks"
+  },
+  {
+    "app_id": 63,
+    "claim_id": "63.testing.free_access",
+    "change": "changed",
+    "reason": "Initial Task13 explicit extraction by Codex GPT-6 research worker; inspected captured primary sources; no independent review, operations, synthetic findings or human checks"
+  },
+  {
+    "app_id": 63,
+    "claim_id": "63.testing.paid_required",
+    "change": "changed",
+    "reason": "Initial Task13 explicit extraction by Codex GPT-6 research worker; inspected captured primary sources; no independent review, operations, synthetic findings or human checks"
+  },
+  {
+    "app_id": 63,
+    "claim_id": "63.testing.partner_approval_required",
+    "change": "changed",
+    "reason": "Initial Task13 explicit extraction by Codex GPT-6 research worker; inspected captured primary sources; no independent review, operations, synthetic findings or human checks"
+  },
+  {
+    "app_id": 63,
+    "claim_id": "63.testing.sandbox_access",
+    "change": "changed",
+    "reason": "Initial Task13 explicit extraction by Codex GPT-6 research worker; inspected captured primary sources; no independent review, operations, synthetic findings or human checks"
+  },
+  {
+    "app_id": 63,
+    "claim_id": "63.testing.self_serve",
+    "change": "changed",
+    "reason": "Initial Task13 explicit extraction by Codex GPT-6 research worker; inspected captured primary sources; no independent review, operations, synthetic findings or human checks"
+  },
+  {
+    "app_id": 63,
+    "claim_id": "63.testing.trial_access",
+    "change": "changed",
+    "reason": "Initial Task13 explicit extraction by Codex GPT-6 research worker; inspected captured primary sources; no independent review, operations, synthetic findings or human checks"
+  },
+  {
+    "app_id": 63,
+    "claim_id": "63.testing.vendor_approval_required",
+    "change": "changed",
+    "reason": "Initial Task13 explicit extraction by Codex GPT-6 research worker; inspected captured primary sources; no independent review, operations, synthetic findings or human checks"
+  },
+  {
+    "app_id": 64,
+    "claim_id": "64.api.breadth",
+    "change": "changed",
+    "reason": "Initial Task13 explicit extraction by Codex GPT-6 research worker; inspected captured primary sources; no independent review, operations, synthetic findings or human checks"
+  },
+  {
+    "app_id": 64,
+    "claim_id": "64.api.group.access",
+    "change": "added",
+    "reason": "Initial Task13 explicit extraction by Codex GPT-6 research worker; inspected captured primary sources; no independent review, operations, synthetic findings or human checks"
+  },
+  {
+    "app_id": 64,
+    "claim_id": "64.api.group.dns",
+    "change": "added",
+    "reason": "Initial Task13 explicit extraction by Codex GPT-6 research worker; inspected captured primary sources; no independent review, operations, synthetic findings or human checks"
+  },
+  {
+    "app_id": 64,
+    "claim_id": "64.api.group.workers",
+    "change": "added",
+    "reason": "Initial Task13 explicit extraction by Codex GPT-6 research worker; inspected captured primary sources; no independent review, operations, synthetic findings or human checks"
+  },
+  {
+    "app_id": 64,
+    "claim_id": "64.api.protocol.rest",
+    "change": "added",
+    "reason": "Initial Task13 explicit extraction by Codex GPT-6 research worker; inspected captured primary sources; no independent review, operations, synthetic findings or human checks"
+  },
+  {
+    "app_id": 64,
+    "claim_id": "64.api.public_documentation",
+    "change": "changed",
+    "reason": "Initial Task13 explicit extraction by Codex GPT-6 research worker; inspected captured primary sources; no independent review, operations, synthetic findings or human checks"
+  },
+  {
+    "app_id": 64,
+    "claim_id": "64.auth.api_token",
+    "change": "added",
+    "reason": "Initial Task13 explicit extraction by Codex GPT-6 research worker; inspected captured primary sources; no independent review, operations, synthetic findings or human checks"
+  },
+  {
+    "app_id": 64,
+    "claim_id": "64.buildability",
+    "change": "changed",
+    "reason": "Initial Task13 explicit extraction by Codex GPT-6 research worker; inspected captured primary sources; no independent review, operations, synthetic findings or human checks"
+  },
+  {
+    "app_id": 64,
+    "claim_id": "64.identity",
+    "change": "changed",
+    "reason": "Initial Task13 explicit extraction by Codex GPT-6 research worker; inspected captured primary sources; no independent review, operations, synthetic findings or human checks"
+  },
+  {
+    "app_id": 64,
+    "claim_id": "64.mcp",
+    "change": "removed",
+    "reason": "Initial Task13 explicit extraction by Codex GPT-6 research worker; inspected captured primary sources; no independent review, operations, synthetic findings or human checks"
+  },
+  {
+    "app_id": 64,
+    "claim_id": "64.mcp.discovery",
+    "change": "added",
+    "reason": "Initial Task13 explicit extraction by Codex GPT-6 research worker; inspected captured primary sources; no independent review, operations, synthetic findings or human checks"
+  },
+  {
+    "app_id": 64,
+    "claim_id": "64.mcp.server",
+    "change": "added",
+    "reason": "Initial Task13 explicit extraction by Codex GPT-6 research worker; inspected captured primary sources; no independent review, operations, synthetic findings or human checks"
+  },
+  {
+    "app_id": 64,
+    "claim_id": "64.mcp.server.operational",
+    "change": "added",
+    "reason": "Initial Task13 explicit extraction by Codex GPT-6 research worker; inspected captured primary sources; no independent review, operations, synthetic findings or human checks"
+  },
+  {
+    "app_id": 64,
+    "claim_id": "64.production.admin_approval_required",
+    "change": "changed",
+    "reason": "Initial Task13 explicit extraction by Codex GPT-6 research worker; inspected captured primary sources; no independent review, operations, synthetic findings or human checks"
+  },
+  {
+    "app_id": 64,
+    "claim_id": "64.production.contact_sales_required",
+    "change": "changed",
+    "reason": "Initial Task13 explicit extraction by Codex GPT-6 research worker; inspected captured primary sources; no independent review, operations, synthetic findings or human checks"
+  },
+  {
+    "app_id": 64,
+    "claim_id": "64.production.free_access",
+    "change": "changed",
+    "reason": "Initial Task13 explicit extraction by Codex GPT-6 research worker; inspected captured primary sources; no independent review, operations, synthetic findings or human checks"
+  },
+  {
+    "app_id": 64,
+    "claim_id": "64.production.paid_required",
+    "change": "changed",
+    "reason": "Initial Task13 explicit extraction by Codex GPT-6 research worker; inspected captured primary sources; no independent review, operations, synthetic findings or human checks"
+  },
+  {
+    "app_id": 64,
+    "claim_id": "64.production.partner_approval_required",
+    "change": "changed",
+    "reason": "Initial Task13 explicit extraction by Codex GPT-6 research worker; inspected captured primary sources; no independent review, operations, synthetic findings or human checks"
+  },
+  {
+    "app_id": 64,
+    "claim_id": "64.production.sandbox_access",
+    "change": "changed",
+    "reason": "Initial Task13 explicit extraction by Codex GPT-6 research worker; inspected captured primary sources; no independent review, operations, synthetic findings or human checks"
+  },
+  {
+    "app_id": 64,
+    "claim_id": "64.production.self_serve",
+    "change": "changed",
+    "reason": "Initial Task13 explicit extraction by Codex GPT-6 research worker; inspected captured primary sources; no independent review, operations, synthetic findings or human checks"
+  },
+  {
+    "app_id": 64,
+    "claim_id": "64.production.trial_access",
+    "change": "changed",
+    "reason": "Initial Task13 explicit extraction by Codex GPT-6 research worker; inspected captured primary sources; no independent review, operations, synthetic findings or human checks"
+  },
+  {
+    "app_id": 64,
+    "claim_id": "64.production.vendor_approval_required",
+    "change": "changed",
+    "reason": "Initial Task13 explicit extraction by Codex GPT-6 research worker; inspected captured primary sources; no independent review, operations, synthetic findings or human checks"
+  },
+  {
+    "app_id": 64,
+    "claim_id": "64.purpose",
+    "change": "changed",
+    "reason": "Initial Task13 explicit extraction by Codex GPT-6 research worker; inspected captured primary sources; no independent review, operations, synthetic findings or human checks"
+  },
+  {
+    "app_id": 64,
+    "claim_id": "64.testing.admin_approval_required",
+    "change": "changed",
+    "reason": "Initial Task13 explicit extraction by Codex GPT-6 research worker; inspected captured primary sources; no independent review, operations, synthetic findings or human checks"
+  },
+  {
+    "app_id": 64,
+    "claim_id": "64.testing.contact_sales_required",
+    "change": "changed",
+    "reason": "Initial Task13 explicit extraction by Codex GPT-6 research worker; inspected captured primary sources; no independent review, operations, synthetic findings or human checks"
+  },
+  {
+    "app_id": 64,
+    "claim_id": "64.testing.free_access",
+    "change": "changed",
+    "reason": "Initial Task13 explicit extraction by Codex GPT-6 research worker; inspected captured primary sources; no independent review, operations, synthetic findings or human checks"
+  },
+  {
+    "app_id": 64,
+    "claim_id": "64.testing.paid_required",
+    "change": "changed",
+    "reason": "Initial Task13 explicit extraction by Codex GPT-6 research worker; inspected captured primary sources; no independent review, operations, synthetic findings or human checks"
+  },
+  {
+    "app_id": 64,
+    "claim_id": "64.testing.partner_approval_required",
+    "change": "changed",
+    "reason": "Initial Task13 explicit extraction by Codex GPT-6 research worker; inspected captured primary sources; no independent review, operations, synthetic findings or human checks"
+  },
+  {
+    "app_id": 64,
+    "claim_id": "64.testing.sandbox_access",
+    "change": "changed",
+    "reason": "Initial Task13 explicit extraction by Codex GPT-6 research worker; inspected captured primary sources; no independent review, operations, synthetic findings or human checks"
+  },
+  {
+    "app_id": 64,
+    "claim_id": "64.testing.self_serve",
+    "change": "changed",
+    "reason": "Initial Task13 explicit extraction by Codex GPT-6 research worker; inspected captured primary sources; no independent review, operations, synthetic findings or human checks"
+  },
+  {
+    "app_id": 64,
+    "claim_id": "64.testing.trial_access",
+    "change": "changed",
+    "reason": "Initial Task13 explicit extraction by Codex GPT-6 research worker; inspected captured primary sources; no independent review, operations, synthetic findings or human checks"
+  },
+  {
+    "app_id": 64,
+    "claim_id": "64.testing.vendor_approval_required",
+    "change": "changed",
+    "reason": "Initial Task13 explicit extraction by Codex GPT-6 research worker; inspected captured primary sources; no independent review, operations, synthetic findings or human checks"
+  },
+  {
+    "app_id": 65,
+    "claim_id": "65.api.breadth",
+    "change": "changed",
+    "reason": "Initial Task13 explicit extraction by Codex GPT-6 research worker; inspected captured primary sources; no independent review, operations, synthetic findings or human checks"
+  },
+  {
+    "app_id": 65,
+    "claim_id": "65.api.group.database",
+    "change": "added",
+    "reason": "Initial Task13 explicit extraction by Codex GPT-6 research worker; inspected captured primary sources; no independent review, operations, synthetic findings or human checks"
+  },
+  {
+    "app_id": 65,
+    "claim_id": "65.api.group.management",
+    "change": "added",
+    "reason": "Initial Task13 explicit extraction by Codex GPT-6 research worker; inspected captured primary sources; no independent review, operations, synthetic findings or human checks"
+  },
+  {
+    "app_id": 65,
+    "claim_id": "65.api.protocol.rest",
+    "change": "added",
+    "reason": "Initial Task13 explicit extraction by Codex GPT-6 research worker; inspected captured primary sources; no independent review, operations, synthetic findings or human checks"
+  },
+  {
+    "app_id": 65,
+    "claim_id": "65.api.public_documentation",
+    "change": "changed",
+    "reason": "Initial Task13 explicit extraction by Codex GPT-6 research worker; inspected captured primary sources; no independent review, operations, synthetic findings or human checks"
+  },
+  {
+    "app_id": 65,
+    "claim_id": "65.auth.management_oauth",
+    "change": "added",
+    "reason": "Initial Task13 explicit extraction by Codex GPT-6 research worker; inspected captured primary sources; no independent review, operations, synthetic findings or human checks"
+  },
+  {
+    "app_id": 65,
+    "claim_id": "65.auth.management_pat",
+    "change": "added",
+    "reason": "Initial Task13 explicit extraction by Codex GPT-6 research worker; inspected captured primary sources; no independent review, operations, synthetic findings or human checks"
+  },
+  {
+    "app_id": 65,
+    "claim_id": "65.auth.project_keys",
+    "change": "added",
+    "reason": "Initial Task13 explicit extraction by Codex GPT-6 research worker; inspected captured primary sources; no independent review, operations, synthetic findings or human checks"
+  },
+  {
+    "app_id": 65,
+    "claim_id": "65.buildability",
+    "change": "changed",
+    "reason": "Initial Task13 explicit extraction by Codex GPT-6 research worker; inspected captured primary sources; no independent review, operations, synthetic findings or human checks"
+  },
+  {
+    "app_id": 65,
+    "claim_id": "65.identity",
+    "change": "changed",
+    "reason": "Initial Task13 explicit extraction by Codex GPT-6 research worker; inspected captured primary sources; no independent review, operations, synthetic findings or human checks"
+  },
+  {
+    "app_id": 65,
+    "claim_id": "65.mcp",
+    "change": "removed",
+    "reason": "Initial Task13 explicit extraction by Codex GPT-6 research worker; inspected captured primary sources; no independent review, operations, synthetic findings or human checks"
+  },
+  {
+    "app_id": 65,
+    "claim_id": "65.mcp.discovery",
+    "change": "added",
+    "reason": "Initial Task13 explicit extraction by Codex GPT-6 research worker; inspected captured primary sources; no independent review, operations, synthetic findings or human checks"
+  },
+  {
+    "app_id": 65,
+    "claim_id": "65.mcp.server",
+    "change": "added",
+    "reason": "Initial Task13 explicit extraction by Codex GPT-6 research worker; inspected captured primary sources; no independent review, operations, synthetic findings or human checks"
+  },
+  {
+    "app_id": 65,
+    "claim_id": "65.mcp.server.operational",
+    "change": "added",
+    "reason": "Initial Task13 explicit extraction by Codex GPT-6 research worker; inspected captured primary sources; no independent review, operations, synthetic findings or human checks"
+  },
+  {
+    "app_id": 65,
+    "claim_id": "65.production.admin_approval_required",
+    "change": "changed",
+    "reason": "Initial Task13 explicit extraction by Codex GPT-6 research worker; inspected captured primary sources; no independent review, operations, synthetic findings or human checks"
+  },
+  {
+    "app_id": 65,
+    "claim_id": "65.production.contact_sales_required",
+    "change": "changed",
+    "reason": "Initial Task13 explicit extraction by Codex GPT-6 research worker; inspected captured primary sources; no independent review, operations, synthetic findings or human checks"
+  },
+  {
+    "app_id": 65,
+    "claim_id": "65.production.free_access",
+    "change": "changed",
+    "reason": "Initial Task13 explicit extraction by Codex GPT-6 research worker; inspected captured primary sources; no independent review, operations, synthetic findings or human checks"
+  },
+  {
+    "app_id": 65,
+    "claim_id": "65.production.paid_required",
+    "change": "changed",
+    "reason": "Initial Task13 explicit extraction by Codex GPT-6 research worker; inspected captured primary sources; no independent review, operations, synthetic findings or human checks"
+  },
+  {
+    "app_id": 65,
+    "claim_id": "65.production.partner_approval_required",
+    "change": "changed",
+    "reason": "Initial Task13 explicit extraction by Codex GPT-6 research worker; inspected captured primary sources; no independent review, operations, synthetic findings or human checks"
+  },
+  {
+    "app_id": 65,
+    "claim_id": "65.production.sandbox_access",
+    "change": "changed",
+    "reason": "Initial Task13 explicit extraction by Codex GPT-6 research worker; inspected captured primary sources; no independent review, operations, synthetic findings or human checks"
+  },
+  {
+    "app_id": 65,
+    "claim_id": "65.production.self_serve",
+    "change": "changed",
+    "reason": "Initial Task13 explicit extraction by Codex GPT-6 research worker; inspected captured primary sources; no independent review, operations, synthetic findings or human checks"
+  },
+  {
+    "app_id": 65,
+    "claim_id": "65.production.trial_access",
+    "change": "changed",
+    "reason": "Initial Task13 explicit extraction by Codex GPT-6 research worker; inspected captured primary sources; no independent review, operations, synthetic findings or human checks"
+  },
+  {
+    "app_id": 65,
+    "claim_id": "65.production.vendor_approval_required",
+    "change": "changed",
+    "reason": "Initial Task13 explicit extraction by Codex GPT-6 research worker; inspected captured primary sources; no independent review, operations, synthetic findings or human checks"
+  },
+  {
+    "app_id": 65,
+    "claim_id": "65.purpose",
+    "change": "changed",
+    "reason": "Initial Task13 explicit extraction by Codex GPT-6 research worker; inspected captured primary sources; no independent review, operations, synthetic findings or human checks"
+  },
+  {
+    "app_id": 65,
+    "claim_id": "65.testing.admin_approval_required",
+    "change": "changed",
+    "reason": "Initial Task13 explicit extraction by Codex GPT-6 research worker; inspected captured primary sources; no independent review, operations, synthetic findings or human checks"
+  },
+  {
+    "app_id": 65,
+    "claim_id": "65.testing.contact_sales_required",
+    "change": "changed",
+    "reason": "Initial Task13 explicit extraction by Codex GPT-6 research worker; inspected captured primary sources; no independent review, operations, synthetic findings or human checks"
+  },
+  {
+    "app_id": 65,
+    "claim_id": "65.testing.free_access",
+    "change": "changed",
+    "reason": "Initial Task13 explicit extraction by Codex GPT-6 research worker; inspected captured primary sources; no independent review, operations, synthetic findings or human checks"
+  },
+  {
+    "app_id": 65,
+    "claim_id": "65.testing.paid_required",
+    "change": "changed",
+    "reason": "Initial Task13 explicit extraction by Codex GPT-6 research worker; inspected captured primary sources; no independent review, operations, synthetic findings or human checks"
+  },
+  {
+    "app_id": 65,
+    "claim_id": "65.testing.partner_approval_required",
+    "change": "changed",
+    "reason": "Initial Task13 explicit extraction by Codex GPT-6 research worker; inspected captured primary sources; no independent review, operations, synthetic findings or human checks"
+  },
+  {
+    "app_id": 65,
+    "claim_id": "65.testing.sandbox_access",
+    "change": "changed",
+    "reason": "Initial Task13 explicit extraction by Codex GPT-6 research worker; inspected captured primary sources; no independent review, operations, synthetic findings or human checks"
+  },
+  {
+    "app_id": 65,
+    "claim_id": "65.testing.self_serve",
+    "change": "changed",
+    "reason": "Initial Task13 explicit extraction by Codex GPT-6 research worker; inspected captured primary sources; no independent review, operations, synthetic findings or human checks"
+  },
+  {
+    "app_id": 65,
+    "claim_id": "65.testing.trial_access",
+    "change": "changed",
+    "reason": "Initial Task13 explicit extraction by Codex GPT-6 research worker; inspected captured primary sources; no independent review, operations, synthetic findings or human checks"
+  },
+  {
+    "app_id": 65,
+    "claim_id": "65.testing.vendor_approval_required",
+    "change": "changed",
+    "reason": "Initial Task13 explicit extraction by Codex GPT-6 research worker; inspected captured primary sources; no independent review, operations, synthetic findings or human checks"
+  },
+  {
+    "app_id": 66,
+    "claim_id": "66.api.breadth",
+    "change": "changed",
+    "reason": "Initial Task13 explicit extraction by Codex GPT-6 research worker; inspected captured primary sources; no independent review, operations, synthetic findings or human checks"
+  },
+  {
+    "app_id": 66,
+    "claim_id": "66.api.group.cypher",
+    "change": "added",
+    "reason": "Initial Task13 explicit extraction by Codex GPT-6 research worker; inspected captured primary sources; no independent review, operations, synthetic findings or human checks"
+  },
+  {
+    "app_id": 66,
+    "claim_id": "66.api.group.graph_schema",
+    "change": "added",
+    "reason": "Initial Task13 explicit extraction by Codex GPT-6 research worker; inspected captured primary sources; no independent review, operations, synthetic findings or human checks"
+  },
+  {
+    "app_id": 66,
+    "claim_id": "66.api.protocol.http",
+    "change": "added",
+    "reason": "Initial Task13 explicit extraction by Codex GPT-6 research worker; inspected captured primary sources; no independent review, operations, synthetic findings or human checks"
+  },
+  {
+    "app_id": 66,
+    "claim_id": "66.api.public_documentation",
+    "change": "changed",
+    "reason": "Initial Task13 explicit extraction by Codex GPT-6 research worker; inspected captured primary sources; no independent review, operations, synthetic findings or human checks"
+  },
+  {
+    "app_id": 66,
+    "claim_id": "66.auth.basic",
+    "change": "added",
+    "reason": "Initial Task13 explicit extraction by Codex GPT-6 research worker; inspected captured primary sources; no independent review, operations, synthetic findings or human checks"
+  },
+  {
+    "app_id": 66,
+    "claim_id": "66.auth.sso_bearer",
+    "change": "added",
+    "reason": "Initial Task13 explicit extraction by Codex GPT-6 research worker; inspected captured primary sources; no independent review, operations, synthetic findings or human checks"
+  },
+  {
+    "app_id": 66,
+    "claim_id": "66.buildability",
+    "change": "changed",
+    "reason": "Initial Task13 explicit extraction by Codex GPT-6 research worker; inspected captured primary sources; no independent review, operations, synthetic findings or human checks"
+  },
+  {
+    "app_id": 66,
+    "claim_id": "66.identity",
+    "change": "changed",
+    "reason": "Initial Task13 explicit extraction by Codex GPT-6 research worker; inspected captured primary sources; no independent review, operations, synthetic findings or human checks"
+  },
+  {
+    "app_id": 66,
+    "claim_id": "66.mcp",
+    "change": "removed",
+    "reason": "Initial Task13 explicit extraction by Codex GPT-6 research worker; inspected captured primary sources; no independent review, operations, synthetic findings or human checks"
+  },
+  {
+    "app_id": 66,
+    "claim_id": "66.mcp.discovery",
+    "change": "added",
+    "reason": "Initial Task13 explicit extraction by Codex GPT-6 research worker; inspected captured primary sources; no independent review, operations, synthetic findings or human checks"
+  },
+  {
+    "app_id": 66,
+    "claim_id": "66.mcp.server",
+    "change": "added",
+    "reason": "Initial Task13 explicit extraction by Codex GPT-6 research worker; inspected captured primary sources; no independent review, operations, synthetic findings or human checks"
+  },
+  {
+    "app_id": 66,
+    "claim_id": "66.mcp.server.operational",
+    "change": "added",
+    "reason": "Initial Task13 explicit extraction by Codex GPT-6 research worker; inspected captured primary sources; no independent review, operations, synthetic findings or human checks"
+  },
+  {
+    "app_id": 66,
+    "claim_id": "66.production.admin_approval_required",
+    "change": "changed",
+    "reason": "Initial Task13 explicit extraction by Codex GPT-6 research worker; inspected captured primary sources; no independent review, operations, synthetic findings or human checks"
+  },
+  {
+    "app_id": 66,
+    "claim_id": "66.production.contact_sales_required",
+    "change": "changed",
+    "reason": "Initial Task13 explicit extraction by Codex GPT-6 research worker; inspected captured primary sources; no independent review, operations, synthetic findings or human checks"
+  },
+  {
+    "app_id": 66,
+    "claim_id": "66.production.free_access",
+    "change": "changed",
+    "reason": "Initial Task13 explicit extraction by Codex GPT-6 research worker; inspected captured primary sources; no independent review, operations, synthetic findings or human checks"
+  },
+  {
+    "app_id": 66,
+    "claim_id": "66.production.paid_required",
+    "change": "changed",
+    "reason": "Initial Task13 explicit extraction by Codex GPT-6 research worker; inspected captured primary sources; no independent review, operations, synthetic findings or human checks"
+  },
+  {
+    "app_id": 66,
+    "claim_id": "66.production.partner_approval_required",
+    "change": "changed",
+    "reason": "Initial Task13 explicit extraction by Codex GPT-6 research worker; inspected captured primary sources; no independent review, operations, synthetic findings or human checks"
+  },
+  {
+    "app_id": 66,
+    "claim_id": "66.production.sandbox_access",
+    "change": "changed",
+    "reason": "Initial Task13 explicit extraction by Codex GPT-6 research worker; inspected captured primary sources; no independent review, operations, synthetic findings or human checks"
+  },
+  {
+    "app_id": 66,
+    "claim_id": "66.production.self_serve",
+    "change": "changed",
+    "reason": "Initial Task13 explicit extraction by Codex GPT-6 research worker; inspected captured primary sources; no independent review, operations, synthetic findings or human checks"
+  },
+  {
+    "app_id": 66,
+    "claim_id": "66.production.trial_access",
+    "change": "changed",
+    "reason": "Initial Task13 explicit extraction by Codex GPT-6 research worker; inspected captured primary sources; no independent review, operations, synthetic findings or human checks"
+  },
+  {
+    "app_id": 66,
+    "claim_id": "66.production.vendor_approval_required",
+    "change": "changed",
+    "reason": "Initial Task13 explicit extraction by Codex GPT-6 research worker; inspected captured primary sources; no independent review, operations, synthetic findings or human checks"
+  },
+  {
+    "app_id": 66,
+    "claim_id": "66.purpose",
+    "change": "changed",
+    "reason": "Initial Task13 explicit extraction by Codex GPT-6 research worker; inspected captured primary sources; no independent review, operations, synthetic findings or human checks"
+  },
+  {
+    "app_id": 66,
+    "claim_id": "66.testing.admin_approval_required",
+    "change": "changed",
+    "reason": "Initial Task13 explicit extraction by Codex GPT-6 research worker; inspected captured primary sources; no independent review, operations, synthetic findings or human checks"
+  },
+  {
+    "app_id": 66,
+    "claim_id": "66.testing.contact_sales_required",
+    "change": "changed",
+    "reason": "Initial Task13 explicit extraction by Codex GPT-6 research worker; inspected captured primary sources; no independent review, operations, synthetic findings or human checks"
+  },
+  {
+    "app_id": 66,
+    "claim_id": "66.testing.free_access",
+    "change": "changed",
+    "reason": "Initial Task13 explicit extraction by Codex GPT-6 research worker; inspected captured primary sources; no independent review, operations, synthetic findings or human checks"
+  },
+  {
+    "app_id": 66,
+    "claim_id": "66.testing.paid_required",
+    "change": "changed",
+    "reason": "Initial Task13 explicit extraction by Codex GPT-6 research worker; inspected captured primary sources; no independent review, operations, synthetic findings or human checks"
+  },
+  {
+    "app_id": 66,
+    "claim_id": "66.testing.partner_approval_required",
+    "change": "changed",
+    "reason": "Initial Task13 explicit extraction by Codex GPT-6 research worker; inspected captured primary sources; no independent review, operations, synthetic findings or human checks"
+  },
+  {
+    "app_id": 66,
+    "claim_id": "66.testing.sandbox_access",
+    "change": "changed",
+    "reason": "Initial Task13 explicit extraction by Codex GPT-6 research worker; inspected captured primary sources; no independent review, operations, synthetic findings or human checks"
+  },
+  {
+    "app_id": 66,
+    "claim_id": "66.testing.self_serve",
+    "change": "changed",
+    "reason": "Initial Task13 explicit extraction by Codex GPT-6 research worker; inspected captured primary sources; no independent review, operations, synthetic findings or human checks"
+  },
+  {
+    "app_id": 66,
+    "claim_id": "66.testing.trial_access",
+    "change": "changed",
+    "reason": "Initial Task13 explicit extraction by Codex GPT-6 research worker; inspected captured primary sources; no independent review, operations, synthetic findings or human checks"
+  },
+  {
+    "app_id": 66,
+    "claim_id": "66.testing.vendor_approval_required",
+    "change": "changed",
+    "reason": "Initial Task13 explicit extraction by Codex GPT-6 research worker; inspected captured primary sources; no independent review, operations, synthetic findings or human checks"
+  },
+  {
+    "app_id": 67,
+    "claim_id": "67.api.breadth",
+    "change": "changed",
+    "reason": "Initial Task13 explicit extraction by Codex GPT-6 research worker; inspected captured primary sources; no independent review, operations, synthetic findings or human checks"
+  },
+  {
+    "app_id": 67,
+    "claim_id": "67.api.group.administration",
+    "change": "added",
+    "reason": "Initial Task13 explicit extraction by Codex GPT-6 research worker; inspected captured primary sources; no independent review, operations, synthetic findings or human checks"
+  },
+  {
+    "app_id": 67,
+    "claim_id": "67.api.group.statements",
+    "change": "added",
+    "reason": "Initial Task13 explicit extraction by Codex GPT-6 research worker; inspected captured primary sources; no independent review, operations, synthetic findings or human checks"
+  },
+  {
+    "app_id": 67,
+    "claim_id": "67.api.protocol.rest",
+    "change": "added",
+    "reason": "Initial Task13 explicit extraction by Codex GPT-6 research worker; inspected captured primary sources; no independent review, operations, synthetic findings or human checks"
+  },
+  {
+    "app_id": 67,
+    "claim_id": "67.api.protocol.sql",
+    "change": "added",
+    "reason": "Initial Task13 explicit extraction by Codex GPT-6 research worker; inspected captured primary sources; no independent review, operations, synthetic findings or human checks"
+  },
+  {
+    "app_id": 67,
+    "claim_id": "67.api.public_documentation",
+    "change": "changed",
+    "reason": "Initial Task13 explicit extraction by Codex GPT-6 research worker; inspected captured primary sources; no independent review, operations, synthetic findings or human checks"
+  },
+  {
+    "app_id": 67,
+    "claim_id": "67.auth.keypair",
+    "change": "added",
+    "reason": "Initial Task13 explicit extraction by Codex GPT-6 research worker; inspected captured primary sources; no independent review, operations, synthetic findings or human checks"
+  },
+  {
+    "app_id": 67,
+    "claim_id": "67.auth.oauth",
+    "change": "added",
+    "reason": "Initial Task13 explicit extraction by Codex GPT-6 research worker; inspected captured primary sources; no independent review, operations, synthetic findings or human checks"
+  },
+  {
+    "app_id": 67,
+    "claim_id": "67.auth.pat",
+    "change": "added",
+    "reason": "Initial Task13 explicit extraction by Codex GPT-6 research worker; inspected captured primary sources; no independent review, operations, synthetic findings or human checks"
+  },
+  {
+    "app_id": 67,
+    "claim_id": "67.buildability",
+    "change": "changed",
+    "reason": "Initial Task13 explicit extraction by Codex GPT-6 research worker; inspected captured primary sources; no independent review, operations, synthetic findings or human checks"
+  },
+  {
+    "app_id": 67,
+    "claim_id": "67.identity",
+    "change": "changed",
+    "reason": "Initial Task13 explicit extraction by Codex GPT-6 research worker; inspected captured primary sources; no independent review, operations, synthetic findings or human checks"
+  },
+  {
+    "app_id": 67,
+    "claim_id": "67.mcp",
+    "change": "removed",
+    "reason": "Initial Task13 explicit extraction by Codex GPT-6 research worker; inspected captured primary sources; no independent review, operations, synthetic findings or human checks"
+  },
+  {
+    "app_id": 67,
+    "claim_id": "67.mcp.discovery",
+    "change": "added",
+    "reason": "Initial Task13 explicit extraction by Codex GPT-6 research worker; inspected captured primary sources; no independent review, operations, synthetic findings or human checks"
+  },
+  {
+    "app_id": 67,
+    "claim_id": "67.mcp.server",
+    "change": "added",
+    "reason": "Initial Task13 explicit extraction by Codex GPT-6 research worker; inspected captured primary sources; no independent review, operations, synthetic findings or human checks"
+  },
+  {
+    "app_id": 67,
+    "claim_id": "67.mcp.server.operational",
+    "change": "added",
+    "reason": "Initial Task13 explicit extraction by Codex GPT-6 research worker; inspected captured primary sources; no independent review, operations, synthetic findings or human checks"
+  },
+  {
+    "app_id": 67,
+    "claim_id": "67.production.admin_approval_required",
+    "change": "changed",
+    "reason": "Initial Task13 explicit extraction by Codex GPT-6 research worker; inspected captured primary sources; no independent review, operations, synthetic findings or human checks"
+  },
+  {
+    "app_id": 67,
+    "claim_id": "67.production.contact_sales_required",
+    "change": "changed",
+    "reason": "Initial Task13 explicit extraction by Codex GPT-6 research worker; inspected captured primary sources; no independent review, operations, synthetic findings or human checks"
+  },
+  {
+    "app_id": 67,
+    "claim_id": "67.production.free_access",
+    "change": "changed",
+    "reason": "Initial Task13 explicit extraction by Codex GPT-6 research worker; inspected captured primary sources; no independent review, operations, synthetic findings or human checks"
+  },
+  {
+    "app_id": 67,
+    "claim_id": "67.production.paid_required",
+    "change": "changed",
+    "reason": "Initial Task13 explicit extraction by Codex GPT-6 research worker; inspected captured primary sources; no independent review, operations, synthetic findings or human checks"
+  },
+  {
+    "app_id": 67,
+    "claim_id": "67.production.partner_approval_required",
+    "change": "changed",
+    "reason": "Initial Task13 explicit extraction by Codex GPT-6 research worker; inspected captured primary sources; no independent review, operations, synthetic findings or human checks"
+  },
+  {
+    "app_id": 67,
+    "claim_id": "67.production.sandbox_access",
+    "change": "changed",
+    "reason": "Initial Task13 explicit extraction by Codex GPT-6 research worker; inspected captured primary sources; no independent review, operations, synthetic findings or human checks"
+  },
+  {
+    "app_id": 67,
+    "claim_id": "67.production.self_serve",
+    "change": "changed",
+    "reason": "Initial Task13 explicit extraction by Codex GPT-6 research worker; inspected captured primary sources; no independent review, operations, synthetic findings or human checks"
+  },
+  {
+    "app_id": 67,
+    "claim_id": "67.production.trial_access",
+    "change": "changed",
+    "reason": "Initial Task13 explicit extraction by Codex GPT-6 research worker; inspected captured primary sources; no independent review, operations, synthetic findings or human checks"
+  },
+  {
+    "app_id": 67,
+    "claim_id": "67.production.vendor_approval_required",
+    "change": "changed",
+    "reason": "Initial Task13 explicit extraction by Codex GPT-6 research worker; inspected captured primary sources; no independent review, operations, synthetic findings or human checks"
+  },
+  {
+    "app_id": 67,
+    "claim_id": "67.purpose",
+    "change": "changed",
+    "reason": "Initial Task13 explicit extraction by Codex GPT-6 research worker; inspected captured primary sources; no independent review, operations, synthetic findings or human checks"
+  },
+  {
+    "app_id": 67,
+    "claim_id": "67.testing.admin_approval_required",
+    "change": "changed",
+    "reason": "Initial Task13 explicit extraction by Codex GPT-6 research worker; inspected captured primary sources; no independent review, operations, synthetic findings or human checks"
+  },
+  {
+    "app_id": 67,
+    "claim_id": "67.testing.contact_sales_required",
+    "change": "changed",
+    "reason": "Initial Task13 explicit extraction by Codex GPT-6 research worker; inspected captured primary sources; no independent review, operations, synthetic findings or human checks"
+  },
+  {
+    "app_id": 67,
+    "claim_id": "67.testing.free_access",
+    "change": "changed",
+    "reason": "Initial Task13 explicit extraction by Codex GPT-6 research worker; inspected captured primary sources; no independent review, operations, synthetic findings or human checks"
+  },
+  {
+    "app_id": 67,
+    "claim_id": "67.testing.paid_required",
+    "change": "changed",
+    "reason": "Initial Task13 explicit extraction by Codex GPT-6 research worker; inspected captured primary sources; no independent review, operations, synthetic findings or human checks"
+  },
+  {
+    "app_id": 67,
+    "claim_id": "67.testing.partner_approval_required",
+    "change": "changed",
+    "reason": "Initial Task13 explicit extraction by Codex GPT-6 research worker; inspected captured primary sources; no independent review, operations, synthetic findings or human checks"
+  },
+  {
+    "app_id": 67,
+    "claim_id": "67.testing.sandbox_access",
+    "change": "changed",
+    "reason": "Initial Task13 explicit extraction by Codex GPT-6 research worker; inspected captured primary sources; no independent review, operations, synthetic findings or human checks"
+  },
+  {
+    "app_id": 67,
+    "claim_id": "67.testing.self_serve",
+    "change": "changed",
+    "reason": "Initial Task13 explicit extraction by Codex GPT-6 research worker; inspected captured primary sources; no independent review, operations, synthetic findings or human checks"
+  },
+  {
+    "app_id": 67,
+    "claim_id": "67.testing.trial_access",
+    "change": "changed",
+    "reason": "Initial Task13 explicit extraction by Codex GPT-6 research worker; inspected captured primary sources; no independent review, operations, synthetic findings or human checks"
+  },
+  {
+    "app_id": 67,
+    "claim_id": "67.testing.vendor_approval_required",
+    "change": "changed",
+    "reason": "Initial Task13 explicit extraction by Codex GPT-6 research worker; inspected captured primary sources; no independent review, operations, synthetic findings or human checks"
+  },
+  {
+    "app_id": 68,
+    "claim_id": "68.api.breadth",
+    "change": "changed",
+    "reason": "Initial Task13 explicit extraction by Codex GPT-6 research worker; inspected captured primary sources; no independent review, operations, synthetic findings or human checks"
+  },
+  {
+    "app_id": 68,
+    "claim_id": "68.api.group.access_lists",
+    "change": "added",
+    "reason": "Initial Task13 explicit extraction by Codex GPT-6 research worker; inspected captured primary sources; no independent review, operations, synthetic findings or human checks"
+  },
+  {
+    "app_id": 68,
+    "claim_id": "68.api.group.admin_objects",
+    "change": "added",
+    "reason": "Initial Task13 explicit extraction by Codex GPT-6 research worker; inspected captured primary sources; no independent review, operations, synthetic findings or human checks"
+  },
+  {
+    "app_id": 68,
+    "claim_id": "68.api.protocol.cli",
+    "change": "added",
+    "reason": "Initial Task13 explicit extraction by Codex GPT-6 research worker; inspected captured primary sources; no independent review, operations, synthetic findings or human checks"
+  },
+  {
+    "app_id": 68,
+    "claim_id": "68.api.protocol.sdk",
+    "change": "added",
+    "reason": "Initial Task13 explicit extraction by Codex GPT-6 research worker; inspected captured primary sources; no independent review, operations, synthetic findings or human checks"
+  },
+  {
+    "app_id": 68,
+    "claim_id": "68.api.public_documentation",
+    "change": "changed",
+    "reason": "Initial Task13 explicit extraction by Codex GPT-6 research worker; inspected captured primary sources; no independent review, operations, synthetic findings or human checks"
+  },
+  {
+    "app_id": 68,
+    "claim_id": "68.auth.digest",
+    "change": "added",
+    "reason": "Initial Task13 explicit extraction by Codex GPT-6 research worker; inspected captured primary sources; no independent review, operations, synthetic findings or human checks"
+  },
+  {
+    "app_id": 68,
+    "claim_id": "68.auth.service_oauth",
+    "change": "added",
+    "reason": "Initial Task13 explicit extraction by Codex GPT-6 research worker; inspected captured primary sources; no independent review, operations, synthetic findings or human checks"
+  },
+  {
+    "app_id": 68,
+    "claim_id": "68.buildability",
+    "change": "changed",
+    "reason": "Initial Task13 explicit extraction by Codex GPT-6 research worker; inspected captured primary sources; no independent review, operations, synthetic findings or human checks"
+  },
+  {
+    "app_id": 68,
+    "claim_id": "68.identity",
+    "change": "changed",
+    "reason": "Initial Task13 explicit extraction by Codex GPT-6 research worker; inspected captured primary sources; no independent review, operations, synthetic findings or human checks"
+  },
+  {
+    "app_id": 68,
+    "claim_id": "68.mcp",
+    "change": "removed",
+    "reason": "Initial Task13 explicit extraction by Codex GPT-6 research worker; inspected captured primary sources; no independent review, operations, synthetic findings or human checks"
+  },
+  {
+    "app_id": 68,
+    "claim_id": "68.mcp.discovery",
+    "change": "added",
+    "reason": "Initial Task13 explicit extraction by Codex GPT-6 research worker; inspected captured primary sources; no independent review, operations, synthetic findings or human checks"
+  },
+  {
+    "app_id": 68,
+    "claim_id": "68.mcp.server",
+    "change": "added",
+    "reason": "Initial Task13 explicit extraction by Codex GPT-6 research worker; inspected captured primary sources; no independent review, operations, synthetic findings or human checks"
+  },
+  {
+    "app_id": 68,
+    "claim_id": "68.mcp.server.operational",
+    "change": "added",
+    "reason": "Initial Task13 explicit extraction by Codex GPT-6 research worker; inspected captured primary sources; no independent review, operations, synthetic findings or human checks"
+  },
+  {
+    "app_id": 68,
+    "claim_id": "68.production.admin_approval_required",
+    "change": "changed",
+    "reason": "Initial Task13 explicit extraction by Codex GPT-6 research worker; inspected captured primary sources; no independent review, operations, synthetic findings or human checks"
+  },
+  {
+    "app_id": 68,
+    "claim_id": "68.production.contact_sales_required",
+    "change": "changed",
+    "reason": "Initial Task13 explicit extraction by Codex GPT-6 research worker; inspected captured primary sources; no independent review, operations, synthetic findings or human checks"
+  },
+  {
+    "app_id": 68,
+    "claim_id": "68.production.free_access",
+    "change": "changed",
+    "reason": "Initial Task13 explicit extraction by Codex GPT-6 research worker; inspected captured primary sources; no independent review, operations, synthetic findings or human checks"
+  },
+  {
+    "app_id": 68,
+    "claim_id": "68.production.paid_required",
+    "change": "changed",
+    "reason": "Initial Task13 explicit extraction by Codex GPT-6 research worker; inspected captured primary sources; no independent review, operations, synthetic findings or human checks"
+  },
+  {
+    "app_id": 68,
+    "claim_id": "68.production.partner_approval_required",
+    "change": "changed",
+    "reason": "Initial Task13 explicit extraction by Codex GPT-6 research worker; inspected captured primary sources; no independent review, operations, synthetic findings or human checks"
+  },
+  {
+    "app_id": 68,
+    "claim_id": "68.production.sandbox_access",
+    "change": "changed",
+    "reason": "Initial Task13 explicit extraction by Codex GPT-6 research worker; inspected captured primary sources; no independent review, operations, synthetic findings or human checks"
+  },
+  {
+    "app_id": 68,
+    "claim_id": "68.production.self_serve",
+    "change": "changed",
+    "reason": "Initial Task13 explicit extraction by Codex GPT-6 research worker; inspected captured primary sources; no independent review, operations, synthetic findings or human checks"
+  },
+  {
+    "app_id": 68,
+    "claim_id": "68.production.trial_access",
+    "change": "changed",
+    "reason": "Initial Task13 explicit extraction by Codex GPT-6 research worker; inspected captured primary sources; no independent review, operations, synthetic findings or human checks"
+  },
+  {
+    "app_id": 68,
+    "claim_id": "68.production.vendor_approval_required",
+    "change": "changed",
+    "reason": "Initial Task13 explicit extraction by Codex GPT-6 research worker; inspected captured primary sources; no independent review, operations, synthetic findings or human checks"
+  },
+  {
+    "app_id": 68,
+    "claim_id": "68.purpose",
+    "change": "changed",
+    "reason": "Initial Task13 explicit extraction by Codex GPT-6 research worker; inspected captured primary sources; no independent review, operations, synthetic findings or human checks"
+  },
+  {
+    "app_id": 68,
+    "claim_id": "68.testing.admin_approval_required",
+    "change": "changed",
+    "reason": "Initial Task13 explicit extraction by Codex GPT-6 research worker; inspected captured primary sources; no independent review, operations, synthetic findings or human checks"
+  },
+  {
+    "app_id": 68,
+    "claim_id": "68.testing.contact_sales_required",
+    "change": "changed",
+    "reason": "Initial Task13 explicit extraction by Codex GPT-6 research worker; inspected captured primary sources; no independent review, operations, synthetic findings or human checks"
+  },
+  {
+    "app_id": 68,
+    "claim_id": "68.testing.free_access",
+    "change": "changed",
+    "reason": "Initial Task13 explicit extraction by Codex GPT-6 research worker; inspected captured primary sources; no independent review, operations, synthetic findings or human checks"
+  },
+  {
+    "app_id": 68,
+    "claim_id": "68.testing.paid_required",
+    "change": "changed",
+    "reason": "Initial Task13 explicit extraction by Codex GPT-6 research worker; inspected captured primary sources; no independent review, operations, synthetic findings or human checks"
+  },
+  {
+    "app_id": 68,
+    "claim_id": "68.testing.partner_approval_required",
+    "change": "changed",
+    "reason": "Initial Task13 explicit extraction by Codex GPT-6 research worker; inspected captured primary sources; no independent review, operations, synthetic findings or human checks"
+  },
+  {
+    "app_id": 68,
+    "claim_id": "68.testing.sandbox_access",
+    "change": "changed",
+    "reason": "Initial Task13 explicit extraction by Codex GPT-6 research worker; inspected captured primary sources; no independent review, operations, synthetic findings or human checks"
+  },
+  {
+    "app_id": 68,
+    "claim_id": "68.testing.self_serve",
+    "change": "changed",
+    "reason": "Initial Task13 explicit extraction by Codex GPT-6 research worker; inspected captured primary sources; no independent review, operations, synthetic findings or human checks"
+  },
+  {
+    "app_id": 68,
+    "claim_id": "68.testing.trial_access",
+    "change": "changed",
+    "reason": "Initial Task13 explicit extraction by Codex GPT-6 research worker; inspected captured primary sources; no independent review, operations, synthetic findings or human checks"
+  },
+  {
+    "app_id": 68,
+    "claim_id": "68.testing.vendor_approval_required",
+    "change": "changed",
+    "reason": "Initial Task13 explicit extraction by Codex GPT-6 research worker; inspected captured primary sources; no independent review, operations, synthetic findings or human checks"
+  },
+  {
+    "app_id": 69,
+    "claim_id": "69.api.breadth",
+    "change": "changed",
+    "reason": "Initial Task13 explicit extraction by Codex GPT-6 research worker; inspected captured primary sources; no independent review, operations, synthetic findings or human checks"
+  },
+  {
+    "app_id": 69,
+    "claim_id": "69.api.group.dashboards",
+    "change": "added",
+    "reason": "Initial Task13 explicit extraction by Codex GPT-6 research worker; inspected captured primary sources; no independent review, operations, synthetic findings or human checks"
+  },
+  {
+    "app_id": 69,
+    "claim_id": "69.api.group.logs",
+    "change": "added",
+    "reason": "Initial Task13 explicit extraction by Codex GPT-6 research worker; inspected captured primary sources; no independent review, operations, synthetic findings or human checks"
+  },
+  {
+    "app_id": 69,
+    "claim_id": "69.api.group.security",
+    "change": "added",
+    "reason": "Initial Task13 explicit extraction by Codex GPT-6 research worker; inspected captured primary sources; no independent review, operations, synthetic findings or human checks"
+  },
+  {
+    "app_id": 69,
+    "claim_id": "69.api.protocol.rest",
+    "change": "added",
+    "reason": "Initial Task13 explicit extraction by Codex GPT-6 research worker; inspected captured primary sources; no independent review, operations, synthetic findings or human checks"
+  },
+  {
+    "app_id": 69,
+    "claim_id": "69.api.public_documentation",
+    "change": "changed",
+    "reason": "Initial Task13 explicit extraction by Codex GPT-6 research worker; inspected captured primary sources; no independent review, operations, synthetic findings or human checks"
+  },
+  {
+    "app_id": 69,
+    "claim_id": "69.auth.keys",
+    "change": "added",
+    "reason": "Initial Task13 explicit extraction by Codex GPT-6 research worker; inspected captured primary sources; no independent review, operations, synthetic findings or human checks"
+  },
+  {
+    "app_id": 69,
+    "claim_id": "69.auth.mcp_oauth",
+    "change": "added",
+    "reason": "Initial Task13 explicit extraction by Codex GPT-6 research worker; inspected captured primary sources; no independent review, operations, synthetic findings or human checks"
+  },
+  {
+    "app_id": 69,
+    "claim_id": "69.auth.mcp_pat",
+    "change": "added",
+    "reason": "Initial Task13 explicit extraction by Codex GPT-6 research worker; inspected captured primary sources; no independent review, operations, synthetic findings or human checks"
+  },
+  {
+    "app_id": 69,
+    "claim_id": "69.buildability",
+    "change": "changed",
+    "reason": "Initial Task13 explicit extraction by Codex GPT-6 research worker; inspected captured primary sources; no independent review, operations, synthetic findings or human checks"
+  },
+  {
+    "app_id": 69,
+    "claim_id": "69.identity",
+    "change": "changed",
+    "reason": "Initial Task13 explicit extraction by Codex GPT-6 research worker; inspected captured primary sources; no independent review, operations, synthetic findings or human checks"
+  },
+  {
+    "app_id": 69,
+    "claim_id": "69.mcp",
+    "change": "removed",
+    "reason": "Initial Task13 explicit extraction by Codex GPT-6 research worker; inspected captured primary sources; no independent review, operations, synthetic findings or human checks"
+  },
+  {
+    "app_id": 69,
+    "claim_id": "69.mcp.discovery",
+    "change": "added",
+    "reason": "Initial Task13 explicit extraction by Codex GPT-6 research worker; inspected captured primary sources; no independent review, operations, synthetic findings or human checks"
+  },
+  {
+    "app_id": 69,
+    "claim_id": "69.mcp.server",
+    "change": "added",
+    "reason": "Initial Task13 explicit extraction by Codex GPT-6 research worker; inspected captured primary sources; no independent review, operations, synthetic findings or human checks"
+  },
+  {
+    "app_id": 69,
+    "claim_id": "69.mcp.server.operational",
+    "change": "added",
+    "reason": "Initial Task13 explicit extraction by Codex GPT-6 research worker; inspected captured primary sources; no independent review, operations, synthetic findings or human checks"
+  },
+  {
+    "app_id": 69,
+    "claim_id": "69.production.admin_approval_required",
+    "change": "changed",
+    "reason": "Initial Task13 explicit extraction by Codex GPT-6 research worker; inspected captured primary sources; no independent review, operations, synthetic findings or human checks"
+  },
+  {
+    "app_id": 69,
+    "claim_id": "69.production.contact_sales_required",
+    "change": "changed",
+    "reason": "Initial Task13 explicit extraction by Codex GPT-6 research worker; inspected captured primary sources; no independent review, operations, synthetic findings or human checks"
+  },
+  {
+    "app_id": 69,
+    "claim_id": "69.production.free_access",
+    "change": "changed",
+    "reason": "Initial Task13 explicit extraction by Codex GPT-6 research worker; inspected captured primary sources; no independent review, operations, synthetic findings or human checks"
+  },
+  {
+    "app_id": 69,
+    "claim_id": "69.production.paid_required",
+    "change": "changed",
+    "reason": "Initial Task13 explicit extraction by Codex GPT-6 research worker; inspected captured primary sources; no independent review, operations, synthetic findings or human checks"
+  },
+  {
+    "app_id": 69,
+    "claim_id": "69.production.partner_approval_required",
+    "change": "changed",
+    "reason": "Initial Task13 explicit extraction by Codex GPT-6 research worker; inspected captured primary sources; no independent review, operations, synthetic findings or human checks"
+  },
+  {
+    "app_id": 69,
+    "claim_id": "69.production.sandbox_access",
+    "change": "changed",
+    "reason": "Initial Task13 explicit extraction by Codex GPT-6 research worker; inspected captured primary sources; no independent review, operations, synthetic findings or human checks"
+  },
+  {
+    "app_id": 69,
+    "claim_id": "69.production.self_serve",
+    "change": "changed",
+    "reason": "Initial Task13 explicit extraction by Codex GPT-6 research worker; inspected captured primary sources; no independent review, operations, synthetic findings or human checks"
+  },
+  {
+    "app_id": 69,
+    "claim_id": "69.production.trial_access",
+    "change": "changed",
+    "reason": "Initial Task13 explicit extraction by Codex GPT-6 research worker; inspected captured primary sources; no independent review, operations, synthetic findings or human checks"
+  },
+  {
+    "app_id": 69,
+    "claim_id": "69.production.vendor_approval_required",
+    "change": "changed",
+    "reason": "Initial Task13 explicit extraction by Codex GPT-6 research worker; inspected captured primary sources; no independent review, operations, synthetic findings or human checks"
+  },
+  {
+    "app_id": 69,
+    "claim_id": "69.purpose",
+    "change": "changed",
+    "reason": "Initial Task13 explicit extraction by Codex GPT-6 research worker; inspected captured primary sources; no independent review, operations, synthetic findings or human checks"
+  },
+  {
+    "app_id": 69,
+    "claim_id": "69.testing.admin_approval_required",
+    "change": "changed",
+    "reason": "Initial Task13 explicit extraction by Codex GPT-6 research worker; inspected captured primary sources; no independent review, operations, synthetic findings or human checks"
+  },
+  {
+    "app_id": 69,
+    "claim_id": "69.testing.contact_sales_required",
+    "change": "changed",
+    "reason": "Initial Task13 explicit extraction by Codex GPT-6 research worker; inspected captured primary sources; no independent review, operations, synthetic findings or human checks"
+  },
+  {
+    "app_id": 69,
+    "claim_id": "69.testing.free_access",
+    "change": "changed",
+    "reason": "Initial Task13 explicit extraction by Codex GPT-6 research worker; inspected captured primary sources; no independent review, operations, synthetic findings or human checks"
+  },
+  {
+    "app_id": 69,
+    "claim_id": "69.testing.paid_required",
+    "change": "changed",
+    "reason": "Initial Task13 explicit extraction by Codex GPT-6 research worker; inspected captured primary sources; no independent review, operations, synthetic findings or human checks"
+  },
+  {
+    "app_id": 69,
+    "claim_id": "69.testing.partner_approval_required",
+    "change": "changed",
+    "reason": "Initial Task13 explicit extraction by Codex GPT-6 research worker; inspected captured primary sources; no independent review, operations, synthetic findings or human checks"
+  },
+  {
+    "app_id": 69,
+    "claim_id": "69.testing.sandbox_access",
+    "change": "changed",
+    "reason": "Initial Task13 explicit extraction by Codex GPT-6 research worker; inspected captured primary sources; no independent review, operations, synthetic findings or human checks"
+  },
+  {
+    "app_id": 69,
+    "claim_id": "69.testing.self_serve",
+    "change": "changed",
+    "reason": "Initial Task13 explicit extraction by Codex GPT-6 research worker; inspected captured primary sources; no independent review, operations, synthetic findings or human checks"
+  },
+  {
+    "app_id": 69,
+    "claim_id": "69.testing.trial_access",
+    "change": "changed",
+    "reason": "Initial Task13 explicit extraction by Codex GPT-6 research worker; inspected captured primary sources; no independent review, operations, synthetic findings or human checks"
+  },
+  {
+    "app_id": 69,
+    "claim_id": "69.testing.vendor_approval_required",
+    "change": "changed",
+    "reason": "Initial Task13 explicit extraction by Codex GPT-6 research worker; inspected captured primary sources; no independent review, operations, synthetic findings or human checks"
+  },
+  {
+    "app_id": 70,
+    "claim_id": "70.api.breadth",
+    "change": "changed",
+    "reason": "Initial Task13 explicit extraction by Codex GPT-6 research worker; inspected captured primary sources; no independent review, operations, synthetic findings or human checks"
+  },
+  {
+    "app_id": 70,
+    "claim_id": "70.api.group.account",
+    "change": "added",
+    "reason": "Initial Task13 explicit extraction by Codex GPT-6 research worker; inspected captured primary sources; no independent review, operations, synthetic findings or human checks"
+  },
+  {
+    "app_id": 70,
+    "claim_id": "70.api.group.diagnostics",
+    "change": "added",
+    "reason": "Initial Task13 explicit extraction by Codex GPT-6 research worker; inspected captured primary sources; no independent review, operations, synthetic findings or human checks"
+  },
+  {
+    "app_id": 70,
+    "claim_id": "70.api.group.projects",
+    "change": "added",
+    "reason": "Initial Task13 explicit extraction by Codex GPT-6 research worker; inspected captured primary sources; no independent review, operations, synthetic findings or human checks"
+  },
+  {
+    "app_id": 70,
+    "claim_id": "70.api.protocol.http",
+    "change": "added",
+    "reason": "Initial Task13 explicit extraction by Codex GPT-6 research worker; inspected captured primary sources; no independent review, operations, synthetic findings or human checks"
+  },
+  {
+    "app_id": 70,
+    "claim_id": "70.api.public_documentation",
+    "change": "changed",
+    "reason": "Initial Task13 explicit extraction by Codex GPT-6 research worker; inspected captured primary sources; no independent review, operations, synthetic findings or human checks"
+  },
+  {
+    "app_id": 70,
+    "claim_id": "70.auth.mcp_oauth",
+    "change": "added",
+    "reason": "Initial Task13 explicit extraction by Codex GPT-6 research worker; inspected captured primary sources; no independent review, operations, synthetic findings or human checks"
+  },
+  {
+    "app_id": 70,
+    "claim_id": "70.auth.oauth",
+    "change": "added",
+    "reason": "Initial Task13 explicit extraction by Codex GPT-6 research worker; inspected captured primary sources; no independent review, operations, synthetic findings or human checks"
+  },
+  {
+    "app_id": 70,
+    "claim_id": "70.auth.tokens",
+    "change": "added",
+    "reason": "Initial Task13 explicit extraction by Codex GPT-6 research worker; inspected captured primary sources; no independent review, operations, synthetic findings or human checks"
+  },
+  {
+    "app_id": 70,
+    "claim_id": "70.buildability",
+    "change": "changed",
+    "reason": "Initial Task13 explicit extraction by Codex GPT-6 research worker; inspected captured primary sources; no independent review, operations, synthetic findings or human checks"
+  },
+  {
+    "app_id": 70,
+    "claim_id": "70.identity",
+    "change": "changed",
+    "reason": "Initial Task13 explicit extraction by Codex GPT-6 research worker; inspected captured primary sources; no independent review, operations, synthetic findings or human checks"
+  },
+  {
+    "app_id": 70,
+    "claim_id": "70.mcp",
+    "change": "removed",
+    "reason": "Initial Task13 explicit extraction by Codex GPT-6 research worker; inspected captured primary sources; no independent review, operations, synthetic findings or human checks"
+  },
+  {
+    "app_id": 70,
+    "claim_id": "70.mcp.discovery",
+    "change": "added",
+    "reason": "Initial Task13 explicit extraction by Codex GPT-6 research worker; inspected captured primary sources; no independent review, operations, synthetic findings or human checks"
+  },
+  {
+    "app_id": 70,
+    "claim_id": "70.mcp.server",
+    "change": "added",
+    "reason": "Initial Task13 explicit extraction by Codex GPT-6 research worker; inspected captured primary sources; no independent review, operations, synthetic findings or human checks"
+  },
+  {
+    "app_id": 70,
+    "claim_id": "70.mcp.server.operational",
+    "change": "added",
+    "reason": "Initial Task13 explicit extraction by Codex GPT-6 research worker; inspected captured primary sources; no independent review, operations, synthetic findings or human checks"
+  },
+  {
+    "app_id": 70,
+    "claim_id": "70.production.admin_approval_required",
+    "change": "changed",
+    "reason": "Initial Task13 explicit extraction by Codex GPT-6 research worker; inspected captured primary sources; no independent review, operations, synthetic findings or human checks"
+  },
+  {
+    "app_id": 70,
+    "claim_id": "70.production.contact_sales_required",
+    "change": "changed",
+    "reason": "Initial Task13 explicit extraction by Codex GPT-6 research worker; inspected captured primary sources; no independent review, operations, synthetic findings or human checks"
+  },
+  {
+    "app_id": 70,
+    "claim_id": "70.production.free_access",
+    "change": "changed",
+    "reason": "Initial Task13 explicit extraction by Codex GPT-6 research worker; inspected captured primary sources; no independent review, operations, synthetic findings or human checks"
+  },
+  {
+    "app_id": 70,
+    "claim_id": "70.production.paid_required",
+    "change": "changed",
+    "reason": "Initial Task13 explicit extraction by Codex GPT-6 research worker; inspected captured primary sources; no independent review, operations, synthetic findings or human checks"
+  },
+  {
+    "app_id": 70,
+    "claim_id": "70.production.partner_approval_required",
+    "change": "changed",
+    "reason": "Initial Task13 explicit extraction by Codex GPT-6 research worker; inspected captured primary sources; no independent review, operations, synthetic findings or human checks"
+  },
+  {
+    "app_id": 70,
+    "claim_id": "70.production.sandbox_access",
+    "change": "changed",
+    "reason": "Initial Task13 explicit extraction by Codex GPT-6 research worker; inspected captured primary sources; no independent review, operations, synthetic findings or human checks"
+  },
+  {
+    "app_id": 70,
+    "claim_id": "70.production.self_serve",
+    "change": "changed",
+    "reason": "Initial Task13 explicit extraction by Codex GPT-6 research worker; inspected captured primary sources; no independent review, operations, synthetic findings or human checks"
+  },
+  {
+    "app_id": 70,
+    "claim_id": "70.production.trial_access",
+    "change": "changed",
+    "reason": "Initial Task13 explicit extraction by Codex GPT-6 research worker; inspected captured primary sources; no independent review, operations, synthetic findings or human checks"
+  },
+  {
+    "app_id": 70,
+    "claim_id": "70.production.vendor_approval_required",
+    "change": "changed",
+    "reason": "Initial Task13 explicit extraction by Codex GPT-6 research worker; inspected captured primary sources; no independent review, operations, synthetic findings or human checks"
+  },
+  {
+    "app_id": 70,
+    "claim_id": "70.purpose",
+    "change": "changed",
+    "reason": "Initial Task13 explicit extraction by Codex GPT-6 research worker; inspected captured primary sources; no independent review, operations, synthetic findings or human checks"
+  },
+  {
+    "app_id": 70,
+    "claim_id": "70.testing.admin_approval_required",
+    "change": "changed",
+    "reason": "Initial Task13 explicit extraction by Codex GPT-6 research worker; inspected captured primary sources; no independent review, operations, synthetic findings or human checks"
+  },
+  {
+    "app_id": 70,
+    "claim_id": "70.testing.contact_sales_required",
+    "change": "changed",
+    "reason": "Initial Task13 explicit extraction by Codex GPT-6 research worker; inspected captured primary sources; no independent review, operations, synthetic findings or human checks"
+  },
+  {
+    "app_id": 70,
+    "claim_id": "70.testing.free_access",
+    "change": "changed",
+    "reason": "Initial Task13 explicit extraction by Codex GPT-6 research worker; inspected captured primary sources; no independent review, operations, synthetic findings or human checks"
+  },
+  {
+    "app_id": 70,
+    "claim_id": "70.testing.paid_required",
+    "change": "changed",
+    "reason": "Initial Task13 explicit extraction by Codex GPT-6 research worker; inspected captured primary sources; no independent review, operations, synthetic findings or human checks"
+  },
+  {
+    "app_id": 70,
+    "claim_id": "70.testing.partner_approval_required",
+    "change": "changed",
+    "reason": "Initial Task13 explicit extraction by Codex GPT-6 research worker; inspected captured primary sources; no independent review, operations, synthetic findings or human checks"
+  },
+  {
+    "app_id": 70,
+    "claim_id": "70.testing.sandbox_access",
+    "change": "changed",
+    "reason": "Initial Task13 explicit extraction by Codex GPT-6 research worker; inspected captured primary sources; no independent review, operations, synthetic findings or human checks"
+  },
+  {
+    "app_id": 70,
+    "claim_id": "70.testing.self_serve",
+    "change": "changed",
+    "reason": "Initial Task13 explicit extraction by Codex GPT-6 research worker; inspected captured primary sources; no independent review, operations, synthetic findings or human checks"
+  },
+  {
+    "app_id": 70,
+    "claim_id": "70.testing.trial_access",
+    "change": "changed",
+    "reason": "Initial Task13 explicit extraction by Codex GPT-6 research worker; inspected captured primary sources; no independent review, operations, synthetic findings or human checks"
+  },
+  {
+    "app_id": 70,
+    "claim_id": "70.testing.vendor_approval_required",
+    "change": "changed",
+    "reason": "Initial Task13 explicit extraction by Codex GPT-6 research worker; inspected captured primary sources; no independent review, operations, synthetic findings or human checks"
+  }
+]

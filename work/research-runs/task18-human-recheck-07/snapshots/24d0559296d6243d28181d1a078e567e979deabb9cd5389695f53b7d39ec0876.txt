@@ -1,0 +1,978 @@
+> For a complete page index, fetch https://developer.close.com/llms.txt
+# Close MCP Tools
+The Close MCP Server provides tools organized by scope. Each higher scope includes all tools from the lower scopes.
+## Read-only Tools – `mcp.read`
+Read-only tools for searching, fetching, and exploring your Close data.
+### Activity Search – `activity_search`
+> Search for activities. Results are returned ordered by date descending.
+>
+> Examples:
+>
+> * To list activities on a lead, use the lead_ids filter.
+> * To list conversations, filter for calls and meetings.
+> * Filter for Email to get individual messages, or EmailThread to get one
+> result per conversation. An unfiltered search returns both.
+### Aggregate Objects – `aggregate_objects`
+> Count, sum, average or otherwise aggregate CRM objects, grouped by up to two fields and optionally by time buckets. Takes the same object types and filters as list_objects.
+### Close Product Knowledge Search – `close_product_knowledge_search`
+> Search Close product documentation and knowledge base for relevant information.
+>
+> Use this tool when users ask about:
+>
+> * How to use specific Close features
+> * Close API documentation and integration
+> * Workflow automation and best practices
+> * Product capabilities and limitations
+> * Setup and configuration guidance
+>
+> Example queries:
+>
+> * "How do I set up automated lead assignment?"
+> * "What are Close's API rate limits?"
+> * "How to create custom fields in Close?"
+> * "Best practices for email templates in Close"
+### Customized Builtin Labels – `customized_builtin_labels`
+> Return the customized builtin labels.
+>
+> Only renamed labels are returned - an empty result
+> means the default names apply.
+### Describe Fields – `describe_fields`
+> List the fields of one object type for list_objects and aggregate_objects: built-in fields, smart fields (num\_*, last\_*, first\_*, time_to\_*, ...) and the organization's custom fields, with their value types, enum values and choices.
+>
+> Call it when the field you need is not in the field list of your instructions, to get the exact option strings of a choices custom field, after a validation error names an unknown field, or before concluding that nothing matches a question. Narrow with name_contains: words of the field name, of its display name, or of one of its enum values or choices. When no field has every word, the closest fields are returned and `status` says so.
+### Fetch Skill – `fetch_agent_skill`
+> Read a skill's full instructions by its ID.
+### Fetch Blackout Calendar – `fetch_blackout_calendar`
+> Fetch a Blackout Date calendar and all of its date ranges by ID.
+### Fetch Call Task – `fetch_call_task`
+> Fetch a single call task by ID.
+### Fetch Custom Object Type – `fetch_custom_object_type`
+> Fetch a single custom object type by its ID.
+>
+> A custom object type defines the shape of a category of custom objects,
+> including the custom fields its instances hold. Returns the type with
+> its custom fields.
+### Fetch Email – `fetch_email`
+> Fetch a single email activity by ID.
+### Fetch Invoice – `fetch_invoice`
+> Fetch one of the organization's billing invoices by id.
+### Fetch Meeting – `fetch_meeting`
+> Fetch a meeting activity by ID, including its user note.
+>
+> Use `fetch_meeting_transcript` for what was said in the meeting.
+### Fetch Meeting Transcript – `fetch_meeting_transcript`
+> Fetch a meeting's Notetaker transcript(s) by meeting activity ID.
+>
+> Returns the meeting's speaker breakdown, summary, and full
+> speaker-labeled transcript text. Only covers Notetaker (meeting)
+> transcripts; call transcripts are served by `fetch_call`.
+### Fetch Membership – `fetch_membership`
+> Fetch one of the organization's members by user id.
+### Fetch Inbox Item – `fetch_notification`
+> Fetch an item in the current user's inbox by ID, with the fields its
+> type adds, such as an email's triage flags or a task's full text.
+### Fetch Objects – `fetch_objects`
+> Fetch CRM objects by their IDs, with full details: up to 30 per call.
+>
+> Use it when you already have the IDs, from list_objects results or from the user. To search or filter, use list_objects. IDs that don't exist or aren't accessible come back in `not_found`.
+>
+> Supported: leads (lead\_*), contacts (cont\_*), opportunities (oppo\_*), custom objects (custobj\_*), tasks (task\_*), activities (acti\_*: emails, email threads, calls, SMS, WhatsApp, meetings, notes, completed tasks, lead and opportunity status changes, lead merges, custom activities), lead and opportunity statuses (stat\_*), pipelines with their statuses (pipe\_*), email templates (tmpl\_*), SMS templates (smstmpl\_*), Smart Views (save\_*), users (user\_*) and workflows (seq\_\*). Activities include user and contact names, transcripts and attachments.
+>
+> A lead comes with a ready-made brief in `summaries`: status and key fields, opportunities, open tasks, the last contact and about 30 days of recent activity. Use it directly to summarize or prepare for a lead. An email thread embeds its most recent emails in full and lists older ones in `remaining_email_ids`, which this tool fetches too.
+### Fetch Primary Inbox Tab Categories – `fetch_primary_inbox_view`
+> Fetch the categories the current user's Primary inbox tab shows, as set
+> in Customize Primary Tab.
+### Fetch Role – `fetch_role`
+> Fetch one of the organization's roles by id, with every permission it
+> grants.
+>
+> Use `list_roles` to resolve a role name to its id.
+### Fetch Smart View – `fetch_smart_view`
+> Fetch a smart view (saved search) of any type by ID.
+>
+> Return its metadata, not its search criteria.
+### Fetch SMS – `fetch_sms`
+> Fetch a single SMS activity by ID.
+>
+> Returns the complete SMS, including message text and attachments.
+### Find Agent Configs – `find_agent_configs`
+> List all voice agents configured for the organization. Voice agents are
+> AI callers that place outbound calls to leads' contacts on the user's
+> behalf.
+>
+> Returns each voice agent's ID, name and whether it is active. Use this
+> to find the right voice agent ID when scheduling a call or assigning a
+> call step in a workflow.
+>
+> Users may refer to voice agents as "voice agents", "Chloe", or by their
+> configured name. When more than one agent exists, pick the most
+> appropriate one based on the name.
+### Find Skills – `find_agent_skills`
+> List skills, saved instructions for Close's in-app AI agents, that are
+> available to the user.
+>
+> Most recently used first. Read a skill's instructions with
+> `fetch_agent_skill`.
+### Find Blackout Calendars – `find_blackout_calendars`
+> List Blackout Date calendars, optionally by name or auto-select setting.
+>
+> Fetch a calendar with fetch_blackout_calendar to read its dates before
+> proposing changes.
+### Find Call Outcomes – `find_call_outcomes`
+> List currently configured call outcomes and their descriptions.
+>
+> Omit agent_config_id for all organization call outcomes. Supply it for a
+> voice agent's available outcomes; agents without a conversation type use
+> all organization call outcomes. Requires ViewVoiceAgents when supplied.
+### Find Call Tasks – `find_call_tasks`
+> Find call tasks based on various filters.
+> You can filter by lead, contact, assignee (a user or a voice agent),
+> completion state, and scheduled/created/updated dates.
+### List Contact Custom Fields – `find_contact_custom_fields`
+> List all contact custom fields defined for the organization.
+>
+> Includes both contact-specific fields and shared fields associated
+> with contacts. Returns each field's ID, name, description, type,
+> allowed choices (for choice fields), whether multiple values are
+> accepted, and whether it is a shared field. Useful for deciding which
+> custom field to read or write when working with contacts.
+### Find Contacts – `find_contacts`
+> Find contacts with simple filters, ordered by last updated descending.
+>
+> Omit filters to list recent contacts. Filters combine with AND; IDs
+> within each list combine with OR. Name matches the beginning of words
+> in the contact name only. Email matches an exact address ignoring case.
+> Both email and phone match secondary entries, not just the primary one.
+>
+> Phone matches a complete number after normalization, not a suffix.
+> E.164 is not required: +1 (415) 555-0142 and (415) 555-0142 are accepted.
+> Without a country code, numbers use the requesting user's country.
+> Include the area code where required, such as for U.S. numbers. Ask
+> for missing dialing information instead of guessing it.
+>
+> Each preview row has an id, type, and fields in this fixed order: name,
+> primary_email, primary_phone, title, lead_id. The lead reference has a
+> ref: prefix. Use fetch_objects for full records and secondary entries.
+> query_id identifies the shared entry for these results.
+>
+> For the next page, pass only next_cursor as cursor to find_contacts.
+> Use list_objects for other filters, columns, or sorting, and
+> aggregate_objects for counts and totals.
+### Find Custom Activity Types – `find_custom_activities`
+> List all active (non-archived) Custom Activity Types in the organization,
+> along with the custom fields defined on each type.
+>
+> Call this before creating a workflow with a "custom-activity-event" trigger
+> so you can look up the correct Custom Activity Type ID.
+### Find Custom Activity Instances – `find_custom_activity_instances`
+> Find a lead's custom activity instances based on various filters.
+>
+> A custom activity instance is an activity of a custom activity type,
+> holding the custom field values defined by that type. Always scoped
+> to a single lead; optionally filter by attributed user, one or more
+> custom activity types, or activity date. Results are sorted by most
+> recent activity first and are cursor-paginated.
+### Find Custom Object Instances – `find_custom_object_instances`
+> Find a lead's custom object instances.
+>
+> A custom object instance is a record of a custom object type, attached
+> to a lead and holding the custom field values defined by that type.
+> Always scoped to a single lead; optionally filter to a single custom
+> object type. Results are ordered by creation date (oldest first) and
+> are cursor-paginated.
+### Find Custom Object Types – `find_custom_object_types`
+> List all custom object types in the organization, along with the
+> custom fields defined on each type.
+### Find Email Templates – `find_email_templates`
+> List or find email templates
+### Find Web Forms – `find_forms`
+> List all web forms in the organization.
+>
+> Call this before creating a workflow with a "form-submission-event" trigger
+> so you can look up the correct Form ID.
+### Find Groups – `find_groups`
+> List all groups in the organization.
+### Find Invoices – `find_invoices`
+> Find the organization's billing invoices, newest first.
+>
+> Invoices without a date sort first.
+### List Lead Custom Fields – `find_lead_custom_fields`
+> List all lead custom fields defined for the organization.
+>
+> Returns each field's ID, name, description, type, allowed choices
+> (for choice fields), whether multiple values are accepted, and whether
+> it is a shared field. Useful for deciding which custom field to read
+> or write when working with leads.
+### Find Lead Statuses – `find_lead_statuses`
+> List or find lead statuses for the organization
+### Find Leads – `find_leads`
+> Find leads with simple filters, ordered by last updated descending.
+>
+> Omit filters to list recent leads. Filters combine with AND; IDs within
+> each list combine with OR. Name matches only the lead name, not contact
+> names. Name and full_text match the beginning of words.
+>
+> Each preview row has an id, type, and fields in this fixed order: name,
+> status_id. Status references have a status: prefix, and refs maps each
+> one to its status name. Use fetch_objects for full records. query_id
+> identifies the shared entry for these results.
+>
+> For the next page, pass only next_cursor as cursor to find_leads.
+> Use list_objects for other filters, columns, or sorting, and
+> aggregate_objects for counts and totals.
+### Find Meeting Outcomes – `find_meeting_outcomes`
+> List all outcomes applicable to meetings available in the organization.
+### Find Memberships – `find_memberships`
+> List the organization's members with each member's role name, whether the
+> role is built-in or custom, active/inactive status, and join date. Richer
+> than `org_users` — prefer this unless you only need a name or email.
+> Most recent members first.
+### Find Notes – `find_notes`
+> Find notes based on various filters.
+### Find Inbox Items – `find_notifications`
+> Find items in the current user's inbox, such as incoming emails and
+> SMS, missed calls, voicemails, tasks, and drafts waiting for review.
+> By default returns the items in the inbox today.
+### Find Opportunities – `find_opportunities`
+> Find opportunities by status (active/won/lost), owner, lead, or
+> close-date range, optionally only those needing attention, sorted by
+> soonest close, largest value, or highest confidence. Returns each
+> opportunity with resolved lead, contact, owner, and status names;
+> cursor-paginated.
+### List Opportunity Custom Fields – `find_opportunity_custom_fields`
+> List all opportunity custom fields defined for the organization.
+>
+> Includes both opportunity-specific fields and shared fields associated
+> with opportunities. Returns each field's ID, name, description, type,
+> allowed choices (for choice fields), whether multiple values are
+> accepted, and whether it is a shared field. Useful for deciding which
+> custom field to read or write when working with opportunities.
+### Find Phone Numbers – `find_phone_numbers`
+> List phone numbers visible to the current user for administration.
+>
+> Users with Manage Team Phone Numbers permission see every number in the
+> organization. Other users see numbers they belong to, directly or through
+> an assigned Group.
+### Find Pipelines – `find_pipelines_and_opportunity_statuses`
+> List all opportunity pipelines and their opportunity statuses in the organization.
+### Find Rentable Phone Numbers – `find_rentable_phone_numbers`
+> List phone numbers available to rent in the requested country.
+### Find Scheduling Links – `find_scheduling_links`
+> List available scheduling links for the user and org.
+>
+> User-owned personal links come with a URL. Shared links come with a special
+> template tag. Each can be inserted into generated templates.
+### Find Smart Views – `find_smart_views`
+> List smart views (saved searches) of every type that the user can see.
+>
+> Without `pinned_only`, the most recently updated smart views come first.
+### Find SMS Templates – `find_sms_templates`
+> List or find SMS templates
+### Find Tasks – `find_tasks`
+> Find tasks based on various filters.
+> You can filter by lead, assignee, completion state, and due/created/
+> updated dates.
+### Find Voice Agents – `find_voice_agents`
+> List all voice agents configured for the organization. Voice agents are
+> AI callers that place outbound calls to leads' contacts on the user's
+> behalf.
+>
+> Returns each voice agent's ID, name and whether it is active. Use this
+> to find the right voice agent ID when scheduling a call or assigning a
+> call step in a workflow.
+>
+> Users may refer to voice agents as "voice agents", "Chloe", or by their
+> configured name. When more than one agent exists, pick the most
+> appropriate one based on the name.
+### Find Workflows – `find_workflows`
+> List or find workflows
+### Get AI Credit Usage – `get_ai_credit_usage`
+> AI credit usage for the billing account, broken down by feature.
+>
+> Reports total credits used and a per-feature breakdown. Credits
+> are the billing unit for AI features. Usage covers the whole
+> billing account, not a single organization. Omit `start`/`end`
+> for the current billing period; the result's `start`/`end` report
+> the window actually measured.
+> Explicit ranges must be timezone-aware and span at most 366 days.
+> Older ranges may return empty or partial data — zero usage for an
+> old range does not mean no activity. On a rate-limited error,
+> retry after `retry_after` seconds.
+### Get Billing Summary – `get_billing_summary`
+> Billing summary for the organization's billing account.
+>
+> Reports the subscription plan, billing status with the trial end
+> date, seat counts, and AI usage availability, tier, and credit
+> allowance for the current billing cycle. Whether the account is on
+> trial is `status`, not anything under `ai_usage`. Use
+> `get_ai_credit_usage` for the credits actually used.
+### Get Voice Agent Overview Report – `get_voice_agent_overview_report`
+> Cross-agent rollup for the Voice Agents list page.
+>
+> Returns one row per **active** agent — agents with completed calls
+> in `date_range` **or** queued upcoming calls. Cumulative funnel
+> counts (`answered`, `engaged`, `objective_met`) plus `total_calls`.
+> `upcoming_calls` is the agent's queued (not yet completed) calls and
+> is **not** bound by `date_range` — open tasks are open regardless of
+> when scheduled (so an agent with only upcoming calls still appears).
+> Use this to compare agents;
+> for one agent's outcomes, sentiment, or time saved use
+> `get_voice_agent_performance_report`. For an inventory of all
+> configured voice agents regardless of activity, use
+> `find_agent_configs`.
+>
+> The Voice Agents list (Agents tab) shows all-time stats, so leave
+> `date_range` at its default (`all_time`) unless the user asks for a
+> specific window. (The Upcoming and Recent tabs are call lists, not
+> this rollup — search Calls for those.)
+>
+> Rows are sorted server-side per the `sort` field (default
+> `most_calls`); pass a different mode rather than re-sorting in
+> your reply. Set `reverse=True` to invert (e.g. `sort=most_calls,
+> reverse=True` for least active first) — necessary to surface the
+> bottom of the ordering, since `rows` are capped before they reach
+> you. `truncated` and `total_agent_count` flag in-scope active
+> agents; `dormant_agent_count` reports in-scope agents with
+> **neither** completed calls in the date range **nor** queued
+> upcoming calls (not included in `rows`).
+### Get Voice Agent Performance Report – `get_voice_agent_performance_report`
+> Performance metrics for one voice agent.
+>
+> Returns the numbers shown on the Performance tab of a Voice Agent
+> detail page. Passing multiple `agent_config_ids` pools metrics
+> into a single aggregate (not a per-agent breakdown — for that,
+> use `get_voice_agent_overview_report`). For per-call drill-down,
+> search Calls filtered by `agent_config_id`.
+>
+> When the user is on a Voice Agent page, pull `date_range` from
+> `page_context.date_range` so the numbers match the UI.
+> Accepts a relative range such as `last_week` or an absolute period
+> with `type="absolute"`, `start`, and `end`. For a stored recap, use
+> its inclusive `timeframe_start` and exclusive `timeframe_end`.
+> Outcome coverage uses `answered_by_disposition_count`; `answered_count`
+> is the funnel's Human Reached count.
+>
+> Percentages: `*_pct` is over `total_calls`;
+> `engaged_over_answered_pct` and `objective_met_over_answered_pct`
+> are over `answered` (tier-to-tier conversion). For any other
+> denominator, compute from `*_count`.
+>
+> `issue_signals` contains active improvement suggestions for one agent,
+> using the Performance tab's medium confidence / 5 occurrence threshold.
+> The date range selects agent snapshots, not individual occurrences:
+> issue counts and examples may extend outside the report period.
+> This field is null for multiple agents or restricted lead visibility.
+>
+> `funnel_previous_period_deltas` is null when the date range has
+> no defined previous period (e.g. `all_time`).
+### Get Voice Agents – `get_voice_agents`
+> Return detailed configuration for one or more voice agents.
+>
+> Includes each agent's objective, user instructions, and which skills are
+> enabled. Use this as the follow-up to `find_voice_agents` once one or
+> more agent IDs have been selected.
+### Lead Search – `lead_search`
+> Perform a simple lead search and return the initial set of results.
+>
+> Use this to retrieve all leads, most recent leads, search leads by
+> keyword, or filter by lead status and smart view. For more complex
+> searches use the `search` tool instead.
+>
+> Leads will be returned by last updated first.
+### List Membership Requests – `list_membership_requests`
+> List pending requests to join the current organization.
+>
+> Each entry includes the requesting user's name and email, the
+> request id, and when the request was created.
+### List Objects – `list_objects`
+> Search and list CRM objects (leads, contacts, opportunities, tasks, activities and more) with a structured query of filters, columns and sort.
+>
+> Each preview row has the object's id and type, and `fields`: one value per requested column, in the order of `columns`. A column that doesn't apply to the row's type is an empty string. Referenced users, statuses and objects are prefixed IDs (`user:`, `status:`, `ref:`). `refs` maps each of those IDs to its name, so you don't need to fetch them just to name them; fetch_objects returns the full objects.
+>
+> For the next page, pass only the result's `next_cursor` as `cursor`; the page comes back in the same columns. To answer "how many" or "how much", use aggregate_objects instead of paging through the list. Nested object types have no IDs and can't be listed; they only filter their parents, like leads by address.
+### List Roles – `list_roles`
+> List the roles that can be assigned in the organization.
+>
+> Covers Close's built-in roles plus any custom roles the org defines.
+> Use this to resolve a role name to its id, or to see which roles
+> grant organization management access.
+### Org Info – `org_info`
+> Return general information about the organization and the user.
+### Org Users – `org_users`
+> Return active users (memberships) which are part of the current org.
+### Paginate Search Results – `paginate_search`
+> Paginate a search to retrieve more results.
+>
+> Provide exactly one of:
+>
+> * `search_id`: a `share_*` id from a previous search or shared entry, or
+> * `smart_view_id`: a `save_*` Smart View (saved search) id the user is
+> viewing.
+### Propose Voice Agent Update – `propose_voice_agent_update`
+> Propose a voice agent configuration update from natural-language feedback.
+>
+> This tool does not apply changes to the voice agent. It returns a short
+> behavioral summary and proposal ID when the requested edit is clear. If the
+> feedback is ambiguous, it returns clarification questions instead of making
+> a proposal. Use apply_voice_agent_update with the proposal ID only after
+> the user approves the proposal.
+### Render Email Template – `render_email_template`
+> Render an email template for a lead, including any template variables.
+>
+> Body HTML already contains the user's email signature, denoted with a
+> `<span data-system-generated="signature">` tag. Leave this tag intact
+> or the signature could get duplicated later.
+### Render SMS Template – `render_sms_template`
+> Render an SMS template for a lead, including any template variables.
+### Search Objects – `search`
+> Perform a natural language search for leads or contacts.
+>
+> If a more specific search tool (like lead_search or activity_search)
+> satisfies the request, use that tool instead.
+>
+> You can reference related objects like activities (such as calls, emails,
+> meetings, notes, custom activities, etc.), opportunities, tasks as long as
+> they are part of a lead query.
+>
+> Example queries:
+>
+> * leads not contacted in the past week
+> * leads assigned to me with uncompleted tasks
+> * leads with an active opportunity over \$500
+> * contacts with CTO title
+>
+> Each returned result will contain a title label, preview text, object ID,
+> and URL.
+>
+> The initial set of results, total count of all results, and a URL to open
+> the results in Close is returned. To retrieve more results, use the
+> returned cursor and call the paginate_search tool using the cursor and
+> search ID returned in this response.
+### Show Contact – `show_contact`
+> Show a contact (person) to the user as a card.
+>
+> Call this only to present a contact to the user, usually once at the end of your answer. To read a contact's data, use fetch_objects.
+### Show Lead – `show_lead`
+> Show a lead (company) to the user as a card.
+>
+> Call this only to present a lead to the user, usually once at the end of your answer. To read a lead's data, use fetch_objects.
+### Show Opportunities – `show_opportunities`
+> Show opportunities (deals) to the user as a list.
+>
+> Call this only to present opportunities to the user, usually once at the end of your answer. To find opportunities, use find_opportunities. To read an opportunity's data, use fetch_objects.
+### Show Tasks – `show_tasks`
+> Show tasks to the user as a list.
+>
+> Call this only to present tasks to the user, usually once at the end of your answer. To find tasks, use find_tasks. To read a task's data, use fetch_objects.
+### Submit Feedback – `submit_feedback`
+> Send feedback to Close about this MCP integration.
+>
+> Report errors, confusing tool results, clunky interfaces or missing
+> capabilities you encounter. Briefly explain the goal, what got in
+> the way, and any workaround you used. Preserve the user's wording if
+> they provide a specific message to send. Do not include secrets,
+> customer records, or the full conversation. This does not open a
+> support ticket, it is logged for eventual consideration.
+## Write (Safe) Tools – `mcp.write_safe`
+Includes all `mcp.read` scoped tools, plus these tools for creating and updating data:
+### Create Address – `create_address`
+> Add a new address to an existing lead (company).
+### Create Skill – `create_agent_skill`
+> Create a private skill for the user: instructions they can reuse with
+> Close AI agents by typing `/` and picking it, which Close AI agents
+> also follow on their own when the skill fits the request.
+>
+> Only create a skill when the user asks for one. Write instructions
+> that stand on their own, without this conversation: the task, the
+> steps and the expected output. The skill's description is generated
+> from them afterwards.
+### Create Blackout Calendar – `create_blackout_calendar`
+> Create a Blackout Date calendar using the same rules as Close Settings.
+>
+> Show the proposed dates to the user before saving. Annual recurrence
+> repeats on the same month and day, so holidays that move each year need
+> explicit dates for each year instead of repeats_annually.
+### Create Comment – `create_comment`
+> Add a comment to a commentable object (note, call, opportunity, task,
+> custom object, etc.).
+>
+> If the object already has a comment thread, the new comment is appended
+> to it. Otherwise a new thread is started for the object. Use this tool
+> for both starting a conversation and replying to an existing one — the
+> object_id alone determines which.
+>
+> Comments support @-mentions of users and groups. The body is HTML.
+### Create Contact – `create_contact`
+> Create a new contact for a lead.
+>
+> A contact represents a person associated with a lead (company).
+### Create Custom Activity Instance – `create_custom_activity_instance`
+> Create a new custom activity instance on a lead.
+>
+> A custom activity instance is an activity of a custom activity type,
+> holding the custom field values defined by that type. Use the
+> find_custom_activities tool to look up the available custom activity
+> types.
+>
+> If in an interactive session, ask the user for the relevant field values
+> (including custom fields) before creating, even if they are not required.
+### Create Custom Object Instance – `create_custom_object_instance`
+> Create a new custom object instance on a lead.
+>
+> A custom object instance is a record of a custom object type, attached
+> to a lead and holding the custom field values defined by that type. Use
+> the find_custom_object_types tool to look up the available custom object
+> types.
+>
+> If in an interactive session, ask the user for the relevant field values
+> (including custom fields) before creating, even if they are not required.
+### Create Draft Email – `create_draft_email`
+> Create a draft email on a lead.
+>
+> The email is saved as an unsent draft for the user to review, edit, and
+> send from Close; it is never sent automatically. Provide the body as
+> Close rich text (HTML) via body_html; the sender's saved email signature
+> is appended automatically. To create a reply in an existing thread,
+> provide the ID of the email being replied to via in_reply_to_id.
+### Create Draft SMS – `create_draft_sms`
+> Create a draft SMS on a lead.
+>
+> The SMS is saved as an unsent draft for the user to review, edit, and send
+> from Close. It is never sent or scheduled automatically.
+### Create Email Template – `create_email_template`
+> Create a new email template.
+>
+> Handling of attachments and unsubscribe links via this tool is currently unsupported.
+>
+> Email template body should be HTML formatted.
+>
+> Use template tags as placeholders, for example:
+> `{{ organization.name }}` to refer to the sender's organization name.
+> `{{ user.first_name }}` `{{ user.last_name }}` `{{ user.email }}` `{{ user.phone }}` to refer to the user sending the email.
+> `{{ lead.display_name }}` to refer to the lead name (recipient's name/company).
+> `{{ contact.first_name }}` `{{ contact.last_name }}` to refer to the recipient.
+### Create Lead – `create_lead`
+> Create a new lead (company).
+>
+> After creating a lead, you should usually add an address or contact
+> (including phone or email) to the lead.
+### Create Lead Status – `create_lead_status`
+> Create a new lead status.
+### Create Note – `create_note`
+> Create a new note on a lead.
+>
+> A note is a text-based activity attached to a lead. At least one
+> of note (plaintext) or note_html (rich text) must be provided.
+### Create Opportunity – `create_opportunity`
+> Create a new opportunity.
+>
+> Requires a lead ID and status ID. Other fields are optional.
+> The value should be specified in cents (e.g., \$100.00 = 10000).
+### Create Opportunity Stage – `create_opportunity_status_tool`
+> Create a new opportunity status.
+### Create Pipeline – `create_pipeline`
+> Create a new opportunity pipeline.
+>
+> Use the create_opportunity_status tool to add statuses to the pipeline.
+### Create Smart View – `create_smart_view`
+> Save a search as a smart view (saved search).
+>
+> Pass the ID of a search result that lists one object type: leads,
+> contacts, opportunities, or one kind of activity. The smart view gets
+> that search's filters, sort, and columns, so it lists exactly what was
+> previewed. Confirm the name and criteria with the user before creating
+> the view.
+### Create SMS Template – `create_sms_template`
+> Create a new SMS template.
+>
+> Handling of attachments via this tool is currently unsupported.
+>
+> Use template tags as placeholders, for example:
+> `{{ organization.name }}` to refer to the sender's organization name.
+> `{{ user.first_name }}` `{{ user.last_name }}` `{{ user.email }}` `{{ user.phone }}` to refer to the user sending the message.
+> `{{ lead.display_name }}` to refer to the lead name (recipient's name/company).
+> `{{ contact.first_name }}` `{{ contact.last_name }}` to refer to the recipient.
+### Create Task – `create_task`
+> Create a new task for a lead.
+>
+> A task represents a to-do item that can be assigned to a user
+> and optionally associated with a contact.
+### Create Workflow – `create_workflow`
+> Create a new workflow (a.k.a. sequence) with Draft status.
+### Log Call – `log_call`
+> Log a call that took place outside of Close.
+>
+> This records the call on the lead. It does not place a call.
+### Pin Smart View – `pin_smart_view`
+> Pin a smart view to the top of the user's sidebar.
+>
+> A smart view that is already pinned moves to the top.
+### Rent Phone Number – `rent_phone_number`
+> Rent an exact internal phone number and assign it to the current user.
+>
+> Always use find_rentable_phone_numbers first and show the user the
+> available numbers, their carrier types, and their monthly prices before
+> calling this tool. Only rent a number after the user selects it. Renting
+> creates a billable phone number for the organization.
+### Unpin Smart View – `unpin_smart_view`
+> Remove a smart view from the user's sidebar.
+>
+> The smart view itself is not deleted.
+## Write (Destructive) Tools – `mcp.write_destructive`
+Includes all `mcp.read` and `mcp.write_safe` scoped tools, plus these tools for updating and deleting data:
+### Apply Voice Agent Update – `apply_voice_agent_update`
+> Apply a previously proposed voice agent update.
+>
+> This tool persists the server-stored proposal identified by proposal_id.
+> It does not rerun the feedback processor, and it fails if the proposal has
+> expired or the voice agent changed after the proposal was created.
+### Bulk Update Tasks – `bulk_update_tasks`
+> Reassign or reprioritize several of the current user's tasks at once.
+>
+> To move due dates, use snooze_notifications. To complete tasks, use
+> mark_notifications_done.
+>
+> ONLY call this if the user asked to change these tasks.
+### Cancel Email Send – `cancel_email_send`
+> Cancel a queued or scheduled email send and keep the email as an unsent draft.
+>
+> Only emails in outbox or scheduled status can be canceled. The email is
+> not deleted. Cancellation fails if the email is already being sent.
+### Cancel SMS Send – `cancel_sms_send`
+> Cancel a queued or scheduled SMS send and keep the SMS as an unsent draft.
+>
+> Only SMS messages in outbox or scheduled status can be canceled. The SMS
+> is not deleted. Cancellation fails if the SMS is already being sent.
+### Create Call Task – `create_call_task`
+> Schedule a call task on a lead, assigned to either a user or a
+> voice agent (Chloe).
+>
+> A call task represents a scheduled outbound call that will be made
+> to the specified contact at the given time. The task can be assigned
+> to a specific user or dispatched to a voice agent.
+### Delete Address – `delete_address`
+> Delete an address from an existing lead (company) if there is an exact
+> match.
+### Delete Call Task – `delete_call_task`
+> Delete a call task. Does not affect sibling tasks.
+### Delete Comment – `delete_comment`
+> Delete a comment.
+>
+> The comment's content is removed. If it was the only remaining comment
+> in its thread, the whole thread is deleted. This action cannot be undone.
+>
+> ONLY call this if the user specifically instructed you to delete the
+> comment.
+### Delete Contact – `delete_contact`
+> Permanently delete an existing contact.
+>
+> This will remove the contact from its lead including its email addresses,
+> phone numbers, and URLs will be removed. Activities on the lead are not
+> affected.
+>
+> This action cannot be undone.
+>
+> ONLY call this if the user specifically instructed you to delete the contact.
+### Delete Custom Activity Instance – `delete_custom_activity_instance`
+> Permanently delete an existing custom activity instance.
+>
+> This action cannot be undone.
+>
+> ONLY call this if the user specifically instructed you to delete the
+> custom activity instance.
+### Delete Custom Object Instance – `delete_custom_object_instance`
+> Permanently delete an existing custom object instance.
+>
+> A custom object instance is a record of a custom object type, attached
+> to a lead and holding the custom field values defined by that type. This
+> action cannot be undone.
+>
+> ONLY call this if the user specifically instructed you to delete the
+> custom object instance.
+### Delete Draft Email – `delete_draft_email`
+> Permanently delete a draft email activity.
+>
+> Only emails in draft status can be deleted with this tool.
+> Use delete_email to delete non-draft emails instead.
+### Delete Draft SMS – `delete_draft_sms`
+> Permanently delete a draft SMS activity.
+>
+> Only SMS messages in draft status can be deleted with this tool.
+> Use delete_sms to delete non-draft SMS messages instead.
+### Delete Email – `delete_email`
+> Permanently delete a non-draft email activity from Close.
+>
+> Draft emails cannot be deleted with this tool; use delete_draft_email
+> instead. Deleting an email does not recall a message already sent.
+### Delete Email Template – `delete_email_template`
+> Permanently delete an email template.
+>
+> If the template is used in any workflows (sequences), it cannot be deleted.
+### Delete Lead – `delete_lead`
+> Permanently delete an existing lead (company) by ID including all of its
+> addresses, contacts, opportunities, tasks, and activities.
+>
+> ONLY call this if the user specifically instructed you to delete the lead,
+> and you confirmed what the deletion will entail and that it cannot be
+> reversed.
+### Delete Lead Status – `delete_lead_status`
+> Permanently delete a lead status.
+>
+> Cannot delete if it's the last lead status in the organization or there are
+> leads currently using this status.
+### Delete Note – `delete_note`
+> Permanently delete an existing note.
+>
+> This action cannot be undone.
+>
+> ONLY call this if the user specifically instructed you to delete
+> the note.
+### Delete Opportunity – `delete_opportunity`
+> Permanently delete an opportunity.
+>
+> This action cannot be undone. All data associated with the opportunity will be removed.
+### Delete Opportunity Stage – `delete_opportunity_status_tool`
+> Permanently delete an opportunity status.
+>
+> Cannot delete if it's the last opportunity status in the organization or there are
+> opportunities currently using this status.
+### Delete Pipeline – `delete_pipeline`
+> Permanently delete an opportunity pipeline.
+>
+> A pipeline can only be deleted if it has no statuses. The last pipeline
+> cannot be deleted.
+### Delete Smart View – `delete_smart_view`
+> Permanently delete a smart view (saved search).
+### Delete SMS – `delete_sms`
+> Permanently delete a non-draft SMS activity from Close.
+>
+> Draft SMS messages cannot be deleted with this tool; use delete_draft_sms
+> instead. Deleting an SMS does not recall a message already sent.
+### Delete SMS Template – `delete_sms_template`
+> Permanently delete an SMS template.
+>
+> If the template is used in any workflows (sequences), it cannot be deleted.
+### Delete Task – `delete_task`
+> Permanently delete an existing task by ID.
+>
+> This action cannot be undone.
+>
+> ONLY call this if the user specifically instructed you to delete the task.
+### Enrich Field – `enrich_field`
+> Use AI to determine and set the value of a field on a lead or contact.
+>
+> The field is enriched using available data on the object and external
+> sources, and the enriched value is written back to the object. By default
+> the value is only written if the field is currently empty; set
+> overwrite_existing_value to True to replace an existing value.
+>
+> Returns the enriched value along with the model's reasoning and confidence.
+### Mark Inbox Items Done – `mark_notifications_done`
+> Mark items in the current user's inbox as done, which moves them to the
+> archive.
+>
+> Marking an incoming email done can also archive its thread in the user's
+> mailbox. Marking a call task done links its call, or logs one on its
+> lead. Marking a lead suggestion done deletes it.
+>
+> ONLY call this if the user asked to clear these items.
+### Merge Leads – `merge_leads`
+> Merge two leads in the background.
+>
+> The destination lead is kept, and the source lead is deleted when the merge
+> finishes. This cannot be undone.
+>
+> Before merging suspected duplicates, show the leads, why they appear to
+> match, which lead will be kept, and any conflicting information. Ask the
+> user to approve the specific pair or group unless they already authorized
+> it.
+>
+> Check `fetch_lead_merge` before reporting completion, retrying after an
+> error, or attempting to merge either lead again.
+### Schedule Voice Agent Call – `schedule_voice_agent_call`
+> Schedule a voice agent to call a lead's contact.
+>
+> Creates a call task assigned to the voice agent. The voice agent will
+> place the call automatically at the scheduled time, or as soon as the
+> queue picks it up when no time is given.
+>
+> Use `find_voice_agents` first to discover which voice agents are
+> available in this organization.
+### Send Email – `send_email`
+> Send an existing draft email.
+>
+> The email is queued for immediate sending by default. Provide
+> date_scheduled to schedule it for a future time instead. Only emails in
+> draft status can be sent with this tool. The draft's content and sender
+> are not changed.
+### Send SMS – `send_sms`
+> Send an existing draft SMS.
+>
+> The SMS is queued for immediate sending by default. Provide date_scheduled
+> to schedule it for a future time instead. Only an SMS in draft status can
+> be sent with this tool.
+### Set Activity Pinned – `set_activity_pinned`
+> Pin or unpin an activity on its lead.
+>
+> Only notes and custom activity instances can be pinned.
+### Set Pinned Smart Views – `set_pinned_smart_views`
+> Replace the smart views pinned to the user's sidebar and their order.
+>
+> Use this tool only when the user asks to reorder pinned smart views or to
+> change many of them at once. Otherwise, use `pin_smart_view` or
+> `unpin_smart_view`.
+### Snooze Inbox Items – `snooze_notifications`
+> Snooze items in the current user's inbox until a later date or time,
+> when they return to the inbox.
+>
+> Snoozing a task moves its due date. Snoozing a call task assigned to a
+> voice agent moves when the agent calls. Snoozing an opportunity-due item
+> moves the opportunity's expected close date.
+>
+> ONLY call this if the user asked to snooze these items.
+### Update Skill – `update_agent_skill`
+> Rename a skill or replace its instructions. Only the skill's owner can
+> change it.
+>
+> The new instructions replace the old ones entirely, so read the
+> current ones with `fetch_agent_skill` first and keep what the user
+> didn't ask to change. Pass null to keep the current ones.
+### Update Blackout Calendar – `update_blackout_calendar`
+> Update a Blackout Date calendar's name, dates or auto-select setting.
+>
+> Fetch the existing calendar first. blackout_dates replaces the entire
+> date list, so pass the full calendar, not only the changes: preserve
+> existing dates unless asked to remove them, then show the combined
+> proposed list for approval before saving. An empty list clears all
+> dates. Omitted or null fields stay unchanged.
+>
+> Annual repeats keep the same month/day. Use explicit dates for each year
+> for holidays that move. Changes also affect Workflows using this calendar.
+### Update Call – `update_call`
+> Replace the note on a call activity.
+>
+> If the call belongs to a meeting, the new note also replaces the meeting
+> note and the notes of the other calls of that meeting.
+>
+> Fetch the call first - `fetch_call`, or `fetch_objects` with its ID - and
+> keep any existing note content that the user did not ask to change.
+### Update Call Task – `update_call_task`
+> Update a call task.
+>
+> Only fields that are provided will be updated. Reassigning to a user or
+> voice agent (agent_config_id) affects only this task. Completing a call
+> task also completes every sibling task sharing its deduplication key.
+### Update Comment – `update_comment`
+> Edit the body of an existing comment.
+>
+> Only the comment's author can edit it. The new body replaces the old one,
+> so call `fetch_objects` first and keep any content the user did not ask
+> to change.
+### Update Contact – `update_contact`
+> Update an existing contact.
+>
+> You can update a contact's name, title, email addresses, phone numbers, and URLs.
+> Only fields that are provided will be updated.
+### Update Custom Activity Instance – `update_custom_activity_instance`
+> Update an existing custom activity instance.
+>
+> A custom activity instance is an activity of a custom activity type,
+> holding the custom field values defined by that type.
+>
+> Only fields that are provided will be updated. For custom fields, only
+> the custom fields included are modified; pass null to clear one. Pass
+> 'clear' for contact_id to detach the contact.
+### Update Custom Object Instance – `update_custom_object_instance`
+> Update an existing custom object instance.
+>
+> A custom object instance is a record of a custom object type, attached
+> to a lead and holding the custom field values defined by that type.
+>
+> Only fields that are provided will be updated. For custom fields, only
+> the custom fields included are modified; pass null to clear one.
+### Update Draft Email – `update_draft_email`
+> Update an existing draft email.
+>
+> Only draft emails can be updated; sent or scheduled emails are rejected.
+> Only fields that are provided are changed. When the body is replaced the
+> sender's saved email signature is appended again. This never sends the
+> email.
+### Update Draft SMS – `update_draft_sms`
+> Update an existing draft SMS.
+>
+> Only draft SMS messages can be updated. Only fields that are provided are
+> changed. This never sends or schedules the SMS.
+### Update Email Template – `update_email_template`
+> Update an existing email template.
+>
+> Only fields that are provided and not None will be updated.
+>
+> Handling of attachments and unsubscribe links via this tool is currently unsupported.
+>
+> Email template body should be HTML formatted.
+>
+> Use template tags as placeholders, for example:
+> `{{ organization.name }}` to refer to the sender's organization name.
+> `{{ user.first_name }}` `{{ user.last_name }}` `{{ user.email }}` `{{ user.phone }}` to refer to the user sending the email.
+> `{{ lead.display_name }}` to refer to the lead name (recipient's name/company).
+> `{{ contact.first_name }}` `{{ contact.last_name }}` to refer to the recipient.
+### Update Lead – `update_lead`
+> Update an existing lead (company).
+>
+> Only fields that are provided and not None will be updated.
+### Update Lead Status – `update_lead_status`
+> Update the label of an existing lead status.
+### Update Meeting – `update_meeting`
+> Replace the user note on a meeting activity.
+>
+> Call `fetch_meeting` first and keep any existing note content that the
+> user did not ask to change.
+### Update Note – `update_note`
+> Update an existing note.
+>
+> Only fields that are provided will be updated. Note content is
+> provided as rich text (HTML) via note_html; the plaintext note is
+> automatically derived.
+### Update Opportunity – `update_opportunity`
+> Update an existing opportunity.
+>
+> Only fields that are provided will be updated.
+> The value should be specified in cents (e.g., \$100.00 = 10000).
+### Update Opportunity Stage – `update_opportunity_status_tool`
+> Update the label of an existing opportunity status.
+### Update Pipeline – `update_pipeline`
+> Update an existing opportunity pipeline.
+>
+> Only fields that are provided will be updated.
+### Update Primary Inbox Tab Categories – `update_primary_inbox_view`
+> Replace the categories the current user's Primary inbox tab shows, as
+> set in Customize Primary Tab. The inbox shows the change the next time
+> it loads.
+>
+> ONLY call this if the user asked to change their Primary tab.
+### Update Smart View – `update_smart_view`
+> Update the name or description of a smart view (saved search).
+>
+> Only fields that are provided and not None will be updated.
+### Update SMS Template – `update_sms_template`
+> Update an existing SMS template.
+>
+> Only fields that are provided will be updated. Fields that are not provided will remain unchanged.
+>
+> Handling of attachments via this tool is currently unsupported.
+>
+> Use template tags as placeholders, for example:
+> `{{ organization.name }}` to refer to the sender's organization name.
+> `{{ user.first_name }}` `{{ user.last_name }}` `{{ user.email }}` `{{ user.phone }}` to refer to the user sending the message.
+> `{{ lead.display_name }}` to refer to the lead name (recipient's name/company).
+> `{{ contact.first_name }}` `{{ contact.last_name }}` to refer to the recipient.
+### Update Task – `update_task`
+> Update an existing task.
+>
+> Only fields that are provided will be updated. Pass 'clear' for
+> contact_id or due_date to clear those values.
+### Update Workflow – `update_workflow`
+> Update an existing workflow (a.k.a. sequence).
+>
+> Fetch the workflow first - `fetch_workflow`, or `fetch_objects` with its
+> ID - to get the step IDs to update, delete or add after.

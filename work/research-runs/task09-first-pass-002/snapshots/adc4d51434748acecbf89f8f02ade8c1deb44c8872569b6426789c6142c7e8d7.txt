@@ -1,0 +1,451 @@
+GitHub - rohansen856/cliq-mcp · GitHub
+Skip to content
+Navigation Menu
+Sign in
+Products
+Platform
+GitHubRepository hosting, code review, and collaboration
+CopilotAI coding agent for tasks, projects, and automated work
+Build & Ship
+ActionsCI/CD and automation
+Code QualityQuality analysis, fixes, and enforcement
+CodespacesCloud development environments
+Secure
+Code SecurityVulnerability detection and remediation
+Secret ProtectionSecret scanning and leak prevention
+All Features
+Developers
+Learn
+Documentation
+Training
+Certifications
+Build
+Build with Copilot
+Customize Copilot
+Integrations
+Explore
+Trending repos
+GitHub Sponsors
+Developer articles
+Changelog
+ChangelogYour source for the latest features, improvements, and fixes across GitHub products, all in one place.
+Businesses
+By Stage
+Enterprises
+Team
+Startups
+Nonprofits
+By Industry
+Healthcare
+Financial services
+Manufacturing
+Government
+See all industries
+Evaluate GitHub
+Why GitHub
+Customer Stories
+Business insights
+Trust Center
+Add-ons
+GitHub Advanced SecurityEnterprise-grade code security
+Copilot for businessEnterprise-grade AI features
+Premium SupportEnterprise-grade 24/7 support
+Resources
+Learn & Connect
+Documentation
+Resource center
+Blog
+Events & webinars
+Community Forum
+Customer Stories
+Integrations
+Support
+Customer support
+Training
+GitHub Status
+Company
+About
+Partners
+Changelog
+GitHub Universe
+GitHub UniverseThe event for developers, by developers — talks, workshops, and what’s next for GitHub.
+Pricing
+Search/
+Sign in
+Sign up
+Appearance settings
+You signed in with another tab or window. Reload to refresh your session.
+You signed out in another tab or window. Reload to refresh your session.
+You switched accounts on another tab or window. Reload to refresh your session.
+Dismiss alert
+rohansen856
+cliq-mcp
+Repository navigation
+Code
+Issues
+Pull requests
+Actions
+Projects
+Security and quality
+Insights
+More items
+cliq-mcp
+Public
+NotificationsYou must be signed in to change notification settings
+Fork0 (0)
+Star1 (1)You must be signed in to star a repository
+About
+No description, website, or topics provided.
+Resources
+Readme
+Activity
+Stars
+1 star
+Watchers
+0 watching
+Forks
+0 forks
+Report repository
+master
+BranchesTags
+Go to file
+Code
+Open more actions menu
+Latest commit
+History
+29 Commits
+29 Commits
+Folders and files
+NameName
+Last commit message
+Last commit date
+config
+config
+docs/modules
+docs/modules
+scripts
+scripts
+src
+src
+tests
+tests
+.env.example
+.env.example
+.gitignore
+.gitignore
+Dockerfile
+Dockerfile
+README.md
+README.md
+ROADMAP.md
+ROADMAP.md
+docker-compose.yml
+docker-compose.yml
+pyproject.toml
+pyproject.toml
+requirements.txt
+requirements.txt
+test_basic.py
+test_basic.py
+View all files
+Repository files navigation
+README
+More items
+Cliq-MCP: AI WorkBuddy for Zoho Cliq
+AI WorkBuddy is an intelligent assistant for Zoho Cliq that provides smart automation and productivity features through the Model Context Protocol (MCP). It combines the power of modern AI with seamless Cliq integration to enhance team collaboration and productivity.
+🎯 Key Features
+🤖 AI-Powered Capabilities
+Smart Summarization: Automatically summarize channel conversations with key insights
+Task Extraction: Identify and extract action items from discussions
+Meeting Minutes: Generate structured meeting minutes from conversations
+Issue Classification: Intelligent categorization and prioritization of support tickets
+Context-Aware Responses: AI understanding of workplace communication patterns
+🔧 Technical Excellence
+MCP Protocol: Built on the Model Context Protocol for seamless AI integration
+Multi-Provider Support: Compatible with OpenAI GPT and Anthropic Claude
+Professional Architecture: Clean, scalable, and maintainable codebase
+Comprehensive Testing: 48% test coverage with unit and integration tests
+Docker Ready: Full containerization support for easy deployment
+⚡ Cliq Integration
+Webhook Support: Real-time event processing from Zoho Cliq
+Rich Card Responses: Beautiful, interactive responses in channels
+Command Interface: Intuitive slash commands for AI features
+Error Handling: Graceful error handling with user-friendly messages
+🚀 Quick Start
+Prerequisites
+Python 3.11+
+Zoho Cliq account with bot permissions
+OpenAI API key or Anthropic API key
+Installation
+Clone the repository
+git clone https://github.com/rohansen856/cliq-mcp
+cd cliq-mcp
+Set up environment
+# Copy environment template
+cp .env.example .env
+# Edit .env with your configuration
+nano .env
+Install dependencies
+python -m venv venv
+source venv/bin/activate # On Windows: venv\Scripts\activate
+pip install -r requirements.txt
+Start the application
+# Using the start script (recommended)
+./scripts/start.sh
+# Or manually
+python -m src.main run
+Docker Deployment
+# Build and run with Docker Compose
+docker-compose up -d
+# Check status
+docker-compose ps
+# View logs
+docker-compose logs -f cliq-mcp
+📋 Available Commands
+In Zoho Cliq Channels
+Command
+Description
+Example
+/summary [count]
+Summarize recent messages
+/summary 50
+/tasks [count]
+Extract action items
+/tasks 30
+/minutes [title]
+Generate meeting minutes
+/minutes "Sprint Planning"
+/classify <text>
+Classify an issue
+/classify "Login page is broken"
+/help
+Show available commands
+/help
+CLI Commands
+# Run specific modes
+python -m src.main run --mode mcp # MCP server only
+python -m src.main run --mode webhook # Webhook server only
+python -m src.main run --mode both # Both servers (default)
+# Validation and testing
+python -m src.main validate # Validate configuration
+python -m src.main test-ai # Test AI functionality
+python -m src.main test-cliq --channel-id CHANNEL_ID # Test Cliq integration
+# Initialize project
+python -m src.main init # Create .env from template
+🏗️ Architecture
+┌─────────────────┐ ┌─────────────────┐ ┌─────────────────┐
+│ Zoho Cliq │ │ Webhook │ │ MCP Server │
+│ │◄──►│ Server │◄──►│ │
+│ - Channels │ │ (FastAPI) │ │ - AI Tools │
+│ - Commands │ │ - Events │ │ - Resources │
+│ - Cards │ │ - Handlers │ │ - Prompts │
+└─────────────────┘ └─────────────────┘ └─────────────────┘
+│ │
+▼ ▼
+┌─────────────────┐ ┌─────────────────┐
+│ AI Tools │ │ Claude Code │
+│ │ │ Integration │
+│ - Summarizer │ │ │
+│ - Extractor │ │ - MCP Client │
+│ - Classifier │ │ - Tool Access │
+│ - Generator │ │ - Resources │
+└─────────────────┘ └─────────────────┘
+Core Components
+MCP Server: Exposes AI tools via Model Context Protocol
+Webhook Server: Handles Zoho Cliq events and commands
+AI Tools: Intelligent processing modules for various tasks
+Cliq Integration: API client and event handlers for Zoho Cliq
+🔧 Configuration
+Environment Variables
+# Required Settings
+WEBHOOK_SECRET=your-webhook-secret-key
+SECRET_KEY=your-super-secret-key
+# AI Provider (choose one)
+OPENAI_API_KEY=sk-your-openai-api-key
+ANTHROPIC_API_KEY=sk-ant-your-anthropic-key
+# Zoho Cliq Integration
+CLIQ_BOT_TOKEN=your-cliq-bot-token
+CLIQ_CLIENT_ID=your-cliq-client-id
+CLIQ_CLIENT_SECRET=your-cliq-client-secret
+# Server Configuration
+MCP_SERVER_HOST=localhost
+MCP_SERVER_PORT=8001
+WEBHOOK_HOST=0.0.0.0
+WEBHOOK_PORT=8000
+# Application Limits
+MAX_MESSAGE_HISTORY=50
+SUMMARY_MAX_LENGTH=500
+TASK_EXTRACTION_LIMIT=10
+Zoho Cliq Setup
+Create a Cliq App
+Go to Zoho Cliq Developer Console
+Create a new bot application
+Configure webhook URL: https://your-domain.com/webhook/cliq
+Set Permissions
+Read messages in channels
+Send messages and cards
+Access channel history
+Install in Channels
+Add the bot to desired channels
+Test with /help command
+🧪 Testing
+Run Tests
+# All tests
+pytest
+# Unit tests only
+pytest tests/unit/
+# With coverage
+pytest --cov=src --cov-report=html
+# Specific test file
+pytest tests/unit/test_ai_tools.py -v
+Test Coverage
+Current test coverage: 48% across all modules
+AI Tools: 70-89% coverage
+Cliq Integration: 65-78% coverage
+Configuration: 82% coverage
+Manual Testing
+# Test basic functionality
+python test_basic.py
+# Test AI tools (requires API key)
+python -m src.main test-ai
+# Test Cliq integration (requires bot token)
+python -m src.main test-cliq --channel-id YOUR_CHANNEL_ID
+📚 Documentation
+Module Documentation
+AI Tools - Detailed AI tool documentation
+MCP Server - MCP server implementation
+Cliq Integration - Zoho Cliq integration
+Configuration - Configuration reference
+API Documentation
+Webhook Endpoints: http://localhost:8000/
+POST /webhook/cliq - Main Cliq webhook
+POST /webhook/command - Command-specific webhook
+GET /health - Health check
+MCP Server: localhost:8001 (stdio/TCP)
+Tools: summarize_messages, extract_tasks, etc.
+Resources: cliq://settings, cliq://status
+🔧 Development
+Project Structure
+cliq-mcp/
+├── src/
+│ ├── ai_tools/ # AI processing modules
+│ ├── cliq_integration/ # Zoho Cliq integration
+│ ├── mcp_server/ # MCP protocol server
+│ ├── config/ # Configuration management
+│ ├── utils/ # Shared utilities
+│ └── main.py # Application entry point
+├── tests/
+│ ├── unit/ # Unit tests
+│ └── integration/ # Integration tests
+├── docs/
+│ ├── modules/ # Module documentation
+│ └── api/ # API documentation
+├── scripts/ # Utility scripts
+├── config/ # Deployment configurations
+└── README.md
+Development Workflow
+Setup Development Environment
+python -m venv venv
+source venv/bin/activate
+pip install -r requirements.txt
+pip install -e .
+Run in Development Mode
+DEBUG=true python -m src.main run
+Testing
+pytest tests/ -v
+python test_basic.py
+Code Quality
+black src/ # Code formatting
+isort src/ # Import sorting
+mypy src/ # Type checking
+🚀 Deployment
+Production Deployment
+Using Docker Compose (Recommended)
+# Production deployment
+docker-compose --profile production up -d
+# With monitoring
+docker-compose --profile monitoring up -d
+Manual Deployment
+# Start with production settings
+DEBUG=false RELOAD=false ./scripts/start.sh
+Cloud Deployment
+Configure environment variables in your cloud platform
+Use provided Dockerfile for container deployment
+Set up SSL termination (nginx configuration provided)
+Configure database and Redis for production
+Monitoring
+The application provides comprehensive monitoring:
+Health Checks: /health endpoint
+Prometheus Metrics: Application performance metrics
+Grafana Dashboards: Visualization and alerting
+Structured Logging: JSON-formatted logs for analysis
+🤝 Contributing
+We welcome contributions! Please see our contributing guidelines:
+Fork the repository
+Create a feature branch
+Write tests for new functionality
+Ensure all tests pass
+Submit a pull request
+Development Guidelines
+Follow PEP 8 style guidelines
+Write comprehensive tests
+Update documentation for new features
+Use type hints throughout the codebase
+📄 License
+This project is licensed under the MIT License - see the LICENSE file for details.
+🆘 Support
+Troubleshooting
+Common Issues:
+API Key Errors
+Error: No AI provider API key configured
+Solution: Set OPENAI_API_KEY or ANTHROPIC_API_KEY in .env
+Webhook Authentication
+Error: Invalid signature
+Solution: Verify WEBHOOK_SECRET matches Cliq configuration
+Port Conflicts
+Error: Address already in use
+Solution: Change ports in .env or stop conflicting services
+Getting Help
+📖 Check the documentation
+🐛 Report issues on GitHub
+💬 Join our community discussions
+Roadmap
+Core MCP server implementation
+Zoho Cliq integration
+AI tool suite (summarization, tasks, classification)
+Docker deployment support
+Multi-language support
+Advanced analytics and insights
+Integration with other Zoho apps
+Custom AI model support
+Built with ❤️ for the Zoho Cliq community
+Enhance your team's productivity with intelligent automation and AI-powered insights.
+About
+No description, website, or topics provided.
+Resources
+Readme
+Activity
+Stars
+1 star
+Watchers
+0 watching
+Forks
+0 forks
+Report repository
+Releases
+Packages
+Contributors
+Languages
+Footer
+© 2026 GitHub, Inc.
+Footer navigation
+Terms
+Privacy
+Security
+Status
+Community
+Docs
+Contact
+Manage cookies
+Do not share my personal information
+You can’t perform that action at this time.

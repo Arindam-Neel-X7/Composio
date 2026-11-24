@@ -1,0 +1,153 @@
+Freshworks Developer Docs | REST APIs
+NewAgentic Developer Toolkit with Agent Skills is now GA — Build apps faster with AI in minutes. Try Now
+Build
+AI
+Grow
+Docs
+Resources
+LoginSign Up
+Menu
+Platform
+Product
+2Products selected
+Module
+Freshworks global app ecosystem
+What's new?
+Developer toolkit
+App development process
+Global app concepts
+Module introduction
+REST APIs
+OAuth implementation in apps
+Front-end apps
+Serverless apps
+App settings
+Basic dev tools
+Advanced interfaces
+Data store
+App UI
+End-to-end app testing
+App development guidelines
+App submission process
+Rate limits and constraints
+Migration guide
+REST APIs
+An app built for this module can access the corresponding product resources, through the following API end-points:
+POST /api/v2/tickets
+POST /api/v2/tickets/outbound_email
+GET /api/v2/tickets/[id]
+GET /api/v2/tickets/[id]/associated_tickets
+GET /api/v2/tickets
+GET /api/v2/search/tickets?query=[query]
+PUT /api/v2/tickets/[id]
+POST /api/v2/tickets/bulk_update
+POST /api/v2/tickets/[id]/forward
+PUT /api/v2/tickets/merge
+GET /api/v2/tickets/[id]/watchers
+POST /api/v2/tickets/[id]/watch
+PUT /api/v2/tickets/[id]/unwatch
+PUT /api/v2/tickets/bulk_watch
+PUT /api/v2/tickets/bulk_unwatch
+DELETE /api/v2/tickets/[id]
+POST /api/v2/tickets/bulk_delete
+DELETE /api/v2/attachments/[id]
+PUT /api/v2/tickets/[id]/restore
+GET /api/v2/ticket_fields
+GET /api/v2/tickets/[id]/conversations
+GET /api/v2/tickets/[id]/time_entries
+GET /api/v2/tickets/[ticket_id]/satisfaction_ratings
+GET /api/v2/tickets/[id]/summary
+PUT /api/v2/tickets[id]/summary
+DELETE /api/v2/tickets[id]/summary
+GET /api/v2/tickets/archived/[id]
+DELETE /api/v2/tickets/archived/[id]
+GET /api/v2/tickets/archived/[id]/conversations
+POST /api/v2/tickets/[id]/accesses
+PATCH /api/v2/tickets/[id]/accesses
+GET /api/v2/tickets/[id]/accesses
+DELETE /api/v2/tickets/[id]/accesses
+GET /api/v2/admin/ticket_fields
+POST /api/v2/admin/ticket_fields
+GET /api/v2/admin/ticket_fields/[id]
+PUT /api/v2/admin/ticket_fields/[id]
+DELETE /api/v2/admin/ticket_fields/[id]
+GET /api/v2/admin/ticket_fields/[id]/sections
+POST /api/v2/admin/ticket_fields/[id]/sections
+GET /api/v2/admin/ticket_fields/[id]/sections/[section_id]
+PUT /api/v2/admin/ticket_fields/[id]/sections/[section_id]
+DELETE /api/v2/admin/ticket_fields/[id]/sections/[section_id]
+GET /api/v2/ticket-forms
+POST /api/v2/ticket-forms
+GET /api/v2/ticket-forms/[id]
+PUT /api/v2/ticket-forms/[id]
+DELETE /api/v2/ticket-forms/[id]
+CLONE /api/v2/ticket-forms/[id]
+GET /api/v2/ticket-forms/[form-id]/fields/[field-id]
+POST /api/v2/ticket-forms/[form-id]/fields/[field-id]
+DELETE /api/v2/ticket-forms/[form-id]/fields/[field-id]
+POST /api/v2/tickets/[id]/reply
+POST /api/v2/tickets/[ticket_id]/notes
+PUT /api/v2/conversations/[id]
+DELETE /api/v2/conversations/[id]
+POST /api/v2/tickets/[id]/reply_to_forward
+POST /api/v2/canned_responses
+GET /api/v2/canned_responses/[id]
+PUT api/v2/canned_responses/[id]
+POST /api/v2/canned_responses/bulk
+POST /api/v2/canned_response_folder
+PUT /api/v2/canned_response_folder/[id]
+GET /canned_response_folders
+GET /canned_response_folders/[id]
+GET /canned_response_folders/[id]/responses
+POST /api/v2/tickets/[ticket_id]/time_entries
+GET /api/v2/time_entries
+PUT /api/v2/time_entries/[id]
+PUT /api/v2/time_entries/[time_entry_id]/toggle_timer
+DELETE /api/v2/time_entries/[id]
+Contact Freshworks
+devplatforms@dev-assist.freshservice.com
+Platform
+Platform// eslint-disable-next-line react/no-unknown-property
+Documentation
+API Reference
+Crayons Design Library
+App Marketplace
+Changelog
+Developer Status
+Products
+Products// eslint-disable-next-line react/no-unknown-property
+Freshdesk Omni
+Freshservice
+Freshsales
+Freshchat
+Freshmarketer
+Resources
+Resources// eslint-disable-next-line react/no-unknown-property
+Getting Started
+Tutorials & Guides
+Sample Apps
+Developer Blog
+Events
+Community & Support
+Community & Support// eslint-disable-next-line react/no-unknown-property
+Developer Community
+Support
+Partner Program
+Feature Requests
+Company
+Company// eslint-disable-next-line react/no-unknown-property
+About Us
+Customers
+Partners
+All Systems Operational (opens Freshworks system status)
+Legal
+Privacy Notice
+Site Terms
+Cookie Policy
+Do Not Share My Personal Information
+Security
+Accessibility
+Unsubscribe
+Sitemap
+Developer Portal Terms
+© 2026 Freshworks Inc. All Rights Reserved

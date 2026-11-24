@@ -1,0 +1,22 @@
+> ## Documentation Index
+> Fetch the complete documentation index at: https://docs.waterfall.io/llms.txt
+> Use this file to discover all available pages before exploring further.
+# Use Waterfall with an agent
+> Run contact and company lookups with an agent, or build Waterfall into your application using the official API skills.
+Use an agent to look up contact and company data, verify emails, or build Waterfall into your application. Waterfall provides two skills: one for making API calls during a task, and one for creating integration code you maintain.
+## What do you want to do?
+| Your goal | Skill | Start here |
+| - | - | - |
+| Retrieve data for a lookup, sample, or current task | `waterfall-direct-api` guides API calls over HTTP. | [Run a lookup](https://docs.waterfall.io/v1/skills-direct-api.md) |
+| Add Waterfall to an application or recurring workflow | `waterfall-integration` guides the creation of code in your own repository. | [Build an integration](https://docs.waterfall.io/v1/skills-integration.md) |
+The skills install independently. Choose the one that matches your task.
+## Give your agent a clear task
+Specify the inputs you have, the fields you need, and the number of records to process. State whether you need phone enrichment, which can add charges. Ask the agent to preserve missing results instead of filling gaps with guesses.
+Use [Choose an API](https://docs.waterfall.io/v1/introduction.md) to match the task to a capability. For example, a known signup email starts with Contact Enrichment. Finding people at a target account may need Prospector. Search Contact returns profiles without emails or phones.
+## API access and results
+A skill supplies instructions for the agent. Live API calls still require an authorized Waterfall API key and follow your account's usage and billing terms. Installing a skill does not create an account or provide API access.
+Keep the key in your execution environment. See [Authentication](https://docs.waterfall.io/v1/authentication.md) for access and [Usage Tracking](https://docs.waterfall.io/v1/inline-usage.md) for returned costs. The result may be incomplete or empty; check the fields needed for your task.
+## Get the current skills
+The [Waterfall API Skills repository](https://github.com/Waterfall-io/api-skills) contains both skills and their installation instructions. The guides above include the command for each skill.
+The endpoint references and [OpenAPI specification](https://docs.waterfall.io/v1/openapi-spec.md) define the API contract. If a skill's guidance conflicts with the current docs, follow the docs. Browse [use cases](https://docs.waterfall.io/v1/use-cases/overview.md) for workflow examples or the [FAQ](https://docs.waterfall.io/v1/faq.md) for product questions.
+This documentation is built and hosted on [Mintlify](https://mintlify.com), a developer documentation platform.

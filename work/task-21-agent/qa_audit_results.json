@@ -1,0 +1,402 @@
+{
+  "seal_checks": [
+    {
+      "run": "task07-first-pass-003",
+      "ok": true,
+      "files_checked": 69,
+      "missing": [],
+      "mismatches": []
+    },
+    {
+      "run": "task08-first-pass-003",
+      "ok": true,
+      "files_checked": 69,
+      "missing": [],
+      "mismatches": []
+    },
+    {
+      "run": "task09-first-pass-004",
+      "ok": true,
+      "files_checked": 64,
+      "missing": [],
+      "mismatches": []
+    },
+    {
+      "run": "task10-first-pass-003",
+      "ok": true,
+      "files_checked": 69,
+      "missing": [],
+      "mismatches": []
+    },
+    {
+      "run": "task11-first-pass-002",
+      "ok": true,
+      "files_checked": 64,
+      "missing": [],
+      "mismatches": []
+    },
+    {
+      "run": "task12-first-pass-005",
+      "ok": true,
+      "files_checked": 156,
+      "missing": [],
+      "mismatches": []
+    },
+    {
+      "run": "task13-first-pass-003",
+      "ok": true,
+      "files_checked": 60,
+      "missing": [],
+      "mismatches": []
+    },
+    {
+      "run": "task14-first-pass-003",
+      "ok": true,
+      "files_checked": 62,
+      "missing": [],
+      "mismatches": []
+    },
+    {
+      "run": "task15-first-pass-002",
+      "ok": true,
+      "files_checked": 66,
+      "missing": [],
+      "mismatches": []
+    },
+    {
+      "run": "task16-first-pass-001",
+      "ok": true,
+      "files_checked": 65,
+      "missing": [],
+      "mismatches": []
+    },
+    {
+      "run": "task17-human-review-07",
+      "ok": true,
+      "files_checked": 69,
+      "missing": [],
+      "mismatches": []
+    },
+    {
+      "run": "task18-corrections-07",
+      "ok": true,
+      "files_checked": 69,
+      "missing": [],
+      "mismatches": []
+    },
+    {
+      "run": "task18-human-recheck-07",
+      "ok": true,
+      "files_checked": 69,
+      "missing": [],
+      "mismatches": []
+    },
+    {
+      "run": "task17-human-review-08",
+      "ok": true,
+      "files_checked": 69,
+      "missing": [],
+      "mismatches": []
+    },
+    {
+      "run": "task18-corrections-08",
+      "ok": true,
+      "files_checked": 69,
+      "missing": [],
+      "mismatches": []
+    },
+    {
+      "run": "task18-human-recheck-08",
+      "ok": true,
+      "files_checked": 69,
+      "missing": [],
+      "mismatches": []
+    },
+    {
+      "run": "task17-human-review-09",
+      "ok": true,
+      "files_checked": 64,
+      "missing": [],
+      "mismatches": []
+    },
+    {
+      "run": "task18-corrections-09",
+      "ok": true,
+      "files_checked": 64,
+      "missing": [],
+      "mismatches": []
+    },
+    {
+      "run": "task18-human-recheck-09",
+      "ok": true,
+      "files_checked": 64,
+      "missing": [],
+      "mismatches": []
+    },
+    {
+      "run": "task17-human-review-10",
+      "ok": true,
+      "files_checked": 69,
+      "missing": [],
+      "mismatches": []
+    },
+    {
+      "run": "task18-corrections-10",
+      "ok": true,
+      "files_checked": 69,
+      "missing": [],
+      "mismatches": []
+    },
+    {
+      "run": "task18-human-recheck-10",
+      "ok": true,
+      "files_checked": 69,
+      "missing": [],
+      "mismatches": []
+    },
+    {
+      "run": "task17-human-review-11",
+      "ok": true,
+      "files_checked": 64,
+      "missing": [],
+      "mismatches": []
+    },
+    {
+      "run": "task18-corrections-11",
+      "ok": true,
+      "files_checked": 64,
+      "missing": [],
+      "mismatches": []
+    },
+    {
+      "run": "task18-human-recheck-11",
+      "ok": true,
+      "files_checked": 64,
+      "missing": [],
+      "mismatches": []
+    },
+    {
+      "run": "task17-human-review-12",
+      "ok": true,
+      "files_checked": 156,
+      "missing": [],
+      "mismatches": []
+    },
+    {
+      "run": "task18-corrections-12",
+      "ok": true,
+      "files_checked": 156,
+      "missing": [],
+      "mismatches": []
+    },
+    {
+      "run": "task18-human-recheck-12",
+      "ok": true,
+      "files_checked": 156,
+      "missing": [],
+      "mismatches": []
+    },
+    {
+      "run": "task17-human-review-13",
+      "ok": true,
+      "files_checked": 60,
+      "missing": [],
+      "mismatches": []
+    },
+    {
+      "run": "task18-corrections-13",
+      "ok": true,
+      "files_checked": 60,
+      "missing": [],
+      "mismatches": []
+    },
+    {
+      "run": "task18-human-recheck-13",
+      "ok": true,
+      "files_checked": 60,
+      "missing": [],
+      "mismatches": []
+    },
+    {
+      "run": "task17-human-review-14",
+      "ok": true,
+      "files_checked": 62,
+      "missing": [],
+      "mismatches": []
+    },
+    {
+      "run": "task18-corrections-14",
+      "ok": true,
+      "files_checked": 62,
+      "missing": [],
+      "mismatches": []
+    },
+    {
+      "run": "task18-human-recheck-14",
+      "ok": true,
+      "files_checked": 62,
+      "missing": [],
+      "mismatches": []
+    },
+    {
+      "run": "task17-human-review-15",
+      "ok": true,
+      "files_checked": 66,
+      "missing": [],
+      "mismatches": []
+    },
+    {
+      "run": "task18-corrections-15",
+      "ok": true,
+      "files_checked": 66,
+      "missing": [],
+      "mismatches": []
+    },
+    {
+      "run": "task18-human-recheck-15",
+      "ok": true,
+      "files_checked": 66,
+      "missing": [],
+      "mismatches": []
+    },
+    {
+      "run": "task17-human-review-16",
+      "ok": true,
+      "files_checked": 65,
+      "missing": [],
+      "mismatches": []
+    },
+    {
+      "run": "task18-corrections-16",
+      "ok": true,
+      "files_checked": 65,
+      "missing": [],
+      "mismatches": []
+    },
+    {
+      "run": "task18-human-recheck-16",
+      "ok": true,
+      "files_checked": 65,
+      "missing": [],
+      "mismatches": []
+    },
+    {
+      "run": "task21-offline-replay-001",
+      "ok": true,
+      "files_checked": 69,
+      "missing": [],
+      "mismatches": []
+    },
+    {
+      "run": "task21-offline-replay-t18-001",
+      "ok": true,
+      "files_checked": 69,
+      "missing": [],
+      "mismatches": []
+    }
+  ],
+  "data_agreement": {
+    "passed": true,
+    "errors": [],
+    "warnings": []
+  },
+  "prose_app_ref_checks": {
+    "checked": 63,
+    "mismatches": [
+      {
+        "found_text": "All Categories (10)",
+        "cited_id": 10,
+        "actual_app_for_id": "DealCloud",
+        "actual_queue_for_id": "outreach_required"
+      },
+      {
+        "found_text": "Official MCP Only (66)",
+        "cited_id": 66,
+        "actual_app_for_id": "Neo4j",
+        "actual_queue_for_id": "conditional"
+      },
+      {
+        "found_text": "Community MCP Only (15)",
+        "cited_id": 15,
+        "actual_app_for_id": "Pylon",
+        "actual_queue_for_id": "conditional"
+      },
+      {
+        "found_text": "No MCP in Checked Sources (11)",
+        "cited_id": 11,
+        "actual_app_for_id": "Zendesk",
+        "actual_queue_for_id": "build_now"
+      },
+      {
+        "found_text": "MCP Unknown (4)",
+        "cited_id": 4,
+        "actual_app_for_id": "Attio",
+        "actual_queue_for_id": "build_now"
+      },
+      {
+        "found_text": "Basic Auth (15)",
+        "cited_id": 15,
+        "actual_app_for_id": "Pylon",
+        "actual_queue_for_id": "conditional"
+      },
+      {
+        "found_text": "Custom / Other (8)",
+        "cited_id": 8,
+        "actual_app_for_id": "Close",
+        "actual_queue_for_id": "conditional"
+      },
+      {
+        "found_text": "None / Local CLI (5)",
+        "cited_id": 5,
+        "actual_app_for_id": "Twenty",
+        "actual_queue_for_id": "build_now"
+      },
+      {
+        "found_text": "JWT (2)",
+        "cited_id": 2,
+        "actual_app_for_id": "HubSpot",
+        "actual_queue_for_id": "build_now"
+      },
+      {
+        "found_text": "Session Cookie (1)",
+        "cited_id": 1,
+        "actual_app_for_id": "Salesforce",
+        "actual_queue_for_id": "conditional"
+      },
+      {
+        "found_text": "All (100)",
+        "cited_id": 100,
+        "actual_app_for_id": "Grain",
+        "actual_queue_for_id": "build_now"
+      },
+      {
+        "found_text": "Task 17/18 Audited Sample Only (20)",
+        "cited_id": 20,
+        "actual_app_for_id": "Gladly",
+        "actual_queue_for_id": "conditional"
+      }
+    ]
+  },
+  "html_link_checks": {
+    "internal_anchors": {
+      "total": 9,
+      "unique": 8,
+      "broken": []
+    },
+    "external_urls": {
+      "total_unique_embedded_urls": 770,
+      "invalid_syntax_urls": []
+    },
+    "duplicate_ids": [],
+    "external_assets": []
+  },
+  "sub_tier_counts": {
+    "build_now::Wave 1A: Existing Official MCP Server Ready": 34,
+    "build_now::Wave 1B: Community MCP Server Ready": 7,
+    "build_now::Wave 1C: Local CLI / Direct Execution Tool": 2,
+    "build_now::Wave 1D: Self-Serve REST/SDK API Wrapper": 1,
+    "conditional::": 50,
+    "outreach_required::": 4,
+    "unknown::": 2
+  }
+}

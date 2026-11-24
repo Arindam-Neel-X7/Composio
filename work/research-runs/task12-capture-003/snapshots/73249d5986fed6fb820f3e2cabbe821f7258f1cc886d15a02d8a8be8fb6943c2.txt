@@ -1,0 +1,48 @@
+> ## Documentation Index
+> Fetch the complete documentation index at: https://developers.clay.com/llms.txt
+> Use this file to discover all available pages before exploring further.
+# Custom functions
+> Run your own reusable Clay logic from agents, the CLI, MCP, or the API.
+Custom functions are Clay functions your team builds in the Clay UI, then runs from agents, the CLI, MCP, or the API.
+## What custom functions are good for
+* Team-specific enrichment waterfalls.
+* Account scoring and qualification.
+* Inbound routing and territory logic.
+* CRM hygiene and validation.
+* Repeatable research workflows.
+* Internal tools that need the same Clay logic your GTM team already trusts.
+## Runs and batch runs
+The key distinction is where the function is built:
+* Build and manage the function in the Clay UI.
+* Run and batch-run it programmatically from agents, the CLI, MCP, or API.
+> [card] [Encode Clay functions into business systems](https://developers.clay.com/recipes/business-systems.md)
+>
+> Call custom functions from backend services, queues, and internal tools.
+## Expose a function
+To call a custom function:
+1. Open [Functions](https://app.clay.com/functions).
+2. Create or select a function.
+3. Open **Details**.
+4. Enable the integrations you need, such as **API** or **MCP**.
+5. Copy the `t_...` function id.
+6. Prefix it with `function:` when you call it from the plugin, CLI, MCP, or API.
+Custom function routine ids use the format `function:t_...`.
+Each access setting enables a separate way to call the function:
+| How you call the function | Access to enable |
+| - | - |
+| Public API, `clay` CLI, or an agent using the CLI | API access |
+| Clay's MCP connector | MCP access |
+| As a routine in a Claygent | Claygent access |
+An agent can use either the CLI or MCP, so choose access based on its connection. Enabling one does not enable the others. Workspace and role permissions still apply.
+## Access a published function through MCP
+Publishing a function does not automatically enable MCP access. Enable MCP access in the function's settings before calling it through an MCP client. API access alone is not sufficient.
+Call `list_subroutines` to find functions available to the connected MCP client. Use the returned `id` as `subroutine_id` when running a function through MCP.
+### A published function is missing or cannot run by id
+MCP access is required both to list a function and to run it by id. Supplying a known id does not bypass that requirement.
+If a function is missing from `list_subroutines` or a run returns a not-found error:
+1. Confirm the MCP client is connected to the workspace that contains the function.
+2. Check that MCP access is enabled in the function's settings.
+3. If access cannot be changed, ask a workspace admin to check the integration and role access settings.
+4. Call `list_subroutines` again and use an id returned by that call.
+A not-found error does not distinguish a nonexistent function from one unavailable to the connected client.
+This documentation is built and hosted on [Mintlify](https://mintlify.com), a developer documentation platform.

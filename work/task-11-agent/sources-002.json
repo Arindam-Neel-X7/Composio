@@ -1,0 +1,700 @@
+{
+  "sources": [
+    {
+      "app_id": 41,
+      "url": "https://shopify.dev/docs/api",
+      "kind": "primary_docs",
+      "scope": "Shopify Admin GraphQL/REST and Storefront APIs, OAuth 2.0 and access token auth, Partner development stores/paid plans, and official/community MCP servers",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor-controlled official documentation or product page",
+      "attribution_by": "task11-research-agent-gemini"
+    },
+    {
+      "app_id": 41,
+      "url": "https://shopify.dev/docs/api/admin-graphql",
+      "kind": "primary_docs",
+      "scope": "Shopify Admin GraphQL/REST and Storefront APIs, OAuth 2.0 and access token auth, Partner development stores/paid plans, and official/community MCP servers",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor-controlled official documentation or product page",
+      "attribution_by": "task11-research-agent-gemini"
+    },
+    {
+      "app_id": 41,
+      "url": "https://shopify.dev/docs/apps/build/authentication-authorization/access-tokens/client-credentials-grant",
+      "kind": "primary_docs",
+      "scope": "Shopify Admin GraphQL/REST and Storefront APIs, OAuth 2.0 and access token auth, Partner development stores/paid plans, and official/community MCP servers",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor-controlled official documentation or product page",
+      "attribution_by": "task11-research-agent-gemini"
+    },
+    {
+      "app_id": 41,
+      "url": "https://shopify.dev/docs/apps/build/authentication/other-flows/authorization-code-grant",
+      "kind": "primary_docs",
+      "scope": "Shopify Admin GraphQL/REST and Storefront APIs, OAuth 2.0 and access token auth, Partner development stores/paid plans, and official/community MCP servers",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor-controlled official documentation or product page",
+      "attribution_by": "task11-research-agent-gemini"
+    },
+    {
+      "app_id": 41,
+      "url": "https://shopify.dev/docs/api/development-stores",
+      "kind": "primary_docs",
+      "scope": "Shopify Admin GraphQL/REST and Storefront APIs, OAuth 2.0 and access token auth, Partner development stores/paid plans, and official/community MCP servers",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor-controlled official documentation or product page",
+      "attribution_by": "task11-research-agent-gemini"
+    },
+    {
+      "app_id": 41,
+      "url": "https://shopify.dev/docs/agents",
+      "kind": "primary_docs",
+      "scope": "Shopify Admin GraphQL/REST and Storefront APIs, OAuth 2.0 and access token auth, Partner development stores/paid plans, and official/community MCP servers",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor-controlled official documentation or product page",
+      "attribution_by": "task11-research-agent-gemini"
+    },
+    {
+      "app_id": 41,
+      "url": "https://shopify.dev/docs/apps/tools/ai-toolkit",
+      "kind": "primary_docs",
+      "scope": "Shopify Admin GraphQL/REST and Storefront APIs, OAuth 2.0 and access token auth, Partner development stores/paid plans, and official/community MCP servers",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor-controlled official documentation or product page",
+      "attribution_by": "task11-research-agent-gemini"
+    },
+    {
+      "app_id": 41,
+      "url": "https://shopify.dev/docs/api/storefront/customer-accounts/mcp",
+      "kind": "primary_docs",
+      "scope": "Shopify Admin GraphQL/REST and Storefront APIs, OAuth 2.0 and access token auth, Partner development stores/paid plans, and official/community MCP servers",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor-controlled official documentation or product page",
+      "attribution_by": "task11-research-agent-gemini"
+    },
+    {
+      "app_id": 41,
+      "url": "https://www.shopify.com/pricing",
+      "kind": "official_product_page",
+      "scope": "Shopify Admin GraphQL/REST and Storefront APIs, OAuth 2.0 and access token auth, Partner development stores/paid plans, and official/community MCP servers",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor-controlled official documentation or product page",
+      "attribution_by": "task11-research-agent-gemini"
+    },
+    {
+      "app_id": 42,
+      "url": "https://developer.woocommerce.com/docs/apis/rest-api/",
+      "kind": "primary_docs",
+      "scope": "WooCommerce REST API and Store API, consumer key/secret Basic/OAuth1 and WordPress Application Password auth, open-source self-hosted/WordPress ecosystem, and official MCP adapter",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor-controlled official documentation or product page",
+      "attribution_by": "task11-research-agent-gemini"
+    },
+    {
+      "app_id": 42,
+      "url": "https://woocommerce.github.io/woocommerce-rest-api-docs/",
+      "kind": "primary_docs",
+      "scope": "WooCommerce REST API and Store API, consumer key/secret Basic/OAuth1 and WordPress Application Password auth, open-source self-hosted/WordPress ecosystem, and official MCP adapter",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor-controlled official documentation or product page",
+      "attribution_by": "task11-research-agent-gemini"
+    },
+    {
+      "app_id": 42,
+      "url": "https://developer.woocommerce.com/docs/features/mcp/",
+      "kind": "primary_docs",
+      "scope": "WooCommerce REST API and Store API, consumer key/secret Basic/OAuth1 and WordPress Application Password auth, open-source self-hosted/WordPress ecosystem, and official MCP adapter",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor-controlled official documentation or product page",
+      "attribution_by": "task11-research-agent-gemini"
+    },
+    {
+      "app_id": 42,
+      "url": "https://woocommerce.com/pricing/",
+      "kind": "official_product_page",
+      "scope": "WooCommerce REST API and Store API, consumer key/secret Basic/OAuth1 and WordPress Application Password auth, open-source self-hosted/WordPress ecosystem, and official MCP adapter",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor-controlled official documentation or product page",
+      "attribution_by": "task11-research-agent-gemini"
+    },
+    {
+      "app_id": 42,
+      "url": "https://github.com/woocommerce/woocommerce",
+      "kind": "official_repository",
+      "scope": "WooCommerce REST API and Store API, consumer key/secret Basic/OAuth1 and WordPress Application Password auth, open-source self-hosted/WordPress ecosystem, and official MCP adapter",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Official WooCommerce GitHub repository",
+      "attribution_by": "task11-research-agent-gemini"
+    },
+    {
+      "app_id": 43,
+      "url": "https://developer.bigcommerce.com/docs/start/authentication",
+      "kind": "primary_docs",
+      "scope": "BigCommerce Management REST and Storefront GraphQL APIs, OAuth 2.0 and store-level X-Auth-Token auth, Partner sandboxes/paid plans, and official MCP servers",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor-controlled official documentation or product page",
+      "attribution_by": "task11-research-agent-gemini"
+    },
+    {
+      "app_id": 43,
+      "url": "https://developer.bigcommerce.com/docs/start/about/sandboxes",
+      "kind": "primary_docs",
+      "scope": "BigCommerce Management REST and Storefront GraphQL APIs, OAuth 2.0 and store-level X-Auth-Token auth, Partner sandboxes/paid plans, and official MCP servers",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor-controlled official documentation or product page",
+      "attribution_by": "task11-research-agent-gemini"
+    },
+    {
+      "app_id": 43,
+      "url": "https://developer.bigcommerce.com/docs/rest-management",
+      "kind": "primary_docs",
+      "scope": "BigCommerce Management REST and Storefront GraphQL APIs, OAuth 2.0 and store-level X-Auth-Token auth, Partner sandboxes/paid plans, and official MCP servers",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor-controlled official documentation or product page",
+      "attribution_by": "task11-research-agent-gemini"
+    },
+    {
+      "app_id": 43,
+      "url": "https://developer.bigcommerce.com/docs/storefront/graphql",
+      "kind": "primary_docs",
+      "scope": "BigCommerce Management REST and Storefront GraphQL APIs, OAuth 2.0 and store-level X-Auth-Token auth, Partner sandboxes/paid plans, and official MCP servers",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor-controlled official documentation or product page",
+      "attribution_by": "task11-research-agent-gemini"
+    },
+    {
+      "app_id": 43,
+      "url": "https://www.bigcommerce.com/essentials/pricing/",
+      "kind": "official_product_page",
+      "scope": "BigCommerce Management REST and Storefront GraphQL APIs, OAuth 2.0 and store-level X-Auth-Token auth, Partner sandboxes/paid plans, and official MCP servers",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor-controlled official documentation or product page",
+      "attribution_by": "task11-research-agent-gemini"
+    },
+    {
+      "app_id": 43,
+      "url": "https://docs.bigcommerce.com/llms.txt",
+      "kind": "primary_docs",
+      "scope": "BigCommerce Management REST and Storefront GraphQL APIs, OAuth 2.0 and store-level X-Auth-Token auth, Partner sandboxes/paid plans, and official MCP servers",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor-controlled official documentation or product page",
+      "attribution_by": "task11-research-agent-gemini"
+    },
+    {
+      "app_id": 44,
+      "url": "https://www.salesforce.com/commerce/pricing/",
+      "kind": "official_product_page",
+      "scope": "Salesforce B2C Commerce API (SCAPI), SLAS OAuth 2.0 and Account Manager OAuth 2.0 auth, enterprise licensing/sandboxes, and official/community MCP ecosystem",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor-controlled official documentation or product page",
+      "attribution_by": "task11-research-agent-gemini"
+    },
+    {
+      "app_id": 44,
+      "url": "https://github.com/SalesforceCommerceCloud/b2c-developer-tooling",
+      "kind": "official_repository",
+      "scope": "Salesforce B2C Commerce API (SCAPI), SLAS OAuth 2.0 and Account Manager OAuth 2.0 auth, enterprise licensing/sandboxes, and official/community MCP ecosystem",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Official Salesforce Commerce Cloud GitHub repository",
+      "attribution_by": "task11-research-agent-gemini"
+    },
+    {
+      "app_id": 44,
+      "url": "https://github.com/SalesforceCommerceCloud/commerce-sdk",
+      "kind": "official_repository",
+      "scope": "Salesforce B2C Commerce API (SCAPI), SLAS OAuth 2.0 and Account Manager OAuth 2.0 auth, enterprise licensing/sandboxes, and official/community MCP ecosystem",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Official Salesforce Commerce Cloud Node.js SCAPI SDK repository",
+      "attribution_by": "task11-research-agent-gemini"
+    },
+    {
+      "app_id": 44,
+      "url": "https://github.com/SalesforceCommerceCloud/commerce-sdk-isomorphic",
+      "kind": "official_repository",
+      "scope": "Salesforce B2C Commerce API (SCAPI), SLAS OAuth 2.0 and Account Manager OAuth 2.0 auth, enterprise licensing/sandboxes, and official/community MCP ecosystem",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Official Salesforce Commerce Cloud Isomorphic SCAPI SDK repository",
+      "attribution_by": "task11-research-agent-gemini"
+    },
+    {
+      "app_id": 45,
+      "url": "https://developer.adobe.com/commerce/webapi/rest/",
+      "kind": "primary_docs",
+      "scope": "Magento / Adobe Commerce REST and GraphQL APIs (PaaS/Open Source and SaaS), token/OAuth 1.0a and Adobe IMS OAuth 2.0 auth, open-source vs paid enterprise licensing, and MCP ecosystem",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor-controlled official documentation or product page",
+      "attribution_by": "task11-research-agent-gemini"
+    },
+    {
+      "app_id": 45,
+      "url": "https://developer.adobe.com/commerce/webapi/graphql/",
+      "kind": "primary_docs",
+      "scope": "Magento / Adobe Commerce REST and GraphQL APIs (PaaS/Open Source and SaaS), token/OAuth 1.0a and Adobe IMS OAuth 2.0 auth, open-source vs paid enterprise licensing, and MCP ecosystem",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor-controlled official documentation or product page",
+      "attribution_by": "task11-research-agent-gemini"
+    },
+    {
+      "app_id": 45,
+      "url": "https://developer.adobe.com/commerce/webapi/get-started/authentication/",
+      "kind": "primary_docs",
+      "scope": "Magento / Adobe Commerce REST and GraphQL APIs (PaaS/Open Source and SaaS), token/OAuth 1.0a and Adobe IMS OAuth 2.0 auth, open-source vs paid enterprise licensing, and MCP ecosystem",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor-controlled official documentation or product page",
+      "attribution_by": "task11-research-agent-gemini"
+    },
+    {
+      "app_id": 45,
+      "url": "https://developer.adobe.com/commerce/webapi/get-started/authentication/gs-authentication-oauth/",
+      "kind": "primary_docs",
+      "scope": "Magento / Adobe Commerce REST and GraphQL APIs (PaaS/Open Source and SaaS), token/OAuth 1.0a and Adobe IMS OAuth 2.0 auth, open-source vs paid enterprise licensing, and MCP ecosystem",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor-controlled official documentation or product page",
+      "attribution_by": "task11-research-agent-gemini"
+    },
+    {
+      "app_id": 45,
+      "url": "https://developer.adobe.com/commerce/webapi/rest/use-rest/",
+      "kind": "primary_docs",
+      "scope": "Magento / Adobe Commerce REST and GraphQL APIs (PaaS/Open Source and SaaS), token/OAuth 1.0a and Adobe IMS OAuth 2.0 auth, open-source vs paid enterprise licensing, and MCP ecosystem",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor-controlled official documentation or product page",
+      "attribution_by": "task11-research-agent-gemini"
+    },
+    {
+      "app_id": 45,
+      "url": "https://github.com/magento/magento2",
+      "kind": "official_repository",
+      "scope": "Magento / Adobe Commerce REST and GraphQL APIs (PaaS/Open Source and SaaS), token/OAuth 1.0a and Adobe IMS OAuth 2.0 auth, open-source vs paid enterprise licensing, and MCP ecosystem",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Official Magento Open Source GitHub repository",
+      "attribution_by": "task11-research-agent-gemini"
+    },
+    {
+      "app_id": 46,
+      "url": "https://developers.squarespace.com/commerce-apis",
+      "kind": "primary_docs",
+      "scope": "Squarespace Commerce APIs (Orders, Inventory, Products, Transactions, Profiles, Webhook Subscriptions), API Key Bearer and OAuth 2.0 auth, paid plan tiers, and MCP ecosystem",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor-controlled official documentation or product page",
+      "attribution_by": "task11-research-agent-gemini"
+    },
+    {
+      "app_id": 46,
+      "url": "https://developers.squarespace.com/commerce-apis/authentication-and-permissions",
+      "kind": "primary_docs",
+      "scope": "Squarespace Commerce APIs (Orders, Inventory, Products, Transactions, Profiles, Webhook Subscriptions), API Key Bearer and OAuth 2.0 auth, paid plan tiers, and MCP ecosystem",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor-controlled official documentation or product page",
+      "attribution_by": "task11-research-agent-gemini"
+    },
+    {
+      "app_id": 46,
+      "url": "https://developers.squarespace.com/oauth",
+      "kind": "primary_docs",
+      "scope": "Squarespace Commerce APIs (Orders, Inventory, Products, Transactions, Profiles, Webhook Subscriptions), API Key Bearer and OAuth 2.0 auth, paid plan tiers, and MCP ecosystem",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor-controlled official documentation or product page",
+      "attribution_by": "task11-research-agent-gemini"
+    },
+    {
+      "app_id": 46,
+      "url": "https://developers.squarespace.com/commerce-apis/orders-overview",
+      "kind": "primary_docs",
+      "scope": "Squarespace Commerce APIs (Orders, Inventory, Products, Transactions, Profiles, Webhook Subscriptions), API Key Bearer and OAuth 2.0 auth, paid plan tiers, and MCP ecosystem",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor-controlled official documentation or product page",
+      "attribution_by": "task11-research-agent-gemini"
+    },
+    {
+      "app_id": 46,
+      "url": "https://www.squarespace.com/pricing",
+      "kind": "official_product_page",
+      "scope": "Squarespace Commerce APIs (Orders, Inventory, Products, Transactions, Profiles, Webhook Subscriptions), API Key Bearer and OAuth 2.0 auth, paid plan tiers, and MCP ecosystem",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor-controlled official documentation or product page",
+      "attribution_by": "task11-research-agent-gemini"
+    },
+    {
+      "app_id": 46,
+      "url": "https://support.squarespace.com/hc/en-us/articles/206545657-Choosing-the-right-Squarespace-plan",
+      "kind": "primary_docs",
+      "scope": "Squarespace Commerce APIs (Orders, Inventory, Products, Transactions, Profiles, Webhook Subscriptions), API Key Bearer and OAuth 2.0 auth, paid plan tiers, and MCP ecosystem",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor-controlled official documentation or product page",
+      "attribution_by": "task11-research-agent-gemini"
+    },
+    {
+      "app_id": 47,
+      "url": "https://docs.ecwid.com/api-reference/rest-api/overview",
+      "kind": "primary_docs",
+      "scope": "Ecwid by Lightspeed REST API, OAuth 2.0 and secret/public access token auth, free/paid plan tiers, and MCP ecosystem",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor-controlled official documentation or product page",
+      "attribution_by": "task11-research-agent-gemini"
+    },
+    {
+      "app_id": 47,
+      "url": "https://api-docs.ecwid.com/reference/overview",
+      "kind": "primary_docs",
+      "scope": "Ecwid by Lightspeed REST API, OAuth 2.0 and secret/public access token auth, free/paid plan tiers, and MCP ecosystem",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor-controlled official documentation or product page",
+      "attribution_by": "task11-research-agent-gemini"
+    },
+    {
+      "app_id": 47,
+      "url": "https://api-docs.ecwid.com/reference/authentication",
+      "kind": "primary_docs",
+      "scope": "Ecwid by Lightspeed REST API, OAuth 2.0 and secret/public access token auth, free/paid plan tiers, and MCP ecosystem",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor-controlled official documentation or product page",
+      "attribution_by": "task11-research-agent-gemini"
+    },
+    {
+      "app_id": 47,
+      "url": "https://www.ecwid.com/pricing",
+      "kind": "official_product_page",
+      "scope": "Ecwid by Lightspeed REST API, OAuth 2.0 and secret/public access token auth, free/paid plan tiers, and MCP ecosystem",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor-controlled official documentation or product page",
+      "attribution_by": "task11-research-agent-gemini"
+    },
+    {
+      "app_id": 48,
+      "url": "https://gumroad.com/pricing",
+      "kind": "official_product_page",
+      "scope": "Gumroad v2 REST API, OAuth 2.0 and generated access token auth, flat transaction-fee pricing, and community MCP ecosystem",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor-controlled official documentation or product page",
+      "attribution_by": "task11-research-agent-gemini"
+    },
+    {
+      "app_id": 48,
+      "url": "https://github.com/antiwork/gumroad",
+      "kind": "official_repository",
+      "scope": "Gumroad v2 REST API, OAuth 2.0 and generated access token auth, flat transaction-fee pricing, and community MCP ecosystem",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Official Gumroad GitHub repository",
+      "attribution_by": "task11-research-agent-gemini"
+    },
+    {
+      "app_id": 48,
+      "url": "https://github.com/antiwork/gumroad-cli",
+      "kind": "official_repository",
+      "scope": "Gumroad v2 REST API, OAuth 2.0 and generated access token auth, flat transaction-fee pricing, and community MCP ecosystem",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Official Antiwork Gumroad CLI GitHub repository",
+      "attribution_by": "task11-research-agent-gemini"
+    },
+    {
+      "app_id": 48,
+      "url": "https://github.com/rmarescu/gumroad-mcp",
+      "kind": "community_repository",
+      "scope": "Gumroad v2 REST API, OAuth 2.0 and generated access token auth, flat transaction-fee pricing, and community MCP ecosystem",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Community-authored GitHub repository for Gumroad MCP server",
+      "attribution_by": "task11-research-agent-gemini"
+    },
+    {
+      "app_id": 49,
+      "url": "https://developer-docs.amazon.com/sp-api/docs/what-is-the-selling-partner-api",
+      "kind": "primary_docs",
+      "scope": "Amazon Selling Partner API (SP-API), Login with Amazon (LWA) OAuth 2.0 auth, developer registration/approval and sandbox environment, and official/community MCP ecosystem",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor-controlled official documentation or product page",
+      "attribution_by": "task11-research-agent-gemini"
+    },
+    {
+      "app_id": 49,
+      "url": "https://developer-docs.amazon.com/sp-api/docs/the-selling-partner-api-sandbox",
+      "kind": "primary_docs",
+      "scope": "Amazon Selling Partner API (SP-API), Login with Amazon (LWA) OAuth 2.0 auth, developer registration/approval and sandbox environment, and official/community MCP ecosystem",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor-controlled official documentation or product page",
+      "attribution_by": "task11-research-agent-gemini"
+    },
+    {
+      "app_id": 49,
+      "url": "https://developer-docs.amazon.com/sp-api/llms.txt",
+      "kind": "primary_docs",
+      "scope": "Amazon Selling Partner API (SP-API), Login with Amazon (LWA) OAuth 2.0 auth, developer registration/approval and sandbox environment, and official/community MCP ecosystem",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor-controlled official documentation or product page",
+      "attribution_by": "task11-research-agent-gemini"
+    },
+    {
+      "app_id": 49,
+      "url": "https://developer-docs.amazon.com/sp-api/docs/registering-as-a-developer",
+      "kind": "primary_docs",
+      "scope": "Amazon Selling Partner API (SP-API), Login with Amazon (LWA) OAuth 2.0 auth, developer registration/approval and sandbox environment, and official/community MCP ecosystem",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor-controlled official documentation or product page",
+      "attribution_by": "task11-research-agent-gemini"
+    },
+    {
+      "app_id": 49,
+      "url": "https://developer-docs.amazon.com/sp-api/docs/authorizing-selling-partner-api-applications",
+      "kind": "primary_docs",
+      "scope": "Amazon Selling Partner API (SP-API), Login with Amazon (LWA) OAuth 2.0 auth, developer registration/approval and sandbox environment, and official/community MCP ecosystem",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor-controlled official documentation or product page",
+      "attribution_by": "task11-research-agent-gemini"
+    },
+    {
+      "app_id": 49,
+      "url": "https://developer-docs.amazon.com/sp-api/docs/connecting-to-the-selling-partner-api",
+      "kind": "primary_docs",
+      "scope": "Amazon Selling Partner API (SP-API), Login with Amazon (LWA) OAuth 2.0 auth, developer registration/approval and sandbox environment, and official/community MCP ecosystem",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor-controlled official documentation or product page",
+      "attribution_by": "task11-research-agent-gemini"
+    },
+    {
+      "app_id": 49,
+      "url": "https://github.com/amzn/selling-partner-api-models",
+      "kind": "official_repository",
+      "scope": "Amazon Selling Partner API (SP-API), Login with Amazon (LWA) OAuth 2.0 auth, developer registration/approval and sandbox environment, and official/community MCP ecosystem",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Official Amazon SP-API OpenAPI models GitHub repository",
+      "attribution_by": "task11-research-agent-gemini"
+    },
+    {
+      "app_id": 49,
+      "url": "https://github.com/amzn/selling-partner-agentic-toolkit",
+      "kind": "official_repository",
+      "scope": "Amazon Selling Partner API (SP-API), Login with Amazon (LWA) OAuth 2.0 auth, developer registration/approval and sandbox environment, and official/community MCP ecosystem",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Official Amazon SP-API Agentic Toolkit GitHub repository",
+      "attribution_by": "task11-research-agent-gemini"
+    },
+    {
+      "app_id": 49,
+      "url": "https://github.com/jay-trivedi/amazon_sp_mcp",
+      "kind": "community_repository",
+      "scope": "Amazon Selling Partner API (SP-API), Login with Amazon (LWA) OAuth 2.0 auth, developer registration/approval and sandbox environment, and official/community MCP ecosystem",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Community-authored GitHub repository for Amazon SP-API MCP server",
+      "attribution_by": "task11-research-agent-gemini"
+    },
+    {
+      "app_id": 50,
+      "url": "https://www.fanbasis.com/",
+      "kind": "official_product_page",
+      "scope": "FanBasis (rebranded to Commas) REST API, API key and OAuth auth, sandbox/production environments, transaction-fee pricing, and official remote MCP server",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor-controlled official documentation or product page",
+      "attribution_by": "task11-research-agent-gemini"
+    },
+    {
+      "app_id": 50,
+      "url": "https://commas.com/",
+      "kind": "official_product_page",
+      "scope": "FanBasis (rebranded to Commas) REST API, API key and OAuth auth, sandbox/production environments, transaction-fee pricing, and official remote MCP server",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor-controlled official documentation or product page",
+      "attribution_by": "task11-research-agent-gemini"
+    },
+    {
+      "app_id": 50,
+      "url": "https://dev-docs.fanbasis.com/",
+      "kind": "primary_docs",
+      "scope": "FanBasis (rebranded to Commas) REST API, API key and OAuth auth, sandbox/production environments, transaction-fee pricing, and official remote MCP server",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor-controlled official documentation or product page",
+      "attribution_by": "task11-research-agent-gemini"
+    },
+    {
+      "app_id": 50,
+      "url": "https://commasdocs.com/",
+      "kind": "primary_docs",
+      "scope": "FanBasis (rebranded to Commas) REST API, API key and OAuth auth, sandbox/production environments, transaction-fee pricing, and official remote MCP server",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor-controlled official documentation or product page",
+      "attribution_by": "task11-research-agent-gemini"
+    },
+    {
+      "app_id": 50,
+      "url": "https://commasdocs.com/llms.txt",
+      "kind": "primary_docs",
+      "scope": "FanBasis (rebranded to Commas) REST API, API key and OAuth auth, sandbox/production environments, transaction-fee pricing, and official remote MCP server",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor-controlled official documentation or product page",
+      "attribution_by": "task11-research-agent-gemini"
+    }
+  ]
+}

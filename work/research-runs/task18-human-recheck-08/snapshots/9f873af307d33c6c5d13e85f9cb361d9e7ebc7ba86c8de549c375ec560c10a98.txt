@@ -1,0 +1,39 @@
+> ## Documentation Index
+> Fetch the complete documentation index at: https://www.plain.com/docs/llms.txt
+> Use this file to discover all available pages before exploring further.
+# Introduction
+> An overview of Plain's GraphQL API and the data model behind it.
+Plain itself is built on this same GraphQL API. This means that there are **no limitations** in what can be done via the API vs the UI.
+These docs cover the most used operations. For anything not documented here, read the [schema](https://www.plain.com/docs/graphql/schema.md) or [get in touch](mailto:help@plain.com).
+> [!NOTE]
+>
+> If you're looking to access our GraphQL API from an Agent, try our [MCP Server](https://www.plain.com/docs/integrations/mcp-server.md) instead.
+<Snippet file="graphql/sdk-note.mdx" />
+## Key details
+Our API is compatible with all common GraphQL clients with the following details:
+* **API URL:** `https://core-api.uk.plain.com/graphql/v1`
+* **Allowed method**: POST
+* **Required headers:**
+* `Content-Type: application/json`
+* `Authorization: Bearer YOUR_TOKEN` where the token is your API key. See [authentication](https://www.plain.com/docs/graphql/authentication.md) for more details.
+* **JSON body:**
+* `query`: the GraphQL query string
+* `variables`: a JSON object of variables used in the GraphQL query
+* `operationName`: the name of your GraphQL operation (used for tracking only; it does not affect the call or its result)
+If you'd like to use the **GraphQL schema to generate types** for your client code you can fetch the schema
+from: `https://core-api.uk.plain.com/graphql/v1/schema.graphql`
+## Your first API call
+In this example, we're going to get a customer in your workspace by their email address. You can find a customer's email on the right-hand side when looking at one of their threads in Plain.
+You will need an API key with the `customer:read` permission. See [authentication](https://www.plain.com/docs/graphql/authentication.md) for details on how to get an API key
+You'll need to set two shell variables:
+* `PLAIN_TOKEN`: The API key
+* `PLAIN_CUSTOMER_EMAIL`: The email of the customer you want to fetch
+```bash theme={null}
+PLAIN_TOKEN=XXX
+PLAIN_CUSTOMER_EMAIL=XXX
+curl -X POST https://core-api.uk.plain.com/graphql/v1 \
+-H "Content-Type: application/json" \
+-H "Authorization: Bearer $PLAIN_TOKEN" \
+-d '{"query":"query customerByEmail($email: String!) { customerByEmail(email: $email) { id fullName updatedAt { iso8601 } } }","variables":{"email":"'"$PLAIN_CUSTOMER_EMAIL"'"},"operationName":"customerByEmail"}'
+```
+This documentation is built and hosted on [Mintlify](https://mintlify.com), a developer documentation platform.

@@ -1,0 +1,12 @@
+{
+  "61": "GitHub.com REST API and official GitHub MCP server; personal and organization access, not Enterprise Server; testing versus production credential conditions remain separately assessed",
+  "62": "Vercel REST API and official Vercel MCP server; hosted account/team resources, Hobby versus paid restrictions; testing and production assessed separately",
+  "63": "Netlify hosted REST API v1 and official Netlify MCP server; personal/team sites and deployments; testing and production assessed separately",
+  "64": "Cloudflare v4 management API and Cloudflare official remote MCP servers; account/zone resources and scoped tokens; testing and production assessed separately",
+  "65": "Supabase hosted project Data REST API, Management API and official Supabase MCP; project API keys versus management OAuth/PAT; development and production separated",
+  "66": "Neo4j Query API v2 and official Neo4j MCP; Community database Basic auth versus Enterprise/Aura SSO; local development versus production separated",
+  "67": "Snowflake SQL REST API and Snowflake-managed MCP server; account SQL execution, OAuth/key-pair/PAT and role privileges; trial versus production separated",
+  "68": "MongoDB Atlas Administration API v2 and official MongoDB MCP Atlas management tools; service accounts/API keys distinct from database connection credentials; free/testing versus production separated",
+  "69": "Datadog hosted REST APIs v1/v2 and official Datadog MCP server; site-specific endpoints, API/application keys and OAuth; testing versus production assessed separately",
+  "70": "Sentry hosted Web API and official Sentry MCP server; organization/user bearer tokens and remote OAuth MCP; self-hosted compatibility not presumed; testing and production assessed separately"
+}

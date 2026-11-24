@@ -1,0 +1,2 @@
+{"event": "fetch_attempt", "app_id": 2, "attempt": 1, "source_url": "https://synthetic.example/docs", "attempted_on": "2026-11-23", "status": "fetched", "http_status": 200, "resolved_url": "https://synthetic.example/docs", "error": null, "content_sha256": "261d1ad11cfee94b7db701fed9c8cd7b52313735b964173b4a5c27e59ac4b791"}
+{"event": "run_failed", "error_type": "ValueError", "message": "Run rejected/incomplete; parent preserved. See command error for validation reason."}

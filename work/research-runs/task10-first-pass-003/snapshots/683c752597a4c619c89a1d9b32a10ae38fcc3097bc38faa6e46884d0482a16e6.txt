@@ -1,0 +1,212 @@
+Klaviyo MCP server | Klaviyo DevelopersSkip to content
+This page is available as Markdown at https://developers.klaviyo.com/en/docs/klaviyo_mcp_server.md. An index of every page is at https://developers.klaviyo.com/llms.txt.
+Developers
+Home
+Guides
+API Reference
+Agents
+Search the docs
+v2026-10-15
+v2026-10-15Latest
+v2026-07-15
+v2026-04-15
+v2026-01-15
+v2025-10-15
+v2025-07-15
+v2025-04-15
+v2025-01-15
+Changelog
+Help Center
+Community
+Guides
+Developer SDKS & tools
+Klaviyo MCP server
+Klaviyo MCP server
+Copy as Markdown
+View as MarkdownOpen this page as plain Markdown
+Open in Claude↗(opens in a new tab)
+Open in ChatGPT↗(opens in a new tab)Ask ChatGPT about this page
+Open in Cursor↗(opens in a new tab)Ask Cursor about this page
+Get AI assistance with your Klaviyo data using Klaviyo's MCP server.
+You will learn
+The Klaviyo Model Context Protocol (MCP) server seamlessly integrates with Klaviyo’s APIs, enabling AI clients to interact with your Klaviyo data. This page introduces the MCP server and what you can do with it. When you’re ready to get started, use the pages in this section to connect the server to your MCP client and explore the available tools.
+What is MCP?
+MCP (Model Context Protocol) is an open protocol that helps AI models securely interface with different data sources and tools. You’ll connect Klaviyo’s MCP server to an MCP client, i.e., an AI agent like Claude or Cursor, to get assistance with your Klaviyo data. Your MCP client can help with a variety of tasks from campaign creation to flow performance reports. Here’s some examples of prompts you can give:
+“Show me the performance of my email campaigns from the last 30 days.”
+“Which flows are performing the best in terms of conversions?”
+“Create an email campaign promoting our Memorial Day sale.”
+Here’s an example of an MCP client working on a Klaviyo-related task using Klaviyo’s MCP tools:
+In this section
+Connect to the MCP server — configure your MCP client for the remote-hosted server (recommended) or the local server, and control server behavior with query parameters and environment variables.
+Available tools — browse the tools the server exposes, grouped by category, along with which ones are read-only, handle user-generated content, or are available on the remote server.
+Last updated 2026-09-04
+Guides
+Changelog
+Changelog
+API versioning and deprecation policy
+Get started
+Get started with Klaviyo
+Create a test account
+Install a library
+Authenticate API requests
+Make a test API request
+Rate limits, status codes, and errors
+Set up your AI agent
+Klaviyo API essentials
+Klaviyo's data model
+Klaviyo's architecture
+JSON:API feature guides
+Relationships
+Filtering
+Sorting
+Datetimes
+Sparse fieldsets
+Developer SDKS & tools
+Web and Mobile SDKs
+Developer tools
+Generate sample data
+Monitor API usage
+Review API error alerts
+Use Klaviyo's Postman collections
+Klaviyo CLI
+Create an allowlist for your public API key
+Glossary index
+Klaviyo MCP server
+Available tools
+Connect to the MCP server
+Klaviyo Stripe Projects Agent Context
+Klaviyo text messaging (SMS)
+Partner resources
+Join the Klaviyo ecosystem
+How your customers can use integrated data in Klaviyo
+Build your app
+Implement OAuth
+Create a public OAuth app
+Make API calls using OAuth
+Handle your app's OAuth flow
+Troubleshoot OAuth errors
+Update your OAuth scopes
+Build a user-scoped app
+Branding for app metrics
+Submit flow templates for your app
+Get performance data for flows triggered by your app metrics
+Submit Customer Hub content block templates for your app
+Submit, publish, and manage your app
+Prepare your app
+Klaviyo app listing requirements
+Create help docs for your integration
+Pass your app review
+Submit your app for review
+Create promotional material for your integration
+Monitor your app
+Manage your app
+Migrate to OAuth from private key authentication
+Application objects for app partners
+Integrate with Klaviyo
+Integrations by use case
+Integrate an ecommerce platform without a pre-built Klaviyo integration
+Integrate a subscription ecommerce platform
+Integrate a business with brick-and-mortar locations
+Integrate a ticket-based or registration-based platform
+Integrate a content-based platform
+Integrate with a Shopify Hydrogen store
+Integrate with a BigCommerce Catalyst store
+Integrate a direct mail platform
+Integrate a food and beverage platform
+Integrate a forms and popups platform
+Integrate a helpdesk platform
+Integrate a hotel and travel platform
+Integrate a loyalty platform
+Integrate a phone platform
+Integrate a quiz and survey platform
+Integrate a reviews platform
+Integrate a search and merchandising platform
+Integrate a shipping platform
+Integrate a wellness platform
+Integrate an ad platform
+Integrate an analytics and reporting platform
+Integrate an onsite personalization platform
+Custom integration FAQs
+Build with Klaviyo
+Use data in Klaviyo
+Set up SFTP data transfer with Klaviyo
+Importing data
+Bulk Import Profiles API
+Import profile and event data with SFTP
+Exporting data
+Export data from Klaviyo
+Use the Query Metric Aggregates endpoint
+Supported attributes
+Export event data with SFTP
+Track events & identify profiles
+Introduction to the klaviyo object
+JavaScript API for identification and tracking
+Set up API-based transactional emails
+Set up API-based website activity events
+Track API metrics with JavaScript
+Update profile identifiers via API
+Acceptable date and timestamp formats for profile and event properties
+Collect and sync consent
+Collect email and SMS consent via API
+Custom catalogs and Back in stock
+Sync a custom catalog feed to Klaviyo
+Enable back in stock for custom catalog feeds
+Set up back in stock via API
+Manage coupons with the Coupons API
+Get started with the Conversations API
+Personalize messages
+Flow webhooks
+How to add a webhook action to a flow
+Understanding webhook status codes
+Add a custom action to a flow
+System webhooks
+Working with system webhooks
+Django for message design
+Message design overview
+Use filters to customize variables
+Use conditionals in messages
+Django filter glossary
+Use custom catalog data in emails
+Send AMP emails in Klaviyo
+Forms
+Custom trigger a popup or flyout form
+Track Klaviyo form activity using JavaScript
+Reviews widget customization
+Use advanced CSS to style Klaviyo Reviews widgets
+Klaviyo Reviews CSS class reference
+On this page
+You will learn
+What is MCP?
+In this section
+Power smarter digital relationships
+Sign up for our developer newsletter
+Get the latest API updates, product announcements, developer tool updates, and more sent right to your inbox.
+By entering your information and clicking “Sign up,” you consent to receive marketing emails (such as newsletters, blog posts, webinars, event invitations and new product updates) from Klaviyo from time to time. You can unsubscribe at any time by clicking on the “Unsubscribe” link at the bottom of our emails. For more information on how we process your personal information and what rights you have in this respect, please see our Privacy Policy.
+API docs
+API overview
+Events
+Profiles
+Lists
+Metrics
+Flows
+Resources
+Developer forum (opens in a new tab)
+Changelog
+SDK overview
+Help center (opens in a new tab)
+Contact us (opens in a new tab)
+About Klaviyo (opens in a new tab)
+Privacy Policy (opens in a new tab)
+Guides
+Get started
+Install SDKs
+Set up your AI agent
+For agents
+llms.txt
+llms-full.txt
+OpenAPI spec
+MCP server
+Agent skills
+Terms and Privacy (opens in a new tab)
+Trademarks (opens in a new tab)
+Security (opens in a new tab)

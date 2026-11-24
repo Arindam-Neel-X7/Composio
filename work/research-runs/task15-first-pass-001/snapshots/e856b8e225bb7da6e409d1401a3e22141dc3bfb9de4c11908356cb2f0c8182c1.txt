@@ -1,0 +1,161 @@
+Partner authentication
+Skip to content
+API
+Guides
+Examples
+No-Code Options
+Support
+Changelog
+SearchCtrl+K
+Login
+Quickstart
+Authentication
+Developer authentication
+Partner authentication
+User roles and permissions
+Pagination
+Rate limits
+Idempotency
+Error codes
+Versioning
+API Launch Stages
+Webhooks
+Onboarding
+Launch Checklist
+Authentication
+Partner authentication
+Developer authentication
+/
+Partner authentication
+Partner authentication
+Copy
+Copy for LLM
+Copy page as Markdown for LLMs
+View as Markdown
+Open this page as Markdown
+Open in ChatGPT
+Get insights from ChatGPT
+Open in Claude
+Get insights from Claude
+Note: This section is only for Brex developer partners. If you are a Brex client–i.e., you have your own Brex account–looking to authenticate to our APIs, refer to the authentication page to get started.
+API servers
+Former API server URLs
+As of January 1, 2026, we are transitioning base URLs to api.brex.com and api-staging.brex.com respectively, but the former URLs (platform.brexapis.com and platform.staging.brexapps.com) will continue to be available for the forseeable future.
+Production: https://api.brex.com
+Staging: https://api-staging.brex.com
+Data in Staging
+There are no availability guarantees in staging - data stored in staging environments may be purged at any time. Use staging for point-in-time testing only.
+Scopes
+openid: Required to make an OpenID Connect request.
+offline_access: Required to obtain an OAuth 2.0 Refresh Token.
+The scopes page describes how scopes work in the Brex API and the scopes required for each API.
+Auth server
+The base URL for the requests is:
+Production: https://accounts-api.brex.com/oauth2/default
+Staging: https://accounts-api.staging.brexapps.com/oauth2/default
+OpenID Connect
+The Brex API is fully compliant with OpenID Connect, an extension on top of OAuth 2.0. For more details on the OpenID Connect protocol, please see the spec. The well-known configuration can be found at the following URLs:
+Production: https://accounts-api.brex.com/oauth2/default/.well-known/openid-configuration
+Staging: https://accounts-api.staging.brexapps.com/oauth2/default/.well-known/openid-configuration
+This may change in the future without notice. Always use the well-known OpenID configuration document as the source of truth for the base URL.
+Authorization methods
+Brex currently supports 2 different authorization grant types:
+If you are using the onboarding API, you will generate a Client Credentials Grant as there is no existing Brex client involved.
+For all other APIs, you will implement the Authorization Code Grant, which implements a web-based redirection flow to request permission from the Brex client to access their account. Only Brex clients with the proper roles may grant permission. Please see the User Roles & Permissions page for more details.
+Authentication implementation
+To implement authentication, we highly recommend using one of the existing OAuth 2.0 SDKs if available for your language. These SDKs handle the various intracies of the OAuth 2.0 spec and make it much easier to plug and play your credentials to get started.
+Please contact our developer support team to be issued a client ID and client secret for partner authentication.
+The prompt parameter
+prompt is an optional parameter on the authorization request — the /v1/authorize URL you send the user to, not your redirect URI. It controls which screens a user sees when they already have a Brex session or an existing grant. Values are space-delimited, and Brex supports two of the values defined in 3.1.2.1. Authentication Request:
+ValueEffect
+loginAlways re-authenticate, even if the user has an active Brex session.
+consentAlways show the consent screen, even if the user already granted every requested scope.
+We recommend sending prompt=consent. The consent screen is where a user who can reach more than one Brex account chooses which account to connect; for example, an external firm like an accountant or bookkeeper can pick between the client accounts they operate on behalf of. Without forcing a selection, the OAuth authorization request would silently skip that screen and the user's primary account may be selected for them. See which account a token represents.
+Send prompt=login when users of your application may have multiple Brex logins, to force re-authentication so they sign in as the login they mean to connect rather than whoever an active session belongs to. This is a separate concern from account selection: login decides which user signs in, consent decides which of that user's accounts you connect to. You can send both.
+select_account is not supported
+prompt=select_account is not supported. Use prompt=consent to let the user choose which Brex account the token represents.
+Implementing your own client
+If you need to implement your own client, we recommend starting with the developer guides from Okta and reading below for more details. The scopes for your client will be provided to you.
+Authorization Code Grant
+1. Request authorization code
+This is a redirection-based flow, which means that the application must be capable of interacting with the user-agent (i.e. the Brex client’s web browser) and receiving API authorization codes that are routed through the user-agent.
+https://accounts-api.brex.com/oauth2/default/v1/authorize?client_id=<CLIENT_ID>&response_type=code&redirect_uri=<REDIRECT_URI>&scope=<SCOPES>&state=<STATE>
+Parameters:
+client_id=<CLIENT_ID>: The client id provided by Brex.
+response_type=code: Specifies that your application is requesting an authorization code grant.
+redirect_uri=&lt;REDIRECT_URI&gt;: Where the service redirects the user-agent after an authorization code is granted. Must match exactly one of the addresses that was provided to Brex when the credentials were set up.
+scope=<SCOPES>: Scopes requested, separated by whitespaces.
+state=<STATE>: A required parameter that must be longer than 8 characters. For more details about state parameter, please check https://tools.ietf.org/html/rfc6749#section-10.12.
+OAuth PKCE flow: Also supported, but not required.
+2. The Brex client authorizes the application
+When the browser link is opened, the Brex client will be prompted to sign in to authenticate their identity. They will then be prompted to authorize or deny your application's access to their account. They may accept 0 to all of the requested scopes which your application will then have access to. If they cancel consent, you will not have any scopes granted.
+Because the client can decline individual scopes, a successful authorization does not mean the token will contain the scopes that were requested. Compare the scope value on the redirect URL against what you requested, and gracefully handle the affected features from the response instead of assuming the full set of scopes from the request. A scope you requested and did not receive will produce an HTTP 403 on every API call that needs the scope.
+A granted scope is also not the same as a working one — the account must have the underlying product, and the user must hold the required role. See a granted scope is not a guarantee of access.
+If the Brex client authorizes the request, we'll redirect the user-agent to your application's redirect URI, along with an authorization code. The redirect will look like this:
+<REDIRECT_URI>?code=<AUTHORIZATION_CODE>&scope=<SCOPES>&state=<STATE>
+Parameters:
+code=<AUTHORIZATION_CODE>: The authorization code that can be used to request an access token.
+scope=<SCOPES>: Scopes that were granted by the Brex client and can be a subset of what was requested.
+state=<STATE>: For security reasons, you should always confirm that the returned state matches the value you provided in the request.
+3. Request an access token
+To request an access token from the API, pass the authorization code along with authentication details to the API token endpoint. Here is an cURL example request:
+curl '{staging or production base auth URL}/v1/token' \
+--header 'Content-Type: application/x-www-form-urlencoded' \
+--data-urlencode 'grant_type=authorization_code' \
+--data-urlencode 'code={AUTHORIZATION_CODE}' \
+--data-urlencode 'redirect_uri={REDIRECT_URI}' \
+--data-urlencode 'client_id={CLIENT_ID}' \
+--data-urlencode 'client_secret={CLIENT_SECRET}'
+Response body:
+access_token: "<ACCESS_TOKEN>"
+refresh_token: "<REFRESH_TOKEN>"
+token_type: "bearer"
+The access token returned expires in 3600 seconds (1 hour) and you will need to get a new one (see step 5) every time after it expires. Getting a new access token does not require the user to re-authorize the request.
+4. Using an access token
+Add your <ACCESS_TOKEN> as a bearer token into the request header of any API calls you are making on behalf of the customer.
+Request header:
+Authorization: Bearer <ACCESS_TOKEN>
+5. Getting a new access token and refresh token
+To obtain a new access token, pass in the <REFRESH_TOKEN> previously obtained by the token endpoint, and set grant_type=refresh_token.
+The response will contain a new <ACCESS_TOKEN> as well as a new REFRESH_TOKEN. Refresh tokens rotate, so store the new one and discard the old; the refresh token you just used will not work a second time.
+A refresh carries forward the grant you already have. The new access token represents the same account and the same scopes as the original authorization; refreshing never broadens scopes and never changes which account the token represents. To change either, send the user through the authorization flow again.
+Refresh tokens expire every 90 days so they should be exchanged for a new one before then. Failure to do so will require the user to re-authenticate.
+Client Credentials Grant
+1. Request client credentials
+Request an access token using grant_type=client_credentials and your Brex provided credentials from the token endpoint.
+Scopes are defined as a space delimited list such as: cards cards.readonly. Make sure to request the relevant scopes in the access token request to use the appropriate APIs.
+An example cURL request:
+curl '{staging or production base auth URL}/v1/token' \
+--header 'Content-Type: application/x-www-form-urlencoded' \
+--data-urlencode 'grant_type=client_credentials' \
+--data-urlencode 'client_id={CLIENT_ID}' \
+--data-urlencode 'client_secret={CLIENT_SECRET}' \
+--data-urlencode 'scope={SCOPES}'
+An example response body:
+{
+"access_token": "<ACCESS_TOKEN>",
+"expires_in": 3600,
+"scope": "<SCOPES>",
+"token_type": "Bearer"
+}
+2. Using an access token
+Add your <ACCESS_TOKEN> as a bearer token into the request header of any API calls you are making on behalf of the customer.
+Request header:
+Authorization: Bearer <ACCESS_TOKEN>
+The access token returned expires in 3600 seconds (1 hour). If you don't prefer to persistently store and rotate tokens, you can simply request a new token when it expires.
+Revoking refresh tokens
+Refresh tokens expire every 90 days. However, for general best security practices, or in the event of a compromise, you may want to revoke your refresh token. In order to do so, hit the refresh token revocation endpoint:
+POST "{staging or production base URL}/v1/revoke"
+// Request Body
+{
+"token": "<refresh-token-to-revoke>",
+"client_id": "OAuth2 client id used to get the refresh token",
+"client_secret": "OAuth2 client secret used to get the refresh token"
+}
+Redirect URIs
+OAuth 2.0 depends on Redirect URIs for the Authorization Code Grant. Partners must supply one or more redirect URIs that Brex will use to post the authorization code. (See Authentication implementation > Authorization Code Grant > 2. The Brex client authorizes the application)
+Was this helpful?
+Previous pageDeveloper authentication
+Next pageUser roles and permissions
+Copyright © Brex LLC 2019–2026. All rights reserved.
+Ask AI

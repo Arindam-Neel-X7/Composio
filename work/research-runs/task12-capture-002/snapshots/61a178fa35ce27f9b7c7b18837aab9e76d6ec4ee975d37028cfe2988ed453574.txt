@@ -1,0 +1,134 @@
+Overview | API client for Python | Apify Documentation
+Skip to main content
+Get started
+Get startedActorsStorageProxyAccountIntegrationsSecurity
+Academy
+API
+API reference
+Client for JavaScript
+Client for Python
+Client for Go
+Client for PHP
+Client for Java
+Client for .NET
+Client for Rust
+SDK
+SDK for JavaScript
+SDK for Python
+CLI
+Installation
+Quick start
+Command reference
+For AI agents
+API Client for Python
+DocsReferenceChangelogGitHub
+3.5
+Next
+3.5
+2.5
+1.12
+0.6
+Overview
+Quick start
+Concepts
+Guides
+Upgrading
+Version: 3.5
+On this page
+Overview
+Copy for LLM
+The Apify API client for Python is the official library to access the Apify REST API from your Python applications. It provides useful features like automatic retries and convenience functions that improve the experience of using the Apify API.
+The client simplifies interaction with the Apify platform by providing:
+Intuitive methods for working with Actors, Datasets, Key-value stores, and other Apify resources
+Both synchronous and asynchronous interfaces for flexible integration
+Built-in retries with exponential backoff for failed requests
+Comprehensive API coverage with JSON encoding (UTF-8) for all requests and responses
+Prerequisites
+apify-client requires Python 3.11 or higher. Python is available for download on the official website. Check your current Python version by running:
+python --version
+Installation
+The Apify client is available as the apify-client package on PyPI or on conda-forge.
+PyPI
+conda-forge
+pip install apify-client
+conda install conda-forge::apify-client
+For better request-body compression, opt in to brotli, which compresses better than gzip, especially for large payloads. Install the optional extra:
+PyPI
+conda-forge
+pip install "apify-client[brotli]"
+conda install conda-forge::apify-client
+For details, see HTTP compression.
+The client uses Impit as its default HTTP transport. To use the built-in HTTPX2 transport, install the optional httpx2 extra, which provides Pydantic's maintained continuation of HTTPX:
+PyPI
+conda-forge
+pip install "apify-client[httpx2]"
+conda install conda-forge::apify-client conda-forge::httpx2
+For synchronous and asynchronous examples and details about the shared architecture, see HTTP clients.
+Quick example
+The following example shows how to run an Actor and retrieve its results:
+Async client
+Sync client
+from apify_client import ApifyClientAsync
+# You can find your API token at https://console.apify.com/settings/integrations.
+TOKEN = 'MY-APIFY-TOKEN'
+async def main() -> None:
+apify_client = ApifyClientAsync(TOKEN)
+# Start an Actor and wait for it to finish.
+actor_client = apify_client.actor('john-doe/my-cool-actor')
+call_result = await actor_client.call()
+if call_result is None:
+print('Actor run failed.')
+return
+# Fetch results from the Actor run's default dataset.
+dataset_client = apify_client.dataset(call_result.default_dataset_id)
+list_items_result = await dataset_client.list_items()
+print(f'Dataset: {list_items_result}')
+from apify_client import ApifyClient
+# You can find your API token at https://console.apify.com/settings/integrations.
+TOKEN = 'MY-APIFY-TOKEN'
+def main() -> None:
+apify_client = ApifyClient(TOKEN)
+# Start an Actor and wait for it to finish.
+actor_client = apify_client.actor('john-doe/my-cool-actor')
+call_result = actor_client.call()
+if call_result is None:
+print('Actor run failed.')
+return
+# Fetch results from the Actor run's default dataset.
+dataset_client = apify_client.dataset(call_result.default_dataset_id)
+list_items_result = dataset_client.list_items()
+print(f'Dataset: {list_items_result}')
+You can find your API token in the Integrations section of Apify Console. See the Quick start guide for more details on authentication.
+Edit this page
+Next
+Quick start
+Prerequisites
+Installation
+Quick example
+Reference
+API Reference
+SDK for JavaScript
+SDK for Python
+Client for JavaScript
+Client for Python
+CLI
+Glossary
+Open source
+Crawlee
+Fingerprint Suite
+impit
+MCP CLI
+Actor whitepaper
+proxy-chain
+Security
+Trust Center
+Community
+Discord
+X
+YouTube
+GitHub
+For AI
+llms.txt
+llms-full.txt
+OpenAPI (JSON)
+OpenAPI (YAML)

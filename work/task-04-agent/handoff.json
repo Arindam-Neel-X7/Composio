@@ -1,0 +1,556 @@
+{
+  "run_id": "pilot-first-pass-001",
+  "synthetic": false,
+  "extraction_producer": "Task04 research agent, gpt-6.1-sol; researcher-authored structured builder",
+  "capture_lineage": [
+    "pilot-capture-001",
+    "pilot-capture-002",
+    "pilot-capture-003",
+    "pilot-first-pass-001"
+  ],
+  "selected_source_urls": 27,
+  "captured_source_receipts": 26,
+  "source_urls_without_capture": [
+    "https://developers.freshdesk.com/api/"
+  ],
+  "total_claim_status_counts": {
+    "observed": 71,
+    "unknown": 48,
+    "inferred": 26,
+    "not_researched": 4,
+    "disputed": 1,
+    "not_found_in_checked_sources": 1
+  },
+  "apps": [
+    {
+      "id": 2,
+      "app": "HubSpot",
+      "category": "CRM and Sales",
+      "claim_status_counts": {
+        "observed": 20,
+        "unknown": 9,
+        "inferred": 3,
+        "not_researched": 1
+      },
+      "captured_sources": [
+        "https://developers.hubspot.com/developer-platform-basics",
+        "https://developers.hubspot.com/docs/apps/developer-platform/build-apps/authentication/overview",
+        "https://developers.hubspot.com/docs/apps/legacy-apps/private-apps/overview",
+        "https://developers.hubspot.com/docs/api-reference/latest/overview",
+        "https://developers.hubspot.com/docs/apps/developer-platform/build-apps/integrate-with-the-remote-hubspot-mcp-server"
+      ],
+      "fetch_attempt_status_counts": {
+        "dns_error": 5,
+        "fetched": 5
+      },
+      "failed_attempts": [
+        {
+          "index": 0,
+          "source_url": "https://developers.hubspot.com/developer-platform-basics",
+          "attempted_on": "2026-11-23",
+          "status": "dns_error",
+          "http_status": null,
+          "resolved_url": null,
+          "error": "Request failed: gaierror",
+          "content_sha256": null
+        },
+        {
+          "index": 1,
+          "source_url": "https://developers.hubspot.com/docs/apps/developer-platform/build-apps/authentication/overview",
+          "attempted_on": "2026-11-23",
+          "status": "dns_error",
+          "http_status": null,
+          "resolved_url": null,
+          "error": "Request failed: gaierror",
+          "content_sha256": null
+        },
+        {
+          "index": 2,
+          "source_url": "https://developers.hubspot.com/docs/apps/legacy-apps/private-apps/overview",
+          "attempted_on": "2026-11-23",
+          "status": "dns_error",
+          "http_status": null,
+          "resolved_url": null,
+          "error": "Request failed: gaierror",
+          "content_sha256": null
+        },
+        {
+          "index": 3,
+          "source_url": "https://developers.hubspot.com/docs/api-reference/latest/overview",
+          "attempted_on": "2026-11-23",
+          "status": "dns_error",
+          "http_status": null,
+          "resolved_url": null,
+          "error": "Request failed: gaierror",
+          "content_sha256": null
+        },
+        {
+          "index": 4,
+          "source_url": "https://developers.hubspot.com/docs/apps/developer-platform/build-apps/integrate-with-the-remote-hubspot-mcp-server",
+          "attempted_on": "2026-11-23",
+          "status": "dns_error",
+          "http_status": null,
+          "resolved_url": null,
+          "error": "Request failed: gaierror",
+          "content_sha256": null
+        }
+      ],
+      "review_status": "pending",
+      "buildability": {
+        "verdict": "build_now",
+        "scope": "Prototype CRM record reads/writes in a developer test account via scoped APIs; production evaluated per tenant.",
+        "blockers": [],
+        "next_steps": [
+          "Use current OAuth or static developer-platform onboarding",
+          "Check requested scopes and tenant plan before production",
+          "Test MCP separately; no operational check in this pilot"
+        ]
+      }
+    },
+    {
+      "id": 13,
+      "app": "Freshdesk",
+      "category": "Support and Helpdesk",
+      "claim_status_counts": {
+        "observed": 14,
+        "inferred": 7,
+        "unknown": 10,
+        "not_researched": 1
+      },
+      "captured_sources": [
+        "https://support.freshdesk.com/support/solutions/articles/215517-how-to-find-your-api-key",
+        "https://developers.freshworks.com/docs/app-sdk/v3.0/support_ticket/oauth-implementation-in-apps/",
+        "https://support.freshdesk.com/support/solutions/articles/50000011778",
+        "https://support.freshdesk.com/support/solutions/articles/50000012670",
+        "https://developers.freshworks.com/docs/app-sdk/v3.0/support_ticket/rest-apis/"
+      ],
+      "fetch_attempt_status_counts": {
+        "dns_error": 5,
+        "other_error": 3,
+        "fetched": 5
+      },
+      "failed_attempts": [
+        {
+          "index": 0,
+          "source_url": "https://developers.freshdesk.com/api/",
+          "attempted_on": "2026-11-23",
+          "status": "dns_error",
+          "http_status": null,
+          "resolved_url": null,
+          "error": "Request failed: gaierror",
+          "content_sha256": null
+        },
+        {
+          "index": 1,
+          "source_url": "https://support.freshdesk.com/support/solutions/articles/215517-how-to-find-your-api-key",
+          "attempted_on": "2026-11-23",
+          "status": "dns_error",
+          "http_status": null,
+          "resolved_url": null,
+          "error": "Request failed: gaierror",
+          "content_sha256": null
+        },
+        {
+          "index": 2,
+          "source_url": "https://developers.freshworks.com/docs/app-sdk/v3.0/support_ticket/oauth-implementation-in-apps/",
+          "attempted_on": "2026-11-23",
+          "status": "dns_error",
+          "http_status": null,
+          "resolved_url": null,
+          "error": "Request failed: gaierror",
+          "content_sha256": null
+        },
+        {
+          "index": 3,
+          "source_url": "https://support.freshdesk.com/support/solutions/articles/50000011778",
+          "attempted_on": "2026-11-23",
+          "status": "dns_error",
+          "http_status": null,
+          "resolved_url": null,
+          "error": "Request failed: gaierror",
+          "content_sha256": null
+        },
+        {
+          "index": 4,
+          "source_url": "https://support.freshdesk.com/support/solutions/articles/50000012670",
+          "attempted_on": "2026-11-23",
+          "status": "dns_error",
+          "http_status": null,
+          "resolved_url": null,
+          "error": "Request failed: gaierror",
+          "content_sha256": null
+        },
+        {
+          "index": 5,
+          "source_url": "https://developers.freshdesk.com/api/",
+          "attempted_on": "2026-11-23",
+          "status": "other_error",
+          "http_status": null,
+          "resolved_url": null,
+          "error": "Capture failed: ValueError",
+          "content_sha256": null
+        },
+        {
+          "index": 6,
+          "source_url": "https://developers.freshdesk.com/api/",
+          "attempted_on": "2026-11-23",
+          "status": "other_error",
+          "http_status": null,
+          "resolved_url": null,
+          "error": "Capture failed: ValueError",
+          "content_sha256": null
+        },
+        {
+          "index": 11,
+          "source_url": "https://developers.freshdesk.com/api/",
+          "attempted_on": "2026-11-23",
+          "status": "other_error",
+          "http_status": null,
+          "resolved_url": null,
+          "error": "Capture failed: ValueError",
+          "content_sha256": null
+        }
+      ],
+      "review_status": "pending",
+      "buildability": {
+        "verdict": "conditional",
+        "scope": "Read/update support tickets in an authorized trial or paid Freshdesk tenant via REST.",
+        "blockers": [
+          "Verified agent key and role permissions required",
+          "Long-term free-plan API eligibility and OAuth app registration were not established"
+        ],
+        "next_steps": [
+          "Use verified-agent key path for initial REST prototype",
+          "Confirm entitlement/rate limits for chosen plan",
+          "Validate Basic wire convention against full reference before implementation"
+        ]
+      }
+    },
+    {
+      "id": 31,
+      "app": "Google Ads",
+      "category": "Marketing, Ads, Email and Social",
+      "claim_status_counts": {
+        "observed": 15,
+        "disputed": 1,
+        "unknown": 11,
+        "inferred": 4,
+        "not_researched": 1
+      },
+      "captured_sources": [
+        "https://developers.google.com/google-ads/api/docs/oauth/overview",
+        "https://developers.google.com/google-ads/api/docs/api-policy/developer-token",
+        "https://developers.google.com/google-ads/api/docs/api-policy/access-levels",
+        "https://developers.google.com/google-ads/api/docs/best-practices/testing",
+        "https://developers.google.com/google-ads/api/docs/concepts/api-structure",
+        "https://developers.google.com/google-ads/api/docs/developer-toolkit/mcp-server",
+        "https://developers.google.com/google-ads/api/rest/overview"
+      ],
+      "fetch_attempt_status_counts": {
+        "dns_error": 6,
+        "fetched": 7,
+        "timeout": 1
+      },
+      "failed_attempts": [
+        {
+          "index": 0,
+          "source_url": "https://developers.google.com/google-ads/api/docs/oauth/overview",
+          "attempted_on": "2026-11-23",
+          "status": "dns_error",
+          "http_status": null,
+          "resolved_url": null,
+          "error": "Request failed: gaierror",
+          "content_sha256": null
+        },
+        {
+          "index": 1,
+          "source_url": "https://developers.google.com/google-ads/api/docs/api-policy/developer-token",
+          "attempted_on": "2026-11-23",
+          "status": "dns_error",
+          "http_status": null,
+          "resolved_url": null,
+          "error": "Request failed: gaierror",
+          "content_sha256": null
+        },
+        {
+          "index": 2,
+          "source_url": "https://developers.google.com/google-ads/api/docs/api-policy/access-levels",
+          "attempted_on": "2026-11-23",
+          "status": "dns_error",
+          "http_status": null,
+          "resolved_url": null,
+          "error": "Request failed: gaierror",
+          "content_sha256": null
+        },
+        {
+          "index": 3,
+          "source_url": "https://developers.google.com/google-ads/api/docs/best-practices/testing",
+          "attempted_on": "2026-11-23",
+          "status": "dns_error",
+          "http_status": null,
+          "resolved_url": null,
+          "error": "Request failed: gaierror",
+          "content_sha256": null
+        },
+        {
+          "index": 4,
+          "source_url": "https://developers.google.com/google-ads/api/docs/concepts/api-structure",
+          "attempted_on": "2026-11-23",
+          "status": "dns_error",
+          "http_status": null,
+          "resolved_url": null,
+          "error": "Request failed: gaierror",
+          "content_sha256": null
+        },
+        {
+          "index": 5,
+          "source_url": "https://developers.google.com/google-ads/api/docs/developer-toolkit/mcp-server",
+          "attempted_on": "2026-11-23",
+          "status": "dns_error",
+          "http_status": null,
+          "resolved_url": null,
+          "error": "Request failed: gaierror",
+          "content_sha256": null
+        },
+        {
+          "index": 9,
+          "source_url": "https://developers.google.com/google-ads/api/docs/best-practices/testing",
+          "attempted_on": "2026-11-23",
+          "status": "timeout",
+          "http_status": null,
+          "resolved_url": null,
+          "error": "Request timed out",
+          "content_sha256": null
+        }
+      ],
+      "review_status": "pending",
+      "buildability": {
+        "verdict": "conditional",
+        "scope": "Read campaign performance for authorized production Ads accounts; develop safe requests against test accounts.",
+        "blockers": [
+          "Production project needs Explorer or higher approval and target-account access",
+          "Test accounts cannot establish realistic performance-report behavior"
+        ],
+        "next_steps": [
+          "Use current Cloud-project onboarding and OAuth",
+          "Resolve token-summary inconsistency before implementing credential checklist",
+          "Request higher access for planning/billing operations if needed"
+        ]
+      }
+    },
+    {
+      "id": 58,
+      "app": "Sherlock",
+      "category": "Data, SEO and Scraping",
+      "claim_status_counts": {
+        "observed": 9,
+        "inferred": 5,
+        "unknown": 10,
+        "not_found_in_checked_sources": 1
+      },
+      "captured_sources": [
+        "https://github.com/sherlock-project/sherlock",
+        "https://sherlockproject.xyz/usage",
+        "https://raw.githubusercontent.com/sherlock-project/sherlock/master/LICENSE",
+        "https://sherlockproject.xyz/installation"
+      ],
+      "fetch_attempt_status_counts": {
+        "dns_error": 3,
+        "fetched": 4
+      },
+      "failed_attempts": [
+        {
+          "index": 0,
+          "source_url": "https://github.com/sherlock-project/sherlock",
+          "attempted_on": "2026-11-23",
+          "status": "dns_error",
+          "http_status": null,
+          "resolved_url": null,
+          "error": "Request failed: gaierror",
+          "content_sha256": null
+        },
+        {
+          "index": 1,
+          "source_url": "https://sherlockproject.xyz/usage",
+          "attempted_on": "2026-11-23",
+          "status": "dns_error",
+          "http_status": null,
+          "resolved_url": null,
+          "error": "Request failed: gaierror",
+          "content_sha256": null
+        },
+        {
+          "index": 2,
+          "source_url": "https://raw.githubusercontent.com/sherlock-project/sherlock/master/LICENSE",
+          "attempted_on": "2026-11-23",
+          "status": "dns_error",
+          "http_status": null,
+          "resolved_url": null,
+          "error": "Request failed: gaierror",
+          "content_sha256": null
+        }
+      ],
+      "review_status": "pending",
+      "buildability": {
+        "verdict": "build_now",
+        "scope": "Wrap the local Sherlock CLI as a username-search tool with structured result handling.",
+        "blockers": [],
+        "next_steps": [
+          "Install a supported package and bound runtime/output",
+          "Validate results on authorized examples; successful target detection was not tested",
+          "Do not advertise an existing official MCP or REST API without further evidence"
+        ]
+      }
+    },
+    {
+      "id": 91,
+      "app": "NotebookLM",
+      "category": "AI, Research and Media-native",
+      "claim_status_counts": {
+        "observed": 13,
+        "inferred": 7,
+        "unknown": 8,
+        "not_researched": 1
+      },
+      "captured_sources": [
+        "https://docs.cloud.google.com/gemini/enterprise/notebooklm-enterprise/docs/api-notebooks",
+        "https://docs.cloud.google.com/gemini/enterprise/notebooklm-enterprise/docs/api-notebooks-sources",
+        "https://docs.cloud.google.com/gemini/enterprise/notebooklm-enterprise/docs/set-up-notebooklm",
+        "https://docs.cloud.google.com/gemini/enterprise/notebooklm-enterprise/docs/set-up-licensing",
+        "https://github.com/Morfeu333/notebooklm-mcp"
+      ],
+      "fetch_attempt_status_counts": {
+        "dns_error": 5,
+        "fetched": 5
+      },
+      "failed_attempts": [
+        {
+          "index": 0,
+          "source_url": "https://docs.cloud.google.com/gemini/enterprise/notebooklm-enterprise/docs/api-notebooks",
+          "attempted_on": "2026-11-23",
+          "status": "dns_error",
+          "http_status": null,
+          "resolved_url": null,
+          "error": "Request failed: gaierror",
+          "content_sha256": null
+        },
+        {
+          "index": 1,
+          "source_url": "https://docs.cloud.google.com/gemini/enterprise/notebooklm-enterprise/docs/api-notebooks-sources",
+          "attempted_on": "2026-11-23",
+          "status": "dns_error",
+          "http_status": null,
+          "resolved_url": null,
+          "error": "Request failed: gaierror",
+          "content_sha256": null
+        },
+        {
+          "index": 2,
+          "source_url": "https://docs.cloud.google.com/gemini/enterprise/notebooklm-enterprise/docs/set-up-notebooklm",
+          "attempted_on": "2026-11-23",
+          "status": "dns_error",
+          "http_status": null,
+          "resolved_url": null,
+          "error": "Request failed: gaierror",
+          "content_sha256": null
+        },
+        {
+          "index": 3,
+          "source_url": "https://docs.cloud.google.com/gemini/enterprise/notebooklm-enterprise/docs/set-up-licensing",
+          "attempted_on": "2026-11-23",
+          "status": "dns_error",
+          "http_status": null,
+          "resolved_url": null,
+          "error": "Request failed: gaierror",
+          "content_sha256": null
+        },
+        {
+          "index": 4,
+          "source_url": "https://github.com/Morfeu333/notebooklm-mcp",
+          "attempted_on": "2026-11-23",
+          "status": "dns_error",
+          "http_status": null,
+          "resolved_url": null,
+          "error": "Request failed: gaierror",
+          "content_sha256": null
+        }
+      ],
+      "review_status": "pending",
+      "buildability": {
+        "verdict": "conditional",
+        "scope": "Create/share Enterprise notebooks and ingest sources for a licensed organizational user via REST.",
+        "blockers": [
+          "Enterprise subscription/license assignment, IAM roles and API-enabled billed project required",
+          "Notebook API is Preview; personal chat workflow parity is not established"
+        ],
+        "next_steps": [
+          "Provision trial and required roles through an authorized administrator",
+          "Use licensed-user token path and test notebook/source calls",
+          "Evaluate community personal MCP separately from the Enterprise toolkit"
+        ]
+      }
+    }
+  ],
+  "validation": {
+    "structure_and_grounding": "passed",
+    "backend": "PowerShell Test-Json (Draft2020-12)",
+    "factual_truth": "requires independent review",
+    "synthetic": false,
+    "records": 5
+  },
+  "handoff_exceptions": [
+    {
+      "issue_id": "task04-google-approval-taxonomy",
+      "target_tasks": [5, 6],
+      "original_run_id": "pilot-first-pass-001",
+      "app_id": 31,
+      "claim_id": "31.production.partner_approval_required",
+      "field_path": "credential_eligibility.production.partner_approval_required",
+      "frozen_value": true,
+      "issue": "The stored flag denotes Google vendor API-access approval, while its rationale explicitly disclaims a commercial partnership. The current taxonomy conflates two different gates.",
+      "aggregate_use_policy": "Do not interpret or aggregate this flag as commercial partnership gating or partnership-outreach demand until taxonomy is resolved. Keep the original 92-claim scoring inventory and first-pass value intact.",
+      "next_steps": "Task05 examines the scoped claim; Task06 defines distinct vendor API-access approval and commercial partnership categories. Any change must use an explicit child run and migration/correction entry.",
+      "adjudication": null
+    },
+    {
+      "issue_id": "task04-freshdesk-reference-capture",
+      "original_run_id": "pilot-first-pass-001",
+      "app_id": 13,
+      "source_url": "https://developers.freshdesk.com/api/",
+      "default_network_failure": {
+        "fetch_index": 0,
+        "status": "dns_error",
+        "error": "Request failed: gaierror"
+      },
+      "approved_network_failures": {
+        "fetch_indices": [5, 6, 11],
+        "status": "other_error",
+        "http_status": null,
+        "error": "Capture failed: ValueError"
+      },
+      "snapshot_captured": false,
+      "interpretation": "The saved error does not identify the exact collector guard or establish any product access restriction. Basic wire encoding and main-reference rate limits were not promoted from browser-only observations.",
+      "adjudication": null
+    },
+    {
+      "issue_id": "task04-mcp-search-bounds",
+      "original_run_id": "pilot-first-pass-001",
+      "app_ids": [2, 13, 31, 58, 91],
+      "issue": "All MCP discovery was bounded and non-exhaustive; found entries do not inventory every implementation. Sherlock's checked official README, installation and usage sources did not establish a matching server; unrelated same-name hits were rejected.",
+      "aggregate_use_policy": "Never translate not_found_in_checked_sources into no MCP exists; never interpret documented MCP as operationally tested. All four recorded operational checks remain not_researched.",
+      "adjudication": null
+    }
+  ],
+  "limitations": [
+    "Claims pending independent review; metrics accuracy is null",
+    "No authenticated API/MCP execution or paid accounts",
+    "Freshdesk main API reference failed capture; exact Basic wire encoding and rate limits not promoted",
+    "Google Ads dated migration conflicts with official summaries; developer token requirement disputed",
+    "Google Ads partner_approval_required=true denotes vendor API-access approval, not proven commercial partnership gating; exclude that interpretation from aggregates until Task05/06 taxonomy resolution",
+    "MCP checks are non-exhaustive across all five apps; bounded not-found is not global absence",
+    "NotebookLM personal community MCP is not Enterprise API proof",
+    "Sources are timestamped snapshots, not necessarily pinned repository commits",
+    "NotebookLM MCP evidence locator 151-165 establishes server identity and untested Enterprise scope; first tool row starts at 166, so wording lists notebook tools needs a wider locator before relying on it",
+    "Independent coordinator review/package remains outside the research agent write scope"
+  ]
+}

@@ -1,0 +1,99 @@
+What is ClickUp MCP? – ClickUp Help
+Skip to main content
+Toggle navigation menu
+API & MCP
+Status:
+My Tickets
+Search
+Ask me anything
+ClickUp Help
+Integrations, API, and MCP
+ClickUp MCP
+What is ClickUp MCP?
+Your AI models and agents can use our official MCP (Model Context Protocol) server to access your ClickUp data in a simple and secure way. It's designed to work seamlessly with popular AI assistants like ChatGPT, Cursor, and Claude.
+ClickUp MCP is available on all plans.
+You can set up the ClickUp MCP server with any app that supports MCP servers, like Claude, Cursor, or VS Code.
+Workspaces are being upgraded to our new plans. Not all Workspaces have been upgraded yet. Learn more
+What can I do with the ClickUp MCP server?
+Orchestrate task workflows: Create, enrich, and route tasks with assignees, Priorities, and due dates across Lists and Spaces.
+Build executive reports: Produce release notes, status updates, and portfolio rollups consolidated from tasks, comments, and Docs.
+Track time: Start and stop timers, log historical entries, and fetch entries.
+Answer questions from work: Search tasks, Docs, and comments to deliver quick, context-rich answers.
+Collaborate in comments and Chat: Summarize threads, extract action items, and post updates. Attach files and images to Channel messages, Posts, and Channel thread replies.
+Available tools
+ClickUp's MCP server enables AI assistants like ChatGPT, Claude, Cursor, or VS Code, to integrate with ClickUp's tools and data. This means your AI assistant can now execute actions, retrieve information, and provide intelligent, context-aware insights instantly.
+For a full list of supported tools, read this developer article.
+Before you connect an MCP client, review the rate limits section below to learn which rate limits apply to your Workspace and how usage is counted.
+Example requests
+Below are some examples of requests you could make after you've connected your AI assistant to ClickUp's MCP server:
+Create a task for this bug we're working on.
+Find all my incomplete tasks due this week.
+List all milestones in the Product Launch project.
+How many hours has the team spent on clients this month?
+Setup instructions
+For step-by-step setup instructions, read our MCP Server Setup Instructions article.
+Rate limits
+ClickUp's MCP Server has rate limits that depend on two criteria:
+If your Workspace has purchased the Everything AI add-on.
+Your Workspace plan.
+MCP rate limits and public API rate limits are two separate limits. The public API limits requests per minute, per token. Without the Everything AI add-on, ClickUp MCP limits calls per rolling 24-hour period instead.
+With the Everything AI add-on
+If your Workspace has purchased the Everything AI add-on, your MCP rate limits are the same as the rate limits for our Public API which vary by plan.
+On our new plans that include ClickUp AI, AI is included with your plan instead of as separate add-ons.
+With the add-on, the rolling 24-hour limit no longer applies. Your MCP requests count toward the same per-minute, per-token limit as the public API:
+Free Forever, Unlimited, and Business Plans: 100 requests per minute, per token.
+Business Plus Plan: 1,000 requests per minute, per token.
+Enterprise Plan: 10,000 requests per minute, per token.
+On our new plans that include ClickUp AI, daily MCP limits differ by plan.
+Without the Everything AI add-on
+If your Workspace has not purchased the Everything AI add-on, your MCP usage is subject to the following daily rate limits by plan:
+Free Forever Plan: 100 calls per 24 hours.
+Unlimited Plan: 300 calls per 24 hours.
+Business Plan: 1,000 calls per 24 hours.
+Business Plus Plan: 2,500 calls per 24 hours.
+Enterprise Plan: 5,000 calls per 24 hours.
+Each person has their own daily limit. All the MCP clients you connect, such as Claude and Cursor, share that limit.
+Every MCP request counts toward the limit, including everyday actions like reading, creating, and updating tasks. It isn't limited to AI-generated actions.
+Rolling 24 hour rate limits
+The rolling 24 hour rate limit begins with your first request.
+For example, if your first MCP request on Monday is at 1pm and you reach your plan's daily limit by Tuesday at 11am, you will be rate limited until 1pm on Tuesday, 24 hours after your first request.
+Attempting to send requests while rate limited does not extend the 24 hour window.
+Rate limits cannot be reset.
+When you reach the limit, MCP requests return a 429 RATE_LIMIT_EXCEEDED error until the rolling 24 hour window resets.
+FAQ
+Frequently asked questions about the ClickUp MCP server.
+Can I monitor how many MCP calls my Workspace has used?
+Not at this time.
+Can I authenticate with my own API keys or access tokens?
+No, only OAuth is supported. OAuth is an industry-standard protocol that provides secure, delegated access. It lets you grant limited access to your resources without sharing credentials, supports granular permissions, and makes it easy to revoke access.
+API keys are less secure because they’re static, usually have broad access, and are harder to manage or revoke if compromised.
+Can I use ClickUp MCP to search external apps I've connected to my ClickUp Workspace?
+No, Connected Search can only be used from within your Workspace. For a list of all external apps that support Connected Search, read our Connected Search article.
+Do admins need to take any action inside ClickUp before setting up an external tool like Claude or ChatGPT?
+No action is needed inside ClickUp. ClickUp MCP will provide the list of available tools.
+Will my custom LLM connect?
+Yes, if your team builds an MCP client implementation that meets the following criteria:
+Implements the JSON-RPC 2.0 protocol over HTTP
+Supports OAuth 2.1 with PKCE authentication
+Follows the MCP specification
+Was this article helpful?
+Related articles
+Roadmap
+Analyze spreadsheets with Brain AI
+Google Calendar integration
+AI Fields feature availability and limits
+Is there a discount for non-profit or educational companies?
+Articles in this section
+Connect the Box MCP server to your Workspace
+Connect the Salesforce MCP server to your Workspace
+Connect the Gong MCP server to your Workspace
+Connect an MCP server to your Workspace
+What is ClickUp MCP?
+Go to ClickUp
+English (United States)
+Deutsch
+Español
+Español (Latinoamérica)
+Français (France)
+Italiano
+Português do Brasil

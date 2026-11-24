@@ -1,0 +1,352 @@
+{
+  "sources": [
+    {
+      "app_id": 91,
+      "url": "https://docs.cloud.google.com/gemini/enterprise/notebooklm-enterprise/docs/api-notebooks",
+      "kind": "primary_docs",
+      "scope": "NotebookLM Enterprise on Google Cloud; personal NotebookLM API excluded; public documentary research, no execution",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor-controlled documentation/help/product domain matching roster product; ownership is researcher attribution, requires independent review",
+      "attribution_by": "task16-codex-researcher"
+    },
+    {
+      "app_id": 91,
+      "url": "https://docs.cloud.google.com/gemini/enterprise/notebooklm-enterprise/docs/api-sources",
+      "kind": "primary_docs",
+      "scope": "NotebookLM Enterprise on Google Cloud; personal NotebookLM API excluded; public documentary research, no execution",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor-controlled documentation/help/product domain matching roster product; ownership is researcher attribution, requires independent review",
+      "attribution_by": "task16-codex-researcher"
+    },
+    {
+      "app_id": 91,
+      "url": "https://developers.google.com/notebook/docs/authentication",
+      "kind": "primary_docs",
+      "scope": "NotebookLM Enterprise on Google Cloud; personal NotebookLM API excluded; public documentary research, no execution",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor-controlled documentation/help/product domain matching roster product; ownership is researcher attribution, requires independent review",
+      "attribution_by": "task16-codex-researcher"
+    },
+    {
+      "app_id": 92,
+      "url": "https://help.otter.ai/hc/en-us/articles/35287607569687-Otter-MCP-Server",
+      "kind": "primary_docs",
+      "scope": "Otter AI public API and callable Otter MCP server; public documentary research, no execution",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor-controlled documentation/help/product domain matching roster product; ownership is researcher attribution, requires independent review",
+      "attribution_by": "task16-codex-researcher"
+    },
+    {
+      "app_id": 92,
+      "url": "https://otter.ai/developers",
+      "kind": "primary_docs",
+      "scope": "Otter AI public API and callable Otter MCP server; public documentary research, no execution",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor-controlled documentation/help/product domain matching roster product; ownership is researcher attribution, requires independent review",
+      "attribution_by": "task16-codex-researcher"
+    },
+    {
+      "app_id": 93,
+      "url": "https://fathom.video/",
+      "kind": "primary_docs",
+      "scope": "Fathom video meeting assistant public developer API; public documentary research, no execution",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor-controlled documentation/help/product domain matching roster product; ownership is researcher attribution, requires independent review",
+      "attribution_by": "task16-codex-researcher"
+    },
+    {
+      "app_id": 93,
+      "url": "https://developers.fathom.ai/",
+      "kind": "primary_docs",
+      "scope": "Fathom video meeting assistant public developer API; public documentary research, no execution",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor-controlled documentation/help/product domain matching roster product; ownership is researcher attribution, requires independent review",
+      "attribution_by": "task16-codex-researcher"
+    },
+    {
+      "app_id": 93,
+      "url": "https://developers.fathom.ai/llms.txt",
+      "kind": "primary_docs",
+      "scope": "Fathom video meeting assistant public developer API; public documentary research, no execution",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor-controlled documentation/help/product domain matching roster product; ownership is researcher attribution, requires independent review",
+      "attribution_by": "task16-codex-researcher"
+    },
+    {
+      "app_id": 94,
+      "url": "https://help.consensus.app/en/articles/16516328-the-consensus-api",
+      "kind": "primary_docs",
+      "scope": "Consensus scholarly research API and MCP; public documentary research, no execution",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor-controlled documentation/help/product domain matching roster product; ownership is researcher attribution, requires independent review",
+      "attribution_by": "task16-codex-researcher"
+    },
+    {
+      "app_id": 94,
+      "url": "https://docs.consensus.app/",
+      "kind": "primary_docs",
+      "scope": "Consensus scholarly research API and MCP; public documentary research, no execution",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor-controlled documentation/help/product domain matching roster product; ownership is researcher attribution, requires independent review",
+      "attribution_by": "task16-codex-researcher"
+    },
+    {
+      "app_id": 94,
+      "url": "https://docs.consensus.app/llms.txt",
+      "kind": "primary_docs",
+      "scope": "Consensus scholarly research API and MCP; public documentary research, no execution",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor-controlled documentation/help/product domain matching roster product; ownership is researcher attribution, requires independent review",
+      "attribution_by": "task16-codex-researcher"
+    },
+    {
+      "app_id": 94,
+      "url": "https://www.consensus.app/home/api/",
+      "kind": "primary_docs",
+      "scope": "Consensus scholarly research API and MCP; public documentary research, no execution",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor-controlled documentation/help/product domain matching roster product; ownership is researcher attribution, requires independent review",
+      "attribution_by": "task16-codex-researcher"
+    },
+    {
+      "app_id": 95,
+      "url": "https://docs.reducto.ai/",
+      "kind": "primary_docs",
+      "scope": "Reducto document processing API and agent integrations; public documentary research, no execution",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor-controlled documentation/help/product domain matching roster product; ownership is researcher attribution, requires independent review",
+      "attribution_by": "task16-codex-researcher"
+    },
+    {
+      "app_id": 95,
+      "url": "https://docs.reducto.ai/llms.txt",
+      "kind": "primary_docs",
+      "scope": "Reducto document processing API and agent integrations; public documentary research, no execution",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor-controlled documentation/help/product domain matching roster product; ownership is researcher attribution, requires independent review",
+      "attribution_by": "task16-codex-researcher"
+    },
+    {
+      "app_id": 96,
+      "url": "https://docs.devin.ai/api-reference/authentication",
+      "kind": "primary_docs",
+      "scope": "Devin API and callable Devin MCP server; outgoing MCP clients distinguished; public documentary research, no execution",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor-controlled documentation/help/product domain matching roster product; ownership is researcher attribution, requires independent review",
+      "attribution_by": "task16-codex-researcher"
+    },
+    {
+      "app_id": 96,
+      "url": "https://docs.devin.ai/llms.txt",
+      "kind": "primary_docs",
+      "scope": "Devin API and callable Devin MCP server; outgoing MCP clients distinguished; public documentary research, no execution",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor-controlled documentation/help/product domain matching roster product; ownership is researcher attribution, requires independent review",
+      "attribution_by": "task16-codex-researcher"
+    },
+    {
+      "app_id": 97,
+      "url": "https://higgsfield.ai/blog/higgsfield-cli",
+      "kind": "primary_docs",
+      "scope": "Higgsfield content generation API, CLI and MCP; separate billing paths; public documentary research, no execution",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor-controlled documentation/help/product domain matching roster product; ownership is researcher attribution, requires independent review",
+      "attribution_by": "task16-codex-researcher"
+    },
+    {
+      "app_id": 97,
+      "url": "https://higgsfield.ai/creator-hub/help-center/integrations/what-is-the-higgsfield-api",
+      "kind": "primary_docs",
+      "scope": "Higgsfield content generation API, CLI and MCP; separate billing paths; public documentary research, no execution",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor-controlled documentation/help/product domain matching roster product; ownership is researcher attribution, requires independent review",
+      "attribution_by": "task16-codex-researcher"
+    },
+    {
+      "app_id": 97,
+      "url": "https://higgsfield.ai/enterprise-help-center/platform/integrations",
+      "kind": "primary_docs",
+      "scope": "Higgsfield content generation API, CLI and MCP; separate billing paths; public documentary research, no execution",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor-controlled documentation/help/product domain matching roster product; ownership is researcher attribution, requires independent review",
+      "attribution_by": "task16-codex-researcher"
+    },
+    {
+      "app_id": 98,
+      "url": "https://github.com/mermaid-js/mermaid-cli",
+      "kind": "official_repository",
+      "scope": "Official mermaid-js Mermaid CLI local diagram rendering; public documentary research, no execution",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Official mermaid-js repository identified in assignment",
+      "attribution_by": "task16-codex-researcher"
+    },
+    {
+      "app_id": 98,
+      "url": "https://raw.githubusercontent.com/mermaid-js/mermaid-cli/master/README.md",
+      "kind": "official_repository",
+      "scope": "Official mermaid-js Mermaid CLI local diagram rendering; public documentary research, no execution",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Official mermaid-js repository identified in assignment",
+      "attribution_by": "task16-codex-researcher"
+    },
+    {
+      "app_id": 98,
+      "url": "https://raw.githubusercontent.com/mermaid-js/mermaid-cli/master/LICENSE",
+      "kind": "official_repository",
+      "scope": "Official mermaid-js Mermaid CLI local diagram rendering; public documentary research, no execution",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Official mermaid-js repository identified in assignment",
+      "attribution_by": "task16-codex-researcher"
+    },
+    {
+      "app_id": 99,
+      "url": "https://transcriptapi.com/docs/getting-started/",
+      "kind": "primary_docs",
+      "scope": "YouTube Transcript via TranscriptAPI.com API and MCP; public documentary research, no execution",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor-controlled documentation/help/product domain matching roster product; ownership is researcher attribution, requires independent review",
+      "attribution_by": "task16-codex-researcher"
+    },
+    {
+      "app_id": 99,
+      "url": "https://transcriptapi.com/docs/mcp/",
+      "kind": "primary_docs",
+      "scope": "YouTube Transcript via TranscriptAPI.com API and MCP; public documentary research, no execution",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor-controlled documentation/help/product domain matching roster product; ownership is researcher attribution, requires independent review",
+      "attribution_by": "task16-codex-researcher"
+    },
+    {
+      "app_id": 99,
+      "url": "https://transcriptapi.com/docs/",
+      "kind": "primary_docs",
+      "scope": "YouTube Transcript via TranscriptAPI.com API and MCP; public documentary research, no execution",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor-controlled documentation/help/product domain matching roster product; ownership is researcher attribution, requires independent review",
+      "attribution_by": "task16-codex-researcher"
+    },
+    {
+      "app_id": 100,
+      "url": "https://developers.grain.com/mcp/faq.html",
+      "kind": "primary_docs",
+      "scope": "Grain personal/workspace APIs and callable MCP server; public documentary research, no execution",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor-controlled documentation/help/product domain matching roster product; ownership is researcher attribution, requires independent review",
+      "attribution_by": "task16-codex-researcher"
+    },
+    {
+      "app_id": 100,
+      "url": "https://developers.grain.com/mcp/",
+      "kind": "primary_docs",
+      "scope": "Grain personal/workspace APIs and callable MCP server; public documentary research, no execution",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor-controlled documentation/help/product domain matching roster product; ownership is researcher attribution, requires independent review",
+      "attribution_by": "task16-codex-researcher"
+    },
+    {
+      "app_id": 100,
+      "url": "https://support.grain.com/en/articles/15297887-export-meetings",
+      "kind": "primary_docs",
+      "scope": "Grain personal/workspace APIs and callable MCP server; public documentary research, no execution",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor-controlled documentation/help/product domain matching roster product; ownership is researcher attribution, requires independent review",
+      "attribution_by": "task16-codex-researcher"
+    },
+    {
+      "app_id": 100,
+      "url": "https://developers.grain.com/",
+      "kind": "primary_docs",
+      "scope": "Grain personal/workspace APIs and callable MCP server; public documentary research, no execution",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor-controlled documentation/help/product domain matching roster product; ownership is researcher attribution, requires independent review",
+      "attribution_by": "task16-codex-researcher"
+    }
+  ]
+}

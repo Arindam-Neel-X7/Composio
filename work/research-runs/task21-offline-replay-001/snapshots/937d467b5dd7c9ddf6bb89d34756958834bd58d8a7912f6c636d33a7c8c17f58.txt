@@ -1,0 +1,134 @@
+Authentication
+For AI agents: the docs index is at https://pipedrive.readme.io/llms.txt. Append .md to any documentation page URL to get its markdown version.
+Jump to Content
+Pipedrive Developer DocumentationAPI ReferenceTutorialsChangelogDev CommunityBlog
+Pipedrive Developer Documentation
+API ReferenceTutorialsChangelogDev CommunityBlog
+Pipedrive Developer Documentation
+Authentication
+Overview
+Getting started
+Developer sandbox account
+Pipedrive API in Postman or Insomnia
+Creating an app
+create-pipedrive-app CLI
+Tutorials: how to build an app 🚀
+Pipedrive API v2 overview
+Pipedrive API v2 migration guide
+Allowlisting Pipedrive IP addresses
+Core API Concepts
+About the Pipedrive API
+Changes to the API
+Requests
+Rate limiting
+Responses
+Date format
+Pagination
+HTTP status codes
+Authentication
+Custom fields
+Marketplace
+About the Marketplace
+App installation flows
+Developer Hub
+Registering a public app
+Registering a private app
+Updating approved apps
+Deleting an app
+Client ID and client secret
+App approval process
+Tips on getting your app approved!
+Pipedrive Developer Partner Agreement
+App extensions
+App extensions overview
+Link actions
+JSON modals
+Component library
+User interaction handling
+JSON panels
+Adding a JSON panel
+Actions in JSON panels
+Custom UI extensions
+Custom floating window
+Custom panels
+Custom modals
+Custom UI for app settings
+Video calling app extension
+Messaging app extension
+Implementing messaging app extension
+Error codes and troubleshooting
+APP FUNCTIONALITIES
+App sharing: Adding apps to multiple users
+OAuth 2.0
+OAuth 2.0 overview
+OAuth authorization
+Scopes and permission explanations
+State parameter
+Getting user data
+Webhooks for apps
+Handling user app uninstallation
+OAuth status codes
+Migrating existing integration users
+Tutorials and Articles
+Guide for Webhooks v2
+List of Webhooks v2
+Webhooks v2 migration guide
+Guide for Webhooks
+Guide for optimizing API usage
+Subscriptions API migration guide
+Tutorials
+How to find the API token
+How to get the company domain
+Enabling API for company users
+Hello World Tutorial
+Adding an Activity
+Adding a new custom field
+Updating custom fields' values
+Deleting a custom field
+Creating a Deal
+Getting all Deals
+Getting details of a Deal
+Updating a Deal
+Assigning a Deal to a certain User
+Merging two Deals
+Using Pagination to retrieve all Deal titles
+Adding a File
+Adding a remote file
+Adding a Filter
+Adding a Lead
+Adding an Organization
+Merging two Organizations
+Merging two Persons
+Updating a Person
+Adding a Product
+Working with labels
+LeadBooster Browser API
+FAQ
+Tools
+Node.js API client
+PHP API client
+create-pipedrive-app
+Authentication
+📘
+All requests to our API need authentication.
+If you're creating an app
+Continue to OAuth 2.0 overview.
+You can find our step-by-step guide to getting OAuth 2.0 implemented in your app in OAuth authorization .
+If you're working with an API token integration
+The API token must be provided in the x-api-token header for all requests, for example:
+cURL
+curl --request GET \
+--url "https://companydomain.pipedrive.com/api/v2/deals" \
+--header "x-api-token: 659c9fddb16335e48cc67114694b52074e812e03"
+How to find the API token?
+📘
+Keep in mind that an API token is tied to a specific user and company, giving access to all user's data. You can only have one active API token at any time. If you change the API token, all existing integrations using this API token will not be able to make successful requests against our API and stop working.
+Updated 11 months ago
+Read next
+Custom fields
+Did this page help you?
+Yes
+No
+Copy Page
+If you're creating an app
+If you're working with an API token integration

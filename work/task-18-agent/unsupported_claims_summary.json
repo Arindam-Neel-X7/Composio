@@ -1,0 +1,352 @@
+[
+  {
+    "app_id": 4,
+    "claim_id": "4.api.breadth",
+    "original_run_id": "task07-first-pass-003",
+    "human_judgment": "unsupported",
+    "human_reason": "Claim asserts broad. The assertion is inferred rather than a directly documented vendor statement. Available source (lines:57-75): REST API docs cover Standard objects, Core endpoints, SCIM 2.0, OAuth 2.0, and webhook events for activities, call recordings, comments, lists, notes, records, tasks, and workspace members"
+  },
+  {
+    "app_id": 4,
+    "claim_id": "4.buildability",
+    "original_run_id": "task07-first-pass-003",
+    "human_judgment": "unsupported",
+    "human_reason": "Claim asserts build_now buildability for CRM record, list, activity, and task automation via Attio REST API or official hosted MCP. The assertion is inferred rather than a directly documented vendor statement. Available source (lines:81-89): Attio provides a public REST API exchanging JSON over HTTPS with OAuth, webhooks, filtering/sorting, and pagination."
+  },
+  {
+    "app_id": 8,
+    "claim_id": "8.api.breadth",
+    "original_run_id": "task07-first-pass-003",
+    "human_judgment": "unsupported",
+    "human_reason": "Claim asserts broad. The assertion is inferred rather than a directly documented vendor statement. Available source (lines:16-38): Close Developer Platform provides a REST API, webhooks/events, OAuth apps, and an MCP server for managing leads, contacts, activities, sequences, and reporting."
+  },
+  {
+    "app_id": 8,
+    "claim_id": "8.buildability",
+    "original_run_id": "task07-first-pass-003",
+    "human_judgment": "unsupported",
+    "human_reason": "Claim asserts conditional buildability for Sales CRM and outreach agent toolkit via Close REST API or official hosted MCP. The assertion is inferred rather than a directly documented vendor statement. Available source (lines:16-38): Close Developer Platform provides a REST API, webhooks/events, OAuth apps, and an MCP server for managing leads, contacts, activities, sequences, and reporting."
+  },
+  {
+    "app_id": 16,
+    "claim_id": "16.api.breadth",
+    "original_run_id": "task08-first-pass-003",
+    "human_judgment": "unsupported",
+    "human_reason": "Claim asserts narrow. The assertion is inferred rather than a directly documented vendor statement. Available source (lines:10-48): LiveAgent exposes a REST API (v1 PHP examples captured) authenticating requests with an apikey parameter for reading and creating conversations, messages, and departments."
+  },
+  {
+    "app_id": 16,
+    "claim_id": "16.buildability",
+    "original_run_id": "task08-first-pass-003",
+    "human_judgment": "unsupported",
+    "human_reason": "Claim asserts build_now buildability for LiveAgent ticket/conversation support agent toolkit via built-in MCP server or REST API. The assertion is inferred rather than a directly documented vendor statement. Available source (lines:10-48): LiveAgent exposes a REST API (v1 PHP examples captured) authenticating requests with an apikey parameter for reading and creating conversations, messages, and departments."
+  },
+  {
+    "app_id": 19,
+    "claim_id": "19.api.breadth",
+    "original_run_id": "task08-first-pass-003",
+    "human_judgment": "unsupported",
+    "human_reason": "Claim asserts broad. The assertion is inferred rather than a directly documented vendor statement. Available source (lines:16-74): Gorgias REST API documents Account/Settings, Customers, Custom Fields, Events, Files, Integrations, Jobs, and Macros."
+  },
+  {
+    "app_id": 19,
+    "claim_id": "19.buildability",
+    "original_run_id": "task08-first-pass-003",
+    "human_judgment": "unsupported",
+    "human_reason": "Claim asserts conditional buildability for Gorgias ecommerce helpdesk ticket/customer automation via REST API (private API key or public OAuth2). The assertion is inferred rather than a directly documented vendor statement. Available source (lines:184-190): Gorgias API supports two authentication methods: API key for private apps (and testing in API Reference) and mandatory OAuth2 for public apps."
+  },
+  {
+    "app_id": 21,
+    "claim_id": "21.api.breadth",
+    "original_run_id": "task09-first-pass-004",
+    "human_judgment": "unsupported",
+    "human_reason": "Claim asserts broad. The assertion is inferred rather than a directly documented vendor statement. Available source (lines:130-131): Over 200 Web API methods across families."
+  },
+  {
+    "app_id": 21,
+    "claim_id": "21.buildability",
+    "original_run_id": "task09-first-pass-004",
+    "human_judgment": "unsupported",
+    "human_reason": "Claim asserts build_now buildability for Build a Slack workspace messaging, search, canvas, and list agent toolkit via the Web API or official Slack MCP server.. The assertion is inferred rather than a directly documented vendor statement. Available source (lines:41-47): Public HTTP RPC Web API."
+  },
+  {
+    "app_id": 27,
+    "claim_id": "27.api.breadth",
+    "original_run_id": "task09-first-pass-004",
+    "human_judgment": "unsupported",
+    "human_reason": "Claim asserts broad. The assertion is inferred rather than a directly documented vendor statement. Available source (lines:13-220): Extensive Bot API v10.5 surface."
+  },
+  {
+    "app_id": 27,
+    "claim_id": "27.buildability",
+    "original_run_id": "task09-first-pass-004",
+    "human_judgment": "unsupported",
+    "human_reason": "Claim asserts build_now buildability for Build a Telegram Bot API messaging/notification/group-management agent toolkit (and optional MTProto user-client toolkit).. The assertion is inferred rather than a directly documented vendor statement. Available source (lines:15-15): Free for users and developers."
+  },
+  {
+    "app_id": 31,
+    "claim_id": "31.api.breadth",
+    "original_run_id": "task10-first-pass-003",
+    "human_judgment": "unsupported",
+    "human_reason": "Claim asserts broad. The assertion is inferred rather than a directly documented vendor statement. Available source (lines:433-455): Covers accounts, multiple campaign types, GAQL reporting, conversions, and bidding."
+  },
+  {
+    "app_id": 31,
+    "claim_id": "31.buildability",
+    "original_run_id": "task10-first-pass-003",
+    "human_judgment": "unsupported",
+    "human_reason": "Claim asserts conditional buildability for Build Google Ads campaign reporting and management agent integration via REST/SDK or official Google Ads MCP server. The assertion is inferred rather than a directly documented vendor statement. Available source (lines:73-215): Production access requires Explorer, Basic, or Standard access level approval."
+  },
+  {
+    "app_id": 31,
+    "claim_id": "31.testing.vendor_approval_required",
+    "original_run_id": "task10-first-pass-003",
+    "human_judgment": "unsupported",
+    "human_reason": "Claim asserts false. The claim describes an absence of approval or access gating, which the available excerpts do not conclusively prove. Available source (lines:480-482): Enabling the Google Ads API grants Test access for testing read and mutate workflows against test accounts."
+  },
+  {
+    "app_id": 40,
+    "claim_id": "40.api.breadth",
+    "original_run_id": "task10-first-pass-003",
+    "human_judgment": "unsupported",
+    "human_reason": "Claim asserts broad. The assertion is inferred rather than a directly documented vendor statement. Available source (lines:9-149): Spans Mail Send, Templates, Marketing Campaigns/Contacts, Domain Auth/Validation/Suppressions, Activity/Stats, Webhooks, and Account/API Key admin."
+  },
+  {
+    "app_id": 40,
+    "claim_id": "40.buildability",
+    "original_run_id": "task10-first-pass-003",
+    "human_judgment": "unsupported",
+    "human_reason": "Claim asserts build_now buildability for Build Twilio SendGrid transactional/marketing email and contact management integration via Web API v3. The assertion is inferred rather than a directly documented vendor statement. Available source (lines:81-99): Bearer API key auth for SendGrid v3 REST API."
+  },
+  {
+    "app_id": 46,
+    "claim_id": "46.api.breadth",
+    "original_run_id": "task11-first-pass-004",
+    "human_judgment": "unsupported",
+    "human_reason": "Claim asserts broad. The assertion is inferred rather than a directly documented vendor statement. Available source (lines:1-64): Squarespace Developer Platform Commerce APIs expose https://api.squarespace.com endpoints (Products, Inventory, Orders, Transactions, Profiles, Contacts, WebhookSubscriptions) authenticated via Authorization: Bearer API key or OAuth access token."
+  },
+  {
+    "app_id": 46,
+    "claim_id": "46.buildability",
+    "original_run_id": "task11-first-pass-004",
+    "human_judgment": "unsupported",
+    "human_reason": "Claim asserts conditional buildability for Squarespace Commerce REST API integration (API key for Commerce Advanced or OAuth for Extensions). The assertion is inferred rather than a directly documented vendor statement. Available source (lines:1-64): Squarespace Developer Platform Commerce APIs expose https://api.squarespace.com endpoints (Products, Inventory, Orders, Transactions, Profiles, Contacts, WebhookSubscriptions) authenticated via Authorization: Bearer API key or OAuth access token. Check https://developers.squarespace.com/commerce-apis for current terms, exceptions and conflicting documentation b"
+  },
+  {
+    "app_id": 50,
+    "claim_id": "50.buildability",
+    "original_run_id": "task11-first-pass-004",
+    "human_judgment": "unsupported",
+    "human_reason": "Claim asserts outreach_required buildability for FanBasis / Commas API, SDK, and beta MCP integration. The assertion is inferred rather than a directly documented vendor statement. Available source (lines:1-18): www.fanbasis.com displays 'FanBasis is now Commas!' (Commas Inc.) \u2014 one platform to create, sell, and get paid with checkouts, funnels, communities, courses, webinars, and affiliates."
+  },
+  {
+    "app_id": 52,
+    "claim_id": "52.api.breadth",
+    "original_run_id": "task12-first-pass-005",
+    "human_judgment": "unsupported",
+    "human_reason": "Claim asserts moderate. The assertion is inferred rather than a directly documented vendor statement. Available source (lines:12-74): Official seranking/openapi repo publishes OpenAPI 3.0 specs (JSON and YAML) for Data API, Project API, Local Marketing API, and SE Visible API served from https://api.seranking.com and authenticated via Authorization: Token YOUR_API_KEY header or apikey query parameter."
+  },
+  {
+    "app_id": 52,
+    "claim_id": "52.buildability",
+    "original_run_id": "task12-first-pass-005",
+    "human_judgment": "unsupported",
+    "human_reason": "Claim asserts build_now buildability for Integrate SE Ranking Data, Project, Local Marketing, and SE Visible APIs via REST/OpenAPI 3.0 or the hosted MCP server at https://api.seranking.com/mcp.. The assertion is inferred rather than a directly documented vendor statement. Available source (lines:611-621): API access is included with every SE Ranking subscription; users retrieve their unique API key under Settings > API in their SE Ranking account."
+  },
+  {
+    "app_id": 60,
+    "claim_id": "60.api.breadth",
+    "original_run_id": "task12-first-pass-005",
+    "human_judgment": "unsupported",
+    "human_reason": "Claim asserts moderate. The assertion is inferred rather than a directly documented vendor statement. Available source (lines:4-42): Clay developer platform (developers.clay.com) enables agents, terminals, and backend services to use Clay's five core primitives: Searches, Routines (functions & alpha Workflows), Tables (Enterprise only), Audiences, and Signals."
+  },
+  {
+    "app_id": 60,
+    "claim_id": "60.buildability",
+    "original_run_id": "task12-first-pass-005",
+    "human_judgment": "unsupported",
+    "human_reason": "Claim asserts build_now buildability for Build a Clay GTM search, enrichment routine execution, and webhook/CLI integration via the Clay Public REST API (https://api.clay.com/public/v0), `clay` CLI, or Clay MCP connector.. The assertion is inferred rather than a directly documented vendor statement. Available source (lines:4-42): Clay developer platform (developers.clay.com) enables agents, terminals, and backend services to use Clay's five core primitives: Searches, Routines (functions & alpha Workflows), Tables (Enterprise only), Audiences, and Signals."
+  },
+  {
+    "app_id": 64,
+    "claim_id": "64.api.breadth",
+    "original_run_id": "task13-first-pass-003",
+    "human_judgment": "unsupported",
+    "human_reason": "Claim asserts broad. The assertion is inferred rather than a directly documented vendor statement. Available source (lines:1441-1461): DNS API reference lists DNS record list/detail/create/overwrite/update/delete/import/export/batch."
+  },
+  {
+    "app_id": 64,
+    "claim_id": "64.buildability",
+    "original_run_id": "task13-first-pass-003",
+    "human_judgment": "unsupported",
+    "human_reason": "Claim asserts conditional buildability for Read scoped DNS records and account configuration through v4 API or MCP.. The assertion is inferred rather than a directly documented vendor statement. Available source (lines:17-33): Create user or account token with resource rules and Read/Edit permissions; send Authorization: Bearer to v4 API. Check https://developers.cloudflare.com/fundamentals/api/get-started/create-token/ for current terms, exceptions and conflicting documentation b"
+  },
+  {
+    "app_id": 65,
+    "claim_id": "65.api.breadth",
+    "original_run_id": "task13-first-pass-003",
+    "human_judgment": "unsupported",
+    "human_reason": "Claim asserts moderate. The assertion is inferred rather than a directly documented vendor statement. Available source (lines:76-82): Reflected API supports CRUD, tables/views and functions with security model."
+  },
+  {
+    "app_id": 65,
+    "claim_id": "65.buildability",
+    "original_run_id": "task13-first-pass-003",
+    "human_judgment": "unsupported",
+    "human_reason": "Claim asserts conditional buildability for Project-scoped read-only database diagnostics through Data API or MCP.. The assertion is inferred rather than a directly documented vendor statement. Available source (lines:104-113): Publishable/secret keys are non-JWT strings; secret key elevated, legacy anon/service_role keys coexist."
+  },
+  {
+    "app_id": 76,
+    "claim_id": "76.api.breadth",
+    "original_run_id": "task14-first-pass-003",
+    "human_judgment": "unsupported",
+    "human_reason": "Claim asserts moderate. The assertion is inferred rather than a directly documented vendor statement. Available source (lines:160-171): GraphQL example queries columns on boards."
+  },
+  {
+    "app_id": 76,
+    "claim_id": "76.buildability",
+    "original_run_id": "task14-first-pass-003",
+    "human_judgment": "unsupported",
+    "human_reason": "Claim asserts conditional buildability for Query boards/columns and create board items via GraphQL, or use hosted MCP under permitted actor.. The assertion is inferred rather than a directly documented vendor statement. Available source (lines:183-191): Developer accounts are testing-only, not production business workflows; extra capacity requests are reviewed."
+  },
+  {
+    "app_id": 77,
+    "claim_id": "77.api.breadth",
+    "original_run_id": "task14-first-pass-003",
+    "human_judgment": "unsupported",
+    "human_reason": "Claim asserts moderate. The assertion is inferred rather than a directly documented vendor statement. Available source (lines:15-25): API v2 lists read/create/update/delete and threaded comment operations. Check https://developer.clickup.com/reference/gettasks for current terms, exceptions and conflicting documentation b"
+  },
+  {
+    "app_id": 77,
+    "claim_id": "77.buildability",
+    "original_run_id": "task14-first-pass-003",
+    "human_judgment": "unsupported",
+    "human_reason": "Claim asserts conditional buildability for Manage permitted ClickUp lists/comments/time entries via public API or task workflows through hosted MCP.. The assertion is inferred rather than a directly documented vendor statement. Available source (lines:78-97): Multi-user apps use OAuth2 authorization-code flow; only workspace owners/admins create OAuth apps and configure the redirect URL."
+  },
+  {
+    "app_id": 83,
+    "claim_id": "83.api.breadth",
+    "original_run_id": "task15-first-pass-002",
+    "human_judgment": "unsupported",
+    "human_reason": "Claim asserts broad. The assertion is inferred rather than a directly documented vendor statement. Available source (lines:23-74): Spot REST API spans exchange metadata, market data, complex order execution, and account reporting."
+  },
+  {
+    "app_id": 83,
+    "claim_id": "83.buildability",
+    "original_run_id": "task15-first-pass-002",
+    "human_judgment": "unsupported",
+    "human_reason": "Claim asserts conditional buildability for Binance global Spot REST/WebSocket API and community MCP server; public market data is open while signed production trading depends on regional/KYC eligibility.. The assertion is inferred rather than a directly documented vendor statement. Available source (lines:78-105): Public REST API endpoints and market-data host."
+  },
+  {
+    "app_id": 83,
+    "claim_id": "83.production.sandbox_access",
+    "original_run_id": "task15-first-pass-002",
+    "human_judgment": "unsupported",
+    "human_reason": "Claim asserts false. The claim describes an absence of approval or access gating, which the available excerpts do not conclusively prove. Available source (lines:8-16): Production api.binance.com is separate from Spot Testnet testnet.binance.vision."
+  },
+  {
+    "app_id": 83,
+    "claim_id": "83.testing.contact_sales_required",
+    "original_run_id": "task15-first-pass-002",
+    "human_judgment": "unsupported",
+    "human_reason": "Claim asserts false. The claim describes an absence of approval or access gating, which the available excerpts do not conclusively prove. Available source (lines:3-4): Self-serve Spot Testnet key generation."
+  },
+  {
+    "app_id": 83,
+    "claim_id": "83.testing.partner_approval_required",
+    "original_run_id": "task15-first-pass-002",
+    "human_judgment": "unsupported",
+    "human_reason": "Claim asserts false. The claim describes an absence of approval or access gating, which the available excerpts do not conclusively prove. Available source (lines:3-4): Open self-serve login on testnet.binance.vision"
+  },
+  {
+    "app_id": 83,
+    "claim_id": "83.testing.vendor_approval_required",
+    "original_run_id": "task15-first-pass-002",
+    "human_judgment": "unsupported",
+    "human_reason": "Claim asserts false. The claim describes an absence of approval or access gating, which the available excerpts do not conclusively prove. Available source (lines:3-4): Users log in on testnet.binance.vision and generate an API key directly."
+  },
+  {
+    "app_id": 97,
+    "claim_id": "97.api.breadth",
+    "original_run_id": "task16-first-pass-001",
+    "human_judgment": "unsupported",
+    "human_reason": "Claim asserts moderate. The assertion is inferred rather than a directly documented vendor statement. Available source (lines:32-59): Higgsfield API (api.higgsfield.ai, console open.higgsfield.ai, docs docs.higgsfield.ai) unlocks 50+ video/image models with one API key, Python/TypeScript SDKs, or REST; no higgsfield.ai web subscription is required."
+  },
+  {
+    "app_id": 97,
+    "claim_id": "97.buildability",
+    "original_run_id": "task16-first-pass-001",
+    "human_judgment": "unsupported",
+    "human_reason": "Claim asserts conditional buildability for Generate AI images/video via Higgsfield REST/SDK API ($5+ prepaid balance) or CLI/MCP (paid subscription credits). The assertion is inferred rather than a directly documented vendor statement. Available source (lines:78-109): Higgsfield offers three programmatic routes: CLI and MCP share a higgsfield.ai account, browser sign-in (no API key), and plan credits; Higgsfield API is a separate product with an API key from open.higgsfield.ai and a prepaid US dollar balance."
+  },
+  {
+    "app_id": 98,
+    "claim_id": "98.api.breadth",
+    "original_run_id": "task16-first-pass-001",
+    "human_judgment": "unsupported",
+    "human_reason": "Claim asserts narrow. The assertion is inferred rather than a directly documented vendor statement. Available source (lines:1-17): mermaid-cli (@mermaid-js/mermaid-cli) is the official command-line interface (mmdc) for Mermaid, converting .mmd diagram definitions and Markdown mermaid blocks into SVG, PNG, or PDF files."
+  },
+  {
+    "app_id": 98,
+    "claim_id": "98.buildability",
+    "original_run_id": "task16-first-pass-001",
+    "human_judgment": "unsupported",
+    "human_reason": "Claim asserts build_now buildability for Wrap local mmdc CLI or Node.js run() API to render Mermaid diagrams to SVG/PNG/PDF. The assertion is inferred rather than a directly documented vendor statement. Available source (lines:1-17): mermaid-cli (@mermaid-js/mermaid-cli) is the official command-line interface (mmdc) for Mermaid, converting .mmd diagram definitions and Markdown mermaid blocks into SVG, PNG, or PDF files."
+  },
+  {
+    "app_id": 98,
+    "claim_id": "98.production.admin_approval_required",
+    "original_run_id": "task16-first-pass-001",
+    "human_judgment": "unsupported",
+    "human_reason": "Claim asserts false. The claim describes an absence of approval or access gating, which the available excerpts do not conclusively prove. Available source (lines:9-23): Installed via npm install -g @mermaid-js/mermaid-cli or alternative local npm, npx, Yarn, or Docker/Podman methods; invoked locally via mmdc."
+  },
+  {
+    "app_id": 98,
+    "claim_id": "98.production.contact_sales_required",
+    "original_run_id": "task16-first-pass-001",
+    "human_judgment": "unsupported",
+    "human_reason": "Claim asserts false. The claim describes an absence of approval or access gating, which the available excerpts do not conclusively prove. Available source (lines:1-17): Mermaid CLI is distributed under the MIT License, granting permission free of charge to use, copy, modify, publish, and distribute the software."
+  },
+  {
+    "app_id": 98,
+    "claim_id": "98.production.partner_approval_required",
+    "original_run_id": "task16-first-pass-001",
+    "human_judgment": "unsupported",
+    "human_reason": "Claim asserts false. The claim describes an absence of approval or access gating, which the available excerpts do not conclusively prove. Available source (lines:1-17): Mermaid CLI is distributed under the MIT License, granting permission free of charge to use, copy, modify, publish, and distribute the software."
+  },
+  {
+    "app_id": 98,
+    "claim_id": "98.production.vendor_approval_required",
+    "original_run_id": "task16-first-pass-001",
+    "human_judgment": "unsupported",
+    "human_reason": "Claim asserts false. The claim describes an absence of approval or access gating, which the available excerpts do not conclusively prove. Available source (lines:1-17): Mermaid CLI is distributed under the MIT License, granting permission free of charge to use, copy, modify, publish, and distribute the software."
+  },
+  {
+    "app_id": 98,
+    "claim_id": "98.testing.admin_approval_required",
+    "original_run_id": "task16-first-pass-001",
+    "human_judgment": "unsupported",
+    "human_reason": "Claim asserts false. The claim describes an absence of approval or access gating, which the available excerpts do not conclusively prove. Available source (lines:9-23): Installed via npm install -g @mermaid-js/mermaid-cli or alternative local npm, npx, Yarn, or Docker/Podman methods; invoked locally via mmdc."
+  },
+  {
+    "app_id": 98,
+    "claim_id": "98.testing.contact_sales_required",
+    "original_run_id": "task16-first-pass-001",
+    "human_judgment": "unsupported",
+    "human_reason": "Claim asserts false. The claim describes an absence of approval or access gating, which the available excerpts do not conclusively prove. Available source (lines:1-17): Mermaid CLI is distributed under the MIT License, granting permission free of charge to use, copy, modify, publish, and distribute the software."
+  },
+  {
+    "app_id": 98,
+    "claim_id": "98.testing.partner_approval_required",
+    "original_run_id": "task16-first-pass-001",
+    "human_judgment": "unsupported",
+    "human_reason": "Claim asserts false. The claim describes an absence of approval or access gating, which the available excerpts do not conclusively prove. Available source (lines:1-17): Mermaid CLI is distributed under the MIT License, granting permission free of charge to use, copy, modify, publish, and distribute the software."
+  },
+  {
+    "app_id": 98,
+    "claim_id": "98.testing.vendor_approval_required",
+    "original_run_id": "task16-first-pass-001",
+    "human_judgment": "unsupported",
+    "human_reason": "Claim asserts false. The claim describes an absence of approval or access gating, which the available excerpts do not conclusively prove. Available source (lines:1-17): Mermaid CLI is distributed under the MIT License, granting permission free of charge to use, copy, modify, publish, and distribute the software."
+  }
+]

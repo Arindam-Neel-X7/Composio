@@ -1,0 +1,3603 @@
+{
+  "build_now": [
+    {
+      "app_id": 94,
+      "app_name": "Consensus",
+      "category": "AI, Research and Media-native",
+      "in_stratified_sample": false,
+      "scope": "Basic first-page scholarly paper search using a self-serve Free REST key",
+      "blockers": [
+        "Free allowance is 30 calls/month and 20 papers/request; pagination/full-text/citation beta features require paid plans."
+      ],
+      "next_steps": [
+        "Generate an API key in API & MCP Dashboard.",
+        "Implement bounded REST search; confirm paid or enterprise conditions before expanding scope."
+      ],
+      "auth_methods": [
+        "API_key",
+        "OAuth2",
+        "API_key"
+      ],
+      "protocols": [
+        "REST",
+        "other"
+      ],
+      "breadth": "unknown",
+      "mcp": {
+        "status": "observed",
+        "value": "found",
+        "category": "official_only",
+        "official_count": 1,
+        "community_count": 0,
+        "official_servers": [
+          "Consensus MCP"
+        ],
+        "community_servers": []
+      },
+      "sub_tier": "Wave 1A: Existing Official MCP Server Ready",
+      "priority_rank": 1
+    },
+    {
+      "app_id": 95,
+      "app_name": "Reducto",
+      "category": "AI, Research and Media-native",
+      "in_stratified_sample": false,
+      "scope": "Parse and extract documents via self-serve Reducto REST/SDK API or official MCP server",
+      "blockers": [
+        "Per-page list pricing applies ($1-$60 per 1,000 pages depending on product/model); free starter quota is not established in captured sources.",
+        "Hosted MCP only accepts public URLs; local files require local uvx mcp-server-reducto or REST /upload."
+      ],
+      "next_steps": [
+        "Sign up at studio.reducto.ai and generate REDUCTO_API_KEY.",
+        "Confirm billing/credit allowance and call POST https://platform.reducto.ai/parse or connect https://mcp.reducto.ai/mcp."
+      ],
+      "auth_methods": [
+        "API_key",
+        "OAuth2"
+      ],
+      "protocols": [
+        "REST",
+        "SDK",
+        "CLI",
+        "other"
+      ],
+      "breadth": "unknown",
+      "mcp": {
+        "status": "observed",
+        "value": "found",
+        "category": "official_only",
+        "official_count": 1,
+        "community_count": 0,
+        "official_servers": [
+          "Reducto MCP Server (Hosted & Local)"
+        ],
+        "community_servers": []
+      },
+      "sub_tier": "Wave 1A: Existing Official MCP Server Ready",
+      "priority_rank": 1
+    },
+    {
+      "app_id": 99,
+      "app_name": "YouTube Transcript",
+      "category": "AI, Research and Media-native",
+      "in_stratified_sample": false,
+      "scope": "Fetch YouTube transcripts and channel/video metadata via TranscriptAPI REST v2 or hosted MCP",
+      "blockers": [
+        "Requires verified email; core transcript calls consume 1 credit/call beyond the 100 free starter credits ($5/month for 1,000 credits).",
+        "Third-party YouTube transcript service rather than an official Google/YouTube API."
+      ],
+      "next_steps": [
+        "Sign up free at transcriptapi.com and generate an sk_ API key (or authorize OAuth 2.1 MCP).",
+        "Call GET https://transcriptapi.com/api/v2/youtube/transcript or connect https://transcriptapi.com/mcp."
+      ],
+      "auth_methods": [
+        "API_key",
+        "OAuth2"
+      ],
+      "protocols": [
+        "REST",
+        "other"
+      ],
+      "breadth": "unknown",
+      "mcp": {
+        "status": "observed",
+        "value": "found",
+        "category": "official_only",
+        "official_count": 1,
+        "community_count": 0,
+        "official_servers": [
+          "TranscriptAPI YouTube Transcript MCP Server"
+        ],
+        "community_servers": []
+      },
+      "sub_tier": "Wave 1A: Existing Official MCP Server Ready",
+      "priority_rank": 1
+    },
+    {
+      "app_id": 100,
+      "app_name": "Grain",
+      "category": "AI, Research and Media-native",
+      "in_stratified_sample": false,
+      "scope": "Read user-authorized Grain meetings, transcripts, and notes via Personal API token (REST v2) or headless PAT MCP",
+      "blockers": [
+        "Workspace-wide API access requires Business/Enterprise plan and workspace admin role (and is rejected by MCP).",
+        "OAuth workspace scope is restricted to Grain-verified clients; interactive workspace MCP setup notes workspace admin enablement.",
+        "Deals and Sales Coaching MCP tools require Business or Enterprise plans."
+      ],
+      "next_steps": [
+        "Generate a Personal Access Token (grain_pat_...) at grain.com/app/settings/integrations?tab=api.",
+        "Call https://api.grain.com/_/public-api/v2 with Public-Api-Version header or connect https://api.grain.com/_/mcp."
+      ],
+      "auth_methods": [
+        "Bearer_token",
+        "Bearer_token",
+        "OAuth2"
+      ],
+      "protocols": [
+        "REST",
+        "other"
+      ],
+      "breadth": "unknown",
+      "mcp": {
+        "status": "observed",
+        "value": "found",
+        "category": "official_only",
+        "official_count": 1,
+        "community_count": 0,
+        "official_servers": [
+          "Official Grain MCP Server"
+        ],
+        "community_servers": []
+      },
+      "sub_tier": "Wave 1A: Existing Official MCP Server Ready",
+      "priority_rank": 1
+    },
+    {
+      "app_id": 2,
+      "app_name": "HubSpot",
+      "category": "CRM and Sales",
+      "in_stratified_sample": false,
+      "scope": "CRM contact/deal read-write and agent workflows via HubSpot REST API or official remote MCP",
+      "blockers": [
+        "Production tenant installation requires Super Admin or Marketplace Access permissions.",
+        "Legacy private app creation ended October 26, 2026; new integrations must use current OAuth or static-token developer platform apps."
+      ],
+      "next_steps": [
+        "Create a free HubSpot developer account and test account via developer platform onboarding.",
+        "Implement OAuth 2.0 (/oauth/v3/token) for multi-tenant CRM toolkit or connect to https://mcp.hubspot.com with PKCE."
+      ],
+      "auth_methods": [
+        "OAuth2",
+        "Bearer_token",
+        "Bearer_token",
+        "API_key",
+        "OAuth2"
+      ],
+      "protocols": [
+        "REST"
+      ],
+      "breadth": "unknown",
+      "mcp": {
+        "status": "observed",
+        "value": "found",
+        "category": "official_only",
+        "official_count": 1,
+        "community_count": 0,
+        "official_servers": [
+          "HubSpot Remote CRM MCP Server"
+        ],
+        "community_servers": []
+      },
+      "sub_tier": "Wave 1A: Existing Official MCP Server Ready",
+      "priority_rank": 1
+    },
+    {
+      "app_id": 4,
+      "app_name": "Attio",
+      "category": "CRM and Sales",
+      "in_stratified_sample": true,
+      "scope": "CRM record, list, activity, and task automation via Attio REST API or official hosted MCP",
+      "blockers": [
+        "SQL querying via API/MCP requires the Ultra plan ($1,000/mo/workspace); custom objects require Pro or higher."
+      ],
+      "next_steps": [
+        "Create a free Attio workspace to generate a workspace API key or register an OAuth 2.0 app.",
+        "Build against Attio REST API or connect MCP clients to https://mcp.attio.com/mcp via OAuth."
+      ],
+      "auth_methods": [
+        "OAuth2",
+        "API_key"
+      ],
+      "protocols": [
+        "REST",
+        "other"
+      ],
+      "breadth": "unknown",
+      "mcp": {
+        "status": "observed",
+        "value": "found",
+        "category": "official_only",
+        "official_count": 1,
+        "community_count": 0,
+        "official_servers": [
+          "Attio MCP"
+        ],
+        "community_servers": []
+      },
+      "sub_tier": "Wave 1A: Existing Official MCP Server Ready",
+      "priority_rank": 1
+    },
+    {
+      "app_id": 7,
+      "app_name": "Zoho CRM",
+      "category": "CRM and Sales",
+      "in_stratified_sample": false,
+      "scope": "CRM lead/contact/deal automation via Zoho CRM v8 REST API or official Zoho MCP",
+      "blockers": [
+        "API credit budgets vary by edition (5,000/day on Free); Sandbox KB page returned empty_readable_content so sandbox tier gating remains unverified."
+      ],
+      "next_steps": [
+        "Register a client in Zoho Developer Console and test against a Free Edition or paid-edition trial org.",
+        "Implement OAuth 2.0 with scoped v8 REST endpoints or connect via Zoho MCP."
+      ],
+      "auth_methods": [
+        "OAuth2"
+      ],
+      "protocols": [
+        "REST"
+      ],
+      "breadth": "unknown",
+      "mcp": {
+        "status": "observed",
+        "value": "found",
+        "category": "official_only",
+        "official_count": 1,
+        "community_count": 0,
+        "official_servers": [
+          "Zoho MCP (Zoho CRM)"
+        ],
+        "community_servers": []
+      },
+      "sub_tier": "Wave 1A: Existing Official MCP Server Ready",
+      "priority_rank": 1
+    },
+    {
+      "app_id": 21,
+      "app_name": "Slack",
+      "category": "Communications and Messaging",
+      "in_stratified_sample": true,
+      "scope": "Build a Slack workspace messaging, search, canvas, and list agent toolkit via the Web API or official Slack MCP server.",
+      "blockers": [
+        "Public multi-tenant distribution on Slack Marketplace (and public MCP use) requires Slack app review; unlisted apps cannot use Slack MCP.",
+        "Slack MCP server does not support Dynamic Client Registration (DCR); clients must use a registered Slack app ID with confidential OAuth."
+      ],
+      "next_steps": [
+        "Register a Slack app and configure OAuth 2.0 v2 scopes (bot and/or user tokens).",
+        "Target https://slack.com/api/* Web API methods or https://mcp.slack.com/mcp for internal testing, and submit for Slack Marketplace review for public multi-tenant distribution."
+      ],
+      "auth_methods": [
+        "OAuth2",
+        "Bearer_token"
+      ],
+      "protocols": [
+        "RPC",
+        "SDK",
+        "CLI"
+      ],
+      "breadth": "unknown",
+      "mcp": {
+        "status": "observed",
+        "value": "found",
+        "category": "official_only",
+        "official_count": 1,
+        "community_count": 0,
+        "official_servers": [
+          "Slack MCP Server"
+        ],
+        "community_servers": []
+      },
+      "sub_tier": "Wave 1A: Existing Official MCP Server Ready",
+      "priority_rank": 1
+    },
+    {
+      "app_id": 22,
+      "app_name": "Twilio",
+      "category": "Communications and Messaging",
+      "in_stratified_sample": false,
+      "scope": "Build a Twilio SMS/WhatsApp/Voice/Verify agent toolkit via REST APIs or the official @twilio-alpha/mcp server.",
+      "blockers": [
+        "Free trial expires after 30 days and restricts sends to verified phone numbers (up to 5), sign-up country, and pre-defined templates.",
+        "Production US/Canada 10DLC SMS requires regulatory compliance (paid A2P 10DLC registration)."
+      ],
+      "next_steps": [
+        "Create a cardless Twilio trial account and generate a Restricted or Standard API Key.",
+        "Use REST APIs or npx @twilio-alpha/mcp --services <domain>, then upgrade to pay-as-you-go and complete country-specific telecom compliance for production."
+      ],
+      "auth_methods": [
+        "API_key",
+        "Basic",
+        "OAuth2"
+      ],
+      "protocols": [
+        "REST",
+        "SDK",
+        "CLI"
+      ],
+      "breadth": "unknown",
+      "mcp": {
+        "status": "observed",
+        "value": "found",
+        "category": "official_only",
+        "official_count": 1,
+        "community_count": 0,
+        "official_servers": [
+          "Twilio MCP Server (@twilio-alpha/mcp)"
+        ],
+        "community_servers": []
+      },
+      "sub_tier": "Wave 1A: Existing Official MCP Server Ready",
+      "priority_rank": 1
+    },
+    {
+      "app_id": 24,
+      "app_name": "Lark (Larksuite)",
+      "category": "Communications and Messaging",
+      "in_stratified_sample": false,
+      "scope": "Build a Lark (Larksuite) messaging, docs, and calendar agent toolkit via official OpenAPI SDKs or @larksuiteoapi/lark-mcp.",
+      "blockers": [
+        "International Lark apps (https://open.larksuite.com) and China Feishu apps (https://open.feishu.cn) are strictly separate domain environments.",
+        "Official lark-mcp is Beta and does not yet support file upload/download or direct document editing."
+      ],
+      "next_steps": [
+        "Create an international Lark app at https://open.larksuite.com to obtain App ID and App Secret.",
+        "Configure --domain https://open.larksuite.com in @larksuiteoapi/lark-mcp or Domain.Lark in @larksuiteoapi/node-sdk, and enable OAuth user_access_token where user-private access is needed."
+      ],
+      "auth_methods": [
+        "Bearer_token",
+        "OAuth2"
+      ],
+      "protocols": [
+        "REST",
+        "SDK"
+      ],
+      "breadth": "unknown",
+      "mcp": {
+        "status": "observed",
+        "value": "found",
+        "category": "official_only",
+        "official_count": 1,
+        "community_count": 0,
+        "official_servers": [
+          "Feishu/Lark OpenAPI MCP (@larksuiteoapi/lark-mcp)"
+        ],
+        "community_servers": []
+      },
+      "sub_tier": "Wave 1A: Existing Official MCP Server Ready",
+      "priority_rank": 1
+    },
+    {
+      "app_id": 25,
+      "app_name": "Pumble",
+      "category": "Communications and Messaging",
+      "in_stratified_sample": false,
+      "scope": "Build a Pumble team-messaging and channel agent toolkit using the Pumble API addon REST API or community MCP wrapper.",
+      "blockers": [
+        "API key is user-scoped (only lists channels/DMs belonging to the key creator; private channels require Addon Bot membership).",
+        "Official Pumble MCP server endpoint/auth spec was not captured beyond the pumble.com product feature announcement."
+      ],
+      "next_steps": [
+        "Sign up for a free Pumble workspace, install the API addon, and generate an API key.",
+        "Inspect the Swagger documentation referenced in Pumble Help or evaluate @infralayers/pumble-mcp for local testing."
+      ],
+      "auth_methods": [
+        "API_key",
+        "other"
+      ],
+      "protocols": [
+        "REST",
+        "SDK",
+        "CLI"
+      ],
+      "breadth": "unknown",
+      "mcp": {
+        "status": "observed",
+        "value": "found",
+        "category": "official_and_community",
+        "official_count": 1,
+        "community_count": 1,
+        "official_servers": [
+          "Pumble MCP Server (product-page announcement)"
+        ],
+        "community_servers": [
+          "@infralayers/pumble-mcp"
+        ]
+      },
+      "sub_tier": "Wave 1A: Existing Official MCP Server Ready",
+      "priority_rank": 1
+    },
+    {
+      "app_id": 30,
+      "app_name": "Vonage",
+      "category": "Communications and Messaging",
+      "in_stratified_sample": false,
+      "scope": "Build a Vonage SMS/WhatsApp/RCS/Voice/Verify agent toolkit via REST APIs or @vonage/vonage-mcp-server-api-bindings.",
+      "blockers": [
+        "Production traffic beyond free credit is pay-as-you-go; messaging/voice apps require RSA private-key JWT minting (VONAGE_PRIVATE_KEY64) and purchased virtual numbers.",
+        "Vonage notes its Messages API is labeled Beta on the captured API index page (expect changes; SMS API is stable)."
+      ],
+      "next_steps": [
+        "Create a free cardless Vonage developer account to obtain API Key/Secret and free credit.",
+        "Create a Vonage Application + RSA private key (via Dashboard or Vonage CLI) and integrate via REST APIs or npx -y @vonage/vonage-mcp-server-api-bindings."
+      ],
+      "auth_methods": [
+        "Basic",
+        "JWT"
+      ],
+      "protocols": [
+        "REST",
+        "SDK",
+        "CLI"
+      ],
+      "breadth": "unknown",
+      "mcp": {
+        "status": "observed",
+        "value": "found",
+        "category": "official_only",
+        "official_count": 2,
+        "community_count": 0,
+        "official_servers": [
+          "Vonage API MCP Server (@vonage/vonage-mcp-server-api-bindings)",
+          "Vonage Docs MCP Server (via Vonage/vonage-kiro-power)"
+        ],
+        "community_servers": []
+      },
+      "sub_tier": "Wave 1A: Existing Official MCP Server Ready",
+      "priority_rank": 1
+    },
+    {
+      "app_id": 51,
+      "app_name": "DataForSEO",
+      "category": "Data, SEO and Scraping",
+      "in_stratified_sample": false,
+      "scope": "Build a DataForSEO SEO/SERP/keyword/backlink/AI-search agent integration via REST API v3 or official MCP server.",
+      "blockers": [
+        "Live production API calls require pay-as-you-go account balance ($50 minimum account top-up); Sandbox returns free test responses at https://sandbox.dataforseo.com/v3/."
+      ],
+      "next_steps": [
+        "Register a free DataForSEO account and copy API login and API password from https://app.dataforseo.com/api-access.",
+        "Test against https://sandbox.dataforseo.com/v3/ or connect via https://mcp.dataforseo.com/v3/mcp or npx dataforseo-mcp-server@latest."
+      ],
+      "auth_methods": [
+        "Basic",
+        "OAuth2"
+      ],
+      "protocols": [
+        "REST",
+        "SDK",
+        "CLI"
+      ],
+      "breadth": "unknown",
+      "mcp": {
+        "status": "observed",
+        "value": "found",
+        "category": "official_only",
+        "official_count": 2,
+        "community_count": 0,
+        "official_servers": [
+          "DataForSEO Remote HTTP MCP Server",
+          "DataForSEO TypeScript MCP Server (dataforseo-mcp-server)"
+        ],
+        "community_servers": []
+      },
+      "sub_tier": "Wave 1A: Existing Official MCP Server Ready",
+      "priority_rank": 1
+    },
+    {
+      "app_id": 52,
+      "app_name": "SE Ranking",
+      "category": "Data, SEO and Scraping",
+      "in_stratified_sample": true,
+      "scope": "Integrate SE Ranking Data, Project, Local Marketing, and SE Visible APIs via REST/OpenAPI 3.0 or the hosted MCP server at https://api.seranking.com/mcp.",
+      "blockers": [
+        "Production usage requires a paid SE Ranking subscription (from $129/mo with 25K API credits) or standalone API plan ($179/mo annual) and consumes API credits.",
+        "In shared workspaces, sub-accounts cannot use OAuth button sign-in directly and must use a master-account API key from an administrator."
+      ],
+      "next_steps": [
+        "Generate an API key in the SE Ranking API Dashboard (Settings > API) or connect an MCP client to https://api.seranking.com/mcp via OAuth 2.1.",
+        "Use official OpenAPI 3.0 specs from github.com/seranking/openapi to generate typed REST clients."
+      ],
+      "auth_methods": [
+        "API_key",
+        "OAuth2"
+      ],
+      "protocols": [
+        "REST"
+      ],
+      "breadth": "unknown",
+      "mcp": {
+        "status": "observed",
+        "value": "found",
+        "category": "official_only",
+        "official_count": 1,
+        "community_count": 0,
+        "official_servers": [
+          "SE Ranking Remote MCP Server"
+        ],
+        "community_servers": []
+      },
+      "sub_tier": "Wave 1A: Existing Official MCP Server Ready",
+      "priority_rank": 1
+    },
+    {
+      "app_id": 53,
+      "app_name": "Ahrefs",
+      "category": "Data, SEO and Scraping",
+      "in_stratified_sample": false,
+      "scope": "Build an Ahrefs SEO, backlink, keyword, site audit, and Brand Radar integration via REST API v3 (https://api.ahrefs.com/v3/) or connect supported AI clients to https://api.ahrefs.com/mcp/mcp.",
+      "blockers": [
+        "Full production API v3 and MCP usage requires a paid Ahrefs plan (Lite $129/mo or higher; complimentary test queries on ahrefs.com/yep.com/firehose.com also require a paid plan, while only `/v3/public` works on a free account) and workspace owner/admin role to generate API keys; billable requests cost a minimum of 50 API units.",
+        "Traffic Analytics endpoints require the Enterprise add-on, Ahrefs Connect third-party OAuth apps require vendor approval, and Ahrefs prohibits calling the external MCP endpoint from custom scripts/bridges or standalone HTTP/JSON-RPC clients (use REST API v3 for custom code)."
+      ],
+      "next_steps": [
+        "Use REST API v3 (https://docs.ahrefs.com/openapi.json) with Authorization: Bearer <API_KEY> for custom programmatic integrations and test with free test queries (ahrefs.com, yep.com, firehose.com) or `/v3/public` endpoints.",
+        "Use https://api.ahrefs.com/mcp/mcp only from supported MCP AI clients via OAuth or an MCP key."
+      ],
+      "auth_methods": [
+        "Bearer_token",
+        "OAuth2"
+      ],
+      "protocols": [
+        "REST"
+      ],
+      "breadth": "unknown",
+      "mcp": {
+        "status": "observed",
+        "value": "found",
+        "category": "official_only",
+        "official_count": 1,
+        "community_count": 0,
+        "official_servers": [
+          "Ahrefs Hosted MCP Server"
+        ],
+        "community_servers": []
+      },
+      "sub_tier": "Wave 1A: Existing Official MCP Server Ready",
+      "priority_rank": 1
+    },
+    {
+      "app_id": 54,
+      "app_name": "MrScraper",
+      "category": "Data, SEO and Scraping",
+      "in_stratified_sample": false,
+      "scope": "Build a MrScraper web scraping, structured JSON extraction, and web search integration via REST API, CLI, or official MCP server.",
+      "blockers": [
+        "Free plan excludes residential proxies and caps monthly tokens (docs show a minor discrepancy between 100 and 1,000 free tokens/month, and between 'Scraper Pro' in docs vs 'Essential $99/month' on the pricing page)."
+      ],
+      "next_steps": [
+        "Create a free MrScraper account and generate an API token at app.mrscraper.com/api-tokens, or connect via OAuth 2.1 to https://mcp.mrscraper.com/mcp.",
+        "Call https://api.mrscraper.com endpoints with x-api-token or use the 7 MCP tools."
+      ],
+      "auth_methods": [
+        "API_key",
+        "Bearer_token",
+        "OAuth2"
+      ],
+      "protocols": [
+        "REST",
+        "CLI",
+        "SDK"
+      ],
+      "breadth": "unknown",
+      "mcp": {
+        "status": "observed",
+        "value": "found",
+        "category": "official_only",
+        "official_count": 1,
+        "community_count": 0,
+        "official_servers": [
+          "MrScraper MCP Server (@mrscraper/mcp)"
+        ],
+        "community_servers": []
+      },
+      "sub_tier": "Wave 1A: Existing Official MCP Server Ready",
+      "priority_rank": 1
+    },
+    {
+      "app_id": 55,
+      "app_name": "Apify",
+      "category": "Data, SEO and Scraping",
+      "in_stratified_sample": false,
+      "scope": "Build an Apify Actor execution, dataset retrieval, and web scraping integration via REST API v2, apify-client SDKs, or official MCP server.",
+      "blockers": [
+        "Free tier is capped at $5/month of platform usage credit ($0.20 per compute unit); high-volume scraping requires paid plans ($19–$999/month) or pay-as-you-go."
+      ],
+      "next_steps": [
+        "Sign up for a free Apify account and generate a Personal API token in Apify Console (Settings > API & Integrations), or connect via OAuth to https://mcp.apify.com.",
+        "Use REST API v2 (https://docs.apify.com/api/openapi.json), apify-client (JS/Python), or @apify/actors-mcp-server."
+      ],
+      "auth_methods": [
+        "Bearer_token",
+        "OAuth2",
+        "none"
+      ],
+      "protocols": [
+        "REST",
+        "SDK",
+        "CLI"
+      ],
+      "breadth": "unknown",
+      "mcp": {
+        "status": "observed",
+        "value": "found",
+        "category": "official_only",
+        "official_count": 2,
+        "community_count": 0,
+        "official_servers": [
+          "Apify Hosted MCP Server (mcp.apify.com)",
+          "Apify Actors MCP Server (@apify/actors-mcp-server)"
+        ],
+        "community_servers": []
+      },
+      "sub_tier": "Wave 1A: Existing Official MCP Server Ready",
+      "priority_rank": 1
+    },
+    {
+      "app_id": 56,
+      "app_name": "Firecrawl",
+      "category": "Data, SEO and Scraping",
+      "in_stratified_sample": false,
+      "scope": "Build a Firecrawl web scraping, site crawling/mapping, search, and browser interaction integration via REST API v2, SDKs, or official MCP server.",
+      "blockers": [
+        "Free Cloud tier is capped at 1,000 credits/month and 2 concurrent requests (keyless mode is rate-limited and restricted to scrape/search/parse).",
+        "Self-hosted open-source edition is licensed under AGPL-3.0 and its default Docker Compose stack omits Fire-engine anti-bot, screenshots/page actions, Agent, Browser, and interact unless configured with external services or Firecrawl Cloud."
+      ],
+      "next_steps": [
+        "Connect immediately to https://mcp.firecrawl.dev/v2/mcp (keyless or with Bearer fc-... API key) or https://mcp.firecrawl.dev/v2/mcp-oauth.",
+        "For custom backend services, call https://api.firecrawl.dev using v2 OpenAPI specs or official Python/Node SDKs."
+      ],
+      "auth_methods": [
+        "Bearer_token",
+        "OAuth2",
+        "none"
+      ],
+      "protocols": [
+        "REST",
+        "SDK",
+        "CLI"
+      ],
+      "breadth": "unknown",
+      "mcp": {
+        "status": "observed",
+        "value": "found",
+        "category": "official_only",
+        "official_count": 2,
+        "community_count": 0,
+        "official_servers": [
+          "Firecrawl Hosted MCP Server",
+          "Firecrawl Open-Source MCP Server (firecrawl-mcp)"
+        ],
+        "community_servers": []
+      },
+      "sub_tier": "Wave 1A: Existing Official MCP Server Ready",
+      "priority_rank": 1
+    },
+    {
+      "app_id": 57,
+      "app_name": "Bright Data",
+      "category": "Data, SEO and Scraping",
+      "in_stratified_sample": false,
+      "scope": "Build a Bright Data web unblocking, SERP, structured scraping, dataset lookup, or browser automation integration via REST APIs or official MCP server.",
+      "blockers": [
+        "Proxy infrastructure products (Residential, ISP, Datacenter) and Marketplace Datasets ($2.5 CPM / $250 per 100K records) are excluded from the 5,000 monthly free credits (proxies receive only a one-time $2 7-day trial credit), and usage beyond 5,000 monthly credits requires prepaid balance deposits."
+      ],
+      "next_steps": [
+        "Create a free Bright Data account (no credit card required) to receive an automatic default API key and 5,000 recurring monthly free credits across Web Unlocker, SERP, Web Scraper, Scraper Studio, Browser API, and MCP.",
+        "Connect via https://mcp.brightdata.com/mcp?token=YOUR_API_TOKEN, npx @brightdata/mcp, or REST endpoints at https://api.brightdata.com."
+      ],
+      "auth_methods": [
+        "Bearer_token",
+        "Basic"
+      ],
+      "protocols": [
+        "REST",
+        "CLI",
+        "SDK"
+      ],
+      "breadth": "unknown",
+      "mcp": {
+        "status": "observed",
+        "value": "found",
+        "category": "official_only",
+        "official_count": 2,
+        "community_count": 0,
+        "official_servers": [
+          "Bright Data Remote MCP Server",
+          "Bright Data Local MCP Server (@brightdata/mcp)"
+        ],
+        "community_servers": []
+      },
+      "sub_tier": "Wave 1A: Existing Official MCP Server Ready",
+      "priority_rank": 1
+    },
+    {
+      "app_id": 60,
+      "app_name": "Clay",
+      "category": "Data, SEO and Scraping",
+      "in_stratified_sample": true,
+      "scope": "Build a Clay GTM search, enrichment routine execution, and webhook/CLI integration via the Clay Public REST API (https://api.clay.com/public/v0), `clay` CLI, or Clay MCP connector.",
+      "blockers": [
+        "The Tables API (POST /public/v0/tables/query) is restricted to Enterprise plans (and has no list-tables endpoint; table IDs must be known).",
+        "Free plan explicitly covers Searches up to 100 results per 30 days (excluding phone enrichment), whereas reusable functions across workflows require Launch+ ($54-$60/mo+) and webhook signal automation requires Growth+ ($185-$205/mo+); custom functions must have API or MCP access explicitly enabled in Function Details (and workspace role permissions must allow access).",
+        "Captured official Clay pages document the Clay MCP connector and `list_subroutines` workflow but do not print the raw hosted MCP endpoint URL in the captured text, so server_url is recorded as null."
+      ],
+      "next_steps": [
+        "Create a personal API key under API and CLI -> API keys (or via `clay api-keys create`) and authenticate against https://api.clay.com/public/v0 with `clay-api-key`.",
+        "Enable API and/or MCP access on target custom functions in https://app.clay.com/functions, or install the official `clay` CLI plugin from github.com/clay-run/agent-plugins."
+      ],
+      "auth_methods": [
+        "API_key",
+        "OAuth2"
+      ],
+      "protocols": [
+        "REST",
+        "CLI"
+      ],
+      "breadth": "unknown",
+      "mcp": {
+        "status": "observed",
+        "value": "found",
+        "category": "official_only",
+        "official_count": 1,
+        "community_count": 0,
+        "official_servers": [
+          "Clay MCP Connector"
+        ],
+        "community_servers": []
+      },
+      "sub_tier": "Wave 1A: Existing Official MCP Server Ready",
+      "priority_rank": 1
+    },
+    {
+      "app_id": 41,
+      "app_name": "Shopify",
+      "category": "Ecommerce",
+      "in_stratified_sample": false,
+      "scope": "Shopify Admin GraphQL API and hosted Shop MCP integration",
+      "blockers": [
+        "Some specialized APIs require Shopify approval or specific paid plans",
+        "Public multi-merchant app distribution requires OAuth install and store scopes"
+      ],
+      "next_steps": [
+        "Create a Shopify Partner account and dev store via Shopify CLI or Dev Dashboard",
+        "Configure Dev Dashboard app scopes and X-Shopify-Access-Token auth"
+      ],
+      "auth_methods": [
+        "OAuth2",
+        "Bearer_token"
+      ],
+      "protocols": [
+        "GraphQL",
+        "REST",
+        "CLI"
+      ],
+      "breadth": "unknown",
+      "mcp": {
+        "status": "observed",
+        "value": "found",
+        "category": "official_only",
+        "official_count": 1,
+        "community_count": 0,
+        "official_servers": [
+          "Shopify Shop MCP"
+        ],
+        "community_servers": []
+      },
+      "sub_tier": "Wave 1A: Existing Official MCP Server Ready",
+      "priority_rank": 1
+    },
+    {
+      "app_id": 42,
+      "app_name": "WooCommerce",
+      "category": "Ecommerce",
+      "in_stratified_sample": false,
+      "scope": "WooCommerce REST API v3 and official WordPress MCP Adapter integration",
+      "blockers": [
+        "Self-hosted WordPress deployment requires store-specific base URL and HTTPS for Basic/Application Password auth",
+        "MCP integration is in developer preview and requires installing the separate mcp-adapter plugin"
+      ],
+      "next_steps": [
+        "Generate REST API Consumer Key/Secret in WooCommerce settings or WordPress Application Password for MCP",
+        "Target /wp-json/wc/v3/ endpoints or /wp-json/mcp/mcp-adapter-default-server"
+      ],
+      "auth_methods": [
+        "Basic",
+        "other",
+        "Basic"
+      ],
+      "protocols": [
+        "REST",
+        "SDK",
+        "CLI"
+      ],
+      "breadth": "unknown",
+      "mcp": {
+        "status": "observed",
+        "value": "found",
+        "category": "official_only",
+        "official_count": 1,
+        "community_count": 0,
+        "official_servers": [
+          "WooCommerce / WordPress MCP Adapter Integration (Developer Preview)"
+        ],
+        "community_servers": []
+      },
+      "sub_tier": "Wave 1A: Existing Official MCP Server Ready",
+      "priority_rank": 1
+    },
+    {
+      "app_id": 43,
+      "app_name": "BigCommerce",
+      "category": "Ecommerce",
+      "in_stratified_sample": false,
+      "scope": "BigCommerce REST Management / GraphQL APIs and official MCP servers",
+      "blockers": [
+        "Partner sandboxes require BigCommerce Partner Portal enrollment",
+        "Production stores require paid plans (Core/Growth/Scale/Performance)"
+      ],
+      "next_steps": [
+        "Start a free trial store or request a Partner Use Sandbox",
+        "Create a store-level API account (X-Auth-Token) or app-level OAuth client with scoped permissions"
+      ],
+      "auth_methods": [
+        "OAuth2",
+        "Bearer_token"
+      ],
+      "protocols": [
+        "REST",
+        "GraphQL"
+      ],
+      "breadth": "unknown",
+      "mcp": {
+        "status": "observed",
+        "value": "found",
+        "category": "official_only",
+        "official_count": 2,
+        "community_count": 0,
+        "official_servers": [
+          "BigCommerce Docs MCP Server",
+          "BigCommerce Store Management MCP (Beta) / Storefront MCP / WebMCP"
+        ],
+        "community_servers": []
+      },
+      "sub_tier": "Wave 1A: Existing Official MCP Server Ready",
+      "priority_rank": 1
+    },
+    {
+      "app_id": 48,
+      "app_name": "Gumroad",
+      "category": "Ecommerce",
+      "in_stratified_sample": false,
+      "scope": "Gumroad API, official antiwork/gumroad-cli (`gumroad mcp`), and community MCP integration",
+      "blockers": [
+        "gumroad.com/api web docs require JavaScript rendering for direct reading"
+      ],
+      "next_steps": [
+        "Authenticate with `gumroad auth login` or generate a seller access token",
+        "Integrate via official `gumroad mcp` / `gumroad-cli` or REST endpoints"
+      ],
+      "auth_methods": [
+        "OAuth2",
+        "Bearer_token"
+      ],
+      "protocols": [
+        "REST",
+        "CLI"
+      ],
+      "breadth": "unknown",
+      "mcp": {
+        "status": "observed",
+        "value": "found",
+        "category": "official_and_community",
+        "official_count": 1,
+        "community_count": 1,
+        "official_servers": [
+          "Gumroad CLI MCP Server (`gumroad mcp`)"
+        ],
+        "community_servers": [
+          "rmarescu/gumroad-mcp"
+        ]
+      },
+      "sub_tier": "Wave 1A: Existing Official MCP Server Ready",
+      "priority_rank": 1
+    },
+    {
+      "app_id": 81,
+      "app_name": "Stripe",
+      "category": "Finance and Fintech",
+      "in_stratified_sample": false,
+      "scope": "Stripe REST API and official hosted MCP server for sandbox development and verified live-mode payment/billing workflows.",
+      "blockers": [
+        "Live-mode activation requires KYC/business verification and supported country eligibility.",
+        "Starting January 11, 2027, Stripe MCP drops non-agent restricted/secret keys in favor of OAuth or agent API keys; sensitive MCP actions can require Dashboard human confirmation."
+      ],
+      "next_steps": [
+        "Use free sandbox keys (rk_test_/sk_test_) for development and testing.",
+        "Use restricted or agent-tagged API keys (or OAuth for interactive MCP / Connect platforms) with least-privilege permissions."
+      ],
+      "auth_methods": [
+        "API_key",
+        "Bearer_token",
+        "OAuth2",
+        "OAuth2"
+      ],
+      "protocols": [
+        "REST",
+        "SDK",
+        "CLI"
+      ],
+      "breadth": "unknown",
+      "mcp": {
+        "status": "observed",
+        "value": "found",
+        "category": "official_only",
+        "official_count": 1,
+        "community_count": 0,
+        "official_servers": [
+          "Stripe MCP Server"
+        ],
+        "community_servers": []
+      },
+      "sub_tier": "Wave 1A: Existing Official MCP Server Ready",
+      "priority_rank": 1
+    },
+    {
+      "app_id": 87,
+      "app_name": "Xero",
+      "category": "Finance and Fintech",
+      "in_stratified_sample": false,
+      "scope": "Xero Accounting API (Starter/Core OAuth 2.0) and official Remote/Local MCP servers.",
+      "blockers": [
+        "Starter tier caps connections at 5 (1,000 calls/day/org) and limits Remote MCP to the Demo organisation.",
+        "Real-org Remote MCP or >5 connections requires paid Core ($35 AUD/mo) or higher; >50 connections (Plus+) requires App Certification and Advanced+ requires Security Assessment.",
+        "New Custom Connection creation closes 1 December 2026; several developer.xero.com guide pages render as JS SPAs."
+      ],
+      "next_steps": [
+        "Start immediately with a free Xero account, Demo Company, OpenAPI specs, and Starter plan.",
+        "Upgrade to Core for real-org Remote MCP or >5 connections; plan App Certification before scaling past 50 connections."
+      ],
+      "auth_methods": [
+        "OAuth2",
+        "OAuth2"
+      ],
+      "protocols": [
+        "REST",
+        "SDK"
+      ],
+      "breadth": "unknown",
+      "mcp": {
+        "status": "observed",
+        "value": "found",
+        "category": "official_only",
+        "official_count": 2,
+        "community_count": 0,
+        "official_servers": [
+          "Xero Remote MCP Server",
+          "Xero MCP Server (XeroAPI/xero-mcp-server)"
+        ],
+        "community_servers": []
+      },
+      "sub_tier": "Wave 1A: Existing Official MCP Server Ready",
+      "priority_rank": 1
+    },
+    {
+      "app_id": 34,
+      "app_name": "GoHighLevel",
+      "category": "Marketing, Ads, Email and Social",
+      "in_stratified_sample": false,
+      "scope": "Build GoHighLevel CRM/marketing agent integration via REST API v2 (OAuth 2.0 or PIT) or official HighLevel MCP Server",
+      "blockers": [
+        "Production use requires a paid GoHighLevel subscription ($97-$497/mo after 14-day free trial) and agency/location admin authorization.",
+        "Public Marketplace distribution requires HighLevel app approval (private integrations and PITs do not)."
+      ],
+      "next_steps": [
+        "Use a 14-day free trial with a scoped Private Integration Token or OAuth app for immediate development.",
+        "Connect directly to HighLevel's official hosted MCP server or LeadConnector REST API v2."
+      ],
+      "auth_methods": [
+        "OAuth2",
+        "Bearer_token"
+      ],
+      "protocols": [
+        "REST",
+        "SDK",
+        "CLI"
+      ],
+      "breadth": "unknown",
+      "mcp": {
+        "status": "observed",
+        "value": "found",
+        "category": "official_only",
+        "official_count": 1,
+        "community_count": 0,
+        "official_servers": [
+          "HighLevel MCP Server (LeadConnector)"
+        ],
+        "community_servers": []
+      },
+      "sub_tier": "Wave 1A: Existing Official MCP Server Ready",
+      "priority_rank": 1
+    },
+    {
+      "app_id": 36,
+      "app_name": "Klaviyo",
+      "category": "Marketing, Ads, Email and Social",
+      "in_stratified_sample": false,
+      "scope": "Build Klaviyo email/SMS marketing and profile automation integration via REST API or official Klaviyo MCP Server",
+      "blockers": [
+        "Public listing in the Klaviyo App Marketplace requires OAuth 2.0 + PKCE and passing app review (unlisted OAuth install URLs and Private API keys do not).",
+        "Free plan is capped at 250 active profiles and 500 emails/month."
+      ],
+      "next_steps": [
+        "Create a free Klaviyo account and generate a scoped Private API key or OAuth 2.0 + PKCE app.",
+        "Integrate against Klaviyo REST API (revision 2026-10-15) or connect via the official Klaviyo MCP server."
+      ],
+      "auth_methods": [
+        "API_key",
+        "OAuth2",
+        "API_key"
+      ],
+      "protocols": [
+        "REST",
+        "SDK"
+      ],
+      "breadth": "unknown",
+      "mcp": {
+        "status": "observed",
+        "value": "found",
+        "category": "official_only",
+        "official_count": 1,
+        "community_count": 0,
+        "official_servers": [
+          "Klaviyo MCP Server"
+        ],
+        "community_servers": []
+      },
+      "sub_tier": "Wave 1A: Existing Official MCP Server Ready",
+      "priority_rank": 1
+    },
+    {
+      "app_id": 37,
+      "app_name": "systeme.io",
+      "category": "Marketing, Ads, Email and Social",
+      "in_stratified_sample": false,
+      "scope": "Build systeme.io contacts, funnels, email, and automation integration via Public REST API or official MCP Server",
+      "blockers": [
+        "Public API supports API key auth only (no OAuth 2.0 flow for multi-tenant delegated consent); users must supply their own X-API-Key or MCP key.",
+        "Official MCP server is in initial release and currently limited to contacts, tags, contact fields, and newsletters."
+      ],
+      "next_steps": [
+        "Create a free systeme.io account (no credit card required) and generate an API key and/or MCP key in Settings > MCP & API keys.",
+        "Use Public REST API for full funnel/automation/webhook coverage or the official MCP server for contact/newsletter workflows."
+      ],
+      "auth_methods": [
+        "API_key",
+        "API_key"
+      ],
+      "protocols": [
+        "REST"
+      ],
+      "breadth": "unknown",
+      "mcp": {
+        "status": "observed",
+        "value": "found",
+        "category": "official_only",
+        "official_count": 1,
+        "community_count": 0,
+        "official_servers": [
+          "Systeme.io MCP Server"
+        ],
+        "community_servers": []
+      },
+      "sub_tier": "Wave 1A: Existing Official MCP Server Ready",
+      "priority_rank": 1
+    },
+    {
+      "app_id": 12,
+      "app_name": "Intercom",
+      "category": "Support and Helpdesk",
+      "in_stratified_sample": false,
+      "scope": "Intercom customer support triage, conversation/contact lookup, and helpdesk automation via REST API or official hosted MCP server",
+      "blockers": [
+        "Public multi-tenant OAuth apps require Intercom App Store review",
+        "Free development workspaces are US-region only with feature limitations",
+        "MCP server does not yet support AU-hosted workspaces"
+      ],
+      "next_steps": [
+        "Provision free development workspace for OAuth/REST testing or connect to hosted MCP endpoint",
+        "Submit public OAuth app for Intercom review before multi-tenant distribution"
+      ],
+      "auth_methods": [
+        "API_key",
+        "OAuth2"
+      ],
+      "protocols": [
+        "REST"
+      ],
+      "breadth": "unknown",
+      "mcp": {
+        "status": "observed",
+        "value": "found",
+        "category": "official_only",
+        "official_count": 1,
+        "community_count": 0,
+        "official_servers": [
+          "Intercom Hosted Remote MCP Server"
+        ],
+        "community_servers": []
+      },
+      "sub_tier": "Wave 1A: Existing Official MCP Server Ready",
+      "priority_rank": 1
+    },
+    {
+      "app_id": 13,
+      "app_name": "Freshdesk",
+      "category": "Support and Helpdesk",
+      "in_stratified_sample": false,
+      "scope": "Freshdesk ticket triage, reply, and contact lookup toolkit via REST API v2 or official Freshdesk MCP server",
+      "blockers": [
+        "Official MCP server supports API key auth only (no OAuth) and enforces metered annual action allowances",
+        "Sandbox requires Enterprise tier",
+        "OAuth is documented for FDK Marketplace/Custom apps rather than standalone external MCP clients"
+      ],
+      "next_steps": [
+        "Prototype with free trial + personal API key on REST API v2 or tenant /mcp endpoint",
+        "Evaluate FDK OAuth app path if multi-tenant Marketplace distribution is needed"
+      ],
+      "auth_methods": [
+        "Basic",
+        "OAuth2",
+        "API_key"
+      ],
+      "protocols": [
+        "REST"
+      ],
+      "breadth": "unknown",
+      "mcp": {
+        "status": "observed",
+        "value": "found",
+        "category": "official_only",
+        "official_count": 1,
+        "community_count": 0,
+        "official_servers": [
+          "Freshworks MCP Server for Freshdesk"
+        ],
+        "community_servers": []
+      },
+      "sub_tier": "Wave 1A: Existing Official MCP Server Ready",
+      "priority_rank": 1
+    },
+    {
+      "app_id": 14,
+      "app_name": "Front",
+      "category": "Support and Helpdesk",
+      "in_stratified_sample": false,
+      "scope": "Front shared-inbox triage, conversation management, and configuration automation via Core REST API or official Front/Admin MCP servers",
+      "blockers": [
+        "Admin role required to create API tokens or authorize standard OAuth apps",
+        "MCP servers do not support Dynamic Client Registration (require confidential OAuth client ID/secret)"
+      ],
+      "next_steps": [
+        "Create a Starter trial workspace to test Core API Bearer tokens or confidential OAuth MCP connector",
+        "Register a public OAuth app for multi-tenant distribution"
+      ],
+      "auth_methods": [
+        "API_key",
+        "OAuth2"
+      ],
+      "protocols": [
+        "REST"
+      ],
+      "breadth": "unknown",
+      "mcp": {
+        "status": "observed",
+        "value": "found",
+        "category": "official_only",
+        "official_count": 2,
+        "community_count": 0,
+        "official_servers": [
+          "Front MCP Server",
+          "Front Admin MCP Server (Open Beta)"
+        ],
+        "community_servers": []
+      },
+      "sub_tier": "Wave 1A: Existing Official MCP Server Ready",
+      "priority_rank": 1
+    },
+    {
+      "app_id": 16,
+      "app_name": "LiveAgent",
+      "category": "Support and Helpdesk",
+      "in_stratified_sample": true,
+      "scope": "LiveAgent ticket/conversation support agent toolkit via built-in MCP server or REST API",
+      "blockers": [
+        "Captured public REST API documentation reflects older API v1 PHP examples",
+        "MCP tool calls count against a shared workspace AI budget"
+      ],
+      "next_steps": [
+        "Start a 30-day no-credit-card free trial to test the built-in /api/mcp endpoint and REST API",
+        "Authenticate via OAuth 2.1 + PKCE or personal MCP Bearer token"
+      ],
+      "auth_methods": [
+        "API_key",
+        "OAuth2",
+        "API_key"
+      ],
+      "protocols": [
+        "REST"
+      ],
+      "breadth": "unknown",
+      "mcp": {
+        "status": "observed",
+        "value": "found",
+        "category": "official_only",
+        "official_count": 1,
+        "community_count": 0,
+        "official_servers": [
+          "LiveAgent Built-in MCP Server"
+        ],
+        "community_servers": []
+      },
+      "sub_tier": "Wave 1A: Existing Official MCP Server Ready",
+      "priority_rank": 1
+    },
+    {
+      "app_id": 17,
+      "app_name": "Plain",
+      "category": "Support and Helpdesk",
+      "in_stratified_sample": false,
+      "scope": "Plain support thread triage, customer/account context, and reply automation via GraphQL API or official hosted MCP server",
+      "blockers": [
+        "OAuth apps are scoped to the workspace where created (workspace-level OAuth)",
+        "7-day trial window is short for extended prototyping"
+      ],
+      "next_steps": [
+        "Start a 7-day no-credit-card trial and create a Machine User API key or connect to https://mcp.plain.com/mcp via OAuth"
+      ],
+      "auth_methods": [
+        "API_key",
+        "OAuth2"
+      ],
+      "protocols": [
+        "GraphQL",
+        "SDK"
+      ],
+      "breadth": "unknown",
+      "mcp": {
+        "status": "observed",
+        "value": "found",
+        "category": "official_only",
+        "official_count": 1,
+        "community_count": 0,
+        "official_servers": [
+          "Plain Hosted MCP Server"
+        ],
+        "community_servers": []
+      },
+      "sub_tier": "Wave 1A: Existing Official MCP Server Ready",
+      "priority_rank": 1
+    },
+    {
+      "app_id": 5,
+      "app_name": "Twenty",
+      "category": "CRM and Sales",
+      "in_stratified_sample": false,
+      "scope": "CRM record and schema-metadata agent toolkit via Twenty REST/GraphQL APIs",
+      "blockers": [
+        "Schema-per-tenant endpoints require workspace-specific discovery for custom objects; Twenty Cloud production plans are paid (Pro $9/user/mo+) unless self-hosted."
+      ],
+      "next_steps": [
+        "Spin up a local Docker Compose instance or start a Twenty Cloud free trial and create a role-scoped API key.",
+        "Build against /rest/ or /graphql/ and /rest/metadata/ endpoints, or evaluate community MCP servers."
+      ],
+      "auth_methods": [
+        "API_key",
+        "OAuth2"
+      ],
+      "protocols": [
+        "REST",
+        "GraphQL"
+      ],
+      "breadth": "unknown",
+      "mcp": {
+        "status": "observed",
+        "value": "found",
+        "category": "community_only",
+        "official_count": 0,
+        "community_count": 1,
+        "official_servers": [],
+        "community_servers": [
+          "jezweb/twenty-mcp"
+        ]
+      },
+      "sub_tier": "Wave 1B: Community MCP Server Ready",
+      "priority_rank": 2
+    },
+    {
+      "app_id": 23,
+      "app_name": "Zoho Cliq",
+      "category": "Communications and Messaging",
+      "in_stratified_sample": false,
+      "scope": "Build a Zoho Cliq messaging, channels, reminders, and org-directory agent toolkit using REST API v2 and OAS 3.0 specs.",
+      "blockers": [
+        "Multi-datacenter routing required: OAuth and API base URLs vary across 9 regional Zoho domains (.com, .eu, .in, etc.).",
+        "No official Zoho Cliq MCP server was found in checked primary docs; only a community MCP repo was captured."
+      ],
+      "next_steps": [
+        "Register an OAuth 2.0 client in Zoho Developer Console and select required ZohoCliq.* scopes.",
+        "Use the downloadable OAS 3.0 YAML spec to generate typed REST API v2 tools with regional domain support and Zoho-oauthtoken header handling."
+      ],
+      "auth_methods": [
+        "OAuth2"
+      ],
+      "protocols": [
+        "REST"
+      ],
+      "breadth": "unknown",
+      "mcp": {
+        "status": "observed",
+        "value": "found",
+        "category": "community_only",
+        "official_count": 0,
+        "community_count": 1,
+        "official_servers": [],
+        "community_servers": [
+          "Cliq-MCP (rohansen856/cliq-mcp)"
+        ]
+      },
+      "sub_tier": "Wave 1B: Community MCP Server Ready",
+      "priority_rank": 2
+    },
+    {
+      "app_id": 26,
+      "app_name": "Discord",
+      "category": "Communications and Messaging",
+      "in_stratified_sample": false,
+      "scope": "Build a Discord server/channel/messaging agent toolkit via HTTP REST API v10 (Bot token + OAuth2) or community MCP wrapper.",
+      "blockers": [
+        "Sensitive OAuth2 scopes (e.g., dm_channels.read, rpc.*, voice) are restricted to Discord-approved partners.",
+        "No official Discord MCP server was found in checked primary docs; only community MCP implementations were captured.",
+        "Discord pricing/free-tier billing terms for developer portal usage were not captured on a dedicated pricing page (left unknown rather than assumed)."
+      ],
+      "next_steps": [
+        "Create a Discord application in the Developer Portal, generate a Bot token, and configure required privileged intents (e.g., Message Content Intent for reading messages).",
+        "Build against https://discord.com/api/v10 REST endpoints and OAuth2 bot installation flow."
+      ],
+      "auth_methods": [
+        "other",
+        "OAuth2",
+        "Basic"
+      ],
+      "protocols": [
+        "REST",
+        "other",
+        "SDK"
+      ],
+      "breadth": "unknown",
+      "mcp": {
+        "status": "observed",
+        "value": "found",
+        "category": "community_only",
+        "official_count": 0,
+        "community_count": 1,
+        "official_servers": [],
+        "community_servers": [
+          "Discord MCP Server (hanweg/mcp-discord)"
+        ]
+      },
+      "sub_tier": "Wave 1B: Community MCP Server Ready",
+      "priority_rank": 2
+    },
+    {
+      "app_id": 27,
+      "app_name": "Telegram",
+      "category": "Communications and Messaging",
+      "in_stratified_sample": true,
+      "scope": "Build a Telegram Bot API messaging/notification/group-management agent toolkit (and optional MTProto user-client toolkit).",
+      "blockers": [
+        "Bots cannot initiate private conversations with users first (users must message the bot or add it to a group) and have Privacy Mode enabled in groups by default.",
+        "No official Telegram MCP server was found in checked primary docs; only community Bot API and MTProto MCP servers were captured."
+      ],
+      "next_steps": [
+        "Register a bot via @BotFather to obtain a free bot token.",
+        "Wrap HTTPS Bot API v10.5 methods (or evaluate @node2flow/telegram-bot-mcp), choosing webhooks or getUpdates for inbound events."
+      ],
+      "auth_methods": [
+        "other",
+        "other"
+      ],
+      "protocols": [
+        "RPC",
+        "other"
+      ],
+      "breadth": "unknown",
+      "mcp": {
+        "status": "observed",
+        "value": "found",
+        "category": "community_only",
+        "official_count": 0,
+        "community_count": 2,
+        "official_servers": [],
+        "community_servers": [
+          "Telegram Bot MCP Server (node2flow-th/telegram-bot-mcp-community)",
+          "Telegram MTProto MCP Server (sparfenyuk/mcp-telegram)"
+        ]
+      },
+      "sub_tier": "Wave 1B: Community MCP Server Ready",
+      "priority_rank": 2
+    },
+    {
+      "app_id": 35,
+      "app_name": "Mailchimp",
+      "category": "Marketing, Ads, Email and Social",
+      "in_stratified_sample": false,
+      "scope": "Build Mailchimp Marketing API v3.0 agent integration for audiences, contacts, campaigns, and reporting",
+      "blockers": [
+        "Free plan is capped at 250 contacts and 500 email sends/month (250/day), with sending paused when exceeded; higher volumes require Essentials, Standard, or Premium paid plans."
+      ],
+      "next_steps": [
+        "Create a Free Mailchimp account and generate an API key (for single-tenant) or register an OAuth 2.0 app (for multi-tenant).",
+        "Call Mailchimp Marketing API v3.0 REST endpoints or official SDKs directly."
+      ],
+      "auth_methods": [
+        "API_key",
+        "OAuth2"
+      ],
+      "protocols": [
+        "REST",
+        "SDK"
+      ],
+      "breadth": "unknown",
+      "mcp": {
+        "status": "observed",
+        "value": "found",
+        "category": "community_only",
+        "official_count": 0,
+        "community_count": 1,
+        "official_servers": [],
+        "community_servers": [
+          "mcp-mailchimp (AlexlaGuardia/mcp-mailchimp)"
+        ]
+      },
+      "sub_tier": "Wave 1B: Community MCP Server Ready",
+      "priority_rank": 2
+    },
+    {
+      "app_id": 40,
+      "app_name": "SendGrid",
+      "category": "Marketing, Ads, Email and Social",
+      "in_stratified_sample": true,
+      "scope": "Build Twilio SendGrid transactional/marketing email and contact management integration via Web API v3",
+      "blockers": [
+        "Free trial is limited to 60 days (100 emails/day); ongoing production use requires a paid plan (Essentials from $19.95/mo).",
+        "API key authentication only (no OAuth 2.0 flow documented); sender identity/domain must be verified before sending; no official Twilio SendGrid execution MCP server found."
+      ],
+      "next_steps": [
+        "Sign up for the 60-day free trial (no credit card required) and create a scoped API key in Settings > API Keys.",
+        "Authenticate with Authorization: Bearer <API_KEY> against SendGrid Web API v3 or use official SDKs."
+      ],
+      "auth_methods": [
+        "API_key",
+        "Basic"
+      ],
+      "protocols": [
+        "REST",
+        "SDK"
+      ],
+      "breadth": "unknown",
+      "mcp": {
+        "status": "observed",
+        "value": "found",
+        "category": "community_only",
+        "official_count": 0,
+        "community_count": 1,
+        "official_servers": [],
+        "community_servers": [
+          "SendGrid MCP Server (Garoth/sendgrid-mcp)"
+        ]
+      },
+      "sub_tier": "Wave 1B: Community MCP Server Ready",
+      "priority_rank": 2
+    },
+    {
+      "app_id": 11,
+      "app_name": "Zendesk",
+      "category": "Support and Helpdesk",
+      "in_stratified_sample": false,
+      "scope": "Zendesk Support ticketing, triage, and customer-context agent toolkit via REST API v2 (OAuth 2.0)",
+      "blockers": [
+        "API tokens are deprecated in favor of OAuth 2.0",
+        "Multi-tenant public distribution requires Global OAuth client approval",
+        "Sandbox environment is gated to Enterprise tier"
+      ],
+      "next_steps": [
+        "Use 14-day Suite Professional trial for single-tenant OAuth prototyping",
+        "Apply for Global OAuth client if distributing to multiple Zendesk customers"
+      ],
+      "auth_methods": [
+        "OAuth2",
+        "OAuth2",
+        "Basic"
+      ],
+      "protocols": [
+        "REST"
+      ],
+      "breadth": "unknown",
+      "mcp": {
+        "status": "observed",
+        "value": "found",
+        "category": "community_only",
+        "official_count": 0,
+        "community_count": 1,
+        "official_servers": [],
+        "community_servers": [
+          "reminia/zendesk-mcp-server"
+        ]
+      },
+      "sub_tier": "Wave 1B: Community MCP Server Ready",
+      "priority_rank": 2
+    },
+    {
+      "app_id": 98,
+      "app_name": "Mermaid CLI",
+      "category": "AI, Research and Media-native",
+      "in_stratified_sample": true,
+      "scope": "Wrap local mmdc CLI or Node.js run() API to render Mermaid diagrams to SVG/PNG/PDF",
+      "blockers": [
+        "Requires local Node.js/Chromium or Docker/Podman runtime; Linux sandbox and Docker permission caveats apply.",
+        "Node.js programmatic API is explicitly not covered by semver.",
+        "No official MCP server found in checked official repo docs (local CLI wrapper needed)."
+      ],
+      "next_steps": [
+        "Install @mermaid-js/mermaid-cli locally or pull ghcr.io/mermaid-js/mermaid-cli/mermaid-cli.",
+        "Invoke mmdc -i input.mmd -o output.svg (or PNG/PDF) in a sandboxed local tool wrapper."
+      ],
+      "auth_methods": [
+        "none"
+      ],
+      "protocols": [
+        "CLI",
+        "SDK"
+      ],
+      "breadth": "unknown",
+      "mcp": {
+        "status": "not_found_in_checked_sources",
+        "value": null,
+        "category": "not_found_bounded",
+        "official_count": 0,
+        "community_count": 0,
+        "official_servers": [],
+        "community_servers": []
+      },
+      "sub_tier": "Wave 1C: Local CLI / Direct Execution Tool",
+      "priority_rank": 3
+    },
+    {
+      "app_id": 58,
+      "app_name": "Sherlock",
+      "category": "Data, SEO and Scraping",
+      "in_stratified_sample": false,
+      "scope": "Wrap the local open-source Sherlock CLI (or Docker image sherlock/sherlock) as a bounded agent tool returning structured CSV/text username-search output.",
+      "blockers": [
+        "Sherlock is a local CLI utility rather than a hosted REST API, and no MCP server was found in checked official sources; execution requires a Python/container runtime and outbound network access to target sites, which may rate-limit or block probes."
+      ],
+      "next_steps": [
+        "Install sherlock-project via pipx/pip or pull the official sherlock/sherlock Docker image.",
+        "Invoke `sherlock --csv --timeout <sec> --print-found <username>` in a subprocess with bounded timeouts and parse the generated output."
+      ],
+      "auth_methods": [
+        "none"
+      ],
+      "protocols": [
+        "CLI"
+      ],
+      "breadth": "unknown",
+      "mcp": {
+        "status": "not_found_in_checked_sources",
+        "value": null,
+        "category": "not_found_bounded",
+        "official_count": 0,
+        "community_count": 0,
+        "official_servers": [],
+        "community_servers": []
+      },
+      "sub_tier": "Wave 1C: Local CLI / Direct Execution Tool",
+      "priority_rank": 3
+    },
+    {
+      "app_id": 6,
+      "app_name": "Podio",
+      "category": "CRM and Sales",
+      "in_stratified_sample": false,
+      "scope": "CRM app-item, contact, and task automation via Podio REST API",
+      "blockers": [
+        "No official MCP server found in checked Podio docs; requires custom REST wrapper using OAuth 2.0 (or App auth for single-app scripts)."
+      ],
+      "next_steps": [
+        "Create a free Podio account and generate Client ID/Secret from account settings.",
+        "Implement OAuth 2.0 Server-side flow (multi-user) or App authentication flow (single-app) against Podio REST API."
+      ],
+      "auth_methods": [
+        "OAuth2",
+        "OAuth2",
+        "OAuth2"
+      ],
+      "protocols": [
+        "REST"
+      ],
+      "breadth": "unknown",
+      "mcp": {
+        "status": "not_found_in_checked_sources",
+        "value": null,
+        "category": "not_found_bounded",
+        "official_count": 0,
+        "community_count": 0,
+        "official_servers": [],
+        "community_servers": []
+      },
+      "sub_tier": "Wave 1D: Self-Serve REST/SDK API Wrapper",
+      "priority_rank": 4
+    }
+  ],
+  "conditional": [
+    {
+      "app_id": 92,
+      "app_name": "Otter AI",
+      "category": "AI, Research and Media-native",
+      "in_stratified_sample": false,
+      "scope": "Connect an existing authorized Otter user to meeting-search/transcript-fetch MCP; Enterprise API is a separate optional route",
+      "blockers": [
+        "MCP requires Otter account OAuth authorization and meetings shared with that user.",
+        "Captured MCP setup docs do not settle plan eligibility.",
+        "Enterprise API requires account-manager enablement; this is not an API-key alternative for MCP authentication."
+      ],
+      "next_steps": [
+        "Confirm MCP account/plan entitlement and authorize the user.",
+        "If using Enterprise REST instead, ask the account manager to enable access and create an API key."
+      ],
+      "auth_methods": [
+        "OAuth2",
+        "API_key"
+      ],
+      "protocols": [
+        "REST",
+        "other"
+      ],
+      "breadth": "unknown",
+      "mcp": {
+        "status": "observed",
+        "value": "found",
+        "category": "official_only",
+        "official_count": 1,
+        "community_count": 0,
+        "official_servers": [
+          "Otter MCP Server"
+        ],
+        "community_servers": []
+      },
+      "gating_condition": "Cloud Infrastructure / Usage Quota / Environment Setup"
+    },
+    {
+      "app_id": 93,
+      "app_name": "Fathom",
+      "category": "AI, Research and Media-native",
+      "in_stratified_sample": false,
+      "scope": "Read authorized Fathom meeting data using a user API key or callable MCP; multi-user OAuth is a separate launch scope",
+      "blockers": [
+        "API keys inherit user/team sharing and never grant private-meeting access.",
+        "Plan/free-use eligibility was not established in captured sources.",
+        "Public OAuth apps are subject to review; this does not automatically gate an internal API-key workflow."
+      ],
+      "next_steps": [
+        "Confirm plan entitlements, then generate a user API key or authorize MCP.",
+        "For a distributable OAuth app, register it and confirm the vendor review requirements."
+      ],
+      "auth_methods": [
+        "API_key",
+        "OAuth2"
+      ],
+      "protocols": [
+        "REST",
+        "SDK"
+      ],
+      "breadth": "unknown",
+      "mcp": {
+        "status": "observed",
+        "value": "found",
+        "category": "official_only",
+        "official_count": 1,
+        "community_count": 0,
+        "official_servers": [
+          "Fathom MCP Server"
+        ],
+        "community_servers": []
+      },
+      "gating_condition": "Cloud Infrastructure / Usage Quota / Environment Setup"
+    },
+    {
+      "app_id": 62,
+      "app_name": "Vercel",
+      "category": "Developer, Infra and Data platforms",
+      "in_stratified_sample": false,
+      "scope": "Inspect a permitted Vercel project deployment and logs.",
+      "blockers": [
+        "Account/team permissions and OAuth grants constrain tools."
+      ],
+      "next_steps": [
+        "Use a supported or CIMD client; verify plan suitability and minimal access before testing."
+      ],
+      "auth_methods": [
+        "Bearer_token",
+        "OAuth2"
+      ],
+      "protocols": [
+        "REST"
+      ],
+      "breadth": "unknown",
+      "mcp": {
+        "status": "observed",
+        "value": "found",
+        "category": "official_only",
+        "official_count": 1,
+        "community_count": 0,
+        "official_servers": [
+          "Vercel MCP"
+        ],
+        "community_servers": []
+      },
+      "gating_condition": "Cloud Infrastructure / Usage Quota / Environment Setup"
+    },
+    {
+      "app_id": 63,
+      "app_name": "Netlify",
+      "category": "Developer, Infra and Data platforms",
+      "in_stratified_sample": false,
+      "scope": "Read sites and deployment status with PAT or official MCP.",
+      "blockers": [
+        "Netlify account and resource authorization required; local MCP needs Node.js 22+."
+      ],
+      "next_steps": [
+        "Select OAuth2 for a public integration or personal PAT for own-account scripts."
+      ],
+      "auth_methods": [
+        "Bearer_token",
+        "OAuth2"
+      ],
+      "protocols": [
+        "REST"
+      ],
+      "breadth": "unknown",
+      "mcp": {
+        "status": "observed",
+        "value": "found",
+        "category": "official_only",
+        "official_count": 1,
+        "community_count": 0,
+        "official_servers": [
+          "Netlify MCP"
+        ],
+        "community_servers": []
+      },
+      "gating_condition": "Cloud Infrastructure / Usage Quota / Environment Setup"
+    },
+    {
+      "app_id": 64,
+      "app_name": "Cloudflare",
+      "category": "Developer, Infra and Data platforms",
+      "in_stratified_sample": true,
+      "scope": "Read scoped DNS records and account configuration through v4 API or MCP.",
+      "blockers": [
+        "Token policies must include target resources and permissions."
+      ],
+      "next_steps": [
+        "Choose compatible endpoint/token type; check feature plan requirements and validate read-only calls later."
+      ],
+      "auth_methods": [
+        "Bearer_token"
+      ],
+      "protocols": [
+        "REST"
+      ],
+      "breadth": "unknown",
+      "mcp": {
+        "status": "observed",
+        "value": "found",
+        "category": "official_only",
+        "official_count": 1,
+        "community_count": 0,
+        "official_servers": [
+          "Cloudflare remote MCP servers"
+        ],
+        "community_servers": []
+      },
+      "gating_condition": "Cloud Infrastructure / Usage Quota / Environment Setup"
+    },
+    {
+      "app_id": 65,
+      "app_name": "Supabase",
+      "category": "Developer, Infra and Data platforms",
+      "in_stratified_sample": true,
+      "scope": "Project-scoped read-only database diagnostics through Data API or MCP.",
+      "blockers": [
+        "Secret project keys bypass RLS and require server-side protection; MCP developer privileges must be scoped."
+      ],
+      "next_steps": [
+        "Use project-scoped read-only MCP with restricted feature groups; choose Data API versus Management credentials explicitly."
+      ],
+      "auth_methods": [
+        "API_key",
+        "Bearer_token",
+        "OAuth2"
+      ],
+      "protocols": [
+        "REST"
+      ],
+      "breadth": "unknown",
+      "mcp": {
+        "status": "observed",
+        "value": "found",
+        "category": "official_only",
+        "official_count": 1,
+        "community_count": 0,
+        "official_servers": [
+          "Supabase MCP"
+        ],
+        "community_servers": []
+      },
+      "gating_condition": "Cloud Infrastructure / Usage Quota / Environment Setup"
+    },
+    {
+      "app_id": 66,
+      "app_name": "Neo4j",
+      "category": "Developer, Infra and Data platforms",
+      "in_stratified_sample": false,
+      "scope": "Read graph schema and execute bounded Cypher against a permitted database.",
+      "blockers": [
+        "Running database and APOC plugin required for documented MCP."
+      ],
+      "next_steps": [
+        "Use Basic for Community; configure SSO only on supported Enterprise/Aura path; later validate minimal read privileges."
+      ],
+      "auth_methods": [
+        "Basic",
+        "Bearer_token"
+      ],
+      "protocols": [
+        "other"
+      ],
+      "breadth": "unknown",
+      "mcp": {
+        "status": "observed",
+        "value": "found",
+        "category": "official_only",
+        "official_count": 1,
+        "community_count": 0,
+        "official_servers": [
+          "Neo4j MCP"
+        ],
+        "community_servers": []
+      },
+      "gating_condition": "Cloud Infrastructure / Usage Quota / Environment Setup"
+    },
+    {
+      "app_id": 68,
+      "app_name": "MongoDB Atlas",
+      "category": "Developer, Infra and Data platforms",
+      "in_stratified_sample": false,
+      "scope": "Inspect permitted Atlas clusters/projects using service-account administration or MCP.",
+      "blockers": [
+        "Atlas tool service account needs matching roles; delegated plugin needs org opt-in."
+      ],
+      "next_steps": [
+        "Separate Admin API from database credentials; check local/managed tool support and choose least-privileged roles."
+      ],
+      "auth_methods": [
+        "OAuth2",
+        "API_key"
+      ],
+      "protocols": [
+        "CLI",
+        "SDK"
+      ],
+      "breadth": "unknown",
+      "mcp": {
+        "status": "observed",
+        "value": "found",
+        "category": "official_only",
+        "official_count": 1,
+        "community_count": 0,
+        "official_servers": [
+          "MongoDB MCP server"
+        ],
+        "community_servers": []
+      },
+      "gating_condition": "Cloud Infrastructure / Usage Quota / Environment Setup"
+    },
+    {
+      "app_id": 70,
+      "app_name": "Sentry",
+      "category": "Developer, Infra and Data platforms",
+      "in_stratified_sample": false,
+      "scope": "Read scoped Sentry issues and project diagnostics through remote MCP.",
+      "blockers": [
+        "Target account token permissions and plan entitlement must match workflow."
+      ],
+      "next_steps": [
+        "Scope MCP to target org/project; independently check required Web API plan entitlement before extending beyond MCP."
+      ],
+      "auth_methods": [
+        "Bearer_token",
+        "OAuth2",
+        "OAuth2"
+      ],
+      "protocols": [
+        "other"
+      ],
+      "breadth": "unknown",
+      "mcp": {
+        "status": "observed",
+        "value": "found",
+        "category": "official_only",
+        "official_count": 1,
+        "community_count": 0,
+        "official_servers": [
+          "Sentry MCP"
+        ],
+        "community_servers": []
+      },
+      "gating_condition": "Cloud Infrastructure / Usage Quota / Environment Setup"
+    },
+    {
+      "app_id": 83,
+      "app_name": "Binance",
+      "category": "Finance and Fintech",
+      "in_stratified_sample": true,
+      "scope": "Binance global Spot REST/WebSocket API and community MCP server; public market data is open while signed production trading depends on regional/KYC eligibility.",
+      "blockers": [
+        "Regional/jurisdictional eligibility and KYC requirements for global Binance production accounts are unresolved in captured docs.",
+        "No official vendor-endorsed MCP server was found in checked official Spot API sources.",
+        "Spot Testnet supports /api/* only (not /sapi/*) and resets roughly monthly; developers.binance.com HTML returned empty readable content."
+      ],
+      "next_steps": [
+        "Build against public market-data endpoints and Spot Testnet using official connectors.",
+        "Verify jurisdictional eligibility and Binance account KYC/API Management permissions before enabling live TRADE keys."
+      ],
+      "auth_methods": [
+        "none",
+        "API_key"
+      ],
+      "protocols": [
+        "REST",
+        "other",
+        "SDK"
+      ],
+      "breadth": "unknown",
+      "mcp": {
+        "status": "observed",
+        "value": "found",
+        "category": "community_only",
+        "official_count": 0,
+        "community_count": 1,
+        "official_servers": [],
+        "community_servers": [
+          "Binance MCP (mujeeb8/Binance-MCP)"
+        ]
+      },
+      "gating_condition": "Cloud Infrastructure / Usage Quota / Environment Setup"
+    },
+    {
+      "app_id": 85,
+      "app_name": "iPayX",
+      "category": "Finance and Fintech",
+      "in_stratified_sample": false,
+      "scope": "iPayX FX Audit remote MCP server (https://mcp.ipayx.ai/mcp); primary REST API and pricing remain uncaptured.",
+      "blockers": [
+        "ipayx.ai/docs, /docs/api, /docs/mcp, and /api-terms returned 1-line JS SPA shells under static HTTP capture, and ipayx.ai/pricing timed out.",
+        "Vendor-domain confirmation linking ipayx.ai to GitHub org iPAYX-Technologies could not be verified from static HTML.",
+        "Full forensic report tool requires a Bearer API key from ipayx.ai/ai-access whose pricing/terms were not captured."
+      ],
+      "next_steps": [
+        "Capture JS-rendered ipayx.ai/docs, /pricing, and /ai-access pages to confirm official MCP ownership, REST API surface, and paid-tier terms.",
+        "Evaluate read-only free MCP tools against operational requirements once ownership is verified."
+      ],
+      "auth_methods": [],
+      "protocols": [],
+      "breadth": "unknown",
+      "mcp": {
+        "status": "observed",
+        "value": "found",
+        "category": "community_only",
+        "official_count": 0,
+        "community_count": 1,
+        "official_servers": [],
+        "community_servers": [
+          "iPayX FX Audit MCP (iPAYX-Technologies/mcp-fx-audit)"
+        ]
+      },
+      "gating_condition": "Cloud Infrastructure / Usage Quota / Environment Setup"
+    },
+    {
+      "app_id": 71,
+      "app_name": "Notion",
+      "category": "Productivity and Project Management",
+      "in_stratified_sample": false,
+      "scope": "Create and update permitted Notion pages through an API wrapper or hosted MCP.",
+      "blockers": [
+        "Internal connections require owner creation and shared pages; Business/Enterprise PAT creation is restricted by default until owner-enabled.",
+        "Hosted MCP excludes guests; unattended MCP token path requires Business/Enterprise owner."
+      ],
+      "next_steps": [
+        "Select PAT, internal connection, or OAuth actor model; check workspace controls.",
+        "Validate permissions and rate limits in an authorized workspace before deployment."
+      ],
+      "auth_methods": [
+        "Bearer_token",
+        "Bearer_token",
+        "OAuth2"
+      ],
+      "protocols": [
+        "REST",
+        "SDK"
+      ],
+      "breadth": "unknown",
+      "mcp": {
+        "status": "observed",
+        "value": "found",
+        "category": "official_only",
+        "official_count": 1,
+        "community_count": 0,
+        "official_servers": [
+          "Notion hosted MCP"
+        ],
+        "community_servers": []
+      },
+      "gating_condition": "Cloud Infrastructure / Usage Quota / Environment Setup"
+    },
+    {
+      "app_id": 75,
+      "app_name": "Asana",
+      "category": "Productivity and Project Management",
+      "in_stratified_sample": false,
+      "scope": "Read projects and manage permitted tasks through REST or standard Asana V2 MCP.",
+      "blockers": [
+        "Free-account tests do not establish premium-feature entitlements.",
+        "Requested isolated sandbox has provisioning/term limits; MCP requires pre-registration and separate MCP tokens."
+      ],
+      "next_steps": [
+        "Choose ordinary workspace testing or request a scoped sandbox.",
+        "Register OAuth API/MCP app with correct distribution and permissions before authorized tests."
+      ],
+      "auth_methods": [
+        "Bearer_token",
+        "OAuth2"
+      ],
+      "protocols": [
+        "REST"
+      ],
+      "breadth": "unknown",
+      "mcp": {
+        "status": "observed",
+        "value": "found",
+        "category": "official_only",
+        "official_count": 1,
+        "community_count": 0,
+        "official_servers": [
+          "Asana V2 MCP"
+        ],
+        "community_servers": []
+      },
+      "gating_condition": "Cloud Infrastructure / Usage Quota / Environment Setup"
+    },
+    {
+      "app_id": 80,
+      "app_name": "Harvest",
+      "category": "Productivity and Project Management",
+      "in_stratified_sample": false,
+      "scope": "Track time and inspect permitted Harvest projects/expenses/invoices through official REST API v2.",
+      "blockers": [
+        "Account ID and correctly identified application User-Agent are required.",
+        "Free/trial API entitlement remains unconfirmed; no operational test was performed."
+      ],
+      "next_steps": [
+        "Confirm API credential eligibility for intended Harvest account plan.",
+        "Validate the official REST workflow in an authorized account after credential approval."
+      ],
+      "auth_methods": [
+        "Bearer_token",
+        "OAuth2",
+        "OAuth2"
+      ],
+      "protocols": [
+        "REST"
+      ],
+      "breadth": "unknown",
+      "mcp": {
+        "status": "observed",
+        "value": "found",
+        "category": "community_only",
+        "official_count": 0,
+        "community_count": 1,
+        "official_servers": [],
+        "community_servers": [
+          "Southleft Harvest MCP"
+        ]
+      },
+      "gating_condition": "Cloud Infrastructure / Usage Quota / Environment Setup"
+    },
+    {
+      "app_id": 91,
+      "app_name": "NotebookLM",
+      "category": "AI, Research and Media-native",
+      "in_stratified_sample": false,
+      "scope": "Create/manage Enterprise notebooks and sources with licensed user REST credentials",
+      "blockers": [
+        "Active Enterprise license and Cloud NotebookLM User IAM role are required.",
+        "API is Preview/Pre-GA with limited-support caveats.",
+        "Google Docs/Slides source imports need extra Google Drive authorization."
+      ],
+      "next_steps": [
+        "Have the customer administrator set up trial or paid licensing and IAM.",
+        "Confirm region, preview terms and intended deployment suitability before implementing the REST wrapper."
+      ],
+      "auth_methods": [
+        "Bearer_token"
+      ],
+      "protocols": [
+        "REST"
+      ],
+      "breadth": "unknown",
+      "mcp": {
+        "status": "not_found_in_checked_sources",
+        "value": null,
+        "category": "not_found_bounded",
+        "official_count": 0,
+        "community_count": 0,
+        "official_servers": [],
+        "community_servers": []
+      },
+      "gating_condition": "Organization / Tenant Admin Consent Required"
+    },
+    {
+      "app_id": 96,
+      "app_name": "Devin",
+      "category": "AI, Research and Media-native",
+      "in_stratified_sample": false,
+      "scope": "Manage Devin sessions, knowledge, automations, and repo wikis via v3 REST API or callable Devin MCP server",
+      "blockers": [
+        "Requires an active Devin Teams or Enterprise account (pricing/free-tier terms not established in captured sources).",
+        "Service user provisioning requires org/enterprise Admin permissions, and Enterprise PATs are disabled by default pending admin policy.",
+        "Enterprise keys and PATs must supply X-Org-Id when calling Devin MCP; legacy apk_ keys cannot run session/platform tools."
+      ],
+      "next_steps": [
+        "Provision a Member- or Admin-role cog_ service user key in Settings > Devin API.",
+        "Call https://api.devin.ai/v3/organizations/{org_id}/* or connect https://mcp.devin.ai/mcp with Authorization: Bearer."
+      ],
+      "auth_methods": [
+        "API_key",
+        "Bearer_token",
+        "API_key"
+      ],
+      "protocols": [
+        "REST",
+        "other"
+      ],
+      "breadth": "unknown",
+      "mcp": {
+        "status": "observed",
+        "value": "found",
+        "category": "official_only",
+        "official_count": 1,
+        "community_count": 0,
+        "official_servers": [
+          "Devin MCP Server"
+        ],
+        "community_servers": []
+      },
+      "gating_condition": "Organization / Tenant Admin Consent Required"
+    },
+    {
+      "app_id": 61,
+      "app_name": "GitHub",
+      "category": "Developer, Infra and Data platforms",
+      "in_stratified_sample": false,
+      "scope": "Read accessible repository/issues and diagnose workflows through REST or MCP.",
+      "blockers": [
+        "PAT permissions and organization policies must allow each target resource."
+      ],
+      "next_steps": [
+        "Select minimal repository and endpoint permissions; independently test read-only integration later."
+      ],
+      "auth_methods": [
+        "Bearer_token",
+        "OAuth2",
+        "Basic"
+      ],
+      "protocols": [
+        "REST"
+      ],
+      "breadth": "unknown",
+      "mcp": {
+        "status": "observed",
+        "value": "found",
+        "category": "official_only",
+        "official_count": 1,
+        "community_count": 0,
+        "official_servers": [
+          "GitHub MCP server"
+        ],
+        "community_servers": []
+      },
+      "gating_condition": "Organization / Tenant Admin Consent Required"
+    },
+    {
+      "app_id": 69,
+      "app_name": "Datadog",
+      "category": "Developer, Infra and Data platforms",
+      "in_stratified_sample": false,
+      "scope": "Read authorized logs/dashboards using REST or remote MCP.",
+      "blockers": [
+        "User/API/application-key permissions and organization MCP restrictions constrain access."
+      ],
+      "next_steps": [
+        "Select actual Datadog site endpoint and minimal scopes; check organization MCP settings."
+      ],
+      "auth_methods": [
+        "API_key",
+        "OAuth2",
+        "Bearer_token"
+      ],
+      "protocols": [
+        "REST"
+      ],
+      "breadth": "unknown",
+      "mcp": {
+        "status": "observed",
+        "value": "found",
+        "category": "official_only",
+        "official_count": 1,
+        "community_count": 0,
+        "official_servers": [
+          "Datadog MCP server"
+        ],
+        "community_servers": []
+      },
+      "gating_condition": "Organization / Tenant Admin Consent Required"
+    },
+    {
+      "app_id": 45,
+      "app_name": "Magento (Adobe Commerce)",
+      "category": "Ecommerce",
+      "in_stratified_sample": false,
+      "scope": "Magento Open Source / Adobe Commerce REST and GraphQL API integration",
+      "blockers": [
+        "Distinct auth stacks between PaaS/Open Source (token/OAuth 1.0a) and SaaS (Adobe IMS OAuth 2.0)",
+        "Commercial Adobe Commerce pricing/licensing page timed out during capture; enterprise SaaS access requires Adobe Commerce licensing"
+      ],
+      "next_steps": [
+        "Target Magento Open Source self-hosted instance for free development/testing",
+        "Implement Bearer token/OAuth 1.0a for PaaS or Adobe IMS Bearer auth for SaaS"
+      ],
+      "auth_methods": [
+        "Bearer_token",
+        "other",
+        "session_cookie",
+        "OAuth2"
+      ],
+      "protocols": [
+        "REST",
+        "GraphQL"
+      ],
+      "breadth": "unknown",
+      "mcp": {
+        "status": "not_found_in_checked_sources",
+        "value": null,
+        "category": "not_found_bounded",
+        "official_count": 0,
+        "community_count": 0,
+        "official_servers": [],
+        "community_servers": []
+      },
+      "gating_condition": "Organization / Tenant Admin Consent Required"
+    },
+    {
+      "app_id": 72,
+      "app_name": "Airtable",
+      "category": "Productivity and Project Management",
+      "in_stratified_sample": false,
+      "scope": "Read permitted Airtable table records and create bases via Web API or connect external clients to Airtable MCP.",
+      "blockers": [
+        "PAT scopes, base permissions, and plan call quotas (1,000 calls/workspace/month on Free) constrain operations.",
+        "Restricted organizations require admin allowlisting for third-party/MCP integrations."
+      ],
+      "next_steps": [
+        "Confirm intended base-level access, call quota, and organization allowlist policy.",
+        "Inspect full OAuth grant/endpoint reference in a browser-capable session before an authorized test (static HTTP capture of developer-reference pages returned JS shells)."
+      ],
+      "auth_methods": [
+        "other",
+        "OAuth2"
+      ],
+      "protocols": [],
+      "breadth": "unknown",
+      "mcp": {
+        "status": "observed",
+        "value": "found",
+        "category": "official_only",
+        "official_count": 1,
+        "community_count": 0,
+        "official_servers": [
+          "Airtable hosted MCP"
+        ],
+        "community_servers": []
+      },
+      "gating_condition": "Organization / Tenant Admin Consent Required"
+    },
+    {
+      "app_id": 73,
+      "app_name": "Linear",
+      "category": "Productivity and Project Management",
+      "in_stratified_sample": false,
+      "scope": "Query teams and read/create/edit issues through a GraphQL agent wrapper or Linear hosted MCP.",
+      "blockers": [
+        "Member API key creation depends on workspace policy; OAuth application administration requires admin permissions.",
+        "Plan-specific credential costs and isolated sandbox entitlement are unresolved."
+      ],
+      "next_steps": [
+        "Choose personal-key or user/app OAuth actor route.",
+        "Check workspace policy, permissions and limits before authorized testing."
+      ],
+      "auth_methods": [
+        "API_key",
+        "OAuth2",
+        "OAuth2"
+      ],
+      "protocols": [
+        "GraphQL",
+        "SDK"
+      ],
+      "breadth": "unknown",
+      "mcp": {
+        "status": "observed",
+        "value": "found",
+        "category": "official_only",
+        "official_count": 1,
+        "community_count": 0,
+        "official_servers": [
+          "Linear hosted MCP"
+        ],
+        "community_servers": []
+      },
+      "gating_condition": "Organization / Tenant Admin Consent Required"
+    },
+    {
+      "app_id": 74,
+      "app_name": "Jira",
+      "category": "Productivity and Project Management",
+      "in_stratified_sample": false,
+      "scope": "Read and update permitted Jira Cloud issues/projects via REST v3 or hosted MCP.",
+      "blockers": [
+        "Operations require the calling user permissions.",
+        "Commercial integrations must use a distributable 3LO app rather than collect customer API tokens.",
+        "Headless MCP token authentication requires organization-admin enablement."
+      ],
+      "next_steps": [
+        "Choose personal script or distributable OAuth integration model.",
+        "Confirm site, project permissions and admin MCP policy before authorized tests."
+      ],
+      "auth_methods": [
+        "Basic",
+        "OAuth2"
+      ],
+      "protocols": [
+        "REST"
+      ],
+      "breadth": "unknown",
+      "mcp": {
+        "status": "observed",
+        "value": "found",
+        "category": "official_only",
+        "official_count": 1,
+        "community_count": 0,
+        "official_servers": [
+          "Atlassian remote MCP for Jira Cloud"
+        ],
+        "community_servers": []
+      },
+      "gating_condition": "Organization / Tenant Admin Consent Required"
+    },
+    {
+      "app_id": 76,
+      "app_name": "Monday.com",
+      "category": "Productivity and Project Management",
+      "in_stratified_sample": true,
+      "scope": "Query boards/columns and create board items via GraphQL, or use hosted MCP under permitted actor.",
+      "blockers": [
+        "Free developer sandbox is explicitly not for production business workflows or end customers.",
+        "MCP user permissions and AI Connector admin policy apply."
+      ],
+      "next_steps": [
+        "Keep developer account and production data separate.",
+        "Choose personal API token or appropriate OAuth integration route; check limits before authorized tests."
+      ],
+      "auth_methods": [
+        "API_key",
+        "OAuth2",
+        "OAuth2"
+      ],
+      "protocols": [
+        "GraphQL"
+      ],
+      "breadth": "unknown",
+      "mcp": {
+        "status": "observed",
+        "value": "found",
+        "category": "official_only",
+        "official_count": 1,
+        "community_count": 0,
+        "official_servers": [
+          "monday hosted MCP"
+        ],
+        "community_servers": []
+      },
+      "gating_condition": "Organization / Tenant Admin Consent Required"
+    },
+    {
+      "app_id": 77,
+      "app_name": "ClickUp",
+      "category": "Productivity and Project Management",
+      "in_stratified_sample": true,
+      "scope": "Manage permitted ClickUp lists/comments/time entries via public API or task workflows through hosted MCP.",
+      "blockers": [
+        "Public API OAuth app creation requires workspace owner/admin.",
+        "Hosted MCP uses OAuth only and has plan/add-on-dependent daily or per-minute limits."
+      ],
+      "next_steps": [
+        "Select personal API script, multi-user API OAuth app or hosted MCP route.",
+        "Check workspace plan and actor permissions before authorized tests."
+      ],
+      "auth_methods": [
+        "API_key",
+        "OAuth2",
+        "OAuth2"
+      ],
+      "protocols": [
+        "REST"
+      ],
+      "breadth": "unknown",
+      "mcp": {
+        "status": "observed",
+        "value": "found",
+        "category": "official_only",
+        "official_count": 1,
+        "community_count": 0,
+        "official_servers": [
+          "ClickUp hosted MCP"
+        ],
+        "community_servers": []
+      },
+      "gating_condition": "Organization / Tenant Admin Consent Required"
+    },
+    {
+      "app_id": 78,
+      "app_name": "Coda",
+      "category": "Productivity and Project Management",
+      "in_stratified_sample": false,
+      "scope": "Discover Coda/Superhuman Docs and modify authorized table rows through REST, or use role-permitted Coda MCP tools.",
+      "blockers": [
+        "API doc creation requires appropriate workspace role; MCP Editor access is read-only.",
+        "MCP beta behavior/tools can change and free-taste quotas are limited."
+      ],
+      "next_steps": [
+        "Retain Coda/Superhuman Docs identity mapping and select REST or MCP token restriction.",
+        "Check Doc Maker/Editor role and MCP quota before authorized tests."
+      ],
+      "auth_methods": [
+        "Bearer_token",
+        "Bearer_token",
+        "OAuth2"
+      ],
+      "protocols": [
+        "REST"
+      ],
+      "breadth": "unknown",
+      "mcp": {
+        "status": "observed",
+        "value": "found",
+        "category": "official_only",
+        "official_count": 1,
+        "community_count": 0,
+        "official_servers": [
+          "Coda hosted MCP beta"
+        ],
+        "community_servers": []
+      },
+      "gating_condition": "Organization / Tenant Admin Consent Required"
+    },
+    {
+      "app_id": 15,
+      "app_name": "Pylon",
+      "category": "Support and Helpdesk",
+      "in_stratified_sample": false,
+      "scope": "Pylon B2B support issue/account workflow automation via REST API or official hosted MCP server",
+      "blockers": [
+        "No self-serve free tier or public free-trial path established in checked pricing/docs (annual paid contracts listed)",
+        "Admin role required to generate REST API tokens; MCP Access permission required for MCP"
+      ],
+      "next_steps": [
+        "Obtain access to a Pylon workspace (sales/trial evaluation) with Admin or MCP Access permissions",
+        "Connect via regional REST API (api.usepylon.com / api.eu.usepylon.com) or hosted MCP endpoint"
+      ],
+      "auth_methods": [
+        "API_key",
+        "OAuth2"
+      ],
+      "protocols": [
+        "REST",
+        "SDK",
+        "CLI"
+      ],
+      "breadth": "unknown",
+      "mcp": {
+        "status": "observed",
+        "value": "found",
+        "category": "official_only",
+        "official_count": 1,
+        "community_count": 0,
+        "official_servers": [
+          "Pylon MCP Server"
+        ],
+        "community_servers": []
+      },
+      "gating_condition": "Organization / Tenant Admin Consent Required"
+    },
+    {
+      "app_id": 20,
+      "app_name": "Gladly",
+      "category": "Support and Helpdesk",
+      "in_stratified_sample": false,
+      "scope": "Gladly customer profile, conversation timeline, and task automation via REST API v1",
+      "blockers": [
+        "Public pricing/product page offers View demo / Contact sales links with no public self-serve checkout or free tier documented",
+        "Administrator must enable API User permission; tokens carry unrestricted API access without granular scopes",
+        "No official MCP server documented in checked sources"
+      ],
+      "next_steps": [
+        "Engage Gladly sales or an existing customer administrator to obtain a .gladly.qa sandbox and API User token",
+        "Wrap Gladly REST API v1 (OpenAPI spec available) using HTTP Basic Auth"
+      ],
+      "auth_methods": [
+        "Basic"
+      ],
+      "protocols": [
+        "REST"
+      ],
+      "breadth": "unknown",
+      "mcp": {
+        "status": "not_found_in_checked_sources",
+        "value": null,
+        "category": "not_found_bounded",
+        "official_count": 0,
+        "community_count": 0,
+        "official_servers": [],
+        "community_servers": []
+      },
+      "gating_condition": "Organization / Tenant Admin Consent Required"
+    },
+    {
+      "app_id": 97,
+      "app_name": "higgsfield",
+      "category": "AI, Research and Media-native",
+      "in_stratified_sample": true,
+      "scope": "Generate AI images/video via Higgsfield REST/SDK API ($5+ prepaid balance) or CLI/MCP (paid subscription credits)",
+      "blockers": [
+        "No free programmatic tier: API requires $5 minimum prepaid USD top-up (expiring in 1 year), while CLI and MCP require a paid subscription and exclude web Unlimited/free generations.",
+        "API outputs are stored for at least 7 days and must be downloaded for long-term retention.",
+        "CLI browser tokens are short-lived and require re-running higgsfield auth login when expired."
+      ],
+      "next_steps": [
+        "For app/backend integrations, fund an open.higgsfield.ai USD balance and generate an API key for api.higgsfield.ai.",
+        "For agent/terminal workflows on an existing paid plan, install @higgsfield/cli or connect https://mcp.higgsfield.ai/mcp."
+      ],
+      "auth_methods": [
+        "API_key",
+        "OAuth2",
+        "OAuth2"
+      ],
+      "protocols": [
+        "REST",
+        "SDK",
+        "CLI",
+        "other"
+      ],
+      "breadth": "unknown",
+      "mcp": {
+        "status": "observed",
+        "value": "found",
+        "category": "official_only",
+        "official_count": 1,
+        "community_count": 0,
+        "official_servers": [
+          "Higgsfield MCP Server"
+        ],
+        "community_servers": []
+      },
+      "gating_condition": "Paid Commercial Plan / Subscription Required"
+    },
+    {
+      "app_id": 1,
+      "app_name": "Salesforce",
+      "category": "CRM and Sales",
+      "in_stratified_sample": false,
+      "scope": "CRM record and org-metadata agent toolkit via Salesforce REST API or successor hosted MCP",
+      "blockers": [
+        "Production requires paid Salesforce CRM licensing, and edition-level API gating docs on developer.salesforce.com returned HTTP 403 (blocked).",
+        "Official local Salesforce DX MCP server (@salesforce/mcp) reached End of Life on November 2, 2026."
+      ],
+      "next_steps": [
+        "Verify OAuth 2.0 Connected App / External Client App setup and edition API enablement in unblocked Salesforce developer docs.",
+        "Evaluate Salesforce hosted MCP server replacement if adopting native MCP instead of REST API."
+      ],
+      "auth_methods": [
+        "other"
+      ],
+      "protocols": [
+        "REST",
+        "other"
+      ],
+      "breadth": "unknown",
+      "mcp": {
+        "status": "observed",
+        "value": "found",
+        "category": "official_only",
+        "official_count": 1,
+        "community_count": 0,
+        "official_servers": [
+          "Salesforce DX MCP Server (@salesforce/mcp)"
+        ],
+        "community_servers": []
+      },
+      "gating_condition": "Paid Commercial Plan / Subscription Required"
+    },
+    {
+      "app_id": 67,
+      "app_name": "Snowflake",
+      "category": "Developer, Infra and Data platforms",
+      "in_stratified_sample": false,
+      "scope": "Execute permitted SQL or retrieve governed data via an account MCP server.",
+      "blockers": [
+        "MCP tools and server require independent RBAC grants; trial AI features disabled until card added."
+      ],
+      "next_steps": [
+        "Check role privileges for configured MCP tools; select SQL trial or properly enabled account before operational testing."
+      ],
+      "auth_methods": [
+        "OAuth2",
+        "JWT",
+        "Bearer_token"
+      ],
+      "protocols": [
+        "REST",
+        "SQL"
+      ],
+      "breadth": "unknown",
+      "mcp": {
+        "status": "observed",
+        "value": "found",
+        "category": "official_only",
+        "official_count": 1,
+        "community_count": 0,
+        "official_servers": [
+          "Snowflake-managed MCP server"
+        ],
+        "community_servers": []
+      },
+      "gating_condition": "Paid Commercial Plan / Subscription Required"
+    },
+    {
+      "app_id": 47,
+      "app_name": "Ecwid",
+      "category": "Ecommerce",
+      "in_stratified_sample": false,
+      "scope": "Ecwid by Lightspeed REST API and Storefronts JS API integration",
+      "blockers": [
+        "Current pricing page lists paid tiers starting at Starter ($5/mo) with App Market access on Venture+; free/sandbox developer store eligibility was not confirmed in captured docs",
+        "Detailed OAuth token exchange page returned HTTP 404 and needs follow-up capture"
+      ],
+      "next_steps": [
+        "Capture the active Ecwid OAuth / custom app setup guide from docs.ecwid.com",
+        "Verify whether a free developer test store is available or provision a Starter/Venture store"
+      ],
+      "auth_methods": [
+        "OAuth2"
+      ],
+      "protocols": [
+        "REST",
+        "SDK"
+      ],
+      "breadth": "unknown",
+      "mcp": {
+        "status": "not_found_in_checked_sources",
+        "value": null,
+        "category": "not_found_bounded",
+        "official_count": 0,
+        "community_count": 0,
+        "official_servers": [],
+        "community_servers": []
+      },
+      "gating_condition": "Paid Commercial Plan / Subscription Required"
+    },
+    {
+      "app_id": 79,
+      "app_name": "Smartsheet",
+      "category": "Productivity and Project Management",
+      "in_stratified_sample": false,
+      "scope": "Manage permitted Smartsheet sheets/cells/folders/reports through REST2.0 or hosted MCP.",
+      "blockers": [
+        "Ordinary API and MCP require Business/Enterprise/Advanced Work Management.",
+        "OAuth Developer Tools activation requires vendor acceptance.",
+        "Regional API endpoints/tokens differ and user sharing permissions still apply."
+      ],
+      "next_steps": [
+        "Confirm plan, region and direct-token versus OAuth developer route.",
+        "Request sandbox/Developer Tools if needed and conduct authorized tests only after access."
+      ],
+      "auth_methods": [
+        "Bearer_token",
+        "OAuth2"
+      ],
+      "protocols": [
+        "REST",
+        "SDK"
+      ],
+      "breadth": "unknown",
+      "mcp": {
+        "status": "observed",
+        "value": "found",
+        "category": "official_only",
+        "official_count": 1,
+        "community_count": 0,
+        "official_servers": [
+          "Smartsheet hosted MCP"
+        ],
+        "community_servers": []
+      },
+      "gating_condition": "Paid Commercial Plan / Subscription Required"
+    },
+    {
+      "app_id": 18,
+      "app_name": "Help Scout",
+      "category": "Support and Helpdesk",
+      "in_stratified_sample": false,
+      "scope": "Help Scout shared-inbox and customer-support automation via API and OAuth apps",
+      "blockers": [
+        "Primary developer.helpscout.com documentation snapshots returned compressed binary responses (unreadable in current collector)",
+        "API access is tied to paid Standard/Plus/Pro tiers rather than Free Basic"
+      ],
+      "next_steps": [
+        "Capture uncompressed Help Scout Mailbox API v2, Docs API, and MCP documentation to confirm endpoints, OAuth flows, and scopes",
+        "Prototype on a 15-day Standard or Plus free trial"
+      ],
+      "auth_methods": [
+        "OAuth2"
+      ],
+      "protocols": [
+        "other"
+      ],
+      "breadth": "unknown",
+      "mcp": {
+        "status": "unknown",
+        "value": null,
+        "category": "unknown",
+        "official_count": 0,
+        "community_count": 0,
+        "official_servers": [],
+        "community_servers": []
+      },
+      "gating_condition": "Paid Commercial Plan / Subscription Required"
+    },
+    {
+      "app_id": 3,
+      "app_name": "Pipedrive",
+      "category": "CRM and Sales",
+      "in_stratified_sample": false,
+      "scope": "Sales CRM agent toolkit for deals, contacts, and activities via Pipedrive REST API",
+      "blockers": [
+        "Public multi-tenant Marketplace OAuth distribution requires Pipedrive vendor app review (up to 21 business days).",
+        "Company admins must enable 'use API' in permission sets for end-user API token access; pipedrive.com/en/pricing returned HTTP 403 so production plan cost thresholds remain unverified."
+      ],
+      "next_steps": [
+        "Request a Pipedrive Developer Sandbox account via Developer Hub for OAuth and REST v2 testing.",
+        "Use private app / API token for internal testing, or submit public OAuth app through Pipedrive Marketplace review for multi-tenant production."
+      ],
+      "auth_methods": [
+        "API_key",
+        "OAuth2"
+      ],
+      "protocols": [
+        "REST"
+      ],
+      "breadth": "unknown",
+      "mcp": {
+        "status": "observed",
+        "value": "found",
+        "category": "community_only",
+        "official_count": 0,
+        "community_count": 1,
+        "official_servers": [],
+        "community_servers": [
+          "Wirasm/pipedrive-mcp"
+        ]
+      },
+      "gating_condition": "Platform / Vendor Developer Application & Review"
+    },
+    {
+      "app_id": 8,
+      "app_name": "Close",
+      "category": "CRM and Sales",
+      "in_stratified_sample": true,
+      "scope": "Sales CRM and outreach agent toolkit via Close REST API or official hosted MCP",
+      "blockers": [
+        "Production requires a paid Close subscription (only a 14-day free trial is offered; no free tier).",
+        "Multi-tenant public OAuth distribution requires requesting publication approval from Close (OAuth apps are Private by default)."
+      ],
+      "next_steps": [
+        "Start a 14-day no-card free trial to test API key (Basic Auth), private OAuth app, or https://mcp.close.com/mcp.",
+        "Submit OAuth app for Close public listing if distributing across external Close customer orgs."
+      ],
+      "auth_methods": [
+        "Basic",
+        "OAuth2"
+      ],
+      "protocols": [
+        "REST"
+      ],
+      "breadth": "unknown",
+      "mcp": {
+        "status": "observed",
+        "value": "found",
+        "category": "official_only",
+        "official_count": 1,
+        "community_count": 0,
+        "official_servers": [
+          "Close MCP Server"
+        ],
+        "community_servers": []
+      },
+      "gating_condition": "Platform / Vendor Developer Application & Review"
+    },
+    {
+      "app_id": 28,
+      "app_name": "WhatsApp Business",
+      "category": "Communications and Messaging",
+      "in_stratified_sample": false,
+      "scope": "Build a multi-tenant WhatsApp Business Cloud API agent toolkit (messaging, templates, webhooks) for customer businesses.",
+      "blockers": [
+        "Multi-tenant apps accessing other businesses' WhatsApp accounts require Meta App Review for Advanced Access (with written explanations and per-permission screen recordings) and Embedded Signup implementation.",
+        "Outbound template messages require Meta template approval, user opt-in, and a payment method in Meta Billing Hub (per-message delivery billing).",
+        "No official Meta WhatsApp MCP doc page was captured in whatsapp/llms.txt (only a community Cloud API MCP server was captured)."
+      ],
+      "next_steps": [
+        "Prototype using the free auto-provisioned test WhatsApp/Messaging account and System User access token (self-serve under Standard Access).",
+        "Implement Embedded Signup (Facebook Login for Business) and submit for Meta App Review (Advanced Access) before onboarding external customer businesses."
+      ],
+      "auth_methods": [
+        "Bearer_token",
+        "OAuth2",
+        "Bearer_token"
+      ],
+      "protocols": [
+        "REST"
+      ],
+      "breadth": "unknown",
+      "mcp": {
+        "status": "observed",
+        "value": "found",
+        "category": "community_only",
+        "official_count": 0,
+        "community_count": 1,
+        "official_servers": [],
+        "community_servers": [
+          "WhatsApp Business MCP Server (tkhattar14/whatsapp-business-mcp)"
+        ]
+      },
+      "gating_condition": "Platform / Vendor Developer Application & Review"
+    },
+    {
+      "app_id": 46,
+      "app_name": "Squarespace",
+      "category": "Ecommerce",
+      "in_stratified_sample": true,
+      "scope": "Squarespace Commerce REST API integration (API key for Commerce Advanced or OAuth for Extensions)",
+      "blockers": [
+        "Custom API key generation requires Squarespace's Commerce Advanced plan",
+        "Multi-merchant OAuth client registration requires Squarespace review and approval",
+        "Webhook Subscriptions API is OAuth-only"
+      ],
+      "next_steps": [
+        "Use a Commerce Advanced plan for single-site API key integrations, or submit an OAuth client application for multi-merchant/webhook support",
+        "Inspect the developers.squarespace.com MCP section in a follow-up pass"
+      ],
+      "auth_methods": [
+        "API_key",
+        "OAuth2"
+      ],
+      "protocols": [
+        "REST"
+      ],
+      "breadth": "unknown",
+      "mcp": {
+        "status": "unknown",
+        "value": null,
+        "category": "unknown",
+        "official_count": 0,
+        "community_count": 0,
+        "official_servers": [],
+        "community_servers": []
+      },
+      "gating_condition": "Platform / Vendor Developer Application & Review"
+    },
+    {
+      "app_id": 82,
+      "app_name": "Plaid",
+      "category": "Finance and Fintech",
+      "in_stratified_sample": false,
+      "scope": "Plaid API and official MCP servers for financial data integration (Sandbox/Trial development vs full Production launch).",
+      "blockers": [
+        "Full Production access requires Plaid approval (company/use-case review), security questionnaire for OAuth institutions, and paid billing.",
+        "EU/UK Production requires Custom plans and separate compliance review.",
+        "Official Dashboard MCP server requires approved Production access (does not run on Sandbox)."
+      ],
+      "next_steps": [
+        "Develop and test immediately in free Sandbox (and official Sandbox MCP server).",
+        "For US/CA live testing, use the 10-Item Trial plan; submit Production request and OAuth security questionnaire before commercial launch."
+      ],
+      "auth_methods": [
+        "API_key",
+        "OAuth2"
+      ],
+      "protocols": [
+        "REST",
+        "SDK"
+      ],
+      "breadth": "unknown",
+      "mcp": {
+        "status": "observed",
+        "value": "found",
+        "category": "official_only",
+        "official_count": 2,
+        "community_count": 0,
+        "official_servers": [
+          "Plaid Dashboard MCP Server",
+          "Plaid Sandbox MCP Server (mcp-server-plaid)"
+        ],
+        "community_servers": []
+      },
+      "gating_condition": "Platform / Vendor Developer Application & Review"
+    },
+    {
+      "app_id": 86,
+      "app_name": "QuickBooks",
+      "category": "Finance and Fintech",
+      "in_stratified_sample": false,
+      "scope": "QuickBooks Online Accounting API and official local MCP server for sandbox development and approved production apps.",
+      "blockers": [
+        "Production Client ID and Client Secret require Intuit approval of the App Assessment Questionnaire and compliance URLs.",
+        "Production OAuth requires a public HTTPS callback URL and user consent per company realm (100-day refresh window).",
+        "Intuit ToS/API pricing page and all-entities reference HTML failed static HTTP capture."
+      ],
+      "next_steps": [
+        "Build and test immediately against a self-serve Intuit Developer sandbox company and official SDK/MCP server.",
+        "Complete App Details, EULA/Privacy Policy URLs, and App Assessment Questionnaire to unlock Production credentials."
+      ],
+      "auth_methods": [
+        "OAuth2"
+      ],
+      "protocols": [
+        "REST",
+        "SDK"
+      ],
+      "breadth": "unknown",
+      "mcp": {
+        "status": "observed",
+        "value": "found",
+        "category": "official_only",
+        "official_count": 1,
+        "community_count": 0,
+        "official_servers": [
+          "QuickBooks Online MCP Server (intuit/quickbooks-online-mcp-server)"
+        ],
+        "community_servers": []
+      },
+      "gating_condition": "Platform / Vendor Developer Application & Review"
+    },
+    {
+      "app_id": 31,
+      "app_name": "Google Ads",
+      "category": "Marketing, Ads, Email and Social",
+      "in_stratified_sample": true,
+      "scope": "Build Google Ads campaign reporting and management agent integration via REST/SDK or official Google Ads MCP server",
+      "blockers": [
+        "Production account calls require Google Cloud project approval for Explorer (feature-restricted), Basic (brand verification), or Standard (manual compliance audit) access.",
+        "Test accounts cannot test all production features such as live performance reports."
+      ],
+      "next_steps": [
+        "Enable Google Ads API on a Google Cloud project for immediate Test account prototyping.",
+        "Complete brand verification and apply for Basic access (or Explorer for initial production read/mutate) before production rollout."
+      ],
+      "auth_methods": [
+        "OAuth2"
+      ],
+      "protocols": [
+        "REST",
+        "SDK"
+      ],
+      "breadth": "unknown",
+      "mcp": {
+        "status": "observed",
+        "value": "found",
+        "category": "official_only",
+        "official_count": 1,
+        "community_count": 0,
+        "official_servers": [
+          "Google Ads MCP Server (googleads/google-ads-mcp)"
+        ],
+        "community_servers": []
+      },
+      "gating_condition": "Platform / Vendor Developer Application & Review"
+    },
+    {
+      "app_id": 32,
+      "app_name": "Meta Ads",
+      "category": "Marketing, Ads, Email and Social",
+      "in_stratified_sample": false,
+      "scope": "Build Meta Ads campaign management and reporting agent integration via Marketing API or official Meta Ads MCP Server",
+      "blockers": [
+        "Production multi-advertiser apps require Meta App Review (Full access / Advanced access), 500 API calls in 15 days with <15% error rate, and Business Verification.",
+        "All Marketing API calls on any access level operate against production data (no isolated sandbox)."
+      ],
+      "next_steps": [
+        "Create a Meta Business app to get automatic Limited/Standard access for own-account prototyping, or connect to Meta's hosted Ads MCP server (https://mcp.facebook.com/ads).",
+        "Submit App Review and Business Verification before onboarding external advertiser accounts."
+      ],
+      "auth_methods": [
+        "OAuth2",
+        "Bearer_token"
+      ],
+      "protocols": [
+        "REST",
+        "SDK",
+        "CLI"
+      ],
+      "breadth": "unknown",
+      "mcp": {
+        "status": "observed",
+        "value": "found",
+        "category": "official_and_community",
+        "official_count": 1,
+        "community_count": 1,
+        "official_servers": [
+          "Meta Ads MCP Server"
+        ],
+        "community_servers": [
+          "Pipeboard Meta Ads MCP (pipeboard-co/meta-ads-mcp)"
+        ]
+      },
+      "gating_condition": "Platform / Vendor Developer Application & Review"
+    },
+    {
+      "app_id": 33,
+      "app_name": "LinkedIn Ads",
+      "category": "Marketing, Ads, Email and Social",
+      "in_stratified_sample": false,
+      "scope": "Build LinkedIn Ads campaign management and reporting integration via REST API",
+      "blockers": [
+        "Requires LinkedIn Marketing API Program acceptance for Development Tier (max 5 ad accounts, no account creation) and video-demo review for Standard Tier production access.",
+        "Requires 3-legged OAuth member consent with sufficient Ad Account/Company Page roles; no official LinkedIn Ads MCP server found in checked vendor docs."
+      ],
+      "next_steps": [
+        "Create a LinkedIn Developer app and apply for Advertising API Development Tier access.",
+        "Build and record the OAuth + campaign workflow demo to apply for Standard Tier before multi-account production use."
+      ],
+      "auth_methods": [
+        "OAuth2"
+      ],
+      "protocols": [
+        "REST"
+      ],
+      "breadth": "unknown",
+      "mcp": {
+        "status": "observed",
+        "value": "found",
+        "category": "community_only",
+        "official_count": 0,
+        "community_count": 1,
+        "official_servers": [],
+        "community_servers": [
+          "Adspirer Ads MCP (amekala/ads-mcp)"
+        ]
+      },
+      "gating_condition": "Platform / Vendor Developer Application & Review"
+    },
+    {
+      "app_id": 38,
+      "app_name": "Pinterest",
+      "category": "Marketing, Ads, Email and Social",
+      "in_stratified_sample": false,
+      "scope": "Build Pinterest API v5 agent integration for Pins, Boards, Audiences, and Ads via OAuth 2.0",
+      "blockers": [
+        "Both Trial access (for testing) and Standard access (for production public Pins/Boards and higher rate limits) require Pinterest application review.",
+        "Standard access requires a video demo of the OAuth flow and live Pinterest integration; no MCP server verified in checked sources."
+      ],
+      "next_steps": [
+        "Create a Pinterest business account and submit an app request for Trial access.",
+        "Build the OAuth 2.0 integration against Sandbox/Trial endpoints, record the required demo video, and apply for Standard access."
+      ],
+      "auth_methods": [
+        "OAuth2",
+        "Bearer_token"
+      ],
+      "protocols": [
+        "REST",
+        "SDK"
+      ],
+      "breadth": "unknown",
+      "mcp": {
+        "status": "not_found_in_checked_sources",
+        "value": null,
+        "category": "not_found_bounded",
+        "official_count": 0,
+        "community_count": 0,
+        "official_servers": [],
+        "community_servers": []
+      },
+      "gating_condition": "Platform / Vendor Developer Application & Review"
+    },
+    {
+      "app_id": 39,
+      "app_name": "Threads (Meta)",
+      "category": "Marketing, Ads, Email and Social",
+      "in_stratified_sample": false,
+      "scope": "Build Meta Threads publishing, reply moderation, and insights agent integration via Threads REST API",
+      "blockers": [
+        "Production access for external users requires Meta App Review approval (advanced access) for each permission (e.g., threads_content_publish).",
+        "Media publishing requires hosting media on a publicly accessible server and HTTPS OAuth redirect URIs (localhost not supported); no official Meta Threads MCP server found."
+      ],
+      "next_steps": [
+        "Create a Meta app with the Threads use case and invite Threads testers for immediate end-to-end testing.",
+        "Submit requested permissions through Meta App Review before launching to external users."
+      ],
+      "auth_methods": [
+        "OAuth2"
+      ],
+      "protocols": [
+        "REST"
+      ],
+      "breadth": "unknown",
+      "mcp": {
+        "status": "observed",
+        "value": "found",
+        "category": "community_only",
+        "official_count": 0,
+        "community_count": 1,
+        "official_servers": [],
+        "community_servers": [
+          "Threads MCP Server (quinnjr/threads-mcp)"
+        ]
+      },
+      "gating_condition": "Platform / Vendor Developer Application & Review"
+    },
+    {
+      "app_id": 9,
+      "app_name": "Copper",
+      "category": "CRM and Sales",
+      "in_stratified_sample": false,
+      "scope": "CRM lead, contact, company, and activity agent toolkit via Copper REST API",
+      "blockers": [
+        "Production requires a paid Copper subscription (no free tier after trial).",
+        "Detailed OAuth 2.0 partner onboarding documentation returned HTTP 404; no official MCP confirmed in checked sources."
+      ],
+      "next_steps": [
+        "Start a no-card free trial and generate a Dev API key under System settings > API Keys for testing.",
+        "Confirm partner OAuth 2.0 registration requirements and plan-level API entitlements before multi-tenant production rollout."
+      ],
+      "auth_methods": [
+        "API_key",
+        "OAuth2"
+      ],
+      "protocols": [
+        "REST"
+      ],
+      "breadth": "unknown",
+      "mcp": {
+        "status": "not_found_in_checked_sources",
+        "value": null,
+        "category": "not_found_bounded",
+        "official_count": 0,
+        "community_count": 0,
+        "official_servers": [],
+        "community_servers": []
+      },
+      "gating_condition": "Technology / Commercial Partner Program Gating"
+    },
+    {
+      "app_id": 29,
+      "app_name": "Aircall",
+      "category": "Communications and Messaging",
+      "in_stratified_sample": false,
+      "scope": "Build a multi-tenant Aircall telephony, messaging, and conversation-intelligence agent toolkit using Public REST API v1.",
+      "blockers": [
+        "Multi-tenant OAuth 2.0 credentials (client_id/client_secret) and developer sandboxes require submitting an application to Aircall's technology partner program.",
+        "Paid Aircall workspace licenses (3-user minimum; Professional tier lists Full API access) and Company Admin privileges are required.",
+        "Checked developer docs only describe outbound MCP client support for Aircall AI Virtual Agents, not a callable Aircall MCP server."
+      ],
+      "next_steps": [
+        "For single-company internal testing, generate Basic Auth api_id/api_token in Company Settings > API Keys.",
+        "For multi-tenant SaaS/Composio distribution, apply to the Aircall Technology Partner program for OAuth 2.0 credentials and a developer sandbox."
+      ],
+      "auth_methods": [
+        "Basic",
+        "OAuth2"
+      ],
+      "protocols": [
+        "REST",
+        "SDK"
+      ],
+      "breadth": "unknown",
+      "mcp": {
+        "status": "not_found_in_checked_sources",
+        "value": null,
+        "category": "not_found_bounded",
+        "official_count": 0,
+        "community_count": 0,
+        "official_servers": [],
+        "community_servers": []
+      },
+      "gating_condition": "Technology / Commercial Partner Program Gating"
+    },
+    {
+      "app_id": 49,
+      "app_name": "Amazon Selling Partner",
+      "category": "Ecommerce",
+      "in_stratified_sample": false,
+      "scope": "Amazon Selling Partner API (SP-API) and official Amazon Selling Partner Connector MCP",
+      "blockers": [
+        "Requires SP-API developer registration, security control review, and role approval by Amazon",
+        "Private seller apps require a Professional Seller Central account and primary account user",
+        "Public apps must list in the Amazon Selling Partner Appstore"
+      ],
+      "next_steps": [
+        "Register as a public or private SP-API developer and complete Amazon's developer profile/security review",
+        "Test against hosted SP-API sandbox endpoints using LWA OAuth 2.0 or evaluate the official Selling Partner Connector MCP"
+      ],
+      "auth_methods": [
+        "OAuth2",
+        "OAuth2"
+      ],
+      "protocols": [
+        "REST",
+        "SDK"
+      ],
+      "breadth": "unknown",
+      "mcp": {
+        "status": "observed",
+        "value": "found",
+        "category": "official_and_community",
+        "official_count": 1,
+        "community_count": 1,
+        "official_servers": [
+          "Amazon Selling Partner Connector (MCP)"
+        ],
+        "community_servers": [
+          "jay-trivedi/amazon_sp_mcp"
+        ]
+      },
+      "gating_condition": "Technology / Commercial Partner Program Gating"
+    },
+    {
+      "app_id": 88,
+      "app_name": "Brex",
+      "category": "Finance and Fintech",
+      "in_stratified_sample": false,
+      "scope": "Brex REST API and official hosted MCP server (own-account customer integration vs multi-tenant partner integration).",
+      "blockers": [
+        "Own-account customers have no sandbox environment (production https://api.brex.com only) and require an Account/Card Admin to accept the Developer API agreement and create tokens or enable MCP beta.",
+        "Multi-tenant third-party partner OAuth and staging require Brex partner approval, signing a Unilateral API Access Agreement, and submitting a demo video for production credentials."
+      ],
+      "next_steps": [
+        "For own-account automation, have an Account/Card Admin accept the API agreement and issue scoped user tokens or enable Brex MCP beta.",
+        "For multi-tenant partner integrations, apply to Brex partner onboarding to obtain staging credentials and OAuth client credentials."
+      ],
+      "auth_methods": [
+        "Bearer_token",
+        "OAuth2",
+        "OAuth2",
+        "OAuth2"
+      ],
+      "protocols": [
+        "REST"
+      ],
+      "breadth": "unknown",
+      "mcp": {
+        "status": "observed",
+        "value": "found",
+        "category": "official_only",
+        "official_count": 1,
+        "community_count": 0,
+        "official_servers": [
+          "Brex MCP Server"
+        ],
+        "community_servers": []
+      },
+      "gating_condition": "Technology / Commercial Partner Program Gating"
+    },
+    {
+      "app_id": 89,
+      "app_name": "Ramp",
+      "category": "Finance and Fintech",
+      "in_stratified_sample": false,
+      "scope": "Ramp Developer REST API, Ramp CLI, and official hosted Ramp MCP server.",
+      "blockers": [
+        "Own-business API apps and third-party OAuth installations require a Ramp business account and Admin/Business Owner approval.",
+        "Sandbox access requires submitting a request form whose approval terms were not present in the captured stub.",
+        "Custom MCP client redirect URIs require Ramp allowlisting; partner-only scopes and cards:read_vault require Ramp approval; some endpoints require specific Ramp plan features."
+      ],
+      "next_steps": [
+        "For own-business workflows, create an OAuth Client Credentials app as a Ramp Admin or connect via Ramp MCP/CLI.",
+        "Request sandbox access via /developer-api/v1/sandbox-access and submit redirect URI allowlist or Technology Partnerships applications for custom/multi-tenant integrations."
+      ],
+      "auth_methods": [
+        "OAuth2",
+        "OAuth2",
+        "OAuth2"
+      ],
+      "protocols": [
+        "REST",
+        "CLI"
+      ],
+      "breadth": "unknown",
+      "mcp": {
+        "status": "observed",
+        "value": "found",
+        "category": "official_only",
+        "official_count": 1,
+        "community_count": 0,
+        "official_servers": [
+          "Ramp MCP Server"
+        ],
+        "community_servers": []
+      },
+      "gating_condition": "Technology / Commercial Partner Program Gating"
+    },
+    {
+      "app_id": 19,
+      "app_name": "Gorgias",
+      "category": "Support and Helpdesk",
+      "in_stratified_sample": true,
+      "scope": "Gorgias ecommerce helpdesk ticket/customer automation via REST API (private API key or public OAuth2)",
+      "blockers": [
+        "Converting a trial to a Sandbox requires contacting techpartners@gorgias.com",
+        "Public multi-tenant OAuth2 apps require Gorgias tech partnership review and approval",
+        "Official Gorgias MCP docs were not captured in checked developer portal sources"
+      ],
+      "next_steps": [
+        "Use private API key on a trial/paid tenant for single-tenant prototyping",
+        "Register on Gorgias Developer Portal and contact techpartners@gorgias.com for Sandbox and public OAuth2 review"
+      ],
+      "auth_methods": [
+        "API_key",
+        "OAuth2"
+      ],
+      "protocols": [
+        "REST"
+      ],
+      "breadth": "unknown",
+      "mcp": {
+        "status": "observed",
+        "value": "found",
+        "category": "community_only",
+        "official_count": 0,
+        "community_count": 1,
+        "official_servers": [],
+        "community_servers": [
+          "mattcoatsworth/Gorgias-MCP-Server"
+        ]
+      },
+      "gating_condition": "Technology / Commercial Partner Program Gating"
+    }
+  ],
+  "outreach_required": [
+    {
+      "app_id": 10,
+      "app_name": "DealCloud",
+      "category": "CRM and Sales",
+      "in_stratified_sample": false,
+      "scope": "Enterprise deal/relationship CRM agent toolkit via DealCloud REST API or DealCloud MCP",
+      "blockers": [
+        "Enterprise-only licensing (DealCloud + Celeste license for MCP) with demo/sales-led onboarding and no public self-serve developer sandbox.",
+        "Tenant admin configuration ('Manage MCP Servers' and Celeste Member group assignment) required; REST API Keys / Authorization Token subpages returned HTTP 404."
+      ],
+      "next_steps": [
+        "Engage Intapp sales or a licensed DealCloud enterprise customer to obtain tenant/sandbox credentials and confirm REST token endpoint details.",
+        "Enable DealCloud MCP under Tools > MCP Servers with OAuth 2.0 or build against Intapp REST Client / Python SDK v1.X."
+      ],
+      "auth_methods": [
+        "OAuth2"
+      ],
+      "protocols": [
+        "REST"
+      ],
+      "breadth": "unknown",
+      "mcp": {
+        "status": "observed",
+        "value": "found",
+        "category": "official_only",
+        "official_count": 1,
+        "community_count": 0,
+        "official_servers": [
+          "DealCloud MCP Server"
+        ],
+        "community_servers": []
+      }
+    },
+    {
+      "app_id": 59,
+      "app_name": "Waterfall.io",
+      "category": "Data, SEO and Scraping",
+      "in_stratified_sample": false,
+      "scope": "Build a Waterfall.io B2B contact/company enrichment, prospecting, email verification, and job-change agent toolkit via the REST API (https://api.waterfall.io).",
+      "blockers": [
+        "API access is gated by Waterfall team approval and commercial onboarding ('Request an API key' or 'Book a call' on waterfall.io; no self-serve key signup or public rate card).",
+        "Individual capabilities such as phone enrichment (include_phones: true) and master-key sub-key management (via account manager) must be explicitly enabled on the account key."
+      ],
+      "next_steps": [
+        "Request API access and an evaluation test plan from the Waterfall team (waterfall.io or support@waterfall.io) and confirm required endpoint entitlements.",
+        "Use the public OpenAPI 3.1.0 specification and x-api-key authentication to implement async Launcher/Finder polling or signed webhook handlers."
+      ],
+      "auth_methods": [
+        "API_key"
+      ],
+      "protocols": [
+        "REST"
+      ],
+      "breadth": "unknown",
+      "mcp": {
+        "status": "not_found_in_checked_sources",
+        "value": null,
+        "category": "not_found_bounded",
+        "official_count": 0,
+        "community_count": 0,
+        "official_servers": [],
+        "community_servers": []
+      }
+    },
+    {
+      "app_id": 44,
+      "app_name": "Salesforce Commerce Cloud",
+      "category": "Ecommerce",
+      "in_stratified_sample": false,
+      "scope": "Salesforce B2C Commerce API (SCAPI) and official b2c-dx-mcp integration",
+      "blockers": [
+        "Enterprise licensing requires contacting Salesforce sales/account executive",
+        "developer.salesforce.com SCAPI guide pages returned HTTP 403 during capture, leaving self-serve sandbox eligibility unverified"
+      ],
+      "next_steps": [
+        "Obtain licensed B2C Commerce tenant/sandbox credentials and SLAS/Account Manager OAuth client IDs via customer or Salesforce partner channel",
+        "Use official commerce-sdk / b2c-developer-tooling repos"
+      ],
+      "auth_methods": [
+        "OAuth2",
+        "other"
+      ],
+      "protocols": [
+        "REST",
+        "SDK",
+        "CLI"
+      ],
+      "breadth": "unknown",
+      "mcp": {
+        "status": "observed",
+        "value": "found",
+        "category": "official_only",
+        "official_count": 1,
+        "community_count": 0,
+        "official_servers": [
+          "Salesforce B2C DX MCP Server (b2c-dx-mcp)"
+        ],
+        "community_servers": []
+      }
+    },
+    {
+      "app_id": 50,
+      "app_name": "fanbasis",
+      "category": "Ecommerce",
+      "in_stratified_sample": true,
+      "scope": "FanBasis / Commas API, SDK, and beta MCP integration",
+      "blockers": [
+        "dev-docs.fanbasis.com (FanBasis API Docsv3) is password-protected behind a login screen",
+        "commasdocs.com rendered only a JS unpacking shell without readable auth/endpoint reference in non-JS capture",
+        "Pricing, auth method, and sandbox/production credential paths remain unverified from captured public docs"
+      ],
+      "next_steps": [
+        "Request API documentation access / credentials from Commas (formerly FanBasis) or inspect commasdocs.com in an interactive browser session",
+        "Confirm API key/OAuth setup and beta MCP endpoint onboarding requirements"
+      ],
+      "auth_methods": [],
+      "protocols": [
+        "SDK"
+      ],
+      "breadth": "unknown",
+      "mcp": {
+        "status": "observed",
+        "value": "found",
+        "category": "official_only",
+        "official_count": 1,
+        "community_count": 0,
+        "official_servers": [
+          "Commas MCP (Beta)"
+        ],
+        "community_servers": []
+      }
+    }
+  ],
+  "unknown": [
+    {
+      "app_id": 84,
+      "app_name": "Paygent Connect",
+      "category": "Finance and Fintech",
+      "in_stratified_sample": true,
+      "scope": null,
+      "blockers": [
+        "Cannot assess buildability until primary evidence resolves which vendor/product 'Paygent Connect (paygent (NMI-powered))' refers to."
+      ],
+      "next_steps": [
+        "Resolve primary documentation access and clarify identity before re-evaluating"
+      ],
+      "auth_methods": [],
+      "protocols": [],
+      "breadth": "unknown",
+      "mcp": {
+        "status": "unknown",
+        "value": null,
+        "category": "unknown",
+        "official_count": 0,
+        "community_count": 0,
+        "official_servers": [],
+        "community_servers": []
+      }
+    },
+    {
+      "app_id": 90,
+      "app_name": "PitchBook",
+      "category": "Finance and Fintech",
+      "in_stratified_sample": false,
+      "scope": null,
+      "blockers": [
+        "Cannot infer buildability from HTTP 403 capture blocks on pitchbook.com (fetches[0..6]); requires future approved browser/receipt capture of primary PitchBook docs."
+      ],
+      "next_steps": [
+        "Resolve primary documentation access and clarify identity before re-evaluating"
+      ],
+      "auth_methods": [],
+      "protocols": [],
+      "breadth": "unknown",
+      "mcp": {
+        "status": "unknown",
+        "value": null,
+        "category": "unknown",
+        "official_count": 0,
+        "community_count": 0,
+        "official_servers": [],
+        "community_servers": []
+      }
+    }
+  ]
+}

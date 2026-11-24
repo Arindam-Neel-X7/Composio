@@ -1,0 +1,287 @@
+What Is the Higgsfield API and How Do I Get Started
+Higgsfield
+Explore
+Image
+Video
+Audio
+MCP
+API
+Cinema Studio
+GenjutsuTop
+Short DramaNew
+MiracleSoon
+Contests
+ShortsNew
+Ads StudioNew
+GPUNew
+Playable
+Supercomputer
+Community
+Academy
+Plugins
+Canvas
+HiggsfieldNew dropsDropsNew dropsDropsHome
+ImageVideoAudioMCPAgenticStudiosCommunityContestsLearnMore
+Creator Hub
+BackHelp center/Integrations/What is the Higgsfield API, and how do I get started?
+Sep 16, 2026
+What is the Higgsfield API, and how do I get started?
+Higgsfield
+4 min
+Copy page
+The Higgsfield API lets you generate video and images from your own code: one API key opens every model in the API catalog, and each request is paid in US dollars from a prepaid balance. No plan or subscription is involved: fund the balance, send requests at the rates listed in the catalog, and new requests simply wait once the balance hits zero.
+How is the API different from my Higgsfield plan?
+A subscription on higgsfield.ai and the API are two separate products with separate billing. Your plan, credits, and Unlimited access exist only on the website; the API runs on its own account balance in US dollars.
+How is the API different from my Higgsfield plan?
+Criteria
+Higgsfield plan (higgsfield.ai)
+Higgsfield API
+Who it's for
+Creators working in the visual interface
+Developers building generation into their own products
+Billing
+Subscription plus credits
+US dollar balance, pay per generation
+Unlimited models
+Yes, where included in plan
+Not applicable
+Requires the other
+No
+No
+Which models are available through the API?
+One API key unlocks every model in the API catalog: 50+ current video and image models, including Seedance, Kling, Wan, MiniMax, PixVerse, LTX, and Grok for video and Ideogram, Recraft, and Qwen for images, alongside Higgsfield's own Soul 2, Soul Cinema, DoP, and Marketing Studio Image. The API has its own curated catalog, and the selection may differ from the model lineup on higgsfield.ai.
+Every model has its own catalog page listing the current rate, supported resolutions and durations, sample code, a short overview, and a side-by-side table of similar models, so picking the right model doesn't require testing each one in code.
+How do I get started?
+Sign up for an API account, either as an individual or as a company.
+Register a payment method and fund your balance.
+Generate an API key in the console at open.higgsfield.ai. For security, the full key appears only once, so save it right away. Creating a key unlocks 20 concurrent requests.
+Connect through the Python or TypeScript SDK, or call the REST API directly from any language with an HTTP client, sending requests to api.higgsfield.ai. Each model page carries sample code, and if you work through a coding agent, ready setup prompts for Claude Code, Cursor, and ChatGPT (Codex).
+Full reference documentation, quickstart guides, and code examples are available at docs.higgsfield.ai.
+How is API usage billed?
+Billing is pay-as-you-go from a US dollar balance, and the minimum top-up is $5. Video models are priced per second of output and image models per image; DoP is the exception, priced per generation. Each model has a fixed rate for every configuration: the rate depends on settings like resolution and audio, is listed publicly, and stays the same regardless of how much you top up. An estimate endpoint returns the cost of a request before you run it. Funds expire one year after they are added to the balance. The balance can't go below zero: once it's empty, new requests wait until you add funds, or you can turn on auto top-up so production traffic never stops.
+You're only charged for generations that finish successfully. If a request fails, its cost returns to your balance automatically.
+How does generation work?
+Generation is asynchronous. You submit a request and receive a request ID, then track progress by polling the status or by receiving a webhook when the result is ready. Once the generation completes, you download the output file.
+How long are generated files stored?
+Generated output files stay available for at least 7 days after creation and may be removed from Higgsfield servers after that period. For long-term retention, download completed files to your own storage as part of your integration.
+Where do I see my API spending?
+Everything lives in the console at open.higgsfield.ai. Analytics shows spend and request volume over time and exports to CSV for reporting; Billing holds your current balance, payment methods, and invoice history.
+How is the API different from MCP and CLI?
+MCP and CLI are agent connections: they attach Claude, Cursor, or another agent to your existing higgsfield.ai account, and everything they generate deducts your plan credits. The API doesn't touch your account or credits at all: it runs on its own key and dollar balance, and it's built for shipping generation inside your own product.
+How is the API different from MCP and CLI?
+Criteria
+API
+MCP and CLI
+Account
+Separate API account
+Your higgsfield.ai account
+Billing
+US dollars per generation
+Plan credits
+API key
+Yes
+No
+Best for
+Building generation into your own product
+Generating from an AI agent
+See What is Higgsfield MCP, and how is it different from the web? and How do I access Higgsfield via CLI?
+Got any questions left?
+Is Open Higgsfield a different product?
+No. Open Higgsfield is the name of the API console at open.higgsfield.ai. The product, the catalog, and the billing are the same Higgsfield API.
+Can I use the API without a Higgsfield plan?
+Yes. The API works entirely on its own dollar balance. Having or not having a plan on higgsfield.ai changes nothing about API access or rates.
+Can I use content generated through the API commercially?
+Yes. Under the Higgsfield Terms of Use you hold the rights to use your generated content, so API outputs can go into commercial products, advertising, and client work.
+Can the API generate audio?
+There are no standalone audio models in the catalog. Some video models, including Seedance, Kling, LTX, and PixVerse, generate native audio inside the clip as a configuration option, which affects the model's rate.
+Can several people use one API account?
+Yes. Every account starts as a personal organization, and you can create a team organization and invite people to it. To switch between workspaces, click your profile icon and open Organization. Usage across the account shows up in the Analytics and Billing sections.
+I lost my API key. Can I see it again?
+No. The key is visible only at the moment of creation. Generate a new key in the console and update your integration.
+Do failed generations cost anything?
+No. Failed requests aren't billed, and the amount is returned to your balance automatically.
+Share Feedback
+Was this article helpful?
+YesNo
+Related articles
+What is Higgsfield MCP, and how is it different from the web?See how Higgsfield MCP works, and why it always deducts credits unlike the website.
+How do I connect Higgsfield to Claude, ChatGPT, or another AI agent?Connect Higgsfield to Claude, ChatGPT, Cursor, or another AI agent in minutes.
+What external integrations does Higgsfield support?See every official Higgsfield plugin, from Figma to DaVinci Resolve, and what each offers.
+by Higgsfield
+How do I access Higgsfield via CLI?How do I use Higgsfield Katana?
+Contents
+How is the API different from my Higgsfield plan?
+Which models are available through the API?
+How do I get started?
+How is API usage billed?
+How does generation work?
+How long are generated files stored?
+Where do I see my API spending?
+How is the API different from MCP and CLI?
+AI-native creative suite
+Create
+AI Video
+AI Video Effects
+AI Image to Video
+AI Text to Video
+AI Video Editor
+Shorts Studio
+Faceless Studio
+AI Explainer
+AI Image
+Edit Image
+Inpaint
+Upscale
+AI Video Upscaler
+Mixed Media
+AI Face Swap
+AI Influencer
+Apps
+Video Models
+Seedance 2.5
+Seedance 2.0
+Kling 3.0
+Kling 4.0
+Veo 3.1 Introduction
+WAN 2.6
+Grok Imagine 1.5
+Gemini Omni Flash
+MiniMax H3
+Image Models
+Nano Banana
+Flux 2
+Seedream 5
+GPT Image 2.6
+GPT Image 2
+Ideogram 4.5
+Studios
+Cinema Studio
+Short Drama
+Ads Studio
+Marketing Studio
+Lipsync Studio
+Higgsfield Popcorn
+Higgsfield Canvas
+Higgsfield Mangaka
+Soul
+Soul 2.0
+Soul ID Character
+Soul Cinema
+Platform
+Supercomputer
+AI Motion Designer
+MCP/CLI
+API
+Collab
+Games
+Reference Extension
+Resources
+Blog
+Help Center
+Academy
+Prompt Guide
+Company
+About
+Trust
+Report a vulnerability
+Enterprise
+Team
+Pricing
+Careers
+Contact
+Community
+Community
+Contests
+Creative Partners
+X / Twitter
+Youtube
+LinkedIn
+Tiktok
+Discord
+Create
+AI Video
+AI Video Effects
+AI Image to Video
+AI Text to Video
+AI Video Editor
+Shorts Studio
+Faceless Studio
+AI Explainer
+AI Image
+Edit Image
+Inpaint
+Upscale
+AI Video Upscaler
+Mixed Media
+AI Face Swap
+AI Influencer
+Apps
+Video Models
+Seedance 2.5
+Seedance 2.0
+Kling 3.0
+Kling 4.0
+Veo 3.1 Introduction
+WAN 2.6
+Grok Imagine 1.5
+Gemini Omni Flash
+MiniMax H3
+Image Models
+Nano Banana
+Flux 2
+Seedream 5
+GPT Image 2.6
+GPT Image 2
+Ideogram 4.5
+Studios
+Cinema Studio
+Short Drama
+Ads Studio
+Marketing Studio
+Lipsync Studio
+Higgsfield Popcorn
+Higgsfield Canvas
+Higgsfield Mangaka
+Soul
+Soul 2.0
+Soul ID Character
+Soul Cinema
+Platform
+Supercomputer
+AI Motion Designer
+MCP/CLI
+API
+Collab
+Games
+Reference Extension
+Resources
+Blog
+Help Center
+Academy
+Prompt Guide
+Company
+About
+Trust
+Report a vulnerability
+Enterprise
+Team
+Pricing
+Careers
+Contact
+Community
+Community
+Contests
+Creative Partners
+550 Montgomery St, 3rd Floor, San Francisco, CA 94111
+X / Twitter
+Youtube
+LinkedIn
+Tiktok
+Discord
+© 2026 Higgsfield, Inc. All rights reserved.
+Help center
+Cookie Notice
+Terms
+Privacy
+Affiliate Terms
+Report a vulnerability

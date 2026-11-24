@@ -1,0 +1,80 @@
+{
+  "manifest_id": "composio-20app-sample-v1",
+  "reviewer": {
+    "id": "ARINDAM KARMAKAR",
+    "type": "human",
+    "human_attestation": true,
+    "reviewed_on": "2026-11-24"
+  },
+  "timestamp": "2026-11-23",
+  "total_eligible_in_sample": 327,
+  "overall": {
+    "eligible": 327,
+    "correct": 277,
+    "incorrect": 0,
+    "unsupported": 50,
+    "unresolved": 0,
+    "not_applicable": 0,
+    "pending": 0,
+    "denominator": 327,
+    "accuracy": 0.8470948012232415,
+    "review_coverage": 1.0
+  },
+  "by_basis": {
+    "observed": {
+      "eligible": 290,
+      "correct": 277,
+      "incorrect": 0,
+      "unsupported": 13,
+      "unresolved": 0,
+      "not_applicable": 0,
+      "pending": 0,
+      "denominator": 290,
+      "accuracy": 0.9551724137931035,
+      "review_coverage": 1.0
+    },
+    "inferred": {
+      "eligible": 37,
+      "correct": 0,
+      "incorrect": 0,
+      "unsupported": 37,
+      "unresolved": 0,
+      "not_applicable": 0,
+      "pending": 0,
+      "denominator": 37,
+      "accuracy": 0.0,
+      "review_coverage": 1.0
+    }
+  },
+  "child_review_runs": {
+    "7": "task17-human-review-07",
+    "8": "task17-human-review-08",
+    "9": "task17-human-review-09",
+    "10": "task17-human-review-10",
+    "11": "task17-human-review-11",
+    "12": "task17-human-review-12",
+    "13": "task17-human-review-13",
+    "14": "task17-human-review-14",
+    "15": "task17-human-review-15",
+    "16": "task17-human-review-16"
+  },
+  "channel_separation": {
+    "ai_review": {
+      "role": "Pre-verification consistency and grounding audits (Tasks 07-16)",
+      "method": "Read-only AI auditor checks against snapshot files and json schema",
+      "human_attestation": false
+    },
+    "browser_automated_checks": {
+      "role": "Source fetch status, HTTP codes, content hashes, robots/SPA checks",
+      "method": "Automated Python urllib / HTTP retrieval pipeline",
+      "human_attestation": false
+    },
+    "human_checks": {
+      "role": "Primary documentary adjudication of ground truth (Task 17 baseline)",
+      "method": "Direct human review of primary vendor docs and snapshot locators",
+      "human_attestation": true,
+      "reviewer_id": "ARINDAM KARMAKAR",
+      "reviewed_on": "2026-11-24"
+    }
+  }
+}

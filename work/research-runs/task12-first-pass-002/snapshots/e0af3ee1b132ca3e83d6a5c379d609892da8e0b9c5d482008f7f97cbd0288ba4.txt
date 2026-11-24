@@ -1,0 +1,115 @@
+Scrape HTML | MrScraper Documentation
+API Reference
+API Reference
+Dashboard
+Introduction
+API OverviewAuthenticationPaginationResponse HeadersError Handling
+Web Search
+Web Search GET
+Scraper API
+Scrape HTML GETScrape Markdown GETGet Screenshot GET
+Scrape Brand
+Scrape JSON GET
+Platform
+Authentication
+Workflow
+Cancel Bulk Scraping
+Result
+Analytic
+MrScraper
+Search
+⌘K
+Dashboard
+DocumentationAPI ReferenceResidential ProxyChangelog
+Scrape HTML
+Retrieve the raw HTML of any webpage with the Scrape HTML endpoint, supporting browser rendering, geo-targeting, and waiting for DOM selectors.
+This endpoint scrapes a target URL with Scrape HTML that supports browser rendering, geo-targeting via proxy, and waiting for specific DOM selectors before extracting content.
+Note
+Use the Scraper API Server (https://api.mrscraper.com) host when calling this endpoint.
+This is the same endpoint as the Scrape HTML use case in the Scraper API Playground.
+html must be set to true.
+When screenshot is set, browserRendering is forced to true.
+loading...
+GET
+/
+Send
+Header
+Query
+Query Parameters
+url*string
+The full URL of the page you want to scrape. Must include the protocol (https://). You can also paste a cURL command here to auto-apply all settings.
+Formaturi
+html*boolean
+Returns the raw HTML of the page. Must be set to true for this use case.
+Defaulttrue
+browserRendering?boolean
+Controls whether the page is loaded in a browser. Leave it out (None in the Scraper API) to load the page without a browser first and switch to a browser automatically if the request is blocked. Set true to always load the page in a browser, which JavaScript-heavy sites, SPAs, and pages that load content dynamically need. Set false to never use a browser.
+timeout?integer
+Maximum seconds to wait for the scrape before the request times out. Up to 330, after which the API stops waiting. Increase for slow or complex pages.
+Default300
+Range1 <= value <= 330
+warmStart?boolean
+Opens the site's home page first to warm the session before loading the target URL. Useful for sites that expect a normal browsing session before deeper pages.
+Defaultfalse
+blockResources?boolean
+Blocks images, fonts, and stylesheets from loading. Speeds up scraping and reduces bandwidth usage.
+Defaultfalse
+waitForSelector?string
+Waits until a specific CSS selector or text appears on the page before returning it, such as #results. Up to 500 characters. Useful for content that loads asynchronously after the initial page load.
+Lengthlength <= 500
+action?string
+Routes the request to a specific scraper action, or simply flags it. Useful for separating analytics per domain.
+geoCode?string
+Two-letter country code to load the page from, such as us or gb. Defaults to the United States.
+Default"us"
+Length2 <= length <= 2
+saveResult?boolean
+Saves the result to the Result tab.
+Defaulttrue
+maxAge?integer
+Serves a cached result of the same request when it is newer than this age, in milliseconds, such as 86400000 for 1 day. Up to 604800000 (7 days). Omit or send 0 to always scrape fresh. A cached result costs the same tokens as the original scrape.
+Range0 <= value <= 604800000
+tokenCap?integer
+Maximum total tokens the scrape and its retries can use. Automatic retries are bounded by this cap, so the total tokens for a single run stay at or below the value you set. Omit for no limit.
+Range1 <= value
+maxRetries?integer
+Maximum number of retries for the request. Omit for no limit.
+Range0 <= value
+screenshot?string
+Also captures a screenshot of the rendered page as a base64-encoded PNG. full captures the entire scroll height, top captures the first viewport, and <width>x<height> sets the viewport size in pixels with an optional -<zoom> percent, such as 1280x800 or 1920x1080-75. Width and height range from 100 to 3840, zoom from 25 to 300. The image is a base64-encoded PNG. When screenshot is set, browserRendering is forced to true.
+Match^(full|top|[0-9]{3,4}x[0-9]{3,4}(-[0-9]{2,3})?)$
+Header Parameters
+x-api-token*string
+API token.
+Response Body
+200
+text/html
+401
+application/json
+500
+application/json
+cURL
+JavaScript
+Go
+Python
+Java
+C#
+curl -X GET "https://api.mrscraper.com/?url=http%3A%2F%2Fexample.com&html=true" \ -H "x-api-token: string"
+200401500
+"<!DOCTYPE html><html lang=\"en\"><head><title>Example Domain</title><meta name=\"viewport\" content=\"width=device-width, initial-scale=1\"><style>body{background:#eee;width:60vw;margin:15vh auto;font-family:system-ui,sans-serif}h1{font-size:1.5em}div{opacity:0.8}a:link,a:visited{color:#348}</style></head><body><div><h1>Example Domain</h1><p>This domain is for use in documentation examples without needing permission. Avoid use in operations.</p><p><a href=\"https://iana.org/domains/example\">Learn more</a></p></div></body></html>"
+{
+"error": "Unauthorized",
+"message": "Invalid or missing API token",
+"statusCode": 401
+}
+{
+"error": "Internal Server Error",
+"message": "An unexpected error occurred",
+"statusCode": 500
+}
+Web Search GET
+Run a search query with the Web Search endpoint and get ranked results with titles, URLs, descriptions, and sources, without scraping the results page yourself.
+Scrape Markdown GET
+Convert any web page into clean, LLM-friendly Markdown with the Scrape Markdown endpoint, stripping navigation, scripts, and ads for token-efficient AI input.
+curl -X GET "https://api.mrscraper.com/?url=http%3A%2F%2Fexample.com&html=true" \
+-H "x-api-token: string"

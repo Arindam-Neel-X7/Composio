@@ -1,0 +1,328 @@
+Developer Platform Basics & Onboarding
+Skip to main content
+Skip to footer
+Changelog
+Blog
+Docs
+Status
+Get Started
+Apps
+CMS
+Tooling
+Marketplace
+Create developer account with a HubSpot Developer account
+Basics & Onboarding
+Your Starting Point for Building on the HubSpot Developer Platform
+One unified foundation to build apps, extend Smart CRM and ship custom integrations. From creating your first project to migrating existing apps, this is your starting point for building and delivering value faster on HubSpot.
+Choose Your PathRead the Announcement
+Are your existing apps on the new platform? See key dates and decision framework → View timelines
+What's New
+One platform. Built to scale with you.
+The HubSpot Developer Platform gives you one set of tools to build apps, integrations and custom experiences on HubSpot.
+Ship Faster
+Guided setup → hello world in minutes. Modern CLI, AI-native docs, no boilerplate.
+Build AI-Ready
+Powered by one unified data foundation. Your experiences surface natively across CRM, workflows and AI tools.
+Stay Current
+18-month support windows, clear upgrade paths, investment protection. Future beta programs.
+Reach More Customers
+Distribute to 228k+ HubSpot customers through the HubSpot Marketplace.
+Previous
+Next
+Ship your first integration in minutes
+Available
+Guided setup with hs get-started
+AI-native docs that answer your questions
+One codebase → private or Marketplace
+Uplevel existing apps with more value
+Available
+Keep existing installs and OAuth
+Unlock App Home, App cards, AI capabilities
+Clear timelines with 18-month support windows
+Building Blocks
+What You Get
+What It Does
+Get Started
+Projects
+Unified framework for apps + CMS assets
+hs get-started
+UI Extensions
+App cards, App Home, settings pages (React)
+Quickstart
+APIs & Webhooks
+RESTful APIs, webhooks, and OAuth for any integration
+API overview
+Serverless Functions
+Backend logic without managing infrastructure (Node.js)
+Strategies
+App Objects & App Events
+Custom data models that work across tiers
+Overview
+Breeze Agent Tools
+Turn workflow actions into AI agent capabilities
+AI Tools
+MCP Server
+Bring HubSpot data to your IDE copilot
+Setup
+View all rows
+View fewer rows
+2025.2, 2026.03
+Choose Your Path
+What are you trying to do?
+Select your starting point and we'll guide you through the right steps.
+I'm new here
+I have an existing app
+Start fresh with the latest platform version and best practices.
+Your Day 0:
+1. Create Account
+Sign up for a free HubSpot account.
+Sign up
+2. Run hs get-started
+Authenticate and create your first project with guided setup.
+Quickstart guide
+3. Build Your App
+Add UI extensions, workflow actions or API integrations.
+Create an app
+4. Upload & Deploy
+Upload your project and deploy to HubSpot.
+CLI project reference
+See what you can build
+Migrate to the new platform and unlock new capabilities.
+Your Day 0:
+1. Find Your Migration Path
+Identify your app type, platform version, and serverless usage.
+Check the migration matrix
+2. Review Requirements
+Understand what migration involves for your app type.
+Migration guide
+3. Run Migration
+Legacy: hs app migrate
+Projects 2025.1: hs project migrate
+CLI migration commands
+Read the migration case study
+Start Building
+Resources to Get Started
+Docs, tutorials and videos organized by what you're trying to accomplish.
+Search all resources
+Search all resources
+Clear Search
+Filter by
+Content Type
+- Content Type -
+Category
+Category
+Clear All Filters
+Docs
+Starting Fresh
+Docs
+Starting Fresh
+Developer Platform OverviewArchitecture, capabilities, and core concepts.
+View Docs
+Tutorial
+Starting Fresh
+Tutorial
+Starting Fresh
+Getting Started with ProjectsDetailed walkthrough of creating your first project.
+Watch
+Tutorial
+Starting Fresh
+Tutorial
+Starting Fresh
+Create an App CardStep-by-step guide to your first UI extension.
+View Docs
+Docs
+Portal Conversion
+Docs
+Portal Conversion
+Portal Conversion 101Everything you need to opt in to the new HubSpot Developer Platform and convert a legacy developer portal to a HubSpot Free CRM account.
+View Docs
+Video
+Migrating Your Apps
+Video
+Migrating Your Apps
+How to Convert Your Portal to the New Developer PlatformDetailed walkthrough covering portal conversion to HubSpot’s unified Developer Platform.
+Watch
+Changelog
+Migrating Your Apps
+Changelog
+Migrating Your Apps
+Legacy Developer Accounts Migrating to the Unified Developer PlatformKey dates and info for planning legacy developer accounts conversion to HubSpot’s unified Developer Platform.
+Read More
+Docs
+Migrating Your Apps
+Docs
+Migrating Your Apps
+Migration Guide for Legacy AppsEverything you need to migrate from legacy apps.
+View Docs
+Blog
+Migrating Your Apps
+Blog
+Migrating Your Apps
+Planning Your MigrationKey dates and decision framework for planning.
+Read More
+Video
+Migrating Your Apps
+Video
+Migrating Your Apps
+Manual Migration for Private AppsDetailed walkthrough covering manual migration steps for private apps.
+Watch
+Video
+Migrating Your Apps
+Video
+Migrating Your Apps
+Auto Migration for Public AppsDetailed walkthrough covering auto migration steps for public apps.
+Watch
+Blog
+Migrating Your Apps
+Blog
+Migrating Your Apps
+Building with the New Developer PlatformReal-world migration case study.
+Read More
+Blog
+Migrating Your Apps
+Blog
+Migrating Your Apps
+Navigating Serverless FunctionsMigration strategies for serverless apps.
+Read More
+Landing Page
+Level Up
+Landing Page
+Level Up
+AI Tools for DevelopersBuild Breeze Agent Tools and AI‑ready extensions.
+View Page
+Landing Page
+Level Up
+Landing Page
+Level Up
+MCP Server SetupConnect your IDE copilot to HubSpot.
+View Page
+Newsletter
+Level Up
+Newsletter
+Level Up
+Developer ChangelogRelease announcements and platform updates.
+Subscribe
+Events
+Community
+Events
+Community
+HubSpot Ecosystem Mentorship ProgramLearn from peers in topic-based mini-cohorts and 1:1 mentorship designed to accelerate your technical expertise and grow your career in the HubSpot ecosystem.
+Join Today
+Events
+Events & Webinars
+Events
+Events & Webinars
+HubSpot Academy BootcampFree, instructor-led online training programs designed to help build skills and develop new strategies.
+Learn More
+Newsletter
+Stay Informed
+Newsletter
+Stay Informed
+Developer NewsletterPlatform updates, educational resources, community news and changelog highlights to keep HS devs informed and inspired
+Subscribe
+Webinar
+Level Up
+Webinar
+Level Up
+Dev Platform Playground Event SeriesDesigned for the builder audience to learn, explore and play with the latest HubSpot Developer Platform products and features.
+Learn More
+Video
+Stay Informed
+Video
+Stay Informed
+HubSpot Developers YouTubeLearn what you need to know about building on HubSpot, the latest and greatest development techniques, and how to advance in your career.
+Explore
+Stay Informed
+Stay Informed
+Developer Feedback FormTell us about your experience building on the HubSpot Developer Platform
+Submit
+No Results
+Clear All Filters
+FAQs
+Common Questions
+Quick answers to help you get started.
+What is the HubSpot Developer Platform?
+The HubSpot Developer Platform is a unified foundation that empowers you to build and deliver value faster — one way to build on HubSpot, from private integrations to Marketplace apps. It includes the CLI, projects framework, UI extensions, and APIs plus an AI‑ready framework and capabilities like Breeze Agent Tools.
+What are Projects?
+Projects are the unified framework for building apps (and CMS assets) on the HubSpot Developer Platform: unified projects that can support one account or many. A project is a collection of code, configuration, and assets managed through the CLI with date-based versioning (like 2026.03).
+When are new platform versions and APIs released?
+Both follow the same 6-month release cycle: March and September. Each platform version is supported for 18 months, giving you ample time to plan upgrades. API versioning is independent meaning you can use newer APIs on older platform versions.
+Check the changelog for release announcements and deprecation notices. Subscribe for updates
+Do I need a paid HubSpot account to develop?
+No. You can create a free HubSpot account and build apps without a paid subscription. You'll get access to a developer test account with sample data for testing. For production deployments, your app's users will need appropriate HubSpot accounts.
+What does a developer account come with?
+A free developer account includes:
+Test accounts with sample CRM data (contacts, companies, deals) for development and testing
+API access to HubSpot’s public APIs for development and testing
+App management to create, configure, and publish apps
+CLI access to create and deploy Projects
+AI-native developer documentation
+Test accounts reset periodically but are fully functional for building and testing your integrations.
+What are developer seats?
+When you convert your developer portal, you get 2 Super Admin core seats with full access to CRM and development tools. Additional users can be added as developer seats which provide access to development tools without using a paid CRM seat.
+Developer seats let your team collaborate on apps without requiring paid HubSpot subscriptions.
+Learn more about account types
+What languages and frameworks are supported?
+UI Extensions: React (TypeScript or JavaScript)
+Backend integrations: Any language that can make HTTP requests; HubSpot's APIs are RESTful
+CLI tooling: Node.js
+Serverless functions: Node.js (currently supported on Projects 2025.1; see docs for the latest roadmap and migration guidance)
+AI tooling: MCP server support for IDE copilots (Cursor, Claude Code, VS Code, Windsurf)
+How do I know which platform version I'm on?
+Check the platformVersion field in your hsproject.json file. Apps on version 2025.2 or later are on the current platform.
+If you're on an earlier version, see the "I have an existing app" path above to upgrade to the latest Projects framework.
+Note: Version numbers are date-based. Use 2026.03 (March), not 2026.3.
+Why should I migrate my existing app? When is the best time?
+The new platform offers better performance, modern UI Extensions (app cards, App Home, settings pages), improved developer tooling, and ongoing feature updates including AI capabilities.
+Legacy apps on older versions will be deprecated over time. Projects 2025.1 deprecates June 1, 2026. Migrating ensures your app stays supported and can take advantage of new capabilities.
+See the migration timeline
+What’s the difference between portal conversion and app migration?
+They're separate steps: Portal conversion updates your developer portal itself — converting it from the legacy Developer Tools view to a HubSpot Free CRM account with the Development navigation. This is a one-time step that must be completed before you can migrate apps.
+App migration moves individual apps to the new Projects framework (2025.2 or later). Each app migrates separately using CLI commands. If your portal is already on the new platform (you see "Development" in the nav), you can skip portal conversion and go straight to app migration.
+What does “migration” mean for my app?
+Migration moves your app to the new Projects framework. What's involved depends on where you're starting:
+Legacy public apps use OAuth and can be installed in multiple portals; they may or may not be listed in the Marketplace.
+Legacy private apps use API keys and work only in a single portal.
+This distinction affects your migration path and install limits. If you’re still using a legacy developer portal, you’ll convert that portal to the new Developer Platform through the in‑app opt‑in banner then move individual apps using the migration guides.
+See the migration matrix guide
+Do I need to migrate from legacy CRM cards to app cards?
+Yes, Classic CRM cards sunset on October 31, 2026. App cards are the replacement — they're built with React, support richer interaction and work across more surfaces (record pages, App Home, settings).
+If you're migrating an app that uses classic CRM cards, you'll need to rebuild them as app cards.
+Classic CRM cards sunset details
+Create an app card
+What’s the status of serverless functions?
+Serverless functions are currently supported only in Projects 2025.1. They're not yet available on 2025.2 or later.
+What this means for you: New apps should build without serverless for now or start on 2025.1 and migrate later. Existing apps using serverless should stay on 2025.1 until 2026.03 (March 2026).
+We'll share updates on 2026.03 serverless support in the changelog.
+Read serverless migration strategies
+Should I migrate or start fresh?
+If you're already on Projects 2025.1 with app cards → migration to 2025.2 or later is lightweight.
+If you're on a legacy app with significant tech debt → starting fresh might be faster.
+Run hs project migrate to see what's involved.
+Ready to Build?
+Access Your HubSpot Account to Get Started
+For Developers
+Company
+For Developers
+Developer Tooling
+API Documentation
+Apps Documentation
+CMS Documentation
+Become a Partner
+HubSpot Developer Blog
+HubSpot Developer Changelog
+HubSpot Developer Community
+HubSpot Developer Newsletter
+HubSpot Academy
+Company
+About Us
+Careers
+Management Team
+Board of Directors
+Investor Relations
+Contact Us
+Copyright © 2026 HubSpot, Inc.
+Legal Stuff
+Privacy Policy
+Security
+Website Accessibility

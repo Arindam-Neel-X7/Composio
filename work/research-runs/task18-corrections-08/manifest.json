@@ -1,0 +1,733 @@
+{
+  "run_id": "task18-corrections-08",
+  "parent_run_id": "task08-first-pass-003",
+  "status": "complete",
+  "synthetic": false,
+  "selected_app_ids": [
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20
+  ],
+  "created_on": "2026-11-23",
+  "producer": {
+    "id": "pipeline-extractor",
+    "type": "ai"
+  },
+  "tool": {
+    "name": "research_pipeline",
+    "version": "0.2.0",
+    "python": "3.11.9",
+    "source_sha256": "263c88230b585de37de6afabd13e88033da9496eef7d08e89e7057dddd42b09d"
+  },
+  "config": {
+    "timeout": 10,
+    "retries": 1,
+    "max_bytes": 2000000,
+    "replay": false,
+    "refresh": false,
+    "extractor": "explicit_external_or_file",
+    "extractor_label": "task-18-error-corrections-agent"
+  },
+  "contracts": {
+    "roster": {
+      "path": "contracts/roster.json",
+      "sha256": "6e3aada149102c2e5539c126aa556c1ceaca3d9d25ca6e0a8f56b3a569f81c19"
+    },
+    "schema": {
+      "path": "contracts/schema.json",
+      "sha256": "40e5552a4c838293e5f440e4abbc38b0e48eefa1f626e2ee9c61a3ee1a8d49c3"
+    },
+    "rules": {
+      "path": "contracts/rules.md",
+      "sha256": "c1f94b3142ed47740d0d1a90879ca0e962ada77542eddd39edc15e36ed93c733"
+    }
+  },
+  "source_specs": [
+    {
+      "app_id": 11,
+      "url": "https://developer.zendesk.com/api-reference/introduction/security-and-auth/",
+      "kind": "primary_docs",
+      "scope": "Zendesk Support/Suite REST APIs, OAuth 2.0/API token auth, trial/sandbox/paid plans, and MCP client/server ecosystem",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor-controlled official documentation or product page",
+      "attribution_by": "task08-research-agent-gemini"
+    },
+    {
+      "app_id": 11,
+      "url": "https://developer.zendesk.com/api-reference/ticketing/introduction/",
+      "kind": "primary_docs",
+      "scope": "Zendesk Support/Suite REST APIs, OAuth 2.0/API token auth, trial/sandbox/paid plans, and MCP client/server ecosystem",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor-controlled official documentation or product page",
+      "attribution_by": "task08-research-agent-gemini"
+    },
+    {
+      "app_id": 11,
+      "url": "https://developer.zendesk.com/documentation/ticketing/getting-started/zendesk-api-quick-start/",
+      "kind": "primary_docs",
+      "scope": "Zendesk Support/Suite REST APIs, OAuth 2.0/API token auth, trial/sandbox/paid plans, and MCP client/server ecosystem",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor-controlled official documentation or product page",
+      "attribution_by": "task08-research-agent-gemini"
+    },
+    {
+      "app_id": 11,
+      "url": "https://www.zendesk.com/pricing/",
+      "kind": "official_product_page",
+      "scope": "Zendesk Support/Suite REST APIs, OAuth 2.0/API token auth, trial/sandbox/paid plans, and MCP client/server ecosystem",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor-controlled official documentation or product page",
+      "attribution_by": "task08-research-agent-gemini"
+    },
+    {
+      "app_id": 12,
+      "url": "https://developers.intercom.com/docs",
+      "kind": "primary_docs",
+      "scope": "Intercom REST API, OAuth 2.0/Access Token auth, developer workspace/trial/paid plans, and official hosted MCP server",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor-controlled official documentation or product page",
+      "attribution_by": "task08-research-agent-gemini"
+    },
+    {
+      "app_id": 12,
+      "url": "https://developers.intercom.com/docs/build-an-integration/learn-more/authentication",
+      "kind": "primary_docs",
+      "scope": "Intercom REST API, OAuth 2.0/Access Token auth, developer workspace/trial/paid plans, and official hosted MCP server",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor-controlled official documentation or product page",
+      "attribution_by": "task08-research-agent-gemini"
+    },
+    {
+      "app_id": 12,
+      "url": "https://developers.intercom.com/docs/guides/mcp",
+      "kind": "primary_docs",
+      "scope": "Intercom REST API, OAuth 2.0/Access Token auth, developer workspace/trial/paid plans, and official hosted MCP server",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor-controlled official documentation or product page",
+      "attribution_by": "task08-research-agent-gemini"
+    },
+    {
+      "app_id": 12,
+      "url": "https://www.intercom.com/pricing",
+      "kind": "official_product_page",
+      "scope": "Intercom REST API, OAuth 2.0/Access Token auth, developer workspace/trial/paid plans, and official hosted MCP server",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor-controlled official documentation or product page",
+      "attribution_by": "task08-research-agent-gemini"
+    },
+    {
+      "app_id": 13,
+      "url": "https://developers.freshdesk.com/api/",
+      "kind": "primary_docs",
+      "scope": "Freshdesk REST API v2 and official MCP; verified agents and FDK apps; trial/free testing versus licensed production tenants; plan-specific capabilities not generalized",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor-controlled official documentation or product page",
+      "attribution_by": "task08-research-agent-gemini"
+    },
+    {
+      "app_id": 13,
+      "url": "https://developers.freshworks.com/docs/app-sdk/v3.0/support_ticket/rest-apis/",
+      "kind": "primary_docs",
+      "scope": "Freshdesk REST API v2 and official MCP; verified agents and FDK apps; trial/free testing versus licensed production tenants; plan-specific capabilities not generalized",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor-controlled official documentation or product page",
+      "attribution_by": "task08-research-agent-gemini"
+    },
+    {
+      "app_id": 13,
+      "url": "https://developers.freshworks.com/docs/app-sdk/v3.0/support_ticket/oauth-implementation-in-apps/",
+      "kind": "primary_docs",
+      "scope": "Freshdesk REST API v2 and official MCP; verified agents and FDK apps; trial/free testing versus licensed production tenants; plan-specific capabilities not generalized",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor-controlled official documentation or product page",
+      "attribution_by": "task08-research-agent-gemini"
+    },
+    {
+      "app_id": 13,
+      "url": "https://support.freshdesk.com/support/solutions/articles/215517-how-to-find-your-api-key",
+      "kind": "primary_docs",
+      "scope": "Freshdesk REST API v2 and official MCP; verified agents and FDK apps; trial/free testing versus licensed production tenants; plan-specific capabilities not generalized",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor-controlled official documentation or product page",
+      "attribution_by": "task08-research-agent-gemini"
+    },
+    {
+      "app_id": 13,
+      "url": "https://support.freshdesk.com/support/solutions/articles/50000011778",
+      "kind": "primary_docs",
+      "scope": "Freshdesk REST API v2 and official MCP; verified agents and FDK apps; trial/free testing versus licensed production tenants; plan-specific capabilities not generalized",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor-controlled official documentation or product page",
+      "attribution_by": "task08-research-agent-gemini"
+    },
+    {
+      "app_id": 13,
+      "url": "https://support.freshdesk.com/support/solutions/articles/50000012670",
+      "kind": "primary_docs",
+      "scope": "Freshdesk REST API v2 and official MCP; verified agents and FDK apps; trial/free testing versus licensed production tenants; plan-specific capabilities not generalized",
+      "environments": [
+        "production"
+      ],
+      "attribution_basis": "Vendor-controlled official documentation or product page",
+      "attribution_by": "task08-research-agent-gemini"
+    },
+    {
+      "app_id": 13,
+      "url": "https://www.freshworks.com/freshdesk/pricing/",
+      "kind": "official_product_page",
+      "scope": "Freshdesk REST API v2 and official MCP; verified agents and FDK apps; trial/free testing versus licensed production tenants; plan-specific capabilities not generalized",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor-controlled official documentation or product page",
+      "attribution_by": "task08-research-agent-gemini"
+    },
+    {
+      "app_id": 14,
+      "url": "https://dev.frontapp.com/llms.txt",
+      "kind": "primary_docs",
+      "scope": "Front Core REST API, API token/OAuth 2.0 auth, developer/trial/paid plans, and official hosted MCP server",
+      "environments": [],
+      "attribution_basis": "Vendor-controlled official documentation or product page",
+      "attribution_by": "task08-research-agent-gemini"
+    },
+    {
+      "app_id": 14,
+      "url": "https://dev.frontapp.com/reference/introduction",
+      "kind": "primary_docs",
+      "scope": "Front Core REST API, API token/OAuth 2.0 auth, developer/trial/paid plans, and official hosted MCP server",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor-controlled official documentation or product page",
+      "attribution_by": "task08-research-agent-gemini"
+    },
+    {
+      "app_id": 14,
+      "url": "https://dev.frontapp.com/docs/oauth",
+      "kind": "primary_docs",
+      "scope": "Front Core REST API, API token/OAuth 2.0 auth, developer/trial/paid plans, and official hosted MCP server",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor-controlled official documentation or product page",
+      "attribution_by": "task08-research-agent-gemini"
+    },
+    {
+      "app_id": 14,
+      "url": "https://front.com/pricing",
+      "kind": "official_product_page",
+      "scope": "Front Core REST API, API token/OAuth 2.0 auth, developer/trial/paid plans, and official hosted MCP server",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor-controlled official documentation or product page",
+      "attribution_by": "task08-research-agent-gemini"
+    },
+    {
+      "app_id": 15,
+      "url": "https://docs.usepylon.com/llms.txt",
+      "kind": "primary_docs",
+      "scope": "Pylon REST API, Bearer API token/OAuth auth, paid plans, and official hosted MCP server",
+      "environments": [],
+      "attribution_basis": "Vendor-controlled official documentation or product page",
+      "attribution_by": "task08-research-agent-gemini"
+    },
+    {
+      "app_id": 15,
+      "url": "https://docs.usepylon.com/pylon-docs/developer/api",
+      "kind": "primary_docs",
+      "scope": "Pylon REST API, Bearer API token/OAuth auth, paid plans, and official hosted MCP server",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor-controlled official documentation or product page",
+      "attribution_by": "task08-research-agent-gemini"
+    },
+    {
+      "app_id": 15,
+      "url": "https://usepylon.com/pricing",
+      "kind": "official_product_page",
+      "scope": "Pylon REST API, Bearer API token/OAuth auth, paid plans, and official hosted MCP server",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor-controlled official documentation or product page",
+      "attribution_by": "task08-research-agent-gemini"
+    },
+    {
+      "app_id": 16,
+      "url": "https://support.liveagent.com/061754-Complete-API-reference",
+      "kind": "primary_docs",
+      "scope": "LiveAgent REST API v3, API key/OAuth auth, trial/paid plans, and built-in MCP server",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor-controlled official documentation or product page",
+      "attribution_by": "task08-research-agent-gemini"
+    },
+    {
+      "app_id": 16,
+      "url": "https://www.liveagent.com/pricing/",
+      "kind": "official_product_page",
+      "scope": "LiveAgent REST API v3, API key/OAuth auth, trial/paid plans, and built-in MCP server",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor-controlled official documentation or product page",
+      "attribution_by": "task08-research-agent-gemini"
+    },
+    {
+      "app_id": 17,
+      "url": "https://www.plain.com/docs/llms.txt",
+      "kind": "primary_docs",
+      "scope": "Plain GraphQL API, Machine User API key/OAuth auth, trial/paid plans, and official hosted MCP server",
+      "environments": [],
+      "attribution_basis": "Vendor-controlled official documentation or product page",
+      "attribution_by": "task08-research-agent-gemini"
+    },
+    {
+      "app_id": 17,
+      "url": "https://www.plain.com/pricing",
+      "kind": "official_product_page",
+      "scope": "Plain GraphQL API, Machine User API key/OAuth auth, trial/paid plans, and official hosted MCP server",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor-controlled official documentation or product page",
+      "attribution_by": "task08-research-agent-gemini"
+    },
+    {
+      "app_id": 18,
+      "url": "https://developer.helpscout.com/mailbox-api/",
+      "kind": "primary_docs",
+      "scope": "Help Scout Mailbox API v2 and Docs API v1, OAuth 2.0/API key auth, free/paid plans, and official hosted MCP server",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor-controlled official documentation or product page",
+      "attribution_by": "task08-research-agent-gemini"
+    },
+    {
+      "app_id": 18,
+      "url": "https://developer.helpscout.com/mailbox-api/overview/authentication/",
+      "kind": "primary_docs",
+      "scope": "Help Scout Mailbox API v2 and Docs API v1, OAuth 2.0/API key auth, free/paid plans, and official hosted MCP server",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor-controlled official documentation or product page",
+      "attribution_by": "task08-research-agent-gemini"
+    },
+    {
+      "app_id": 18,
+      "url": "https://developer.helpscout.com/docs-api/",
+      "kind": "primary_docs",
+      "scope": "Help Scout Mailbox API v2 and Docs API v1, OAuth 2.0/API key auth, free/paid plans, and official hosted MCP server",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor-controlled official documentation or product page",
+      "attribution_by": "task08-research-agent-gemini"
+    },
+    {
+      "app_id": 18,
+      "url": "https://www.helpscout.com/pricing/",
+      "kind": "official_product_page",
+      "scope": "Help Scout Mailbox API v2 and Docs API v1, OAuth 2.0/API key auth, free/paid plans, and official hosted MCP server",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor-controlled official documentation or product page",
+      "attribution_by": "task08-research-agent-gemini"
+    },
+    {
+      "app_id": 19,
+      "url": "https://developers.gorgias.com/llms.txt",
+      "kind": "primary_docs",
+      "scope": "Gorgias REST API, HTTP Basic API key/OAuth 2.0 auth, trial/paid plans, and MCP ecosystem",
+      "environments": [],
+      "attribution_basis": "Vendor-controlled official documentation or product page",
+      "attribution_by": "task08-research-agent-gemini"
+    },
+    {
+      "app_id": 19,
+      "url": "https://developers.gorgias.com/reference/introduction",
+      "kind": "primary_docs",
+      "scope": "Gorgias REST API, HTTP Basic API key/OAuth 2.0 auth, trial/paid plans, and MCP ecosystem",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor-controlled official documentation or product page",
+      "attribution_by": "task08-research-agent-gemini"
+    },
+    {
+      "app_id": 19,
+      "url": "https://developers.gorgias.com/reference/authentication",
+      "kind": "primary_docs",
+      "scope": "Gorgias REST API, HTTP Basic API key/OAuth 2.0 auth, trial/paid plans, and MCP ecosystem",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor-controlled official documentation or product page",
+      "attribution_by": "task08-research-agent-gemini"
+    },
+    {
+      "app_id": 19,
+      "url": "https://www.gorgias.com/pricing",
+      "kind": "official_product_page",
+      "scope": "Gorgias REST API, HTTP Basic API key/OAuth 2.0 auth, trial/paid plans, and MCP ecosystem",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor-controlled official documentation or product page",
+      "attribution_by": "task08-research-agent-gemini"
+    },
+    {
+      "app_id": 20,
+      "url": "https://developer.gladly.com/",
+      "kind": "primary_docs",
+      "scope": "Gladly REST API and Lookup API, HTTP Basic API token auth, sandbox/enterprise plans, and bounded MCP discovery",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor-controlled official documentation or product page",
+      "attribution_by": "task08-research-agent-gemini"
+    },
+    {
+      "app_id": 20,
+      "url": "https://developer.gladly.com/rest/",
+      "kind": "primary_docs",
+      "scope": "Gladly REST API and Lookup API, HTTP Basic API token auth, sandbox/enterprise plans, and bounded MCP discovery",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor-controlled official documentation or product page",
+      "attribution_by": "task08-research-agent-gemini"
+    },
+    {
+      "app_id": 20,
+      "url": "https://www.gladly.com/pricing/",
+      "kind": "official_product_page",
+      "scope": "Gladly REST API and Lookup API, HTTP Basic API token auth, sandbox/enterprise plans, and bounded MCP discovery",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor-controlled official documentation or product page",
+      "attribution_by": "task08-research-agent-gemini"
+    },
+    {
+      "app_id": 11,
+      "url": "https://support.zendesk.com/hc/en-us/articles/4408828617370-Testing-changes-in-your-sandbox",
+      "kind": "primary_docs",
+      "scope": "Zendesk Support/Suite REST APIs, OAuth 2.0/API token auth, trial/sandbox/paid plans, and MCP client/server ecosystem",
+      "environments": [
+        "testing"
+      ],
+      "attribution_basis": "Vendor-controlled official documentation or product page",
+      "attribution_by": "task08-research-agent-gemini"
+    },
+    {
+      "app_id": 11,
+      "url": "https://github.com/reminia/zendesk-mcp-server",
+      "kind": "community_repository",
+      "scope": "Zendesk Support/Suite REST APIs, OAuth 2.0/API token auth, trial/sandbox/paid plans, and MCP client/server ecosystem",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Third-party community GitHub repository implementing a Zendesk MCP server",
+      "attribution_by": "task08-research-agent-gemini"
+    },
+    {
+      "app_id": 12,
+      "url": "https://developers.intercom.com/docs/build-an-integration/learn-more/authentication/setting-up-oauth",
+      "kind": "primary_docs",
+      "scope": "Intercom REST API, OAuth 2.0/Access Token auth, developer workspace/trial/paid plans, and official hosted MCP server",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor-controlled official documentation or product page",
+      "attribution_by": "task08-research-agent-gemini"
+    },
+    {
+      "app_id": 14,
+      "url": "https://dev.frontapp.com/docs/authentication.md",
+      "kind": "primary_docs",
+      "scope": "Front Core REST API, API token/OAuth 2.0 auth, developer/trial/paid plans, and official hosted MCP server",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor-controlled official documentation or product page",
+      "attribution_by": "task08-research-agent-gemini"
+    },
+    {
+      "app_id": 14,
+      "url": "https://dev.frontapp.com/docs/create-and-revoke-api-tokens.md",
+      "kind": "primary_docs",
+      "scope": "Front Core REST API, API token/OAuth 2.0 auth, developer/trial/paid plans, and official hosted MCP server",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor-controlled official documentation or product page",
+      "attribution_by": "task08-research-agent-gemini"
+    },
+    {
+      "app_id": 14,
+      "url": "https://dev.frontapp.com/docs/mcp-server.md",
+      "kind": "primary_docs",
+      "scope": "Front Core REST API, API token/OAuth 2.0 auth, developer/trial/paid plans, and official hosted MCP server",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor-controlled official documentation or product page",
+      "attribution_by": "task08-research-agent-gemini"
+    },
+    {
+      "app_id": 14,
+      "url": "https://dev.frontapp.com/docs/admin-mcp-server.md",
+      "kind": "primary_docs",
+      "scope": "Front Core REST API, API token/OAuth 2.0 auth, developer/trial/paid plans, and official hosted MCP server",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor-controlled official documentation or product page",
+      "attribution_by": "task08-research-agent-gemini"
+    },
+    {
+      "app_id": 15,
+      "url": "https://docs.usepylon.com/pylon-docs/developer/api/authentication.md",
+      "kind": "primary_docs",
+      "scope": "Pylon REST API, Bearer API token/OAuth auth, paid plans, and official hosted MCP server",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor-controlled official documentation or product page",
+      "attribution_by": "task08-research-agent-gemini"
+    },
+    {
+      "app_id": 15,
+      "url": "https://docs.usepylon.com/pylon-docs/integrations/pylon-mcp.md",
+      "kind": "primary_docs",
+      "scope": "Pylon REST API, Bearer API token/OAuth auth, paid plans, and official hosted MCP server",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor-controlled official documentation or product page",
+      "attribution_by": "task08-research-agent-gemini"
+    },
+    {
+      "app_id": 15,
+      "url": "https://docs.usepylon.com/pylon-docs/developer/api/api-reference.md",
+      "kind": "primary_docs",
+      "scope": "Pylon REST API, Bearer API token/OAuth auth, paid plans, and official hosted MCP server",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor-controlled official documentation or product page",
+      "attribution_by": "task08-research-agent-gemini"
+    },
+    {
+      "app_id": 16,
+      "url": "https://support.liveagent.com/647358-MCP-Integration-for-Agents",
+      "kind": "primary_docs",
+      "scope": "LiveAgent REST API v3, API key/OAuth auth, trial/paid plans, and built-in MCP server",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor-controlled official documentation or product page",
+      "attribution_by": "task08-research-agent-gemini"
+    },
+    {
+      "app_id": 17,
+      "url": "https://www.plain.com/docs/_llms/developer.txt",
+      "kind": "primary_docs",
+      "scope": "Plain GraphQL API, Machine User API key/OAuth auth, trial/paid plans, and official hosted MCP server",
+      "environments": [],
+      "attribution_basis": "Vendor-controlled official documentation or product page",
+      "attribution_by": "task08-research-agent-gemini"
+    },
+    {
+      "app_id": 18,
+      "url": "https://developer.helpscout.com/",
+      "kind": "primary_docs",
+      "scope": "Help Scout Mailbox API v2 and Docs API v1, OAuth 2.0/API key auth, free/paid plans, and official hosted MCP server",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor-controlled official documentation or product page",
+      "attribution_by": "task08-research-agent-gemini"
+    },
+    {
+      "app_id": 19,
+      "url": "https://developers.gorgias.com/docs/overview.md",
+      "kind": "primary_docs",
+      "scope": "Gorgias REST API, HTTP Basic API key/OAuth 2.0 auth, trial/paid plans, and MCP ecosystem",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor-controlled official documentation or product page",
+      "attribution_by": "task08-research-agent-gemini"
+    },
+    {
+      "app_id": 19,
+      "url": "https://developers.gorgias.com/docs/oauth2-authentication-for-creating-apps-with-gorgias.md",
+      "kind": "primary_docs",
+      "scope": "Gorgias REST API, HTTP Basic API key/OAuth 2.0 auth, trial/paid plans, and MCP ecosystem",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor-controlled official documentation or product page",
+      "attribution_by": "task08-research-agent-gemini"
+    },
+    {
+      "app_id": 19,
+      "url": "https://developers.gorgias.com/docs/5-submit-app-for-review.md",
+      "kind": "primary_docs",
+      "scope": "Gorgias REST API, HTTP Basic API key/OAuth 2.0 auth, trial/paid plans, and MCP ecosystem",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor-controlled official documentation or product page",
+      "attribution_by": "task08-research-agent-gemini"
+    },
+    {
+      "app_id": 19,
+      "url": "https://github.com/mattcoatsworth/Gorgias-MCP-Server",
+      "kind": "community_repository",
+      "scope": "Gorgias REST API, HTTP Basic API key/OAuth 2.0 auth, trial/paid plans, and MCP ecosystem",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Third-party community GitHub repository implementing a Gorgias MCP server",
+      "attribution_by": "task08-research-agent-gemini"
+    },
+    {
+      "app_id": 17,
+      "url": "https://www.plain.com/docs/graphql/introduction.md",
+      "kind": "primary_docs",
+      "scope": "Plain GraphQL API, Machine User API key/OAuth auth, trial/paid plans, and official hosted MCP server",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor-controlled official documentation or product page",
+      "attribution_by": "task08-research-agent-gemini"
+    },
+    {
+      "app_id": 17,
+      "url": "https://www.plain.com/docs/graphql/authentication.md",
+      "kind": "primary_docs",
+      "scope": "Plain GraphQL API, Machine User API key/OAuth auth, trial/paid plans, and official hosted MCP server",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor-controlled official documentation or product page",
+      "attribution_by": "task08-research-agent-gemini"
+    },
+    {
+      "app_id": 17,
+      "url": "https://www.plain.com/docs/graphql/oauth.md",
+      "kind": "primary_docs",
+      "scope": "Plain GraphQL API, Machine User API key/OAuth auth, trial/paid plans, and official hosted MCP server",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor-controlled official documentation or product page",
+      "attribution_by": "task08-research-agent-gemini"
+    },
+    {
+      "app_id": 17,
+      "url": "https://www.plain.com/docs/integrations/mcp-server.md",
+      "kind": "primary_docs",
+      "scope": "Plain GraphQL API, Machine User API key/OAuth auth, trial/paid plans, and official hosted MCP server",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor-controlled official documentation or product page",
+      "attribution_by": "task08-research-agent-gemini"
+    }
+  ]
+}

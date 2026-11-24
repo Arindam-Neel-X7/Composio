@@ -1,0 +1,2094 @@
+Backlinks - SE Ranking API Documentation
+BLACK FRIDAY | Extra 20% off SE Ranking annual plans and add-ons until Dec 4
+SE Ranking
+Grow your visibility with AI SEO
+SE Visible
+Analyze AI visibility strategically
+Planable
+Manage your socials as a team
+API
+Solutions
+By business type Migrate to SE Ranking
+See product tour
+Agencies
+Enterprises
+Growing business
+Tools
+Core SEO tools AI Search tools Other SEO tools Agency Pack Content Marketing Local Marketing Software Integrations
+See product tour
+Rank Tracker
+Keyword Research
+On-Page SEO Checker
+Website Audit
+Competitor Analysis Tool
+Backlink Checker
+AI Search Toolkit
+AI Overviews Tracker
+AI Mode Tracker
+ChatGPT Tracker
+Gemini Tracker
+ChatGPT ads tracker
+AI Mode ads tracker
+SERP Tracker
+Insights
+Keyword Grouper
+SEO Dashboard
+Agency Pack
+SEO Report Generator
+Lead Generator
+White Label
+Content Marketing Tool
+Content Editor
+AI Writer
+Resources
+Education Customer Hub Agency Catalog
+See product tour
+Blog
+Webinars
+Podcast
+Academy
+Help center
+What’s new
+Case studies
+Pricing
+Platform plans
+API Plans
+API & MCP
+API MCP Our data API Pricing
+See product tour
+API
+Keyword Research API
+Backlinks API
+Domain Analysis API
+Rank Tracker API
+Website Traffic API
+Website Audit API
+AI Visibility API
+MCP
+SEO Skills for Claude
+Marketing Skills for Claude
+Content Skills for Claude
+Products
+SE Ranking
+Grow your visibility with AI SEO
+SE Visible
+Analyze AI visibility strategically
+Planable
+Manage your socials as a team
+See product tour
+Start free trial
+en
+enEnglish
+deDeutsch
+frFrançais
+esEspañol
+nlNederlands
+itItaliano
+ptPortuguês
+uaУкраїнська
+ruРусский
+あ日本語
+Sign in
+See product tour
+Start free trial
+Back
+API
+Introduction
+Getting API access
+API credit system
+API rate limits
+Integrations
+Data Studio
+MCP
+n8n
+Make.com
+Usage guidelines for commercial purposes
+Data
+Overview
+Getting started
+Authentication
+Making requests
+Postman collection
+Unit costs
+Plans and pricing
+Quickstarts
+Find keyword opportunities
+Assess AI search visibility
+Retrieve URLs with SEO issues
+Use Website Audit API for SEO growth
+Generate reports with SEOIntel
+Build authority with link building
+Analyze domain traffic & competitors
+Backlinks
+Get backlink summary
+Get backlink metrics
+List all backlinks
+Fetch backlinks in batches
+Get total backlinks count
+Export backlinks data
+List new/lost backlinks
+Get daily new/lost backlinks
+Get cumulative backlinks
+Get backlink anchor texts
+List referring domains
+Get referring domains count
+List new/lost referring domains
+Get daily new/lost referring domains
+List referring IPs
+Get total referring IPs count
+Get total referring subnets count
+List pages with backlinks
+Get page/domain authority
+Get domain authority
+Get domain authority distribution
+Get domain authority history
+Get page authority
+Get page authority history
+Domain Analysis
+Get domain overview by region
+Get worldwide domain overview
+Get worldwide URL overview
+Get traffic/keyword history
+Get keyword rankings
+Get domain pages
+Get domain subdomains
+Get paid ads by keyword
+Get paid ads for domain
+Get domain competitors
+Analyze keyword overlap/gaps
+Keyword Research
+Get Keywords metrics
+Get similar keywords
+Get related keywords
+Get question keywords
+Get longtail keywords
+AI Search
+Get AI search overview
+Get AI search leaderboard
+Discover brand by URL
+Get prompts by brand
+Get prompts by target
+Filtering results
+Website Audit
+Create audit
+List audits
+Get audit status
+Get audit report
+Get all crawled pages
+Get audit pages by issue
+Get all issues by URL
+Get all found links
+Get audit by date
+Update audit title
+Delete audit
+Recheck audit
+Account System
+Get subscription details
+Reference
+Glossary
+Regional codes
+SERP features
+Site Audit issue codes
+Error handling
+Project
+Overview
+Getting started
+API access and keys
+Making requests
+Rate limits
+Error handling
+Project Management
+List projects
+List project search engines
+Add search engine to project
+Change search engine in project
+Delete search engine from project
+List website keywords
+Get project summary statistics
+Get keyword statistics
+Get total number of ads chart
+Get historical dates
+Add keywords to project
+Add project
+Change project settings
+Delete project
+Delete keywords
+Set manual keyword position
+Run position check
+Project Groups
+Add project group
+Rename project group
+Delete project group
+List project groups
+Move projects to project group
+Keyword Groups
+Add keyword group
+Move keywords to another group
+Rename keyword group
+Delete keyword group
+List keyword groups
+Competitors
+Add competitor
+List competitors
+Get competitor keyword positions
+Delete competitor
+Get TOP 10 results
+Get TOP 100 results
+Get all competitors
+URL Tags
+List tags
+Add tag
+Update tag assignment
+Delete tag
+Analytics Traffic
+Get Google Search Console data
+Calculate SEO potential
+Account Management
+Get user profile
+List sub-accounts
+Create sub-account
+Get sub-account details
+Delete sub-account
+Update sub-account
+List shared projects
+List owned projects
+Share project with sub-account
+General Data
+List search engines
+List languages for Google
+List regions to get search volume
+Get keyword search volume
+Marketing Plan
+List plan items
+Add task
+Update task
+Delete task
+Set task status
+Website Audit
+Create audit
+List audits
+Get audit status
+Get audit report
+Get all crawled pages
+Get audit pages by issue
+Get all issues for URL
+Get all links
+Get audit history
+Update audit title
+Delete audit
+Recheck audit
+Backlink Checker
+List backlinks
+Add backlink
+Import backlinks list
+Update backlink import settings
+Start backlink import from Google Search Console
+Get backlink import status from Google Search Console
+Delete backlinks
+Recheck backlinks
+Get backlink statistics
+List disavowed backlinks
+Add disavowed backlinks
+Delete disavowed backlink
+List backlink groups
+Create backlink group
+Delete backlink group
+Rename backlink group
+Move backlinks to group
+AI Results Tracker
+Get site brand
+Save site brand
+List LLM engines
+Get LLM engine
+Create LLM engine
+Update LLM engine
+Delete LLM engine
+Get LLM status
+Get LLM statistics
+List prompts
+Add prompts
+Delete prompts
+Get prompt answer
+Get prompt rankings
+AIRT Sources
+Get sources summary
+List source domains
+List source pages
+Get sources recommendations
+AIRT Competitors
+Get competitors breakdown
+Get competitors check dates
+Get source metrics
+AIRT Groups
+List prompt groups
+Create prompt group
+Rename prompt group
+Delete prompt group
+Change group order
+Delete all prompts in group
+Move prompts to group
+Move all prompts from one group to another
+Local Marketing
+Overview
+Getting started
+Usage and limits
+Pagination
+Errors
+Locations
+List locations
+Get location details
+Location overview
+Get location overview
+Local Rankings
+Get Local Rankings keyword list
+Get Local Rankings positions
+Get rankings indexed percent
+Local Marketing Audit
+Get latest audit report
+Get audit report history
+Google Business Profile
+Get Google Business Profile metrics
+Get Google Business Profile keyword report
+Get Google Business Profile searches trend
+Business Listings
+List business listings
+Get business listings overview
+Reviews
+List reviews
+Get reviews overview
+SE VisibleBeta
+Overview
+Getting started
+Base URL
+Authentication
+Resource model
+Making requests
+Pagination
+Filtering and array parameters
+Date ranges and compare mode
+Usage and limits
+Errors
+Support
+Projects
+List projects
+Create project
+Get project details
+Update tracking settings
+Delete a project
+Locations
+List project locations
+Add a location
+Update a location
+Delete a location
+Geo autocomplete
+List countries
+Search cities and regions
+Engines
+List project engines
+Add an engine
+Replace the engine set
+Remove an engine
+Brands
+List tracked brands
+Create competitor brand
+List mentioned brands
+Get aggregated brand metrics
+Update brand
+Delete brand
+Add aliases to brand
+Topics
+Create topics
+Update a topic title
+Delete a topic
+Prompts
+List prompts or topics
+Delete prompts
+Create prompts for a topic
+Move prompts to a topic
+Change prompt locations
+Get prompt details
+Get prompt result list
+Get prompt result details
+Sources
+Get project sources
+Get aggregated source metrics
+Reference
+AI models
+Sentiment
+Project status
+Country codes
+Language codes
+Source type
+URL category types
+Brand match mode
+Prompt list grouping
+Brand metrics dimensions and metrics
+Sort fields
+Date ranges and compare mode
+Array parameters
+Pagination
+Error codes
+Authentication
+Subscription
+Get subscription details
+API
+Data API / Backlinks
+Backlinks
+Backlinks API retrieves backlink data for a target domain, host, or URL. It provides aggregated metrics such as counts of backlinks, referring domains, IPs, and subnets, as well as anchor texts, top pages, TLDs, and countries. The API includes endpoints for summary metrics, historical data, raw backlink lists, export options, and authority scores. Data is refreshed on a monthly basis.
+Using the API, you can:
+retrieve backlink summary metrics, including counts of backlinks, referring domains, IPs, subnets, top anchors, TLDs, and countries
+retrieve key backlink metrics in batch for multiple targets
+list all backlinks for a single target
+fetch backlinks in batches for large datasets
+track new, lost, cumulative, and daily backlink changes
+retrieve backlink anchor texts
+access referring domains, including counts and new/lost domains
+access referring IPs and subnets, including counts
+list indexed pages with backlinks
+retrieve page and domain authority metrics, including distributions, histograms, and historical values
+export backlink data for large-scale analysis
+Get backlink summary
+GET / POST https://api.seranking.com/v1/backlinks/summary
+Cost: 100 credits per target
+Returns extended statistics for a target, including the number of backlinks, referring domains, subnets, IPs, top anchors, top TLDs, and more. This endpoint supports GET and POST requests and allows batching of up to 100 targets per request. Pass multiple targets as GET parameters separated by & or in the POST body (JSON format).
+Request parameters
+Note:
+The apikey (required) and output (optional) parameters must always be included as GET parameters, even if other parameters are sent via POST.
+Any POST data in the request body should be in JSON format.
+ParameterTypeRequiredDefaultDescription
+apikeyStringYesN/AAPI key for authentication. Must always be sent as a GET parameter.
+targetStringYesN/ATarget to analyze: root domain, host (subdomain), or specific URL (e.g., seranking.com).
+modeStringNohostMode of operation:
+• domain – analyzes all URLs in the domain, including subdomains.
+• host – analyzes all URLs under this host only (subdomains excluded).
+• url – analyzes a single, specific URL.
+outputStringNojsonResponse format (json or xml). Must always be sent as a GET parameter.
+Request examples
+GET (single target)
+Copy
+curl -X GET 'https://api.seranking.com/v1/backlinks/summary?target=rubyonrails.org&mode=host&output=json' \
+-H 'Authorization: Token YOUR_API_KEY'
+GET (multiple targets)
+Copy
+curl -X GET 'https://api.seranking.com/v1/backlinks/summary?target=https://www.seranking.com&target=https://www.seranking.com&mode=url&output=json' \
+-H 'Authorization: Token YOUR_API_KEY'
+POST (multiple targets)
+Copy
+curl -X POST \
+'https://api.seranking.com/v1/backlinks/summary?output=json' \
+-H 'Authorization: Token YOUR_API_KEY' \
+-d '{
+"target": [
+"https://www.seranking.com/",
+"https://www.seranking.com/"
+],
+"mode": "host"
+}'
+Response parameters
+ParameterTypeDescription
+targetStringTarget analyzed: root domain, host (subdomain), or specific URL (e.g., seranking.com).
+backlinksIntegerNumber of live backlinks linking to the target.
+refdomainsIntegerNumber of unique domains linking to the target.
+subnetsIntegerNumber of unique subnets (C-blocks) linking to the target.
+ipsIntegerNumber of unique IP addresses linking to the target.
+nofollow_backlinksIntegerNumber of backlinks classified as nofollow.
+dofollow_backlinksIntegerNumber of backlinks classified as dofollow.
+from_home_page_backlinksIntegerNumber of backlinks originating from the home page of the referring domain.
+dofollow_from_home_page_backlinksIntegerNumber of dofollow backlinks originating from the home page of the referring domain.
+text_backlinksIntegerNumber of backlinks with text anchors.
+edu_backlinksIntegerNumber of backlinks originating from .edu domains.
+gov_backlinksIntegerNumber of backlinks originating from .gov domains.
+inlink_rankIntegerPage Authority of the target URL.
+domain_inlink_rankIntegerDomain Authority of the target’s root domain.
+dofollow_refdomainsIntegerNumber of referring domains with at least one dofollow backlink.
+from_home_page_refdomainsIntegerNumber of referring domains linking from the home page.
+edu_refdomainsIntegerNumber of .edu referring domains.
+gov_refdomainsIntegerNumber of .gov referring domains.
+anchorsIntegerNumber of unique anchor texts used across all backlinks.
+dofollow_anchorsIntegerNumber of unique anchor texts used in dofollow backlinks.
+pages_with_backlinksIntegerNumber of target pages that have at least one backlink.
+top_anchors_by_backlinksArrayTop anchor texts sorted by number of backlinks (descending).
+top_anchors_by_backlinks.anchorStringAnchor text used in backlinks (by total backlinks).
+top_anchors_by_backlinks.backlinksIntegerNumber of backlinks using this anchor text.
+top_anchors_by_refdomainsArrayTop anchor texts sorted by number of referring domains (descending).
+top_anchors_by_refdomains.anchorStringAnchor text used in backlinks (by referring domains).
+top_anchors_by_refdomains.refdomainsIntegerNumber of referring domains with at least one backlink using this anchor text.
+top_pages_by_backlinksArrayTarget pages sorted by number of backlinks (descending).
+top_pages_by_backlinks.urlStringURL of the target page.
+top_pages_by_backlinks.backlinksIntegerNumber of backlinks pointing to this page.
+top_pages_by_refdomainsArrayTarget pages sorted by number of referring domains (descending).
+top_pages_by_refdomains.urlStringURL of the target page.
+top_pages_by_refdomains.refdomainsIntegerNumber of referring domains pointing to this page.
+top_tldsArrayTop-level domains (TLDs) sorted by number of backlinks (descending).
+top_tlds.tldStringTop-level domain (e.g., .com).
+top_tlds.countIntegerNumber of backlinks originating from this TLD.
+top_countriesArrayTop countries sorted by number of backlinks (descending).
+top_countries.countryStringCountry code.
+top_countries.countIntegerNumber of backlinks originating from this country.
+Response example
+Copy
+{
+"summary": [
+{
+"target": "seranking.com",
+"backlinks": 22407,
+"refdomains": 2329,
+"subnets": 1403,
+"ips": 1961,
+"nofollow_backlinks": 3718,
+"dofollow_backlinks": 18689,
+"edu_backlinks": 40,
+"gov_backlinks": 0,
+"inlink_rank": 24,
+"domain_inlink_rank": 68,
+"from_home_page_backlinks": 88,
+"dofollow_from_home_page_backlinks": 60,
+"text_backlinks": 21427,
+"dofollow_refdomains": 1291,
+"from_home_page_refdomains": 64,
+"edu_refdomains": 6,
+"gov_refdomains": 0,
+"anchors": 720,
+"dofollow_anchors": 522,
+"pages_with_backlinks": 87,
+"top_anchors_by_backlinks": [
+{"anchor": "SE Ranking","backlinks": 1853},
+{"anchor": "social listening","backlinks": 1542},
+{"anchor": "seranking.com","backlinks": 1209},
+{"anchor": "Buy SE Ranking tools - place secure order online","backlinks": 1157},
+{"anchor": "Search Engine Optimization","backlinks": 890},
+{"anchor": "the website","backlinks": 872},
+{"anchor": "SEO","backlinks": 864},
+{"anchor": "search bar (I’ve","backlinks": 849},
+{"anchor": "the site","backlinks": 836},
+{"anchor": "search bar (I have actually","backlinks": 831}
+],
+"top_anchors_by_refdomains": [
+{"anchor": "SE Ranking","refdomains": 454},
+{"anchor": "seranking.com","refdomains": 192},
+{"anchor": "SE Ranking","refdomains": 155},
+{"anchor": "https://www.seranking.com/","refdomains": 116},
+{"anchor": "SE Ranking Pro","refdomains": 111},
+{"anchor": "seranking","refdomains": 106},
+{"anchor": "SEO software tools for results-driven site owners.","refdomains": 66},
+{"anchor": "","refdomains": 64},
+{"anchor": "SEO software tools for results-driven site owners","refdomains": 56},
+{"anchor": "Go Now","refdomains": 44}
+],
+"top_pages_by_backlinks": [
+{"url": "https://www.seranking.com/","backlinks": 16724},
+{"url": "http://seranking.com/","backlinks": 1932},
+{"url": "https://www.seranking.com/buy.html","backlinks": 1188},
+{"url": "http://www.seranking.com/","backlinks": 900},
+{"url": "https://www.seranking.com/rank-tracker/","backlinks": 356}
+],
+"top_pages_by_refdomains": [
+{"url": "https://www.seranking.com/","refdomains": 1235},
+{"url": "http://www.seranking.com/","refdomains": 236},
+{"url": "http://seranking.com/","refdomains": 221},
+{"url": "https://www.seranking.com/rank-tracker/","refdomains": 172},
+{"url": "https://www.seranking.com/site-audit/","refdomains": 88}
+],
+"top_tlds": [
+{"tld": "com","count": 1183},
+{"tld": "pw","count": 112},
+{"tld": "net","count": 96},
+{"tld": "org","count": 65},
+{"tld": "it","count": 63}
+],
+"top_countries": [
+{"country": "us","count": 1140},
+{"country": "co","count": 166},
+{"country": "sg","count": 124},
+{"country": "de","count": 87},
+{"country": "gb","count": 84}
+]
+}
+]
+}
+Get backlink metrics
+GET/ POST https://api.seranking.com/v1/backlinks/metrics
+Cost: 10 credits per target
+Returns key statistics for a target, including the number of backlinks and referring domains. This endpoint supports GET and POST requests and allows batching of up to 100 targets per request. Pass multiple targets as GET parameters separated by & or in the POST body (JSON format).
+Request parameters
+Note:
+The apikey (required) and output (optional) parameters must always be included as GET parameters, even if other parameters are sent via POST.
+Any POST data in the request body should be in JSON format.
+ParameterTypeRequiredDefaultDescription
+apikeyStringYesN/AAPI key for authentication. Must always be sent as a GET parameter.
+targetStringYesN/ATarget to analyze: root domain, host (subdomain), or specific URL (e.g., seranking.com).
+modeStringNohostMode of operation:
+• domain – analyzes all URLs in the domain, including subdomains.
+• host – analyzes all URLs under this host only (subdomains excluded).
+• url – analyzes a single, specific URL.
+outputStringNojsonResponse format (json or xml). Must always be sent as a GET parameter.
+Request examples
+GET (single target)
+Copy
+GET: https://api.seranking.com/v1/backlinks/metrics?apikey=XXX&target=https://www.seranking.com&mode=url&output=json
+GET (multiple targets)
+Copy
+GET: https://api.seranking.com/v1/backlinks/metrics?apikey=XXX&target=https://www.seranking.com&target=https://www.seranking.com&mode=url&output=json
+POST (multiple targets)
+Copy
+POST: https://api.seranking.com/v1/backlinks/metrics?apikey=XXX&output=json
+{
+"target": [
+"https://www.seranking.com/",
+"https://www.seranking.com/"
+],
+"mode": "url"
+}
+Response parameters
+ParameterTypeDescription
+targetStringTarget analyzed: root domain, host (subdomain), or specific URL (e.g., seranking.com).
+backlinksIntegerNumber of live backlinks linking to the target.
+refdomainsIntegerNumber of unique domains linking to the target.
+ipsIntegerNumber of unique IP addresses linking to the target.
+subnetsIntegerNumber of unique subnets (C-blocks) linking to the target.
+nofollow_backlinksIntegerNumber of backlinks classified as nofollow.
+dofollow_backlinksIntegerNumber of backlinks classified as dofollow.
+gov_backlinksIntegerNumber of backlinks originating from .gov domains.
+edu_backlinksIntegerNumber of backlinks originating from .edu domains.
+Response example
+Copy
+{
+"metrics": [
+{
+"target": "seranking.com",
+"backlinks": 22402,
+"refdomains": 2325,
+"subnets": 1399,
+"ips": 1957,
+"nofollow_backlinks": 3717,
+"dofollow_backlinks": 18685,
+"edu_backlinks": 40,
+"gov_backlinks": 0
+}
+]
+}
+List all backlinks
+GET / POST https://api.seranking.com/v1/backlinks/all
+Cost: 1 credit per backlink
+Returns information about backlinks pointing to a target. This endpoint supports GET and POST requests, but doesn’t support batching. Only a single target can be specified per request.
+Note: The inlink_rank value in the response is based on background-processed data. It can be up to one month behind the real-time value shown in the Get page and domain authority method.
+Request parameters
+Note:
+The apikey (required) and output (optional) parameters must always be included as GET parameters, even if other parameters are sent via POST.
+Any POST data in the request body should be in JSON format.
+ParameterTypeRequiredDefaultDescription
+apikeyStringYesN/AAPI key for authentication. Must always be sent as a GET parameter.
+targetStringYesN/ATarget to analyze: root domain, host (subdomain), or specific URL (e.g., seranking.com).
+modeStringNohostMode of operation:
+• domain – analyzes all URLs in the domain, including subdomains.
+• host – analyzes all URLs under this host only (subdomains excluded).
+• url – analyzes a single, specific URL.
+limitIntegerNo100Maximum number of results to return. Must be within the range: [1, 10,000].
+per_domainIntegerNoN/ANumber of backlinks to return per referring domain. Must be within the range: [1, 100]. For example, when set to 1, each returned backlink comes from a different referring domain.
+If empty, all backlinks are returned.
+outputStringNojsonResponse format (json or xml). Must always be sent as a GET parameter.
+order_byStringNodate_foundField by which results are sorted:
+• date_found – returns the most recent backlinks first.
+• domain_inlink_rank – returns backlinks with the highest Domain InLink Rank first.
+• inlink_rank – returns backlinks with the highest InLink Rank first.
+inlink_rank_fromIntegerNo0Minimum InLink Rank. Returns backlinks ≥ this value. Must be within the range: [0, 100].
+inlink_rank_toIntegerNo100Maximum InLink Rank. Returns backlinks ≤ this value. Must be within the range: [0, 100].
+domain_inlink_rank_fromIntegerNo0Minimum Domain InLink Rank. Returns backlinks ≥ this value. Must be within the range: [0, 100].
+domain_inlink_rank_toIntegerNo100Maximum Domain InLink Rank. Returns backlinks ≤ this value. Must be within the range: [0, 100].
+url_from_filterStringNoN/AText filter for referring page URL (e.g., seo-software). Maximum 2063 ASCII symbols.
+url_from_filter_modeStringNocontainsFilter mode:
+• contains – returns backlinks where url_from contains url_from_filter text.
+• does_not_contain – returns backlinks where url_from doesn’t contain url_from_filter text.
+Ignored if url_from_filter parameter is not set.
+url_to_filterStringNoN/AText filter for destination URL (e.g., seranking.com/blog/). Maximum 2063 ASCII symbols.
+url_to_filter_modeStringNocontainsFilter mode:
+• contains – returns backlinks where url_to contains url_to_filter text.
+• does_not_contain – returns backlinks where url_to doesn’t contain url_to_filter text.
+Ignored if url_to_filter parameter is not set.
+anchor_filterStringNoN/AText filter for link anchor (e.g., seo). Maximum 2063 ASCII symbols.
+anchor_filter_modeStringNocontainsFilter mode:
+• contains – returns backlinks where anchor contains anchor_filter text.
+• does_not_contain – returns backlinks where anchor doesn’t contain anchor_filter text.
+Ignored if anchor_filter parameter is not set.
+nofollow_filterStringNoN/AFilter mode:
+• nofollow_only – returns only backlinks classified as nofollow.
+• dofollow_only – returns only backlinks classified as dofollow.
+If empty, all backlinks are returned.
+Request examples
+GET
+Copy
+GET: https://api.seranking.com/v1/backlinks/all?apikey=XXX&target=seranking.com&mode=domain&limit=100&order_by=inlink_rank&per_domain=1&output=json
+POST
+Copy
+POST: https://api.seranking.com/v1/backlinks/all?apikey=XXX&output=json
+{
+"target": "https://www.seranking.com/",
+"order_by": "date_found",
+"mode": "domain",
+"limit": 10,
+"per_domain": 1
+}
+Response parameters
+ParameterTypeDescription
+url_fromStringReferring page URL.
+url_toStringDestination page URL.
+titleStringReferring page title.
+anchorStringLink anchor text (or image alt text if the link contains an image).
+nofollowBooleanIndicates whether the backlink is noffolow.
+imageBooleanIndicates whether the backlink contains an image.
+image_sourceStringSource URL of the image if present.
+inlink_rankIntegerPage Authority of the referring page.
+domain_inlink_rankIntegerDomain Authority of the referring page’s root domain.
+first_seenStringDate the backlink was first found (YYYY-MM-DD).
+last_visitedStringDate the referring page was last crawled (YYYY-MM-DD).
+Response example
+Copy
+{
+"backlinks": [
+{
+"url_from": "https://zoekmachine-optimalisatie-seo.beginthier.nl/",
+"url_to": "https://www.seranking.com/",
+"title": "Zoekmachine Optimalisatie (SEO)",
+"anchor": "SEO software tools",
+"alt": "",
+"nofollow": false,
+"image": false,
+"image_source": "",
+"inlink_rank": 67,
+"domain_inlink_rank": 77,
+"first_seen": "2021-11-05",
+"last_visited": "2023-06-01"
+},
+{
+"url_from": "https://zoekmachine-optimalisatie.verzamelgids.nl/",
+"url_to": "https://www.seranking.com/",
+"title": "Zoekmachine Optimalisatie (SEO)",
+"anchor": "SEO software tools",
+"alt": "",
+"nofollow": false,
+"image": false,
+"image_source": "",
+"inlink_rank": 66,
+"domain_inlink_rank": 75,
+"first_seen": "2021-11-12",
+"last_visited": "2023-06-01"
+}
+]
+}
+Fetch backlinks in batches
+GET https://api.seranking.com/v1/backlinks/raw
+Cost: 1 credit per backlink
+Returns all backlinks pointing to a target using cursor-based pagination. Backlinks are delivered in sequential batches. This method supports pagination and doesn’t provide sorting or filtering. Unlike the List all backlinks method, which supports ordering (e.g., by InLink Rank or recency), this endpoint is designed for complete backlink retrieval, batch by batch.
+Pagination is handled via a cursor (next parameter). The cursor marks a specific position in the dataset and remains valid unless the item is removed. Cursors are typically valid for up to 24 hours, even if new backlinks are added.
+The next parameter must not be included when requesting the first page of data. Doing so will return an error.
+If the response doesn’t return next, you have reached the last page of data.
+Request parameters
+ParameterTypeRequiredDefaultDescription
+apikeyStringYesN/AAPI key for authentication.
+targetStringYesN/ATarget to analyze: root domain, host (subdomain), or specific URL (e.g., seranking.com).
+modeStringNohostMode of operation:
+• domain – analyzes all URLs in the domain, including subdomains.
+• host – analyzes all URLs under this host only (subdomains excluded).
+• url – analyzes a single, specific URL.
+limitIntegerNo10,000Maximum number of results to return in one page. Must be within the range: [1, 100,000].
+nextStringNoN/ACursor pointing to the end of the previously returned page.
+• Must not be included for the first page request.
+• Not returned in the last page of data.
+per_domainIntegerNoN/ANumber of sample backlinks to return per referring domain instead of all backlinks. Must be within the range: [1, 100]. For example, when set to 1, each returned backlink comes from a different referring domain.
+If empty, all backlinks are returned.
+outputStringNojsonResponse format (json or xml).
+Request example
+Copy
+GET: https://api.seranking.com/v1/backlinks/raw?apiKey=XXX&target=seranking.com&mode=domain&limit=50000&output=json&next=YYY
+Response parameters
+ParameterTypeDescription
+url_fromStringReferring page URL.
+url_toStringDestination page URL.
+titleStringReferring page title.
+anchorStringLink anchor text (or image alt text if the link contains an image).
+nofollowBooleanIndicates whether the backlink is nofollow.
+imageBooleanIndicates whether the backlink contains an image.
+image_sourceStringSource URL of the image if present.
+inlink_rankIntegerPage Authority of the referring page.
+domain_inlink_rankIntegerDomain Authority of the referring page’s root domain.
+first_seenStringDate the backlink was first found (YYYY-MM-DD).
+last_visitedStringDate the referring page was last crawled (YYYY-MM-DD).
+nextStringCursor pointing to the end of the returned page of data. Not included if this is the last page.
+Response examples (pagination flow)
+Step 1. Request the first page of data for a target. The example below returns the first batch of backlinks for the domain seranking.com.
+Important: Do NOT include the next parameter when requesting the first page. Including it will result in an error.
+Copy
+GET: https://api.seranking.com/v1/backlinks/raw?apiKey=XXX&target=seranking.com&mode=domain&limit=2&output=json
+Copy
+{
+"backlinks": [
+{
+"url_from": "https://www.pbmug.org/efficient-backlinks-checking.html",
+"url_to": "https://seranking.com/backlinks-checker.html",
+"title": "Backlinks Checker ",
+"anchor": "",
+"alt": "",
+"nofollow": false,
+"image": false,
+"image_source": "",
+"inlink_rank": 16,
+"domain_inlink_rank": 45,
+"first_seen": "2021-05-06",
+"last_visited": "2021-05-06"
+},
+{
+"url_from": "https://www.pbmug.org/seranking-enterprise-6-40-8.html",
+"url_to": "https:// seranking.com/themes/standard/images/index-scr-3-big.png",
+"title": "The best SEO software - Pbmug.org",
+"anchor": "",
+"alt": "",
+"nofollow": false,
+"image": false,
+"image_source": "",
+"inlink_rank": 15,
+"domain_inlink_rank": 45,
+"first_seen": "2021-05-06",
+"last_visited": "2021-05-06"
+}
+],
+"next": "ezDLWp6Peqx6tE77/mV9XtWGP92lrdwTI3ZZ2b24ZPMXA/NpRCJm45biWgPerwN_0uqT9iHmZTYjeS2VRiNL7ySiFgV0KFGv9O9Y="
+}
+Step 2. Retrieve the next page using the next value returned in Step 1.
+Copy
+GET: https://api.seranking.com/v1/backlinks/raw?apiKey=XXX&target=seranking.com&mode=domain&limit=2&output=json&next=ezDLWp6Peqx6tE77/mV9XtWGP92lrdwTI3ZZ2b24ZPMXA/NpRCJm45biWgPerwN_0uqT9iHmZTYjeS2VRiNL7ySiFgV0KFGv9O9Y=
+Copy
+{
+"backlinks": [
+{
+"url_from": "https://fity.club/lists/1/seo-software-tools-for-resultsdriven-site-owners/",
+"url_to": "https://cdn.seranking.com/themes/standard/images/works-on.png",
+"title": "Seo Software Tools For Resultsdriven Site Owners",
+"anchor": "seranking.com",
+"alt": "",
+"nofollow": true,
+"image": false,
+"image_source": "",
+"inlink_rank": 9,
+"domain_inlink_rank": 13,
+"first_seen": "2023-08-07",
+"last_visited": "2023-08-07"
+},
+{
+"url_from": "https://www.bjskqx.com/11043.html",
+"url_to": "https://cn.seranking.com/seranking.html",
+"title": "seo外链发布有用吗，seo外链发布平台有哪些-帮发锚文本外链网",
+"anchor": "SE Ranking",
+"alt": "",
+"nofollow": false,
+"image": false,
+"image_source": "",
+"inlink_rank": 15,
+"domain_inlink_rank": 38,
+"first_seen": "2023-07-08",
+"last_visited": "2023-07-08"
+}
+],
+"next": "sPpKCdfMEKN5zO3RsuyEZIMp7wHaJF5wuT/1tebFkazXfosEFuotIQYeHxV/beypHQ3a9DHFgCkNnh_f0cP9EoHBtcyYFuGA=="
+}
+Step 3. Continue requesting pages until the next parameter is no longer returned. This indicates that the last page of data has been reached.
+Get total backlinks count
+GET/ POST https://api.seranking.com/v1/backlinks/count
+Cost: 2 credits per target
+Returns the total number of backlinks for a target. This endpoint supports GET and POST requests and allows batching of up to 100 targets per request. Pass multiple targets as GET parameters separated by & or in the POST body (JSON format).
+Request parameters
+Note:
+The apikey (required) and output (optional) parameters must always be included as GET parameters, even if other parameters are sent via POST.
+Any POST data in the request body should be in JSON format.
+ParameterTypeRequiredDefaultDescription
+apikeyStringYesN/AAPI key for authentication. Must always be sent as a GET parameter.
+targetStringYesN/ATarget to analyze: root domain, host (subdomain), or specific URL (e.g., seranking.com).
+modeStringNohostMode of operation:
+• domain – analyzes all URLs in the domain, including subdomains.
+• host – analyzes all URLs under this host only (subdomains excluded).
+• url – analyzes a single, specific URL.
+outputStringNojsonResponse format (json or xml). Must always be sent as a GET parameter.
+Request examples
+GET (single target)
+Copy
+GET: https://api.seranking.com/v1/backlinks/count?apikey=XXX&target=seranking.com&mode=host&output=json
+POST (multiple targets)
+Copy
+POST: https://api.seranking.com/v1/backlinks/count?apikey=XXX&output=json
+{
+"target": [
+"https://www.seranking.com/",
+"https://www.seranking.com/"
+],
+"mode": "host"
+}
+Response parameters
+ParameterTypeDescription
+targetStringTarget analyzed: root domain, host (subdomain), or specific URL (e.g., seranking.com).
+backlinksIntegerTotal number of live backlinks pointing to the target.
+Response example
+Copy
+{
+"metrics": [
+{
+"target": "seranking.com",
+"backlinks": 22402
+},
+{
+"target": "www.seranking.com",
+"backlinks": 341415
+}
+]
+}
+Export backlinks data
+GET https://api.seranking.com/v1/backlinks/export
+Cost: 1 credit per backlink
+Exports information about all backlinks pointing to a target. Due to the potentially large data volume, this endpoint works asynchronously and returns the complete dataset as a downloadable .csv.gz file once processing is complete.
+Request parameters
+ParameterTypeRequiredDefaultDescription
+apikeyStringYesN/AAPI key for authentication.
+targetStringYesN/ATarget to analyze: root domain, host (subdomain), or specific URL (e.g., seranking.com).
+modeStringNohostMode of operation:
+• domain – analyzes all URLs in the domain, including subdomains.
+• host – analyzes all URLs under this host only (subdomains excluded).
+• url – analyzes a single, specific URL.
+outputStringNojsonResponse format (json or xml).
+Request example
+Copy
+GET: https://api.seranking.com/v1/backlinks/export?apikey=XXX&target=https://seranking.com&mode=domain&output=json
+Response parameters
+ParameterTypeDescription
+task_statusStringStatus of the export task:
+• queued_for_processing – task accepted and queued.
+• processing – task is running.
+• complete – export is ready for download.
+• rejected – another export task is already in progress.
+• unknown — task ID is invalid or inaccessible.
+task_idStringUnique ID of the export task.
+download_fileStringLocation of the generated .csv.gz file (available when status is complete).
+Response examples (export flow)
+Step 1. Queue the export task.
+Copy
+https://api.seranking.com/v1/backlinks/export?apikey=XXX&target=http://seranking.com&mode=domain&output=json
+Copy
+{
+"task_status": "queued_for_processing",
+"task_id": "d1d2bb44-6c66-4791-a634-26103551e2da"
+}
+Step 2. Poll task status using task_id returned in Step 1.
+Copy
+GET: https://api.seranking.com/v1/backlinks/export/status?apikey=XXX&task_id=d1d2bb44-6c66-4791-a634-26103551e2da&output=json
+Copy
+{
+"task_status": "complete",
+"task_id": "d1d2bb44-6c66-4791-a634-26103551e2da",
+"download_file": "http://116.202.112.205/export/b/seranking.com-1695672292259.csv.gz"
+}
+Step 3. Download the file from download_file once complete.
+Copy
+https://api.seranking.com/export/c/seranking.com-1572280448369.csv.gz
+List new and lost backlinks
+GET / POST https://api.seranking.com/v1/backlinks/history
+Cost: 1 credit per backlink
+Returns backlinks that were newly found or lost within a specified date range for a target. This endpoint supports GET and POST requests, but doesn’t support batching. Only a single target can be specified per request.
+Request parameters
+Note:
+The apikey (required) and output (optional) parameters must always be included as GET parameters, even if other parameters are sent via POST.
+Any POST data in the request body should be in JSON format.
+ParameterTypeRequiredDefaultDescription
+apikeyStringYesN/AAPI key for authentication. Must always be sent as a GET parameter.
+targetStringYesN/ATarget to analyze: root domain, host (subdomain), or specific URL (e.g., seranking.com).
+modeStringNohostMode of operation:
+• domain – analyzes all URLs in the domain, including subdomains.
+• host – analyzes all URLs under this host only (subdomains excluded).
+• url – analyzes a single, specific URL.
+new_lost_typeStringNo“”Backlink status filter:
+• new – returns newly found backlinks.
+• lost – returns backlinks tagged as lost.
+If empty, both are returned.
+date_fromStringNoyesterdayStart date (YYYY-MM-DD), inclusive.
+date_toStringNotodayEnd date (YYYY-MM-DD), inclusive.
+link_typeStringNo“”Type of backlink:
+• href – returns standard hyperlinks.
+• redirect – returns redirect links.
+If empty, all types are returned.
+anchor_typeStringNo“”Anchor type:
+• text – returns text links.
+• image – returns image links (if the anchor contains both text and an image, it is classified as image).
+• undefined – returns undefined links.
+If empty, all types are returned.
+dofollowStringNo“”Follow status (dofollow, nofollow, undefined).
+If empty, all statuses are returned.
+url_fromStringNo“”Referring domain filter (including subdomains).
+Example: http://seo.jouwlinkhier.nl/path returns backlinks originating from seo.jouwlinkhier.nl/*.
+If empty, backlinks from all domains and subdomains are returned.
+limitIntegerNo100Maximum number of results to return. Must be within the range: [1, 10,000].
+order_byStringNonew_lost_dateField by which results are sorted:
+• new_lost_date – returns new or lost backlinks ordered by the date they were found or lost (most recent first).
+• domain_inlink_rank – returns backlinks with the highest Domain InLink Rank first.
+• inlink_rank – returns backlinks with the highest InLink Rank first.
+outputStringNojsonResponse format (json or xml). Must always be sent as a GET parameter.
+Request examples
+GET
+Copy
+GET: https://api.seranking.com/v1/backlinks/history?apikey=XXX&target=https://www.seranking.com&mode=domain&new_lost_type=new&date_from=2023-01-15&date_to=2023-01-15&link_type=href&anchor_type=text&dofollow=dofollow&output=json
+POST
+Copy
+POST: https://api.seranking.com/v1/backlinks/history?apikey=XXX&output=json
+{
+"target": "https://www.seranking.com",
+"mode": "domain",
+"date_from": "2023-01-15",
+"date_to": "2023-01-15"
+}
+Response parameters
+ParameterTypeDescription
+new_lost_dateStringDate when the backlink was found or lost (YYYY-MM-DD).
+new_lost_typeStringBacklink status:
+• new – newly found backlinks.
+• lost – backlinks that were lost.
+url_fromStringReferring page URL.
+url_toStringDestination pag URL.
+titleStringReferring page title.
+anchorStringLink anchor text (or image alt text if the link contains an image).
+link_typeStringType of backlink:
+• href – standard hyperlinks.
+• redirect – redirect links.
+nofollowBooleanIndicates whether the backlink is classified as nofollow.
+imageBooleanIndicates whether the backlink is an image link.
+image_sourceStringSource URL of the image if present.
+reason-lostStringReason the backlink was lost:
+• page_not_found – referring page returned a 404 status code during re-crawl.
+• crawl_error – fetching error occurred during re-crawl (different from a 404).
+• page_dropped – referring page was removed from the index (e.g., considered untrustworthy or low quality).
+• redirect – referring page returned a 3XX redirect status during re-crawl.
+• not_canonical – canonical link on the referring page now points to another page.
+• noindex – referring page includes a noindex meta tag or returned a noindex HTTP response.
+• link_removed – backlink no longer found on the referring page.
+• broken_redirect – crawler failed to identify the type of redirect.
+• other – any other reason not covered by the cases above (e.g., uncategorized internal errors).
+inlink_rankIntegerPage Authority of the referring page URL.
+domain_inlink_rankIntegerDomain Authority of the referring page’s root domain.
+first_seenStringDate when the backlink was first found (YYYY-MM-DD).
+Response example
+Copy
+{
+"new_lost_backlinks": [
+{
+"new_lost_date": "2023-01-15",
+"new_lost_type": "new",
+"url_from": "https://agenciatgx.com.br/blog/melhores-ferramentas-de-seo-para-otimizar/",
+"url_to": "http://www.seranking.com/",
+"title": "Melhores Ferramentas de SEO Para Otimizar o Desempenho do Seu Site - Agência TGX",
+"anchor": "SE Ranking",
+"alt": null,
+"link_type": "href",
+"nofollow": false,
+"image": false,
+"image_source": null,
+"redirect_chain": false,
+"redirect_chain_urls": [],
+"reason_lost": null,
+"inlink_rank": 1,
+"domain_inlink_rank": 18,
+"first_seen": "2023-01-15"
+},
+{
+"new_lost_date": "2023-01-15",
+"new_lost_type": "lost",
+"url_from": "http://technicalproducts.org/category/seoandperformance",
+"url_to": "https://www.seranking.com/",
+"title": "SEO & Performance – Technical Products",
+"anchor": "SE Ranking",
+"alt": null,
+"link_type": "href",
+"nofollow": false,
+"image": false,
+"image_source": null,
+"redirect_chain": false,
+"redirect_chain_urls": [],
+"reason_lost": "link_removed",
+"inlink_rank": 1,
+"domain_inlink_rank": 1,
+"first_seen": "2023-01-15"
+}
+]
+}
+Get daily count of new and lost backlinks
+GET/ POST https://api.seranking.com/v1/backlinks/history/count
+Cost: 10 credits per target + 1 credit per date point returned
+Returns the daily count of newly found or lost backlinks for a specified target with the given date range. This endpoint supports GET and POST requests, but doesn’t support batching. Only a single target can be specified per request.
+Request parameters
+Note:
+The apikey (required) and output (optional) parameters must always be included as GET parameters, even if other parameters are sent via POST.
+Any POST data in the request body should be in JSON format.
+ParameterTypeRequiredDefaultDescription
+apikeyStringYesN/AAPI key for authentication. Must always be sent as a GET parameter.
+targetStringYesN/ATarget to analyze: root domain, host (subdomain), or specific URL (e.g., seranking.com).
+modeStringNohostMode of operation:
+• domain – analyzes all URLs in the domain, including subdomains.
+• host – analyzes all URLs under this host only (subdomains excluded).
+• url – analyzes a single, specific URL.
+new_lost_typeStringNo“”Backlink status filter:
+• new – counts newly found backlinks.
+• lost – returns backlinks tagged as lost.
+If empty, both are returned.
+date_fromStringNoyesterdayStart date (YYYY-MM-DD), inclusive.
+date_toStingNotodayEnd date (YYYY-MM-DD), inclusive.
+link_typeStringNo“”Type of backlink:
+• href – returns standard hyperlinks.
+• redirect – returns redirect links.
+If empty, all types are counted.
+anchor_typeStringNo“”Anchor type:
+• text – returns text links.
+• image – returns image links (if the anchor contains both text and an image, it is classified as image).
+• undefined – returns undefined links.
+If empty, all types are returned.
+dofollowStringNo“”Follow status (dofollow, nofollow, undefined).
+If empty, all statuses are counted.
+url_fromStringNo“”Referring domain filter (including subdomains).
+Example: http://seo.jouwlinkhier.nl/path returns backlinks originating from seo.jouwlinkhier.nl/*.
+If empty, backlinks from all domains and subdomains are returned.
+outputStringNojsonResponse format (json or xml). Must always be sent as a GET parameter.
+Request examples
+GET
+Copy
+GET: https://api.seranking.com/v1/backlinks/history/count?apikey=XXX&target=https://www.seranking.com&mode=domain&new_lost_type=new&date_from=2019-01-14&date_to=2019-01-16&link_type=href&anchor_type=text&dofollow=dofollow&output=json
+POST
+Copy
+POST: https://api.seranking.com/v1/backlinks/history/count?apikey=XXX&output=json
+{
+"target": "https://www.seranking.com",
+"mode": "domain",
+"date_from": "2023-01-15",
+"date_to": "2023-01-15"
+}
+Response parameters
+ParameterTypeDescription
+dateStringDate for which the count is provided (YYYY-MM-DD).
+newIntegerNumber of newly found backlinks on this date matching the request filters.
+lostIntegerNumber of backlinks lost on this date matching the request filters.
+Response example
+Copy
+{
+"new_lost_backlinks_count": [
+{
+"date": "2023-01-16",
+"new": 5,
+"lost": 0
+},
+{
+"date": "2023-01-15",
+"new": 5,
+"lost": 0
+}
+]
+}
+Get cumulative backlinks over time
+GET/ POST https://api.seranking.com/v1/backlinks/history/cumulative
+Cost: 10 credits per target + 1 credit per date point returned
+Returns the number of live backlinks for each day within the given date range for a target. This endpoint supports GET and POST requests, but doesn’t support batching. Only a single target can be specified per request.
+Request parameters
+Note:
+The apikey (required) and output (optional) parameters must always be included as GET parameters, even if other parameters are sent via POST.
+Any POST data in the request body should be in JSON format.
+ParameterTypeRequiredDefaultDescription
+apikeyStringYesN/AAPI key for authentication. Must always be sent as a GET parameter.
+targetStringYesN/ATarget to analyze: only full page URL is supported (e.g., http://seranking.com/index.html).
+modeStringNohostMode of operation:
+• domain – analyzes all URLs in the domain, including subdomains.
+• host – analyzes all URLs under this host only (subdomains excluded).
+• url – analyzes a single, specific URL.
+date_fromStringNoyesterdayStart date (YYYY-MM-DD), inclusive.
+date_toStringNotodayEnd date (YYYY-MM-DD), inclusive.
+outputStringNojsonResponse format (json or xml). Must always be sent as a GET parameter.
+Request examples
+GET
+Copy
+GET: https://api.seranking.com/v1/backlinks/history/cumulative?apikey=XXX&target=https://www.seranking.com&mode=domain&date_from=2019-01-14&date_to=2019-01-16&output=json
+POST
+Copy
+POST: https://api.seranking.com/v1/backlinks/history/cumulative?apikey=XXX&output=json
+{
+"target": "https://www.seranking.com",
+"mode": "domain",
+"date_from": "2023-01-15",
+"date_to": "2023-01-15"
+}
+Response parameters
+ParameterTypeDescription
+dateStringDate for which the count is provided (YYYY-MM-DD).
+backlinksIntegerNumber of live backlinks on that date matching the filters specified in the request.
+Response example
+Copy
+{
+"backlinks_count": [
+{
+"date": "2023-01-16",
+"backlinks": 5,
+},
+{
+"date": "2023-01-15",
+"backlinks": 5,
+}]
+}
+Get backlink anchor texts
+GET / POST https://api.seranking.com/v1/backlinks/anchors
+Cost: 1 credit per anchor text
+Returns information about anchor texts of backlinks pointing to a target. This endpoint supports GET and POST requests, but doesn’t support batching. Only a single target can be specified per request.
+Request parameters
+Note:
+The apikey (required) and output (optional) parameters must always be included as GET parameters, even if other parameters are sent via POST.
+Any POST data in the request body should be in JSON format.
+ParameterTypeRequiredDefaultDescription
+apikeyStringYesN/AAPI key for authentication. Must always be sent as a GET parameter.
+targetStringYesN/ATarget to analyze: root domain, host (subdomain), or specific URL (e.g., seranking.com).
+modeStringNohostMode of operation:
+• domain – analyzes all URLs in the domain, including subdomains.
+• host – analyzes all URLs under this host only (subdomains excluded).
+• url – analyzes a single, specific URL.
+order_byStringNobacklinksField by which results are sorted (descending):
+• backlinks – total number of backlinks using the anchor text.
+• refdomains – total number of referring domains using the anchor text.
+limitIntegerNo100Maximum number of results to return. Must be within the range: [1, 10,000].
+outputStringNojsonResponse format (json or xml). Must always be sent as a GET parameter.
+Request examples
+GET
+Copy
+GET: https://api.seranking.com/v1/backlinks/anchors?apikey=XXX&target=https://seranking.com&mode=domain&limit=2&order_by=backlinks&output=json
+POST
+Copy
+POST: https://api.seranking.com/v1/backlinks/anchors?apikey=XXX&output=json
+{
+"target": "https://www.seranking.com/",
+"order_by": "backlinks",
+"mode": "domain",
+"limit": 2
+}
+Response parameters
+ParameterTypeDescription
+anchorStringCase-sensitive anchor text (may be empty).
+backlinksIntegerNumber of backlinks using this anchor text (> 0).
+refdomainsIntegerNumber of referring domains using this anchor text (> 0).
+nofollow_backlinksIntegerNumber of backlinks classified as nofollow.
+dofollow_backlinksIntegerNumber of backlinks not classified as nofollow.
+first_seenStringDate of the earliest backlink with this anchor text in the index (YYYY-MM-DD).
+last_visitedStringLast date the backlink with this anchor text was seen (YYYY-MM-DD).
+Response example
+Copy
+{
+"anchors": [
+{
+"anchor": "SE Ranking",
+"backlinks": 1844,
+"refdomains": 445,
+"dofollow_backlinks": 1595,
+"nofollow_backlinks": 249,
+"first_seen": "2016-12-07",
+"last_visited": "2023-10-19"
+},
+{
+"anchor": "social listening",
+"backlinks": 1542,
+"refdomains": 7,
+"dofollow_backlinks": 1542,
+"nofollow_backlinks": 0,
+"first_seen": "2020-04-30",
+"last_visited": "2022-04-01"
+}
+]
+}
+List referring domains
+GET / POST https://api.seranking.com/v1/backlinks/refdomains
+Cost: 1 credit per refdomain
+Returns information about referring domains pointing to a target. This endpoint supports GET and POST requests, but doesn’t support batching. Only a single target can be specified per request.
+Request parameters
+Note:
+The apikey (required) and output (optional) parameters must always be included as GET parameters, even if other parameters are sent via POST.
+Any POST data in the request body should be in JSON format.
+ParameterTypeRequiredDefaultDescription
+apikeyStringYesN/AAPI key for authentication. Must always be sent as a GET parameter.
+targetStringYesN/ATarget to analyze: root domain, host (subdomain), or specific URL (e.g., seranking.com).
+modeStringNohostMode of operation:
+• domain – analyzes all URLs in the domain, including subdomains.
+• host – analyzes all URLs under this host only (subdomains excluded).
+• url – analyzes a single, specific URL.
+order_byStringNodate_foundField by which results are sorted:
+• new_lost_date – returns most recent referring domains first.
+• domain_inlink_rank – returns referring domains with the highest Domain InLink Rank first.
+• inlink_rank – returns referring domains with the highest InLink Rank first.
+limitIntegerNo100Maximum number of results to return. Must be within the range: [1, 10,000].
+outputStringNojsonResponse format (json or xml). Must always be sent as a GET parameter.
+Request examples
+GET
+Copy
+GET: https://api.seranking.com/v1/backlinks/refdomains?apikey=XXX&target=seranking.com&mode=domain&limit=2&order_by=inlink_rank&output=json
+POST
+Copy
+POST: https://api.seranking.com/v1/backlinks/refdomains?apikey=XXX&output=json
+{
+"target":"seranking.com",
+"mode":"domain",
+"limit":2
+}
+Response parameters
+ParameterTypeDescription
+refdomainStringName of the referring domain.
+backlinksIntegerNumber of live backlinks linking to the target from this referring domain.
+dofollow_backlinksIntegerNumber of backlinks classified as dofollow.
+first_seenStringDate the oldest live backlink from this referring domain was found (YYYY-MM-DD).
+domain_inlink_rankIntegerDomain Authority of the referring domain.
+Response example
+Copy
+{
+"refdomains": [
+{
+"refdomain": "daveyandkrista.com",
+"backlinks": 1,
+"dofollow_backlinks": 1,
+"first_seen": "2022-06-30",
+"domain_inlink_rank": 73
+},
+{
+"refdomain": "isearch.avg.com",
+"backlinks": 72,
+"dofollow_backlinks": 72,
+"first_seen": "2019-02-22",
+"domain_inlink_rank": 90
+}
+]
+}
+Get total referring domains count
+GET/ POST https://api.seranking.com/v1/backlinks/refdomains/count
+Cost: 2 credits per target
+Returns the number of unique domains linking to a target. This endpoint supports GET and POST requests and allows batching of up to 100 targets per request. Pass multiple targets as GET parameters separated by & or in the POST body (JSON format).
+Request parameters
+Note:
+The apikey (required) and output (optional) parameters must always be included as GET parameters, even if other parameters are sent via POST.
+Any POST data in the request body should be in JSON format.
+ParameterTypeRequiredDefaultDescription
+apikeyStringYesN/AAPI key for authentication. Must always be sent as a GET parameter.
+targetStringYesN/ATarget to analyze: root domain, host (subdomain), or specific URL (e.g., seranking.com).
+modeStringNohostMode of operation:
+• domain – analyzes all URLs in the domain, including subdomains.
+• host – analyzes all URLs under this host only (subdomains excluded).
+• url – analyzes a single, specific URL.
+outputStringNojsonResponse format (json or xml). Must always be sent as a GET parameter.
+Request examples
+GET (multiple targets)
+Copy
+GET: https://api.seranking.com/v1/backlinks/refdomains/count?apikey=XXX&target=https://www.seranking.com&target=https://www.seranking.com&mode=url&output=json
+POST (single target)
+Copy
+POST: https://api.seranking.com/v1/backlinks/refdomains/count?apikey=XXX&output=json
+{
+"target": [
+"https://www.seranking.com/"
+],
+"mode": "domain"
+}
+Response parameters
+ParameterTypeDescription
+targetStringTarget analyzed: root domain, host (subdomain), or specific URL (e.g., seranking.com).
+refdomainsIntegerNumber of unique domains linking to the target.
+Response example
+Copy
+{
+"metrics": [
+{
+"target": "seranking.com",
+"refdomains": 50234
+}
+]
+}
+List new and lost referring domains
+GET / POST https://api.seranking.com/v1/backlinks/refdomains/history
+Cost: 1 credit per refdomain
+Returns referring domains for which at least one backlink was newly found or lost in the given date range for a target. This endpoint supports GET and POST requests, but doesn’t support batching. Only a single target can be specified per request.
+Request parameters
+Note:
+The apikey (required) and output (optional) parameters must always be included as GET parameters, even if other parameters are sent via POST.
+Any POST data in the request body should be in JSON format.
+ParameterTypeRequiredDefaultDescription
+apikeyStringYesN/AAPI key for authentication. Must always be sent as a GET parameter.
+targetStringYesN/ATarget to analyze: root domain, host (subdomain), or specific URL (e.g., seranking.com).
+modeStringNohostMode of operation:
+• domain – analyzes all URLs in the domain, including subdomains.
+• host – analyzes all URLs under this host only (subdomains excluded).
+• url – analyzes a single, specific URL.
+new_lost_typeStringNo“”Refdomain status filter:
+• new – returns referring domains from which at least one backlink was newly found.
+• lost – returns referring domains from which at least one backlink was lost.
+If empty, both are returned.
+date_fromStringNoyesterdayStart date (YYYY-MM-DD), inclusive.
+date_toStringNotodayEnd date (YYYY-MM-DD), inclusive.
+order_byStringNonew_lost_dateField by which results are sorted:
+• new_lost_date – returns new or lost referring domains ordered by the date they were found or lost (most recent first).
+• domain_inlink_rank – returns referring domains with the highest Domain InLink Rank first.
+• inlink_rank – returns referring domains with the highest InLink Rank first.
+limitIntegerNo100Maximum number of results to return. Must be within the range: [1, 10,000].
+outputStringNojsonResponse format (json or xml). Must always be sent as a GET parameter.
+Request examples
+GET
+Copy
+GET: https://api.seranking.com/v1/backlinks/refdomains/history?apikey=XXX&target=https://www.seranking.com&mode=domain&new_lost_type=new&date_from=2023-01-15&date_to=2023-01-16&output=json
+POST
+Copy
+POST: https://api.seranking.com/v1/backlinks/refdomains/history?apikey=XXX&output=json
+{
+"target": "https://www.seranking.com",
+"mode": "domain",
+"new_lost_type": "new",
+"date_from": "2023-01-15",
+"date_to": "2023-01-16"
+}
+Response parameters
+ParameterTypeDescription
+new_lost_dateStringDate when the oldest live backlink from this referring domain was found, or the last backlink from this referring domain was lost (YYYY-MM-DD).
+new_lost_typeStringRefdomain status:
+• new – referring domains with at least one backlink newly found.
+• lost – referring domains with at least one backlink lost.
+refdomainStringName of the referring domain.
+backlinksIntegerNumber of backlinks linking to the target from this refdomain.
+dofollow_backlinksIntegerNumber of backlinks from this referring domain classified as dofollow.
+first_seenStringDate the oldest live backlink from this refdomain was found (YYYY-MM-DD).
+domain_inlink_rankIntegerDomain Authority of the referring domain.
+Response example
+Copy
+{
+"new_lost_refdomains": [
+{
+"new_lost_date": "2023-01-16",
+"new_lost_type": "new",
+"refdomain": "agenzia-seo.it",
+"backlinks": 1,
+"dofollow_backlinks": 1,
+"first_seen": "2023-01-16",
+"domain_inlink_rank": 32
+},
+{
+"new_lost_date": "2023-01-15",
+"new_lost_type": "lost",
+"refdomain": "doso.com.au",
+"backlinks": 1,
+"dofollow_backlinks": 1,
+"first_seen": "2023-01-15",
+"domain_inlink_rank": 25
+}
+]
+}
+Get daily count of new and lost referring domains
+GET/ POST https://api.seranking.com/v1/backlinks/refdomains/history/count
+Cost: 10 credits per target + 1 credit per date point returned
+Returns the number of referring domains with at least one backlink newly found or lost in the given date range for a target. The data is broken down by day. This endpoint supports GET and POST requests, but doesn’t support batching. Only a single target can be specified per request.
+Request parameters
+Note:
+The apikey (required) and output (optional) parameters must always be included as GET parameters, even if other parameters are sent via POST.
+Any POST data in the request body should be in JSON format.
+ParameterTypeRequiredDefaultDescription
+apikeyStringYesN/AAPI key for authentication. Must always be sent as a GET parameter.
+targetStringYesN/ATarget to analyze: root domain, host (subdomain), or specific URL (e.g., seranking.com).
+modeStringNohostMode of operation:
+• domain – analyzes all URLs in the domain, including subdomains.
+• host – analyzes all URLs under this host only (subdomains excluded).
+• url – analyzes a single, specific URL.
+new_lost_typeStringNo“”Refdomain status filter:
+• new – returns referring domains from which at least one backlink was newly found.
+• lost – returns referring domains from which at least one backlink was lost.
+If empty, both are returned.
+date_fromStringNoyesterdayStart date (YYYY-MM-DD), inclusive.
+date_toStringNotodayEnd date (YYYY-MM-DD), inclusive.
+outputStringNojsonResponse format (json or xml). Must always be sent as a GET parameter.
+Request examples
+GET
+Copy
+GET: https://api.seranking.com/v1/backlinks/refdomains/history/count?apikey=XXX&target=https://www.seranking.com&mode=domain&new_lost_type=new&date_from=2023-01-15&date_to=2023-01-16&output=json
+POST
+Copy
+POST: https://api.seranking.com/v1/backlinks/refdomains/history/count?apikey=XXX&output=json
+{
+"target": "https://www.seranking.com",
+"mode": "domain",
+"new_lost_type": "new",
+"date_from": "2023-01-15",
+"date_to": "2023-01-16"
+}
+Response parameters
+ParameterTypeDescription
+dateStringDate for which new or lost referring domains were counted (YYYY-MM-DD).
+newIntegerNumber of new referring domains on this date matching the request filters.
+lostIntegerNumber of lost referring domains on this date matching the request filters.
+Response example
+Copy
+{
+"new_lost_refdomains_count": [
+{
+"date": "2023-01-16",
+"new": 4,
+"lost": 0
+},
+{
+"date": "2023-01-15",
+"new": 3,
+"lost": 0
+}
+]
+}
+List referring IPs
+GET / POST https://api.seranking.com/v1/backlinks/referring-ips
+Cost: 1 credit per referring IP
+Returns information about IPv4 addresses from which backlinks linking to a target originate. IPv6 addresses are not supported. This endpoint supports GET and POST requests, but doesn’t support batching. Only a single target can be specified per request.
+Request parameters
+Note:
+The apikey (required) and output (optional) parameters must always be included as GET parameters, even if other parameters are sent via POST.
+Any POST data in the request body should be in JSON format.
+ParameterTypeRequiredDefaultDescription
+apikeyStringYesN/AAPI key for authentication. Must always be sent as a GET parameter.
+targetStringYesN/ATarget to analyze: root domain, host (subdomain), or specific URL (e.g., seranking.com).
+modeStringNohostMode of operation:
+• domain – analyzes all URLs in the domain, including subdomains.
+• host – analyzes all URLs under this host only (subdomains excluded).
+• url – analyzes a single, specific URL.
+order_byStringNobacklinksField by which results are sorted (descending):
+• backlinks – returns IPs with the highest number of backlinks first.
+• refdomains – returns IPs with the highest number of referring domains first.
+limitIntegerNo100Maximum number of results to return. Must be within the range: [1, 10,000].
+outputStringNojsonResponse format (json or xml). Must always be sent as a GET parameter.
+Request examples
+GET
+Copy
+GET: https://api.seranking.com/v1/backlinks/referring-ips?apikey=XXX&target=https://seranking.com&mode=domain&limit=100&order_by=backlinks&output=json
+POST
+Copy
+POST: https://api.seranking.com/v1/backlinks/referring-ips?apikey=XXX&output=json
+{
+"target": "https://www.seranking.com/",
+"order_by": "backlinks",
+"mode": "domain",
+"limit": 2
+}
+Response parameters
+ParameterTypeDescription
+ipStringIPv4 address that serves at least one page linking to the target.
+backlinksIntegerNumber of live backlinks linking to the target from this IP (> 0).
+refdomainsIntegerNumber of referring domains linking to the target from this IP (> 0).
+nofollow_backlinksIntegerNumber of backlinks from this IP classified as nofollow.
+dofollow_backlinksIntegerNumber of backlinks from this IP classified as dofollow.
+first_seenStringDate the earliest backlink from this IP was found (YYYY-MM-DD).
+last_visitedStringDate the most recent backlink from this IP was last seen (YYYY-MM-DD).
+Response example
+Copy
+{
+"ips": [
+{
+"ip": "123.234.23.43",
+"backlinks": 188,
+"refdomains": 144,
+"first_seen": "2020-10-19",
+"last_visited": "2022-03-15"
+},
+{
+"ip": "32.114.53.3",
+"backlinks": 68,
+"refdomains": 60,
+"first_seen": "2019-04-24",
+"last_visited": "2022-02-21"
+}
+]
+}
+Get total referring IPs count
+GET/ POST https://api.seranking.com/v1/backlinks/referring-ips/count
+Cost: 2 credits per target
+Returns the number of unique IPs linking to a target. This endpoint supports GET and POST requests and allows batching of up to 100 targets per request. Pass multiple targets as GET parameters separated by & or in the POST body (JSON format).
+Request parameters
+Note:
+The apikey (required) and output (optional) parameters must always be included as GET parameters, even if other parameters are sent via POST.
+Any POST data in the request body should be in JSON format.
+ParameterTypeRequiredDefaultDescription
+apikeyStringYesN/AAPI key for authentication. Must always be sent as a GET parameter.
+targetStringYesN/ATarget to analyze: root domain, host (subdomain), or specific URL (e.g., seranking.com).
+modeStringNohostMode of operation:
+• domain – analyzes all URLs in the domain, including subdomains.
+• host – analyzes all URLs under this host only (subdomains excluded).
+• url – analyzes a single, specific URL.
+outputStringNojsonResponse format (json or xml). Must always be sent as a GET parameter.
+Request examples
+GET (multiple targets)
+Copy
+GET: https://api.seranking.com/v1/backlinks/referring-ips/count?apikey=XXX&target=https://seranking.com&target=https://www.us-seranking.com&mode=url&output=json
+POST (multiple targets)
+Copy
+POST: https://api.seranking.com/v1/backlinks/referring-ips/count?apikey=XXX&output=json
+{
+"target": [
+"https://www.seranking.com/",
+"https://www.us-seranking.com/"
+],
+"mode": "host"
+}
+Response parameters
+ParameterTypeDescription
+targetStringTarget analyzed: root domain, host (subdomain), or specific URL (e.g., seranking.com).
+ipsIntegerNumber of unique IP addresses linking to the target.
+Response example
+Copy
+{
+"metrics": [
+{
+"target": "https://seranking.com",
+"ips": 75
+},
+{
+"target": "https://www.us-seranking.com",
+"ips": 2493
+}
+]
+}
+Get total referring subnets count
+GET/ POST https://api.seranking.com/v1/backlinks/referring-subnets/count
+Cost: 2 credits per target
+Returns the number of unique subnets (C-blocks) linking to a target. This endpoint supports GET and POST requests and allows batching of up to 100 targets per request. Pass multiple targets as GET parameters separated by & or in the POST body (JSON format).
+Request parameters
+Note:
+The apikey (required) and output (optional) parameters must always be included as GET parameters, even if other parameters are sent via POST.
+Any POST data in the request body should be in JSON format.
+ParameterTypeRequiredDefaultDescription
+apikeyStringYesN/AAPI key for authentication. Must always be sent as a GET parameter.
+targetStringYesN/ATarget to analyze: root domain, host (subdomain), or specific URL (e.g., seranking.com).
+modeStringNohostMode of operation:
+• domain – analyzes all URLs in the domain, including subdomains.
+• host – analyzes all URLs under this host only (subdomains excluded).
+• url – analyzes a single, specific URL.
+outputStringNojsonResponse format (json or xml). Must always be sent as a GET parameter.
+Request examples
+GET (multiple targets)
+Copy
+GET: https://api.seranking.com/v1/backlinks/referring-subnets/count?apikey=XXX&target=seranking.com&target=us-seranking.com&mode=host&output=json
+GET (multiple targets)
+Copy
+POST: https://api.seranking.com/v1/backlinks/referring-subnets/count?apikey=XXX&output=json
+{
+"target": [
+"https://www.seranking.com/",
+"https://www.us-seranking.com/"
+],
+"mode": "host"
+}
+Response parameters
+ParameterTypeDescription
+targetStringTarget analyzed: root domain, host (subdomain), or specific URL (e.g., seranking.com).
+subnetsIntegerNumber of unique subnets (C-blocks) linking to the target (e.g., 50).
+Response example
+Copy
+{
+"metrics": [
+{
+"target": "seranking.com",
+"subnets": 1399
+},
+{
+"target": "us-seranking.com",
+"subnets": 7690
+}
+]
+}
+List indexed pages with backlinks
+GET / POST https://api.seranking.com/v1/backlinks/indexed-pages
+Cost: 1 credit per site page
+Returns information about pages that belong to a target under the following conditions:
+A page is included if it has at least one live backlink.
+Pages that no longer have backlinks are excluded.
+The returned list contains no duplicate pages, with protocol differences taken into account when determining page uniqueness. This endpoint supports GET and POST requests, but doesn’t support batching. Only a single target can be specified per request.
+Request parameters
+Note:
+The apikey (required) and output (optional) parameters must always be included as GET parameters, even if other parameters are sent via POST.
+Any POST data in the request body should be in JSON format.
+ParameterTypeRequiredDefaultDescription
+apikeyStringYesN/AAPI key for authentication. Must always be sent as a GET parameter.
+targetStringYesN/ATarget to analyze: root domain, host (subdomain), or specific URL (e.g., seranking.com).
+modeStringNohostMode of operation:
+• domain – analyzes all URLs in the domain, including subdomains.
+• host – analyzes all URLs under this host only (subdomains excluded).
+• url – analyzes a single, specific URL.
+order_byStringNobacklinksField by which results are sorted (descending):
+• backlinks – returns pages with the highest number of backlinks first.
+• refdomains – returns pages with the highest number of referring domains first.
+limitIntegerNo100Maximum number of results to return. Must be within the range: [1, 10,000].
+outputStringNojsonResponse format (json or xml). Must always be sent as a GET parameter.
+Request examples
+GET
+Copy
+GET: https://api.seranking.com/v1/backlinks/indexed-pages?apikey=XXX&target=https://seranking.com&mode=domain&limit=100&order_by=backlinks&output=json
+POST
+Copy
+POST: https://api.seranking.com/v1/backlinks/indexed-pages?apikey=XXX&output=json
+{
+"target": "https://www.seranking.com/",
+"order_by": "backlinks",
+"mode": "domain",
+"limit": 2
+}
+Response parameters
+ParameterTypeDescription
+urlStringURL of a page that belongs to the target specified in the request.
+backlinksIntegerNumber of live backlinks linking to the URL (> 0).
+refdomainsIntegerNumber of referring domains linking to the URL (> 0).
+nofollow_backlinksIntegerNumber of backlinks classified as nofollow.
+dofollow_backlinksIntegerNumber of backlinks classified as dofollow.
+first_seenStringDate the earliest backlink pointing to the URL was found (YYYY-MM-DD).
+last_visitedStringDate the most recent backlink pointing to the URL was last seen (YYYY-MM-DD).
+Response example
+Copy
+{
+"pages": [
+{
+"url": "https://www.seranking.com/",
+"backlinks": 16696,
+"refdomains": 1227,
+"dofollow_backlinks": 14708,
+"nofollow_backlinks": 1978,
+"first_seen": "2017-01-03",
+"last_visited": "2023-10-23"
+},
+{
+"url": "http://seranking.com/",
+"backlinks": 1926,
+"refdomains": 220,
+"dofollow_backlinks": 1254,
+"nofollow_backlinks": 671,
+"first_seen": "2017-09-15",
+"last_visited": "2023-10-21"
+}
+]
+}
+Get page and domain authority
+GET/ POST https://api.seranking.com/v1/backlinks/authority
+Cost: 10 credits per target
+Returns the InLink Rank (Page Authority) and Domain InLink Rank (Domain Authority) for a target. This endpoint supports GET and POST requests and allows batching of up to 100 targets per request. Pass multiple targets as GET parameters separated by & or in the POST body (JSON format).
+Note: The inlink_rank value in the response is calculated in real time, so it may differ from the cached value returned by List all backlinks.
+Request parameters
+Note:
+The apikey (required) and output (optional) parameters must always be included as GET parameters, even if other parameters are sent via POST.
+Any POST data in the request body should be in JSON format.
+ParameterTypeRequiredDefault Description
+apikeyStringYesN/AAPI key for authentication. Must always be sent as a GET parameter.
+targetStringYesN/ATarget to analyze: root domain, subdomain, or specific URL (e.g., seranking.com).
+outputStringNojsonResponse format (json or xml). Must always be sent as a GET parameter.
+Request examples
+GET (single target)
+Copy
+GET: https://api.seranking.com/v1/backlinks/authority?apikey=XXX&target=https://www.seranking.com&output=json
+POST (multiple targets)
+Copy
+POST: https://api.seranking.com/v1/backlinks/authority?apikey=XXX&output=json
+{
+"target":
+[
+"https://www.seranking.com/",
+"https://www.seranking.com/rank-tracker/"
+]
+}
+Response parameters
+ParameterTypeDescription
+urlStringURL of the analyzed page.
+inlink_rankIntegerPage Authority of the target URL.
+domain_inlink_rankIntegerDomain Authority of the target’s root domain.
+Response example
+Copy
+{
+"pages": [
+{
+"url": "https://www.seranking.com",
+"inlink_rank": 40,
+"domain_inlink_rank": 68
+}
+]
+}
+Get domain authority
+GET/ POST https://api.seranking.com/v1/backlinks/authority/domain
+Cost: 5 credits per target
+Returns the Domain InLink Rank value of the target page’s root domain. This endpoint supports GET and POST requests and allows batching of up to 100 targets per request. Pass multiple targets as GET parameters separated by & or in the POST body (JSON format).
+Request parameters
+Note:
+The apikey (required) and output (optional) parameters must always be included as GET parameters, even if other parameters are sent via POST.
+Any POST data in the request body should be in JSON format.
+ParameterTypeRequiredDefaultDescription
+apikeyStringYesN/AAPI key for authentication. Must always be sent as a GET parameter.
+targetStringYesN/ATarget to analyze: root domain, host (subdomain), or specific URL (e.g., seranking.com).
+outputStringNojsonResponse format (json or xml). Must always be sent as a GET parameter.
+Request examples
+GET (multiple targets)
+Copy
+GET: https://api.seranking.com/v1/backlinks/authority/domain?apikey=XXX&target=https://seranking.com&target=https://www.seranking.com&output=json
+POST (multiple targets)
+Copy
+POST: https://api.seranking.com/v1/backlinks/authority/domain?apikey=XXX&output=json
+{
+"target": [
+"https://seranking.com/",
+"https://www.seranking.com/rank-tracker/"
+]
+}
+Response parameters
+ParameterTypeDescription
+urlStringURL of the analyzed page.
+domain_inlink_rankIntegerDomain Authority of the target’s root domain.
+Response example
+Copy
+{
+"pages": [
+{
+"url": "https://seranking.com",
+"domain_inlink_rank": 68
+},
+{
+"url": "https://www.seranking.com",
+"domain_inlink_rank": 87
+}
+]
+}
+Get domain authority distribution
+GET https://api.seranking.com/v1/backlinks/authority/domain/distribution
+Cost: 1 credit per domain
+Returns the distribution of Domain InLink Rank values for domains that link to a target. This endpoint doesn’t support batching. Only a single target can be specified per request.
+Request parameters
+ParameterTypeRequiredDefaultDescription
+apikeyStringYesN/AAPI key for authentication.
+targetStringYesN/ATarget to analyze: root domain, host (subdomain), or specific URL (e.g., seranking.com).
+modeStringNohostMode of operation:
+• domain – analyzes all URLs in the domain, including subdomains.
+• host – analyzes all URLs under this host only (subdomains excluded).
+• url – analyzes a single, specific URL.
+histogramModeStringNohostMode of aggregation:
+• domain – counts base domains per Domain InLink Rank.
+• host – counts hosts per Domain InLink Rank.
+outputStringNojsonResponse format (json or xml).
+Request example
+Copy
+GET: https://api.seranking.com/v1/backlinks/authority/domain/distribution?apikey=XXX&output=json&target=seranking.com&mode=host&histogramMode=domain
+Response parameters
+ParameterTypeDescription
+domain_inlink_rankIntegerDomain Authority value for which the distribution is calculated.
+refdomainsIntegerNumber of referring domains with the specified Domain InLink Rank.
+Response example
+Copy
+{
+"histogram": [
+{
+"domain_inlink_rank": 0,
+"refdomains": 250
+},
+{
+"domain_inlink_rank": 1,
+"refdomains": 872
+},
+{
+"domain_inlink_rank": 2,
+"refdomains": 567
+},
+{
+"domain_inlink_rank": 3,
+"refdomains": 347
+},
+{
+"domain_inlink_rank": 4,
+"refdomains": 268
+}
+]
+}
+Get domain authority history
+GET https://api.seranking.com/v1/backlinks/authority/domain/history
+Cost: 4 credits per target + 1 credit per date point returned
+Returns historical Domain InLink Rank values for a target. Results are returned for all dates in the requested range based on the selected granularity. This endpoint doesn’t support batching. Only a single target can be specified per request.
+Request parameters
+ParameterTypeRequiredDefaultDescription
+apikeyStringYesN/AAPI key for authentication.
+targetStringYesN/ATarget to analyze: root domain, host (subdomain), or specific URL (e.g., seranking.com). The PLD is extracted automatically.
+date_fromDateNonow − 1 monthStart date (YYYY-MM-DD, inclusive).
+date_toDateNonowEnd date (YYYY-MM-DD, inclusive).
+granularityStringNoby_dayGranularity at which data is returned (by_day, by_week, or by_month).
+outputStringNojsonResponse format (json or xml).
+Request example
+Copy
+GET: https://api.seranking.com/v1/backlinks/authority/domain/history?apikey=XXX&output=json&target=seranking.com&date_from=2025-06-01&date_to=2025-09-01&granularity=by_month
+Response parameters
+ParameterTypeDescription
+dateStringDate associated with the rank value. Depends on granularity:
+• by_day – exact day.
+• by_week – first day of the week (Monday).
+• by_month – first day of the month.
+domain_inlink_rankIntegerDomain Authority value for the specified date.
+Response example
+Copy
+{
+"ranks": [
+{
+"date": "2025-09-01",
+"domain_inlink_rank": 72
+},
+{
+"date": "2025-08-01",
+"domain_inlink_rank": 70
+},
+{
+"date": "2025-07-01",
+"domain_inlink_rank": 68
+},
+{
+"date": "2025-06-01",
+"domain_inlink_rank": 65
+}
+]
+}
+Get page authority
+GET/ POST https://api.seranking.com/v1/backlinks/authority/page
+Cost: 5 credits per target
+Returns the InLink Rank value for a target URL. This endpoint supports GET and POST requests and allows batching of up to 100 targets per request. Pass multiple targets as GET parameters separated by & or in the POST body (JSON format).
+Request parameters
+Note:
+The apikey (required) and output (optional) parameters must always be included as GET parameters, even if other parameters are sent via POST.
+Any POST data in the request body should be in JSON format.
+ParameterTypeRequiredDefaultDescription
+apikeyStringYesN/AAPI key for authentication. Must always be sent as a GET parameter.
+targetStringYesN/ATarget to analyze: root domain, host (subdomain), or specific URL (e.g., seranking.com).
+outputStringNojsonResponse format (json or xml). Must always be sent as a GET parameter.
+Request examples
+GET (multiple targets)
+Copy
+GET: https://api.seranking.com/v1/backlinks/authority/page?apikey=XXX&target=https://seranking.com&target=https://www.us-seranking.com&mode=url&output=json
+POST (multiple targets)
+Copy
+POST: https://api.seranking.com/v1/backlinks/authority/page?apikey=XXX&output=json
+{
+"target": [
+"https://www.seranking.com/",
+"https://www.seranking.com/rank-tracker/"
+]
+}
+Response parameters
+ParameterTypeDescription
+urlStringURL of the analyzed page.
+inlink_rankIntegerPage Authority of the target URL.
+Response example
+Copy
+{
+"pages": [
+{
+"url": "https://seranking.com",
+"inlink_rank": 19
+},
+{
+"url": "https://www.seranking.com",
+"inlink_rank": 49
+}
+]
+}
+Get page authority history
+GET https://api.seranking.com/v1/backlinks/authority/page/history
+Cost: 4 credits per target + 1 credit per date point returned
+Returns historical InLink Rank values for a page. This endpoint doesn’t support batching. Only a single target can be specified per request.
+Request parameters
+ParameterTypeRequiredDefaultDescription
+apikeyStringYesN/AAPI key for authentication.
+targetStringYesN/ATarget to analyze: only full page URL is supported (e.g., http://seranking.com/index.html).
+date_fromDateNonow – 1 monthStart date (YYYY-MM-DD), inclusive.
+date_toDateNonowEnd date (YYYY-MM-DD), inclusive.
+granularityStringNoby_dayGranularity at which data is returned (by_day, by_week, or by_month). Aggregation uses the latest value within the aggregated range.
+outputStringNojsonResponse format (json or xml).
+Request example
+Copy
+GET: https://api.seranking.com/v1/backlinks/authority/page/history?apikey=XXX&output=json&target=seranking.com&date_from=2025-02-01&date_to=2025-04-01&granularity=by_month
+Response parameters
+ParameterTypeDescription
+dateStringDate associated with the rank value. Depends on granularity:
+• by_day – exact day.
+• by_week – first day of the week (Monday).
+• by_month – first day of the month.
+inlink_rankIntegerPage Authority value for the specified date.
+Response example
+Copy
+{
+"ranks": [
+{
+"date": "2025-04-01",
+"inlink_rank": 54
+},
+{
+"date": "2025-03-01",
+"inlink_rank": 32
+},
+{
+"date": "2025-02-01",
+"inlink_rank": 21
+}
+]
+}
+Learn how SE Ranking’s API can boost your SEO!
+Hi! Meet our product experts!
+One of them will walk you through the API and show you how to get the most out of it.
+Enjoy a tailored demo on integrating rich, structured SEO data into your stack.
+Pin down every tech detail live—auth, endpoints, rate limits, data formats.
+Compare usage tiers and pricing so you can unlock maximum data value.
+Request a free demo to see our tools and integrations in action
+By clicking this button, you agree to SE Ranking’s
+Terms of Service and Privacy Statement.
+column
+Core SEO Tools
+Rank Tracker
+Website Audit
+On-Page SEO Checker
+SERP Tracker
+Backlink Checker
+Keyword Grouper
+Keyword Tool
+Website Competitor Analysis Tool
+AI Overviews Tracker
+All features
+Performance & Reporting Tools
+Webpage Monitor
+SEO Report Generator
+SEO Dashboard
+column
+Add-ons
+Local Marketing Software
+Content Marketing Tool
+Agency Pack
+White Label
+Additional Services
+SEO API
+Free SEO tools
+SEO Task Manager
+Support & Partnership
+Contact
+Help
+Affiliate
+Educational Partnership Program
+column
+Company & Resources
+SEO Blog
+About
+Stand with Ukraine
+Careers
+What’s New
+Testimonials
+Webinars
+Academy
+Competitors
+FAQ
+Legal & Technical
+Privacy Statement
+Cookie Policy
+Legal Information
+Open Source Attributions
+Download
+enEnglish
+enEnglish
+deDeutsch
+frFrançais
+esEspañol
+nlNederlands
+itItaliano
+ptPortuguês
+uaУкраїнська
+ruРусский
+あ日本語
+© 2013 - 2026 SER Acquisition Inc. All Rights Reserved

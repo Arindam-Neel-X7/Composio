@@ -1,0 +1,107 @@
+Developer sandbox
+For AI agents: the docs index is at https://developers.asana.com/llms.txt. Append .md to any documentation page URL to get its markdown version.
+Jump to Content
+HomeGuidesAPI ReferenceApp directoryDocsForumMy apps
+Guides
+App directoryDocsForumMy apps
+HomeGuidesAPI Reference
+Developer sandbox
+Overview
+Build an app with Asana
+Object hierarchy
+Common use cases
+Get started
+API explorer
+Developer sandbox
+Quick start guide
+FAQ
+feature guides
+Authentication
+Personal access token
+OAuth
+OAuth Code Samples / Libraries
+OAuth scopes
+OpenID Connect
+API
+Input/output options
+Batch requests
+Custom fields
+Custom external data
+Dates and times
+Rich text
+Rate limits
+Errors
+Pagination
+SCIM
+Audit log events
+Deprecations
+Workspace events
+Graph exports
+App components
+Building app components
+App components on tasks
+App components on automations
+UI builder
+Troubleshooting
+App component approval checklist
+Incoming web requests
+Manage your app
+Share your app
+App listing guidelines
+Publish your app
+Update your app
+Script Actions
+How to write a Script Action script
+Dynamic value inputs
+FAQ
+Webhooks
+Tutorials
+Export project statuses to CSV
+Automate status reports with Google Apps Scripts
+Resources
+API reference
+Client libraries
+JavaScript
+Migration guide: v3
+Python
+Migration guide: v5
+Ruby
+Java
+PHP
+Asana CLI
+MCP Server
+Using Asana's MCP Server
+Using Asana's Command MCP Server
+Compatible MCP Clients
+Connecting Coding Clients to Asana's V2 server
+Integrating with Asana's MCP Server
+MCP Tools Reference
+Examples
+App component examples
+Custom field analysis
+Portfolio to CSV export
+Script action examples
+Triage bot
+Using bots
+Postman Collection
+Changelog
+Powered by
+Developer sandbox
+Learn how to request a developer sandbox
+Before moving forward with making sample API requests or building apps that leverage that Asana API, we recommend first getting an Asana developer sandbox. A developer sandbox is a temporary Asana domain with limited users.
+Developer sandboxes are intended for:
+Developers building or maintaining a third-party integration with Asana (i.e., submitting your completed integration to get listed in our app directory)
+Existing Asana Starter customers or higher tiers who require a separate environment to perform risk-free testing on the API
+Sandboxes can include Enterprise, Advanced, and Starter features upon request, and are valid for a maximum of one year. Extensions requested after one year will go through Legal review. Approval is not guaranteed, though you may be eligible to request a new sandbox.
+To see the feature differences between the Asana plans, please visit our pricing page.
+➡ To request a developer sandbox, please complete and submit this form.
+📘
+Processing time
+Please note that at this time, it may take up to one (1) week to process and provision your developer sandbox.
+Updated about 1 year ago
+API explorer
+Quick start guide
+Did this page help you?
+Yes
+No
+Copy Page

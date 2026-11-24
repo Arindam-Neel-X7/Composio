@@ -1,0 +1,819 @@
+[
+  {
+    "spec": {
+      "app_id": 91,
+      "url": "https://docs.cloud.google.com/gemini/enterprise/notebooklm-enterprise/docs/api-notebooks",
+      "kind": "primary_docs",
+      "scope": "NotebookLM Enterprise on Google Cloud; personal NotebookLM API excluded; public documentary research, no execution",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor-controlled documentation/help/product domain matching roster product; ownership is researcher attribution, requires independent review",
+      "attribution_by": "task16-codex-researcher"
+    },
+    "captured_on": "2026-11-23",
+    "capture_method": "http_content",
+    "snapshot_ref": "snapshots/13c627c588b54ec488ae551e9994861334cd0e097a0f94fe3640b75cc9096886.txt",
+    "content_sha256": "13c627c588b54ec488ae551e9994861334cd0e097a0f94fe3640b75cc9096886",
+    "line_count": 508
+  },
+  {
+    "spec": {
+      "app_id": 91,
+      "url": "https://developers.google.com/notebook/docs/authentication",
+      "kind": "primary_docs",
+      "scope": "NotebookLM Enterprise on Google Cloud; personal NotebookLM API excluded; public documentary research, no execution",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor-controlled documentation/help/product domain matching roster product; ownership is researcher attribution, requires independent review",
+      "attribution_by": "task16-codex-researcher"
+    },
+    "captured_on": "2026-11-23",
+    "capture_method": "http_content",
+    "snapshot_ref": "snapshots/69a5651e2f873431d4bc6c9d810f1a41aad65f25acd758dad8218a95acffeb52.txt",
+    "content_sha256": "69a5651e2f873431d4bc6c9d810f1a41aad65f25acd758dad8218a95acffeb52",
+    "line_count": 216
+  },
+  {
+    "spec": {
+      "app_id": 93,
+      "url": "https://fathom.video/",
+      "kind": "primary_docs",
+      "scope": "Fathom video meeting assistant public developer API; public documentary research, no execution",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor-controlled documentation/help/product domain matching roster product; ownership is researcher attribution, requires independent review",
+      "attribution_by": "task16-codex-researcher"
+    },
+    "captured_on": "2026-11-23",
+    "capture_method": "http_content",
+    "snapshot_ref": "snapshots/5cd82757b75e749493d6e17cf702b5bd93b68fc4137202c1bdc599c9ed006658.txt",
+    "content_sha256": "5cd82757b75e749493d6e17cf702b5bd93b68fc4137202c1bdc599c9ed006658",
+    "line_count": 236
+  },
+  {
+    "spec": {
+      "app_id": 93,
+      "url": "https://developers.fathom.ai/",
+      "kind": "primary_docs",
+      "scope": "Fathom video meeting assistant public developer API; public documentary research, no execution",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor-controlled documentation/help/product domain matching roster product; ownership is researcher attribution, requires independent review",
+      "attribution_by": "task16-codex-researcher"
+    },
+    "captured_on": "2026-11-23",
+    "capture_method": "http_content",
+    "snapshot_ref": "snapshots/ddf401515f6c38e8f6850220b73220b331df74b2ab714a0254c868e29d101bf9.txt",
+    "content_sha256": "ddf401515f6c38e8f6850220b73220b331df74b2ab714a0254c868e29d101bf9",
+    "line_count": 50
+  },
+  {
+    "spec": {
+      "app_id": 93,
+      "url": "https://developers.fathom.ai/llms.txt",
+      "kind": "primary_docs",
+      "scope": "Fathom video meeting assistant public developer API; public documentary research, no execution",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor-controlled documentation/help/product domain matching roster product; ownership is researcher attribution, requires independent review",
+      "attribution_by": "task16-codex-researcher"
+    },
+    "captured_on": "2026-11-23",
+    "capture_method": "http_content",
+    "snapshot_ref": "snapshots/ab33713efe88fbb9d9c140bdf219a31bc587d1456ad38577f54f571d09327a81.txt",
+    "content_sha256": "ab33713efe88fbb9d9c140bdf219a31bc587d1456ad38577f54f571d09327a81",
+    "line_count": 43
+  },
+  {
+    "spec": {
+      "app_id": 94,
+      "url": "https://help.consensus.app/en/articles/16516328-the-consensus-api",
+      "kind": "primary_docs",
+      "scope": "Consensus scholarly research API and MCP; public documentary research, no execution",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor-controlled documentation/help/product domain matching roster product; ownership is researcher attribution, requires independent review",
+      "attribution_by": "task16-codex-researcher"
+    },
+    "captured_on": "2026-11-23",
+    "capture_method": "http_content",
+    "snapshot_ref": "snapshots/ff36a41b571a6c4ff804ed6eb4a8ea1b0943125efe98f841d5f982278487870c.txt",
+    "content_sha256": "ff36a41b571a6c4ff804ed6eb4a8ea1b0943125efe98f841d5f982278487870c",
+    "line_count": 156
+  },
+  {
+    "spec": {
+      "app_id": 94,
+      "url": "https://docs.consensus.app/",
+      "kind": "primary_docs",
+      "scope": "Consensus scholarly research API and MCP; public documentary research, no execution",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor-controlled documentation/help/product domain matching roster product; ownership is researcher attribution, requires independent review",
+      "attribution_by": "task16-codex-researcher"
+    },
+    "captured_on": "2026-11-23",
+    "capture_method": "http_content",
+    "snapshot_ref": "snapshots/bb66d733fa7687887ec6fd0a251677e3b1afccd775e66b918f7273e78cbaee37.txt",
+    "content_sha256": "bb66d733fa7687887ec6fd0a251677e3b1afccd775e66b918f7273e78cbaee37",
+    "line_count": 119
+  },
+  {
+    "spec": {
+      "app_id": 94,
+      "url": "https://docs.consensus.app/llms.txt",
+      "kind": "primary_docs",
+      "scope": "Consensus scholarly research API and MCP; public documentary research, no execution",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor-controlled documentation/help/product domain matching roster product; ownership is researcher attribution, requires independent review",
+      "attribution_by": "task16-codex-researcher"
+    },
+    "captured_on": "2026-11-23",
+    "capture_method": "http_content",
+    "snapshot_ref": "snapshots/43f50d2fb0fae07221e4b47c712b00c6bc36346da4b0c5ffe7438654af1a1283.txt",
+    "content_sha256": "43f50d2fb0fae07221e4b47c712b00c6bc36346da4b0c5ffe7438654af1a1283",
+    "line_count": 137
+  },
+  {
+    "spec": {
+      "app_id": 94,
+      "url": "https://www.consensus.app/home/api/",
+      "kind": "primary_docs",
+      "scope": "Consensus scholarly research API and MCP; public documentary research, no execution",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor-controlled documentation/help/product domain matching roster product; ownership is researcher attribution, requires independent review",
+      "attribution_by": "task16-codex-researcher"
+    },
+    "captured_on": "2026-11-23",
+    "capture_method": "http_content",
+    "snapshot_ref": "snapshots/b4aa7ac3ab7eb3cb5106f3f535d895619a381c8ad0a79dca2482afa7e9d6f302.txt",
+    "content_sha256": "b4aa7ac3ab7eb3cb5106f3f535d895619a381c8ad0a79dca2482afa7e9d6f302",
+    "line_count": 757
+  },
+  {
+    "spec": {
+      "app_id": 95,
+      "url": "https://docs.reducto.ai/",
+      "kind": "primary_docs",
+      "scope": "Reducto document processing API and agent integrations; public documentary research, no execution",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor-controlled documentation/help/product domain matching roster product; ownership is researcher attribution, requires independent review",
+      "attribution_by": "task16-codex-researcher"
+    },
+    "captured_on": "2026-11-23",
+    "capture_method": "http_content",
+    "snapshot_ref": "snapshots/9b492f6be7074a8f43951c3bb3ff51e999fbf411bf902cc264679146f79c726b.txt",
+    "content_sha256": "9b492f6be7074a8f43951c3bb3ff51e999fbf411bf902cc264679146f79c726b",
+    "line_count": 69
+  },
+  {
+    "spec": {
+      "app_id": 95,
+      "url": "https://docs.reducto.ai/llms.txt",
+      "kind": "primary_docs",
+      "scope": "Reducto document processing API and agent integrations; public documentary research, no execution",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor-controlled documentation/help/product domain matching roster product; ownership is researcher attribution, requires independent review",
+      "attribution_by": "task16-codex-researcher"
+    },
+    "captured_on": "2026-11-23",
+    "capture_method": "http_content",
+    "snapshot_ref": "snapshots/3329a3d25d9d488d3e9060bca348ca89ea9c1f6263b8f3b41f7cdfc1cf449b2f.txt",
+    "content_sha256": "3329a3d25d9d488d3e9060bca348ca89ea9c1f6263b8f3b41f7cdfc1cf449b2f",
+    "line_count": 38
+  },
+  {
+    "spec": {
+      "app_id": 96,
+      "url": "https://docs.devin.ai/llms.txt",
+      "kind": "primary_docs",
+      "scope": "Devin API and callable Devin MCP server; outgoing MCP clients distinguished; public documentary research, no execution",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor-controlled documentation/help/product domain matching roster product; ownership is researcher attribution, requires independent review",
+      "attribution_by": "task16-codex-researcher"
+    },
+    "captured_on": "2026-11-23",
+    "capture_method": "http_content",
+    "snapshot_ref": "snapshots/2ff987f6e3eb5a6d2d582c5ec0957c907fc70e2e383a384b487cfb3e958bc8b6.txt",
+    "content_sha256": "2ff987f6e3eb5a6d2d582c5ec0957c907fc70e2e383a384b487cfb3e958bc8b6",
+    "line_count": 211
+  },
+  {
+    "spec": {
+      "app_id": 97,
+      "url": "https://higgsfield.ai/blog/higgsfield-cli",
+      "kind": "primary_docs",
+      "scope": "Higgsfield content generation API, CLI and MCP; separate billing paths; public documentary research, no execution",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor-controlled documentation/help/product domain matching roster product; ownership is researcher attribution, requires independent review",
+      "attribution_by": "task16-codex-researcher"
+    },
+    "captured_on": "2026-11-23",
+    "capture_method": "http_content",
+    "snapshot_ref": "snapshots/611da21d89c69cb2a7038dc84e279c9ff4147262e91ed9e344f606ed3a938250.txt",
+    "content_sha256": "611da21d89c69cb2a7038dc84e279c9ff4147262e91ed9e344f606ed3a938250",
+    "line_count": 454
+  },
+  {
+    "spec": {
+      "app_id": 97,
+      "url": "https://higgsfield.ai/creator-hub/help-center/integrations/what-is-the-higgsfield-api",
+      "kind": "primary_docs",
+      "scope": "Higgsfield content generation API, CLI and MCP; separate billing paths; public documentary research, no execution",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor-controlled documentation/help/product domain matching roster product; ownership is researcher attribution, requires independent review",
+      "attribution_by": "task16-codex-researcher"
+    },
+    "captured_on": "2026-11-23",
+    "capture_method": "http_content",
+    "snapshot_ref": "snapshots/581e3e9a4b46b980fd866e109ebb7f1f92c14eacc1e38db72a4db437bd9ce1ea.txt",
+    "content_sha256": "581e3e9a4b46b980fd866e109ebb7f1f92c14eacc1e38db72a4db437bd9ce1ea",
+    "line_count": 287
+  },
+  {
+    "spec": {
+      "app_id": 97,
+      "url": "https://higgsfield.ai/enterprise-help-center/platform/integrations",
+      "kind": "primary_docs",
+      "scope": "Higgsfield content generation API, CLI and MCP; separate billing paths; public documentary research, no execution",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor-controlled documentation/help/product domain matching roster product; ownership is researcher attribution, requires independent review",
+      "attribution_by": "task16-codex-researcher"
+    },
+    "captured_on": "2026-11-23",
+    "capture_method": "http_content",
+    "snapshot_ref": "snapshots/a57c4a0d32d061fd6ffb539962c76aebc9b647f5c1f3f13f84b05360592215e4.txt",
+    "content_sha256": "a57c4a0d32d061fd6ffb539962c76aebc9b647f5c1f3f13f84b05360592215e4",
+    "line_count": 237
+  },
+  {
+    "spec": {
+      "app_id": 98,
+      "url": "https://github.com/mermaid-js/mermaid-cli",
+      "kind": "official_repository",
+      "scope": "Official mermaid-js Mermaid CLI local diagram rendering; public documentary research, no execution",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Official mermaid-js repository identified in assignment",
+      "attribution_by": "task16-codex-researcher"
+    },
+    "captured_on": "2026-11-23",
+    "capture_method": "http_content",
+    "snapshot_ref": "snapshots/a8ad83e27fb93db4a67f5e273563819d6fb967924b6677428f89fa9472d0e30c.txt",
+    "content_sha256": "a8ad83e27fb93db4a67f5e273563819d6fb967924b6677428f89fa9472d0e30c",
+    "line_count": 361
+  },
+  {
+    "spec": {
+      "app_id": 98,
+      "url": "https://raw.githubusercontent.com/mermaid-js/mermaid-cli/master/README.md",
+      "kind": "official_repository",
+      "scope": "Official mermaid-js Mermaid CLI local diagram rendering; public documentary research, no execution",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Official mermaid-js repository identified in assignment",
+      "attribution_by": "task16-codex-researcher"
+    },
+    "captured_on": "2026-11-23",
+    "capture_method": "http_content",
+    "snapshot_ref": "snapshots/14508a090ff09990b9f678445ad1ffb41e363ae28ddf4ee696802554febfce6f.txt",
+    "content_sha256": "14508a090ff09990b9f678445ad1ffb41e363ae28ddf4ee696802554febfce6f",
+    "line_count": 174
+  },
+  {
+    "spec": {
+      "app_id": 98,
+      "url": "https://raw.githubusercontent.com/mermaid-js/mermaid-cli/master/LICENSE",
+      "kind": "official_repository",
+      "scope": "Official mermaid-js Mermaid CLI local diagram rendering; public documentary research, no execution",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Official mermaid-js repository identified in assignment",
+      "attribution_by": "task16-codex-researcher"
+    },
+    "captured_on": "2026-11-23",
+    "capture_method": "http_content",
+    "snapshot_ref": "snapshots/965dfd85cf1541b4aea6901960edffb18990e29b379ddcf2476c7e161f49f64f.txt",
+    "content_sha256": "965dfd85cf1541b4aea6901960edffb18990e29b379ddcf2476c7e161f49f64f",
+    "line_count": 17
+  },
+  {
+    "spec": {
+      "app_id": 99,
+      "url": "https://transcriptapi.com/docs/getting-started/",
+      "kind": "primary_docs",
+      "scope": "YouTube Transcript via TranscriptAPI.com API and MCP; public documentary research, no execution",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor-controlled documentation/help/product domain matching roster product; ownership is researcher attribution, requires independent review",
+      "attribution_by": "task16-codex-researcher"
+    },
+    "captured_on": "2026-11-23",
+    "capture_method": "http_content",
+    "snapshot_ref": "snapshots/e5bf681a6dcc7560240637c3bdae7fe17e8f20f5fffde8cf1f1c141af2af7d4d.txt",
+    "content_sha256": "e5bf681a6dcc7560240637c3bdae7fe17e8f20f5fffde8cf1f1c141af2af7d4d",
+    "line_count": 103
+  },
+  {
+    "spec": {
+      "app_id": 99,
+      "url": "https://transcriptapi.com/docs/mcp/",
+      "kind": "primary_docs",
+      "scope": "YouTube Transcript via TranscriptAPI.com API and MCP; public documentary research, no execution",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor-controlled documentation/help/product domain matching roster product; ownership is researcher attribution, requires independent review",
+      "attribution_by": "task16-codex-researcher"
+    },
+    "captured_on": "2026-11-23",
+    "capture_method": "http_content",
+    "snapshot_ref": "snapshots/6b41d5326c0326419ea54455aa6d52dd2b37678dc4031c8771ee01863a3bb3ab.txt",
+    "content_sha256": "6b41d5326c0326419ea54455aa6d52dd2b37678dc4031c8771ee01863a3bb3ab",
+    "line_count": 954
+  },
+  {
+    "spec": {
+      "app_id": 99,
+      "url": "https://transcriptapi.com/docs/",
+      "kind": "primary_docs",
+      "scope": "YouTube Transcript via TranscriptAPI.com API and MCP; public documentary research, no execution",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor-controlled documentation/help/product domain matching roster product; ownership is researcher attribution, requires independent review",
+      "attribution_by": "task16-codex-researcher"
+    },
+    "captured_on": "2026-11-23",
+    "capture_method": "http_content",
+    "snapshot_ref": "snapshots/c05648bd8ec5e2eb4d752dda5efa70fa5416f043375ad22e6adcb03c8163cbe9.txt",
+    "content_sha256": "c05648bd8ec5e2eb4d752dda5efa70fa5416f043375ad22e6adcb03c8163cbe9",
+    "line_count": 35
+  },
+  {
+    "spec": {
+      "app_id": 100,
+      "url": "https://developers.grain.com/mcp/faq.html",
+      "kind": "primary_docs",
+      "scope": "Grain personal/workspace APIs and callable MCP server; public documentary research, no execution",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor-controlled documentation/help/product domain matching roster product; ownership is researcher attribution, requires independent review",
+      "attribution_by": "task16-codex-researcher"
+    },
+    "captured_on": "2026-11-23",
+    "capture_method": "http_content",
+    "snapshot_ref": "snapshots/a0d047b96815413dfb97c37304d1c50ff5230af3b460144c2a266229b980a0fb.txt",
+    "content_sha256": "a0d047b96815413dfb97c37304d1c50ff5230af3b460144c2a266229b980a0fb",
+    "line_count": 33
+  },
+  {
+    "spec": {
+      "app_id": 100,
+      "url": "https://developers.grain.com/mcp/",
+      "kind": "primary_docs",
+      "scope": "Grain personal/workspace APIs and callable MCP server; public documentary research, no execution",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor-controlled documentation/help/product domain matching roster product; ownership is researcher attribution, requires independent review",
+      "attribution_by": "task16-codex-researcher"
+    },
+    "captured_on": "2026-11-23",
+    "capture_method": "http_content",
+    "snapshot_ref": "snapshots/357c619e393c93ea4d6f5e342f99c17e7ab070ec5943ab24bdd81b2003a70adf.txt",
+    "content_sha256": "357c619e393c93ea4d6f5e342f99c17e7ab070ec5943ab24bdd81b2003a70adf",
+    "line_count": 16
+  },
+  {
+    "spec": {
+      "app_id": 100,
+      "url": "https://support.grain.com/en/articles/15297887-export-meetings",
+      "kind": "primary_docs",
+      "scope": "Grain personal/workspace APIs and callable MCP server; public documentary research, no execution",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor-controlled documentation/help/product domain matching roster product; ownership is researcher attribution, requires independent review",
+      "attribution_by": "task16-codex-researcher"
+    },
+    "captured_on": "2026-11-23",
+    "capture_method": "http_content",
+    "snapshot_ref": "snapshots/1c57e19ab28887123d3e3e9fd3f0bc0811f996fa074ad7bec962204a81a263bb.txt",
+    "content_sha256": "1c57e19ab28887123d3e3e9fd3f0bc0811f996fa074ad7bec962204a81a263bb",
+    "line_count": 109
+  },
+  {
+    "spec": {
+      "app_id": 100,
+      "url": "https://developers.grain.com/",
+      "kind": "primary_docs",
+      "scope": "Grain personal/workspace APIs and callable MCP server; public documentary research, no execution",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor-controlled documentation/help/product domain matching roster product; ownership is researcher attribution, requires independent review",
+      "attribution_by": "task16-codex-researcher"
+    },
+    "captured_on": "2026-11-23",
+    "capture_method": "http_content",
+    "snapshot_ref": "snapshots/ba8e2078c8b0b0c9ae0e509aac0c6725f9bfec38e1c3c1227f89d359decbcb96.txt",
+    "content_sha256": "ba8e2078c8b0b0c9ae0e509aac0c6725f9bfec38e1c3c1227f89d359decbcb96",
+    "line_count": 53
+  },
+  {
+    "spec": {
+      "app_id": 92,
+      "url": "https://help.otter.ai/hc/en-us/articles/35287607569687-Otter-MCP-Server",
+      "kind": "primary_docs",
+      "scope": "Otter AI public API and callable Otter MCP server; public documentary research, no execution",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor-controlled documentation/help/product domain matching roster product; ownership is researcher attribution, requires independent review",
+      "attribution_by": "task16-codex-researcher"
+    },
+    "captured_on": "2026-11-23",
+    "capture_method": "http_content",
+    "snapshot_ref": "snapshots/a2299050504e1ebe8e117bc83c73e80fc60ee0eddb60372807030c8951dba43a.txt",
+    "content_sha256": "a2299050504e1ebe8e117bc83c73e80fc60ee0eddb60372807030c8951dba43a",
+    "line_count": 244
+  },
+  {
+    "spec": {
+      "app_id": 93,
+      "url": "https://help.fathom.video/en/articles/8368641",
+      "kind": "primary_docs",
+      "scope": "Fathom video meeting assistant public developer API; public documentary research, no execution",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor-controlled documentation/help/product domain matching roster product; ownership is researcher attribution, requires independent review",
+      "attribution_by": "task16-codex-researcher"
+    },
+    "captured_on": "2026-11-23",
+    "capture_method": "http_content",
+    "snapshot_ref": "snapshots/8c4a4f5bd4e9fe9cd42b66c52823f1605881299a7aef6f2bee8d7d5160c01ab3.txt",
+    "content_sha256": "8c4a4f5bd4e9fe9cd42b66c52823f1605881299a7aef6f2bee8d7d5160c01ab3",
+    "line_count": 35
+  },
+  {
+    "spec": {
+      "app_id": 93,
+      "url": "https://developers.fathom.ai/quickstart.md",
+      "kind": "primary_docs",
+      "scope": "Fathom video meeting assistant public developer API; public documentary research, no execution",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor-controlled documentation/help/product domain matching roster product; ownership is researcher attribution, requires independent review",
+      "attribution_by": "task16-codex-researcher"
+    },
+    "captured_on": "2026-11-23",
+    "capture_method": "http_content",
+    "snapshot_ref": "snapshots/8121f51a0dd4921c705ad2548fc344b68f395b516df5b43ef875d7f53b895666.txt",
+    "content_sha256": "8121f51a0dd4921c705ad2548fc344b68f395b516df5b43ef875d7f53b895666",
+    "line_count": 215
+  },
+  {
+    "spec": {
+      "app_id": 93,
+      "url": "https://developers.fathom.ai/oauth.md",
+      "kind": "primary_docs",
+      "scope": "Fathom video meeting assistant public developer API; public documentary research, no execution",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor-controlled documentation/help/product domain matching roster product; ownership is researcher attribution, requires independent review",
+      "attribution_by": "task16-codex-researcher"
+    },
+    "captured_on": "2026-11-23",
+    "capture_method": "http_content",
+    "snapshot_ref": "snapshots/f2cee2427ef7efe3358b9522f80aa1ac2f7645c58e796fe8017c6964669136b1.txt",
+    "content_sha256": "f2cee2427ef7efe3358b9522f80aa1ac2f7645c58e796fe8017c6964669136b1",
+    "line_count": 28
+  },
+  {
+    "spec": {
+      "app_id": 93,
+      "url": "https://developers.fathom.ai/sdks/oauth.md",
+      "kind": "primary_docs",
+      "scope": "Fathom video meeting assistant public developer API; public documentary research, no execution",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor-controlled documentation/help/product domain matching roster product; ownership is researcher attribution, requires independent review",
+      "attribution_by": "task16-codex-researcher"
+    },
+    "captured_on": "2026-11-23",
+    "capture_method": "http_content",
+    "snapshot_ref": "snapshots/f1019e01dc1a81a3402c75b8193974fa00836f850aa25c4cf1f40ee4d9d7dfa6.txt",
+    "content_sha256": "f1019e01dc1a81a3402c75b8193974fa00836f850aa25c4cf1f40ee4d9d7dfa6",
+    "line_count": 254
+  },
+  {
+    "spec": {
+      "app_id": 93,
+      "url": "https://developers.fathom.ai/mcp-docs/index.md",
+      "kind": "primary_docs",
+      "scope": "Fathom video meeting assistant public developer API; public documentary research, no execution",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor-controlled documentation/help/product domain matching roster product; ownership is researcher attribution, requires independent review",
+      "attribution_by": "task16-codex-researcher"
+    },
+    "captured_on": "2026-11-23",
+    "capture_method": "http_content",
+    "snapshot_ref": "snapshots/de85acddb6814abb492ed840b8e224dda07fe394253ee9898e7d9e2076a18c8a.txt",
+    "content_sha256": "de85acddb6814abb492ed840b8e224dda07fe394253ee9898e7d9e2076a18c8a",
+    "line_count": 20
+  },
+  {
+    "spec": {
+      "app_id": 93,
+      "url": "https://developers.fathom.ai/mcp-docs/claude.md",
+      "kind": "primary_docs",
+      "scope": "Fathom video meeting assistant public developer API; public documentary research, no execution",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor-controlled documentation/help/product domain matching roster product; ownership is researcher attribution, requires independent review",
+      "attribution_by": "task16-codex-researcher"
+    },
+    "captured_on": "2026-11-23",
+    "capture_method": "http_content",
+    "snapshot_ref": "snapshots/706c735294d3e6001ea78cc3fab98e127d63cefcae1f8f0ff4669e5c9886bd4f.txt",
+    "content_sha256": "706c735294d3e6001ea78cc3fab98e127d63cefcae1f8f0ff4669e5c9886bd4f",
+    "line_count": 22
+  },
+  {
+    "spec": {
+      "app_id": 94,
+      "url": "https://docs.consensus.app/api-get-started.md",
+      "kind": "primary_docs",
+      "scope": "Consensus scholarly research API and MCP; public documentary research, no execution",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor-controlled documentation/help/product domain matching roster product; ownership is researcher attribution, requires independent review",
+      "attribution_by": "task16-codex-researcher"
+    },
+    "captured_on": "2026-11-23",
+    "capture_method": "http_content",
+    "snapshot_ref": "snapshots/dcc8a372c07e14a93213f80b111f1d061efd7655b0fca9faa32975e40457538a.txt",
+    "content_sha256": "dcc8a372c07e14a93213f80b111f1d061efd7655b0fca9faa32975e40457538a",
+    "line_count": 197
+  },
+  {
+    "spec": {
+      "app_id": 94,
+      "url": "https://docs.consensus.app/api-plans-and-access.md",
+      "kind": "primary_docs",
+      "scope": "Consensus scholarly research API and MCP; public documentary research, no execution",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor-controlled documentation/help/product domain matching roster product; ownership is researcher attribution, requires independent review",
+      "attribution_by": "task16-codex-researcher"
+    },
+    "captured_on": "2026-11-23",
+    "capture_method": "http_content",
+    "snapshot_ref": "snapshots/501c41d37f4bd7d737efdfb52406850696abd6691d7367c3050abf91ddf12fab.txt",
+    "content_sha256": "501c41d37f4bd7d737efdfb52406850696abd6691d7367c3050abf91ddf12fab",
+    "line_count": 72
+  },
+  {
+    "spec": {
+      "app_id": 94,
+      "url": "https://docs.consensus.app/consensus-mcp.md",
+      "kind": "primary_docs",
+      "scope": "Consensus scholarly research API and MCP; public documentary research, no execution",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor-controlled documentation/help/product domain matching roster product; ownership is researcher attribution, requires independent review",
+      "attribution_by": "task16-codex-researcher"
+    },
+    "captured_on": "2026-11-23",
+    "capture_method": "http_content",
+    "snapshot_ref": "snapshots/d97a087bd388f4f5fe0d9d154607b9aaac0ec99c4ba9482950ae83d40de2b0c1.txt",
+    "content_sha256": "d97a087bd388f4f5fe0d9d154607b9aaac0ec99c4ba9482950ae83d40de2b0c1",
+    "line_count": 449
+  },
+  {
+    "spec": {
+      "app_id": 94,
+      "url": "https://docs.consensus.app/enterprise/connection-reference.md",
+      "kind": "primary_docs",
+      "scope": "Consensus scholarly research API and MCP; public documentary research, no execution",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor-controlled documentation/help/product domain matching roster product; ownership is researcher attribution, requires independent review",
+      "attribution_by": "task16-codex-researcher"
+    },
+    "captured_on": "2026-11-23",
+    "capture_method": "http_content",
+    "snapshot_ref": "snapshots/13cea87802a9ec8717bc5ae0c5ca55fd63d17c488adfe78feeb4f49c699fab48.txt",
+    "content_sha256": "13cea87802a9ec8717bc5ae0c5ca55fd63d17c488adfe78feeb4f49c699fab48",
+    "line_count": 82
+  },
+  {
+    "spec": {
+      "app_id": 95,
+      "url": "https://docs.reducto.ai/quickstart/index.md",
+      "kind": "primary_docs",
+      "scope": "Reducto document processing API and agent integrations; public documentary research, no execution",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor-controlled documentation/help/product domain matching roster product; ownership is researcher attribution, requires independent review",
+      "attribution_by": "task16-codex-researcher"
+    },
+    "captured_on": "2026-11-23",
+    "capture_method": "http_content",
+    "snapshot_ref": "snapshots/e78ce3f20800e586dfb38a4cc0847bc7a85cddf36ab453d0999b6d8cc23dced6.txt",
+    "content_sha256": "e78ce3f20800e586dfb38a4cc0847bc7a85cddf36ab453d0999b6d8cc23dced6",
+    "line_count": 280
+  },
+  {
+    "spec": {
+      "app_id": 95,
+      "url": "https://docs.reducto.ai/mcp-server/index.md",
+      "kind": "primary_docs",
+      "scope": "Reducto document processing API and agent integrations; public documentary research, no execution",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor-controlled documentation/help/product domain matching roster product; ownership is researcher attribution, requires independent review",
+      "attribution_by": "task16-codex-researcher"
+    },
+    "captured_on": "2026-11-23",
+    "capture_method": "http_content",
+    "snapshot_ref": "snapshots/72801dade2f90f02bcff0d84e44ebd4fc3e7b5a36df9c97a27265e03ec97a46c.txt",
+    "content_sha256": "72801dade2f90f02bcff0d84e44ebd4fc3e7b5a36df9c97a27265e03ec97a46c",
+    "line_count": 483
+  },
+  {
+    "spec": {
+      "app_id": 95,
+      "url": "https://docs.reducto.ai/studio-account/index.md",
+      "kind": "primary_docs",
+      "scope": "Reducto document processing API and agent integrations; public documentary research, no execution",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor-controlled documentation/help/product domain matching roster product; ownership is researcher attribution, requires independent review",
+      "attribution_by": "task16-codex-researcher"
+    },
+    "captured_on": "2026-11-23",
+    "capture_method": "http_content",
+    "snapshot_ref": "snapshots/897214900debeeb9230fb9197843ecc9986188d09315c6e64c91555c1e21755e.txt",
+    "content_sha256": "897214900debeeb9230fb9197843ecc9986188d09315c6e64c91555c1e21755e",
+    "line_count": 94
+  },
+  {
+    "spec": {
+      "app_id": 95,
+      "url": "https://docs.reducto.ai/agent-guide/index.md",
+      "kind": "primary_docs",
+      "scope": "Reducto document processing API and agent integrations; public documentary research, no execution",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor-controlled documentation/help/product domain matching roster product; ownership is researcher attribution, requires independent review",
+      "attribution_by": "task16-codex-researcher"
+    },
+    "captured_on": "2026-11-23",
+    "capture_method": "http_content",
+    "snapshot_ref": "snapshots/c6014fdec559cac8e191e38b28baaac4174c95b742c2b510017146a384771c11.txt",
+    "content_sha256": "c6014fdec559cac8e191e38b28baaac4174c95b742c2b510017146a384771c11",
+    "line_count": 266
+  },
+  {
+    "spec": {
+      "app_id": 96,
+      "url": "https://docs.devin.ai/api-reference/authentication.md",
+      "kind": "primary_docs",
+      "scope": "Devin API and callable Devin MCP server; outgoing MCP clients distinguished; public documentary research, no execution",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor-controlled documentation/help/product domain matching roster product; ownership is researcher attribution, requires independent review",
+      "attribution_by": "task16-codex-researcher"
+    },
+    "captured_on": "2026-11-23",
+    "capture_method": "http_content",
+    "snapshot_ref": "snapshots/48f26bea0919b1dba7aeda24e433bf631c102e86f5087a659a7603e087f8faef.txt",
+    "content_sha256": "48f26bea0919b1dba7aeda24e433bf631c102e86f5087a659a7603e087f8faef",
+    "line_count": 118
+  },
+  {
+    "spec": {
+      "app_id": 96,
+      "url": "https://docs.devin.ai/work-with-devin/devin-mcp.md",
+      "kind": "primary_docs",
+      "scope": "Devin API and callable Devin MCP server; outgoing MCP clients distinguished; public documentary research, no execution",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor-controlled documentation/help/product domain matching roster product; ownership is researcher attribution, requires independent review",
+      "attribution_by": "task16-codex-researcher"
+    },
+    "captured_on": "2026-11-23",
+    "capture_method": "http_content",
+    "snapshot_ref": "snapshots/53b55281f705259c2d60a1921452dbc865444f53835e1aa3ea0bd87916ffd803.txt",
+    "content_sha256": "53b55281f705259c2d60a1921452dbc865444f53835e1aa3ea0bd87916ffd803",
+    "line_count": 162
+  },
+  {
+    "spec": {
+      "app_id": 96,
+      "url": "https://docs.devin.ai/_llms/en/api.txt",
+      "kind": "primary_docs",
+      "scope": "Devin API and callable Devin MCP server; outgoing MCP clients distinguished; public documentary research, no execution",
+      "environments": [
+        "testing",
+        "production"
+      ],
+      "attribution_basis": "Vendor-controlled documentation/help/product domain matching roster product; ownership is researcher attribution, requires independent review",
+      "attribution_by": "task16-codex-researcher"
+    },
+    "captured_on": "2026-11-23",
+    "capture_method": "http_content",
+    "snapshot_ref": "snapshots/f5fb4c97012a34923630d888d6a070c1f2790549b975abd6ad6b30426483fc69.txt",
+    "content_sha256": "f5fb4c97012a34923630d888d6a070c1f2790549b975abd6ad6b30426483fc69",
+    "line_count": 423
+  }
+]

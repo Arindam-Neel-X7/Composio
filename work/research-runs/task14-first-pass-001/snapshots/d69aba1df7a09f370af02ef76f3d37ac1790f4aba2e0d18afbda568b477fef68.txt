@@ -1,0 +1,106 @@
+Connect AI assistants to Notion with MCP
+Documentation Index
+Fetch the complete documentation index at: /llms.txt
+Use this file to discover all available pages before exploring further.
+Skip to main content
+Assistant
+Responses are generated using AI and may contain mistakes.
+Notion Docs home page
+Search...
+⌘KAsk Assistant⌘I
+Log in
+Developer portal
+Developer portal
+Search...
+Navigation
+Notion MCP
+Overview
+Guides
+API Reference
+CLI Reference
+Workers
+Admin API
+Changelog
+Examples
+Notion API
+Quickstart
+Connections and tokens
+Authorization
+Developer tools
+Notion MCP
+Overview
+Connect to Notion MCP
+Supported tools
+Skills via MCP
+Enterprise-managed authorization
+Security best practices
+Agent APIs
+Notion Agent APIs
+Agent Skills API
+API versions
+Upgrading to 2026-03-11
+Upgrading to 2025-09-03
+Data APIs
+Working with page content
+Read page properties
+Working with databases
+Working with views
+Working with comments
+Working with markdown content
+Working with files and media
+Resources
+Example code
+Postman workspace
+Historical changelog
+Compliance
+Overview
+Event reference
+Link previews
+Introduction
+On this page
+Back to top
+What you can do with Notion MCP
+Next steps
+Notion MCP
+Overview
+Copy pageCopy page
+Connect your AI assistant to Notion with MCP to manage projects and tasks, work with meeting notes, and create documents with your team.
+Copy pageCopy page
+Notion MCP lets your AI assistant find answers in your workspace, turn notes into documents, and manage your projects in Notion. Connect an MCP client, such as Claude, ChatGPT, and Gemini, through the Model Context Protocol (MCP).
+What you can do with Notion MCP
+Notion MCP lets your AI assistant search your workspace, create and edit pages, and manage databases. Describe what you need, and your AI assistant can find the relevant pages in Notion.
+Manage a project
+Track a release
+Manage content
+Save memories
+Keep tasks, owners, deadlines, and decisions together so your team can see the next milestone and what needs attention.
+Set up my project in Notion with a task tracker, milestones, and linked docs and meeting notes. Use the project details from our conversation.
+CopiedCopy prompt
+Connect release tasks to specs and runbooks, and summarize progress and blockers before rollout.
+Create a release tracker in Notion from our specs and tasks. Show work by status, highlight blockers, and link the relevant decisions and runbooks.
+CopiedCopy prompt
+Connect campaign briefs, drafts, and brand resources so your team can track publish dates and see what’s ready for review.
+Organize our marketing content in Notion using the campaign details from our conversation. Connect campaign briefs and drafts, track owners and publish dates, and create a view of content ready for review.
+CopiedCopy prompt
+Ask your assistant to save useful context in personal memories, then recall it in a later session or another client connected to the same Notion account and workspace. Connecting MCP doesn’t automatically import another client’s chat history.
+Remember that I prefer concise project updates with blockers first. Save this preference in my Notion memories.
+CopiedCopy prompt
+In a later session, ask:
+What do my Notion memories say about how I prefer project updates?
+CopiedCopy prompt
+Explore more skills
+Find reusable skills and examples for preparing meetings, planning marketing campaigns, and writing project updates with your AI assistant.
+Next steps
+Connect your AI assistant
+Set up a connection to Notion MCP in your AI assistant.
+Explore supported tools
+See which tools Notion MCP provides and what each one can do.
+Use your Notion Skills
+Create Skills in Notion, share them with teammates, and use them in any AI assistant connected to Notion MCP.
+Understand admin controls
+Manage MCP clients and understand how workspace members use Notion MCP.
+Connection health
+Previous
+Connect to Notion MCP
+Next
+xslack

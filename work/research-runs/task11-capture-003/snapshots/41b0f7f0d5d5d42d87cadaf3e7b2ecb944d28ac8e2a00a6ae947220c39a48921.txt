@@ -1,0 +1,187 @@
+Dev storesSkip to main content
+Apps
+Storefronts
+Agents
+References
+Changelog
+Ask assistant/
+Help
+•
+Log in
+Collapse sidebar
+Apps
+Overview
+Building and deploying apps
+Scaffold an app
+Build an app
+Deployment
+Distribution
+Dev tools
+Shopify AI Toolkit
+Shopify CLI
+Dev Dashboard
+Building blocks
+APIs
+Authentication
+Custom data
+Events and webhooks
+Extensions
+Functions
+Design and quality
+Design guidelines
+Security
+App performance
+Built for Shopify
+App surfaces
+Admin
+App Home
+Checkout
+Customer accounts
+Online store
+Point of Sale
+Use cases
+AI and agents
+Analytics
+B2B
+Flow
+Global markets
+Inventory management
+Marketing and web pixels
+Orders and fulfillment
+Payments
+Products and pricing
+Sales channels
+Selling and growing your app
+Shopify App Store
+Billing
+Marketing and growth
+Full index
+ExpandOn this page
+Requirements
+Create a dev store
+Store access
+Clean up dev stores
+Limitations
+Next steps
+Dev stores
+Install AI ToolkitAsk about this pageCopy MD
+Dev stores are testing environments that you own and control. They let you build and test your apps in a realistic Shopify environment without affecting any live store. You can connect directly to a dev store from Shopify CLI using the shopify app dev command, which previews your changes without deploying a new version to production.
+Anchor to RequirementsRequirements
+Before you begin, make sure you have the following accounts and permissions:
+A Shopify Partner account or a merchant store with developer permissions.
+The required permissions to create dev stores in your organization.
+Anchor to Create a dev storeCreate a dev store
+If your organization has a primary business entity, which you set in Organization settings > Organization > Organization business details, then new dev stores are created in its country and use that entity. If it doesn't have one yet, then new dev stores get their own business entity with the business type Unspecified. If you switch your organization's primary business entity, then dev stores that you create afterward use the new one. Existing dev stores keep their current entity.
+You can create a dev store with Shopify CLI, or start from the Dev Dashboard.
+Anchor to Use Shopify CLIUse Shopify CLI
+The Shopify CLI store create dev command creates new dev stores in your organization.
+The command will prompt you for required values, or you can configure the store via flags:
+FlagDescription
+--nameThe name for the store. This name is used to identify the store and create the store's myshopify.com URL. You can't change the myshopify.com URL after the store is created.
+--planThe Shopify plan to use: basic, grow, advanced, or plus.
+--demo-dataPopulates the store with demo data so you're not testing against an empty store.
+--feature-previewThe handle of a feature preview to enable on the store.
+--countryThe store's two-letter ISO country code, such as US, CA, or GB.
+If you pass --country with a country other than your primary business entity's, then the store doesn't use your primary business entity. It gets its own business entity with the business type Unspecified.
+For example, the following command creates a Plus plan store in Canada, populated with demo data:
+Terminal
+Copy
+1
+shopify store create dev --name "Checkout testing" --plan plus --demo-data --country CA
+Anchor to Use the Dev DashboardUse the Dev Dashboard
+Create store opens the store setup flow in Shopify admin. When setup completes, the store appears in the Dev Dashboard's Stores list.
+Log in to the Dev Dashboard.
+Select Stores from the left sidebar.
+Select Create store, then select Dev as the store type.
+Enter a name for your dev store. This name is used to identify the store in the Dev Dashboard and sets the store's myshopify.com URL.
+Caution
+You can't change a dev store's myshopify.com URL after the store is created.
+Caution:
+You can't change a dev store's myshopify.com URL after the store is created.
+Select a plan for your dev store:
+Basic: Includes core Shopify features for small businesses.
+Grow: Includes additional reporting and staff accounts for growing businesses.
+Advanced: Includes advanced reporting, lower transaction fees, and third-party calculated shipping rates.
+Plus: Includes enterprise-level features like Shopify Flow, LaunchPad, and dedicated support.
+Optional: Select Test a feature preview to test capabilities that aren't available to all stores yet.
+Select Create store to finish setup.
+Log in to your dev store.
+Anchor to Store accessStore access
+When you create a dev store, you're automatically designated as the store's owner. Shopify CLI and Dev Dashboard display dev stores that you have access to.
+Additional users must be added to the store as staff members.
+Info
+To install third-party apps on a dev store, you or the owner of your organization need to verify your identity. Apps that your organization owns are exempt from this requirement.
+Info:
+To install third-party apps on a dev store, you or the owner of your organization need to verify your identity. Apps that your organization owns are exempt from this requirement.
+When a feature preview is enabled on a dev store, you don't have access to domains.
+Anchor to Clean up dev storesClean up dev stores
+Organizations are limited to 250 dev stores. You can use Shopify CLI to list dev stores in your organization, and delete stores you no longer need.
+List the stores in your organization using the shopify store list command:
+Terminal
+Copy
+1
+shopify store list
+To delete a store, pass its myshopify.com domain to the shopify store delete command:
+Terminal
+Copy
+1
+shopify store delete --store my-dev-store.myshopify.com
+Anchor to Example: Delete stores older than two yearsExample: Delete stores older than two years
+Use the --json flag with shopify store list to filter and script the command output. Each entry includes store, type, and createdAt, so the following deletes every dev store created more than two years ago:
+Terminal
+Copy
+1
+2
+3
+4
+5
+shopify store list --type dev --json \
+| jq -r '.stores[]
+| select((.createdAt | fromdateiso8601) < (now - 2*365*86400))
+| .store' \
+| xargs -I{} shopify store delete --store {} --force
+In this example:
+--type dev matters on a large organization. The command returns at most 250 stores, newest first, so the old dev stores you're trying to delete are the ones that fall off the end. Filtering by type on the server keeps them in range.
+createdAt is when the store was created, not when it was last opened.
+Caution
+Deleting a dev store is permanent. The store and its data are purged, and can't be restored.
+Caution:
+Deleting a dev store is permanent. The store and its data are purged, and can't be restored.
+Anchor to LimitationsLimitations
+Dev stores are for development and testing only. They can't be used in production or process real transactions. The following limitations and testing requirements apply:
+For apps that use App Pricing, you can select any available plan for an app that belongs to your Partner organization at no charge. For apps from another Partner organization, you can select free plans or any plan the Partner has marked as free to test.
+For an app that uses manual pricing, use a Billing API test charge to test your own app. To make the app available on other Partners' dev stores, set up free testing.
+You can test orders using Shopify's Test payment gateway or by activating test mode for your payment provider. Real transactions through active payment providers, Store Credit, and Gift Cards aren't supported.
+Dev stores are always password protected. You can't remove the password page or replace it with a custom one. Your theme's customizable password page is a separate page: it doesn't control access to a dev store, but you can edit and preview it.
+You can't change a dev store's myshopify.com URL after the store is created. To use a different URL, create a new dev store.
+Dev stores can't be converted to production stores.
+Dev stores can't be transferred to a client. If you're building a store for a merchant, use a client transfer store instead.
+Anchor to Next stepsNext steps
+Start building an app using your dev store as a testing environment.
+Test apps locally with Shopify CLI and your dev store.
+Create a client transfer store to build a store for a merchant.
+Was this page helpful?
+YesNo
+Requirements
+Create a dev store
+Store access
+Clean up dev stores
+Limitations
+Next steps
+Updates
+Developer changelog
+Shopify Editions
+Business growth
+Shopify Partners Program
+Shopify App Store
+Legal
+Terms of service
+API terms of use
+Privacy policy
+Partners Program Agreement
+Shopify
+About Shopify
+Shopify Plus
+Careers
+Investors
+Press and media

@@ -1,0 +1,15 @@
+{
+  "synthetic": true,
+  "sources": [
+    {
+      "app_id": 2,
+      "url": "https://synthetic.example/docs",
+      "kind": "primary_docs",
+      "scope": "SYNTHETIC testing edition v1; no real app facts",
+      "environments": ["testing"],
+      "attribution_basis": "Synthetic fixture only; deliberately not vendor documentation or real HubSpot identity evidence",
+      "attribution_by": "synthetic-test-author",
+      "fixture": "tests/fixtures/vendor.html"
+    }
+  ]
+}

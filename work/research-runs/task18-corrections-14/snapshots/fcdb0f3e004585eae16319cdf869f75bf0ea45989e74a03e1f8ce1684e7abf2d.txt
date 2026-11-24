@@ -1,0 +1,447 @@
+Get multiple tasks
+For AI agents: the docs index is at https://developers.asana.com/llms.txt. Append .md to any documentation page URL to get its markdown version.
+Jump to Content
+HomeGuidesAPI ReferenceApp directoryDocsForumMy apps
+API Reference
+App directoryDocsForumMy apps
+HomeGuidesAPI Reference
+Get multiple tasks
+Asana
+Overview
+Access requests
+Get access requestsget
+Create an access requestpost
+Approve an access requestpost
+Reject an access requestpost
+Agents
+Get a list of agents in a workspaceget
+Get an agentget
+AI Studio usage API
+Get AI Studio credit utilizationget
+Get AI Studio seatsget
+Allocations
+Get an allocationget
+Update an allocationput
+Delete an allocationdel
+Get multiple allocationsget
+Create an allocationpost
+Attachments
+Get an attachmentget
+Delete an attachmentdel
+Get attachments from an objectget
+Upload an attachmentpost
+Audit log API
+Get audit log eventsget
+Batch API
+Submit parallel requestspost
+Budgets
+Get all budgetsget
+Create a budgetpost
+Get a budgetget
+Update a budgetput
+Delete a budgetdel
+Custom field settings
+Get a project's custom fieldsget
+Get a portfolio's custom fieldsget
+Get a team's custom fieldsget
+Get a goal's custom fieldsget
+Custom fields
+Create a custom fieldpost
+Get a custom fieldget
+Update a custom fieldput
+Delete a custom fielddel
+Get a workspace's custom fieldsget
+Create an enum optionpost
+Reorder a custom field's enumpost
+Update an enum optionput
+Custom types
+Get all custom types associated with an objectget
+Get a custom typeget
+Events
+Get events on a resourceget
+Exports
+Initiate a graph exportpost
+Initiate a resource exportpost
+Goal relationships
+Get a goal relationshipget
+Update a goal relationshipput
+Get goal relationshipsget
+Add a supporting goal relationshippost
+Removes a supporting goal relationshippost
+Goals
+Get a goalget
+Update a goalput
+Delete a goaldel
+Get goalsget
+Create a goalpost
+Create a goal metricpost
+Update a goal metricpost
+Add a collaborator to a goalpost
+Remove a collaborator from a goalpost
+Get parent goals from a goalget
+Add a custom field to a goalpost
+Remove a custom field from a goalpost
+Jobs
+Get a job by idget
+Memberships
+Get multiple membershipsget
+Create a membershippost
+Get a membershipget
+Update a membershipput
+Delete a membershipdel
+Notifications
+Get notifications for a userget
+Mark notifications as readpost
+Mark notifications as unreadpost
+Ooo entries
+Get an OOO entryget
+Update an OOO entryput
+Delete an OOO entrydel
+Get OOO entries for a userget
+Create an OOO entrypost
+Organization exports
+Create an organization export requestpost
+Get details on an org export requestget
+Portfolio memberships
+Get multiple portfolio membershipsget
+Get a portfolio membershipget
+Get memberships from a portfolioget
+Portfolios
+Get multiple portfoliosget
+Create a portfoliopost
+Get a portfolioget
+Update a portfolioput
+Delete a portfoliodel
+Get portfolio itemsget
+Add a portfolio itempost
+Remove a portfolio itempost
+Add a custom field to a portfoliopost
+Remove a custom field from a portfoliopost
+Add users to a portfoliopost
+Remove users from a portfoliopost
+Duplicate a portfoliopost
+Project briefs
+Get a project briefget
+Update a project briefput
+Delete a project briefdel
+Create a project briefpost
+Project memberships
+Get a project membershipget
+Get memberships from a projectget
+Project portfolio settings
+Get a project portfolio settingget
+Update a project portfolio settingput
+Get project portfolio settings for a projectget
+Get project portfolio settings for a portfolioget
+Project statuses
+Get a project statusget
+Delete a project statusdel
+Get statuses from a projectget
+Create a project statuspost
+Project templates
+Get a project templateget
+Delete a project templatedel
+Get multiple project templatesget
+Get a team's project templatesget
+Instantiate a project from a project templatepost
+Projects
+Get multiple projectsget
+Create a projectpost
+Get a projectget
+Update a projectput
+Delete a projectdel
+Duplicate a projectpost
+Get projects a task is inget
+Get a team's projectsget
+Create a project in a teampost
+Get all projects in a workspaceget
+Create a project in a workspacepost
+Add a custom field to a projectpost
+Remove a custom field from a projectpost
+Get task count of a projectget
+Add users to a projectpost
+Remove users from a projectpost
+Add followers to a projectpost
+Remove followers from a projectpost
+Create a project template from a projectpost
+Search projects in a workspaceget
+Roll up subtask dates for a projectpost
+Rates
+Get multiple ratesget
+Create a ratepost
+Get a rateget
+Update a rateput
+Delete a ratedel
+Reactions
+Get reactions with an emoji base on an object.get
+Records
+Get records in a tableget
+Search records in a workspaceget
+Create a recordpost
+Get a recordget
+Update a recordput
+Delete a recorddel
+Roles
+Get multiple rolesget
+Create a rolepost
+Get a roleget
+Update a roleput
+Delete a roledel
+Rules
+Trigger a rulepost
+Sections
+Get a sectionget
+Update a sectionput
+Delete a sectiondel
+Get sections in a projectget
+Create a section in a projectpost
+Add task to sectionpost
+Move or Insert sectionspost
+Status updates
+Get a status updateget
+Delete a status updatedel
+Get status updates from an objectget
+Create a status updatepost
+Stories
+Get a storyget
+Update a storyput
+Delete a storydel
+Get stories from a taskget
+Create a story on a taskpost
+Get stories from a goalget
+Create a story on a goalpost
+Get stories from a recordget
+Create a story on a recordpost
+Tables
+Get tables in a workspaceget
+Create a tablepost
+Get a tableget
+Update a tableput
+Delete a tabledel
+Add a custom field to a tablepost
+Remove a custom field from a tablepost
+Get a table's custom field settingsget
+Get a table's custom field settingsget
+Tags
+Get multiple tagsget
+Create a tagpost
+Get a tagget
+Update a tagput
+Delete a tagdel
+Get a task's tagsget
+Get tags in a workspaceget
+Create a tag in a workspacepost
+Task templates
+Get multiple task templatesget
+Get a task templateget
+Delete a task templatedel
+Instantiate a task from a task templatepost
+Tasks
+Get multiple tasksget
+Create a taskpost
+Get a taskget
+Update a taskput
+Delete a taskdel
+Duplicate a taskpost
+Get tasks from a projectget
+Get tasks from a sectionget
+Get tasks from a tagget
+Get tasks from a user task listget
+Get subtasks from a taskget
+Create a subtaskpost
+Set the parent of a taskpost
+Get dependencies from a taskget
+Set dependencies for a taskpost
+Unlink dependencies from a taskpost
+Get dependents from a taskget
+Set dependents for a taskpost
+Unlink dependents from a taskpost
+Add a project to a taskpost
+Remove a project from a taskpost
+Add a tag to a taskpost
+Remove a tag from a taskpost
+Add followers to a taskpost
+Remove followers from a taskpost
+Get a task for a given custom IDget
+Search tasks in a workspaceget
+Roll up subtask dates for a taskpost
+Team memberships
+Get a team membershipget
+Get team membershipsget
+Get memberships from a teamget
+Get memberships from a userget
+Teams
+Create a teampost
+Get a teamget
+Update a teamput
+Get teams in a workspaceget
+Get teams for a userget
+Add a user to a teampost
+Remove a user from a teampost
+Time periods
+Get a time periodget
+Get time periodsget
+Time tracking categories
+Get a time tracking categoryget
+Update a time tracking categoryput
+Delete a time tracking categorydel
+Get time tracking entries for a time tracking categoryget
+Get time tracking categories for a workspaceget
+Create a time tracking categorypost
+Time tracking entries
+Get time tracking entries for a taskget
+Create a time tracking entrypost
+Get a time tracking entryget
+Update a time tracking entryput
+Delete a time tracking entrydel
+Get multiple time tracking entriesget
+Timesheet approval statuses
+Get a timesheet approval statusget
+Update a timesheet approval statusput
+Get multiple timesheet approval statusesget
+Create a timesheet approval statuspost
+Typeahead
+Get objects via typeaheadget
+User task lists
+Get a user task listget
+Get a user's task listget
+Users
+Get multiple usersget
+Get a userget
+Get a user's favoritesget
+Get users in a teamget
+Get users in a workspace or organizationget
+Update a userput
+Get a user in a workspace or organizationget
+Update a user in a workspace or organizationput
+Webhooks
+Get multiple webhooksget
+Establish a webhookpost
+Get a webhookget
+Update a webhookput
+Delete a webhookdel
+Workspace memberships
+Get a workspace membershipget
+Get workspace memberships for a userget
+Get the workspace memberships for a workspaceget
+Workspaces
+Get multiple workspacesget
+Get a workspaceget
+Update a workspaceput
+Add a user to a workspace or organizationpost
+Remove a user from a workspace or organizationpost
+Get workspace eventsget
+App Components
+Overview
+Lookups
+Attach resourcepost
+Get lookup typeahead resultsget
+Modal forms
+Get form metadataget
+Get modal form typeahead resultsget
+On change callbackpost
+On submit callbackpost
+Rule actions
+Get rule action typeahead resultsget
+Run actionpost
+Get action metadataget
+On action change callbackpost
+On action submit callbackpost
+Widgets
+Get widget metadataget
+Powered by
+Copy Page
+Get multiple tasks
+get
+https://app.asana.com/api/1.0/tasks
+Required scope: tasks:read
+Returns the compact task records for some filtered set of tasks. Use one or more of the parameters provided to filter the tasks returned. You must specify a project or tag if you do not specify assignee and workspace.
+For more complex task retrieval, use workspaces/{workspace_gid}/tasks/search.
+📘
+Customizing the response
+Requests to this endpoint return "compact" task objects (schema) by default. To include more fields in the response, see input/output options.
+Query Params
+limit
+integer
+1 to 100
+Results per page.
+The number of objects to return per page. The value must be between 1 and 100.
+offset
+string
+Offset token.
+An offset to the next page returned by the API. A pagination request will return an offset token, which can be used as an input parameter to the next request. If an offset is not passed in, the API will return the first page of results.
+Note: You can only pass in an offset that was returned to you via a previously paginated request.
+assignee
+string
+The assignee to filter tasks on. If searching for unassigned tasks, assignee.any = null can be specified.
+Note: If you specify assignee, you must also specify the workspace to filter on.
+project
+string
+The project to filter tasks on.
+section
+string
+The section to filter tasks on.
+workspace
+string
+The workspace to filter tasks on.
+Note: If you specify workspace, you must also specify the assignee to filter on.
+completed_since
+date-time
+Only return tasks that are either incomplete or that have been completed since this time.
+modified_since
+date-time
+Only return tasks that have been modified since the given time.
+Note: A task is considered “modified” if any of its properties
+change, or associations between it and other objects are modified
+(e.g. a task being added to a project). A task is not considered
+modified just because another object it is associated with (e.g. a
+subtask) is modified. Actions that count as modifying the task
+include assigning, renaming, completing, and adding stories.
+custom_type
+string
+Filter results by custom type. Provide a custom type GID to return only objects of that custom type (an unknown GID returns 400). Provide an empty string to return only objects with no custom type assigned. If this parameter is omitted, results are not filtered by custom type.
+opt_fields
+array of strings
+This endpoint returns a resource which excludes some properties by default. To include those optional properties, set this query parameter to a comma-separated list of the properties you wish to include. Properties can include nested fields. To learn more, see the input/output options guide.
+opt_fields
+Show 117 enum values
+ADD string
+opt_pretty
+boolean
+Provides “pretty” output.
+Provides the response in a “pretty” format. In the case of JSON this means doing proper line breaking and indentation to make it readable. This will take extra time and increase the response size so it is advisable only to use this during debugging.
+truetruefalse
+Responses
+200
+Successfully retrieved requested tasks.
+400
+This usually occurs because of a missing or malformed parameter. Check the documentation and the syntax of your request and try again.
+401
+A valid authentication token was not provided with the request, so the API could not associate a user with the request.
+403
+The authentication and request syntax was valid but the server is refusing to complete the request. This can happen if you try to read or write to objects or properties that the user does not have access to.
+404
+Either the request method and path supplied do not specify a known action in the API, or the object specified by the request does not exist.
+500
+There was a problem on Asana’s end. In the event of a server error the response body should contain an error phrase. These phrases can be used by Asana support to quickly look up the incident that caused the server error. Some errors are due to server load, and will not supply an error phrase.
+Updated 6 months ago
+Tasks
+Create a task
+Did this page help you?
+Yes
+No
+Language
+ShellNodeRubyPHPPython
+Credentials
+Bearer
+LoadingLoading…
+Response
+Click Try It! to start a request and see the response here! Or choose an example:
+application/json
+200400401403404500
+Updated 6 months ago
+Tasks
+Create a task
+Did this page help you?
+Yes
+No

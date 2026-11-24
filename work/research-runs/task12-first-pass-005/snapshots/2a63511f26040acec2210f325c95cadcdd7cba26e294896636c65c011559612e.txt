@@ -1,0 +1,33 @@
+> ## Documentation Index
+> Fetch the complete documentation index at: https://developers.clay.com/llms.txt
+> Use this file to discover all available pages before exploring further.
+# Audiences
+> Work with people, companies, deals, saved segments, activities, and signal events from the Clay CLI.
+Audiences brings your workspace's people, companies, and deals into one data model. Use it to find the right records, understand their context, and act on what is happening across your go-to-market motion.
+## Core concepts
+| Concept | What it represents |
+| - | - |
+| Records | People, companies, and deals in your workspace |
+| Fields | The properties available on each record type |
+| Saved segments | Reusable filters that stay current as people and company records change |
+| Activities | Interactions such as calls, emails, sequencer events, and imported CRM activity |
+| Signal events | Events captured when Clay detects a relevant change, such as a job change, promotion, or news event |
+## People, companies, and deals
+People and companies are the primary record types in Audiences. Add them from a Clay search, or import them from your CRM or data warehouse. Deals are associated with people or companies, and you can search them too.
+## Activities and signal events
+Activities capture interactions that happened across connected systems. Signal events are captured events such as promotion and news about a company.
+## Use the CLI
+Run the built-in help for the current subcommands, inputs, JSON output, errors, and examples:
+```bash theme={"theme":{"light":"github-light","dark":"github-dark"}}
+clay audiences --help
+```
+> [card] [Signals](https://developers.clay.com/signals.md)
+>
+> Create and manage signal triggers that produce signal events.
+> [card] [Enrich leads and accounts](https://developers.clay.com/use-cases/enrich-leads-and-accounts.md)
+>
+> Enrich people who are missing phone numbers with an agent and Workflow.
+> [card] [Analyze recent closed-won deals](https://developers.clay.com/use-cases/analyze-recent-closed-won-deals.md)
+>
+> Use an agent to find patterns in recent successful deals.
+This documentation is built and hosted on [Mintlify](https://mintlify.com), a developer documentation platform.

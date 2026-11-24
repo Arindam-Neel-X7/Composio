@@ -1,0 +1,50 @@
+# OAuth guide
+All API calls require authorization and are made **on behalf of an authorized Ahrefs user**. To do this, your app must obtain an API **access token** for that user.
+Ahrefs Connect uses **OAuth 2.0 Authorization Code Flow with Proof Key for Code Exchange (PKCE)**. The process has two main steps:
+## 1. Authorize the application
+Redirect the user to:
+```html
+https://app.ahrefs.com/web/oauth/authorize?response_type=code&client_id={client_id}&scope=apiv3-integration-apps&redirect_uri={redirect_uri}&code_challenge={code_challenge}&code_challenge_method=s256&state={state}
+```
+**Parameters:**
+- `{client_id}` : URL-encoded Client ID from **Ahrefs Connect** section in your [Account settings](https://app.ahrefs.com/account/my-account).
+- `{redirect_uri}` : URL-encoded Redirect URI you’ve registered in the same section.
+- `{code_challenge}` : Derived from a **code verifier** using the S256 method:
+- Generate a **code verifier** — a random string of 43–128 characters using a cryptographically secure generator. Allowed characters: `[A-Z] [a-z] [0-9] - . _ ~` (see [RFC7636 Section 4.1](https://datatracker.ietf.org/doc/html/rfc7636#section-4.1)).
+- Compute the **SHA-256** hash of the code verifier.
+- Base64-URL-encode the hash.
+- Use this encoded value as the `code_challenge` (see [RFC7636 Section 4.2](https://datatracker.ietf.org/doc/html/rfc7636#section-4.2)).
+- `{state}` : Generate an opaque value to maintain state between the request and callback. The authorization server will include this value when redirecting the user back to your app. (see [RFC6749 Section 4.1.1](https://datatracker.ietf.org/doc/html/rfc6749#section-4.1.1))
+![](<../images/Account settings-2.jpg>)
+**User experience:**
+1. The user sees the Ahrefs authorization consent screen.
+2. They grant your app permission to access Ahrefs API on their behalf.
+3. Ahrefs redirects them to your **Redirect URI** with:
+- `code` parameter — used in Step 2
+- `state` parameter — verify it matches your original request.
+## **2. Retrieve the `access_token`**
+Exchange the `code` for an `access_token` by sending a `POST` request to `https://ahrefs.com/oauth/token` .
+**Send the parameters** in the request body using the `application/x-www-form-urlencoded` format (see [RFC6749 Section 4.1.3](https://datatracker.ietf.org/doc/html/rfc6749#section-4.1.3)):
+- `grant_type`: `authorization_code`
+- `client_id`: `{client_id}` (Must match the one in Step 1)
+- `redirect_uri`: `{redirect_uri}` (Must match the one in Step 1)
+- `code`: `{code}` (From Step 1)
+- `code_verifier`: `{original_code_verifier}` (The untransformed value from Step 1)
+- `client_secret`: `{client_secret}` (**Web apps only** — found in your **Ahrefs Connect** section in **Account settings**. Omit for desktop apps.)
+**Example response:**
+```json
+{
+"access_token": "\<token to use in API requests>",
+"expires_in": \<lifetime of the access token in seconds>,
+"token_type": "Bearer",
+"scope": "apiv3-integration-apps"
+}
+```
+**Token lifetime & re-connection**
+- **No refresh tokens are issued.**
+- Access tokens are valid for **1 year**. After expiry, the user must **reconnect (re-authorize)** via OAuth.
+> **INFO**
+> **Security note:**
+> - **Never** expose `access_token` to end users, either during authorization or later (in UI, logs, URLs, or client-side code).
+> - For **web apps**, store `client_secret` **server-side only**.
+> - You will need to demonstrate secure token handling as part of the [Approval process](./approval-process.md).

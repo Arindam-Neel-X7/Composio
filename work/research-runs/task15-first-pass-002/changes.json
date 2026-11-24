@@ -1,0 +1,2042 @@
+[
+  {
+    "app_id": 81,
+    "claim_id": "81.api.breadth",
+    "change": "changed",
+    "reason": "Task 15 first-pass extraction for Finance and Fintech (IDs 81-90) from sealed capture task15-capture-005; community README evidence restricted to MCP entries; independent review pending."
+  },
+  {
+    "app_id": 81,
+    "claim_id": "81.api.group.billing_products",
+    "change": "added",
+    "reason": "Task 15 first-pass extraction for Finance and Fintech (IDs 81-90) from sealed capture task15-capture-005; community README evidence restricted to MCP entries; independent review pending."
+  },
+  {
+    "app_id": 81,
+    "claim_id": "81.api.group.connect_platforms",
+    "change": "added",
+    "reason": "Task 15 first-pass extraction for Finance and Fintech (IDs 81-90) from sealed capture task15-capture-005; community README evidence restricted to MCP entries; independent review pending."
+  },
+  {
+    "app_id": 81,
+    "claim_id": "81.api.group.core_payments",
+    "change": "added",
+    "reason": "Task 15 first-pass extraction for Finance and Fintech (IDs 81-90) from sealed capture task15-capture-005; community README evidence restricted to MCP entries; independent review pending."
+  },
+  {
+    "app_id": 81,
+    "claim_id": "81.api.group.financial_data_risk",
+    "change": "added",
+    "reason": "Task 15 first-pass extraction for Finance and Fintech (IDs 81-90) from sealed capture task15-capture-005; community README evidence restricted to MCP entries; independent review pending."
+  },
+  {
+    "app_id": 81,
+    "claim_id": "81.api.protocol.cli",
+    "change": "added",
+    "reason": "Task 15 first-pass extraction for Finance and Fintech (IDs 81-90) from sealed capture task15-capture-005; community README evidence restricted to MCP entries; independent review pending."
+  },
+  {
+    "app_id": 81,
+    "claim_id": "81.api.protocol.rest",
+    "change": "added",
+    "reason": "Task 15 first-pass extraction for Finance and Fintech (IDs 81-90) from sealed capture task15-capture-005; community README evidence restricted to MCP entries; independent review pending."
+  },
+  {
+    "app_id": 81,
+    "claim_id": "81.api.protocol.sdk",
+    "change": "added",
+    "reason": "Task 15 first-pass extraction for Finance and Fintech (IDs 81-90) from sealed capture task15-capture-005; community README evidence restricted to MCP entries; independent review pending."
+  },
+  {
+    "app_id": 81,
+    "claim_id": "81.api.public_documentation",
+    "change": "changed",
+    "reason": "Task 15 first-pass extraction for Finance and Fintech (IDs 81-90) from sealed capture task15-capture-005; community README evidence restricted to MCP entries; independent review pending."
+  },
+  {
+    "app_id": 81,
+    "claim_id": "81.auth.api_keys",
+    "change": "added",
+    "reason": "Task 15 first-pass extraction for Finance and Fintech (IDs 81-90) from sealed capture task15-capture-005; community README evidence restricted to MCP entries; independent review pending."
+  },
+  {
+    "app_id": 81,
+    "claim_id": "81.auth.connect_oauth2",
+    "change": "added",
+    "reason": "Task 15 first-pass extraction for Finance and Fintech (IDs 81-90) from sealed capture task15-capture-005; community README evidence restricted to MCP entries; independent review pending."
+  },
+  {
+    "app_id": 81,
+    "claim_id": "81.auth.mcp_oauth2",
+    "change": "added",
+    "reason": "Task 15 first-pass extraction for Finance and Fintech (IDs 81-90) from sealed capture task15-capture-005; community README evidence restricted to MCP entries; independent review pending."
+  },
+  {
+    "app_id": 81,
+    "claim_id": "81.auth.workload_identity_federation",
+    "change": "added",
+    "reason": "Task 15 first-pass extraction for Finance and Fintech (IDs 81-90) from sealed capture task15-capture-005; community README evidence restricted to MCP entries; independent review pending."
+  },
+  {
+    "app_id": 81,
+    "claim_id": "81.buildability",
+    "change": "changed",
+    "reason": "Task 15 first-pass extraction for Finance and Fintech (IDs 81-90) from sealed capture task15-capture-005; community README evidence restricted to MCP entries; independent review pending."
+  },
+  {
+    "app_id": 81,
+    "claim_id": "81.identity",
+    "change": "removed",
+    "reason": "Task 15 first-pass extraction for Finance and Fintech (IDs 81-90) from sealed capture task15-capture-005; community README evidence restricted to MCP entries; independent review pending."
+  },
+  {
+    "app_id": 81,
+    "claim_id": "81.identity.resolution",
+    "change": "added",
+    "reason": "Task 15 first-pass extraction for Finance and Fintech (IDs 81-90) from sealed capture task15-capture-005; community README evidence restricted to MCP entries; independent review pending."
+  },
+  {
+    "app_id": 81,
+    "claim_id": "81.mcp",
+    "change": "removed",
+    "reason": "Task 15 first-pass extraction for Finance and Fintech (IDs 81-90) from sealed capture task15-capture-005; community README evidence restricted to MCP entries; independent review pending."
+  },
+  {
+    "app_id": 81,
+    "claim_id": "81.mcp.discovery",
+    "change": "added",
+    "reason": "Task 15 first-pass extraction for Finance and Fintech (IDs 81-90) from sealed capture task15-capture-005; community README evidence restricted to MCP entries; independent review pending."
+  },
+  {
+    "app_id": 81,
+    "claim_id": "81.mcp.official_stripe_mcp",
+    "change": "added",
+    "reason": "Task 15 first-pass extraction for Finance and Fintech (IDs 81-90) from sealed capture task15-capture-005; community README evidence restricted to MCP entries; independent review pending."
+  },
+  {
+    "app_id": 81,
+    "claim_id": "81.mcp.official_stripe_mcp.operational",
+    "change": "added",
+    "reason": "Task 15 first-pass extraction for Finance and Fintech (IDs 81-90) from sealed capture task15-capture-005; community README evidence restricted to MCP entries; independent review pending."
+  },
+  {
+    "app_id": 81,
+    "claim_id": "81.production.admin_approval_required",
+    "change": "changed",
+    "reason": "Task 15 first-pass extraction for Finance and Fintech (IDs 81-90) from sealed capture task15-capture-005; community README evidence restricted to MCP entries; independent review pending."
+  },
+  {
+    "app_id": 81,
+    "claim_id": "81.production.contact_sales_required",
+    "change": "changed",
+    "reason": "Task 15 first-pass extraction for Finance and Fintech (IDs 81-90) from sealed capture task15-capture-005; community README evidence restricted to MCP entries; independent review pending."
+  },
+  {
+    "app_id": 81,
+    "claim_id": "81.production.free_access",
+    "change": "changed",
+    "reason": "Task 15 first-pass extraction for Finance and Fintech (IDs 81-90) from sealed capture task15-capture-005; community README evidence restricted to MCP entries; independent review pending."
+  },
+  {
+    "app_id": 81,
+    "claim_id": "81.production.paid_required",
+    "change": "changed",
+    "reason": "Task 15 first-pass extraction for Finance and Fintech (IDs 81-90) from sealed capture task15-capture-005; community README evidence restricted to MCP entries; independent review pending."
+  },
+  {
+    "app_id": 81,
+    "claim_id": "81.production.partner_approval_required",
+    "change": "changed",
+    "reason": "Task 15 first-pass extraction for Finance and Fintech (IDs 81-90) from sealed capture task15-capture-005; community README evidence restricted to MCP entries; independent review pending."
+  },
+  {
+    "app_id": 81,
+    "claim_id": "81.production.sandbox_access",
+    "change": "changed",
+    "reason": "Task 15 first-pass extraction for Finance and Fintech (IDs 81-90) from sealed capture task15-capture-005; community README evidence restricted to MCP entries; independent review pending."
+  },
+  {
+    "app_id": 81,
+    "claim_id": "81.production.self_serve",
+    "change": "changed",
+    "reason": "Task 15 first-pass extraction for Finance and Fintech (IDs 81-90) from sealed capture task15-capture-005; community README evidence restricted to MCP entries; independent review pending."
+  },
+  {
+    "app_id": 81,
+    "claim_id": "81.production.trial_access",
+    "change": "changed",
+    "reason": "Task 15 first-pass extraction for Finance and Fintech (IDs 81-90) from sealed capture task15-capture-005; community README evidence restricted to MCP entries; independent review pending."
+  },
+  {
+    "app_id": 81,
+    "claim_id": "81.production.vendor_approval_required",
+    "change": "changed",
+    "reason": "Task 15 first-pass extraction for Finance and Fintech (IDs 81-90) from sealed capture task15-capture-005; community README evidence restricted to MCP entries; independent review pending."
+  },
+  {
+    "app_id": 81,
+    "claim_id": "81.purpose",
+    "change": "changed",
+    "reason": "Task 15 first-pass extraction for Finance and Fintech (IDs 81-90) from sealed capture task15-capture-005; community README evidence restricted to MCP entries; independent review pending."
+  },
+  {
+    "app_id": 81,
+    "claim_id": "81.testing.admin_approval_required",
+    "change": "changed",
+    "reason": "Task 15 first-pass extraction for Finance and Fintech (IDs 81-90) from sealed capture task15-capture-005; community README evidence restricted to MCP entries; independent review pending."
+  },
+  {
+    "app_id": 81,
+    "claim_id": "81.testing.contact_sales_required",
+    "change": "changed",
+    "reason": "Task 15 first-pass extraction for Finance and Fintech (IDs 81-90) from sealed capture task15-capture-005; community README evidence restricted to MCP entries; independent review pending."
+  },
+  {
+    "app_id": 81,
+    "claim_id": "81.testing.free_access",
+    "change": "changed",
+    "reason": "Task 15 first-pass extraction for Finance and Fintech (IDs 81-90) from sealed capture task15-capture-005; community README evidence restricted to MCP entries; independent review pending."
+  },
+  {
+    "app_id": 81,
+    "claim_id": "81.testing.paid_required",
+    "change": "changed",
+    "reason": "Task 15 first-pass extraction for Finance and Fintech (IDs 81-90) from sealed capture task15-capture-005; community README evidence restricted to MCP entries; independent review pending."
+  },
+  {
+    "app_id": 81,
+    "claim_id": "81.testing.partner_approval_required",
+    "change": "changed",
+    "reason": "Task 15 first-pass extraction for Finance and Fintech (IDs 81-90) from sealed capture task15-capture-005; community README evidence restricted to MCP entries; independent review pending."
+  },
+  {
+    "app_id": 81,
+    "claim_id": "81.testing.sandbox_access",
+    "change": "changed",
+    "reason": "Task 15 first-pass extraction for Finance and Fintech (IDs 81-90) from sealed capture task15-capture-005; community README evidence restricted to MCP entries; independent review pending."
+  },
+  {
+    "app_id": 81,
+    "claim_id": "81.testing.self_serve",
+    "change": "changed",
+    "reason": "Task 15 first-pass extraction for Finance and Fintech (IDs 81-90) from sealed capture task15-capture-005; community README evidence restricted to MCP entries; independent review pending."
+  },
+  {
+    "app_id": 81,
+    "claim_id": "81.testing.trial_access",
+    "change": "changed",
+    "reason": "Task 15 first-pass extraction for Finance and Fintech (IDs 81-90) from sealed capture task15-capture-005; community README evidence restricted to MCP entries; independent review pending."
+  },
+  {
+    "app_id": 81,
+    "claim_id": "81.testing.vendor_approval_required",
+    "change": "changed",
+    "reason": "Task 15 first-pass extraction for Finance and Fintech (IDs 81-90) from sealed capture task15-capture-005; community README evidence restricted to MCP entries; independent review pending."
+  },
+  {
+    "app_id": 82,
+    "claim_id": "82.api.breadth",
+    "change": "changed",
+    "reason": "Task 15 first-pass extraction for Finance and Fintech (IDs 81-90) from sealed capture task15-capture-005; community README evidence restricted to MCP entries; independent review pending."
+  },
+  {
+    "app_id": 82,
+    "claim_id": "82.api.group.financial_insights",
+    "change": "added",
+    "reason": "Task 15 first-pass extraction for Finance and Fintech (IDs 81-90) from sealed capture task15-capture-005; community README evidence restricted to MCP entries; independent review pending."
+  },
+  {
+    "app_id": 82,
+    "claim_id": "82.api.group.fundamentals_link",
+    "change": "added",
+    "reason": "Task 15 first-pass extraction for Finance and Fintech (IDs 81-90) from sealed capture task15-capture-005; community README evidence restricted to MCP entries; independent review pending."
+  },
+  {
+    "app_id": 82,
+    "claim_id": "82.api.group.kyc_underwriting",
+    "change": "added",
+    "reason": "Task 15 first-pass extraction for Finance and Fintech (IDs 81-90) from sealed capture task15-capture-005; community README evidence restricted to MCP entries; independent review pending."
+  },
+  {
+    "app_id": 82,
+    "claim_id": "82.api.group.payments_funding",
+    "change": "added",
+    "reason": "Task 15 first-pass extraction for Finance and Fintech (IDs 81-90) from sealed capture task15-capture-005; community README evidence restricted to MCP entries; independent review pending."
+  },
+  {
+    "app_id": 82,
+    "claim_id": "82.api.protocol.rest",
+    "change": "added",
+    "reason": "Task 15 first-pass extraction for Finance and Fintech (IDs 81-90) from sealed capture task15-capture-005; community README evidence restricted to MCP entries; independent review pending."
+  },
+  {
+    "app_id": 82,
+    "claim_id": "82.api.protocol.sdk",
+    "change": "added",
+    "reason": "Task 15 first-pass extraction for Finance and Fintech (IDs 81-90) from sealed capture task15-capture-005; community README evidence restricted to MCP entries; independent review pending."
+  },
+  {
+    "app_id": 82,
+    "claim_id": "82.api.public_documentation",
+    "change": "changed",
+    "reason": "Task 15 first-pass extraction for Finance and Fintech (IDs 81-90) from sealed capture task15-capture-005; community README evidence restricted to MCP entries; independent review pending."
+  },
+  {
+    "app_id": 82,
+    "claim_id": "82.auth.client_id_secret",
+    "change": "added",
+    "reason": "Task 15 first-pass extraction for Finance and Fintech (IDs 81-90) from sealed capture task15-capture-005; community README evidence restricted to MCP entries; independent review pending."
+  },
+  {
+    "app_id": 82,
+    "claim_id": "82.auth.oauth2_dashboard_mcp",
+    "change": "added",
+    "reason": "Task 15 first-pass extraction for Finance and Fintech (IDs 81-90) from sealed capture task15-capture-005; community README evidence restricted to MCP entries; independent review pending."
+  },
+  {
+    "app_id": 82,
+    "claim_id": "82.buildability",
+    "change": "changed",
+    "reason": "Task 15 first-pass extraction for Finance and Fintech (IDs 81-90) from sealed capture task15-capture-005; community README evidence restricted to MCP entries; independent review pending."
+  },
+  {
+    "app_id": 82,
+    "claim_id": "82.identity",
+    "change": "removed",
+    "reason": "Task 15 first-pass extraction for Finance and Fintech (IDs 81-90) from sealed capture task15-capture-005; community README evidence restricted to MCP entries; independent review pending."
+  },
+  {
+    "app_id": 82,
+    "claim_id": "82.identity.resolution",
+    "change": "added",
+    "reason": "Task 15 first-pass extraction for Finance and Fintech (IDs 81-90) from sealed capture task15-capture-005; community README evidence restricted to MCP entries; independent review pending."
+  },
+  {
+    "app_id": 82,
+    "claim_id": "82.mcp",
+    "change": "removed",
+    "reason": "Task 15 first-pass extraction for Finance and Fintech (IDs 81-90) from sealed capture task15-capture-005; community README evidence restricted to MCP entries; independent review pending."
+  },
+  {
+    "app_id": 82,
+    "claim_id": "82.mcp.discovery",
+    "change": "added",
+    "reason": "Task 15 first-pass extraction for Finance and Fintech (IDs 81-90) from sealed capture task15-capture-005; community README evidence restricted to MCP entries; independent review pending."
+  },
+  {
+    "app_id": 82,
+    "claim_id": "82.mcp.official_dashboard_mcp",
+    "change": "added",
+    "reason": "Task 15 first-pass extraction for Finance and Fintech (IDs 81-90) from sealed capture task15-capture-005; community README evidence restricted to MCP entries; independent review pending."
+  },
+  {
+    "app_id": 82,
+    "claim_id": "82.mcp.official_dashboard_mcp.operational",
+    "change": "added",
+    "reason": "Task 15 first-pass extraction for Finance and Fintech (IDs 81-90) from sealed capture task15-capture-005; community README evidence restricted to MCP entries; independent review pending."
+  },
+  {
+    "app_id": 82,
+    "claim_id": "82.mcp.official_sandbox_mcp",
+    "change": "added",
+    "reason": "Task 15 first-pass extraction for Finance and Fintech (IDs 81-90) from sealed capture task15-capture-005; community README evidence restricted to MCP entries; independent review pending."
+  },
+  {
+    "app_id": 82,
+    "claim_id": "82.mcp.official_sandbox_mcp.operational",
+    "change": "added",
+    "reason": "Task 15 first-pass extraction for Finance and Fintech (IDs 81-90) from sealed capture task15-capture-005; community README evidence restricted to MCP entries; independent review pending."
+  },
+  {
+    "app_id": 82,
+    "claim_id": "82.production.admin_approval_required",
+    "change": "changed",
+    "reason": "Task 15 first-pass extraction for Finance and Fintech (IDs 81-90) from sealed capture task15-capture-005; community README evidence restricted to MCP entries; independent review pending."
+  },
+  {
+    "app_id": 82,
+    "claim_id": "82.production.contact_sales_required",
+    "change": "changed",
+    "reason": "Task 15 first-pass extraction for Finance and Fintech (IDs 81-90) from sealed capture task15-capture-005; community README evidence restricted to MCP entries; independent review pending."
+  },
+  {
+    "app_id": 82,
+    "claim_id": "82.production.free_access",
+    "change": "changed",
+    "reason": "Task 15 first-pass extraction for Finance and Fintech (IDs 81-90) from sealed capture task15-capture-005; community README evidence restricted to MCP entries; independent review pending."
+  },
+  {
+    "app_id": 82,
+    "claim_id": "82.production.paid_required",
+    "change": "changed",
+    "reason": "Task 15 first-pass extraction for Finance and Fintech (IDs 81-90) from sealed capture task15-capture-005; community README evidence restricted to MCP entries; independent review pending."
+  },
+  {
+    "app_id": 82,
+    "claim_id": "82.production.partner_approval_required",
+    "change": "changed",
+    "reason": "Task 15 first-pass extraction for Finance and Fintech (IDs 81-90) from sealed capture task15-capture-005; community README evidence restricted to MCP entries; independent review pending."
+  },
+  {
+    "app_id": 82,
+    "claim_id": "82.production.sandbox_access",
+    "change": "changed",
+    "reason": "Task 15 first-pass extraction for Finance and Fintech (IDs 81-90) from sealed capture task15-capture-005; community README evidence restricted to MCP entries; independent review pending."
+  },
+  {
+    "app_id": 82,
+    "claim_id": "82.production.self_serve",
+    "change": "changed",
+    "reason": "Task 15 first-pass extraction for Finance and Fintech (IDs 81-90) from sealed capture task15-capture-005; community README evidence restricted to MCP entries; independent review pending."
+  },
+  {
+    "app_id": 82,
+    "claim_id": "82.production.trial_access",
+    "change": "changed",
+    "reason": "Task 15 first-pass extraction for Finance and Fintech (IDs 81-90) from sealed capture task15-capture-005; community README evidence restricted to MCP entries; independent review pending."
+  },
+  {
+    "app_id": 82,
+    "claim_id": "82.production.vendor_approval_required",
+    "change": "changed",
+    "reason": "Task 15 first-pass extraction for Finance and Fintech (IDs 81-90) from sealed capture task15-capture-005; community README evidence restricted to MCP entries; independent review pending."
+  },
+  {
+    "app_id": 82,
+    "claim_id": "82.purpose",
+    "change": "changed",
+    "reason": "Task 15 first-pass extraction for Finance and Fintech (IDs 81-90) from sealed capture task15-capture-005; community README evidence restricted to MCP entries; independent review pending."
+  },
+  {
+    "app_id": 82,
+    "claim_id": "82.testing.admin_approval_required",
+    "change": "changed",
+    "reason": "Task 15 first-pass extraction for Finance and Fintech (IDs 81-90) from sealed capture task15-capture-005; community README evidence restricted to MCP entries; independent review pending."
+  },
+  {
+    "app_id": 82,
+    "claim_id": "82.testing.contact_sales_required",
+    "change": "changed",
+    "reason": "Task 15 first-pass extraction for Finance and Fintech (IDs 81-90) from sealed capture task15-capture-005; community README evidence restricted to MCP entries; independent review pending."
+  },
+  {
+    "app_id": 82,
+    "claim_id": "82.testing.free_access",
+    "change": "changed",
+    "reason": "Task 15 first-pass extraction for Finance and Fintech (IDs 81-90) from sealed capture task15-capture-005; community README evidence restricted to MCP entries; independent review pending."
+  },
+  {
+    "app_id": 82,
+    "claim_id": "82.testing.paid_required",
+    "change": "changed",
+    "reason": "Task 15 first-pass extraction for Finance and Fintech (IDs 81-90) from sealed capture task15-capture-005; community README evidence restricted to MCP entries; independent review pending."
+  },
+  {
+    "app_id": 82,
+    "claim_id": "82.testing.partner_approval_required",
+    "change": "changed",
+    "reason": "Task 15 first-pass extraction for Finance and Fintech (IDs 81-90) from sealed capture task15-capture-005; community README evidence restricted to MCP entries; independent review pending."
+  },
+  {
+    "app_id": 82,
+    "claim_id": "82.testing.sandbox_access",
+    "change": "changed",
+    "reason": "Task 15 first-pass extraction for Finance and Fintech (IDs 81-90) from sealed capture task15-capture-005; community README evidence restricted to MCP entries; independent review pending."
+  },
+  {
+    "app_id": 82,
+    "claim_id": "82.testing.self_serve",
+    "change": "changed",
+    "reason": "Task 15 first-pass extraction for Finance and Fintech (IDs 81-90) from sealed capture task15-capture-005; community README evidence restricted to MCP entries; independent review pending."
+  },
+  {
+    "app_id": 82,
+    "claim_id": "82.testing.trial_access",
+    "change": "changed",
+    "reason": "Task 15 first-pass extraction for Finance and Fintech (IDs 81-90) from sealed capture task15-capture-005; community README evidence restricted to MCP entries; independent review pending."
+  },
+  {
+    "app_id": 82,
+    "claim_id": "82.testing.vendor_approval_required",
+    "change": "changed",
+    "reason": "Task 15 first-pass extraction for Finance and Fintech (IDs 81-90) from sealed capture task15-capture-005; community README evidence restricted to MCP entries; independent review pending."
+  },
+  {
+    "app_id": 83,
+    "claim_id": "83.api.breadth",
+    "change": "changed",
+    "reason": "Task 15 first-pass extraction for Finance and Fintech (IDs 81-90) from sealed capture task15-capture-005; community README evidence restricted to MCP entries; independent review pending."
+  },
+  {
+    "app_id": 83,
+    "claim_id": "83.api.group.account_user_data",
+    "change": "added",
+    "reason": "Task 15 first-pass extraction for Finance and Fintech (IDs 81-90) from sealed capture task15-capture-005; community README evidence restricted to MCP entries; independent review pending."
+  },
+  {
+    "app_id": 83,
+    "claim_id": "83.api.group.general_exchange",
+    "change": "added",
+    "reason": "Task 15 first-pass extraction for Finance and Fintech (IDs 81-90) from sealed capture task15-capture-005; community README evidence restricted to MCP entries; independent review pending."
+  },
+  {
+    "app_id": 83,
+    "claim_id": "83.api.group.market_data",
+    "change": "added",
+    "reason": "Task 15 first-pass extraction for Finance and Fintech (IDs 81-90) from sealed capture task15-capture-005; community README evidence restricted to MCP entries; independent review pending."
+  },
+  {
+    "app_id": 83,
+    "claim_id": "83.api.group.spot_trading",
+    "change": "added",
+    "reason": "Task 15 first-pass extraction for Finance and Fintech (IDs 81-90) from sealed capture task15-capture-005; community README evidence restricted to MCP entries; independent review pending."
+  },
+  {
+    "app_id": 83,
+    "claim_id": "83.api.protocol.other",
+    "change": "added",
+    "reason": "Task 15 first-pass extraction for Finance and Fintech (IDs 81-90) from sealed capture task15-capture-005; community README evidence restricted to MCP entries; independent review pending."
+  },
+  {
+    "app_id": 83,
+    "claim_id": "83.api.protocol.rest",
+    "change": "added",
+    "reason": "Task 15 first-pass extraction for Finance and Fintech (IDs 81-90) from sealed capture task15-capture-005; community README evidence restricted to MCP entries; independent review pending."
+  },
+  {
+    "app_id": 83,
+    "claim_id": "83.api.protocol.sdk",
+    "change": "added",
+    "reason": "Task 15 first-pass extraction for Finance and Fintech (IDs 81-90) from sealed capture task15-capture-005; community README evidence restricted to MCP entries; independent review pending."
+  },
+  {
+    "app_id": 83,
+    "claim_id": "83.api.public_documentation",
+    "change": "changed",
+    "reason": "Task 15 first-pass extraction for Finance and Fintech (IDs 81-90) from sealed capture task15-capture-005; community README evidence restricted to MCP entries; independent review pending."
+  },
+  {
+    "app_id": 83,
+    "claim_id": "83.auth.public_none",
+    "change": "added",
+    "reason": "Task 15 first-pass extraction for Finance and Fintech (IDs 81-90) from sealed capture task15-capture-005; community README evidence restricted to MCP entries; independent review pending."
+  },
+  {
+    "app_id": 83,
+    "claim_id": "83.auth.signed_api_key",
+    "change": "added",
+    "reason": "Task 15 first-pass extraction for Finance and Fintech (IDs 81-90) from sealed capture task15-capture-005; community README evidence restricted to MCP entries; independent review pending."
+  },
+  {
+    "app_id": 83,
+    "claim_id": "83.buildability",
+    "change": "changed",
+    "reason": "Task 15 first-pass extraction for Finance and Fintech (IDs 81-90) from sealed capture task15-capture-005; community README evidence restricted to MCP entries; independent review pending."
+  },
+  {
+    "app_id": 83,
+    "claim_id": "83.identity",
+    "change": "removed",
+    "reason": "Task 15 first-pass extraction for Finance and Fintech (IDs 81-90) from sealed capture task15-capture-005; community README evidence restricted to MCP entries; independent review pending."
+  },
+  {
+    "app_id": 83,
+    "claim_id": "83.identity.resolution",
+    "change": "added",
+    "reason": "Task 15 first-pass extraction for Finance and Fintech (IDs 81-90) from sealed capture task15-capture-005; community README evidence restricted to MCP entries; independent review pending."
+  },
+  {
+    "app_id": 83,
+    "claim_id": "83.mcp",
+    "change": "removed",
+    "reason": "Task 15 first-pass extraction for Finance and Fintech (IDs 81-90) from sealed capture task15-capture-005; community README evidence restricted to MCP entries; independent review pending."
+  },
+  {
+    "app_id": 83,
+    "claim_id": "83.mcp.community_binance_mcp",
+    "change": "added",
+    "reason": "Task 15 first-pass extraction for Finance and Fintech (IDs 81-90) from sealed capture task15-capture-005; community README evidence restricted to MCP entries; independent review pending."
+  },
+  {
+    "app_id": 83,
+    "claim_id": "83.mcp.community_binance_mcp.operational",
+    "change": "added",
+    "reason": "Task 15 first-pass extraction for Finance and Fintech (IDs 81-90) from sealed capture task15-capture-005; community README evidence restricted to MCP entries; independent review pending."
+  },
+  {
+    "app_id": 83,
+    "claim_id": "83.mcp.discovery",
+    "change": "added",
+    "reason": "Task 15 first-pass extraction for Finance and Fintech (IDs 81-90) from sealed capture task15-capture-005; community README evidence restricted to MCP entries; independent review pending."
+  },
+  {
+    "app_id": 83,
+    "claim_id": "83.production.admin_approval_required",
+    "change": "changed",
+    "reason": "Task 15 first-pass extraction for Finance and Fintech (IDs 81-90) from sealed capture task15-capture-005; community README evidence restricted to MCP entries; independent review pending."
+  },
+  {
+    "app_id": 83,
+    "claim_id": "83.production.contact_sales_required",
+    "change": "changed",
+    "reason": "Task 15 first-pass extraction for Finance and Fintech (IDs 81-90) from sealed capture task15-capture-005; community README evidence restricted to MCP entries; independent review pending."
+  },
+  {
+    "app_id": 83,
+    "claim_id": "83.production.free_access",
+    "change": "changed",
+    "reason": "Task 15 first-pass extraction for Finance and Fintech (IDs 81-90) from sealed capture task15-capture-005; community README evidence restricted to MCP entries; independent review pending."
+  },
+  {
+    "app_id": 83,
+    "claim_id": "83.production.paid_required",
+    "change": "changed",
+    "reason": "Task 15 first-pass extraction for Finance and Fintech (IDs 81-90) from sealed capture task15-capture-005; community README evidence restricted to MCP entries; independent review pending."
+  },
+  {
+    "app_id": 83,
+    "claim_id": "83.production.partner_approval_required",
+    "change": "changed",
+    "reason": "Task 15 first-pass extraction for Finance and Fintech (IDs 81-90) from sealed capture task15-capture-005; community README evidence restricted to MCP entries; independent review pending."
+  },
+  {
+    "app_id": 83,
+    "claim_id": "83.production.sandbox_access",
+    "change": "changed",
+    "reason": "Task 15 first-pass extraction for Finance and Fintech (IDs 81-90) from sealed capture task15-capture-005; community README evidence restricted to MCP entries; independent review pending."
+  },
+  {
+    "app_id": 83,
+    "claim_id": "83.production.self_serve",
+    "change": "changed",
+    "reason": "Task 15 first-pass extraction for Finance and Fintech (IDs 81-90) from sealed capture task15-capture-005; community README evidence restricted to MCP entries; independent review pending."
+  },
+  {
+    "app_id": 83,
+    "claim_id": "83.production.trial_access",
+    "change": "changed",
+    "reason": "Task 15 first-pass extraction for Finance and Fintech (IDs 81-90) from sealed capture task15-capture-005; community README evidence restricted to MCP entries; independent review pending."
+  },
+  {
+    "app_id": 83,
+    "claim_id": "83.production.vendor_approval_required",
+    "change": "changed",
+    "reason": "Task 15 first-pass extraction for Finance and Fintech (IDs 81-90) from sealed capture task15-capture-005; community README evidence restricted to MCP entries; independent review pending."
+  },
+  {
+    "app_id": 83,
+    "claim_id": "83.purpose",
+    "change": "changed",
+    "reason": "Task 15 first-pass extraction for Finance and Fintech (IDs 81-90) from sealed capture task15-capture-005; community README evidence restricted to MCP entries; independent review pending."
+  },
+  {
+    "app_id": 83,
+    "claim_id": "83.testing.admin_approval_required",
+    "change": "changed",
+    "reason": "Task 15 first-pass extraction for Finance and Fintech (IDs 81-90) from sealed capture task15-capture-005; community README evidence restricted to MCP entries; independent review pending."
+  },
+  {
+    "app_id": 83,
+    "claim_id": "83.testing.contact_sales_required",
+    "change": "changed",
+    "reason": "Task 15 first-pass extraction for Finance and Fintech (IDs 81-90) from sealed capture task15-capture-005; community README evidence restricted to MCP entries; independent review pending."
+  },
+  {
+    "app_id": 83,
+    "claim_id": "83.testing.free_access",
+    "change": "changed",
+    "reason": "Task 15 first-pass extraction for Finance and Fintech (IDs 81-90) from sealed capture task15-capture-005; community README evidence restricted to MCP entries; independent review pending."
+  },
+  {
+    "app_id": 83,
+    "claim_id": "83.testing.paid_required",
+    "change": "changed",
+    "reason": "Task 15 first-pass extraction for Finance and Fintech (IDs 81-90) from sealed capture task15-capture-005; community README evidence restricted to MCP entries; independent review pending."
+  },
+  {
+    "app_id": 83,
+    "claim_id": "83.testing.partner_approval_required",
+    "change": "changed",
+    "reason": "Task 15 first-pass extraction for Finance and Fintech (IDs 81-90) from sealed capture task15-capture-005; community README evidence restricted to MCP entries; independent review pending."
+  },
+  {
+    "app_id": 83,
+    "claim_id": "83.testing.sandbox_access",
+    "change": "changed",
+    "reason": "Task 15 first-pass extraction for Finance and Fintech (IDs 81-90) from sealed capture task15-capture-005; community README evidence restricted to MCP entries; independent review pending."
+  },
+  {
+    "app_id": 83,
+    "claim_id": "83.testing.self_serve",
+    "change": "changed",
+    "reason": "Task 15 first-pass extraction for Finance and Fintech (IDs 81-90) from sealed capture task15-capture-005; community README evidence restricted to MCP entries; independent review pending."
+  },
+  {
+    "app_id": 83,
+    "claim_id": "83.testing.trial_access",
+    "change": "changed",
+    "reason": "Task 15 first-pass extraction for Finance and Fintech (IDs 81-90) from sealed capture task15-capture-005; community README evidence restricted to MCP entries; independent review pending."
+  },
+  {
+    "app_id": 83,
+    "claim_id": "83.testing.vendor_approval_required",
+    "change": "changed",
+    "reason": "Task 15 first-pass extraction for Finance and Fintech (IDs 81-90) from sealed capture task15-capture-005; community README evidence restricted to MCP entries; independent review pending."
+  },
+  {
+    "app_id": 84,
+    "claim_id": "84.api.breadth",
+    "change": "changed",
+    "reason": "Task 15 first-pass extraction for Finance and Fintech (IDs 81-90) from sealed capture task15-capture-005; community README evidence restricted to MCP entries; independent review pending."
+  },
+  {
+    "app_id": 84,
+    "claim_id": "84.api.public_documentation",
+    "change": "changed",
+    "reason": "Task 15 first-pass extraction for Finance and Fintech (IDs 81-90) from sealed capture task15-capture-005; community README evidence restricted to MCP entries; independent review pending."
+  },
+  {
+    "app_id": 84,
+    "claim_id": "84.buildability",
+    "change": "changed",
+    "reason": "Task 15 first-pass extraction for Finance and Fintech (IDs 81-90) from sealed capture task15-capture-005; community README evidence restricted to MCP entries; independent review pending."
+  },
+  {
+    "app_id": 84,
+    "claim_id": "84.identity",
+    "change": "removed",
+    "reason": "Task 15 first-pass extraction for Finance and Fintech (IDs 81-90) from sealed capture task15-capture-005; community README evidence restricted to MCP entries; independent review pending."
+  },
+  {
+    "app_id": 84,
+    "claim_id": "84.identity.resolution",
+    "change": "added",
+    "reason": "Task 15 first-pass extraction for Finance and Fintech (IDs 81-90) from sealed capture task15-capture-005; community README evidence restricted to MCP entries; independent review pending."
+  },
+  {
+    "app_id": 84,
+    "claim_id": "84.mcp",
+    "change": "removed",
+    "reason": "Task 15 first-pass extraction for Finance and Fintech (IDs 81-90) from sealed capture task15-capture-005; community README evidence restricted to MCP entries; independent review pending."
+  },
+  {
+    "app_id": 84,
+    "claim_id": "84.mcp.discovery",
+    "change": "added",
+    "reason": "Task 15 first-pass extraction for Finance and Fintech (IDs 81-90) from sealed capture task15-capture-005; community README evidence restricted to MCP entries; independent review pending."
+  },
+  {
+    "app_id": 84,
+    "claim_id": "84.production.admin_approval_required",
+    "change": "changed",
+    "reason": "Task 15 first-pass extraction for Finance and Fintech (IDs 81-90) from sealed capture task15-capture-005; community README evidence restricted to MCP entries; independent review pending."
+  },
+  {
+    "app_id": 84,
+    "claim_id": "84.production.contact_sales_required",
+    "change": "changed",
+    "reason": "Task 15 first-pass extraction for Finance and Fintech (IDs 81-90) from sealed capture task15-capture-005; community README evidence restricted to MCP entries; independent review pending."
+  },
+  {
+    "app_id": 84,
+    "claim_id": "84.production.free_access",
+    "change": "changed",
+    "reason": "Task 15 first-pass extraction for Finance and Fintech (IDs 81-90) from sealed capture task15-capture-005; community README evidence restricted to MCP entries; independent review pending."
+  },
+  {
+    "app_id": 84,
+    "claim_id": "84.production.paid_required",
+    "change": "changed",
+    "reason": "Task 15 first-pass extraction for Finance and Fintech (IDs 81-90) from sealed capture task15-capture-005; community README evidence restricted to MCP entries; independent review pending."
+  },
+  {
+    "app_id": 84,
+    "claim_id": "84.production.partner_approval_required",
+    "change": "changed",
+    "reason": "Task 15 first-pass extraction for Finance and Fintech (IDs 81-90) from sealed capture task15-capture-005; community README evidence restricted to MCP entries; independent review pending."
+  },
+  {
+    "app_id": 84,
+    "claim_id": "84.production.sandbox_access",
+    "change": "changed",
+    "reason": "Task 15 first-pass extraction for Finance and Fintech (IDs 81-90) from sealed capture task15-capture-005; community README evidence restricted to MCP entries; independent review pending."
+  },
+  {
+    "app_id": 84,
+    "claim_id": "84.production.self_serve",
+    "change": "changed",
+    "reason": "Task 15 first-pass extraction for Finance and Fintech (IDs 81-90) from sealed capture task15-capture-005; community README evidence restricted to MCP entries; independent review pending."
+  },
+  {
+    "app_id": 84,
+    "claim_id": "84.production.trial_access",
+    "change": "changed",
+    "reason": "Task 15 first-pass extraction for Finance and Fintech (IDs 81-90) from sealed capture task15-capture-005; community README evidence restricted to MCP entries; independent review pending."
+  },
+  {
+    "app_id": 84,
+    "claim_id": "84.production.vendor_approval_required",
+    "change": "changed",
+    "reason": "Task 15 first-pass extraction for Finance and Fintech (IDs 81-90) from sealed capture task15-capture-005; community README evidence restricted to MCP entries; independent review pending."
+  },
+  {
+    "app_id": 84,
+    "claim_id": "84.purpose",
+    "change": "changed",
+    "reason": "Task 15 first-pass extraction for Finance and Fintech (IDs 81-90) from sealed capture task15-capture-005; community README evidence restricted to MCP entries; independent review pending."
+  },
+  {
+    "app_id": 84,
+    "claim_id": "84.testing.admin_approval_required",
+    "change": "changed",
+    "reason": "Task 15 first-pass extraction for Finance and Fintech (IDs 81-90) from sealed capture task15-capture-005; community README evidence restricted to MCP entries; independent review pending."
+  },
+  {
+    "app_id": 84,
+    "claim_id": "84.testing.contact_sales_required",
+    "change": "changed",
+    "reason": "Task 15 first-pass extraction for Finance and Fintech (IDs 81-90) from sealed capture task15-capture-005; community README evidence restricted to MCP entries; independent review pending."
+  },
+  {
+    "app_id": 84,
+    "claim_id": "84.testing.free_access",
+    "change": "changed",
+    "reason": "Task 15 first-pass extraction for Finance and Fintech (IDs 81-90) from sealed capture task15-capture-005; community README evidence restricted to MCP entries; independent review pending."
+  },
+  {
+    "app_id": 84,
+    "claim_id": "84.testing.paid_required",
+    "change": "changed",
+    "reason": "Task 15 first-pass extraction for Finance and Fintech (IDs 81-90) from sealed capture task15-capture-005; community README evidence restricted to MCP entries; independent review pending."
+  },
+  {
+    "app_id": 84,
+    "claim_id": "84.testing.partner_approval_required",
+    "change": "changed",
+    "reason": "Task 15 first-pass extraction for Finance and Fintech (IDs 81-90) from sealed capture task15-capture-005; community README evidence restricted to MCP entries; independent review pending."
+  },
+  {
+    "app_id": 84,
+    "claim_id": "84.testing.sandbox_access",
+    "change": "changed",
+    "reason": "Task 15 first-pass extraction for Finance and Fintech (IDs 81-90) from sealed capture task15-capture-005; community README evidence restricted to MCP entries; independent review pending."
+  },
+  {
+    "app_id": 84,
+    "claim_id": "84.testing.self_serve",
+    "change": "changed",
+    "reason": "Task 15 first-pass extraction for Finance and Fintech (IDs 81-90) from sealed capture task15-capture-005; community README evidence restricted to MCP entries; independent review pending."
+  },
+  {
+    "app_id": 84,
+    "claim_id": "84.testing.trial_access",
+    "change": "changed",
+    "reason": "Task 15 first-pass extraction for Finance and Fintech (IDs 81-90) from sealed capture task15-capture-005; community README evidence restricted to MCP entries; independent review pending."
+  },
+  {
+    "app_id": 84,
+    "claim_id": "84.testing.vendor_approval_required",
+    "change": "changed",
+    "reason": "Task 15 first-pass extraction for Finance and Fintech (IDs 81-90) from sealed capture task15-capture-005; community README evidence restricted to MCP entries; independent review pending."
+  },
+  {
+    "app_id": 85,
+    "claim_id": "85.api.breadth",
+    "change": "changed",
+    "reason": "Task 15 first-pass extraction for Finance and Fintech (IDs 81-90) from sealed capture task15-capture-005; community README evidence restricted to MCP entries; independent review pending."
+  },
+  {
+    "app_id": 85,
+    "claim_id": "85.api.public_documentation",
+    "change": "changed",
+    "reason": "Task 15 first-pass extraction for Finance and Fintech (IDs 81-90) from sealed capture task15-capture-005; community README evidence restricted to MCP entries; independent review pending."
+  },
+  {
+    "app_id": 85,
+    "claim_id": "85.buildability",
+    "change": "changed",
+    "reason": "Task 15 first-pass extraction for Finance and Fintech (IDs 81-90) from sealed capture task15-capture-005; community README evidence restricted to MCP entries; independent review pending."
+  },
+  {
+    "app_id": 85,
+    "claim_id": "85.identity",
+    "change": "removed",
+    "reason": "Task 15 first-pass extraction for Finance and Fintech (IDs 81-90) from sealed capture task15-capture-005; community README evidence restricted to MCP entries; independent review pending."
+  },
+  {
+    "app_id": 85,
+    "claim_id": "85.identity.resolution",
+    "change": "added",
+    "reason": "Task 15 first-pass extraction for Finance and Fintech (IDs 81-90) from sealed capture task15-capture-005; community README evidence restricted to MCP entries; independent review pending."
+  },
+  {
+    "app_id": 85,
+    "claim_id": "85.mcp",
+    "change": "removed",
+    "reason": "Task 15 first-pass extraction for Finance and Fintech (IDs 81-90) from sealed capture task15-capture-005; community README evidence restricted to MCP entries; independent review pending."
+  },
+  {
+    "app_id": 85,
+    "claim_id": "85.mcp.community_ipayx_fx_audit_mcp",
+    "change": "added",
+    "reason": "Task 15 first-pass extraction for Finance and Fintech (IDs 81-90) from sealed capture task15-capture-005; community README evidence restricted to MCP entries; independent review pending."
+  },
+  {
+    "app_id": 85,
+    "claim_id": "85.mcp.community_ipayx_fx_audit_mcp.operational",
+    "change": "added",
+    "reason": "Task 15 first-pass extraction for Finance and Fintech (IDs 81-90) from sealed capture task15-capture-005; community README evidence restricted to MCP entries; independent review pending."
+  },
+  {
+    "app_id": 85,
+    "claim_id": "85.mcp.discovery",
+    "change": "added",
+    "reason": "Task 15 first-pass extraction for Finance and Fintech (IDs 81-90) from sealed capture task15-capture-005; community README evidence restricted to MCP entries; independent review pending."
+  },
+  {
+    "app_id": 85,
+    "claim_id": "85.production.admin_approval_required",
+    "change": "changed",
+    "reason": "Task 15 first-pass extraction for Finance and Fintech (IDs 81-90) from sealed capture task15-capture-005; community README evidence restricted to MCP entries; independent review pending."
+  },
+  {
+    "app_id": 85,
+    "claim_id": "85.production.contact_sales_required",
+    "change": "changed",
+    "reason": "Task 15 first-pass extraction for Finance and Fintech (IDs 81-90) from sealed capture task15-capture-005; community README evidence restricted to MCP entries; independent review pending."
+  },
+  {
+    "app_id": 85,
+    "claim_id": "85.production.free_access",
+    "change": "changed",
+    "reason": "Task 15 first-pass extraction for Finance and Fintech (IDs 81-90) from sealed capture task15-capture-005; community README evidence restricted to MCP entries; independent review pending."
+  },
+  {
+    "app_id": 85,
+    "claim_id": "85.production.paid_required",
+    "change": "changed",
+    "reason": "Task 15 first-pass extraction for Finance and Fintech (IDs 81-90) from sealed capture task15-capture-005; community README evidence restricted to MCP entries; independent review pending."
+  },
+  {
+    "app_id": 85,
+    "claim_id": "85.production.partner_approval_required",
+    "change": "changed",
+    "reason": "Task 15 first-pass extraction for Finance and Fintech (IDs 81-90) from sealed capture task15-capture-005; community README evidence restricted to MCP entries; independent review pending."
+  },
+  {
+    "app_id": 85,
+    "claim_id": "85.production.sandbox_access",
+    "change": "changed",
+    "reason": "Task 15 first-pass extraction for Finance and Fintech (IDs 81-90) from sealed capture task15-capture-005; community README evidence restricted to MCP entries; independent review pending."
+  },
+  {
+    "app_id": 85,
+    "claim_id": "85.production.self_serve",
+    "change": "changed",
+    "reason": "Task 15 first-pass extraction for Finance and Fintech (IDs 81-90) from sealed capture task15-capture-005; community README evidence restricted to MCP entries; independent review pending."
+  },
+  {
+    "app_id": 85,
+    "claim_id": "85.production.trial_access",
+    "change": "changed",
+    "reason": "Task 15 first-pass extraction for Finance and Fintech (IDs 81-90) from sealed capture task15-capture-005; community README evidence restricted to MCP entries; independent review pending."
+  },
+  {
+    "app_id": 85,
+    "claim_id": "85.production.vendor_approval_required",
+    "change": "changed",
+    "reason": "Task 15 first-pass extraction for Finance and Fintech (IDs 81-90) from sealed capture task15-capture-005; community README evidence restricted to MCP entries; independent review pending."
+  },
+  {
+    "app_id": 85,
+    "claim_id": "85.purpose",
+    "change": "changed",
+    "reason": "Task 15 first-pass extraction for Finance and Fintech (IDs 81-90) from sealed capture task15-capture-005; community README evidence restricted to MCP entries; independent review pending."
+  },
+  {
+    "app_id": 85,
+    "claim_id": "85.testing.admin_approval_required",
+    "change": "changed",
+    "reason": "Task 15 first-pass extraction for Finance and Fintech (IDs 81-90) from sealed capture task15-capture-005; community README evidence restricted to MCP entries; independent review pending."
+  },
+  {
+    "app_id": 85,
+    "claim_id": "85.testing.contact_sales_required",
+    "change": "changed",
+    "reason": "Task 15 first-pass extraction for Finance and Fintech (IDs 81-90) from sealed capture task15-capture-005; community README evidence restricted to MCP entries; independent review pending."
+  },
+  {
+    "app_id": 85,
+    "claim_id": "85.testing.free_access",
+    "change": "changed",
+    "reason": "Task 15 first-pass extraction for Finance and Fintech (IDs 81-90) from sealed capture task15-capture-005; community README evidence restricted to MCP entries; independent review pending."
+  },
+  {
+    "app_id": 85,
+    "claim_id": "85.testing.paid_required",
+    "change": "changed",
+    "reason": "Task 15 first-pass extraction for Finance and Fintech (IDs 81-90) from sealed capture task15-capture-005; community README evidence restricted to MCP entries; independent review pending."
+  },
+  {
+    "app_id": 85,
+    "claim_id": "85.testing.partner_approval_required",
+    "change": "changed",
+    "reason": "Task 15 first-pass extraction for Finance and Fintech (IDs 81-90) from sealed capture task15-capture-005; community README evidence restricted to MCP entries; independent review pending."
+  },
+  {
+    "app_id": 85,
+    "claim_id": "85.testing.sandbox_access",
+    "change": "changed",
+    "reason": "Task 15 first-pass extraction for Finance and Fintech (IDs 81-90) from sealed capture task15-capture-005; community README evidence restricted to MCP entries; independent review pending."
+  },
+  {
+    "app_id": 85,
+    "claim_id": "85.testing.self_serve",
+    "change": "changed",
+    "reason": "Task 15 first-pass extraction for Finance and Fintech (IDs 81-90) from sealed capture task15-capture-005; community README evidence restricted to MCP entries; independent review pending."
+  },
+  {
+    "app_id": 85,
+    "claim_id": "85.testing.trial_access",
+    "change": "changed",
+    "reason": "Task 15 first-pass extraction for Finance and Fintech (IDs 81-90) from sealed capture task15-capture-005; community README evidence restricted to MCP entries; independent review pending."
+  },
+  {
+    "app_id": 85,
+    "claim_id": "85.testing.vendor_approval_required",
+    "change": "changed",
+    "reason": "Task 15 first-pass extraction for Finance and Fintech (IDs 81-90) from sealed capture task15-capture-005; community README evidence restricted to MCP entries; independent review pending."
+  },
+  {
+    "app_id": 86,
+    "claim_id": "86.api.breadth",
+    "change": "changed",
+    "reason": "Task 15 first-pass extraction for Finance and Fintech (IDs 81-90) from sealed capture task15-capture-005; community README evidence restricted to MCP entries; independent review pending."
+  },
+  {
+    "app_id": 86,
+    "claim_id": "86.api.group.ledger_banking_tax",
+    "change": "added",
+    "reason": "Task 15 first-pass extraction for Finance and Fintech (IDs 81-90) from sealed capture task15-capture-005; community README evidence restricted to MCP entries; independent review pending."
+  },
+  {
+    "app_id": 86,
+    "claim_id": "86.api.group.org_time_reports",
+    "change": "added",
+    "reason": "Task 15 first-pass extraction for Finance and Fintech (IDs 81-90) from sealed capture task15-capture-005; community README evidence restricted to MCP entries; independent review pending."
+  },
+  {
+    "app_id": 86,
+    "claim_id": "86.api.group.purchases_ap",
+    "change": "added",
+    "reason": "Task 15 first-pass extraction for Finance and Fintech (IDs 81-90) from sealed capture task15-capture-005; community README evidence restricted to MCP entries; independent review pending."
+  },
+  {
+    "app_id": 86,
+    "claim_id": "86.api.group.sales_ar",
+    "change": "added",
+    "reason": "Task 15 first-pass extraction for Finance and Fintech (IDs 81-90) from sealed capture task15-capture-005; community README evidence restricted to MCP entries; independent review pending."
+  },
+  {
+    "app_id": 86,
+    "claim_id": "86.api.protocol.rest",
+    "change": "added",
+    "reason": "Task 15 first-pass extraction for Finance and Fintech (IDs 81-90) from sealed capture task15-capture-005; community README evidence restricted to MCP entries; independent review pending."
+  },
+  {
+    "app_id": 86,
+    "claim_id": "86.api.protocol.sdk",
+    "change": "added",
+    "reason": "Task 15 first-pass extraction for Finance and Fintech (IDs 81-90) from sealed capture task15-capture-005; community README evidence restricted to MCP entries; independent review pending."
+  },
+  {
+    "app_id": 86,
+    "claim_id": "86.api.public_documentation",
+    "change": "changed",
+    "reason": "Task 15 first-pass extraction for Finance and Fintech (IDs 81-90) from sealed capture task15-capture-005; community README evidence restricted to MCP entries; independent review pending."
+  },
+  {
+    "app_id": 86,
+    "claim_id": "86.auth.oauth2_auth_code",
+    "change": "added",
+    "reason": "Task 15 first-pass extraction for Finance and Fintech (IDs 81-90) from sealed capture task15-capture-005; community README evidence restricted to MCP entries; independent review pending."
+  },
+  {
+    "app_id": 86,
+    "claim_id": "86.buildability",
+    "change": "changed",
+    "reason": "Task 15 first-pass extraction for Finance and Fintech (IDs 81-90) from sealed capture task15-capture-005; community README evidence restricted to MCP entries; independent review pending."
+  },
+  {
+    "app_id": 86,
+    "claim_id": "86.identity",
+    "change": "removed",
+    "reason": "Task 15 first-pass extraction for Finance and Fintech (IDs 81-90) from sealed capture task15-capture-005; community README evidence restricted to MCP entries; independent review pending."
+  },
+  {
+    "app_id": 86,
+    "claim_id": "86.identity.resolution",
+    "change": "added",
+    "reason": "Task 15 first-pass extraction for Finance and Fintech (IDs 81-90) from sealed capture task15-capture-005; community README evidence restricted to MCP entries; independent review pending."
+  },
+  {
+    "app_id": 86,
+    "claim_id": "86.mcp",
+    "change": "removed",
+    "reason": "Task 15 first-pass extraction for Finance and Fintech (IDs 81-90) from sealed capture task15-capture-005; community README evidence restricted to MCP entries; independent review pending."
+  },
+  {
+    "app_id": 86,
+    "claim_id": "86.mcp.discovery",
+    "change": "added",
+    "reason": "Task 15 first-pass extraction for Finance and Fintech (IDs 81-90) from sealed capture task15-capture-005; community README evidence restricted to MCP entries; independent review pending."
+  },
+  {
+    "app_id": 86,
+    "claim_id": "86.mcp.official_qbo_mcp_server",
+    "change": "added",
+    "reason": "Task 15 first-pass extraction for Finance and Fintech (IDs 81-90) from sealed capture task15-capture-005; community README evidence restricted to MCP entries; independent review pending."
+  },
+  {
+    "app_id": 86,
+    "claim_id": "86.mcp.official_qbo_mcp_server.operational",
+    "change": "added",
+    "reason": "Task 15 first-pass extraction for Finance and Fintech (IDs 81-90) from sealed capture task15-capture-005; community README evidence restricted to MCP entries; independent review pending."
+  },
+  {
+    "app_id": 86,
+    "claim_id": "86.production.admin_approval_required",
+    "change": "changed",
+    "reason": "Task 15 first-pass extraction for Finance and Fintech (IDs 81-90) from sealed capture task15-capture-005; community README evidence restricted to MCP entries; independent review pending."
+  },
+  {
+    "app_id": 86,
+    "claim_id": "86.production.contact_sales_required",
+    "change": "changed",
+    "reason": "Task 15 first-pass extraction for Finance and Fintech (IDs 81-90) from sealed capture task15-capture-005; community README evidence restricted to MCP entries; independent review pending."
+  },
+  {
+    "app_id": 86,
+    "claim_id": "86.production.free_access",
+    "change": "changed",
+    "reason": "Task 15 first-pass extraction for Finance and Fintech (IDs 81-90) from sealed capture task15-capture-005; community README evidence restricted to MCP entries; independent review pending."
+  },
+  {
+    "app_id": 86,
+    "claim_id": "86.production.paid_required",
+    "change": "changed",
+    "reason": "Task 15 first-pass extraction for Finance and Fintech (IDs 81-90) from sealed capture task15-capture-005; community README evidence restricted to MCP entries; independent review pending."
+  },
+  {
+    "app_id": 86,
+    "claim_id": "86.production.partner_approval_required",
+    "change": "changed",
+    "reason": "Task 15 first-pass extraction for Finance and Fintech (IDs 81-90) from sealed capture task15-capture-005; community README evidence restricted to MCP entries; independent review pending."
+  },
+  {
+    "app_id": 86,
+    "claim_id": "86.production.sandbox_access",
+    "change": "changed",
+    "reason": "Task 15 first-pass extraction for Finance and Fintech (IDs 81-90) from sealed capture task15-capture-005; community README evidence restricted to MCP entries; independent review pending."
+  },
+  {
+    "app_id": 86,
+    "claim_id": "86.production.self_serve",
+    "change": "changed",
+    "reason": "Task 15 first-pass extraction for Finance and Fintech (IDs 81-90) from sealed capture task15-capture-005; community README evidence restricted to MCP entries; independent review pending."
+  },
+  {
+    "app_id": 86,
+    "claim_id": "86.production.trial_access",
+    "change": "changed",
+    "reason": "Task 15 first-pass extraction for Finance and Fintech (IDs 81-90) from sealed capture task15-capture-005; community README evidence restricted to MCP entries; independent review pending."
+  },
+  {
+    "app_id": 86,
+    "claim_id": "86.production.vendor_approval_required",
+    "change": "changed",
+    "reason": "Task 15 first-pass extraction for Finance and Fintech (IDs 81-90) from sealed capture task15-capture-005; community README evidence restricted to MCP entries; independent review pending."
+  },
+  {
+    "app_id": 86,
+    "claim_id": "86.purpose",
+    "change": "changed",
+    "reason": "Task 15 first-pass extraction for Finance and Fintech (IDs 81-90) from sealed capture task15-capture-005; community README evidence restricted to MCP entries; independent review pending."
+  },
+  {
+    "app_id": 86,
+    "claim_id": "86.testing.admin_approval_required",
+    "change": "changed",
+    "reason": "Task 15 first-pass extraction for Finance and Fintech (IDs 81-90) from sealed capture task15-capture-005; community README evidence restricted to MCP entries; independent review pending."
+  },
+  {
+    "app_id": 86,
+    "claim_id": "86.testing.contact_sales_required",
+    "change": "changed",
+    "reason": "Task 15 first-pass extraction for Finance and Fintech (IDs 81-90) from sealed capture task15-capture-005; community README evidence restricted to MCP entries; independent review pending."
+  },
+  {
+    "app_id": 86,
+    "claim_id": "86.testing.free_access",
+    "change": "changed",
+    "reason": "Task 15 first-pass extraction for Finance and Fintech (IDs 81-90) from sealed capture task15-capture-005; community README evidence restricted to MCP entries; independent review pending."
+  },
+  {
+    "app_id": 86,
+    "claim_id": "86.testing.paid_required",
+    "change": "changed",
+    "reason": "Task 15 first-pass extraction for Finance and Fintech (IDs 81-90) from sealed capture task15-capture-005; community README evidence restricted to MCP entries; independent review pending."
+  },
+  {
+    "app_id": 86,
+    "claim_id": "86.testing.partner_approval_required",
+    "change": "changed",
+    "reason": "Task 15 first-pass extraction for Finance and Fintech (IDs 81-90) from sealed capture task15-capture-005; community README evidence restricted to MCP entries; independent review pending."
+  },
+  {
+    "app_id": 86,
+    "claim_id": "86.testing.sandbox_access",
+    "change": "changed",
+    "reason": "Task 15 first-pass extraction for Finance and Fintech (IDs 81-90) from sealed capture task15-capture-005; community README evidence restricted to MCP entries; independent review pending."
+  },
+  {
+    "app_id": 86,
+    "claim_id": "86.testing.self_serve",
+    "change": "changed",
+    "reason": "Task 15 first-pass extraction for Finance and Fintech (IDs 81-90) from sealed capture task15-capture-005; community README evidence restricted to MCP entries; independent review pending."
+  },
+  {
+    "app_id": 86,
+    "claim_id": "86.testing.trial_access",
+    "change": "changed",
+    "reason": "Task 15 first-pass extraction for Finance and Fintech (IDs 81-90) from sealed capture task15-capture-005; community README evidence restricted to MCP entries; independent review pending."
+  },
+  {
+    "app_id": 86,
+    "claim_id": "86.testing.vendor_approval_required",
+    "change": "changed",
+    "reason": "Task 15 first-pass extraction for Finance and Fintech (IDs 81-90) from sealed capture task15-capture-005; community README evidence restricted to MCP entries; independent review pending."
+  },
+  {
+    "app_id": 87,
+    "claim_id": "87.api.breadth",
+    "change": "changed",
+    "reason": "Task 15 first-pass extraction for Finance and Fintech (IDs 81-90) from sealed capture task15-capture-005; community README evidence restricted to MCP entries; independent review pending."
+  },
+  {
+    "app_id": 87,
+    "claim_id": "87.api.group.accounting_identity",
+    "change": "added",
+    "reason": "Task 15 first-pass extraction for Finance and Fintech (IDs 81-90) from sealed capture task15-capture-005; community README evidence restricted to MCP entries; independent review pending."
+  },
+  {
+    "app_id": 87,
+    "claim_id": "87.api.group.bank_feeds_assets_projects",
+    "change": "added",
+    "reason": "Task 15 first-pass extraction for Finance and Fintech (IDs 81-90) from sealed capture task15-capture-005; community README evidence restricted to MCP entries; independent review pending."
+  },
+  {
+    "app_id": 87,
+    "claim_id": "87.api.group.payroll_files",
+    "change": "added",
+    "reason": "Task 15 first-pass extraction for Finance and Fintech (IDs 81-90) from sealed capture task15-capture-005; community README evidence restricted to MCP entries; independent review pending."
+  },
+  {
+    "app_id": 87,
+    "claim_id": "87.api.protocol.rest",
+    "change": "added",
+    "reason": "Task 15 first-pass extraction for Finance and Fintech (IDs 81-90) from sealed capture task15-capture-005; community README evidence restricted to MCP entries; independent review pending."
+  },
+  {
+    "app_id": 87,
+    "claim_id": "87.api.protocol.sdk",
+    "change": "added",
+    "reason": "Task 15 first-pass extraction for Finance and Fintech (IDs 81-90) from sealed capture task15-capture-005; community README evidence restricted to MCP entries; independent review pending."
+  },
+  {
+    "app_id": 87,
+    "claim_id": "87.api.public_documentation",
+    "change": "changed",
+    "reason": "Task 15 first-pass extraction for Finance and Fintech (IDs 81-90) from sealed capture task15-capture-005; community README evidence restricted to MCP entries; independent review pending."
+  },
+  {
+    "app_id": 87,
+    "claim_id": "87.auth.oauth2_auth_code_pkce",
+    "change": "added",
+    "reason": "Task 15 first-pass extraction for Finance and Fintech (IDs 81-90) from sealed capture task15-capture-005; community README evidence restricted to MCP entries; independent review pending."
+  },
+  {
+    "app_id": 87,
+    "claim_id": "87.auth.oauth2_client_credentials_custom",
+    "change": "added",
+    "reason": "Task 15 first-pass extraction for Finance and Fintech (IDs 81-90) from sealed capture task15-capture-005; community README evidence restricted to MCP entries; independent review pending."
+  },
+  {
+    "app_id": 87,
+    "claim_id": "87.buildability",
+    "change": "changed",
+    "reason": "Task 15 first-pass extraction for Finance and Fintech (IDs 81-90) from sealed capture task15-capture-005; community README evidence restricted to MCP entries; independent review pending."
+  },
+  {
+    "app_id": 87,
+    "claim_id": "87.identity",
+    "change": "removed",
+    "reason": "Task 15 first-pass extraction for Finance and Fintech (IDs 81-90) from sealed capture task15-capture-005; community README evidence restricted to MCP entries; independent review pending."
+  },
+  {
+    "app_id": 87,
+    "claim_id": "87.identity.resolution",
+    "change": "added",
+    "reason": "Task 15 first-pass extraction for Finance and Fintech (IDs 81-90) from sealed capture task15-capture-005; community README evidence restricted to MCP entries; independent review pending."
+  },
+  {
+    "app_id": 87,
+    "claim_id": "87.mcp",
+    "change": "removed",
+    "reason": "Task 15 first-pass extraction for Finance and Fintech (IDs 81-90) from sealed capture task15-capture-005; community README evidence restricted to MCP entries; independent review pending."
+  },
+  {
+    "app_id": 87,
+    "claim_id": "87.mcp.discovery",
+    "change": "added",
+    "reason": "Task 15 first-pass extraction for Finance and Fintech (IDs 81-90) from sealed capture task15-capture-005; community README evidence restricted to MCP entries; independent review pending."
+  },
+  {
+    "app_id": 87,
+    "claim_id": "87.mcp.official_xero_local_mcp",
+    "change": "added",
+    "reason": "Task 15 first-pass extraction for Finance and Fintech (IDs 81-90) from sealed capture task15-capture-005; community README evidence restricted to MCP entries; independent review pending."
+  },
+  {
+    "app_id": 87,
+    "claim_id": "87.mcp.official_xero_local_mcp.operational",
+    "change": "added",
+    "reason": "Task 15 first-pass extraction for Finance and Fintech (IDs 81-90) from sealed capture task15-capture-005; community README evidence restricted to MCP entries; independent review pending."
+  },
+  {
+    "app_id": 87,
+    "claim_id": "87.mcp.official_xero_remote_mcp",
+    "change": "added",
+    "reason": "Task 15 first-pass extraction for Finance and Fintech (IDs 81-90) from sealed capture task15-capture-005; community README evidence restricted to MCP entries; independent review pending."
+  },
+  {
+    "app_id": 87,
+    "claim_id": "87.mcp.official_xero_remote_mcp.operational",
+    "change": "added",
+    "reason": "Task 15 first-pass extraction for Finance and Fintech (IDs 81-90) from sealed capture task15-capture-005; community README evidence restricted to MCP entries; independent review pending."
+  },
+  {
+    "app_id": 87,
+    "claim_id": "87.production.admin_approval_required",
+    "change": "changed",
+    "reason": "Task 15 first-pass extraction for Finance and Fintech (IDs 81-90) from sealed capture task15-capture-005; community README evidence restricted to MCP entries; independent review pending."
+  },
+  {
+    "app_id": 87,
+    "claim_id": "87.production.contact_sales_required",
+    "change": "changed",
+    "reason": "Task 15 first-pass extraction for Finance and Fintech (IDs 81-90) from sealed capture task15-capture-005; community README evidence restricted to MCP entries; independent review pending."
+  },
+  {
+    "app_id": 87,
+    "claim_id": "87.production.free_access",
+    "change": "changed",
+    "reason": "Task 15 first-pass extraction for Finance and Fintech (IDs 81-90) from sealed capture task15-capture-005; community README evidence restricted to MCP entries; independent review pending."
+  },
+  {
+    "app_id": 87,
+    "claim_id": "87.production.paid_required",
+    "change": "changed",
+    "reason": "Task 15 first-pass extraction for Finance and Fintech (IDs 81-90) from sealed capture task15-capture-005; community README evidence restricted to MCP entries; independent review pending."
+  },
+  {
+    "app_id": 87,
+    "claim_id": "87.production.partner_approval_required",
+    "change": "changed",
+    "reason": "Task 15 first-pass extraction for Finance and Fintech (IDs 81-90) from sealed capture task15-capture-005; community README evidence restricted to MCP entries; independent review pending."
+  },
+  {
+    "app_id": 87,
+    "claim_id": "87.production.sandbox_access",
+    "change": "changed",
+    "reason": "Task 15 first-pass extraction for Finance and Fintech (IDs 81-90) from sealed capture task15-capture-005; community README evidence restricted to MCP entries; independent review pending."
+  },
+  {
+    "app_id": 87,
+    "claim_id": "87.production.self_serve",
+    "change": "changed",
+    "reason": "Task 15 first-pass extraction for Finance and Fintech (IDs 81-90) from sealed capture task15-capture-005; community README evidence restricted to MCP entries; independent review pending."
+  },
+  {
+    "app_id": 87,
+    "claim_id": "87.production.trial_access",
+    "change": "changed",
+    "reason": "Task 15 first-pass extraction for Finance and Fintech (IDs 81-90) from sealed capture task15-capture-005; community README evidence restricted to MCP entries; independent review pending."
+  },
+  {
+    "app_id": 87,
+    "claim_id": "87.production.vendor_approval_required",
+    "change": "changed",
+    "reason": "Task 15 first-pass extraction for Finance and Fintech (IDs 81-90) from sealed capture task15-capture-005; community README evidence restricted to MCP entries; independent review pending."
+  },
+  {
+    "app_id": 87,
+    "claim_id": "87.purpose",
+    "change": "changed",
+    "reason": "Task 15 first-pass extraction for Finance and Fintech (IDs 81-90) from sealed capture task15-capture-005; community README evidence restricted to MCP entries; independent review pending."
+  },
+  {
+    "app_id": 87,
+    "claim_id": "87.testing.admin_approval_required",
+    "change": "changed",
+    "reason": "Task 15 first-pass extraction for Finance and Fintech (IDs 81-90) from sealed capture task15-capture-005; community README evidence restricted to MCP entries; independent review pending."
+  },
+  {
+    "app_id": 87,
+    "claim_id": "87.testing.contact_sales_required",
+    "change": "changed",
+    "reason": "Task 15 first-pass extraction for Finance and Fintech (IDs 81-90) from sealed capture task15-capture-005; community README evidence restricted to MCP entries; independent review pending."
+  },
+  {
+    "app_id": 87,
+    "claim_id": "87.testing.free_access",
+    "change": "changed",
+    "reason": "Task 15 first-pass extraction for Finance and Fintech (IDs 81-90) from sealed capture task15-capture-005; community README evidence restricted to MCP entries; independent review pending."
+  },
+  {
+    "app_id": 87,
+    "claim_id": "87.testing.paid_required",
+    "change": "changed",
+    "reason": "Task 15 first-pass extraction for Finance and Fintech (IDs 81-90) from sealed capture task15-capture-005; community README evidence restricted to MCP entries; independent review pending."
+  },
+  {
+    "app_id": 87,
+    "claim_id": "87.testing.partner_approval_required",
+    "change": "changed",
+    "reason": "Task 15 first-pass extraction for Finance and Fintech (IDs 81-90) from sealed capture task15-capture-005; community README evidence restricted to MCP entries; independent review pending."
+  },
+  {
+    "app_id": 87,
+    "claim_id": "87.testing.sandbox_access",
+    "change": "changed",
+    "reason": "Task 15 first-pass extraction for Finance and Fintech (IDs 81-90) from sealed capture task15-capture-005; community README evidence restricted to MCP entries; independent review pending."
+  },
+  {
+    "app_id": 87,
+    "claim_id": "87.testing.self_serve",
+    "change": "changed",
+    "reason": "Task 15 first-pass extraction for Finance and Fintech (IDs 81-90) from sealed capture task15-capture-005; community README evidence restricted to MCP entries; independent review pending."
+  },
+  {
+    "app_id": 87,
+    "claim_id": "87.testing.trial_access",
+    "change": "changed",
+    "reason": "Task 15 first-pass extraction for Finance and Fintech (IDs 81-90) from sealed capture task15-capture-005; community README evidence restricted to MCP entries; independent review pending."
+  },
+  {
+    "app_id": 87,
+    "claim_id": "87.testing.vendor_approval_required",
+    "change": "changed",
+    "reason": "Task 15 first-pass extraction for Finance and Fintech (IDs 81-90) from sealed capture task15-capture-005; community README evidence restricted to MCP entries; independent review pending."
+  },
+  {
+    "app_id": 88,
+    "claim_id": "88.api.breadth",
+    "change": "changed",
+    "reason": "Task 15 first-pass extraction for Finance and Fintech (IDs 81-90) from sealed capture task15-capture-005; community README evidence restricted to MCP entries; independent review pending."
+  },
+  {
+    "app_id": 88,
+    "claim_id": "88.api.group.accounting_team_travel",
+    "change": "added",
+    "reason": "Task 15 first-pass extraction for Finance and Fintech (IDs 81-90) from sealed capture task15-capture-005; community README evidence restricted to MCP entries; independent review pending."
+  },
+  {
+    "app_id": 88,
+    "claim_id": "88.api.group.expenses_budgets_cards",
+    "change": "added",
+    "reason": "Task 15 first-pass extraction for Finance and Fintech (IDs 81-90) from sealed capture task15-capture-005; community README evidence restricted to MCP entries; independent review pending."
+  },
+  {
+    "app_id": 88,
+    "claim_id": "88.api.group.payments_transactions",
+    "change": "added",
+    "reason": "Task 15 first-pass extraction for Finance and Fintech (IDs 81-90) from sealed capture task15-capture-005; community README evidence restricted to MCP entries; independent review pending."
+  },
+  {
+    "app_id": 88,
+    "claim_id": "88.api.protocol.rest",
+    "change": "added",
+    "reason": "Task 15 first-pass extraction for Finance and Fintech (IDs 81-90) from sealed capture task15-capture-005; community README evidence restricted to MCP entries; independent review pending."
+  },
+  {
+    "app_id": 88,
+    "claim_id": "88.api.public_documentation",
+    "change": "changed",
+    "reason": "Task 15 first-pass extraction for Finance and Fintech (IDs 81-90) from sealed capture task15-capture-005; community README evidence restricted to MCP entries; independent review pending."
+  },
+  {
+    "app_id": 88,
+    "claim_id": "88.auth.mcp_oauth2_dcr",
+    "change": "added",
+    "reason": "Task 15 first-pass extraction for Finance and Fintech (IDs 81-90) from sealed capture task15-capture-005; community README evidence restricted to MCP entries; independent review pending."
+  },
+  {
+    "app_id": 88,
+    "claim_id": "88.auth.own_account_user_token",
+    "change": "added",
+    "reason": "Task 15 first-pass extraction for Finance and Fintech (IDs 81-90) from sealed capture task15-capture-005; community README evidence restricted to MCP entries; independent review pending."
+  },
+  {
+    "app_id": 88,
+    "claim_id": "88.auth.partner_oauth2_auth_code",
+    "change": "added",
+    "reason": "Task 15 first-pass extraction for Finance and Fintech (IDs 81-90) from sealed capture task15-capture-005; community README evidence restricted to MCP entries; independent review pending."
+  },
+  {
+    "app_id": 88,
+    "claim_id": "88.auth.partner_oauth2_client_credentials",
+    "change": "added",
+    "reason": "Task 15 first-pass extraction for Finance and Fintech (IDs 81-90) from sealed capture task15-capture-005; community README evidence restricted to MCP entries; independent review pending."
+  },
+  {
+    "app_id": 88,
+    "claim_id": "88.buildability",
+    "change": "changed",
+    "reason": "Task 15 first-pass extraction for Finance and Fintech (IDs 81-90) from sealed capture task15-capture-005; community README evidence restricted to MCP entries; independent review pending."
+  },
+  {
+    "app_id": 88,
+    "claim_id": "88.identity",
+    "change": "removed",
+    "reason": "Task 15 first-pass extraction for Finance and Fintech (IDs 81-90) from sealed capture task15-capture-005; community README evidence restricted to MCP entries; independent review pending."
+  },
+  {
+    "app_id": 88,
+    "claim_id": "88.identity.resolution",
+    "change": "added",
+    "reason": "Task 15 first-pass extraction for Finance and Fintech (IDs 81-90) from sealed capture task15-capture-005; community README evidence restricted to MCP entries; independent review pending."
+  },
+  {
+    "app_id": 88,
+    "claim_id": "88.mcp",
+    "change": "removed",
+    "reason": "Task 15 first-pass extraction for Finance and Fintech (IDs 81-90) from sealed capture task15-capture-005; community README evidence restricted to MCP entries; independent review pending."
+  },
+  {
+    "app_id": 88,
+    "claim_id": "88.mcp.discovery",
+    "change": "added",
+    "reason": "Task 15 first-pass extraction for Finance and Fintech (IDs 81-90) from sealed capture task15-capture-005; community README evidence restricted to MCP entries; independent review pending."
+  },
+  {
+    "app_id": 88,
+    "claim_id": "88.mcp.official_brex_mcp",
+    "change": "added",
+    "reason": "Task 15 first-pass extraction for Finance and Fintech (IDs 81-90) from sealed capture task15-capture-005; community README evidence restricted to MCP entries; independent review pending."
+  },
+  {
+    "app_id": 88,
+    "claim_id": "88.mcp.official_brex_mcp.operational",
+    "change": "added",
+    "reason": "Task 15 first-pass extraction for Finance and Fintech (IDs 81-90) from sealed capture task15-capture-005; community README evidence restricted to MCP entries; independent review pending."
+  },
+  {
+    "app_id": 88,
+    "claim_id": "88.production.admin_approval_required",
+    "change": "changed",
+    "reason": "Task 15 first-pass extraction for Finance and Fintech (IDs 81-90) from sealed capture task15-capture-005; community README evidence restricted to MCP entries; independent review pending."
+  },
+  {
+    "app_id": 88,
+    "claim_id": "88.production.contact_sales_required",
+    "change": "changed",
+    "reason": "Task 15 first-pass extraction for Finance and Fintech (IDs 81-90) from sealed capture task15-capture-005; community README evidence restricted to MCP entries; independent review pending."
+  },
+  {
+    "app_id": 88,
+    "claim_id": "88.production.free_access",
+    "change": "changed",
+    "reason": "Task 15 first-pass extraction for Finance and Fintech (IDs 81-90) from sealed capture task15-capture-005; community README evidence restricted to MCP entries; independent review pending."
+  },
+  {
+    "app_id": 88,
+    "claim_id": "88.production.paid_required",
+    "change": "changed",
+    "reason": "Task 15 first-pass extraction for Finance and Fintech (IDs 81-90) from sealed capture task15-capture-005; community README evidence restricted to MCP entries; independent review pending."
+  },
+  {
+    "app_id": 88,
+    "claim_id": "88.production.partner_approval_required",
+    "change": "changed",
+    "reason": "Task 15 first-pass extraction for Finance and Fintech (IDs 81-90) from sealed capture task15-capture-005; community README evidence restricted to MCP entries; independent review pending."
+  },
+  {
+    "app_id": 88,
+    "claim_id": "88.production.sandbox_access",
+    "change": "changed",
+    "reason": "Task 15 first-pass extraction for Finance and Fintech (IDs 81-90) from sealed capture task15-capture-005; community README evidence restricted to MCP entries; independent review pending."
+  },
+  {
+    "app_id": 88,
+    "claim_id": "88.production.self_serve",
+    "change": "changed",
+    "reason": "Task 15 first-pass extraction for Finance and Fintech (IDs 81-90) from sealed capture task15-capture-005; community README evidence restricted to MCP entries; independent review pending."
+  },
+  {
+    "app_id": 88,
+    "claim_id": "88.production.trial_access",
+    "change": "changed",
+    "reason": "Task 15 first-pass extraction for Finance and Fintech (IDs 81-90) from sealed capture task15-capture-005; community README evidence restricted to MCP entries; independent review pending."
+  },
+  {
+    "app_id": 88,
+    "claim_id": "88.production.vendor_approval_required",
+    "change": "changed",
+    "reason": "Task 15 first-pass extraction for Finance and Fintech (IDs 81-90) from sealed capture task15-capture-005; community README evidence restricted to MCP entries; independent review pending."
+  },
+  {
+    "app_id": 88,
+    "claim_id": "88.purpose",
+    "change": "changed",
+    "reason": "Task 15 first-pass extraction for Finance and Fintech (IDs 81-90) from sealed capture task15-capture-005; community README evidence restricted to MCP entries; independent review pending."
+  },
+  {
+    "app_id": 88,
+    "claim_id": "88.testing.admin_approval_required",
+    "change": "changed",
+    "reason": "Task 15 first-pass extraction for Finance and Fintech (IDs 81-90) from sealed capture task15-capture-005; community README evidence restricted to MCP entries; independent review pending."
+  },
+  {
+    "app_id": 88,
+    "claim_id": "88.testing.contact_sales_required",
+    "change": "changed",
+    "reason": "Task 15 first-pass extraction for Finance and Fintech (IDs 81-90) from sealed capture task15-capture-005; community README evidence restricted to MCP entries; independent review pending."
+  },
+  {
+    "app_id": 88,
+    "claim_id": "88.testing.free_access",
+    "change": "changed",
+    "reason": "Task 15 first-pass extraction for Finance and Fintech (IDs 81-90) from sealed capture task15-capture-005; community README evidence restricted to MCP entries; independent review pending."
+  },
+  {
+    "app_id": 88,
+    "claim_id": "88.testing.paid_required",
+    "change": "changed",
+    "reason": "Task 15 first-pass extraction for Finance and Fintech (IDs 81-90) from sealed capture task15-capture-005; community README evidence restricted to MCP entries; independent review pending."
+  },
+  {
+    "app_id": 88,
+    "claim_id": "88.testing.partner_approval_required",
+    "change": "changed",
+    "reason": "Task 15 first-pass extraction for Finance and Fintech (IDs 81-90) from sealed capture task15-capture-005; community README evidence restricted to MCP entries; independent review pending."
+  },
+  {
+    "app_id": 88,
+    "claim_id": "88.testing.sandbox_access",
+    "change": "changed",
+    "reason": "Task 15 first-pass extraction for Finance and Fintech (IDs 81-90) from sealed capture task15-capture-005; community README evidence restricted to MCP entries; independent review pending."
+  },
+  {
+    "app_id": 88,
+    "claim_id": "88.testing.self_serve",
+    "change": "changed",
+    "reason": "Task 15 first-pass extraction for Finance and Fintech (IDs 81-90) from sealed capture task15-capture-005; community README evidence restricted to MCP entries; independent review pending."
+  },
+  {
+    "app_id": 88,
+    "claim_id": "88.testing.trial_access",
+    "change": "changed",
+    "reason": "Task 15 first-pass extraction for Finance and Fintech (IDs 81-90) from sealed capture task15-capture-005; community README evidence restricted to MCP entries; independent review pending."
+  },
+  {
+    "app_id": 88,
+    "claim_id": "88.testing.vendor_approval_required",
+    "change": "changed",
+    "reason": "Task 15 first-pass extraction for Finance and Fintech (IDs 81-90) from sealed capture task15-capture-005; community README evidence restricted to MCP entries; independent review pending."
+  },
+  {
+    "app_id": 89,
+    "claim_id": "89.api.breadth",
+    "change": "changed",
+    "reason": "Task 15 first-pass extraction for Finance and Fintech (IDs 81-90) from sealed capture task15-capture-005; community README evidence restricted to MCP entries; independent review pending."
+  },
+  {
+    "app_id": 89,
+    "claim_id": "89.api.group.accounting_erp",
+    "change": "added",
+    "reason": "Task 15 first-pass extraction for Finance and Fintech (IDs 81-90) from sealed capture task15-capture-005; community README evidence restricted to MCP entries; independent review pending."
+  },
+  {
+    "app_id": 89,
+    "claim_id": "89.api.group.banking_users_custom",
+    "change": "added",
+    "reason": "Task 15 first-pass extraction for Finance and Fintech (IDs 81-90) from sealed capture task15-capture-005; community README evidence restricted to MCP entries; independent review pending."
+  },
+  {
+    "app_id": 89,
+    "claim_id": "89.api.group.bills_vendors_procurement",
+    "change": "added",
+    "reason": "Task 15 first-pass extraction for Finance and Fintech (IDs 81-90) from sealed capture task15-capture-005; community README evidence restricted to MCP entries; independent review pending."
+  },
+  {
+    "app_id": 89,
+    "claim_id": "89.api.group.cards_spend_controls",
+    "change": "added",
+    "reason": "Task 15 first-pass extraction for Finance and Fintech (IDs 81-90) from sealed capture task15-capture-005; community README evidence restricted to MCP entries; independent review pending."
+  },
+  {
+    "app_id": 89,
+    "claim_id": "89.api.group.transactions_reimbursements",
+    "change": "added",
+    "reason": "Task 15 first-pass extraction for Finance and Fintech (IDs 81-90) from sealed capture task15-capture-005; community README evidence restricted to MCP entries; independent review pending."
+  },
+  {
+    "app_id": 89,
+    "claim_id": "89.api.protocol.cli",
+    "change": "added",
+    "reason": "Task 15 first-pass extraction for Finance and Fintech (IDs 81-90) from sealed capture task15-capture-005; community README evidence restricted to MCP entries; independent review pending."
+  },
+  {
+    "app_id": 89,
+    "claim_id": "89.api.protocol.rest",
+    "change": "added",
+    "reason": "Task 15 first-pass extraction for Finance and Fintech (IDs 81-90) from sealed capture task15-capture-005; community README evidence restricted to MCP entries; independent review pending."
+  },
+  {
+    "app_id": 89,
+    "claim_id": "89.api.public_documentation",
+    "change": "changed",
+    "reason": "Task 15 first-pass extraction for Finance and Fintech (IDs 81-90) from sealed capture task15-capture-005; community README evidence restricted to MCP entries; independent review pending."
+  },
+  {
+    "app_id": 89,
+    "claim_id": "89.auth.mcp_cli_oauth2",
+    "change": "added",
+    "reason": "Task 15 first-pass extraction for Finance and Fintech (IDs 81-90) from sealed capture task15-capture-005; community README evidence restricted to MCP entries; independent review pending."
+  },
+  {
+    "app_id": 89,
+    "claim_id": "89.auth.oauth2_auth_code",
+    "change": "added",
+    "reason": "Task 15 first-pass extraction for Finance and Fintech (IDs 81-90) from sealed capture task15-capture-005; community README evidence restricted to MCP entries; independent review pending."
+  },
+  {
+    "app_id": 89,
+    "claim_id": "89.auth.oauth2_client_credentials",
+    "change": "added",
+    "reason": "Task 15 first-pass extraction for Finance and Fintech (IDs 81-90) from sealed capture task15-capture-005; community README evidence restricted to MCP entries; independent review pending."
+  },
+  {
+    "app_id": 89,
+    "claim_id": "89.buildability",
+    "change": "changed",
+    "reason": "Task 15 first-pass extraction for Finance and Fintech (IDs 81-90) from sealed capture task15-capture-005; community README evidence restricted to MCP entries; independent review pending."
+  },
+  {
+    "app_id": 89,
+    "claim_id": "89.identity",
+    "change": "removed",
+    "reason": "Task 15 first-pass extraction for Finance and Fintech (IDs 81-90) from sealed capture task15-capture-005; community README evidence restricted to MCP entries; independent review pending."
+  },
+  {
+    "app_id": 89,
+    "claim_id": "89.identity.resolution",
+    "change": "added",
+    "reason": "Task 15 first-pass extraction for Finance and Fintech (IDs 81-90) from sealed capture task15-capture-005; community README evidence restricted to MCP entries; independent review pending."
+  },
+  {
+    "app_id": 89,
+    "claim_id": "89.mcp",
+    "change": "removed",
+    "reason": "Task 15 first-pass extraction for Finance and Fintech (IDs 81-90) from sealed capture task15-capture-005; community README evidence restricted to MCP entries; independent review pending."
+  },
+  {
+    "app_id": 89,
+    "claim_id": "89.mcp.discovery",
+    "change": "added",
+    "reason": "Task 15 first-pass extraction for Finance and Fintech (IDs 81-90) from sealed capture task15-capture-005; community README evidence restricted to MCP entries; independent review pending."
+  },
+  {
+    "app_id": 89,
+    "claim_id": "89.mcp.official_ramp_mcp",
+    "change": "added",
+    "reason": "Task 15 first-pass extraction for Finance and Fintech (IDs 81-90) from sealed capture task15-capture-005; community README evidence restricted to MCP entries; independent review pending."
+  },
+  {
+    "app_id": 89,
+    "claim_id": "89.mcp.official_ramp_mcp.operational",
+    "change": "added",
+    "reason": "Task 15 first-pass extraction for Finance and Fintech (IDs 81-90) from sealed capture task15-capture-005; community README evidence restricted to MCP entries; independent review pending."
+  },
+  {
+    "app_id": 89,
+    "claim_id": "89.production.admin_approval_required",
+    "change": "changed",
+    "reason": "Task 15 first-pass extraction for Finance and Fintech (IDs 81-90) from sealed capture task15-capture-005; community README evidence restricted to MCP entries; independent review pending."
+  },
+  {
+    "app_id": 89,
+    "claim_id": "89.production.contact_sales_required",
+    "change": "changed",
+    "reason": "Task 15 first-pass extraction for Finance and Fintech (IDs 81-90) from sealed capture task15-capture-005; community README evidence restricted to MCP entries; independent review pending."
+  },
+  {
+    "app_id": 89,
+    "claim_id": "89.production.free_access",
+    "change": "changed",
+    "reason": "Task 15 first-pass extraction for Finance and Fintech (IDs 81-90) from sealed capture task15-capture-005; community README evidence restricted to MCP entries; independent review pending."
+  },
+  {
+    "app_id": 89,
+    "claim_id": "89.production.paid_required",
+    "change": "changed",
+    "reason": "Task 15 first-pass extraction for Finance and Fintech (IDs 81-90) from sealed capture task15-capture-005; community README evidence restricted to MCP entries; independent review pending."
+  },
+  {
+    "app_id": 89,
+    "claim_id": "89.production.partner_approval_required",
+    "change": "changed",
+    "reason": "Task 15 first-pass extraction for Finance and Fintech (IDs 81-90) from sealed capture task15-capture-005; community README evidence restricted to MCP entries; independent review pending."
+  },
+  {
+    "app_id": 89,
+    "claim_id": "89.production.sandbox_access",
+    "change": "changed",
+    "reason": "Task 15 first-pass extraction for Finance and Fintech (IDs 81-90) from sealed capture task15-capture-005; community README evidence restricted to MCP entries; independent review pending."
+  },
+  {
+    "app_id": 89,
+    "claim_id": "89.production.self_serve",
+    "change": "changed",
+    "reason": "Task 15 first-pass extraction for Finance and Fintech (IDs 81-90) from sealed capture task15-capture-005; community README evidence restricted to MCP entries; independent review pending."
+  },
+  {
+    "app_id": 89,
+    "claim_id": "89.production.trial_access",
+    "change": "changed",
+    "reason": "Task 15 first-pass extraction for Finance and Fintech (IDs 81-90) from sealed capture task15-capture-005; community README evidence restricted to MCP entries; independent review pending."
+  },
+  {
+    "app_id": 89,
+    "claim_id": "89.production.vendor_approval_required",
+    "change": "changed",
+    "reason": "Task 15 first-pass extraction for Finance and Fintech (IDs 81-90) from sealed capture task15-capture-005; community README evidence restricted to MCP entries; independent review pending."
+  },
+  {
+    "app_id": 89,
+    "claim_id": "89.purpose",
+    "change": "changed",
+    "reason": "Task 15 first-pass extraction for Finance and Fintech (IDs 81-90) from sealed capture task15-capture-005; community README evidence restricted to MCP entries; independent review pending."
+  },
+  {
+    "app_id": 89,
+    "claim_id": "89.testing.admin_approval_required",
+    "change": "changed",
+    "reason": "Task 15 first-pass extraction for Finance and Fintech (IDs 81-90) from sealed capture task15-capture-005; community README evidence restricted to MCP entries; independent review pending."
+  },
+  {
+    "app_id": 89,
+    "claim_id": "89.testing.contact_sales_required",
+    "change": "changed",
+    "reason": "Task 15 first-pass extraction for Finance and Fintech (IDs 81-90) from sealed capture task15-capture-005; community README evidence restricted to MCP entries; independent review pending."
+  },
+  {
+    "app_id": 89,
+    "claim_id": "89.testing.free_access",
+    "change": "changed",
+    "reason": "Task 15 first-pass extraction for Finance and Fintech (IDs 81-90) from sealed capture task15-capture-005; community README evidence restricted to MCP entries; independent review pending."
+  },
+  {
+    "app_id": 89,
+    "claim_id": "89.testing.paid_required",
+    "change": "changed",
+    "reason": "Task 15 first-pass extraction for Finance and Fintech (IDs 81-90) from sealed capture task15-capture-005; community README evidence restricted to MCP entries; independent review pending."
+  },
+  {
+    "app_id": 89,
+    "claim_id": "89.testing.partner_approval_required",
+    "change": "changed",
+    "reason": "Task 15 first-pass extraction for Finance and Fintech (IDs 81-90) from sealed capture task15-capture-005; community README evidence restricted to MCP entries; independent review pending."
+  },
+  {
+    "app_id": 89,
+    "claim_id": "89.testing.sandbox_access",
+    "change": "changed",
+    "reason": "Task 15 first-pass extraction for Finance and Fintech (IDs 81-90) from sealed capture task15-capture-005; community README evidence restricted to MCP entries; independent review pending."
+  },
+  {
+    "app_id": 89,
+    "claim_id": "89.testing.self_serve",
+    "change": "changed",
+    "reason": "Task 15 first-pass extraction for Finance and Fintech (IDs 81-90) from sealed capture task15-capture-005; community README evidence restricted to MCP entries; independent review pending."
+  },
+  {
+    "app_id": 89,
+    "claim_id": "89.testing.trial_access",
+    "change": "changed",
+    "reason": "Task 15 first-pass extraction for Finance and Fintech (IDs 81-90) from sealed capture task15-capture-005; community README evidence restricted to MCP entries; independent review pending."
+  },
+  {
+    "app_id": 89,
+    "claim_id": "89.testing.vendor_approval_required",
+    "change": "changed",
+    "reason": "Task 15 first-pass extraction for Finance and Fintech (IDs 81-90) from sealed capture task15-capture-005; community README evidence restricted to MCP entries; independent review pending."
+  },
+  {
+    "app_id": 90,
+    "claim_id": "90.api.breadth",
+    "change": "changed",
+    "reason": "Task 15 first-pass extraction for Finance and Fintech (IDs 81-90) from sealed capture task15-capture-005; community README evidence restricted to MCP entries; independent review pending."
+  },
+  {
+    "app_id": 90,
+    "claim_id": "90.api.public_documentation",
+    "change": "changed",
+    "reason": "Task 15 first-pass extraction for Finance and Fintech (IDs 81-90) from sealed capture task15-capture-005; community README evidence restricted to MCP entries; independent review pending."
+  },
+  {
+    "app_id": 90,
+    "claim_id": "90.buildability",
+    "change": "changed",
+    "reason": "Task 15 first-pass extraction for Finance and Fintech (IDs 81-90) from sealed capture task15-capture-005; community README evidence restricted to MCP entries; independent review pending."
+  },
+  {
+    "app_id": 90,
+    "claim_id": "90.identity",
+    "change": "removed",
+    "reason": "Task 15 first-pass extraction for Finance and Fintech (IDs 81-90) from sealed capture task15-capture-005; community README evidence restricted to MCP entries; independent review pending."
+  },
+  {
+    "app_id": 90,
+    "claim_id": "90.identity.resolution",
+    "change": "added",
+    "reason": "Task 15 first-pass extraction for Finance and Fintech (IDs 81-90) from sealed capture task15-capture-005; community README evidence restricted to MCP entries; independent review pending."
+  },
+  {
+    "app_id": 90,
+    "claim_id": "90.mcp",
+    "change": "removed",
+    "reason": "Task 15 first-pass extraction for Finance and Fintech (IDs 81-90) from sealed capture task15-capture-005; community README evidence restricted to MCP entries; independent review pending."
+  },
+  {
+    "app_id": 90,
+    "claim_id": "90.mcp.discovery",
+    "change": "added",
+    "reason": "Task 15 first-pass extraction for Finance and Fintech (IDs 81-90) from sealed capture task15-capture-005; community README evidence restricted to MCP entries; independent review pending."
+  },
+  {
+    "app_id": 90,
+    "claim_id": "90.production.admin_approval_required",
+    "change": "changed",
+    "reason": "Task 15 first-pass extraction for Finance and Fintech (IDs 81-90) from sealed capture task15-capture-005; community README evidence restricted to MCP entries; independent review pending."
+  },
+  {
+    "app_id": 90,
+    "claim_id": "90.production.contact_sales_required",
+    "change": "changed",
+    "reason": "Task 15 first-pass extraction for Finance and Fintech (IDs 81-90) from sealed capture task15-capture-005; community README evidence restricted to MCP entries; independent review pending."
+  },
+  {
+    "app_id": 90,
+    "claim_id": "90.production.free_access",
+    "change": "changed",
+    "reason": "Task 15 first-pass extraction for Finance and Fintech (IDs 81-90) from sealed capture task15-capture-005; community README evidence restricted to MCP entries; independent review pending."
+  },
+  {
+    "app_id": 90,
+    "claim_id": "90.production.paid_required",
+    "change": "changed",
+    "reason": "Task 15 first-pass extraction for Finance and Fintech (IDs 81-90) from sealed capture task15-capture-005; community README evidence restricted to MCP entries; independent review pending."
+  },
+  {
+    "app_id": 90,
+    "claim_id": "90.production.partner_approval_required",
+    "change": "changed",
+    "reason": "Task 15 first-pass extraction for Finance and Fintech (IDs 81-90) from sealed capture task15-capture-005; community README evidence restricted to MCP entries; independent review pending."
+  },
+  {
+    "app_id": 90,
+    "claim_id": "90.production.sandbox_access",
+    "change": "changed",
+    "reason": "Task 15 first-pass extraction for Finance and Fintech (IDs 81-90) from sealed capture task15-capture-005; community README evidence restricted to MCP entries; independent review pending."
+  },
+  {
+    "app_id": 90,
+    "claim_id": "90.production.self_serve",
+    "change": "changed",
+    "reason": "Task 15 first-pass extraction for Finance and Fintech (IDs 81-90) from sealed capture task15-capture-005; community README evidence restricted to MCP entries; independent review pending."
+  },
+  {
+    "app_id": 90,
+    "claim_id": "90.production.trial_access",
+    "change": "changed",
+    "reason": "Task 15 first-pass extraction for Finance and Fintech (IDs 81-90) from sealed capture task15-capture-005; community README evidence restricted to MCP entries; independent review pending."
+  },
+  {
+    "app_id": 90,
+    "claim_id": "90.production.vendor_approval_required",
+    "change": "changed",
+    "reason": "Task 15 first-pass extraction for Finance and Fintech (IDs 81-90) from sealed capture task15-capture-005; community README evidence restricted to MCP entries; independent review pending."
+  },
+  {
+    "app_id": 90,
+    "claim_id": "90.purpose",
+    "change": "changed",
+    "reason": "Task 15 first-pass extraction for Finance and Fintech (IDs 81-90) from sealed capture task15-capture-005; community README evidence restricted to MCP entries; independent review pending."
+  },
+  {
+    "app_id": 90,
+    "claim_id": "90.testing.admin_approval_required",
+    "change": "changed",
+    "reason": "Task 15 first-pass extraction for Finance and Fintech (IDs 81-90) from sealed capture task15-capture-005; community README evidence restricted to MCP entries; independent review pending."
+  },
+  {
+    "app_id": 90,
+    "claim_id": "90.testing.contact_sales_required",
+    "change": "changed",
+    "reason": "Task 15 first-pass extraction for Finance and Fintech (IDs 81-90) from sealed capture task15-capture-005; community README evidence restricted to MCP entries; independent review pending."
+  },
+  {
+    "app_id": 90,
+    "claim_id": "90.testing.free_access",
+    "change": "changed",
+    "reason": "Task 15 first-pass extraction for Finance and Fintech (IDs 81-90) from sealed capture task15-capture-005; community README evidence restricted to MCP entries; independent review pending."
+  },
+  {
+    "app_id": 90,
+    "claim_id": "90.testing.paid_required",
+    "change": "changed",
+    "reason": "Task 15 first-pass extraction for Finance and Fintech (IDs 81-90) from sealed capture task15-capture-005; community README evidence restricted to MCP entries; independent review pending."
+  },
+  {
+    "app_id": 90,
+    "claim_id": "90.testing.partner_approval_required",
+    "change": "changed",
+    "reason": "Task 15 first-pass extraction for Finance and Fintech (IDs 81-90) from sealed capture task15-capture-005; community README evidence restricted to MCP entries; independent review pending."
+  },
+  {
+    "app_id": 90,
+    "claim_id": "90.testing.sandbox_access",
+    "change": "changed",
+    "reason": "Task 15 first-pass extraction for Finance and Fintech (IDs 81-90) from sealed capture task15-capture-005; community README evidence restricted to MCP entries; independent review pending."
+  },
+  {
+    "app_id": 90,
+    "claim_id": "90.testing.self_serve",
+    "change": "changed",
+    "reason": "Task 15 first-pass extraction for Finance and Fintech (IDs 81-90) from sealed capture task15-capture-005; community README evidence restricted to MCP entries; independent review pending."
+  },
+  {
+    "app_id": 90,
+    "claim_id": "90.testing.trial_access",
+    "change": "changed",
+    "reason": "Task 15 first-pass extraction for Finance and Fintech (IDs 81-90) from sealed capture task15-capture-005; community README evidence restricted to MCP entries; independent review pending."
+  },
+  {
+    "app_id": 90,
+    "claim_id": "90.testing.vendor_approval_required",
+    "change": "changed",
+    "reason": "Task 15 first-pass extraction for Finance and Fintech (IDs 81-90) from sealed capture task15-capture-005; community README evidence restricted to MCP entries; independent review pending."
+  }
+]

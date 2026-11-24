@@ -1,0 +1,45 @@
+Scopes | Zoho CRM API | V8
+Scopes
+Scopes limit the level of access given to a client for protected resources. It enables a user to provide delegated access to a client. Zoho CRM APIs use selected scopes, which control the type of resource that the client application can access. Tokens are usually created with various scopes to ensure improved security. For example, you can generate a scope to create or view a lead, or to view metadata and so on.
+Scopes contain three parameters — service name, scope name, and operation type. The format to define a scope is scope=service_name.scope_name.operation_type
+For example, ZohoCRM.modules.ALL
+Here, ZohoCRM is the service API name, modules is the scope name, and ALL is the operation type.
+Service API name is the name of the service the client is making API calls to.
+Scope name is the name of the module in the service the client needs access to.
+Operation type is the type of operation that is permissible for the client. It can be ALL, CREATE, READ, UPDATE, DELETE. (ALL gives access to perform all operations).
+Available Scopes
+users
+Associated Methods: users.ALL
+org
+Associated Methods: org.ALL
+settings
+Associated Methods: settings.ALL, settings.territories, settings.custom_views, settings.related_lists, settings.modules, settings.variables, settings.tags, settings.tab_groups, settings.fields, settings.layouts, settings.macros, settings.custom_links, settings.custom_buttons, settings.roles, settings.profiles, and settings.currencies
+modules
+Associated Methods: modules.ALL, modules.approvals, modules.leads, modules.accounts, modules.contacts, modules.deals, modules.campaigns, modules.tasks, modules.cases, modules.events, modules.calls, modules.solutions, modules.products, modules.vendors, modules.pricebooks, modules.quotes, modules.salesorders, modules.purchaseorders, modules.invoices, modules.custom, modules.dashboards, modules.notes, modules.activities, modules.search, modules.services, modules.appointments, modules.appointments_rescheduled_history
+bulk
+Associated Methods: bulk.ALL, bulk.READ, bulk.CREATE
+notifications
+Associated Methods: notifications.READ, notifications.CREATE, notifications.UPDATE, notifications.DELETE
+coql
+Associated Methods: coql.READ
+Group Scopes
+Group scope provide complete access to all functions the user can perform on the record. For instance, a group scope can allow a user to read, create, update, and delete records in all modules.
+Example:
+https://accounts.zoho.com/oauth/v2/auth?scope=ZohoCRM.modules.ALL,ZohoCRM.settings.ALL&client_id={client_id}&response_type=code&access_type={"offline"or"online"}&redirect_uri={redirect_uri}
+In the above example, the user has access to all modules in the client ZohoCRM account.
+Other examples are
+scope=ZohoCRM.modules.READ(Read-only permission)
+scope=ZohoCRM.modules.CREATE
+scope=ZohoCRM.modules.UPDATE
+scope=ZohoCRM.modules.DELETE
+Separate Scopes
+Separate scopes are used to provide access to data in a particular module without access to other modules.
+https://accounts.zoho.com/oauth/v2/auth?scope=ZohoCRM.modules.leads.ALL,ZohoCRM.modules.deals.ALL,ZohoCRM.settings.ALL&client_id={client_id}&response_type=code&access_type={"offline"or"online"}&redirect_uri={redirect_uri}
+The above scope gives the user access to only the leads and deals modules from the client Zoho CRM account.
+Additionally, you can set specific permissions, like read, create, update or delete, for each module. For examples:
+scope=ZohoCRM.modules.leads.READ(Read-only permission)
+scope=ZohoCRM.modules.leads.CREATE
+scope=ZohoCRM.modules.leads.UPDATE
+scope=ZohoCRM.modules.leads.DELETE
+Multiple Scopes
+Access tokens can also be generated with multiple scopes. In such cases, the scopes should be separated by commas. The format to provide multiple scope is service_name.scope_name.OPERATION_TYPE,service_name.scope_name.OPERATION_TYPE. For example, ZohoCRM.modules.READ,ZohoCRM.settings.READ.

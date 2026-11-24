@@ -1,0 +1,415 @@
+Introduction
+For AI agents: the docs index is at https://dev.frontapp.com/llms.txt. Append .md to any documentation page URL to get its markdown version.
+Jump to Content
+GuidesAPI ReferenceChangelogCommunity
+GuidesAPI ReferenceGuidesAPI ReferenceChangelogCommunityFront
+API Reference
+Front
+API Reference
+Introduction
+Core API
+Introduction
+Response Body Structure
+API Terminology 101
+Accounts
+List Accountsget
+Create accountpost
+Fetch an accountget
+Update accountpatch
+Delete an accountdel
+List account contactsget
+Add contact to Accountpost
+Remove contact from Accountdel
+Custom Fields
+List Account's custom fieldsget
+List Contact's custom fieldsget
+List Conversation's custom fieldsget
+List Contact's custom fieldsget
+List Inbox's custom fieldsget
+List Link's custom fieldsget
+List Teammate's custom fieldsget
+Analytics
+Create a new analytics exportpost
+Fetch an analytics exportget
+Create a new analytics reportpost
+Fetch an analytics reportget
+Applications
+Trigger application eventpost
+Channels
+List channelsget
+Get channelget
+Update Channelpatch
+Validate channelpost
+Create a channelpost
+List teammate channelsget
+List team channelsget
+Drafts
+Create draftpost
+List conversation draftsget
+Create draft replypost
+Delete draftdel
+Edit draftpatch
+Messages
+Receive custom messagespost
+Create messagepost
+Create message replypost
+Import messagepost
+Get messageget
+Get message seen statusget
+Mark message seenpost
+Comments
+Get commentget
+Update commentpatch
+List comment mentionsget
+List conversation commentsget
+Add commentpost
+Add comment replypost
+Attachments
+Download attachment for a commentget
+Download attachmentget
+Download attachment for a message templateget
+Download attachment for a messageget
+Rules
+List all company rulesget
+List rulesget
+Get ruleget
+List teammate rulesget
+List team rulesget
+Statuses
+List company ticket statusesget
+Get ticket statusget
+Tags
+List company tagsget
+Create company tagpost
+List tagsget
+Create tagpost
+Get tagget
+Update a tagpatch
+Delete tagdel
+List tag childrenget
+Create child tagpost
+List tagged conversationsget
+List teammate tagsget
+Create teammate tagpost
+List team tagsget
+Create team tagpost
+Contact Groups
+List groupsget
+Create grouppost
+Delete groupdel
+List contacts in groupget
+Add contacts to grouppost
+Remove contacts from groupdel
+List teammate groupsget
+Create teammate grouppost
+List team groupsget
+Create team grouppost
+Contact Lists
+List contact listsget
+Create contact listpost
+Delete contact listdel
+List contacts in contact listget
+Add contacts to contact listpost
+Remove contacts from contact listdel
+List teammate contact listsget
+Create teammate contact listpost
+List team contact listsget
+Create team contact listpost
+Contacts
+List contactsget
+Create contactpost
+Merge contactspost
+Get contactget
+Update a contactpatch
+Delete a contactdel
+List contact conversationsget
+List teammate contactsget
+Create teammate contactpost
+List team contactsget
+Create team contactpost
+Contact Handles
+Add contact handlepost
+Delete contact handledel
+Contact Notes
+List notesget
+Add notepost
+Conversations
+List conversationsget
+Create discussion/task conversationpost
+Search conversationsget
+Get conversationget
+Update conversationpatch
+Update conversation assigneeput
+List conversation eventsget
+List conversation followersget
+Add conversation followerspost
+Delete conversation followersdel
+List conversation inboxesget
+Add conversation linkpost
+Remove conversation linksdel
+List conversation messagesget
+Update conversation reminderspatch
+Add conversation tagpost
+Remove conversation tagdel
+Delete conversationdel
+List linked conversationsget
+Link conversationspost
+Events
+List eventsget
+Get eventget
+Inboxes
+List inboxesget
+Create inboxpost
+Get inboxget
+List inbox channelsget
+List inbox conversationsget
+List inbox accessget
+Add inbox accesspost
+Removes inbox accessdel
+List team inboxesget
+Create team inboxpost
+List teammate private inboxesget
+Create teammate private inboxpost
+Update inboxpatch
+Knowledge Bases
+List knowledge basesget
+Create a knowledge basepost
+Get a knowledge baseget
+Get a knowledge base with content in default localeget
+List categories in a knowledge baseget
+Update knowledge base in default localepatch
+List articles in a knowledge baseget
+Get a knowledge base with content in specified localeget
+Update knowledge base in specified localepatch
+Knowledge Base Articles
+Get a knowledge base articleget
+Delete an articledel
+Get knowledge base article with content in default localeget
+Update article content in default locale.patch
+Create article in a knowledge base in default localepost
+Download attachment from an articleget
+Get knowledge base article with content in specified localeget
+Update article content in specified localepatch
+Create article in a knowledge base in specified localepost
+Knowledge Base Categories
+Get a knowledge base categoryget
+Delete a knowledge base categorydel
+Get knowledge base category content in default localeget
+Update knowledge base category in default localepatch
+Get knowledge base category with content in specified localeget
+Create knowledge base category in default localepost
+Update knowledge base category in specified localepatch
+List articles in a categoryget
+Create knowledge base category in specified localepost
+Links
+List linksget
+Create linkpost
+Get linkget
+Update a linkpatch
+List link conversationsget
+Token Identity
+API Token detailsget
+Message Template Folders
+List foldersget
+Create folderpost
+Get folderget
+Update folderpatch
+Delete folderdel
+Get child foldersget
+Create child folderpost
+List teammate foldersget
+Create teammate folderpost
+List team foldersget
+Create team folderpost
+Message Templates
+Get child templatesget
+Create child templatepost
+List message templatesget
+Create message templatepost
+Get message templateget
+Update message templatepatch
+Delete message templatedel
+List teammate message templatesget
+Create teammate message templatepost
+List team message templatesget
+Create team message templatepost
+Shifts
+Get shiftget
+List shift's teammatesget
+Add teammates to shiftpost
+Remove teammates from shiftdel
+List Shiftsget
+Create shiftpost
+Update shiftpatch
+List Teammate Shiftsget
+List team Shiftsget
+Create team shiftpost
+Signatures
+Get signaturesget
+Update signaturepatch
+Delete signaturedel
+List teammate signaturesget
+Create teammate signaturepost
+List team signaturesget
+Create team signaturepost
+Teammate groups
+List teammate groupsget
+Create teammate grouppost
+Get teammate groupget
+Update a teammate grouppatch
+Delete teammate groupdel
+List teammate group team inboxesget
+Add teammate group team inboxespost
+Remove teammate group team inboxesdel
+List teammate group teammatesget
+Add teammate group teammatespost
+Remove teammate group teammatesdel
+List teammate group teamsget
+Add teammate group teamspost
+Remove teammate group teamsdel
+Teammates
+List teammatesget
+Get teammateget
+Update teammatepatch
+List assigned conversationsget
+List teammate inboxesget
+Time Off
+Get time offget
+List teammate time offsget
+List team time offsget
+Create time offpost
+Update time offpatch
+Delete time offdel
+Teams / Workspaces
+List teamsget
+Get teamget
+Add teammates to teampost
+Remove teammates from teamdel
+Views
+List team viewsget
+Create team viewpost
+List viewsget
+Get viewget
+Update viewpatch
+Add view to teammate sidebarspost
+Plugin SDK
+Introduction
+Installation
+Plugin Terminology 101
+Getting events from Front
+Front.contextUpdates
+Context API
+addLink
+addTopic
+assign
+close
+closeDraft
+createDraft
+dismissNotification
+displayNotification
+downloadAttachment
+downloadComposerAttachment
+fetchDraft
+fetchPath
+listChannels
+listComments
+listInboxes
+listMessages
+listRecipients
+listTags
+listTeammates
+listTicketStatuses
+move
+openConversationInPopup
+openUrl
+openUrlInPopup
+removeLink
+search
+setStatus
+tag
+untag
+updateDraft
+Utility Functions
+buildCancelTokenSource
+isCancelError
+delegateAnchorClicksToFront
+delegateNewWindowsToFront
+Data models
+Attachment
+CancelToken
+Channel
+Comment
+Contact
+Context
+EntryPoint
+Conversation
+CustomField
+Draft message
+Inbox
+Link
+Message
+PaginationToken
+Recipient
+Tag
+Teammate
+TicketStatus
+Topic
+FAQ
+Channel API
+Introduction
+FAQ
+API endpoints
+Sync inbound messagepost
+Sync outbound messagepost
+Update Channelpatch
+Update external message statusput
+Message templates
+Sync application message templateput
+Update application message templatepatch
+Delete application message templatedel
+Voice calls
+Create a callpost
+Add call transcriptpost
+Add call summarypost
+Add call recordingpost
+Update call statuspatch
+Copy Page
+Introduction
+Here is Front's Core API, a backend API that gives comprehensive control over all entities in Front from Contacts to Comments.
+Guides
+Refer to the following guides to learn how to use the Core API:
+Getting Started
+Fundamentals
+Tools
+Sample Application
+API Terminology 101
+Authentication
+Front supports OAuth2.0 as well as API Tokens. To learn about authenticating with Front, see our guide on authentication.
+Base URL
+API calls will always work with https://api2.frontapp.com as the base URL. However, the API may return resource URLs that include your company's name, such as https://acme.api.frontapp.com. If the API is returning URLs like those, you can call it either with api2.frontapp.com or acme.api.frontapp.com.
+Rate Limits
+To ensure an acceptable response time from our API and facilitate access for all customers, Front implements an overall rate limit as well as several "burst" limits for certain endpoints. For more on these limits, please see here.
+Content Type
+The API is designed to communicate with your server using JSON. All responses coming from the API will send data in a valid JSON object. If you need to send data to the API, your request should set the Content-Type HTTP header to application/json.
+Some endpoints also support multipart requests for file upload. For more details about it, please check our multipart request documentation.
+Search parameters
+For some requests to get a large collection of resources, you can send search criteria in the query string via a parameter named q.
+Parameters for Conversations
+Parameters for Events
+Parameters for Contacts
+File Upload
+When you want to send files through the API, your request needs to be sent using the Content-Type HTTP header set to multipart/form-data.
+The JSON data you would normally send in the request body needs to be split in multiple form fields (one for each property) named after the property key. If the property is an array, the name should include the index of the data (ie: {"to": [[email protected], [email protected]]} would be split in two fields named to[0], to[1]).
+📘
+Restriction on files (type and size) depends on the endpoint. If your request doesn't comply to those limitations, the response will contain an error describing the issue.
+Dates
+All dates in the Front API are encoded as a number representing Unix time: It is the number of seconds that have elapsed since 00:00:00 UTC, January 1st 1970.
+Since Front is based on events that can occur during the same second, all the timestamps include leap seconds with a precision of 3 digits: 1454453901.012.
+Deprecation Policy
+Read our deprecation policy to learn how Front communicates about changes that may affect your integrations.
+Updated over 1 year ago
+Response Body Structure
+Updated over 1 year ago
+Response Body Structure
+Still got questions?
+Visit our Developer Q&A
