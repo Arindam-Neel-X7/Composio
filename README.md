@@ -5,7 +5,7 @@ Evidence-grounded, reproducible research evaluating **100 SaaS, developer, comme
 - **Live Hosted Case Study**: [**https://arindam-neel-x7.github.io/Composio/**](https://arindam-neel-x7.github.io/Composio/) (deployed via GitHub Pages from `gh-pages` branch; zero external assets).
 - **Local Interactive Case Study**: Open [`index.html`](index.html) directly in any browser (100% offline-capable; identical copy at [`outputs/task-20/index.html`](outputs/task-20/index.html)).
 - **Master Synthesis & Prioritization**: [`outputs/task-19/patterns-and-priorities.md`](outputs/task-19/patterns-and-priorities.md), [`outputs/task-19/build-queues.md`](outputs/task-19/build-queues.md), and [`outputs/task-19/coverage-matrix.md`](outputs/task-19/coverage-matrix.md).
-- **QA, Publication & Deployment Records**: [`outputs/task-21/qa-report.md`](outputs/task-21/qa-report.md), [`outputs/task-22/publication-record.md`](outputs/task-22/publication-record.md), and [`outputs/task-23/deployment-record.md`](outputs/task-23/deployment-record.md).
+- **QA, Publication, Deployment & Final Handoff Records**: [`outputs/task-21/qa-report.md`](outputs/task-21/qa-report.md), [`outputs/task-22/publication-record.md`](outputs/task-22/publication-record.md), [`outputs/task-23/deployment-record.md`](outputs/task-23/deployment-record.md), [`outputs/task-24/handoff-report.md`](outputs/task-24/handoff-report.md), and [`outputs/task-24/submission-manifest.json`](outputs/task-24/submission-manifest.json).
 
 ---
 
@@ -58,7 +58,8 @@ All percentages carry explicit denominators derived from `outputs/task-19/aggreg
 │   ├── task-20/                      # Generated case study HTML
 │   ├── task-21/                      # Reproduction & presentation QA report
 │   ├── task-22/                      # Repository publication record
-│   └── task-23/                      # Live deployment verification record
+│   ├── task-23/                      # Live deployment verification record
+│   └── task-24/                      # Final review & handoff report and submission manifest
 └── work/
     ├── research-runs/                # Immutable, SHA-256 sealed runs (captures, snapshots, records, reviews)
     ├── task-04-runs/                 # Preserved original 5-app pilot & Task 05 review runs

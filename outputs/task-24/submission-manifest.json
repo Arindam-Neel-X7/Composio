@@ -1,0 +1,200 @@
+{
+  "task_id": "24",
+  "title": "Review and hand off",
+  "status": "completed",
+  "completed_on": "2026-11-24",
+  "submission_links": {
+    "live_case_study_url": "https://arindam-neel-x7.github.io/Composio/",
+    "github_repository_url": "https://github.com/Arindam-Neel-X7/Composio",
+    "github_remote_git_url": "https://github.com/Arindam-Neel-X7/Composio.git",
+    "deployment_branch": "gh-pages",
+    "deployment_commit": "3ff22c3e2e2bb4474228448942a49e0f9e776070",
+    "github_pages_build_id": 1397539787,
+    "github_pages_status": "built",
+    "public_unauthenticated_access": true,
+    "https_enforced": true
+  },
+  "case_study_parity": {
+    "local_paths": [
+      "index.html",
+      "outputs/task-20/index.html"
+    ],
+    "local_crlf_bytes": 737590,
+    "local_crlf_sha256": "a9890dc7aeb5ef226eac83b2f795b2885fca3934745a615b69900d190480261b",
+    "normalized_lf_bytes": 736039,
+    "normalized_lf_sha256": "89da0069da21a006788624477f2827e2075f27854491081fd7aa80358dc64256",
+    "live_deployed_bytes": 736039,
+    "live_deployed_sha256": "89da0069da21a006788624477f2827e2075f27854491081fd7aa80358dc64256",
+    "exact_lf_parity": true,
+    "external_assets_count": 0,
+    "embedded_apps_count": 100,
+    "embedded_unique_urls_count": 770
+  },
+  "reconciled_counts": {
+    "total_tasks_in_plan": 24,
+    "completed_tasks_in_plan": 24,
+    "authoritative_apps": 100,
+    "categories": 10,
+    "apps_per_category": 10,
+    "first_pass_batches": {
+      "batch_count": 10,
+      "accepted_runs": [
+        "task07-first-pass-003",
+        "task08-first-pass-003",
+        "task09-first-pass-004",
+        "task10-first-pass-001",
+        "task11-first-pass-001",
+        "task12-first-pass-005",
+        "task13-first-pass-003",
+        "task14-first-pass-003",
+        "task15-first-pass-002",
+        "task16-first-pass-001"
+      ],
+      "total_local_snapshots": 634,
+      "total_eligible_claims": 1709,
+      "total_evidence_references": 3561
+    },
+    "sealed_runs": {
+      "pilot_store_path": "work/task-04-runs",
+      "pilot_sealed_runs_count": 7,
+      "main_store_path": "work/research-runs",
+      "main_store_total_sealed_runs_count": 105,
+      "qa_audited_deliverable_runs_count": 42,
+      "qa_audited_seals_passed": 42
+    },
+    "offline_tests": {
+      "test_suite": "tests/test_research_pipeline.py",
+      "total_tests": 23,
+      "passed_tests": 23
+    }
+  },
+  "measured_scores": {
+    "tier_0_five_app_pilot_ai_review": {
+      "target_run": "pilot-first-pass-001",
+      "review_run": "task05-review-002",
+      "reviewer_id": "gemini-task05-independent",
+      "reviewer_type": "ai",
+      "human_attestation": false,
+      "denominator": 92,
+      "correct": 87,
+      "incorrect": 0,
+      "unsupported": 5,
+      "unresolved": 0,
+      "pending": 0,
+      "accuracy": 0.9456521739130435,
+      "observed_accuracy": 0.9393939393939394,
+      "inferred_accuracy": 0.9615384615384616,
+      "review_coverage": 1.0
+    },
+    "tier_2_task17_human_baseline": {
+      "sample_manifest_id": "composio-20app-sample-v1",
+      "sample_apps_count": 20,
+      "sample_app_ids": [4, 8, 16, 19, 21, 27, 31, 40, 46, 50, 52, 60, 64, 65, 76, 77, 83, 84, 97, 98],
+      "reviewer_id": "ARINDAM KARMAKAR",
+      "reviewer_type": "human",
+      "human_attestation": true,
+      "reviewed_on": "2026-11-24",
+      "denominator": 327,
+      "correct": 277,
+      "incorrect": 0,
+      "unsupported": 50,
+      "unresolved": 0,
+      "pending": 0,
+      "accuracy": 0.8470948012232415,
+      "observed_denominator": 290,
+      "observed_correct": 277,
+      "observed_accuracy": 0.9551724137931035,
+      "inferred_denominator": 37,
+      "inferred_correct": 0,
+      "inferred_accuracy": 0.0,
+      "review_coverage": 1.0
+    },
+    "tier_3_task18_human_recheck": {
+      "sample_manifest_id": "composio-20app-sample-v1",
+      "reviewer_id": "ARINDAM KARMAKAR",
+      "reviewer_type": "human",
+      "human_attestation": true,
+      "reviewed_on": "2026-11-23",
+      "comparable_fixed_questions": 327,
+      "transitions_remediated": 50,
+      "denominator": 327,
+      "correct": 327,
+      "incorrect": 0,
+      "unsupported": 0,
+      "unresolved": 0,
+      "pending": 0,
+      "accuracy": 1.0,
+      "observed_denominator": 290,
+      "observed_correct": 290,
+      "observed_accuracy": 1.0,
+      "inferred_denominator": 37,
+      "inferred_correct": 37,
+      "inferred_accuracy": 1.0,
+      "review_coverage": 1.0,
+      "sample_reuse_disclosed": true
+    }
+  },
+  "strategic_aggregates": {
+    "denominator": 100,
+    "buildability_queues": {
+      "build_now": 44,
+      "conditional": 50,
+      "outreach_required": 4,
+      "unknown": 2
+    },
+    "build_waves": {
+      "wave_1a_official_mcp": 34,
+      "wave_1b_community_mcp": 7,
+      "wave_1c_local_cli": 2,
+      "wave_1d_self_serve_rest": 1,
+      "subtier_2a_admin_consent": 13,
+      "subtier_2b_cloud_project_quota": 14,
+      "subtier_2c_vendor_review": 11,
+      "subtier_2d_paid_plan_credits": 6,
+      "subtier_2e_partner_program": 6,
+      "tier_3_outreach_required": 4,
+      "tier_4_unknown": 2
+    },
+    "mcp_availability": {
+      "official_only": 66,
+      "official_and_community": 4,
+      "official_combined": 70,
+      "community_only": 15,
+      "any_mcp_combined": 85,
+      "not_found_bounded": 11,
+      "unknown": 4
+    }
+  },
+  "external_blockers_and_limitations": [
+    {
+      "id": "pre-transfer-sites-id-unavailable",
+      "component": "Task 23 Hosting Target (appgprj_6b040e5b3768819193392c23590d7d81)",
+      "status": "resolved_via_github_pages",
+      "detail": "Pre-transfer OpenAI/Codex Sites identifier appgprj_6b040e5b3768819193392c23590d7d81 (.openai/hosting.json) is not connected in the local Windows environment. Per Task 23 rules, expected_url was not assumed; case study was deployed and byte-verified on GitHub Pages at https://arindam-neel-x7.github.io/Composio/."
+    },
+    {
+      "id": "live-chrome-devtools-port-unavailable",
+      "component": "Task 21 Live Browser Pixel Rendering",
+      "status": "disclosed_mitigated_via_node_dom_harness",
+      "detail": "Chrome remote debugging port file (DevToolsActivePort) was absent (ENOENT) on the host and playwright/selenium are not installed in .venv. Verified via static responsive CSS audit and Node.js v26.7.0 DOM-shim runtime execution across all 100 app drawers and filters with 0 errors."
+    },
+    {
+      "id": "vendor-bot-walls-and-gated-portals",
+      "component": "Static HTTP Retrieval (Apps 10, 44, 50, 59, 84, 90)",
+      "status": "preserved_as_unknown_or_outreach_required",
+      "detail": "PitchBook (App 90, HTTP 403 Cloudflare challenge) and Paygent (App 84, merchant-gated specs) remain buildability=unknown; DealCloud (10), Mirakl (44), FanBasis/Commas (50), and Bright Data (59) remain buildability=outreach_required."
+    },
+    {
+      "id": "documentary-scope-only",
+      "component": "Operational API & MCP Verification",
+      "status": "by_design",
+      "detail": "All findings are documentary; no live authenticated API requests, paid account signups, or live MCP tool calls were executed (operational_check = not_researched across all records)."
+    },
+    {
+      "id": "task18-sample-reuse",
+      "component": "Task 18 Paired Remeasurement (N=327)",
+      "status": "explicitly_disclosed",
+      "detail": "Task 18 re-evaluated the same frozen 20-app sample audited in Task 17 to verify defect repair (84.71% -> 100.00%) rather than scoring an unseen held-out sample. The remaining 80 apps underwent independent AI review and schema/grounding validation."
+    }
+  ]
+}
