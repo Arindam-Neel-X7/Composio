@@ -1,10 +1,10 @@
 {
   "scope": "Complete Composio 100-app assignment through sequential, reviewable agent tasks.",
   "mode": "Parallel isolated research batches; independent review; explicit human checkpoints.",
-  "current_task": "21",
-  "active_agent": "QA agent",
-  "next_task": "22-publish-source-repository",
-  "checkpoint": "Task 21 completed. Ready for user review before Task 22 authorization.",
+  "current_task": "22",
+  "active_agent": "Publisher agent + coordinator",
+  "next_task": "23-deploy-case-study",
+  "checkpoint": "Task 22 completed. Dedicated GitHub repository published and verified at https://github.com/Arindam-Neel-X7/Composio. Ready for user review before Task 23 authorization.",
   "rules": [
     "Existing results are preliminary hypotheses, not completed research.",
     "Every task returns files, evidence, checks and unresolved issues.",
@@ -293,12 +293,13 @@
       "id": "22",
       "title": "Publish the source repository",
       "owner": "Publisher agent + coordinator",
-      "status": "queued",
+      "status": "completed",
       "depends_on": [
         "21"
       ],
-      "output": "Dedicated GitHub repository with runnable README",
-      "acceptance": "Use connected GitHub capabilities; create a dedicated repository through supported access; preserve unrelated repositories; verify source and instructions at returned URL. Record an actual blocker if creation authority is missing."
+      "output": "https://github.com/Arindam-Neel-X7/Composio (main branch); README.md; .gitignore; .gitattributes; requirements.txt; outputs/task-22/publication-record.md",
+      "acceptance": "Use connected GitHub capabilities; create a dedicated repository through supported access; preserve unrelated repositories; verify source and instructions at returned URL. Record an actual blocker if creation authority is missing.",
+      "review": "Completed: Dedicated GitHub repository https://github.com/Arindam-Neel-X7/Composio published on main (initial commit d6e95c3, 9,059 tracked files, 41.01 MiB pack) with runnable README.md, .gitignore, .gitattributes (preserving exact bytes for 42/42 SHA-256 sealed runs across OSes), requirements.txt, and outputs/task-22/publication-record.md. Verified 23/23 offline tests, Task 20 case study checks, 42/42 SHA-256 seals, remote refs via git ls-remote, and live GitHub URL accessibility. Unrelated repositories preserved."
     },
     {
       "id": "23",

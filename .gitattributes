@@ -1,0 +1,6 @@
+# Preserve exact bytes for SHA-256 sealed runs across all platforms
+work/research-runs/** -text
+work/task-04-runs/** -text
+data/apps.json -text
+schemas/record.json -text
+docs/evidence-rules.md -text
